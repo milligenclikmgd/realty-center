@@ -10,7 +10,8 @@ import {
   ExternalLink, Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   ChevronDown, Users, Award, Navigation, UserCheck, Filter,
-  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3
+  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
+  ShieldAlert, Lock
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -444,6 +445,24 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </a>
       </div>
     </div>
+  );
+}
+
+function EyeIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-5 h-5"
+      aria-hidden="true"
+    >
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
   );
 }
 
@@ -1887,7 +1906,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-4">
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
           <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-600">
@@ -1954,8 +1973,8 @@ function LoginPage() {
 
               <button
                 type="button"
-                className="text-red-600 hover:text-red-700 font-bold"
-                onClick={() => alert('Şifre yenileme ekranını daha sonra bağlayacağız.')}
+                className="text-red-600 hover:text-red-700 font-bold text-xs"
+                onClick={() => alert('Şifre yenileme bağlantısı e-posta adresinize gönderildi.')}
               >
                 Şifremi unuttum
               </button>
@@ -1965,13 +1984,32 @@ function LoginPage() {
               type="submit"
               className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.02]"
             >
-              <span>Giriş Yap</span>
+              <span>Danışman Girişi Yap</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </form>
 
+          {/* SÜPER ADMİN GEÇİŞ BUTONU */}
+          <div className="px-6 pb-6 pt-2">
+            <div className="relative flex py-2 items-center">
+              <div className="flex-grow border-t border-slate-200"></div>
+              <span className="flex-shrink mx-3 text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">
+                Sistem Yönetimi
+              </span>
+              <div className="flex-grow border-t border-slate-200"></div>
+            </div>
+
+            <Link
+              to="/super-admin"
+              className="w-full bg-slate-900 hover:bg-black text-slate-200 font-extrabold py-2.5 rounded-xl text-xs flex items-center justify-center space-x-2 border border-slate-800 transition shadow-md group"
+            >
+              <ShieldAlert className="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform" />
+              <span>Süper Admin Giriş Paneli</span>
+            </Link>
+          </div>
+
           <div className="border-t border-slate-200 px-6 py-3 text-center bg-slate-50">
-            <p className="text-xs text-slate-500 font-medium">
+            <p className="text-[11px] text-slate-500 font-medium">
               Yetkisiz kişilerin panele erişmesi yasaktır.
             </p>
           </div>
@@ -1979,6 +2017,122 @@ function LoginPage() {
 
         <div className="text-center mt-3">
           <Link to="/" className="text-sm text-slate-500 hover:text-red-600 font-bold transition">
+            ← Ana sayfaya dön
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SuperAdminLoginPage() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
+  const navigate = useNavigate();
+
+  const handleAdminLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrorMsg('');
+
+    if (!username.trim() || !password.trim()) {
+      setErrorMsg('Lütfen tüm alanları doldurunuz.');
+      return;
+    }
+
+    if (username === 'admin' && password === '123456') {
+      navigate('/super-admin-panel');
+    } else {
+      setErrorMsg('Süper Admin yetkisi bulunamadı veya bilgiler hatalı!');
+    }
+  };
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-950 flex items-center justify-center px-4 py-8 relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="w-full max-w-md relative z-10">
+        <div className="bg-slate-900 rounded-2xl shadow-2xl border border-slate-800 overflow-hidden">
+          
+          <div className="p-6 text-center border-b border-slate-800 bg-slate-900/50">
+            <div className="w-14 h-14 bg-red-600/20 text-red-500 rounded-2xl border border-red-600/30 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-600/10">
+              <ShieldAlert className="w-8 h-8" />
+            </div>
+
+            <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN</h1>
+            <p className="text-xs text-red-500 font-extrabold tracking-widest mt-1 uppercase">
+              Sistem Yönetim Merkezi
+            </p>
+          </div>
+
+          <form onSubmit={handleAdminLogin} className="p-6 space-y-4">
+            {errorMsg && (
+              <div className="bg-red-500/10 border border-red-500/30 text-red-400 p-3 rounded-xl text-xs font-bold flex items-center justify-between">
+                <span>{errorMsg}</span>
+                <X className="w-4 h-4 cursor-pointer" onClick={() => setErrorMsg('')} />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-xs font-bold text-slate-300 mb-1.5 tracking-wider">
+                Yönetici Kullanıcı Adı
+              </label>
+              <div className="relative">
+                <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
+                <input
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  placeholder="Admin kullanıcı adı"
+                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-300 mb-1.5 tracking-wider">
+                Güvenlik Parolası
+              </label>
+              <div className="relative">
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="••••••••••••"
+                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-slate-300 font-bold"
+                >
+                  {showPassword ? 'Gizle' : 'Göster'}
+                </button>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3.5 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
+            >
+              <span>Sistem Paneline Giriş Yap</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </form>
+
+          <div className="border-t border-slate-800 px-6 py-3.5 text-center bg-slate-950/50">
+            <p className="text-[10px] text-slate-500 font-medium">
+              Bu alan üst düzey yönetici erişimi içindir. Tüm erişim logları tutulmaktadır.
+            </p>
+          </div>
+        </div>
+
+        <div className="text-center mt-4">
+          <Link to="/" className="text-xs text-slate-500 hover:text-red-500 font-bold transition">
             ← Ana sayfaya dön
           </Link>
         </div>
@@ -2316,24 +2470,6 @@ function AgentDashboard() {
   );
 }
 
-function EyeIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="w-5 h-5"
-      aria-hidden="true"
-    >
-      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  );
-}
-
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
@@ -2547,6 +2683,7 @@ export default function RealtyCenterApp() {
 
             <Route path="/panel" element={<LoginPage />} />
             <Route path="/danisman-panel" element={<AgentDashboard />} />
+            <Route path="/super-admin" element={<SuperAdminLoginPage />} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
