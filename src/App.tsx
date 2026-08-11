@@ -9,7 +9,8 @@ import {
   CheckCircle2, X, ShieldCheck, 
   ExternalLink, Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
-  ChevronDown, Users, Award, Navigation, UserCheck, Filter
+  ChevronDown, Users, Award, Navigation, UserCheck, Filter,
+  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -97,7 +98,118 @@ const TURKEY_CITIES: Record<string, string[]> = {
   "Düzce": ["Merkez", "Akçakoca", "Kaynaşlı"]
 };
 
-// ÖRNEK FRANCHISE OFİS VERİLERİ
+// ÖRNEK İLAN VERİLERİ
+const SAMPLE_LISTINGS = [
+  {
+    id: "RC-106",
+    title: "Çankaya Beysukent'te Özel Havuzlu Akıllı Lüks Villa",
+    category: "Konut",
+    type: "Satılık",
+    price: 38500000,
+    currency: "₺",
+    city: "Ankara",
+    district: "Çankaya",
+    neighborhood: "Beysukent",
+    rooms: "6+2",
+    area: 550,
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=800",
+    agentName: "Murat Yıldırım",
+    agentPhone: "0533 111 22 33",
+    date: "2026-08-11",
+    isFeatured: true
+  },
+  {
+    id: "RC-105",
+    title: "Bağdat Caddesi Üzerinde Yüksek Ciro Potansiyelli Mağaza",
+    category: "İşyeri",
+    type: "Devren",
+    price: 12500000,
+    currency: "₺",
+    city: "İstanbul",
+    district: "Kadıköy",
+    neighborhood: "Caddebostan",
+    rooms: "Açık Alan",
+    area: 280,
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
+    agentName: "Zeynep Çelik",
+    agentPhone: "0532 222 33 44",
+    date: "2026-08-10",
+    isFeatured: true
+  },
+  {
+    id: "RC-104",
+    title: "Çeşme Alaçatı'da Taş Mimari Sıfır Müstakil Villa",
+    category: "Konut",
+    type: "Satılık",
+    price: 24000000,
+    currency: "₺",
+    city: "İzmir",
+    district: "Çeşme",
+    neighborhood: "Alaçatı",
+    rooms: "4+1",
+    area: 220,
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+    agentName: "Caner Yılmaz",
+    agentPhone: "0535 333 44 55",
+    date: "2026-08-08",
+    isFeatured: false
+  },
+  {
+    id: "RC-103",
+    title: "Levent Plaza Bölgesinde Hazır Dekore Kiralık Ofis Katı",
+    category: "İşyeri",
+    type: "Kiralık",
+    price: 180000,
+    currency: "₺",
+    city: "İstanbul",
+    district: "Beşiktaş",
+    neighborhood: "Levent",
+    rooms: "8 Bölüm",
+    area: 410,
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    agentName: "Emre Aksoy",
+    agentPhone: "0532 555 66 77",
+    date: "2026-08-05",
+    isFeatured: true
+  },
+  {
+    id: "RC-102",
+    title: "Batıkent Çakırlar'da Metroya Yakın Geniş 4+1 Daire",
+    category: "Konut",
+    type: "Satılık",
+    price: 6850000,
+    currency: "₺",
+    city: "Ankara",
+    district: "Yenimahalle",
+    neighborhood: "Turgut Özal",
+    rooms: "4+1",
+    area: 195,
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800",
+    agentName: "Sibel Öztürk",
+    agentPhone: "0530 444 55 66",
+    date: "2026-08-02",
+    isFeatured: false
+  },
+  {
+    id: "RC-101",
+    title: "Urla Yağcılar'da Deniz Manzaralı Yatırımlık Konut İmarlı Arsa",
+    category: "Arsa",
+    type: "Satılık",
+    price: 15500000,
+    currency: "₺",
+    city: "İzmir",
+    district: "Urla",
+    neighborhood: "Yağcılar",
+    rooms: "Arsa",
+    area: 1250,
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800",
+    agentName: "Elif Demir",
+    agentPhone: "0533 666 77 88",
+    date: "2026-07-28",
+    isFeatured: true
+  }
+];
+
 const SAMPLE_OFFICES = [
   {
     id: 1,
@@ -167,12 +279,11 @@ const SAMPLE_OFFICES = [
   }
 ];
 
-// ÖRNEK DANIŞMAN VERİLERİ
 const SAMPLE_AGENTS = [
   {
     id: 1,
     name: "Murat Yıldırım",
-    title: "Lüks Konut & Villa Uzmanı",
+    title: "LÜKS KONUT & VİLLA UZMANI",
     office: "Realty Center Çankaya Bölge Başkanlığı",
     city: "Ankara",
     district: "Çankaya",
@@ -184,7 +295,7 @@ const SAMPLE_AGENTS = [
   {
     id: 2,
     name: "Zeynep Çelik",
-    title: "Ticari Gayrimenkul Danışmanı",
+    title: "TİCARİ GAYRİMENKUL DANIŞMANI",
     office: "Realty Center Kadıköy / Bağdat Caddesi",
     city: "İstanbul",
     district: "Kadıköy",
@@ -196,7 +307,7 @@ const SAMPLE_AGENTS = [
   {
     id: 3,
     name: "Caner Yılmaz",
-    title: "Arsa & Arazi Yatırım Uzmanı",
+    title: "ARSA & ARAZİ YATIRIM UZMANI",
     office: "Realty Center Karşıyaka Yalı",
     city: "İzmir",
     district: "Karşıyaka",
@@ -208,7 +319,7 @@ const SAMPLE_AGENTS = [
   {
     id: 4,
     name: "Sibel Öztürk",
-    title: "Konut Satış Danışmanı",
+    title: "KONUT SATIŞ DANIŞMANI",
     office: "Realty Center Yenimahalle Batıkent",
     city: "Ankara",
     district: "Yenimahalle",
@@ -220,7 +331,7 @@ const SAMPLE_AGENTS = [
   {
     id: 5,
     name: "Emre Aksoy",
-    title: "Proje Satış Yöneticisi",
+    title: "PROJE SATIŞ YÖNETİCİSİ",
     office: "Realty Center Beşiktaş Levent",
     city: "İstanbul",
     district: "Beşiktaş",
@@ -232,7 +343,7 @@ const SAMPLE_AGENTS = [
   {
     id: 6,
     name: "Elif Demir",
-    title: "Kiralama Uzmanı",
+    title: "KİRALAMA UZMANI",
     office: "Realty Center Alsancak Liman",
     city: "İzmir",
     district: "Alsancak",
@@ -243,7 +354,6 @@ const SAMPLE_AGENTS = [
   }
 ];
 
-// EMLAK SLIDER GÖRSELLERİ
 const SLIDER_IMAGES = [
   "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1920",
   "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1920",
@@ -251,12 +361,93 @@ const SLIDER_IMAGES = [
   "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1920"
 ];
 
-// Değişen Emlak Kelimeleri
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
 
-// ==========================================
-// 1. HEADER BİLEŞENİ
-// ==========================================
+// İLERİDE ADMIN PANELİNE DÜŞECEK İLETİŞİM MESAJLARI ALTYAPISI (PANEL/MOCK DB YERİNE)
+export interface ContactMessage {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  message: string;
+  createdAt: string;
+  status: 'unread' | 'read' | 'archived';
+}
+
+const INITIAL_MESSAGES: ContactMessage[] = [];
+
+function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
+  return (
+    <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-600 transition-all duration-300 flex flex-col justify-between group h-full">
+      <div>
+        <div className="relative h-52 overflow-hidden bg-slate-900">
+          <img 
+            src={item.image} 
+            alt={item.title} 
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+          <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
+            <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow uppercase tracking-wider ${
+              item.type === 'Satılık' ? 'bg-red-600' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
+            }`}>
+              {item.type}
+            </span>
+            <span className="text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded shadow uppercase tracking-wider">
+              {item.category}
+            </span>
+          </div>
+
+          <span className="absolute top-3 right-3 text-[10px] font-bold text-white bg-black/60 backdrop-blur-md px-2 py-1 rounded border border-white/20">
+            {item.id}
+          </span>
+
+          <div className="absolute bottom-3 left-3 right-3 text-white font-black text-xl drop-shadow-md">
+            {item.price.toLocaleString('tr-TR')} <span className="text-sm font-bold">{item.currency}</span>
+          </div>
+        </div>
+
+        <div className="p-5">
+          <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-600 transition h-10">
+            {item.title}
+          </h3>
+
+          <div className="flex items-center space-x-1 text-xs text-slate-500 font-semibold mb-4">
+            <MapPin className="w-3.5 h-3.5 text-red-600 flex-shrink-0" />
+            <span className="truncate">{item.city} / {item.district} / {item.neighborhood}</span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 text-xs text-slate-700 bg-slate-50 p-2.5 rounded-xl border border-slate-100 font-bold mb-3">
+            <div className="flex items-center space-x-1.5">
+              <Bed className="w-3.5 h-3.5 text-slate-400" />
+              <span>{item.rooms}</span>
+            </div>
+            <div className="flex items-center space-x-1.5">
+              <Maximize2 className="w-3.5 h-3.5 text-slate-400" />
+              <span>{item.area} m²</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
+        <div>
+          <span className="text-[10px] text-slate-400 font-bold uppercase block">Danışman</span>
+          <span className="font-extrabold text-slate-800">{item.agentName}</span>
+        </div>
+        <a 
+          href={`tel:${item.agentPhone.replace(/\s+/g, '')}`}
+          className="bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-600/20"
+        >
+          <Phone className="w-3 h-3" />
+          <span>Ara</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'agent') => void, scrolled: boolean }) {
   return (
     <header className={`sticky top-0 z-40 w-full px-6 lg:px-12 py-2.5 flex items-center justify-between border-b-2 border-red-600 transition-all duration-500 ${
@@ -318,7 +509,7 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
         <Link to="/projelerimiz" className="hover:text-red-600 transition duration-200">Projelerimiz</Link>
         <Link to="/iletisim" className="hover:text-red-600 transition duration-200">İletişim</Link>
         <button onClick={() => openDrawer('agent')} className="text-red-600 hover:text-slate-900 transition font-black">Danışman Ol</button>
-        <button onClick={() => openDrawer('franchise')} className="text-red-600 hover:text-slate-900 transition font-black">Franchise Ol</button>
+        <button onClick={() => openDrawer('franchise')} className="text-red-600 hover:text-slate-900 transition font-black">Franchise Ol!</button>
       </nav>
 
       <div>
@@ -332,9 +523,6 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
   );
 }
 
-// ==========================================
-// 2. FOOTER BİLEŞENİ
-// ==========================================
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t-4 border-red-600">
@@ -387,12 +575,12 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
   );
 }
 
-// ==========================================
-// 3. EKSİKSİZ ANA SAYFA BİLEŞENİ
-// ==========================================
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
   const [searchDistrict, setSearchDistrict] = useState('');
+
+  const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const marqueeListings = [...sortedListings, ...sortedListings];
 
   return (
     <>
@@ -561,6 +749,41 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
+      <section className="py-16 bg-slate-900 text-white overflow-hidden border-b-4 border-red-600">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
+          <div>
+            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-500 uppercase tracking-widest bg-red-950/60 px-3 py-1 rounded-full border border-red-800/40 mb-2">
+              <Flame className="w-3.5 h-3.5 animate-bounce" />
+              <span>Canlı İlan Akışı</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-white">
+              EN YENİ <span className="text-red-500">GAYRİMENKUL İLANLARI</span>
+            </h2>
+            <p className="text-slate-400 text-xs font-medium mt-1">
+              Sisteme en son eklenen portföylerimiz (Üzerine gelerek akışı durdurabilirsiniz)
+            </p>
+          </div>
+
+          <Link 
+            to="/ilanlarimiz" 
+            className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-600 hover:bg-red-700 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-600/30"
+          >
+            <span>Tümünü Gör</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        <div className="relative w-full overflow-hidden py-4">
+          <div className="animate-marquee flex space-x-6">
+            {marqueeListings.map((item, idx) => (
+              <div key={`${item.id}-${idx}`} className="w-80 flex-shrink-0 text-slate-900">
+                <ListingCard item={item} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="kurumsal" className="py-16 px-6 lg:px-12 max-w-7xl mx-auto border-b border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
@@ -697,9 +920,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   );
 }
 
-// ==========================================
-// 4. ALT SAYFA DÜZENLERİ
-// ==========================================
 function AboutPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
@@ -946,7 +1166,6 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
   );
 }
 
-// OFİSLERİMİZ SAYFASI
 function OfficesPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
@@ -973,7 +1192,6 @@ function OfficesPage() {
           </p>
         </div>
 
-        {/* YATAY FİLTRELEME BARI */}
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
           
           <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
@@ -1135,7 +1353,6 @@ function OfficesPage() {
   );
 }
 
-// YENİLENMİŞ DANIŞMANLARIMIZ SAYFASI
 function AgentsPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
@@ -1150,7 +1367,6 @@ function AgentsPage() {
     <div className="bg-slate-50 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
-        {/* BAŞLIK */}
         <div className="mb-8">
           <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
             Uzman Kadromuz
@@ -1163,7 +1379,6 @@ function AgentsPage() {
           </p>
         </div>
 
-        {/* YATAY FİLTRELEME BARI */}
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
           
           <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
@@ -1228,7 +1443,6 @@ function AgentsPage() {
 
         </div>
 
-        {/* DANIŞMAN KARTLARI LİSTESİ */}
         {filteredAgents.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAgents.map((agent) => (
@@ -1237,7 +1451,6 @@ function AgentsPage() {
                 className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  {/* Danışman Görseli veya Logo Fallback */}
                   <div className="relative h-64 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
                     {agent.image ? (
                       <img 
@@ -1266,13 +1479,12 @@ function AgentsPage() {
                     </span>
                   </div>
 
-                  {/* Danışman Bilgileri */}
                   <div className="p-6">
                     <h3 className="text-xl font-black text-slate-900 mb-1 group-hover:text-red-600 transition">
                       {agent.name}
                     </h3>
 
-                    <span className="text-xs font-bold text-red-600 block mb-3 uppercase tracking-wider">
+                    <span className="text-xs font-bold text-red-600 block mb-3 tracking-wider">
                       {agent.title}
                     </span>
 
@@ -1295,7 +1507,6 @@ function AgentsPage() {
                   </div>
                 </div>
 
-                {/* Butonlar */}
                 <div className="p-4 border-t border-slate-100 bg-slate-50 grid grid-cols-2 gap-2">
                   <a 
                     href={`tel:${agent.phone.replace(/\s+/g, '')}`}
@@ -1331,10 +1542,101 @@ function AgentsPage() {
 }
 
 function ListingsPage() {
+  const [selectedType, setSelectedType] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCity, setSelectedCity] = useState('');
+
+  const filteredListings = SAMPLE_LISTINGS.filter((item) => {
+    if (selectedType && item.type !== selectedType) return false;
+    if (selectedCategory && item.category !== selectedCategory) return false;
+    if (selectedCity && item.city !== selectedCity) return false;
+    return true;
+  });
+
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Tüm İlanlarımız</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Detaylı arama ve filtreleme özelliğine sahip aktif gayrimenkul portföyümüz bu sayfadadır.</p>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div className="mb-8">
+          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+            Aktif Portföyler
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            TÜM GAYRİMENKUL <span className="text-red-600">İLANLARIMIZ</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            Türkiye genelindeki kurumsal onaylı güncel emlak seçenekleri
+          </p>
+        </div>
+
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div>
+            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">İşlem Tipi</label>
+            <select 
+              value={selectedType}
+              onChange={(e) => setSelectedType(e.target.value)}
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+            >
+              <option value="">Tüm İşlem Tipleri</option>
+              <option value="Satılık">Satılık</option>
+              <option value="Kiralık">Kiralık</option>
+              <option value="Devren">Devren</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">Kategori</label>
+            <select 
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+            >
+              <option value="">Tüm Kategoriler</option>
+              <option value="Konut">Konut</option>
+              <option value="İşyeri">İşyeri</option>
+              <option value="Arsa">Arsa</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">Şehir</label>
+            <select 
+              value={selectedCity}
+              onChange={(e) => setSelectedCity(e.target.value)}
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+            >
+              <option value="">Tüm Şehirler</option>
+              {Object.keys(TURKEY_CITIES).map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex items-end">
+            <button 
+              onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedCity(''); }}
+              className="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2 rounded-xl text-xs transition"
+            >
+              Filtreleri Temizle
+            </button>
+          </div>
+        </div>
+
+        {filteredListings.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredListings.map((item) => (
+              <ListingCard key={item.id} item={item} />
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">Aradığınız kriterlerde ilan bulunamadı.</h3>
+            <p className="text-slate-500 text-xs mt-1">Lütfen farklı filtre seçenekleri deneyiniz.</p>
+          </div>
+        )}
+
+      </div>
     </div>
   );
 }
@@ -1348,18 +1650,223 @@ function ProjectsPage() {
   );
 }
 
-function ContactPage() {
+// YENİLENMİŞ İLETİŞİM SAYFASI (Ortada Form, Sağda Bilgiler + Admin Paneli Mesaj Altyapısı)
+function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => void }) {
+  const [form, setForm] = useState({
+    fullName: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.fullName || !form.phone || !form.email || !form.message) {
+      alert("Lütfen tüm alanları doldurunuz.");
+      return;
+    }
+
+    // İleride Yönetici (Süper Admin / Admin) Paneline düşecek mesaj yapısını tetikler
+    onSendMessage(form);
+    
+    setSubmitted(true);
+    setForm({ fullName: '', phone: '', email: '', message: '' });
+
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 5000);
+  };
+
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">İletişim</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">İletişim formu, Genel Merkez açık adresi ve Google Haritalar entegrasyonu bu alandadır.</p>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        {/* BAŞLIK ALANI */}
+        <div className="mb-10 text-center max-w-2xl mx-auto">
+          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+            Bize Ulaşın
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            İLETİŞİM & <span className="text-red-600">DESTEK</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-2">
+            Sorularınız, gayrimenkul talepleriniz veya iş birliği fırsatları için ekibimizle iletişime geçebilirsiniz.
+          </p>
+        </div>
+
+        {/* İLETİŞİM DÜZENİ: ORTADA FORM, SAĞDA BİLGİLER */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          {/* ORTA/SOL ALAN: MESAJ FORMU (7 Kolon) */}
+          <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
+            <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+              <div className="p-3 bg-red-50 text-red-600 rounded-xl">
+                <MessageSquare className="w-6 h-6" />
+              </div>
+              <div>
+                <h2 className="text-xl font-black text-slate-900">Bize Mesaj Gönderin</h2>
+                <p className="text-xs text-slate-500 font-medium">Formu doldurun, uzman ekibimiz en kısa sürede dönüş yapsın.</p>
+              </div>
+            </div>
+
+            {submitted && (
+              <div className="mb-6 bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl flex items-center space-x-3 text-xs font-bold animate-fade-in">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <span>Mesajınız yönetim merkezimize başarıyla iletilmiştir. İlginiz için teşekkür ederiz!</span>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                  Ad Soyad *
+                </label>
+                <input 
+                  type="text" 
+                  required
+                  placeholder="Adınız ve Soyadınız"
+                  value={form.fullName}
+                  onChange={(e) => setForm({ ...form, fullName: e.target.value })}
+                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                    Telefon Numarası *
+                  </label>
+                  <input 
+                    type="tel" 
+                    required
+                    placeholder="05XX XXX XX XX"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                    E-Posta Adresi *
+                  </label>
+                  <input 
+                    type="email" 
+                    required
+                    placeholder="ornek@domain.com"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                  Mesajınız *
+                </label>
+                <textarea 
+                  required
+                  rows={5}
+                  placeholder="Talep, görüş veya sorunuzu buraya detaylıca yazabilirsiniz..."
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition resize-none"
+                />
+              </div>
+
+              <button 
+                type="submit"
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl text-xs uppercase tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
+              >
+                <span>Mesajı Gönder</span>
+                <Send className="w-4 h-4" />
+              </button>
+            </form>
+          </div>
+
+          {/* SAĞ ALAN: İLETİŞİM BİLGİLERİ & HARİTA (5 Kolon) */}
+          <div className="lg:col-span-5 space-y-6">
+            <div className="bg-slate-900 text-white p-8 rounded-2xl border-2 border-slate-800 shadow-xl space-y-6">
+              <div className="border-b border-slate-800 pb-4">
+                <h3 className="text-xl font-black text-white">Genel Merkez İletişim</h3>
+                <p className="text-xs text-red-500 font-bold uppercase tracking-wider mt-0.5">REALTY CENTER GAYRİMENKUL A.Ş.</p>
+              </div>
+
+              <div className="space-y-4 text-xs font-medium text-slate-300">
+                <div className="flex items-start space-x-3">
+                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0 mt-0.5">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <strong className="text-white block font-bold mb-0.5">Açık Adres</strong>
+                    <span>Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 No:244 Çankaya / ANKARA</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <strong className="text-white block font-bold mb-0.5">Telefon / Danışma Hattı</strong>
+                    <span className="text-sm font-black text-white">0532 567 48 45</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <strong className="text-white block font-bold mb-0.5">E-Posta</strong>
+                    <span>info@realtycenter.com.tr</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <strong className="text-white block font-bold mb-0.5">Çalışma Saatleri</strong>
+                    <span>Hafta İçi & Cumartesi: 09:00 - 18:30</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800">
+                <a 
+                  href="https://maps.google.com/?q=West+Gate+Residence+Ankara"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full bg-white/10 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition border border-white/10"
+                >
+                  <Navigation className="w-4 h-4" />
+                  <span>Google Haritalar'da Aç</span>
+                </a>
+              </div>
+            </div>
+
+            {/* HARİTA GÖRSELİ VEYA EMBED KUTUSU */}
+            <div className="bg-white p-2 rounded-2xl border border-slate-200 shadow-lg overflow-hidden h-52 relative">
+              <iframe 
+                title="Realty Center Merkez Harita"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.2723654101886!2d32.68412!3d39.88954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3394541707d8d%3A0x8bb9d1b73489e2!2sWest%20Gate%20Residence!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                className="w-full h-full rounded-xl border-0"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
   );
 }
 
-// ==========================================
-// 5. ANA BİLEŞEN VE UYGULAMA MİMARİSİ
-// ==========================================
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
@@ -1371,7 +1878,9 @@ export default function RealtyCenterApp() {
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // Form Durumları
+  // ADMIN PANELİ İÇİN GELEN MESAJLAR DEPOSU
+  const [messages, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
+
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
   const [formData, setFormData] = useState({
@@ -1389,7 +1898,19 @@ export default function RealtyCenterApp() {
     satisfaction: 0
   });
 
-  // KELİME DEĞİŞTİRME ANİMASYONU
+  // İletişim Formundan Mesaj Geldiğinde Yönetici Veritabanına/Listesine Ekleme Altyapısı
+  const handleSendMessage = (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
+    const messageEntry: ContactMessage = {
+      ...newMessage,
+      id: `MSG-${Date.now()}`,
+      createdAt: new Date().toISOString(),
+      status: 'unread'
+    };
+
+    setMessages((prev) => [messageEntry, ...prev]);
+    console.log("Süper Admin & Admin Kutusuna Düşen Yeni Mesaj:", messageEntry);
+  };
+
   useEffect(() => {
     if (loading) {
       const interval = setInterval(() => {
@@ -1404,7 +1925,6 @@ export default function RealtyCenterApp() {
     }
   }, [loading]);
 
-  // AÇILIŞ ZAMANLAYICISI
   useEffect(() => {
     const timer1 = setTimeout(() => setAnimationStage('unlocking'), 600);
     const timer2 = setTimeout(() => setAnimationStage('unlocked'), 1200);
@@ -1417,7 +1937,6 @@ export default function RealtyCenterApp() {
     };
   }, []);
 
-  // Sayaç Sayma Animasyonu
   useEffect(() => {
     if (!loading) {
       const duration = 2000;
@@ -1446,7 +1965,6 @@ export default function RealtyCenterApp() {
     }
   }, [loading]);
 
-  // Scroll Takibi
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -1456,7 +1974,6 @@ export default function RealtyCenterApp() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Otomatik Slider
   useEffect(() => {
     if (!SLIDER_IMAGES || SLIDER_IMAGES.length === 0) return;
     const timer = setInterval(() => {
@@ -1495,7 +2012,6 @@ export default function RealtyCenterApp() {
     closeDrawer();
   };
 
-  // AÇILIŞ EKRANI
   if (loading) {
     return (
       <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center text-slate-900 px-4 select-none overflow-hidden font-sans">
@@ -1565,24 +2081,21 @@ export default function RealtyCenterApp() {
               />
             } />
             
-            {/* Kurumsal Alt Sayfaları */}
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
 
-            {/* Diğer Ana Sayfalar */}
             <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
             <Route path="/ofislerimiz" element={<OfficesPage />} />
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
-            <Route path="/iletisim" element={<ContactPage />} />
+            <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
           </Routes>
         </main>
 
         <Footer openDrawer={openDrawer} />
 
-        {/* SAĞ SLİDE-OVER FORM DRAWER (SOFT GEÇİŞLİ / ANİMASYONLU) */}
         <div 
           className={`fixed inset-0 z-50 overflow-hidden transition-all duration-500 ${
             drawerOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
@@ -1739,7 +2252,6 @@ export default function RealtyCenterApp() {
           </div>
         </div>
 
-        {/* SAĞ ALT YUKARI DÖN BUTONU */}
         {showScrollTop && (
           <button
             onClick={scrollToTop}
