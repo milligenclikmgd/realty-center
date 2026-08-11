@@ -8,3 +8,8 @@
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 @import "tailwindcss";
+
+* {
+  font-variant-ligatures: none !important;
+  font-feature-settings: "liga" 0, "clig" 0 !important;
+}

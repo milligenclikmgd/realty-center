@@ -9,17 +9,239 @@ import {
   CheckCircle2, X, ShieldCheck, 
   ExternalLink, Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
-  ChevronDown, Users, Award
+  ChevronDown, Users, Award, Navigation, UserCheck, Filter
 } from 'lucide-react';
 
-// Türkiye İl ve Örnek İlçe Verisi
+// TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
-  "Ankara": ["Çankaya", "Keçiören", "Yenimahalle", "Etimesgut", "Gölbaşı"],
-  "İstanbul": ["Kadıköy", "Beşiktaş", "Şişli", "Üsküdar", "Ataşehir"],
-  "İzmir": ["Karşıyaka", "Alsancak", "Konak", "Bornova", "Çeşme"],
-  "Bursa": ["Nilüfer", "Osmangazi", "Yıldırım"],
-  "Antalya": ["Muratpaşa", "Konyaaltı", "Alanya"],
+  "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
+  "Adıyaman": ["Merkez", "Kahta", "Besni", "Gölbaşı", "Gerger", "Samsat"],
+  "Afyonkarahisar": ["Merkez", "Sandıklı", "Dinar", "Bolvadin", "Emirdağ", "Çay"],
+  "Ağrı": ["Merkez", "Doğubayazıt", "Patnos", "Eleşkirt", "Tutak", "Diyadin"],
+  "Amasya": ["Merkez", "Merzifon", "Suluova", "Taşova", "Gümüşhacıköy"],
+  "Ankara": ["Çankaya", "Keçiören", "Yenimahalle", "Mamak", "Etimesgut", "Sincan", "Gölbaşı", "Altındağ", "Pursaklar", "Akyurt", "Elmadağ", "Kahramankazan", "Polatlı", "Çubuk"],
+  "Antalya": ["Muratpaşa", "Kepez", "Konyaaltı", "Alanya", "Manavgat", "Serik", "Kemer", "Kaş", "Kumluca", "Gazipaşa", "Finike"],
+  "Artvin": ["Merkez", "Hopa", "Borçka", "Arhavi", "Şavşat"],
+  "Aydın": ["Efeler", "Kuşadası", "Didim", "Nazilli", "Söke", "Çine", "Germencik"],
+  "Balıkesir": ["Altıeylül", "Karesi", "Bandırma", "Edremit", "Ayvalık", "Burhaniye", "Gönen", "Erdek"],
+  "Bilecik": ["Merkez", "Bozüyük", "Söğüt", "Osmaneli"],
+  "Bingöl": ["Merkez", "Genç", "Solhan", "Karlıova"],
+  "Bitlis": ["Merkez", "Tatvan", "Ahlat", "Güroymak"],
+  "Bolu": ["Merkez", "Gerede", "Mudurnu", "Mengen"],
+  "Burdur": ["Merkez", "Bucak", "Gölhisar"],
+  "Bursa": ["Nilüfer", "Osmangazi", "Yıldırım", "İnegöl", "Gemlik", "Mudanya", "Gürsu", "Kestel", "Mustafakemalpaşa", "Karacabey"],
+  "Çanakkale": ["Merkez", "Biga", "Çan", "Gelibolu", "Ezine", "Yenice", "Ayvacık"],
+  "Çankırı": ["Merkez", "Çerkeş", "Ilgaz"],
+  "Çorum": ["Merkez", "Sungurlu", "Osmancık", "İskilip"],
+  "Denizli": ["Pamukkale", "Merkezefendi", "Çivril", "Acıpayam", "Tavas", "Honaz"],
+  "Diyarbakır": ["Kayapınar", "Bağlar", "Yenişehir", "Sur", "Ergani", "Bismil", "Silvan"],
+  "Edirne": ["Merkez", "Keşan", "Uzunköprü", "İpsala"],
+  "Elazığ": ["Merkez", "Kovancılar", "Karakoçan", "Palu"],
+  "Erzincan": ["Merkez", "Tercan", "Üzümlü"],
+  "Erzurum": ["Yakutiye", "Palandöken", "Aziziye", "Oltu", "Pasinler"],
+  "Eskişehir": ["Odunpazarı", "Tepebaşı", "Sivrihisar", "Çifteler"],
+  "Gaziantep": ["Şahinbey", "Şehitkamil", "Nizip", "İslahiye", "Nurdağı"],
+  "Giresun": ["Merkez", "Bulancak", "Görele", "Espiye", "Tirebolu"],
+  "Gümüşhane": ["Merkez", "Kelkit", "Şiran"],
+  "Hakkari": ["Merkez", "Yüksekova", "Şemdinli"],
+  "Hatay": ["Antakya", "İskenderun", "Defne", "Samandağ", "Kırıkhan", "Dörtyol", "Arsuz", "Reyhanlı"],
+  "Isparta": ["Merkez", "Eğirdir", "Yalvaç", "Atabey"],
+  "Mersin": ["Yenişehir", "Toroslar", "Akdeniz", "Mezitli", "Tarsus", "Erdemli", "Silifke", "Anamur", "Mut"],
+  "İstanbul": ["Kadıköy", "Beşiktaş", "Şişli", "Üsküdar", "Ataşehir", "Bakırköy", "Beylikdüzü", "Sarıyer", "Fatih", "Maltepe", "Pendik", "Ümraniye", "Kartal", "Başakşehir", "Esenyurt", "Beykoz", "Zeytinburnu"],
+  "İzmir": ["Karşıyaka", "Alsancak", "Konak", "Bornova", "Buca", "Çeşme", "Urla", "Foça", "Karabağlar", "Bayraklı", "Torbalı", "Menemen", "Seferihisar", "Tire"],
+  "Kars": ["Merkez", "Sarıkamış", "Kağızman"],
+  "Kastamonu": ["Merkez", "Tosya", "Taşköprü", "Cide"],
+  "Kayseri": ["Melikgazi", "Kocasinan", "Talas", "Develi"],
+  "Kırklareli": ["Merkez", "Lüleburgaz", "Babaeski"],
+  "Kırşehir": ["Merkez", "Kaman", "Mucur"],
+  "Kocaeli": ["İzmit", "Gebze", "Darıca", "Körfez", "Gölcük", "Derince", "Çayırova", "Kartepe", "Başiskele"],
+  "Konya": ["Selçuklu", "Karatay", "Meram", "Ereğli", "Akşehir", "Beyşehir"],
+  "Kütahya": ["Merkez", "Tavşanlı", "Simav", "Gediz"],
+  "Malatya": ["Battalgazi", "Yeşilyurt", "Doğanşehir"],
+  "Manisa": ["Yunusemre", "Şehzadeler", "Akhisar", "Turgutlu", "Salihli", "Soma", "Alaşehir"],
+  "Kahramanmaraş": ["Onikişubat", "Dulkadiroğlu", "Elbistan", "Afşin"],
+  "Mardin": ["Artuklu", "Kızıltepe", "Midyat", "Nusaybin"],
+  "Muğla": ["Bodrum", "Fethiye", "Marmaris", "Menteşe", "Milas", "Datça", "Ortaca"],
+  "Muş": ["Merkez", "Bulanık", "Malazgirt"],
+  "Nevşehir": ["Merkez", "Ürgüp", "Avanos", "Derinkuyu"],
+  "Niğde": ["Merkez", "Bor", "Çiftlik"],
+  "Ordu": ["Altınordu", "Ünye", "Fatsa"],
+  "Rize": ["Merkez", "Çayeli", "Ardeşen", "Pazar"],
+  "Sakarya": ["Adapazarı", "Serdivan", "Erenler", "Hendek", "Akyazı", "Karasu", "Sapanca"],
+  "Samsun": ["Atakum", "İlkadım", "Canik", "Bafra", "Çarşamba"],
+  "Siirt": ["Merkez", "Kurtalan", "Eruh"],
+  "Sinop": ["Merkez", "Boyabat", "Gerze"],
+  "Sivas": ["Merkez", "Şarkışla", "Suşehri", "Zara"],
+  "Tekirdağ": ["Süleymanpaşa", "Çorlu", "Çerkezköy", "Kapaklı", "Ergene"],
+  "Tokat": ["Merkez", "Erbaa", "Turhal", "Niksar"],
+  "Trabzon": ["Ortahisar", "Akçaabat", "Araklı", "Of", "Yomra"],
+  "Tunceli": ["Merkez", "Ovacık", "Pertek"],
+  "Şanlıurfa": ["Haliliye", "Eyyübiye", "Karaköprü", "Siverek", "Viranşehir", "Birecik"],
+  "Uşak": ["Merkez", "Banaz", "Eşme"],
+  "Van": ["İpekyolu", "Tuşba", "Edremit", "Erciş"],
+  "Yozgat": ["Merkez", "Sorgun", "Boğazlıyan"],
+  "Zonguldak": ["Merkez", "Ereğli", "Çaycuma", "Devrek"],
+  "Aksaray": ["Merkez", "Ortaköy", "Eskil"],
+  "Bayburt": ["Merkez", "Aydıntepe"],
+  "Karaman": ["Merkez", "Ermenek"],
+  "Kırıkkale": ["Merkez", "Yahşihan", "Keskin"],
+  "Batman": ["Merkez", "Kozluk", "Sason"],
+  "Şırnak": ["Merkez", "Cizre", "Silopi", "İdil"],
+  "Bartın": ["Merkez", "Amasra", "Ulus"],
+  "Ardahan": ["Merkez", "Göle"],
+  "Iğdır": ["Merkez", "Tuzluca", "Aralık"],
+  "Yalova": ["Merkez", "Çınarcık", "Çiftlikköy", "Altınova"],
+  "Karabük": ["Merkez", "Safranbolu", "Yenice"],
+  "Kilis": ["Merkez", "Elbeyli"],
+  "Osmaniye": ["Merkez", "Kadirli", "Düziçi"],
+  "Düzce": ["Merkez", "Akçakoca", "Kaynaşlı"]
 };
+
+// ÖRNEK FRANCHISE OFİS VERİLERİ
+const SAMPLE_OFFICES = [
+  {
+    id: 1,
+    name: "Realty Center Çankaya Bölge Başkanlığı",
+    city: "Ankara",
+    district: "Çankaya",
+    address: "Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA",
+    phone: "0532 567 48 45",
+    email: "cankaya@realtycenter.com.tr",
+    manager: "Mehmet Yılmaz",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: 2,
+    name: "Realty Center Kadıköy / Bağdat Caddesi",
+    city: "İstanbul",
+    district: "Kadıköy",
+    address: "Bağdat Cad. No:142/A Kadıköy / İSTANBUL",
+    phone: "0216 411 00 00",
+    email: "kadikoy@realtycenter.com.tr",
+    manager: "Ayşe Kaya",
+    image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: 3,
+    name: "Realty Center Karşıyaka Yalı",
+    city: "İzmir",
+    district: "Karşıyaka",
+    address: "Cemal Gürsel Cad. No:88 Karşıyaka / İZMİR",
+    phone: "0232 364 00 00",
+    email: "karsiyaka@realtycenter.com.tr",
+    manager: "Ali Demir",
+    image: ""
+  },
+  {
+    id: 4,
+    name: "Realty Center Yenimahalle Batıkent",
+    city: "Ankara",
+    district: "Yenimahalle",
+    address: "Batıkent Bulvarı No:45 Yenimahalle / ANKARA",
+    phone: "0312 255 00 00",
+    email: "batikent@realtycenter.com.tr",
+    manager: "Selin Öztürk",
+    image: ""
+  },
+  {
+    id: 5,
+    name: "Realty Center Beşiktaş Levent",
+    city: "İstanbul",
+    district: "Beşiktaş",
+    address: "Büyükdere Cad. No:99 Levent / İSTANBUL",
+    phone: "0212 280 00 00",
+    email: "levent@realtycenter.com.tr",
+    manager: "Burak Arslan",
+    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: 6,
+    name: "Realty Center Alsancak Liman",
+    city: "İzmir",
+    district: "Alsancak",
+    address: "Atatürk Cad. No:210 Alsancak / İZMİR",
+    phone: "0232 463 00 00",
+    email: "alsancak@realtycenter.com.tr",
+    manager: "Cem Şahin",
+    image: ""
+  }
+];
+
+// ÖRNEK DANIŞMAN VERİLERİ
+const SAMPLE_AGENTS = [
+  {
+    id: 1,
+    name: "Murat Yıldırım",
+    title: "Lüks Konut & Villa Uzmanı",
+    office: "Realty Center Çankaya Bölge Başkanlığı",
+    city: "Ankara",
+    district: "Çankaya",
+    phone: "0533 111 22 33",
+    email: "murat.yildirim@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
+    activeListings: 14
+  },
+  {
+    id: 2,
+    name: "Zeynep Çelik",
+    title: "Ticari Gayrimenkul Danışmanı",
+    office: "Realty Center Kadıköy / Bağdat Caddesi",
+    city: "İstanbul",
+    district: "Kadıköy",
+    phone: "0532 222 33 44",
+    email: "zeynep.celik@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+    activeListings: 22
+  },
+  {
+    id: 3,
+    name: "Caner Yılmaz",
+    title: "Arsa & Arazi Yatırım Uzmanı",
+    office: "Realty Center Karşıyaka Yalı",
+    city: "İzmir",
+    district: "Karşıyaka",
+    phone: "0535 333 44 55",
+    email: "caner.yilmaz@realtycenter.com.tr",
+    image: "",
+    activeListings: 9
+  },
+  {
+    id: 4,
+    name: "Sibel Öztürk",
+    title: "Konut Satış Danışmanı",
+    office: "Realty Center Yenimahalle Batıkent",
+    city: "Ankara",
+    district: "Yenimahalle",
+    phone: "0530 444 55 66",
+    email: "sibel.ozturk@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
+    activeListings: 11
+  },
+  {
+    id: 5,
+    name: "Emre Aksoy",
+    title: "Proje Satış Yöneticisi",
+    office: "Realty Center Beşiktaş Levent",
+    city: "İstanbul",
+    district: "Beşiktaş",
+    phone: "0532 555 66 77",
+    email: "emre.aksoy@realtycenter.com.tr",
+    image: "",
+    activeListings: 18
+  },
+  {
+    id: 6,
+    name: "Elif Demir",
+    title: "Kiralama Uzmanı",
+    office: "Realty Center Alsancak Liman",
+    city: "İzmir",
+    district: "Alsancak",
+    phone: "0533 666 77 88",
+    email: "elif.demir@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=800",
+    activeListings: 7
+  }
+];
 
 // EMLAK SLIDER GÖRSELLERİ
 const SLIDER_IMAGES = [
@@ -50,8 +272,6 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
       </Link>
 
       <nav className="hidden xl:flex items-center space-x-7 text-sm font-extrabold text-slate-800 tracking-wide">
-        
-        {/* HOVER DROPDOWN: KURUMSAL */}
         <div className="relative group py-2">
           <Link to="/kurumsal/hakkimizda" className="hover:text-red-600 transition duration-200 flex items-center space-x-1 py-1">
             <span>Kurumsal</span>
@@ -172,10 +392,10 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
 // ==========================================
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
+  const [searchDistrict, setSearchDistrict] = useState('');
 
   return (
     <>
-      {/* HERO BÖLGESİ (SLIDER) */}
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-600 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
@@ -222,7 +442,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </button>
             </div>
 
-            {/* Arama Formu */}
             <div className="bg-white text-slate-900 p-4 rounded-b-lg rounded-tr-lg shadow-2xl space-y-3 border-2 border-red-600/30">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <div>
@@ -247,7 +466,10 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                   <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Şehir</label>
                   <select 
                     value={selectedCity} 
-                    onChange={(e) => setSelectedCity(e.target.value)}
+                    onChange={(e) => {
+                      setSelectedCity(e.target.value);
+                      setSearchDistrict('');
+                    }}
                     className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
                   >
                     <option value="">İl Seçiniz</option>
@@ -257,8 +479,16 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">İlçe</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
-                    <option value="">İlçe Seçiniz</option>
+                  <select 
+                    disabled={!selectedCity}
+                    value={searchDistrict}
+                    onChange={(e) => setSearchDistrict(e.target.value)}
+                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                      !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
+                  >
+                    <option value="">{selectedCity ? 'İlçe Seçiniz' : 'Önce İl Seçin'}</option>
+                    {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
                   </select>
                 </div>
               </div>
@@ -307,7 +537,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </div>
 
-      {/* SAYAÇLAR BÖLÜMÜ */}
       <section className="bg-white text-slate-900 py-12 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="p-4 border-r border-slate-100 last:border-none">
@@ -332,7 +561,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      {/* NEDEN REALTY CENTER? İÇERİK BÖLÜMÜ */}
       <section id="kurumsal" className="py-16 px-6 lg:px-12 max-w-7xl mx-auto border-b border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
@@ -379,7 +607,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      {/* EMLAK DANIŞMANLIĞI EĞİTİMİMİZE KATIL BÖLÜMÜ */}
       <section id="akademi" className="py-20 px-6 lg:px-12 bg-white text-slate-900 border-b-4 border-red-600 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
@@ -471,7 +698,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 }
 
 // ==========================================
-// 4. ALT SAYFA DÜZENLERİ (TEMEL YAPILAR)
+// 4. ALT SAYFA DÜZENLERİ
 // ==========================================
 function AboutPage() {
   return (
@@ -500,29 +727,605 @@ function TeamPage() {
   );
 }
 
-function AcademyPage() {
+function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Realty Center Akademi</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Emlak danışmanlığı eğitim programlarımız, sertifika süreçleri ve başvuru detayları burada bulunacaktır.</p>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 mb-4">
+              <GraduationCap className="w-4 h-4" />
+              <span>Sertifikalı Profesyonel Eğitimler</span>
+            </span>
+
+            <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight mb-4">
+              REALTY CENTER <span className="text-red-600">AKADEMİ</span>
+            </h1>
+
+            <p className="text-slate-700 text-base sm:text-lg font-medium leading-relaxed mb-4">
+              Gayrimenkul sektöründe sıradan bir danışman değil, aranan bir <strong className="text-slate-900 font-extrabold">sektör uzmanı</strong> olmanız için buradayız.
+            </p>
+
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Teorik ezberlerin ötesinde; saha simülasyonları, tapu hukuku, arsa-arazi değerlemesi ve lüks konut ikna teknikleriyle geleceğinizi inşa ediyoruz.
+            </p>
+
+            <button 
+              onClick={() => openDrawer('agent')} 
+              className="bg-red-600 hover:bg-red-700 text-white font-black px-8 py-3.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-red-600/30 transition transform hover:scale-105 uppercase tracking-wider flex items-center space-x-2"
+            >
+              <span>Eğitime Hemen Başvur</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-gradient-to-t from-red-600 via-red-500 to-transparent rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition duration-500" />
+
+            <div className="relative rounded-2xl overflow-hidden border-2 border-red-200 bg-white shadow-2xl aspect-video lg:aspect-4/3">
+              <img 
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
+                alt="Realty Center Eğitim Sınıfı" 
+                className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+              
+              <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-white/40 shadow-lg flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-black text-red-600 uppercase tracking-widest block">Geleceğin Profesyonelleri</span>
+                  <span className="text-xs font-black text-slate-900">Saha ve Online Eğitim Seçenekleriyle</span>
+                </div>
+                <GraduationCap className="w-6 h-6 text-red-600" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
+            Aktif Eğitim Paketleri
+          </span>
+          <h2 className="text-3xl font-black text-slate-900 mt-3">
+            Sertifikalı <span className="text-red-600">Eğitim Programlarımız</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800" 
+                  alt="Arazi Arsa Uzmanlığı" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                  Arazi & Arsa Uzmanlığı
+                </span>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">İleri Seviye Arazi & Arsa Gayrimenkul Değerleme</h3>
+                <p className="text-slate-500 text-xs mb-4">Saha + Online İnteraktif / 3 Hafta Süre</p>
+
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>İmar, Kadastro ve Parselasyon Analizi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Hobi Bahçesi ve Ticari İmarlı Arsa Ayrımı</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Sertifika ve Uygulama Belgesi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-2xl font-black text-slate-900">12.500 <span className="text-sm font-bold">₺</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+              >
+                Kayıt Ol
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border-2 border-red-600 overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between relative transform hover:-translate-y-1 group">
+            <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full shadow">
+              En Çok Tercih Edilen
+            </div>
+
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" 
+                  alt="Saha Satış Eğitimi" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-slate-900 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                  Saha Satış Masterclass
+                </span>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">Saha Satış & İkna Teknikleri Masterclass</h3>
+                <p className="text-slate-500 text-xs mb-4">Birebir Mentörlük + Ofis İçi / 4 Hafta Süre</p>
+
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Nitelikli Müşteri Portföyü Oluşturma</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Fiyat İtirazı Karşılama ve Sözleşme İkna Psikolojisi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Realty Center Kurumsal Sertifikası</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-slate-100 bg-red-50/60 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-2xl font-black text-red-600">18.000 <span className="text-sm font-bold">₺</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-2.5 rounded-lg text-xs transition shadow-lg shadow-red-600/30"
+              >
+                Kayıt Ol
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800" 
+                  alt="Tapu ve Sözleşme Hukuku" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                  Hukuk & Mevzuat
+                </span>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">Sözleşme Hukuku & Tapu Mevzuatı Eğitimi</h3>
+                <p className="text-slate-500 text-xs mb-4">Online Canlı Yayın / 2 Hafta Süre</p>
+
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Güvenli Sözleşme Taslakları ve Hukuki İnceleme</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Hisseli Tapu ve İntikal Süreç Yönetimi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <span>Sertifika ve Hukuki Belge Arşivi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-2xl font-black text-slate-900">9.500 <span className="text-sm font-bold">₺</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+              >
+                Kayıt Ol
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
 
+// OFİSLERİMİZ SAYFASI
 function OfficesPage() {
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+
+  const filteredOffices = SAMPLE_OFFICES.filter((office) => {
+    if (selectedCity && office.city !== selectedCity) return false;
+    if (selectedDistrict && office.district !== selectedDistrict) return false;
+    return true;
+  });
+
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Ofislerimiz</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Türkiye genelindeki Franchise Ofislerimizin haritası ve iletişim bilgileri burada yer alacaktır.</p>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div className="mb-8">
+          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+            Franchise Ağımız
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            REALTY CENTER <span className="text-red-600">OFİSLERİMİZ</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            Türkiye genelindeki bölge başkanlıklarımız ve yetkili temsilciliklerimiz
+          </p>
+        </div>
+
+        {/* YATAY FİLTRELEME BARI */}
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
+          
+          <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
+            <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+              Hızlı Seçim:
+            </span>
+            <button 
+              onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
+              className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                selectedCity === '' 
+                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Tüm Ofisler
+            </button>
+
+            {["Ankara", "İstanbul", "İzmir"].map((cityName) => (
+              <button 
+                key={cityName}
+                onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                  selectedCity === cityName 
+                    ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                {cityName}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-auto">
+            <div className="relative">
+              <select 
+                value={selectedCity}
+                onChange={(e) => {
+                  setSelectedCity(e.target.value);
+                  setSelectedDistrict('');
+                }}
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              >
+                <option value="">-- Tüm İller (81 İl) --</option>
+                {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+
+            <div className="relative">
+              <select 
+                disabled={!selectedCity}
+                value={selectedDistrict}
+                onChange={(e) => setSelectedDistrict(e.target.value)}
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                  !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                <option value="">{selectedCity ? '-- Tüm İlçeler --' : 'Önce İl Seçiniz'}</option>
+                {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        {filteredOffices.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredOffices.map((office) => (
+              <div 
+                key={office.id}
+                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="relative h-52 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
+                    {office.image ? (
+                      <img 
+                        src={office.image} 
+                        alt={office.name} 
+                        className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                      />
+                    ) : (
+                      <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
+                        <img 
+                          src="/logo.png" 
+                          alt="Realty Center" 
+                          className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mt-2">REALTY CENTER</span>
+                      </div>
+                    )}
+
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow uppercase tracking-wider">
+                      {office.city} / {office.district}
+                    </span>
+                  </div>
+
+                  <div className="p-6">
+                    <h3 className="text-lg font-black text-slate-900 mb-3 group-hover:text-red-600 transition">
+                      {office.name}
+                    </h3>
+
+                    <div className="space-y-2.5 text-xs text-slate-600 font-medium">
+                      <div className="flex items-start space-x-2.5">
+                        <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                        <span className="leading-snug">{office.address}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <span className="font-bold text-slate-900">{office.phone}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <span>{office.email}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5 pt-2 border-t border-slate-100">
+                        <UserCheck className="w-4 h-4 text-slate-400 flex-shrink-0" />
+                        <span className="text-[11px] font-bold text-slate-700">Ofis Yöneticisi: {office.manager}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 border-t border-slate-100 bg-slate-50 grid grid-cols-2 gap-2">
+                  <a 
+                    href={`tel:${office.phone.replace(/\s+/g, '')}`}
+                    className="bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-300 py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-red-600" />
+                    <span>Ara</span>
+                  </a>
+
+                  <a 
+                    href={`https://maps.google.com/?q=${encodeURIComponent(office.address)}`} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-600/20"
+                  >
+                    <Navigation className="w-3.5 h-3.5" />
+                    <span>Harita</span>
+                  </a>
+                </div>
+
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">Aradığınız kriterlerde ofis bulunamadı.</h3>
+            <p className="text-slate-500 text-xs mt-1">Lütfen farklı bir il veya ilçe seçimi yapınız.</p>
+          </div>
+        )}
+
+      </div>
     </div>
   );
 }
 
+// YENİLENMİŞ DANIŞMANLARIMIZ SAYFASI
 function AgentsPage() {
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+
+  const filteredAgents = SAMPLE_AGENTS.filter((agent) => {
+    if (selectedCity && agent.city !== selectedCity) return false;
+    if (selectedDistrict && agent.district !== selectedDistrict) return false;
+    return true;
+  });
+
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Danışmanlarımız</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Tüm profesyonel emlak danışmanlarımızın detaylı kartları ve ilanları burada listelenecektir.</p>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        {/* BAŞLIK */}
+        <div className="mb-8">
+          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+            Uzman Kadromuz
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            GAYRİMENKUL <span className="text-red-600">DANIŞMANLARIMIZ</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            Saha tecrübesi ve uzmanlığıyla hayalinizdeki gayrimenkule yön veren profesyonellerimiz
+          </p>
+        </div>
+
+        {/* YATAY FİLTRELEME BARI */}
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
+          
+          <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
+            <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+              Hızlı Seçim:
+            </span>
+            <button 
+              onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
+              className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                selectedCity === '' 
+                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Tüm Danışmanlar
+            </button>
+
+            {["Ankara", "İstanbul", "İzmir"].map((cityName) => (
+              <button 
+                key={cityName}
+                onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                  selectedCity === cityName 
+                    ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                {cityName}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-auto">
+            <div className="relative">
+              <select 
+                value={selectedCity}
+                onChange={(e) => {
+                  setSelectedCity(e.target.value);
+                  setSelectedDistrict('');
+                }}
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              >
+                <option value="">-- Tüm İller (81 İl) --</option>
+                {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+
+            <div className="relative">
+              <select 
+                disabled={!selectedCity}
+                value={selectedDistrict}
+                onChange={(e) => setSelectedDistrict(e.target.value)}
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                  !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                <option value="">{selectedCity ? '-- Tüm İlçeler --' : 'Önce İl Seçiniz'}</option>
+                {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        {/* DANIŞMAN KARTLARI LİSTESİ */}
+        {filteredAgents.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredAgents.map((agent) => (
+              <div 
+                key={agent.id}
+                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  {/* Danışman Görseli veya Logo Fallback */}
+                  <div className="relative h-64 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
+                    {agent.image ? (
+                      <img 
+                        src={agent.image} 
+                        alt={agent.name} 
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
+                      />
+                    ) : (
+                      <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
+                        <img 
+                          src="/logo.png" 
+                          alt="Realty Center" 
+                          className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mt-2">REALTY CENTER DANIŞMANI</span>
+                      </div>
+                    )}
+
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow uppercase tracking-wider">
+                      {agent.city} / {agent.district}
+                    </span>
+
+                    <span className="absolute bottom-3 right-3 text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-md shadow border border-slate-200">
+                      {agent.activeListings} Aktif İlan
+                    </span>
+                  </div>
+
+                  {/* Danışman Bilgileri */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-black text-slate-900 mb-1 group-hover:text-red-600 transition">
+                      {agent.name}
+                    </h3>
+
+                    <span className="text-xs font-bold text-red-600 block mb-3 uppercase tracking-wider">
+                      {agent.title}
+                    </span>
+
+                    <div className="space-y-2.5 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                      <div className="flex items-center space-x-2.5">
+                        <Building2 className="w-4 h-4 text-slate-400 flex-shrink-0" />
+                        <span className="text-slate-800 font-semibold">{agent.office}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <span className="font-bold text-slate-900">{agent.phone}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <span>{agent.email}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Butonlar */}
+                <div className="p-4 border-t border-slate-100 bg-slate-50 grid grid-cols-2 gap-2">
+                  <a 
+                    href={`tel:${agent.phone.replace(/\s+/g, '')}`}
+                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-600/20"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Hemen Ara</span>
+                  </a>
+
+                  <Link 
+                    to="/ilanlarimiz" 
+                    className="bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-300 py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition"
+                  >
+                    <Megaphone className="w-3.5 h-3.5 text-red-600" />
+                    <span>İlanları</span>
+                  </Link>
+                </div>
+
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">Aradığınız kriterlerde danışman bulunamadı.</h3>
+            <p className="text-slate-500 text-xs mt-1">Lütfen farklı bir il veya ilçe seçimi yapınız.</p>
+          </div>
+        )}
+
+      </div>
     </div>
   );
 }
@@ -768,7 +1571,7 @@ export default function RealtyCenterApp() {
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
 
             {/* Diğer Ana Sayfalar */}
-            <Route path="/akademi" element={<AcademyPage />} />
+            <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
             <Route path="/ofislerimiz" element={<OfficesPage />} />
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPage />} />
@@ -779,151 +1582,162 @@ export default function RealtyCenterApp() {
 
         <Footer openDrawer={openDrawer} />
 
-        {/* SAĞ SLİDE-OVER FORM DRAWER */}
-        {drawerOpen && (
-          <div className="fixed inset-0 z-50 overflow-hidden">
-            <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-xs transition-opacity duration-300" onClick={closeDrawer} />
+        {/* SAĞ SLİDE-OVER FORM DRAWER (SOFT GEÇİŞLİ / ANİMASYONLU) */}
+        <div 
+          className={`fixed inset-0 z-50 overflow-hidden transition-all duration-500 ${
+            drawerOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
+          }`}
+        >
+          <div 
+            className={`absolute inset-0 bg-slate-900/70 backdrop-blur-xs transition-opacity duration-500 ease-in-out ${
+              drawerOpen ? 'opacity-100' : 'opacity-0'
+            }`} 
+            onClick={closeDrawer} 
+          />
 
-            <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
-              <div className="pointer-events-auto w-screen max-w-md bg-white text-slate-900 shadow-2xl flex flex-col justify-between h-full border-l-4 border-red-600 transform transition duration-300">
-                <div className="px-5 py-4 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
-                  <div>
-                    <h2 className="text-lg font-black text-white">
-                      {formType === 'franchise' ? 'Franchise Başvuru Formu' : 'Danışman Başvuru Formu'}
-                    </h2>
-                    <p className="text-xs text-red-500 font-black uppercase tracking-wider">REALTY CENTER Ailesine Katılın</p>
-                  </div>
-                  <button onClick={closeDrawer} className="p-1.5 text-slate-400 hover:text-white transition">
-                    <X className="w-5 h-5" />
-                  </button>
+          <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
+            <div 
+              className={`w-screen max-w-md bg-white text-slate-900 shadow-2xl flex flex-col justify-between h-full border-l-4 border-red-600 transform transition-all duration-500 ease-out ${
+                drawerOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}
+            >
+              <div className="px-5 py-4 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+                <div>
+                  <h2 className="text-lg font-black text-white">
+                    {formType === 'franchise' ? 'Franchise Başvuru Formu' : 'Danışman Başvuru Formu'}
+                  </h2>
+                  <p className="text-xs text-red-500 font-black uppercase tracking-wider">REALTY CENTER Ailesine Katılın</p>
+                </div>
+                <button onClick={closeDrawer} className="p-1.5 text-slate-400 hover:text-white transition">
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <form onSubmit={handleSubmit} className="px-5 py-4 space-y-3 overflow-y-auto flex-1 text-sm bg-slate-50">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Ad Soyad *</label>
+                  <input 
+                    type="text" 
+                    required
+                    placeholder="Adınız ve Soyadınız"
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                  />
                 </div>
 
-                <form onSubmit={handleSubmit} className="px-5 py-4 space-y-3 overflow-y-auto flex-1 text-sm bg-slate-50">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Ad Soyad *</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Adınız ve Soyadınız"
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
-                    />
-                  </div>
-
-                  {formType === 'agent' && (
-                    <>
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-1">E-posta Adresi *</label>
-                        <input 
-                          type="email" 
-                          required
-                          placeholder="ornek@domain.com"
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
-                        />
-                      </div>
-
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-1">Mevcut Mesleğiniz *</label>
-                        <input 
-                          type="text" 
-                          required
-                          placeholder="Örn: Emlak Danışmanı, Satış Temsilcisi..."
-                          value={formData.occupation}
-                          onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
-                          className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
-                        />
-                      </div>
-                    </>
-                  )}
-
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Telefon Numarası *</label>
-                    <input 
-                      type="tel" 
-                      required
-                      placeholder="05XX XXX XX XX"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
-                    />
-                  </div>
-
-                  <div className="pt-2 border-t border-slate-200">
-                    <h4 className="text-xs font-black text-red-600 uppercase tracking-wider mb-2">
-                      Hangi Bölgede Bizimle Çalışmak İstersiniz?
-                    </h4>
-
-                    <div className="mb-2">
-                      <label className="block text-xs font-bold text-slate-700 mb-1">İl Seçimi *</label>
-                      <select 
+                {formType === 'agent' && (
+                  <>
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">E-posta Adresi *</label>
+                      <input 
+                        type="email" 
                         required
-                        value={selectedCity}
-                        onChange={(e) => {
-                          setSelectedCity(e.target.value);
-                          setSelectedDistrict('');
-                        }}
+                        placeholder="ornek@domain.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
-                      >
-                        <option value="">-- İl Seçiniz --</option>
-                        {Object.keys(TURKEY_CITIES).map((city) => (
-                          <option key={city} value={city}>{city}</option>
-                        ))}
-                      </select>
+                      />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 mb-1">İlçe Seçimi *</label>
-                      <select 
+                      <label className="block text-xs font-bold text-slate-700 mb-1">Mevcut Mesleğiniz *</label>
+                      <input 
+                        type="text" 
                         required
-                        disabled={!selectedCity}
-                        value={selectedDistrict}
-                        onChange={(e) => setSelectedDistrict(e.target.value)}
-                        className={`w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600 ${
-                          !selectedCity ? 'opacity-50 cursor-not-allowed bg-slate-100' : ''
-                        }`}
-                      >
-                        <option value="">{selectedCity ? '-- İlçe Seçiniz --' : 'Önce İl Seçiniz'}</option>
-                        {selectedCity && TURKEY_CITIES[selectedCity]?.map((dist) => (
-                          <option key={dist} value={dist}>{dist}</option>
-                        ))}
-                      </select>
+                        placeholder="Örn: Emlak Danışmanı, Satış Temsilcisi..."
+                        value={formData.occupation}
+                        onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
+                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                      />
                     </div>
-                  </div>
+                  </>
+                )}
 
-                  <div className="pt-2 flex items-start space-x-2">
-                    <input 
-                      type="checkbox" 
-                      id="kvkk"
-                      checked={formData.kvkkConsent}
-                      onChange={(e) => setFormData({ ...formData, kvkkConsent: e.target.checked })}
-                      className="mt-0.5 rounded border-slate-300 text-red-600 focus:ring-red-600"
-                    />
-                    <label htmlFor="kvkk" className="text-[11px] text-slate-600 font-medium leading-tight">
-                      KVKK kapsamında tarafıma bilgilendirme, arama ve SMS gönderilmesini kabul ediyorum.
-                    </label>
-                  </div>
-
-                  <div className="pt-3">
-                    <button 
-                      type="submit"
-                      className="relative overflow-hidden group w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-lg shadow-lg shadow-red-600/30 transition flex items-center justify-center space-x-2 uppercase"
-                    >
-                      <span className="relative z-10">Başvuruyu Tamamla</span>
-                      <CheckCircle2 className="w-4 h-4 relative z-10" />
-                    </button>
-                  </div>
-                </form>
-
-                <div className="px-5 py-3 bg-slate-100 border-t border-slate-200 text-center text-[10px] text-slate-500 font-semibold">
-                  Realty Center Gayrimenkul Franchise & Danışman Ağı
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Telefon Numarası *</label>
+                  <input 
+                    type="tel" 
+                    required
+                    placeholder="05XX XXX XX XX"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                  />
                 </div>
+
+                <div className="pt-2 border-t border-slate-200">
+                  <h4 className="text-xs font-black text-red-600 uppercase tracking-wider mb-2">
+                    Hangi Bölgede Bizimle Çalışmak İstersiniz?
+                  </h4>
+
+                  <div className="mb-2">
+                    <label className="block text-xs font-bold text-slate-700 mb-1">İl Seçimi *</label>
+                    <select 
+                      required
+                      value={selectedCity}
+                      onChange={(e) => {
+                        setSelectedCity(e.target.value);
+                        setSelectedDistrict('');
+                      }}
+                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                    >
+                      <option value="">-- İl Seçiniz (81 İl) --</option>
+                      {Object.keys(TURKEY_CITIES).map((city) => (
+                        <option key={city} value={city}>{city}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">İlçe Seçimi *</label>
+                    <select 
+                      required
+                      disabled={!selectedCity}
+                      value={selectedDistrict}
+                      onChange={(e) => setSelectedDistrict(e.target.value)}
+                      className={`w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600 ${
+                        !selectedCity ? 'opacity-50 cursor-not-allowed bg-slate-100' : ''
+                      }`}
+                    >
+                      <option value="">{selectedCity ? '-- İlçe Seçiniz --' : 'Önce İl Seçiniz'}</option>
+                      {selectedCity && TURKEY_CITIES[selectedCity]?.map((dist) => (
+                        <option key={dist} value={dist}>{dist}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="pt-2 flex items-start space-x-2">
+                  <input 
+                    type="checkbox" 
+                    id="kvkk"
+                    checked={formData.kvkkConsent}
+                    onChange={(e) => setFormData({ ...formData, kvkkConsent: e.target.checked })}
+                    className="mt-0.5 rounded border-slate-300 text-red-600 focus:ring-red-600"
+                  />
+                  <label htmlFor="kvkk" className="text-[11px] text-slate-600 font-medium leading-tight">
+                    KVKK kapsamında tarafıma bilgilendirme, arama ve SMS gönderilmesini kabul ediyorum.
+                  </label>
+                </div>
+
+                <div className="pt-3">
+                  <button 
+                    type="submit"
+                    className="relative overflow-hidden group w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-lg shadow-lg shadow-red-600/30 transition flex items-center justify-center space-x-2 uppercase"
+                  >
+                    <span className="relative z-10">Başvuruyu Tamamla</span>
+                    <CheckCircle2 className="w-4 h-4 relative z-10" />
+                  </button>
+                </div>
+              </form>
+
+              <div className="px-5 py-3 bg-slate-100 border-t border-slate-200 text-center text-[10px] text-slate-500 font-semibold">
+                Realty Center Gayrimenkul Franchise & Danışman Ağı
               </div>
             </div>
           </div>
-        )}
+        </div>
 
         {/* SAĞ ALT YUKARI DÖN BUTONU */}
         {showScrollTop && (
