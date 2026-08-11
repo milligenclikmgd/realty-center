@@ -13,7 +13,7 @@
   font-variant-ligatures: none !important;
   font-feature-settings: "liga" 0, "clig" 0 !important;
 }:lang(tr), body {
-  text-transform: uppercase;
+  text-transform: ;
   font-language-override: "TRK";
 }@keyframes marquee {
   0% {

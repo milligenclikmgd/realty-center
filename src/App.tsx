@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import { 
-  BrowserRouter as Router, Routes, Route, Link 
+  BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation 
 } from 'react-router-dom';
 
 import { 
@@ -10,7 +10,7 @@ import {
   ExternalLink, Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   ChevronDown, Users, Award, Navigation, UserCheck, Filter,
-  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare
+  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -363,7 +363,6 @@ const SLIDER_IMAGES = [
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
 
-// İLERİDE ADMIN PANELİNE DÜŞECEK İLETİŞİM MESAJLARI ALTYAPISI (PANEL/MOCK DB YERİNE)
 export interface ContactMessage {
   id: string;
   fullName: string;
@@ -389,12 +388,12 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-            <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow uppercase tracking-wider ${
+            <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
               item.type === 'Satılık' ? 'bg-red-600' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
             }`}>
               {item.type}
             </span>
-            <span className="text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded shadow uppercase tracking-wider">
+            <span className="text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded shadow tracking-wider">
               {item.category}
             </span>
           </div>
@@ -433,7 +432,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
 
       <div className="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
         <div>
-          <span className="text-[10px] text-slate-400 font-bold uppercase block">Danışman</span>
+          <span className="text-[10px] text-slate-400 font-bold block">Danışman</span>
           <span className="font-extrabold text-slate-800">{item.agentName}</span>
         </div>
         <a 
@@ -513,11 +512,14 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
       </nav>
 
       <div>
-        <button className="relative overflow-hidden group bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-600/30 transition duration-300 transform hover:scale-105 tracking-wider">
+        <Link
+          to="/panel"
+          className="relative overflow-hidden group bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-600/30 transition duration-300 transform hover:scale-105 tracking-wider"
+        >
           <span className="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
           <span className="relative z-10">Panel</span>
           <ExternalLink className="w-4 h-4 relative z-10" />
-        </button>
+        </Link>
       </div>
     </header>
   );
@@ -633,7 +635,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             <div className="bg-white text-slate-900 p-4 rounded-b-lg rounded-tr-lg shadow-2xl space-y-3 border-2 border-red-600/30">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Satılık / Kiralık</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Satılık / Kiralık</label>
                   <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
                     <option>Konut</option>
                     <option>İşyeri</option>
@@ -642,7 +644,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">İşlem Tipi</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İşlem Tipi</label>
                   <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
                     <option>Satılık</option>
                     <option>Kiralık</option>
@@ -651,7 +653,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Şehir</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Şehir</label>
                   <select 
                     value={selectedCity} 
                     onChange={(e) => {
@@ -666,7 +668,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">İlçe</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İlçe</label>
                   <select 
                     disabled={!selectedCity}
                     value={searchDistrict}
@@ -683,22 +685,22 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">İlan No</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İlan No</label>
                   <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Min Fiyat</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Min Fiyat</label>
                   <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Maks Fiyat</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Maks Fiyat</label>
                   <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block uppercase tracking-wider">Para Birimi</label>
+                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Para Birimi</label>
                   <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
                     <option>Türk Lirası</option>
                     <option>USD ($)</option>
@@ -708,7 +710,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </div>
 
               <div className="pt-1">
-                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-black px-10 py-2.5 rounded-md text-xs flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-600/40 uppercase tracking-widest transform hover:scale-105">
+                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-black px-10 py-2.5 rounded-md text-xs flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-600/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
@@ -720,7 +722,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="absolute bottom-6 right-8 z-10 text-right drop-shadow-md">
-          <span className="text-2xl sm:text-3xl font-light tracking-[0.2em] text-white block uppercase">REALTY CENTER</span>
+          <span className="text-2xl sm:text-3xl font-light tracking-[0.2em] text-white block">REALTY CENTER</span>
           <span className="text-sm font-light italic tracking-[0.15em] text-slate-200 block mt-0.5">Önce Güven...</span>
         </div>
       </div>
@@ -729,37 +731,37 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="p-4 border-r border-slate-100 last:border-none">
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.offices}+</div>
-            <div className="text-xs text-slate-700 font-extrabold uppercase tracking-widest">Franchise Ofis</div>
+            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Franchise Ofis</div>
           </div>
 
           <div className="p-4 border-r border-slate-100 last:border-none">
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.agents.toLocaleString('tr-TR')}+</div>
-            <div className="text-xs text-slate-700 font-extrabold uppercase tracking-widest">Uzman Danışman</div>
+            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Uzman Danışman</div>
           </div>
 
           <div className="p-4 border-r border-slate-100 last:border-none">
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.portfolios.toLocaleString('tr-TR')}+</div>
-            <div className="text-xs text-slate-700 font-extrabold uppercase tracking-widest">Aktif Portföy</div>
+            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Aktif Portföy</div>
           </div>
 
           <div className="p-4">
             <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">%{counts.satisfaction}</div>
-            <div className="text-xs text-slate-700 font-extrabold uppercase tracking-widest">Müşteri Memnuniyeti</div>
+            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Müşteri Memnuniyeti</div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-slate-900 text-white overflow-hidden border-b-4 border-red-600">
+      <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
           <div>
-            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-500 uppercase tracking-widest bg-red-950/60 px-3 py-1 rounded-full border border-red-800/40 mb-2">
+            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-600 tracking-widest bg-red-50 px-3 py-1 rounded-full border border-red-200 mb-2">
               <Flame className="w-3.5 h-3.5 animate-bounce" />
               <span>Canlı İlan Akışı</span>
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white">
-              EN YENİ <span className="text-red-500">GAYRİMENKUL İLANLARI</span>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+              EN YENİ <span className="text-red-600">GAYRİMENKUL İLANLARI</span>
             </h2>
-            <p className="text-slate-400 text-xs font-medium mt-1">
+            <p className="text-slate-500 text-xs font-medium mt-1">
               Sisteme en son eklenen portföylerimiz (Üzerine gelerek akışı durdurabilirsiniz)
             </p>
           </div>
@@ -786,7 +788,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section id="kurumsal" className="py-16 px-6 lg:px-12 max-w-7xl mx-auto border-b border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
             Neden Realty Center?
           </span>
           <h2 className="text-3xl font-black text-slate-900 mt-3">
@@ -853,7 +855,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     <GraduationCap className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black text-slate-900 uppercase tracking-wider">REALTY CENTER AKADEMİ</h4>
+                    <h4 className="text-sm font-black text-slate-900 tracking-wider">REALTY CENTER AKADEMİ</h4>
                     <p className="text-xs text-slate-600 font-medium">Sertifikalı Profesyonel Eğitim</p>
                   </div>
                 </div>
@@ -865,7 +867,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           </div>
 
           <div className="space-y-6">
-            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 uppercase tracking-widest bg-red-50 px-4 py-1.5 rounded-full border border-red-200">
+            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 tracking-widest bg-red-50 px-4 py-1.5 rounded-full border border-red-200">
               <GraduationCap className="w-4 h-4" />
               <span>Geleceğinizi İnşa Edin</span>
             </span>
@@ -906,7 +908,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => openDrawer('agent')} 
-                className="relative overflow-hidden group bg-red-600 hover:bg-red-700 text-white font-black px-8 py-4 rounded-xl text-sm flex items-center justify-center space-x-3 shadow-xl shadow-red-600/30 transition duration-300 transform hover:scale-105 uppercase tracking-wider"
+                className="relative overflow-hidden group bg-red-600 hover:bg-red-700 text-white font-black px-8 py-4 rounded-xl text-sm flex items-center justify-center space-x-3 shadow-xl shadow-red-600/30 transition duration-300 transform hover:scale-105 tracking-wider"
               >
                 <span className="relative z-10">Eğitime Hemen Başvur</span>
                 <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -953,7 +955,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
       <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 mb-4">
+            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 mb-4">
               <GraduationCap className="w-4 h-4" />
               <span>Sertifikalı Profesyonel Eğitimler</span>
             </span>
@@ -972,7 +974,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
             <button 
               onClick={() => openDrawer('agent')} 
-              className="bg-red-600 hover:bg-red-700 text-white font-black px-8 py-3.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-red-600/30 transition transform hover:scale-105 uppercase tracking-wider flex items-center space-x-2"
+              className="bg-red-600 hover:bg-red-700 text-white font-black px-8 py-3.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-red-600/30 transition transform hover:scale-105 tracking-wider flex items-center space-x-2"
             >
               <span>Eğitime Hemen Başvur</span>
               <ArrowRight className="w-4 h-4" />
@@ -992,7 +994,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
               
               <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-white/40 shadow-lg flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-black text-red-600 uppercase tracking-widest block">Geleceğin Profesyonelleri</span>
+                  <span className="text-[10px] font-black text-red-600 tracking-widest block">Geleceğin Profesyonelleri</span>
                   <span className="text-xs font-black text-slate-900">Saha ve Online Eğitim Seçenekleriyle</span>
                 </div>
                 <GraduationCap className="w-6 h-6 text-red-600" />
@@ -1004,7 +1006,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
       <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
             Aktif Eğitim Paketleri
           </span>
           <h2 className="text-3xl font-black text-slate-900 mt-3">
@@ -1021,7 +1023,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                   alt="Arazi Arsa Uzmanlığı" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow tracking-wider">
                   Arazi & Arsa Uzmanlığı
                 </span>
               </div>
@@ -1049,7 +1051,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
             <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
               <div>
-                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-[10px] font-black text-slate-500 block">Eğitim Ücreti</span>
                 <span className="text-2xl font-black text-slate-900">12.500 <span className="text-sm font-bold">₺</span></span>
               </div>
               <button 
@@ -1062,7 +1064,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
           </div>
 
           <div className="bg-white rounded-2xl border-2 border-red-600 overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between relative transform hover:-translate-y-1 group">
-            <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full shadow">
+            <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[9px] font-black tracking-widest px-2.5 py-1 rounded-full shadow">
               En Çok Tercih Edilen
             </div>
 
@@ -1073,7 +1075,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                   alt="Saha Satış Eğitimi" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-slate-900 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-slate-900 px-2.5 py-1 rounded shadow tracking-wider">
                   Saha Satış Masterclass
                 </span>
               </div>
@@ -1101,7 +1103,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
             <div className="p-6 border-t border-slate-100 bg-red-50/60 flex items-center justify-between">
               <div>
-                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-[10px] font-black text-slate-500 block">Eğitim Ücreti</span>
                 <span className="text-2xl font-black text-red-600">18.000 <span className="text-sm font-bold">₺</span></span>
               </div>
               <button 
@@ -1121,7 +1123,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                   alt="Tapu ve Sözleşme Hukuku" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow uppercase tracking-wider">
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow tracking-wider">
                   Hukuk & Mevzuat
                 </span>
               </div>
@@ -1149,7 +1151,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
             <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
               <div>
-                <span className="text-[10px] font-black text-slate-500 uppercase block">Eğitim Ücreti</span>
+                <span className="text-[10px] font-black text-slate-500 block">Eğitim Ücreti</span>
                 <span className="text-2xl font-black text-slate-900">9.500 <span className="text-sm font-bold">₺</span></span>
               </div>
               <button 
@@ -1181,7 +1183,7 @@ function OfficesPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
             Franchise Ağımız
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
@@ -1195,7 +1197,7 @@ function OfficesPage() {
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
           
           <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
-            <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+            <span className="text-xs font-extrabold text-slate-500 tracking-wider mr-2 hidden sm:inline flex-shrink-0">
               Hızlı Seçim:
             </span>
             <button 
@@ -1279,11 +1281,11 @@ function OfficesPage() {
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />
-                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mt-2">REALTY CENTER</span>
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 mt-2">REALTY CENTER</span>
                       </div>
                     )}
 
-                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow uppercase tracking-wider">
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow tracking-wider">
                       {office.city} / {office.district}
                     </span>
                   </div>
@@ -1368,7 +1370,7 @@ function AgentsPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
             Uzman Kadromuz
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
@@ -1382,7 +1384,7 @@ function AgentsPage() {
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
           
           <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
-            <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+            <span className="text-xs font-extrabold text-slate-500 tracking-wider mr-2 hidden sm:inline flex-shrink-0">
               Hızlı Seçim:
             </span>
             <button 
@@ -1466,11 +1468,11 @@ function AgentsPage() {
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />
-                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mt-2">REALTY CENTER DANIŞMANI</span>
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 mt-2">REALTY CENTER DANIŞMANI</span>
                       </div>
                     )}
 
-                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow uppercase tracking-wider">
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow tracking-wider">
                       {agent.city} / {agent.district}
                     </span>
 
@@ -1542,9 +1544,16 @@ function AgentsPage() {
 }
 
 function ListingsPage() {
+  const location = useLocation();
+  const initialCity = new URLSearchParams(location.search).get('city') || '';
   const [selectedType, setSelectedType] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedCity, setSelectedCity] = useState(initialCity);
+
+  useEffect(() => {
+    const cityFromUrl = new URLSearchParams(location.search).get('city') || '';
+    setSelectedCity(cityFromUrl);
+  }, [location.search]);
 
   const filteredListings = SAMPLE_LISTINGS.filter((item) => {
     if (selectedType && item.type !== selectedType) return false;
@@ -1558,7 +1567,7 @@ function ListingsPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
             Aktif Portföyler
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
@@ -1571,7 +1580,7 @@ function ListingsPage() {
 
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <div>
-            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">İşlem Tipi</label>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">İşlem Tipi</label>
             <select 
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
@@ -1585,7 +1594,7 @@ function ListingsPage() {
           </div>
 
           <div>
-            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">Kategori</label>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">Kategori</label>
             <select 
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
@@ -1599,7 +1608,7 @@ function ListingsPage() {
           </div>
 
           <div>
-            <label className="text-[10px] font-black text-slate-500 uppercase block mb-1">Şehir</label>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">Şehir</label>
             <select 
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.target.value)}
@@ -1650,7 +1659,6 @@ function ProjectsPage() {
   );
 }
 
-// YENİLENMİŞ İLETİŞİM SAYFASI (Ortada Form, Sağda Bilgiler + Admin Paneli Mesaj Altyapısı)
 function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => void }) {
   const [form, setForm] = useState({
     fullName: '',
@@ -1667,7 +1675,6 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
       return;
     }
 
-    // İleride Yönetici (Süper Admin / Admin) Paneline düşecek mesaj yapısını tetikler
     onSendMessage(form);
     
     setSubmitted(true);
@@ -1682,9 +1689,8 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
     <div className="bg-slate-50 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
-        {/* BAŞLIK ALANI */}
         <div className="mb-10 text-center max-w-2xl mx-auto">
-          <span className="text-xs font-black text-red-600 uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
             Bize Ulaşın
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
@@ -1695,10 +1701,8 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
           </p>
         </div>
 
-        {/* İLETİŞİM DÜZENİ: ORTADA FORM, SAĞDA BİLGİLER */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
-          {/* ORTA/SOL ALAN: MESAJ FORMU (7 Kolon) */}
           <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
             <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
               <div className="p-3 bg-red-50 text-red-600 rounded-xl">
@@ -1719,7 +1723,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                   Ad Soyad *
                 </label>
                 <input 
@@ -1734,7 +1738,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                     Telefon Numarası *
                   </label>
                   <input 
@@ -1748,7 +1752,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                     E-Posta Adresi *
                   </label>
                   <input 
@@ -1763,7 +1767,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                   Mesajınız *
                 </label>
                 <textarea 
@@ -1778,7 +1782,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
 
               <button 
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl text-xs uppercase tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
               >
                 <span>Mesajı Gönder</span>
                 <Send className="w-4 h-4" />
@@ -1786,12 +1790,11 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
             </form>
           </div>
 
-          {/* SAĞ ALAN: İLETİŞİM BİLGİLERİ & HARİTA (5 Kolon) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-slate-900 text-white p-8 rounded-2xl border-2 border-slate-800 shadow-xl space-y-6">
               <div className="border-b border-slate-800 pb-4">
                 <h3 className="text-xl font-black text-white">Genel Merkez İletişim</h3>
-                <p className="text-xs text-red-500 font-bold uppercase tracking-wider mt-0.5">REALTY CENTER GAYRİMENKUL A.Ş.</p>
+                <p className="text-xs text-red-500 font-bold tracking-wider mt-0.5">REALTY CENTER GAYRİMENKUL A.Ş.</p>
               </div>
 
               <div className="space-y-4 text-xs font-medium text-slate-300">
@@ -1849,7 +1852,6 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
               </div>
             </div>
 
-            {/* HARİTA GÖRSELİ VEYA EMBED KUTUSU */}
             <div className="bg-white p-2 rounded-2xl border border-slate-200 shadow-lg overflow-hidden h-52 relative">
               <iframe 
                 title="Realty Center Merkez Harita"
@@ -1867,6 +1869,471 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
   );
 }
 
+function LoginPage() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!username.trim() || !password.trim()) {
+      return;
+    }
+
+    navigate('/danisman-panel');
+  };
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-4">
+      <div className="w-full max-w-md">
+        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+          <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-600">
+            <img
+              src="/logo.png"
+              alt="Realty Center"
+              className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
+            />
+
+            <h1 className="text-2xl font-black text-white">Panel Girişi</h1>
+            <p className="text-slate-400 text-sm mt-2">
+              Danışman ve yönetim paneline giriş yapın.
+            </p>
+          </div>
+
+          <form onSubmit={handleLogin} className="p-6 space-y-4">
+            <div>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">
+                Kullanıcı Adı / E-posta
+              </label>
+              <div className="relative">
+                <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  placeholder="Kullanıcı adınızı veya e-postanızı girin"
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">
+                Şifre
+              </label>
+              <div className="relative">
+                <Key className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Şifrenizi girin"
+                  className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-600 transition"
+                  aria-label={showPassword ? 'Şifreyi gizle' : 'Şifreyi göster'}
+                >
+                  {showPassword ? <X className="w-5 h-5" /> : <EyeIcon />}
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between text-sm">
+              <label className="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" className="w-4 h-4 accent-red-600" />
+                <span className="text-slate-600 font-medium">Beni hatırla</span>
+              </label>
+
+              <button
+                type="button"
+                className="text-red-600 hover:text-red-700 font-bold"
+                onClick={() => alert('Şifre yenileme ekranını daha sonra bağlayacağız.')}
+              >
+                Şifremi unuttum
+              </button>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.02]"
+            >
+              <span>Giriş Yap</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </form>
+
+          <div className="border-t border-slate-200 px-6 py-3 text-center bg-slate-50">
+            <p className="text-xs text-slate-500 font-medium">
+              Yetkisiz kişilerin panele erişmesi yasaktır.
+            </p>
+          </div>
+        </div>
+
+        <div className="text-center mt-3">
+          <Link to="/" className="text-sm text-slate-500 hover:text-red-600 font-bold transition">
+            ← Ana sayfaya dön
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AgentDashboard() {
+  const navigate = useNavigate();
+  const [activeSection, setActiveSection] = useState<'overview' | 'listings' | 'portfolio' | 'customers' | 'messages' | 'statistics' | 'profile'>('overview');
+  const [showListingForm, setShowListingForm] = useState(false);
+  const [editingListingId, setEditingListingId] = useState<string | null>(null);
+  const [listingSearch, setListingSearch] = useState('');
+  const [customerSearch, setCustomerSearch] = useState('');
+  const [profileSaved, setProfileSaved] = useState(false);
+  const [customerSaved, setCustomerSaved] = useState(false);
+  const [showCustomerForm, setShowCustomerForm] = useState(false);
+
+  const emptyListing = {
+    title: '',
+    category: 'Konut',
+    type: 'Satılık',
+    price: '',
+    city: 'Ankara',
+    district: 'Çankaya',
+    neighborhood: '',
+    rooms: '3+1',
+    area: '',
+    images: [] as string[]
+  };
+
+  const [myListings, setMyListings] = useState(() =>
+    SAMPLE_LISTINGS.map((item, index) => ({
+      ...item,
+      images: [item.image],
+      agentName: 'Murat Yıldırım',
+      status: index === 4 ? 'Taslak' : 'Aktif'
+    }))
+  );
+
+  const [newListing, setNewListing] = useState(emptyListing);
+
+  const [customers, setCustomers] = useState([
+    { id: 1, name: 'Ahmet Kaya', phone: '0532 123 45 67', email: 'ahmet.kaya@example.com', type: 'Alıcı', status: 'Aktif', lastContact: 'Bugün' },
+    { id: 2, name: 'Zeynep Demir', phone: '0542 456 78 90', email: 'zeynep.demir@example.com', type: 'Kiralama', status: 'Aktif', lastContact: 'Dün' },
+    { id: 3, name: 'Mehmet Özkan', phone: '0533 987 65 43', email: 'mehmet.ozkan@example.com', type: 'Satıcı', status: 'Takipte', lastContact: '8 Ağustos' },
+    { id: 4, name: 'Ayşe Yılmaz', phone: '0551 234 56 78', email: 'ayse.yilmaz@example.com', type: 'Alıcı', status: 'Yeni', lastContact: '7 Ağustos' },
+    { id: 5, name: 'Can Aydın', phone: '0536 777 88 99', email: 'can.aydin@example.com', type: 'Yatırımcı', status: 'Aktif', lastContact: '5 Ağustos' }
+  ]);
+
+  const [customerForm, setCustomerForm] = useState({
+    name: '', phone: '', email: '', type: 'Alıcı', status: 'Yeni'
+  });
+
+  const [messages, setMessages] = useState([
+    { id: 1, sender: 'Ahmet Kaya', subject: 'Beysukent villa ilanı', text: 'İlanı çok beğendim, bugün görmek istiyorum.', time: '10 dk önce', unread: true },
+    { id: 2, sender: 'Zeynep Demir', subject: 'Kiralık daire', text: 'Levent bölgesinde benzer seçenekleriniz var mı?', time: '1 saat önce', unread: true },
+    { id: 3, sender: 'Mehmet Özkan', subject: 'Arsa görüşmesi', text: 'Yarın saat 15:00 için uygunum.', time: 'Dün', unread: false },
+    { id: 4, sender: 'Ayşe Yılmaz', subject: 'Yeni ilan', text: '4+1 daire seçeneklerini incelemek istiyorum.', time: '2 gün önce', unread: false }
+  ]);
+
+  const [profile, setProfile] = useState({
+    name: 'Murat Yıldırım',
+    email: 'murat.yildirim@realtycenter.com.tr',
+    phone: '0533 111 22 33',
+    title: 'Lüks Konut & Villa Uzmanı',
+    office: 'Realty Center Çankaya Bölge Başkanlığı',
+    region: 'Ankara / Çankaya'
+  });
+
+  const appointments = [
+    { time: '10:00', title: 'Çankaya Villa Sunumu', customer: 'Ahmet Kaya', type: 'Görüşme' },
+    { time: '14:30', title: 'Yeni müşteri görüşmesi', customer: 'Zeynep Demir', type: 'Arama' },
+    { time: '17:00', title: 'Haftalık ekip toplantısı', customer: 'Çankaya Bölge Ofisi', type: 'Ofis' }
+  ];
+
+  const filteredListings = myListings.filter((item) =>
+    `${item.title} ${item.id} ${item.city} ${item.district}`.toLocaleLowerCase('tr-TR').includes(listingSearch.toLocaleLowerCase('tr-TR'))
+  );
+
+  const filteredCustomers = customers.filter((customer) =>
+    `${customer.name} ${customer.phone} ${customer.email}`.toLocaleLowerCase('tr-TR').includes(customerSearch.toLocaleLowerCase('tr-TR'))
+  );
+
+  const navItems = [
+    { key: 'overview' as const, label: 'Panel Anasayfa', icon: Home },
+    { key: 'listings' as const, label: 'İlanlarım', icon: Building2 },
+    { key: 'portfolio' as const, label: 'Portföylerim', icon: Briefcase },
+    { key: 'customers' as const, label: 'Müşterilerim', icon: Users },
+    { key: 'messages' as const, label: 'Mesajlar', icon: MessageSquare },
+    { key: 'statistics' as const, label: 'İstatistikler', icon: BarChart3 },
+    { key: 'profile' as const, label: 'Profil & Ayarlar', icon: Settings }
+  ];
+
+  const sectionTitles: Record<typeof activeSection, { title: string; description: string }> = {
+    overview: { title: 'Panel Anasayfa', description: 'Bugünkü çalışmalarınıza genel bakış.' },
+    listings: { title: 'İlanlarım', description: 'Yönettiğiniz tüm ilanları buradan takip edin.' },
+    portfolio: { title: 'Portföylerim', description: 'Portföylerinizin durumunu ve dağılımını yönetin.' },
+    customers: { title: 'Müşterilerim', description: 'Müşteri ilişkilerinizi tek ekrandan yönetin.' },
+    messages: { title: 'Mesajlar', description: 'Müşterilerinizden gelen mesajları takip edin.' },
+    statistics: { title: 'İstatistikler', description: 'Performansınızı ve ilanlarınızın erişimini inceleyin.' },
+    profile: { title: 'Profil & Ayarlar', description: 'Hesap ve iletişim bilgilerinizi güncelleyin.' }
+  };
+
+  const activeTitle = sectionTitles[activeSection];
+
+  const compressImage = (file: File): Promise<string> => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const image = new Image();
+      image.onload = () => {
+        const maxDimension = 1920;
+        let width = image.width;
+        let height = image.height;
+        if (width > maxDimension || height > maxDimension) {
+          const ratio = Math.min(maxDimension / width, maxDimension / height);
+          width = Math.round(width * ratio);
+          height = Math.round(height * ratio);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return reject(new Error('Canvas unavailable'));
+        ctx.drawImage(image, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', 0.78));
+      };
+      image.onerror = () => reject(new Error('Image load failed'));
+      image.src = String(reader.result || '');
+    };
+    reader.onerror = () => reject(new Error('File read failed'));
+    reader.readAsDataURL(file);
+  });
+
+  const handleImageChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+
+    const remainingSlots = 10 - newListing.images.length;
+    if (files.length > remainingSlots) {
+      alert(`En fazla 10 görsel ekleyebilirsiniz. ${remainingSlots} adet daha seçebilirsiniz.`);
+    }
+
+    const selected = files.slice(0, remainingSlots);
+    const valid = selected.filter((file) => {
+      if (!file.type.startsWith('image/')) {
+        alert(`${file.name} bir görsel dosyası değil.`);
+        return false;
+      }
+      if (file.size > 15 * 1024 * 1024) {
+        alert(`${file.name} 15 MB'dan büyük olduğu için eklenmedi.`);
+        return false;
+      }
+      return true;
+    });
+
+    const compressed: string[] = [];
+    for (const file of valid) {
+      try {
+        compressed.push(await compressImage(file));
+      } catch {
+        alert(`${file.name} işlenirken bir hata oluştu.`);
+      }
+    }
+
+    setNewListing((prev) => ({ ...prev, images: [...prev.images, ...compressed].slice(0, 10) }));
+    e.target.value = '';
+  };
+
+  const removeImage = (index: number) => {
+    setNewListing((prev) => ({ ...prev, images: prev.images.filter((_, i) => i !== index) }));
+  };
+
+  const resetListingForm = () => {
+    setNewListing(emptyListing);
+    setEditingListingId(null);
+    setShowListingForm(false);
+  };
+
+  const startEditListing = (item: any) => {
+    setEditingListingId(item.id);
+    setNewListing({
+      title: item.title,
+      category: item.category,
+      type: item.type,
+      price: String(item.price),
+      city: item.city,
+      district: item.district,
+      neighborhood: item.neighborhood,
+      rooms: item.rooms,
+      area: String(item.area),
+      images: item.images?.length ? item.images : [item.image]
+    });
+    setShowListingForm(true);
+  };
+
+  const handleCreateListing = (e: React.FormEvent) => {
+    e.preventDefault();
+    const numericPrice = Number(String(newListing.price).replace(/[^0-9]/g, '')) || 0;
+    const numericArea = Number(String(newListing.area).replace(/[^0-9]/g, '')) || 0;
+    const primaryImage = newListing.images[0] || 'https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&q=80&w=1000';
+
+    if (editingListingId) {
+      setMyListings((prev) => prev.map((item) => item.id === editingListingId ? {
+        ...item,
+        title: newListing.title || item.title,
+        category: newListing.category,
+        type: newListing.type,
+        price: numericPrice,
+        city: newListing.city,
+        district: newListing.district,
+        neighborhood: newListing.neighborhood || 'Merkez',
+        rooms: newListing.rooms,
+        area: numericArea,
+        image: primaryImage,
+        images: newListing.images.length ? newListing.images : [primaryImage]
+      } : item));
+    } else {
+      const createdListing = {
+        id: `RC-${Math.floor(100 + Math.random() * 899)}`,
+        title: newListing.title || 'Yeni Realty Center İlanı',
+        category: newListing.category,
+        type: newListing.type,
+        price: numericPrice,
+        currency: '₺',
+        city: newListing.city,
+        district: newListing.district,
+        neighborhood: newListing.neighborhood || 'Merkez',
+        rooms: newListing.rooms,
+        area: numericArea,
+        image: primaryImage,
+        images: newListing.images.length ? newListing.images : [primaryImage],
+        agentName: 'Murat Yıldırım',
+        agentPhone: '0533 111 22 33',
+        date: new Date().toISOString().slice(0, 10),
+        isFeatured: false,
+        status: 'Aktif'
+      };
+      setMyListings((prev) => [createdListing, ...prev]);
+    }
+
+    resetListingForm();
+    setActiveSection('listings');
+  };
+
+  const deleteListing = (id: string) => {
+    if (!window.confirm('Bu ilanı silmek istediğinizden emin misiniz?')) return;
+    setMyListings((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const addCustomer = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!customerForm.name || !customerForm.phone || !customerForm.email) {
+      alert('Lütfen ad, telefon ve e-posta alanlarını doldurunuz.');
+      return;
+    }
+    setCustomers((prev) => [{
+      id: Date.now(),
+      ...customerForm,
+      lastContact: 'Bugün'
+    }, ...prev]);
+    setCustomerForm({ name: '', phone: '', email: '', type: 'Alıcı', status: 'Yeni' });
+    setShowCustomerForm(false);
+    setCustomerSaved(true);
+    setTimeout(() => setCustomerSaved(false), 2200);
+  };
+
+  const markMessageRead = (id: number) => {
+    setMessages((prev) => prev.map((message) => message.id === id ? { ...message, unread: false } : message));
+  };
+
+  const saveProfile = () => {
+    setProfileSaved(true);
+    setTimeout(() => setProfileSaved(false), 2500);
+  };
+
+  const renderOverview = () => (
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+        {[
+          { label: 'Aktif İlanlarım', value: myListings.filter((item) => item.status === 'Aktif').length, icon: Building2 },
+          { label: 'Toplam Portföy', value: myListings.length, icon: Briefcase },
+          { label: 'Bekleyen Görüşmeler', value: 8, icon: Calendar },
+          { label: 'Yeni Mesajlar', value: messages.filter((message) => message.unread).length, icon: MessageSquare }
+        ].map((stat) => {
+          const Icon = stat.icon;
+          return <div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-center justify-between"><div><p className="text-xs font-bold text-slate-500">{stat.label}</p><p className="text-3xl font-black text-slate-900 mt-1">{stat.value}</p></div><div className="w-11 h-11 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><Icon className="w-5 h-5" /></div></div></div>;
+        })}
+      </div>
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+        <section className="xl:col-span-2 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Son İlanlarım</h2><p className="text-xs text-slate-500 mt-1">Portföyünüzdeki son ilanlar</p></div><button onClick={() => setActiveSection('listings')} className="text-sm font-black text-red-600 hover:text-red-700">Tümünü Gör</button></div>
+          <div className="divide-y divide-slate-100">{myListings.slice(0, 4).map((item) => <div key={item.id} className="p-5 flex flex-col sm:flex-row gap-4 sm:items-center"><img src={item.image} alt={item.title} className="w-full sm:w-28 h-20 object-cover rounded-xl" /><div className="flex-1 min-w-0"><div className="flex items-center gap-2 mb-1"><span className={`text-[10px] font-black px-2 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-[10px] font-bold text-slate-400">{item.id}</span></div><h3 className="text-sm font-black text-slate-900 truncate">{item.title}</h3><p className="text-xs text-slate-500 mt-1">{item.city} / {item.district} · {item.area} m²</p></div><div className="text-left sm:text-right"><div className="font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</div><div className="text-xs text-slate-500 font-bold mt-1">{item.type}</div></div></div>)}</div>
+        </section>
+        <section className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Bugünün Takvimi</h2><p className="text-xs text-slate-500 mt-1">11 Ağustos 2026</p></div><div className="p-5 space-y-3">{appointments.map((appointment) => <div key={`${appointment.time}-${appointment.title}`} className="p-4 rounded-xl bg-slate-50 border border-slate-200"><div className="flex items-center justify-between"><span className="text-xs font-black text-red-600">{appointment.time}</span><span className="text-[10px] font-bold text-slate-500">{appointment.type}</span></div><p className="font-black text-slate-900 text-sm mt-2">{appointment.title}</p><p className="text-xs text-slate-500 mt-1">{appointment.customer}</p></div>)}</div></section>
+      </div>
+    </>
+  );
+
+  const renderListings = () => (
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div className="relative flex-1 max-w-xl"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={listingSearch} onChange={(e) => setListingSearch(e.target.value)} placeholder="İlan no, başlık, il veya ilçe ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><button onClick={() => { setEditingListingId(null); setNewListing(emptyListing); setShowListingForm(true); }} className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-red-600/20"><PlusCircle className="w-5 h-5" /> Yeni İlan Ekle</button></div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {filteredListings.map((item) => <div key={item.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="flex flex-col sm:flex-row"><img src={item.image} alt={item.title} className="w-full sm:w-48 h-44 object-cover" /><div className="p-5 flex-1"><div className="flex items-center justify-between gap-2"><span className={`text-[10px] font-black px-2.5 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-xs font-bold text-slate-400">{item.id}</span></div><h3 className="font-black text-slate-900 mt-3 line-clamp-2">{item.title}</h3><p className="text-xs text-slate-500 mt-2">{item.city} / {item.district} / {item.neighborhood}</p><div className="flex items-center justify-between mt-4"><span className="text-lg font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</span><span className="text-xs font-bold text-slate-500">{item.area} m² · {item.rooms}</span></div><div className="flex gap-2 mt-4"><button onClick={() => startEditListing(item)} className="flex-1 border border-slate-300 hover:border-red-600 hover:text-red-600 text-slate-700 font-bold text-xs py-2.5 rounded-lg">Düzenle</button><button onClick={() => deleteListing(item.id)} className="px-3 border border-red-200 text-red-600 hover:bg-red-50 font-bold text-xs py-2.5 rounded-lg">Sil</button></div></div></div></div>)}
+      </div>
+      {filteredListings.length === 0 && <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-12 text-center text-slate-500 font-semibold">Aradığınız kriterlere uygun ilan bulunamadı.</div>}
+    </div>
+  );
+
+  const renderPortfolio = () => (<div className="space-y-6"><div className="grid grid-cols-1 md:grid-cols-3 gap-4">{[{ label: 'Satılık Konut', value: myListings.filter((x) => x.category === 'Konut' && x.type === 'Satılık').length, icon: Home }, { label: 'Ticari İlan', value: myListings.filter((x) => x.category === 'İşyeri').length, icon: Building2 }, { label: 'Arsa', value: myListings.filter((x) => x.category === 'Arsa').length, icon: MapPin }].map((item) => { const Icon = item.icon; return <div key={item.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex items-center gap-4"><div className="w-11 h-11 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><Icon className="w-5 h-5" /></div><div><p className="text-xs font-bold text-slate-500">{item.label}</p><p className="text-2xl font-black text-slate-900">{item.value}</p></div></div>; })}</div><div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Portföy Dağılımı</h2><p className="text-xs text-slate-500 mt-1">Mevcut portföylerinizin kategorilere göre görünümü</p></div><div className="p-6 space-y-5">{['Konut','İşyeri','Arsa'].map((label) => { const count=myListings.filter(x=>x.category===label).length; const percentage=myListings.length?Math.round(count/myListings.length*100):0; return <div key={label}><div className="flex items-center justify-between mb-2"><span className="text-sm font-black text-slate-800">{label}</span><span className="text-xs font-bold text-slate-500">{count} portföy · %{percentage}</span></div><div className="h-3 rounded-full bg-slate-100 overflow-hidden"><div className="h-full bg-red-600 rounded-full" style={{width:`${percentage}%`}} /></div></div>; })}</div></div></div>);
+
+  const renderCustomers = () => (
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col md:flex-row gap-4 md:items-center md:justify-between"><div><h2 className="text-lg font-black text-slate-900">Müşteri Listesi</h2><p className="text-xs text-slate-500 mt-1">Toplam {customers.length} kayıt</p></div><div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto"><div className="relative w-full sm:w-72"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={customerSearch} onChange={(e) => setCustomerSearch(e.target.value)} placeholder="Müşteri ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><button onClick={() => setShowCustomerForm(true)} className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-3 rounded-xl flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4" /> Müşteri Ekle</button></div></div>
+      {customerSaved && <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-xl text-sm font-bold">Müşteri başarıyla eklendi.</div>}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">{filteredCustomers.map((customer) => <div key={customer.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-start justify-between gap-4"><div className="flex items-center gap-3"><div className="w-11 h-11 rounded-full bg-slate-900 text-white flex items-center justify-center font-black">{customer.name.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div><h3 className="font-black text-slate-900">{customer.name}</h3><p className="text-xs text-slate-500">{customer.type}</p></div></div><span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600">{customer.status}</span></div><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600"><div className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 text-red-600" />{customer.phone}</div><div className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-red-600" />{customer.email}</div></div><div className="mt-4 flex items-center justify-between text-xs"><span className="text-slate-500">Son iletişim: <strong className="text-slate-800">{customer.lastContact}</strong></span><a href={`tel:${customer.phone.replace(/\s+/g,'')}`} className="text-red-600 font-black hover:text-red-700">Ara</a></div></div>)}</div>
+      {showCustomerForm && <div className="fixed inset-0 z-[70] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-xl rounded-2xl shadow-2xl"><div className="p-6 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">Yeni Müşteri Ekle</h2><p className="text-xs text-slate-500 mt-1">Müşteri bilgilerini kaydedin.</p></div><button onClick={()=>setShowCustomerForm(false)} className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={addCustomer} className="p-6 space-y-4"><input required value={customerForm.name} onChange={e=>setCustomerForm({...customerForm,name:e.target.value})} placeholder="Ad Soyad" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="tel" value={customerForm.phone} onChange={e=>setCustomerForm({...customerForm,phone:e.target.value})} placeholder="Telefon" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="email" value={customerForm.email} onChange={e=>setCustomerForm({...customerForm,email:e.target.value})} placeholder="E-posta" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><div className="grid grid-cols-2 gap-4"><select value={customerForm.type} onChange={e=>setCustomerForm({...customerForm,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Alıcı</option><option>Satıcı</option><option>Kiralama</option><option>Yatırımcı</option></select><select value={customerForm.status} onChange={e=>setCustomerForm({...customerForm,status:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Yeni</option><option>Aktif</option><option>Takipte</option></select></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={()=>setShowCustomerForm(false)} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-600 text-white font-black text-sm">Müşteriyi Kaydet</button></div></form></div></div>}
+    </div>
+  );
+
+  const renderMessages = () => (<div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Gelen Mesajlar</h2><p className="text-xs text-slate-500 mt-1">Müşterilerinizle iletişiminizi buradan yönetin.</p></div><span className="text-xs font-black text-red-600 bg-red-50 px-3 py-1.5 rounded-full">{messages.filter((m)=>m.unread).length} okunmamış</span></div><div className="divide-y divide-slate-100">{messages.map((message)=><button key={message.id} onClick={()=>markMessageRead(message.id)} className={`w-full text-left p-5 hover:bg-slate-50 transition ${message.unread?'bg-red-50/40':'bg-white'}`}><div className="flex items-start gap-4"><div className={`w-11 h-11 rounded-full flex items-center justify-center font-black ${message.unread?'bg-red-600 text-white':'bg-slate-200 text-slate-700'}`}>{message.sender.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div className="flex-1 min-w-0"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"><h3 className="font-black text-slate-900">{message.sender}</h3><span className="text-[10px] text-slate-400 font-bold">{message.time}</span></div><p className="text-sm font-bold text-slate-700 mt-1">{message.subject}</p><p className="text-xs text-slate-500 mt-1 truncate">{message.text}</p></div>{message.unread&&<span className="w-2.5 h-2.5 rounded-full bg-red-600 mt-2" />}</div></button>)}</div></div>);
+
+  const renderStatistics = () => (<div className="space-y-6"><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{[{label:'Toplam Görüntülenme',value:'12.840',change:'+18,4%'},{label:'İlan Dönüşümü',value:'%7,8',change:'+2,1%'},{label:'Telefon Tıklaması',value:'326',change:'+12,6%'},{label:'Favoriye Eklenme',value:'184',change:'+9,3%'}].map(stat=><div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><p className="text-xs font-bold text-slate-500">{stat.label}</p><div className="flex items-end justify-between mt-2"><p className="text-2xl font-black text-slate-900">{stat.value}</p><span className="text-xs font-black text-emerald-600">{stat.change}</span></div></div>)}</div><div className="grid grid-cols-1 lg:grid-cols-2 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">Haftalık Görüntülenme</h2><div className="mt-6 grid grid-cols-7 gap-3 items-end h-56">{[48,62,55,76,68,91,84].map((value,index)=><div key={index} className="flex flex-col items-center justify-end gap-2 h-full"><div className="w-full bg-slate-100 rounded-lg overflow-hidden flex items-end h-44"><div className="w-full bg-red-600 rounded-lg" style={{height:`${value}%`}} /></div><span className="text-[10px] font-bold text-slate-400">{['Pzt','Sal','Çar','Per','Cum','Cmt','Paz'][index]}</span></div>)}</div></section><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">En Çok İlgi Gören İlanlar</h2><div className="mt-4 space-y-4">{myListings.slice(0,5).map((item,index)=><div key={item.id} className="flex items-center gap-3"><span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-black text-xs text-slate-600">{index+1}</span><div className="flex-1 min-w-0"><p className="text-sm font-black text-slate-800 truncate">{item.title}</p><div className="h-2 bg-slate-100 rounded-full overflow-hidden mt-2"><div className="h-full bg-red-600 rounded-full" style={{width:`${90-index*12}%`}} /></div></div><span className="text-xs font-black text-slate-500">{(3240-index*420).toLocaleString('tr-TR')}</span></div>)}</div></section></div></div>);
+
+  const renderProfile = () => (
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 xl:col-span-2"><div className="flex items-center justify-between mb-6"><div><h2 className="text-lg font-black text-slate-900">Profil Bilgileri</h2><p className="text-xs text-slate-500 mt-1">Danışman profilinizde görünen bilgileri yönetin.</p></div>{profileSaved&&<span className="text-xs font-black text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full">Kaydedildi</span>}</div><div className="grid grid-cols-1 md:grid-cols-2 gap-5">{([['name','Ad Soyad'],['email','E-posta'],['phone','Telefon'],['title','Unvan'],['office','Ofis'],['region','Bölge']] as const).map(([key,label])=><div key={key}><label className="text-xs font-black text-slate-700 mb-2 block">{label}</label><input value={profile[key]} onChange={e=>setProfile({...profile,[key]:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-600" /></div>)}</div><button onClick={saveProfile} className="mt-6 bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl">Değişiklikleri Kaydet</button></section><section className="bg-slate-900 rounded-2xl shadow-xl p-6 text-white h-fit"><div className="w-20 h-20 rounded-full bg-red-600 flex items-center justify-center text-2xl font-black mx-auto">MY</div><h3 className="text-center text-xl font-black mt-4">{profile.name}</h3><p className="text-center text-sm text-slate-400 mt-1">{profile.title}</p><div className="mt-6 pt-5 border-t border-slate-700 space-y-4 text-sm"><div className="flex justify-between"><span className="text-slate-400">Aktif İlan</span><strong>{myListings.filter((x)=>x.status==='Aktif').length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Müşteri</span><strong>{customers.length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Ofis</span><strong>{profile.office.replace('Realty Center ','')}</strong></div></div></section></div>
+  );
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-600 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-600 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-600/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
+
+      {showListingForm && <div className="fixed inset-0 z-[60] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl shadow-2xl"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between sticky top-0 bg-white z-10"><div><h2 className="text-xl font-black text-slate-900">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><p className="text-xs text-slate-500 mt-1">İlan bilgilerini ve en fazla 10 görseli yönetin.</p></div><button onClick={resetListingForm} className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-50 hover:text-red-600 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={handleCreateListing} className="p-6 space-y-5"><div><label className="text-xs font-black text-slate-700 mb-2 block">İlan Başlığı</label><input required value={newListing.title} onChange={(e)=>setNewListing({...newListing,title:e.target.value})} placeholder="Örn. Çankaya'da 4+1 Lüks Daire" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Kategori</label><select value={newListing.category} onChange={(e)=>setNewListing({...newListing,category:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Konut</option><option>İşyeri</option><option>Arsa</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İşlem Tipi</label><select value={newListing.type} onChange={(e)=>setNewListing({...newListing,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Oda</label><input value={newListing.rooms} onChange={(e)=>setNewListing({...newListing,rooms:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Fiyat</label><input required value={newListing.price} onChange={(e)=>setNewListing({...newListing,price:e.target.value})} placeholder="Örn. 6850000" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div><div><label className="text-xs font-black text-slate-700 mb-2 block">m²</label><input required value={newListing.area} onChange={(e)=>setNewListing({...newListing,area:e.target.value})} placeholder="Örn. 195" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">İl</label><select value={newListing.city} onChange={(e)=>setNewListing({...newListing,city:e.target.value,district:TURKEY_CITIES[e.target.value]?.[0]||''})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{Object.keys(TURKEY_CITIES).map((city)=><option key={city}>{city}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İlçe</label><select value={newListing.district} onChange={(e)=>setNewListing({...newListing,district:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{(TURKEY_CITIES[newListing.city]||[]).map((district)=><option key={district}>{district}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Mahalle</label><input value={newListing.neighborhood} onChange={(e)=>setNewListing({...newListing,neighborhood:e.target.value})} placeholder="Mahalle" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div><div className="flex items-center justify-between mb-2"><label className="text-xs font-black text-slate-700">İlan Görselleri</label><span className="text-xs font-black text-red-600">{newListing.images.length}/10</span></div><div className="border-2 border-dashed border-slate-300 rounded-2xl p-4 bg-slate-50"><label className="cursor-pointer inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-sm shadow-lg shadow-red-600/20 transition"><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden" /><PlusCircle className="w-5 h-5" /><span>Bilgisayardan / Galeriden Görsel Seç</span></label><p className="text-xs text-slate-500 mt-2">En fazla 10 görsel. Görseller otomatik olarak küçültülür ve JPEG olarak sıkıştırılır.</p>{newListing.images.length>0&&<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-4">{newListing.images.map((image,index)=><div key={`${image}-${index}`} className="relative group"><img src={image} alt={`İlan görseli ${index+1}`} className="w-full h-28 object-cover rounded-xl border border-slate-200" /><button type="button" onClick={()=>removeImage(index)} className="absolute top-1.5 right-1.5 bg-red-600 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"><X className="w-4 h-4" /></button>{index===0&&<span className="absolute bottom-1.5 left-1.5 text-[9px] font-black bg-slate-900/80 text-white px-2 py-1 rounded">Ana görsel</span>}</div>)}</div>}</div></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={resetListingForm} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm text-slate-700">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-sm">{editingListingId?'Değişiklikleri Kaydet':'İlanı Kaydet'}</button></div></form></div></div>}
+    </div>
+  );
+}
+
+function EyeIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-5 h-5"
+      aria-hidden="true"
+    >
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
@@ -1878,7 +2345,6 @@ export default function RealtyCenterApp() {
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // ADMIN PANELİ İÇİN GELEN MESAJLAR DEPOSU
   const [messages, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
 
   const [selectedCity, setSelectedCity] = useState('');
@@ -1898,7 +2364,6 @@ export default function RealtyCenterApp() {
     satisfaction: 0
   });
 
-  // İletişim Formundan Mesaj Geldiğinde Yönetici Veritabanına/Listesine Ekleme Altyapısı
   const handleSendMessage = (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
     const messageEntry: ContactMessage = {
       ...newMessage,
@@ -1908,7 +2373,6 @@ export default function RealtyCenterApp() {
     };
 
     setMessages((prev) => [messageEntry, ...prev]);
-    console.log("Süper Admin & Admin Kutusuna Düşen Yeni Mesaj:", messageEntry);
   };
 
   useEffect(() => {
@@ -2050,7 +2514,7 @@ export default function RealtyCenterApp() {
           )}
         </div>
 
-        <div className="text-lg sm:text-xl font-light text-slate-800 tracking-[0.2em] uppercase text-center flex items-center justify-center flex-wrap gap-x-2">
+        <div className="text-lg sm:text-xl font-light text-slate-800 tracking-[0.2em] text-center flex items-center justify-center flex-wrap gap-x-2">
           <span>HAYALİNİZDEKİ</span>
           <span className={`font-extrabold text-red-600 inline-block min-w-[90px] text-center transition-all duration-300 ease-in-out transform ${
             fade ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'
@@ -2080,6 +2544,9 @@ export default function RealtyCenterApp() {
                 openDrawer={openDrawer} 
               />
             } />
+
+            <Route path="/panel" element={<LoginPage />} />
+            <Route path="/danisman-panel" element={<AgentDashboard />} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
@@ -2119,7 +2586,7 @@ export default function RealtyCenterApp() {
                   <h2 className="text-lg font-black text-white">
                     {formType === 'franchise' ? 'Franchise Başvuru Formu' : 'Danışman Başvuru Formu'}
                   </h2>
-                  <p className="text-xs text-red-500 font-black uppercase tracking-wider">REALTY CENTER Ailesine Katılın</p>
+                  <p className="text-xs text-red-500 font-black tracking-wider">REALTY CENTER Ailesine Katılın</p>
                 </div>
                 <button onClick={closeDrawer} className="p-1.5 text-slate-400 hover:text-white transition">
                   <X className="w-5 h-5" />
@@ -2180,7 +2647,7 @@ export default function RealtyCenterApp() {
                 </div>
 
                 <div className="pt-2 border-t border-slate-200">
-                  <h4 className="text-xs font-black text-red-600 uppercase tracking-wider mb-2">
+                  <h4 className="text-xs font-black text-red-600 tracking-wider mb-2">
                     Hangi Bölgede Bizimle Çalışmak İstersiniz?
                   </h4>
 
@@ -2237,7 +2704,7 @@ export default function RealtyCenterApp() {
                 <div className="pt-3">
                   <button 
                     type="submit"
-                    className="relative overflow-hidden group w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-lg shadow-lg shadow-red-600/30 transition flex items-center justify-center space-x-2 uppercase"
+                    className="relative overflow-hidden group w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-lg shadow-lg shadow-red-600/30 transition flex items-center justify-center space-x-2"
                   >
                     <span className="relative z-10">Başvuruyu Tamamla</span>
                     <CheckCircle2 className="w-4 h-4 relative z-10" />
