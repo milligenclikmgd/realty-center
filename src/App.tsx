@@ -11,7 +11,7 @@ import {
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   ChevronDown, Users, Award, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
-  ShieldAlert, Lock
+  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -566,7 +566,7 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
           <ul className="space-y-2.5 text-sm font-medium">
             <li className="flex items-start space-x-2">
               <MapPin className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
-              <span>Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 No:244 Çankaya / ANKARA</span>
+              <span>Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA</span>
             </li>
             <li className="flex items-center space-x-2">
               <Phone className="w-4 h-4 text-red-500" />
@@ -2141,6 +2141,493 @@ function SuperAdminLoginPage() {
   );
 }
 
+// SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
+function SuperAdminDashboard() {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'messages' | 'settings'>('overview');
+
+  // Franchise Başvuru Verileri
+  const [franchiseApps, setFranchiseApps] = useState([
+    { id: 'FR-801', name: 'Ahmet Karakaş', phone: '0532 999 88 77', city: 'Bursa', district: 'Nilüfer', date: '2026-08-11', status: 'Beklemede', budget: '2.500.000 ₺' },
+    { id: 'FR-802', name: 'Mustafa Şahin', phone: '0535 444 33 22', city: 'Antalya', district: 'Alanya', date: '2026-08-10', status: 'Onaylandı', budget: '3.000.000 ₺' },
+    { id: 'FR-803', name: 'Selin Yıldız', phone: '0542 111 22 33', city: 'Muğla', district: 'Bodrum', date: '2026-08-09', status: 'Incelemede', budget: '4.500.000 ₺' },
+    { id: 'FR-804', name: 'Oğuzhan Kaya', phone: '0555 777 66 55', city: 'Eskişehir', district: 'Tepebaşı', date: '2026-08-07', status: 'Reddedildi', budget: '1.800.000 ₺' }
+  ]);
+
+  // Ofis Listesi Verileri
+  const [offices, setOffices] = useState(SAMPLE_OFFICES);
+
+  // Danışman Verileri
+  const [agents, setAgents] = useState(SAMPLE_AGENTS);
+
+  // İlan Verileri (Onay Bekleyenler)
+  const [listings, setListings] = useState([
+    ...SAMPLE_LISTINGS.map(l => ({ ...l, approvalStatus: 'Yayında' })),
+    { id: 'RC-999', title: 'Çankaya\'da Lüks Ofis Katı', category: 'İşyeri', type: 'Kiralık', price: 95000, city: 'Ankara', district: 'Çankaya', agentName: 'Hakan Uçar', date: '2026-08-12', approvalStatus: 'Onay Bekliyor' }
+  ]);
+
+  // Genel Mesajlar
+  const [contactMessages, setContactMessages] = useState([
+    { id: 'MSG-01', sender: 'Kemal Sunal', email: 'kemal@test.com', phone: '0532 000 00 00', subject: 'Toplu Konut Projesi İşbirliği', status: 'Okunmadı', date: '2026-08-12' },
+    { id: 'MSG-02', sender: 'Berna Tan', email: 'berna@test.com', phone: '0533 111 00 11', subject: 'Sistem Giriş Hatası', status: 'Yanıtlandı', date: '2026-08-11' }
+  ]);
+
+  const updateFranchiseStatus = (id: string, newStatus: string) => {
+    setFranchiseApps(prev => prev.map(app => app.id === id ? { ...app, status: newStatus } : app));
+  };
+
+  const updateListingApproval = (id: string, newStatus: string) => {
+    setListings(prev => prev.map(item => item.id === id ? { ...item, approvalStatus: newStatus } : item));
+  };
+
+  const navButtons = [
+    { key: 'overview' as const, label: 'Genel Bakış & İstatistik', icon: PieChart },
+    { key: 'franchise' as const, label: 'Franchise Başvuruları', icon: FileText, badge: franchiseApps.filter(a => a.status === 'Beklemede').length },
+    { key: 'offices' as const, label: 'Franchise Ofis Yönetimi', icon: Building2 },
+    { key: 'agents' as const, label: 'Danışman Kontrolü', icon: Users },
+    { key: 'listings' as const, label: 'İlan Onay Mekanizması', icon: Layers, badge: listings.filter(l => l.approvalStatus === 'Onay Bekliyor').length },
+    { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
+    { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
+  ];
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-950 text-slate-100">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        {/* ÜST ADMİN HEADER */}
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
+          <div className="flex items-center space-x-4">
+            <div className="p-3 bg-red-600/20 text-red-500 rounded-2xl border border-red-600/30">
+              <ShieldAlert className="w-8 h-8" />
+            </div>
+            <div>
+              <div className="flex items-center space-x-2">
+                <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN KONTROL PANELİ</h1>
+                <span className="bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-widest">
+                  ROOT
+                </span>
+              </div>
+              <p className="text-xs text-slate-400 font-medium mt-1">
+                Realty Center Türkiye Genel Merkez Ana Kontrol ve Yetkilendirme Ekranı
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-3">
+            <span className="text-xs text-slate-400 font-bold bg-slate-950 px-4 py-2 rounded-xl border border-slate-800">
+              Sistem Durumu: <span className="text-emerald-500 font-black">Online / Aktif</span>
+            </span>
+
+            <button 
+              onClick={() => navigate('/super-admin')} 
+              className="bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white border border-red-600/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
+            >
+              <LogOut className="w-4 h-4" />
+              <span>Güvenli Çıkış</span>
+            </button>
+          </div>
+        </div>
+
+        {/* MASAÜSTÜ SİDEBAR VE İÇERİK DÜZENİ */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          {/* SOL MENÜ */}
+          <div className="lg:col-span-3 space-y-2">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3 shadow-xl space-y-1">
+              {navButtons.map((btn) => {
+                const Icon = btn.icon;
+                const isActive = activeTab === btn.key;
+
+                return (
+                  <button
+                    key={btn.key}
+                    onClick={() => setActiveTab(btn.key)}
+                    className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-extrabold text-xs transition duration-200 ${
+                      isActive 
+                        ? 'bg-red-600 text-white shadow-lg shadow-red-600/30' 
+                        : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-3">
+                      <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-slate-500'}`} />
+                      <span>{btn.label}</span>
+                    </div>
+
+                    {btn.badge !== undefined && btn.badge > 0 && (
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-black ${
+                        isActive ? 'bg-white text-red-600' : 'bg-red-600 text-white'
+                      }`}>
+                        {btn.badge}
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* SAĞ İÇERİK EKRANI */}
+          <div className="lg:col-span-9">
+            
+            {/* 1. GENEL BAKIŞ VE İSTATİSTİK TABI */}
+            {activeTab === 'overview' && (
+              <div className="space-y-6">
+                
+                {/* METRİK KARTLARI */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Franchise Ofis</span>
+                      <Building2 className="w-5 h-5 text-red-500" />
+                    </div>
+                    <div className="text-3xl font-black text-white mt-2">{offices.length}</div>
+                    <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %12 Geçen aya göre</p>
+                  </div>
+
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aktif Danışman</span>
+                      <Users className="w-5 h-5 text-red-500" />
+                    </div>
+                    <div className="text-3xl font-black text-white mt-2">1,024</div>
+                    <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ 48 yeni kayıt</p>
+                  </div>
+
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Yayındaki İlan</span>
+                      <Layers className="w-5 h-5 text-red-500" />
+                    </div>
+                    <div className="text-3xl font-black text-white mt-2">15,480</div>
+                    <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %8 Portföy artışı</p>
+                  </div>
+
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aylık Ciro</span>
+                      <TrendingUp className="w-5 h-5 text-red-500" />
+                    </div>
+                    <div className="text-3xl font-black text-white mt-2">₺ 4.2M</div>
+                    <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %18 Gelir büyümesi</p>
+                  </div>
+                </div>
+
+                {/* HIZLI AKIŞ TABLOLARI */}
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                  
+                  {/* BEKLEYEN BAŞVURULAR */}
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-base font-black text-white flex items-center space-x-2">
+                        <FileText className="w-4 h-4 text-red-500" />
+                        <span>Bekleyen Franchise Başvuruları</span>
+                      </h3>
+                      <button onClick={() => setActiveTab('franchise')} className="text-xs text-red-500 font-bold hover:underline">Tümünü Gör</button>
+                    </div>
+
+                    <div className="space-y-3">
+                      {franchiseApps.filter(a => a.status === 'Beklemede').map((app) => (
+                        <div key={app.id} className="p-3.5 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between">
+                          <div>
+                            <div className="font-bold text-xs text-white">{app.name} ({app.city} / {app.district})</div>
+                            <div className="text-[11px] text-slate-500 font-medium">Bütçe: {app.budget} · {app.date}</div>
+                          </div>
+                          <div className="flex space-x-1.5">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
+                              <Check className="w-3.5 h-3.5" />
+                            </button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="p-1.5 bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white rounded-lg transition">
+                              <X className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ONAY BEKLEYEN İLANLAR */}
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-base font-black text-white flex items-center space-x-2">
+                        <AlertCircle className="w-4 h-4 text-red-500" />
+                        <span>Onay Bekleyen İlanlar</span>
+                      </h3>
+                      <button onClick={() => setActiveTab('listings')} className="text-xs text-red-500 font-bold hover:underline">Tümünü Gör</button>
+                    </div>
+
+                    <div className="space-y-3">
+                      {listings.filter(l => l.approvalStatus === 'Onay Bekliyor').map((listing) => (
+                        <div key={listing.id} className="p-3.5 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between">
+                          <div>
+                            <div className="font-bold text-xs text-white truncate max-w-[200px]">{listing.title}</div>
+                            <div className="text-[11px] text-slate-500 font-medium">{listing.agentName} · {listing.price.toLocaleString('tr-TR')} ₺</div>
+                          </div>
+                          <div className="flex space-x-1.5">
+                            <button onClick={() => updateListingApproval(listing.id, 'Yayında')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
+                              <Check className="w-3.5 h-3.5" />
+                            </button>
+                            <button onClick={() => updateListingApproval(listing.id, 'Reddedildi')} className="p-1.5 bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white rounded-lg transition">
+                              <X className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            )}
+
+            {/* 2. FRANCHİSE BAŞVURULARI TABI */}
+            {activeTab === 'franchise' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-white">Franchise Başvuruları</h2>
+                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistem üzerinden gönderilen yeni temsilcilik müracaatları</p>
+                  </div>
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs font-medium">
+                    <thead className="bg-slate-950 text-slate-400 font-extrabold uppercase border-b border-slate-800">
+                      <tr>
+                        <th className="p-3">Başvuru No</th>
+                        <th className="p-3">Ad Soyad</th>
+                        <th className="p-3">İl / İlçe</th>
+                        <th className="p-3">İletişim</th>
+                        <th className="p-3">Yatırım Bütçesi</th>
+                        <th className="p-3">Tarih</th>
+                        <th className="p-3">Durum</th>
+                        <th className="p-3 text-right">İşlem</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-800/60">
+                      {franchiseApps.map((app) => (
+                        <tr key={app.id} className="hover:bg-slate-800/40 transition">
+                          <td className="p-3 font-black text-red-500">{app.id}</td>
+                          <td className="p-3 font-bold text-white">{app.name}</td>
+                          <td className="p-3 text-slate-300">{app.city} / {app.district}</td>
+                          <td className="p-3 text-slate-400">{app.phone}</td>
+                          <td className="p-3 font-bold text-emerald-400">{app.budget}</td>
+                          <td className="p-3 text-slate-500">{app.date}</td>
+                          <td className="p-3">
+                            <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
+                              app.status === 'Onaylandı' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
+                              app.status === 'Beklemede' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
+                              'bg-red-500/20 text-red-400 border border-red-500/30'
+                            }`}>
+                              {app.status}
+                            </span>
+                          </td>
+                          <td className="p-3 text-right space-x-1">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="px-2.5 py-1 bg-emerald-600 text-white font-bold rounded-lg text-[10px] hover:bg-emerald-700 transition">Onayla</button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="px-2.5 py-1 bg-red-600/30 text-red-400 border border-red-600/30 font-bold rounded-lg text-[10px] hover:bg-red-600 hover:text-white transition">Reddet</button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* 3. FRANCHİSE OFİS YÖNETİMİ TABI */}
+            {activeTab === 'offices' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-white">Franchise Ofis Yönetimi</h2>
+                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistemde aktif çalışan tüm bölge başkanlıkları ve temsilcilikler</p>
+                  </div>
+                  <button onClick={() => alert("Yeni ofis ekleme modülü açılıyor...")} className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
+                    <PlusCircle className="w-4 h-4" />
+                    <span>Yeni Ofis Ekle</span>
+                  </button>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {offices.map((office) => (
+                    <div key={office.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-[10px] font-black text-red-500 bg-red-600/10 px-2 py-0.5 rounded border border-red-600/20">{office.city} / {office.district}</span>
+                          <span className="text-[10px] text-emerald-400 font-bold">Aktif Lisans</span>
+                        </div>
+                        <h4 className="font-black text-sm text-white">{office.name}</h4>
+                        <p className="text-xs text-slate-400 mt-2"><strong>Yönetici:</strong> {office.manager}</p>
+                        <p className="text-xs text-slate-500"><strong>Tel:</strong> {office.phone}</p>
+                      </div>
+
+                      <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                        <button className="text-slate-400 hover:text-white font-bold text-[11px]">Düzenle</button>
+                        <button className="text-red-500 hover:text-red-400 font-bold text-[11px]">Askıya Al</button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 4. DANIŞMAN KONTROLÜ TABI */}
+            {activeTab === 'agents' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-white">Danışman Kontrol Paneli</h2>
+                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistemdeki tüm gayrimenkul danışmanlarının yetki ve profil yönetimi</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {agents.map((agent) => (
+                    <div key={agent.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center space-x-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-red-600 text-white font-black flex items-center justify-center text-xs">
+                            {agent.name.split(' ').map(n => n[0]).join('')}
+                          </div>
+                          <div>
+                            <h4 className="font-black text-xs text-white">{agent.name}</h4>
+                            <span className="text-[10px] text-red-400 font-bold block">{agent.title}</span>
+                          </div>
+                        </div>
+
+                        <div className="text-[11px] text-slate-400 space-y-1">
+                          <div><strong>Ofis:</strong> {agent.office}</div>
+                          <div><strong>Tel:</strong> {agent.phone}</div>
+                          <div><strong>Aktif İlan:</strong> {agent.activeListings} adet</div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <button className="text-xs text-slate-300 hover:text-white font-bold">Detay</button>
+                        <button className="text-xs text-amber-500 hover:text-amber-400 font-bold">Şifre Sıfırla</button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 5. İLAN ONAY MEKANİZMASI TABI */}
+            {activeTab === 'listings' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-white">İlan Onay Mekanizması</h2>
+                    <p className="text-xs text-slate-400 font-medium mt-0.5">Danışmanlar tarafından eklenen ilanların denetim ekranı</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  {listings.map((item) => (
+                    <div key={item.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div className="flex items-center space-x-4">
+                        <img src={item.image} alt={item.title} className="w-16 h-12 object-cover rounded-lg" />
+                        <div>
+                          <div className="flex items-center space-x-2">
+                            <span className="text-xs font-black text-white">{item.title}</span>
+                            <span className="text-[10px] font-bold text-red-500">({item.id})</span>
+                          </div>
+                          <p className="text-[11px] text-slate-400 mt-0.5">{item.city} / {item.district} · {item.price.toLocaleString('tr-TR')} ₺ · Danışman: {item.agentName}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center space-x-2">
+                        <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
+                          item.approvalStatus === 'Yayında' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
+                          item.approvalStatus === 'Onay Bekliyor' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
+                          'bg-red-500/20 text-red-400 border border-red-500/30'
+                        }`}>
+                          {item.approvalStatus}
+                        </span>
+
+                        {item.approvalStatus !== 'Yayında' && (
+                          <button onClick={() => updateListingApproval(item.id, 'Yayında')} className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-lg transition">Yayına Al</button>
+                        )}
+                        {item.approvalStatus !== 'Reddedildi' && (
+                          <button onClick={() => updateListingApproval(item.id, 'Reddedildi')} className="px-3 py-1 bg-red-600/30 text-red-400 hover:bg-red-600 hover:text-white font-black text-xs rounded-lg transition">Kaldır</button>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 6. SİSTEM MESAJLARI TABI */}
+            {activeTab === 'messages' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="border-b border-slate-800 pb-4">
+                  <h2 className="text-lg font-black text-white">Sistem Mesajları</h2>
+                  <p className="text-xs text-slate-400 font-medium mt-0.5">İletişim formundan genel merkeze düşen mesajlar</p>
+                </div>
+
+                <div className="space-y-3">
+                  {contactMessages.map((msg) => (
+                    <div key={msg.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-black text-white">{msg.sender} ({msg.email})</span>
+                        <span className="text-slate-500">{msg.date}</span>
+                      </div>
+                      <p className="text-xs text-slate-300 font-bold">{msg.subject}</p>
+                      <p className="text-xs text-slate-400">Tel: {msg.phone}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 7. SİSTEM AYARLARI TABI */}
+            {activeTab === 'settings' && (
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6">
+                <div className="border-b border-slate-800 pb-4">
+                  <h2 className="text-lg font-black text-white">Sistem & Genel Ayarlar</h2>
+                  <p className="text-xs text-slate-400 font-medium mt-0.5">Platform geneli parametreler ve sistem yapılandırması</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <label className="block text-slate-300 font-bold mb-1">Site Başlığı</label>
+                    <input type="text" defaultValue="Realty Center Türkiye Gayrimenkul" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-slate-300 font-bold mb-1">Franchise Katılım Komisyonu (%)</label>
+                    <input type="number" defaultValue="8" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label>
+                    <input type="email" defaultValue="destek@realtycenter.com.tr" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                  </div>
+
+                  <div>
+                    <label className="block text-slate-300 font-bold mb-1">İlan Otomatik Onay Mekanizması</label>
+                    <select className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600">
+                      <option>Kapalı (Manuel Yönetici Onayı)</option>
+                      <option>Açık (Doğrudan Yayına Al)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button onClick={() => alert("Ayarlar güncellendi.")} className="bg-red-600 hover:bg-red-700 text-white font-black px-6 py-3 rounded-xl text-xs transition">
+                  Ayarları Kaydet
+                </button>
+              </div>
+            )}
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
 function AgentDashboard() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState<'overview' | 'listings' | 'portfolio' | 'customers' | 'messages' | 'statistics' | 'profile'>('overview');
@@ -2684,6 +3171,7 @@ export default function RealtyCenterApp() {
             <Route path="/panel" element={<LoginPage />} />
             <Route path="/danisman-panel" element={<AgentDashboard />} />
             <Route path="/super-admin" element={<SuperAdminLoginPage />} />
+            <Route path="/super-admin-panel" element={<SuperAdminDashboard />} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
