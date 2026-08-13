@@ -420,7 +420,6 @@ function getCampaignSettings() {
 
 function TurkeyListingMap() {
   const navigate = useNavigate();
-  const mapRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
   const cityCounts = SAMPLE_LISTINGS.reduce<Record<string, number>>((counts, item) => {
@@ -432,49 +431,43 @@ function TurkeyListingMap() {
     .replace(/ç/g, 'c').replace(/ğ/g, 'g').replace(/ı/g, 'i').replace(/ö/g, 'o')
     .replace(/ş/g, 's').replace(/ü/g, 'u').replace(/İ/g, 'i');
 
+  const resolveCity = (city: string) => Object.keys(cityCounts).find((name) => normalizeCity(name) === normalizeCity(city)) || city;
+
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/ali-han/Turkey-SVG-Map/main/src/turkey.svg')
       .then((response) => {
         if (!response.ok) throw new Error('Harita yüklenemedi');
         return response.text();
       })
-      .then(setSvgMarkup)
+      .then((svgText) => {
+        const document = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+        document.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
+          const city = resolveCity(group.dataset.cityName || '');
+          const count = cityCounts[city] || 0;
+          const fill = count >= 2 ? '#dc2626' : count === 1 ? '#b91c1c' : '#7f1d1d';
+          group.setAttribute('data-realty-city', city);
+          group.querySelectorAll('path').forEach((path) => {
+            path.setAttribute('style', 'fill:' + fill + ' !important;stroke:#ffffff !important;stroke-width:0.7 !important;transition:fill 180ms ease;');
+          });
+        });
+        setSvgMarkup(document.documentElement.outerHTML);
+      })
       .catch(() => setMapError(true));
   }, []);
 
-  useEffect(() => {
-    if (!svgMarkup || !mapRef.current) return;
-    const cleanup: Array<() => void> = [];
-    mapRef.current.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
-      const city = group.dataset.cityName || '';
-      const matchingCity = Object.keys(cityCounts).find((name) => normalizeCity(name) === normalizeCity(city));
-      const count = matchingCity ? cityCounts[matchingCity] : 0;
-      const fill = count >= 2 ? '#dc2626' : count === 1 ? '#b91c1c' : '#7f1d1d';
-      group.querySelectorAll('path').forEach((path) => {
-        path.style.fill = fill;
-        path.style.stroke = '#ffffff';
-        path.style.strokeWidth = '0.7';
-        path.style.transition = 'fill 180ms ease, transform 180ms ease';
-      });
-      group.style.cursor = 'pointer';
-      group.setAttribute('aria-label', city + ': ' + count + ' ilan');
-      const enter = () => group.querySelectorAll('path').forEach((path) => { path.style.fill = '#ef4444'; });
-      const leave = () => group.querySelectorAll('path').forEach((path) => { path.style.fill = fill; });
-      const click = () => navigate('/ilanlarimiz?city=' + encodeURIComponent(matchingCity || city));
-      group.addEventListener('mouseenter', enter);
-      group.addEventListener('mouseleave', leave);
-      group.addEventListener('click', click);
-      cleanup.push(() => { group.removeEventListener('mouseenter', enter); group.removeEventListener('mouseleave', leave); group.removeEventListener('click', click); });
-    });
-    return () => cleanup.forEach((fn) => fn());
-  }, [svgMarkup, navigate]);
+  const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target as Element;
+    const cityGroup = target.closest('g[data-realty-city]');
+    const city = cityGroup?.getAttribute('data-realty-city');
+    if (city) navigate('/ilanlarimiz?city=' + encodeURIComponent(city));
+  };
 
   return (
     <section className="bg-slate-950 py-16 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-8"><span className="inline-flex items-center gap-2 rounded-full border border-red-700/60 bg-red-700/20 px-4 py-1.5 text-xs font-black tracking-widest text-red-200"><MapPin className="w-4 h-4" />İLAN YOĞUNLUK HARİTASI</span><h2 className="mt-4 text-3xl sm:text-4xl font-black">TÜRKİYE'DE <span className="text-red-600">REALTY CENTER</span></h2><p className="mt-2 text-sm font-medium text-slate-300">Şehre tıklayarak o bölgedeki tüm ilanları görüntüleyin.</p></div>
         <div className="rounded-3xl border border-white/10 bg-white/5 p-3 sm:p-7 shadow-2xl">
-          {mapError ? <p className="py-20 text-center text-sm text-slate-300">Harita şu anda yüklenemedi.</p> : <div ref={mapRef} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
+          {mapError ? <p className="py-20 text-center text-sm text-slate-300">Harita şu anda yüklenemedi.</p> : <div onClick={handleMapClick} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer [&_g[data-realty-city]:hover_path]:!fill-red-500" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
         </div>
         <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs font-bold text-slate-300"><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#dc2626]" />Yoğun ilan</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#b91c1c]" />Orta yoğunluk</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#7f1d1d]" />Diğer şehirler</span></div>
       </div>
