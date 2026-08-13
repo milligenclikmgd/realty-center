@@ -356,10 +356,11 @@ const SAMPLE_AGENTS = [
 ];
 
 const SLIDER_IMAGES = [
-  "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1920",
-  "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1920",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1920",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1920"
+  "/slider/realty-villa.jpg",
+  "/slider/realty-investment.jpg",
+  "/slider/realty-city.jpg",
+  "/slider/realty-seaside.jpg",
+  "/slider/realty-future.jpg"
 ];
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
