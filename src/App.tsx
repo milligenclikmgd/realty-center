@@ -577,14 +577,18 @@ function EyeIcon() {
 
 function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'agent') => void, scrolled: boolean }) {
   return (
-    <header className={`sticky top-0 z-40 w-full px-6 lg:px-12 py-2.5 flex items-center justify-between border-b-2 border-red-700 transition-all duration-500 ${
-      scrolled ? 'bg-white/85 backdrop-blur-md shadow-xl py-2' : 'bg-white shadow-md'
+    <header className={`sticky top-0 z-40 w-full flex items-center justify-between border-b-2 border-red-700 transition-all duration-500 ease-out ${
+      scrolled
+        ? 'bg-white/90 backdrop-blur-md shadow-lg py-1.5 px-5 lg:px-10'
+        : 'bg-white shadow-md py-2.5 px-6 lg:px-12'
     }`}>
       <Link to="/" className="flex items-center">
         <img 
           src="/rlogo.png" 
           alt="Realty Center" 
-          className="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105"
+          className={`w-auto object-contain transition-all duration-500 ease-out hover:scale-105 ${
+            scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'
+          }`}
           onError={(e) => { e.currentTarget.alt = "REALTY CENTER"; }}
         />
       </Link>
@@ -3100,6 +3104,16 @@ function AgentDashboard() {
   );
 }
 
+function ScrollToTopOnRouteChange() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location.pathname, location.search]);
+
+  return null;
+}
+
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
@@ -3295,6 +3309,7 @@ export default function RealtyCenterApp() {
 
   return (
     <Router>
+      <ScrollToTopOnRouteChange />
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header openDrawer={openDrawer} scrolled={scrolled} />
