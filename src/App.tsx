@@ -11,7 +11,7 @@ import {
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   ChevronDown, Users, Award, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
-  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle
+  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle, MessageCircle
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -376,6 +376,31 @@ export interface ContactMessage {
 
 const INITIAL_MESSAGES: ContactMessage[] = [];
 
+const DEFAULT_CONTACT_SETTINGS = { phone: '0532 567 48 45', email: 'info@realtycenter.com.tr', address: 'Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA', whatsapp: '905325674845' };
+
+function getContactSettings() {
+  try {
+    const saved = localStorage.getItem('realty-center-contact-settings');
+    return saved ? { ...DEFAULT_CONTACT_SETTINGS, ...JSON.parse(saved) } : DEFAULT_CONTACT_SETTINGS;
+  } catch { return DEFAULT_CONTACT_SETTINGS; }
+}
+
+function WhatsAppSupportButton() {
+  const [settings, setSettings] = useState(getContactSettings);
+  useEffect(() => {
+    const refresh = () => setSettings(getContactSettings());
+    window.addEventListener('realty-center-contact-updated', refresh);
+    return () => window.removeEventListener('realty-center-contact-updated', refresh);
+  }, []);
+  const href = settings.whatsapp.replace(/\D/g, '') ? 'https://wa.me/' + settings.whatsapp.replace(/\D/g, '') : '#';
+  return (
+    <a href={href} target="_blank" rel="noreferrer" aria-label="WhatsApp destek hattı" className="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white px-4 py-3.5 shadow-2xl shadow-emerald-950/30 transition-transform duration-300 hover:scale-105">
+      <MessageCircle className="w-6 h-6 fill-white/10" />
+      <span className="hidden sm:inline text-sm font-black">WhatsApp Destek</span>
+    </a>
+  );
+}
+
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   return (
     <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full">
@@ -625,42 +650,42 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="max-w-xl">
+          <div className="w-full max-w-2xl -ml-2 sm:-ml-6 lg:-ml-12">
             <div className="grid grid-cols-3 gap-2 mb-2">
               <button
                 onClick={() => setActiveTab('search')}
-                className={`relative overflow-hidden group h-20 rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
+                className={`relative overflow-hidden group h-24 rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
                   activeTab === 'search' 
                     ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
                 }`}
               >
                 <Megaphone className="w-6 h-6 relative z-10" />
-                <span className="text-xs font-extrabold tracking-wide relative z-10">İlanlar</span>
+                <span className="text-sm font-extrabold tracking-wide relative z-10">İlanlar</span>
               </button>
 
               <button
                 onClick={() => openDrawer('franchise')}
-                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Building2 className="w-6 h-6 text-red-700 relative z-10" />
-                <span className="text-xs font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
               </button>
 
               <button
                 onClick={() => openDrawer('agent')}
-                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Briefcase className="w-6 h-6 text-red-700 relative z-10" />
-                <span className="text-xs font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
               </button>
             </div>
 
-            <div className="bg-white text-slate-900 p-4 rounded-b-lg rounded-tr-lg shadow-2xl space-y-3 border-2 border-red-700/30">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="bg-white text-slate-900 p-6 rounded-b-lg rounded-tr-lg shadow-2xl space-y-4 border-2 border-red-700/30">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Satılık / Kiralık</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Satılık / Kiralık</label>
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Konut</option>
                     <option>İşyeri</option>
                     <option>Arsa</option>
@@ -668,8 +693,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İşlem Tipi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İşlem Tipi</label>
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Satılık</option>
                     <option>Kiralık</option>
                     <option>Devren</option>
@@ -677,14 +702,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Şehir</label>
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Şehir</label>
                   <select 
                     value={selectedCity} 
                     onChange={(e) => {
                       setSelectedCity(e.target.value);
                       setSearchDistrict('');
                     }}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+                    className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
                   >
                     <option value="">İl Seçiniz</option>
                     {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
@@ -692,12 +717,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İlçe</label>
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlçe</label>
                   <select 
                     disabled={!selectedCity}
                     value={searchDistrict}
                     onChange={(e) => setSearchDistrict(e.target.value)}
-                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
+                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
                       !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   >
@@ -707,25 +732,25 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İlan No</label>
-                  <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlan No</label>
+                  <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Min Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Min Fiyat</label>
+                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Maks Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Maks Fiyat</label>
+                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
-                  <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Para Birimi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Para Birimi</label>
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Türk Lirası</option>
                     <option>USD ($)</option>
                     <option>EUR (€)</option>
@@ -734,7 +759,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </div>
 
               <div className="pt-1">
-                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-10 py-2.5 rounded-md text-xs flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
+                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-12 py-3.5 rounded-md text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
@@ -2150,6 +2175,14 @@ function SuperAdminLoginPage() {
 function SuperAdminDashboard() {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'messages' | 'settings'>('overview');
+  const [contactSettings, setContactSettings] = useState(getContactSettings);
+  const [settingsSaved, setSettingsSaved] = useState(false);
+  const saveContactSettings = () => {
+    localStorage.setItem('realty-center-contact-settings', JSON.stringify(contactSettings));
+    window.dispatchEvent(new Event('realty-center-contact-updated'));
+    setSettingsSaved(true);
+    setTimeout(() => setSettingsSaved(false), 2500);
+  };
 
   // Franchise Başvuru Verileri
   const [franchiseApps, setFranchiseApps] = useState([
@@ -2593,34 +2626,17 @@ function SuperAdminDashboard() {
                   <p className="text-xs text-slate-400 font-medium mt-0.5">Platform geneli parametreler ve sistem yapılandırması</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                  <div>
-                    <label className="block text-slate-300 font-bold mb-1">Site Başlığı</label>
-                    <input type="text" defaultValue="Realty Center Türkiye Gayrimenkul" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
-                  </div>
-
-                  <div>
-                    <label className="block text-slate-300 font-bold mb-1">Franchise Katılım Komisyonu (%)</label>
-                    <input type="number" defaultValue="8" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
-                  </div>
-
-                  <div>
-                    <label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label>
-                    <input type="email" defaultValue="destek@realtycenter.com.tr" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
-                  </div>
-
-                  <div>
-                    <label className="block text-slate-300 font-bold mb-1">İlan Otomatik Onay Mekanizması</label>
-                    <select className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700">
-                      <option>Kapalı (Manuel Yönetici Onayı)</option>
-                      <option>Açık (Doğrudan Yayına Al)</option>
-                    </select>
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-black text-white mb-1">İletişim & WhatsApp Destek Hattı</h3>
+                  <p className="text-xs text-slate-400 mb-4">Kaydettiğiniz WhatsApp numarası sitedeki destek düğmesinde kullanılır.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div><label className="block text-slate-300 font-bold mb-1">Telefon / Danışma Hattı</label><input value={contactSettings.phone} onChange={(e) => setContactSettings({ ...contactSettings, phone: e.target.value })} type="tel" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-300 font-bold mb-1">WhatsApp Destek Numarası</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-300 font-bold mb-1">Açık Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                   </div>
                 </div>
-
-                <button onClick={() => alert("Ayarlar güncellendi.")} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">
-                  Ayarları Kaydet
-                </button>
+                <button onClick={saveContactSettings} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">{settingsSaved ? 'Ayarlar Kaydedildi' : 'Ayarları Kaydet'}</button>
               </div>
             )}
 
@@ -3192,6 +3208,7 @@ export default function RealtyCenterApp() {
         </main>
 
         <Footer openDrawer={openDrawer} />
+        <WhatsAppSupportButton />
 
         <div 
           className={`fixed inset-0 z-50 overflow-hidden transition-all duration-500 ${
@@ -3353,7 +3370,7 @@ export default function RealtyCenterApp() {
           <button
             onClick={scrollToTop}
             aria-label="En yukarıya dön"
-            className="fixed bottom-6 right-6 z-40 bg-red-700 hover:bg-red-800 text-white p-3.5 rounded-full shadow-2xl shadow-red-700/50 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/20 flex items-center justify-center"
+            className="fixed bottom-24 right-6 z-40 bg-red-700 hover:bg-red-800 text-white p-3.5 rounded-full shadow-2xl shadow-red-700/50 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/20 flex items-center justify-center"
           >
             <ArrowUp className="w-5 h-5" />
           </button>
