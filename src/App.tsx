@@ -423,6 +423,7 @@ function TurkeyListingMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
+  const [labels, setLabels] = useState<Array<{ city: string; left: number; top: number; size: number }>>([]);
   const cityCounts = SAMPLE_LISTINGS.reduce<Record<string, number>>((counts, item) => {
     counts[item.city] = (counts[item.city] || 0) + 1;
     return counts;
@@ -441,46 +442,36 @@ function TurkeyListingMap() {
         return response.text();
       })
       .then((svgText) => {
-        const document = new DOMParser().parseFromString(svgText, 'image/svg+xml');
-        document.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
+        const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+        parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
           const city = resolveCity(group.dataset.cityName || '');
           const count = cityCounts[city] || 0;
           const fill = count >= 2 ? '#dc2626' : count === 1 ? '#b91c1c' : '#7f1d1d';
           group.setAttribute('data-realty-city', city);
           group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:' + fill + ' !important;stroke:#ffffff !important;stroke-width:0.7 !important;transition:fill 180ms ease;'));
         });
-        setSvgMarkup(document.documentElement.outerHTML);
+        setSvgMarkup(parsed.documentElement.outerHTML);
       })
       .catch(() => setMapError(true));
   }, []);
 
   useEffect(() => {
     if (!svgMarkup || !mapRef.current) return;
-    const frame = requestAnimationFrame(() => {
-      const svg = mapRef.current?.querySelector('svg');
-      if (!svg) return;
-      svg.querySelectorAll('.realty-city-label').forEach((label) => label.remove());
-      svg.querySelectorAll<SVGGElement>('g[data-realty-city]').forEach((group) => {
-        const box = group.getBBox();
-        if (box.width < 10 || box.height < 5) return;
-        const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        label.setAttribute('x', String(box.x + box.width / 2));
-        label.setAttribute('y', String(box.y + box.height / 2 + 2.4));
-        label.setAttribute('text-anchor', 'middle');
-        label.setAttribute('class', 'realty-city-label');
-        label.setAttribute('font-size', box.width < 20 ? '5' : box.width < 36 ? '6.5' : '8');
-        label.setAttribute('font-family', 'Arial, sans-serif');
-        label.setAttribute('font-weight', '700');
-        label.setAttribute('fill', '#ffffff');
-        label.setAttribute('stroke', '#450a0a');
-        label.setAttribute('stroke-width', '0.9');
-        label.setAttribute('paint-order', 'stroke');
-        label.setAttribute('pointer-events', 'none');
-        label.textContent = group.getAttribute('data-realty-city') || '';
-        svg.appendChild(label);
+    const updateLabels = () => {
+      const container = mapRef.current;
+      if (!container) return;
+      const containerBox = container.getBoundingClientRect();
+      if (!containerBox.width || !containerBox.height) return;
+      const positions = Array.from(container.querySelectorAll<SVGGElement>('g[data-realty-city]')).flatMap((group) => {
+        const box = group.getBoundingClientRect();
+        if (box.width < 13 || box.height < 8) return [];
+        return [{ city: group.getAttribute('data-realty-city') || '', left: ((box.left - containerBox.left) + box.width / 2) / containerBox.width * 100, top: ((box.top - containerBox.top) + box.height / 2) / containerBox.height * 100, size: box.width < 28 ? 8 : box.width < 48 ? 9 : 11 }];
       });
-    });
-    return () => cancelAnimationFrame(frame);
+      setLabels(positions);
+    };
+    const frame = requestAnimationFrame(() => requestAnimationFrame(updateLabels));
+    window.addEventListener('resize', updateLabels);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('resize', updateLabels); };
   }, [svgMarkup]);
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -495,7 +486,8 @@ function TurkeyListingMap() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-6"><span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />İLAN YOĞUNLUK HARİTASI</span><h2 className="mt-3 text-2xl sm:text-3xl font-black">TÜRKİYE'DE <span className="text-red-700">REALTY CENTER</span></h2><p className="mt-2 text-sm font-medium text-slate-600">Şehre tıklayarak o bölgedeki tüm ilanları görüntüleyin.</p></div>
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3 sm:p-5 shadow-lg">
-          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div ref={mapRef} onClick={handleMapClick} className="turkey-listing-map mx-auto w-full max-w-5xl [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer [&_g[data-realty-city]:hover_path]:!fill-red-500" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
+          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div ref={mapRef} onClick={handleMapClick} className="turkey-listing-map relative mx-auto w-full max-w-5xl [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer [&_g[data-realty-city]:hover_path]:!fill-red-500" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
+          {!mapError && <div className="pointer-events-none relative mx-auto -mt-[min(50vw,24rem)] aspect-[1005/490] w-full max-w-5xl">{labels.map((label) => <span key={label.city} style={{ left: label.left + '%', top: label.top + '%', fontSize: label.size + 'px' }} className="absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-black leading-none text-white [text-shadow:0_1px_2px_#450a0a,0_-1px_2px_#450a0a]">{label.city}</span>)}</div>}
         </div>
         <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs font-bold text-slate-600"><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#dc2626]" />Yoğun ilan</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#b91c1c]" />Orta yoğunluk</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#7f1d1d]" />Diğer şehirler</span></div>
       </div>
