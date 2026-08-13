@@ -401,6 +401,23 @@ function WhatsAppSupportButton() {
   );
 }
 
+const LISTING_CATEGORIES = [
+  { title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Kiralık Evler', type: 'Kiralık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Satılık Arsalar', type: 'Satılık', category: 'Arsa', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Devren Dükkanlar', type: 'Devren', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Satılık Villalar', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Kiralık Ofisler', type: 'Kiralık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Satılık İş Yerleri', type: 'Satılık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1200' },
+  { title: 'Yatırımlık Fırsatlar', type: 'Satılık', category: '', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' }
+];
+
+const DEFAULT_CAMPAIGN_SETTINGS = { first: '1 Gün Geçerli', second: '2 Hafta Geçerli', third: 'Son 3 Gün' };
+function getCampaignSettings() {
+  try { const saved = localStorage.getItem('realty-center-campaign-settings'); return saved ? { ...DEFAULT_CAMPAIGN_SETTINGS, ...JSON.parse(saved) } : DEFAULT_CAMPAIGN_SETTINGS; }
+  catch { return DEFAULT_CAMPAIGN_SETTINGS; }
+}
+
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   return (
     <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full">
@@ -548,7 +565,7 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
         <Link to="/akademi" className="hover:text-red-700 transition duration-200">Akademi</Link>
         <Link to="/ofislerimiz" className="hover:text-red-700 transition duration-200">Ofislerimiz</Link>
         <Link to="/danismanlarimiz" className="hover:text-red-700 transition duration-200">Danışmanlarımız</Link>
-        <Link to="/ilanlarimiz" className="hover:text-red-700 transition duration-200">İlanlarımız</Link>
+        <Link to="/ilan-kategorileri" className="hover:text-red-700 transition duration-200">İlanlarımız</Link>
         <Link to="/projelerimiz" className="hover:text-red-700 transition duration-200">Projelerimiz</Link>
         <Link to="/iletisim" className="hover:text-red-700 transition duration-200">İletişim</Link>
         <button onClick={() => openDrawer('agent')} className="text-red-700 hover:text-slate-900 transition font-black">Danışman Ol</button>
@@ -624,6 +641,12 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
       </div>
     </footer>
   );
+}
+
+function OpportunityCards() {
+  const [campaign, setCampaign] = useState(getCampaignSettings);
+  useEffect(() => { const refresh = () => setCampaign(getCampaignSettings()); window.addEventListener('realty-center-campaign-updated', refresh); return () => window.removeEventListener('realty-center-campaign-updated', refresh); }, []);
+  return <div className="grid grid-cols-1 md:grid-cols-3 gap-5">{SAMPLE_LISTINGS.slice(0, 3).map((item, index) => <Link to={'/ilanlarimiz?type=' + item.type + '&category=' + item.category} key={item.id} className="group overflow-hidden rounded-2xl bg-white text-slate-900 shadow-2xl"><div className="relative h-44"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-red-700 px-3 py-1 text-xs font-black text-white">{[campaign.first, campaign.second, campaign.third][index]}</span></div><div className="p-4"><p className="text-xs font-black text-red-700">{item.type} • {item.category}</p><h3 className="mt-1 line-clamp-2 font-black">{item.title}</h3><p className="mt-2 text-lg font-black">{item.price.toLocaleString('tr-TR')} ₺</p></div></Link>)}</div>;
 }
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
@@ -775,6 +798,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <span className="text-sm font-light italic tracking-[0.15em] text-slate-200 block mt-0.5">Önce Güven...</span>
         </div>
       </div>
+
+      <section className="relative overflow-hidden bg-slate-950 py-14 text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-red-900/60 via-slate-950 to-slate-950" />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12"><div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7"><div><span className="text-xs font-black tracking-widest text-red-200">SINIRLI SÜRELİ PORTFÖYLER</span><h2 className="text-3xl sm:text-4xl font-black mt-1">FIRSAT <span className="text-red-600">GAYRİMENKULLER</span></h2></div><Link to="/ilanlarimiz" className="text-sm font-black text-white hover:text-red-200">Tüm fırsatları incele <ArrowRight className="inline w-4 h-4" /></Link></div><OpportunityCards /></div>
+      </section>
 
       <section className="bg-white text-slate-900 py-12 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -1592,16 +1620,38 @@ function AgentsPage() {
   );
 }
 
+function ListingCategoriesPage() {
+  const navigate = useNavigate();
+  return (
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="mb-9"><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek tüm ilanları inceleyin.</p></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {LISTING_CATEGORIES.map((item) => <button key={item.title} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-52 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+            <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-5"><span className="text-[10px] font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-lg font-black text-white">{item.title}</h2><span className="mt-2 inline-flex text-xs font-bold text-white/90">İlanları Gör <ArrowRight className="ml-1 w-4 h-4" /></span></div>
+          </button>)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ListingsPage() {
   const location = useLocation();
   const initialCity = new URLSearchParams(location.search).get('city') || '';
-  const [selectedType, setSelectedType] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const initialType = new URLSearchParams(location.search).get('type') || '';
+  const initialCategory = new URLSearchParams(location.search).get('category') || '';
+  const [selectedType, setSelectedType] = useState(initialType);
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedCity, setSelectedCity] = useState(initialCity);
 
   useEffect(() => {
-    const cityFromUrl = new URLSearchParams(location.search).get('city') || '';
-    setSelectedCity(cityFromUrl);
+    const params = new URLSearchParams(location.search);
+    setSelectedCity(params.get('city') || '');
+    setSelectedType(params.get('type') || '');
+    setSelectedCategory(params.get('category') || '');
   }, [location.search]);
 
   const filteredListings = SAMPLE_LISTINGS.filter((item) => {
@@ -2177,9 +2227,12 @@ function SuperAdminDashboard() {
   const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'messages' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
+  const [campaignSettings, setCampaignSettings] = useState(getCampaignSettings);
   const saveContactSettings = () => {
     localStorage.setItem('realty-center-contact-settings', JSON.stringify(contactSettings));
     window.dispatchEvent(new Event('realty-center-contact-updated'));
+    localStorage.setItem('realty-center-campaign-settings', JSON.stringify(campaignSettings));
+    window.dispatchEvent(new Event('realty-center-campaign-updated'));
     setSettingsSaved(true);
     setTimeout(() => setSettingsSaved(false), 2500);
   };
@@ -2634,6 +2687,12 @@ function SuperAdminDashboard() {
                     <div><label className="block text-slate-300 font-bold mb-1">WhatsApp Destek Numarası</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                     <div><label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                     <div><label className="block text-slate-300 font-bold mb-1">Açık Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                  </div>
+                </div>
+                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
+                  <h3 className="text-sm font-black text-white mb-1">Fırsat Gayrimenkuller Süreleri</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs">
+                    {(['first', 'second', 'third'] as const).map((key, index) => <div key={key}><label className="block text-slate-300 font-bold mb-1">Fırsat {index + 1} Süresi</label><input value={campaignSettings[key]} onChange={(e) => setCampaignSettings({ ...campaignSettings, [key]: e.target.value })} className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}
                   </div>
                 </div>
                 <button onClick={saveContactSettings} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">{settingsSaved ? 'Ayarlar Kaydedildi' : 'Ayarları Kaydet'}</button>
@@ -3201,6 +3260,7 @@ export default function RealtyCenterApp() {
             <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
             <Route path="/ofislerimiz" element={<OfficesPage />} />
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
+            <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
