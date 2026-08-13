@@ -423,17 +423,7 @@ function TurkeyListingMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
-  const [labels, setLabels] = useState<Array<{ city: string; left: number; top: number; size: number }>>([]);
-  const cityCounts = SAMPLE_LISTINGS.reduce<Record<string, number>>((counts, item) => {
-    counts[item.city] = (counts[item.city] || 0) + 1;
-    return counts;
-  }, {});
-
-  const normalizeCity = (city: string) => city.toLocaleLowerCase('tr-TR')
-    .replace(/ç/g, 'c').replace(/ğ/g, 'g').replace(/ı/g, 'i').replace(/ö/g, 'o')
-    .replace(/ş/g, 's').replace(/ü/g, 'u').replace(/İ/g, 'i');
-
-  const resolveCity = (city: string) => Object.keys(cityCounts).find((name) => normalizeCity(name) === normalizeCity(city)) || city;
+  const [hoveredCity, setHoveredCity] = useState<{ city: string; x: number; y: number } | null>(null);
 
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/ali-han/Turkey-SVG-Map/main/src/turkey.svg')
@@ -444,51 +434,48 @@ function TurkeyListingMap() {
       .then((svgText) => {
         const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
         parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
-          const city = resolveCity(group.dataset.cityName || '');
-          const count = cityCounts[city] || 0;
-          const fill = count >= 2 ? '#dc2626' : count === 1 ? '#b91c1c' : '#7f1d1d';
-          group.setAttribute('data-realty-city', city);
-          group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:' + fill + ' !important;stroke:#ffffff !important;stroke-width:0.7 !important;transition:fill 180ms ease;'));
+          group.setAttribute('data-realty-city', group.dataset.cityName || '');
+          group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:#fee2e2 !important;stroke:#ef4444 !important;stroke-width:0.75 !important;transition:fill 180ms ease;'));
         });
         setSvgMarkup(parsed.documentElement.outerHTML);
       })
       .catch(() => setMapError(true));
   }, []);
 
-  useEffect(() => {
-    if (!svgMarkup || !mapRef.current) return;
-    const updateLabels = () => {
-      const container = mapRef.current;
-      if (!container) return;
-      const containerBox = container.getBoundingClientRect();
-      if (!containerBox.width || !containerBox.height) return;
-      const positions = Array.from(container.querySelectorAll<SVGGElement>('g[data-realty-city]')).flatMap((group) => {
-        const box = group.getBoundingClientRect();
-        if (box.width < 13 || box.height < 8) return [];
-        return [{ city: group.getAttribute('data-realty-city') || '', left: ((box.left - containerBox.left) + box.width / 2) / containerBox.width * 100, top: ((box.top - containerBox.top) + box.height / 2) / containerBox.height * 100, size: box.width < 28 ? 8 : box.width < 48 ? 9 : 11 }];
-      });
-      setLabels(positions);
-    };
-    const frame = requestAnimationFrame(() => requestAnimationFrame(updateLabels));
-    window.addEventListener('resize', updateLabels);
-    return () => { cancelAnimationFrame(frame); window.removeEventListener('resize', updateLabels); };
-  }, [svgMarkup]);
+  const setCityFill = (group: Element | null, fill: string) => group?.querySelectorAll('path').forEach((path) => path.style.setProperty('fill', fill, 'important'));
+
+  const handleMapMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target as Element;
+    const cityGroup = target.closest('g[data-realty-city]');
+    if (!cityGroup || !mapRef.current) {
+      setHoveredCity(null);
+      return;
+    }
+    const box = mapRef.current.getBoundingClientRect();
+    const city = cityGroup.getAttribute('data-realty-city') || '';
+    mapRef.current.querySelectorAll('g[data-realty-city]').forEach((group) => setCityFill(group, group === cityGroup ? '#ef2222' : '#fee2e2'));
+    setHoveredCity({ city, x: event.clientX - box.left + 14, y: event.clientY - box.top - 12 });
+  };
+
+  const handleMapLeave = () => {
+    mapRef.current?.querySelectorAll('g[data-realty-city]').forEach((group) => setCityFill(group, '#fee2e2'));
+    setHoveredCity(null);
+  };
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as Element;
-    const cityGroup = target.closest('g[data-realty-city]');
-    const city = cityGroup?.getAttribute('data-realty-city');
+    const city = target.closest('g[data-realty-city]')?.getAttribute('data-realty-city');
     if (city) navigate('/ilanlarimiz?city=' + encodeURIComponent(city));
   };
 
   return (
     <section className="bg-white py-12 text-slate-900 overflow-hidden border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <div className="text-center max-w-2xl mx-auto mb-6"><span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />İLAN YOĞUNLUK HARİTASI</span><h2 className="mt-3 text-2xl sm:text-3xl font-black">TÜRKİYE'DE <span className="text-red-700">REALTY CENTER</span></h2><p className="mt-2 text-sm font-medium text-slate-600">Şehre tıklayarak o bölgedeki tüm ilanları görüntüleyin.</p></div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3 sm:p-5 shadow-lg">
-          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div className="relative mx-auto w-full max-w-5xl"><div ref={mapRef} onClick={handleMapClick} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer [&_g[data-realty-city]:hover_path]:!fill-red-500" dangerouslySetInnerHTML={{ __html: svgMarkup }} /><div className="pointer-events-none absolute inset-0">{labels.map((label) => <span key={label.city} style={{ left: label.left + '%', top: label.top + '%', fontSize: label.size + 'px' }} className="absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-black leading-none text-white [text-shadow:0_1px_2px_#450a0a,0_-1px_2px_#450a0a]">{label.city}</span>)}</div></div>}
+        <div className="text-center max-w-2xl mx-auto mb-6"><span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />ETKİLEŞİMLİ TÜRKİYE HARİTASI</span><h2 className="mt-3 text-2xl sm:text-3xl font-black">TÜRKİYE'DE <span className="text-red-700">REALTY CENTER</span></h2><p className="mt-2 text-sm font-medium text-slate-600">İlin üzerine gelin, seçmek için tıklayın.</p></div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-5 shadow-lg">
+          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div ref={mapRef} onMouseMove={handleMapMove} onMouseLeave={handleMapLeave} onClick={handleMapClick} className="turkey-listing-map relative mx-auto w-full max-w-5xl [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
+          {hoveredCity && <div style={{ left: hoveredCity.x, top: hoveredCity.y }} className="pointer-events-none absolute z-20 rounded-xl bg-red-600 px-3 py-2 text-sm font-black text-white shadow-xl">{hoveredCity.city}</div>}
         </div>
-        <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs font-bold text-slate-600"><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#dc2626]" />Yoğun ilan</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#b91c1c]" />Orta yoğunluk</span><span className="flex items-center gap-2"><i className="h-3 w-3 rounded-sm bg-[#7f1d1d]" />Diğer şehirler</span></div>
       </div>
     </section>
   );
