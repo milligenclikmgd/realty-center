@@ -401,16 +401,23 @@ function WhatsAppSupportButton() {
   );
 }
 
-const LISTING_CATEGORIES = [
-  { title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Kiralık Evler', type: 'Kiralık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Satılık Arsalar', type: 'Satılık', category: 'Arsa', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Devren Dükkanlar', type: 'Devren', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Satılık Villalar', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Kiralık Ofisler', type: 'Kiralık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Satılık İş Yerleri', type: 'Satılık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1200' },
-  { title: 'Yatırımlık Fırsatlar', type: 'Satılık', category: '', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' }
+type ListingCategory = { id: string; title: string; type: string; category: string; image: string };
+const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
+  { id: 'sale-home', title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'rent-home', title: 'Kiralık Evler', type: 'Kiralık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-land', title: 'Satılık Arsalar', type: 'Satılık', category: 'Arsa', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'transfer-shop', title: 'Devren Dükkanlar', type: 'Devren', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-villa', title: 'Satılık Villalar', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'rent-office', title: 'Kiralık Ofisler', type: 'Kiralık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-workplace', title: 'Satılık İş Yerleri', type: 'Satılık', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'investment', title: 'Yatırımlık Fırsatlar', type: 'Satılık', category: '', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' }
 ];
+function getListingCategories(): ListingCategory[] {
+  try {
+    const saved = localStorage.getItem('realty-center-listing-categories');
+    return saved ? JSON.parse(saved) : DEFAULT_LISTING_CATEGORIES;
+  } catch { return DEFAULT_LISTING_CATEGORIES; }
+}
 
 const DEFAULT_CAMPAIGN_SETTINGS = { first: '1 Gün Geçerli', second: '2 Hafta Geçerli', third: 'Son 3 Gün' };
 function getCampaignSettings() {
@@ -1688,12 +1695,18 @@ function AgentsPage() {
 
 function ListingCategoriesPage() {
   const navigate = useNavigate();
+  const [categories, setCategories] = useState<ListingCategory[]>(getListingCategories);
+  useEffect(() => {
+    const refresh = () => setCategories(getListingCategories());
+    window.addEventListener('realty-center-categories-updated', refresh);
+    return () => window.removeEventListener('realty-center-categories-updated', refresh);
+  }, []);
   return (
     <div className="bg-slate-50 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-9"><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek tüm ilanları inceleyin.</p></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {LISTING_CATEGORIES.map((item) => <button key={item.title} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          {categories.map((item) => <button key={item.id} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
             <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6"><span className="text-xs font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-xl sm:text-2xl font-black text-white leading-tight">{item.title}</h2><span className="mt-3 inline-flex items-center text-sm font-bold text-white">İlanları Gör <ArrowRight className="ml-1.5 w-4 h-4" /></span></div>
@@ -2195,18 +2208,18 @@ function SuperAdminLoginPage() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-950 flex items-center justify-center px-4 py-8 relative overflow-hidden">
+    <div className="min-h-[calc(100vh-100px)] bg-slate-50 flex items-center justify-center px-4 py-8 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-700/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-md relative z-10">
-        <div className="bg-slate-900 rounded-2xl shadow-2xl border border-slate-800 overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
           
-          <div className="p-6 text-center border-b border-slate-800 bg-slate-900/50">
+          <div className="p-6 text-center border-b border-slate-200 bg-white">
             <div className="w-14 h-14 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-700/10">
               <ShieldAlert className="w-8 h-8" />
             </div>
 
-            <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN</h1>
+            <h1 className="text-2xl font-black text-slate-900 tracking-wide">SÜPER ADMİN</h1>
             <p className="text-xs text-red-600 font-extrabold tracking-widest mt-1 uppercase">
               Sistem Yönetim Merkezi
             </p>
@@ -2221,7 +2234,7 @@ function SuperAdminLoginPage() {
             )}
 
             <div>
-              <label className="block text-xs font-bold text-slate-300 mb-1.5 tracking-wider">
+              <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                 Yönetici Kullanıcı Adı
               </label>
               <div className="relative">
@@ -2231,14 +2244,14 @@ function SuperAdminLoginPage() {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Admin kullanıcı adı"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
+                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-900 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-300 mb-1.5 tracking-wider">
+              <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
                 Güvenlik Parolası
               </label>
               <div className="relative">
@@ -2248,13 +2261,13 @@ function SuperAdminLoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••••••"
-                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
+                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-900 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-slate-300 font-bold"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-slate-700 font-bold"
                 >
                   {showPassword ? 'Gizle' : 'Göster'}
                 </button>
@@ -2270,7 +2283,7 @@ function SuperAdminLoginPage() {
             </button>
           </form>
 
-          <div className="border-t border-slate-800 px-6 py-3.5 text-center bg-slate-950/50">
+          <div className="border-t border-slate-200 px-6 py-3.5 text-center bg-slate-50">
             <p className="text-[10px] text-slate-500 font-medium">
               Bu alan üst düzey yönetici erişimi içindir. Tüm erişim logları tutulmaktadır.
             </p>
@@ -2290,10 +2303,35 @@ function SuperAdminLoginPage() {
 // SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'messages' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'messages' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [campaignSettings, setCampaignSettings] = useState(getCampaignSettings);
+  const [categories, setCategories] = useState<ListingCategory[]>(getListingCategories);
+  const [categorySaved, setCategorySaved] = useState(false);
+  const [newCategory, setNewCategory] = useState<ListingCategory>({ id: '', title: '', type: 'Satılık', category: 'Konut', image: '' });
+
+  const saveCategories = (nextCategories = categories) => {
+    localStorage.setItem('realty-center-listing-categories', JSON.stringify(nextCategories));
+    window.dispatchEvent(new Event('realty-center-categories-updated'));
+    setCategorySaved(true);
+    setTimeout(() => setCategorySaved(false), 2500);
+  };
+  const updateCategory = (id: string, patch: Partial<ListingCategory>) => setCategories((current) => current.map((item) => item.id === id ? { ...item, ...patch } : item));
+  const addCategory = () => {
+    if (!newCategory.title.trim()) return;
+    const item = { ...newCategory, id: newCategory.id || 'category-' + Date.now(), image: newCategory.image || 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' };
+    const next = [...categories, item];
+    setCategories(next);
+    saveCategories(next);
+    setNewCategory({ id: '', title: '', type: 'Satılık', category: 'Konut', image: '' });
+  };
+  const handleCategoryImage = (id: string, file?: File) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => updateCategory(id, { image: String(reader.result) });
+    reader.readAsDataURL(file);
+  };
   const saveContactSettings = () => {
     localStorage.setItem('realty-center-contact-settings', JSON.stringify(contactSettings));
     window.dispatchEvent(new Event('realty-center-contact-updated'));
@@ -2343,41 +2381,42 @@ function SuperAdminDashboard() {
     { key: 'offices' as const, label: 'Franchise Ofis Yönetimi', icon: Building2 },
     { key: 'agents' as const, label: 'Danışman Kontrolü', icon: Users },
     { key: 'listings' as const, label: 'İlan Onay Mekanizması', icon: Layers, badge: listings.filter(l => l.approvalStatus === 'Onay Bekliyor').length },
+    { key: 'categories' as const, label: 'Kategori Yönetimi', icon: Tag },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
   ];
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-950 text-slate-100">
+    <div className="min-h-[calc(100vh-100px)] bg-slate-50 text-slate-900">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
         {/* ÜST ADMİN HEADER */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
+        <div className="bg-white border border-slate-200 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
           <div className="flex items-center space-x-4">
             <div className="p-3 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30">
               <ShieldAlert className="w-8 h-8" />
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN KONTROL PANELİ</h1>
+                <h1 className="text-2xl font-black text-slate-900 tracking-wide">SÜPER ADMİN KONTROL PANELİ</h1>
                 <span className="bg-red-700 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-widest">
                   ROOT
                 </span>
               </div>
-              <p className="text-xs text-slate-400 font-medium mt-1">
+              <p className="text-xs text-slate-500 font-medium mt-1">
                 Realty Center Türkiye Genel Merkez Ana Kontrol ve Yetkilendirme Ekranı
               </p>
             </div>
           </div>
 
           <div className="flex items-center space-x-3">
-            <span className="text-xs text-slate-400 font-bold bg-slate-950 px-4 py-2 rounded-xl border border-slate-800">
+            <span className="text-xs text-slate-500 font-bold bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
               Sistem Durumu: <span className="text-emerald-500 font-black">Online / Aktif</span>
             </span>
 
             <button 
               onClick={() => navigate('/super-admin')} 
-              className="bg-red-700/20 hover:bg-red-700 text-red-500 hover:text-white border border-red-700/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
+              className="bg-red-700/20 hover:bg-red-700 text-red-500 hover:text-slate-900 border border-red-700/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
             >
               <LogOut className="w-4 h-4" />
               <span>Güvenli Çıkış</span>
@@ -2390,7 +2429,7 @@ function SuperAdminDashboard() {
           
           {/* SOL MENÜ */}
           <div className="lg:col-span-3 space-y-2">
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3 shadow-xl space-y-1">
+            <div className="bg-white border border-slate-200 rounded-2xl p-3 shadow-xl space-y-1">
               {navButtons.map((btn) => {
                 const Icon = btn.icon;
                 const isActive = activeTab === btn.key;
@@ -2402,11 +2441,11 @@ function SuperAdminDashboard() {
                     className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-extrabold text-xs transition duration-200 ${
                       isActive 
                         ? 'bg-red-700 text-white shadow-lg shadow-red-700/30' 
-                        : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                        : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'
                     }`}
                   >
                     <div className="flex items-center space-x-3">
-                      <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-slate-500'}`} />
+                      <Icon className={`w-4 h-4 ${isActive ? 'text-slate-900' : 'text-slate-500'}`} />
                       <span>{btn.label}</span>
                     </div>
 
@@ -2432,39 +2471,39 @@ function SuperAdminDashboard() {
                 
                 {/* METRİK KARTLARI */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Franchise Ofis</span>
+                      <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Franchise Ofis</span>
                       <Building2 className="w-5 h-5 text-red-600" />
                     </div>
-                    <div className="text-3xl font-black text-white mt-2">{offices.length}</div>
+                    <div className="text-3xl font-black text-slate-900 mt-2">{offices.length}</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %12 Geçen aya göre</p>
                   </div>
 
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aktif Danışman</span>
+                      <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Aktif Danışman</span>
                       <Users className="w-5 h-5 text-red-600" />
                     </div>
-                    <div className="text-3xl font-black text-white mt-2">1,024</div>
+                    <div className="text-3xl font-black text-slate-900 mt-2">1,024</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ 48 yeni kayıt</p>
                   </div>
 
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Yayındaki İlan</span>
+                      <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Yayındaki İlan</span>
                       <Layers className="w-5 h-5 text-red-600" />
                     </div>
-                    <div className="text-3xl font-black text-white mt-2">15,480</div>
+                    <div className="text-3xl font-black text-slate-900 mt-2">15,480</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %8 Portföy artışı</p>
                   </div>
 
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aylık Ciro</span>
+                      <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Aylık Ciro</span>
                       <TrendingUp className="w-5 h-5 text-red-600" />
                     </div>
-                    <div className="text-3xl font-black text-white mt-2">₺ 4.2M</div>
+                    <div className="text-3xl font-black text-slate-900 mt-2">₺ 4.2M</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %18 Gelir büyümesi</p>
                   </div>
                 </div>
@@ -2473,9 +2512,9 @@ function SuperAdminDashboard() {
                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                   
                   {/* BEKLEYEN BAŞVURULAR */}
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-base font-black text-white flex items-center space-x-2">
+                      <h3 className="text-base font-black text-slate-900 flex items-center space-x-2">
                         <FileText className="w-4 h-4 text-red-600" />
                         <span>Bekleyen Franchise Başvuruları</span>
                       </h3>
@@ -2484,13 +2523,13 @@ function SuperAdminDashboard() {
 
                     <div className="space-y-3">
                       {franchiseApps.filter(a => a.status === 'Beklemede').map((app) => (
-                        <div key={app.id} className="p-3.5 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <div key={app.id} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
                           <div>
-                            <div className="font-bold text-xs text-white">{app.name} ({app.city} / {app.district})</div>
+                            <div className="font-bold text-xs text-slate-900">{app.name} ({app.city} / {app.district})</div>
                             <div className="text-[11px] text-slate-500 font-medium">Bütçe: {app.budget} · {app.date}</div>
                           </div>
                           <div className="flex space-x-1.5">
-                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-slate-900 rounded-lg transition">
                               <Check className="w-3.5 h-3.5" />
                             </button>
                             <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
@@ -2503,9 +2542,9 @@ function SuperAdminDashboard() {
                   </div>
 
                   {/* ONAY BEKLEYEN İLANLAR */}
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                  <div className="bg-white border border-slate-200 rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-base font-black text-white flex items-center space-x-2">
+                      <h3 className="text-base font-black text-slate-900 flex items-center space-x-2">
                         <AlertCircle className="w-4 h-4 text-red-600" />
                         <span>Onay Bekleyen İlanlar</span>
                       </h3>
@@ -2514,13 +2553,13 @@ function SuperAdminDashboard() {
 
                     <div className="space-y-3">
                       {listings.filter(l => l.approvalStatus === 'Onay Bekliyor').map((listing) => (
-                        <div key={listing.id} className="p-3.5 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between">
+                        <div key={listing.id} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
                           <div>
-                            <div className="font-bold text-xs text-white truncate max-w-[200px]">{listing.title}</div>
+                            <div className="font-bold text-xs text-slate-900 truncate max-w-[200px]">{listing.title}</div>
                             <div className="text-[11px] text-slate-500 font-medium">{listing.agentName} · {listing.price.toLocaleString('tr-TR')} ₺</div>
                           </div>
                           <div className="flex space-x-1.5">
-                            <button onClick={() => updateListingApproval(listing.id, 'Yayında')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
+                            <button onClick={() => updateListingApproval(listing.id, 'Yayında')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-slate-900 rounded-lg transition">
                               <Check className="w-3.5 h-3.5" />
                             </button>
                             <button onClick={() => updateListingApproval(listing.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
@@ -2538,17 +2577,17 @@ function SuperAdminDashboard() {
 
             {/* 2. FRANCHİSE BAŞVURULARI TABI */}
             {activeTab === 'franchise' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
-                    <h2 className="text-lg font-black text-white">Franchise Başvuruları</h2>
-                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistem üzerinden gönderilen yeni temsilcilik müracaatları</p>
+                    <h2 className="text-lg font-black text-slate-900">Franchise Başvuruları</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Sistem üzerinden gönderilen yeni temsilcilik müracaatları</p>
                   </div>
                 </div>
 
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs font-medium">
-                    <thead className="bg-slate-950 text-slate-400 font-extrabold uppercase border-b border-slate-800">
+                    <thead className="bg-slate-50 text-slate-500 font-extrabold uppercase border-b border-slate-200">
                       <tr>
                         <th className="p-3">Başvuru No</th>
                         <th className="p-3">Ad Soyad</th>
@@ -2562,11 +2601,11 @@ function SuperAdminDashboard() {
                     </thead>
                     <tbody className="divide-y divide-slate-800/60">
                       {franchiseApps.map((app) => (
-                        <tr key={app.id} className="hover:bg-slate-800/40 transition">
+                        <tr key={app.id} className="hover:bg-slate-100/40 transition">
                           <td className="p-3 font-black text-red-600">{app.id}</td>
-                          <td className="p-3 font-bold text-white">{app.name}</td>
-                          <td className="p-3 text-slate-300">{app.city} / {app.district}</td>
-                          <td className="p-3 text-slate-400">{app.phone}</td>
+                          <td className="p-3 font-bold text-slate-900">{app.name}</td>
+                          <td className="p-3 text-slate-700">{app.city} / {app.district}</td>
+                          <td className="p-3 text-slate-500">{app.phone}</td>
                           <td className="p-3 font-bold text-emerald-400">{app.budget}</td>
                           <td className="p-3 text-slate-500">{app.date}</td>
                           <td className="p-3">
@@ -2579,7 +2618,7 @@ function SuperAdminDashboard() {
                             </span>
                           </td>
                           <td className="p-3 text-right space-x-1">
-                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="px-2.5 py-1 bg-emerald-600 text-white font-bold rounded-lg text-[10px] hover:bg-emerald-700 transition">Onayla</button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="px-2.5 py-1 bg-emerald-600 text-slate-900 font-bold rounded-lg text-[10px] hover:bg-emerald-700 transition">Onayla</button>
                             <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="px-2.5 py-1 bg-red-700/30 text-red-500 border border-red-700/30 font-bold rounded-lg text-[10px] hover:bg-red-700 hover:text-white transition">Reddet</button>
                           </td>
                         </tr>
@@ -2592,11 +2631,11 @@ function SuperAdminDashboard() {
 
             {/* 3. FRANCHİSE OFİS YÖNETİMİ TABI */}
             {activeTab === 'offices' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-6">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
-                    <h2 className="text-lg font-black text-white">Franchise Ofis Yönetimi</h2>
-                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistemde aktif çalışan tüm bölge başkanlıkları ve temsilcilikler</p>
+                    <h2 className="text-lg font-black text-slate-900">Franchise Ofis Yönetimi</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Sistemde aktif çalışan tüm bölge başkanlıkları ve temsilcilikler</p>
                   </div>
                   <button onClick={() => alert("Yeni ofis ekleme modülü açılıyor...")} className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
                     <PlusCircle className="w-4 h-4" />
@@ -2606,19 +2645,19 @@ function SuperAdminDashboard() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {offices.map((office) => (
-                    <div key={office.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <div key={office.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-[10px] font-black text-red-600 bg-red-700/10 px-2 py-0.5 rounded border border-red-700/20">{office.city} / {office.district}</span>
                           <span className="text-[10px] text-emerald-400 font-bold">Aktif Lisans</span>
                         </div>
-                        <h4 className="font-black text-sm text-white">{office.name}</h4>
-                        <p className="text-xs text-slate-400 mt-2"><strong>Yönetici:</strong> {office.manager}</p>
+                        <h4 className="font-black text-sm text-slate-900">{office.name}</h4>
+                        <p className="text-xs text-slate-500 mt-2"><strong>Yönetici:</strong> {office.manager}</p>
                         <p className="text-xs text-slate-500"><strong>Tel:</strong> {office.phone}</p>
                       </div>
 
-                      <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                        <button className="text-slate-400 hover:text-white font-bold text-[11px]">Düzenle</button>
+                      <div className="mt-4 pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                        <button className="text-slate-500 hover:text-slate-900 font-bold text-[11px]">Düzenle</button>
                         <button className="text-red-600 hover:text-red-500 font-bold text-[11px]">Askıya Al</button>
                       </div>
                     </div>
@@ -2629,37 +2668,37 @@ function SuperAdminDashboard() {
 
             {/* 4. DANIŞMAN KONTROLÜ TABI */}
             {activeTab === 'agents' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
-                    <h2 className="text-lg font-black text-white">Danışman Kontrol Paneli</h2>
-                    <p className="text-xs text-slate-400 font-medium mt-0.5">Sistemdeki tüm gayrimenkul danışmanlarının yetki ve profil yönetimi</p>
+                    <h2 className="text-lg font-black text-slate-900">Danışman Kontrol Paneli</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Sistemdeki tüm gayrimenkul danışmanlarının yetki ve profil yönetimi</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {agents.map((agent) => (
-                    <div key={agent.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+                    <div key={agent.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center space-x-3 mb-3">
                           <div className="w-10 h-10 rounded-full bg-red-700 text-white font-black flex items-center justify-center text-xs">
                             {agent.name.split(' ').map(n => n[0]).join('')}
                           </div>
                           <div>
-                            <h4 className="font-black text-xs text-white">{agent.name}</h4>
+                            <h4 className="font-black text-xs text-slate-900">{agent.name}</h4>
                             <span className="text-[10px] text-red-500 font-bold block">{agent.title}</span>
                           </div>
                         </div>
 
-                        <div className="text-[11px] text-slate-400 space-y-1">
+                        <div className="text-[11px] text-slate-500 space-y-1">
                           <div><strong>Ofis:</strong> {agent.office}</div>
                           <div><strong>Tel:</strong> {agent.phone}</div>
                           <div><strong>Aktif İlan:</strong> {agent.activeListings} adet</div>
                         </div>
                       </div>
 
-                      <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-                        <button className="text-xs text-slate-300 hover:text-white font-bold">Detay</button>
+                      <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between">
+                        <button className="text-xs text-slate-700 hover:text-slate-900 font-bold">Detay</button>
                         <button className="text-xs text-amber-500 hover:text-amber-400 font-bold">Şifre Sıfırla</button>
                       </div>
                     </div>
@@ -2670,25 +2709,25 @@ function SuperAdminDashboard() {
 
             {/* 5. İLAN ONAY MEKANİZMASI TABI */}
             {activeTab === 'listings' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
-                    <h2 className="text-lg font-black text-white">İlan Onay Mekanizması</h2>
-                    <p className="text-xs text-slate-400 font-medium mt-0.5">Danışmanlar tarafından eklenen ilanların denetim ekranı</p>
+                    <h2 className="text-lg font-black text-slate-900">İlan Onay Mekanizması</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Danışmanlar tarafından eklenen ilanların denetim ekranı</p>
                   </div>
                 </div>
 
                 <div className="space-y-3">
                   {listings.map((item) => (
-                    <div key={item.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div key={item.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                       <div className="flex items-center space-x-4">
                         <img src={item.image} alt={item.title} className="w-16 h-12 object-cover rounded-lg" />
                         <div>
                           <div className="flex items-center space-x-2">
-                            <span className="text-xs font-black text-white">{item.title}</span>
+                            <span className="text-xs font-black text-slate-900">{item.title}</span>
                             <span className="text-[10px] font-bold text-red-600">({item.id})</span>
                           </div>
-                          <p className="text-[11px] text-slate-400 mt-0.5">{item.city} / {item.district} · {item.price.toLocaleString('tr-TR')} ₺ · Danışman: {item.agentName}</p>
+                          <p className="text-[11px] text-slate-500 mt-0.5">{item.city} / {item.district} · {item.price.toLocaleString('tr-TR')} ₺ · Danışman: {item.agentName}</p>
                         </div>
                       </div>
 
@@ -2714,23 +2753,45 @@ function SuperAdminDashboard() {
               </div>
             )}
 
+            {/* 6. KATEGORİ YÖNETİMİ TABI */}
+            {activeTab === 'categories' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-xl space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-200 pb-4">
+                  <div><h2 className="text-lg font-black text-slate-900">İlan Kategorileri</h2><p className="text-xs text-slate-500 font-medium mt-0.5">Kategori adlarını, filtrelerini ve kapak görsellerini buradan yönetin.</p></div>
+                  <button onClick={() => saveCategories()} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-2.5 rounded-xl text-xs transition">{categorySaved ? 'Kategoriler Kaydedildi' : 'Değişiklikleri Kaydet'}</button>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {categories.map((item) => (
+                    <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                      <div className="flex gap-4"><img src={item.image} alt={item.title} className="h-24 w-32 rounded-xl object-cover border border-slate-200" /><div className="flex-1 space-y-2">
+                        <input value={item.title} onChange={(e) => updateCategory(item.id, { title: e.target.value })} className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Kategori adı" />
+                        <div className="grid grid-cols-2 gap-2"><select value={item.type} onChange={(e) => updateCategory(item.id, { type: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-2 py-2 text-xs font-bold text-slate-700"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select><select value={item.category} onChange={(e) => updateCategory(item.id, { category: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-2 py-2 text-xs font-bold text-slate-700"><option value="Konut">Konut</option><option value="İşyeri">İşyeri</option><option value="Arsa">Arsa</option><option value="">Genel</option></select></div>
+                      </div></div>
+                      <div className="mt-3 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2"><input value={item.image} onChange={(e) => updateCategory(item.id, { image: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Görsel URL'si" /><label className="cursor-pointer rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-center text-xs font-black text-red-700 hover:bg-red-100"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleCategoryImage(item.id, e.target.files?.[0])} />Görsel Seç</label></div>
+                    </div>
+                  ))}
+                </div>
+                <div className="rounded-2xl border-2 border-dashed border-red-200 bg-red-50/40 p-5"><h3 className="text-sm font-black text-slate-900">Yeni Kategori Ekle</h3><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"><input value={newCategory.title} onChange={(e) => setNewCategory({ ...newCategory, title: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold" placeholder="Kategori adı" /><select value={newCategory.type} onChange={(e) => setNewCategory({ ...newCategory, type: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select><select value={newCategory.category} onChange={(e) => setNewCategory({ ...newCategory, category: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>Konut</option><option>İşyeri</option><option>Arsa</option><option value="">Genel</option></select><button onClick={addCategory} className="rounded-xl bg-red-700 px-4 py-2.5 text-xs font-black text-slate-900 hover:bg-red-800">Kategori Ekle</button></div><div className="mt-3 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2"><input value={newCategory.image} onChange={(e) => setNewCategory({ ...newCategory, image: e.target.value })} className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs" placeholder="Kapak görseli URL'si (isteğe bağlı)" /><label className="cursor-pointer rounded-xl border border-red-200 bg-white px-4 py-2.5 text-center text-xs font-black text-red-700 hover:bg-red-50"><input type="file" accept="image/*" className="hidden" onChange={(e) => { const file = e.target.files?.[0]; if (!file) return; const reader = new FileReader(); reader.onload = () => setNewCategory({ ...newCategory, image: String(reader.result) }); reader.readAsDataURL(file); }} />Görsel Seç</label></div></div>
+              </div>
+            )}
+
             {/* 6. SİSTEM MESAJLARI TABI */}
             {activeTab === 'messages' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-4">
-                <div className="border-b border-slate-800 pb-4">
-                  <h2 className="text-lg font-black text-white">Sistem Mesajları</h2>
-                  <p className="text-xs text-slate-400 font-medium mt-0.5">İletişim formundan genel merkeze düşen mesajlar</p>
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="border-b border-slate-200 pb-4">
+                  <h2 className="text-lg font-black text-slate-900">Sistem Mesajları</h2>
+                  <p className="text-xs text-slate-500 font-medium mt-0.5">İletişim formundan genel merkeze düşen mesajlar</p>
                 </div>
 
                 <div className="space-y-3">
                   {contactMessages.map((msg) => (
-                    <div key={msg.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <div key={msg.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
                       <div className="flex items-center justify-between text-xs">
-                        <span className="font-black text-white">{msg.sender} ({msg.email})</span>
+                        <span className="font-black text-slate-900">{msg.sender} ({msg.email})</span>
                         <span className="text-slate-500">{msg.date}</span>
                       </div>
-                      <p className="text-xs text-slate-300 font-bold">{msg.subject}</p>
-                      <p className="text-xs text-slate-400">Tel: {msg.phone}</p>
+                      <p className="text-xs text-slate-700 font-bold">{msg.subject}</p>
+                      <p className="text-xs text-slate-500">Tel: {msg.phone}</p>
                     </div>
                   ))}
                 </div>
@@ -2739,26 +2800,26 @@ function SuperAdminDashboard() {
 
             {/* 7. SİSTEM AYARLARI TABI */}
             {activeTab === 'settings' && (
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl space-y-6">
-                <div className="border-b border-slate-800 pb-4">
-                  <h2 className="text-lg font-black text-white">Sistem & Genel Ayarlar</h2>
-                  <p className="text-xs text-slate-400 font-medium mt-0.5">Platform geneli parametreler ve sistem yapılandırması</p>
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-6">
+                <div className="border-b border-slate-200 pb-4">
+                  <h2 className="text-lg font-black text-slate-900">Sistem & Genel Ayarlar</h2>
+                  <p className="text-xs text-slate-500 font-medium mt-0.5">Platform geneli parametreler ve sistem yapılandırması</p>
                 </div>
 
-                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
-                  <h3 className="text-sm font-black text-white mb-1">İletişim & WhatsApp Destek Hattı</h3>
-                  <p className="text-xs text-slate-400 mb-4">Kaydettiğiniz WhatsApp numarası sitedeki destek düğmesinde kullanılır.</p>
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <h3 className="text-sm font-black text-slate-900 mb-1">İletişim & WhatsApp Destek Hattı</h3>
+                  <p className="text-xs text-slate-500 mb-4">Kaydettiğiniz WhatsApp numarası sitedeki destek düğmesinde kullanılır.</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                    <div><label className="block text-slate-300 font-bold mb-1">Telefon / Danışma Hattı</label><input value={contactSettings.phone} onChange={(e) => setContactSettings({ ...contactSettings, phone: e.target.value })} type="tel" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
-                    <div><label className="block text-slate-300 font-bold mb-1">WhatsApp Destek Numarası</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
-                    <div><label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
-                    <div><label className="block text-slate-300 font-bold mb-1">Açık Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">Telefon / Danışma Hattı</label><input value={contactSettings.phone} onChange={(e) => setContactSettings({ ...contactSettings, phone: e.target.value })} type="tel" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">WhatsApp Destek Numarası</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">Açık Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                   </div>
                 </div>
-                <div className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
-                  <h3 className="text-sm font-black text-white mb-1">Fırsat Gayrimenkuller Süreleri</h3>
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <h3 className="text-sm font-black text-slate-900 mb-1">Fırsat Gayrimenkuller Süreleri</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs">
-                    {(['first', 'second', 'third'] as const).map((key, index) => <div key={key}><label className="block text-slate-300 font-bold mb-1">Fırsat {index + 1} Süresi</label><input value={campaignSettings[key]} onChange={(e) => setCampaignSettings({ ...campaignSettings, [key]: e.target.value })} className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}
+                    {(['first', 'second', 'third'] as const).map((key, index) => <div key={key}><label className="block text-slate-700 font-bold mb-1">Fırsat {index + 1} Süresi</label><input value={campaignSettings[key]} onChange={(e) => setCampaignSettings({ ...campaignSettings, [key]: e.target.value })} className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}
                   </div>
                 </div>
                 <button onClick={saveContactSettings} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">{settingsSaved ? 'Ayarlar Kaydedildi' : 'Ayarları Kaydet'}</button>
