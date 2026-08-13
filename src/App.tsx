@@ -645,8 +645,30 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
 
 function OpportunityCards() {
   const [campaign, setCampaign] = useState(getCampaignSettings);
-  useEffect(() => { const refresh = () => setCampaign(getCampaignSettings()); window.addEventListener('realty-center-campaign-updated', refresh); return () => window.removeEventListener('realty-center-campaign-updated', refresh); }, []);
-  return <div className="grid grid-cols-1 md:grid-cols-3 gap-5">{SAMPLE_LISTINGS.slice(0, 3).map((item, index) => <Link to={'/ilanlarimiz?type=' + item.type + '&category=' + item.category} key={item.id} className="group overflow-hidden rounded-2xl bg-white text-slate-900 shadow-2xl"><div className="relative h-44"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-red-700 px-3 py-1 text-xs font-black text-white">{[campaign.first, campaign.second, campaign.third][index]}</span></div><div className="p-4"><p className="text-xs font-black text-red-700">{item.type} • {item.category}</p><h3 className="mt-1 line-clamp-2 font-black">{item.title}</h3><p className="mt-2 text-lg font-black">{item.price.toLocaleString('tr-TR')} ₺</p></div></Link>)}</div>;
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const refresh = () => setCampaign(getCampaignSettings());
+    window.addEventListener('realty-center-campaign-updated', refresh);
+    return () => window.removeEventListener('realty-center-campaign-updated', refresh);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => setActiveIndex((current) => (current + 1) % SAMPLE_LISTINGS.length), 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const item = SAMPLE_LISTINGS[activeIndex];
+  const duration = [campaign.first, campaign.second, campaign.third][activeIndex % 3];
+
+  return (
+    <Link to={'/ilanlarimiz?type=' + item.type + '&category=' + item.category} className="group relative block h-[300px] overflow-hidden rounded-2xl bg-slate-900 shadow-2xl">
+      <img key={item.id} src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 group-hover:scale-105" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent" />
+      <div className="absolute left-4 top-4 flex items-center gap-2"><span className="rounded-full bg-red-700 px-3 py-1 text-[10px] font-black tracking-wider text-white">FIRSAT GAYRİMENKUL</span><span className="rounded-full bg-white/95 px-3 py-1 text-[10px] font-black text-red-700">{duration}</span></div>
+      <div className="absolute bottom-0 left-0 right-0 p-6 text-white"><p className="text-xs font-black text-red-200">{item.type} • {item.category}</p><h3 className="mt-1 max-w-md text-lg font-black sm:text-xl">{item.title}</h3><div className="mt-3 flex items-center justify-between"><span className="text-2xl font-black">{item.price.toLocaleString('tr-TR')} ₺</span><span className="text-xs font-black">İncele <ArrowRight className="inline h-4 w-4" /></span></div></div>
+    </Link>
+  );
 }
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
@@ -799,11 +821,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </div>
 
-      <section className="relative overflow-hidden bg-slate-950 py-14 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-900/60 via-slate-950 to-slate-950" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-12"><div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7"><div><span className="text-xs font-black tracking-widest text-red-200">SINIRLI SÜRELİ PORTFÖYLER</span><h2 className="text-3xl sm:text-4xl font-black mt-1">FIRSAT <span className="text-red-600">GAYRİMENKULLER</span></h2></div><Link to="/ilanlarimiz" className="text-sm font-black text-white hover:text-red-200">Tüm fırsatları incele <ArrowRight className="inline w-4 h-4" /></Link></div><OpportunityCards /></div>
-      </section>
-
       <section className="bg-white text-slate-900 py-12 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="p-4 border-r border-slate-100 last:border-none">
@@ -830,35 +847,13 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div>
-            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2">
-              <Flame className="w-3.5 h-3.5 animate-bounce" />
-              <span>Canlı İlan Akışı</span>
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
-              EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span>
-            </h2>
-            <p className="text-slate-500 text-xs font-medium mt-1">
-              Sisteme en son eklenen portföylerimiz (Üzerine gelerek akışı durdurabilirsiniz)
-            </p>
-          </div>
-
-          <Link 
-            to="/ilanlarimiz" 
-            className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"
-          >
-            <span>Tümünü Gör</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler fırsat alanının yanında canlı olarak akar.</p></div>
+          <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
-
-        <div className="relative w-full overflow-hidden py-4">
-          <div className="animate-marquee flex space-x-6">
-            {marqueeListings.map((item, idx) => (
-              <div key={`${item.id}-${idx}`} className="w-80 flex-shrink-0 text-slate-900">
-                <ListingCard item={item} />
-              </div>
-            ))}
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
+          <div className="w-full shrink-0 px-6 lg:w-[42rem] lg:pl-[max(1.5rem,calc((100vw-80rem)/2))]"><OpportunityCards /></div>
+          <div className="relative min-w-0 flex-1 overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
+            <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
           </div>
         </div>
       </section>
