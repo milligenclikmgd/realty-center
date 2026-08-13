@@ -378,7 +378,7 @@ const INITIAL_MESSAGES: ContactMessage[] = [];
 
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-600 transition-all duration-300 flex flex-col justify-between group h-full">
+    <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full">
       <div>
         <div className="relative h-52 overflow-hidden bg-slate-900">
           <img 
@@ -390,7 +390,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
 
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
             <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
-              item.type === 'Satılık' ? 'bg-red-600' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
+              item.type === 'Satılık' ? 'bg-red-700' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
             }`}>
               {item.type}
             </span>
@@ -409,12 +409,12 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </div>
 
         <div className="p-5">
-          <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-600 transition h-10">
+          <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-700 transition h-10">
             {item.title}
           </h3>
 
           <div className="flex items-center space-x-1 text-xs text-slate-500 font-semibold mb-4">
-            <MapPin className="w-3.5 h-3.5 text-red-600 flex-shrink-0" />
+            <MapPin className="w-3.5 h-3.5 text-red-700 flex-shrink-0" />
             <span className="truncate">{item.city} / {item.district} / {item.neighborhood}</span>
           </div>
 
@@ -438,7 +438,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </div>
         <a 
           href={`tel:${item.agentPhone.replace(/\s+/g, '')}`}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-600/20"
+          className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-700/20"
         >
           <Phone className="w-3 h-3" />
           <span>Ara</span>
@@ -468,12 +468,12 @@ function EyeIcon() {
 
 function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'agent') => void, scrolled: boolean }) {
   return (
-    <header className={`sticky top-0 z-40 w-full px-6 lg:px-12 py-2.5 flex items-center justify-between border-b-2 border-red-600 transition-all duration-500 ${
+    <header className={`sticky top-0 z-40 w-full px-6 lg:px-12 py-2.5 flex items-center justify-between border-b-2 border-red-700 transition-all duration-500 ${
       scrolled ? 'bg-white/85 backdrop-blur-md shadow-xl py-2' : 'bg-white shadow-md'
     }`}>
       <Link to="/" className="flex items-center">
         <img 
-          src="/logo.png" 
+          src="/rlogo.png" 
           alt="Realty Center" 
           className="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105"
           onError={(e) => { e.currentTarget.alt = "REALTY CENTER"; }}
@@ -482,58 +482,58 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
 
       <nav className="hidden xl:flex items-center space-x-7 text-sm font-extrabold text-slate-800 tracking-wide">
         <div className="relative group py-2">
-          <Link to="/kurumsal/hakkimizda" className="hover:text-red-600 transition duration-200 flex items-center space-x-1 py-1">
+          <Link to="/kurumsal/hakkimizda" className="hover:text-red-700 transition duration-200 flex items-center space-x-1 py-1">
             <span>Kurumsal</span>
-            <ChevronDown className="w-4 h-4 text-slate-500 group-hover:text-red-600 transition-transform duration-300 group-hover:rotate-180" />
+            <ChevronDown className="w-4 h-4 text-slate-500 group-hover:text-red-700 transition-transform duration-300 group-hover:rotate-180" />
           </Link>
 
-          <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border-t-4 border-t-red-600 z-50">
-            <Link to="/kurumsal/hakkimizda" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 hover:text-red-600 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-600 group-hover/item:text-white rounded-md text-slate-700 transition">
+          <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border-t-4 border-t-red-700 z-50">
+            <Link to="/kurumsal/hakkimizda" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
+              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
                 <Award className="w-4 h-4" />
               </div>
               <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-600">Hakkımızda</div>
+                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Hakkımızda</div>
                 <div className="text-[10px] text-slate-500 font-medium">Vizyon ve misyonumuz</div>
               </div>
             </Link>
 
-            <Link to="/kurumsal/once-guven" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 hover:text-red-600 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-600 group-hover/item:text-white rounded-md text-slate-700 transition">
+            <Link to="/kurumsal/once-guven" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
+              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-600">Önce Güven İlkesi</div>
+                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Önce Güven İlkesi</div>
                 <div className="text-[10px] text-slate-500 font-medium">Şeffaf ve etik anlayışımız</div>
               </div>
             </Link>
 
-            <Link to="/kurumsal/ekibimiz" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 hover:text-red-600 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-600 group-hover/item:text-white rounded-md text-slate-700 transition">
+            <Link to="/kurumsal/ekibimiz" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
+              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
                 <Users className="w-4 h-4" />
               </div>
               <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-600">Yönetim Kadrosu & Ekibimiz</div>
+                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Yönetim Kadrosu & Ekibimiz</div>
                 <div className="text-[10px] text-slate-500 font-medium">Profesyonel kadromuz</div>
               </div>
             </Link>
           </div>
         </div>
 
-        <Link to="/akademi" className="hover:text-red-600 transition duration-200">Akademi</Link>
-        <Link to="/ofislerimiz" className="hover:text-red-600 transition duration-200">Ofislerimiz</Link>
-        <Link to="/danismanlarimiz" className="hover:text-red-600 transition duration-200">Danışmanlarımız</Link>
-        <Link to="/ilanlarimiz" className="hover:text-red-600 transition duration-200">İlanlarımız</Link>
-        <Link to="/projelerimiz" className="hover:text-red-600 transition duration-200">Projelerimiz</Link>
-        <Link to="/iletisim" className="hover:text-red-600 transition duration-200">İletişim</Link>
-        <button onClick={() => openDrawer('agent')} className="text-red-600 hover:text-slate-900 transition font-black">Danışman Ol</button>
-        <button onClick={() => openDrawer('franchise')} className="text-red-600 hover:text-slate-900 transition font-black">Franchise Ol!</button>
+        <Link to="/akademi" className="hover:text-red-700 transition duration-200">Akademi</Link>
+        <Link to="/ofislerimiz" className="hover:text-red-700 transition duration-200">Ofislerimiz</Link>
+        <Link to="/danismanlarimiz" className="hover:text-red-700 transition duration-200">Danışmanlarımız</Link>
+        <Link to="/ilanlarimiz" className="hover:text-red-700 transition duration-200">İlanlarımız</Link>
+        <Link to="/projelerimiz" className="hover:text-red-700 transition duration-200">Projelerimiz</Link>
+        <Link to="/iletisim" className="hover:text-red-700 transition duration-200">İletişim</Link>
+        <button onClick={() => openDrawer('agent')} className="text-red-700 hover:text-slate-900 transition font-black">Danışman Ol</button>
+        <button onClick={() => openDrawer('franchise')} className="text-red-700 hover:text-slate-900 transition font-black">Franchise Ol!</button>
       </nav>
 
       <div>
         <Link
           to="/panel"
-          className="relative overflow-hidden group bg-black hover:bg-slate-800 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-black/30 transition duration-300 transform hover:scale-105 tracking-wider"
+          className="relative overflow-hidden group bg-red-800 hover:bg-red-900 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-800/30 transition duration-300 transform hover:scale-105 tracking-wider"
         >
           <span className="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
           <span className="relative z-10">Panel</span>
@@ -546,12 +546,12 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
 
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   return (
-    <footer className="bg-slate-900 text-slate-400 py-12 border-t-4 border-red-600">
+    <footer className="bg-slate-900 text-slate-400 py-12 border-t-4 border-red-700">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center space-x-3 mb-4">
             <img 
-              src="/logo.png" 
+              src="/rlogo.png" 
               alt="Realty Center" 
               className="h-12 w-auto object-contain brightness-0 invert"
             />
@@ -562,35 +562,40 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
         </div>
 
         <div>
-          <h4 className="text-white font-black mb-4 border-b-2 border-red-600 pb-1 inline-block">İletişim Bilgileri</h4>
+          <h4 className="text-white font-black mb-4 border-b-2 border-red-700 pb-1 inline-block">İletişim Bilgileri</h4>
           <ul className="space-y-2.5 text-sm font-medium">
             <li className="flex items-start space-x-2">
-              <MapPin className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+              <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
               <span>Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-red-500" />
+              <Phone className="w-4 h-4 text-red-600" />
               <span className="font-bold text-white">0532 567 48 45</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Mail className="w-4 h-4 text-red-500" />
+              <Mail className="w-4 h-4 text-red-600" />
               <span>info@realtycenter.com.tr</span>
             </li>
             <li className="flex items-center space-x-2">
-              <Globe className="w-4 h-4 text-red-500" />
+              <Globe className="w-4 h-4 text-red-600" />
               <span>www.realtycenter.com.tr</span>
             </li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-white font-black mb-4 border-b-2 border-red-600 pb-1 inline-block">Hızlı Erişim</h4>
+          <h4 className="text-white font-black mb-4 border-b-2 border-red-700 pb-1 inline-block">Hızlı Erişim</h4>
           <ul className="space-y-2 text-sm font-medium">
-            <li><button onClick={() => openDrawer('franchise')} className="hover:text-red-500 font-bold transition">Franchise Başvurusu</button></li>
-            <li><button onClick={() => openDrawer('agent')} className="hover:text-red-500 font-bold transition">Danışman Başvurusu</button></li>
-            <li><a href="#kvkk" className="hover:text-red-500 transition">KVKK Aydınlatma Metni</a></li>
+            <li><button onClick={() => openDrawer('franchise')} className="hover:text-red-600 font-bold transition">Franchise Başvurusu</button></li>
+            <li><button onClick={() => openDrawer('agent')} className="hover:text-red-600 font-bold transition">Danışman Başvurusu</button></li>
+            <li><a href="#kvkk" className="hover:text-red-600 transition">KVKK Aydınlatma Metni</a></li>
           </ul>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-10 pt-6 border-t border-slate-700 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs font-semibold text-slate-500">
+        <span>Siteyi yapan</span>
+        <img src="/klogo.png" alt="Kriter Medya" className="h-7 w-auto object-contain" />
       </div>
     </footer>
   );
@@ -605,7 +610,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
   return (
     <>
-      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-600 shadow-xl flex items-center bg-slate-900">
+      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
             <div
@@ -626,7 +631,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 onClick={() => setActiveTab('search')}
                 className={`relative overflow-hidden group h-20 rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
                   activeTab === 'search' 
-                    ? 'bg-red-600 text-white shadow-xl border-b-2 border-red-800 transform -translate-y-1' 
+                    ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
                 }`}
               >
@@ -636,26 +641,26 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <button
                 onClick={() => openDrawer('franchise')}
-                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-50 hover:text-red-600 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-600 hover:-translate-y-1"
+                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
-                <Building2 className="w-6 h-6 text-red-600 relative z-10" />
+                <Building2 className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-xs font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
               </button>
 
               <button
                 onClick={() => openDrawer('agent')}
-                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-50 hover:text-red-600 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-600 hover:-translate-y-1"
+                className="relative overflow-hidden group h-20 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
-                <Briefcase className="w-6 h-6 text-red-600 relative z-10" />
+                <Briefcase className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-xs font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
               </button>
             </div>
 
-            <div className="bg-white text-slate-900 p-4 rounded-b-lg rounded-tr-lg shadow-2xl space-y-3 border-2 border-red-600/30">
+            <div className="bg-white text-slate-900 p-4 rounded-b-lg rounded-tr-lg shadow-2xl space-y-3 border-2 border-red-700/30">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Satılık / Kiralık</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Konut</option>
                     <option>İşyeri</option>
                     <option>Arsa</option>
@@ -664,7 +669,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İşlem Tipi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Satılık</option>
                     <option>Kiralık</option>
                     <option>Devren</option>
@@ -679,7 +684,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                       setSelectedCity(e.target.value);
                       setSearchDistrict('');
                     }}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                    className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
                   >
                     <option value="">İl Seçiniz</option>
                     {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
@@ -692,7 +697,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     disabled={!selectedCity}
                     value={searchDistrict}
                     onChange={(e) => setSearchDistrict(e.target.value)}
-                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
                       !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   >
@@ -705,22 +710,22 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">İlan No</label>
-                  <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
+                  <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Min Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
+                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Maks Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 transition" />
+                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
                 </div>
 
                 <div>
                   <label className="text-[10px] font-black text-slate-700 mb-1 block tracking-wider">Para Birimi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition">
+                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-1.5 text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
                     <option>Türk Lirası</option>
                     <option>USD ($)</option>
                     <option>EUR (€)</option>
@@ -729,7 +734,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </div>
 
               <div className="pt-1">
-                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-black px-10 py-2.5 rounded-md text-xs flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-600/40 tracking-widest transform hover:scale-105">
+                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-10 py-2.5 rounded-md text-xs flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
@@ -749,22 +754,22 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-white text-slate-900 py-12 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.offices}+</div>
+            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.offices}+</div>
             <div className="text-xs text-slate-700 font-extrabold tracking-widest">Franchise Ofis</div>
           </div>
 
           <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.agents.toLocaleString('tr-TR')}+</div>
+            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.agents.toLocaleString('tr-TR')}+</div>
             <div className="text-xs text-slate-700 font-extrabold tracking-widest">Uzman Danışman</div>
           </div>
 
           <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">{counts.portfolios.toLocaleString('tr-TR')}+</div>
+            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.portfolios.toLocaleString('tr-TR')}+</div>
             <div className="text-xs text-slate-700 font-extrabold tracking-widest">Aktif Portföy</div>
           </div>
 
           <div className="p-4">
-            <div className="text-4xl lg:text-5xl font-black text-red-600 mb-1 tracking-tight">%{counts.satisfaction}</div>
+            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">%{counts.satisfaction}</div>
             <div className="text-xs text-slate-700 font-extrabold tracking-widest">Müşteri Memnuniyeti</div>
           </div>
         </div>
@@ -773,12 +778,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
           <div>
-            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-600 tracking-widest bg-red-50 px-3 py-1 rounded-full border border-red-200 mb-2">
+            <span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2">
               <Flame className="w-3.5 h-3.5 animate-bounce" />
               <span>Canlı İlan Akışı</span>
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
-              EN YENİ <span className="text-red-600">GAYRİMENKUL İLANLARI</span>
+              EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span>
             </h2>
             <p className="text-slate-500 text-xs font-medium mt-1">
               Sisteme en son eklenen portföylerimiz (Üzerine gelerek akışı durdurabilirsiniz)
@@ -787,7 +792,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
           <Link 
             to="/ilanlarimiz" 
-            className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-600 hover:bg-red-700 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-600/30"
+            className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"
           >
             <span>Tümünü Gör</span>
             <ArrowRight className="w-4 h-4" />
@@ -807,11 +812,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section id="kurumsal" className="py-16 px-6 lg:px-12 max-w-7xl mx-auto border-b border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300">
             Neden Realty Center?
           </span>
           <h2 className="text-3xl font-black text-slate-900 mt-3">
-            Gayrimenkulde <span className="text-red-600">Güven ve Kazancın</span> Adresi
+            Gayrimenkulde <span className="text-red-700">Güven ve Kazancın</span> Adresi
           </h2>
           <p className="text-slate-600 font-medium mt-2">
             Türkiye genelindeki geniş franchise ağı ve uzman danışman kadromuzla hayalinizdeki portföylere ulaşın.
@@ -819,31 +824,31 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-600 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-600/30 group-hover:scale-110 transition duration-300">
+          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-700 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
+            <div className="w-12 h-12 bg-red-700 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-700/30 group-hover:scale-110 transition duration-300">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-600 transition">Kurumsal Güven</h3>
+            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-700 transition">Kurumsal Güven</h3>
             <p className="text-slate-600 text-sm font-medium leading-relaxed">
               "Önce Güven..." ilkesiyle tüm alım-satım ve kiralama süreçlerinde hukuki ve şeffaf altyapı.
             </p>
           </div>
 
-          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-600 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-600/30 group-hover:scale-110 transition duration-300">
+          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-700 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
+            <div className="w-12 h-12 bg-red-700 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-700/30 group-hover:scale-110 transition duration-300">
               <TrendingUp className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-600 transition">Yüksek Kazanç Paylaşımı</h3>
+            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-700 transition">Yüksek Kazanç Paylaşımı</h3>
             <p className="text-slate-600 text-sm font-medium leading-relaxed">
               Franchise ofislerimiz ve gayrimenkul danışmanlarımız için sektörün en yüksek prim oranları.
             </p>
           </div>
 
-          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-600 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-600/30 group-hover:scale-110 transition duration-300">
+          <div className="group bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-red-700 shadow-xl shadow-slate-100 transition-all duration-300 transform hover:-translate-y-2">
+            <div className="w-12 h-12 bg-red-700 text-white rounded-lg flex items-center justify-center font-bold mb-5 shadow-lg shadow-red-700/30 group-hover:scale-110 transition duration-300">
               <Key className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-600 transition">Geniş Portföy Ağı</h3>
+            <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-red-700 transition">Geniş Portföy Ağı</h3>
             <p className="text-slate-600 text-sm font-medium leading-relaxed">
               Konut, ticari ve arsa kategorilerinde Türkiye'nin dört bir yanından güncel gayrimenkul seçenekleri.
             </p>
@@ -851,16 +856,16 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      <section id="akademi" className="py-20 px-6 lg:px-12 bg-white text-slate-900 border-b-4 border-red-600 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
+      <section id="akademi" className="py-20 px-6 lg:px-12 bg-white text-slate-900 border-b-4 border-red-700 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           
           <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl blur-xl opacity-40 group-hover:opacity-75 transition duration-500" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl blur-xl opacity-40 group-hover:opacity-75 transition duration-500" />
             
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-red-100 bg-white aspect-video lg:aspect-4/3">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-red-200 bg-white aspect-video lg:aspect-4/3">
               <img 
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200" 
                 alt="Realty Center Emlak Danışmanlığı Eğitimi" 
@@ -870,7 +875,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               
               <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-slate-200 shadow-xl flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2.5 bg-red-600 text-white rounded-lg shadow-md shadow-red-600/30">
+                  <div className="p-2.5 bg-red-700 text-white rounded-lg shadow-md shadow-red-700/30">
                     <GraduationCap className="w-6 h-6" />
                   </div>
                   <div>
@@ -878,7 +883,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     <p className="text-xs text-slate-600 font-medium">Sertifikalı Profesyonel Eğitim</p>
                   </div>
                 </div>
-                <span className="text-xs font-black text-red-600 bg-red-50 px-3 py-1.5 rounded-md border border-red-200">
+                <span className="text-xs font-black text-red-700 bg-red-100 px-3 py-1.5 rounded-md border border-red-300">
                   Sınırlı Kontenjan
                 </span>
               </div>
@@ -886,14 +891,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           </div>
 
           <div className="space-y-6">
-            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 tracking-widest bg-red-50 px-4 py-1.5 rounded-full border border-red-200">
+            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-700 tracking-widest bg-red-100 px-4 py-1.5 rounded-full border border-red-300">
               <GraduationCap className="w-4 h-4" />
               <span>Geleceğinizi İnşa Edin</span>
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight tracking-tight">
               EMLAK DANIŞMANLIĞI <br className="hidden sm:inline" />
-              <span className="text-red-600">
+              <span className="text-red-700">
                 EĞİTİMİMİZE KATIL
               </span>
             </h2>
@@ -904,22 +909,22 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-red-700 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-800">Kapsamlı Ofis ve Online Eğitim</span>
               </div>
 
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-red-700 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-800">Birebir Mentörlük Desteği</span>
               </div>
 
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-red-700 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-800">MEB ve Kurumsal Sertifika</span>
               </div>
 
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-red-700 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-800">Anında Danışmanlık İmkânı</span>
               </div>
             </div>
@@ -927,7 +932,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => openDrawer('agent')} 
-                className="relative overflow-hidden group bg-red-600 hover:bg-red-700 text-white font-black px-8 py-4 rounded-xl text-sm flex items-center justify-center space-x-3 shadow-xl shadow-red-600/30 transition duration-300 transform hover:scale-105 tracking-wider"
+                className="relative overflow-hidden group bg-red-700 hover:bg-red-800 text-white font-black px-8 py-4 rounded-xl text-sm flex items-center justify-center space-x-3 shadow-xl shadow-red-700/30 transition duration-300 transform hover:scale-105 tracking-wider"
               >
                 <span className="relative z-10">Eğitime Hemen Başvur</span>
                 <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -944,7 +949,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 function AboutPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Hakkımızda</h1>
+      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Hakkımızda</h1>
       <p className="text-slate-600 leading-relaxed text-lg mt-4">Realty Center kurumsal vizyonu, misyonu ve değerleri bu sayfada yer alacaktır.</p>
     </div>
   );
@@ -953,7 +958,7 @@ function AboutPage() {
 function TrustPrinciplePage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Önce Güven İlkesi</h1>
+      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Önce Güven İlkesi</h1>
       <p className="text-slate-600 leading-relaxed text-lg mt-4">Şeffaf ticaret, güvenilir altyapı ve hukuki süreç yönetimimiz bu sayfada açıklanacaktır.</p>
     </div>
   );
@@ -962,7 +967,7 @@ function TrustPrinciplePage() {
 function TeamPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Yönetim Kadrosu & Ekibimiz</h1>
+      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Yönetim Kadrosu & Ekibimiz</h1>
       <p className="text-slate-600 leading-relaxed text-lg mt-4">Realty Center yönetim kurulu üyeleri ve merkez ekibimiz bu alanda gösterilecektir.</p>
     </div>
   );
@@ -974,13 +979,13 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
       <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 mb-4">
+            <span className="inline-flex items-center space-x-2 text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 mb-4">
               <GraduationCap className="w-4 h-4" />
               <span>Sertifikalı Profesyonel Eğitimler</span>
             </span>
 
             <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight mb-4">
-              REALTY CENTER <span className="text-red-600">AKADEMİ</span>
+              REALTY CENTER <span className="text-red-700">AKADEMİ</span>
             </h1>
 
             <p className="text-slate-700 text-base sm:text-lg font-medium leading-relaxed mb-4">
@@ -993,7 +998,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
             <button 
               onClick={() => openDrawer('agent')} 
-              className="bg-red-600 hover:bg-red-700 text-white font-black px-8 py-3.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-red-600/30 transition transform hover:scale-105 tracking-wider flex items-center space-x-2"
+              className="bg-red-700 hover:bg-red-800 text-white font-black px-8 py-3.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-red-700/30 transition transform hover:scale-105 tracking-wider flex items-center space-x-2"
             >
               <span>Eğitime Hemen Başvur</span>
               <ArrowRight className="w-4 h-4" />
@@ -1001,9 +1006,9 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
           </div>
 
           <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-t from-red-600 via-red-500 to-transparent rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition duration-500" />
+            <div className="absolute -inset-2 bg-gradient-to-t from-red-700 via-red-600 to-transparent rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition duration-500" />
 
-            <div className="relative rounded-2xl overflow-hidden border-2 border-red-200 bg-white shadow-2xl aspect-video lg:aspect-4/3">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-red-300 bg-white shadow-2xl aspect-video lg:aspect-4/3">
               <img 
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
                 alt="Realty Center Eğitim Sınıfı" 
@@ -1013,10 +1018,10 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
               
               <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-white/40 shadow-lg flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-black text-red-600 tracking-widest block">Geleceğin Profesyonelleri</span>
+                  <span className="text-[10px] font-black text-red-700 tracking-widest block">Geleceğin Profesyonelleri</span>
                   <span className="text-xs font-black text-slate-900">Saha ve Online Eğitim Seçenekleriyle</span>
                 </div>
-                <GraduationCap className="w-6 h-6 text-red-600" />
+                <GraduationCap className="w-6 h-6 text-red-700" />
               </div>
             </div>
           </div>
@@ -1025,16 +1030,16 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
       <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300">
             Aktif Eğitim Paketleri
           </span>
           <h2 className="text-3xl font-black text-slate-900 mt-3">
-            Sertifikalı <span className="text-red-600">Eğitim Programlarımız</span>
+            Sertifikalı <span className="text-red-700">Eğitim Programlarımız</span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -1042,7 +1047,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                   alt="Arazi Arsa Uzmanlığı" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow tracking-wider">
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-2.5 py-1 rounded shadow tracking-wider">
                   Arazi & Arsa Uzmanlığı
                 </span>
               </div>
@@ -1053,15 +1058,15 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
                 <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>İmar, Kadastro ve Parselasyon Analizi</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Hobi Bahçesi ve Ticari İmarlı Arsa Ayrımı</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Sertifika ve Uygulama Belgesi</span>
                   </div>
                 </div>
@@ -1075,15 +1080,15 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
               </div>
               <button 
                 onClick={() => openDrawer('agent')} 
-                className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
               >
                 Kayıt Ol
               </button>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl border-2 border-red-600 overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between relative transform hover:-translate-y-1 group">
-            <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[9px] font-black tracking-widest px-2.5 py-1 rounded-full shadow">
+          <div className="bg-white rounded-2xl border-2 border-red-700 overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between relative transform hover:-translate-y-1 group">
+            <div className="absolute top-3 right-3 z-10 bg-red-700 text-white text-[9px] font-black tracking-widest px-2.5 py-1 rounded-full shadow">
               En Çok Tercih Edilen
             </div>
 
@@ -1105,36 +1110,36 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
                 <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Nitelikli Müşteri Portföyü Oluşturma</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Fiyat İtirazı Karşılama ve Sözleşme İkna Psikolojisi</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Realty Center Kurumsal Sertifikası</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="p-6 border-t border-slate-100 bg-red-50/60 flex items-center justify-between">
+            <div className="p-6 border-t border-slate-100 bg-red-100/60 flex items-center justify-between">
               <div>
                 <span className="text-[10px] font-black text-slate-500 block">Eğitim Ücreti</span>
-                <span className="text-2xl font-black text-red-600">18.000 <span className="text-sm font-bold">₺</span></span>
+                <span className="text-2xl font-black text-red-700">18.000 <span className="text-sm font-bold">₺</span></span>
               </div>
               <button 
                 onClick={() => openDrawer('agent')} 
-                className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-2.5 rounded-lg text-xs transition shadow-lg shadow-red-600/30"
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-2.5 rounded-lg text-xs transition shadow-lg shadow-red-700/30"
               >
                 Kayıt Ol
               </button>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -1142,7 +1147,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                   alt="Tapu ve Sözleşme Hukuku" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-2.5 py-1 rounded shadow tracking-wider">
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-2.5 py-1 rounded shadow tracking-wider">
                   Hukuk & Mevzuat
                 </span>
               </div>
@@ -1153,15 +1158,15 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 
                 <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Güvenli Sözleşme Taslakları ve Hukuki İnceleme</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Hisseli Tapu ve İntikal Süreç Yönetimi</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-red-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
                     <span>Sertifika ve Hukuki Belge Arşivi</span>
                   </div>
                 </div>
@@ -1175,7 +1180,7 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
               </div>
               <button 
                 onClick={() => openDrawer('agent')} 
-                className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
               >
                 Kayıt Ol
               </button>
@@ -1202,11 +1207,11 @@ function OfficesPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
             Franchise Ağımız
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
-            REALTY CENTER <span className="text-red-600">OFİSLERİMİZ</span>
+            REALTY CENTER <span className="text-red-700">OFİSLERİMİZ</span>
           </h1>
           <p className="text-slate-600 text-sm font-medium mt-1">
             Türkiye genelindeki bölge başkanlıklarımız ve yetkili temsilciliklerimiz
@@ -1223,7 +1228,7 @@ function OfficesPage() {
               onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
               className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
                 selectedCity === '' 
-                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                  ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -1236,7 +1241,7 @@ function OfficesPage() {
                 onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
                 className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
                   selectedCity === cityName 
-                    ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                    ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
                     : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
@@ -1253,7 +1258,7 @@ function OfficesPage() {
                   setSelectedCity(e.target.value);
                   setSelectedDistrict('');
                 }}
-                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
               >
                 <option value="">-- Tüm İller (81 İl) --</option>
                 {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
@@ -1265,7 +1270,7 @@ function OfficesPage() {
                 disabled={!selectedCity}
                 value={selectedDistrict}
                 onChange={(e) => setSelectedDistrict(e.target.value)}
-                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
                   !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >
@@ -1282,7 +1287,7 @@ function OfficesPage() {
             {filteredOffices.map((office) => (
               <div 
                 key={office.id}
-                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="relative h-52 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
@@ -1295,38 +1300,38 @@ function OfficesPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/logo.png" 
+                          src="/rlogo.png" 
                           alt="Realty Center" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />
-                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 mt-2">REALTY CENTER</span>
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-600 mt-2">REALTY CENTER</span>
                       </div>
                     )}
 
-                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow tracking-wider">
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-3 py-1 rounded-md shadow tracking-wider">
                       {office.city} / {office.district}
                     </span>
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-lg font-black text-slate-900 mb-3 group-hover:text-red-600 transition">
+                    <h3 className="text-lg font-black text-slate-900 mb-3 group-hover:text-red-700 transition">
                       {office.name}
                     </h3>
 
                     <div className="space-y-2.5 text-xs text-slate-600 font-medium">
                       <div className="flex items-start space-x-2.5">
-                        <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
+                        <MapPin className="w-4 h-4 text-red-700 flex-shrink-0 mt-0.5" />
                         <span className="leading-snug">{office.address}</span>
                       </div>
 
                       <div className="flex items-center space-x-2.5">
-                        <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <Phone className="w-4 h-4 text-red-700 flex-shrink-0" />
                         <span className="font-bold text-slate-900">{office.phone}</span>
                       </div>
 
                       <div className="flex items-center space-x-2.5">
-                        <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <Mail className="w-4 h-4 text-red-700 flex-shrink-0" />
                         <span>{office.email}</span>
                       </div>
 
@@ -1343,7 +1348,7 @@ function OfficesPage() {
                     href={`tel:${office.phone.replace(/\s+/g, '')}`}
                     className="bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-300 py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition"
                   >
-                    <Phone className="w-3.5 h-3.5 text-red-600" />
+                    <Phone className="w-3.5 h-3.5 text-red-700" />
                     <span>Ara</span>
                   </a>
 
@@ -1351,7 +1356,7 @@ function OfficesPage() {
                     href={`https://maps.google.com/?q=${encodeURIComponent(office.address)}`} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-600/20"
+                    className="bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-700/20"
                   >
                     <Navigation className="w-3.5 h-3.5" />
                     <span>Harita</span>
@@ -1389,11 +1394,11 @@ function AgentsPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
             Uzman Kadromuz
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
-            GAYRİMENKUL <span className="text-red-600">DANIŞMANLARIMIZ</span>
+            GAYRİMENKUL <span className="text-red-700">DANIŞMANLARIMIZ</span>
           </h1>
           <p className="text-slate-600 text-sm font-medium mt-1">
             Saha tecrübesi ve uzmanlığıyla hayalinizdeki gayrimenkule yön veren profesyonellerimiz
@@ -1410,7 +1415,7 @@ function AgentsPage() {
               onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
               className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
                 selectedCity === '' 
-                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                  ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -1423,7 +1428,7 @@ function AgentsPage() {
                 onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
                 className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
                   selectedCity === cityName 
-                    ? 'bg-red-600 text-white shadow-md shadow-red-600/30' 
+                    ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
                     : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
@@ -1440,7 +1445,7 @@ function AgentsPage() {
                   setSelectedCity(e.target.value);
                   setSelectedDistrict('');
                 }}
-                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
               >
                 <option value="">-- Tüm İller (81 İl) --</option>
                 {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
@@ -1452,7 +1457,7 @@ function AgentsPage() {
                 disabled={!selectedCity}
                 value={selectedDistrict}
                 onChange={(e) => setSelectedDistrict(e.target.value)}
-                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition ${
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
                   !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >
@@ -1469,7 +1474,7 @@ function AgentsPage() {
             {filteredAgents.map((agent) => (
               <div 
                 key={agent.id}
-                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-600 transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="relative h-64 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
@@ -1482,16 +1487,16 @@ function AgentsPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/logo.png" 
+                          src="/rlogo.png" 
                           alt="Realty Center" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
                         />
-                        <span className="text-[10px] font-black tracking-[0.2em] text-red-500 mt-2">REALTY CENTER DANIŞMANI</span>
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-600 mt-2">REALTY CENTER DANIŞMANI</span>
                       </div>
                     )}
 
-                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-600 px-3 py-1 rounded-md shadow tracking-wider">
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-3 py-1 rounded-md shadow tracking-wider">
                       {agent.city} / {agent.district}
                     </span>
 
@@ -1501,11 +1506,11 @@ function AgentsPage() {
                   </div>
 
                   <div className="p-6">
-                    <h3 className="text-xl font-black text-slate-900 mb-1 group-hover:text-red-600 transition">
+                    <h3 className="text-xl font-black text-slate-900 mb-1 group-hover:text-red-700 transition">
                       {agent.name}
                     </h3>
 
-                    <span className="text-xs font-bold text-red-600 block mb-3 tracking-wider">
+                    <span className="text-xs font-bold text-red-700 block mb-3 tracking-wider">
                       {agent.title}
                     </span>
 
@@ -1516,12 +1521,12 @@ function AgentsPage() {
                       </div>
 
                       <div className="flex items-center space-x-2.5">
-                        <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <Phone className="w-4 h-4 text-red-700 flex-shrink-0" />
                         <span className="font-bold text-slate-900">{agent.phone}</span>
                       </div>
 
                       <div className="flex items-center space-x-2.5">
-                        <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <Mail className="w-4 h-4 text-red-700 flex-shrink-0" />
                         <span>{agent.email}</span>
                       </div>
                     </div>
@@ -1531,7 +1536,7 @@ function AgentsPage() {
                 <div className="p-4 border-t border-slate-100 bg-slate-50 grid grid-cols-2 gap-2">
                   <a 
                     href={`tel:${agent.phone.replace(/\s+/g, '')}`}
-                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-600/20"
+                    className="bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-700/20"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Hemen Ara</span>
@@ -1541,7 +1546,7 @@ function AgentsPage() {
                     to="/ilanlarimiz" 
                     className="bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-300 py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition"
                   >
-                    <Megaphone className="w-3.5 h-3.5 text-red-600" />
+                    <Megaphone className="w-3.5 h-3.5 text-red-700" />
                     <span>İlanları</span>
                   </Link>
                 </div>
@@ -1586,11 +1591,11 @@ function ListingsPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-8">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
             Aktif Portföyler
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
-            TÜM GAYRİMENKUL <span className="text-red-600">İLANLARIMIZ</span>
+            TÜM GAYRİMENKUL <span className="text-red-700">İLANLARIMIZ</span>
           </h1>
           <p className="text-slate-600 text-sm font-medium mt-1">
             Türkiye genelindeki kurumsal onaylı güncel emlak seçenekleri
@@ -1603,7 +1608,7 @@ function ListingsPage() {
             <select 
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm İşlem Tipleri</option>
               <option value="Satılık">Satılık</option>
@@ -1617,7 +1622,7 @@ function ListingsPage() {
             <select 
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm Kategoriler</option>
               <option value="Konut">Konut</option>
@@ -1631,7 +1636,7 @@ function ListingsPage() {
             <select 
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm Şehirler</option>
               {Object.keys(TURKEY_CITIES).map((c) => (
@@ -1672,7 +1677,7 @@ function ListingsPage() {
 function ProjectsPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-600 pb-2 inline-block">Projelerimiz</h1>
+      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Projelerimiz</h1>
       <p className="text-slate-600 leading-relaxed text-lg mt-4">Konut ve ticari proje lansmanları ile kat planları bu sayfada sergilenecektir.</p>
     </div>
   );
@@ -1709,11 +1714,11 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         <div className="mb-10 text-center max-w-2xl mx-auto">
-          <span className="text-xs font-black text-red-600 tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full border border-red-200 inline-block mb-3">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
             Bize Ulaşın
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
-            İLETİŞİM & <span className="text-red-600">DESTEK</span>
+            İLETİŞİM & <span className="text-red-700">DESTEK</span>
           </h1>
           <p className="text-slate-600 text-sm font-medium mt-2">
             Sorularınız, gayrimenkul talepleriniz veya iş birliği fırsatları için ekibimizle iletişime geçebilirsiniz.
@@ -1724,7 +1729,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
           
           <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
             <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
-              <div className="p-3 bg-red-50 text-red-600 rounded-xl">
+              <div className="p-3 bg-red-100 text-red-700 rounded-xl">
                 <MessageSquare className="w-6 h-6" />
               </div>
               <div>
@@ -1751,7 +1756,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                   placeholder="Adınız ve Soyadınız"
                   value={form.fullName}
                   onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
                 />
               </div>
 
@@ -1766,7 +1771,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                     placeholder="05XX XXX XX XX"
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
                   />
                 </div>
 
@@ -1780,7 +1785,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                     placeholder="ornek@domain.com"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
                   />
                 </div>
               </div>
@@ -1795,13 +1800,13 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                   placeholder="Talep, görüş veya sorunuzu buraya detaylıca yazabilirsiniz..."
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition resize-none"
+                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition resize-none"
                 />
               </div>
 
               <button 
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
+                className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-4 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.01]"
               >
                 <span>Mesajı Gönder</span>
                 <Send className="w-4 h-4" />
@@ -1813,12 +1818,12 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
             <div className="bg-slate-900 text-white p-8 rounded-2xl border-2 border-slate-800 shadow-xl space-y-6">
               <div className="border-b border-slate-800 pb-4">
                 <h3 className="text-xl font-black text-white">Genel Merkez İletişim</h3>
-                <p className="text-xs text-red-500 font-bold tracking-wider mt-0.5">REALTY CENTER GAYRİMENKUL A.Ş.</p>
+                <p className="text-xs text-red-600 font-bold tracking-wider mt-0.5">REALTY CENTER GAYRİMENKUL A.Ş.</p>
               </div>
 
               <div className="space-y-4 text-xs font-medium text-slate-300">
                 <div className="flex items-start space-x-3">
-                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0 mt-0.5">
+                  <div className="p-2.5 bg-red-700/20 text-red-600 rounded-lg flex-shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -1828,7 +1833,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                  <div className="p-2.5 bg-red-700/20 text-red-600 rounded-lg flex-shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
@@ -1838,7 +1843,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                  <div className="p-2.5 bg-red-700/20 text-red-600 rounded-lg flex-shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -1848,7 +1853,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="p-2.5 bg-red-600/20 text-red-500 rounded-lg flex-shrink-0">
+                  <div className="p-2.5 bg-red-700/20 text-red-600 rounded-lg flex-shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -1863,7 +1868,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                   href="https://maps.google.com/?q=West+Gate+Residence+Ankara"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full bg-white/10 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition border border-white/10"
+                  className="w-full bg-white/10 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center space-x-2 transition border border-white/10"
                 >
                   <Navigation className="w-4 h-4" />
                   <span>Google Haritalar'da Aç</span>
@@ -1909,9 +1914,9 @@ function LoginPage() {
     <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
-          <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-600">
+          <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
             <img
-              src="/logo.png"
+              src="/rlogo.png"
               alt="Realty Center"
               className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
             />
@@ -1934,7 +1939,7 @@ function LoginPage() {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Kullanıcı adınızı veya e-postanızı girin"
-                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition"
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
               </div>
@@ -1951,13 +1956,13 @@ function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Şifrenizi girin"
-                  className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition"
+                  className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword((prev) => !prev)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-600 transition"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-700 transition"
                   aria-label={showPassword ? 'Şifreyi gizle' : 'Şifreyi göster'}
                 >
                   {showPassword ? <X className="w-5 h-5" /> : <EyeIcon />}
@@ -1967,13 +1972,13 @@ function LoginPage() {
 
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center space-x-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 accent-red-600" />
+                <input type="checkbox" className="w-4 h-4 accent-red-700" />
                 <span className="text-slate-600 font-medium">Beni hatırla</span>
               </label>
 
               <button
                 type="button"
-                className="text-red-600 hover:text-red-700 font-bold text-xs"
+                className="text-red-700 hover:text-red-800 font-bold text-xs"
                 onClick={() => alert('Şifre yenileme bağlantısı e-posta adresinize gönderildi.')}
               >
                 Şifremi unuttum
@@ -1982,7 +1987,7 @@ function LoginPage() {
 
             <button
               type="submit"
-              className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.02]"
+              className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
             >
               <span>Danışman Girişi Yap</span>
               <ArrowRight className="w-5 h-5" />
@@ -2003,7 +2008,7 @@ function LoginPage() {
               to="/super-admin"
               className="w-full bg-slate-900 hover:bg-black text-slate-200 font-extrabold py-2.5 rounded-xl text-xs flex items-center justify-center space-x-2 border border-slate-800 transition shadow-md group"
             >
-              <ShieldAlert className="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform" />
+              <ShieldAlert className="w-4 h-4 text-red-600 group-hover:scale-110 transition-transform" />
               <span>Süper Admin Giriş Paneli</span>
             </Link>
           </div>
@@ -2016,7 +2021,7 @@ function LoginPage() {
         </div>
 
         <div className="text-center mt-3">
-          <Link to="/" className="text-sm text-slate-500 hover:text-red-600 font-bold transition">
+          <Link to="/" className="text-sm text-slate-500 hover:text-red-700 font-bold transition">
             ← Ana sayfaya dön
           </Link>
         </div>
@@ -2050,25 +2055,25 @@ function SuperAdminLoginPage() {
 
   return (
     <div className="min-h-[calc(100vh-100px)] bg-slate-950 flex items-center justify-center px-4 py-8 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-700/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-md relative z-10">
         <div className="bg-slate-900 rounded-2xl shadow-2xl border border-slate-800 overflow-hidden">
           
           <div className="p-6 text-center border-b border-slate-800 bg-slate-900/50">
-            <div className="w-14 h-14 bg-red-600/20 text-red-500 rounded-2xl border border-red-600/30 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-600/10">
+            <div className="w-14 h-14 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-700/10">
               <ShieldAlert className="w-8 h-8" />
             </div>
 
             <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN</h1>
-            <p className="text-xs text-red-500 font-extrabold tracking-widest mt-1 uppercase">
+            <p className="text-xs text-red-600 font-extrabold tracking-widest mt-1 uppercase">
               Sistem Yönetim Merkezi
             </p>
           </div>
 
           <form onSubmit={handleAdminLogin} className="p-6 space-y-4">
             {errorMsg && (
-              <div className="bg-red-500/10 border border-red-500/30 text-red-400 p-3 rounded-xl text-xs font-bold flex items-center justify-between">
+              <div className="bg-red-600/10 border border-red-600/30 text-red-500 p-3 rounded-xl text-xs font-bold flex items-center justify-between">
                 <span>{errorMsg}</span>
                 <X className="w-4 h-4 cursor-pointer" onClick={() => setErrorMsg('')} />
               </div>
@@ -2085,7 +2090,7 @@ function SuperAdminLoginPage() {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Admin kullanıcı adı"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition"
+                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
                   required
                 />
               </div>
@@ -2102,7 +2107,7 @@ function SuperAdminLoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••••••"
-                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition"
+                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-800 bg-slate-950 text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
                   required
                 />
                 <button
@@ -2117,7 +2122,7 @@ function SuperAdminLoginPage() {
 
             <button
               type="submit"
-              className="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3.5 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-600/30 transition transform hover:scale-[1.01]"
+              className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3.5 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.01]"
             >
               <span>Sistem Paneline Giriş Yap</span>
               <ArrowRight className="w-4 h-4" />
@@ -2132,7 +2137,7 @@ function SuperAdminLoginPage() {
         </div>
 
         <div className="text-center mt-4">
-          <Link to="/" className="text-xs text-slate-500 hover:text-red-500 font-bold transition">
+          <Link to="/" className="text-xs text-slate-500 hover:text-red-600 font-bold transition">
             ← Ana sayfaya dön
           </Link>
         </div>
@@ -2197,13 +2202,13 @@ function SuperAdminDashboard() {
         {/* ÜST ADMİN HEADER */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
           <div className="flex items-center space-x-4">
-            <div className="p-3 bg-red-600/20 text-red-500 rounded-2xl border border-red-600/30">
+            <div className="p-3 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30">
               <ShieldAlert className="w-8 h-8" />
             </div>
             <div>
               <div className="flex items-center space-x-2">
                 <h1 className="text-2xl font-black text-white tracking-wide">SÜPER ADMİN KONTROL PANELİ</h1>
-                <span className="bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-widest">
+                <span className="bg-red-700 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-widest">
                   ROOT
                 </span>
               </div>
@@ -2220,7 +2225,7 @@ function SuperAdminDashboard() {
 
             <button 
               onClick={() => navigate('/super-admin')} 
-              className="bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white border border-red-600/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
+              className="bg-red-700/20 hover:bg-red-700 text-red-500 hover:text-white border border-red-700/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
             >
               <LogOut className="w-4 h-4" />
               <span>Güvenli Çıkış</span>
@@ -2244,7 +2249,7 @@ function SuperAdminDashboard() {
                     onClick={() => setActiveTab(btn.key)}
                     className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-extrabold text-xs transition duration-200 ${
                       isActive 
-                        ? 'bg-red-600 text-white shadow-lg shadow-red-600/30' 
+                        ? 'bg-red-700 text-white shadow-lg shadow-red-700/30' 
                         : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
                     }`}
                   >
@@ -2255,7 +2260,7 @@ function SuperAdminDashboard() {
 
                     {btn.badge !== undefined && btn.badge > 0 && (
                       <span className={`px-2 py-0.5 rounded-full text-[10px] font-black ${
-                        isActive ? 'bg-white text-red-600' : 'bg-red-600 text-white'
+                        isActive ? 'bg-white text-red-700' : 'bg-red-700 text-white'
                       }`}>
                         {btn.badge}
                       </span>
@@ -2278,7 +2283,7 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Franchise Ofis</span>
-                      <Building2 className="w-5 h-5 text-red-500" />
+                      <Building2 className="w-5 h-5 text-red-600" />
                     </div>
                     <div className="text-3xl font-black text-white mt-2">{offices.length}</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %12 Geçen aya göre</p>
@@ -2287,7 +2292,7 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aktif Danışman</span>
-                      <Users className="w-5 h-5 text-red-500" />
+                      <Users className="w-5 h-5 text-red-600" />
                     </div>
                     <div className="text-3xl font-black text-white mt-2">1,024</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ 48 yeni kayıt</p>
@@ -2296,7 +2301,7 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Yayındaki İlan</span>
-                      <Layers className="w-5 h-5 text-red-500" />
+                      <Layers className="w-5 h-5 text-red-600" />
                     </div>
                     <div className="text-3xl font-black text-white mt-2">15,480</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %8 Portföy artışı</p>
@@ -2305,7 +2310,7 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">Aylık Ciro</span>
-                      <TrendingUp className="w-5 h-5 text-red-500" />
+                      <TrendingUp className="w-5 h-5 text-red-600" />
                     </div>
                     <div className="text-3xl font-black text-white mt-2">₺ 4.2M</div>
                     <p className="text-[11px] text-emerald-400 font-bold mt-1">↑ %18 Gelir büyümesi</p>
@@ -2319,10 +2324,10 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-base font-black text-white flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-red-500" />
+                        <FileText className="w-4 h-4 text-red-600" />
                         <span>Bekleyen Franchise Başvuruları</span>
                       </h3>
-                      <button onClick={() => setActiveTab('franchise')} className="text-xs text-red-500 font-bold hover:underline">Tümünü Gör</button>
+                      <button onClick={() => setActiveTab('franchise')} className="text-xs text-red-600 font-bold hover:underline">Tümünü Gör</button>
                     </div>
 
                     <div className="space-y-3">
@@ -2336,7 +2341,7 @@ function SuperAdminDashboard() {
                             <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
                               <Check className="w-3.5 h-3.5" />
                             </button>
-                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="p-1.5 bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white rounded-lg transition">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
                               <X className="w-3.5 h-3.5" />
                             </button>
                           </div>
@@ -2349,10 +2354,10 @@ function SuperAdminDashboard() {
                   <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-base font-black text-white flex items-center space-x-2">
-                        <AlertCircle className="w-4 h-4 text-red-500" />
+                        <AlertCircle className="w-4 h-4 text-red-600" />
                         <span>Onay Bekleyen İlanlar</span>
                       </h3>
-                      <button onClick={() => setActiveTab('listings')} className="text-xs text-red-500 font-bold hover:underline">Tümünü Gör</button>
+                      <button onClick={() => setActiveTab('listings')} className="text-xs text-red-600 font-bold hover:underline">Tümünü Gör</button>
                     </div>
 
                     <div className="space-y-3">
@@ -2366,7 +2371,7 @@ function SuperAdminDashboard() {
                             <button onClick={() => updateListingApproval(listing.id, 'Yayında')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg transition">
                               <Check className="w-3.5 h-3.5" />
                             </button>
-                            <button onClick={() => updateListingApproval(listing.id, 'Reddedildi')} className="p-1.5 bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white rounded-lg transition">
+                            <button onClick={() => updateListingApproval(listing.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
                               <X className="w-3.5 h-3.5" />
                             </button>
                           </div>
@@ -2406,7 +2411,7 @@ function SuperAdminDashboard() {
                     <tbody className="divide-y divide-slate-800/60">
                       {franchiseApps.map((app) => (
                         <tr key={app.id} className="hover:bg-slate-800/40 transition">
-                          <td className="p-3 font-black text-red-500">{app.id}</td>
+                          <td className="p-3 font-black text-red-600">{app.id}</td>
                           <td className="p-3 font-bold text-white">{app.name}</td>
                           <td className="p-3 text-slate-300">{app.city} / {app.district}</td>
                           <td className="p-3 text-slate-400">{app.phone}</td>
@@ -2416,14 +2421,14 @@ function SuperAdminDashboard() {
                             <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
                               app.status === 'Onaylandı' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
                               app.status === 'Beklemede' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
-                              'bg-red-500/20 text-red-400 border border-red-500/30'
+                              'bg-red-600/20 text-red-500 border border-red-600/30'
                             }`}>
                               {app.status}
                             </span>
                           </td>
                           <td className="p-3 text-right space-x-1">
                             <button onClick={() => updateFranchiseStatus(app.id, 'Onaylandı')} className="px-2.5 py-1 bg-emerald-600 text-white font-bold rounded-lg text-[10px] hover:bg-emerald-700 transition">Onayla</button>
-                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="px-2.5 py-1 bg-red-600/30 text-red-400 border border-red-600/30 font-bold rounded-lg text-[10px] hover:bg-red-600 hover:text-white transition">Reddet</button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="px-2.5 py-1 bg-red-700/30 text-red-500 border border-red-700/30 font-bold rounded-lg text-[10px] hover:bg-red-700 hover:text-white transition">Reddet</button>
                           </td>
                         </tr>
                       ))}
@@ -2441,7 +2446,7 @@ function SuperAdminDashboard() {
                     <h2 className="text-lg font-black text-white">Franchise Ofis Yönetimi</h2>
                     <p className="text-xs text-slate-400 font-medium mt-0.5">Sistemde aktif çalışan tüm bölge başkanlıkları ve temsilcilikler</p>
                   </div>
-                  <button onClick={() => alert("Yeni ofis ekleme modülü açılıyor...")} className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
+                  <button onClick={() => alert("Yeni ofis ekleme modülü açılıyor...")} className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
                     <PlusCircle className="w-4 h-4" />
                     <span>Yeni Ofis Ekle</span>
                   </button>
@@ -2452,7 +2457,7 @@ function SuperAdminDashboard() {
                     <div key={office.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-[10px] font-black text-red-500 bg-red-600/10 px-2 py-0.5 rounded border border-red-600/20">{office.city} / {office.district}</span>
+                          <span className="text-[10px] font-black text-red-600 bg-red-700/10 px-2 py-0.5 rounded border border-red-700/20">{office.city} / {office.district}</span>
                           <span className="text-[10px] text-emerald-400 font-bold">Aktif Lisans</span>
                         </div>
                         <h4 className="font-black text-sm text-white">{office.name}</h4>
@@ -2462,7 +2467,7 @@ function SuperAdminDashboard() {
 
                       <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
                         <button className="text-slate-400 hover:text-white font-bold text-[11px]">Düzenle</button>
-                        <button className="text-red-500 hover:text-red-400 font-bold text-[11px]">Askıya Al</button>
+                        <button className="text-red-600 hover:text-red-500 font-bold text-[11px]">Askıya Al</button>
                       </div>
                     </div>
                   ))}
@@ -2485,12 +2490,12 @@ function SuperAdminDashboard() {
                     <div key={agent.id} className="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center space-x-3 mb-3">
-                          <div className="w-10 h-10 rounded-full bg-red-600 text-white font-black flex items-center justify-center text-xs">
+                          <div className="w-10 h-10 rounded-full bg-red-700 text-white font-black flex items-center justify-center text-xs">
                             {agent.name.split(' ').map(n => n[0]).join('')}
                           </div>
                           <div>
                             <h4 className="font-black text-xs text-white">{agent.name}</h4>
-                            <span className="text-[10px] text-red-400 font-bold block">{agent.title}</span>
+                            <span className="text-[10px] text-red-500 font-bold block">{agent.title}</span>
                           </div>
                         </div>
 
@@ -2529,7 +2534,7 @@ function SuperAdminDashboard() {
                         <div>
                           <div className="flex items-center space-x-2">
                             <span className="text-xs font-black text-white">{item.title}</span>
-                            <span className="text-[10px] font-bold text-red-500">({item.id})</span>
+                            <span className="text-[10px] font-bold text-red-600">({item.id})</span>
                           </div>
                           <p className="text-[11px] text-slate-400 mt-0.5">{item.city} / {item.district} · {item.price.toLocaleString('tr-TR')} ₺ · Danışman: {item.agentName}</p>
                         </div>
@@ -2539,7 +2544,7 @@ function SuperAdminDashboard() {
                         <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
                           item.approvalStatus === 'Yayında' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
                           item.approvalStatus === 'Onay Bekliyor' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
-                          'bg-red-500/20 text-red-400 border border-red-500/30'
+                          'bg-red-600/20 text-red-500 border border-red-600/30'
                         }`}>
                           {item.approvalStatus}
                         </span>
@@ -2548,7 +2553,7 @@ function SuperAdminDashboard() {
                           <button onClick={() => updateListingApproval(item.id, 'Yayında')} className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-lg transition">Yayına Al</button>
                         )}
                         {item.approvalStatus !== 'Reddedildi' && (
-                          <button onClick={() => updateListingApproval(item.id, 'Reddedildi')} className="px-3 py-1 bg-red-600/30 text-red-400 hover:bg-red-600 hover:text-white font-black text-xs rounded-lg transition">Kaldır</button>
+                          <button onClick={() => updateListingApproval(item.id, 'Reddedildi')} className="px-3 py-1 bg-red-700/30 text-red-500 hover:bg-red-700 hover:text-white font-black text-xs rounded-lg transition">Kaldır</button>
                         )}
                       </div>
                     </div>
@@ -2591,29 +2596,29 @@ function SuperAdminDashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                   <div>
                     <label className="block text-slate-300 font-bold mb-1">Site Başlığı</label>
-                    <input type="text" defaultValue="Realty Center Türkiye Gayrimenkul" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                    <input type="text" defaultValue="Realty Center Türkiye Gayrimenkul" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
                   </div>
 
                   <div>
                     <label className="block text-slate-300 font-bold mb-1">Franchise Katılım Komisyonu (%)</label>
-                    <input type="number" defaultValue="8" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                    <input type="number" defaultValue="8" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
                   </div>
 
                   <div>
                     <label className="block text-slate-300 font-bold mb-1">Destek E-posta Adresi</label>
-                    <input type="email" defaultValue="destek@realtycenter.com.tr" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600" />
+                    <input type="email" defaultValue="destek@realtycenter.com.tr" className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700" />
                   </div>
 
                   <div>
                     <label className="block text-slate-300 font-bold mb-1">İlan Otomatik Onay Mekanizması</label>
-                    <select className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-600">
+                    <select className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-red-700">
                       <option>Kapalı (Manuel Yönetici Onayı)</option>
                       <option>Açık (Doğrudan Yayına Al)</option>
                     </select>
                   </div>
                 </div>
 
-                <button onClick={() => alert("Ayarlar güncellendi.")} className="bg-red-600 hover:bg-red-700 text-white font-black px-6 py-3 rounded-xl text-xs transition">
+                <button onClick={() => alert("Ayarlar güncellendi.")} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">
                   Ayarları Kaydet
                 </button>
               </div>
@@ -2907,52 +2912,52 @@ function AgentDashboard() {
           { label: 'Yeni Mesajlar', value: messages.filter((message) => message.unread).length, icon: MessageSquare }
         ].map((stat) => {
           const Icon = stat.icon;
-          return <div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-center justify-between"><div><p className="text-xs font-bold text-slate-500">{stat.label}</p><p className="text-3xl font-black text-slate-900 mt-1">{stat.value}</p></div><div className="w-11 h-11 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><Icon className="w-5 h-5" /></div></div></div>;
+          return <div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-center justify-between"><div><p className="text-xs font-bold text-slate-500">{stat.label}</p><p className="text-3xl font-black text-slate-900 mt-1">{stat.value}</p></div><div className="w-11 h-11 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Icon className="w-5 h-5" /></div></div></div>;
         })}
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <section className="xl:col-span-2 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-          <div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Son İlanlarım</h2><p className="text-xs text-slate-500 mt-1">Portföyünüzdeki son ilanlar</p></div><button onClick={() => setActiveSection('listings')} className="text-sm font-black text-red-600 hover:text-red-700">Tümünü Gör</button></div>
-          <div className="divide-y divide-slate-100">{myListings.slice(0, 4).map((item) => <div key={item.id} className="p-5 flex flex-col sm:flex-row gap-4 sm:items-center"><img src={item.image} alt={item.title} className="w-full sm:w-28 h-20 object-cover rounded-xl" /><div className="flex-1 min-w-0"><div className="flex items-center gap-2 mb-1"><span className={`text-[10px] font-black px-2 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-[10px] font-bold text-slate-400">{item.id}</span></div><h3 className="text-sm font-black text-slate-900 truncate">{item.title}</h3><p className="text-xs text-slate-500 mt-1">{item.city} / {item.district} · {item.area} m²</p></div><div className="text-left sm:text-right"><div className="font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</div><div className="text-xs text-slate-500 font-bold mt-1">{item.type}</div></div></div>)}</div>
+          <div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Son İlanlarım</h2><p className="text-xs text-slate-500 mt-1">Portföyünüzdeki son ilanlar</p></div><button onClick={() => setActiveSection('listings')} className="text-sm font-black text-red-700 hover:text-red-800">Tümünü Gör</button></div>
+          <div className="divide-y divide-slate-100">{myListings.slice(0, 4).map((item) => <div key={item.id} className="p-5 flex flex-col sm:flex-row gap-4 sm:items-center"><img src={item.image} alt={item.title} className="w-full sm:w-28 h-20 object-cover rounded-xl" /><div className="flex-1 min-w-0"><div className="flex items-center gap-2 mb-1"><span className={`text-[10px] font-black px-2 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-100 text-red-700' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-[10px] font-bold text-slate-400">{item.id}</span></div><h3 className="text-sm font-black text-slate-900 truncate">{item.title}</h3><p className="text-xs text-slate-500 mt-1">{item.city} / {item.district} · {item.area} m²</p></div><div className="text-left sm:text-right"><div className="font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</div><div className="text-xs text-slate-500 font-bold mt-1">{item.type}</div></div></div>)}</div>
         </section>
-        <section className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Bugünün Takvimi</h2><p className="text-xs text-slate-500 mt-1">11 Ağustos 2026</p></div><div className="p-5 space-y-3">{appointments.map((appointment) => <div key={`${appointment.time}-${appointment.title}`} className="p-4 rounded-xl bg-slate-50 border border-slate-200"><div className="flex items-center justify-between"><span className="text-xs font-black text-red-600">{appointment.time}</span><span className="text-[10px] font-bold text-slate-500">{appointment.type}</span></div><p className="font-black text-slate-900 text-sm mt-2">{appointment.title}</p><p className="text-xs text-slate-500 mt-1">{appointment.customer}</p></div>)}</div></section>
+        <section className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Bugünün Takvimi</h2><p className="text-xs text-slate-500 mt-1">11 Ağustos 2026</p></div><div className="p-5 space-y-3">{appointments.map((appointment) => <div key={`${appointment.time}-${appointment.title}`} className="p-4 rounded-xl bg-slate-50 border border-slate-200"><div className="flex items-center justify-between"><span className="text-xs font-black text-red-700">{appointment.time}</span><span className="text-[10px] font-bold text-slate-500">{appointment.type}</span></div><p className="font-black text-slate-900 text-sm mt-2">{appointment.title}</p><p className="text-xs text-slate-500 mt-1">{appointment.customer}</p></div>)}</div></section>
       </div>
     </>
   );
 
   const renderListings = () => (
     <div className="space-y-6">
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div className="relative flex-1 max-w-xl"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={listingSearch} onChange={(e) => setListingSearch(e.target.value)} placeholder="İlan no, başlık, il veya ilçe ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><button onClick={() => { setEditingListingId(null); setNewListing(emptyListing); setShowListingForm(true); }} className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-red-600/20"><PlusCircle className="w-5 h-5" /> Yeni İlan Ekle</button></div>
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div className="relative flex-1 max-w-xl"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={listingSearch} onChange={(e) => setListingSearch(e.target.value)} placeholder="İlan no, başlık, il veya ilçe ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-700" /></div><button onClick={() => { setEditingListingId(null); setNewListing(emptyListing); setShowListingForm(true); }} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-red-700/20"><PlusCircle className="w-5 h-5" /> Yeni İlan Ekle</button></div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        {filteredListings.map((item) => <div key={item.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="flex flex-col sm:flex-row"><img src={item.image} alt={item.title} className="w-full sm:w-48 h-44 object-cover" /><div className="p-5 flex-1"><div className="flex items-center justify-between gap-2"><span className={`text-[10px] font-black px-2.5 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-xs font-bold text-slate-400">{item.id}</span></div><h3 className="font-black text-slate-900 mt-3 line-clamp-2">{item.title}</h3><p className="text-xs text-slate-500 mt-2">{item.city} / {item.district} / {item.neighborhood}</p><div className="flex items-center justify-between mt-4"><span className="text-lg font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</span><span className="text-xs font-bold text-slate-500">{item.area} m² · {item.rooms}</span></div><div className="flex gap-2 mt-4"><button onClick={() => startEditListing(item)} className="flex-1 border border-slate-300 hover:border-red-600 hover:text-red-600 text-slate-700 font-bold text-xs py-2.5 rounded-lg">Düzenle</button><button onClick={() => deleteListing(item.id)} className="px-3 border border-red-200 text-red-600 hover:bg-red-50 font-bold text-xs py-2.5 rounded-lg">Sil</button></div></div></div></div>)}
+        {filteredListings.map((item) => <div key={item.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="flex flex-col sm:flex-row"><img src={item.image} alt={item.title} className="w-full sm:w-48 h-44 object-cover" /><div className="p-5 flex-1"><div className="flex items-center justify-between gap-2"><span className={`text-[10px] font-black px-2.5 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-100 text-red-700' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-xs font-bold text-slate-400">{item.id}</span></div><h3 className="font-black text-slate-900 mt-3 line-clamp-2">{item.title}</h3><p className="text-xs text-slate-500 mt-2">{item.city} / {item.district} / {item.neighborhood}</p><div className="flex items-center justify-between mt-4"><span className="text-lg font-black text-slate-900">{item.price.toLocaleString('tr-TR')} ₺</span><span className="text-xs font-bold text-slate-500">{item.area} m² · {item.rooms}</span></div><div className="flex gap-2 mt-4"><button onClick={() => startEditListing(item)} className="flex-1 border border-slate-300 hover:border-red-700 hover:text-red-700 text-slate-700 font-bold text-xs py-2.5 rounded-lg">Düzenle</button><button onClick={() => deleteListing(item.id)} className="px-3 border border-red-300 text-red-700 hover:bg-red-100 font-bold text-xs py-2.5 rounded-lg">Sil</button></div></div></div></div>)}
       </div>
       {filteredListings.length === 0 && <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-12 text-center text-slate-500 font-semibold">Aradığınız kriterlere uygun ilan bulunamadı.</div>}
     </div>
   );
 
-  const renderPortfolio = () => (<div className="space-y-6"><div className="grid grid-cols-1 md:grid-cols-3 gap-4">{[{ label: 'Satılık Konut', value: myListings.filter((x) => x.category === 'Konut' && x.type === 'Satılık').length, icon: Home }, { label: 'Ticari İlan', value: myListings.filter((x) => x.category === 'İşyeri').length, icon: Building2 }, { label: 'Arsa', value: myListings.filter((x) => x.category === 'Arsa').length, icon: MapPin }].map((item) => { const Icon = item.icon; return <div key={item.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex items-center gap-4"><div className="w-11 h-11 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><Icon className="w-5 h-5" /></div><div><p className="text-xs font-bold text-slate-500">{item.label}</p><p className="text-2xl font-black text-slate-900">{item.value}</p></div></div>; })}</div><div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Portföy Dağılımı</h2><p className="text-xs text-slate-500 mt-1">Mevcut portföylerinizin kategorilere göre görünümü</p></div><div className="p-6 space-y-5">{['Konut','İşyeri','Arsa'].map((label) => { const count=myListings.filter(x=>x.category===label).length; const percentage=myListings.length?Math.round(count/myListings.length*100):0; return <div key={label}><div className="flex items-center justify-between mb-2"><span className="text-sm font-black text-slate-800">{label}</span><span className="text-xs font-bold text-slate-500">{count} portföy · %{percentage}</span></div><div className="h-3 rounded-full bg-slate-100 overflow-hidden"><div className="h-full bg-red-600 rounded-full" style={{width:`${percentage}%`}} /></div></div>; })}</div></div></div>);
+  const renderPortfolio = () => (<div className="space-y-6"><div className="grid grid-cols-1 md:grid-cols-3 gap-4">{[{ label: 'Satılık Konut', value: myListings.filter((x) => x.category === 'Konut' && x.type === 'Satılık').length, icon: Home }, { label: 'Ticari İlan', value: myListings.filter((x) => x.category === 'İşyeri').length, icon: Building2 }, { label: 'Arsa', value: myListings.filter((x) => x.category === 'Arsa').length, icon: MapPin }].map((item) => { const Icon = item.icon; return <div key={item.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex items-center gap-4"><div className="w-11 h-11 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Icon className="w-5 h-5" /></div><div><p className="text-xs font-bold text-slate-500">{item.label}</p><p className="text-2xl font-black text-slate-900">{item.value}</p></div></div>; })}</div><div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">Portföy Dağılımı</h2><p className="text-xs text-slate-500 mt-1">Mevcut portföylerinizin kategorilere göre görünümü</p></div><div className="p-6 space-y-5">{['Konut','İşyeri','Arsa'].map((label) => { const count=myListings.filter(x=>x.category===label).length; const percentage=myListings.length?Math.round(count/myListings.length*100):0; return <div key={label}><div className="flex items-center justify-between mb-2"><span className="text-sm font-black text-slate-800">{label}</span><span className="text-xs font-bold text-slate-500">{count} portföy · %{percentage}</span></div><div className="h-3 rounded-full bg-slate-100 overflow-hidden"><div className="h-full bg-red-700 rounded-full" style={{width:`${percentage}%`}} /></div></div>; })}</div></div></div>);
 
   const renderCustomers = () => (
     <div className="space-y-6">
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col md:flex-row gap-4 md:items-center md:justify-between"><div><h2 className="text-lg font-black text-slate-900">Müşteri Listesi</h2><p className="text-xs text-slate-500 mt-1">Toplam {customers.length} kayıt</p></div><div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto"><div className="relative w-full sm:w-72"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={customerSearch} onChange={(e) => setCustomerSearch(e.target.value)} placeholder="Müşteri ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><button onClick={() => setShowCustomerForm(true)} className="bg-red-600 hover:bg-red-700 text-white font-black px-4 py-3 rounded-xl flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4" /> Müşteri Ekle</button></div></div>
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col md:flex-row gap-4 md:items-center md:justify-between"><div><h2 className="text-lg font-black text-slate-900">Müşteri Listesi</h2><p className="text-xs text-slate-500 mt-1">Toplam {customers.length} kayıt</p></div><div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto"><div className="relative w-full sm:w-72"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={customerSearch} onChange={(e) => setCustomerSearch(e.target.value)} placeholder="Müşteri ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-700" /></div><button onClick={() => setShowCustomerForm(true)} className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-3 rounded-xl flex items-center justify-center gap-2"><PlusCircle className="w-4 h-4" /> Müşteri Ekle</button></div></div>
       {customerSaved && <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-xl text-sm font-bold">Müşteri başarıyla eklendi.</div>}
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">{filteredCustomers.map((customer) => <div key={customer.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-start justify-between gap-4"><div className="flex items-center gap-3"><div className="w-11 h-11 rounded-full bg-slate-900 text-white flex items-center justify-center font-black">{customer.name.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div><h3 className="font-black text-slate-900">{customer.name}</h3><p className="text-xs text-slate-500">{customer.type}</p></div></div><span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600">{customer.status}</span></div><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600"><div className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 text-red-600" />{customer.phone}</div><div className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-red-600" />{customer.email}</div></div><div className="mt-4 flex items-center justify-between text-xs"><span className="text-slate-500">Son iletişim: <strong className="text-slate-800">{customer.lastContact}</strong></span><a href={`tel:${customer.phone.replace(/\s+/g,'')}`} className="text-red-600 font-black hover:text-red-700">Ara</a></div></div>)}</div>
-      {showCustomerForm && <div className="fixed inset-0 z-[70] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-xl rounded-2xl shadow-2xl"><div className="p-6 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">Yeni Müşteri Ekle</h2><p className="text-xs text-slate-500 mt-1">Müşteri bilgilerini kaydedin.</p></div><button onClick={()=>setShowCustomerForm(false)} className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={addCustomer} className="p-6 space-y-4"><input required value={customerForm.name} onChange={e=>setCustomerForm({...customerForm,name:e.target.value})} placeholder="Ad Soyad" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="tel" value={customerForm.phone} onChange={e=>setCustomerForm({...customerForm,phone:e.target.value})} placeholder="Telefon" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="email" value={customerForm.email} onChange={e=>setCustomerForm({...customerForm,email:e.target.value})} placeholder="E-posta" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><div className="grid grid-cols-2 gap-4"><select value={customerForm.type} onChange={e=>setCustomerForm({...customerForm,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Alıcı</option><option>Satıcı</option><option>Kiralama</option><option>Yatırımcı</option></select><select value={customerForm.status} onChange={e=>setCustomerForm({...customerForm,status:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Yeni</option><option>Aktif</option><option>Takipte</option></select></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={()=>setShowCustomerForm(false)} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-600 text-white font-black text-sm">Müşteriyi Kaydet</button></div></form></div></div>}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">{filteredCustomers.map((customer) => <div key={customer.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-start justify-between gap-4"><div className="flex items-center gap-3"><div className="w-11 h-11 rounded-full bg-slate-900 text-white flex items-center justify-center font-black">{customer.name.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div><h3 className="font-black text-slate-900">{customer.name}</h3><p className="text-xs text-slate-500">{customer.type}</p></div></div><span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600">{customer.status}</span></div><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600"><div className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 text-red-700" />{customer.phone}</div><div className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-red-700" />{customer.email}</div></div><div className="mt-4 flex items-center justify-between text-xs"><span className="text-slate-500">Son iletişim: <strong className="text-slate-800">{customer.lastContact}</strong></span><a href={`tel:${customer.phone.replace(/\s+/g,'')}`} className="text-red-700 font-black hover:text-red-800">Ara</a></div></div>)}</div>
+      {showCustomerForm && <div className="fixed inset-0 z-[70] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-xl rounded-2xl shadow-2xl"><div className="p-6 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">Yeni Müşteri Ekle</h2><p className="text-xs text-slate-500 mt-1">Müşteri bilgilerini kaydedin.</p></div><button onClick={()=>setShowCustomerForm(false)} className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={addCustomer} className="p-6 space-y-4"><input required value={customerForm.name} onChange={e=>setCustomerForm({...customerForm,name:e.target.value})} placeholder="Ad Soyad" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="tel" value={customerForm.phone} onChange={e=>setCustomerForm({...customerForm,phone:e.target.value})} placeholder="Telefon" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><input required type="email" value={customerForm.email} onChange={e=>setCustomerForm({...customerForm,email:e.target.value})} placeholder="E-posta" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50" /><div className="grid grid-cols-2 gap-4"><select value={customerForm.type} onChange={e=>setCustomerForm({...customerForm,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Alıcı</option><option>Satıcı</option><option>Kiralama</option><option>Yatırımcı</option></select><select value={customerForm.status} onChange={e=>setCustomerForm({...customerForm,status:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50"><option>Yeni</option><option>Aktif</option><option>Takipte</option></select></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={()=>setShowCustomerForm(false)} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-700 text-white font-black text-sm">Müşteriyi Kaydet</button></div></form></div></div>}
     </div>
   );
 
-  const renderMessages = () => (<div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Gelen Mesajlar</h2><p className="text-xs text-slate-500 mt-1">Müşterilerinizle iletişiminizi buradan yönetin.</p></div><span className="text-xs font-black text-red-600 bg-red-50 px-3 py-1.5 rounded-full">{messages.filter((m)=>m.unread).length} okunmamış</span></div><div className="divide-y divide-slate-100">{messages.map((message)=><button key={message.id} onClick={()=>markMessageRead(message.id)} className={`w-full text-left p-5 hover:bg-slate-50 transition ${message.unread?'bg-red-50/40':'bg-white'}`}><div className="flex items-start gap-4"><div className={`w-11 h-11 rounded-full flex items-center justify-center font-black ${message.unread?'bg-red-600 text-white':'bg-slate-200 text-slate-700'}`}>{message.sender.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div className="flex-1 min-w-0"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"><h3 className="font-black text-slate-900">{message.sender}</h3><span className="text-[10px] text-slate-400 font-bold">{message.time}</span></div><p className="text-sm font-bold text-slate-700 mt-1">{message.subject}</p><p className="text-xs text-slate-500 mt-1 truncate">{message.text}</p></div>{message.unread&&<span className="w-2.5 h-2.5 rounded-full bg-red-600 mt-2" />}</div></button>)}</div></div>);
+  const renderMessages = () => (<div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Gelen Mesajlar</h2><p className="text-xs text-slate-500 mt-1">Müşterilerinizle iletişiminizi buradan yönetin.</p></div><span className="text-xs font-black text-red-700 bg-red-100 px-3 py-1.5 rounded-full">{messages.filter((m)=>m.unread).length} okunmamış</span></div><div className="divide-y divide-slate-100">{messages.map((message)=><button key={message.id} onClick={()=>markMessageRead(message.id)} className={`w-full text-left p-5 hover:bg-slate-50 transition ${message.unread?'bg-red-100/40':'bg-white'}`}><div className="flex items-start gap-4"><div className={`w-11 h-11 rounded-full flex items-center justify-center font-black ${message.unread?'bg-red-700 text-white':'bg-slate-200 text-slate-700'}`}>{message.sender.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div className="flex-1 min-w-0"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"><h3 className="font-black text-slate-900">{message.sender}</h3><span className="text-[10px] text-slate-400 font-bold">{message.time}</span></div><p className="text-sm font-bold text-slate-700 mt-1">{message.subject}</p><p className="text-xs text-slate-500 mt-1 truncate">{message.text}</p></div>{message.unread&&<span className="w-2.5 h-2.5 rounded-full bg-red-700 mt-2" />}</div></button>)}</div></div>);
 
-  const renderStatistics = () => (<div className="space-y-6"><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{[{label:'Toplam Görüntülenme',value:'12.840',change:'+18,4%'},{label:'İlan Dönüşümü',value:'%7,8',change:'+2,1%'},{label:'Telefon Tıklaması',value:'326',change:'+12,6%'},{label:'Favoriye Eklenme',value:'184',change:'+9,3%'}].map(stat=><div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><p className="text-xs font-bold text-slate-500">{stat.label}</p><div className="flex items-end justify-between mt-2"><p className="text-2xl font-black text-slate-900">{stat.value}</p><span className="text-xs font-black text-emerald-600">{stat.change}</span></div></div>)}</div><div className="grid grid-cols-1 lg:grid-cols-2 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">Haftalık Görüntülenme</h2><div className="mt-6 grid grid-cols-7 gap-3 items-end h-56">{[48,62,55,76,68,91,84].map((value,index)=><div key={index} className="flex flex-col items-center justify-end gap-2 h-full"><div className="w-full bg-slate-100 rounded-lg overflow-hidden flex items-end h-44"><div className="w-full bg-red-600 rounded-lg" style={{height:`${value}%`}} /></div><span className="text-[10px] font-bold text-slate-400">{['Pzt','Sal','Çar','Per','Cum','Cmt','Paz'][index]}</span></div>)}</div></section><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">En Çok İlgi Gören İlanlar</h2><div className="mt-4 space-y-4">{myListings.slice(0,5).map((item,index)=><div key={item.id} className="flex items-center gap-3"><span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-black text-xs text-slate-600">{index+1}</span><div className="flex-1 min-w-0"><p className="text-sm font-black text-slate-800 truncate">{item.title}</p><div className="h-2 bg-slate-100 rounded-full overflow-hidden mt-2"><div className="h-full bg-red-600 rounded-full" style={{width:`${90-index*12}%`}} /></div></div><span className="text-xs font-black text-slate-500">{(3240-index*420).toLocaleString('tr-TR')}</span></div>)}</div></section></div></div>);
+  const renderStatistics = () => (<div className="space-y-6"><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{[{label:'Toplam Görüntülenme',value:'12.840',change:'+18,4%'},{label:'İlan Dönüşümü',value:'%7,8',change:'+2,1%'},{label:'Telefon Tıklaması',value:'326',change:'+12,6%'},{label:'Favoriye Eklenme',value:'184',change:'+9,3%'}].map(stat=><div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><p className="text-xs font-bold text-slate-500">{stat.label}</p><div className="flex items-end justify-between mt-2"><p className="text-2xl font-black text-slate-900">{stat.value}</p><span className="text-xs font-black text-emerald-600">{stat.change}</span></div></div>)}</div><div className="grid grid-cols-1 lg:grid-cols-2 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">Haftalık Görüntülenme</h2><div className="mt-6 grid grid-cols-7 gap-3 items-end h-56">{[48,62,55,76,68,91,84].map((value,index)=><div key={index} className="flex flex-col items-center justify-end gap-2 h-full"><div className="w-full bg-slate-100 rounded-lg overflow-hidden flex items-end h-44"><div className="w-full bg-red-700 rounded-lg" style={{height:`${value}%`}} /></div><span className="text-[10px] font-bold text-slate-400">{['Pzt','Sal','Çar','Per','Cum','Cmt','Paz'][index]}</span></div>)}</div></section><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">En Çok İlgi Gören İlanlar</h2><div className="mt-4 space-y-4">{myListings.slice(0,5).map((item,index)=><div key={item.id} className="flex items-center gap-3"><span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-black text-xs text-slate-600">{index+1}</span><div className="flex-1 min-w-0"><p className="text-sm font-black text-slate-800 truncate">{item.title}</p><div className="h-2 bg-slate-100 rounded-full overflow-hidden mt-2"><div className="h-full bg-red-700 rounded-full" style={{width:`${90-index*12}%`}} /></div></div><span className="text-xs font-black text-slate-500">{(3240-index*420).toLocaleString('tr-TR')}</span></div>)}</div></section></div></div>);
 
   const renderProfile = () => (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 xl:col-span-2"><div className="flex items-center justify-between mb-6"><div><h2 className="text-lg font-black text-slate-900">Profil Bilgileri</h2><p className="text-xs text-slate-500 mt-1">Danışman profilinizde görünen bilgileri yönetin.</p></div>{profileSaved&&<span className="text-xs font-black text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full">Kaydedildi</span>}</div><div className="grid grid-cols-1 md:grid-cols-2 gap-5">{([['name','Ad Soyad'],['email','E-posta'],['phone','Telefon'],['title','Unvan'],['office','Ofis'],['region','Bölge']] as const).map(([key,label])=><div key={key}><label className="text-xs font-black text-slate-700 mb-2 block">{label}</label><input value={profile[key]} onChange={e=>setProfile({...profile,[key]:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-600" /></div>)}</div><button onClick={saveProfile} className="mt-6 bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl">Değişiklikleri Kaydet</button></section><section className="bg-slate-900 rounded-2xl shadow-xl p-6 text-white h-fit"><div className="w-20 h-20 rounded-full bg-red-600 flex items-center justify-center text-2xl font-black mx-auto">MY</div><h3 className="text-center text-xl font-black mt-4">{profile.name}</h3><p className="text-center text-sm text-slate-400 mt-1">{profile.title}</p><div className="mt-6 pt-5 border-t border-slate-700 space-y-4 text-sm"><div className="flex justify-between"><span className="text-slate-400">Aktif İlan</span><strong>{myListings.filter((x)=>x.status==='Aktif').length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Müşteri</span><strong>{customers.length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Ofis</span><strong>{profile.office.replace('Realty Center ','')}</strong></div></div></section></div>
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 xl:col-span-2"><div className="flex items-center justify-between mb-6"><div><h2 className="text-lg font-black text-slate-900">Profil Bilgileri</h2><p className="text-xs text-slate-500 mt-1">Danışman profilinizde görünen bilgileri yönetin.</p></div>{profileSaved&&<span className="text-xs font-black text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full">Kaydedildi</span>}</div><div className="grid grid-cols-1 md:grid-cols-2 gap-5">{([['name','Ad Soyad'],['email','E-posta'],['phone','Telefon'],['title','Unvan'],['office','Ofis'],['region','Bölge']] as const).map(([key,label])=><div key={key}><label className="text-xs font-black text-slate-700 mb-2 block">{label}</label><input value={profile[key]} onChange={e=>setProfile({...profile,[key]:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}</div><button onClick={saveProfile} className="mt-6 bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl">Değişiklikleri Kaydet</button></section><section className="bg-slate-900 rounded-2xl shadow-xl p-6 text-white h-fit"><div className="w-20 h-20 rounded-full bg-red-700 flex items-center justify-center text-2xl font-black mx-auto">MY</div><h3 className="text-center text-xl font-black mt-4">{profile.name}</h3><p className="text-center text-sm text-slate-400 mt-1">{profile.title}</p><div className="mt-6 pt-5 border-t border-slate-700 space-y-4 text-sm"><div className="flex justify-between"><span className="text-slate-400">Aktif İlan</span><strong>{myListings.filter((x)=>x.status==='Aktif').length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Müşteri</span><strong>{customers.length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Ofis</span><strong>{profile.office.replace('Realty Center ','')}</strong></div></div></section></div>
   );
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-600 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-600 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-600 hover:bg-red-700 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-600/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
 
-      {showListingForm && <div className="fixed inset-0 z-[60] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl shadow-2xl"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between sticky top-0 bg-white z-10"><div><h2 className="text-xl font-black text-slate-900">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><p className="text-xs text-slate-500 mt-1">İlan bilgilerini ve en fazla 10 görseli yönetin.</p></div><button onClick={resetListingForm} className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-50 hover:text-red-600 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={handleCreateListing} className="p-6 space-y-5"><div><label className="text-xs font-black text-slate-700 mb-2 block">İlan Başlığı</label><input required value={newListing.title} onChange={(e)=>setNewListing({...newListing,title:e.target.value})} placeholder="Örn. Çankaya'da 4+1 Lüks Daire" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-600" /></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Kategori</label><select value={newListing.category} onChange={(e)=>setNewListing({...newListing,category:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Konut</option><option>İşyeri</option><option>Arsa</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İşlem Tipi</label><select value={newListing.type} onChange={(e)=>setNewListing({...newListing,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Oda</label><input value={newListing.rooms} onChange={(e)=>setNewListing({...newListing,rooms:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Fiyat</label><input required value={newListing.price} onChange={(e)=>setNewListing({...newListing,price:e.target.value})} placeholder="Örn. 6850000" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div><div><label className="text-xs font-black text-slate-700 mb-2 block">m²</label><input required value={newListing.area} onChange={(e)=>setNewListing({...newListing,area:e.target.value})} placeholder="Örn. 195" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">İl</label><select value={newListing.city} onChange={(e)=>setNewListing({...newListing,city:e.target.value,district:TURKEY_CITIES[e.target.value]?.[0]||''})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{Object.keys(TURKEY_CITIES).map((city)=><option key={city}>{city}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İlçe</label><select value={newListing.district} onChange={(e)=>setNewListing({...newListing,district:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{(TURKEY_CITIES[newListing.city]||[]).map((district)=><option key={district}>{district}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Mahalle</label><input value={newListing.neighborhood} onChange={(e)=>setNewListing({...newListing,neighborhood:e.target.value})} placeholder="Mahalle" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div><div className="flex items-center justify-between mb-2"><label className="text-xs font-black text-slate-700">İlan Görselleri</label><span className="text-xs font-black text-red-600">{newListing.images.length}/10</span></div><div className="border-2 border-dashed border-slate-300 rounded-2xl p-4 bg-slate-50"><label className="cursor-pointer inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-sm shadow-lg shadow-red-600/20 transition"><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden" /><PlusCircle className="w-5 h-5" /><span>Bilgisayardan / Galeriden Görsel Seç</span></label><p className="text-xs text-slate-500 mt-2">En fazla 10 görsel. Görseller otomatik olarak küçültülür ve JPEG olarak sıkıştırılır.</p>{newListing.images.length>0&&<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-4">{newListing.images.map((image,index)=><div key={`${image}-${index}`} className="relative group"><img src={image} alt={`İlan görseli ${index+1}`} className="w-full h-28 object-cover rounded-xl border border-slate-200" /><button type="button" onClick={()=>removeImage(index)} className="absolute top-1.5 right-1.5 bg-red-600 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"><X className="w-4 h-4" /></button>{index===0&&<span className="absolute bottom-1.5 left-1.5 text-[9px] font-black bg-slate-900/80 text-white px-2 py-1 rounded">Ana görsel</span>}</div>)}</div>}</div></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={resetListingForm} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm text-slate-700">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-black text-sm">{editingListingId?'Değişiklikleri Kaydet':'İlanı Kaydet'}</button></div></form></div></div>}
+      {showListingForm && <div className="fixed inset-0 z-[60] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl shadow-2xl"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between sticky top-0 bg-white z-10"><div><h2 className="text-xl font-black text-slate-900">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><p className="text-xs text-slate-500 mt-1">İlan bilgilerini ve en fazla 10 görseli yönetin.</p></div><button onClick={resetListingForm} className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 hover:text-red-700 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={handleCreateListing} className="p-6 space-y-5"><div><label className="text-xs font-black text-slate-700 mb-2 block">İlan Başlığı</label><input required value={newListing.title} onChange={(e)=>setNewListing({...newListing,title:e.target.value})} placeholder="Örn. Çankaya'da 4+1 Lüks Daire" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-700" /></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Kategori</label><select value={newListing.category} onChange={(e)=>setNewListing({...newListing,category:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Konut</option><option>İşyeri</option><option>Arsa</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İşlem Tipi</label><select value={newListing.type} onChange={(e)=>setNewListing({...newListing,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Oda</label><input value={newListing.rooms} onChange={(e)=>setNewListing({...newListing,rooms:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Fiyat</label><input required value={newListing.price} onChange={(e)=>setNewListing({...newListing,price:e.target.value})} placeholder="Örn. 6850000" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div><div><label className="text-xs font-black text-slate-700 mb-2 block">m²</label><input required value={newListing.area} onChange={(e)=>setNewListing({...newListing,area:e.target.value})} placeholder="Örn. 195" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">İl</label><select value={newListing.city} onChange={(e)=>setNewListing({...newListing,city:e.target.value,district:TURKEY_CITIES[e.target.value]?.[0]||''})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{Object.keys(TURKEY_CITIES).map((city)=><option key={city}>{city}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İlçe</label><select value={newListing.district} onChange={(e)=>setNewListing({...newListing,district:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{(TURKEY_CITIES[newListing.city]||[]).map((district)=><option key={district}>{district}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Mahalle</label><input value={newListing.neighborhood} onChange={(e)=>setNewListing({...newListing,neighborhood:e.target.value})} placeholder="Mahalle" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div><div className="flex items-center justify-between mb-2"><label className="text-xs font-black text-slate-700">İlan Görselleri</label><span className="text-xs font-black text-red-700">{newListing.images.length}/10</span></div><div className="border-2 border-dashed border-slate-300 rounded-2xl p-4 bg-slate-50"><label className="cursor-pointer inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-black text-sm shadow-lg shadow-red-700/20 transition"><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden" /><PlusCircle className="w-5 h-5" /><span>Bilgisayardan / Galeriden Görsel Seç</span></label><p className="text-xs text-slate-500 mt-2">En fazla 10 görsel. Görseller otomatik olarak küçültülür ve JPEG olarak sıkıştırılır.</p>{newListing.images.length>0&&<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-4">{newListing.images.map((image,index)=><div key={`${image}-${index}`} className="relative group"><img src={image} alt={`İlan görseli ${index+1}`} className="w-full h-28 object-cover rounded-xl border border-slate-200" /><button type="button" onClick={()=>removeImage(index)} className="absolute top-1.5 right-1.5 bg-red-700 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"><X className="w-4 h-4" /></button>{index===0&&<span className="absolute bottom-1.5 left-1.5 text-[9px] font-black bg-slate-900/80 text-white px-2 py-1 rounded">Ana görsel</span>}</div>)}</div>}</div></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={resetListingForm} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm text-slate-700">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-black text-sm">{editingListingId?'Değişiklikleri Kaydet':'İlanı Kaydet'}</button></div></form></div></div>}
     </div>
   );
 }
@@ -3104,7 +3109,7 @@ export default function RealtyCenterApp() {
       <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center text-slate-900 px-4 select-none overflow-hidden font-sans">
         <div className="relative mb-10 transform animate-pulse">
           <img 
-            src="/logo.png" 
+            src="/rlogo.png" 
             alt="Realty Center" 
             className="h-24 sm:h-28 w-auto object-contain"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -3114,7 +3119,7 @@ export default function RealtyCenterApp() {
         <div className="relative w-32 h-32 flex items-center justify-center mb-8">
           <div className={`p-4 rounded-2xl transition-all duration-500 transform ${
             animationStage === 'unlocked' 
-              ? 'bg-red-600 text-white shadow-xl shadow-red-600/40 scale-105' 
+              ? 'bg-red-700 text-white shadow-xl shadow-red-700/40 scale-105' 
               : 'bg-slate-50 text-slate-800 border-2 border-slate-200 shadow-md'
           }`}>
             <Home className="w-11 h-11 stroke-[1.75]" />
@@ -3126,7 +3131,7 @@ export default function RealtyCenterApp() {
                 ? '-translate-x-16 opacity-90 scale-90' 
                 : 'translate-x-0 opacity-100 rotate-90 scale-100'
             }`}>
-              <div className="bg-red-600 text-white p-2.5 rounded-full shadow-lg shadow-red-600/30 border-2 border-white">
+              <div className="bg-red-700 text-white p-2.5 rounded-full shadow-lg shadow-red-700/30 border-2 border-white">
                 <Key className="w-5 h-5 animate-pulse" />
               </div>
             </div>
@@ -3139,7 +3144,7 @@ export default function RealtyCenterApp() {
 
         <div className="text-lg sm:text-xl font-light text-slate-800 tracking-[0.2em] text-center flex items-center justify-center flex-wrap gap-x-2">
           <span>HAYALİNİZDEKİ</span>
-          <span className={`font-extrabold text-red-600 inline-block min-w-[90px] text-center transition-all duration-300 ease-in-out transform ${
+          <span className={`font-extrabold text-red-700 inline-block min-w-[90px] text-center transition-all duration-300 ease-in-out transform ${
             fade ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-1 scale-95'
           }`}>
             {PROPERTY_TYPES[wordIndex]}
@@ -3152,7 +3157,7 @@ export default function RealtyCenterApp() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-600 selection:text-white relative flex flex-col justify-between">
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header openDrawer={openDrawer} scrolled={scrolled} />
 
@@ -3202,7 +3207,7 @@ export default function RealtyCenterApp() {
 
           <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
             <div 
-              className={`w-screen max-w-md bg-white text-slate-900 shadow-2xl flex flex-col justify-between h-full border-l-4 border-red-600 transform transition-all duration-500 ease-out ${
+              className={`w-screen max-w-md bg-white text-slate-900 shadow-2xl flex flex-col justify-between h-full border-l-4 border-red-700 transform transition-all duration-500 ease-out ${
                 drawerOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
               }`}
             >
@@ -3211,7 +3216,7 @@ export default function RealtyCenterApp() {
                   <h2 className="text-lg font-black text-white">
                     {formType === 'franchise' ? 'Franchise Başvuru Formu' : 'Danışman Başvuru Formu'}
                   </h2>
-                  <p className="text-xs text-red-500 font-black tracking-wider">REALTY CENTER Ailesine Katılın</p>
+                  <p className="text-xs text-red-600 font-black tracking-wider">REALTY CENTER Ailesine Katılın</p>
                 </div>
                 <button onClick={closeDrawer} className="p-1.5 text-slate-400 hover:text-white transition">
                   <X className="w-5 h-5" />
@@ -3227,7 +3232,7 @@ export default function RealtyCenterApp() {
                     placeholder="Adınız ve Soyadınız"
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
                   />
                 </div>
 
@@ -3241,7 +3246,7 @@ export default function RealtyCenterApp() {
                         placeholder="ornek@domain.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
                       />
                     </div>
 
@@ -3253,7 +3258,7 @@ export default function RealtyCenterApp() {
                         placeholder="Örn: Emlak Danışmanı, Satış Temsilcisi..."
                         value={formData.occupation}
                         onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
-                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
                       />
                     </div>
                   </>
@@ -3267,12 +3272,12 @@ export default function RealtyCenterApp() {
                     placeholder="05XX XXX XX XX"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
                   />
                 </div>
 
                 <div className="pt-2 border-t border-slate-200">
-                  <h4 className="text-xs font-black text-red-600 tracking-wider mb-2">
+                  <h4 className="text-xs font-black text-red-700 tracking-wider mb-2">
                     Hangi Bölgede Bizimle Çalışmak İstersiniz?
                   </h4>
 
@@ -3285,7 +3290,7 @@ export default function RealtyCenterApp() {
                         setSelectedCity(e.target.value);
                         setSelectedDistrict('');
                       }}
-                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600"
+                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
                     >
                       <option value="">-- İl Seçiniz (81 İl) --</option>
                       {Object.keys(TURKEY_CITIES).map((city) => (
@@ -3301,7 +3306,7 @@ export default function RealtyCenterApp() {
                       disabled={!selectedCity}
                       value={selectedDistrict}
                       onChange={(e) => setSelectedDistrict(e.target.value)}
-                      className={`w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-600 ${
+                      className={`w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700 ${
                         !selectedCity ? 'opacity-50 cursor-not-allowed bg-slate-100' : ''
                       }`}
                     >
@@ -3319,7 +3324,7 @@ export default function RealtyCenterApp() {
                     id="kvkk"
                     checked={formData.kvkkConsent}
                     onChange={(e) => setFormData({ ...formData, kvkkConsent: e.target.checked })}
-                    className="mt-0.5 rounded border-slate-300 text-red-600 focus:ring-red-600"
+                    className="mt-0.5 rounded border-slate-300 text-red-700 focus:ring-red-700"
                   />
                   <label htmlFor="kvkk" className="text-[11px] text-slate-600 font-medium leading-tight">
                     KVKK kapsamında tarafıma bilgilendirme, arama ve SMS gönderilmesini kabul ediyorum.
@@ -3329,7 +3334,7 @@ export default function RealtyCenterApp() {
                 <div className="pt-3">
                   <button 
                     type="submit"
-                    className="relative overflow-hidden group w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-lg shadow-lg shadow-red-600/30 transition flex items-center justify-center space-x-2"
+                    className="relative overflow-hidden group w-full py-3.5 bg-red-700 hover:bg-red-800 text-white font-black rounded-lg shadow-lg shadow-red-700/30 transition flex items-center justify-center space-x-2"
                   >
                     <span className="relative z-10">Başvuruyu Tamamla</span>
                     <CheckCircle2 className="w-4 h-4 relative z-10" />
@@ -3348,7 +3353,7 @@ export default function RealtyCenterApp() {
           <button
             onClick={scrollToTop}
             aria-label="En yukarıya dön"
-            className="fixed bottom-6 right-6 z-40 bg-red-600 hover:bg-red-700 text-white p-3.5 rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/20 flex items-center justify-center"
+            className="fixed bottom-6 right-6 z-40 bg-red-700 hover:bg-red-800 text-white p-3.5 rounded-full shadow-2xl shadow-red-700/50 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/20 flex items-center justify-center"
           >
             <ArrowUp className="w-5 h-5" />
           </button>
