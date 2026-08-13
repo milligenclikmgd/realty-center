@@ -636,8 +636,8 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-10 pt-6 border-t border-slate-700 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs font-semibold text-slate-500">
-        <span>Siteyi yapan</span>
-        <img src="/klogo.png" alt="Kriter Medya" className="h-7 w-auto object-contain" />
+        <span>Dijital Çözüm Ortağı</span>
+        <img src="/klogo.png" alt="Kriter Medya" className="h-7 w-auto object-contain brightness-0 invert" />
       </div>
     </footer>
   );
@@ -695,7 +695,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="w-full max-w-2xl -ml-2 sm:-ml-6 lg:-ml-12">
+          <div className="w-full max-w-2xl -ml-4 sm:-ml-10 lg:-ml-20">
             <div className="grid grid-cols-3 gap-2 mb-2">
               <button
                 onClick={() => setActiveTab('search')}
@@ -815,9 +815,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           </div>
         </div>
 
-        <div className="absolute bottom-6 right-8 z-10 text-right drop-shadow-md">
-          <span className="text-2xl sm:text-3xl font-light tracking-[0.2em] text-white block">REALTY CENTER</span>
-          <span className="text-sm font-light italic tracking-[0.15em] text-slate-200 block mt-0.5">Önce Güven...</span>
+        <div className="absolute bottom-6 right-8 z-10 rounded-xl bg-white/95 px-4 py-3 shadow-xl backdrop-blur-sm">
+          <img src="/rlogo.png" alt="Realty Center" className="h-12 sm:h-14 w-auto object-contain" />
         </div>
       </div>
 
@@ -851,7 +850,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
-          <div className="w-full shrink-0 px-6 lg:w-[42rem] lg:pl-[max(1.5rem,calc((100vw-80rem)/2))]"><OpportunityCards /></div>
+          <div className="w-full shrink-0 px-6 lg:ml-[max(1.5rem,calc((100vw-80rem)/2))] lg:w-80 lg:px-0"><OpportunityCards /></div>
           <div className="relative min-w-0 flex-1 overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
             <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
           </div>
@@ -1622,10 +1621,10 @@ function ListingCategoriesPage() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-9"><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek tüm ilanları inceleyin.</p></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {LISTING_CATEGORIES.map((item) => <button key={item.title} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-52 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          {LISTING_CATEGORIES.map((item) => <button key={item.title} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
             <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-5"><span className="text-[10px] font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-lg font-black text-white">{item.title}</h2><span className="mt-2 inline-flex text-xs font-bold text-white/90">İlanları Gör <ArrowRight className="ml-1 w-4 h-4" /></span></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6"><span className="text-xs font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-xl sm:text-2xl font-black text-white leading-tight">{item.title}</h2><span className="mt-3 inline-flex items-center text-sm font-bold text-white">İlanları Gör <ArrowRight className="ml-1.5 w-4 h-4" /></span></div>
           </button>)}
         </div>
       </div>
