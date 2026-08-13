@@ -533,7 +533,7 @@ function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'ag
       <div>
         <Link
           to="/panel"
-          className="relative overflow-hidden group bg-red-800 hover:bg-red-900 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-800/30 transition duration-300 transform hover:scale-105 tracking-wider"
+          className="relative overflow-hidden group bg-red-700 hover:bg-red-800 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-700/30 transition duration-300 transform hover:scale-105 tracking-wider"
         >
           <span className="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
           <span className="relative z-10">Panel</span>
