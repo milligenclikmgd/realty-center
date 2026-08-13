@@ -356,7 +356,7 @@ const SAMPLE_AGENTS = [
 ];
 
 const SLIDER_IMAGES = [
-  "/slider/realty-villa.jpg",
+  "/slider/slider1.jpg",
   "/slider/realty-investment.jpg",
   "/slider/realty-city.jpg",
   "/slider/realty-seaside.jpg",
