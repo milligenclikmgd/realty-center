@@ -747,18 +747,18 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
   return (
     <>
-      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
+      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-white">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out bg-cover bg-center transform ${
-                index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+              className={`absolute inset-0 bg-no-repeat bg-contain bg-right bg-center transition-opacity duration-1000 ease-in-out ${
+                index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
               style={{ backgroundImage: `url('${imgUrl}')` }}
             />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-[58%] bg-gradient-to-r from-white via-white/90 to-transparent pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
