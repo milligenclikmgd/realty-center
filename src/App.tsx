@@ -456,28 +456,31 @@ function TurkeyListingMap() {
 
   useEffect(() => {
     if (!svgMarkup || !mapRef.current) return;
-    const svg = mapRef.current.querySelector('svg');
-    if (!svg) return;
-    svg.querySelectorAll('.realty-city-label').forEach((label) => label.remove());
-    svg.querySelectorAll<SVGGElement>('g[data-realty-city]').forEach((group) => {
-      const box = group.getBBox();
-      if (box.width < 13 || box.height < 7) return;
-      const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-      label.setAttribute('x', String(box.x + box.width / 2));
-      label.setAttribute('y', String(box.y + box.height / 2 + 1.7));
-      label.setAttribute('text-anchor', 'middle');
-      label.setAttribute('class', 'realty-city-label');
-      label.setAttribute('font-size', box.width < 22 ? '3.4' : box.width < 38 ? '4.3' : '5.3');
-      label.setAttribute('font-family', 'Arial, sans-serif');
-      label.setAttribute('font-weight', '700');
-      label.setAttribute('fill', '#ffffff');
-      label.setAttribute('stroke', '#450a0a');
-      label.setAttribute('stroke-width', '0.55');
-      label.setAttribute('paint-order', 'stroke');
-      label.setAttribute('pointer-events', 'none');
-      label.textContent = group.getAttribute('data-realty-city') || '';
-      svg.appendChild(label);
+    const frame = requestAnimationFrame(() => {
+      const svg = mapRef.current?.querySelector('svg');
+      if (!svg) return;
+      svg.querySelectorAll('.realty-city-label').forEach((label) => label.remove());
+      svg.querySelectorAll<SVGGElement>('g[data-realty-city]').forEach((group) => {
+        const box = group.getBBox();
+        if (box.width < 10 || box.height < 5) return;
+        const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        label.setAttribute('x', String(box.x + box.width / 2));
+        label.setAttribute('y', String(box.y + box.height / 2 + 2.4));
+        label.setAttribute('text-anchor', 'middle');
+        label.setAttribute('class', 'realty-city-label');
+        label.setAttribute('font-size', box.width < 20 ? '5' : box.width < 36 ? '6.5' : '8');
+        label.setAttribute('font-family', 'Arial, sans-serif');
+        label.setAttribute('font-weight', '700');
+        label.setAttribute('fill', '#ffffff');
+        label.setAttribute('stroke', '#450a0a');
+        label.setAttribute('stroke-width', '0.9');
+        label.setAttribute('paint-order', 'stroke');
+        label.setAttribute('pointer-events', 'none');
+        label.textContent = group.getAttribute('data-realty-city') || '';
+        svg.appendChild(label);
+      });
     });
+    return () => cancelAnimationFrame(frame);
   }, [svgMarkup]);
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
