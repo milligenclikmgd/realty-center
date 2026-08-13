@@ -437,6 +437,9 @@ function TurkeyListingMap() {
           group.setAttribute('data-realty-city', group.dataset.cityName || '');
           group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:#fee2e2 !important;stroke:#ef4444 !important;stroke-width:0.75 !important;transition:fill 180ms ease;'));
         });
+        const hoverStyle = parsed.createElementNS('http://www.w3.org/2000/svg', 'style');
+        hoverStyle.textContent = 'g[data-realty-city]{cursor:pointer} g[data-realty-city]:hover path{fill:#ef2222 !important;stroke:#b91c1c !important}';
+        parsed.documentElement.insertBefore(hoverStyle, parsed.documentElement.firstChild);
         setSvgMarkup(parsed.documentElement.outerHTML);
       })
       .catch(() => setMapError(true));
