@@ -11,7 +11,7 @@ import {
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   ChevronDown, Users, Award, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
-  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle, MessageCircle
+  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle, MessageCircle, Menu
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -377,83 +377,20 @@ function EyeIcon() {
 }
 
 function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'agent') => void, scrolled: boolean }) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const close = () => setMobileOpen(false);
+  const links = [
+    ['Kurumsal', '/kurumsal/hakkimizda'], ['Ofislerimiz', '/ofislerimiz'], ['Danışmanlarımız', '/danismanlarimiz'],
+    ['İlanlarımız', '/ilan-kategorileri'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
+  ];
   return (
-    <header className={`sticky top-0 z-40 w-full flex items-center justify-between border-b-2 border-red-700 transition-all duration-500 ease-out ${
-      scrolled
-        ? 'bg-white/90 backdrop-blur-md shadow-lg py-1.5 px-5 lg:px-10'
-        : 'bg-white shadow-md py-2.5 px-6 lg:px-12'
-    }`}>
-      <Link to="/" className="flex items-center">
-        <img 
-          src="/rlogo.png" 
-          alt="Realty Center" 
-          className={`w-auto object-contain transition-all duration-500 ease-out hover:scale-105 ${
-            scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'
-          }`}
-          onError={(e) => { e.currentTarget.alt = "REALTY CENTER"; }}
-        />
-      </Link>
-
-      <nav className="hidden xl:flex items-center space-x-7 text-sm font-extrabold text-slate-800 tracking-wide">
-        <div className="relative group py-2">
-          <Link to="/kurumsal/hakkimizda" className="hover:text-red-700 transition duration-200 flex items-center space-x-1 py-1">
-            <span>Kurumsal</span>
-            <ChevronDown className="w-4 h-4 text-slate-500 group-hover:text-red-700 transition-transform duration-300 group-hover:rotate-180" />
-          </Link>
-
-          <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border-t-4 border-t-red-700 z-50">
-            <Link to="/kurumsal/hakkimizda" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
-                <Award className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Hakkımızda</div>
-                <div className="text-[10px] text-slate-500 font-medium">Vizyon ve misyonumuz</div>
-              </div>
-            </Link>
-
-            <Link to="/kurumsal/once-guven" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
-                <ShieldCheck className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Önce Güven İlkesi</div>
-                <div className="text-[10px] text-slate-500 font-medium">Şeffaf ve etik anlayışımız</div>
-              </div>
-            </Link>
-
-            <Link to="/kurumsal/ekibimiz" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-100 hover:text-red-700 transition group/item">
-              <div className="p-2 bg-slate-100 group-hover/item:bg-red-700 group-hover/item:text-white rounded-md text-slate-700 transition">
-                <Users className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="font-extrabold text-xs text-slate-900 group-hover/item:text-red-700">Yönetim Kadrosu & Ekibimiz</div>
-                <div className="text-[10px] text-slate-500 font-medium">Profesyonel kadromuz</div>
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <Link to="/akademi" className="hover:text-red-700 transition duration-200">Akademi</Link>
-        <Link to="/ofislerimiz" className="hover:text-red-700 transition duration-200">Ofislerimiz</Link>
-        <Link to="/danismanlarimiz" className="hover:text-red-700 transition duration-200">Danışmanlarımız</Link>
-        <Link to="/ilan-kategorileri" className="hover:text-red-700 transition duration-200">İlanlarımız</Link>
-        <Link to="/projelerimiz" className="hover:text-red-700 transition duration-200">Projelerimiz</Link>
-        <Link to="/iletisim" className="hover:text-red-700 transition duration-200">İletişim</Link>
-        <button onClick={() => openDrawer('agent')} className="text-red-700 hover:text-slate-900 transition font-black">Danışman Ol</button>
-        <button onClick={() => openDrawer('franchise')} className="text-red-700 hover:text-slate-900 transition font-black">Franchise Ol!</button>
-      </nav>
-
-      <div>
-        <Link
-          to="/panel"
-          className="relative overflow-hidden group bg-red-700 hover:bg-red-800 text-white px-5 py-2 rounded-lg font-black text-sm flex items-center space-x-2 shadow-lg shadow-red-700/30 transition duration-300 transform hover:scale-105 tracking-wider"
-        >
-          <span className="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-          <span className="relative z-10">Panel</span>
-          <ExternalLink className="w-4 h-4 relative z-10" />
-        </Link>
+    <header className={`sticky top-0 z-40 w-full border-b-2 border-red-700 transition-all duration-500 ${scrolled ? 'bg-white/95 py-1.5 px-5 lg:px-10 shadow-lg backdrop-blur-md' : 'bg-white py-2.5 px-6 lg:px-12 shadow-md'}`}>
+      <div className="flex items-center justify-between gap-4">
+        <Link to="/" onClick={close}><img src="/rlogo.png" alt="Realty Center" className={`w-auto object-contain transition-all duration-500 ${scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'}`} /></Link>
+        <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-slate-800">{links.map(([label, to]) => <Link key={to} to={to} className="hover:text-red-700">{label}</Link>)}<button onClick={() => openDrawer('agent')} className="font-black text-red-700">Danışman Ol</button><button onClick={() => openDrawer('franchise')} className="font-black text-red-700">Franchise Ol!</button></nav>
+        <div className="flex items-center gap-2"><Link to="/panel" className="hidden sm:inline-flex rounded-lg bg-red-700 px-5 py-2 text-sm font-black text-white shadow-lg hover:bg-red-800">Panel</Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-slate-800 hover:border-red-700 hover:text-red-700">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
+      {mobileOpen && <nav className="xl:hidden mt-3 border-t border-slate-200 pt-3 pb-2 grid grid-cols-2 gap-2 text-sm font-black text-slate-800">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-lg bg-slate-50 px-3 py-3 hover:bg-red-50 hover:text-red-700">{label}</Link>)}<button onClick={() => {openDrawer('agent');close();}} className="rounded-lg bg-red-50 px-3 py-3 text-left text-red-700">Danışman Ol</button><button onClick={() => {openDrawer('franchise');close();}} className="rounded-lg bg-red-700 px-3 py-3 text-left text-white">Franchise Ol!</button><Link onClick={close} to="/panel" className="col-span-2 rounded-lg border border-slate-200 px-3 py-3 text-center">Panele Git</Link></nav>}
     </header>
   );
 }
@@ -716,18 +653,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler fırsat alanının yanında canlı olarak akar.</p></div>
-          <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
-        </div>
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
-          <div className="w-full shrink-0 px-6 lg:ml-[max(1.5rem,calc((100vw-80rem)/2))] lg:w-80 lg:px-0"><OpportunityCards /></div>
-          <div className="relative min-w-0 flex-1 overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
-            <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -740,6 +666,19 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="mb-8"><span className="text-xs font-black tracking-widest text-red-700">05 · ÖNE ÇIKAN İLANLAR</span><h2 className="mt-2 text-3xl font-black text-slate-900">Seçili <span className="text-red-700">portföyler</span></h2></div>
           <div className="grid max-w-sm grid-cols-1 gap-6"><ListingCard item={SAMPLE_LISTINGS[0]} /></div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
+          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler fırsat alanının yanında canlı olarak akar.</p></div>
+          <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
+        </div>
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
+          <div className="w-full shrink-0 px-6 lg:ml-[max(1.5rem,calc((100vw-80rem)/2))] lg:w-80 lg:px-0"><OpportunityCards /></div>
+          <div className="relative min-w-0 flex-1 overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
+            <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
+          </div>
         </div>
       </section>
 
