@@ -524,21 +524,21 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 <span className="text-sm font-extrabold tracking-wide relative z-10">İlanlar</span>
               </button>
 
-              <button
-                onClick={() => openDrawer('franchise')}
+              <Link
+                to="/franchise-basvuru"
                 className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Building2 className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
-              </button>
+              </Link>
 
-              <button
-                onClick={() => openDrawer('agent')}
+              <Link
+                to="/danisman-basvuru"
                 className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-slate-900 hover:bg-red-100 hover:text-red-700 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Briefcase className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
-              </button>
+              </Link>
             </div>
 
             <div className="bg-white text-slate-900 p-6 rounded-b-lg rounded-tr-lg shadow-2xl space-y-4 border-2 border-red-700/30">
