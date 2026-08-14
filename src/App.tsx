@@ -113,7 +113,7 @@ const SAMPLE_LISTINGS = [
     neighborhood: "Demo Mahalle",
     rooms: "—",
     area: 0,
-    image: "/demo-placeholder.svg",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1200",
     agentName: "DEMO Danışman",
     agentPhone: "",
     date: "2026-08-14",
@@ -131,7 +131,7 @@ const SAMPLE_OFFICES = [
     phone: "",
     email: "",
     manager: "DEMO Yönetici",
-    image: "/demo-placeholder.svg"
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=88&w=1200"
   }
 ];
 
@@ -145,7 +145,7 @@ const SAMPLE_AGENTS = [
     district: "Demo İlçe",
     phone: "",
     email: "",
-    image: "/demo-placeholder.svg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
     activeListings: 0
   }
 ];
