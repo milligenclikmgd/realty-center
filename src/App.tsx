@@ -102,256 +102,51 @@ const TURKEY_CITIES: Record<string, string[]> = {
 // ÖRNEK İLAN VERİLERİ
 const SAMPLE_LISTINGS = [
   {
-    id: "RC-106",
-    title: "Çankaya Beysukent'te Özel Havuzlu Akıllı Lüks Villa",
+    id: "DEMO-001",
+    title: "DEMO İLAN — Gerçek ilan bilgisi bekleniyor",
     category: "Konut",
     type: "Satılık",
-    price: 38500000,
+    price: 0,
     currency: "₺",
-    city: "Ankara",
-    district: "Çankaya",
-    neighborhood: "Beysukent",
-    rooms: "6+2",
-    area: 550,
-    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=800",
-    agentName: "Murat Yıldırım",
-    agentPhone: "0533 111 22 33",
-    date: "2026-08-11",
-    isFeatured: true
-  },
-  {
-    id: "RC-105",
-    title: "Bağdat Caddesi Üzerinde Yüksek Ciro Potansiyelli Mağaza",
-    category: "İşyeri",
-    type: "Devren",
-    price: 12500000,
-    currency: "₺",
-    city: "İstanbul",
-    district: "Kadıköy",
-    neighborhood: "Caddebostan",
-    rooms: "Açık Alan",
-    area: 280,
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
-    agentName: "Zeynep Çelik",
-    agentPhone: "0532 222 33 44",
-    date: "2026-08-10",
-    isFeatured: true
-  },
-  {
-    id: "RC-104",
-    title: "Çeşme Alaçatı'da Taş Mimari Sıfır Müstakil Villa",
-    category: "Konut",
-    type: "Satılık",
-    price: 24000000,
-    currency: "₺",
-    city: "İzmir",
-    district: "Çeşme",
-    neighborhood: "Alaçatı",
-    rooms: "4+1",
-    area: 220,
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
-    agentName: "Caner Yılmaz",
-    agentPhone: "0535 333 44 55",
-    date: "2026-08-08",
+    city: "Demo Şehir",
+    district: "Demo İlçe",
+    neighborhood: "Demo Mahalle",
+    rooms: "—",
+    area: 0,
+    image: "/demo-placeholder.svg",
+    agentName: "DEMO Danışman",
+    agentPhone: "",
+    date: "2026-08-14",
     isFeatured: false
-  },
-  {
-    id: "RC-103",
-    title: "Levent Plaza Bölgesinde Hazır Dekore Kiralık Ofis Katı",
-    category: "İşyeri",
-    type: "Kiralık",
-    price: 180000,
-    currency: "₺",
-    city: "İstanbul",
-    district: "Beşiktaş",
-    neighborhood: "Levent",
-    rooms: "8 Bölüm",
-    area: 410,
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
-    agentName: "Emre Aksoy",
-    agentPhone: "0532 555 66 77",
-    date: "2026-08-05",
-    isFeatured: true
-  },
-  {
-    id: "RC-102",
-    title: "Batıkent Çakırlar'da Metroya Yakın Geniş 4+1 Daire",
-    category: "Konut",
-    type: "Satılık",
-    price: 6850000,
-    currency: "₺",
-    city: "Ankara",
-    district: "Yenimahalle",
-    neighborhood: "Turgut Özal",
-    rooms: "4+1",
-    area: 195,
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800",
-    agentName: "Sibel Öztürk",
-    agentPhone: "0530 444 55 66",
-    date: "2026-08-02",
-    isFeatured: false
-  },
-  {
-    id: "RC-101",
-    title: "Urla Yağcılar'da Deniz Manzaralı Yatırımlık Konut İmarlı Arsa",
-    category: "Arsa",
-    type: "Satılık",
-    price: 15500000,
-    currency: "₺",
-    city: "İzmir",
-    district: "Urla",
-    neighborhood: "Yağcılar",
-    rooms: "Arsa",
-    area: 1250,
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800",
-    agentName: "Elif Demir",
-    agentPhone: "0533 666 77 88",
-    date: "2026-07-28",
-    isFeatured: true
   }
 ];
 
 const SAMPLE_OFFICES = [
   {
     id: 1,
-    name: "Realty Center Çankaya Bölge Başkanlığı",
-    city: "Ankara",
-    district: "Çankaya",
-    address: "Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA",
-    phone: "0532 567 48 45",
-    email: "cankaya@realtycenter.com.tr",
-    manager: "Mehmet Yılmaz",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 2,
-    name: "Realty Center Kadıköy / Bağdat Caddesi",
-    city: "İstanbul",
-    district: "Kadıköy",
-    address: "Bağdat Cad. No:142/A Kadıköy / İSTANBUL",
-    phone: "0216 411 00 00",
-    email: "kadikoy@realtycenter.com.tr",
-    manager: "Ayşe Kaya",
-    image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 3,
-    name: "Realty Center Karşıyaka Yalı",
-    city: "İzmir",
-    district: "Karşıyaka",
-    address: "Cemal Gürsel Cad. No:88 Karşıyaka / İZMİR",
-    phone: "0232 364 00 00",
-    email: "karsiyaka@realtycenter.com.tr",
-    manager: "Ali Demir",
-    image: ""
-  },
-  {
-    id: 4,
-    name: "Realty Center Yenimahalle Batıkent",
-    city: "Ankara",
-    district: "Yenimahalle",
-    address: "Batıkent Bulvarı No:45 Yenimahalle / ANKARA",
-    phone: "0312 255 00 00",
-    email: "batikent@realtycenter.com.tr",
-    manager: "Selin Öztürk",
-    image: ""
-  },
-  {
-    id: 5,
-    name: "Realty Center Beşiktaş Levent",
-    city: "İstanbul",
-    district: "Beşiktaş",
-    address: "Büyükdere Cad. No:99 Levent / İSTANBUL",
-    phone: "0212 280 00 00",
-    email: "levent@realtycenter.com.tr",
-    manager: "Burak Arslan",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 6,
-    name: "Realty Center Alsancak Liman",
-    city: "İzmir",
-    district: "Alsancak",
-    address: "Atatürk Cad. No:210 Alsancak / İZMİR",
-    phone: "0232 463 00 00",
-    email: "alsancak@realtycenter.com.tr",
-    manager: "Cem Şahin",
-    image: ""
+    name: "DEMO OFİS — Gerçek ofis bilgisi bekleniyor",
+    city: "Demo Şehir",
+    district: "Demo İlçe",
+    address: "Gerçek adres bilgisi yönetim panelinden girilecektir.",
+    phone: "",
+    email: "",
+    manager: "DEMO Yönetici",
+    image: "/demo-placeholder.svg"
   }
 ];
 
 const SAMPLE_AGENTS = [
   {
     id: 1,
-    name: "Murat Yıldırım",
-    title: "LÜKS KONUT & VİLLA UZMANI",
-    office: "Realty Center Çankaya Bölge Başkanlığı",
-    city: "Ankara",
-    district: "Çankaya",
-    phone: "0533 111 22 33",
-    email: "murat.yildirim@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
-    activeListings: 14
-  },
-  {
-    id: 2,
-    name: "Zeynep Çelik",
-    title: "TİCARİ GAYRİMENKUL DANIŞMANI",
-    office: "Realty Center Kadıköy / Bağdat Caddesi",
-    city: "İstanbul",
-    district: "Kadıköy",
-    phone: "0532 222 33 44",
-    email: "zeynep.celik@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
-    activeListings: 22
-  },
-  {
-    id: 3,
-    name: "Caner Yılmaz",
-    title: "ARSA & ARAZİ YATIRIM UZMANI",
-    office: "Realty Center Karşıyaka Yalı",
-    city: "İzmir",
-    district: "Karşıyaka",
-    phone: "0535 333 44 55",
-    email: "caner.yilmaz@realtycenter.com.tr",
-    image: "",
-    activeListings: 9
-  },
-  {
-    id: 4,
-    name: "Sibel Öztürk",
-    title: "KONUT SATIŞ DANIŞMANI",
-    office: "Realty Center Yenimahalle Batıkent",
-    city: "Ankara",
-    district: "Yenimahalle",
-    phone: "0530 444 55 66",
-    email: "sibel.ozturk@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
-    activeListings: 11
-  },
-  {
-    id: 5,
-    name: "Emre Aksoy",
-    title: "PROJE SATIŞ YÖNETİCİSİ",
-    office: "Realty Center Beşiktaş Levent",
-    city: "İstanbul",
-    district: "Beşiktaş",
-    phone: "0532 555 66 77",
-    email: "emre.aksoy@realtycenter.com.tr",
-    image: "",
-    activeListings: 18
-  },
-  {
-    id: 6,
-    name: "Elif Demir",
-    title: "KİRALAMA UZMANI",
-    office: "Realty Center Alsancak Liman",
-    city: "İzmir",
-    district: "Alsancak",
-    phone: "0533 666 77 88",
-    email: "elif.demir@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=800",
-    activeListings: 7
+    name: "DEMO DANIŞMAN — Gerçek danışman bilgisi bekleniyor",
+    title: "DEMO DANIŞMAN",
+    office: "DEMO OFİS",
+    city: "Demo Şehir",
+    district: "Demo İlçe",
+    phone: "",
+    email: "",
+    image: "/demo-placeholder.svg",
+    activeListings: 0
   }
 ];
 
@@ -376,7 +171,7 @@ export interface ContactMessage {
 
 const INITIAL_MESSAGES: ContactMessage[] = [];
 
-const DEFAULT_CONTACT_SETTINGS = { phone: '0532 567 48 45', email: 'info@realtycenter.com.tr', address: 'Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA', whatsapp: '905325674845' };
+const DEFAULT_CONTACT_SETTINGS = { phone: '', email: '', address: '', whatsapp: '' };
 
 function getContactSettings() {
   try {
