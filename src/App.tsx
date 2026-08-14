@@ -6,7 +6,7 @@ import {
 
 import { 
   Search, MapPin, Phone, Mail, Globe, 
-  CheckCircle2, X, ShieldCheck, 
+  CheckCircle2, X, 
   Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   Users, Navigation, UserCheck, Filter,
