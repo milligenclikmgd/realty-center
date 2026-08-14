@@ -2646,10 +2646,10 @@ function AgentDashboard() {
     category: 'Konut',
     type: 'Satılık',
     price: '',
-    city: 'Ankara',
-    district: 'Çankaya',
+    city: '',
+    district: '',
     neighborhood: '',
-    rooms: '3+1',
+    rooms: '',
     area: '',
     images: [] as string[]
   };
@@ -2658,19 +2658,15 @@ function AgentDashboard() {
     SAMPLE_LISTINGS.map((item, index) => ({
       ...item,
       images: [item.image],
-      agentName: 'Murat Yıldırım',
-      status: index === 4 ? 'Taslak' : 'Aktif'
+      agentName: 'DEMO Danışman',
+      status: 'Taslak'
     }))
   );
 
   const [newListing, setNewListing] = useState(emptyListing);
 
   const [customers, setCustomers] = useState([
-    { id: 1, name: 'Ahmet Kaya', phone: '0532 123 45 67', email: 'ahmet.kaya@example.com', type: 'Alıcı', status: 'Aktif', lastContact: 'Bugün' },
-    { id: 2, name: 'Zeynep Demir', phone: '0542 456 78 90', email: 'zeynep.demir@example.com', type: 'Kiralama', status: 'Aktif', lastContact: 'Dün' },
-    { id: 3, name: 'Mehmet Özkan', phone: '0533 987 65 43', email: 'mehmet.ozkan@example.com', type: 'Satıcı', status: 'Takipte', lastContact: '8 Ağustos' },
-    { id: 4, name: 'Ayşe Yılmaz', phone: '0551 234 56 78', email: 'ayse.yilmaz@example.com', type: 'Alıcı', status: 'Yeni', lastContact: '7 Ağustos' },
-    { id: 5, name: 'Can Aydın', phone: '0536 777 88 99', email: 'can.aydin@example.com', type: 'Yatırımcı', status: 'Aktif', lastContact: '5 Ağustos' }
+    { id: 1, name: 'DEMO Müşteri', phone: '', email: '', type: 'Demo', status: 'Demo', lastContact: '—' }
   ]);
 
   const [customerForm, setCustomerForm] = useState({
@@ -2678,25 +2674,20 @@ function AgentDashboard() {
   });
 
   const [messages, setMessages] = useState([
-    { id: 1, sender: 'Ahmet Kaya', subject: 'Beysukent villa ilanı', text: 'İlanı çok beğendim, bugün görmek istiyorum.', time: '10 dk önce', unread: true },
-    { id: 2, sender: 'Zeynep Demir', subject: 'Kiralık daire', text: 'Levent bölgesinde benzer seçenekleriniz var mı?', time: '1 saat önce', unread: true },
-    { id: 3, sender: 'Mehmet Özkan', subject: 'Arsa görüşmesi', text: 'Yarın saat 15:00 için uygunum.', time: 'Dün', unread: false },
-    { id: 4, sender: 'Ayşe Yılmaz', subject: 'Yeni ilan', text: '4+1 daire seçeneklerini incelemek istiyorum.', time: '2 gün önce', unread: false }
+    { id: 1, sender: 'DEMO Müşteri', subject: 'DEMO mesaj', text: 'Gerçek mesajlar burada görüntülenecektir.', time: '—', unread: false }
   ]);
 
   const [profile, setProfile] = useState({
-    name: 'Murat Yıldırım',
-    email: 'murat.yildirim@realtycenter.com.tr',
-    phone: '0533 111 22 33',
-    title: 'Lüks Konut & Villa Uzmanı',
-    office: 'Realty Center Çankaya Bölge Başkanlığı',
-    region: 'Ankara / Çankaya'
+    name: 'DEMO Danışman',
+    email: '',
+    phone: '',
+    title: 'DEMO PROFİL',
+    office: 'DEMO OFİS',
+    region: ''
   });
 
   const appointments = [
-    { time: '10:00', title: 'Çankaya Villa Sunumu', customer: 'Ahmet Kaya', type: 'Görüşme' },
-    { time: '14:30', title: 'Yeni müşteri görüşmesi', customer: 'Zeynep Demir', type: 'Arama' },
-    { time: '17:00', title: 'Haftalık ekip toplantısı', customer: 'Çankaya Bölge Ofisi', type: 'Ofis' }
+    { time: '—', title: 'DEMO Randevu', customer: 'DEMO Müşteri', type: 'Demo' }
   ];
 
   const filteredListings = myListings.filter((item) =>
