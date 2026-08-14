@@ -7,11 +7,11 @@ import {
 import { 
   Search, MapPin, Phone, Mail, Globe, 
   CheckCircle2, X, ShieldCheck, 
-  ExternalLink, Building2, Briefcase, Megaphone,
+  Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
-  ChevronDown, Users, Award, Navigation, UserCheck, Filter,
+  Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
-  ShieldAlert, Lock, Check, XCircle, AlertCircle, FileText, PieChart, Layers, HelpCircle, MessageCircle, Menu
+  ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -382,7 +382,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
 }
 
 
-function Header({ openDrawer, scrolled }: { openDrawer: (type: 'franchise' | 'agent') => void, scrolled: boolean }) {
+function Header({ scrolled }: { scrolled: boolean }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const close = () => setMobileOpen(false);
   const links = [
@@ -2121,10 +2121,10 @@ function SuperAdminDashboard() {
   ]);
 
   // Ofis Listesi Verileri
-  const [offices, setOffices] = useState(SAMPLE_OFFICES);
+  const [offices] = useState(SAMPLE_OFFICES);
 
   // Danışman Verileri
-  const [agents, setAgents] = useState(SAMPLE_AGENTS);
+  const [agents] = useState(SAMPLE_AGENTS);
 
   // İlan Verileri (Onay Bekleyenler)
   const [listings, setListings] = useState([
@@ -2133,7 +2133,7 @@ function SuperAdminDashboard() {
   ]);
 
   // Genel Mesajlar
-  const [contactMessages, setContactMessages] = useState([
+  const [contactMessages] = useState([
     { id: 'MSG-01', sender: 'Kemal Sunal', email: 'kemal@test.com', phone: '0532 000 00 00', subject: 'Toplu Konut Projesi İşbirliği', status: 'Okunmadı', date: '2026-08-12' },
     { id: 'MSG-02', sender: 'Berna Tan', email: 'berna@test.com', phone: '0533 111 00 11', subject: 'Sistem Giriş Hatası', status: 'Yanıtlandı', date: '2026-08-11' }
   ]);
@@ -2492,7 +2492,7 @@ function SuperAdminDashboard() {
                   {listings.map((item) => (
                     <div key={item.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                       <div className="flex items-center space-x-4">
-                        <img src={item.image} alt={item.title} className="w-16 h-12 object-cover rounded-lg" />
+                        <img src={'image' in item ? item.image : '/demo-placeholder.svg'} alt={item.title} className="w-16 h-12 object-cover rounded-lg" />
                         <div>
                           <div className="flex items-center space-x-2">
                             <span className="text-xs font-black text-slate-900">{item.title}</span>
@@ -2631,7 +2631,7 @@ function AgentDashboard() {
   };
 
   const [myListings, setMyListings] = useState(() =>
-    SAMPLE_LISTINGS.map((item, index) => ({
+    SAMPLE_LISTINGS.map((item) => ({
       ...item,
       images: [item.image],
       agentName: 'DEMO Danışman',
@@ -2947,7 +2947,7 @@ export default function RealtyCenterApp() {
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const [messages, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
+  const [, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
 
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
@@ -3134,7 +3134,7 @@ export default function RealtyCenterApp() {
       <ScrollToTopOnRouteChange />
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
-        <Header openDrawer={openDrawer} scrolled={scrolled} />
+        <Header scrolled={scrolled} />
 
         <main className="flex-1">
           <Routes>
