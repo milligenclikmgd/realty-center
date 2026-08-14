@@ -2846,8 +2846,8 @@ function AgentDashboard() {
         area: numericArea,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage],
-        agentName: 'Murat Yıldırım',
-        agentPhone: '0533 111 22 33',
+        agentName: profile.name || 'DEMO Danışman',
+        agentPhone: profile.phone || '',
         date: new Date().toISOString().slice(0, 10),
         isFeatured: false,
         status: 'Aktif'
