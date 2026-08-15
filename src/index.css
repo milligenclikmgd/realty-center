@@ -33,3 +33,19 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+.map-cluster-label {
+  margin: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+.map-cluster-label::before {
+  display: none !important;
+}
