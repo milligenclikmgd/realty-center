@@ -65,3 +65,51 @@
 .live-listing-track-paused {
   animation-play-state: paused;
 }
+
+.gold-showcase {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 208, 93, .18), transparent 32%),
+    linear-gradient(125deg, #090e1a 0%, #182238 48%, #080c15 100%);
+}
+
+.gold-showcase-glow {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 9999px;
+  filter: blur(42px);
+  opacity: .34;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 208, 93, .9) 0%, rgba(217, 152, 25, .2) 42%, transparent 70%);
+  animation: goldGlow 10s ease-in-out infinite alternate;
+}
+
+.gold-showcase-glow-one { left: -11rem; top: -13rem; }
+.gold-showcase-glow-two { right: -12rem; bottom: -16rem; animation-delay: -4s; }
+
+.gold-showcase-spark {
+  position: absolute;
+  color: #f8d36a;
+  opacity: .75;
+  text-shadow: 0 0 16px rgba(255, 210, 95, .95);
+  pointer-events: none;
+  animation: goldSpark 5s ease-in-out infinite;
+}
+
+.gold-showcase-spark-one { top: 17%; left: 8%; font-size: 1.25rem; }
+.gold-showcase-spark-two { top: 27%; right: 9%; font-size: 1.8rem; animation-delay: -2s; }
+.gold-showcase-spark-three { bottom: 14%; left: 47%; font-size: 1rem; animation-delay: -3.3s; }
+
+@keyframes goldGlow {
+  from { transform: translate3d(-3%, -2%, 0) scale(.85); opacity: .18; }
+  to { transform: translate3d(14%, 9%, 0) scale(1.15); opacity: .48; }
+}
+
+@keyframes goldSpark {
+  0%, 100% { transform: translateY(0) scale(.65) rotate(0deg); opacity: .18; }
+  50% { transform: translateY(-24px) scale(1.15) rotate(28deg); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-showcase-glow, .gold-showcase-spark { animation: none; }
+}
