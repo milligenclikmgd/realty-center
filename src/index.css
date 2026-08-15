@@ -49,3 +49,17 @@
 .map-cluster-label::before {
   display: none !important;
 }
+
+
+@keyframes live-listings-left {
+  from { opacity: 0.35; transform: translateX(5%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes live-listings-right {
+  from { opacity: 0.35; transform: translateX(-5%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.live-listings-left { animation: live-listings-left 420ms ease-out; }
+.live-listings-right { animation: live-listings-right 420ms ease-out; }
