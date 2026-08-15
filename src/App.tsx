@@ -550,7 +550,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
     ['İlanlarımız', '/ilan-kategorileri'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
   ];
   return (
-    <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#861f20]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#a82525]/88 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
+    <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#8f091a]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#b20d20]/88 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
       <div className="flex items-center justify-between gap-4">
         <Link to="/" onClick={close}><img src="/rlogo.png" alt="Realty Center" className={`w-auto object-contain brightness-0 invert transition-all duration-500 ${scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'}`} /></Link>
         <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
