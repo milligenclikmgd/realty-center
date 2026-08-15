@@ -231,6 +231,14 @@ const SLIDER_IMAGES = [
 ];
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
+const WHY_REALTY_CENTER_ITEMS = [
+  'Önce güven ilkesiyle şeffaf hizmet',
+  'Uzman danışmanlarla doğru eşleştirme',
+  'Güncel ve doğrulanmış portföyler',
+  'Franchise ağıyla güçlü yerel erişim',
+  'Satış ve kiralama sürecinde uçtan uca destek',
+  'Yatırım kararlarında profesyonel rehberlik'
+];
 
 const LISTING_CATEGORIES = ['Konut', 'Arazi', 'Ticari Gayrimenkul'] as const;
 const LISTING_PROPERTY_TYPES = {
@@ -750,7 +758,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
-  const [showAllWhy, setShowAllWhy] = useState(false);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -930,14 +937,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <div className="rounded-3xl border border-slate-200 p-8"><span className="text-xs font-black tracking-widest text-red-700">İLETİŞİM FORMU</span><h2 className="mt-3 text-3xl font-black text-slate-900">Size ulaşalım.</h2><form className="mt-5 grid gap-3 sm:grid-cols-2"><input placeholder="Ad Soyad" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="Telefon" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-24 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><button type="button" className="w-fit rounded-xl bg-slate-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">Bilgi Talebi Gönder</button></form></div>
         </div>
       </section>
-      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><MessageCircle className="h-6 w-6"/></a><a href="#" aria-label="LinkedIn" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><Globe className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><Send className="h-6 w-6"/></a></div></div></section>
+      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/instagram/BE123C" alt="Instagram" className="h-6 w-6"/></a><a href="#" aria-label="Twitter" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/twitter/BE123C" alt="Twitter" className="h-6 w-6"/></a><a href="#" aria-label="Facebook" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/facebook/BE123C" alt="Facebook" className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/youtube/BE123C" alt="YouTube" className="h-6 w-6"/></a></div></div></section>
 
       <TurkeyListingMap />
 
       <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between mb-10"><div><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tight">NEDEN <span className="text-red-500">REALTY CENTER?</span></h2></div><Link to="/kurumsal/once-guven" className="inline-flex w-fit rounded-xl border border-red-400 bg-red-700 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600">Tümünü Gör →</Link></div>
-          <div className="grid gap-3 md:grid-cols-2">{['Önce güven ilkesiyle şeffaf hizmet','Uzman danışmanlarla doğru eşleştirme','Güncel ve doğrulanmış portföyler','Franchise ağıyla güçlü yerel erişim','Satış ve kiralama sürecinde uçtan uca destek','Yatırım kararlarında profesyonel rehberlik'].slice(0, showAllWhy ? 6 : 3).map((item, index) => <div key={item} className="flex items-center gap-4 rounded-xl bg-red-700 px-5 py-4 font-black"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span><span>{item}</span></div>)}</div><button onClick={() => setShowAllWhy(!showAllWhy)} className="mt-7 inline-flex rounded-xl border border-red-400 bg-white px-5 py-3 text-sm font-black text-red-700 transition hover:bg-red-100">{showAllWhy ? 'Daha Az Göster' : 'Tümünü Gör'}</button>
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between mb-10"><div><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tight">NEDEN <span className="text-red-500">REALTY CENTER?</span></h2></div><Link to="/neden-realty-center" className="inline-flex w-fit rounded-xl border border-red-400 bg-red-700 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600">Tümünü Göster →</Link></div>
+          <div className="grid gap-3 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.map((item, index) => <div key={item} className="flex items-center gap-4 rounded-xl bg-red-700 px-5 py-4 font-black"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span><span>{item}</span></div>)}</div>
         </div>
       </section>
 
@@ -1046,6 +1053,12 @@ function TrustPrinciplePage() {
       <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Önce Güven İlkesi</h1>
       <p className="text-slate-600 leading-relaxed text-lg mt-4">Şeffaf ticaret, güvenilir altyapı ve hukuki süreç yönetimimiz bu sayfada açıklanacaktır.</p>
     </div>
+  );
+}
+
+function WhyRealtyCenterPage() {
+  return (
+    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-5xl px-6 lg:px-12"><Link to="/" className="text-sm font-black text-red-700">← Ana sayfaya dön</Link><div className="mt-7 rounded-3xl bg-slate-950 p-8 text-white sm:p-12"><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h1 className="mt-3 text-4xl font-black sm:text-5xl">NEDEN <span className="text-red-500">REALTY CENTER?</span></h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Gayrimenkul yolculuğunuzda doğru kararlar almanız için şeffaf, uzman ve çözüm odaklı bir hizmet anlayışı sunuyoruz.</p></div><div className="mt-8 space-y-3">{WHY_REALTY_CENTER_ITEMS.map((item, index) => <div key={item} className="flex items-center gap-5 rounded-2xl bg-red-700 px-6 py-5 text-lg font-black text-white shadow-lg shadow-red-700/20"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span>{item}</div>)}</div></div></div>
   );
 }
 
@@ -3652,6 +3665,7 @@ export default function RealtyCenterApp() {
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
+            <Route path="/neden-realty-center" element={<WhyRealtyCenterPage />} />
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
 
             <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
