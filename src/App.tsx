@@ -583,6 +583,120 @@ function OpportunityCards() {
   );
 }
 
+function FeaturedListingsShowcase() {
+  const featuredListings = [...SAMPLE_LISTINGS]
+    .filter((listing) => listing.price <= 8000000)
+    .sort((a, b) => a.price - b.price)
+    .slice(0, 5);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const dragStartX = useRef<number | null>(null);
+  const dragMoved = useRef(false);
+
+  const move = (direction: number) => {
+    if (!featuredListings.length) return;
+    setActiveIndex((current) => (current + direction + featuredListings.length) % featuredListings.length);
+  };
+
+  const getOffset = (index: number) => {
+    let offset = index - activeIndex;
+    const half = featuredListings.length / 2;
+    if (offset > half) offset -= featuredListings.length;
+    if (offset < -half) offset += featuredListings.length;
+    return offset;
+  };
+
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    dragStartX.current = event.clientX;
+    dragMoved.current = false;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (dragStartX.current === null) return;
+    if (Math.abs(event.clientX - dragStartX.current) > 8) dragMoved.current = true;
+  };
+
+  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (dragStartX.current === null) return;
+    const distance = event.clientX - dragStartX.current;
+    if (distance > 55) move(-1);
+    if (distance < -55) move(1);
+    dragStartX.current = null;
+  };
+
+  if (!featuredListings.length) return null;
+
+  return (
+    <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-red-50/30 to-white py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+        <div className="mb-8 text-center sm:mb-10">
+          <span className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-white px-4 py-1.5 text-[10px] font-black tracking-[0.28em] text-red-700 shadow-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-red-700" />
+            ÖZEL SEÇKİ
+          </span>
+          <h2 className="mt-4 font-serif text-4xl font-black italic tracking-tight text-slate-950 sm:text-5xl">
+            Vitrin <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">İlanları</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Bütçe dostu, özenle seçilmiş gayrimenkul fırsatları</p>
+        </div>
+
+        <div
+          className="relative h-[430px] cursor-grab select-none touch-pan-y active:cursor-grabbing sm:h-[470px]"
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={() => { dragStartX.current = null; }}
+        >
+          {featuredListings.map((item, index) => {
+            const offset = getOffset(index);
+            const isActive = offset === 0;
+            if (Math.abs(offset) > 1) return null;
+            return (
+              <Link
+                key={item.id}
+                to={`/ilan/${item.id}`}
+                draggable={false}
+                onClick={(event) => { if (dragMoved.current) event.preventDefault(); }}
+                className="absolute left-1/2 top-0 h-[400px] w-[78vw] max-w-[620px] overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
+                style={{
+                  transform: `translateX(${offset === 0 ? '-50%' : offset < 0 ? '-128%' : '28%'}) scale(${isActive ? 1 : 0.82})`,
+                  opacity: isActive ? 1 : 0.42,
+                  zIndex: isActive ? 20 : 10,
+                  filter: isActive ? 'none' : 'saturate(.65)'
+                }}
+                aria-label={`${item.title} ilanını incele`}
+              >
+                <img src={item.image} alt={item.title} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
+                <div className={`absolute inset-0 transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent' : 'bg-slate-950/25'}`} />
+                <div className="absolute left-5 top-5 flex items-center gap-2">
+                  <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
+                  <span className="rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 backdrop-blur">UYGUN FİYAT</span>
+                </div>
+                <div className={`absolute inset-x-0 bottom-0 p-6 text-white transition-all duration-500 sm:p-8 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-70'}`}>
+                  <p className="text-xs font-black uppercase tracking-widest text-red-200">{item.type} · {item.propertyType}</p>
+                  <h3 className="mt-2 max-w-lg text-xl font-black leading-tight sm:text-3xl">{item.title}</h3>
+                  <div className="mt-4 flex items-end justify-between gap-4">
+                    <div><p className="text-xs font-semibold text-white/70">{item.district}, {item.neighborhood}</p><p className="mt-1 text-2xl font-black sm:text-3xl">{item.price.toLocaleString('tr-TR')} ₺</p></div>
+                    <span className="hidden rounded-full bg-white px-5 py-2.5 text-xs font-black text-red-700 shadow-lg sm:inline-flex">İlanı İncele <ArrowRight className="ml-2 h-4 w-4" /></span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+
+          <button type="button" onClick={(event) => { event.stopPropagation(); move(-1); }} className="absolute left-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:left-6" aria-label="Önceki vitrin ilanı"><ChevronLeft className="h-6 w-6" /></button>
+          <button type="button" onClick={(event) => { event.stopPropagation(); move(1); }} className="absolute right-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:right-6" aria-label="Sonraki vitrin ilanı"><ChevronRight className="h-6 w-6" /></button>
+        </div>
+
+        <div className="mt-1 flex items-center justify-center gap-2">
+          {featuredListings.map((item, index) => <button key={item.id} type="button" onClick={() => setActiveIndex(index)} className={`h-2 rounded-full transition-all duration-300 ${index === activeIndex ? 'w-8 bg-red-700' : 'w-2 bg-slate-300 hover:bg-red-300'}`} aria-label={`${index + 1}. vitrin ilanına git`} />)}
+        </div>
+        <p className="mt-4 text-center text-[11px] font-bold text-slate-400">Oklarla ilerleyin veya ilanları fareyle sağa-sola kaydırın</p>
+      </div>
+    </section>
+  );
+}
+
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
@@ -741,12 +855,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      <section className="bg-white py-16 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-8"><span className="text-xs font-black tracking-widest text-red-700">VİTRİN İLANLARI</span><h2 className="mt-2 text-3xl font-black text-slate-900">Vitrin <span className="text-red-700">İlanları</span></h2></div>
-          <div className="grid max-w-sm grid-cols-1 gap-6"><ListingCard item={SAMPLE_LISTINGS[0]} /></div>
-        </div>
-      </section>
+      <FeaturedListingsShowcase />
 
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
