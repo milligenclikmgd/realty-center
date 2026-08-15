@@ -101,26 +101,23 @@ const TURKEY_CITIES: Record<string, string[]> = {
 
 // ÖRNEK İLAN VERİLERİ
 const SAMPLE_LISTINGS = [
-  {
-    id: "DEMO-001",
-    title: "DEMO İLAN — Gerçek ilan bilgisi bekleniyor",
-    category: "Konut",
-    propertyType: "Daire",
-    type: "Satılık",
-    price: 0,
-    currency: "₺",
-    city: "Demo Şehir",
-    district: "Demo İlçe",
-    neighborhood: "Demo Mahalle",
-    rooms: "—",
-    area: 0,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1200",
-    agentName: "DEMO Danışman",
-    agentPhone: "",
-    date: "2026-08-14",
-    isFeatured: false
-  }
-];
+  ['Daire', 'Konut', 'Satılık', "Çankaya Yaşamkent'te Site İçinde 3+1 Daire", '3+1', 165, 7450000],
+  ['Villa', 'Konut', 'Satılık', "Çankaya İncek'te Havuzlu Müstakil Villa", '5+1', 420, 28900000],
+  ['Residence', 'Konut', 'Kiralık', "Çankaya Söğütözü'nde Manzaralı Residence", '2+1', 118, 62000],
+  ['Müstakil Ev', 'Konut', 'Satılık', "Çankaya Oran'da Bahçeli Müstakil Ev", '4+1', 280, 18400000],
+  ['Arsa', 'Arazi', 'Satılık', "Çankaya Karataş'ta Konut İmarlı Arsa", 'Arsa', 650, 9750000],
+  ['Tarla', 'Arazi', 'Satılık', "Çankaya Tulumtaş'ta Yola Cepheli Tarla", 'Tarla', 4800, 12600000],
+  ['Fabrika', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Sanayi Bölgesinde Üretime Hazır Fabrika", 'Fabrika', 3200, 68500000],
+  ['Depo', 'Ticari Gayrimenkul', 'Kiralık', "Çankaya Balgat'ta Yükleme Rampalı Depo", 'Depo', 1250, 185000],
+  ['Ofis', 'Ticari Gayrimenkul', 'Kiralık', "Çankaya Çukurambar'da Prestijli Ofis Katı", '6 Bölüm', 310, 118000],
+  ['Plaza', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Söğütözü'nde Plaza Katı", 'Plaza', 540, 39800000],
+  ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
+].map(([propertyType, category, type, title, rooms, area, price], index) => ({
+  id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
+  image: `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1200`,
+  agentName: 'Realty Center Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
+  details: propertyType === 'Otel' ? { hotelRoomCount: '28', bedCapacity: '64', starRating: '3 yıldız' } : propertyType === 'Fabrika' ? { closedArea: '3200', ceilingHeight: '8', powerCapacity: '630' } : {}
+}));
 
 const SAMPLE_OFFICES = [
   {
@@ -418,7 +415,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
     <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-red-800/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-red-950/20 backdrop-blur-md' : 'bg-red-700/85 py-2.5 px-6 lg:px-12 shadow-md backdrop-blur-sm'}`}>
       <div className="flex items-center justify-between gap-4">
         <Link to="/" onClick={close}><img src="/rlogo.png" alt="Realty Center" className={`w-auto object-contain brightness-0 invert transition-all duration-500 ${scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'}`} /></Link>
-        <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
+        <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => label === 'İlanlarımız' ? <div key={to} className="group relative py-4 -my-4"><Link to="/ilanlarimiz" className="transition hover:text-red-100">İlanlarımız</Link><div className="invisible absolute right-0 top-full w-[430px] translate-y-2 rounded-2xl border border-white/20 bg-red-800/95 p-4 opacity-0 shadow-2xl transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"><div className="mb-3 flex items-center justify-between"><span className="text-xs font-black tracking-wider text-white">İLAN KATEGORİLERİ</span><Link to="/ilanlarimiz" className="rounded-lg bg-white px-3 py-2 text-[11px] font-black text-red-700">Tüm İlanları İncele</Link></div><div className="grid grid-cols-3 gap-2">{Object.entries(LISTING_PROPERTY_TYPES).flatMap(([, types]) => types).map((propertyType) => <Link key={propertyType} to={"/ilanlarimiz?propertyType=" + encodeURIComponent(propertyType)} className="rounded-lg bg-white/10 px-2 py-2 text-center text-[11px] font-bold hover:bg-white/20">{propertyType}</Link>)}</div></div></div> : <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
         <div className="flex items-center gap-2"><Link to="/panel" className="hidden sm:inline-flex rounded-lg bg-white px-5 py-2 text-sm font-black text-red-700 shadow-lg transition hover:bg-red-50">Panel</Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/40 text-white transition hover:border-white hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
       {mobileOpen && <nav className="xl:hidden mt-3 grid grid-cols-2 gap-2 border-t border-white/25 pt-3 pb-2 text-sm font-black text-white">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-lg bg-white/10 px-3 py-3 transition hover:bg-white/20">{label}</Link>)}<Link onClick={close} to="/danisman-basvuru" className="rounded-lg bg-white/15 px-3 py-3 text-left transition hover:bg-white/25">Danışman Ol</Link><Link onClick={close} to="/franchise-basvuru" className="rounded-lg bg-white px-3 py-3 text-left text-red-700">Franchise Ol!</Link><Link onClick={close} to="/panel" className="col-span-2 rounded-lg border border-white/40 px-3 py-3 text-center transition hover:bg-white/10">Panele Git</Link></nav>}
@@ -1489,6 +1486,9 @@ function ListingsPage() {
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedPropertyType, setSelectedPropertyType] = useState(initialPropertyType);
   const [selectedCity, setSelectedCity] = useState(initialCity);
+  const [advancedOpen, setAdvancedOpen] = useState(false);
+  const [minArea, setMinArea] = useState('');
+  const [rooms, setRooms] = useState('');
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -1503,6 +1503,8 @@ function ListingsPage() {
     if (selectedCategory && item.category !== selectedCategory) return false;
     if (selectedPropertyType && item.propertyType !== selectedPropertyType) return false;
     if (selectedCity && item.city !== selectedCity) return false;
+    if (minArea && item.area < Number(minArea)) return false;
+    if (rooms && item.rooms !== rooms) return false;
     return true;
   });
 
@@ -1573,14 +1575,11 @@ function ListingsPage() {
           </div>
 
           <div className="flex items-end">
-            <button 
-              onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); }}
-              className="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2 rounded-xl text-xs transition"
-            >
-              Filtreleri Temizle
-            </button>
+            <button onClick={() => setAdvancedOpen(!advancedOpen)} className="w-full rounded-xl bg-red-700 py-2 text-xs font-black text-white transition hover:bg-red-800">Gelişmiş Arama</button>
           </div>
         </div>
+
+        {advancedOpen && <div className="mb-10 -mt-6 grid grid-cols-1 gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">Minimum m²</label><input value={minArea} onChange={(e) => setMinArea(e.target.value)} type="number" placeholder="Örn. 150" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{['Villa','Daire','Residence','Müstakil Ev','Ofis'].includes(selectedPropertyType) && <div><label className="mb-1 block text-[10px] font-black text-slate-600">Oda Sayısı</label><input value={rooms} onChange={(e) => setRooms(e.target.value)} placeholder="Örn. 3+1" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>}{selectedPropertyType === 'Otel' && <div className="text-xs font-bold text-red-800">Otel için oda sayısı, yatak kapasitesi ve yıldız bilgisi ilan detayında yer alır.</div>}{['Fabrika','Depo'].includes(selectedPropertyType) && <div className="text-xs font-bold text-red-800">{selectedPropertyType} için kapalı alan, tavan yüksekliği ve yükleme bilgisi ilan detayında yer alır.</div>}<button onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); setMinArea(''); setRooms(''); }} className="self-end rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700">Temizle</button></div>}
 
         {filteredListings.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
