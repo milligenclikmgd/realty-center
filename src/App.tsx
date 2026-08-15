@@ -151,13 +151,13 @@ const SAMPLE_LISTINGS: ListingItem[] = SAMPLE_LISTING_SEEDS.map(([propertyType, 
 const SAMPLE_OFFICES = [
   {
     id: 1,
-    name: "DEMO OFİS — Gerçek ofis bilgisi bekleniyor",
-    city: "Demo Şehir",
-    district: "Demo İlçe",
-    address: "Gerçek adres bilgisi yönetim panelinden girilecektir.",
-    phone: "",
-    email: "",
-    manager: "DEMO Yönetici",
+    name: "Realty Center Çankaya",
+    city: "Ankara",
+    district: "Çankaya",
+    address: "Çukurambar Mah. Muhsin Yazıcıoğlu Cad. No: 39, Çankaya / Ankara",
+    phone: "0532 567 48 45",
+    email: "cankaya@realtycenter.com.tr",
+    manager: "Mert Yalçın",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=88&w=1200"
   }
 ];
@@ -165,15 +165,15 @@ const SAMPLE_OFFICES = [
 const SAMPLE_AGENTS = [
   {
     id: 1,
-    name: "DEMO DANIŞMAN — Gerçek danışman bilgisi bekleniyor",
-    title: "DEMO DANIŞMAN",
-    office: "DEMO OFİS",
-    city: "Demo Şehir",
-    district: "Demo İlçe",
-    phone: "",
-    email: "",
+    name: "Mert Yalçın",
+    title: "Gayrimenkul Danışmanı",
+    office: "Realty Center Çankaya",
+    city: "Ankara",
+    district: "Çankaya",
+    phone: "0532 567 48 45",
+    email: "mert.yalcin@realtycenter.com.tr",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
-    activeListings: 0
+    activeListings: 18
   }
 ];
 
@@ -868,21 +868,21 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2 rounded-3xl overflow-hidden relative min-h-72 bg-slate-900"><img src="/slider/slider3.jpg" alt="DEMO proje" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 to-transparent" /><div className="relative p-9 max-w-md text-white"><span className="text-xs font-black tracking-widest text-red-200">PROJELER</span><h2 className="mt-3 text-3xl font-black">DEMO PROJE</h2><p className="mt-3 text-sm text-white/85">Gerçek proje bilgileri, görselleri ve dokümanları yönetim panelinden eklenecektir.</p><Link to="/projelerimiz" className="inline-flex mt-6 rounded-xl bg-red-700 px-5 py-3 text-sm font-black hover:bg-red-800">Projeleri İncele</Link></div></div>
-          <div className="rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">12 · FRANCHISE</span><h2 className="mt-3 text-3xl font-black">Şehrinde Realty Center ol.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Bayilik modeli, avantajlar ve başvuru süreci burada anlatılacaktır.</p><Link to="/franchise-basvuru" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Tümünü Gör</Link></div>
+          <div className="lg:col-span-2 rounded-3xl overflow-hidden relative min-h-72 bg-slate-900"><img src="/slider/slider3.jpg" alt="İncek Vadi Evleri" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 to-transparent" /><div className="relative p-9 max-w-md text-white"><span className="text-xs font-black tracking-widest text-red-200">YENİ PROJELER</span><h2 className="mt-3 text-3xl font-black">İncek Vadi Evleri</h2><p className="mt-3 text-sm text-white/85">Çankaya İncek'te doğayla iç içe, geniş sosyal alanlara sahip yeni nesil yaşam projesi.</p><Link to="/projelerimiz" className="inline-flex mt-6 rounded-xl bg-red-700 px-5 py-3 text-sm font-black hover:bg-red-800">Projeleri İncele</Link></div></div>
+          <div className="rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">YATIRIM FIRSATLARI</span><h2 className="mt-3 text-3xl font-black">Projenize doğru yatırım ile başlayın.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Konut ve ticari projelerde lokasyon, değerleme ve satış süreçlerini uzmanlarımızla planlayın.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Projeleri Gör</Link></div>
         </div>
       </section>
 
-      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN OFİSLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Güçlü <span className="text-red-700">ofis ağımız</span></h2></div><Link to="/ofislerimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/ofislerimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_OFFICES[0].image} alt="DEMO ofis" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">DEMO OFİS</p><h3 className="mt-1 text-lg font-black text-slate-900">Öne Çıkan Ofis</h3></Link></div></div></section>
-      <section className="bg-slate-50 py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN DANIŞMANLAR</span><h2 className="mt-2 text-3xl font-black text-slate-900">Uzman <span className="text-red-700">danışmanlarımız</span></h2></div><Link to="/danismanlarimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/danismanlarimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_AGENTS[0].image} alt="DEMO danışman" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">DEMO DANIŞMAN</p><h3 className="mt-1 text-lg font-black text-slate-900">Öne Çıkan Danışman</h3></Link></div></div></section>
-      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8"><span className="text-xs font-black tracking-widest text-red-700">BLOG YAZILARI</span><h2 className="mt-2 text-3xl font-black text-slate-900">REALTY <span className="text-red-700">BLOG</span></h2></div><div className="flex w-max gap-6 animate-marquee"><article className="w-96 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-md"><p className="text-xs font-black text-red-700">DEMO BLOG YAZISI</p><h3 className="mt-3 text-xl font-black text-slate-900">Gayrimenkul piyasasında doğru adımlar</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">Gerçek blog yazıları ve piyasa notları yönetim panelinden yayımlanacaktır.</p><button className="mt-5 text-sm font-black text-red-700">Yazıyı Oku →</button></article></div></div></section>
+      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN OFİSLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Güçlü <span className="text-red-700">ofis ağımız</span></h2></div><Link to="/ofislerimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/ofislerimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_OFFICES[0].image} alt="Realty Center Çankaya ofisi" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">ANKARA · ÇANKAYA</p><h3 className="mt-1 text-lg font-black text-slate-900">Realty Center Çankaya</h3></Link></div></div></section>
+      <section className="bg-slate-50 py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN DANIŞMANLAR</span><h2 className="mt-2 text-3xl font-black text-slate-900">Uzman <span className="text-red-700">danışmanlarımız</span></h2></div><Link to="/danismanlarimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/danismanlarimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_AGENTS[0].image} alt="Mert Yalçın" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">GAYRİMENKUL DANIŞMANI</p><h3 className="mt-1 text-lg font-black text-slate-900">Mert Yalçın</h3></Link></div></div></section>
+      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8"><span className="text-xs font-black tracking-widest text-red-700">PİYASA REHBERİ</span><h2 className="mt-2 text-3xl font-black text-slate-900">REALTY <span className="text-red-700">BLOG</span></h2></div><div className="flex w-max gap-6 animate-marquee"><article className="w-96 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-md"><p className="text-xs font-black text-red-700">YATIRIM REHBERİ</p><h3 className="mt-3 text-xl font-black text-slate-900">Gayrimenkul yatırımında doğru lokasyon nasıl seçilir?</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">Bölgenin ulaşım imkanlarını, değer artışı potansiyelini ve proje gelişimini birlikte değerlendirin.</p><button className="mt-5 text-sm font-black text-red-700">Yazıyı Oku →</button></article></div></div></section>
 
       
 
       <section className="bg-white py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-6 lg:grid-cols-2">
           <div className="rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">KARİYER</span><h2 className="mt-3 text-3xl font-black">Gayrimenkul kariyerine güçlü bir başlangıç.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Danışmanlık fırsatları, eğitimler ve kariyer başvuruları bu alandan yönetilecektir.</p><Link to="/danisman-basvuru" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Kariyer Başvurusu</Link></div>
-          <div className="rounded-3xl border border-slate-200 p-8"><span className="text-xs font-black tracking-widest text-red-700">İLETİŞİM FORMU</span><h2 className="mt-3 text-3xl font-black text-slate-900">Size ulaşalım.</h2><form className="mt-5 grid gap-3 sm:grid-cols-2"><input placeholder="Ad Soyad" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="Telefon" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-24 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><button type="button" className="w-fit rounded-xl bg-slate-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">DEMO Formu Gönder</button></form></div>
+          <div className="rounded-3xl border border-slate-200 p-8"><span className="text-xs font-black tracking-widest text-red-700">İLETİŞİM FORMU</span><h2 className="mt-3 text-3xl font-black text-slate-900">Size ulaşalım.</h2><form className="mt-5 grid gap-3 sm:grid-cols-2"><input placeholder="Ad Soyad" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="Telefon" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-24 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><button type="button" className="w-fit rounded-xl bg-slate-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">Bilgi Talebi Gönder</button></form></div>
         </div>
       </section>
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><MessageCircle className="h-6 w-6"/></a><a href="#" aria-label="LinkedIn" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><Globe className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl bg-white border border-slate-200 p-4 text-red-700 transition hover:-translate-y-1 hover:bg-red-700 hover:text-white"><Send className="h-6 w-6"/></a></div></div></section>
@@ -2003,11 +2003,12 @@ function ListingDetailPage() {
 }
 
 function ProjectsPage() {
+  const projects = [
+    { category: 'YENİ İNŞAAT PROJESİ', title: 'İncek Vadi Evleri', location: 'Çankaya · İncek', description: '2+1, 3+1 ve 4+1 seçenekleri; peyzaj alanları, kapalı otopark ve sosyal tesisleriyle aile yaşamına odaklanan yeni konut projesi.', status: 'Teslim: Aralık 2027', image: '/slider/slider3.jpg', tags: ['2+1 – 4+1', 'Sosyal tesis', 'Kapalı otopark'] },
+    { category: 'TİCARİ PROJE', title: 'Söğütözü Business Hub', location: 'Çankaya · Söğütözü', description: 'Yüksek görünürlük, esnek ofis metrekareleri ve toplantı alanlarıyla şirketler ve yatırımcılar için tasarlanan çağdaş ticari proje.', status: 'Ön talep dönemi', image: '/slider/slider2.jpg', tags: ['Ofis katları', 'Cadde mağazaları', 'Metroya yakın'] }
+  ];
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Projelerimiz</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Konut ve ticari proje lansmanları ile kat planları bu sayfada sergilenecektir.</p>
-    </div>
+    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="max-w-3xl"><span className="text-xs font-black tracking-widest text-red-700">REALTY CENTER PROJELER</span><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">Yeni yaşam ve yatırım <span className="text-red-700">projeleri</span></h1><p className="mt-5 text-lg leading-relaxed text-slate-600">Yeni inşaat ve ticari projeleri; lokasyon, teslim takvimi ve öne çıkan özellikleriyle inceleyin. Proje danışmanlarımız size en uygun seçenek için yanınızda.</p></div><div className="mt-10 grid gap-7 lg:grid-cols-2">{projects.map((project) => <article key={project.title} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="relative h-64 overflow-hidden"><img src={project.image} alt={project.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"/><span className="absolute left-5 top-5 rounded-full bg-red-700 px-3 py-1.5 text-[11px] font-black tracking-wider text-white">{project.category}</span><div className="absolute bottom-5 left-5 flex items-center gap-2 text-sm font-bold text-white"><MapPin className="h-4 w-4 text-red-300"/>{project.location}</div></div><div className="p-6"><h2 className="text-2xl font-black text-slate-900">{project.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">{tag}</span>)}</div><div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5"><span className="text-sm font-black text-red-700">{project.status}</span><Link to="/iletisim" className="inline-flex items-center gap-1 text-sm font-black text-slate-900 transition hover:text-red-700">Bilgi Al <ArrowRight className="h-4 w-4"/></Link></div></div></article>)}</div></div></div>
   );
 }
 
