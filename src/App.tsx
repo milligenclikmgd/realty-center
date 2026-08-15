@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned, Pause, Play
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -689,21 +689,25 @@ function FeaturedListingsShowcase() {
 
 function LiveListingStream({ listings }: { listings: ListingItem[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [direction, setDirection] = useState<'left' | 'right'>('left');
   const visibleCount = Math.min(3, listings.length);
-  const move = (direction: number) => setActiveIndex((current) => (current + direction + listings.length) % listings.length);
+  const move = (step: number, nextDirection: 'left' | 'right') => {
+    setDirection(nextDirection);
+    setActiveIndex((current) => (current + step + listings.length) % listings.length);
+  };
   const visibleListings = Array.from({ length: visibleCount }, (_, offset) => listings[(activeIndex + offset) % listings.length]);
 
   useEffect(() => {
-    if (isPaused || listings.length < 2) return;
-    const timer = window.setInterval(() => setActiveIndex((current) => (current + 1) % listings.length), 5500);
+    if (isHovered || listings.length < 2) return;
+    const timer = window.setInterval(() => { setDirection('left'); setActiveIndex((current) => (current + 1) % listings.length); }, 5500);
     return () => window.clearInterval(timer);
-  }, [isPaused, listings.length]);
+  }, [isHovered, listings.length]);
 
   if (!listings.length) return null;
-  return <div className="relative">
-    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{activeIndex + 1}</span> / {listings.length} ilan · Kaçırdığınız ilanlara geri dönebilirsiniz.</p><div className="flex items-center gap-2"><button type="button" onClick={() => move(-1)} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="Önceki ilan"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setIsPaused((current) => !current)} className="inline-flex h-9 items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-3 text-[11px] font-black text-red-700 transition hover:bg-red-700 hover:text-white" aria-label={isPaused ? 'Akışı devam ettir' : 'Akışı duraklat'}>{isPaused ? <Play className="h-3.5 w-3.5" /> : <Pause className="h-3.5 w-3.5" />} {isPaused ? 'Devam Et' : 'Duraklat'}</button><button type="button" onClick={() => move(1)} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="Sonraki ilan"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div className="grid grid-cols-1 gap-5 transition-all duration-500 sm:grid-cols-2 xl:grid-cols-3">{visibleListings.map((item, offset) => <div key={`${item.id}-${activeIndex}-${offset}`} className="animate-in fade-in slide-in-from-right-2 duration-500"><ListingCard item={item} /></div>)}</div>
+  return <div className="relative" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{activeIndex + 1}</span> / {listings.length} ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => move(1, 'left')} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="İlanları sola kaydır"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => move(-1, 'right')} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="İlanları sağa kaydır"><ChevronRight className="h-5 w-5" /></button></div></div>
+    <div key={`${activeIndex}-${direction}`} className={`grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 ${direction === 'left' ? 'live-listings-left' : 'live-listings-right'}`}>{visibleListings.map((item, offset) => <div key={`${item.id}-${offset}`}><ListingCard item={item} /></div>)}</div>
   </div>;
 }
 
