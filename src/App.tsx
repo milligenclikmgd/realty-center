@@ -688,26 +688,13 @@ function FeaturedListingsShowcase() {
 }
 
 function LiveListingStream({ listings }: { listings: ListingItem[] }) {
-  const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [direction, setDirection] = useState<'left' | 'right'>('left');
-  const visibleCount = Math.min(3, listings.length);
-  const move = (step: number, nextDirection: 'left' | 'right') => {
-    setDirection(nextDirection);
-    setActiveIndex((current) => (current + step + listings.length) % listings.length);
-  };
-  const visibleListings = Array.from({ length: visibleCount }, (_, offset) => listings[(activeIndex + offset) % listings.length]);
-
-  useEffect(() => {
-    if (isHovered || listings.length < 2) return;
-    const timer = window.setInterval(() => { setDirection('left'); setActiveIndex((current) => (current + 1) % listings.length); }, 5500);
-    return () => window.clearInterval(timer);
-  }, [isHovered, listings.length]);
 
   if (!listings.length) return null;
-  return <div className="relative" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{activeIndex + 1}</span> / {listings.length} ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => move(1, 'left')} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="İlanları sola kaydır"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => move(-1, 'right')} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="İlanları sağa kaydır"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div key={`${activeIndex}-${direction}`} className={`grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 ${direction === 'left' ? 'live-listings-left' : 'live-listings-right'}`}>{visibleListings.map((item, offset) => <div key={`${item.id}-${offset}`}><ListingCard item={item} /></div>)}</div>
+  return <div className="relative">
+    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
+    <div className="relative overflow-hidden py-2" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><div className={`live-listing-track ${direction === 'right' ? 'live-listing-track-right' : ''} ${isHovered ? 'live-listing-track-paused' : ''}`}>{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-80 shrink-0"><ListingCard item={item} /></div>)}</div></div>
   </div>;
 }
 
