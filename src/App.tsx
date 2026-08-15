@@ -606,6 +606,7 @@ function FeaturedListingsShowcase() {
   };
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest('button')) return;
     dragStartX.current = event.clientX;
     dragMoved.current = false;
     event.currentTarget.setPointerCapture(event.pointerId);
@@ -684,8 +685,8 @@ function FeaturedListingsShowcase() {
             );
           })}
 
-          <button type="button" onClick={(event) => { event.stopPropagation(); move(-1); }} className="absolute left-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:left-6" aria-label="Önceki vitrin ilanı"><ChevronLeft className="h-6 w-6" /></button>
-          <button type="button" onClick={(event) => { event.stopPropagation(); move(1); }} className="absolute right-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:right-6" aria-label="Sonraki vitrin ilanı"><ChevronRight className="h-6 w-6" /></button>
+          <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(-1)} className="absolute left-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:left-6" aria-label="Önceki vitrin ilanı"><ChevronLeft className="h-6 w-6" /></button>
+          <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(1)} className="absolute right-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:right-6" aria-label="Sonraki vitrin ilanı"><ChevronRight className="h-6 w-6" /></button>
         </div>
 
         <div className="mt-1 flex items-center justify-center gap-2">
