@@ -1693,22 +1693,20 @@ function ListingsPageV2() {
 
   return (
     <div className="min-h-screen bg-slate-50 py-10">
-      <div className="mx-auto max-w-7xl px-5 lg:px-10">
+      <div className="mx-auto max-w-[1500px] px-3 sm:px-5 lg:px-6">
         <div className="mb-7"><span className="rounded-full border border-red-300 bg-red-100 px-3 py-1.5 text-xs font-black tracking-widest text-red-700">İLAN ARAMA</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Gayrimenkul <span className="text-red-700">İlanları</span></h1></div>
 
-        <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
+          <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 xl:grid-cols-[1.05fr_1.05fr_1fr_1fr_auto]">
             <div><label className="mb-2 block text-xs font-black text-slate-600">İşlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Kiralık / Satılık / Devren</option>{LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İlan Türü</label><select value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Ev / Fabrika / Depo / Ofis / Arsa</option>{ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
-          </div>
-          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-[1fr_1fr_auto]">
             <div><label className="mb-2 block text-xs font-black text-slate-600">İl</label><select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(''); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">İl Seçiniz</option>{Object.keys(TURKEY_CITIES).map((item) => <option key={item}>{item}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İlçe</label><select disabled={!city} value={district} onChange={(e) => { setDistrict(e.target.value); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:opacity-50"><option value="">{city ? 'İlçe Seçiniz' : 'Önce İl Seçiniz'}</option>{districts.map((item) => <option key={item}>{item}</option>)}</select></div>
-            <button onClick={runSearch} className="self-end rounded-xl bg-red-700 px-8 py-3 font-black text-white shadow-lg shadow-red-700/20 hover:bg-red-800"><Search className="mr-2 inline h-4 w-4" />İlan Ara</button>
+            <button onClick={runSearch} className="h-[46px] whitespace-nowrap rounded-xl bg-red-700 px-7 font-black text-white shadow-lg shadow-red-700/20 hover:bg-red-800"><Search className="mr-2 inline h-4 w-4" />İlan Ara</button>
           </div>
         </section>
 
-        {!hasSearched ? <div className="rounded-2xl border border-dashed border-red-200 bg-white p-14 text-center"><Search className="mx-auto mb-3 h-12 w-12 text-red-300" /><h2 className="text-lg font-black text-slate-800">İşlem tipi ve ilan türünü seçerek arama yapın.</h2></div> : <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
+        {!hasSearched ? <div className="rounded-2xl border border-dashed border-red-200 bg-white p-14 text-center"><Search className="mx-auto mb-3 h-12 w-12 text-red-300" /><h2 className="text-lg font-black text-slate-800">İşlem tipi ve ilan türünü seçerek arama yapın.</h2></div> : <div className="grid grid-cols-1 gap-5 lg:grid-cols-[250px_minmax(0,1fr)]">
           <aside className="h-fit rounded-2xl border border-slate-200 bg-white shadow-lg lg:sticky lg:top-24">
             <div className="border-b border-slate-200 p-5"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">Detaylı Filtrele</h2><button onClick={resetFilters} className="text-xs font-black text-red-700">Temizle</button></div><p className="mt-1 text-xs text-slate-500">{appliedSearch.propertyType || 'Tüm ilanlar'} için filtreler</p></div>
             <div className="space-y-4 p-5">
