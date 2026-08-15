@@ -415,7 +415,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
     <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-red-800/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-red-950/20 backdrop-blur-md' : 'bg-red-700/85 py-2.5 px-6 lg:px-12 shadow-md backdrop-blur-sm'}`}>
       <div className="flex items-center justify-between gap-4">
         <Link to="/" onClick={close}><img src="/rlogo.png" alt="Realty Center" className={`w-auto object-contain brightness-0 invert transition-all duration-500 ${scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'}`} /></Link>
-        <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => label === 'İlanlarımız' ? <div key={to} className="group relative py-4 -my-4"><Link to="/ilanlarimiz" className="transition hover:text-red-100">İlanlarımız</Link><div className="invisible absolute right-0 top-full w-[430px] translate-y-2 rounded-2xl border border-white/20 bg-red-800/95 p-4 opacity-0 shadow-2xl transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"><div className="mb-3 flex items-center justify-between"><span className="text-xs font-black tracking-wider text-white">İLAN KATEGORİLERİ</span><Link to="/ilanlarimiz" className="rounded-lg bg-white px-3 py-2 text-[11px] font-black text-red-700">Tüm İlanları İncele</Link></div><div className="grid grid-cols-3 gap-2">{Object.entries(LISTING_PROPERTY_TYPES).flatMap(([, types]) => types).map((propertyType) => <Link key={propertyType} to={"/ilanlarimiz?propertyType=" + encodeURIComponent(propertyType)} className="rounded-lg bg-white/10 px-2 py-2 text-center text-[11px] font-bold hover:bg-white/20">{propertyType}</Link>)}</div></div></div> : <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
+        <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
         <div className="flex items-center gap-2"><Link to="/panel" className="hidden sm:inline-flex rounded-lg bg-white px-5 py-2 text-sm font-black text-red-700 shadow-lg transition hover:bg-red-50">Panel</Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/40 text-white transition hover:border-white hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
       {mobileOpen && <nav className="xl:hidden mt-3 grid grid-cols-2 gap-2 border-t border-white/25 pt-3 pb-2 text-sm font-black text-white">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-lg bg-white/10 px-3 py-3 transition hover:bg-white/20">{label}</Link>)}<Link onClick={close} to="/danisman-basvuru" className="rounded-lg bg-white/15 px-3 py-3 text-left transition hover:bg-white/25">Danışman Ol</Link><Link onClick={close} to="/franchise-basvuru" className="rounded-lg bg-white px-3 py-3 text-left text-red-700">Franchise Ol!</Link><Link onClick={close} to="/panel" className="col-span-2 rounded-lg border border-white/40 px-3 py-3 text-center transition hover:bg-white/10">Panele Git</Link></nav>}
@@ -1487,6 +1487,7 @@ function ListingsPage() {
   const [selectedPropertyType, setSelectedPropertyType] = useState(initialPropertyType);
   const [selectedCity, setSelectedCity] = useState(initialCity);
   const [advancedOpen, setAdvancedOpen] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
   const [minArea, setMinArea] = useState('');
   const [rooms, setRooms] = useState('');
 
@@ -1498,7 +1499,7 @@ function ListingsPage() {
     setSelectedPropertyType(params.get('propertyType') || '');
   }, [location.search]);
 
-  const filteredListings = SAMPLE_LISTINGS.filter((item) => {
+  const filteredListings = (hasSearched ? SAMPLE_LISTINGS : []).filter((item) => {
     if (selectedType && item.type !== selectedType) return false;
     if (selectedCategory && item.category !== selectedCategory) return false;
     if (selectedPropertyType && item.propertyType !== selectedPropertyType) return false;
@@ -1529,7 +1530,7 @@ function ListingsPage() {
             <label className="text-[10px] font-black text-slate-500 block mb-1">İşlem Tipi</label>
             <select 
               value={selectedType}
-              onChange={(e) => setSelectedType(e.target.value)}
+              onChange={(e) => { setSelectedType(e.target.value); setHasSearched(false); }}
               className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm İşlem Tipleri</option>
@@ -1544,7 +1545,7 @@ function ListingsPage() {
             <label className="text-[10px] font-black text-slate-500 block mb-1">Kategori</label>
             <select 
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
+              onChange={(e) => { setSelectedCategory(e.target.value); setHasSearched(false); }}
               className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm Kategoriler</option>
@@ -1554,7 +1555,7 @@ function ListingsPage() {
 
           <div>
             <label className="text-[10px] font-black text-slate-500 block mb-1">İlan Türü</label>
-            <select value={selectedPropertyType} onChange={(e) => setSelectedPropertyType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+            <select value={selectedPropertyType} onChange={(e) => { setSelectedPropertyType(e.target.value); setHasSearched(false); }} className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
               <option value="">Tüm İlan Türleri</option>
               {Object.entries(LISTING_PROPERTY_TYPES).flatMap(([, types]) => types).map((propertyType) => <option key={propertyType} value={propertyType}>{propertyType}</option>)}
             </select>
@@ -1564,7 +1565,7 @@ function ListingsPage() {
             <label className="text-[10px] font-black text-slate-500 block mb-1">Şehir</label>
             <select 
               value={selectedCity}
-              onChange={(e) => setSelectedCity(e.target.value)}
+              onChange={(e) => { setSelectedCity(e.target.value); setHasSearched(false); }}
               className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm Şehirler</option>
@@ -1574,26 +1575,27 @@ function ListingsPage() {
             </select>
           </div>
 
-          <div className="flex items-end">
-            <button onClick={() => setAdvancedOpen(!advancedOpen)} className="w-full rounded-xl bg-red-700 py-2 text-xs font-black text-white transition hover:bg-red-800">Gelişmiş Arama</button>
+          <div className="flex items-end gap-2">
+            <button onClick={() => setAdvancedOpen(!advancedOpen)} className="flex-1 rounded-xl bg-slate-100 py-2 text-xs font-black text-slate-800 transition hover:bg-slate-200">Gelişmiş</button>
+            <button onClick={() => setHasSearched(true)} className="flex-1 rounded-xl bg-red-700 py-2 text-xs font-black text-white transition hover:bg-red-800">İlan Ara</button>
           </div>
         </div>
 
         {advancedOpen && <div className="mb-10 -mt-6 grid grid-cols-1 gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">Minimum m²</label><input value={minArea} onChange={(e) => setMinArea(e.target.value)} type="number" placeholder="Örn. 150" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{['Villa','Daire','Residence','Müstakil Ev','Ofis'].includes(selectedPropertyType) && <div><label className="mb-1 block text-[10px] font-black text-slate-600">Oda Sayısı</label><input value={rooms} onChange={(e) => setRooms(e.target.value)} placeholder="Örn. 3+1" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>}{selectedPropertyType === 'Otel' && <div className="text-xs font-bold text-red-800">Otel için oda sayısı, yatak kapasitesi ve yıldız bilgisi ilan detayında yer alır.</div>}{['Fabrika','Depo'].includes(selectedPropertyType) && <div className="text-xs font-bold text-red-800">{selectedPropertyType} için kapalı alan, tavan yüksekliği ve yükleme bilgisi ilan detayında yer alır.</div>}<button onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); setMinArea(''); setRooms(''); }} className="self-end rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700">Temizle</button></div>}
 
-        {filteredListings.length > 0 ? (
+        {hasSearched && filteredListings.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredListings.map((item) => (
               <ListingCard key={item.id} item={item} />
             ))}
           </div>
-        ) : (
+        ) : hasSearched ? (
           <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
             <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
             <h3 className="text-lg font-bold text-slate-800">Aradığınız kriterlerde ilan bulunamadı.</h3>
             <p className="text-slate-500 text-xs mt-1">Lütfen farklı filtre seçenekleri deneyiniz.</p>
           </div>
-        )}
+        ) : <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-red-200"><Search className="w-12 h-12 text-red-300 mx-auto mb-3" /><h3 className="text-lg font-bold text-slate-800">Kriterlerinizi seçin ve İlan Ara butonuna basın.</h3><p className="text-slate-500 text-xs mt-1">Sonuçlar arama isteğinizden sonra listelenecektir.</p></div>}
 
       </div>
     </div>
