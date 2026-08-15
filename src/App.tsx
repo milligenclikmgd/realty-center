@@ -308,10 +308,16 @@ function getCategoryTransactionType(item: ListingCategory) {
   return item.type === 'Devren' ? 'Devren Satılık' : item.type;
 }
 
-const DEFAULT_CAMPAIGN_SETTINGS = { first: '1 Gün Geçerli', second: '2 Hafta Geçerli', third: 'Son 3 Gün' };
-function getCampaignSettings() {
-  try { const saved = localStorage.getItem('realty-center-campaign-settings'); return saved ? { ...DEFAULT_CAMPAIGN_SETTINGS, ...JSON.parse(saved) } : DEFAULT_CAMPAIGN_SETTINGS; }
-  catch { return DEFAULT_CAMPAIGN_SETTINGS; }
+const DEFAULT_FEATURED_LISTING_IDS = SAMPLE_LISTINGS.filter((listing) => listing.price <= 8000000).sort((a, b) => a.price - b.price).slice(0, 5).map((listing) => listing.id);
+function getFeaturedListingIds(): string[] {
+  try {
+    const saved = JSON.parse(localStorage.getItem('realty-center-featured-listing-ids') || 'null');
+    return Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string') : DEFAULT_FEATURED_LISTING_IDS;
+  } catch { return DEFAULT_FEATURED_LISTING_IDS; }
+}
+function saveFeaturedListingIds(ids: string[]) {
+  localStorage.setItem('realty-center-featured-listing-ids', JSON.stringify(ids));
+  window.dispatchEvent(new Event('realty-center-featured-listings-updated'));
 }
 
 function TurkeyListingMap() {
@@ -555,42 +561,22 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
   );
 }
 
-function OpportunityCards() {
-  const [campaign, setCampaign] = useState(getCampaignSettings);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const refresh = () => setCampaign(getCampaignSettings());
-    window.addEventListener('realty-center-campaign-updated', refresh);
-    return () => window.removeEventListener('realty-center-campaign-updated', refresh);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => setActiveIndex((current) => (current + 1) % SAMPLE_LISTINGS.length), 4500);
-    return () => clearInterval(timer);
-  }, []);
-
-  const item = SAMPLE_LISTINGS[activeIndex];
-  const duration = [campaign.first, campaign.second, campaign.third][activeIndex % 3];
-
-  return (
-    <Link to={'/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&propertyType=' + encodeURIComponent(item.propertyType)} className="group relative block h-[300px] overflow-hidden rounded-2xl bg-slate-900 shadow-2xl">
-      <img key={item.id} src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 group-hover:scale-105" />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent" />
-      <div className="absolute left-4 top-4 flex items-center gap-2"><span className="rounded-full bg-red-700 px-3 py-1 text-[10px] font-black tracking-wider text-white">FIRSAT GAYRİMENKUL</span><span className="rounded-full bg-white/95 px-3 py-1 text-[10px] font-black text-red-700">{duration}</span></div>
-      <div className="absolute bottom-0 left-0 right-0 p-6 text-white"><p className="text-xs font-black text-red-200">{item.type} • {item.category}</p><h3 className="mt-1 max-w-md text-lg font-black sm:text-xl">{item.title}</h3><div className="mt-3 flex items-center justify-between"><span className="text-2xl font-black">{item.price.toLocaleString('tr-TR')} ₺</span><span className="text-xs font-black">İncele <ArrowRight className="inline h-4 w-4" /></span></div></div>
-    </Link>
-  );
-}
-
 function FeaturedListingsShowcase() {
-  const featuredListings = [...SAMPLE_LISTINGS]
-    .filter((listing) => listing.price <= 8000000)
-    .sort((a, b) => a.price - b.price)
-    .slice(0, 5);
+  const [featuredIds, setFeaturedIds] = useState<string[]>(getFeaturedListingIds);
   const [activeIndex, setActiveIndex] = useState(0);
   const dragStartX = useRef<number | null>(null);
   const dragMoved = useRef(false);
+  const featuredListings = featuredIds.map((id) => SAMPLE_LISTINGS.find((listing) => listing.id === id)).filter((listing): listing is ListingItem => Boolean(listing));
+
+  useEffect(() => {
+    const refresh = () => setFeaturedIds(getFeaturedListingIds());
+    window.addEventListener('realty-center-featured-listings-updated', refresh);
+    return () => window.removeEventListener('realty-center-featured-listings-updated', refresh);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex >= featuredListings.length) setActiveIndex(0);
+  }, [activeIndex, featuredListings.length]);
 
   const move = (direction: number) => {
     if (!featuredListings.length) return;
@@ -860,14 +846,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler fırsat alanının yanında canlı olarak akar.</p></div>
+          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
           <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
-          <div className="w-full shrink-0 px-6 lg:ml-[max(1.5rem,calc((100vw-80rem)/2))] lg:w-80 lg:px-0"><OpportunityCards /></div>
-          <div className="relative min-w-0 flex-1 overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
-            <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
-          </div>
+        <div className="relative overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
+          <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
         </div>
       </section>
 
@@ -1621,9 +1604,11 @@ function ListingCategoriesPage() {
     return () => window.removeEventListener('realty-center-categories-updated', refresh);
   }, []);
   return (
-    <div className="bg-slate-50 min-h-screen py-12">
+    <div className="bg-slate-50 min-h-screen">
+      <FeaturedListingsShowcase />
+      <div className="py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="mb-9 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek ilanları inceleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex items-center justify-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg hover:bg-red-800">Tüm İlanları Gör <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
+        <div className="mb-9 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">Vitrindeki seçkilerden sonra ihtiyacınıza uygun kategoriyi seçerek ilanları inceleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex items-center justify-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg hover:bg-red-800">Tüm İlanları Gör <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {categories.map((item) => <button key={item.id} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(getCategoryTransactionType(item)) + '&propertyType=' + encodeURIComponent(getCategoryPropertyType(item)))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
             <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" />
@@ -1631,6 +1616,7 @@ function ListingCategoriesPage() {
             <div className="absolute bottom-0 left-0 right-0 p-6"><span className="text-xs font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-xl sm:text-2xl font-black text-white leading-tight">{item.title}</h2><span className="mt-3 inline-flex items-center text-sm font-bold text-white">İlanları Gör <ArrowRight className="ml-1.5 w-4 h-4" /></span></div>
           </button>)}
         </div>
+      </div>
       </div>
     </div>
   );
@@ -2377,7 +2363,7 @@ function SuperAdminDashboard() {
   const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'messages' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
-  const [campaignSettings, setCampaignSettings] = useState(getCampaignSettings);
+  const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
   const [categories, setCategories] = useState<ListingCategory[]>(getListingCategories);
   const [categorySaved, setCategorySaved] = useState(false);
   const [newCategory, setNewCategory] = useState<ListingCategory>({ id: '', title: '', type: 'Satılık', category: 'Konut', image: '' });
@@ -2406,8 +2392,6 @@ function SuperAdminDashboard() {
   const saveContactSettings = () => {
     localStorage.setItem('realty-center-contact-settings', JSON.stringify(contactSettings));
     window.dispatchEvent(new Event('realty-center-contact-updated'));
-    localStorage.setItem('realty-center-campaign-settings', JSON.stringify(campaignSettings));
-    window.dispatchEvent(new Event('realty-center-campaign-updated'));
     setSettingsSaved(true);
     setTimeout(() => setSettingsSaved(false), 2500);
   };
@@ -2444,6 +2428,16 @@ function SuperAdminDashboard() {
 
   const updateListingApproval = (id: string, newStatus: string) => {
     setListings(prev => prev.map(item => item.id === id ? { ...item, approvalStatus: newStatus } : item));
+    if (newStatus !== 'Yayında' && featuredListingIds.includes(id)) {
+      const next = featuredListingIds.filter((listingId) => listingId !== id);
+      setFeaturedListingIds(next);
+      saveFeaturedListingIds(next);
+    }
+  };
+  const toggleFeaturedListing = (id: string) => {
+    const next = featuredListingIds.includes(id) ? featuredListingIds.filter((listingId) => listingId !== id) : [...featuredListingIds, id];
+    setFeaturedListingIds(next);
+    saveFeaturedListingIds(next);
   };
 
   const navButtons = [
@@ -2784,7 +2778,7 @@ function SuperAdminDashboard() {
                 <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
                     <h2 className="text-lg font-black text-slate-900">İlan Onay Mekanizması</h2>
-                    <p className="text-xs text-slate-500 font-medium mt-0.5">Danışmanlar tarafından eklenen ilanların denetim ekranı</p>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Yayındaki ilanları denetleyin; vitrin görünürlüğünü buradan ekleyip kaldırın.</p>
                   </div>
                 </div>
 
@@ -2813,6 +2807,9 @@ function SuperAdminDashboard() {
 
                         {item.approvalStatus !== 'Yayında' && (
                           <button onClick={() => updateListingApproval(item.id, 'Yayında')} className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-lg transition">Yayına Al</button>
+                        )}
+                        {item.approvalStatus === 'Yayında' && (
+                          <button onClick={() => toggleFeaturedListing(item.id)} className={`px-3 py-1 font-black text-xs rounded-lg transition ${featuredListingIds.includes(item.id) ? 'bg-red-700 text-white hover:bg-red-800' : 'border border-red-200 bg-white text-red-700 hover:bg-red-50'}`}>{featuredListingIds.includes(item.id) ? 'Vitrinden Çıkar' : 'Vitrine Ekle'}</button>
                         )}
                         {item.approvalStatus !== 'Reddedildi' && (
                           <button onClick={() => updateListingApproval(item.id, 'Reddedildi')} className="px-3 py-1 bg-red-700/30 text-red-500 hover:bg-red-700 hover:text-white font-black text-xs rounded-lg transition">Kaldır</button>
@@ -2885,12 +2882,6 @@ function SuperAdminDashboard() {
                     <div><label className="block text-slate-700 font-bold mb-1">WhatsApp Destek Numarası</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                     <div><label className="block text-slate-700 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
                     <div><label className="block text-slate-700 font-bold mb-1">Açık Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
-                  </div>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <h3 className="text-sm font-black text-slate-900 mb-1">Fırsat Gayrimenkuller Süreleri</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs">
-                    {(['first', 'second', 'third'] as const).map((key, index) => <div key={key}><label className="block text-slate-700 font-bold mb-1">Fırsat {index + 1} Süresi</label><input value={campaignSettings[key]} onChange={(e) => setCampaignSettings({ ...campaignSettings, [key]: e.target.value })} className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}
                   </div>
                 </div>
                 <button onClick={saveContactSettings} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">{settingsSaved ? 'Ayarlar Kaydedildi' : 'Ayarları Kaydet'}</button>
