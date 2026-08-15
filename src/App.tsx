@@ -180,6 +180,12 @@ const PROPERTY_DETAIL_FIELDS: Record<string, PropertyDetailField[]> = {
   'Otel': [{ key: 'hotelRoomCount', label: 'Otel Oda Sayısı', type: 'number' }, { key: 'bedCapacity', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'starRating', label: 'Yıldız Sayısı', placeholder: '5 yıldız' }, { key: 'restaurantCount', label: 'Restoran Sayısı', type: 'number' }]
 };
 
+const ADVANCED_SEARCH_FIELDS: Record<string, PropertyDetailField[]> = {
+  'Konut': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'roomCount', label: 'Oda Sayısı' }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'Isınma Tipi' }, { key: 'furnished', label: 'Eşyalı' }, { key: 'mortgage', label: 'Krediye Uygun' }],
+  'Arazi': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'zoningStatus', label: 'İmar Durumu' }, { key: 'titleDeed', label: 'Tapu Durumu' }, { key: 'landType', label: 'Arsa Niteliği' }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'roadAccess', label: 'Yol Durumu' }],
+  'Ticari Gayrimenkul': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'commercialType', label: 'Ticari Tür' }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'Isınma Tipi' }, { key: 'parking', label: 'Otopark' }, { key: 'security', label: 'Güvenlik' }]
+};
+
 export interface ContactMessage {
   id: string;
   fullName: string;
@@ -1490,6 +1496,7 @@ function ListingsPage() {
   const [hasSearched, setHasSearched] = useState(false);
   const [minArea, setMinArea] = useState('');
   const [rooms, setRooms] = useState('');
+  const [advancedFilters, setAdvancedFilters] = useState<Record<string, string>>({});
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -1506,6 +1513,10 @@ function ListingsPage() {
     if (selectedCity && item.city !== selectedCity) return false;
     if (minArea && item.area < Number(minArea)) return false;
     if (rooms && item.rooms !== rooms) return false;
+    if (advancedFilters.minPrice && item.price < Number(advancedFilters.minPrice)) return false;
+    if (advancedFilters.maxPrice && item.price > Number(advancedFilters.maxPrice)) return false;
+    if (advancedFilters.minArea && item.area < Number(advancedFilters.minArea)) return false;
+    if (advancedFilters.roomCount && item.rooms !== advancedFilters.roomCount) return false;
     return true;
   });
 
@@ -1581,7 +1592,7 @@ function ListingsPage() {
           </div>
         </div>
 
-        {advancedOpen && <div className="mb-10 -mt-6 grid grid-cols-1 gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">Minimum m²</label><input value={minArea} onChange={(e) => setMinArea(e.target.value)} type="number" placeholder="Örn. 150" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{['Villa','Daire','Residence','Müstakil Ev','Ofis'].includes(selectedPropertyType) && <div><label className="mb-1 block text-[10px] font-black text-slate-600">Oda Sayısı</label><input value={rooms} onChange={(e) => setRooms(e.target.value)} placeholder="Örn. 3+1" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>}{selectedPropertyType === 'Otel' && <div className="text-xs font-bold text-red-800">Otel için oda sayısı, yatak kapasitesi ve yıldız bilgisi ilan detayında yer alır.</div>}{['Fabrika','Depo'].includes(selectedPropertyType) && <div className="text-xs font-bold text-red-800">{selectedPropertyType} için kapalı alan, tavan yüksekliği ve yükleme bilgisi ilan detayında yer alır.</div>}<button onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); setMinArea(''); setRooms(''); }} className="self-end rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700">Temizle</button></div>}
+        {advancedOpen && <div className="mb-10 -mt-6 rounded-2xl border border-red-200 bg-red-50 p-5"><div className="mb-4 flex items-center justify-between"><div><h3 className="text-sm font-black text-red-800">Gelişmiş Arama</h3><p className="mt-1 text-xs text-slate-600">{selectedPropertyType || selectedCategory || 'Seçtiğiniz ilan türü'} için uygun kriterleri belirleyin.</p></div><button onClick={() => { setAdvancedFilters({}); setMinArea(''); setRooms(''); setHasSearched(false); }} className="text-xs font-black text-red-700">Temizle</button></div><div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">İl</label><select value={selectedCity} onChange={(e) => { setSelectedCity(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs"><option value="">Tüm İller</option>{Object.keys(TURKEY_CITIES).map((city) => <option key={city}>{city}</option>)}</select></div><div><label className="mb-1 block text-[10px] font-black text-slate-600">İlçe</label><select disabled={!selectedCity} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs"><option>{selectedCity === 'Ankara' ? 'Çankaya' : 'İlçe seçiniz'}</option></select></div><div><label className="mb-1 block text-[10px] font-black text-slate-600">Mahalle</label><input placeholder="Mahalle seçiniz" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{(ADVANCED_SEARCH_FIELDS[selectedCategory || 'Konut'] || ADVANCED_SEARCH_FIELDS.Konut).map((field) => <div key={field.key}><label className="mb-1 block text-[10px] font-black text-slate-600">{field.label}</label><input type={field.type || 'text'} value={advancedFilters[field.key] || ''} onChange={(e) => { setAdvancedFilters({ ...advancedFilters, [field.key]: e.target.value }); setHasSearched(false); }} placeholder={field.label} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>)}</div></div>}
 
         {hasSearched && filteredListings.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
