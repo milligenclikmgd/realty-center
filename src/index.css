@@ -113,3 +113,27 @@
 @media (prefers-reduced-motion: reduce) {
   .gold-showcase-glow, .gold-showcase-spark { animation: none; }
 }
+
+/* Realty Center kurumsal kırmızısı: arama butonundan alınan #A82525 tonu */
+.bg-red-50 { background-color: #fff6f5 !important; }
+.bg-red-100 { background-color: #fde7e5 !important; }
+.bg-red-200 { background-color: #f8c6c1 !important; }
+.bg-red-300 { background-color: #ee9992 !important; }
+.bg-red-400 { background-color: #de665e !important; }
+.bg-red-500 { background-color: #c43c38 !important; }
+.bg-red-600 { background-color: #b52e2c !important; }
+.bg-red-700 { background-color: #a82525 !important; }
+.bg-red-800 { background-color: #861f20 !important; }
+.bg-red-900 { background-color: #68171a !important; }
+.text-red-700 { color: #a82525 !important; }
+.text-red-800 { color: #861f20 !important; }
+.text-red-500 { color: #c43c38 !important; }
+.border-red-200 { border-color: #f8c6c1 !important; }
+.border-red-300 { border-color: #ee9992 !important; }
+.border-red-400 { border-color: #de665e !important; }
+.border-red-700 { border-color: #a82525 !important; }
+.hover\\:bg-red-700:hover { background-color: #a82525 !important; }
+.hover\\:bg-red-800:hover { background-color: #861f20 !important; }
+.hover\\:text-red-700:hover { color: #a82525 !important; }
+.hover\\:border-red-700:hover { border-color: #a82525 !important; }
+.shadow-red-700\\/20, .shadow-red-700\\/25, .shadow-red-700\\/30, .shadow-red-700\\/40, .shadow-red-700\\/50 { --tw-shadow-color: rgba(168, 37, 37, .35) !important; }
