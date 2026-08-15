@@ -105,6 +105,7 @@ const SAMPLE_LISTINGS = [
     id: "DEMO-001",
     title: "DEMO İLAN — Gerçek ilan bilgisi bekleniyor",
     category: "Konut",
+    propertyType: "Daire",
     type: "Satılık",
     price: 0,
     currency: "₺",
@@ -158,6 +159,29 @@ const SLIDER_IMAGES = [
 ];
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
+
+const LISTING_CATEGORIES = ['Konut', 'Arazi', 'Ticari Gayrimenkul'] as const;
+const LISTING_PROPERTY_TYPES = {
+  'Konut': ['Villa', 'Daire', 'Residence', 'Müstakil Ev'],
+  'Arazi': ['Arsa', 'Tarla'],
+  'Ticari Gayrimenkul': ['Fabrika', 'Depo', 'Ofis', 'Plaza', 'Otel']
+} as const;
+const LISTING_TRANSACTION_TYPES = ['Satılık', 'Kiralık', 'Devren Satılık', 'Devren Kiralık'] as const;
+
+type PropertyDetailField = { key: string; label: string; placeholder?: string; type?: 'text' | 'number' };
+const PROPERTY_DETAIL_FIELDS: Record<string, PropertyDetailField[]> = {
+  'Villa': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '5+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floorCount', label: 'Kat Sayısı', type: 'number' }, { key: 'gardenArea', label: 'Bahçe Alanı (m²)', type: 'number' }],
+  'Daire': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '3+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina Yaşı', type: 'number' }],
+  'Residence': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '2+1' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina Yaşı', type: 'number' }, { key: 'siteFeatures', label: 'Site Özellikleri', placeholder: 'Güvenlik, havuz, otopark' }],
+  'Müstakil Ev': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '4+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floorCount', label: 'Kat Sayısı', type: 'number' }, { key: 'gardenArea', label: 'Bahçe Alanı (m²)', type: 'number' }],
+  'Arsa': [{ key: 'zoningStatus', label: 'İmar Durumu', placeholder: 'Konut imarlı' }, { key: 'parcelNo', label: 'Ada / Parsel No', placeholder: '123 / 45' }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'titleDeed', label: 'Tapu Durumu', placeholder: 'Müstakil tapu' }],
+  'Tarla': [{ key: 'zoningStatus', label: 'İmar Durumu', placeholder: 'Tarla' }, { key: 'parcelNo', label: 'Ada / Parsel No', placeholder: '123 / 45' }, { key: 'waterSource', label: 'Su Kaynağı', placeholder: 'Kuyu, sulama kanalı' }, { key: 'roadAccess', label: 'Yol Durumu', placeholder: 'Kadastro yolu' }],
+  'Fabrika': [{ key: 'closedArea', label: 'Kapalı Alan (m²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan Yüksekliği (m)', type: 'number' }, { key: 'powerCapacity', label: 'Elektrik Gücü (kVA)', type: 'number' }, { key: 'loadingDocks', label: 'Yükleme Rampası Sayısı', type: 'number' }],
+  'Depo': [{ key: 'closedArea', label: 'Kapalı Alan (m²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan Yüksekliği (m)', type: 'number' }, { key: 'loadingDocks', label: 'Yükleme Rampası Sayısı', type: 'number' }, { key: 'security', label: 'Güvenlik', placeholder: '7/24 güvenlik' }],
+  'Ofis': [{ key: 'roomCount', label: 'Bölüm / Oda Sayısı', placeholder: '4 bölüm' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'meetingRooms', label: 'Toplantı Odası Sayısı', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'Açık / kapalı' }],
+  'Plaza': [{ key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'floorCount', label: 'Toplam Kat Sayısı', type: 'number' }, { key: 'elevatorCount', label: 'Asansör Sayısı', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'Açık / kapalı' }],
+  'Otel': [{ key: 'hotelRoomCount', label: 'Otel Oda Sayısı', type: 'number' }, { key: 'bedCapacity', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'starRating', label: 'Yıldız Sayısı', placeholder: '5 yıldız' }, { key: 'restaurantCount', label: 'Restoran Sayısı', type: 'number' }]
+};
 
 export interface ContactMessage {
   id: string;
@@ -1460,8 +1484,10 @@ function ListingsPage() {
   const initialCity = new URLSearchParams(location.search).get('city') || '';
   const initialType = new URLSearchParams(location.search).get('type') || '';
   const initialCategory = new URLSearchParams(location.search).get('category') || '';
+  const initialPropertyType = new URLSearchParams(location.search).get('propertyType') || '';
   const [selectedType, setSelectedType] = useState(initialType);
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
+  const [selectedPropertyType, setSelectedPropertyType] = useState(initialPropertyType);
   const [selectedCity, setSelectedCity] = useState(initialCity);
 
   useEffect(() => {
@@ -1469,11 +1495,13 @@ function ListingsPage() {
     setSelectedCity(params.get('city') || '');
     setSelectedType(params.get('type') || '');
     setSelectedCategory(params.get('category') || '');
+    setSelectedPropertyType(params.get('propertyType') || '');
   }, [location.search]);
 
   const filteredListings = SAMPLE_LISTINGS.filter((item) => {
     if (selectedType && item.type !== selectedType) return false;
     if (selectedCategory && item.category !== selectedCategory) return false;
+    if (selectedPropertyType && item.propertyType !== selectedPropertyType) return false;
     if (selectedCity && item.city !== selectedCity) return false;
     return true;
   });
@@ -1494,7 +1522,7 @@ function ListingsPage() {
           </p>
         </div>
 
-        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           <div>
             <label className="text-[10px] font-black text-slate-500 block mb-1">İşlem Tipi</label>
             <select 
@@ -1505,7 +1533,8 @@ function ListingsPage() {
               <option value="">Tüm İşlem Tipleri</option>
               <option value="Satılık">Satılık</option>
               <option value="Kiralık">Kiralık</option>
-              <option value="Devren">Devren</option>
+              <option value="Devren Satılık">Devren Satılık</option>
+              <option value="Devren Kiralık">Devren Kiralık</option>
             </select>
           </div>
 
@@ -1517,9 +1546,15 @@ function ListingsPage() {
               className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
               <option value="">Tüm Kategoriler</option>
-              <option value="Konut">Konut</option>
-              <option value="İşyeri">İşyeri</option>
-              <option value="Arsa">Arsa</option>
+              {LISTING_CATEGORIES.map((category) => <option key={category} value={category}>{category}</option>)}
+            </select>
+          </div>
+
+          <div>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">İlan Türü</label>
+            <select value={selectedPropertyType} onChange={(e) => setSelectedPropertyType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+              <option value="">Tüm İlan Türleri</option>
+              {Object.entries(LISTING_PROPERTY_TYPES).flatMap(([, types]) => types).map((propertyType) => <option key={propertyType} value={propertyType}>{propertyType}</option>)}
             </select>
           </div>
 
@@ -1539,7 +1574,7 @@ function ListingsPage() {
 
           <div className="flex items-end">
             <button 
-              onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedCity(''); }}
+              onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); }}
               className="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2 rounded-xl text-xs transition"
             >
               Filtreleri Temizle
@@ -2587,6 +2622,7 @@ function AgentDashboard() {
   const emptyListing = {
     title: '',
     category: 'Konut',
+    propertyType: 'Daire',
     type: 'Satılık',
     price: '',
     city: '',
@@ -2594,6 +2630,7 @@ function AgentDashboard() {
     neighborhood: '',
     rooms: '',
     area: '',
+    details: {} as Record<string, string>,
     images: [] as string[]
   };
 
@@ -2741,6 +2778,7 @@ function AgentDashboard() {
     setNewListing({
       title: item.title,
       category: item.category,
+      propertyType: item.propertyType || 'Daire',
       type: item.type,
       price: String(item.price),
       city: item.city,
@@ -2748,6 +2786,7 @@ function AgentDashboard() {
       neighborhood: item.neighborhood,
       rooms: item.rooms,
       area: String(item.area),
+      details: item.details || {},
       images: item.images?.length ? item.images : [item.image]
     });
     setShowListingForm(true);
@@ -2764,6 +2803,7 @@ function AgentDashboard() {
         ...item,
         title: newListing.title || item.title,
         category: newListing.category,
+        propertyType: newListing.propertyType,
         type: newListing.type,
         price: numericPrice,
         city: newListing.city,
@@ -2771,6 +2811,7 @@ function AgentDashboard() {
         neighborhood: newListing.neighborhood || 'Merkez',
         rooms: newListing.rooms,
         area: numericArea,
+        details: newListing.details,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage]
       } : item));
@@ -2779,6 +2820,7 @@ function AgentDashboard() {
         id: `RC-${Math.floor(100 + Math.random() * 899)}`,
         title: newListing.title || 'Yeni Realty Center İlanı',
         category: newListing.category,
+        propertyType: newListing.propertyType,
         type: newListing.type,
         price: numericPrice,
         currency: '₺',
@@ -2787,6 +2829,7 @@ function AgentDashboard() {
         neighborhood: newListing.neighborhood || 'Merkez',
         rooms: newListing.rooms,
         area: numericArea,
+        details: newListing.details,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage],
         agentName: profile.name || 'DEMO Danışman',
@@ -2888,7 +2931,7 @@ function AgentDashboard() {
   return (
     <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
 
-      {showListingForm && <div className="fixed inset-0 z-[60] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4"><div className="bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl shadow-2xl"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between sticky top-0 bg-white z-10"><div><h2 className="text-xl font-black text-slate-900">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><p className="text-xs text-slate-500 mt-1">İlan bilgilerini ve en fazla 10 görseli yönetin.</p></div><button onClick={resetListingForm} className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-red-100 hover:text-red-700 flex items-center justify-center"><X className="w-5 h-5" /></button></div><form onSubmit={handleCreateListing} className="p-6 space-y-5"><div><label className="text-xs font-black text-slate-700 mb-2 block">İlan Başlığı</label><input required value={newListing.title} onChange={(e)=>setNewListing({...newListing,title:e.target.value})} placeholder="Örn. Çankaya'da 4+1 Lüks Daire" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-700" /></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Kategori</label><select value={newListing.category} onChange={(e)=>setNewListing({...newListing,category:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Konut</option><option>İşyeri</option><option>Arsa</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İşlem Tipi</label><select value={newListing.type} onChange={(e)=>setNewListing({...newListing,type:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Oda</label><input value={newListing.rooms} onChange={(e)=>setNewListing({...newListing,rooms:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">Fiyat</label><input required value={newListing.price} onChange={(e)=>setNewListing({...newListing,price:e.target.value})} placeholder="Örn. 6850000" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div><div><label className="text-xs font-black text-slate-700 mb-2 block">m²</label><input required value={newListing.area} onChange={(e)=>setNewListing({...newListing,area:e.target.value})} placeholder="Örn. 195" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div className="grid grid-cols-1 md:grid-cols-3 gap-4"><div><label className="text-xs font-black text-slate-700 mb-2 block">İl</label><select value={newListing.city} onChange={(e)=>setNewListing({...newListing,city:e.target.value,district:TURKEY_CITIES[e.target.value]?.[0]||''})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{Object.keys(TURKEY_CITIES).map((city)=><option key={city}>{city}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">İlçe</label><select value={newListing.district} onChange={(e)=>setNewListing({...newListing,district:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm">{(TURKEY_CITIES[newListing.city]||[]).map((district)=><option key={district}>{district}</option>)}</select></div><div><label className="text-xs font-black text-slate-700 mb-2 block">Mahalle</label><input value={newListing.neighborhood} onChange={(e)=>setNewListing({...newListing,neighborhood:e.target.value})} placeholder="Mahalle" className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm" /></div></div><div><div className="flex items-center justify-between mb-2"><label className="text-xs font-black text-slate-700">İlan Görselleri</label><span className="text-xs font-black text-red-700">{newListing.images.length}/10</span></div><div className="border-2 border-dashed border-slate-300 rounded-2xl p-4 bg-slate-50"><label className="cursor-pointer inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-black text-sm shadow-lg shadow-red-700/20 transition"><input type="file" accept="image/*" multiple onChange={handleImageChange} className="hidden" /><PlusCircle className="w-5 h-5" /><span>Bilgisayardan / Galeriden Görsel Seç</span></label><p className="text-xs text-slate-500 mt-2">En fazla 10 görsel. Görseller otomatik olarak küçültülür ve JPEG olarak sıkıştırılır.</p>{newListing.images.length>0&&<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-4">{newListing.images.map((image,index)=><div key={`${image}-${index}`} className="relative group"><img src={image} alt={`İlan görseli ${index+1}`} className="w-full h-28 object-cover rounded-xl border border-slate-200" /><button type="button" onClick={()=>removeImage(index)} className="absolute top-1.5 right-1.5 bg-red-700 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 transition"><X className="w-4 h-4" /></button>{index===0&&<span className="absolute bottom-1.5 left-1.5 text-[9px] font-black bg-slate-900/80 text-white px-2 py-1 rounded">Ana görsel</span>}</div>)}</div>}</div></div><div className="flex justify-end gap-3 pt-2"><button type="button" onClick={resetListingForm} className="px-5 py-3 rounded-xl border border-slate-300 font-black text-sm text-slate-700">Vazgeç</button><button type="submit" className="px-5 py-3 rounded-xl bg-red-700 hover:bg-red-800 text-white font-black text-sm">{editingListingId?'Değişiklikleri Kaydet':'İlanı Kaydet'}</button></div></form></div></div>}
+      {showListingForm && (<div className="fixed inset-0 z-[60] overflow-y-auto bg-slate-950/70 p-4"><form onSubmit={handleCreateListing} className="mx-auto max-w-4xl space-y-5 rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-black">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><button type="button" onClick={resetListingForm}><X /></button></div><input required value={newListing.title} onChange={e=>setNewListing({...newListing,title:e.target.value})} placeholder="İlan Başlığı" className="w-full rounded-xl border p-3" /><div className="grid gap-3 md:grid-cols-3"><select value={newListing.category} onChange={e=>{const category=e.target.value;setNewListing({...newListing,category,propertyType:LISTING_PROPERTY_TYPES[category as keyof typeof LISTING_PROPERTY_TYPES][0],details:{}})}} className="rounded-xl border p-3">{LISTING_CATEGORIES.map(x=><option key={x}>{x}</option>)}</select><select value={newListing.propertyType} onChange={e=>setNewListing({...newListing,propertyType:e.target.value,details:{}})} className="rounded-xl border p-3">{(LISTING_PROPERTY_TYPES[newListing.category as keyof typeof LISTING_PROPERTY_TYPES]||[]).map(x=><option key={x}>{x}</option>)}</select><select value={newListing.type} onChange={e=>setNewListing({...newListing,type:e.target.value})} className="rounded-xl border p-3">{LISTING_TRANSACTION_TYPES.map(x=><option key={x}>{x}</option>)}</select></div><div className="rounded-xl bg-red-50 p-4"><h3 className="mb-3 font-black text-red-800">{newListing.propertyType} Özellikleri</h3><div className="grid gap-3 sm:grid-cols-2">{(PROPERTY_DETAIL_FIELDS[newListing.propertyType]||[]).map(field=><div key={field.key}><label className="mb-1 block text-xs font-black">{field.label}</label><input type={field.type || 'text'} value={newListing.details[field.key] || ''} onChange={e=>setNewListing({...newListing,details:{...newListing.details,[field.key]:e.target.value},...(field.key === 'roomCount'?{rooms:e.target.value}:{})})} placeholder={field.placeholder||field.label} className="w-full rounded-xl border p-3" /></div>)}</div></div><div className="grid gap-3 md:grid-cols-2"><input required value={newListing.price} onChange={e=>setNewListing({...newListing,price:e.target.value})} placeholder="Fiyat" className="rounded-xl border p-3" /><input required value={newListing.area} onChange={e=>setNewListing({...newListing,area:e.target.value})} placeholder="Toplam alan m²" className="rounded-xl border p-3" /></div><label><input type="file" accept="image/*" multiple onChange={handleImageChange} /> Görsel seç ({newListing.images.length}/10)</label><div className="flex justify-end gap-3"><button type="button" onClick={resetListingForm}>Vazgeç</button><button type="submit" className="rounded-xl bg-red-700 px-5 py-3 font-black text-white">İlanı Kaydet</button></div></form></div>)}
     </div>
   );
 }
