@@ -159,6 +159,28 @@ const SAMPLE_OFFICES = [
     email: "cankaya@realtycenter.com.tr",
     manager: "Mert Yalçın",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=88&w=1200"
+  },
+  {
+    id: 2,
+    name: "Realty Center İncek",
+    city: "Ankara",
+    district: "Çankaya",
+    address: "İncek Bulvarı No: 118, Çankaya / Ankara",
+    phone: "0532 567 48 46",
+    email: "incek@realtycenter.com.tr",
+    manager: "Selin Arslan",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=88&w=1200"
+  },
+  {
+    id: 3,
+    name: "Realty Center Söğütözü",
+    city: "Ankara",
+    district: "Çankaya",
+    address: "Söğütözü Mah. 2176. Cad. No: 7, Çankaya / Ankara",
+    phone: "0532 567 48 47",
+    email: "sogutozu@realtycenter.com.tr",
+    manager: "Burak Demir",
+    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=88&w=1200"
   }
 ];
 
@@ -174,6 +196,30 @@ const SAMPLE_AGENTS = [
     email: "mert.yalcin@realtycenter.com.tr",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
     activeListings: 18
+  },
+  {
+    id: 2,
+    name: "Selin Arslan",
+    title: "Konut Projeleri Uzmanı",
+    office: "Realty Center İncek",
+    city: "Ankara",
+    district: "Çankaya",
+    phone: "0532 567 48 46",
+    email: "selin.arslan@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=88&w=1200",
+    activeListings: 14
+  },
+  {
+    id: 3,
+    name: "Burak Demir",
+    title: "Ticari Gayrimenkul Uzmanı",
+    office: "Realty Center Söğütözü",
+    city: "Ankara",
+    district: "Çankaya",
+    phone: "0532 567 48 47",
+    email: "burak.demir@realtycenter.com.tr",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
+    activeListings: 22
   }
 ];
 
@@ -394,7 +440,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   return (
     <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
       <div>
-        <div className="relative h-52 overflow-hidden bg-slate-900">
+        <div className="relative h-44 overflow-hidden bg-slate-900">
           <img 
             src={item.image} 
             alt={item.title} 
@@ -417,17 +463,17 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
             {item.id}
           </span>
 
-          <div className="absolute bottom-3 left-3 right-3 text-white font-black text-xl drop-shadow-md">
+          <div className="absolute bottom-3 left-3 right-3 text-white font-black text-lg drop-shadow-md">
             {item.price.toLocaleString('tr-TR')} <span className="text-sm font-bold">{item.currency}</span>
           </div>
         </div>
 
-        <div className="p-5">
+        <div className="p-4">
           <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-700 transition h-10">
             {item.title}
           </h3>
 
-          <div className="flex items-center space-x-1 text-xs text-slate-500 font-semibold mb-4">
+          <div className="flex items-center space-x-1 text-xs text-slate-500 font-semibold mb-3">
             <MapPin className="w-3.5 h-3.5 text-red-700 flex-shrink-0" />
             <span className="truncate">{item.city} / {item.district} / {item.neighborhood}</span>
           </div>
@@ -445,7 +491,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </div>
       </div>
 
-      <div className="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
+      <div className="p-3 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
         <div>
           <span className="text-[10px] text-slate-400 font-bold block">Danışman</span>
           <span className="font-extrabold text-slate-800">{item.agentName}</span>
@@ -694,7 +740,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
   if (!listings.length) return null;
   return <div className="relative">
     <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div className="relative overflow-hidden py-2" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><div className={`live-listing-track ${direction === 'right' ? 'live-listing-track-right' : ''} ${isHovered ? 'live-listing-track-paused' : ''}`}>{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-80 shrink-0"><ListingCard item={item} /></div>)}</div></div>
+    <div className="relative overflow-hidden py-2" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><div className={`live-listing-track ${direction === 'right' ? 'live-listing-track-right' : ''} ${isHovered ? 'live-listing-track-paused' : ''}`}>{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
   </div>;
 }
 
@@ -873,9 +919,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN OFİSLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Güçlü <span className="text-red-700">ofis ağımız</span></h2></div><Link to="/ofislerimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/ofislerimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_OFFICES[0].image} alt="Realty Center Çankaya ofisi" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">ANKARA · ÇANKAYA</p><h3 className="mt-1 text-lg font-black text-slate-900">Realty Center Çankaya</h3></Link></div></div></section>
-      <section className="bg-slate-50 py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">ÖNE ÇIKAN DANIŞMANLAR</span><h2 className="mt-2 text-3xl font-black text-slate-900">Uzman <span className="text-red-700">danışmanlarımız</span></h2></div><Link to="/danismanlarimiz" className="text-sm font-black text-red-700">Tümünü Gör →</Link></div><div className="flex w-max gap-6 animate-marquee"><Link to="/danismanlarimiz" className="w-80 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"><img src={SAMPLE_AGENTS[0].image} alt="Mert Yalçın" className="h-44 w-full rounded-xl object-cover"/><p className="mt-4 text-xs font-black text-red-700">GAYRİMENKUL DANIŞMANI</p><h3 className="mt-1 text-lg font-black text-slate-900">Mert Yalçın</h3></Link></div></div></section>
-      <section className="bg-white py-16 border-b border-slate-200 overflow-hidden"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-8"><span className="text-xs font-black tracking-widest text-red-700">PİYASA REHBERİ</span><h2 className="mt-2 text-3xl font-black text-slate-900">REALTY <span className="text-red-700">BLOG</span></h2></div><div className="flex w-max gap-6 animate-marquee"><article className="w-96 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-md"><p className="text-xs font-black text-red-700">YATIRIM REHBERİ</p><h3 className="mt-3 text-xl font-black text-slate-900">Gayrimenkul yatırımında doğru lokasyon nasıl seçilir?</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">Bölgenin ulaşım imkanlarını, değer artışı potansiyelini ve proje gelişimini birlikte değerlendirin.</p><button className="mt-5 text-sm font-black text-red-700">Yazıyı Oku →</button></article></div></div></section>
+      <section className="border-b border-amber-200 bg-[#fffaf0] py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="grid gap-10 xl:grid-cols-2 xl:gap-12"><div><div className="mb-5 flex items-end justify-between gap-3"><div><span className="text-xs font-black tracking-widest text-amber-700">SEÇKİN OFİSLER</span><h2 className="mt-1 text-2xl font-black text-slate-900">Öne çıkan <span className="text-amber-700">ofislerimiz</span></h2></div><Link to="/ofislerimiz" className="text-xs font-black text-amber-800">Tümü →</Link></div><div className="grid grid-cols-3 gap-3">{SAMPLE_OFFICES.slice(0, 3).map((office) => <Link key={office.id} to="/ofislerimiz" className="group overflow-hidden rounded-2xl border border-amber-300 bg-white p-2 shadow-[0_8px_20px_rgba(180,130,20,.12)] transition hover:-translate-y-1 hover:border-amber-500"><img src={office.image} alt={office.name} className="h-20 w-full rounded-xl object-cover"/><p className="mt-3 text-[9px] font-black tracking-wide text-amber-700">ÖNE ÇIKAN OFİS</p><h3 className="mt-1 line-clamp-2 text-xs font-black text-slate-900">{office.name}</h3><p className="mt-1 text-[10px] text-slate-500">{office.district}, {office.city}</p></Link>)}</div></div><div><div className="mb-5 flex items-end justify-between gap-3"><div><span className="text-xs font-black tracking-widest text-amber-700">SEÇKİN DANIŞMANLAR</span><h2 className="mt-1 text-2xl font-black text-slate-900">Öne çıkan <span className="text-amber-700">danışmanlarımız</span></h2></div><Link to="/danismanlarimiz" className="text-xs font-black text-amber-800">Tümü →</Link></div><div className="grid grid-cols-3 gap-3">{SAMPLE_AGENTS.slice(0, 3).map((agent) => <Link key={agent.id} to="/danismanlarimiz" className="group overflow-hidden rounded-2xl border border-amber-300 bg-white p-2 shadow-[0_8px_20px_rgba(180,130,20,.12)] transition hover:-translate-y-1 hover:border-amber-500"><img src={agent.image} alt={agent.name} className="h-20 w-full rounded-xl object-cover"/><p className="mt-3 text-[9px] font-black tracking-wide text-amber-700">ÖNE ÇIKAN DANIŞMAN</p><h3 className="mt-1 line-clamp-2 text-xs font-black text-slate-900">{agent.name}</h3><p className="mt-1 text-[10px] text-slate-500">{agent.title}</p></Link>)}</div></div></div></div></section>
+      <section className="bg-white py-14 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12"><div className="mb-7 flex items-end justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">GÜNCEL GELİŞMELER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Sektörden <span className="text-red-700">Haberler</span></h2></div><span className="text-xs font-bold text-slate-500">Gayrimenkul piyasasından seçtiklerimiz</span></div><div className="grid gap-4 md:grid-cols-3"><article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"><p className="text-[10px] font-black tracking-widest text-red-700">PİYASA NOTU · 15 AĞUSTOS 2026</p><h3 className="mt-3 text-base font-black text-slate-900">Ankara'da yeni konut projelerine ilgi sürüyor</h3><p className="mt-3 text-sm leading-6 text-slate-600">İncek, Yaşamkent ve Çukurambar hattında yeni teslim projeleri alıcıların odağında.</p><button className="mt-4 text-xs font-black text-red-700">Haberi Oku →</button></article><article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"><p className="text-[10px] font-black tracking-widest text-red-700">YATIRIM · 12 AĞUSTOS 2026</p><h3 className="mt-3 text-base font-black text-slate-900">Ticari gayrimenkulde ulaşım aksları değer yaratıyor</h3><p className="mt-3 text-sm leading-6 text-slate-600">Metro ve ana arter yakınındaki ofis, depo ve mağaza portföyleri yatırımcıların radarında.</p><button className="mt-4 text-xs font-black text-red-700">Haberi Oku →</button></article><article className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"><p className="text-[10px] font-black tracking-widest text-red-700">REHBER · 08 AĞUSTOS 2026</p><h3 className="mt-3 text-base font-black text-slate-900">Konut alırken aidat ve tapu bilgisini karşılaştırın</h3><p className="mt-3 text-sm leading-6 text-slate-600">Karar öncesinde binanın yönetim giderleri, tapu türü ve kredi uygunluğu birlikte incelenmeli.</p><button className="mt-4 text-xs font-black text-red-700">Yazıyı Oku →</button></article></div></div></section>
 
       
 
