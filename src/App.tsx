@@ -100,7 +100,19 @@ const TURKEY_CITIES: Record<string, string[]> = {
 };
 
 // ÖRNEK İLAN VERİLERİ
-const SAMPLE_LISTINGS = [
+type ListingItem = {
+  id: string; title: string; category: string; propertyType: string; type: string; price: number; currency: string;
+  city: string; district: string; neighborhood: string; rooms: string; area: number; image: string;
+  agentName: string; agentPhone: string; date: string; isFeatured: boolean; details: Record<string, string>;
+};
+function getSampleListingDetails(propertyType: string, rooms: string): Record<string, string> {
+  if (['Ev','Villa','Daire','Residence','Müstakil Ev'].includes(propertyType)) return { rooms, buildingAge: '1-5', floor: '5', heating: 'Doğalgaz Kombi', furnished: 'Hayır', mortgage: 'Evet', bathroom: '2' };
+  if (['Arsa','Tarla'].includes(propertyType)) return { zoning: propertyType === 'Arsa' ? 'Konut' : 'Tarla', deed: 'Müstakil Tapu', landQuality: propertyType, frontage: '35', road: 'Kadastro Yolu', infrastructure: 'Elektrik' };
+  if (['Fabrika','Depo'].includes(propertyType)) return { closedArea: propertyType === 'Fabrika' ? '3200' : '1250', ceilingHeight: '8', power: '630', loading: 'Var', crane: 'Var', zoning: 'Var', deed: 'Müstakil Tapu' };
+  if (propertyType === 'Otel') return { hotelRooms: '28', beds: '64', stars: '3', buildingAge: '6-10', restaurant: 'Var', pool: 'Yok', deed: 'Müstakil Tapu' };
+  return { sections: rooms, buildingAge: '1-5', floor: '8', heating: 'Merkezi', furnished: 'Hayır', parking: 'Var', usage: 'Boş' };
+}
+const SAMPLE_LISTING_SEEDS: Array<[string, string, string, string, string, number, number]> = [
   ['Daire', 'Konut', 'Satılık', "Çankaya Yaşamkent'te Site İçinde 3+1 Daire", '3+1', 165, 7450000],
   ['Villa', 'Konut', 'Satılık', "Çankaya İncek'te Havuzlu Müstakil Villa", '5+1', 420, 28900000],
   ['Residence', 'Konut', 'Kiralık', "Çankaya Söğütözü'nde Manzaralı Residence", '2+1', 118, 62000],
@@ -112,11 +124,12 @@ const SAMPLE_LISTINGS = [
   ['Ofis', 'Ticari Gayrimenkul', 'Kiralık', "Çankaya Çukurambar'da Prestijli Ofis Katı", '6 Bölüm', 310, 118000],
   ['Plaza', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Söğütözü'nde Plaza Katı", 'Plaza', 540, 39800000],
   ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
-].map(([propertyType, category, type, title, rooms, area, price], index) => ({
+];
+const SAMPLE_LISTINGS: ListingItem[] = SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => ({
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
   image: `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1200`,
   agentName: 'Realty Center Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
-  details: propertyType === 'Otel' ? { hotelRoomCount: '28', bedCapacity: '64', starRating: '3 yıldız' } : propertyType === 'Fabrika' ? { closedArea: '3200', ceilingHeight: '8', powerCapacity: '630' } : {}
+  details: getSampleListingDetails(propertyType, rooms)
 }));
 
 const SAMPLE_OFFICES = [
@@ -159,14 +172,45 @@ const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
 
 const LISTING_CATEGORIES = ['Konut', 'Arazi', 'Ticari Gayrimenkul'] as const;
 const LISTING_PROPERTY_TYPES = {
-  'Konut': ['Villa', 'Daire', 'Residence', 'Müstakil Ev'],
+  'Konut': ['Ev', 'Villa', 'Daire', 'Residence', 'Müstakil Ev'],
   'Arazi': ['Arsa', 'Tarla'],
-  'Ticari Gayrimenkul': ['Fabrika', 'Depo', 'Ofis', 'Plaza', 'Otel']
+  'Ticari Gayrimenkul': ['Fabrika', 'Depo', 'Ofis', 'Dükkan', 'Plaza', 'Otel']
 } as const;
 const LISTING_TRANSACTION_TYPES = ['Satılık', 'Kiralık', 'Devren Satılık', 'Devren Kiralık'] as const;
+const ALL_LISTING_PROPERTY_TYPES = Object.values(LISTING_PROPERTY_TYPES).flat() as string[];
+const DISTRICT_NEIGHBORHOODS: Record<string, string[]> = {
+  'Ankara|Çankaya': ['Ayrancı', 'Balgat', 'Bahçelievler', 'Birlik', 'Çukurambar', 'Dikmen', 'İncek', 'Kavaklıdere', 'Kızılay', 'Oran', 'Söğütözü', 'Tulumtaş', 'Yaşamkent', 'Yıldız'],
+  'Ankara|Keçiören': ['Aktepe', 'Bağlum', 'Etlik', 'Esertepe', 'Kalaba', 'Ovacık', 'Şenlik'],
+  'Ankara|Yenimahalle': ['Batıkent', 'Demetevler', 'İvedik', 'Macunköy', 'Ostim', 'Şentepe'],
+  'İstanbul|Kadıköy': ['Acıbadem', 'Bostancı', 'Caddebostan', 'Erenköy', 'Fenerbahçe', 'Kozyatağı', 'Moda', 'Suadiye'],
+  'İstanbul|Beşiktaş': ['Akatlar', 'Bebek', 'Etiler', 'Levent', 'Ortaköy', 'Ulus'],
+  'İzmir|Konak': ['Alsancak', 'Basmane', 'Göztepe', 'Güzelyalı', 'Hatay', 'Kahramanlar']
+};
+
+type SearchField = { key: string; label: string; type?: 'number' | 'text'; options?: string[] };
+const COMMON_PRICE_AREA_FIELDS: SearchField[] = [
+  { key: 'minPrice', label: 'En Az Fiyat', type: 'number' }, { key: 'maxPrice', label: 'En Çok Fiyat', type: 'number' },
+  { key: 'minArea', label: 'En Az m²', type: 'number' }, { key: 'maxArea', label: 'En Çok m²', type: 'number' }
+];
+const ADVANCED_FILTERS_BY_TYPE: Record<string, SearchField[]> = {
+  home: [...COMMON_PRICE_AREA_FIELDS, { key: 'rooms', label: 'Oda Sayısı', options: ['1+0','1+1','2+1','3+1','4+1','5+1'] }, { key: 'buildingAge', label: 'Bina Yaşı', options: ['0','1-5','6-10','11-20','21+'] }, { key: 'floor', label: 'Bulunduğu Kat' }, { key: 'heating', label: 'Isınma', options: ['Doğalgaz Kombi','Merkezi','Yerden Isıtma','Klima'] }, { key: 'furnished', label: 'Eşyalı', options: ['Evet','Hayır'] }, { key: 'mortgage', label: 'Krediye Uygun', options: ['Evet','Hayır'] }, { key: 'bathroom', label: 'Banyo Sayısı', type: 'number' }],
+  land: [...COMMON_PRICE_AREA_FIELDS, { key: 'zoning', label: 'İmar Durumu', options: ['Konut','Ticari','Sanayi','Tarla','Bağ Bahçe'] }, { key: 'deed', label: 'Tapu Durumu', options: ['Müstakil Tapu','Hisseli Tapu','Kat İrtifakı'] }, { key: 'landQuality', label: 'Arsa Niteliği', options: ['Arsa','Tarla','Bağ','Bahçe','Zeytinlik'] }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'road', label: 'Yol Durumu', options: ['Kadastro Yolu','Asfalt','Stabilize'] }, { key: 'infrastructure', label: 'Altyapı', options: ['Elektrik','Su','Doğalgaz','Kanalizasyon'] }],
+  industrial: [...COMMON_PRICE_AREA_FIELDS, { key: 'closedArea', label: 'Kapalı Alan (m²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan Yüksekliği', type: 'number' }, { key: 'power', label: 'Elektrik Gücü (kVA)', type: 'number' }, { key: 'loading', label: 'Yükleme Rampası', options: ['Var','Yok'] }, { key: 'crane', label: 'Vinç', options: ['Var','Yok'] }, { key: 'zoning', label: 'Sanayi İmarı', options: ['Var','Yok'] }, { key: 'deed', label: 'Tapu Durumu' }],
+  commercial: [...COMMON_PRICE_AREA_FIELDS, { key: 'sections', label: 'Bölüm / Oda Sayısı' }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'Isınma' }, { key: 'furnished', label: 'Eşyalı', options: ['Evet','Hayır'] }, { key: 'parking', label: 'Otopark', options: ['Var','Yok'] }, { key: 'usage', label: 'Kullanım Durumu', options: ['Boş','Kiracılı','Mülk Sahibi'] }],
+  hotel: [...COMMON_PRICE_AREA_FIELDS, { key: 'hotelRooms', label: 'Otel Oda Sayısı', type: 'number' }, { key: 'beds', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'stars', label: 'Yıldız Sayısı', options: ['Butik','2','3','4','5'] }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'restaurant', label: 'Restoran', options: ['Var','Yok'] }, { key: 'pool', label: 'Havuz', options: ['Var','Yok'] }, { key: 'deed', label: 'Tapu Durumu' }]
+};
+
+function getAdvancedFilterGroup(propertyType: string) {
+  if (['Ev','Villa','Daire','Residence','Müstakil Ev'].includes(propertyType)) return 'home';
+  if (['Arsa','Tarla'].includes(propertyType)) return 'land';
+  if (['Fabrika','Depo'].includes(propertyType)) return 'industrial';
+  if (propertyType === 'Otel') return 'hotel';
+  return 'commercial';
+}
 
 type PropertyDetailField = { key: string; label: string; placeholder?: string; type?: 'text' | 'number' };
 const PROPERTY_DETAIL_FIELDS: Record<string, PropertyDetailField[]> = {
+  'Ev': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '3+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina Yaşı', type: 'number' }],
   'Villa': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '5+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floorCount', label: 'Kat Sayısı', type: 'number' }, { key: 'gardenArea', label: 'Bahçe Alanı (m²)', type: 'number' }],
   'Daire': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '3+1' }, { key: 'bathroomCount', label: 'Banyo Sayısı', type: 'number' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina Yaşı', type: 'number' }],
   'Residence': [{ key: 'roomCount', label: 'Oda Sayısı', placeholder: '2+1' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina Yaşı', type: 'number' }, { key: 'siteFeatures', label: 'Site Özellikleri', placeholder: 'Güvenlik, havuz, otopark' }],
@@ -176,14 +220,9 @@ const PROPERTY_DETAIL_FIELDS: Record<string, PropertyDetailField[]> = {
   'Fabrika': [{ key: 'closedArea', label: 'Kapalı Alan (m²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan Yüksekliği (m)', type: 'number' }, { key: 'powerCapacity', label: 'Elektrik Gücü (kVA)', type: 'number' }, { key: 'loadingDocks', label: 'Yükleme Rampası Sayısı', type: 'number' }],
   'Depo': [{ key: 'closedArea', label: 'Kapalı Alan (m²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan Yüksekliği (m)', type: 'number' }, { key: 'loadingDocks', label: 'Yükleme Rampası Sayısı', type: 'number' }, { key: 'security', label: 'Güvenlik', placeholder: '7/24 güvenlik' }],
   'Ofis': [{ key: 'roomCount', label: 'Bölüm / Oda Sayısı', placeholder: '4 bölüm' }, { key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'meetingRooms', label: 'Toplantı Odası Sayısı', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'Açık / kapalı' }],
+  'Dükkan': [{ key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'floor', label: 'Kat', type: 'number' }, { key: 'warehouseArea', label: 'Depo Alanı (m²)', type: 'number' }, { key: 'usageStatus', label: 'Kullanım Durumu', placeholder: 'Boş / kiracılı' }],
   'Plaza': [{ key: 'floor', label: 'Bulunduğu Kat', type: 'number' }, { key: 'floorCount', label: 'Toplam Kat Sayısı', type: 'number' }, { key: 'elevatorCount', label: 'Asansör Sayısı', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'Açık / kapalı' }],
   'Otel': [{ key: 'hotelRoomCount', label: 'Otel Oda Sayısı', type: 'number' }, { key: 'bedCapacity', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'starRating', label: 'Yıldız Sayısı', placeholder: '5 yıldız' }, { key: 'restaurantCount', label: 'Restoran Sayısı', type: 'number' }]
-};
-
-const ADVANCED_SEARCH_FIELDS: Record<string, PropertyDetailField[]> = {
-  'Konut': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'roomCount', label: 'Oda Sayısı' }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'Isınma Tipi' }, { key: 'furnished', label: 'Eşyalı' }, { key: 'mortgage', label: 'Krediye Uygun' }],
-  'Arazi': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'zoningStatus', label: 'İmar Durumu' }, { key: 'titleDeed', label: 'Tapu Durumu' }, { key: 'landType', label: 'Arsa Niteliği' }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'roadAccess', label: 'Yol Durumu' }],
-  'Ticari Gayrimenkul': [{ key: 'minPrice', label: 'Minimum Fiyat', type: 'number' }, { key: 'maxPrice', label: 'Maksimum Fiyat', type: 'number' }, { key: 'minArea', label: 'Minimum m²', type: 'number' }, { key: 'commercialType', label: 'Ticari Tür' }, { key: 'buildingAge', label: 'Bina Yaşı' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'Isınma Tipi' }, { key: 'parking', label: 'Otopark' }, { key: 'security', label: 'Güvenlik' }]
 };
 
 export interface ContactMessage {
@@ -239,6 +278,21 @@ function getListingCategories(): ListingCategory[] {
     const saved = localStorage.getItem('realty-center-listing-categories');
     return saved ? JSON.parse(saved) : DEFAULT_LISTING_CATEGORIES;
   } catch { return DEFAULT_LISTING_CATEGORIES; }
+}
+
+function getCategoryPropertyType(item: ListingCategory) {
+  const text = `${item.title} ${item.category}`.toLocaleLowerCase('tr-TR');
+  if (text.includes('villa')) return 'Villa';
+  if (text.includes('arsa')) return 'Arsa';
+  if (text.includes('ofis')) return 'Ofis';
+  if (text.includes('dükkan')) return 'Dükkan';
+  if (text.includes('iş yeri') || text.includes('işyeri')) return 'Dükkan';
+  if (text.includes('konut') || text.includes('ev')) return 'Ev';
+  return '';
+}
+
+function getCategoryTransactionType(item: ListingCategory) {
+  return item.type === 'Devren' ? 'Devren Satılık' : item.type;
 }
 
 const DEFAULT_CAMPAIGN_SETTINGS = { first: '1 Gün Geçerli', second: '2 Hafta Geçerli', third: 'Son 3 Gün' };
@@ -505,7 +559,7 @@ function OpportunityCards() {
   const duration = [campaign.first, campaign.second, campaign.third][activeIndex % 3];
 
   return (
-    <Link to={'/ilanlarimiz?type=' + item.type + '&category=' + item.category} className="group relative block h-[300px] overflow-hidden rounded-2xl bg-slate-900 shadow-2xl">
+    <Link to={'/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&propertyType=' + encodeURIComponent(item.propertyType)} className="group relative block h-[300px] overflow-hidden rounded-2xl bg-slate-900 shadow-2xl">
       <img key={item.id} src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 group-hover:scale-105" />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent" />
       <div className="absolute left-4 top-4 flex items-center gap-2"><span className="rounded-full bg-red-700 px-3 py-1 text-[10px] font-black tracking-wider text-white">FIRSAT GAYRİMENKUL</span><span className="rounded-full bg-white/95 px-3 py-1 text-[10px] font-black text-red-700">{duration}</span></div>
@@ -515,8 +569,11 @@ function OpportunityCards() {
 }
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
   const [searchDistrict, setSearchDistrict] = useState('');
+  const [searchTransactionType, setSearchTransactionType] = useState('');
+  const [searchPropertyType, setSearchPropertyType] = useState('');
   const [showAllWhy, setShowAllWhy] = useState(false);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -574,19 +631,17 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
                   <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Satılık / Kiralık</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
-                    <option>Konut</option>
-                    <option>İşyeri</option>
-                    <option>Arsa</option>
+                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+                    <option value="">Seçiniz</option>
+                    {LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}
                   </select>
                 </div>
 
                 <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İşlem Tipi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
-                    <option>Satılık</option>
-                    <option>Kiralık</option>
-                    <option>Devren</option>
+                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlan Türü</label>
+                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+                    <option value="">Seçiniz</option>
+                    {ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}
                   </select>
                 </div>
 
@@ -621,34 +676,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlan No</label>
-                  <input type="text" placeholder="" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
-                </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Min Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
-                </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Maks Fiyat</label>
-                  <input type="number" placeholder="0" className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-red-700 transition" />
-                </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Para Birimi</label>
-                  <select className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
-                    <option>Türk Lirası</option>
-                    <option>USD ($)</option>
-                    <option>EUR (€)</option>
-                  </select>
-                </div>
-              </div>
-
               <div className="pt-1">
-                <button className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-12 py-3.5 rounded-md text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
+                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-12 py-3.5 rounded-md text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
@@ -693,7 +722,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-end justify-between gap-6 mb-8"><div><span className="text-xs font-black tracking-widest text-red-700">KATEGORİLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Portföylerimizi <span className="text-red-700">Keşfedin</span></h2></div><Link to="/ilan-kategorileri" className="text-sm font-black text-red-700 hover:text-red-800">Tüm kategoriler →</Link></div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">{getListingCategories().slice(0,4).map((category) => <Link key={category.id} to={"/ilanlarimiz?type="+encodeURIComponent(category.type)+"&category="+encodeURIComponent(category.category)} className="group relative min-h-40 overflow-hidden rounded-2xl bg-slate-900 shadow-lg"><img src={category.image} alt={category.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" /><div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent" /><span className="absolute bottom-4 left-4 text-base font-black text-white">{category.title}</span></Link>)}</div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">{getListingCategories().slice(0,4).map((category) => <Link key={category.id} to={"/ilanlarimiz?type="+encodeURIComponent(getCategoryTransactionType(category))+"&propertyType="+encodeURIComponent(getCategoryPropertyType(category))} className="group relative min-h-40 overflow-hidden rounded-2xl bg-slate-900 shadow-lg"><img src={category.image} alt={category.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" /><div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent" /><span className="absolute bottom-4 left-4 text-base font-black text-white">{category.title}</span></Link>)}</div>
         </div>
       </section>
 
@@ -1469,9 +1498,9 @@ function ListingCategoriesPage() {
   return (
     <div className="bg-slate-50 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="mb-9"><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek tüm ilanları inceleyin.</p></div>
+        <div className="mb-9 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">Portföy Kategorileri</span><h1 className="text-3xl sm:text-4xl font-black text-slate-900">İLANLARI <span className="text-red-700">KEŞFEDİN</span></h1><p className="text-slate-600 text-sm font-medium mt-2">İhtiyacınıza uygun kategoriyi seçerek ilanları inceleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex items-center justify-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg hover:bg-red-800">Tüm İlanları Gör <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {categories.map((item) => <button key={item.id} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(item.type) + '&category=' + encodeURIComponent(item.category))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+          {categories.map((item) => <button key={item.id} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(getCategoryTransactionType(item)) + '&propertyType=' + encodeURIComponent(getCategoryPropertyType(item)))} className="group relative h-64 overflow-hidden rounded-2xl text-left shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
             <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6"><span className="text-xs font-black tracking-widest text-red-200">{item.type}</span><h2 className="mt-1 text-xl sm:text-2xl font-black text-white leading-tight">{item.title}</h2><span className="mt-3 inline-flex items-center text-sm font-bold text-white">İlanları Gör <ArrowRight className="ml-1.5 w-4 h-4" /></span></div>
@@ -1496,7 +1525,6 @@ function ListingsPage() {
   const [hasSearched, setHasSearched] = useState(false);
   const [minArea, setMinArea] = useState('');
   const [rooms, setRooms] = useState('');
-  const [advancedFilters, setAdvancedFilters] = useState<Record<string, string>>({});
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -1513,10 +1541,6 @@ function ListingsPage() {
     if (selectedCity && item.city !== selectedCity) return false;
     if (minArea && item.area < Number(minArea)) return false;
     if (rooms && item.rooms !== rooms) return false;
-    if (advancedFilters.minPrice && item.price < Number(advancedFilters.minPrice)) return false;
-    if (advancedFilters.maxPrice && item.price > Number(advancedFilters.maxPrice)) return false;
-    if (advancedFilters.minArea && item.area < Number(advancedFilters.minArea)) return false;
-    if (advancedFilters.roomCount && item.rooms !== advancedFilters.roomCount) return false;
     return true;
   });
 
@@ -1592,7 +1616,7 @@ function ListingsPage() {
           </div>
         </div>
 
-        {advancedOpen && <div className="mb-10 -mt-6 rounded-2xl border border-red-200 bg-red-50 p-5"><div className="mb-4 flex items-center justify-between"><div><h3 className="text-sm font-black text-red-800">Gelişmiş Arama</h3><p className="mt-1 text-xs text-slate-600">{selectedPropertyType || selectedCategory || 'Seçtiğiniz ilan türü'} için uygun kriterleri belirleyin.</p></div><button onClick={() => { setAdvancedFilters({}); setMinArea(''); setRooms(''); setHasSearched(false); }} className="text-xs font-black text-red-700">Temizle</button></div><div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">İl</label><select value={selectedCity} onChange={(e) => { setSelectedCity(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs"><option value="">Tüm İller</option>{Object.keys(TURKEY_CITIES).map((city) => <option key={city}>{city}</option>)}</select></div><div><label className="mb-1 block text-[10px] font-black text-slate-600">İlçe</label><select disabled={!selectedCity} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs"><option>{selectedCity === 'Ankara' ? 'Çankaya' : 'İlçe seçiniz'}</option></select></div><div><label className="mb-1 block text-[10px] font-black text-slate-600">Mahalle</label><input placeholder="Mahalle seçiniz" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{(ADVANCED_SEARCH_FIELDS[selectedCategory || 'Konut'] || ADVANCED_SEARCH_FIELDS.Konut).map((field) => <div key={field.key}><label className="mb-1 block text-[10px] font-black text-slate-600">{field.label}</label><input type={field.type || 'text'} value={advancedFilters[field.key] || ''} onChange={(e) => { setAdvancedFilters({ ...advancedFilters, [field.key]: e.target.value }); setHasSearched(false); }} placeholder={field.label} className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>)}</div></div>}
+        {advancedOpen && <div className="mb-10 -mt-6 grid grid-cols-1 gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">Minimum m²</label><input value={minArea} onChange={(e) => setMinArea(e.target.value)} type="number" placeholder="Örn. 150" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{['Villa','Daire','Residence','Müstakil Ev','Ofis'].includes(selectedPropertyType) && <div><label className="mb-1 block text-[10px] font-black text-slate-600">Oda Sayısı</label><input value={rooms} onChange={(e) => setRooms(e.target.value)} placeholder="Örn. 3+1" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>}{selectedPropertyType === 'Otel' && <div className="text-xs font-bold text-red-800">Otel için oda sayısı, yatak kapasitesi ve yıldız bilgisi ilan detayında yer alır.</div>}{['Fabrika','Depo'].includes(selectedPropertyType) && <div className="text-xs font-bold text-red-800">{selectedPropertyType} için kapalı alan, tavan yüksekliği ve yükleme bilgisi ilan detayında yer alır.</div>}<button onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); setMinArea(''); setRooms(''); }} className="self-end rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700">Temizle</button></div>}
 
         {hasSearched && filteredListings.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1608,6 +1632,93 @@ function ListingsPage() {
           </div>
         ) : <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-red-200"><Search className="w-12 h-12 text-red-300 mx-auto mb-3" /><h3 className="text-lg font-bold text-slate-800">Kriterlerinizi seçin ve İlan Ara butonuna basın.</h3><p className="text-slate-500 text-xs mt-1">Sonuçlar arama isteğinizden sonra listelenecektir.</p></div>}
 
+      </div>
+    </div>
+  );
+}
+
+function ListingsPageV2() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const initialType = params.get('type') || '';
+  const initialPropertyType = params.get('propertyType') || '';
+  const initialCity = params.get('city') || '';
+  const initialDistrict = params.get('district') || '';
+  const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCity);
+  const [transactionType, setTransactionType] = useState(initialType);
+  const [propertyType, setPropertyType] = useState(initialPropertyType);
+  const [city, setCity] = useState(initialCity);
+  const [district, setDistrict] = useState(initialDistrict);
+  const [neighborhood, setNeighborhood] = useState('');
+  const [advanced, setAdvanced] = useState<Record<string, string>>({});
+  const [appliedAdvanced, setAppliedAdvanced] = useState<Record<string, string>>({});
+  const [hasSearched, setHasSearched] = useState(showAllInitially);
+  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, city: initialCity, district: initialDistrict, neighborhood: '' });
+
+  const districts = city ? TURKEY_CITIES[city] || [] : [];
+  const neighborhoods = city && district ? DISTRICT_NEIGHBORHOODS[`${city}|${district}`] || [] : [];
+  const filterGroup = getAdvancedFilterGroup(propertyType || appliedSearch.propertyType);
+  const sideFields = propertyType || appliedSearch.propertyType ? ADVANCED_FILTERS_BY_TYPE[filterGroup] : COMMON_PRICE_AREA_FIELDS;
+
+  const runSearch = () => {
+    setAppliedSearch({ type: transactionType, propertyType, city, district, neighborhood });
+    setAppliedAdvanced({ ...advanced });
+    setHasSearched(true);
+  };
+
+  const filteredListings = SAMPLE_LISTINGS.filter((item) => {
+    if (!hasSearched) return false;
+    if (appliedSearch.type && item.type !== appliedSearch.type) return false;
+    if (appliedSearch.propertyType && item.propertyType !== appliedSearch.propertyType) return false;
+    if (appliedSearch.city && item.city !== appliedSearch.city) return false;
+    if (appliedSearch.district && item.district !== appliedSearch.district) return false;
+    if (appliedSearch.neighborhood && item.neighborhood !== appliedSearch.neighborhood) return false;
+    if (appliedAdvanced.minPrice && item.price < Number(appliedAdvanced.minPrice)) return false;
+    if (appliedAdvanced.maxPrice && item.price > Number(appliedAdvanced.maxPrice)) return false;
+    if (appliedAdvanced.minArea && item.area < Number(appliedAdvanced.minArea)) return false;
+    if (appliedAdvanced.maxArea && item.area > Number(appliedAdvanced.maxArea)) return false;
+    if (appliedAdvanced.rooms && item.rooms !== appliedAdvanced.rooms) return false;
+    for (const [key, value] of Object.entries(appliedAdvanced)) {
+      if (!value || ['minPrice','maxPrice','minArea','maxArea','rooms'].includes(key)) continue;
+      const listingValue = item.details[key] || '';
+      if (listingValue.toLocaleLowerCase('tr-TR') !== value.toLocaleLowerCase('tr-TR')) return false;
+    }
+    return true;
+  });
+
+  const resetFilters = () => {
+    setTransactionType(''); setPropertyType(''); setCity(''); setDistrict(''); setNeighborhood('');
+    setAdvanced({}); setAppliedAdvanced({}); setHasSearched(false);
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 py-10">
+      <div className="mx-auto max-w-7xl px-5 lg:px-10">
+        <div className="mb-7"><span className="rounded-full border border-red-300 bg-red-100 px-3 py-1.5 text-xs font-black tracking-widest text-red-700">İLAN ARAMA</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Gayrimenkul <span className="text-red-700">İlanları</span></h1></div>
+
+        <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div><label className="mb-2 block text-xs font-black text-slate-600">İşlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Kiralık / Satılık / Devren</option>{LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">İlan Türü</label><select value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Ev / Fabrika / Depo / Ofis / Arsa</option>{ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
+          </div>
+          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-[1fr_1fr_auto]">
+            <div><label className="mb-2 block text-xs font-black text-slate-600">İl</label><select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(''); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">İl Seçiniz</option>{Object.keys(TURKEY_CITIES).map((item) => <option key={item}>{item}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">İlçe</label><select disabled={!city} value={district} onChange={(e) => { setDistrict(e.target.value); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:opacity-50"><option value="">{city ? 'İlçe Seçiniz' : 'Önce İl Seçiniz'}</option>{districts.map((item) => <option key={item}>{item}</option>)}</select></div>
+            <button onClick={runSearch} className="self-end rounded-xl bg-red-700 px-8 py-3 font-black text-white shadow-lg shadow-red-700/20 hover:bg-red-800"><Search className="mr-2 inline h-4 w-4" />İlan Ara</button>
+          </div>
+        </section>
+
+        {!hasSearched ? <div className="rounded-2xl border border-dashed border-red-200 bg-white p-14 text-center"><Search className="mx-auto mb-3 h-12 w-12 text-red-300" /><h2 className="text-lg font-black text-slate-800">İşlem tipi ve ilan türünü seçerek arama yapın.</h2></div> : <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
+          <aside className="h-fit rounded-2xl border border-slate-200 bg-white shadow-lg lg:sticky lg:top-24">
+            <div className="border-b border-slate-200 p-5"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">Detaylı Filtrele</h2><button onClick={resetFilters} className="text-xs font-black text-red-700">Temizle</button></div><p className="mt-1 text-xs text-slate-500">{appliedSearch.propertyType || 'Tüm ilanlar'} için filtreler</p></div>
+            <div className="space-y-4 p-5">
+              {district && <div><label className="mb-1 block text-xs font-black text-slate-600">Mahalle</label><select value={neighborhood} onChange={(e) => setNeighborhood(e.target.value)} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">Tüm Mahalleler</option>{neighborhoods.map((item) => <option key={item}>{item}</option>)}</select>{!neighborhoods.length && <p className="mt-1 text-[10px] text-slate-400">Bu ilçe için mahalle verisi henüz eklenmedi.</p>}</div>}
+              {sideFields.map((field) => <div key={field.key}><label className="mb-1 block text-xs font-black text-slate-600">{field.label}</label>{field.options ? <select value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">Tümü</option>{field.options.map((option) => <option key={option}>{option}</option>)}</select> : <input type={field.type || 'text'} value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs" />}</div>)}
+              <button onClick={runSearch} className="w-full rounded-xl bg-red-700 py-3 text-sm font-black text-white hover:bg-red-800">Filtreleri Uygula</button>
+            </div>
+          </aside>
+          <main><div className="mb-5 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">{filteredListings.length} ilan bulundu</h2><p className="text-xs text-slate-500">{[appliedSearch.type, appliedSearch.propertyType, appliedSearch.city, appliedSearch.district].filter(Boolean).join(' · ') || 'Tüm ilanlar'}</p></div></div>{filteredListings.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">{filteredListings.map((item) => <ListingCard key={item.id} item={item} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-14 text-center"><Filter className="mx-auto mb-3 h-10 w-10 text-slate-300" /><h3 className="font-black text-slate-800">Seçtiğiniz kriterlere uygun ilan bulunamadı.</h3></div>}</main>
+        </div>}
       </div>
     </div>
   );
@@ -3183,7 +3294,7 @@ export default function RealtyCenterApp() {
             <Route path="/ofislerimiz" element={<OfficesPage />} />
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
             <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
-            <Route path="/ilanlarimiz" element={<ListingsPage />} />
+            <Route path="/ilanlarimiz" element={<ListingsPageV2 />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
             <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
