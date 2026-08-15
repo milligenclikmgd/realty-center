@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import { 
-  BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation 
+  BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
 } from 'react-router-dom';
 
 import { 
@@ -11,7 +11,8 @@ import {
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
-  ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu
+  ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -104,6 +105,8 @@ type ListingItem = {
   id: string; title: string; category: string; propertyType: string; type: string; price: number; currency: string;
   city: string; district: string; neighborhood: string; rooms: string; area: number; image: string;
   agentName: string; agentPhone: string; date: string; isFeatured: boolean; details: Record<string, string>;
+  images?: string[]; description?: string; videoUrl?: string; virtualTourUrl?: string; mapUrl?: string;
+  monthlyFee?: string; deedInfo?: string; technicalFeatures?: string; updatedAt?: string;
 };
 function getSampleListingDetails(propertyType: string, rooms: string): Record<string, string> {
   if (['Ev','Villa','Daire','Residence','Müstakil Ev'].includes(propertyType)) return { rooms, buildingAge: '1-5', floor: '5', heating: 'Doğalgaz Kombi', furnished: 'Hayır', mortgage: 'Evet', bathroom: '2' };
@@ -129,7 +132,17 @@ const SAMPLE_LISTINGS: ListingItem[] = SAMPLE_LISTING_SEEDS.map(([propertyType, 
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
   image: `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1200`,
   agentName: 'Realty Center Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
-  details: getSampleListingDetails(propertyType, rooms)
+  details: getSampleListingDetails(propertyType, rooms),
+  images: [
+    `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1400`,
+    `https://images.unsplash.com/photo-${['1600573472550-8090b5e0745e','1600607687920-4e2a09cf159d','1600210492486-724fe5c67fb0','1600047509807-ba8f99d2cdde','1500534314209-a25ddb2bd429','1500382017468-9049fed747ef','1486406146926-c627a92ad1ab','1553413077-190dd305871c','1497366754035-f200968a6e72','1497366754035-f200968a6e72','1542314831-068cd1dbfeeb'][index]}?auto=format&fit=crop&q=86&w=1400`
+  ],
+  description: `${title}; Realty Center güvencesiyle sunulan, konumu ve kullanım özellikleriyle öne çıkan seçkin bir gayrimenkuldür. Ayrıntılı bilgi ve yerinde sunum için yetkili danışmanımızla iletişime geçebilirsiniz.`,
+  monthlyFee: ['Arsa','Tarla'].includes(propertyType) ? 'Yok' : '2.750 ₺',
+  deedInfo: 'Kat Mülkiyetli / Müstakil Tapu',
+  technicalFeatures: 'Otopark, güvenlik, ulaşım akslarına yakınlık, yüksek hızlı internet altyapısı',
+  updatedAt: '15 Ağustos 2026',
+  mapUrl: `https://www.google.com/maps?q=${encodeURIComponent('Çankaya Ankara')}&output=embed`
 }));
 
 const SAMPLE_OFFICES = [
@@ -368,8 +381,9 @@ function TurkeyListingMap() {
 }
 
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
+  const navigate = useNavigate();
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full">
+    <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
       <div>
         <div className="relative h-52 overflow-hidden bg-slate-900">
           <img 
@@ -429,6 +443,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </div>
         <a 
           href={`tel:${item.agentPhone.replace(/\s+/g, '')}`}
+          onClick={(event) => event.stopPropagation()}
           className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-700/20"
         >
           <Phone className="w-3 h-3" />
@@ -1722,6 +1737,58 @@ function ListingsPageV2() {
   );
 }
 
+function ListingDetailPage() {
+  const { id } = useParams();
+  const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
+  const [activeImage, setActiveImage] = useState(0);
+  const [favorite, setFavorite] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('realty-center-favorites') || '[]').includes(id || ''); }
+    catch { return false; }
+  });
+
+  if (!item) return <div className="min-h-[60vh] bg-slate-50 px-6 py-24 text-center"><h1 className="text-3xl font-black text-slate-900">İlan bulunamadı</h1><Link to="/ilanlarimiz?all=1" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 font-black text-white">Tüm İlanlara Dön</Link></div>;
+
+  const gallery = item.images?.length ? item.images : [item.image];
+  const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
+  const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Kat', heating: 'Isınma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', bathroom: 'Banyo', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz' };
+
+  const toggleFavorite = () => {
+    const stored: string[] = JSON.parse(localStorage.getItem('realty-center-favorites') || '[]');
+    const next = favorite ? stored.filter((favoriteId) => favoriteId !== item.id) : [...new Set([...stored, item.id])];
+    localStorage.setItem('realty-center-favorites', JSON.stringify(next));
+    setFavorite(!favorite);
+  };
+
+  const shareListing = async () => {
+    const shareData = { title: item.title, text: `${item.title} - ${item.price.toLocaleString('tr-TR')} ${item.currency}`, url: window.location.href };
+    if (navigator.share) await navigator.share(shareData);
+    else { await navigator.clipboard.writeText(window.location.href); alert('İlan bağlantısı kopyalandı.'); }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 py-8 print:bg-white">
+      <div className="mx-auto max-w-[1500px] px-3 sm:px-5 lg:px-6">
+        <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between"><div><Link to="/ilanlarimiz?all=1" className="text-xs font-black text-red-700">← İlanlara Dön</Link><div className="mt-3 flex flex-wrap gap-2"><span className="rounded-lg bg-red-700 px-3 py-1 text-xs font-black text-white">{item.type}</span><span className="rounded-lg bg-slate-900 px-3 py-1 text-xs font-black text-white">{item.propertyType}</span></div><h1 className="mt-3 max-w-4xl text-2xl font-black text-slate-900 sm:text-3xl">{item.title}</h1><p className="mt-2 flex items-center gap-1 text-sm font-bold text-slate-500"><MapPin className="h-4 w-4 text-red-700" />{item.city} / {item.district} / {item.neighborhood}</p></div><div className="lg:text-right"><p className="text-3xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><div className="mt-3 flex flex-wrap gap-2 lg:justify-end print:hidden"><button onClick={toggleFavorite} className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-xs font-black ${favorite ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-white text-slate-700'}`}><Heart className={`h-4 w-4 ${favorite ? 'fill-current' : ''}`} />Favorilere Ekle</button><button onClick={() => window.print()} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Printer className="h-4 w-4" />Yazdır</button><button onClick={shareListing} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Share2 className="h-4 w-4" />Paylaş</button></div></div></div>
+
+        <section className="overflow-hidden rounded-3xl bg-slate-900 shadow-2xl"><div className="relative h-[360px] sm:h-[520px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full object-cover" /><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 text-white"><span className="inline-flex items-center gap-2 rounded-full bg-black/55 px-3 py-1.5 text-xs font-black"><Camera className="h-4 w-4" />{activeImage + 1} / {gallery.length}</span></div>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-white"><ChevronLeft /></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-white"><ChevronRight /></button></>}</div>{gallery.length > 1 && <div className="flex gap-3 overflow-x-auto p-3">{gallery.map((image, index) => <button key={image} onClick={() => setActiveImage(index)} className={`h-20 w-28 shrink-0 overflow-hidden rounded-xl border-2 ${activeImage === index ? 'border-red-600' : 'border-transparent'}`}><img src={image} alt="" className="h-full w-full object-cover" /></button>)}</div>}</section>
+
+        <div className="mt-7 grid grid-cols-1 gap-7 lg:grid-cols-[minmax(0,1fr)_340px]">
+          <main className="space-y-7">
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">Açıklama</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{item.description || 'Bu ilan için açıklama eklenmemiştir.'}</p></section>
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">İlan ve Teknik Özellikler</h2><div className="mt-5 grid grid-cols-2 gap-x-6 gap-y-0 sm:grid-cols-3">{[['İlan No', item.id], ['Güncelleme Tarihi', item.updatedAt || item.date], ['İlan Türü', item.propertyType], ['Oda Bilgisi', item.rooms], ['Toplam Alan', `${item.area} m²`], ['Aidat', item.monthlyFee || 'Belirtilmedi'], ['Tapu Bilgisi', item.deedInfo || 'Belirtilmedi'], ...Object.entries(item.details).map(([key, value]) => [detailLabels[key] || key, value])].map(([label, value]) => <div key={`${label}-${value}`} className="border-b border-slate-100 py-3"><span className="block text-[10px] font-black uppercase tracking-wider text-slate-400">{label}</span><strong className="mt-1 block text-sm text-slate-800">{value}</strong></div>)}</div></section>
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">Teknik Özellikler</h2><div className="mt-4 flex flex-wrap gap-2">{(item.technicalFeatures || 'Teknik özellik eklenmemiştir').split(',').map((feature) => <span key={feature} className="rounded-full border border-red-200 bg-red-50 px-3 py-2 text-xs font-bold text-red-800"><CheckCircle2 className="mr-1 inline h-3.5 w-3.5" />{feature.trim()}</span>)}</div></section>
+            <section className="grid grid-cols-1 gap-5 md:grid-cols-2"><div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-lg font-black"><PlayCircle className="h-5 w-5 text-red-700" />Video</h2></div>{item.videoUrl ? <iframe title="İlan videosu" src={item.videoUrl} className="h-72 w-full" allowFullScreen /> : <div className="flex h-52 items-center justify-center bg-slate-100 px-6 text-center text-sm font-bold text-slate-400">Bu ilan için video eklenmemiş.</div>}</div><div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-lg font-black"><Globe className="h-5 w-5 text-red-700" />Sanal Tur (360°)</h2></div>{item.virtualTourUrl ? <iframe title="Sanal tur" src={item.virtualTourUrl} className="h-72 w-full" allowFullScreen /> : <div className="flex h-52 items-center justify-center bg-slate-100 px-6 text-center text-sm font-bold text-slate-400">Bu ilan için 360° sanal tur eklenmemiş.</div>}</div></section>
+            <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-xl font-black"><Map className="h-5 w-5 text-red-700" />Harita ve Konum</h2><p className="mt-1 text-sm text-slate-500">{item.city} / {item.district} / {item.neighborhood}</p></div>{item.mapUrl ? <iframe title="İlan konumu" src={item.mapUrl} className="h-80 w-full border-0" loading="lazy" /> : <div className="flex h-52 items-center justify-center bg-slate-100 text-sm font-bold text-slate-400">Konum bilgisi eklenmemiş.</div>}</section>
+          </main>
+          <aside className="space-y-5"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg lg:sticky lg:top-24"><div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-700 text-xl font-black text-white">RC</div><p className="mt-4 text-xs font-black tracking-widest text-red-700">YETKİLİ DANIŞMAN</p><h2 className="mt-1 text-xl font-black text-slate-900">{item.agentName}</h2><p className="mt-2 text-sm text-slate-500">Bu ilan hakkında bilgi ve randevu için danışmanımızla iletişime geçin.</p><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-red-700 py-3 font-black text-white"><Phone className="h-4 w-4" />{item.agentPhone}</a><button className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 py-3 text-sm font-black text-slate-700"><MessageSquare className="h-4 w-4" />Mesaj Gönder</button></section></aside>
+        </div>
+
+        <section className="mt-10"><div className="mb-5 flex items-center justify-between"><h2 className="text-2xl font-black text-slate-900">Benzer İlanlar</h2><Link to={`/ilanlarimiz?propertyType=${encodeURIComponent(item.propertyType)}`} className="text-sm font-black text-red-700">Tümünü Gör →</Link></div>{similar.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">{similar.map((listing) => <ListingCard key={listing.id} item={listing} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-8 text-sm font-bold text-slate-500">Benzer ilan bulunamadı.</div>}</section>
+      </div>
+    </div>
+  );
+}
+
 function ProjectsPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
@@ -2729,6 +2796,11 @@ function SuperAdminDashboard() {
   );
 }
 
+function ListingOptionalDetailFields({ listing, onChange }: { listing: any; onChange: (updates: Record<string, string>) => void }) {
+  const fieldClass = 'w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-700';
+  return <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5"><div className="mb-4"><h3 className="font-black text-slate-900">İlan Detay Sayfası Bilgileri</h3><p className="mt-1 text-xs text-slate-500">Bu alanların tamamı isteğe bağlıdır. Girilen bilgiler ilan detayında gösterilir.</p></div><div className="grid grid-cols-1 gap-4 md:grid-cols-2"><div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">İlan Açıklaması</label><textarea value={listing.description} onChange={(e) => onChange({ description: e.target.value })} rows={5} placeholder="Gayrimenkulün konumu, avantajları ve kullanım özellikleri..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Video Bağlantısı</label><input value={listing.videoUrl} onChange={(e) => onChange({ videoUrl: e.target.value })} placeholder="YouTube/Vimeo embed bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">360° Sanal Tur Bağlantısı</label><input value={listing.virtualTourUrl} onChange={(e) => onChange({ virtualTourUrl: e.target.value })} placeholder="Sanal tur bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Harita Bağlantısı</label><input value={listing.mapUrl} onChange={(e) => onChange({ mapUrl: e.target.value })} placeholder="Google Maps embed bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Aidat</label><input value={listing.monthlyFee} onChange={(e) => onChange({ monthlyFee: e.target.value })} placeholder="Örn. 2.750 ₺" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Tapu Bilgisi</label><input value={listing.deedInfo} onChange={(e) => onChange({ deedInfo: e.target.value })} placeholder="Kat mülkiyetli, müstakil tapu..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Teknik Özellikler</label><input value={listing.technicalFeatures} onChange={(e) => onChange({ technicalFeatures: e.target.value })} placeholder="Virgülle ayırın: otopark, güvenlik, internet..." className={fieldClass} /></div></div></section>;
+}
+
 function AgentDashboard() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState<'overview' | 'listings' | 'portfolio' | 'customers' | 'messages' | 'statistics' | 'profile'>('overview');
@@ -2751,6 +2823,13 @@ function AgentDashboard() {
     neighborhood: '',
     rooms: '',
     area: '',
+    description: '',
+    videoUrl: '',
+    virtualTourUrl: '',
+    mapUrl: '',
+    monthlyFee: '',
+    deedInfo: '',
+    technicalFeatures: '',
     details: {} as Record<string, string>,
     images: [] as string[]
   };
@@ -2758,7 +2837,7 @@ function AgentDashboard() {
   const [myListings, setMyListings] = useState(() =>
     SAMPLE_LISTINGS.map((item) => ({
       ...item,
-      images: [item.image],
+      images: item.images?.length ? item.images : [item.image],
       agentName: 'DEMO Danışman',
       status: 'Taslak'
     }))
@@ -2907,6 +2986,13 @@ function AgentDashboard() {
       neighborhood: item.neighborhood,
       rooms: item.rooms,
       area: String(item.area),
+      description: item.description || '',
+      videoUrl: item.videoUrl || '',
+      virtualTourUrl: item.virtualTourUrl || '',
+      mapUrl: item.mapUrl || '',
+      monthlyFee: item.monthlyFee || '',
+      deedInfo: item.deedInfo || '',
+      technicalFeatures: item.technicalFeatures || '',
       details: item.details || {},
       images: item.images?.length ? item.images : [item.image]
     });
@@ -2932,6 +3018,14 @@ function AgentDashboard() {
         neighborhood: newListing.neighborhood || 'Merkez',
         rooms: newListing.rooms,
         area: numericArea,
+        description: newListing.description,
+        videoUrl: newListing.videoUrl,
+        virtualTourUrl: newListing.virtualTourUrl,
+        mapUrl: newListing.mapUrl,
+        monthlyFee: newListing.monthlyFee,
+        deedInfo: newListing.deedInfo,
+        technicalFeatures: newListing.technicalFeatures,
+        updatedAt: new Date().toLocaleDateString('tr-TR'),
         details: newListing.details,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage]
@@ -2950,6 +3044,14 @@ function AgentDashboard() {
         neighborhood: newListing.neighborhood || 'Merkez',
         rooms: newListing.rooms,
         area: numericArea,
+        description: newListing.description,
+        videoUrl: newListing.videoUrl,
+        virtualTourUrl: newListing.virtualTourUrl,
+        mapUrl: newListing.mapUrl,
+        monthlyFee: newListing.monthlyFee,
+        deedInfo: newListing.deedInfo,
+        technicalFeatures: newListing.technicalFeatures,
+        updatedAt: new Date().toLocaleDateString('tr-TR'),
         details: newListing.details,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage],
@@ -3052,7 +3154,7 @@ function AgentDashboard() {
   return (
     <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
 
-      {showListingForm && (<div className="fixed inset-0 z-[60] overflow-y-auto bg-slate-950/70 p-4"><form onSubmit={handleCreateListing} className="mx-auto max-w-4xl space-y-5 rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-black">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><button type="button" onClick={resetListingForm}><X /></button></div><input required value={newListing.title} onChange={e=>setNewListing({...newListing,title:e.target.value})} placeholder="İlan Başlığı" className="w-full rounded-xl border p-3" /><div className="grid gap-3 md:grid-cols-3"><select value={newListing.category} onChange={e=>{const category=e.target.value;setNewListing({...newListing,category,propertyType:LISTING_PROPERTY_TYPES[category as keyof typeof LISTING_PROPERTY_TYPES][0],details:{}})}} className="rounded-xl border p-3">{LISTING_CATEGORIES.map(x=><option key={x}>{x}</option>)}</select><select value={newListing.propertyType} onChange={e=>setNewListing({...newListing,propertyType:e.target.value,details:{}})} className="rounded-xl border p-3">{(LISTING_PROPERTY_TYPES[newListing.category as keyof typeof LISTING_PROPERTY_TYPES]||[]).map(x=><option key={x}>{x}</option>)}</select><select value={newListing.type} onChange={e=>setNewListing({...newListing,type:e.target.value})} className="rounded-xl border p-3">{LISTING_TRANSACTION_TYPES.map(x=><option key={x}>{x}</option>)}</select></div><div className="rounded-xl bg-red-50 p-4"><h3 className="mb-3 font-black text-red-800">{newListing.propertyType} Özellikleri</h3><div className="grid gap-3 sm:grid-cols-2">{(PROPERTY_DETAIL_FIELDS[newListing.propertyType]||[]).map(field=><div key={field.key}><label className="mb-1 block text-xs font-black">{field.label}</label><input type={field.type || 'text'} value={newListing.details[field.key] || ''} onChange={e=>setNewListing({...newListing,details:{...newListing.details,[field.key]:e.target.value},...(field.key === 'roomCount'?{rooms:e.target.value}:{})})} placeholder={field.placeholder||field.label} className="w-full rounded-xl border p-3" /></div>)}</div></div><div className="grid gap-3 md:grid-cols-2"><input required value={newListing.price} onChange={e=>setNewListing({...newListing,price:e.target.value})} placeholder="Fiyat" className="rounded-xl border p-3" /><input required value={newListing.area} onChange={e=>setNewListing({...newListing,area:e.target.value})} placeholder="Toplam alan m²" className="rounded-xl border p-3" /></div><label><input type="file" accept="image/*" multiple onChange={handleImageChange} /> Görsel seç ({newListing.images.length}/10)</label><div className="flex justify-end gap-3"><button type="button" onClick={resetListingForm}>Vazgeç</button><button type="submit" className="rounded-xl bg-red-700 px-5 py-3 font-black text-white">İlanı Kaydet</button></div></form></div>)}
+      {showListingForm && (<div className="fixed inset-0 z-[60] overflow-y-auto bg-slate-950/70 p-4"><form onSubmit={handleCreateListing} className="mx-auto max-w-4xl space-y-5 rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-black">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><button type="button" onClick={resetListingForm}><X /></button></div><input required value={newListing.title} onChange={e=>setNewListing({...newListing,title:e.target.value})} placeholder="İlan Başlığı" className="w-full rounded-xl border p-3" /><div className="grid gap-3 md:grid-cols-3"><select value={newListing.category} onChange={e=>{const category=e.target.value;setNewListing({...newListing,category,propertyType:LISTING_PROPERTY_TYPES[category as keyof typeof LISTING_PROPERTY_TYPES][0],details:{}})}} className="rounded-xl border p-3">{LISTING_CATEGORIES.map(x=><option key={x}>{x}</option>)}</select><select value={newListing.propertyType} onChange={e=>setNewListing({...newListing,propertyType:e.target.value,details:{}})} className="rounded-xl border p-3">{(LISTING_PROPERTY_TYPES[newListing.category as keyof typeof LISTING_PROPERTY_TYPES]||[]).map(x=><option key={x}>{x}</option>)}</select><select value={newListing.type} onChange={e=>setNewListing({...newListing,type:e.target.value})} className="rounded-xl border p-3">{LISTING_TRANSACTION_TYPES.map(x=><option key={x}>{x}</option>)}</select></div><div className="rounded-xl bg-red-50 p-4"><h3 className="mb-3 font-black text-red-800">{newListing.propertyType} Özellikleri</h3><div className="grid gap-3 sm:grid-cols-2">{(PROPERTY_DETAIL_FIELDS[newListing.propertyType]||[]).map(field=><div key={field.key}><label className="mb-1 block text-xs font-black">{field.label}</label><input type={field.type || 'text'} value={newListing.details[field.key] || ''} onChange={e=>setNewListing({...newListing,details:{...newListing.details,[field.key]:e.target.value},...(field.key === 'roomCount'?{rooms:e.target.value}:{})})} placeholder={field.placeholder||field.label} className="w-full rounded-xl border p-3" /></div>)}</div></div><div className="grid gap-3 md:grid-cols-2"><input required value={newListing.price} onChange={e=>setNewListing({...newListing,price:e.target.value})} placeholder="Fiyat" className="rounded-xl border p-3" /><input required value={newListing.area} onChange={e=>setNewListing({...newListing,area:e.target.value})} placeholder="Toplam alan m²" className="rounded-xl border p-3" /></div><ListingOptionalDetailFields listing={newListing} onChange={(updates) => setNewListing({ ...newListing, ...updates })} /><label><input type="file" accept="image/*" multiple onChange={handleImageChange} /> Görsel seç ({newListing.images.length}/10)</label><div className="flex justify-end gap-3"><button type="button" onClick={resetListingForm}>Vazgeç</button><button type="submit" className="rounded-xl bg-red-700 px-5 py-3 font-black text-white">İlanı Kaydet</button></div></form></div>)}
     </div>
   );
 }
@@ -3293,6 +3395,7 @@ export default function RealtyCenterApp() {
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
             <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPageV2 />} />
+            <Route path="/ilan/:id" element={<ListingDetailPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
             <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
