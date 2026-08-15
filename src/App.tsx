@@ -1,5 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import { Circle, CircleMarker, MapContainer, Popup, Rectangle, TileLayer, useMapEvents } from 'react-leaflet';
 import { 
   BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
 } from 'react-router-dom';
@@ -12,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -792,11 +795,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
               </div>
 
-              <div className="pt-1">
+              <div className="flex flex-col gap-2 pt-1 sm:flex-row">
                 <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-12 py-3.5 rounded-md text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
+                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-md border border-red-200 bg-red-50 px-6 py-3.5 text-sm font-black text-red-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white sm:w-auto">🗺️ Harita ile Ara</Link>
               </div>
 
             </div>
@@ -1620,6 +1624,111 @@ function ListingCategoriesPage() {
       </div>
     </div>
   );
+}
+
+type MapListing = ListingItem & { lat: number; lng: number };
+const MAP_LISTING_LOCATIONS = [
+  { city: 'Ankara', district: 'Çankaya', neighborhood: 'Yaşamkent', lat: 39.822, lng: 32.708 },
+  { city: 'Ankara', district: 'Çankaya', neighborhood: 'İncek', lat: 39.754, lng: 32.732 },
+  { city: 'Ankara', district: 'Çankaya', neighborhood: 'Söğütözü', lat: 39.911, lng: 32.809 },
+  { city: 'İstanbul', district: 'Kadıköy', neighborhood: 'Fenerbahçe', lat: 40.973, lng: 29.061 },
+  { city: 'İstanbul', district: 'Beşiktaş', neighborhood: 'Levent', lat: 41.081, lng: 29.013 },
+  { city: 'İstanbul', district: 'Ataşehir', neighborhood: 'Küçükbakkalköy', lat: 40.994, lng: 29.128 },
+  { city: 'Antalya', district: 'Konyaaltı', neighborhood: 'Liman', lat: 36.870, lng: 30.636 },
+  { city: 'Antalya', district: 'Muratpaşa', neighborhood: 'Fener', lat: 36.852, lng: 30.764 },
+  { city: 'İzmir', district: 'Karşıyaka', neighborhood: 'Bostanlı', lat: 38.458, lng: 27.096 },
+  { city: 'Bursa', district: 'Nilüfer', neighborhood: 'Özlüce', lat: 40.213, lng: 28.959 },
+  { city: 'Muğla', district: 'Bodrum', neighborhood: 'Yalıkavak', lat: 37.105, lng: 27.290 }
+];
+const MAP_LISTINGS: MapListing[] = SAMPLE_LISTINGS.map((listing, index) => ({ ...listing, ...MAP_LISTING_LOCATIONS[index % MAP_LISTING_LOCATIONS.length] }));
+
+function MapViewportListener({ onBoundsChange, onMapReady, drawing, onDrawPoint }: { onBoundsChange: (bounds: L.LatLngBounds, zoom: number) => void; onMapReady: (map: L.Map) => void; drawing: boolean; onDrawPoint: (point: L.LatLng) => void }) {
+  const map = useMapEvents({
+    moveend: () => onBoundsChange(map.getBounds(), map.getZoom()),
+    zoomend: () => onBoundsChange(map.getBounds(), map.getZoom()),
+    click: (event) => { if (drawing) onDrawPoint(event.latlng); }
+  });
+  useEffect(() => { onBoundsChange(map.getBounds(), map.getZoom()); onMapReady(map); }, [map, onBoundsChange, onMapReady]);
+  return null;
+}
+
+function MapSearchPage() {
+  const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
+  const [viewport, setViewport] = useState<{ bounds: L.LatLngBounds | null; zoom: number }>({ bounds: null, zoom: 6 });
+  const [transactionType, setTransactionType] = useState('');
+  const [propertyType, setPropertyType] = useState('');
+  const [city, setCity] = useState('');
+  const [drawing, setDrawing] = useState(false);
+  const [drawStart, setDrawStart] = useState<L.LatLng | null>(null);
+  const [drawBounds, setDrawBounds] = useState<L.LatLngBounds | null>(null);
+  const [userPosition, setUserPosition] = useState<L.LatLng | null>(null);
+  const [nearbyOnly, setNearbyOnly] = useState(false);
+  const [locationMessage, setLocationMessage] = useState('');
+  const handleViewportChange = useCallback((bounds: L.LatLngBounds, zoom: number) => setViewport({ bounds, zoom }), []);
+
+  const isInsideDrawnArea = (item: MapListing) => !drawBounds || drawBounds.contains([item.lat, item.lng]);
+  const isNearby = (item: MapListing) => {
+    if (!nearbyOnly || !userPosition) return true;
+    const earthRadius = 6371;
+    const dLat = ((item.lat - userPosition.lat) * Math.PI) / 180;
+    const dLng = ((item.lng - userPosition.lng) * Math.PI) / 180;
+    const value = Math.sin(dLat / 2) ** 2 + Math.cos((userPosition.lat * Math.PI) / 180) * Math.cos((item.lat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+    return earthRadius * 2 * Math.atan2(Math.sqrt(value), Math.sqrt(1 - value)) <= 5;
+  };
+  const visibleListings = MAP_LISTINGS.filter((item) => {
+    if (transactionType && item.type !== transactionType) return false;
+    if (propertyType && item.propertyType !== propertyType) return false;
+    if (city && item.city !== city) return false;
+    if (viewport.bounds && !viewport.bounds.contains([item.lat, item.lng])) return false;
+    return isInsideDrawnArea(item) && isNearby(item);
+  });
+  const mapListings = MAP_LISTINGS.filter((item) => {
+    if (transactionType && item.type !== transactionType) return false;
+    if (propertyType && item.propertyType !== propertyType) return false;
+    if (city && item.city !== city) return false;
+    return isInsideDrawnArea(item) && isNearby(item);
+  });
+  const clusterMap = new globalThis.Map<string, MapListing[]>();
+  if (viewport.zoom < 10) mapListings.forEach((item) => { const key = item.city; clusterMap.set(key, [...(clusterMap.get(key) || []), item]); });
+
+  const beginDrawing = () => {
+    setDrawing(true);
+    setDrawStart(null);
+    setDrawBounds(null);
+    setLocationMessage('Haritada alanın ilk ve karşı köşesine tıklayın.');
+  };
+  const handleDrawPoint = (point: L.LatLng) => {
+    if (!drawStart) { setDrawStart(point); return; }
+    setDrawBounds(L.latLngBounds(drawStart, point));
+    setDrawStart(null);
+    setDrawing(false);
+    setLocationMessage('Çizdiğiniz alan içindeki ilanlar gösteriliyor.');
+  };
+  const requestLocation = () => {
+    if (!navigator.geolocation) { setLocationMessage('Tarayıcınız konum özelliğini desteklemiyor.'); return; }
+    setLocationMessage('Yakındaki ilanlar için konum izni isteniyor…');
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const point = L.latLng(position.coords.latitude, position.coords.longitude);
+        setUserPosition(point); setNearbyOnly(true); setLocationMessage('5 km çevrenizdeki ilanlar gösteriliyor.'); mapInstance?.flyTo(point, 13);
+      },
+      () => setLocationMessage('Konum izni verilmedi. Yakındaki ilanları görmek için tarayıcı iznini açabilirsiniz.'),
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  };
+  const resetMap = () => {
+    setTransactionType(''); setPropertyType(''); setCity(''); setDrawBounds(null); setDrawStart(null); setDrawing(false); setNearbyOnly(false); setUserPosition(null); setLocationMessage(''); mapInstance?.setView([39.0, 35.0], 6);
+  };
+
+  return <div className="min-h-screen bg-slate-100 py-6 lg:py-8">
+    <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
+      <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"><div><span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-3 py-1 text-[10px] font-black tracking-widest text-red-700"><MapPinned className="h-3.5 w-3.5" /> HARİTA İLE ARA</span><h1 className="mt-3 text-3xl font-black text-slate-900">Harita üzerinden <span className="text-red-700">ilan keşfedin</span></h1><p className="mt-1 text-sm text-slate-500">Haritayı hareket ettirin, yakınlaştırın veya alan çizerek sonuçları anında güncelleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex w-fit items-center rounded-xl bg-white px-4 py-2.5 text-xs font-black text-slate-700 shadow-sm ring-1 ring-slate-200 hover:text-red-700">Liste görünümüne dön <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
+      <div className="grid gap-5 lg:grid-cols-[340px_minmax(0,1fr)]">
+        <aside className="order-2 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl lg:order-1 lg:max-h-[760px] lg:overflow-y-auto"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">Harita Filtreleri</h2><button type="button" onClick={resetMap} className="text-xs font-black text-red-700"><RotateCcw className="mr-1 inline h-3.5 w-3.5" />Sıfırla</button></div><div className="mt-5 space-y-3"><select value={transactionType} onChange={(event) => setTransactionType(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">Tüm işlem tipleri</option>{LISTING_TRANSACTION_TYPES.map((item) => <option key={item}>{item}</option>)}</select><select value={propertyType} onChange={(event) => setPropertyType(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">Tüm ilan türleri</option>{ALL_LISTING_PROPERTY_TYPES.map((item) => <option key={item}>{item}</option>)}</select><select value={city} onChange={(event) => setCity(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">Tüm şehirler</option>{[...new Set(MAP_LISTINGS.map((item) => item.city))].map((item) => <option key={item}>{item}</option>)}</select></div><div className="mt-5 grid gap-2"><button type="button" onClick={requestLocation} className="flex items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/25 hover:bg-red-800"><LocateFixed className="mr-2 h-4 w-4" />Yakındaki İlanları Göster</button><button type="button" onClick={beginDrawing} className={`flex items-center justify-center rounded-xl border px-4 py-3 text-xs font-black transition ${drawing ? 'border-red-700 bg-red-50 text-red-700' : 'border-slate-200 bg-white text-slate-700 hover:border-red-200 hover:text-red-700'}`}><PencilRuler className="mr-2 h-4 w-4" />{drawing ? 'Haritada alan seçin' : 'Alan Çizerek Ara'}</button></div>{locationMessage && <p className="mt-3 rounded-xl bg-red-50 px-3 py-2.5 text-[11px] font-semibold leading-relaxed text-red-700">{locationMessage}</p>}<div className="mt-6 border-t border-slate-100 pt-5"><div className="flex items-end justify-between"><div><p className="text-[10px] font-black tracking-widest text-slate-400">GÖRÜNÜR ALAN</p><h3 className="mt-1 text-2xl font-black text-slate-900">{visibleListings.length} <span className="text-sm text-slate-500">ilan</span></h3></div><span className="rounded-full bg-red-100 px-2.5 py-1 text-[10px] font-black text-red-700">Zoom {viewport.zoom}</span></div><div className="mt-4 space-y-3">{visibleListings.length ? visibleListings.map((item) => <Link key={item.id} to={`/ilan/${item.id}`} className="flex gap-3 rounded-xl border border-slate-100 p-2 transition hover:border-red-200 hover:bg-red-50/30"><img src={item.image} alt="" className="h-16 w-20 rounded-lg object-cover" /><div className="min-w-0"><p className="truncate text-xs font-black text-slate-900">{item.title}</p><p className="mt-1 text-[10px] font-bold text-slate-500">{item.district}, {item.city}</p><p className="mt-1 text-sm font-black text-red-700">{item.price.toLocaleString('tr-TR')} ₺</p></div></Link>) : <p className="rounded-xl bg-slate-50 p-4 text-center text-xs font-bold text-slate-500">Bu alanda uygun ilan bulunamadı.</p>}</div></div></aside>
+        <section className="order-1 relative h-[580px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 shadow-xl lg:order-2 lg:h-[760px]"><div className="pointer-events-none absolute left-4 top-4 z-[500] rounded-xl bg-white/95 px-3 py-2 text-xs font-black text-slate-700 shadow-lg backdrop-blur">{viewport.zoom < 10 ? 'Kümelenmiş ilanlar gösteriliyor' : 'Tekil ilanlar gösteriliyor'}</div><MapContainer center={[39.0, 35.0]} zoom={6} scrollWheelZoom className="h-full w-full"><TileLayer attribution='&copy; OpenStreetMap katkıda bulunanlar' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" /><MapViewportListener onBoundsChange={handleViewportChange} onMapReady={setMapInstance} drawing={drawing} onDrawPoint={handleDrawPoint} />{viewport.zoom < 10 ? [...clusterMap.entries()].map(([key, items]) => { const lat = items.reduce((sum, item) => sum + item.lat, 0) / items.length; const lng = items.reduce((sum, item) => sum + item.lng, 0) / items.length; return <CircleMarker key={key} center={[lat, lng]} radius={Math.min(26, 15 + items.length * 2)} pathOptions={{ color: '#b91c1c', fillColor: '#dc2626', fillOpacity: 0.9, weight: 3 }} eventHandlers={{ click: () => mapInstance?.flyTo([lat, lng], 11) }}><Popup><strong>{key}</strong><br />{items.length} ilan</Popup></CircleMarker>; }) : mapListings.map((item) => <CircleMarker key={item.id} center={[item.lat, item.lng]} radius={10} pathOptions={{ color: '#fff', fillColor: '#b91c1c', fillOpacity: 1, weight: 3 }}><Popup><div className="w-52"><img src={item.image} alt="" className="h-24 w-full rounded-lg object-cover" /><p className="mt-2 text-xs font-black">{item.title}</p><p className="mt-1 text-sm font-black text-red-700">{item.price.toLocaleString('tr-TR')} ₺</p><a className="mt-2 inline-block text-xs font-black text-red-700" href={`/ilan/${item.id}`}>İlanı incele →</a></div></Popup></CircleMarker>)}{drawBounds && <Rectangle bounds={drawBounds} pathOptions={{ color: '#b91c1c', weight: 2, fillOpacity: 0.08 }} />}{userPosition && <><CircleMarker center={userPosition} radius={9} pathOptions={{ color: '#fff', fillColor: '#2563eb', fillOpacity: 1, weight: 3 }}><Popup>Konumunuz</Popup></CircleMarker><Circle center={userPosition} radius={5000} pathOptions={{ color: '#2563eb', fillOpacity: 0.06 }} /></>}</MapContainer></section>
+      </div>
+    </div>
+  </div>;
 }
 
 function ListingsPage() {
@@ -3496,6 +3605,7 @@ export default function RealtyCenterApp() {
             <Route path="/danismanlarimiz" element={<AgentsPage />} />
             <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPageV2 />} />
+            <Route path="/harita-ile-ara" element={<MapSearchPage />} />
             <Route path="/ilan/:id" element={<ListingDetailPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
