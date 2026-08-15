@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned, Pause, Play
 } from 'lucide-react';
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
@@ -687,6 +687,26 @@ function FeaturedListingsShowcase() {
   );
 }
 
+function LiveListingStream({ listings }: { listings: ListingItem[] }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const visibleCount = Math.min(3, listings.length);
+  const move = (direction: number) => setActiveIndex((current) => (current + direction + listings.length) % listings.length);
+  const visibleListings = Array.from({ length: visibleCount }, (_, offset) => listings[(activeIndex + offset) % listings.length]);
+
+  useEffect(() => {
+    if (isPaused || listings.length < 2) return;
+    const timer = window.setInterval(() => setActiveIndex((current) => (current + 1) % listings.length), 5500);
+    return () => window.clearInterval(timer);
+  }, [isPaused, listings.length]);
+
+  if (!listings.length) return null;
+  return <div className="relative">
+    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{activeIndex + 1}</span> / {listings.length} ilan · Kaçırdığınız ilanlara geri dönebilirsiniz.</p><div className="flex items-center gap-2"><button type="button" onClick={() => move(-1)} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="Önceki ilan"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setIsPaused((current) => !current)} className="inline-flex h-9 items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-3 text-[11px] font-black text-red-700 transition hover:bg-red-700 hover:text-white" aria-label={isPaused ? 'Akışı devam ettir' : 'Akışı duraklat'}>{isPaused ? <Play className="h-3.5 w-3.5" /> : <Pause className="h-3.5 w-3.5" />} {isPaused ? 'Devam Et' : 'Duraklat'}</button><button type="button" onClick={() => move(1)} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white" aria-label="Sonraki ilan"><ChevronRight className="h-5 w-5" /></button></div></div>
+    <div className="grid grid-cols-1 gap-5 transition-all duration-500 sm:grid-cols-2 xl:grid-cols-3">{visibleListings.map((item, offset) => <div key={`${item.id}-${activeIndex}-${offset}`} className="animate-in fade-in slide-in-from-right-2 duration-500"><ListingCard item={item} /></div>)}</div>
+  </div>;
+}
+
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
@@ -696,7 +716,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [showAllWhy, setShowAllWhy] = useState(false);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  const marqueeListings = [...sortedListings, ...sortedListings];
 
   return (
     <>
@@ -853,9 +872,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
           <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
-        <div className="relative overflow-hidden py-4 before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-12 before:bg-gradient-to-r before:from-white before:to-transparent after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-20 after:bg-gradient-to-l after:from-white after:to-transparent">
-          <div className="animate-marquee flex space-x-6">{marqueeListings.map((item, idx) => <div key={item.id + '-' + idx} className="w-80 flex-shrink-0 text-slate-900"><ListingCard item={item} /></div>)}</div>
-        </div>
+        <LiveListingStream listings={sortedListings} />
       </section>
 
       <section className="bg-slate-50 py-16 border-b border-slate-200">
