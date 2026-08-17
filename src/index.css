@@ -355,3 +355,8 @@
 .listing-cinematic-card:hover{transform:translate3d(0,-7px,0) scale(1.012);}
 .listing-detail-enter{animation:listingDetailEnter .5s cubic-bezier(.2,.8,.2,1) both;}
 @keyframes listingDetailEnter{from{opacity:0;transform:translate3d(0,18px,0) scale(.988)}to{opacity:1;transform:none}}
+
+
+/* Hero genel katman kuralı rozeti akışa sokmasın. */
+.ai-assistant-hero > .ai-world-first-badge { position: absolute !important; right: 1.75rem !important; top: 1.75rem !important; }
+@media (max-width: 640px) { .ai-assistant-hero > .ai-world-first-badge { right: 1rem !important; top: 1rem !important; } }
