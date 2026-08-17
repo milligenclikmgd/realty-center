@@ -752,7 +752,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
 
   const applyPosition = () => {
     const track = trackRef.current;
-    if (track) track.style.transform = \`translate3d(\${positionRef.current}px, 0, 0)\`;
+    if (track) track.style.transform = `translate3d(${positionRef.current}px, 0, 0)`;
   };
   const setStreamDirection = (next: 'left' | 'right') => {
     directionRef.current = next;
