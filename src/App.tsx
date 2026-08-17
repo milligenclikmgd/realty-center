@@ -849,7 +849,8 @@ function FeaturedListingsShowcase() {
                 aria-label={`${item.title} ilanını incele`}
               >
                 <img src={item.image} alt={item.title} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
-                <div className={`absolute inset-0 transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent' : 'bg-slate-950/25'}`} />
+                {isActive && <div className="featured-card-aurora pointer-events-none absolute inset-0 z-[1]" />}
+                <div className={`absolute inset-0 z-[2] transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent' : 'bg-slate-950/25'}`} />
                 <div className="absolute left-5 top-5 flex items-center gap-2">
                   <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
                   <span className="rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 backdrop-blur">UYGUN FİYAT</span>
