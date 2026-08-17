@@ -956,40 +956,39 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="w-full max-w-4xl lg:-ml-12">
-            <div className="mb-2 flex gap-2">
+          <div className="hero-search-entrance w-full max-w-2xl -ml-4 sm:-ml-10 lg:-ml-20">
+            <div className="grid grid-cols-3 gap-2 mb-2">
               <button
                 onClick={() => setActiveTab('search')}
-                className={`relative overflow-hidden group h-14 flex-1 rounded-t-xl font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
+                className={`relative overflow-hidden group h-24 rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
                   activeTab === 'search' 
                     ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
                 }`}
               >
-                <Search className="h-4 w-4 relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">İlan Ara</span>
+                <Megaphone className="w-6 h-6 relative z-10" />
+                <span className="text-sm font-extrabold tracking-wide relative z-10">İlanlar</span>
               </button>
 
               <Link
-                to="/harita-ile-ara"
-                className="relative overflow-hidden group h-14 flex-1 rounded-t-xl border border-white/60 bg-white/95 text-red-700 hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                to="/franchise-basvuru"
+                className="relative overflow-hidden group h-24 rounded-t-xl bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
-                <MapPinned className="h-4 w-4 text-red-700 relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">Harita ile Ara</span>
+                <Building2 className="w-6 h-6 text-red-700 relative z-10" />
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
               </Link>
 
               <Link
-                to="/ai-karar-asistani"
-                className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                to="/danisman-basvuru"
+                className="relative overflow-hidden group h-24 rounded-t-lg bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
-                <span className="text-base relative z-10">✨</span>
-                <span className="text-sm font-extrabold tracking-wide relative z-10">YZ ile Ara</span>
+                <Briefcase className="w-6 h-6 text-red-700 relative z-10" />
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
               </Link>
             </div>
 
-            <div className="rounded-b-2xl rounded-tr-2xl border border-white/60 bg-white/95 p-4 text-slate-900 shadow-2xl backdrop-blur-xl sm:p-5">
-              <div className="mb-4 flex flex-wrap items-end justify-between gap-2"><div><p className="text-[10px] font-black tracking-[.18em] text-red-700">HIZLI İLAN ARAMA</p><p className="mt-1 text-sm font-bold text-slate-800">Aradığın gayrimenkulü birkaç adımda bul.</p></div><button type="button" className="rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-[11px] font-black text-slate-700 transition hover:border-red-300 hover:text-red-700">⚙ Gelişmiş filtreler</button></div>
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="bg-white/84 text-slate-900 p-6 rounded-b-2xl rounded-tr-2xl shadow-2xl shadow-black/30 space-y-4 border border-white/65 backdrop-blur-xl">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
                   <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Satılık / Kiralık</label>
                   <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
@@ -1037,12 +1036,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-col gap-2 border-t border-slate-100 pt-4 sm:flex-row">
+              <div className="flex flex-col gap-2 pt-1 sm:flex-row">
                 <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-12 py-3.5 rounded-md text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40 tracking-widest transform hover:scale-105">
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
-                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-black text-slate-800 shadow-sm transition hover:border-red-300 hover:text-red-700 sm:w-auto">🗺️ Harita ile Ara</Link>
+                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-md border border-red-700 bg-red-700 px-6 py-3.5 text-sm font-black text-white shadow-sm transition hover:brightness-110 sm:w-auto">🗺️ Harita ile Ara</Link>
               </div>
 
             </div>
