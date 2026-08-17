@@ -208,3 +208,38 @@
   fill: #820014 !important;
   fill-opacity: .98 !important;
 }
+
+
+/* Vitrin kartında sakin, sürekli hareket eden premium ışık yansıması */
+.featured-card-aurora {
+  overflow: hidden;
+  opacity: .58;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(ellipse 60% 34% at 20% 22%, rgba(255, 184, 208, .56), transparent 66%),
+    radial-gradient(ellipse 52% 38% at 80% 76%, rgba(150, 108, 255, .52), transparent 67%),
+    linear-gradient(145deg, transparent 28%, rgba(255, 129, 175, .34) 44%, rgba(141, 110, 255, .28) 59%, transparent 75%);
+  animation: featuredAuroraDrift 11s ease-in-out infinite alternate;
+}
+.featured-card-aurora::after {
+  content: '';
+  position: absolute;
+  inset: -45%;
+  background: linear-gradient(112deg, transparent 38%, rgba(255, 244, 244, .52) 48%, rgba(255, 153, 192, .18) 53%, transparent 63%);
+  transform: translateX(-46%) rotate(-8deg);
+  animation: featuredAuroraSweep 9s ease-in-out infinite;
+}
+@keyframes featuredAuroraDrift {
+  0% { transform: scale(1.04) translate3d(-3%, -2%, 0) rotate(-2deg); filter: hue-rotate(0deg); }
+  50% { transform: scale(1.12) translate3d(3%, 2%, 0) rotate(2deg); filter: hue-rotate(16deg); }
+  100% { transform: scale(1.06) translate3d(-1%, 4%, 0) rotate(-1deg); filter: hue-rotate(-10deg); }
+}
+@keyframes featuredAuroraSweep {
+  0%, 28% { transform: translateX(-52%) rotate(-8deg); opacity: 0; }
+  42% { opacity: .8; }
+  70% { transform: translateX(52%) rotate(-8deg); opacity: .6; }
+  82%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .featured-card-aurora, .featured-card-aurora::after { animation: none; }
+}
