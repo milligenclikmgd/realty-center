@@ -138,29 +138,22 @@
   .gold-showcase-glow, .gold-showcase-spark { animation: none; }
 }
 
-/* Realty Center kurumsal kırmızısı: arama butonundan alınan #A82525 tonu */
-.bg-red-50 { background-color: #fff7f8 !important; }
-.bg-red-100 { background-color: #fde9ec !important; }
-.bg-red-200 { background-color: #f8c8d0 !important; }
-.bg-red-300 { background-color: #ed9aa8 !important; }
-.bg-red-400 { background-color: #dd667a !important; }
-.bg-red-500 { background-color: #c63952 !important; }
-.bg-red-600 { background-color: #b51f3d !important; }
-.bg-red-700 { background-color: #a30b1d !important; }
-.bg-red-800 { background-color: #850916 !important; }
-.bg-red-900 { background-color: #640610 !important; }
-.text-red-700 { color: #a30b1d !important; }
-.text-red-800 { color: #850916 !important; }
-.text-red-500 { color: #c63952 !important; }
-.border-red-200 { border-color: #f8c8d0 !important; }
-.border-red-300 { border-color: #ed9aa8 !important; }
-.border-red-400 { border-color: #dd667a !important; }
-.border-red-700 { border-color: #a30b1d !important; }
-.hover\\:bg-red-700:hover { background-color: #a30b1d !important; }
-.hover\\:bg-red-800:hover { background-color: #850916 !important; }
-.hover\\:text-red-700:hover { color: #a30b1d !important; }
-.hover\\:border-red-700:hover { border-color: #a30b1d !important; }
-.shadow-red-700\\/20, .shadow-red-700\\/25, .shadow-red-700\\/30, .shadow-red-700\\/40, .shadow-red-700\\/50 { --tw-shadow-color: rgba(163, 11, 29, .35) !important; }
+/* Realty Center kurumsal kırmızısı: KW referans rengi #CD011E */
+.bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900 { background-color: #CD011E !important; }
+.text-red-500, .text-red-600, .text-red-700, .text-red-800, .text-red-900 { color: #CD011E !important; }
+.border-red-200, .border-red-300, .border-red-400, .border-red-500, .border-red-600, .border-red-700, .border-red-800, .border-red-900 { border-color: #CD011E !important; }
+.ring-red-700 { --tw-ring-color: #CD011E !important; }
+.hover\\:bg-red-700:hover, .hover\\:bg-red-800:hover, .hover\\:bg-red-900:hover { background-color: #CD011E !important; }
+.hover\\:text-red-700:hover, .hover\\:text-red-800:hover { color: #CD011E !important; }
+.hover\\:border-red-700:hover, .hover\\:border-red-800:hover { border-color: #CD011E !important; }
+.shadow-red-700\\/10 { --tw-shadow-color: rgba(205, 1, 30, .10) !important; }
+.shadow-red-700\\/20 { --tw-shadow-color: rgba(205, 1, 30, .20) !important; }
+.shadow-red-700\\/25 { --tw-shadow-color: rgba(205, 1, 30, .25) !important; }
+.shadow-red-700\\/30 { --tw-shadow-color: rgba(205, 1, 30, .30) !important; }
+.shadow-red-700\\/40 { --tw-shadow-color: rgba(205, 1, 30, .40) !important; }
+.shadow-red-700\\/50, .shadow-red-700 { --tw-shadow-color: rgba(205, 1, 30, .35) !important; }
+/* Koyu zeminlerde kontrast için kullanılan açık kırmızı yazılar beyaz kalır. */
+.text-red-50, .text-red-100, .text-red-200, .text-red-300, .hover\\:text-red-100:hover { color: #fff !important; }
 
 /* Yapay Zeka Gayrimenkul Asistanı: hareketli mavi teknoloji dokusu */
 .ai-assistant-hero {
