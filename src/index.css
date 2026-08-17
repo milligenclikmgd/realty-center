@@ -360,3 +360,28 @@
 /* Hero genel katman kuralı rozeti akışa sokmasın. */
 .ai-assistant-hero > .ai-world-first-badge { position: absolute !important; right: 1.75rem !important; top: 1.75rem !important; }
 @media (max-width: 640px) { .ai-assistant-hero > .ai-world-first-badge { right: 1rem !important; top: 1rem !important; } }
+
+
+/* AI hero: teknolojik grid bütün mavi alanı kaplar. */
+.ai-assistant-hero::before {
+  inset: 0 !important;
+  opacity: .42;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-image:
+    linear-gradient(rgba(103, 232, 249, .18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(103, 232, 249, .18) 1px, transparent 1px),
+    radial-gradient(circle, rgba(165, 243, 252, .48) 1.2px, transparent 1.9px);
+  background-size: 34px 34px, 34px 34px, 92px 92px;
+}
+.ai-world-first-badge {
+  animation: aiWorldFirstReveal .85s cubic-bezier(.2,.82,.2,1) .15s both;
+  will-change: transform, filter, opacity;
+}
+@keyframes aiWorldFirstReveal {
+  from { opacity: 0; filter: blur(14px); transform: translate3d(18px,-12px,0) scale(.72) rotate(-9deg); }
+  to { opacity: 1; filter: blur(0); transform: translate3d(0,0,0) scale(1) rotate(3deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ai-world-first-badge { animation: none; }
+}
