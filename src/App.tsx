@@ -381,7 +381,8 @@ function TurkeyListingMap() {
   const navigate = useNavigate();
   const mapRef = useRef<HTMLDivElement>(null);
   const activeGroupRef = useRef<SVGGElement | null>(null);
-  const leaveTimerRef = useRef<number | null>(null);
+  const candidateGroupRef = useRef<SVGGElement | null>(null);
+  const candidateHitsRef = useRef(0);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
@@ -412,7 +413,8 @@ function TurkeyListingMap() {
   const clearActiveCity = () => {
     paintCity(activeGroupRef.current, '#fee2e2');
     activeGroupRef.current = null;
-    leaveTimerRef.current = null;
+    candidateGroupRef.current = null;
+    candidateHitsRef.current = 0;
     if (tooltipRef.current) tooltipRef.current.style.display = 'none';
   };
 
@@ -422,22 +424,24 @@ function TurkeyListingMap() {
       ? target.closest('g[data-realty-city]') as SVGGElement | null
       : null;
     const tooltip = tooltipRef.current;
-    if (!tooltip || !mapRef.current) return;
+    if (!tooltip || !mapRef.current || !group) return;
 
-    if (!group) {
-      if (activeGroupRef.current && leaveTimerRef.current === null) {
-        leaveTimerRef.current = window.setTimeout(clearActiveCity, 300);
-      }
-      return;
+    if (group === activeGroupRef.current) {
+      candidateGroupRef.current = null;
+      candidateHitsRef.current = 0;
+    } else if (group === candidateGroupRef.current) {
+      candidateHitsRef.current += 1;
+    } else {
+      candidateGroupRef.current = group;
+      candidateHitsRef.current = 1;
     }
 
-    if (leaveTimerRef.current !== null) {
-      window.clearTimeout(leaveTimerRef.current);
-      leaveTimerRef.current = null;
-    }
-    if (group !== activeGroupRef.current) {
+    // Sınır üzerindeki hedef değişimlerini yok sayar; yeni il üç ardışık okumada kesinleşir.
+    if (!activeGroupRef.current || candidateHitsRef.current >= 3) {
       paintCity(activeGroupRef.current, '#fee2e2');
       activeGroupRef.current = group;
+      candidateGroupRef.current = null;
+      candidateHitsRef.current = 0;
       paintCity(group, '#ef2222');
       tooltip.textContent = group.getAttribute('data-realty-city') || '';
       tooltip.style.display = 'block';
@@ -448,10 +452,7 @@ function TurkeyListingMap() {
     tooltip.style.top = (event.clientY - box.top - 14) + 'px';
   };
 
-  const hideTooltip = () => {
-    if (leaveTimerRef.current !== null) window.clearTimeout(leaveTimerRef.current);
-    clearActiveCity();
-  };
+  const hideTooltip = () => clearActiveCity();
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const city = (event.target as Element).closest('g[data-realty-city]')?.getAttribute('data-realty-city');
