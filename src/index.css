@@ -195,3 +195,13 @@
 :is(.bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900) :is(h1, h2, h3, h4) {
   color: #fff !important;
 }
+
+/* Türkiye haritası: renk değişimi doğrudan SVG hover ile yapılır; fare hareketinde yanıp sönmez. */
+.turkey-listing-map g[data-realty-city] path {
+  fill: #fee2e2 !important;
+  stroke: #ef4444 !important;
+  transition: fill 180ms ease !important;
+}
+.turkey-listing-map g[data-realty-city]:hover path {
+  fill: #ef2222 !important;
+}
