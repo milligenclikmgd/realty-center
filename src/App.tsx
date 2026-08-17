@@ -405,6 +405,13 @@ function TurkeyListingMap() {
       .catch(() => setMapError(true));
   }, []);
 
+  const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target;
+    const group = target instanceof Element ? target.closest('g[data-realty-city]') : null;
+    const city = group?.getAttribute('data-realty-city');
+    if (city) navigate('/ilanlarimiz?city=' + encodeURIComponent(city));
+  };
+
   return (
     <section className="bg-white py-12 text-slate-900 overflow-hidden border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
