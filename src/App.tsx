@@ -396,7 +396,7 @@ function TurkeyListingMap() {
         const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
         parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
           group.setAttribute('data-realty-city', group.dataset.cityName || '');
-          group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:#fee2e2;stroke:#ef4444;stroke-width:0.75;transition:fill 180ms ease;'));
+          group.querySelectorAll('path').forEach((path) => path.setAttribute('style', 'fill:#fee2e2;stroke:#ef4444;stroke-width:0.75;'));
         });
         setSvgMarkup(parsed.documentElement.outerHTML);
       })
@@ -426,7 +426,7 @@ function TurkeyListingMap() {
 
     if (!group) {
       if (activeGroupRef.current && leaveTimerRef.current === null) {
-        leaveTimerRef.current = window.setTimeout(clearActiveCity, 90);
+        leaveTimerRef.current = window.setTimeout(clearActiveCity, 300);
       }
       return;
     }
