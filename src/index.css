@@ -161,3 +161,37 @@
 .hover\\:text-red-700:hover { color: #a30b1d !important; }
 .hover\\:border-red-700:hover { border-color: #a30b1d !important; }
 .shadow-red-700\\/20, .shadow-red-700\\/25, .shadow-red-700\\/30, .shadow-red-700\\/40, .shadow-red-700\\/50 { --tw-shadow-color: rgba(163, 11, 29, .35) !important; }
+
+/* Yapay Zeka Gayrimenkul Asistanı: hafif devre/ızgara dokusu */
+.ai-assistant-hero {
+  background:
+    radial-gradient(circle at 12% 16%, rgba(255, 214, 112, .16), transparent 25rem),
+    radial-gradient(circle at 88% 8%, rgba(174, 12, 48, .38), transparent 23rem),
+    linear-gradient(135deg, #080d1b 0%, #111b32 48%, #460812 100%);
+}
+.ai-assistant-hero::before,
+.ai-assistant-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.ai-assistant-hero::before {
+  opacity: .26;
+  background-image:
+    linear-gradient(rgba(160, 185, 230, .18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(160, 185, 230, .18) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(90deg, black, transparent 86%);
+}
+.ai-assistant-hero::after {
+  opacity: .4;
+  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.11) 48%, transparent 65%);
+  transform: translateX(-100%);
+  animation: aiHeroScan 9s ease-in-out infinite;
+}
+.ai-assistant-hero > * { position: relative; z-index: 1; }
+@keyframes aiHeroScan {
+  0%, 58%, 100% { transform: translateX(-100%); }
+  78% { transform: translateX(100%); }
+}
