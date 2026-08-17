@@ -448,66 +448,73 @@ function TurkeyListingMap() {
 
 function RealtyNetworkActivityPanel() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [noticeOffset, setNoticeOffset] = useState(0);
+  const notices = [
+    'Londra’da yeni ofis açıldı', 'Ankara’da 1 yeni ilan eklendi', 'Dubai’de yeni danışman ağa katıldı',
+    'İstanbul’da 3 portföy güncellendi', 'Berlin’den yatırım talebi alındı'
+  ];
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setNoticeOffset((value) => (value + 1) % notices.length), 4400);
+    return () => window.clearInterval(timer);
+  }, [notices.length]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext('2d');
     if (!canvas || !ctx) return;
     let raf = 0, width = 0, height = 0;
-    const random = (seed: number) => {
-      const value = Math.sin(seed * 93.17) * 43758.5453;
-      return value - Math.floor(value);
-    };
-    const continentClouds = [
-      [0.20, 0.34, 0.13, 0.14, 150], [0.34, 0.57, 0.09, 0.22, 115],
-      [0.48, 0.33, 0.10, 0.16, 130], [0.57, 0.53, 0.10, 0.20, 135],
-      [0.70, 0.37, 0.19, 0.15, 175], [0.80, 0.66, 0.10, 0.08, 60]
-    ] as const;
-    const points = continentClouds.flatMap(([cx, cy, rx, ry, count], cloudIndex) => Array.from({ length: count }, (_, i) => {
-      const angle = random(i * 7 + cloudIndex * 31) * Math.PI * 2;
-      const radius = Math.sqrt(random(i * 13 + cloudIndex * 19));
-      return { x: cx + Math.cos(angle) * radius * rx, y: cy + Math.sin(angle) * radius * ry, alpha: .12 + random(i + cloudIndex) * .32 };
-    }));
-    const hubs = [{x:.50,y:.40},{x:.46,y:.33},{x:.34,y:.34},{x:.69,y:.36},{x:.22,y:.35}];
-    const links = [[0,1],[0,2],[0,3],[1,4]];
+    const random = (seed: number) => { const value = Math.sin(seed * 91.731) * 43758.5453; return value - Math.floor(value); };
+    const regions = [[-102,40,23,19,160],[-63,-16,15,24,115],[11,48,19,13,135],[22,7,17,26,145],[92,34,34,18,210],[135,-24,15,10,65]] as const;
+    const points = regions.flatMap(([lng,lat,lngSpread,latSpread,count], region) => Array.from({ length: count }, (_, i) => ({
+      lng: lng + (random(i*7+region*47)-.5) * lngSpread * 2,
+      lat: lat + (random(i*11+region*23)-.5) * latSpread * 2,
+      alpha: .16 + random(i+region*13) * .35
+    })));
+    const hubs = [{lng:32.86,lat:39.93},{lng:-.12,lat:51.5},{lng:55.27,lat:25.2},{lng:-74,lat:40.7},{lng:28.98,lat:41.01},{lng:151.2,lat:-33.8}];
+    const connections = [[0,1],[0,2],[1,3],[4,0],[2,5],[3,4]];
 
     const resize = () => {
-      const box = canvas.getBoundingClientRect();
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      width = box.width; height = box.height;
-      canvas.width = Math.max(1, Math.floor(width * dpr)); canvas.height = Math.max(1, Math.floor(height * dpr));
-      ctx.setTransform(dpr,0,0,dpr,0,0);
+      const box = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width=box.width; height=box.height; canvas.width=Math.max(1,Math.floor(width*dpr)); canvas.height=Math.max(1,Math.floor(height*dpr)); ctx.setTransform(dpr,0,0,dpr,0,0);
     };
-    const draw = (time: number) => {
+    const project = (lng:number,lat:number,angle:number) => {
+      const longitude=lng*Math.PI/180+angle, latitude=lat*Math.PI/180;
+      const x=Math.cos(latitude)*Math.sin(longitude), y=Math.sin(latitude), z=Math.cos(latitude)*Math.cos(longitude);
+      const size=Math.min(width,height)*.67;
+      return {x:width*.66+x*size, y:height*.54-y*size, z};
+    };
+    const draw = (time:number) => {
+      const angle=time*.000055;
       ctx.clearRect(0,0,width,height);
-      const glow = ctx.createRadialGradient(width*.5,height*.42,4,width*.5,height*.42,width*.56);
-      glow.addColorStop(0,'rgba(205,1,30,.11)'); glow.addColorStop(.5,'rgba(15,23,42,.04)'); glow.addColorStop(1,'rgba(255,255,255,0)');
+      const glow=ctx.createRadialGradient(width*.65,height*.52,8,width*.65,height*.52,Math.min(width,height)*.8);
+      glow.addColorStop(0,'rgba(205,1,30,.1)'); glow.addColorStop(.55,'rgba(86,71,255,.04)'); glow.addColorStop(1,'rgba(255,255,255,0)');
       ctx.fillStyle=glow; ctx.fillRect(0,0,width,height);
-      points.forEach((point, i) => {
-        const drift = Math.sin(time*.00035+i)*1.1;
-        ctx.fillStyle='rgba('+(i%4===0?'205,1,30':'15,23,42')+','+point.alpha+')';
-        ctx.beginPath(); ctx.arc(point.x*width, point.y*height+drift, i%7===0?1.15:.75,0,Math.PI*2); ctx.fill();
+      points.map(point=>({ ...project(point.lng,point.lat,angle), alpha:point.alpha })).filter(point=>point.z>-0.18).sort((a,b)=>a.z-b.z).forEach((point,i)=>{
+        ctx.fillStyle='rgba('+(i%5===0?'205,1,30':'42,31,120')+','+(point.alpha*Math.max(.18,point.z+.2))+')';
+        ctx.beginPath(); ctx.arc(point.x,point.y,point.z>.25?1.05:.7,0,Math.PI*2); ctx.fill();
       });
-      links.forEach(([a,b],index) => {
-        const from=hubs[a],to=hubs[b], x1=from.x*width,y1=from.y*height,x2=to.x*width,y2=to.y*height;
-        const gradient=ctx.createLinearGradient(x1,y1,x2,y2); gradient.addColorStop(0,'rgba(15,23,42,.22)'); gradient.addColorStop(.5,'rgba(205,1,30,.6)'); gradient.addColorStop(1,'rgba(205,1,30,.1)');
-        ctx.strokeStyle=gradient; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.quadraticCurveTo((x1+x2)/2,(y1+y2)/2-22,x2,y2); ctx.stroke();
-        const p=(time*.00016+index*.23)%1, cx=(x1+x2)/2, cy=(y1+y2)/2-22;
-        const px=(1-p)*(1-p)*x1+2*(1-p)*p*cx+p*p*x2, py=(1-p)*(1-p)*y1+2*(1-p)*p*cy+p*p*y2;
-        ctx.fillStyle='#CD011E'; ctx.shadowColor='#CD011E'; ctx.shadowBlur=12; ctx.beginPath(); ctx.arc(px,py,2.7,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+      const projectedHubs=hubs.map(hub=>project(hub.lng,hub.lat,angle));
+      connections.forEach(([a,b],index)=>{
+        const from=projectedHubs[a],to=projectedHubs[b]; if(from.z<-.05&&to.z<-.05)return;
+        const cx=(from.x+to.x)/2,cy=(from.y+to.y)/2-Math.min(width,height)*.14;
+        const line=ctx.createLinearGradient(from.x,from.y,to.x,to.y); line.addColorStop(0,'rgba(18,24,45,.18)');line.addColorStop(.5,'rgba(205,1,30,.58)');line.addColorStop(1,'rgba(115,80,255,.26)');
+        ctx.strokeStyle=line;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(from.x,from.y);ctx.quadraticCurveTo(cx,cy,to.x,to.y);ctx.stroke();
+        const p=(time*.00014+index*.17)%1,px=(1-p)*(1-p)*from.x+2*(1-p)*p*cx+p*p*to.x,py=(1-p)*(1-p)*from.y+2*(1-p)*p*cy+p*p*to.y;
+        ctx.fillStyle='#CD011E';ctx.shadowColor='#ef6577';ctx.shadowBlur=13;ctx.beginPath();ctx.arc(px,py,2.5,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
       });
-      hubs.forEach((hub,index) => { const pulse=4+Math.sin(time*.003+index)*1.2; ctx.fillStyle='#CD011E'; ctx.beginPath(); ctx.arc(hub.x*width,hub.y*height,pulse,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(hub.x*width,hub.y*height,1.25,0,Math.PI*2); ctx.fill(); });
+      projectedHubs.filter(hub=>hub.z>-.08).forEach((hub,index)=>{const pulse=3.4+Math.sin(time*.003+index)*.9;ctx.fillStyle='#CD011E';ctx.beginPath();ctx.arc(hub.x,hub.y,pulse,0,Math.PI*2);ctx.fill();ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(hub.x,hub.y,1.1,0,Math.PI*2);ctx.fill();});
       raf=requestAnimationFrame(draw);
     };
-    resize(); const observer=new ResizeObserver(resize); observer.observe(canvas); raf=requestAnimationFrame(draw);
-    return () => { cancelAnimationFrame(raf); observer.disconnect(); };
+    resize(); const observer=new ResizeObserver(resize);observer.observe(canvas);raf=requestAnimationFrame(draw);
+    return()=>{cancelAnimationFrame(raf);observer.disconnect();};
   }, []);
 
-  return <div className="relative min-h-[220px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-    <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-label="Realty Center ağ haritası" />
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/95 via-white/25 to-transparent" />
-    <div className="relative z-10 p-5"><p className="text-[10px] font-black tracking-[.2em] text-red-700">REALTY CENTER AĞI</p><h3 className="mt-2 text-xl font-black text-slate-950">Ağdaki son gelişmeler</h3>
-      <div className="mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/90 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-red-700"/>Ankara’da 1 yeni ilan eklendi</div><div className="w-fit rounded-full border border-slate-200 bg-white/90 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>İstanbul’da yeni ofis açıldı</div></div>
+  return <div className="relative min-h-[238px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+    <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-label="Dönen Realty Center Network haritası" />
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/96 via-white/30 to-white/5" />
+    <div className="relative z-10 p-5"><p className="text-[10px] font-black tracking-[.22em] text-red-700">REALTY CENTER NETWORK</p><h3 className="mt-2 text-xl font-black text-slate-950">Küresel bağlantı ağı</h3>
+      <div key={noticeOffset} className="network-notice-swap mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-red-700"/>{notices[noticeOffset]}</div><div className="w-fit rounded-full border border-slate-200 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>{notices[(noticeOffset+1)%notices.length]}</div></div>
     </div>
   </div>;
 }
@@ -1054,7 +1061,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto grid gap-6 px-6 lg:grid-cols-[1fr_.85fr] lg:px-12">
-          <div className="grid grid-cols-2 gap-3 self-center text-center sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 self-center text-center sm:grid-cols-4 lg:translate-x-6">
             <div className="p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.offices}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Franchise Ofis</div></div>
             <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.agents.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Uzman Danışman</div></div>
             <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.portfolios.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Aktif Portföy</div></div>
