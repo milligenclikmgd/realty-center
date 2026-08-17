@@ -379,8 +379,6 @@ function saveFeaturedListingIds(ids: string[]) {
 
 function TurkeyListingMap() {
   const navigate = useNavigate();
-  const mapRef = useRef<HTMLDivElement>(null);
-  const tooltipRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
 
@@ -393,7 +391,11 @@ function TurkeyListingMap() {
       .then((svgText) => {
         const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
         parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
-          group.setAttribute('data-realty-city', group.dataset.cityName || '');
+          const city = group.dataset.cityName || '';
+          group.setAttribute('data-realty-city', city);
+          const title = parsed.createElementNS('http://www.w3.org/2000/svg', 'title');
+          title.textContent = city;
+          group.prepend(title);
           group.querySelectorAll('path').forEach((path) => {
             path.setAttribute('style', 'fill:#CD011E;fill-opacity:0.34;stroke:#ffffff;stroke-opacity:0.8;stroke-width:0.75;');
           });
@@ -402,35 +404,6 @@ function TurkeyListingMap() {
       })
       .catch(() => setMapError(true));
   }, []);
-
-  const handleMapMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    const target = event.target;
-    const group = target instanceof Element ? target.closest('g[data-realty-city]') : null;
-    const tooltip = tooltipRef.current;
-    const map = mapRef.current;
-    if (!tooltip || !map) return;
-    const city = group?.getAttribute('data-realty-city');
-    if (!city) {
-      tooltip.style.display = 'none';
-      return;
-    }
-    const box = map.getBoundingClientRect();
-    tooltip.textContent = city;
-    tooltip.style.left = (event.clientX - box.left + 14) + 'px';
-    tooltip.style.top = (event.clientY - box.top - 14) + 'px';
-    tooltip.style.display = 'block';
-  };
-
-  const hideMapTooltip = () => {
-    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
-  };
-
-  const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const target = event.target;
-    const group = target instanceof Element ? target.closest('g[data-realty-city]') : null;
-    const city = group?.getAttribute('data-realty-city');
-    if (city) navigate('/ilanlarimiz?city=' + encodeURIComponent(city));
-  };
 
   return (
     <section className="bg-white py-12 text-slate-900 overflow-hidden border-b border-slate-200">
@@ -441,7 +414,7 @@ function TurkeyListingMap() {
           <p className="mt-2 text-sm font-medium text-slate-600">İlin üzerine gelin, seçmek için tıklayın.</p>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-5 shadow-lg">
-          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div ref={mapRef} onMouseMove={handleMapMove} onMouseLeave={hideMapTooltip} onClick={handleMapClick} className="relative"><div className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer" dangerouslySetInnerHTML={{ __html: svgMarkup }} /><div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-lg bg-slate-950 px-3 py-1.5 text-xs font-black text-white shadow-xl" /></div>}
+          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div onClick={handleMapClick} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer" dangerouslySetInnerHTML={{ __html: svgMarkup }} />}
         </div>
       </div>
     </section>
