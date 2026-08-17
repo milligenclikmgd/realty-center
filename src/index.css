@@ -162,12 +162,12 @@
 .hover\\:border-red-700:hover { border-color: #a30b1d !important; }
 .shadow-red-700\\/20, .shadow-red-700\\/25, .shadow-red-700\\/30, .shadow-red-700\\/40, .shadow-red-700\\/50 { --tw-shadow-color: rgba(163, 11, 29, .35) !important; }
 
-/* Yapay Zeka Gayrimenkul Asistanı: hafif devre/ızgara dokusu */
+/* Yapay Zeka Gayrimenkul Asistanı: hareketli mavi teknoloji dokusu */
 .ai-assistant-hero {
   background:
-    radial-gradient(circle at 12% 16%, rgba(255, 214, 112, .16), transparent 25rem),
-    radial-gradient(circle at 88% 8%, rgba(174, 12, 48, .38), transparent 23rem),
-    linear-gradient(135deg, #080d1b 0%, #111b32 48%, #460812 100%);
+    radial-gradient(circle at 12% 16%, rgba(47, 210, 255, .23), transparent 25rem),
+    radial-gradient(circle at 88% 8%, rgba(41, 126, 255, .38), transparent 23rem),
+    linear-gradient(135deg, #06152d 0%, #0a2a56 48%, #071a3b 100%);
 }
 .ai-assistant-hero::before,
 .ai-assistant-hero::after {
@@ -177,21 +177,27 @@
   pointer-events: none;
 }
 .ai-assistant-hero::before {
-  opacity: .26;
+  opacity: .34;
   background-image:
-    linear-gradient(rgba(160, 185, 230, .18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(160, 185, 230, .18) 1px, transparent 1px);
-  background-size: 34px 34px;
-  mask-image: linear-gradient(90deg, black, transparent 86%);
+    linear-gradient(rgba(103, 232, 249, .22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(103, 232, 249, .22) 1px, transparent 1px),
+    radial-gradient(circle, rgba(165, 243, 252, .55) 1.3px, transparent 1.8px);
+  background-size: 34px 34px, 34px 34px, 92px 92px;
+  mask-image: linear-gradient(90deg, black, transparent 92%);
+  animation: aiHeroGrid 22s linear infinite;
 }
 .ai-assistant-hero::after {
-  opacity: .4;
-  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.11) 48%, transparent 65%);
-  transform: translateX(-100%);
-  animation: aiHeroScan 9s ease-in-out infinite;
+  opacity: .52;
+  background: linear-gradient(110deg, transparent 29%, rgba(125, 211, 252, .08) 40%, rgba(224, 242, 254, .32) 50%, rgba(56, 189, 248, .1) 60%, transparent 71%);
+  transform: translateX(-110%);
+  animation: aiHeroScan 8.5s ease-in-out infinite;
 }
 .ai-assistant-hero > * { position: relative; z-index: 1; }
 @keyframes aiHeroScan {
-  0%, 58%, 100% { transform: translateX(-100%); }
-  78% { transform: translateX(100%); }
+  0%, 55%, 100% { transform: translateX(-110%); }
+  78% { transform: translateX(110%); }
+}
+@keyframes aiHeroGrid {
+  from { background-position: 0 0, 0 0, 0 0; }
+  to { background-position: 68px 34px, 68px 34px, 92px 46px; }
 }
