@@ -350,8 +350,6 @@
 }
 
 
-@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){main section:not(:first-child){animation:sectionReveal linear both;animation-timeline:view();animation-range:entry 8% cover 30%;}}}
-@keyframes sectionReveal{from{transform:translate3d(0,48px,0) scale(.975)}65%{transform:translate3d(0,-4px,0) scale(1.004)}to{transform:translate3d(0,0,0) scale(1)}}
 
 .listing-cinematic-card{will-change:transform;}
 .listing-cinematic-card:hover{transform:translate3d(0,-7px,0) scale(1.012);}
