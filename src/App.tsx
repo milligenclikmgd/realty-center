@@ -547,7 +547,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
   const close = () => setMobileOpen(false);
   const links = [
     ['Kurumsal', '/kurumsal/hakkimizda'], ['Ofislerimiz', '/ofislerimiz'], ['Danışmanlarımız', '/danismanlarimiz'],
-    ['İlanlarımız', '/ilan-kategorileri'], ['AI Karar Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
+    ['İlanlarımız', '/ilan-kategorileri'], ['🤖 Yapay Zeka Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
   ];
   return (
     <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#a90818]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#c90a1b]/92 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
@@ -1711,9 +1711,9 @@ function AIDecisionAssistantPage() {
   const money = (value: number) => value.toLocaleString('tr-TR') + ' ₺';
   return <div className="min-h-screen bg-slate-50 py-10">
     <div className="mx-auto max-w-7xl px-5 lg:px-8">
-      <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-[#640610] px-6 py-10 text-white shadow-2xl sm:px-10">
-        <span className="inline-flex rounded-full border border-amber-300/50 bg-amber-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-amber-200">ÜCRETSİZ DEMO · AI KARAR ASİSTANI</span>
-        <h1 className="mt-4 text-3xl font-black sm:text-5xl">Sadece ilan değil, <span className="text-amber-300">karar özeti.</span></h1>
+      <div className="ai-assistant-hero relative overflow-hidden rounded-3xl px-6 py-10 text-white shadow-2xl sm:px-10">
+        <span className="inline-flex rounded-full border border-amber-300/50 bg-amber-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-amber-200">ÜCRETSİZ DEMO · YAPAY ZEKA GAYRİMENKUL ASİSTANI</span>
+        <h1 className="mt-4 text-3xl font-black sm:text-5xl">Yapay Zeka <span className="text-amber-300">Gayrimenkul Asistanı.</span></h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">İhtiyacınızı günlük dille yazın. Demo asistan; site içindeki ilanları, yatırım metriklerini ve bölge bilgisini tek ekranda özetler.</p>
         <div className="mt-7 flex flex-col gap-3 rounded-2xl bg-white p-3 shadow-xl sm:flex-row">
           <input value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && setSearched(true)} className="min-w-0 flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 outline-none ring-[#a30b1d] focus:ring-2" placeholder="Örn. Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum." />
