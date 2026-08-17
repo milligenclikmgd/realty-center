@@ -188,14 +188,10 @@
   to { background-position: 68px 34px, 68px 34px, 92px 46px; }
 }
 
-/* Kırmızı zeminlerde her zaman okunaklı beyaz başlık ve etiket metni */
-[class*="bg-red-"][class*="text-red-"],
-[class*="bg-red-"] [class*="text-red-"] {
+/* Gerçek kırmızı yüzeylerde kontrast: hover sınıflarını etkilemeden yalnızca zeminli etiketleri düzeltir. */
+:is(.bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900):is(.text-red-500, .text-red-600, .text-red-700, .text-red-800, .text-red-900) {
   color: #fff !important;
 }
-[class*="bg-red-"] h1,
-[class*="bg-red-"] h2,
-[class*="bg-red-"] h3,
-[class*="bg-red-"] h4 {
+:is(.bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900) :is(h1, h2, h3, h4) {
   color: #fff !important;
 }
