@@ -445,6 +445,141 @@ function TurkeyListingMap() {
   );
 }
 
+
+function RealtyNetworkGlobe() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    let frame = 0;
+    let width = 0;
+    let height = 0;
+    let animation = 0;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const points = Array.from({ length: 820 }, (_, index) => {
+      const y = 1 - (index / 819) * 2;
+      const radius = Math.sqrt(1 - y * y);
+      const theta = Math.PI * (3 - Math.sqrt(5)) * index;
+      return { x: Math.cos(theta) * radius, y, z: Math.sin(theta) * radius };
+    });
+    const hubs = [
+      { label: 'Ankara', lat: 39.93, lng: 32.86 },
+      { label: 'İstanbul', lat: 41.01, lng: 28.98 },
+      { label: 'İzmir', lat: 38.42, lng: 27.14 },
+      { label: 'Antalya', lat: 36.9, lng: 30.7 },
+      { label: 'Dubai', lat: 25.2, lng: 55.27 },
+      { label: 'Londra', lat: 51.5, lng: -0.12 }
+    ].map((hub) => {
+      const latitude = hub.lat * Math.PI / 180;
+      const longitude = hub.lng * Math.PI / 180;
+      return { ...hub, x: Math.cos(latitude) * Math.cos(longitude), y: Math.sin(latitude), z: Math.cos(latitude) * Math.sin(longitude) };
+    });
+    const connections = [[0,1],[0,2],[0,3],[1,4],[1,5],[2,4]];
+
+    const resize = () => {
+      const box = canvas.getBoundingClientRect();
+      width = Math.max(1, box.width);
+      height = Math.max(1, box.height);
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    const project = (point: { x: number; y: number; z: number }, angle: number) => {
+      const x = point.x * Math.cos(angle) - point.z * Math.sin(angle);
+      const z = point.x * Math.sin(angle) + point.z * Math.cos(angle);
+      const size = Math.min(width, height) * 0.38;
+      return { x: width * 0.56 + x * size, y: height * 0.52 - point.y * size, z };
+    };
+    const draw = (time: number) => {
+      const angle = time * 0.00009;
+      context.clearRect(0, 0, width, height);
+      const glow = context.createRadialGradient(width * 0.56, height * 0.5, 10, width * 0.56, height * 0.5, Math.min(width, height) * 0.55);
+      glow.addColorStop(0, 'rgba(205, 1, 30, .14)');
+      glow.addColorStop(.52, 'rgba(55, 92, 170, .07)');
+      glow.addColorStop(1, 'rgba(7, 17, 38, 0)');
+      context.fillStyle = glow;
+      context.fillRect(0, 0, width, height);
+
+      points.map((point) => project(point, angle)).sort((a, b) => a.z - b.z).forEach((point) => {
+        const alpha = Math.max(.07, (point.z + 1) * .32);
+        context.fillStyle = 'rgba(226, 232, 240, ' + alpha + ')';
+        context.beginPath();
+        context.arc(point.x, point.y, point.z > 0 ? 1.15 : .7, 0, Math.PI * 2);
+        context.fill();
+      });
+
+      const projectedHubs = hubs.map((hub) => project(hub, angle));
+      connections.forEach(([from, to], index) => {
+        const start = projectedHubs[from];
+        const end = projectedHubs[to];
+        if (start.z < -0.15 && end.z < -0.15) return;
+        const cx = (start.x + end.x) / 2;
+        const cy = (start.y + end.y) / 2 - Math.min(width, height) * .16;
+        context.beginPath();
+        context.moveTo(start.x, start.y);
+        context.quadraticCurveTo(cx, cy, end.x, end.y);
+        context.strokeStyle = 'rgba(205, 1, 30, .42)';
+        context.lineWidth = 1.2;
+        context.stroke();
+        const progress = (time * .00018 + index * .19) % 1;
+        const px = (1 - progress) * (1 - progress) * start.x + 2 * (1 - progress) * progress * cx + progress * progress * end.x;
+        const py = (1 - progress) * (1 - progress) * start.y + 2 * (1 - progress) * progress * cy + progress * progress * end.y;
+        context.fillStyle = '#ffffff';
+        context.shadowColor = '#CD011E';
+        context.shadowBlur = 14;
+        context.beginPath();
+        context.arc(px, py, 2.8, 0, Math.PI * 2);
+        context.fill();
+        context.shadowBlur = 0;
+      });
+
+      projectedHubs.forEach((hub) => {
+        if (hub.z < -0.08) return;
+        context.fillStyle = '#CD011E';
+        context.shadowColor = '#ef6577';
+        context.shadowBlur = 18;
+        context.beginPath();
+        context.arc(hub.x, hub.y, 4.2, 0, Math.PI * 2);
+        context.fill();
+        context.shadowBlur = 0;
+        context.fillStyle = 'rgba(255,255,255,.9)';
+        context.beginPath();
+        context.arc(hub.x, hub.y, 1.35, 0, Math.PI * 2);
+        context.fill();
+      });
+      frame = requestAnimationFrame(draw);
+    };
+    resize();
+    const observer = new ResizeObserver(resize);
+    observer.observe(canvas);
+    frame = requestAnimationFrame(draw);
+    return () => { cancelAnimationFrame(frame); observer.disconnect(); };
+  }, []);
+
+  return (
+    <section className="bg-slate-950 py-16 text-white overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+        <div className="grid items-center gap-8 overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_70%_30%,rgba(35,81,162,.28),transparent_32rem),linear-gradient(135deg,#0b1327,#090e1a)] p-6 shadow-2xl lg:grid-cols-[.8fr_1.2fr] lg:p-10">
+          <div className="relative z-10">
+            <span className="inline-flex rounded-full border border-red-400/40 bg-red-700/20 px-4 py-1.5 text-xs font-black tracking-[.18em] text-red-100">REALTY CENTER NETWORK</span>
+            <h2 className="mt-5 text-3xl font-black leading-tight sm:text-4xl">Gayrimenkulde güçlü bir <span className="text-red-300">bağlantı ağı.</span></h2>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">Ofislerimiz, danışmanlarımız ve yatırım noktalarımız aynı ağda buluşuyor. Türkiye’den dünyaya uzanan Realty Center bağlantısını keşfedin.</p>
+            <div className="mt-6 flex flex-wrap gap-3 text-xs font-black"><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">81 İl Hedefi</span><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">Ofis Ağı</span><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">Yatırım Bağlantıları</span></div>
+          </div>
+          <div className="relative h-[340px] min-h-[260px] overflow-hidden rounded-2xl border border-white/10 bg-[#071126]">
+            <canvas ref={canvasRef} className="h-full w-full" aria-label="Dönen Realty Center bağlantı ağı animasyonu" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071126] via-transparent to-transparent px-5 pb-5 pt-16"><p className="text-[11px] font-black tracking-[.2em] text-slate-300">CANLI AĞ GÖRÜNÜMÜ</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   const navigate = useNavigate();
   return (
@@ -1047,6 +1182,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/instagram/BE123C" alt="Instagram" className="h-6 w-6"/></a><a href="#" aria-label="X" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-[#A30B1D]"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a><a href="#" aria-label="Facebook" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/facebook/BE123C" alt="Facebook" className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/youtube/BE123C" alt="YouTube" className="h-6 w-6"/></a></div></div></section>
 
       <TurkeyListingMap />
+      <RealtyNetworkGlobe />
 
       <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
