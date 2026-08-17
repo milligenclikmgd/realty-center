@@ -742,13 +742,74 @@ function FeaturedListingsShowcase() {
 }
 
 function LiveListingStream({ listings }: { listings: ListingItem[] }) {
-  const [isHovered, setIsHovered] = useState(false);
   const [direction, setDirection] = useState<'left' | 'right'>('left');
+  const trackRef = useRef<HTMLDivElement | null>(null);
+  const positionRef = useRef(0);
+  const directionRef = useRef<'left' | 'right'>('left');
+  const hoveredRef = useRef(false);
+  const draggingRef = useRef(false);
+  const dragStartRef = useRef({ x: 0, position: 0 });
+
+  const applyPosition = () => {
+    const track = trackRef.current;
+    if (track) track.style.transform = \`translate3d(\${positionRef.current}px, 0, 0)\`;
+  };
+  const setStreamDirection = (next: 'left' | 'right') => {
+    directionRef.current = next;
+    setDirection(next);
+  };
+
+  useEffect(() => {
+    let frameId = 0;
+    let lastTime = performance.now();
+    const move = (time: number) => {
+      const elapsed = Math.min(64, time - lastTime);
+      lastTime = time;
+      const track = trackRef.current;
+      const loopWidth = track ? track.scrollWidth / 2 : 0;
+      if (loopWidth && !hoveredRef.current && !draggingRef.current) {
+        positionRef.current += (directionRef.current === 'left' ? -1 : 1) * elapsed * 0.028;
+        while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
+        while (positionRef.current >= 0) positionRef.current -= loopWidth;
+        applyPosition();
+      }
+      frameId = requestAnimationFrame(move);
+    };
+    frameId = requestAnimationFrame(move);
+    return () => cancelAnimationFrame(frameId);
+  }, [listings.length]);
 
   if (!listings.length) return null;
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    draggingRef.current = true;
+    hoveredRef.current = true;
+    dragStartRef.current = { x: event.clientX, position: positionRef.current };
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!draggingRef.current) return;
+    const track = trackRef.current;
+    const loopWidth = track ? track.scrollWidth / 2 : 0;
+    const delta = event.clientX - dragStartRef.current.x;
+    positionRef.current = dragStartRef.current.position + delta;
+    if (loopWidth) {
+      while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
+      while (positionRef.current >= 0) positionRef.current -= loopWidth;
+    }
+    applyPosition();
+  };
+  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!draggingRef.current) return;
+    const delta = event.clientX - dragStartRef.current.x;
+    if (Math.abs(delta) > 8) setStreamDirection(delta > 0 ? 'right' : 'left');
+    draggingRef.current = false;
+    hoveredRef.current = false;
+    try { event.currentTarget.releasePointerCapture(event.pointerId); } catch {}
+  };
+
   return <div className="relative">
-    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div className="relative overflow-hidden py-2" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><div className={`live-listing-track ${direction === 'right' ? 'live-listing-track-right' : ''} ${isHovered ? 'live-listing-track-paused' : ''}`}>{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
+    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setStreamDirection('left')} className={\`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition \${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}\`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setStreamDirection('right')} className={\`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition \${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}\`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
+    <div className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing" onMouseEnter={() => { hoveredRef.current = true; }} onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}><div ref={trackRef} className="live-listing-track">{[...listings, ...listings].map((item, index) => <div key={\`\${item.id}-\${index}\`} className="w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
   </div>;
 }
 
@@ -956,7 +1017,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-red-700 tracking-widest bg-red-100 px-3 py-1 rounded-full border border-red-300 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
+          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-white tracking-widest bg-red-700 px-3 py-1 rounded-full border border-red-700 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
           <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
         <LiveListingStream listings={sortedListings} />
