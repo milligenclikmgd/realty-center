@@ -446,139 +446,72 @@ function TurkeyListingMap() {
 }
 
 
-function RealtyNetworkGlobe() {
+function RealtyNetworkActivityPanel() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const context = canvas.getContext('2d');
-    if (!context) return;
-
-    let frame = 0;
-    let width = 0;
-    let height = 0;
-    let animation = 0;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const points = Array.from({ length: 820 }, (_, index) => {
-      const y = 1 - (index / 819) * 2;
-      const radius = Math.sqrt(1 - y * y);
-      const theta = Math.PI * (3 - Math.sqrt(5)) * index;
-      return { x: Math.cos(theta) * radius, y, z: Math.sin(theta) * radius };
-    });
-    const hubs = [
-      { label: 'Ankara', lat: 39.93, lng: 32.86 },
-      { label: 'İstanbul', lat: 41.01, lng: 28.98 },
-      { label: 'İzmir', lat: 38.42, lng: 27.14 },
-      { label: 'Antalya', lat: 36.9, lng: 30.7 },
-      { label: 'Dubai', lat: 25.2, lng: 55.27 },
-      { label: 'Londra', lat: 51.5, lng: -0.12 }
-    ].map((hub) => {
-      const latitude = hub.lat * Math.PI / 180;
-      const longitude = hub.lng * Math.PI / 180;
-      return { ...hub, x: Math.cos(latitude) * Math.cos(longitude), y: Math.sin(latitude), z: Math.cos(latitude) * Math.sin(longitude) };
-    });
-    const connections = [[0,1],[0,2],[0,3],[1,4],[1,5],[2,4]];
+    const ctx = canvas?.getContext('2d');
+    if (!canvas || !ctx) return;
+    let raf = 0, width = 0, height = 0;
+    const random = (seed: number) => {
+      const value = Math.sin(seed * 93.17) * 43758.5453;
+      return value - Math.floor(value);
+    };
+    const continentClouds = [
+      [0.20, 0.34, 0.13, 0.14, 150], [0.34, 0.57, 0.09, 0.22, 115],
+      [0.48, 0.33, 0.10, 0.16, 130], [0.57, 0.53, 0.10, 0.20, 135],
+      [0.70, 0.37, 0.19, 0.15, 175], [0.80, 0.66, 0.10, 0.08, 60]
+    ] as const;
+    const points = continentClouds.flatMap(([cx, cy, rx, ry, count], cloudIndex) => Array.from({ length: count }, (_, i) => {
+      const angle = random(i * 7 + cloudIndex * 31) * Math.PI * 2;
+      const radius = Math.sqrt(random(i * 13 + cloudIndex * 19));
+      return { x: cx + Math.cos(angle) * radius * rx, y: cy + Math.sin(angle) * radius * ry, alpha: .12 + random(i + cloudIndex) * .32 };
+    }));
+    const hubs = [{x:.50,y:.40},{x:.46,y:.33},{x:.34,y:.34},{x:.69,y:.36},{x:.22,y:.35}];
+    const links = [[0,1],[0,2],[0,3],[1,4]];
 
     const resize = () => {
       const box = canvas.getBoundingClientRect();
-      width = Math.max(1, box.width);
-      height = Math.max(1, box.height);
-      canvas.width = Math.floor(width * dpr);
-      canvas.height = Math.floor(height * dpr);
-      context.setTransform(dpr, 0, 0, dpr, 0, 0);
-    };
-    const project = (point: { x: number; y: number; z: number }, angle: number) => {
-      const x = point.x * Math.cos(angle) - point.z * Math.sin(angle);
-      const z = point.x * Math.sin(angle) + point.z * Math.cos(angle);
-      const size = Math.min(width, height) * 0.38;
-      return { x: width * 0.56 + x * size, y: height * 0.52 - point.y * size, z };
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = box.width; height = box.height;
+      canvas.width = Math.max(1, Math.floor(width * dpr)); canvas.height = Math.max(1, Math.floor(height * dpr));
+      ctx.setTransform(dpr,0,0,dpr,0,0);
     };
     const draw = (time: number) => {
-      const angle = time * 0.00009;
-      context.clearRect(0, 0, width, height);
-      const glow = context.createRadialGradient(width * 0.56, height * 0.5, 10, width * 0.56, height * 0.5, Math.min(width, height) * 0.55);
-      glow.addColorStop(0, 'rgba(205, 1, 30, .14)');
-      glow.addColorStop(.52, 'rgba(55, 92, 170, .07)');
-      glow.addColorStop(1, 'rgba(7, 17, 38, 0)');
-      context.fillStyle = glow;
-      context.fillRect(0, 0, width, height);
-
-      points.map((point) => project(point, angle)).sort((a, b) => a.z - b.z).forEach((point) => {
-        const alpha = Math.max(.07, (point.z + 1) * .32);
-        context.fillStyle = 'rgba(226, 232, 240, ' + alpha + ')';
-        context.beginPath();
-        context.arc(point.x, point.y, point.z > 0 ? 1.15 : .7, 0, Math.PI * 2);
-        context.fill();
+      ctx.clearRect(0,0,width,height);
+      const glow = ctx.createRadialGradient(width*.5,height*.42,4,width*.5,height*.42,width*.56);
+      glow.addColorStop(0,'rgba(205,1,30,.11)'); glow.addColorStop(.5,'rgba(15,23,42,.04)'); glow.addColorStop(1,'rgba(255,255,255,0)');
+      ctx.fillStyle=glow; ctx.fillRect(0,0,width,height);
+      points.forEach((point, i) => {
+        const drift = Math.sin(time*.00035+i)*1.1;
+        ctx.fillStyle='rgba('+(i%4===0?'205,1,30':'15,23,42')+','+point.alpha+')';
+        ctx.beginPath(); ctx.arc(point.x*width, point.y*height+drift, i%7===0?1.15:.75,0,Math.PI*2); ctx.fill();
       });
-
-      const projectedHubs = hubs.map((hub) => project(hub, angle));
-      connections.forEach(([from, to], index) => {
-        const start = projectedHubs[from];
-        const end = projectedHubs[to];
-        if (start.z < -0.15 && end.z < -0.15) return;
-        const cx = (start.x + end.x) / 2;
-        const cy = (start.y + end.y) / 2 - Math.min(width, height) * .16;
-        context.beginPath();
-        context.moveTo(start.x, start.y);
-        context.quadraticCurveTo(cx, cy, end.x, end.y);
-        context.strokeStyle = 'rgba(205, 1, 30, .42)';
-        context.lineWidth = 1.2;
-        context.stroke();
-        const progress = (time * .00018 + index * .19) % 1;
-        const px = (1 - progress) * (1 - progress) * start.x + 2 * (1 - progress) * progress * cx + progress * progress * end.x;
-        const py = (1 - progress) * (1 - progress) * start.y + 2 * (1 - progress) * progress * cy + progress * progress * end.y;
-        context.fillStyle = '#ffffff';
-        context.shadowColor = '#CD011E';
-        context.shadowBlur = 14;
-        context.beginPath();
-        context.arc(px, py, 2.8, 0, Math.PI * 2);
-        context.fill();
-        context.shadowBlur = 0;
+      links.forEach(([a,b],index) => {
+        const from=hubs[a],to=hubs[b], x1=from.x*width,y1=from.y*height,x2=to.x*width,y2=to.y*height;
+        const gradient=ctx.createLinearGradient(x1,y1,x2,y2); gradient.addColorStop(0,'rgba(15,23,42,.22)'); gradient.addColorStop(.5,'rgba(205,1,30,.6)'); gradient.addColorStop(1,'rgba(205,1,30,.1)');
+        ctx.strokeStyle=gradient; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.quadraticCurveTo((x1+x2)/2,(y1+y2)/2-22,x2,y2); ctx.stroke();
+        const p=(time*.00016+index*.23)%1, cx=(x1+x2)/2, cy=(y1+y2)/2-22;
+        const px=(1-p)*(1-p)*x1+2*(1-p)*p*cx+p*p*x2, py=(1-p)*(1-p)*y1+2*(1-p)*p*cy+p*p*y2;
+        ctx.fillStyle='#CD011E'; ctx.shadowColor='#CD011E'; ctx.shadowBlur=12; ctx.beginPath(); ctx.arc(px,py,2.7,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
       });
-
-      projectedHubs.forEach((hub) => {
-        if (hub.z < -0.08) return;
-        context.fillStyle = '#CD011E';
-        context.shadowColor = '#ef6577';
-        context.shadowBlur = 18;
-        context.beginPath();
-        context.arc(hub.x, hub.y, 4.2, 0, Math.PI * 2);
-        context.fill();
-        context.shadowBlur = 0;
-        context.fillStyle = 'rgba(255,255,255,.9)';
-        context.beginPath();
-        context.arc(hub.x, hub.y, 1.35, 0, Math.PI * 2);
-        context.fill();
-      });
-      frame = requestAnimationFrame(draw);
+      hubs.forEach((hub,index) => { const pulse=4+Math.sin(time*.003+index)*1.2; ctx.fillStyle='#CD011E'; ctx.beginPath(); ctx.arc(hub.x*width,hub.y*height,pulse,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(hub.x*width,hub.y*height,1.25,0,Math.PI*2); ctx.fill(); });
+      raf=requestAnimationFrame(draw);
     };
-    resize();
-    const observer = new ResizeObserver(resize);
-    observer.observe(canvas);
-    frame = requestAnimationFrame(draw);
-    return () => { cancelAnimationFrame(frame); observer.disconnect(); };
+    resize(); const observer=new ResizeObserver(resize); observer.observe(canvas); raf=requestAnimationFrame(draw);
+    return () => { cancelAnimationFrame(raf); observer.disconnect(); };
   }, []);
 
-  return (
-    <section className="bg-slate-950 py-16 text-white overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <div className="grid items-center gap-8 overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_70%_30%,rgba(35,81,162,.28),transparent_32rem),linear-gradient(135deg,#0b1327,#090e1a)] p-6 shadow-2xl lg:grid-cols-[.8fr_1.2fr] lg:p-10">
-          <div className="relative z-10">
-            <span className="inline-flex rounded-full border border-red-400/40 bg-red-700/20 px-4 py-1.5 text-xs font-black tracking-[.18em] text-red-100">REALTY CENTER NETWORK</span>
-            <h2 className="mt-5 text-3xl font-black leading-tight sm:text-4xl">Gayrimenkulde güçlü bir <span className="text-red-300">bağlantı ağı.</span></h2>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">Ofislerimiz, danışmanlarımız ve yatırım noktalarımız aynı ağda buluşuyor. Türkiye’den dünyaya uzanan Realty Center bağlantısını keşfedin.</p>
-            <div className="mt-6 flex flex-wrap gap-3 text-xs font-black"><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">81 İl Hedefi</span><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">Ofis Ağı</span><span className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-slate-200">Yatırım Bağlantıları</span></div>
-          </div>
-          <div className="relative h-[340px] min-h-[260px] overflow-hidden rounded-2xl border border-white/10 bg-[#071126]">
-            <canvas ref={canvasRef} className="h-full w-full" aria-label="Dönen Realty Center bağlantı ağı animasyonu" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071126] via-transparent to-transparent px-5 pb-5 pt-16"><p className="text-[11px] font-black tracking-[.2em] text-slate-300">CANLI AĞ GÖRÜNÜMÜ</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return <div className="relative min-h-[220px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+    <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-label="Realty Center ağ haritası" />
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/95 via-white/25 to-transparent" />
+    <div className="relative z-10 p-5"><p className="text-[10px] font-black tracking-[.2em] text-red-700">REALTY CENTER AĞI</p><h3 className="mt-2 text-xl font-black text-slate-950">Ağdaki son gelişmeler</h3>
+      <div className="mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/90 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-red-700"/>Ankara’da 1 yeni ilan eklendi</div><div className="w-fit rounded-full border border-slate-200 bg-white/90 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>İstanbul’da yeni ofis açıldı</div></div>
+    </div>
+  </div>;
 }
+
 
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   const navigate = useNavigate();
@@ -1119,27 +1052,15 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </div>
 
-      <section className="bg-white text-slate-900 py-12 border-b border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.offices}+</div>
-            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Franchise Ofis</div>
+      <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
+        <div className="max-w-7xl mx-auto grid gap-6 px-6 lg:grid-cols-[1fr_.85fr] lg:px-12">
+          <div className="grid grid-cols-2 gap-3 self-center text-center sm:grid-cols-4">
+            <div className="p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.offices}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Franchise Ofis</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.agents.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Uzman Danışman</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.portfolios.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Aktif Portföy</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">%{counts.satisfaction}</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Memnuniyet</div></div>
           </div>
-
-          <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.agents.toLocaleString('tr-TR')}+</div>
-            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Uzman Danışman</div>
-          </div>
-
-          <div className="p-4 border-r border-slate-100 last:border-none">
-            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">{counts.portfolios.toLocaleString('tr-TR')}+</div>
-            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Aktif Portföy</div>
-          </div>
-
-          <div className="p-4">
-            <div className="text-4xl lg:text-5xl font-black text-red-700 mb-1 tracking-tight">%{counts.satisfaction}</div>
-            <div className="text-xs text-slate-700 font-extrabold tracking-widest">Müşteri Memnuniyeti</div>
-          </div>
+          <RealtyNetworkActivityPanel />
         </div>
       </section>
 
@@ -1183,7 +1104,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/instagram/BE123C" alt="Instagram" className="h-6 w-6"/></a><a href="#" aria-label="X" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-[#A30B1D]"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a><a href="#" aria-label="Facebook" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/facebook/BE123C" alt="Facebook" className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/youtube/BE123C" alt="YouTube" className="h-6 w-6"/></a></div></div></section>
 
       <TurkeyListingMap />
-      <RealtyNetworkGlobe />
 
       <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
