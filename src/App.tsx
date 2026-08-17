@@ -547,7 +547,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
   const close = () => setMobileOpen(false);
   const links = [
     ['Kurumsal', '/kurumsal/hakkimizda'], ['Ofislerimiz', '/ofislerimiz'], ['Danışmanlarımız', '/danismanlarimiz'],
-    ['İlanlarımız', '/ilan-kategorileri'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
+    ['İlanlarımız', '/ilan-kategorileri'], ['AI Karar Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
   ];
   return (
     <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#a90818]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#c90a1b]/92 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
@@ -1690,6 +1690,47 @@ function ListingCategoriesPage() {
       </div>
     </div>
   );
+}
+
+
+function AIDecisionAssistantPage() {
+  const [query, setQuery] = useState("Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.");
+  const [searched, setSearched] = useState(true);
+  const analysis = () => {
+    const normalized = query.toLocaleLowerCase('tr-TR');
+    const match = normalized.match(/(\d+(?:[.,]\d+)?)\s*(milyon|m|bin|tl)/);
+    const raw = match ? Number(match[1].replace(',', '.')) : 8;
+    const budget = match ? (match[2] === 'milyon' || match[2] === 'm' ? raw * 1000000 : match[2] === 'bin' ? raw * 1000 : raw) : 8000000;
+    const rooms = normalized.match(/\d\+\d/)?.[0] || '';
+    const district = normalized.includes('çankaya') ? 'Çankaya' : '';
+    const type = normalized.includes('daire') ? 'Daire' : '';
+    const matches = SAMPLE_LISTINGS.filter((item) => (!district || item.district === district) && (!type || item.propertyType === type) && (!rooms || item.rooms === rooms) && item.price <= budget);
+    return { budget, rooms, district, matches };
+  };
+  const result = analysis();
+  const money = (value: number) => value.toLocaleString('tr-TR') + ' ₺';
+  return <div className="min-h-screen bg-slate-50 py-10">
+    <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-[#640610] px-6 py-10 text-white shadow-2xl sm:px-10">
+        <span className="inline-flex rounded-full border border-amber-300/50 bg-amber-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-amber-200">ÜCRETSİZ DEMO · AI KARAR ASİSTANI</span>
+        <h1 className="mt-4 text-3xl font-black sm:text-5xl">Sadece ilan değil, <span className="text-amber-300">karar özeti.</span></h1>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">İhtiyacınızı günlük dille yazın. Demo asistan; site içindeki ilanları, yatırım metriklerini ve bölge bilgisini tek ekranda özetler.</p>
+        <div className="mt-7 flex flex-col gap-3 rounded-2xl bg-white p-3 shadow-xl sm:flex-row">
+          <input value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && setSearched(true)} className="min-w-0 flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 outline-none ring-[#a30b1d] focus:ring-2" placeholder="Örn. Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum." />
+          <button onClick={() => setSearched(true)} className="rounded-xl bg-[#a30b1d] px-6 py-3 text-sm font-black text-white transition hover:bg-[#850916]"><Search className="mr-2 inline h-4 w-4" />Analiz Et</button>
+        </div>
+        <p className="mt-3 text-xs text-slate-400">Bu ilk sürüm, ücretsiz demo amaçlı olarak site verisi ve örnek bölge metrikleriyle çalışır.</p>
+      </div>
+      {searched && <div className="mt-7 grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
+        <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+          <div className="flex flex-wrap items-start justify-between gap-3"><div><p className="text-xs font-black tracking-widest text-[#a30b1d]">AI ÖZETİ</p><h2 className="mt-1 text-2xl font-black text-slate-900">{result.district || 'Seçilen bölge'} için değerlendirme</h2></div><span className="rounded-full bg-red-100 px-3 py-1.5 text-xs font-black text-red-700">{result.matches.length} uygun ilan</span></div>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3"><div className="rounded-2xl bg-red-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">BÜTÇE</p><p className="mt-1 text-lg font-black text-slate-900">{money(result.budget)}</p></div><div className="rounded-2xl bg-red-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">ORT. m² FİYATI</p><p className="mt-1 text-lg font-black text-slate-900">45.500 ₺</p></div><div className="rounded-2xl bg-red-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">TAHMİNİ KİRA</p><p className="mt-1 text-lg font-black text-slate-900">31.000 - 38.000 ₺</p></div></div>
+          <div className="mt-6 space-y-3">{result.matches.length ? result.matches.map((item) => <Link key={item.id} to={'/ilan/' + item.id} className="flex gap-4 rounded-2xl border border-slate-100 p-3 transition hover:border-red-300 hover:bg-red-50/40"><img src={item.image} alt="" className="h-20 w-28 rounded-xl object-cover"/><div className="min-w-0 flex-1"><p className="truncate font-black text-slate-900">{item.title}</p><p className="mt-1 text-xs text-slate-500">{item.area} m² · {item.rooms} · {item.neighborhood}, {item.district}</p><p className="mt-2 font-black text-red-700">{money(item.price)}</p></div><ArrowRight className="mt-7 h-5 w-5 text-slate-400"/></Link>) : <div className="rounded-2xl bg-slate-50 p-6 text-center text-sm font-bold text-slate-500">Bu kriterlerde demo ilanda sonuç bulunamadı. Farklı bir bütçe veya ilan türü deneyin.</div>}</div>
+        </section>
+        <aside className="space-y-5"><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-[#a30b1d]">YATIRIM GÖRÜNÜMÜ</p><div className="mt-4 space-y-4 text-sm"><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Tahmini brüt getiri</span><b className="text-slate-900">%5,6</b></div><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Geri dönüş süresi</span><b className="text-slate-900">17,8 yıl</b></div><div className="flex items-center justify-between"><span className="text-slate-500">5 yıllık fiyat değişimi</span><b className="text-emerald-600">+%164</b></div></div><p className="mt-4 text-[11px] leading-relaxed text-slate-400">Gösterimler örnek veriyle üretilmiştir; yatırım tavsiyesi değildir.</p></div><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-[#a30b1d]">BÖLGEDE NELER VAR?</p><div className="mt-4 grid grid-cols-2 gap-3 text-xs font-bold text-slate-700"><div className="rounded-xl bg-slate-50 p-3">🏫 12 okul<br/><span className="text-slate-400">1 km içinde</span></div><div className="rounded-xl bg-slate-50 p-3">🏥 4 hastane<br/><span className="text-slate-400">3 km içinde</span></div><div className="rounded-xl bg-slate-50 p-3">🚇 Metro<br/><span className="text-slate-400">850 m mesafe</span></div><div className="rounded-xl bg-slate-50 p-3">🏦 Kredi<br/><span className="text-slate-400">Hesaplanabilir</span></div></div><Link to="/danismanlarimiz" className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-[#a30b1d] px-4 py-3 text-xs font-black text-white hover:bg-[#850916]">Bölge danışmanlarıyla görüş <ArrowRight className="ml-2 h-4 w-4"/></Link></div></aside>
+      </div>}
+    </div>
+  </div>;
 }
 
 type MapListing = ListingItem & { lat: number; lng: number };
@@ -3674,6 +3715,7 @@ export default function RealtyCenterApp() {
             <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
             <Route path="/ilanlarimiz" element={<ListingsPageV2 />} />
             <Route path="/harita-ile-ara" element={<MapSearchPage />} />
+            <Route path="/ai-karar-asistani" element={<AIDecisionAssistantPage />} />
             <Route path="/ilan/:id" element={<ListingDetailPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
