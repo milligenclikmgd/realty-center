@@ -243,3 +243,13 @@
 @media (prefers-reduced-motion: reduce) {
   .featured-card-aurora, .featured-card-aurora::after { animation: none; }
 }
+
+
+/* Realty Center Network bildirimlerinin yumuşak değişimi */
+.network-notice-swap {
+  animation: networkNoticeSwap .65s ease-out both;
+}
+@keyframes networkNoticeSwap {
+  from { opacity: 0; transform: translateY(8px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
