@@ -778,9 +778,9 @@ function FeaturedListingsShowcase() {
             ÖZEL SEÇKİ
           </span>
           <h2 className="mt-4 font-serif text-4xl font-black italic tracking-tight text-slate-950 sm:text-5xl">
-            Vitrin <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">İlanları</span>
+            Seçkin <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">Gayrimenkuller</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Bütçe dostu, özenle seçilmiş gayrimenkul fırsatları</p>
+          <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
         </div>
 
         <div
@@ -820,7 +820,7 @@ function FeaturedListingsShowcase() {
                   <p className="text-xs font-black uppercase tracking-widest text-red-200">{item.type} · {item.propertyType}</p>
                   <h3 className="mt-2 max-w-lg text-xl font-black leading-tight sm:text-3xl">{item.title}</h3>
                   <div className="mt-4 flex items-end justify-between gap-4">
-                    <div><p className="text-xs font-semibold text-white/70">{item.district}, {item.neighborhood}</p><p className="mt-1 text-2xl font-black sm:text-3xl">{item.price.toLocaleString('tr-TR')} ₺</p></div>
+                    <div><p className="text-xs font-semibold text-white/70">{item.district}, {item.neighborhood}</p><p className="mt-2 inline-flex rounded-xl border border-white/25 bg-white/12 px-3 py-2 text-2xl font-black shadow-lg backdrop-blur-md sm:text-3xl">{item.price.toLocaleString('tr-TR')} ₺</p></div>
                     <span className="hidden rounded-full bg-white px-5 py-2.5 text-xs font-black text-red-700 shadow-lg sm:inline-flex">İlanı İncele <ArrowRight className="ml-2 h-4 w-4" /></span>
                   </div>
                 </div>
