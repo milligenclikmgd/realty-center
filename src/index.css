@@ -325,25 +325,7 @@
 }
 
 
-/* Header: tek, mimari plan hissi veren sürekli çizim. */
-.header-corporate-glass::before {
-  inset: auto;
-  top: 50%;
-  left: 0;
-  width: 560px;
-  height: 150px;
-  margin-top: -75px;
-  opacity: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 150'%3E%3Cpath d='M0 108H118V48H276V92H398V24H560' fill='none' stroke='%23ffffff' stroke-opacity='.72' stroke-width='1.5'/%3E%3Cpath d='M118 48l18 18m-18-18l18-18M398 24l-18 18m18-18l-18-18' fill='none' stroke='%23ffffff' stroke-opacity='.5' stroke-width='1'/%3E%3C/svg%3E") center / contain no-repeat !important;
-  animation: headerBlueprintLine 13s ease-in-out infinite !important;
-}
+
+/* Header arka planı sade tutulur; hareketli mimari çizim kullanılmaz. */
+.header-corporate-glass::before,
 .header-corporate-glass::after { display: none; }
-@keyframes headerBlueprintLine {
-  0%, 12% { opacity: 0; transform: translate3d(-620px, 8px, 0); }
-  24% { opacity: .58; }
-  60% { opacity: .58; transform: translate3d(calc(50vw - 280px), -4px, 0); }
-  78%, 100% { opacity: 0; transform: translate3d(calc(100vw + 70px), -12px, 0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .header-corporate-glass::before { animation: none !important; opacity: .38; transform: translate3d(calc(50vw - 280px), 0, 0); }
-}
