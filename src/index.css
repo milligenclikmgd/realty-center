@@ -268,3 +268,42 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-search-entrance { animation: none; }
 }
+
+
+/* Kurumsal bordo cam header: hafif, yavaş hareket eden geometrik arka plan */
+.header-corporate-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .28;
+  background-image:
+    linear-gradient(115deg, transparent 0 44%, rgba(255,255,255,.13) 44.15%, transparent 44.35%),
+    linear-gradient(65deg, transparent 0 56%, rgba(255,255,255,.09) 56.15%, transparent 56.35%),
+    radial-gradient(circle at 18% 40%, rgba(255,255,255,.18) 0 1px, transparent 1.5px);
+  background-size: 260px 190px, 320px 240px, 74px 74px;
+  animation: headerGeometryDrift 24s linear infinite;
+}
+.header-corporate-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 12%, rgba(255,255,255,.055) 34%, transparent 51%);
+  transform: translateX(-115%);
+  animation: headerSoftSheen 11s ease-in-out infinite;
+}
+@keyframes headerGeometryDrift {
+  from { background-position: 0 0, 0 0, 0 0; }
+  to { background-position: 260px 95px, -320px 120px, 74px 37px; }
+}
+@keyframes headerSoftSheen {
+  0%, 58%, 100% { transform: translateX(-115%); opacity: 0; }
+  68% { opacity: 1; }
+  84% { transform: translateX(115%); opacity: .7; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-corporate-glass::before, .header-corporate-glass::after { animation: none; }
+}
