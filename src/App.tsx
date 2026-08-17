@@ -403,6 +403,11 @@ function TurkeyListingMap() {
   }, []);
 
   const paintGroup = (group: SVGGElement | null, color: string) => group?.querySelectorAll('path').forEach((path) => path.style.fill = color);
+  const clearActiveGroup = () => {
+    paintGroup(activeGroupRef.current, '#fee2e2');
+    activeGroupRef.current = null;
+    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+  };
 
   const handleMapMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const group = (event.target as Element).closest('g[data-realty-city]') as SVGGElement | null;
@@ -420,11 +425,14 @@ function TurkeyListingMap() {
     tooltip.style.top = (event.clientY - box.top - 14) + 'px';
   };
 
-  const handleMapLeave = () => {
-    paintGroup(activeGroupRef.current, '#fee2e2');
-    activeGroupRef.current = null;
-    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+  const handleMapOut = (event: React.MouseEvent<HTMLDivElement>) => {
+    const leavingGroup = (event.target as Element).closest('g[data-realty-city]') as SVGGElement | null;
+    const nextTarget = event.relatedTarget instanceof Element ? event.relatedTarget : null;
+    const enteringGroup = nextTarget?.closest('g[data-realty-city]') as SVGGElement | null;
+    if (leavingGroup && leavingGroup === activeGroupRef.current && leavingGroup !== enteringGroup) clearActiveGroup();
   };
+
+  const handleMapLeave = () => clearActiveGroup();
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const city = (event.target as Element).closest('g[data-realty-city]')?.getAttribute('data-realty-city');
@@ -436,7 +444,7 @@ function TurkeyListingMap() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-6"><span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />ETKİLEŞİMLİ TÜRKİYE HARİTASI</span><h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>TÜRKİYE'DE</span><img src="/rlogo.png" alt="Realty Center" className="h-8 sm:h-9 w-auto object-contain" /></h2><p className="mt-2 text-sm font-medium text-slate-600">İlin üzerine gelin, seçmek için tıklayın.</p></div>
         <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-5 shadow-lg">
-          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div className="relative mx-auto w-full max-w-5xl"><div ref={mapRef} onMouseMove={handleMapMove} onMouseLeave={handleMapLeave} onClick={handleMapClick} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer" dangerouslySetInnerHTML={{ __html: svgMarkup }} /><div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-xl bg-red-600 px-3 py-2 text-sm font-black text-white shadow-xl" /></div>}
+          {mapError ? <p className="py-16 text-center text-sm text-slate-500">Harita şu anda yüklenemedi.</p> : <div className="relative mx-auto w-full max-w-5xl"><div ref={mapRef} onMouseOver={handleMapMove} onMouseMove={handleMapMove} onMouseOut={handleMapOut} onMouseLeave={handleMapLeave} onClick={handleMapClick} className="turkey-listing-map w-full [&_svg]:h-auto [&_svg]:w-full [&_g[data-realty-city]]:cursor-pointer" dangerouslySetInnerHTML={{ __html: svgMarkup }} /><div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-xl bg-red-600 px-3 py-2 text-sm font-black text-white shadow-xl" /></div>}
         </div>
       </div>
     </section>
