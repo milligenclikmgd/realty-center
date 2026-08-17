@@ -18,6 +18,13 @@ import {
   Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned
 } from 'lucide-react';
 
+const STATIC_LANGUAGES = {
+  tr: { corporate:'Kurumsal', offices:'Ofislerimiz', agents:'Danışmanlarımız', listings:'İlanlarımız', ai:'🤖 Yapay Zeka Asistanı', projects:'Projelerimiz', contact:'İletişim', advisor:'Danışman Ol', franchise:'Franchise Ol!', panel:'Panel' },
+  en: { corporate:'Corporate', offices:'Our Offices', agents:'Our Advisors', listings:'Listings', ai:'🤖 AI Real Estate Assistant', projects:'Projects', contact:'Contact', advisor:'Become an Advisor', franchise:'Become a Franchise!', panel:'Panel' },
+  ar: { corporate:'الشركة', offices:'مكاتبنا', agents:'مستشارونا', listings:'العقارات', ai:'🤖 مساعد العقارات الذكي', projects:'المشاريع', contact:'اتصل بنا', advisor:'كن مستشاراً', franchise:'كن شريك امتياز!', panel:'لوحة التحكم' }
+} as const;
+type StaticLanguage = keyof typeof STATIC_LANGUAGES;
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -619,14 +626,15 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
 }
 
 
-function Header() {
+function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const location = useLocation();
   const close = () => setMobileOpen(false);
+  const t = STATIC_LANGUAGES[language];
   const links = [
-    ['Kurumsal', '/kurumsal/hakkimizda'], ['Ofislerimiz', '/ofislerimiz'], ['Danışmanlarımız', '/danismanlarimiz'],
-    ['İlanlarımız', '/ilan-kategorileri'], ['🤖 Yapay Zeka Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
+    [t.corporate, '/kurumsal/hakkimizda'], [t.offices, '/ofislerimiz'], [t.agents, '/danismanlarimiz'],
+    [t.listings, '/ilan-kategorileri'], [t.ai, '/ai-karar-asistani'], [t.projects, '/projelerimiz'], [t.contact, '/iletisim']
   ];
 
   useEffect(() => {
@@ -652,8 +660,9 @@ function Header() {
       <div className="pointer-events-none absolute bottom-0 left-0 z-30 h-[2px] w-full origin-left rounded-r-full bg-gradient-to-r from-white/35 via-white/90 to-white/35 opacity-90 shadow-[0_0_10px_rgba(255,255,255,.42)] transition-transform duration-500 ease-out" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       <div className="relative z-10 flex items-center justify-between gap-4">
         <Link to="/" onClick={close} className="relative -my-2 flex items-center px-2 py-2 transition-transform hover:scale-[1.02]"><img src="/rlogo.png" alt="Realty Center" className="h-12 w-auto object-contain brightness-0 invert lg:h-14" /></Link>
-        <nav className="hidden items-center gap-6 text-sm font-extrabold xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}<Link to="/danisman-basvuru" className={menuLinkClass('/danisman-basvuru', 'font-black')}>Danışman Ol</Link><Link to="/franchise-basvuru" className={menuLinkClass('/franchise-basvuru', 'font-black')}>Franchise Ol!</Link></nav>
-        <div className="flex shrink-0 items-center gap-2"><Link to="/panel" className="group relative hidden overflow-hidden rounded-xl border border-white/80 bg-white px-5 py-2 text-sm font-black text-[#CD011E] shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff5f6] hover:shadow-xl hover:shadow-black/30 sm:inline-flex"><span className="relative z-10">Panel</span><span className="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-[#CD011E]/25 to-transparent opacity-0 transition-all duration-700 group-hover:left-[130%] group-hover:opacity-100"/></Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-white/60 hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
+        <nav className="hidden items-center gap-6 text-sm font-extrabold xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}<Link to="/danisman-basvuru" className={menuLinkClass('/danisman-basvuru', 'font-black')}>{t.advisor}</Link><Link to="/franchise-basvuru" className={menuLinkClass('/franchise-basvuru', 'font-black')}>{t.franchise}</Link></nav>
+        <div className="hidden items-center overflow-hidden rounded-lg border border-white/30 text-[10px] font-black sm:flex">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} className={`px-2 py-2 transition ${language===item?'bg-white text-[#CD011E]':'text-white hover:bg-white/15'}`}>{item.toUpperCase()}</button>)}</div>
+        <div className="flex shrink-0 items-center gap-2"><Link to="/panel" className="group relative hidden overflow-hidden rounded-xl border border-white/80 bg-white px-5 py-2 text-sm font-black text-[#CD011E] shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff5f6] hover:shadow-xl hover:shadow-black/30 sm:inline-flex"><span className="relative z-10">{t.panel}</span><span className="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-[#CD011E]/25 to-transparent opacity-0 transition-all duration-700 group-hover:left-[130%] group-hover:opacity-100"/></Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-white/60 hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
       {mobileOpen && <nav className="relative z-10 xl:hidden mt-3 grid grid-cols-2 gap-2 border-t border-white/10 pt-3 pb-2 text-sm font-black text-white">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-xl bg-white/5 px-3 py-3 transition hover:bg-white/10">{label}</Link>)}<Link onClick={close} to="/danisman-basvuru" className="rounded-xl bg-white/5 px-3 py-3 text-left transition hover:bg-white/10">Danışman Ol</Link><Link onClick={close} to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-3 py-3 text-left text-white transition hover:brightness-110">Franchise Ol!</Link><Link onClick={close} to="/panel" className="col-span-2 rounded-xl border border-[#ef6577] bg-[#CD011E] px-3 py-3 text-center transition hover:brightness-110">Panele Git</Link></nav>}
     </header>
@@ -3711,6 +3720,7 @@ function ScrollToTopOnRouteChange() {
 
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
+  const [language, setLanguage] = useState<StaticLanguage>(() => (localStorage.getItem('realty-language') as StaticLanguage) || 'tr');
   const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
   const [wordIndex, setWordIndex] = useState(0);
   const [fade, setFade] = useState(true);
@@ -3731,6 +3741,12 @@ export default function RealtyCenterApp() {
     occupation: '',
     kvkkConsent: false
   });
+
+  useEffect(() => {
+    localStorage.setItem('realty-language', language);
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }, [language]);
 
   const [counts, setCounts] = useState({
     offices: 0,
@@ -3907,7 +3923,7 @@ export default function RealtyCenterApp() {
       <ScrollToTopOnRouteChange />
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
-        <Header />
+        <Header language={language} setLanguage={setLanguage} />
 
         <main className="flex-1">
           <Routes>
