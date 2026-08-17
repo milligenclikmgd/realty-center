@@ -803,7 +803,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
     const delta = event.clientX - dragStartRef.current.x;
     if (Math.abs(delta) > 8) setStreamDirection(delta > 0 ? 'right' : 'left');
     draggingRef.current = false;
-    hoveredRef.current = false;
+    hoveredRef.current = event.pointerType === 'mouse';
     try { event.currentTarget.releasePointerCapture(event.pointerId); } catch {}
   };
 
