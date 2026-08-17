@@ -523,7 +523,7 @@ function RealtyNetworkActivityPanel() {
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   const navigate = useNavigate();
   return (
-    <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
+    <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="listing-cinematic-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
       <div>
         <div className="relative h-44 overflow-hidden bg-slate-900">
           <img 
@@ -2275,7 +2275,7 @@ function ListingDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 py-8 print:bg-white">
+    <div className="listing-detail-enter min-h-screen bg-slate-50 py-8 print:bg-white">
       <div className="mx-auto max-w-[1500px] px-3 sm:px-5 lg:px-6">
         <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between"><div><Link to="/ilanlarimiz?all=1" className="text-xs font-black text-red-700">← İlanlara Dön</Link><div className="mt-3 flex flex-wrap gap-2"><span className="rounded-lg bg-red-700 px-3 py-1 text-xs font-black text-white">{item.type}</span><span className="rounded-lg bg-slate-900 px-3 py-1 text-xs font-black text-white">{item.propertyType}</span></div><h1 className="mt-3 max-w-4xl text-2xl font-black text-slate-900 sm:text-3xl">{item.title}</h1><p className="mt-2 flex items-center gap-1 text-sm font-bold text-slate-500"><MapPin className="h-4 w-4 text-red-700" />{item.city} / {item.district} / {item.neighborhood}</p></div><div className="lg:text-right"><p className="text-3xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><div className="mt-3 flex flex-wrap gap-2 lg:justify-end print:hidden"><button onClick={toggleFavorite} className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-xs font-black ${favorite ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-white text-slate-700'}`}><Heart className={`h-4 w-4 ${favorite ? 'fill-current' : ''}`} />Favorilere Ekle</button><button onClick={() => window.print()} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Printer className="h-4 w-4" />Yazdır</button><button onClick={shareListing} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Share2 className="h-4 w-4" />Paylaş</button></div></div></div>
 
