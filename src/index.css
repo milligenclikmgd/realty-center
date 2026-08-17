@@ -187,3 +187,15 @@
   from { background-position: 0 0, 0 0, 0 0; }
   to { background-position: 68px 34px, 68px 34px, 92px 46px; }
 }
+
+/* Kırmızı zeminlerde her zaman okunaklı beyaz başlık ve etiket metni */
+[class*="bg-red-"][class*="text-red-"],
+[class*="bg-red-"] [class*="text-red-"] {
+  color: #fff !important;
+}
+[class*="bg-red-"] h1,
+[class*="bg-red-"] h2,
+[class*="bg-red-"] h3,
+[class*="bg-red-"] h4 {
+  color: #fff !important;
+}
