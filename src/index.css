@@ -385,3 +385,9 @@
 @media (prefers-reduced-motion: reduce) {
   .ai-world-first-badge { animation: none; }
 }
+
+
+.information-dropdown::before{content:'';position:absolute;right:1.7rem;top:-7px;width:13px;height:13px;background:rgba(255,255,255,.98);transform:rotate(45deg);border-left:1px solid #e2e8f0;border-top:1px solid #e2e8f0;}
+.group:hover .information-dropdown-item{animation:informationItemIn .34s cubic-bezier(.2,.8,.2,1) both;}
+.group:hover .information-dropdown-item:nth-child(3){animation-delay:.03s}.group:hover .information-dropdown-item:nth-child(4){animation-delay:.07s}.group:hover .information-dropdown-item:nth-child(5){animation-delay:.11s}.group:hover .information-dropdown-item:nth-child(6){animation-delay:.15s}
+@keyframes informationItemIn{from{opacity:0;transform:translateX(9px)}to{opacity:1;transform:none}}
