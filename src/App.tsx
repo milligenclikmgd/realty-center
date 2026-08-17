@@ -621,17 +621,40 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
 
 function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const location = useLocation();
   const close = () => setMobileOpen(false);
   const links = [
     ['Kurumsal', '/kurumsal/hakkimizda'], ['Ofislerimiz', '/ofislerimiz'], ['Danışmanlarımız', '/danismanlarimiz'],
     ['İlanlarımız', '/ilan-kategorileri'], ['🤖 Yapay Zeka Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
   ];
+
+  useEffect(() => {
+    const updateProgress = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
+    };
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    return () => {
+      window.removeEventListener('scroll', updateProgress);
+      window.removeEventListener('resize', updateProgress);
+    };
+  }, [location.pathname]);
+
+  const menuLinkClass = (to: string, extra = '') =>
+    `relative py-2 transition after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-white/30 after:transition-all hover:text-white hover:after:bg-white ${
+      location.pathname === to ? 'text-white after:bg-white' : 'text-slate-100'
+    } ${extra}`;
+
   return (
-    <header className="header-corporate-glass sticky top-0 isolate z-40 w-full border-b border-white/10 bg-[#CD011E]/94 px-6 py-2.5 text-white shadow-lg shadow-black/25 backdrop-blur-md transition-shadow duration-500">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[3px] bg-[#CD011E] shadow-[0_0_16px_rgba(205,1,30,.9)]" />
+    <header className="header-corporate-glass sticky top-0 isolate z-40 w-full border-b border-white/10 bg-[#CD011E] px-6 py-2.5 text-white shadow-lg shadow-black/25 transition-shadow duration-500">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[3px] bg-white/15" />
+      <div className="pointer-events-none absolute bottom-0 left-0 z-30 h-[3px] bg-white shadow-[0_0_12px_rgba(255,255,255,.75)] transition-[width] duration-150 ease-out" style={{ width: `${scrollProgress}%` }} />
       <div className="relative z-10 flex items-center justify-between gap-4">
         <Link to="/" onClick={close} className="relative -my-2 flex items-center px-2 py-2 transition-transform hover:scale-[1.02]"><img src="/rlogo.png" alt="Realty Center" className="h-12 w-auto object-contain brightness-0 invert lg:h-14" /></Link>
-        <nav className="hidden items-center gap-6 text-sm font-extrabold text-slate-100 xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className="relative py-2 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">{label}</Link>)}<Link to="/danisman-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Danışman Ol</Link><Link to="/franchise-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Franchise Ol!</Link></nav>
+        <nav className="hidden items-center gap-6 text-sm font-extrabold xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}<Link to="/danisman-basvuru" className={menuLinkClass('/danisman-basvuru', 'font-black')}>Danışman Ol</Link><Link to="/franchise-basvuru" className={menuLinkClass('/franchise-basvuru', 'font-black')}>Franchise Ol!</Link></nav>
         <div className="flex shrink-0 items-center gap-2"><Link to="/panel" className="group relative hidden overflow-hidden rounded-xl border border-[#ef6577] bg-[#CD011E] px-5 py-2 text-sm font-black text-white shadow-lg shadow-[#CD011E]/25 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#CD011E]/40 sm:inline-flex"><span className="relative z-10">Panel</span><span className="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-0 transition-all duration-700 group-hover:left-[130%] group-hover:opacity-90"/></Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-white/60 hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
       {mobileOpen && <nav className="relative z-10 xl:hidden mt-3 grid grid-cols-2 gap-2 border-t border-white/10 pt-3 pb-2 text-sm font-black text-white">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-xl bg-white/5 px-3 py-3 transition hover:bg-white/10">{label}</Link>)}<Link onClick={close} to="/danisman-basvuru" className="rounded-xl bg-white/5 px-3 py-3 text-left transition hover:bg-white/10">Danışman Ol</Link><Link onClick={close} to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-3 py-3 text-left text-white transition hover:brightness-110">Franchise Ol!</Link><Link onClick={close} to="/panel" className="col-span-2 rounded-xl border border-[#ef6577] bg-[#CD011E] px-3 py-3 text-center transition hover:brightness-110">Panele Git</Link></nav>}
