@@ -850,12 +850,12 @@ function FeaturedListingsShowcase() {
               >
                 <img src={item.image} alt={item.title} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
                 {isActive && <div className="featured-card-aurora pointer-events-none absolute inset-0 z-[1]" />}
-                <div className={`absolute inset-0 z-[2] transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent' : 'bg-slate-950/25'}`} />
-                <div className="absolute left-5 top-5 flex items-center gap-2">
+                <div className={`absolute inset-x-0 bottom-0 z-[2] h-[58%] transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-[#071126]/95 via-[#071126]/62 to-transparent' : 'bg-gradient-to-t from-slate-950/45 to-transparent'}`} />
+                <div className="absolute left-5 top-5 z-[3] flex items-center gap-2">
                   <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
                   <span className="rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 backdrop-blur">UYGUN FİYAT</span>
                 </div>
-                <div className={`absolute inset-x-0 bottom-0 p-6 text-white transition-all duration-500 sm:p-8 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-70'}`}>
+                <div className={`absolute inset-x-0 bottom-0 z-[3] p-6 text-white transition-all duration-500 sm:p-8 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-70'}`}>
                   <p className="text-xs font-black uppercase tracking-widest text-red-200">{item.type} · {item.propertyType}</p>
                   <h3 className="mt-2 max-w-lg text-xl font-black leading-tight sm:text-3xl">{item.title}</h3>
                   <div className="mt-4 flex items-end justify-between gap-4">
