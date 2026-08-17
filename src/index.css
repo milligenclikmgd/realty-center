@@ -196,11 +196,15 @@
   color: #fff !important;
 }
 
-/* Türkiye haritası: renk değişimi doğrudan SVG hover ile yapılır; fare hareketinde yanıp sönmez. */
+/* Türkiye haritası: SVG'nin kendi hover durumu kullanılır; JavaScript ile renk değişimi yoktur. */
 .turkey-listing-map g[data-realty-city] path {
-  fill: #fee2e2 !important;
-  stroke: #ef4444 !important;
+  fill: #CD011E !important;
+  fill-opacity: .34 !important;
+  stroke: #ffffff !important;
+  stroke-opacity: .8 !important;
+  stroke-width: .75 !important;
 }
-.turkey-listing-map g[data-realty-city].is-city-active path {
-  fill: #ef2222 !important;
+.turkey-listing-map g[data-realty-city]:hover path {
+  fill: #820014 !important;
+  fill-opacity: .98 !important;
 }
