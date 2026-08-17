@@ -55,15 +55,8 @@
   display: flex;
   width: max-content;
   gap: 1.5rem;
-  animation: marquee 35s linear infinite;
-}
-
-.live-listing-track-right {
-  animation-direction: reverse;
-}
-
-.live-listing-track-paused {
-  animation-play-state: paused;
+  will-change: transform;
+  user-select: none;
 }
 
 .gold-showcase {
