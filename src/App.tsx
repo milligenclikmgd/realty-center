@@ -394,9 +394,6 @@ function TurkeyListingMap() {
         parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
           const city = group.dataset.cityName || '';
           group.setAttribute('data-realty-city', city);
-          const title = parsed.createElementNS('http://www.w3.org/2000/svg', 'title');
-          title.textContent = city;
-          group.prepend(title);
           group.querySelectorAll('path').forEach((path) => {
             path.setAttribute('style', 'fill:#CD011E;fill-opacity:0.34;stroke:#ffffff;stroke-opacity:0.8;stroke-width:0.75;');
           });
