@@ -329,3 +329,22 @@
 /* Header arka planı sade tutulur; hareketli mimari çizim kullanılmaz. */
 .header-corporate-glass::before,
 .header-corporate-glass::after { display: none; }
+
+
+/* Akıcı hareket: yalnızca compositing dostu alanlarda transform/opaklık kullanılır. */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-marquee,
+  .live-listing-track,
+  .gold-showcase-glow,
+  .gold-showcase-spark,
+  .gold-showcase-card::after,
+  .ai-assistant-hero::before,
+  .ai-assistant-hero::after,
+  .featured-card-aurora,
+  .featured-card-aurora::after,
+  .hero-search-entrance {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
