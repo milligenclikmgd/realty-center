@@ -971,7 +971,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </button>
 
               <Link
-                to="/franchise-basvuru"
+                to="/harita-ile-ara"
                 className="relative overflow-hidden group h-14 flex-1 rounded-t-xl border border-white/60 bg-white/95 text-red-700 hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <MapPinned className="h-4 w-4 text-red-700 relative z-10" />
@@ -979,7 +979,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </Link>
 
               <Link
-                to="/danisman-basvuru"
+                to="/ai-karar-asistani"
                 className="relative overflow-hidden group h-24 rounded-t-lg bg-white text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <span className="text-base relative z-10">✨</span>
