@@ -973,7 +973,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               style={{ backgroundImage: `url('${imgUrl}')` }}
             />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#CD011E]/88 via-[#CD011E]/52 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
