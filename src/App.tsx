@@ -619,7 +619,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
 }
 
 
-function Header({ scrolled }: { scrolled: boolean }) {
+function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const close = () => setMobileOpen(false);
   const links = [
@@ -631,8 +631,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[3px] bg-[#CD011E] shadow-[0_0_16px_rgba(205,1,30,.9)]" />
       <div className="relative z-10 flex items-center justify-between gap-4">
         <Link to="/" onClick={close} className="relative -my-2 flex items-center px-2 py-2 transition-transform hover:scale-[1.02]"><img src="/rlogo.png" alt="Realty Center" className="h-12 w-auto object-contain brightness-0 invert lg:h-14" /></Link>
-        {scrolled && <Link to="/ai-karar-asistani" className="header-ai-search hidden min-w-0 flex-1 items-center gap-3 rounded-xl border border-white/30 bg-black/15 px-4 py-2 text-sm font-bold text-white shadow-inner backdrop-blur-md lg:flex"><span className="text-base">🤖</span><span className="truncate text-white/90">Yapay Zeka ile gayrimenkul ara...</span><span className="ml-auto rounded-lg bg-white px-3 py-1 text-[11px] font-black text-[#CD011E]">YZ ile Ara</span></Link>}
-        <nav className={`hidden items-center gap-6 text-sm font-extrabold text-slate-100 ${scrolled ? 'xl:hidden' : 'xl:flex'}`}>{links.map(([label, to]) => <Link key={to} to={to} className="relative py-2 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">{label}</Link>)}<Link to="/danisman-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Danışman Ol</Link><Link to="/franchise-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Franchise Ol!</Link></nav>
+        <nav className="hidden items-center gap-6 text-sm font-extrabold text-slate-100 xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className="relative py-2 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">{label}</Link>)}<Link to="/danisman-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Danışman Ol</Link><Link to="/franchise-basvuru" className="relative py-2 font-black text-slate-100 transition hover:text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[#CD011E] after:transition-all hover:after:w-full">Franchise Ol!</Link></nav>
         <div className="flex shrink-0 items-center gap-2"><Link to="/panel" className="group relative hidden overflow-hidden rounded-xl border border-[#ef6577] bg-[#CD011E] px-5 py-2 text-sm font-black text-white shadow-lg shadow-[#CD011E]/25 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#CD011E]/40 sm:inline-flex"><span className="relative z-10">Panel</span><span className="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-0 transition-all duration-700 group-hover:left-[130%] group-hover:opacity-90"/></Link><button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:border-white/60 hover:bg-white/10">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button></div>
       </div>
       {mobileOpen && <nav className="relative z-10 xl:hidden mt-3 grid grid-cols-2 gap-2 border-t border-white/10 pt-3 pb-2 text-sm font-black text-white">{links.map(([label, to]) => <Link key={to} onClick={close} to={to} className="rounded-xl bg-white/5 px-3 py-3 transition hover:bg-white/10">{label}</Link>)}<Link onClick={close} to="/danisman-basvuru" className="rounded-xl bg-white/5 px-3 py-3 text-left transition hover:bg-white/10">Danışman Ol</Link><Link onClick={close} to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-3 py-3 text-left text-white transition hover:brightness-110">Franchise Ol!</Link><Link onClick={close} to="/panel" className="col-span-2 rounded-xl border border-[#ef6577] bg-[#CD011E] px-3 py-3 text-center transition hover:brightness-110">Panele Git</Link></nav>}
@@ -3858,7 +3857,7 @@ export default function RealtyCenterApp() {
       <ScrollToTopOnRouteChange />
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
-        <Header scrolled={scrolled} />
+        <Header />
 
         <main className="flex-1">
           <Routes>
