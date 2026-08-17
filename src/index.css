@@ -307,3 +307,19 @@
 @media (prefers-reduced-motion: reduce) {
   .header-corporate-glass::before, .header-corporate-glass::after { animation: none; }
 }
+
+
+/* Header üzerindeki geometrik hareket, kırmızı zeminde görünür ama yumuşak kalır. */
+.header-corporate-glass::before {
+  opacity: .48;
+  background-image:
+    linear-gradient(115deg, transparent 0 43%, rgba(255,255,255,.24) 43.15%, transparent 43.4%),
+    linear-gradient(65deg, transparent 0 55%, rgba(255,255,255,.16) 55.15%, transparent 55.4%),
+    radial-gradient(circle at 18% 40%, rgba(255,255,255,.36) 0 1px, transparent 1.8px) !important;
+}
+.header-corporate-glass::after { opacity: .82; }
+.header-ai-search { animation: headerAiSearchIn .45s ease-out both; }
+@keyframes headerAiSearchIn {
+  from { opacity: 0; transform: translateY(-8px); filter: blur(5px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
