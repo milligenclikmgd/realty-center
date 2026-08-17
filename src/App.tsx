@@ -407,7 +407,13 @@ function TurkeyListingMap() {
   const handleMapMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const group = (event.target as Element).closest('g[data-realty-city]') as SVGGElement | null;
     const tooltip = tooltipRef.current;
-    if (!group || !tooltip || !mapRef.current) return;
+    if (!tooltip || !mapRef.current) return;
+    if (!group) {
+      paintGroup(activeGroupRef.current, '#CD011E', 0.32);
+      activeGroupRef.current = null;
+      tooltip.style.display = 'none';
+      return;
+    }
     if (activeGroupRef.current !== group) {
       paintGroup(activeGroupRef.current, '#CD011E', 0.32);
       paintGroup(group, '#820014', 0.96);
@@ -807,7 +813,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
     try { event.currentTarget.releasePointerCapture(event.pointerId); } catch {}
   };
 
-  return <div className="relative">
+  return <div className="relative mx-auto max-w-[1780px] px-5 sm:px-8 lg:px-12">
     <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setStreamDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setStreamDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
     <div className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing" onMouseEnter={() => { hoveredRef.current = true; }} onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}><div ref={trackRef} className="live-listing-track">{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
   </div>;
@@ -962,7 +968,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                   <Search className="w-3.5 h-3.5 relative z-10" />
                   <span className="relative z-10">ARA</span>
                 </button>
-                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-md border border-red-200 bg-red-50 px-6 py-3.5 text-sm font-black text-red-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white sm:w-auto">🗺️ Harita ile Ara</Link>
+                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-md border border-red-700 bg-red-700 px-6 py-3.5 text-sm font-black text-white shadow-sm transition hover:brightness-110 sm:w-auto">🗺️ Harita ile Ara</Link>
               </div>
 
             </div>
