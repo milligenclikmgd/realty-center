@@ -381,6 +381,7 @@ function TurkeyListingMap() {
   const navigate = useNavigate();
   const mapRef = useRef<HTMLDivElement>(null);
   const activeGroupRef = useRef<SVGGElement | null>(null);
+  const leaveTimerRef = useRef<number | null>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const [svgMarkup, setSvgMarkup] = useState('');
   const [mapError, setMapError] = useState(false);
@@ -402,6 +403,19 @@ function TurkeyListingMap() {
       .catch(() => setMapError(true));
   }, []);
 
+  const paintCity = (group: SVGGElement | null, color: string) => {
+    group?.querySelectorAll<SVGPathElement>('path').forEach((path) => {
+      path.style.setProperty('fill', color, 'important');
+    });
+  };
+
+  const clearActiveCity = () => {
+    paintCity(activeGroupRef.current, '#fee2e2');
+    activeGroupRef.current = null;
+    leaveTimerRef.current = null;
+    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+  };
+
   const updateTooltip = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target;
     const group = target instanceof Element
@@ -410,24 +424,33 @@ function TurkeyListingMap() {
     const tooltip = tooltipRef.current;
     if (!tooltip || !mapRef.current) return;
 
-    if (group !== activeGroupRef.current) {
-      activeGroupRef.current?.classList.remove('is-city-active');
-      activeGroupRef.current = group;
-      group?.classList.add('is-city-active');
-      tooltip.textContent = group?.getAttribute('data-realty-city') || '';
-      tooltip.style.display = group ? 'block' : 'none';
+    if (!group) {
+      if (activeGroupRef.current && leaveTimerRef.current === null) {
+        leaveTimerRef.current = window.setTimeout(clearActiveCity, 90);
+      }
+      return;
     }
 
-    if (!group) return;
+    if (leaveTimerRef.current !== null) {
+      window.clearTimeout(leaveTimerRef.current);
+      leaveTimerRef.current = null;
+    }
+    if (group !== activeGroupRef.current) {
+      paintCity(activeGroupRef.current, '#fee2e2');
+      activeGroupRef.current = group;
+      paintCity(group, '#ef2222');
+      tooltip.textContent = group.getAttribute('data-realty-city') || '';
+      tooltip.style.display = 'block';
+    }
+
     const box = mapRef.current.getBoundingClientRect();
     tooltip.style.left = (event.clientX - box.left + 14) + 'px';
     tooltip.style.top = (event.clientY - box.top - 14) + 'px';
   };
 
   const hideTooltip = () => {
-    activeGroupRef.current?.classList.remove('is-city-active');
-    activeGroupRef.current = null;
-    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+    if (leaveTimerRef.current !== null) window.clearTimeout(leaveTimerRef.current);
+    clearActiveCity();
   };
 
   const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
