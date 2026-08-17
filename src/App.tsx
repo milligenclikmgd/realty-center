@@ -643,15 +643,13 @@ function Header() {
     };
   }, [location.pathname]);
 
-  const menuLinkClass = (to: string, extra = '') =>
-    `relative py-2 transition after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-white/30 after:transition-all hover:text-white hover:after:bg-white ${
-      location.pathname === to ? 'text-white after:bg-white' : 'text-slate-100'
-    } ${extra}`;
+  const menuLinkClass = (_to: string, extra = '') =>
+    `relative py-2 text-slate-100 transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-white after:opacity-0 after:transition-all after:duration-300 hover:text-white hover:after:w-full hover:after:opacity-100 ${extra}`;
 
   return (
     <header className="header-corporate-glass sticky top-0 isolate z-40 w-full border-b border-white/10 bg-[#CD011E] px-6 py-2.5 text-white shadow-lg shadow-black/25 transition-shadow duration-500">
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[3px] bg-white/15" />
-      <div className="pointer-events-none absolute bottom-0 left-0 z-30 h-[3px] bg-white shadow-[0_0_12px_rgba(255,255,255,.75)] transition-[width] duration-150 ease-out" style={{ width: `${scrollProgress}%` }} />
+      <div className="pointer-events-none absolute bottom-0 left-0 z-30 h-[2px] w-full origin-left rounded-r-full bg-gradient-to-r from-white/35 via-white/90 to-white/35 opacity-90 shadow-[0_0_10px_rgba(255,255,255,.42)] transition-transform duration-500 ease-out" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       <div className="relative z-10 flex items-center justify-between gap-4">
         <Link to="/" onClick={close} className="relative -my-2 flex items-center px-2 py-2 transition-transform hover:scale-[1.02]"><img src="/rlogo.png" alt="Realty Center" className="h-12 w-auto object-contain brightness-0 invert lg:h-14" /></Link>
         <nav className="hidden items-center gap-6 text-sm font-extrabold xl:flex">{links.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}<Link to="/danisman-basvuru" className={menuLinkClass('/danisman-basvuru', 'font-black')}>Danışman Ol</Link><Link to="/franchise-basvuru" className={menuLinkClass('/franchise-basvuru', 'font-black')}>Franchise Ol!</Link></nav>
