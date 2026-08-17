@@ -550,7 +550,7 @@ function Header({ scrolled }: { scrolled: boolean }) {
     ['İlanlarımız', '/ilan-kategorileri'], ['🤖 Yapay Zeka Asistanı', '/ai-karar-asistani'], ['Projelerimiz', '/projelerimiz'], ['İletişim', '/iletisim']
   ];
   return (
-    <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#a90818]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#c90a1b]/92 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
+    <header className={`sticky top-0 z-40 w-full border-b border-white/25 text-white transition-all duration-500 ${scrolled ? 'bg-[#b50606]/95 py-1.5 px-5 lg:px-10 shadow-lg shadow-black/30 backdrop-blur-md' : 'bg-[#db0808]/92 py-2.5 px-6 lg:px-12 shadow-md shadow-black/20 backdrop-blur-sm'}`}>
       <div className="flex items-center justify-between gap-4">
         <Link to="/" onClick={close}><img src="/rlogo.png" alt="Realty Center" className={`w-auto object-contain brightness-0 invert transition-all duration-500 ${scrolled ? 'h-12 lg:h-14' : 'h-14 lg:h-16'}`} /></Link>
         <nav className="hidden xl:flex items-center gap-6 text-sm font-extrabold text-white">{links.map(([label, to]) => <Link key={to} to={to} className="transition hover:text-red-100">{label}</Link>)}<Link to="/danisman-basvuru" className="font-black text-white transition hover:text-red-100">Danışman Ol</Link><Link to="/franchise-basvuru" className="font-black text-white transition hover:text-red-100">Franchise Ol!</Link></nav>
@@ -758,6 +758,17 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
+  const aiExample = "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.";
+  const [aiQuery, setAiQuery] = useState('');
+  useEffect(() => {
+    let index = 0;
+    const typing = window.setInterval(() => {
+      index += 1;
+      setAiQuery(aiExample.slice(0, index));
+      if (index >= aiExample.length) window.clearInterval(typing);
+    }, Math.max(14, Math.floor(1000 / aiExample.length)));
+    return () => window.clearInterval(typing);
+  }, []);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -866,6 +877,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center rounded-md border border-red-200 bg-red-50 px-6 py-3.5 text-sm font-black text-red-700 shadow-sm transition hover:border-red-700 hover:bg-red-700 hover:text-white sm:w-auto">🗺️ Harita ile Ara</Link>
               </div>
 
+            </div>
+
+            <div className="mt-3 rounded-2xl border border-cyan-300/45 bg-[#071a3b]/95 p-3 shadow-xl backdrop-blur-md">
+              <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300"/></div>
+              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
             </div>
 
           </div>
@@ -1694,7 +1710,8 @@ function ListingCategoriesPage() {
 
 
 function AIDecisionAssistantPage() {
-  const [query, setQuery] = useState("Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.");
+  const location = useLocation();
+  const [query, setQuery] = useState(() => new URLSearchParams(location.search).get('q') || "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.");
   const [searched, setSearched] = useState(true);
   const analysis = () => {
     const normalized = query.toLocaleLowerCase('tr-TR');
