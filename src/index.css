@@ -99,6 +99,10 @@
 .gold-showcase-spark-one { top: 17%; left: 8%; font-size: 1.25rem; }
 .gold-showcase-spark-two { top: 27%; right: 9%; font-size: 1.8rem; animation-delay: -2s; }
 .gold-showcase-spark-three { bottom: 14%; left: 47%; font-size: 1rem; animation-delay: -3.3s; }
+.gold-showcase-spark-four { top: 11%; left: 42%; font-size: .85rem; animation-delay: -1.1s; }
+.gold-showcase-spark-five { right: 28%; bottom: 19%; font-size: 1.4rem; animation-delay: -4.1s; }
+.gold-showcase-spark-six { left: 18%; bottom: 20%; font-size: 1.05rem; animation-delay: -2.6s; }
+
 
 @keyframes goldGlow {
   from { transform: translate3d(-3%, -2%, 0) scale(.85); opacity: .18; }
