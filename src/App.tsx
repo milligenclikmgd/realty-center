@@ -758,17 +758,44 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
-  const aiExample = "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.";
+  const aiExamples = [
+    "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.",
+    "İncek'te havuzlu, krediye uygun villa öner."
+  ];
   const [aiQuery, setAiQuery] = useState('');
+  const [aiDemoPaused, setAiDemoPaused] = useState(false);
   useEffect(() => {
-    let index = 0;
-    const typing = window.setInterval(() => {
-      index += 1;
-      setAiQuery(aiExample.slice(0, index));
-      if (index >= aiExample.length) window.clearInterval(typing);
-    }, Math.max(14, Math.floor(1000 / aiExample.length)));
-    return () => window.clearInterval(typing);
-  }, []);
+    if (aiDemoPaused) return;
+    let exampleIndex = 0;
+    let characterIndex = 0;
+    let deleting = false;
+    let timeoutId: number;
+    const animate = () => {
+      const current = aiExamples[exampleIndex];
+      if (!deleting) {
+        characterIndex += 1;
+        setAiQuery(current.slice(0, characterIndex));
+        if (characterIndex === current.length) {
+          deleting = true;
+          timeoutId = window.setTimeout(animate, 1200);
+          return;
+        }
+        timeoutId = window.setTimeout(animate, 18);
+        return;
+      }
+      characterIndex -= 1;
+      setAiQuery(current.slice(0, Math.max(0, characterIndex)));
+      if (characterIndex === 0) {
+        deleting = false;
+        exampleIndex = (exampleIndex + 1) % aiExamples.length;
+        timeoutId = window.setTimeout(animate, 350);
+        return;
+      }
+      timeoutId = window.setTimeout(animate, 12);
+    };
+    timeoutId = window.setTimeout(animate, 450);
+    return () => window.clearTimeout(timeoutId);
+  }, [aiDemoPaused]);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -881,7 +908,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
             <div className="mt-3 rounded-2xl border border-cyan-300/45 bg-[#071a3b]/95 p-3 shadow-xl backdrop-blur-md">
               <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300"/></div>
-              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
+              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => { setAiDemoPaused(true); setAiQuery(event.target.value); }} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
             </div>
 
           </div>
