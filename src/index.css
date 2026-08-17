@@ -200,7 +200,6 @@
 .turkey-listing-map g[data-realty-city] path {
   fill: #fee2e2 !important;
   stroke: #ef4444 !important;
-  transition: fill 180ms ease !important;
 }
 .turkey-listing-map g[data-realty-city].is-city-active path {
   fill: #ef2222 !important;
