@@ -533,7 +533,6 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-          {item.isFeatured && <span className="realty-selection-seal absolute -right-2 -top-2 z-20 flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-100 bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 text-center text-[8px] font-black leading-tight text-white shadow-lg">REALTY<br/>SEÇKİSİ</span>}
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
             <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
               item.type === 'Satılık' ? 'bg-red-700' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
@@ -1906,7 +1905,7 @@ function AIDecisionAssistantPage() {
   return <div className="min-h-screen bg-slate-50 py-10">
     <div className="mx-auto max-w-7xl px-5 lg:px-8">
       <div className="ai-assistant-hero relative overflow-hidden rounded-3xl px-6 py-10 text-white shadow-2xl sm:px-10">
-        <div className="ai-world-first-badge absolute right-5 top-5 z-10 flex h-24 w-24 rotate-6 flex-col items-center justify-center rounded-full border border-cyan-100/60 bg-[#071a3b]/80 text-center shadow-[0_0_30px_rgba(34,211,238,.38)] backdrop-blur-md sm:right-8 sm:top-8">
+        <div className="ai-world-first-badge absolute right-4 top-1/2 z-10 flex h-28 w-28 -translate-y-1/2 rotate-6 flex-col items-center justify-center rounded-full border border-cyan-100/60 bg-[#071a3b]/80 text-center shadow-[0_0_30px_rgba(34,211,238,.38)] backdrop-blur-md sm:right-8 sm:h-32 sm:w-32">
           <span className="text-[9px] font-black leading-tight text-cyan-200">DÜNYADA İLK</span><span className="my-1 h-px w-10 bg-cyan-200/60"/><span className="text-[8px] font-bold leading-tight text-white/90">WORLD'S FIRST</span>
         </div>
         <span className="inline-flex rounded-full border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-cyan-200">ÜCRETSİZ DEMO · YAPAY ZEKA GAYRİMENKUL ASİSTANI</span>
