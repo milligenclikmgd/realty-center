@@ -402,44 +402,23 @@ function TurkeyListingMap() {
       .catch(() => setMapError(true));
   }, []);
 
-  useEffect(() => {
-    const container = mapRef.current;
-    if (!container || !svgMarkup) return;
+  const updateTooltip = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target;
+    const group = target instanceof Element
+      ? target.closest('g[data-realty-city]') as SVGGElement | null
+      : null;
+    const tooltip = tooltipRef.current;
+    if (!tooltip || !mapRef.current) return;
 
-    const groups = Array.from(container.querySelectorAll<SVGGElement>('g[data-realty-city]'));
-    const showCity = (group: SVGGElement) => {
-      if (activeGroupRef.current === group) return;
+    if (group !== activeGroupRef.current) {
       activeGroupRef.current?.classList.remove('is-city-active');
       activeGroupRef.current = group;
-      group.classList.add('is-city-active');
-      if (tooltipRef.current) {
-        tooltipRef.current.textContent = group.getAttribute('data-realty-city') || '';
-        tooltipRef.current.style.display = 'block';
-      }
-    };
-    const hideCity = (group: SVGGElement) => {
-      if (activeGroupRef.current !== group) return;
-      group.classList.remove('is-city-active');
-      activeGroupRef.current = null;
-      if (tooltipRef.current) tooltipRef.current.style.display = 'none';
-    };
-    const listeners = groups.map((group) => {
-      const enter = () => showCity(group);
-      const leave = () => hideCity(group);
-      group.addEventListener('mouseenter', enter);
-      group.addEventListener('mouseleave', leave);
-      return { group, enter, leave };
-    });
-    return () => listeners.forEach(({ group, enter, leave }) => {
-      group.removeEventListener('mouseenter', enter);
-      group.removeEventListener('mouseleave', leave);
-    });
-  }, [svgMarkup]);
+      group?.classList.add('is-city-active');
+      tooltip.textContent = group?.getAttribute('data-realty-city') || '';
+      tooltip.style.display = group ? 'block' : 'none';
+    }
 
-  const updateTooltip = (event: React.MouseEvent<HTMLDivElement>) => {
-    const tooltip = tooltipRef.current;
-    const group = activeGroupRef.current;
-    if (!tooltip || !group || !mapRef.current) return;
+    if (!group) return;
     const box = mapRef.current.getBoundingClientRect();
     tooltip.style.left = (event.clientX - box.left + 14) + 'px';
     tooltip.style.top = (event.clientY - box.top - 14) + 'px';
