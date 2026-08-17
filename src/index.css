@@ -103,6 +103,26 @@
 .gold-showcase-spark-five { right: 28%; bottom: 19%; font-size: 1.4rem; animation-delay: -4.1s; }
 .gold-showcase-spark-six { left: 18%; bottom: 20%; font-size: 1.05rem; animation-delay: -2.6s; }
 
+.gold-showcase-card::after {
+  content: '';
+  position: absolute;
+  inset: -35% auto -35% -55%;
+  width: 38%;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 8%, rgba(255, 232, 157, .06) 35%, rgba(255, 244, 201, .42) 50%, rgba(255, 224, 133, .08) 66%, transparent 92%);
+  transform: skewX(-17deg) translateX(-220%);
+  animation: goldCardSheen 8.5s ease-in-out infinite;
+}
+.gold-showcase-card:nth-child(2)::after { animation-delay: -2.8s; }
+.gold-showcase-card:nth-child(3)::after { animation-delay: -5.5s; }
+
+@keyframes goldCardSheen {
+  0%, 59%, 100% { transform: skewX(-17deg) translateX(-220%); opacity: 0; }
+  64% { opacity: .9; }
+  79% { transform: skewX(-17deg) translateX(550%); opacity: .75; }
+  84% { opacity: 0; }
+}
+
 
 @keyframes goldGlow {
   from { transform: translate3d(-3%, -2%, 0) scale(.85); opacity: .18; }
