@@ -402,24 +402,47 @@ function TurkeyListingMap() {
       .catch(() => setMapError(true));
   }, []);
 
-  const updateTooltip = (event: React.MouseEvent<HTMLDivElement>) => {
-    const group = (event.target as Element).closest('g[data-realty-city]') as SVGGElement | null;
-    const tooltip = tooltipRef.current;
-    if (!tooltip || !mapRef.current) return;
-    if (!group) {
+  useEffect(() => {
+    const container = mapRef.current;
+    if (!container || !svgMarkup) return;
+
+    const groups = Array.from(container.querySelectorAll<SVGGElement>('g[data-realty-city]'));
+    const showCity = (group: SVGGElement) => {
+      if (activeGroupRef.current === group) return;
+      activeGroupRef.current?.classList.remove('is-city-active');
+      activeGroupRef.current = group;
+      group.classList.add('is-city-active');
+      if (tooltipRef.current) {
+        tooltipRef.current.textContent = group.getAttribute('data-realty-city') || '';
+        tooltipRef.current.style.display = 'block';
+      }
+    };
+    const hideCity = (group: SVGGElement) => {
+      if (activeGroupRef.current !== group) return;
+      group.classList.remove('is-city-active');
       activeGroupRef.current = null;
-      tooltip.style.display = 'none';
-      return;
-    }
-    activeGroupRef.current = group;
-    tooltip.textContent = group.getAttribute('data-realty-city') || '';
-    tooltip.style.display = 'block';
+      if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+    };
+    groups.forEach((group) => {
+      group.addEventListener('mouseenter', () => showCity(group));
+      group.addEventListener('mouseleave', () => hideCity(group));
+    });
+    return () => groups.forEach((group) => {
+      group.replaceWith(group.cloneNode(true));
+    });
+  }, [svgMarkup]);
+
+  const updateTooltip = (event: React.MouseEvent<HTMLDivElement>) => {
+    const tooltip = tooltipRef.current;
+    const group = activeGroupRef.current;
+    if (!tooltip || !group || !mapRef.current) return;
     const box = mapRef.current.getBoundingClientRect();
     tooltip.style.left = (event.clientX - box.left + 14) + 'px';
     tooltip.style.top = (event.clientY - box.top - 14) + 'px';
   };
 
   const hideTooltip = () => {
+    activeGroupRef.current?.classList.remove('is-city-active');
     activeGroupRef.current = null;
     if (tooltipRef.current) tooltipRef.current.style.display = 'none';
   };
