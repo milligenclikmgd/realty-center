@@ -423,12 +423,16 @@ function TurkeyListingMap() {
       activeGroupRef.current = null;
       if (tooltipRef.current) tooltipRef.current.style.display = 'none';
     };
-    groups.forEach((group) => {
-      group.addEventListener('mouseenter', () => showCity(group));
-      group.addEventListener('mouseleave', () => hideCity(group));
+    const listeners = groups.map((group) => {
+      const enter = () => showCity(group);
+      const leave = () => hideCity(group);
+      group.addEventListener('mouseenter', enter);
+      group.addEventListener('mouseleave', leave);
+      return { group, enter, leave };
     });
-    return () => groups.forEach((group) => {
-      group.replaceWith(group.cloneNode(true));
+    return () => listeners.forEach(({ group, enter, leave }) => {
+      group.removeEventListener('mouseenter', enter);
+      group.removeEventListener('mouseleave', leave);
     });
   }, [svgMarkup]);
 
