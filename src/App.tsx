@@ -913,9 +913,9 @@ function FeaturedListingsShowcase() {
                 className="absolute left-1/2 top-0 h-[400px] w-[78vw] max-w-[620px] overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
                 style={{
                   transform: `translateX(${offset === 0 ? '-50%' : offset < 0 ? '-128%' : '28%'}) scale(${isActive ? 1 : 0.82})`,
-                  opacity: isActive ? 1 : 0.42,
+                  opacity: isActive ? 1 : 0.34,
                   zIndex: isActive ? 20 : 10,
-                  filter: isActive ? 'none' : 'saturate(.65)'
+                  filter: isActive ? 'blur(0) saturate(1) brightness(1)' : 'blur(3px) saturate(.5) brightness(.72)'
                 }}
                 aria-label={`${item.title} ilanını incele`}
               >
