@@ -15,10 +15,7 @@
   overflow: hidden;
   height: 44px;
   border-bottom: 1px solid rgba(7,29,59,.08);
-  background:
-    radial-gradient(circle at 92% 55%, rgba(205,1,30,.09), transparent 24%),
-    linear-gradient(135deg, rgba(15,23,42,.038) 0 15%, transparent 15% 32%, rgba(15,23,42,.022) 32% 45%, transparent 45% 100%),
-    #fff;
+  background: #fff;
 }
 
 .realty-header-bottom-space {
@@ -26,36 +23,43 @@
   overflow: hidden;
   height: 44px;
   border-top: 1px solid rgba(7,29,59,.06);
-  background:
-    radial-gradient(circle at 8% 45%, rgba(205,1,30,.075), transparent 25%),
-    linear-gradient(45deg, rgba(15,23,42,.03) 0 16%, transparent 16% 35%, rgba(15,23,42,.018) 35% 47%, transparent 47% 100%),
-    #fff;
+  background: #fff;
 }
 
-.realty-header-top-space::before,
-.realty-header-bottom-space::before {
-  content: '';
+.realty-header-contact {
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: .42;
-  background-image:
-    linear-gradient(rgba(71,85,105,.16) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(71,85,105,.12) 1px, transparent 1px),
-    repeating-linear-gradient(135deg, transparent 0 31px, rgba(71,85,105,.12) 32px, transparent 33px 64px);
-  background-size: 72px 18px, 72px 18px, auto;
-  mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,.7) 24%, transparent 43%, transparent 57%, rgba(0,0,0,.7) 76%, #000 100%);
+  top: 50%;
+  right: 24px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-50%);
 }
-
-.realty-header-top-space::after,
-.realty-header-bottom-space::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(112deg, transparent 0 11%, rgba(148,163,184,.055) 11% 18%, transparent 18% 72%, rgba(205,1,30,.035) 72% 80%, transparent 80%),
-    linear-gradient(68deg, transparent 0 22%, rgba(148,163,184,.045) 22% 28%, transparent 28% 78%, rgba(148,163,184,.035) 78% 84%, transparent 84%);
+.realty-header-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 800;
+  transition: color .2s ease;
+}
+.realty-header-contact-item:hover { color: var(--rc-red); }
+.realty-header-contact-icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  color: #fff;
+  transition: transform .2s ease, filter .2s ease;
+}
+.realty-header-contact-icon:hover { transform: translateY(-1px); filter: brightness(1.05); }
+.realty-header-whatsapp {
+  background: #25d366;
+  box-shadow: 0 4px 12px rgba(37,211,102,.24);
 }
 
 .realty-header-bar {
@@ -82,7 +86,7 @@
   height: 90px;
   align-items: center;
   justify-content: center;
-  transform: translateY(16px);
+  transform: translateY(22px);
 }
 
 .realty-header-led {
@@ -104,7 +108,7 @@
   border: 8px solid #fff;
   border-radius: 9999px;
   background: #fff;
-  box-shadow: 0 0 0 5px var(--rc-red), 0 15px 32px rgba(0,0,0,.25), inset 0 0 17px rgba(7,29,59,.05);
+  box-shadow: 0 15px 32px rgba(0,0,0,.24), inset 0 0 0 5px var(--rc-red), inset 0 0 17px rgba(7,29,59,.05);
   transition: transform .3s ease;
 }
 .realty-header-main-logo { width: 190px; max-width: 94%; }
