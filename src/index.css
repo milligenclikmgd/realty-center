@@ -484,6 +484,26 @@
   .sales-pulse-highlight, .sales-message::after { animation: none; }
 }
 
+/* Kart gruplarında odaklanan kart net kalır, diğerleri yalnızca hafifçe geriye çekilir. */
+.card-focus-item {
+  transition: filter .32s ease, opacity .32s ease, transform .32s ease;
+}
+@media (hover: hover) {
+  .card-focus-group:has(.card-focus-item:hover) .card-focus-item:not(:hover) {
+    filter: blur(.65px) saturate(.88);
+    opacity: .72;
+    transform: scale(.985);
+  }
+  .gold-showcase:has(.gold-showcase-card:hover) .gold-showcase-card:not(:hover) {
+    filter: blur(.55px) saturate(.9);
+    opacity: .68;
+    transform: scale(.985);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-focus-item { transition: none; }
+}
+
 
 /* Ana sayfa arama alanı: yumuşak bulanık başlangıçtan net cam panele geçiş */
 .hero-search-entrance {
