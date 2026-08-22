@@ -183,6 +183,24 @@
   .realty-header-top-space { height: 14px; }
 }
 
+/* Franchise başvuru kartı: danışman formuyla aynı beyaz kurumsal görünüm */
+[class~="bg-red-700/95"] {
+  border: 1px solid rgba(255,255,255,.72) !important;
+  background: rgba(255,255,255,.96) !important;
+  color: #0f172a !important;
+  box-shadow: 0 24px 60px rgba(15,23,42,.28) !important;
+}
+[class~="bg-red-700/95"] [class~="text-white"] { color: #0f172a !important; }
+[class~="bg-red-700/95"] [class~="text-white/85"] { color: #475569 !important; }
+[class~="bg-red-700/95"] > a,
+[class~="bg-red-700/95"] > p:first-of-type { color: #cd011e !important; }
+[class~="bg-red-700/95"] button[class~="bg-white"] {
+  background: #cd011e !important;
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(205,1,30,.22) !important;
+}
+[class~="bg-red-700/95"] button[class~="bg-white"]:hover { background: #a90019 !important; }
+
 * {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
