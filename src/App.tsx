@@ -454,7 +454,7 @@ function TurkeyListingMap() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />ETKİLEŞİMLİ TÜRKİYE HARİTASI</span>
-          <h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>TÜRKİYE'DE</span><img src="/rlogo.png" alt="Realty Center" className="h-8 sm:h-9 w-auto object-contain" /></h2>
+          <h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>TÜRKİYE'DE</span><img src="/rlogo2.png" alt="Realty Center" className="h-8 sm:h-9 w-auto object-contain" /></h2>
           <p className="mt-2 text-sm font-medium text-slate-600">İlin üzerine gelin, seçmek için tıklayın.</p>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-5 shadow-lg">
@@ -740,7 +740,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <Link to="/" onClick={close} className="realty-header-emblem" aria-label="Realty Center ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
-              <img src="/rlogo.png" alt="Realty Center Türkiye" className="realty-header-main-logo object-contain" />
+              <img src={location.pathname === '/' ? '/rlogotr.png' : '/rlogo2.png'} alt="Realty Center Türkiye" className="realty-header-main-logo object-contain" />
             </span>
           </Link>
 
@@ -751,7 +751,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
         <div className="relative z-10 flex min-h-[76px] items-center justify-between px-4 xl:hidden">
           <Link to="/" onClick={close} className="realty-header-mobile-logo">
-            <img src="/rlogo.png" alt="Realty Center Türkiye" className="h-14 w-auto object-contain" />
+            <img src="/rlogo2.png" alt="Realty Center Türkiye" className="h-14 w-auto object-contain" />
           </Link>
           <div className="flex items-center gap-2">
             <Link to="/panel" className="rounded-lg bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-lg">{t.panel}</Link>
@@ -777,7 +777,7 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
         <div>
           <div className="flex items-center space-x-3 mb-4">
             <img 
-              src="/rlogo.png" 
+              src="/rlogo2.png"
               alt="Realty Center" 
               className="h-12 w-auto object-contain brightness-0 invert"
             />
@@ -1195,7 +1195,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="absolute bottom-6 right-8 z-10 rounded-xl bg-white/95 px-4 py-3 shadow-xl backdrop-blur-sm">
-          <img src="/rlogo.png" alt="Realty Center" className="h-12 sm:h-14 w-auto object-contain" />
+          <img src="/rlogo2.png" alt="Realty Center" className="h-12 sm:h-14 w-auto object-contain" />
         </div>
       </div>
 
@@ -1716,7 +1716,7 @@ function OfficesPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/rlogo.png" 
+                          src="/rlogo2.png"
                           alt="Realty Center" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -1903,7 +1903,7 @@ function AgentsPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/rlogo.png" 
+                          src="/rlogo2.png"
                           alt="Realty Center" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -2681,7 +2681,7 @@ function LoginPage() {
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
           <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
             <img
-              src="/rlogo.png"
+              src="/rlogo2.png"
               alt="Realty Center"
               className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
             />
@@ -3978,7 +3978,7 @@ export default function RealtyCenterApp() {
       <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center text-slate-900 px-4 select-none overflow-hidden font-sans">
         <div className="relative mb-10 transform animate-pulse">
           <img 
-            src="/rlogo.png" 
+            src="/rlogo2.png"
             alt="Realty Center" 
             className="h-24 sm:h-28 w-auto object-contain"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
