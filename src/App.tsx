@@ -677,6 +677,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   return (
     <header className="realty-header sticky top-0 isolate z-40 w-full text-white">
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
+      <div className="realty-header-top-space" aria-hidden="true" />
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-6 items-stretch">
