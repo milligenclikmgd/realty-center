@@ -356,13 +356,22 @@ function RealtySaleCounter() {
   const location = useLocation();
   const intervalSeconds = 30;
   const [secondsLeft, setSecondsLeft] = useState(intervalSeconds);
+  const [isSaleMoment, setIsSaleMoment] = useState(false);
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
-      setSecondsLeft((current) => current <= 1 ? intervalSeconds : current - 1);
-    }, 1000);
-    return () => window.clearInterval(timer);
-  }, []);
+    const timer = window.setTimeout(() => {
+      if (isSaleMoment) {
+        setSecondsLeft(intervalSeconds);
+        setIsSaleMoment(false);
+      } else if (secondsLeft <= 1) {
+        setSecondsLeft(0);
+        setIsSaleMoment(true);
+      } else {
+        setSecondsLeft(secondsLeft - 1);
+      }
+    }, isSaleMoment ? 1400 : 1000);
+    return () => window.clearTimeout(timer);
+  }, [secondsLeft, isSaleMoment]);
 
   if (location.pathname.includes('panel') || location.pathname === '/super-admin') return null;
   const counterValue = `${String(Math.floor(secondsLeft / 60)).padStart(2, '0')}:${String(secondsLeft % 60).padStart(2, '0')}`;
@@ -374,16 +383,12 @@ function RealtySaleCounter() {
         className="relative flex w-24 flex-col items-center overflow-visible rounded-l-2xl border border-r-0 border-red-200 bg-white px-2.5 pb-3 pt-3 text-center text-slate-950 shadow-xl shadow-slate-950/20 transition duration-300 hover:w-28 hover:border-red-400 sm:w-32 sm:px-3 sm:pb-4 sm:pt-4 sm:hover:w-36"
       >
         <span className="absolute inset-x-0 top-0 h-1 rounded-tl-2xl bg-red-700" />
-        <span className="mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-white p-1.5 shadow-md ring-2 ring-red-700/20 sm:h-12 sm:w-12">
+        <span className="mb-2 block h-10 w-16 sm:h-12 sm:w-20">
           <img src="/rlogo.png" alt="Realty Center" className="h-full w-full object-contain" />
         </span>
-        <span className="text-[8px] font-black tracking-[.14em] text-red-700 sm:text-[9px]">CANLI SATIŞ</span>
-        <span className="mt-1.5 text-[9px] font-extrabold leading-3 sm:text-[11px] sm:leading-4">Her <strong className="text-red-700">30 saniyede</strong> bir gayrimenkul</span>
+        <span className={`mt-1 text-[9px] font-extrabold leading-3 transition-all duration-300 sm:text-[11px] sm:leading-4 ${isSaleMoment ? 'scale-110 animate-pulse text-red-700 drop-shadow-[0_0_8px_rgba(185,28,28,.65)]' : 'text-slate-950'}`}>Her <strong className="text-red-700">30 saniyede</strong> bir gayrimenkul</span>
         <span className="mt-1 text-[8px] font-bold leading-3 text-slate-700 sm:text-[10px] sm:leading-4">Realty Center ile satılıyor</span>
-        <span className="mt-2 flex min-w-16 items-center justify-center gap-1 rounded-lg bg-red-700 px-2 py-1.5 font-mono text-sm font-black text-white tabular-nums shadow-md shadow-red-950/25 sm:text-base">
-          <Clock className="h-3.5 w-3.5" />
-          {counterValue}
-        </span>
+        {!isSaleMoment && <span className="mt-2 flex min-w-16 items-center justify-center gap-1 rounded-lg bg-red-700 px-2 py-1.5 font-mono text-sm font-black text-white tabular-nums shadow-md shadow-red-950/25 sm:text-base"><Clock className="h-3.5 w-3.5" />{counterValue}</span>}
         <span className="mt-2 text-[7px] font-black tracking-wider text-slate-700 sm:text-[8px]">İLANLARI İNCELE →</span>
         <span className="absolute -bottom-2 right-4 h-4 w-4 rotate-45 border-b border-r border-red-200 bg-white transition-colors group-hover:border-red-400 sm:right-5" />
       </Link>
