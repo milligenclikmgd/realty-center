@@ -25,6 +25,15 @@ const STATIC_LANGUAGES = {
 } as const;
 type StaticLanguage = keyof typeof STATIC_LANGUAGES;
 
+const SOCIAL_MEDIA_LINKS = [
+  { name: 'Instagram', icon: 'https://cdn.simpleicons.org/instagram/BE123C' },
+  { name: 'X', icon: 'https://cdn.simpleicons.org/x/BE123C' },
+  { name: 'Facebook', icon: 'https://cdn.simpleicons.org/facebook/BE123C' },
+  { name: 'YouTube', icon: 'https://cdn.simpleicons.org/youtube/BE123C' },
+  { name: 'Telegram', icon: 'https://cdn.simpleicons.org/telegram/BE123C' },
+  { name: 'LinkedIn', icon: 'https://cdn.simpleicons.org/linkedin/BE123C' }
+];
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -721,6 +730,9 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       </div>
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       <div className="realty-header-top-space">
+        <div className="realty-header-social">
+          {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name}><img src={social.icon} alt="" /></a>)}
+        </div>
         <div className="realty-header-contact">
           <a href="tel:+905325674845" aria-label="Realty Center telefon" className="realty-header-contact-item">
             <Phone className="h-3.5 w-3.5" />
@@ -1253,7 +1265,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <div className="rounded-3xl border border-slate-200 p-8"><span className="text-xs font-black tracking-widest text-red-700">İLETİŞİM FORMU</span><h2 className="mt-3 text-3xl font-black text-slate-900">Size ulaşalım.</h2><form className="mt-5 grid gap-3 sm:grid-cols-2"><input placeholder="Ad Soyad" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="Telefon" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-24 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><button type="button" className="w-fit rounded-xl bg-slate-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">Bilgi Talebi Gönder</button></form></div>
         </div>
       </section>
-      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex gap-3"><a href="#" aria-label="Instagram" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/instagram/BE123C" alt="Instagram" className="h-6 w-6"/></a><a href="#" aria-label="X" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-[#A30B1D]"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a><a href="#" aria-label="Facebook" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/facebook/BE123C" alt="Facebook" className="h-6 w-6"/></a><a href="#" aria-label="YouTube" className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src="https://cdn.simpleicons.org/youtube/BE123C" alt="YouTube" className="h-6 w-6"/></a></div></div></section>
+      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
 
       <TurkeyListingMap />
 
