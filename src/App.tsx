@@ -1257,7 +1257,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between mb-10"><div><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tight">NEDEN <span className="text-red-500">REALTY CENTER?</span></h2></div><Link to="/neden-realty-center" className="inline-flex w-fit rounded-xl border border-red-400 bg-red-700 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600">Tümünü Göster →</Link></div>
-          <div className="grid gap-3 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.map((item, index) => <div key={item} className="flex items-center gap-4 rounded-xl bg-red-700 px-5 py-4 font-black"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span><span>{item}</span></div>)}</div>
+          <div className="grid gap-3 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.slice(0, 4).map((item, index) => <div key={item} className="flex items-center gap-4 rounded-xl bg-red-700 px-5 py-4 font-black"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span><span>{item}</span></div>)}</div>
         </div>
       </section>
 
