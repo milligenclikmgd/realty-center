@@ -14,16 +14,8 @@
   position: relative;
   overflow: hidden;
   height: 44px;
-  border-bottom: 1px solid rgba(7,29,59,.08);
-  background: #fff;
-}
-
-.realty-header-bottom-space {
-  position: relative;
-  overflow: hidden;
-  height: 44px;
-  border-top: 1px solid rgba(7,29,59,.06);
-  background: #fff;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  background: linear-gradient(90deg, #a90019 0%, #bd001c 35%, var(--rc-red) 65%, #aa0019 100%);
 }
 
 .realty-header-contact {
@@ -40,12 +32,12 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #334155;
+  color: rgba(255,255,255,.94);
   font-size: 11px;
   font-weight: 800;
   transition: color .2s ease;
 }
-.realty-header-contact-item:hover { color: var(--rc-red); }
+.realty-header-contact-item:hover { color: #fff; }
 .realty-header-contact-icon {
   display: inline-flex;
   width: 28px;
@@ -189,7 +181,6 @@
 }
 @media (max-width: 1279px) {
   .realty-header-top-space { height: 14px; }
-  .realty-header-bottom-space { display: none; }
 }
 
 * {
