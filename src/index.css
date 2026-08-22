@@ -4,6 +4,113 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Yeni Realty Center header: lacivert konturlu kırmızı kuşak ve merkez logo rozeti */
+.realty-header {
+  --rc-red: #cd011e;
+  --rc-navy: #071d3b;
+  filter: drop-shadow(0 9px 18px rgba(7, 29, 59, .22));
+}
+
+.realty-header-bar {
+  position: relative;
+  min-height: 82px;
+  background: linear-gradient(90deg, #a90019 0%, var(--rc-red) 22%, #dc0827 50%, var(--rc-red) 78%, #a90019 100%);
+  border-top: 5px solid var(--rc-navy);
+  border-bottom: 5px solid var(--rc-navy);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 -1px 0 rgba(255,255,255,.16);
+}
+
+.realty-header-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 18%, rgba(255,255,255,.08) 36%, transparent 53%);
+}
+
+.realty-header-emblem {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  height: 82px;
+  align-items: center;
+  justify-content: center;
+}
+
+.realty-header-led {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  border-radius: 9999px;
+  background: #e5092b;
+  box-shadow: 0 0 14px #ff173b, 0 0 34px rgba(255, 0, 43, .95), 0 0 68px rgba(255, 0, 43, .62);
+  animation: realtyHeaderLed 2.7s ease-in-out infinite alternate;
+}
+
+.realty-header-disc {
+  position: relative;
+  display: flex;
+  width: 176px;
+  height: 176px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 6px solid #fff;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 0 0 4px var(--rc-navy), 0 15px 34px rgba(7,29,59,.38), inset 0 0 22px rgba(7,29,59,.07);
+  transition: transform .3s ease;
+}
+
+.realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
+.realty-header-link::after {
+  content: '';
+  position: absolute;
+  right: 14%;
+  bottom: 8px;
+  left: 14%;
+  height: 2px;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,.8);
+  transform: scaleX(0);
+  transition: transform .25s ease;
+}
+.realty-header-link:hover { background: rgba(7,29,59,.13); text-shadow: 0 1px 8px rgba(0,0,0,.2); }
+.realty-header-link:hover::after { transform: scaleX(1); }
+.realty-header-progress {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  height: 2px;
+  transform-origin: left;
+  background: linear-gradient(90deg, #7ed6ff, #fff, #7ed6ff);
+  box-shadow: 0 0 8px rgba(255,255,255,.8);
+  transition: transform .35s ease-out;
+}
+.realty-header-mobile-logo {
+  display: flex;
+  min-height: 62px;
+  max-width: 190px;
+  align-items: center;
+  border-radius: 9999px;
+  background: #fff;
+  padding: 4px 13px;
+  box-shadow: 0 0 0 3px var(--rc-navy), 0 0 22px rgba(255,0,43,.75);
+}
+.realty-header-mobile-menu {
+  border-bottom: 4px solid var(--rc-navy);
+  background: linear-gradient(145deg, #b5001b, var(--rc-red));
+  box-shadow: 0 18px 34px rgba(7,29,59,.26);
+}
+@keyframes realtyHeaderLed {
+  from { opacity: .72; transform: scale(.94); }
+  to { opacity: 1; transform: scale(1.04); }
+}
+@media (prefers-reduced-motion: reduce) { .realty-header-led { animation: none; } }
+
 * {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
