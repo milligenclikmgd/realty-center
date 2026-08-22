@@ -662,7 +662,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     const updateProgress = () => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
-      setShowCompactHeader(window.scrollY > 170);
+      setShowCompactHeader(window.scrollY > 215);
     };
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
@@ -713,6 +713,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           </div>
         </div>
       </div>
+      <div className="realty-header-bottom-space" aria-hidden="true" />
 
       <div className="pointer-events-none absolute right-3 top-1/2 z-50 hidden -translate-y-1/2 items-center gap-1 2xl:flex">
         <div className="pointer-events-auto flex overflow-hidden rounded-lg border border-white/35 bg-[#071d3b]/40 text-[9px] font-black">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} className={`px-1.5 py-1.5 transition ${language===item?'bg-white text-[#CD011E]':'text-white hover:bg-white/15'}`}>{item.toUpperCase()}</button>)}</div>
