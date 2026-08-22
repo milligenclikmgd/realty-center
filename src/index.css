@@ -11,10 +11,18 @@
 }
 
 .realty-header-top-space {
-  height: 58px;
+  height: 44px;
   border-bottom: 1px solid rgba(7,29,59,.08);
   background:
     linear-gradient(135deg, rgba(7,29,59,.025) 0 18%, transparent 18% 68%, rgba(205,1,30,.02) 68% 100%),
+    #fff;
+}
+
+.realty-header-bottom-space {
+  height: 44px;
+  border-top: 1px solid rgba(7,29,59,.06);
+  background:
+    linear-gradient(45deg, rgba(7,29,59,.02) 0 16%, transparent 16% 72%, rgba(205,1,30,.018) 72% 100%),
     #fff;
 }
 
@@ -42,7 +50,7 @@
   height: 90px;
   align-items: center;
   justify-content: center;
-  transform: translateY(-17px);
+  transform: translateY(16px);
 }
 
 .realty-header-led {
@@ -56,18 +64,18 @@
 .realty-header-disc {
   position: relative;
   display: flex;
-  width: 160px;
-  height: 160px;
+  width: 210px;
+  height: 210px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 7px solid #fff;
+  border: 8px solid #fff;
   border-radius: 9999px;
   background: #fff;
-  box-shadow: 0 0 0 4px var(--rc-red), 0 0 0 8px var(--rc-navy), 0 13px 28px rgba(0,0,0,.28), inset 0 0 15px rgba(7,29,59,.05);
+  box-shadow: 0 0 0 5px var(--rc-red), 0 15px 32px rgba(0,0,0,.25), inset 0 0 17px rgba(7,29,59,.05);
   transition: transform .3s ease;
 }
-.realty-header-main-logo { width: 145px; max-width: 94%; }
+.realty-header-main-logo { width: 190px; max-width: 94%; }
 
 .realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
 .realty-header-link::after {
@@ -145,6 +153,7 @@
 }
 @media (max-width: 1279px) {
   .realty-header-top-space { height: 14px; }
+  .realty-header-bottom-space { display: none; }
 }
 
 * {
