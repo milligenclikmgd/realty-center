@@ -637,6 +637,7 @@ function BlogCategoryPage({ category, title, description }: { category: string; 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showCompactHeader, setShowCompactHeader] = useState(false);
   const location = useLocation();
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
@@ -661,6 +662,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     const updateProgress = () => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
+      setShowCompactHeader(window.scrollY > 155);
     };
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
@@ -675,7 +677,12 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
 
   return (
-    <header className="realty-header sticky top-0 isolate z-40 w-full text-white">
+    <header className="realty-header relative isolate z-40 w-full text-white">
+      <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden xl:block ${showCompactHeader ? 'is-visible' : ''}`}>
+        <nav className="mx-auto grid min-h-[52px] w-full max-w-[1920px] grid-cols-12 items-stretch px-6 2xl:px-10">
+          {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`compact-${label}-${to}`} to={to} className="realty-compact-link flex items-center justify-center px-2 text-center text-[10px] font-black leading-tight text-white 2xl:text-xs">{label}</Link>)}
+        </nav>
+      </div>
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       <div className="realty-header-top-space" aria-hidden="true" />
       <div className="realty-header-bar">
