@@ -637,6 +637,7 @@ function BlogCategoryPage({ category, title, description }: { category: string; 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [headerCompact, setHeaderCompact] = useState(false);
   const location = useLocation();
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
@@ -661,6 +662,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     const updateProgress = () => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
+      setHeaderCompact(window.scrollY > 56);
     };
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
@@ -675,8 +677,11 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
 
   return (
-    <header className="realty-header sticky top-0 isolate z-40 w-full text-white">
+    <header className={`realty-header sticky top-0 isolate z-40 w-full text-white ${headerCompact ? 'is-compact' : ''}`}>
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
+      <div className="realty-header-top-space">
+        <span>GAYRİMENKULDE ÖNCE GÜVEN</span>
+      </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-6 items-stretch">
