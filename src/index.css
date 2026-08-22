@@ -451,19 +451,37 @@
   to { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
-/* Ana sayfadaki satış mesajı belirli aralıklarla dikkat çeker. */
-.sales-pulse-message {
-  animation: salesMessagePulse 3.8s ease-in-out infinite;
-  transform-origin: center;
+/* Satış mesajının metni sabit kalır; yalnızca rakam ve ince çizgi vurgulanır. */
+.sales-message { position: relative; padding-bottom: 10px; }
+.sales-message::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #cd011e 35%, #ef5168 65%, transparent);
+  opacity: 0;
+  animation: salesUnderlineSweep 5s ease-in-out infinite;
 }
-@keyframes salesMessagePulse {
-  0%, 68%, 100% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 0 rgba(205, 1, 30, 0)); }
-  76% { transform: translateY(-3px) scale(1.04); filter: drop-shadow(0 5px 10px rgba(205, 1, 30, .22)); }
-  84% { transform: translateY(0) scale(1.01); filter: drop-shadow(0 0 5px rgba(205, 1, 30, .34)); }
-  91% { transform: translateY(-2px) scale(1.035); filter: drop-shadow(0 4px 9px rgba(205, 1, 30, .2)); }
+.sales-pulse-highlight {
+  display: inline-block;
+  transform-origin: center;
+  animation: salesHighlightPulse 5s ease-in-out infinite;
+}
+@keyframes salesHighlightPulse {
+  0%, 70%, 100% { transform: scale(1); text-shadow: 0 0 0 rgba(205, 1, 30, 0); }
+  79% { transform: scale(1.075); text-shadow: 0 0 12px rgba(205, 1, 30, .28); }
+  88% { transform: scale(1.015); text-shadow: 0 0 4px rgba(205, 1, 30, .16); }
+}
+@keyframes salesUnderlineSweep {
+  0%, 70%, 100% { opacity: 0; transform: translateX(-38%) scaleX(.08); }
+  79% { opacity: 1; transform: translateX(0) scaleX(1); }
+  91% { opacity: 0; transform: translateX(34%) scaleX(.18); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sales-pulse-message { animation: none; }
+  .sales-pulse-highlight, .sales-message::after { animation: none; }
 }
 
 
