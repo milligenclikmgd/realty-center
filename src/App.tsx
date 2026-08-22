@@ -740,7 +740,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <Link to="/" onClick={close} className="realty-header-emblem" aria-label="Realty Center ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
-              <img src={location.pathname === '/' ? '/rlogotr.png' : '/rlogo2.png'} alt="Realty Center Türkiye" className="realty-header-main-logo object-contain" />
+              <img src="/rlogotr.png" alt="Realty Center Türkiye" className="realty-header-main-logo object-contain" />
             </span>
           </Link>
 
