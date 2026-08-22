@@ -8,22 +8,23 @@
 .realty-header {
   --rc-red: #cd011e;
   --rc-navy: #071d3b;
-  filter: drop-shadow(0 9px 18px rgba(7, 29, 59, .22));
+  filter: drop-shadow(0 9px 18px rgba(7, 29, 59, .2));
 }
 
 .realty-header-top-space {
-  height: 42px;
-  border-bottom: 1px solid rgba(7,29,59,.08);
-  background: #fff;
+  height: 34px;
+  border-top: 2px solid var(--rc-navy);
+  border-bottom: 1px solid rgba(255,255,255,.28);
+  background: linear-gradient(90deg, #aa0019 0%, var(--rc-red) 48%, #b6001b 100%);
 }
 
 .realty-header-bar {
   position: relative;
   min-height: 82px;
-  background: linear-gradient(90deg, #a90019 0%, var(--rc-red) 22%, #dc0827 50%, var(--rc-red) 78%, #a90019 100%);
-  border-top: 2px solid var(--rc-navy);
-  border-bottom: 2px solid var(--rc-navy);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 -1px 0 rgba(255,255,255,.16);
+  background: linear-gradient(90deg, #06182f 0%, var(--rc-navy) 24%, #0b2c55 50%, var(--rc-navy) 76%, #06182f 100%);
+  border-top: 0;
+  border-bottom: 3px solid var(--rc-red);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), inset 0 -1px 0 rgba(255,255,255,.08);
 }
 
 .realty-header-bar::before {
@@ -31,7 +32,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(110deg, transparent 18%, rgba(255,255,255,.08) 36%, transparent 53%);
+  background: linear-gradient(110deg, transparent 18%, rgba(255,255,255,.045) 36%, transparent 53%);
 }
 
 .realty-header-emblem {
@@ -41,7 +42,7 @@
   height: 82px;
   align-items: center;
   justify-content: center;
-  transform: translateY(-13px);
+  transform: translateY(-17px);
 }
 
 .realty-header-led {
@@ -49,9 +50,8 @@
   width: 116px;
   height: 116px;
   border-radius: 9999px;
-  background: #e5092b;
-  box-shadow: 0 0 7px #ff173b, 0 0 15px rgba(255, 0, 43, .68), 0 0 24px rgba(255, 0, 43, .34);
-  animation: realtyHeaderLed 2.7s ease-in-out infinite alternate;
+  background: var(--rc-red);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.92), 0 5px 17px rgba(0,0,0,.3);
 }
 
 .realty-header-disc {
@@ -65,7 +65,7 @@
   border: 4px solid #fff;
   border-radius: 9999px;
   background: #fff;
-  box-shadow: 0 0 0 2px var(--rc-navy), 0 8px 20px rgba(7,29,59,.28), inset 0 0 12px rgba(7,29,59,.06);
+  box-shadow: 0 0 0 2px var(--rc-red), 0 0 0 5px #fff, 0 8px 20px rgba(0,0,0,.3), inset 0 0 12px rgba(7,29,59,.05);
   transition: transform .3s ease;
 }
 .realty-header-main-logo { width: 101px; max-width: 94%; }
@@ -84,7 +84,7 @@
   transform: scaleX(0);
   transition: transform .25s ease;
 }
-.realty-header-link:hover { background: rgba(7,29,59,.13); text-shadow: 0 1px 8px rgba(0,0,0,.2); }
+.realty-header-link:hover { background: rgba(205,1,30,.34); text-shadow: 0 1px 8px rgba(0,0,0,.2); }
 .realty-header-link:hover::after { transform: scaleX(1); }
 .realty-header-progress {
   position: absolute;
@@ -94,8 +94,8 @@
   z-index: 30;
   height: 2px;
   transform-origin: left;
-  background: linear-gradient(90deg, #7ed6ff, #fff, #7ed6ff);
-  box-shadow: 0 0 8px rgba(255,255,255,.8);
+  background: linear-gradient(90deg, #ff758a, #fff, #ff758a);
+  box-shadow: 0 0 8px rgba(205,1,30,.6);
   transition: transform .35s ease-out;
 }
 .realty-header-mobile-logo {
@@ -109,17 +109,12 @@
   box-shadow: 0 0 0 3px var(--rc-navy), 0 0 22px rgba(255,0,43,.75);
 }
 .realty-header-mobile-menu {
-  border-bottom: 4px solid var(--rc-navy);
-  background: linear-gradient(145deg, #b5001b, var(--rc-red));
+  border-bottom: 3px solid var(--rc-red);
+  background: linear-gradient(145deg, #06182f, var(--rc-navy));
   box-shadow: 0 18px 34px rgba(7,29,59,.26);
 }
-@keyframes realtyHeaderLed {
-  from { opacity: .72; transform: scale(.94); }
-  to { opacity: 1; transform: scale(1.04); }
-}
-@media (prefers-reduced-motion: reduce) { .realty-header-led { animation: none; } }
 @media (max-width: 1279px) {
-  .realty-header-top-space { height: 14px; }
+  .realty-header-top-space { height: 10px; }
 }
 
 * {
