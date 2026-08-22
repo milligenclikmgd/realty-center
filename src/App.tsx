@@ -352,36 +352,6 @@ function WhatsAppSupportButton() {
   );
 }
 
-function RealtySaleCounter() {
-  const location = useLocation();
-  const [isSaleMoment, setIsSaleMoment] = useState(false);
-
-  useEffect(() => {
-    let highlightTimer: number | undefined;
-    const interval = window.setInterval(() => {
-      setIsSaleMoment(true);
-      highlightTimer = window.setTimeout(() => setIsSaleMoment(false), 1400);
-    }, 30000);
-    return () => {
-      window.clearInterval(interval);
-      if (highlightTimer) window.clearTimeout(highlightTimer);
-    };
-  }, []);
-
-  if (location.pathname.includes('panel') || location.pathname === '/super-admin') return null;
-
-  return (
-    <aside className="fixed right-0 top-[44%] z-40 -translate-y-1/2" aria-label="Realty Center satış bilgisi">
-      <Link
-        to="/ilanlarimiz"
-        className="flex w-24 items-center rounded-l-xl border border-r-0 border-slate-200 bg-white px-2.5 py-3 text-center shadow-lg shadow-slate-950/15 sm:w-28 sm:px-3"
-      >
-        <span className={`w-full text-[9px] font-extrabold leading-3 transition-all duration-300 sm:text-[10px] sm:leading-4 ${isSaleMoment ? 'scale-105 animate-pulse text-red-700 drop-shadow-[0_0_8px_rgba(185,28,28,.75)]' : 'text-slate-950'}`}>Her <strong className="text-red-700">30 saniyede 1 gayrimenkul</strong> Realty Center ile satılıyor.</span>
-      </Link>
-    </aside>
-  );
-}
-
 type ListingCategory = { id: string; title: string; type: string; category: string; image: string };
 const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
   { id: 'sale-home', title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
@@ -1230,14 +1200,19 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       </div>
 
       <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto grid gap-6 px-6 lg:grid-cols-[1fr_.85fr] lg:px-12">
-          <div className="grid grid-cols-2 gap-3 self-center text-center sm:grid-cols-4 lg:translate-x-6">
+        <div className="max-w-7xl mx-auto grid items-center gap-6 px-6 lg:grid-cols-[1.05fr_.95fr_.7fr] lg:px-12">
+          <div className="grid grid-cols-2 gap-3 text-center">
             <div className="p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.offices}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Franchise Ofis</div></div>
             <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.agents.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Uzman Danışman</div></div>
             <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.portfolios.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Aktif Portföy</div></div>
             <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">%{counts.satisfaction}</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Memnuniyet</div></div>
           </div>
           <RealtyNetworkActivityPanel />
+          <div className="flex justify-center lg:justify-end">
+            <Link to="/ilanlarimiz" className="sales-pulse-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
+              Her <span className="text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -4100,7 +4075,6 @@ export default function RealtyCenterApp() {
         </main>
 
         <Footer openDrawer={openDrawer} />
-        <RealtySaleCounter />
         <WhatsAppSupportButton />
 
         <div 
