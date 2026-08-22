@@ -621,8 +621,31 @@ function EyeIcon() {
 
 function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   const franchise = type === 'franchise';
-  const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-key-handover.png';
-  return <div className="relative min-h-screen overflow-hidden bg-slate-950"><img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Gayrimenkul anahtar teslimi'} className="absolute inset-0 h-full w-full object-cover"/><div className="absolute inset-0 bg-red-800/50"/><div className="relative flex min-h-screen items-center justify-center px-5 py-12 sm:px-10"><div className="w-full max-w-xl rounded-3xl bg-red-700/95 p-7 text-white shadow-2xl sm:p-10"><Link to="/" className="text-sm font-black text-white">← Ana Sayfaya Dön</Link><p className="mt-8 text-xs font-black tracking-widest text-white">{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p><h1 className="mt-3 text-3xl font-black text-white">{franchise ? 'Şehrinde Realty Center ol.' : 'Realty Center ailesine katıl.'}</h1><p className="mt-3 text-sm leading-relaxed text-white/85">Bilgilerinizi bırakın, başvurunuz ilgili ekip tarafından değerlendirilsin.</p><form className="mt-8 grid gap-4 sm:grid-cols-2"><input required placeholder="Ad Soyad" className="rounded-xl border border-white/30 bg-white px-4 py-3 text-slate-900"/><input required placeholder="Telefon" className="rounded-xl border border-white/30 bg-white px-4 py-3 text-slate-900"/><input required placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3"/><input placeholder={franchise ? "İl / İlçe" : "Bulunduğunuz şehir"} className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-28 rounded-xl border border-white/30 bg-white px-4 py-3 text-slate-900"/><button type="button" className="sm:col-span-2 rounded-xl bg-white py-3.5 font-black text-red-700 hover:bg-red-50">Başvuruyu Gönder</button></form></div></div></div>
+  const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-recruitment-v2.webp';
+  const fieldClass = 'rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-[#CD011E] focus:ring-2 focus:ring-[#CD011E]/15';
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-slate-950">
+      <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
+      <div className={`absolute inset-0 ${franchise ? 'bg-red-800/50' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
+      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
+        <div className={`w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
+          <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>← Ana Sayfaya Dön</Link>
+          <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
+          <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center ol.' : 'Realty Center ailesine katıl.'}</h1>
+          <p className={`mt-3 text-sm leading-relaxed ${franchise ? 'text-white/85' : 'text-slate-600'}`}>Bilgilerinizi bırakın, başvurunuz ilgili ekip tarafından değerlendirilsin.</p>
+          <form className="mt-8 grid gap-4 sm:grid-cols-2">
+            <input required placeholder="Ad Soyad" className={fieldClass} />
+            <input required placeholder="Telefon" className={fieldClass} />
+            <input required placeholder="E-posta" className={`${fieldClass} sm:col-span-2`} />
+            <input placeholder={franchise ? 'İl / İlçe' : 'Bulunduğunuz şehir'} className={`${fieldClass} sm:col-span-2`} />
+            <textarea placeholder="Mesajınız" className={`${fieldClass} min-h-28 sm:col-span-2`} />
+            <label className={`flex items-start gap-2 text-xs sm:col-span-2 ${franchise ? 'text-white/85' : 'text-slate-600'}`}><input type="checkbox" className="mt-0.5 accent-[#CD011E]" />KVKK Aydınlatma Metni'ni okudum ve kabul ediyorum.</label>
+            <button type="button" className={`sm:col-span-2 rounded-xl py-3.5 font-black transition ${franchise ? 'bg-white text-red-700 hover:bg-red-50' : 'bg-[#CD011E] text-white shadow-lg shadow-red-900/20 hover:bg-[#a90019]'}`}>Başvuruyu Gönder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 
