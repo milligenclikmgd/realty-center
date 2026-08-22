@@ -913,9 +913,9 @@ function FeaturedListingsShowcase() {
                 className="absolute left-1/2 top-0 h-[400px] w-[78vw] max-w-[620px] overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
                 style={{
                   transform: `translateX(${offset === 0 ? '-50%' : offset < 0 ? '-128%' : '28%'}) scale(${isActive ? 1 : 0.82})`,
-                  opacity: isActive ? 1 : 0.34,
+                  opacity: isActive ? 1 : 0.58,
                   zIndex: isActive ? 20 : 10,
-                  filter: isActive ? 'blur(0) saturate(1) brightness(1)' : 'blur(3px) saturate(.5) brightness(.72)'
+                  filter: isActive ? 'blur(0) saturate(1) brightness(1)' : 'blur(1.1px) saturate(.78) brightness(.88)'
                 }}
                 aria-label={`${item.title} ilanını incele`}
               >
@@ -1019,7 +1019,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
 
   return <div className="relative mx-auto max-w-[1780px] px-5 sm:px-8 lg:px-12">
     <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setStreamDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setStreamDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing" onMouseEnter={() => { hoveredRef.current = true; }} onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}><div ref={trackRef} className="live-listing-track">{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
+    <div className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing" onMouseEnter={() => { hoveredRef.current = true; }} onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}><div ref={trackRef} className="live-listing-track card-focus-group">{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="card-focus-item w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
   </div>;
 }
 
@@ -1221,7 +1221,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-end justify-between gap-6 mb-8"><div><span className="text-xs font-black tracking-widest text-red-700">KATEGORİLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Portföylerimizi <span className="text-red-700">Keşfedin</span></h2></div><Link to="/ilan-kategorileri" className="text-sm font-black text-red-700 hover:text-red-800">Tüm kategoriler →</Link></div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">{getListingCategories().slice(0,4).map((category) => <Link key={category.id} to={"/ilanlarimiz?type="+encodeURIComponent(getCategoryTransactionType(category))+"&propertyType="+encodeURIComponent(getCategoryPropertyType(category))} className="group relative min-h-40 overflow-hidden rounded-2xl bg-slate-900 shadow-lg"><img src={category.image} alt={category.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" /><div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent" /><span className="absolute bottom-4 left-4 text-base font-black text-white">{category.title}</span></Link>)}</div>
+          <div className="card-focus-group grid grid-cols-2 gap-4 lg:grid-cols-4">{getListingCategories().slice(0,4).map((category) => <Link key={category.id} to={"/ilanlarimiz?type="+encodeURIComponent(getCategoryTransactionType(category))+"&propertyType="+encodeURIComponent(getCategoryPropertyType(category))} className="card-focus-item group relative min-h-40 overflow-hidden rounded-2xl bg-slate-900 shadow-lg"><img src={category.image} alt={category.title} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" /><div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/10 to-transparent" /><span className="absolute bottom-4 left-4 text-base font-black text-white">{category.title}</span></Link>)}</div>
         </div>
       </section>
 
