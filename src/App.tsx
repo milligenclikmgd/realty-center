@@ -354,43 +354,29 @@ function WhatsAppSupportButton() {
 
 function RealtySaleCounter() {
   const location = useLocation();
-  const intervalSeconds = 30;
-  const [secondsLeft, setSecondsLeft] = useState(intervalSeconds);
   const [isSaleMoment, setIsSaleMoment] = useState(false);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      if (isSaleMoment) {
-        setSecondsLeft(intervalSeconds);
-        setIsSaleMoment(false);
-      } else if (secondsLeft <= 1) {
-        setSecondsLeft(0);
-        setIsSaleMoment(true);
-      } else {
-        setSecondsLeft(secondsLeft - 1);
-      }
-    }, isSaleMoment ? 1400 : 1000);
-    return () => window.clearTimeout(timer);
-  }, [secondsLeft, isSaleMoment]);
+    let highlightTimer: number | undefined;
+    const interval = window.setInterval(() => {
+      setIsSaleMoment(true);
+      highlightTimer = window.setTimeout(() => setIsSaleMoment(false), 1400);
+    }, 30000);
+    return () => {
+      window.clearInterval(interval);
+      if (highlightTimer) window.clearTimeout(highlightTimer);
+    };
+  }, []);
 
   if (location.pathname.includes('panel') || location.pathname === '/super-admin') return null;
-  const counterValue = `${String(Math.floor(secondsLeft / 60)).padStart(2, '0')}:${String(secondsLeft % 60).padStart(2, '0')}`;
 
   return (
-    <aside className="group fixed right-0 top-[44%] z-40 -translate-y-1/2" aria-label="Realty Center satış sayacı">
+    <aside className="fixed right-0 top-[44%] z-40 -translate-y-1/2" aria-label="Realty Center satış bilgisi">
       <Link
         to="/ilanlarimiz"
-        className="relative flex w-24 flex-col items-center overflow-visible rounded-l-2xl border border-r-0 border-red-200 bg-white px-2.5 pb-3 pt-3 text-center text-slate-950 shadow-xl shadow-slate-950/20 transition duration-300 hover:w-28 hover:border-red-400 sm:w-32 sm:px-3 sm:pb-4 sm:pt-4 sm:hover:w-36"
+        className="flex w-24 items-center rounded-l-xl border border-r-0 border-slate-200 bg-white px-2.5 py-3 text-center shadow-lg shadow-slate-950/15 sm:w-28 sm:px-3"
       >
-        <span className="absolute inset-x-0 top-0 h-1 rounded-tl-2xl bg-red-700" />
-        <span className="mb-2 block h-10 w-16 sm:h-12 sm:w-20">
-          <img src="/rlogo.png" alt="Realty Center" className="h-full w-full object-contain" />
-        </span>
-        <span className={`mt-1 text-[9px] font-extrabold leading-3 transition-all duration-300 sm:text-[11px] sm:leading-4 ${isSaleMoment ? 'scale-110 animate-pulse text-red-700 drop-shadow-[0_0_8px_rgba(185,28,28,.65)]' : 'text-slate-950'}`}>Her <strong className="text-red-700">30 saniyede</strong> bir gayrimenkul</span>
-        <span className="mt-1 text-[8px] font-bold leading-3 text-slate-700 sm:text-[10px] sm:leading-4">Realty Center ile satılıyor</span>
-        {!isSaleMoment && <span className="mt-2 flex min-w-16 items-center justify-center gap-1 rounded-lg bg-red-700 px-2 py-1.5 font-mono text-sm font-black text-white tabular-nums shadow-md shadow-red-950/25 sm:text-base"><Clock className="h-3.5 w-3.5" />{counterValue}</span>}
-        <span className="mt-2 text-[7px] font-black tracking-wider text-slate-700 sm:text-[8px]">İLANLARI İNCELE →</span>
-        <span className="absolute -bottom-2 right-4 h-4 w-4 rotate-45 border-b border-r border-red-200 bg-white transition-colors group-hover:border-red-400 sm:right-5" />
+        <span className={`w-full text-[9px] font-extrabold leading-3 transition-all duration-300 sm:text-[10px] sm:leading-4 ${isSaleMoment ? 'scale-105 animate-pulse text-red-700 drop-shadow-[0_0_8px_rgba(185,28,28,.75)]' : 'text-slate-950'}`}>Her <strong className="text-red-700">30 saniyede 1 gayrimenkul</strong> Realty Center ile satılıyor.</span>
       </Link>
     </aside>
   );
