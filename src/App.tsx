@@ -662,7 +662,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     const updateProgress = () => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
-      setShowCompactHeader(window.scrollY > 155);
+      setShowCompactHeader(window.scrollY > 170);
     };
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
@@ -678,7 +678,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
   return (
     <header className="realty-header relative isolate z-40 w-full text-white">
-      <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden xl:block ${showCompactHeader ? 'is-visible' : ''}`}>
+      <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden lg:block ${showCompactHeader ? 'is-visible' : ''}`}>
         <nav className="mx-auto grid min-h-[52px] w-full max-w-[1920px] grid-cols-12 items-stretch px-6 2xl:px-10">
           {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`compact-${label}-${to}`} to={to} className="realty-compact-link flex items-center justify-center px-2 text-center text-[10px] font-black leading-tight text-white 2xl:text-xs">{label}</Link>)}
         </nav>
