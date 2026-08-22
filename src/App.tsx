@@ -239,12 +239,25 @@ const SLIDER_IMAGES = [
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
 const WHY_REALTY_CENTER_ITEMS = [
-  'Önce güven ilkesiyle şeffaf hizmet',
-  'Uzman danışmanlarla doğru eşleştirme',
-  'Güncel ve doğrulanmış portföyler',
-  'Franchise ağıyla güçlü yerel erişim',
-  'Satış ve kiralama sürecinde uçtan uca destek',
-  'Yatırım kararlarında profesyonel rehberlik'
+  'Güçlü Marka Kimliği ve Güven Veren Kurumsal Yapı',
+  'Yeni Nesil Teknolojik Altyapı ve Akıllı Gayrimenkul Çözümleri',
+  'Türkiye Genelinde Büyüyen Realty Center Ofis Ağı',
+  'Şeffaf, Sürdürülebilir ve Avantajlı Franchise Modeli',
+  'Realty Center Akademi ile Sürekli Mesleki Gelişim ve Eğitim Desteği',
+  'Ulusal ve Uluslararası Dijital Tanıtım Gücü',
+  'Gayrimenkul Platformlarıyla Hızlı ve Kolay İlan Entegrasyonu',
+  'Danışman İstihdamına Yönelik İlan ve Kariyer Desteği',
+  'Yeni Ofislere Özel Kurulum ve Açılış Desteği',
+  'Kurumsal Afiş, Branda ve Tanıtım Materyali Desteği',
+  'Realty Center Kurumsal Kimliğine Uygun Araç Giydirme Tasarımları',
+  'Mobil ve Kredi Kartıyla Güvenli Ödeme Kolaylığı',
+  'Franchise Ödemelerinde Esnek ve Taksitli Ödeme Seçenekleri',
+  'Ofis Materyalleri ve Promosyon Ürünlerinde Uygun Tedarik Avantajı',
+  'Başarıyı Ödüllendiren Motivasyon Etkinlikleri ve Organizasyonlar',
+  'Sosyal Sorumluluk Projelerine Katılım ve Toplumsal Fayda Odaklı Çalışmalar',
+  'İşletme, Pazarlama ve Gayrimenkul Süreçlerinde Sürekli Danışmanlık',
+  'Güçlü İletişim Ağı ve Kesintisiz Merkez Ofis Desteği',
+  'Kendi İşinizi Kurarak Güçlü Bir Markanın Parçası Olma Fırsatı'
 ];
 
 const LISTING_CATEGORIES = ['Konut', 'Arazi', 'Ticari Gayrimenkul'] as const;
