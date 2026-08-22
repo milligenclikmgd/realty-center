@@ -1209,8 +1209,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           </div>
           <RealtyNetworkActivityPanel />
           <div className="flex justify-center lg:justify-end">
-            <Link to="/ilanlarimiz" className="sales-pulse-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
-              Her <span className="text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
+            <Link to="/ilanlarimiz" className="sales-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
+              Her <span className="sales-pulse-highlight text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
             </Link>
           </div>
         </div>
