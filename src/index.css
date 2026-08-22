@@ -28,6 +28,33 @@
   gap: 8px;
   transform: translateY(-50%);
 }
+.realty-header-social {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transform: translateY(-50%);
+}
+.realty-header-social a {
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(190,18,60,.14);
+  border-radius: 9999px;
+  background: rgba(255,255,255,.82);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.realty-header-social a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(190,18,60,.38);
+  box-shadow: 0 5px 12px rgba(190,18,60,.14);
+}
+.realty-header-social img { width: 13px; height: 13px; object-fit: contain; }
 .realty-header-contact-item {
   display: inline-flex;
   align-items: center;
@@ -181,6 +208,7 @@
 }
 @media (max-width: 1279px) {
   .realty-header-top-space { height: 14px; }
+  .realty-header-social { display: none; }
 }
 
 /* Franchise başvuru kartı: danışman formuyla aynı beyaz kurumsal görünüm */
