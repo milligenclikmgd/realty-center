@@ -31,7 +31,7 @@ const SOCIAL_MEDIA_LINKS = [
   { name: 'Facebook', icon: 'https://cdn.simpleicons.org/facebook/BE123C' },
   { name: 'YouTube', icon: 'https://cdn.simpleicons.org/youtube/BE123C' },
   { name: 'Telegram', icon: 'https://cdn.simpleicons.org/telegram/BE123C' },
-  { name: 'LinkedIn', icon: 'https://cdn.simpleicons.org/linkedin/BE123C' }
+  { name: 'LinkedIn', icon: '/linkedin.svg' }
 ];
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
