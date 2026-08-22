@@ -352,6 +352,45 @@ function WhatsAppSupportButton() {
   );
 }
 
+function RealtySaleCounter() {
+  const location = useLocation();
+  const intervalSeconds = 90;
+  const [secondsLeft, setSecondsLeft] = useState(intervalSeconds);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setSecondsLeft((current) => current <= 1 ? intervalSeconds : current - 1);
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  if (location.pathname.includes('panel') || location.pathname === '/super-admin') return null;
+  const counterValue = `${String(Math.floor(secondsLeft / 60)).padStart(2, '0')}:${String(secondsLeft % 60).padStart(2, '0')}`;
+
+  return (
+    <aside className="group fixed right-0 top-[44%] z-40 -translate-y-1/2" aria-label="Realty Center satış sayacı">
+      <Link
+        to="/ilanlarimiz"
+        className="relative flex w-32 flex-col items-center overflow-visible rounded-l-3xl border border-r-0 border-red-500/30 bg-slate-950 px-3 pb-5 pt-4 text-center text-white shadow-2xl shadow-slate-950/35 transition duration-300 hover:w-36 hover:bg-slate-900 sm:w-44 sm:px-5 sm:pb-6 sm:pt-5 sm:hover:w-48"
+      >
+        <span className="absolute inset-x-0 top-0 h-1.5 rounded-tl-3xl bg-red-700" />
+        <span className="mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-white p-2 shadow-lg ring-4 ring-red-700/25 sm:h-16 sm:w-16">
+          <img src="/rlogo.png" alt="Realty Center" className="h-full w-full object-contain" />
+        </span>
+        <span className="text-[9px] font-black tracking-[.18em] text-red-400 sm:text-[10px]">CANLI SATIŞ</span>
+        <span className="mt-2 text-[11px] font-extrabold leading-4 sm:text-sm sm:leading-5">Her <strong className="text-red-400">90 saniyede</strong> bir gayrimenkul</span>
+        <span className="mt-1 text-[10px] font-bold leading-4 text-slate-300 sm:text-xs">Realty Center ile satılıyor</span>
+        <span className="mt-3 flex min-w-20 items-center justify-center gap-1 rounded-xl bg-red-700 px-3 py-2 font-mono text-lg font-black tabular-nums shadow-lg shadow-red-950/40 sm:text-xl">
+          <Clock className="h-4 w-4" />
+          {counterValue}
+        </span>
+        <span className="mt-3 text-[9px] font-black tracking-widest text-white/75 sm:text-[10px]">İLANLARI İNCELE →</span>
+        <span className="absolute -bottom-3 right-5 h-6 w-6 rotate-45 bg-slate-950 transition-colors group-hover:bg-slate-900 sm:right-7" />
+      </Link>
+    </aside>
+  );
+}
+
 type ListingCategory = { id: string; title: string; type: string; category: string; image: string };
 const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
   { id: 'sale-home', title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
@@ -4070,6 +4109,7 @@ export default function RealtyCenterApp() {
         </main>
 
         <Footer openDrawer={openDrawer} />
+        <RealtySaleCounter />
         <WhatsAppSupportButton />
 
         <div 
