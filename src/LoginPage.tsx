@@ -23,7 +23,7 @@ function LoginPage() {
 
           <div className="bg-slate-900 px-8 py-10 text-center border-b-4 border-red-600">
             <img
-              src="/logo.png"
+              src="/rlogo2.png"
               alt="Realty Center"
               className="h-16 w-auto mx-auto object-contain brightness-0 invert mb-5"
             />
