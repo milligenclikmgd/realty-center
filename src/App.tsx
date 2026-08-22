@@ -684,7 +684,17 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
         </nav>
       </div>
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
-      <div className="realty-header-top-space" aria-hidden="true" />
+      <div className="realty-header-top-space">
+        <div className="realty-header-contact">
+          <a href="tel:+905325674845" aria-label="Realty Center telefon" className="realty-header-contact-item">
+            <Phone className="h-3.5 w-3.5" />
+            <span>0532 567 48 45</span>
+          </a>
+          <a href="https://wa.me/905325674845" target="_blank" rel="noreferrer" aria-label="WhatsApp ile iletişim" className="realty-header-contact-icon realty-header-whatsapp">
+            <MessageCircle className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-6 items-stretch">
