@@ -774,7 +774,10 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name}><img src={social.icon} alt="" /></a>)}
         </div>
         <div className="realty-header-contact">
-          <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site içinde ara" className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
+          <div className="relative flex items-center">
+            <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site içinde ara" className="relative z-10 inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
+            {searchOpen && <form onSubmit={submitSiteSearch} className="header-search-pop absolute right-full top-1/2 z-30 mr-2 flex w-[min(390px,42vw)] -translate-y-1/2 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site içinde ara..." className="min-w-0 flex-1 px-3 py-2 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="flex w-10 items-center justify-center bg-[#CD011E] text-white" aria-label="Aramayı yap"><Search className="h-4 w-4"/></button></form>}
+          </div>
           <div className="hidden overflow-hidden rounded-md border border-slate-200 bg-white text-[9px] font-black shadow-sm sm:flex">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} className={`px-2 py-1.5 transition ${language===item?'bg-[#CD011E] text-white':'text-slate-600 hover:bg-red-50'}`}>{item.toUpperCase()}</button>)}</div>
           <Link to="/panel" className="hidden rounded-md border border-red-700/20 bg-white px-2.5 py-1.5 text-[10px] font-black text-[#CD011E] shadow-sm transition hover:border-red-700/50 sm:inline-flex">{t.panel}</Link>
           <a href="tel:+905325674845" aria-label="Realty Center telefon" className="realty-header-contact-item">
@@ -785,7 +788,6 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <MessageCircle className="h-4 w-4" />
           </a>
         </div>
-        {searchOpen && <form onSubmit={submitSiteSearch} className="absolute left-1/2 top-1/2 z-30 flex w-[min(420px,42vw)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site içinde ara..." className="min-w-0 flex-1 px-3 py-2 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="flex w-10 items-center justify-center bg-[#CD011E] text-white" aria-label="Aramayı yap"><Search className="h-4 w-4"/></button></form>}
       </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
@@ -1146,7 +1148,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <>
+    <div className="home-brand-watermarks">
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
@@ -1418,7 +1420,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
@@ -1864,10 +1866,12 @@ function OfficesPage() {
 function AgentsPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [agentNameQuery, setAgentNameQuery] = useState('');
 
   const filteredAgents = SAMPLE_AGENTS.filter((agent) => {
     if (selectedCity && agent.city !== selectedCity) return false;
     if (selectedDistrict && agent.district !== selectedDistrict) return false;
+    if (agentNameQuery && !agent.name.toLocaleLowerCase('tr-TR').includes(agentNameQuery.toLocaleLowerCase('tr-TR').trim())) return false;
     return true;
   });
 
@@ -1919,7 +1923,11 @@ function AgentsPage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-auto">
+          <div className="grid grid-cols-1 gap-3 w-full sm:grid-cols-3 lg:w-auto">
+            <label className="relative block">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+              <input value={agentNameQuery} onChange={(event) => setAgentNameQuery(event.target.value)} placeholder="İsimle danışman ara" className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2 pl-9 pr-3 text-xs font-bold text-slate-800 outline-none transition focus:ring-2 focus:ring-red-700 lg:w-48" />
+            </label>
             <div className="relative">
               <select 
                 value={selectedCity}
