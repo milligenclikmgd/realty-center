@@ -647,8 +647,12 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
     <div className="relative min-h-screen overflow-hidden bg-slate-950">
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
       <div className={`absolute inset-0 ${franchise ? 'bg-red-800/50' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
+      <img src="/rlogo2.png" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
       <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
-        <div className={`w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
+        <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
+          <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center rounded-lg bg-white/95 px-2 shadow-md sm:right-8 sm:top-7">
+            <img src="/rlogo2.png" alt="Realty Center" className="h-11 w-full object-contain" />
+          </div>
           <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>← Ana Sayfaya Dön</Link>
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
           <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center ol.' : 'Realty Center ailesine katıl.'}</h1>
@@ -679,9 +683,12 @@ function BlogCategoryPage({ category, title, description }: { category: string; 
 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [siteSearch, setSiteSearch] = useState('');
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showCompactHeader, setShowCompactHeader] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
   const leftLinks = [
@@ -719,6 +726,20 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
   const menuLinkClass = (_to: string) =>
     'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
+  const submitSiteSearch = (event: React.FormEvent) => {
+    event.preventDefault();
+    const query = siteSearch.trim().toLocaleLowerCase('tr-TR');
+    if (!query) return;
+    const listing = SAMPLE_LISTINGS.find((item) => `${item.title} ${item.city} ${item.district} ${item.neighborhood} ${item.propertyType}`.toLocaleLowerCase('tr-TR').includes(query));
+    const pages: Array<[string[], string]> = [
+      [['kurumsal', 'hakkımızda', 'hakkimizda'], '/kurumsal/hakkimizda'], [['ofis', 'ofisler'], '/ofislerimiz'],
+      [['danışman', 'danisman'], '/danismanlarimiz'], [['proje', 'projeler'], '/projelerimiz'], [['franchise'], '/franchise-basvuru'],
+      [['blog', 'rehber', 'kütüphane'], '/blog/rehber'], [['iletişim', 'iletisim'], '/iletisim'], [['harita'], '/harita-ile-ara']
+    ];
+    const page = pages.find(([keywords]) => keywords.some((keyword) => query.includes(keyword)));
+    navigate(listing ? `/ilan/${listing.id}` : page?.[1] || `/ilanlarimiz?search=${encodeURIComponent(siteSearch.trim())}`);
+    setSearchOpen(false);
+  };
 
   if (isListingDetail) {
     return (
@@ -753,6 +774,9 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name}><img src={social.icon} alt="" /></a>)}
         </div>
         <div className="realty-header-contact">
+          <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site içinde ara" className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
+          <div className="hidden overflow-hidden rounded-md border border-slate-200 bg-white text-[9px] font-black shadow-sm sm:flex">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} className={`px-2 py-1.5 transition ${language===item?'bg-[#CD011E] text-white':'text-slate-600 hover:bg-red-50'}`}>{item.toUpperCase()}</button>)}</div>
+          <Link to="/panel" className="hidden rounded-md border border-red-700/20 bg-white px-2.5 py-1.5 text-[10px] font-black text-[#CD011E] shadow-sm transition hover:border-red-700/50 sm:inline-flex">{t.panel}</Link>
           <a href="tel:+905325674845" aria-label="Realty Center telefon" className="realty-header-contact-item">
             <Phone className="h-3.5 w-3.5" />
             <span>0532 567 48 45</span>
@@ -761,6 +785,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <MessageCircle className="h-4 w-4" />
           </a>
         </div>
+        {searchOpen && <form onSubmit={submitSiteSearch} className="absolute left-1/2 top-1/2 z-30 flex w-[min(420px,42vw)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site içinde ara..." className="min-w-0 flex-1 px-3 py-2 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="flex w-10 items-center justify-center bg-[#CD011E] text-white" aria-label="Aramayı yap"><Search className="h-4 w-4"/></button></form>}
       </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
@@ -789,11 +814,6 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/40 bg-white/10 text-white">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button>
           </div>
         </div>
-      </div>
-
-      <div className="pointer-events-none absolute right-3 top-[89px] z-50 hidden -translate-y-1/2 items-center gap-1 2xl:flex">
-        <div className="pointer-events-auto flex overflow-hidden rounded-lg border border-white/35 bg-[#071d3b]/40 text-[9px] font-black">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} className={`px-1.5 py-1.5 transition ${language===item?'bg-white text-[#CD011E]':'text-white hover:bg-white/15'}`}>{item.toUpperCase()}</button>)}</div>
-        <Link to="/panel" className="pointer-events-auto rounded-lg border border-white/80 bg-white px-2.5 py-1.5 text-[10px] font-black text-[#CD011E] shadow-lg transition hover:-translate-y-0.5">{t.panel}</Link>
       </div>
 
       {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 text-sm font-black xl:hidden">{[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`${label}-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white transition hover:bg-white/20">{label}</Link>)}</nav>}
