@@ -842,9 +842,11 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
 function FeaturedListingsShowcase() {
   const [featuredIds, setFeaturedIds] = useState<string[]>(getFeaturedListingIds);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [listingFilter, setListingFilter] = useState<'Tümü' | 'Satılık' | 'Kiralık'>('Tümü');
   const dragStartX = useRef<number | null>(null);
   const dragMoved = useRef(false);
-  const featuredListings = featuredIds.map((id) => SAMPLE_LISTINGS.find((listing) => listing.id === id)).filter((listing): listing is ListingItem => Boolean(listing));
+  const allFeaturedListings = featuredIds.map((id) => SAMPLE_LISTINGS.find((listing) => listing.id === id)).filter((listing): listing is ListingItem => Boolean(listing));
+  const featuredListings = listingFilter === 'Tümü' ? allFeaturedListings : allFeaturedListings.filter((listing) => listing.type.includes(listingFilter));
 
   useEffect(() => {
     const refresh = () => setFeaturedIds(getFeaturedListingIds());
@@ -855,6 +857,8 @@ function FeaturedListingsShowcase() {
   useEffect(() => {
     if (activeIndex >= featuredListings.length) setActiveIndex(0);
   }, [activeIndex, featuredListings.length]);
+
+  useEffect(() => setActiveIndex(0), [listingFilter]);
 
   const move = (direction: number) => {
     if (!featuredListings.length) return;
@@ -889,7 +893,7 @@ function FeaturedListingsShowcase() {
     dragStartX.current = null;
   };
 
-  if (!featuredListings.length) return null;
+  if (!allFeaturedListings.length) return null;
 
   return (
     <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-red-50/30 to-white py-16 sm:py-20">
@@ -902,10 +906,13 @@ function FeaturedListingsShowcase() {
           <h2 className="mt-4 font-serif text-4xl font-black italic tracking-tight text-slate-950 sm:text-5xl">
             Seçkin <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">Gayrimenkuller</span>
           </h2>
+          <div className="mt-6 flex items-center justify-center gap-2 sm:gap-3">
+            {(['Tümü', 'Satılık', 'Kiralık'] as const).map((filter) => <button key={filter} type="button" onClick={() => setListingFilter(filter)} className={`min-w-24 rounded-xl border px-5 py-3 text-xs font-black tracking-wide transition sm:min-w-28 ${listingFilter === filter ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/25' : 'border-slate-200 bg-slate-100 text-slate-700 hover:border-red-300 hover:bg-white hover:text-red-700'}`}>{filter}</button>)}
+          </div>
           <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
         </div>
 
-        <div
+        {featuredListings.length ? <div
           className="relative h-[430px] cursor-grab select-none touch-pan-y active:cursor-grabbing sm:h-[470px]"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
@@ -952,7 +959,7 @@ function FeaturedListingsShowcase() {
 
           <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(-1)} className="absolute left-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:left-6" aria-label="Önceki vitrin ilanı"><ChevronLeft className="h-6 w-6" /></button>
           <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(1)} className="absolute right-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:right-6" aria-label="Sonraki vitrin ilanı"><ChevronRight className="h-6 w-6" /></button>
-        </div>
+        </div> : <div className="rounded-3xl border border-slate-200 bg-white px-6 py-20 text-center text-sm font-bold text-slate-500">Bu kategoride henüz vitrin ilanı bulunmuyor.</div>}
 
         <div className="mt-1 flex items-center justify-center gap-2">
           {featuredListings.map((item, index) => <button key={item.id} type="button" onClick={() => setActiveIndex(index)} className={`h-2 rounded-full transition-all duration-300 ${index === activeIndex ? 'w-8 bg-red-700' : 'w-2 bg-slate-300 hover:bg-red-300'}`} aria-label={`${index + 1}. vitrin ilanına git`} />)}
