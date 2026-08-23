@@ -2414,7 +2414,7 @@ function ListingsPageV2() {
   );
 }
 
-function ListingDetailPage() {
+export function ListingDetailPageLegacy() {
   const { id } = useParams();
   const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
   const [activeImage, setActiveImage] = useState(0);
@@ -2461,6 +2461,85 @@ function ListingDetailPage() {
         </div>
 
         <section className="mt-10"><div className="mb-5 flex items-center justify-between"><h2 className="text-2xl font-black text-slate-900">Benzer İlanlar</h2><Link to={`/ilanlarimiz?propertyType=${encodeURIComponent(item.propertyType)}`} className="text-sm font-black text-red-700">Tümünü Gör →</Link></div>{similar.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">{similar.map((listing) => <ListingCard key={listing.id} item={listing} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-8 text-sm font-bold text-slate-500">Benzer ilan bulunamadı.</div>}</section>
+      </div>
+    </div>
+  );
+}
+
+function ListingDetailPage() {
+  const { id } = useParams();
+  const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
+  const [activeImage, setActiveImage] = useState(0);
+  const [activeTab, setActiveTab] = useState<'details' | 'location' | 'index'>('details');
+  const [favorite, setFavorite] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('realty-center-favorites') || '[]').includes(id || ''); }
+    catch { return false; }
+  });
+
+  if (!item) return <div className="min-h-[60vh] bg-slate-50 px-6 py-24 text-center"><h1 className="text-3xl font-black text-slate-900">İlan bulunamadı</h1><Link to="/ilanlarimiz?all=1" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 font-black text-white">Tüm İlanlara Dön</Link></div>;
+
+  const gallery = item.images?.length ? item.images : [item.image];
+  const agent = SAMPLE_AGENTS.find((entry) => entry.name === item.agentName) || SAMPLE_AGENTS[0];
+  const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
+  const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Bulunduğu Kat', heating: 'Isıtma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', bathroom: 'Banyo Sayısı', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz' };
+  const detailRows: Array<[string, string]> = [
+    ['İlan No', item.id], ['İlan Tarihi', item.updatedAt || item.date], ['Emlak Tipi', `${item.type} ${item.propertyType}`],
+    ['m²', `${item.area} m²`], ['Oda Bilgisi', item.rooms], ['Aidat', item.monthlyFee || 'Belirtilmedi'],
+    ['Tapu Bilgisi', item.deedInfo || 'Belirtilmedi'], ...Object.entries(item.details).map(([key, value]) => [detailLabels[key] || key, value] as [string, string])
+  ];
+  const features = (item.technicalFeatures || 'Otopark, güvenlik, ulaşım akslarına yakınlık').split(',').map((feature) => feature.trim());
+
+  const toggleFavorite = () => {
+    const stored: string[] = JSON.parse(localStorage.getItem('realty-center-favorites') || '[]');
+    const next = favorite ? stored.filter((favoriteId) => favoriteId !== item.id) : [...new Set([...stored, item.id])];
+    localStorage.setItem('realty-center-favorites', JSON.stringify(next));
+    setFavorite(!favorite);
+  };
+  const shareListing = async () => {
+    const shareData = { title: item.title, text: `${item.title} - ${item.price.toLocaleString('tr-TR')} ${item.currency}`, url: window.location.href };
+    if (navigator.share) await navigator.share(shareData);
+    else { await navigator.clipboard.writeText(window.location.href); alert('İlan bağlantısı kopyalandı.'); }
+  };
+
+  return (
+    <div className="listing-detail-enter min-h-screen bg-white py-6 print:bg-white">
+      <div className="mx-auto max-w-[1480px] px-3 sm:px-5 lg:px-6">
+        <nav className="mb-4 flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-3 text-xs font-bold text-red-700">
+          <Link to="/ilanlarimiz?all=1">Emlak</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?category=${encodeURIComponent(item.category)}`}>{item.category}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?type=${encodeURIComponent(item.type)}`}>{item.type}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.propertyType}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.city}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span className="text-slate-500">{item.district}</span>
+        </nav>
+
+        <div className="mb-4 flex flex-col gap-3 border-b border-slate-200 pb-4 lg:flex-row lg:items-center lg:justify-between">
+          <h1 className="text-2xl font-black uppercase text-slate-900 sm:text-3xl">{item.title}</h1>
+          <div className="flex flex-wrap gap-2 print:hidden"><button onClick={toggleFavorite} className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-black ${favorite ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-white text-slate-700'}`}><Heart className={`h-4 w-4 ${favorite ? 'fill-current' : ''}`}/>Favorilere Ekle</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700"><Printer className="h-4 w-4"/>Yazdır</button><button onClick={shareListing} className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700"><Share2 className="h-4 w-4"/>Paylaş</button></div>
+        </div>
+
+        <section className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.35fr)_360px_300px]">
+          <div className="min-w-0">
+            <div className="relative h-[390px] overflow-hidden border border-slate-200 bg-slate-100 sm:h-[540px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full object-contain"/>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronLeft/></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronRight/></button></>}</div>
+            <div className="mt-2 flex items-center justify-between border-y border-slate-200 bg-slate-50 px-3 py-2 text-xs font-black text-slate-600"><span className="inline-flex items-center gap-1.5"><Camera className="h-4 w-4 text-red-700"/>Büyük Fotoğraf</span><span>{activeImage + 1} / {gallery.length}</span></div>
+            <div className="mt-2 grid grid-cols-4 gap-2 sm:grid-cols-6">{gallery.map((image, index) => <button key={`${image}-${index}`} onClick={() => setActiveImage(index)} className={`h-20 overflow-hidden border-2 bg-slate-100 ${activeImage === index ? 'border-red-700' : 'border-slate-200 hover:border-red-300'}`}><img src={image} alt="" className="h-full w-full object-cover"/></button>)}</div>
+          </div>
+
+          <div className="min-w-0">
+            <div className="border-b border-slate-200 pb-4"><p className="text-3xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><p className="mt-4 flex items-center gap-1.5 text-sm font-black text-slate-800"><MapPin className="h-4 w-4 text-red-700"/>{item.city} / {item.district} / {item.neighborhood}</p></div>
+            <dl className="mt-2 text-sm">{detailRows.map(([label, value]) => <div key={`${label}-${value}`} className="grid grid-cols-[135px_1fr] gap-3 border-b border-dotted border-slate-300 py-2"><dt className="font-black text-slate-800">{label}</dt><dd className={label === 'İlan No' ? 'font-bold text-red-700' : 'font-medium text-slate-700'}>{value}</dd></div>)}</dl>
+          </div>
+
+          <aside className="space-y-4">
+            <section className="border border-slate-200 bg-slate-50 p-5 shadow-sm"><div className="flex items-center gap-3"><img src={agent.image} alt={agent.name} className="h-16 w-16 rounded-full object-cover ring-2 ring-white"/><div><p className="text-[10px] font-black tracking-widest text-red-700">YETKİLİ DANIŞMAN</p><h2 className="mt-1 text-lg font-black text-slate-900">{agent.name}</h2><p className="text-xs text-slate-500">{agent.title}</p></div></div><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} className="mt-5 flex items-center justify-between border border-slate-300 bg-white px-4 py-3"><span className="text-sm font-bold text-slate-600">Cep</span><strong className="text-base text-slate-950">{item.agentPhone}</strong></a><button className="mt-3 flex w-full items-center justify-center gap-2 border border-red-700 bg-red-700 py-3 text-sm font-black text-white"><MessageSquare className="h-4 w-4"/>Mesaj Gönder</button></section>
+            <section className="border border-slate-200 bg-white p-5"><h3 className="flex items-center gap-2 font-black text-slate-900"><ShieldAlert className="h-5 w-5 text-red-700"/>Güvenlik İpuçları</h3><p className="mt-3 text-sm leading-5 text-slate-600">Gayrimenkulü görmeden kapora ödemeyin, para göndermeyin.</p><Link to="/iletisim" className="mt-3 inline-flex text-xs font-black text-red-700">Detaylı bilgi alın →</Link></section>
+            <section className="border border-red-200 bg-red-50 p-5"><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTER GÜVENCESİ</p><h3 className="mt-2 text-lg font-black text-slate-900">Doğrulanmış kurumsal ilan</h3><p className="mt-2 text-xs leading-5 text-slate-600">Portföy ve danışman bilgileri Realty Center ağı tarafından kontrol edilir.</p></section>
+          </aside>
+        </section>
+
+        <section className="mt-10">
+          <div className="flex flex-wrap gap-1 border-b-2 border-red-700">{[['details','İlan Detayları'],['location','Konumu ve Bölge Bilgisi'],['index','Emlak Endeksi']].map(([key,label]) => <button key={key} onClick={() => setActiveTab(key as 'details' | 'location' | 'index')} className={`border border-b-0 px-5 py-3 text-sm font-black sm:px-7 ${activeTab === key ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-slate-50 text-slate-700 hover:text-red-700'}`}>{label}</button>)}</div>
+          {activeTab === 'details' && <div className="space-y-4 pt-1"><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-lg font-black">Açıklama</h2><p className="min-h-24 whitespace-pre-line px-5 py-5 text-sm leading-7 text-slate-700">{item.description || 'Bu ilan için açıklama eklenmemiştir.'}</p></div><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-lg font-black">Özellikler</h2><div className="grid gap-3 bg-amber-50/45 p-5 sm:grid-cols-2 lg:grid-cols-4">{features.map((feature) => <span key={feature} className="flex items-center gap-2 text-sm font-bold text-slate-800"><CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600"/>{feature}</span>)}{Object.entries(item.details).map(([key,value]) => <span key={key} className="flex items-center gap-2 text-sm font-bold text-slate-800"><CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600"/>{detailLabels[key] || key}: {value}</span>)}</div></div><div className="grid gap-5 md:grid-cols-2"><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-3 font-black"><PlayCircle className="h-5 w-5 text-red-700"/>Video</h2>{item.videoUrl ? <iframe title="İlan videosu" src={item.videoUrl} className="h-72 w-full" allowFullScreen/> : <div className="flex h-44 items-center justify-center text-sm font-bold text-slate-400">Bu ilan için video eklenmemiş.</div>}</div><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-3 font-black"><Globe className="h-5 w-5 text-red-700"/>Sanal Tur (360°)</h2>{item.virtualTourUrl ? <iframe title="Sanal tur" src={item.virtualTourUrl} className="h-72 w-full" allowFullScreen/> : <div className="flex h-44 items-center justify-center text-sm font-bold text-slate-400">Bu ilan için 360° tur eklenmemiş.</div>}</div></div></div>}
+          {activeTab === 'location' && <div className="border border-slate-200"><div className="border-b border-slate-200 bg-slate-100 p-4"><h2 className="text-lg font-black">Konum ve Bölge Bilgisi</h2><p className="mt-1 text-sm text-slate-600">{item.city} / {item.district} / {item.neighborhood}</p></div>{item.mapUrl ? <iframe title="İlan konumu" src={item.mapUrl} className="h-[460px] w-full border-0" loading="lazy"/> : <div className="flex h-64 items-center justify-center text-sm font-bold text-slate-400">Konum bilgisi eklenmemiş.</div>}</div>}
+          {activeTab === 'index' && <div className="grid gap-5 border border-slate-200 p-6 md:grid-cols-3"><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">BÖLGE ORTALAMA m²</p><p className="mt-2 text-2xl font-black text-red-700">{Math.round(item.price / Math.max(item.area, 1)).toLocaleString('tr-TR')} ₺</p></div><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">TAHMİNİ GERİ DÖNÜŞ</p><p className="mt-2 text-2xl font-black text-slate-900">18–22 Yıl</p></div><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">BÖLGE EĞİLİMİ</p><p className="mt-2 text-2xl font-black text-emerald-600">Yükselişte</p></div><p className="md:col-span-3 text-xs leading-5 text-slate-500">Bu göstergeler örnek ilan verileri üzerinden bilgilendirme amacıyla hesaplanır; ekspertiz veya yatırım garantisi değildir.</p></div>}
+        </section>
+
+        <section className="mt-10"><div className="mb-5 flex items-center justify-between"><h2 className="text-2xl font-black text-slate-900">Benzer İlanlar</h2><Link to={`/ilanlarimiz?propertyType=${encodeURIComponent(item.propertyType)}`} className="text-sm font-black text-red-700">Tümünü Gör →</Link></div>{similar.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">{similar.map((listing) => <ListingCard key={listing.id} item={listing}/>)}</div> : <div className="border border-slate-200 bg-white p-8 text-sm font-bold text-slate-500">Benzer ilan bulunamadı.</div>}</section>
       </div>
     </div>
   );
