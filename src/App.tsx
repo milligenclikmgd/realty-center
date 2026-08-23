@@ -554,14 +554,12 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   return (
     <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="listing-cinematic-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
       <div>
-        <div className="relative h-44 overflow-hidden bg-slate-900">
+        <div className="relative h-48 overflow-hidden bg-slate-100">
           <img 
             src={item.image} 
             alt={item.title} 
             className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
             <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
               item.type === 'Satılık' ? 'bg-red-700' : item.type === 'Kiralık' ? 'bg-blue-600' : 'bg-emerald-600'
@@ -573,16 +571,16 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
             </span>
           </div>
 
-          <span className="absolute top-3 right-3 text-[10px] font-bold text-white bg-black/60 backdrop-blur-md px-2 py-1 rounded border border-white/20">
+          <span className="absolute top-3 right-3 rounded border border-slate-200 bg-white/95 px-2 py-1 text-[10px] font-bold text-slate-700 shadow-sm">
             {item.id}
           </span>
-
-          <div className="absolute bottom-3 left-3 right-3 text-white font-black text-lg drop-shadow-md">
-            {item.price.toLocaleString('tr-TR')} <span className="text-sm font-bold">{item.currency}</span>
-          </div>
         </div>
 
         <div className="p-4">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <p className="text-xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} <span className="text-sm">{item.currency}</span></p>
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">{item.propertyType}</span>
+          </div>
           <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-700 transition h-10">
             {item.title}
           </h3>
@@ -925,6 +923,7 @@ function FeaturedListingsShowcase() {
           {featuredListings.map((item, index) => {
             const offset = getOffset(index);
             const isActive = offset === 0;
+            const agent = SAMPLE_AGENTS[index % SAMPLE_AGENTS.length];
             if (Math.abs(offset) > 1) return null;
             return (
               <Link
@@ -932,7 +931,7 @@ function FeaturedListingsShowcase() {
                 to={`/ilan/${item.id}`}
                 draggable={false}
                 onClick={(event) => { if (dragMoved.current) event.preventDefault(); }}
-                className="absolute left-1/2 top-0 h-[400px] w-[78vw] max-w-[620px] overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
+                className="absolute left-1/2 top-0 flex h-[400px] w-[78vw] max-w-[620px] flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
                 style={{
                   transform: `translateX(${offset === 0 ? '-50%' : offset < 0 ? '-128%' : '28%'}) scale(${isActive ? 1 : 0.82})`,
                   opacity: isActive ? 1 : 0.58,
@@ -941,19 +940,23 @@ function FeaturedListingsShowcase() {
                 }}
                 aria-label={`${item.title} ilanını incele`}
               >
-                <img src={item.image} alt={item.title} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
-                {isActive && <div className="featured-card-aurora pointer-events-none absolute inset-0 z-[1]" />}
-                <div className={`absolute inset-x-0 bottom-0 z-[2] h-[66%] transition-colors duration-500 ${isActive ? 'bg-gradient-to-t from-[#071126]/98 via-[#071126]/78 to-transparent' : 'bg-gradient-to-t from-slate-950/58 to-transparent'}`} />
-                <div className="absolute left-5 top-5 z-[3] flex items-center gap-2">
-                  <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
-                  <span className="rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 backdrop-blur">UYGUN FİYAT</span>
+                <div className="relative h-[245px] shrink-0 overflow-hidden bg-slate-100 sm:h-[285px]">
+                  <img src={item.image} alt={item.title} draggable={false} className={`h-full w-full object-cover transition duration-700 ${isActive ? 'scale-[1.02]' : 'scale-100'}`} />
+                  <div className="absolute left-5 top-5 flex items-center gap-2">
+                    <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
+                    <span className="rounded-full border border-slate-200 bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 shadow-sm">{item.type}</span>
+                  </div>
                 </div>
-                <div className={`absolute inset-x-0 bottom-0 z-[3] p-6 text-white transition-all duration-500 sm:p-8 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-70'}`}>
-                  <p className="text-xs font-black uppercase tracking-widest text-red-200">{item.type} · {item.propertyType}</p>
-                  <h3 className="mt-2 max-w-lg line-clamp-2 text-lg font-black leading-snug sm:text-2xl">{item.title}</h3>
-                  <div className="mt-4 flex items-end justify-between gap-4">
-                    <div><p className="text-xs font-semibold text-white/70">{item.district}, {item.neighborhood}</p><p className="mt-2 inline-flex rounded-xl border border-white/30 bg-white/14 px-3 py-2 text-xl font-black shadow-lg backdrop-blur-md sm:text-2xl">{item.price.toLocaleString('tr-TR')} ₺</p></div>
-                    <span className="hidden rounded-full bg-white px-4 py-2 text-[11px] font-black text-red-700 shadow-lg sm:inline-flex">İlanı İncele <ArrowRight className="ml-2 h-4 w-4" /></span>
+                <div className={`relative flex flex-1 items-center gap-3 border-t border-red-100 bg-white px-4 py-3 text-slate-900 sm:gap-4 sm:px-5 ${isActive ? 'featured-info-ribbon' : ''}`}>
+                  <img src={agent.image} alt={agent.name} className="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-red-100 sm:h-12 sm:w-12" />
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[9px] font-black uppercase tracking-widest text-red-700">{item.propertyType} · {agent.name}</p>
+                    <h3 className="mt-1 truncate text-sm font-black text-slate-950 sm:text-base">{item.title}</h3>
+                    <p className="mt-1 truncate text-[10px] font-semibold text-slate-500">{item.district}, {item.neighborhood}</p>
+                  </div>
+                  <div className="shrink-0 text-right">
+                    <p className="text-base font-black text-red-700 sm:text-xl">{item.price.toLocaleString('tr-TR')} ₺</p>
+                    <span className="mt-1 hidden items-center justify-end text-[10px] font-black text-slate-500 sm:flex">İlanı İncele <ArrowRight className="ml-1 h-3.5 w-3.5" /></span>
                   </div>
                 </div>
               </Link>
