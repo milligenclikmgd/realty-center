@@ -681,6 +681,10 @@ function BlogCategoryPage({ category, title, description }: { category: string; 
   return <section className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">BLOG · {category.toUpperCase()}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{title}</h1><p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600">{description}</p><div className="mt-8 grid gap-4 md:grid-cols-3">{entries.map(([heading,meta])=><article key={heading} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><p className="text-[10px] font-black tracking-widest text-[#CD011E]">{meta}</p><h2 className="mt-3 text-lg font-black text-slate-900">{heading}</h2><Link to="/#akademi" className="mt-6 inline-flex text-sm font-black text-[#CD011E]">İçeriği oku →</Link></article>)}</div></div></section>;
 }
 
+function LegalInfoPage({ title, description }: { title: string; description: string }) {
+  return <main className="min-h-[65vh] bg-slate-50 py-14"><div className="mx-auto max-w-4xl px-6"><Link to="/" className="text-xs font-black text-red-700">← Ana sayfaya dön</Link><article className="mt-6 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><p className="text-[10px] font-black tracking-[.2em] text-red-700">REALTY CENTER TÜRKİYE</p><h1 className="mt-3 text-3xl font-black text-slate-900">{title}</h1><p className="mt-6 text-sm leading-7 text-slate-600">{description}</p><p className="mt-5 text-sm leading-7 text-slate-600">Bu metin; kullanıcıların bilgilendirilmesi, kişisel verilerin korunması, güvenli kullanım ve şeffaf hizmet ilkelerimizin açıklanması amacıyla hazırlanmıştır. Ayrıntılı bilgi veya başvuru için info@realtycenter.com.tr adresinden bizimle iletişime geçebilirsiniz.</p><p className="mt-8 border-t border-slate-100 pt-4 text-xs font-bold text-slate-400">Son güncelleme: 24 Ağustos 2026</p></article></div></main>;
+}
+
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -824,60 +828,38 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 }
 
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
+  const footerGroups = [
+    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kurulumuz','/kurumsal/yonetim-kurulu'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center'],['İletişim','/iletisim']] },
+    { title: 'Gayrimenkul', links: [['İlanlarımız','/ilanlarimiz?all=1'],['Projelerimiz','/projelerimiz'],['Ofislerimiz','/ofislerimiz'],['Danışmanlarımız','/danismanlarimiz'],['Harita ile Ara','/harita-ile-ara']] },
+    { title: 'Kariyer ve İş Ortaklığı', links: [['Franchise Ol','/franchise-basvuru'],['Danışman Ol','/danisman-basvuru'],['Realty Kütüphane','/blog/rehber'],['Gayrimenkul Hukuku','/blog/hukuk'],['Yapay Zeka Asistanı','/ai-karar-asistani']] },
+    { title: 'Gizlilik ve Kullanım', links: [['KVKK Aydınlatma Metni','/kvkk'],['Gizlilik Politikası','/gizlilik-politikasi'],['Çerez Politikası','/cerez-politikasi'],['Kullanım Koşulları','/kullanim-kosullari'],['İlan Yayınlama Kuralları','/ilan-yayinlama-kurallari']] }
+  ];
   return (
-    <footer className="bg-slate-900 text-slate-400 py-12 border-t-4 border-red-700">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <div className="flex items-center space-x-3 mb-4">
-            <img 
-              src="/rlogo2.png"
-              alt="Realty Center" 
-              className="h-12 w-auto object-contain brightness-0 invert"
-            />
-          </div>
-          <p className="text-sm text-slate-400 font-medium">
-            Türkiye geneli franchise ağı ve uzman emlak danışmanları ile gayrimenkulde önce güven sağlayan çatı kuruluş.
-          </p>
+    <footer className="border-t-4 border-red-700 bg-[#f7f7f7] text-slate-600">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-12">
+        <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-5">
+          {footerGroups.map((group) => <div key={group.title}><h4 className="mb-4 text-sm font-black text-slate-900">{group.title}</h4><ul className="space-y-2.5 text-xs font-semibold">{group.links.map(([label,to]) => <li key={label}><Link to={to} className="transition hover:text-red-700">{label}</Link></li>)}</ul></div>)}
+          <div><h4 className="mb-4 text-sm font-black text-slate-900">Bizi Takip Edin</h4><div className="flex flex-wrap gap-2">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt="" className="h-4 w-4"/></a>)}</div><button onClick={() => openDrawer('franchise')} className="mt-5 text-xs font-black text-red-700">Franchise başvurusu →</button><button onClick={() => openDrawer('agent')} className="mt-2 block text-xs font-black text-red-700">Danışman başvurusu →</button></div>
         </div>
 
-        <div>
-          <h4 className="text-white font-black mb-4 border-b-2 border-red-700 pb-1 inline-block">İletişim Bilgileri</h4>
-          <ul className="space-y-2.5 text-sm font-medium">
-            <li className="flex items-start space-x-2">
-              <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
-              <span>Konutkent Mah. 3028. Cad. West Gate Residence No:2 A Blok Kat:26 Çankaya / ANKARA</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-red-600" />
-              <span className="font-bold text-white">0532 567 48 45</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <Mail className="w-4 h-4 text-red-600" />
-              <span>info@realtycenter.com.tr</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <Globe className="w-4 h-4 text-red-600" />
-              <span>www.realtycenter.com.tr</span>
-            </li>
-          </ul>
+        <div className="mt-10 grid gap-4 border-t border-slate-200 pt-7 md:grid-cols-3">
+          <a href="tel:+905325674845" className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"><Phone className="h-5 w-5"/></span><span><b className="block text-xs text-red-700">Müşteri Hizmetleri</b><strong className="text-sm text-slate-900">0532 567 48 45</strong></span></a>
+          <a href="mailto:info@realtycenter.com.tr" className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"><Mail className="h-5 w-5"/></span><span><b className="block text-xs text-red-700">Yardım ve İletişim</b><strong className="text-sm text-slate-900">info@realtycenter.com.tr</strong></span></a>
+          <div className="flex gap-2"><a href="https://parselsorgu.tkgm.gov.tr/" target="_blank" rel="noreferrer" className="flex flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 text-center text-xs font-black text-slate-800 hover:border-red-300">TKGM Parsel Sorgulama ↗</a><a href="https://www.mevzuat.gov.tr/" target="_blank" rel="noreferrer" className="flex flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 text-center text-xs font-black text-slate-800 hover:border-red-300">Emlak Mevzuatı ↗</a></div>
         </div>
 
-        <div>
-          <h4 className="text-white font-black mb-4 border-b-2 border-red-700 pb-1 inline-block">Hızlı Erişim</h4>
-          <ul className="space-y-2 text-sm font-medium">
-            <li><button onClick={() => openDrawer('franchise')} className="hover:text-red-600 font-bold transition">Franchise Başvurusu</button></li>
-            <li><button onClick={() => openDrawer('agent')} className="hover:text-red-600 font-bold transition">Danışman Başvurusu</button></li>
-            <li><a href="#kvkk" className="hover:text-red-600 transition">KVKK Aydınlatma Metni</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-10 pt-6 border-t border-slate-700 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs font-semibold text-slate-500">
-        <span>Dijital Çözüm Ortağı</span>
-        <img src="/klogo.png" alt="Kriter Medya" className="h-7 w-auto object-contain brightness-0 invert" />
+        <div className="mt-7 rounded-lg border border-slate-200 bg-white p-4 text-[10px] leading-relaxed text-slate-500">Realty Center’da yayımlanan ilan, açıklama ve görseller ilan sahibi veya yetkili gayrimenkul danışmanı tarafından sağlanır. Taşınmaz satın alma ve kiralama işlemlerinde tapu kayıtlarını, yetki belgelerini ve sözleşme koşullarını kontrol ediniz. Sitedeki içerikler yatırım veya hukuk danışmanlığı niteliğinde değildir.</div>
+        <div className="mt-5 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-5 text-[10px] font-semibold text-slate-500 sm:flex-row"><span>© 2026 Realty Center Türkiye. Tüm hakları saklıdır.</span><span className="flex items-center gap-2">Dijital Çözüm Ortağı <img src="/klogo.png" alt="Kriter Medya" className="h-6 w-auto object-contain"/></span></div>
       </div>
     </footer>
   );
+}
+
+function CookieConsent() {
+  const [visible, setVisible] = useState(() => !localStorage.getItem('realty-center-cookie-choice'));
+  if (!visible) return null;
+  const choose = (choice: 'all' | 'essential') => { localStorage.setItem('realty-center-cookie-choice', choice); setVisible(false); };
+  return <div className="fixed inset-x-3 bottom-3 z-[90] mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:p-5"><div className="flex flex-col gap-4 sm:flex-row sm:items-center"><div className="flex-1"><h3 className="text-sm font-black text-slate-900">Çerez kullanımı</h3><p className="mt-1 text-xs leading-5 text-slate-600">Site deneyimini geliştirmek, tercihlerinizi hatırlamak ve güvenli kullanım sağlamak için çerezlerden yararlanıyoruz. Ayrıntıları <Link to="/cerez-politikasi" className="font-black text-red-700">Çerez Politikası</Link> sayfasında inceleyebilirsiniz.</p></div><div className="flex shrink-0 gap-2"><button onClick={() => choose('essential')} className="rounded-lg border border-slate-300 px-4 py-2 text-xs font-black text-slate-700">Yalnızca Zorunlu</button><button onClick={() => choose('all')} className="rounded-lg bg-red-700 px-4 py-2 text-xs font-black text-white">Tümünü Kabul Et</button></div></div></div>;
 }
 
 function FeaturedListingsShowcase() {
@@ -4224,6 +4206,11 @@ export default function RealtyCenterApp() {
             <Route path="/blog/hukuk" element={<BlogCategoryPage category="Hukuk" title="Gayrimenkul Hukuku" description="Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler." />} />
             <Route path="/blog/haberler" element={<BlogCategoryPage category="Haberler" title="Sektörden Haberler" description="Gayrimenkul piyasasındaki güncel gelişmeler ve gündem notları." />} />
             <Route path="/blog/analizler" element={<BlogCategoryPage category="Analizler" title="Yatırım Analizleri" description="Bölge, fiyat, getiri ve yatırım fırsatlarını birlikte değerlendirin." />} />
+            <Route path="/kvkk" element={<LegalInfoPage title="KVKK Aydınlatma Metni" description="Kişisel verilerinizin hangi amaçlarla işlendiği, saklandığı ve haklarınız kapsamında nasıl başvuru yapabileceğiniz hakkında bilgilendirme metnidir." />} />
+            <Route path="/gizlilik-politikasi" element={<LegalInfoPage title="Gizlilik Politikası" description="Realty Center web sitesi ve dijital hizmetlerinde kullanıcı bilgilerinin gizliliğine ilişkin temel ilkeleri açıklar." />} />
+            <Route path="/cerez-politikasi" element={<LegalInfoPage title="Çerez Politikası" description="Zorunlu, işlevsel ve analitik çerezlerin kullanım amaçları ile kullanıcı tercihlerini nasıl yönetebileceğini açıklar." />} />
+            <Route path="/kullanim-kosullari" element={<LegalInfoPage title="Kullanım Koşulları" description="Web sitesine erişim, içeriklerin kullanımı, kullanıcı sorumlulukları ve hizmet kapsamına ilişkin koşulları açıklar." />} />
+            <Route path="/ilan-yayinlama-kurallari" element={<LegalInfoPage title="İlan Yayınlama Kuralları" description="İlan bilgilerinin doğruluğu, görsel kullanımı, yetkilendirme, güncellik ve hukuka uygunluk konularındaki yayın ilkelerini açıklar." />} />
 
             <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
             <Route path="/ofislerimiz" element={<OfficesPage />} />
@@ -4242,6 +4229,7 @@ export default function RealtyCenterApp() {
 
         <Footer openDrawer={openDrawer} />
         <WhatsAppSupportButton />
+        <CookieConsent />
 
         <div 
           className={`fixed inset-0 z-50 overflow-hidden transition-all duration-500 ${
