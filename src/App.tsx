@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
@@ -700,6 +700,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     [t.advisor, '/danisman-basvuru'],
     [t.contact, '/iletisim']
   ];
+  const isListingDetail = location.pathname.startsWith('/ilan/');
 
   useEffect(() => {
     const updateProgress = () => {
@@ -718,6 +719,26 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
   const menuLinkClass = (_to: string) =>
     'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
+
+  if (isListingDetail) {
+    return (
+      <header className="relative z-40 w-full border-b border-red-800 bg-[#CD011E] text-white shadow-md">
+        <div className="mx-auto flex min-h-[64px] max-w-[1920px] items-stretch px-3 lg:px-6">
+          <Link to="/" onClick={close} className="my-2 flex w-[150px] shrink-0 items-center justify-center rounded-sm bg-white px-3 shadow-sm lg:w-[175px]" aria-label="Realty Center ana sayfa">
+            <img src="/rlogotr.png" alt="Realty Center Türkiye" className="h-11 w-full object-contain lg:h-12" />
+          </Link>
+          <nav className="ml-3 hidden min-w-0 flex-1 items-stretch xl:grid xl:grid-cols-12">
+            {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`detail-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+          </nav>
+          <div className="ml-auto flex items-center gap-2 xl:hidden">
+            <Link to="/ilanlarimiz?all=1" className="hidden rounded-md border border-white/40 px-3 py-2 text-xs font-black sm:inline-flex">İlanlarımız</Link>
+            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
+          </div>
+        </div>
+        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden">{[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`detail-mobile-${label}-${to}`} onClick={close} to={to} className="rounded-md bg-white/10 px-3 py-2.5">{label}</Link>)}</nav>}
+      </header>
+    );
+  }
 
   return (
     <header className="realty-header relative isolate z-40 w-full text-white">
@@ -2482,10 +2503,17 @@ function ListingDetailPage() {
   const agent = SAMPLE_AGENTS.find((entry) => entry.name === item.agentName) || SAMPLE_AGENTS[0];
   const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
   const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Bulunduğu Kat', heating: 'Isıtma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', bathroom: 'Banyo Sayısı', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz' };
+  const detailValue = (key: string, fallback = 'Belirtilmemiş') => item.details[key] || fallback;
   const detailRows: Array<[string, string]> = [
     ['İlan No', item.id], ['İlan Tarihi', item.updatedAt || item.date], ['Emlak Tipi', `${item.type} ${item.propertyType}`],
-    ['m²', `${item.area} m²`], ['Oda Bilgisi', item.rooms], ['Aidat', item.monthlyFee || 'Belirtilmedi'],
-    ['Tapu Bilgisi', item.deedInfo || 'Belirtilmedi'], ...Object.entries(item.details).map(([key, value]) => [detailLabels[key] || key, value] as [string, string])
+    ['m² (Brüt)', `${item.area} m²`], ['m² (Net)', `${Math.round(item.area * .9)} m²`], ['Oda Sayısı', item.rooms],
+    ['Bina Yaşı', detailValue('buildingAge')], ['Kat Sayısı', detailValue('floorCount', 'Belirtilmemiş')], ['Bulunduğu Kat', detailValue('floor')],
+    ['Isıtma', detailValue('heating')], ['Banyo Sayısı', detailValue('bathroom')], ['Mutfak', detailValue('kitchen', 'Açık (Amerikan)')],
+    ['Balkon', detailValue('balcony', 'Var')], ['Asansör', detailValue('elevator', 'Var')], ['Otopark', detailValue('parking', 'Açık Otopark')],
+    ['Eşyalı', detailValue('furnished')], ['Kullanım Durumu', detailValue('usage', 'Boş')], ['Site İçerisinde', detailValue('inSite', 'Evet')],
+    ['Site Adı', detailValue('siteName')], ['Aidat (TL)', item.monthlyFee || 'Belirtilmemiş'], ['Krediye Uygun', detailValue('mortgage')],
+    ['Enerji Kimlik Belgesi', detailValue('energyCertificate')], ['Tapu Durumu', item.deedInfo || detailValue('deed')],
+    ['Kimden', 'Realty Center'], ['Takas', detailValue('swap', 'Hayır')]
   ];
   const features = (item.technicalFeatures || 'Otopark, güvenlik, ulaşım akslarına yakınlık').split(',').map((feature) => feature.trim());
 
@@ -2502,7 +2530,7 @@ function ListingDetailPage() {
   };
 
   return (
-    <div className="listing-detail-enter min-h-screen bg-white px-0 pb-6 pt-6 print:bg-white xl:pt-28">
+    <div className="listing-detail-enter min-h-screen bg-white px-0 pb-6 pt-4 print:bg-white">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
         <nav className="mb-3 flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-2.5 text-[11px] font-bold text-red-700">
           <Link to="/ilanlarimiz?all=1">Emlak</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?category=${encodeURIComponent(item.category)}`}>{item.category}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?type=${encodeURIComponent(item.type)}`}>{item.type}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.propertyType}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.city}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span className="text-slate-500">{item.district}</span>
@@ -2522,7 +2550,8 @@ function ListingDetailPage() {
 
           <div className="min-w-0">
             <div className="border-b border-slate-200 pb-3"><p className="text-2xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><p className="mt-3 flex items-center gap-1.5 text-xs font-black text-slate-800"><MapPin className="h-3.5 w-3.5 text-red-700"/>{item.city} / {item.district} / {item.neighborhood}</p></div>
-            <dl className="mt-1.5 text-xs">{detailRows.map(([label, value]) => <div key={`${label}-${value}`} className="grid grid-cols-[115px_1fr] gap-2 border-b border-dotted border-slate-300 py-1.5"><dt className="font-black text-slate-800">{label}</dt><dd className={label === 'İlan No' ? 'font-bold text-red-700' : 'font-medium text-slate-700'}>{value}</dd></div>)}</dl>
+            <dl className="mt-1.5 text-xs">{detailRows.map(([label, value]) => <div key={`${label}-${value}`} className="grid grid-cols-[125px_1fr] gap-2 border-b border-dotted border-slate-300 py-1.5"><dt className="font-black leading-tight text-slate-800">{label}</dt><dd className={label === 'İlan No' || label === 'Kimden' ? 'font-bold text-red-700' : 'font-medium text-slate-700'}>{value}</dd></div>)}</dl>
+            <Link to="/iletisim" className="mt-3 flex items-center justify-center gap-1.5 text-[11px] font-bold text-red-700"><Flag className="h-3.5 w-3.5"/>İlan ile ilgili şikayetim var</Link>
           </div>
 
           <aside className="space-y-3">
