@@ -469,6 +469,34 @@
   .featured-card-aurora, .featured-card-aurora::after { animation: none; }
 }
 
+/* Seçilen vitrin ilanının bilgileri fotoğrafı kapatmadan alttan açılır. */
+.featured-info-ribbon {
+  overflow: hidden;
+  animation: featuredInfoReveal .58s cubic-bezier(.2,.82,.25,1) both;
+}
+.featured-info-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #cd011e, #ff6b80, transparent);
+  animation: featuredRibbonLine .8s ease-out both;
+}
+@keyframes featuredInfoReveal {
+  from { opacity: .35; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes featuredRibbonLine {
+  from { opacity: 0; transform: translateX(-100%) scaleX(.3); }
+  to { opacity: 1; transform: translateX(0) scaleX(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .featured-info-ribbon, .featured-info-ribbon::after { animation: none; }
+}
+
 
 /* Realty Center Network bildirimlerinin yumuşak değişimi */
 .network-notice-swap {
