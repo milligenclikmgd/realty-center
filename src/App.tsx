@@ -842,11 +842,9 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
 function FeaturedListingsShowcase() {
   const [featuredIds, setFeaturedIds] = useState<string[]>(getFeaturedListingIds);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [listingFilter, setListingFilter] = useState<'Tümü' | 'Satılık' | 'Kiralık'>('Tümü');
   const dragStartX = useRef<number | null>(null);
   const dragMoved = useRef(false);
-  const allFeaturedListings = featuredIds.map((id) => SAMPLE_LISTINGS.find((listing) => listing.id === id)).filter((listing): listing is ListingItem => Boolean(listing));
-  const featuredListings = listingFilter === 'Tümü' ? allFeaturedListings : allFeaturedListings.filter((listing) => listing.type.includes(listingFilter));
+  const featuredListings = featuredIds.map((id) => SAMPLE_LISTINGS.find((listing) => listing.id === id)).filter((listing): listing is ListingItem => Boolean(listing));
 
   useEffect(() => {
     const refresh = () => setFeaturedIds(getFeaturedListingIds());
@@ -857,8 +855,6 @@ function FeaturedListingsShowcase() {
   useEffect(() => {
     if (activeIndex >= featuredListings.length) setActiveIndex(0);
   }, [activeIndex, featuredListings.length]);
-
-  useEffect(() => setActiveIndex(0), [listingFilter]);
 
   const move = (direction: number) => {
     if (!featuredListings.length) return;
@@ -893,7 +889,7 @@ function FeaturedListingsShowcase() {
     dragStartX.current = null;
   };
 
-  if (!allFeaturedListings.length) return null;
+  if (!featuredListings.length) return null;
 
   return (
     <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-red-50/30 to-white py-16 sm:py-20">
@@ -906,13 +902,20 @@ function FeaturedListingsShowcase() {
           <h2 className="mt-4 font-serif text-4xl font-black italic tracking-tight text-slate-950 sm:text-5xl">
             Seçkin <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">Gayrimenkuller</span>
           </h2>
-          <div className="mt-6 flex items-center justify-center gap-2 sm:gap-3">
-            {(['Tümü', 'Satılık', 'Kiralık'] as const).map((filter) => <button key={filter} type="button" onClick={() => setListingFilter(filter)} className={`min-w-24 rounded-xl border px-5 py-3 text-xs font-black tracking-wide transition sm:min-w-28 ${listingFilter === filter ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/25' : 'border-slate-200 bg-slate-100 text-slate-700 hover:border-red-300 hover:bg-white hover:text-red-700'}`}>{filter}</button>)}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {[
+              ['Tümü', '/ilanlarimiz?all=1'],
+              ['Satılık', '/ilanlarimiz?type=Satılık'],
+              ['Kiralık', '/ilanlarimiz?type=Kiralık'],
+              ['Arsa', '/ilanlarimiz?propertyType=Arsa'],
+              ['Ticari', '/ilanlarimiz?category=Ticari%20Gayrimenkul'],
+              ['Turizm', '/ilanlarimiz?propertyType=Otel']
+            ].map(([label, to]) => <Link key={label} to={to} className="min-w-24 rounded-xl border border-slate-200 bg-slate-100 px-5 py-3 text-xs font-black tracking-wide text-slate-700 transition hover:-translate-y-0.5 hover:border-red-700 hover:bg-red-700 hover:text-white hover:shadow-lg sm:min-w-28">{label}</Link>)}
           </div>
           <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
         </div>
 
-        {featuredListings.length ? <div
+        <div
           className="relative h-[430px] cursor-grab select-none touch-pan-y active:cursor-grabbing sm:h-[470px]"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
@@ -959,7 +962,7 @@ function FeaturedListingsShowcase() {
 
           <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(-1)} className="absolute left-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:left-6" aria-label="Önceki vitrin ilanı"><ChevronLeft className="h-6 w-6" /></button>
           <button type="button" onPointerDown={(event) => event.stopPropagation()} onClick={() => move(1)} className="absolute right-2 top-1/2 z-30 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-slate-900 shadow-xl transition hover:scale-110 hover:bg-red-700 hover:text-white sm:right-6" aria-label="Sonraki vitrin ilanı"><ChevronRight className="h-6 w-6" /></button>
-        </div> : <div className="rounded-3xl border border-slate-200 bg-white px-6 py-20 text-center text-sm font-bold text-slate-500">Bu kategoride henüz vitrin ilanı bulunmuyor.</div>}
+        </div>
 
         <div className="mt-1 flex items-center justify-center gap-2">
           {featuredListings.map((item, index) => <button key={item.id} type="button" onClick={() => setActiveIndex(index)} className={`h-2 rounded-full transition-all duration-300 ${index === activeIndex ? 'w-8 bg-red-700' : 'w-2 bg-slate-300 hover:bg-red-300'}`} aria-label={`${index + 1}. vitrin ilanına git`} />)}
@@ -2325,18 +2328,20 @@ function ListingsPageV2() {
   const params = new URLSearchParams(location.search);
   const initialType = params.get('type') || '';
   const initialPropertyType = params.get('propertyType') || '';
+  const initialCategory = params.get('category') || '';
   const initialCity = params.get('city') || '';
   const initialDistrict = params.get('district') || '';
-  const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCity);
+  const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCategory || initialCity);
   const [transactionType, setTransactionType] = useState(initialType);
   const [propertyType, setPropertyType] = useState(initialPropertyType);
+  const [categoryFilter, setCategoryFilter] = useState(initialCategory);
   const [city, setCity] = useState(initialCity);
   const [district, setDistrict] = useState(initialDistrict);
   const [neighborhood, setNeighborhood] = useState('');
   const [advanced, setAdvanced] = useState<Record<string, string>>({});
   const [appliedAdvanced, setAppliedAdvanced] = useState<Record<string, string>>({});
   const [hasSearched, setHasSearched] = useState(showAllInitially);
-  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, city: initialCity, district: initialDistrict, neighborhood: '' });
+  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, category: initialCategory, city: initialCity, district: initialDistrict, neighborhood: '' });
 
   const districts = city ? TURKEY_CITIES[city] || [] : [];
   const neighborhoods = city && district ? DISTRICT_NEIGHBORHOODS[`${city}|${district}`] || [] : [];
@@ -2344,7 +2349,7 @@ function ListingsPageV2() {
   const sideFields = propertyType || appliedSearch.propertyType ? ADVANCED_FILTERS_BY_TYPE[filterGroup] : COMMON_PRICE_AREA_FIELDS;
 
   const runSearch = () => {
-    setAppliedSearch({ type: transactionType, propertyType, city, district, neighborhood });
+    setAppliedSearch({ type: transactionType, propertyType, category: categoryFilter, city, district, neighborhood });
     setAppliedAdvanced({ ...advanced });
     setHasSearched(true);
   };
@@ -2353,6 +2358,7 @@ function ListingsPageV2() {
     if (!hasSearched) return false;
     if (appliedSearch.type && item.type !== appliedSearch.type) return false;
     if (appliedSearch.propertyType && item.propertyType !== appliedSearch.propertyType) return false;
+    if (appliedSearch.category && item.category !== appliedSearch.category) return false;
     if (appliedSearch.city && item.city !== appliedSearch.city) return false;
     if (appliedSearch.district && item.district !== appliedSearch.district) return false;
     if (appliedSearch.neighborhood && item.neighborhood !== appliedSearch.neighborhood) return false;
@@ -2370,7 +2376,7 @@ function ListingsPageV2() {
   });
 
   const resetFilters = () => {
-    setTransactionType(''); setPropertyType(''); setCity(''); setDistrict(''); setNeighborhood('');
+    setTransactionType(''); setPropertyType(''); setCategoryFilter(''); setCity(''); setDistrict(''); setNeighborhood('');
     setAdvanced({}); setAppliedAdvanced({}); setHasSearched(false);
   };
 
@@ -2382,7 +2388,7 @@ function ListingsPageV2() {
         <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
           <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 xl:grid-cols-[1.05fr_1.05fr_1fr_1fr_auto]">
             <div><label className="mb-2 block text-xs font-black text-slate-600">İşlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Kiralık / Satılık / Devren</option>{LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
-            <div><label className="mb-2 block text-xs font-black text-slate-600">İlan Türü</label><select value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Ev / Fabrika / Depo / Ofis / Arsa</option>{ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">İlan Türü</label><select value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setCategoryFilter(''); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Ev / Fabrika / Depo / Ofis / Arsa</option>{ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İl</label><select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(''); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">İl Seçiniz</option>{Object.keys(TURKEY_CITIES).map((item) => <option key={item}>{item}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İlçe</label><select disabled={!city} value={district} onChange={(e) => { setDistrict(e.target.value); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:opacity-50"><option value="">{city ? 'İlçe Seçiniz' : 'Önce İl Seçiniz'}</option>{districts.map((item) => <option key={item}>{item}</option>)}</select></div>
             <button onClick={runSearch} className="h-[46px] whitespace-nowrap rounded-xl bg-red-700 px-7 font-black text-white shadow-lg shadow-red-700/20 hover:bg-red-800"><Search className="mr-2 inline h-4 w-4" />İlan Ara</button>
@@ -2398,7 +2404,7 @@ function ListingsPageV2() {
               <button onClick={runSearch} className="w-full rounded-xl bg-red-700 py-3 text-sm font-black text-white hover:bg-red-800">Filtreleri Uygula</button>
             </div>
           </aside>
-          <main><div className="mb-5 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">{filteredListings.length} ilan bulundu</h2><p className="text-xs text-slate-500">{[appliedSearch.type, appliedSearch.propertyType, appliedSearch.city, appliedSearch.district].filter(Boolean).join(' · ') || 'Tüm ilanlar'}</p></div></div>{filteredListings.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">{filteredListings.map((item) => <ListingCard key={item.id} item={item} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-14 text-center"><Filter className="mx-auto mb-3 h-10 w-10 text-slate-300" /><h3 className="font-black text-slate-800">Seçtiğiniz kriterlere uygun ilan bulunamadı.</h3></div>}</main>
+          <main><div className="mb-5 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">{filteredListings.length} ilan bulundu</h2><p className="text-xs text-slate-500">{[appliedSearch.type, appliedSearch.category, appliedSearch.propertyType, appliedSearch.city, appliedSearch.district].filter(Boolean).join(' · ') || 'Tüm ilanlar'}</p></div></div>{filteredListings.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">{filteredListings.map((item) => <ListingCard key={item.id} item={item} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-14 text-center"><Filter className="mx-auto mb-3 h-10 w-10 text-slate-300" /><h3 className="font-black text-slate-800">Seçtiğiniz kriterlere uygun ilan bulunamadı.</h3></div>}</main>
         </div>}
       </div>
     </div>
