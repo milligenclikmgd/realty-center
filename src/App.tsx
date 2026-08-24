@@ -34,6 +34,13 @@ const SOCIAL_MEDIA_LINKS = [
   { name: 'LinkedIn', icon: '/linkedin.svg' }
 ];
 
+type RealtyVideo = { id: string; source: 'youtube' | 'upload'; url: string; title: string; thumbnail: string; createdAt: string };
+const getRealtyVideos = (): RealtyVideo[] => {
+  try { return JSON.parse(localStorage.getItem('realty-center-videos') || '[]'); } catch { return []; }
+};
+const getYoutubeId = (url: string) => url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/)?.[1] || '';
+const saveRealtyVideos = (videos: RealtyVideo[]) => { localStorage.setItem('realty-center-videos', JSON.stringify(videos)); window.dispatchEvent(new Event('realty-center-videos-updated')); };
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -702,6 +709,7 @@ function SiteSearchPage() {
     ['Ofislerimiz','Kurumsal','Türkiye genelindeki Realty Center franchise ofisleri ve iletişim bilgileri.','/ofislerimiz'],
     ['Danışmanlarımız','Kurumsal','Uzman gayrimenkul danışmanları, şehir ve ilçe bazlı danışman arama.','/danismanlarimiz'],
     ['Projelerimiz','Gayrimenkul','Yeni konut, ticari yatırım ve yaşam projeleri.','/projelerimiz'],
+    ['Videolar','Medya','YouTube videoları, proje tanıtımları, gayrimenkul rehberleri ve Realty Center TV içerikleri.','/videolar'],
     ['Harita ile Ara','Gayrimenkul','Türkiye haritasından şehir, ilçe ve konuma göre ilan arama.','/harita-ile-ara'],
     ['Yapay Zeka Gayrimenkul Asistanı','Teknoloji','Uygun ilanlar, metrekare fiyatı, kira getirisi, yatırım geri dönüşü ve otomatik değerleme.','/ai-karar-asistani'],
     ['Franchise Ol','Başvuru','Realty Center franchise ağına katılma ve ofis başvurusu.','/franchise-basvuru'],
@@ -740,7 +748,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     [t.agents, '/danismanlarimiz'],
     [t.listings, '/ilan-kategorileri'],
     [t.projects, '/projelerimiz'],
-    ['Harita', '/harita-ile-ara']
+    ['Videolar', '/videolar']
   ];
   const rightLinks = [
     [t.ai.replace('🤖 ', ''), '/ai-karar-asistani'],
@@ -1291,7 +1299,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <RealtyNetworkActivityPanel />
           <div className="flex justify-center lg:justify-end">
             <Link to="/ilanlarimiz" className="sales-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
-              Her <span className="sales-pulse-highlight text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
+              Dünyada her <span className="sales-pulse-highlight text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
             </Link>
           </div>
         </div>
@@ -2627,6 +2635,12 @@ function ProjectsPage() {
   );
 }
 
+function VideosPage() {
+  const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
+  useEffect(() => { const refresh = () => setVideos(getRealtyVideos()); window.addEventListener('realty-center-videos-updated', refresh); return () => window.removeEventListener('realty-center-videos-updated', refresh); }, []);
+  return <div className="min-h-screen bg-slate-50 py-12"><div className="mx-auto max-w-7xl px-6 lg:px-12"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER TV</p><h1 className="mt-2 text-4xl font-black text-slate-900">Videolar</h1><p className="mt-3 max-w-2xl text-sm text-slate-600">Gayrimenkul rehberleri, proje tanıtımları, danışman içerikleri ve Realty Center’dan güncel videolar.</p>{videos.length ? <div className="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{videos.map((video) => <article key={video.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="aspect-video bg-slate-950">{video.source === 'youtube' ? <iframe title={video.title} src={`https://www.youtube.com/embed/${getYoutubeId(video.url)}`} className="h-full w-full" allowFullScreen/> : <video src={video.url} controls poster={video.thumbnail || undefined} className="h-full w-full object-contain"/>}</div><div className="p-5"><span className="text-[10px] font-black tracking-widest text-red-700">{video.source === 'youtube' ? 'YOUTUBE' : 'REALTY CENTER'}</span><h2 className="mt-2 text-lg font-black text-slate-900">{video.title}</h2></div></article>)}</div> : <div className="mt-9 rounded-2xl border-2 border-dashed border-slate-200 bg-white p-12 text-center"><PlayCircle className="mx-auto h-10 w-10 text-slate-300"/><h2 className="mt-3 font-black text-slate-800">Henüz video eklenmedi</h2><p className="mt-1 text-xs text-slate-500">Videolar admin panelinden yayınlandığında burada görüntülenecek.</p></div>}</div></div>;
+}
+
 function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => void }) {
   const [form, setForm] = useState({
     fullName: '',
@@ -3093,13 +3107,35 @@ function SuperAdminLoginPage() {
 // SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'messages' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
   const [categories, setCategories] = useState<ListingCategory[]>(getListingCategories);
   const [categorySaved, setCategorySaved] = useState(false);
   const [newCategory, setNewCategory] = useState<ListingCategory>({ id: '', title: '', type: 'Satılık', category: 'Konut', image: '' });
+  const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
+  const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', url: '', title: '', thumbnail: '' });
+  const [videoSaving, setVideoSaving] = useState(false);
+
+  const addVideo = async () => {
+    if (!videoDraft.url) return alert('YouTube bağlantısı veya video dosyası ekleyin.');
+    setVideoSaving(true);
+    let title = videoDraft.title.trim();
+    let thumbnail = videoDraft.thumbnail.trim();
+    if (videoDraft.source === 'youtube') {
+      const youtubeId = getYoutubeId(videoDraft.url);
+      if (!youtubeId) { setVideoSaving(false); return alert('Geçerli bir YouTube bağlantısı girin.'); }
+      if (!thumbnail) thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+      if (!title) try { const response = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(videoDraft.url)}&format=json`); if (response.ok) { const data = await response.json(); title = data.title || ''; thumbnail = data.thumbnail_url || thumbnail; } } catch { /* YouTube kapak ve varsayılan başlıkla devam eder. */ }
+    }
+    const next = [{ id: `video-${Date.now()}`, source: videoDraft.source, url: videoDraft.url, title: title || (videoDraft.source === 'upload' ? 'Realty Center Videosu' : 'YouTube Videosu'), thumbnail, createdAt: new Date().toISOString() }, ...videos];
+    try { saveRealtyVideos(next); setVideos(next); setVideoDraft({ source: 'youtube', url: '', title: '', thumbnail: '' }); } catch { alert('Video dosyası tarayıcı depolama sınırını aşıyor. Canlı sistemde dosya sunucuya yüklenecektir.'); }
+    setVideoSaving(false);
+  };
+  const handleDirectVideo = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, source: 'upload', url: String(reader.result), title: current.title || file.name.replace(/\.[^.]+$/, '') })); reader.readAsDataURL(file); };
+  const handleVideoCover = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, thumbnail: String(reader.result) })); reader.readAsDataURL(file); };
+  const removeVideo = (id: string) => { const next = videos.filter((video) => video.id !== id); setVideos(next); saveRealtyVideos(next); };
 
   const saveCategories = (nextCategories = categories) => {
     localStorage.setItem('realty-center-listing-categories', JSON.stringify(nextCategories));
@@ -3180,6 +3216,7 @@ function SuperAdminDashboard() {
     { key: 'agents' as const, label: 'Danışman Kontrolü', icon: Users },
     { key: 'listings' as const, label: 'İlan Onay Mekanizması', icon: Layers, badge: listings.filter(l => l.approvalStatus === 'Onay Bekliyor').length },
     { key: 'categories' as const, label: 'Kategori Yönetimi', icon: Tag },
+    { key: 'videos' as const, label: 'Video Yönetimi', icon: PlayCircle },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
   ];
@@ -3573,6 +3610,13 @@ function SuperAdminDashboard() {
                   ))}
                 </div>
                 <div className="rounded-2xl border-2 border-dashed border-red-200 bg-red-50/40 p-5"><h3 className="text-sm font-black text-slate-900">Yeni Kategori Ekle</h3><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"><input value={newCategory.title} onChange={(e) => setNewCategory({ ...newCategory, title: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold" placeholder="Kategori adı" /><select value={newCategory.type} onChange={(e) => setNewCategory({ ...newCategory, type: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>Satılık</option><option>Kiralık</option><option>Devren</option></select><select value={newCategory.category} onChange={(e) => setNewCategory({ ...newCategory, category: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>Konut</option><option>İşyeri</option><option>Arsa</option><option value="">Genel</option></select><button onClick={addCategory} className="rounded-xl bg-red-700 px-4 py-2.5 text-xs font-black text-slate-900 hover:bg-red-800">Kategori Ekle</button></div><div className="mt-3 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2"><input value={newCategory.image} onChange={(e) => setNewCategory({ ...newCategory, image: e.target.value })} className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs" placeholder="Kapak görseli URL'si (isteğe bağlı)" /><label className="cursor-pointer rounded-xl border border-red-200 bg-white px-4 py-2.5 text-center text-xs font-black text-red-700 hover:bg-red-50"><input type="file" accept="image/*" className="hidden" onChange={(e) => { const file = e.target.files?.[0]; if (!file) return; const reader = new FileReader(); reader.onload = () => setNewCategory({ ...newCategory, image: String(reader.result) }); reader.readAsDataURL(file); }} />Görsel Seç</label></div></div>
+              </div>
+            )}
+
+            {activeTab === 'videos' && (
+              <div className="space-y-6">
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Video Yönetimi</h2><p className="mt-1 text-xs text-slate-500">YouTube bağlantısı yapıştırın veya kendi video dosyanızı yükleyin. Başlık ve kapak boşsa YouTube bilgileri otomatik alınır.</p></div><div className="mt-5 flex gap-2"><button onClick={() => setVideoDraft({ ...videoDraft, source: 'youtube', url: '' })} className={`rounded-lg px-4 py-2 text-xs font-black ${videoDraft.source === 'youtube' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>YouTube Videosu</button><button onClick={() => setVideoDraft({ ...videoDraft, source: 'upload', url: '' })} className={`rounded-lg px-4 py-2 text-xs font-black ${videoDraft.source === 'upload' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>Dosya Yükle</button></div><div className="mt-5 grid gap-4 md:grid-cols-2">{videoDraft.source === 'youtube' ? <div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">YouTube bağlantısı</label><input value={videoDraft.url} onChange={(e) => setVideoDraft({ ...videoDraft, url: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div> : <label className="md:col-span-2 cursor-pointer rounded-xl border-2 border-dashed border-red-200 bg-red-50 p-6 text-center text-xs font-black text-red-700"><input type="file" accept="video/*" className="hidden" onChange={(e) => handleDirectVideo(e.target.files?.[0])}/>{videoDraft.url ? 'Video dosyası seçildi ✓' : 'Bilgisayardan video dosyası seç'}</label>}<div><label className="mb-1 block text-xs font-black text-slate-600">Özel başlık (isteğe bağlı)</label><input value={videoDraft.title} onChange={(e) => setVideoDraft({ ...videoDraft, title: e.target.value })} placeholder="Boşsa YouTube başlığı kullanılır" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div><div><label className="mb-1 block text-xs font-black text-slate-600">Kapak görseli URL’si (isteğe bağlı)</label><input value={videoDraft.thumbnail.startsWith('data:') ? '' : videoDraft.thumbnail} onChange={(e) => setVideoDraft({ ...videoDraft, thumbnail: e.target.value })} placeholder="Boşsa YouTube kapağı kullanılır" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div><label className="cursor-pointer rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-xs font-black text-slate-700"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleVideoCover(e.target.files?.[0])}/>Özel kapak görseli seç</label><button onClick={addVideo} disabled={videoSaving} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{videoSaving ? 'YouTube bilgileri alınıyor…' : 'Videoyu Yayınla'}</button></div></section>
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><h3 className="font-black text-slate-900">Yayındaki Videolar ({videos.length})</h3><div className="mt-4 grid gap-4 md:grid-cols-2">{videos.map((video) => <div key={video.id} className="flex gap-3 rounded-xl border border-slate-200 p-3"><img src={video.thumbnail || '/demo-placeholder.svg'} alt="" className="h-20 w-28 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><p className="line-clamp-2 text-xs font-black text-slate-900">{video.title}</p><p className="mt-1 text-[10px] font-bold text-red-700">{video.source === 'youtube' ? 'YouTube' : 'Yüklenen Video'}</p><button onClick={() => removeVideo(video.id)} className="mt-3 text-[10px] font-black text-red-700">Videoyu kaldır</button></div></div>)}</div></section>
               </div>
             )}
 
@@ -4253,6 +4297,7 @@ export default function RealtyCenterApp() {
             <Route path="/ai-karar-asistani" element={<AIDecisionAssistantPage />} />
             <Route path="/ilan/:id" element={<ListingDetailPage />} />
             <Route path="/projelerimiz" element={<ProjectsPage />} />
+            <Route path="/videolar" element={<VideosPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
             <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
             <Route path="/danisman-basvuru" element={<ApplicationPage type="agent" />} />
