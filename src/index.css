@@ -717,3 +717,10 @@
 
 /* Bilgi Merkezi header'a bağlı açılır; hover geçişinde boşluk bırakmaz. */
 .information-dropdown::before{display:none;}
+
+/* Alan çiziminde harita sürükleme eli yerine net bir seçim imleci göster. */
+.leaflet-container.map-drawing-mode,
+.leaflet-container.map-drawing-mode.leaflet-grab,
+.leaflet-container.map-drawing-mode .leaflet-interactive {
+  cursor: crosshair !important;
+}
