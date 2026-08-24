@@ -63,6 +63,21 @@ const saveCustomerFeedback = (items: CustomerFeedback[]) => {
   window.dispatchEvent(new Event('realty-center-feedback-updated'));
 };
 
+type ManagementMember = { id: string; name: string; title: string; image: string; biography: string };
+const DEFAULT_ABOUT_STORY = `Realty Center, gayrimenkul sektöründe güvenin yalnızca verilen bir söz değil, her işlemde yeniden kazanılan bir değer olduğuna inanır. “Önce Güven” anlayışıyla çıktığımız bu yolculukta; evini satmak, yeni bir yaşam alanı kiralamak veya doğru yatırıma ulaşmak isteyen herkesi şeffaf bilgi, yerel uzmanlık ve güçlü teknolojiyle buluşturuyoruz.
+
+Türkiye genelinde gelişen ofis ve gayrimenkul danışmanı ağımız, bölgesini yakından tanıyan profesyonellerden oluşur. Her portföyü yalnızca bir ilan olarak değil; sahibinin emeğini, alıcısının beklentisini ve geleceğe dair kararını taşıyan özel bir değer olarak ele alırız. Bu nedenle doğru fiyatlandırmadan etkili tanıtıma, hukuki süreçlerden satış sonrası iletişime kadar bütün aşamalarda ölçülebilir ve güvenilir bir hizmet sunarız.
+
+Realty Center’ın hedefi, geleneksel emlak danışmanlığını dijital çözümler, sürekli eğitim ve insan odaklı hizmet kültürüyle geleceğe taşımaktır. Gayrimenkul satın alma, satma ve kiralama süreçlerini daha anlaşılır, daha hızlı ve daha güvenli hâle getirirken; danışmanlarımızın ve franchise ofislerimizin sürdürülebilir başarısını da güçlü kurumsal altyapımızla destekliyoruz.`;
+const DEFAULT_MANAGEMENT: ManagementMember[] = [
+  { id: 'yonetim-1', name: 'Mehmet Kaya', title: 'Yönetim Kurulu Başkanı', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=900', biography: 'Gayrimenkul, marka yönetimi ve franchise yapılanması alanlarında uzun yıllara dayanan deneyime sahiptir. Realty Center’ın büyüme stratejisi, kurumsal standartları ve ulusal ofis ağının gelişimine liderlik etmektedir.' },
+  { id: 'yonetim-2', name: 'Selin Arslan', title: 'Yönetim Kurulu Başkan Yardımcısı', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=88&w=900', biography: 'Kurumsal iletişim, müşteri deneyimi ve gayrimenkul pazarlaması alanlarında uzmanlaşmıştır. Hizmet kalitesinin geliştirilmesi ve danışman başarı programlarının yürütülmesinden sorumludur.' },
+  { id: 'yonetim-3', name: 'Burak Demir', title: 'Franchise Geliştirme Direktörü', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=88&w=900', biography: 'Ofis yapılanması, saha operasyonları ve ticari gayrimenkul konularında deneyimlidir. Franchise adaylarının değerlendirilmesi, yeni ofislerin kurulması ve operasyonel gelişim süreçlerini yönetmektedir.' }
+];
+const getAboutStory = () => localStorage.getItem('realty-center-about-story') || DEFAULT_ABOUT_STORY;
+const getManagementTeam = (): ManagementMember[] => { try { return JSON.parse(localStorage.getItem('realty-center-management') || 'null') || DEFAULT_MANAGEMENT; } catch { return DEFAULT_MANAGEMENT; } };
+const saveManagementTeam = (items: ManagementMember[]) => { localStorage.setItem('realty-center-management', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-corporate-updated')); };
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -780,6 +795,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     [t.advisor, '/danisman-basvuru'],
     [t.contact, '/iletisim']
   ];
+  const corporateMenu = [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Misyonumuz & Vizyonumuz','/kurumsal/misyon-vizyon'],['Kalite Standartlarımız','/kurumsal/kalite-standartlari'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center','/neden-realty-center']];
+  const contactMenu = [['İletişim Bilgilerimiz','/iletisim'],['Müşteri Memnuniyeti','/geri-bildirim']];
   const isListingDetail = location.pathname.startsWith('/ilan/');
   const isHomePage = location.pathname === '/';
 
@@ -858,7 +875,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {leftLinks.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}>{label}</Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
 
           <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center ana sayfa">
@@ -869,7 +886,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           </Link>
 
           <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {rightLinks.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}>{label}</Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
         </nav>
 
@@ -884,7 +901,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
         </div>
       </div>
 
-      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 text-sm font-black xl:hidden">{[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`${label}-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white transition hover:bg-white/20">{label}</Link>)}</nav>}
+      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 text-sm font-black xl:hidden">{[...leftLinks.slice(1), ...rightLinks.slice(0,-1)].map(([label, to]) => <Link key={`${label}-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white transition hover:bg-white/20">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">KURUMSAL</p>{corporateMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">İLETİŞİM</p>{contactMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}</nav>}
     </header>
   );
 }
@@ -909,7 +926,7 @@ function CustomerFeedbackPage() {
 
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   const footerGroups = [
-    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kurulumuz','/kurumsal/yonetim-kurulu'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center'],['Müşteri Memnuniyeti','/geri-bildirim'],['İletişim','/iletisim']] },
+    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Misyon & Vizyon','/kurumsal/misyon-vizyon'],['Kalite Standartlarımız','/kurumsal/kalite-standartlari'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center']] },
     { title: 'Gayrimenkul', links: [['İlanlarımız','/ilanlarimiz?all=1'],['Projelerimiz','/projelerimiz'],['Ofislerimiz','/ofislerimiz'],['Danışmanlarımız','/danismanlarimiz'],['Harita ile Ara','/harita-ile-ara']] },
     { title: 'Kariyer ve İş Ortaklığı', links: [['Franchise Ol','/franchise-basvuru'],['Danışman Ol','/danisman-basvuru'],['Realty Kütüphane','/blog/rehber'],['Gayrimenkul Hukuku','/blog/hukuk'],['Yapay Zeka Asistanı','/ai-karar-asistani']] },
     { title: 'Gizlilik ve Kullanım', links: [['KVKK Aydınlatma Metni','/kvkk'],['Gizlilik Politikası','/gizlilik-politikasi'],['Çerez Politikası','/cerez-politikasi'],['Kullanım Koşulları','/kullanim-kosullari'],['İlan Yayınlama Kuralları','/ilan-yayinlama-kurallari']] }
@@ -1487,12 +1504,9 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 }
 
 function AboutPage() {
-  return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Hakkımızda</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Realty Center kurumsal vizyonu, misyonu ve değerleri bu sayfada yer alacaktır.</p>
-    </div>
-  );
+  const [story, setStory] = useState(getAboutStory);
+  useEffect(() => { const update = () => setStory(getAboutStory()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  return <main className="min-h-screen bg-slate-50"><section className="bg-slate-950 py-16 text-white"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTER · ÖNCE GÜVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde güveni, uzmanlık ve teknolojiyle büyüten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Türkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doğru kararların, sürdürülebilir başarının ve güçlü iş birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl gap-10 px-6 py-14 lg:grid-cols-[1.3fr_.7fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty Center’ın Hikâyesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="space-y-4">{[['Misyonumuz','Gayrimenkul süreçlerini şeffaf bilgi, etik danışmanlık ve güçlü teknolojiyle güvenli hâle getirmek.'],['Vizyonumuz','Türkiye’nin en güvenilir, yenilikçi ve erişilebilir gayrimenkul danışmanlık ağı olmak.'],['Değerlerimiz','Güven, şeffaflık, uzmanlık, sürekli gelişim ve insan odaklı hizmet.']].map(([title,text]) => <div key={title} className="rounded-2xl border border-slate-200 bg-white p-6"><span className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTER</span><h3 className="mt-2 text-lg font-black text-slate-900">{title}</h3><p className="mt-2 text-xs leading-6 text-slate-600">{text}</p></div>)}</aside></section></main>;
 }
 
 function TrustPrinciplePage() {
@@ -1511,12 +1525,10 @@ function WhyRealtyCenterPage() {
 }
 
 function TeamPage() {
-  return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Yönetim Kadrosu & Ekibimiz</h1>
-      <p className="text-slate-600 leading-relaxed text-lg mt-4">Realty Center yönetim kurulu üyeleri ve merkez ekibimiz bu alanda gösterilecektir.</p>
-    </div>
-  );
+  const [members, setMembers] = useState(getManagementTeam);
+  const [selected, setSelected] = useState<ManagementMember | null>(null);
+  useEffect(() => { const update = () => setMembers(getManagementTeam()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL YÖNETİM</p><h1 className="mt-3 text-4xl font-black text-slate-950">Yönetim Kadromuz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Realty Center’ın stratejisine, hizmet kalitesine ve sürdürülebilir büyümesine yön veren yönetim ekibimizle tanışın.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{members.map((member) => <button key={member.id} onClick={() => setSelected(member)} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={member.image} alt={member.name} className="h-72 w-full object-cover object-top transition duration-500 group-hover:scale-105"/><div className="p-5"><p className="text-[10px] font-black tracking-widest text-red-700">YÖNETİM KADROSU</p><h2 className="mt-2 text-xl font-black text-slate-900">{member.name}</h2><p className="mt-1 text-xs font-bold text-slate-500">{member.title}</p><span className="mt-4 inline-flex text-xs font-black text-red-700">Özgeçmişi görüntüle →</span></div></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/75 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article className="relative grid max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl md:grid-cols-[280px_1fr]" onClick={(e) => e.stopPropagation()}><button onClick={() => setSelected(null)} className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-900 shadow"><X className="h-5 w-5"/></button><img src={selected.image} alt={selected.name} className="h-72 w-full object-cover object-top md:h-full"/><div className="p-7 sm:p-9"><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTER YÖNETİM KADROSU</p><h2 className="mt-3 text-3xl font-black text-slate-900">{selected.name}</h2><p className="mt-2 text-sm font-black text-red-700">{selected.title}</p><div className="my-6 h-px bg-slate-200"/><h3 className="text-sm font-black text-slate-900">Özgeçmiş</h3><p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.biography}</p></div></article></div>}</main>;
 }
 
 function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
@@ -3169,7 +3181,7 @@ function SuperAdminLoginPage() {
 // SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'feedback' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'feedback' | 'corporate' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -3180,6 +3192,9 @@ function SuperAdminDashboard() {
   const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', url: '', title: '', thumbnail: '' });
   const [videoSaving, setVideoSaving] = useState(false);
   const [feedbackItems, setFeedbackItems] = useState<CustomerFeedback[]>(getCustomerFeedback);
+  const [aboutStory, setAboutStory] = useState(getAboutStory);
+  const [management, setManagement] = useState<ManagementMember[]>(getManagementTeam);
+  const [corporateSaved, setCorporateSaved] = useState(false);
 
   const addVideo = async () => {
     if (!videoDraft.url) return alert('YouTube bağlantısı veya video dosyası ekleyin.');
@@ -3203,6 +3218,13 @@ function SuperAdminDashboard() {
     const next = feedbackItems.map((item) => item.id === id ? { ...item, status } : item);
     setFeedbackItems(next);
     saveCustomerFeedback(next);
+  };
+  const saveCorporateContent = () => {
+    localStorage.setItem('realty-center-about-story', aboutStory);
+    saveManagementTeam(management);
+    window.dispatchEvent(new Event('realty-center-corporate-updated'));
+    setCorporateSaved(true);
+    setTimeout(() => setCorporateSaved(false), 2200);
   };
 
   const saveCategories = (nextCategories = categories) => {
@@ -3287,6 +3309,7 @@ function SuperAdminDashboard() {
     { key: 'videos' as const, label: 'Video Yönetimi', icon: PlayCircle },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
+    { key: 'corporate' as const, label: 'Kurumsal İçerik Yönetimi', icon: Briefcase },
     { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
   ];
 
@@ -3714,6 +3737,10 @@ function SuperAdminDashboard() {
 
             {activeTab === 'feedback' && (
               <div className="space-y-5"><div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="flex flex-wrap items-end justify-between gap-3 border-b border-slate-200 pb-4"><div><h2 className="text-lg font-black text-slate-900">Müşteri Geri Bildirimleri</h2><p className="mt-1 text-xs text-slate-500">Memnuniyet, danışman/ofis değerlendirmeleri, şikâyet ve dilek kayıtları.</p></div><span className="rounded-full bg-red-100 px-3 py-1 text-[10px] font-black text-red-700">{feedbackItems.length} kayıt</span></div><div className="mt-5 space-y-3">{feedbackItems.length ? feedbackItems.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div><div className="flex flex-wrap items-center gap-2"><span className="rounded-full bg-red-100 px-2.5 py-1 text-[10px] font-black text-red-700">{item.type}</span>{item.rating > 0 && <span className="text-sm tracking-wide text-amber-400">{'★'.repeat(item.rating)}<span className="text-slate-300">{'★'.repeat(5-item.rating)}</span></span>}</div><h3 className="mt-2 text-sm font-black text-slate-900">{item.subject || item.agent || item.office || 'Geri bildirim'}</h3><p className="mt-1 text-[11px] font-bold text-slate-500">{item.name} · {item.phone} {item.email && `· ${item.email}`}</p></div><select value={item.status} onChange={(e) => updateFeedbackStatus(item.id, e.target.value as CustomerFeedback['status'])} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-[11px] font-black text-slate-700"><option>Yeni</option><option>İnceleniyor</option><option>Yanıtlandı</option></select></div>{(item.agent || item.office) && <p className="mt-3 text-[11px] font-black text-red-700">{item.agent ? `Danışman: ${item.agent}` : `Ofis: ${item.office}`}</p>}<p className="mt-3 whitespace-pre-line text-xs leading-5 text-slate-700">{item.message}</p><p className="mt-3 text-[10px] font-bold text-slate-400">{new Date(item.createdAt).toLocaleString('tr-TR')} · {item.id}</p></article>) : <div className="rounded-xl bg-slate-50 p-8 text-center text-xs font-bold text-slate-500">Henüz müşteri geri bildirimi bulunmuyor.</div>}</div></div></div>
+            )}
+
+            {activeTab === 'corporate' && (
+              <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Hakkımızda ve Yönetim Kadrosu</h2><p className="mt-1 text-xs text-slate-500">Kurumsal hikâyeyi, yönetici fotoğraflarını, unvanlarını ve özgeçmişlerini düzenleyin.</p></div><label className="mt-5 block text-xs font-black text-slate-700">SEO uyumlu Hakkımızda hikâyesi</label><textarea rows={12} value={aboutStory} onChange={(e) => setAboutStory(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-red-600"/></section><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between"><h3 className="font-black text-slate-900">Yönetim Kadrosu</h3><button onClick={() => setManagement([...management,{ id:`yonetim-${Date.now()}`, name:'Yeni Yönetici', title:'Görevi', image:'/demo-placeholder.svg', biography:'Özgeçmiş bilgisi giriniz.' }])} className="rounded-lg bg-red-700 px-4 py-2 text-xs font-black text-white">+ Yönetici Ekle</button></div><div className="mt-5 space-y-4">{management.map((member,index) => <div key={member.id} className="grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-[110px_1fr]"><img src={member.image} alt="" className="h-28 w-28 rounded-xl bg-white object-cover object-top"/><div className="grid gap-3 sm:grid-cols-2"><input value={member.name} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,name:e.target.value} : item))} placeholder="Ad Soyad" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.title} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,title:e.target.value} : item))} placeholder="Unvan" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.image} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,image:e.target.value} : item))} placeholder="Fotoğraf URL'si" className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2"/><textarea rows={4} value={member.biography} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,biography:e.target.value} : item))} placeholder="Özgeçmiş" className="rounded-lg border border-slate-300 px-3 py-2 text-xs leading-5 sm:col-span-2"/><button onClick={() => setManagement(management.filter((_,i) => i !== index))} className="w-fit text-[10px] font-black text-red-700">Yöneticiyi kaldır</button></div></div>)}</div><button onClick={saveCorporateContent} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white">{corporateSaved ? 'Kaydedildi ✓' : 'Kurumsal İçeriği Kaydet'}</button></section></div>
             )}
 
             {/* 7. SİSTEM AYARLARI TABI */}
@@ -4348,7 +4375,9 @@ export default function RealtyCenterApp() {
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
             <Route path="/neden-realty-center" element={<WhyRealtyCenterPage />} />
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
-            <Route path="/kurumsal/yonetim-kurulu" element={<CorporateSubPage eyebrow="KURUMSAL" title="Yönetim Kurulumuz" description="Realty Center’ın stratejik yönünü belirleyen, deneyimli yönetim yapımızla şeffaf ve sürdürülebilir büyümeyi hedefliyoruz." points={['Stratejik karar alma ve kurumsal gelişim','Franchise ağı ve ofis operasyonlarının yönetimi','Müşteri deneyimi ile kalite standartlarının takibi']} />} />
+            <Route path="/kurumsal/yonetim-kurulu" element={<TeamPage />} />
+            <Route path="/kurumsal/misyon-vizyon" element={<CorporateSubPage eyebrow="KURUMSAL YÖN" title="Misyonumuz ve Vizyonumuz" description="Gayrimenkul hizmetlerini güven, uzmanlık ve teknoloji ekseninde geliştirerek müşterilerimiz, danışmanlarımız ve iş ortaklarımız için kalıcı değer üretiyoruz." points={['Şeffaf, etik ve insan odaklı gayrimenkul danışmanlığı','Türkiye genelinde erişilebilir ve güçlü bir hizmet ağı','Teknoloji ve eğitimle sürekli gelişen sektör liderliği']} />} />
+            <Route path="/kurumsal/kalite-standartlari" element={<CorporateSubPage eyebrow="ÖNCE GÜVEN" title="Kalite Standartlarımız" description="Her Realty Center ofisinde ve danışmanlık sürecinde aynı güvenilir hizmet deneyimini oluşturmak için ölçülebilir kalite standartları uygularız." points={['Doğrulanmış portföy ve güncel ilan bilgileri','Düzenli danışman eğitimi ve hizmet kalite takibi','Şeffaf iletişim, mevzuata uygunluk ve müşteri memnuniyeti']} />} />
             <Route path="/kurumsal/referanslar" element={<CorporateSubPage eyebrow="KURUMSAL" title="Referanslarımız" description="İş ortaklarımız, ofis ağımız ve tamamlanan iş süreçlerimiz; güvene dayalı çalışma anlayışımızın en somut göstergesidir." points={['Genişleyen ofis ve danışman ağı','Kurumsal iş ortaklıkları ve çözüm ağları','Başarıyla sonuçlanan portföy eşleştirmeleri']} />} />
             <Route path="/blog/rehber" element={<BlogCategoryPage category="Rehber" title="Gayrimenkul Rehberi" description="Ev alma, satma ve kiralama kararlarında ihtiyaç duyacağınız pratik bilgiler." />} />
             <Route path="/blog/hukuk" element={<BlogCategoryPage category="Hukuk" title="Gayrimenkul Hukuku" description="Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler." />} />
