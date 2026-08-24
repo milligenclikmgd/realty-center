@@ -145,6 +145,25 @@
 .realty-header-main-logo { width: 190px; max-width: 94%; }
 
 .realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
+.realty-header-emblem-inner {
+  transform: translateY(10px);
+}
+.realty-header-emblem-inner .realty-header-disc {
+  width: 132px;
+  height: 132px;
+  border-width: 5px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.2), inset 0 0 0 3px var(--rc-red), inset 0 0 12px rgba(7,29,59,.04);
+  animation: realtyInnerLogoShrink .55s cubic-bezier(.2,.82,.25,1) both;
+}
+.realty-header-emblem-inner .realty-header-main-logo { width: 118px; }
+@keyframes realtyInnerLogoShrink {
+  from { width: 210px; height: 210px; opacity: .65; transform: scale(1.04); }
+  to { width: 132px; height: 132px; opacity: 1; transform: scale(1); }
+}
+.realty-header-emblem-inner:hover .realty-header-disc { transform: scale(1.025); }
+@media (prefers-reduced-motion: reduce) {
+  .realty-header-emblem-inner .realty-header-disc { animation: none; }
+}
 .realty-header-link::after {
   content: '';
   position: absolute;
