@@ -553,7 +553,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
   const navigate = useNavigate();
   return (
     <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="listing-cinematic-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
-      <div>
+      <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanını incele`} className="block text-inherit no-underline">
         <div className="relative h-48 overflow-hidden bg-slate-100">
           <img 
             src={item.image} 
@@ -601,7 +601,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
 
       <div className="p-3 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
         <div>
