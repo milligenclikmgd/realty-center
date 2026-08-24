@@ -781,6 +781,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     [t.contact, '/iletisim']
   ];
   const isListingDetail = location.pathname.startsWith('/ilan/');
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const updateProgress = () => {
@@ -860,7 +861,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             {leftLinks.map(([label, to]) => <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
 
-          <Link to="/" onClick={close} className="realty-header-emblem" aria-label="Realty Center ana sayfa">
+          <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
               <img src="/rlogotr.png" alt="Realty Center Türkiye" className="realty-header-main-logo object-contain" />
