@@ -753,8 +753,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   const rightLinks = [
     [t.ai.replace('🤖 ', ''), '/ai-karar-asistani'],
     ['Realty Kütüphane', '/blog/rehber'],
-    ['Neden Biz?', '/neden-realty-center'],
-    ['Franchise', '/franchise-basvuru'],
+    ['Neden Realty Center', '/neden-realty-center'],
+    ['Franchise Ol', '/franchise-basvuru'],
     [t.advisor, '/danisman-basvuru'],
     [t.contact, '/iletisim']
   ];
@@ -2869,7 +2869,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8">
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8 xl:pb-12 xl:pt-28">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
           <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
