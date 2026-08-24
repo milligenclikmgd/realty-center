@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
@@ -77,6 +77,20 @@ const DEFAULT_MANAGEMENT: ManagementMember[] = [
 const getAboutStory = () => localStorage.getItem('realty-center-about-story') || DEFAULT_ABOUT_STORY;
 const getManagementTeam = (): ManagementMember[] => { try { return JSON.parse(localStorage.getItem('realty-center-management') || 'null') || DEFAULT_MANAGEMENT; } catch { return DEFAULT_MANAGEMENT; } };
 const saveManagementTeam = (items: ManagementMember[]) => { localStorage.setItem('realty-center-management', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-corporate-updated')); };
+type CorporateDocument = { id: string; title: string; description: string; fileUrl: string };
+type CorporateLogoItem = { id: string; name: string; logo: string; content: string };
+const DEFAULT_DOCUMENTS: CorporateDocument[] = [
+  { id: 'belge-1', title: 'Yetki Belgesi', description: 'Realty Center kurumsal yetkilendirme belgesi.', fileUrl: '' },
+  { id: 'belge-2', title: 'Kalite ve Hizmet Belgesi', description: 'Hizmet süreçlerimize ilişkin kurumsal belge.', fileUrl: '' }
+];
+const DEFAULT_REFERENCES: CorporateLogoItem[] = [
+  { id: 'ref-1', name: 'Kurumsal Referans', logo: '/rlogo2.png', content: 'Referans kurum ve yürütülen çalışma bilgileri bu alana eklenecektir.' }
+];
+const DEFAULT_PARTNERS: CorporateLogoItem[] = [
+  { id: 'partner-1', name: 'Anlaşmalı Banka', logo: '/demo-placeholder.svg', content: 'Gayrimenkul finansmanı ve müşterilere sunulan avantajlı çözümlere ilişkin anlaşma ayrıntıları burada yer alacaktır.' },
+  { id: 'partner-2', name: 'Çözüm Ortağı Kurum', logo: '/demo-placeholder.svg', content: 'Realty Center ile kurum arasında yürütülen iş birliği ve müşterilere sağlanan avantajlar burada açıklanacaktır.' }
+];
+const getStoredCorporateItems = <T,>(key: string, fallback: T): T => { try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch { return fallback; } };
 
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
@@ -717,9 +731,6 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
 }
 
 
-function CorporateSubPage({ title, eyebrow, description, points }: { title: string; eyebrow: string; description: string; points: string[] }) {
-  return <section className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><div className="rounded-3xl bg-slate-950 px-8 py-12 text-white shadow-2xl sm:px-12"><p className="text-xs font-black tracking-[.2em] text-red-300">{eyebrow}</p><h1 className="mt-4 text-4xl font-black">{title}</h1><p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-300">{description}</p></div><div className="mt-7 grid gap-4 md:grid-cols-3">{points.map((point,index)=><div key={point} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><span className="text-xs font-black text-[#CD011E]">0{index+1}</span><p className="mt-3 text-sm font-bold leading-relaxed text-slate-700">{point}</p></div>)}</div></div></section>;
-}
 function BlogCategoryPage({ category, title, description }: { category: string; title: string; description: string }) {
   const entries=[['Tapu ve sözleşme süreçlerinde dikkat edilmesi gerekenler','Güncel rehber ve açıklamalar'],['Bölgesel fiyat hareketleri nasıl değerlendirilir?','Piyasa notu'],['Satın alma kararında doğru karşılaştırma yöntemleri','Uzman analizi']];
   return <section className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">BLOG · {category.toUpperCase()}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{title}</h1><p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600">{description}</p><div className="mt-8 grid gap-4 md:grid-cols-3">{entries.map(([heading,meta])=><article key={heading} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><p className="text-[10px] font-black tracking-widest text-[#CD011E]">{meta}</p><h2 className="mt-3 text-lg font-black text-slate-900">{heading}</h2><Link to="/#akademi" className="mt-6 inline-flex text-sm font-black text-[#CD011E]">İçeriği oku →</Link></article>)}</div></div></section>;
@@ -790,12 +801,12 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   const rightLinks = [
     [t.ai.replace('🤖 ', ''), '/ai-karar-asistani'],
     ['Realty Kütüphane', '/blog/rehber'],
-    ['Neden Realty Center', '/neden-realty-center'],
+    ['Neden Realty Center?', '/neden-realty-center'],
     ['Franchise Ol', '/franchise-basvuru'],
     [t.advisor, '/danisman-basvuru'],
     [t.contact, '/iletisim']
   ];
-  const corporateMenu = [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Misyonumuz & Vizyonumuz','/kurumsal/misyon-vizyon'],['Kalite Standartlarımız','/kurumsal/kalite-standartlari'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center','/neden-realty-center']];
+  const corporateMenu = [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Belgelerimiz','/kurumsal/belgelerimiz'],['Referanslarımız','/kurumsal/referanslar'],['İş Ortaklarımız','/kurumsal/is-ortaklarimiz']];
   const contactMenu = [['İletişim Bilgilerimiz','/iletisim'],['Müşteri Memnuniyeti','/geri-bildirim']];
   const isListingDetail = location.pathname.startsWith('/ilan/');
   const isHomePage = location.pathname === '/';
@@ -875,7 +886,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}>{label}</Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
 
           <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center ana sayfa">
@@ -886,7 +897,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           </Link>
 
           <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}>{label}</Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
         </nav>
 
@@ -926,7 +937,7 @@ function CustomerFeedbackPage() {
 
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   const footerGroups = [
-    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Misyon & Vizyon','/kurumsal/misyon-vizyon'],['Kalite Standartlarımız','/kurumsal/kalite-standartlari'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center']] },
+    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Belgelerimiz','/kurumsal/belgelerimiz'],['Referanslarımız','/kurumsal/referanslar'],['İş Ortaklarımız','/kurumsal/is-ortaklarimiz']] },
     { title: 'Gayrimenkul', links: [['İlanlarımız','/ilanlarimiz?all=1'],['Projelerimiz','/projelerimiz'],['Ofislerimiz','/ofislerimiz'],['Danışmanlarımız','/danismanlarimiz'],['Harita ile Ara','/harita-ile-ara']] },
     { title: 'Kariyer ve İş Ortaklığı', links: [['Franchise Ol','/franchise-basvuru'],['Danışman Ol','/danisman-basvuru'],['Realty Kütüphane','/blog/rehber'],['Gayrimenkul Hukuku','/blog/hukuk'],['Yapay Zeka Asistanı','/ai-karar-asistani']] },
     { title: 'Gizlilik ve Kullanım', links: [['KVKK Aydınlatma Metni','/kvkk'],['Gizlilik Politikası','/gizlilik-politikasi'],['Çerez Politikası','/cerez-politikasi'],['Kullanım Koşulları','/kullanim-kosullari'],['İlan Yayınlama Kuralları','/ilan-yayinlama-kurallari']] }
@@ -1529,6 +1540,22 @@ function TeamPage() {
   const [selected, setSelected] = useState<ManagementMember | null>(null);
   useEffect(() => { const update = () => setMembers(getManagementTeam()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
   return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL YÖNETİM</p><h1 className="mt-3 text-4xl font-black text-slate-950">Yönetim Kadromuz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Realty Center’ın stratejisine, hizmet kalitesine ve sürdürülebilir büyümesine yön veren yönetim ekibimizle tanışın.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{members.map((member) => <button key={member.id} onClick={() => setSelected(member)} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={member.image} alt={member.name} className="h-72 w-full object-cover object-top transition duration-500 group-hover:scale-105"/><div className="p-5"><p className="text-[10px] font-black tracking-widest text-red-700">YÖNETİM KADROSU</p><h2 className="mt-2 text-xl font-black text-slate-900">{member.name}</h2><p className="mt-1 text-xs font-bold text-slate-500">{member.title}</p><span className="mt-4 inline-flex text-xs font-black text-red-700">Özgeçmişi görüntüle →</span></div></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/75 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article className="relative grid max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl md:grid-cols-[280px_1fr]" onClick={(e) => e.stopPropagation()}><button onClick={() => setSelected(null)} className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-900 shadow"><X className="h-5 w-5"/></button><img src={selected.image} alt={selected.name} className="h-72 w-full object-cover object-top md:h-full"/><div className="p-7 sm:p-9"><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTER YÖNETİM KADROSU</p><h2 className="mt-3 text-3xl font-black text-slate-900">{selected.name}</h2><p className="mt-2 text-sm font-black text-red-700">{selected.title}</p><div className="my-6 h-px bg-slate-200"/><h3 className="text-sm font-black text-slate-900">Özgeçmiş</h3><p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.biography}</p></div></article></div>}</main>;
+}
+
+function DocumentsPage() {
+  const [documents, setDocuments] = useState(() => getStoredCorporateItems<CorporateDocument[]>('realty-center-documents', DEFAULT_DOCUMENTS));
+  useEffect(() => { const update = () => setDocuments(getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL ŞEFFAFLIK</p><h1 className="mt-3 text-4xl font-black text-slate-950">Belgelerimiz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Kurumsal yetki, kalite ve hizmet belgelerimizi inceleyebilirsiniz. Yüklenen PDF belgeleri çerçeveli belge görünümünde sunulur.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{documents.map((document) => <article key={document.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div className="flex aspect-[4/5] items-center justify-center rounded-xl border-[8px] border-double border-slate-300 bg-gradient-to-br from-slate-50 to-slate-100 p-5 text-center shadow-inner"><div><FileText className="mx-auto h-14 w-14 text-red-700"/><p className="mt-4 text-xs font-black tracking-widest text-slate-400">REALTY CENTER</p><h2 className="mt-2 text-lg font-black text-slate-900">{document.title}</h2><p className="mt-3 text-xs leading-5 text-slate-500">{document.description}</p></div></div>{document.fileUrl ? <a href={document.fileUrl} target="_blank" rel="noreferrer" className="mt-4 flex items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white">PDF Belgeyi Görüntüle</a> : <span className="mt-4 flex items-center justify-center rounded-xl bg-slate-100 px-4 py-3 text-xs font-black text-slate-400">Belge yakında yüklenecek</span>}</article>)}</div></div></main>;
+}
+
+function LogoShowcasePage({ mode }: { mode: 'references' | 'partners' }) {
+  const key = mode === 'references' ? 'realty-center-references' : 'realty-center-partners';
+  const fallback = mode === 'references' ? DEFAULT_REFERENCES : DEFAULT_PARTNERS;
+  const [items, setItems] = useState(() => getStoredCorporateItems<CorporateLogoItem[]>(key, fallback));
+  const [selected, setSelected] = useState<CorporateLogoItem | null>(null);
+  useEffect(() => { const update = () => setItems(getStoredCorporateItems(key, fallback)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, [key]);
+  const isPartners = mode === 'partners';
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">{isPartners ? 'GÜÇLÜ İŞ BİRLİKLERİ' : 'GÜVENİMİZİN REFERANSLARI'}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{isPartners ? 'İş Ortaklarımız' : 'Referanslarımız'}</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">{isPartners ? 'Anlaşmalı bankalarımız ve çözüm ortağı kurumlarımızla sunduğumuz avantajları incelemek için logolara tıklayın.' : 'Birlikte değer ürettiğimiz kurumları ve tamamladığımız çalışmaları logolar üzerinden inceleyebilirsiniz.'}</p><div className="mt-9 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">{items.map((item) => <button key={item.id} onClick={() => setSelected(item)} className="group flex min-h-44 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><img src={item.logo} alt={item.name} className="h-20 w-full object-contain transition group-hover:scale-105"/><h2 className="mt-4 text-center text-sm font-black text-slate-800">{item.name}</h2><span className="mt-2 text-[10px] font-black text-red-700">Anlaşma detayları →</span></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article onClick={(e) => e.stopPropagation()} className="relative w-full max-w-xl rounded-3xl bg-white p-8 shadow-2xl"><button onClick={() => setSelected(null)} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100"><X className="h-5 w-5"/></button><img src={selected.logo} alt={selected.name} className="h-24 w-48 object-contain"/><h2 className="mt-6 text-2xl font-black text-slate-900">{selected.name}</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.content}</p></article></div>}</main>;
 }
 
 function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
@@ -3194,6 +3221,9 @@ function SuperAdminDashboard() {
   const [feedbackItems, setFeedbackItems] = useState<CustomerFeedback[]>(getCustomerFeedback);
   const [aboutStory, setAboutStory] = useState(getAboutStory);
   const [management, setManagement] = useState<ManagementMember[]>(getManagementTeam);
+  const [corporateDocuments, setCorporateDocuments] = useState<CorporateDocument[]>(() => getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS));
+  const [corporateReferences, setCorporateReferences] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-references', DEFAULT_REFERENCES));
+  const [corporatePartners, setCorporatePartners] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-partners', DEFAULT_PARTNERS));
   const [corporateSaved, setCorporateSaved] = useState(false);
 
   const addVideo = async () => {
@@ -3222,9 +3252,18 @@ function SuperAdminDashboard() {
   const saveCorporateContent = () => {
     localStorage.setItem('realty-center-about-story', aboutStory);
     saveManagementTeam(management);
+    localStorage.setItem('realty-center-documents', JSON.stringify(corporateDocuments));
+    localStorage.setItem('realty-center-references', JSON.stringify(corporateReferences));
+    localStorage.setItem('realty-center-partners', JSON.stringify(corporatePartners));
     window.dispatchEvent(new Event('realty-center-corporate-updated'));
     setCorporateSaved(true);
     setTimeout(() => setCorporateSaved(false), 2200);
+  };
+  const uploadCorporatePdf = (index: number, file?: File) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => setCorporateDocuments(corporateDocuments.map((item,i) => i === index ? { ...item, fileUrl: String(reader.result) } : item));
+    reader.readAsDataURL(file);
   };
 
   const saveCategories = (nextCategories = categories) => {
@@ -3742,6 +3781,12 @@ function SuperAdminDashboard() {
             {activeTab === 'corporate' && (
               <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Hakkımızda ve Yönetim Kadrosu</h2><p className="mt-1 text-xs text-slate-500">Kurumsal hikâyeyi, yönetici fotoğraflarını, unvanlarını ve özgeçmişlerini düzenleyin.</p></div><label className="mt-5 block text-xs font-black text-slate-700">SEO uyumlu Hakkımızda hikâyesi</label><textarea rows={12} value={aboutStory} onChange={(e) => setAboutStory(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-red-600"/></section><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between"><h3 className="font-black text-slate-900">Yönetim Kadrosu</h3><button onClick={() => setManagement([...management,{ id:`yonetim-${Date.now()}`, name:'Yeni Yönetici', title:'Görevi', image:'/demo-placeholder.svg', biography:'Özgeçmiş bilgisi giriniz.' }])} className="rounded-lg bg-red-700 px-4 py-2 text-xs font-black text-white">+ Yönetici Ekle</button></div><div className="mt-5 space-y-4">{management.map((member,index) => <div key={member.id} className="grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-[110px_1fr]"><img src={member.image} alt="" className="h-28 w-28 rounded-xl bg-white object-cover object-top"/><div className="grid gap-3 sm:grid-cols-2"><input value={member.name} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,name:e.target.value} : item))} placeholder="Ad Soyad" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.title} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,title:e.target.value} : item))} placeholder="Unvan" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.image} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,image:e.target.value} : item))} placeholder="Fotoğraf URL'si" className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2"/><textarea rows={4} value={member.biography} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,biography:e.target.value} : item))} placeholder="Özgeçmiş" className="rounded-lg border border-slate-300 px-3 py-2 text-xs leading-5 sm:col-span-2"/><button onClick={() => setManagement(management.filter((_,i) => i !== index))} className="w-fit text-[10px] font-black text-red-700">Yöneticiyi kaldır</button></div></div>)}</div><button onClick={saveCorporateContent} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white">{corporateSaved ? 'Kaydedildi ✓' : 'Kurumsal İçeriği Kaydet'}</button></section></div>
             )}
+
+            {activeTab === 'corporate' && <div className="mt-6 space-y-6">
+              <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">Belgelerimiz</h3><p className="mt-1 text-xs text-slate-500">PDF dosyaları sitede çerçeveli belge kartı olarak görünür.</p></div><button onClick={() => setCorporateDocuments([...corporateDocuments,{id:`belge-${Date.now()}`,title:'Yeni Belge',description:'Belge açıklaması',fileUrl:''}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Belge Ekle</button></div><div className="mt-5 space-y-3">{corporateDocuments.map((document,index) => <div key={document.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={document.title} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,title:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge adı"/><input value={document.description} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,description:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge açıklaması"/><label className="cursor-pointer rounded-lg border border-dashed border-red-300 bg-red-50 px-3 py-3 text-center text-xs font-black text-red-700"><input type="file" accept="application/pdf" className="hidden" onChange={(e) => uploadCorporatePdf(index,e.target.files?.[0])}/>{document.fileUrl ? 'PDF yüklendi ✓ Değiştir' : 'PDF Belgesi Yükle'}</label><button onClick={() => setCorporateDocuments(corporateDocuments.filter((_,i)=>i!==index))} className="text-xs font-black text-red-700">Belgeyi kaldır</button></div>)}</div></section>
+              {([['Referanslarımız',corporateReferences,setCorporateReferences],['İş Ortaklarımız',corporatePartners,setCorporatePartners]] as const).map(([title,items,setItems]) => <section key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">{title}</h3><p className="mt-1 text-xs text-slate-500">Logo ve tıklandığında açılacak çalışma içeriğini yönetin.</p></div><button onClick={() => setItems([...items,{id:`logo-${Date.now()}`,name:'Yeni Kurum',logo:'/demo-placeholder.svg',content:'İş birliği veya referans açıklaması.'}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Logo Ekle</button></div><div className="mt-5 space-y-3">{items.map((item,index) => <div key={item.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={item.name} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,name:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
+              <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'Tüm içerikler kaydedildi ✓' : 'Belgeler, Referanslar ve İş Ortaklarını Kaydet'}</button>
+            </div>}
 
             {/* 7. SİSTEM AYARLARI TABI */}
             {activeTab === 'settings' && (
@@ -4376,9 +4421,9 @@ export default function RealtyCenterApp() {
             <Route path="/neden-realty-center" element={<WhyRealtyCenterPage />} />
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
             <Route path="/kurumsal/yonetim-kurulu" element={<TeamPage />} />
-            <Route path="/kurumsal/misyon-vizyon" element={<CorporateSubPage eyebrow="KURUMSAL YÖN" title="Misyonumuz ve Vizyonumuz" description="Gayrimenkul hizmetlerini güven, uzmanlık ve teknoloji ekseninde geliştirerek müşterilerimiz, danışmanlarımız ve iş ortaklarımız için kalıcı değer üretiyoruz." points={['Şeffaf, etik ve insan odaklı gayrimenkul danışmanlığı','Türkiye genelinde erişilebilir ve güçlü bir hizmet ağı','Teknoloji ve eğitimle sürekli gelişen sektör liderliği']} />} />
-            <Route path="/kurumsal/kalite-standartlari" element={<CorporateSubPage eyebrow="ÖNCE GÜVEN" title="Kalite Standartlarımız" description="Her Realty Center ofisinde ve danışmanlık sürecinde aynı güvenilir hizmet deneyimini oluşturmak için ölçülebilir kalite standartları uygularız." points={['Doğrulanmış portföy ve güncel ilan bilgileri','Düzenli danışman eğitimi ve hizmet kalite takibi','Şeffaf iletişim, mevzuata uygunluk ve müşteri memnuniyeti']} />} />
-            <Route path="/kurumsal/referanslar" element={<CorporateSubPage eyebrow="KURUMSAL" title="Referanslarımız" description="İş ortaklarımız, ofis ağımız ve tamamlanan iş süreçlerimiz; güvene dayalı çalışma anlayışımızın en somut göstergesidir." points={['Genişleyen ofis ve danışman ağı','Kurumsal iş ortaklıkları ve çözüm ağları','Başarıyla sonuçlanan portföy eşleştirmeleri']} />} />
+            <Route path="/kurumsal/belgelerimiz" element={<DocumentsPage />} />
+            <Route path="/kurumsal/referanslar" element={<LogoShowcasePage mode="references" />} />
+            <Route path="/kurumsal/is-ortaklarimiz" element={<LogoShowcasePage mode="partners" />} />
             <Route path="/blog/rehber" element={<BlogCategoryPage category="Rehber" title="Gayrimenkul Rehberi" description="Ev alma, satma ve kiralama kararlarında ihtiyaç duyacağınız pratik bilgiler." />} />
             <Route path="/blog/hukuk" element={<BlogCategoryPage category="Hukuk" title="Gayrimenkul Hukuku" description="Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler." />} />
             <Route path="/blog/haberler" element={<BlogCategoryPage category="Haberler" title="Sektörden Haberler" description="Gayrimenkul piyasasındaki güncel gelişmeler ve gündem notları." />} />
