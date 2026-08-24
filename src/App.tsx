@@ -41,6 +41,28 @@ const getRealtyVideos = (): RealtyVideo[] => {
 const getYoutubeId = (url: string) => url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/)?.[1] || '';
 const saveRealtyVideos = (videos: RealtyVideo[]) => { localStorage.setItem('realty-center-videos', JSON.stringify(videos)); window.dispatchEvent(new Event('realty-center-videos-updated')); };
 
+type CustomerFeedback = {
+  id: string;
+  type: 'Memnuniyet' | 'Danışman Değerlendirmesi' | 'Ofis Değerlendirmesi' | 'Şikâyet' | 'Dilek / Öneri';
+  name: string;
+  phone: string;
+  email: string;
+  subject: string;
+  message: string;
+  rating: number;
+  agent: string;
+  office: string;
+  status: 'Yeni' | 'İnceleniyor' | 'Yanıtlandı';
+  createdAt: string;
+};
+const getCustomerFeedback = (): CustomerFeedback[] => {
+  try { return JSON.parse(localStorage.getItem('realty-center-customer-feedback') || '[]'); } catch { return []; }
+};
+const saveCustomerFeedback = (items: CustomerFeedback[]) => {
+  localStorage.setItem('realty-center-customer-feedback', JSON.stringify(items));
+  window.dispatchEvent(new Event('realty-center-feedback-updated'));
+};
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -866,9 +888,27 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   );
 }
 
+function CustomerFeedbackPage() {
+  const [type, setType] = useState<CustomerFeedback['type']>('Memnuniyet');
+  const [rating, setRating] = useState(5);
+  const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
+  const types: CustomerFeedback['type'][] = ['Memnuniyet', 'Danışman Değerlendirmesi', 'Ofis Değerlendirmesi', 'Şikâyet', 'Dilek / Öneri'];
+  const submit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const item: CustomerFeedback = { id: `GB-${Date.now()}`, type, ...form, rating: type === 'Şikâyet' || type === 'Dilek / Öneri' ? 0 : rating, status: 'Yeni', createdAt: new Date().toISOString() };
+    saveCustomerFeedback([item, ...getCustomerFeedback()]);
+    setSubmitted(true);
+    setForm({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const fieldClass = 'w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-4 focus:ring-red-100';
+  return <div className="min-h-screen bg-slate-50 py-10 lg:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><div className="mb-8 text-center"><span className="inline-flex rounded-full bg-red-100 px-4 py-1.5 text-[10px] font-black tracking-[.18em] text-red-700">MÜŞTERİ DENEYİMİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Görüşünüz bizim için değerli</h1><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">Memnuniyetinizi paylaşabilir, danışmanlarımızı ve ofislerimizi değerlendirebilir; şikâyet, dilek ve önerilerinizi doğrudan genel merkezimize iletebilirsiniz.</p></div>{submitted && <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-center"><CheckCircle2 className="mx-auto h-8 w-8 text-emerald-600"/><h2 className="mt-2 font-black text-emerald-900">Geri bildiriminiz alındı</h2><p className="mt-1 text-xs text-emerald-700">Kaydınız ilgili birime iletildi. Gerekli görülürse verdiğiniz iletişim bilgileri üzerinden sizinle irtibat kurulacaktır.</p></div>}<div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.8fr_1.2fr]"><aside className="bg-gradient-to-br from-[#b9001c] to-[#700012] p-7 text-white lg:p-10"><img src="/rlogo2.png" alt="Realty Center Önce Güven" className="h-20 w-auto rounded-lg bg-white object-contain p-2"/><h2 className="mt-8 text-2xl font-black">Size kulak veriyoruz</h2><p className="mt-3 text-sm leading-6 text-red-50/85">Her bildirim kayıt altına alınır, ilgili ofis veya birime yönlendirilir ve hizmet kalitemizin geliştirilmesinde değerlendirilir.</p><div className="mt-8 space-y-3 text-xs font-bold">{['Gizlilikle değerlendirme','Genel merkez takibi','Danışman ve ofis bazlı ölçüm','Çözüm odaklı geri dönüş'].map((item) => <div key={item} className="flex items-center gap-2 rounded-xl bg-white/10 p-3"><CheckCircle2 className="h-4 w-4"/>{item}</div>)}</div></aside><form onSubmit={submit} className="p-6 sm:p-8 lg:p-10"><h2 className="text-lg font-black text-slate-900">Geri bildirim türünü seçin</h2><div className="mt-4 grid gap-2 sm:grid-cols-2">{types.map((item) => <button type="button" key={item} onClick={() => setType(item)} className={`rounded-xl border px-3 py-3 text-xs font-black transition ${type === item ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/20' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-red-300'}`}>{item}</button>)}</div>{!['Şikâyet','Dilek / Öneri'].includes(type) && <div className="mt-6"><label className="text-xs font-black text-slate-700">Genel değerlendirmeniz</label><div className="mt-2 flex gap-1">{[1,2,3,4,5].map((star) => <button type="button" key={star} onClick={() => setRating(star)} aria-label={`${star} yıldız`} className={`text-3xl transition hover:scale-110 ${star <= rating ? 'text-amber-400' : 'text-slate-200'}`}>★</button>)}</div></div>}<div className="mt-6 grid gap-4 sm:grid-cols-2"><input required value={form.name} onChange={(e) => setForm({...form,name:e.target.value})} placeholder="Adınız Soyadınız *" className={fieldClass}/><input required value={form.phone} onChange={(e) => setForm({...form,phone:e.target.value})} placeholder="Telefonunuz *" className={fieldClass}/><input type="email" value={form.email} onChange={(e) => setForm({...form,email:e.target.value})} placeholder="E-posta adresiniz" className={fieldClass}/>{type === 'Danışman Değerlendirmesi' ? <select required value={form.agent} onChange={(e) => setForm({...form,agent:e.target.value})} className={fieldClass}><option value="">Danışman seçin *</option>{SAMPLE_AGENTS.map((agent) => <option key={agent.id} value={agent.name}>{agent.name}</option>)}</select> : type === 'Ofis Değerlendirmesi' ? <select required value={form.office} onChange={(e) => setForm({...form,office:e.target.value})} className={fieldClass}><option value="">Ofis seçin *</option>{SAMPLE_OFFICES.map((office) => <option key={office.id} value={office.name}>{office.name}</option>)}</select> : <input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Konu" className={fieldClass}/>}<input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Geri bildirim başlığı" className={`${fieldClass} sm:col-span-2`}/><textarea required rows={6} value={form.message} onChange={(e) => setForm({...form,message:e.target.value})} placeholder="Görüş, şikâyet, dilek veya önerinizi ayrıntılı biçimde yazın *" className={`${fieldClass} resize-none sm:col-span-2`}/></div><label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span>Geri bildirimin değerlendirilmesi ve gerektiğinde tarafımla iletişim kurulması amacıyla bilgilerimin işlenmesini kabul ediyorum. <Link to="/kvkk" className="font-black text-red-700">KVKK metni</Link></span></label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-xl shadow-red-700/20 transition hover:bg-red-800">Geri Bildirimi Gönder</button></form></div></div></div>;
+}
+
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
   const footerGroups = [
-    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kurulumuz','/kurumsal/yonetim-kurulu'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center'],['İletişim','/iletisim']] },
+    { title: 'Kurumsal', links: [['Hakkımızda','/kurumsal/hakkimizda'],['Yönetim Kurulumuz','/kurumsal/yonetim-kurulu'],['Referanslarımız','/kurumsal/referanslar'],['Neden Realty Center?','/neden-realty-center'],['Müşteri Memnuniyeti','/geri-bildirim'],['İletişim','/iletisim']] },
     { title: 'Gayrimenkul', links: [['İlanlarımız','/ilanlarimiz?all=1'],['Projelerimiz','/projelerimiz'],['Ofislerimiz','/ofislerimiz'],['Danışmanlarımız','/danismanlarimiz'],['Harita ile Ara','/harita-ile-ara']] },
     { title: 'Kariyer ve İş Ortaklığı', links: [['Franchise Ol','/franchise-basvuru'],['Danışman Ol','/danisman-basvuru'],['Realty Kütüphane','/blog/rehber'],['Gayrimenkul Hukuku','/blog/hukuk'],['Yapay Zeka Asistanı','/ai-karar-asistani']] },
     { title: 'Gizlilik ve Kullanım', links: [['KVKK Aydınlatma Metni','/kvkk'],['Gizlilik Politikası','/gizlilik-politikasi'],['Çerez Politikası','/cerez-politikasi'],['Kullanım Koşulları','/kullanim-kosullari'],['İlan Yayınlama Kuralları','/ilan-yayinlama-kurallari']] }
@@ -3128,7 +3168,7 @@ function SuperAdminLoginPage() {
 // SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'feedback' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -3138,6 +3178,7 @@ function SuperAdminDashboard() {
   const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
   const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', url: '', title: '', thumbnail: '' });
   const [videoSaving, setVideoSaving] = useState(false);
+  const [feedbackItems, setFeedbackItems] = useState<CustomerFeedback[]>(getCustomerFeedback);
 
   const addVideo = async () => {
     if (!videoDraft.url) return alert('YouTube bağlantısı veya video dosyası ekleyin.');
@@ -3157,6 +3198,11 @@ function SuperAdminDashboard() {
   const handleDirectVideo = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, source: 'upload', url: String(reader.result), title: current.title || file.name.replace(/\.[^.]+$/, '') })); reader.readAsDataURL(file); };
   const handleVideoCover = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, thumbnail: String(reader.result) })); reader.readAsDataURL(file); };
   const removeVideo = (id: string) => { const next = videos.filter((video) => video.id !== id); setVideos(next); saveRealtyVideos(next); };
+  const updateFeedbackStatus = (id: string, status: CustomerFeedback['status']) => {
+    const next = feedbackItems.map((item) => item.id === id ? { ...item, status } : item);
+    setFeedbackItems(next);
+    saveCustomerFeedback(next);
+  };
 
   const saveCategories = (nextCategories = categories) => {
     localStorage.setItem('realty-center-listing-categories', JSON.stringify(nextCategories));
@@ -3239,6 +3285,7 @@ function SuperAdminDashboard() {
     { key: 'categories' as const, label: 'Kategori Yönetimi', icon: Tag },
     { key: 'videos' as const, label: 'Video Yönetimi', icon: PlayCircle },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
+    { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
     { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
   ];
 
@@ -3662,6 +3709,10 @@ function SuperAdminDashboard() {
                   ))}
                 </div>
               </div>
+            )}
+
+            {activeTab === 'feedback' && (
+              <div className="space-y-5"><div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="flex flex-wrap items-end justify-between gap-3 border-b border-slate-200 pb-4"><div><h2 className="text-lg font-black text-slate-900">Müşteri Geri Bildirimleri</h2><p className="mt-1 text-xs text-slate-500">Memnuniyet, danışman/ofis değerlendirmeleri, şikâyet ve dilek kayıtları.</p></div><span className="rounded-full bg-red-100 px-3 py-1 text-[10px] font-black text-red-700">{feedbackItems.length} kayıt</span></div><div className="mt-5 space-y-3">{feedbackItems.length ? feedbackItems.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div><div className="flex flex-wrap items-center gap-2"><span className="rounded-full bg-red-100 px-2.5 py-1 text-[10px] font-black text-red-700">{item.type}</span>{item.rating > 0 && <span className="text-sm tracking-wide text-amber-400">{'★'.repeat(item.rating)}<span className="text-slate-300">{'★'.repeat(5-item.rating)}</span></span>}</div><h3 className="mt-2 text-sm font-black text-slate-900">{item.subject || item.agent || item.office || 'Geri bildirim'}</h3><p className="mt-1 text-[11px] font-bold text-slate-500">{item.name} · {item.phone} {item.email && `· ${item.email}`}</p></div><select value={item.status} onChange={(e) => updateFeedbackStatus(item.id, e.target.value as CustomerFeedback['status'])} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-[11px] font-black text-slate-700"><option>Yeni</option><option>İnceleniyor</option><option>Yanıtlandı</option></select></div>{(item.agent || item.office) && <p className="mt-3 text-[11px] font-black text-red-700">{item.agent ? `Danışman: ${item.agent}` : `Ofis: ${item.office}`}</p>}<p className="mt-3 whitespace-pre-line text-xs leading-5 text-slate-700">{item.message}</p><p className="mt-3 text-[10px] font-bold text-slate-400">{new Date(item.createdAt).toLocaleString('tr-TR')} · {item.id}</p></article>) : <div className="rounded-xl bg-slate-50 p-8 text-center text-xs font-bold text-slate-500">Henüz müşteri geri bildirimi bulunmuyor.</div>}</div></div></div>
             )}
 
             {/* 7. SİSTEM AYARLARI TABI */}
@@ -4320,6 +4371,7 @@ export default function RealtyCenterApp() {
             <Route path="/projelerimiz" element={<ProjectsPage />} />
             <Route path="/videolar" element={<VideosPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
+            <Route path="/geri-bildirim" element={<CustomerFeedbackPage />} />
             <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
             <Route path="/danisman-basvuru" element={<ApplicationPage type="agent" />} />
           </Routes>
