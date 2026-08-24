@@ -685,6 +685,45 @@ function LegalInfoPage({ title, description }: { title: string; description: str
   return <main className="min-h-[65vh] bg-slate-50 py-14"><div className="mx-auto max-w-4xl px-6"><Link to="/" className="text-xs font-black text-red-700">← Ana sayfaya dön</Link><article className="mt-6 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><p className="text-[10px] font-black tracking-[.2em] text-red-700">REALTY CENTER TÜRKİYE</p><h1 className="mt-3 text-3xl font-black text-slate-900">{title}</h1><p className="mt-6 text-sm leading-7 text-slate-600">{description}</p><p className="mt-5 text-sm leading-7 text-slate-600">Bu metin; kullanıcıların bilgilendirilmesi, kişisel verilerin korunması, güvenli kullanım ve şeffaf hizmet ilkelerimizin açıklanması amacıyla hazırlanmıştır. Ayrıntılı bilgi veya başvuru için info@realtycenter.com.tr adresinden bizimle iletişime geçebilirsiniz.</p><p className="mt-8 border-t border-slate-100 pt-4 text-xs font-bold text-slate-400">Son güncelleme: 24 Ağustos 2026</p></article></div></main>;
 }
 
+function SiteSearchPage() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const initialQuery = new URLSearchParams(location.search).get('q') || '';
+  const [query, setQuery] = useState(initialQuery);
+  const searchablePages = [
+    ['Gayrimenkul Rehberi','Rehber','Ev alma, satma ve kiralama kararları; tapu ve sözleşme süreçleri, bölgesel fiyat hareketleri ve doğru karşılaştırma yöntemleri.','/blog/rehber'],
+    ['Gayrimenkul Hukuku','Realty Kütüphane','Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler.','/blog/hukuk'],
+    ['Sektörden Haberler','Realty Kütüphane','Gayrimenkul piyasasındaki güncel gelişmeler ve gündem notları.','/blog/haberler'],
+    ['Yatırım Analizleri','Realty Kütüphane','Bölge, metrekare fiyatı, kira getirisi ve yatırım fırsatları.','/blog/analizler'],
+    ['Hakkımızda','Kurumsal','Realty Center kurumsal vizyonu, güven anlayışı, uzmanlık ve franchise ağı.','/kurumsal/hakkimizda'],
+    ['Yönetim Kurulumuz','Kurumsal','Stratejik karar alma, kurumsal gelişim ve kalite standartları.','/kurumsal/yonetim-kurulu'],
+    ['Referanslarımız','Kurumsal','Ofis ağı, danışman ağı, iş ortaklıkları ve tamamlanan portföy eşleştirmeleri.','/kurumsal/referanslar'],
+    ['Neden Realty Center?','Kurumsal','Teknolojik altyapı, eğitim, tanıtım, franchise ve danışmanlık avantajları.','/neden-realty-center'],
+    ['Ofislerimiz','Kurumsal','Türkiye genelindeki Realty Center franchise ofisleri ve iletişim bilgileri.','/ofislerimiz'],
+    ['Danışmanlarımız','Kurumsal','Uzman gayrimenkul danışmanları, şehir ve ilçe bazlı danışman arama.','/danismanlarimiz'],
+    ['Projelerimiz','Gayrimenkul','Yeni konut, ticari yatırım ve yaşam projeleri.','/projelerimiz'],
+    ['Harita ile Ara','Gayrimenkul','Türkiye haritasından şehir, ilçe ve konuma göre ilan arama.','/harita-ile-ara'],
+    ['Yapay Zeka Gayrimenkul Asistanı','Teknoloji','Uygun ilanlar, metrekare fiyatı, kira getirisi, yatırım geri dönüşü ve otomatik değerleme.','/ai-karar-asistani'],
+    ['Franchise Ol','Başvuru','Realty Center franchise ağına katılma ve ofis başvurusu.','/franchise-basvuru'],
+    ['Danışman Ol','Başvuru','Gayrimenkul danışmanlığı kariyeri ve başvuru formu.','/danisman-basvuru'],
+    ['KVKK Aydınlatma Metni','Yasal','Kişisel verilerin işlenmesi, saklanması ve kullanıcı hakları.','/kvkk'],
+    ['Çerez Politikası','Yasal','Zorunlu, işlevsel ve analitik çerezlerin kullanım amaçları.','/cerez-politikasi'],
+    ['Gizlilik Politikası','Yasal','Kullanıcı bilgilerinin gizliliği ve korunması.','/gizlilik-politikasi'],
+    ['Kullanım Koşulları','Yasal','Site kullanımı, içerikler ve kullanıcı sorumlulukları.','/kullanim-kosullari']
+  ].map(([title,category,content,to]) => ({ title, category, content, to }));
+  const index = [
+    ...searchablePages,
+    ...SAMPLE_LISTINGS.map((item) => ({ title: item.title, category: 'İlan', content: `${item.type} ${item.propertyType} ${item.city} ${item.district} ${item.neighborhood} ${item.rooms} ${item.area} metrekare ${item.description || ''}`, to: `/ilan/${item.id}` })),
+    ...SAMPLE_AGENTS.map((item) => ({ title: item.name, category: 'Danışman', content: `${item.title} ${item.city} ${item.district} ${item.office} ${item.email}`, to: '/danismanlarimiz' })),
+    ...SAMPLE_OFFICES.map((item) => ({ title: item.name, category: 'Ofis', content: `${item.city} ${item.district} ${item.address} ${item.manager}`, to: '/ofislerimiz' })),
+    ...WHY_REALTY_CENTER_ITEMS.map((content) => ({ title: content, category: 'Neden Realty Center?', content, to: '/neden-realty-center' }))
+  ];
+  const terms = initialQuery.toLocaleLowerCase('tr-TR').split(/\s+/).filter(Boolean);
+  const results = terms.length ? index.filter((item) => { const haystack = `${item.title} ${item.category} ${item.content}`.toLocaleLowerCase('tr-TR'); return terms.every((term) => haystack.includes(term)); }) : [];
+  const submit = (event: React.FormEvent) => { event.preventDefault(); if (query.trim()) navigate(`/arama?q=${encodeURIComponent(query.trim())}`); };
+  return <div className="min-h-[65vh] bg-slate-50 py-12"><div className="mx-auto max-w-5xl px-6"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER SİTE İÇİ ARAMA</p><h1 className="mt-2 text-3xl font-black text-slate-900">Tüm sitede arayın</h1><form onSubmit={submit} className="mt-6 flex overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="İlan, rehber yazısı, danışman, ofis veya sayfa ara..." className="min-w-0 flex-1 px-5 py-4 text-sm font-semibold outline-none"/><button className="bg-red-700 px-6 text-sm font-black text-white">Ara</button></form><div className="mt-7 flex items-center justify-between border-b border-slate-200 pb-3"><h2 className="font-black text-slate-900">“{initialQuery}” sonuçları</h2><span className="text-xs font-bold text-slate-500">{results.length} sonuç</span></div>{results.length ? <div className="divide-y divide-slate-200">{results.map((item,index) => <Link key={`${item.to}-${item.title}-${index}`} to={item.to} className="group block py-5"><span className="text-[10px] font-black uppercase tracking-widest text-red-700">{item.category}</span><h3 className="mt-1 text-lg font-black text-slate-900 group-hover:text-red-700">{item.title}</h3><p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-600">{item.content}</p></Link>)}</div> : <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-10 text-center"><Search className="mx-auto h-8 w-8 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">Aramanızla eşleşen içerik bulunamadı.</p><p className="mt-1 text-xs text-slate-500">Daha kısa veya farklı bir kelime deneyebilirsiniz.</p></div>}</div></div>;
+}
+
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -732,16 +771,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
   const submitSiteSearch = (event: React.FormEvent) => {
     event.preventDefault();
-    const query = siteSearch.trim().toLocaleLowerCase('tr-TR');
-    if (!query) return;
-    const listing = SAMPLE_LISTINGS.find((item) => `${item.title} ${item.city} ${item.district} ${item.neighborhood} ${item.propertyType}`.toLocaleLowerCase('tr-TR').includes(query));
-    const pages: Array<[string[], string]> = [
-      [['kurumsal', 'hakkımızda', 'hakkimizda'], '/kurumsal/hakkimizda'], [['ofis', 'ofisler'], '/ofislerimiz'],
-      [['danışman', 'danisman'], '/danismanlarimiz'], [['proje', 'projeler'], '/projelerimiz'], [['franchise'], '/franchise-basvuru'],
-      [['blog', 'rehber', 'kütüphane'], '/blog/rehber'], [['iletişim', 'iletisim'], '/iletisim'], [['harita'], '/harita-ile-ara']
-    ];
-    const page = pages.find(([keywords]) => keywords.some((keyword) => query.includes(keyword)));
-    navigate(listing ? `/ilan/${listing.id}` : page?.[1] || `/ilanlarimiz?search=${encodeURIComponent(siteSearch.trim())}`);
+    if (!siteSearch.trim()) return;
+    navigate(`/arama?q=${encodeURIComponent(siteSearch.trim())}`);
     setSearchOpen(false);
   };
 
@@ -4211,6 +4242,7 @@ export default function RealtyCenterApp() {
             <Route path="/cerez-politikasi" element={<LegalInfoPage title="Çerez Politikası" description="Zorunlu, işlevsel ve analitik çerezlerin kullanım amaçları ile kullanıcı tercihlerini nasıl yönetebileceğini açıklar." />} />
             <Route path="/kullanim-kosullari" element={<LegalInfoPage title="Kullanım Koşulları" description="Web sitesine erişim, içeriklerin kullanımı, kullanıcı sorumlulukları ve hizmet kapsamına ilişkin koşulları açıklar." />} />
             <Route path="/ilan-yayinlama-kurallari" element={<LegalInfoPage title="İlan Yayınlama Kuralları" description="İlan bilgilerinin doğruluğu, görsel kullanımı, yetkilendirme, güncellik ve hukuka uygunluk konularındaki yayın ilkelerini açıklar." />} />
+            <Route path="/arama" element={<SiteSearchPage />} />
 
             <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
             <Route path="/ofislerimiz" element={<OfficesPage />} />
