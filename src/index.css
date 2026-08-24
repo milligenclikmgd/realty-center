@@ -149,7 +149,7 @@
   content: '';
   position: absolute;
   right: 14%;
-  bottom: 13px;
+  bottom: 5px;
   left: 14%;
   height: 2px;
   border-radius: 9999px;
@@ -157,6 +157,10 @@
   box-shadow: 0 0 8px rgba(255,255,255,.8);
   transform: scaleX(0);
   transition: transform .25s ease;
+}
+.realty-header-link {
+  padding-top: 8px;
+  padding-bottom: 13px;
 }
 .realty-header-link:hover { background: rgba(205,1,30,.34); text-shadow: 0 1px 8px rgba(0,0,0,.2); }
 .realty-header-link:hover::after { transform: scaleX(1); }
