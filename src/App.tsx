@@ -2188,24 +2188,25 @@ function AgentsPage() {
 function ListingCategoriesPage() {
   const navigate = useNavigate();
   const groups = [
-    { title: 'SATILIK', description: 'Satın almak istediğiniz gayrimenkul türünü seçin.', accent: 'text-red-700', line: 'bg-red-700', items: [
-      { title: 'Konut', subtitle: 'Daire, rezidans ve müstakil ev', icon: '🏠', propertyType: 'Ev', tone: 'border-rose-200 bg-rose-50/70 hover:bg-rose-100' },
-      { title: 'Villa', subtitle: 'Müstakil, ikiz ve lüks villalar', icon: '🏡', propertyType: 'Villa', tone: 'border-amber-200 bg-amber-50/70 hover:bg-amber-100' },
-      { title: 'Arsa', subtitle: 'Konut, ticari, sanayi ve tarla', icon: '🌳', propertyType: 'Arsa', tone: 'border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100' },
-      { title: 'İşyeri', subtitle: 'Ofis, dükkân, plaza ve fabrika', icon: '🏢', propertyType: 'Dükkan', tone: 'border-sky-200 bg-sky-50/70 hover:bg-sky-100' }
-    ]},
-    { title: 'KİRALIK', description: 'Kiralamak istediğiniz gayrimenkul türünü seçin.', accent: 'text-[#0b345f]', line: 'bg-[#0b345f]', items: [
-      { title: 'Konut', subtitle: 'Daire, rezidans ve müstakil ev', icon: '🔑', propertyType: 'Ev', tone: 'border-violet-200 bg-violet-50/70 hover:bg-violet-100' },
-      { title: 'Villa', subtitle: 'Müstakil, ikiz ve lüks villalar', icon: '🏘️', propertyType: 'Villa', tone: 'border-orange-200 bg-orange-50/70 hover:bg-orange-100' },
-      { title: 'Arsa', subtitle: 'Açık alan, tarla ve ticari arazi', icon: '🌿', propertyType: 'Arsa', tone: 'border-lime-200 bg-lime-50/70 hover:bg-lime-100' },
-      { title: 'İşyeri', subtitle: 'Ofis, dükkân, depo ve fabrika', icon: '🏬', propertyType: 'Dükkan', tone: 'border-cyan-200 bg-cyan-50/70 hover:bg-cyan-100' }
-    ]}
+    { title: 'SATILIK', icon: '🏠', transaction: 'Satılık', tone: 'border-red-200', head: 'bg-red-700', cell: 'hover:bg-red-50 hover:text-red-700', items: [['Konut','Ev'],['Villa','Villa'],['Arsa','Arsa'],['Tümünü Gör','']] },
+    { title: 'KİRALIK', icon: '🔑', transaction: 'Kiralık', tone: 'border-blue-200', head: 'bg-[#0b4c84]', cell: 'hover:bg-blue-50 hover:text-blue-700', items: [['Konut','Ev'],['İşyeri','Dükkan'],['Villa','Villa'],['Tümünü Gör','']] },
+    { title: 'DEVREN', icon: '🔄', transaction: 'Devren Satılık', tone: 'border-violet-200', head: 'bg-violet-700', cell: 'hover:bg-violet-50 hover:text-violet-700', items: [['İşyeri','Dükkan'],['Dükkan','Dükkan'],['Ofis','Ofis'],['Tümünü Gör','']] },
+    { title: 'PROJELER', icon: '🏗️', route: '/projelerimiz', tone: 'border-amber-200', head: 'bg-amber-600', cell: 'hover:bg-amber-50 hover:text-amber-700', items: [['Yeni Konut',''],['Ticari Proje',''],['Villa Projesi',''],['Tümünü Gör','']] },
+    { title: 'ARSA', icon: '🌳', transaction: 'Satılık', tone: 'border-emerald-200', head: 'bg-emerald-700', cell: 'hover:bg-emerald-50 hover:text-emerald-700', items: [['Konut','Arsa'],['Ticari','Arsa'],['Sanayi','Arsa'],['Tarla','Arsa']] },
+    { title: 'TİCARİ', icon: '🏢', transaction: 'Satılık', tone: 'border-cyan-200', head: 'bg-cyan-700', cell: 'hover:bg-cyan-50 hover:text-cyan-700', items: [['Plaza','Ofis'],['Ofis','Ofis'],['Dükkan','Dükkan'],['Tümünü Gör','']] }
   ];
+  const openCategory = (group: typeof groups[number], propertyType: string) => {
+    if ('route' in group && group.route) { navigate(group.route); return; }
+    const query = new URLSearchParams();
+    if ('transaction' in group && group.transaction) query.set('type', group.transaction);
+    if (propertyType) query.set('propertyType', propertyType);
+    navigate(`/ilanlarimiz?${query.toString()}`);
+  };
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="flex flex-col gap-5 border-b border-slate-200 pb-8 sm:flex-row sm:items-end sm:justify-between"><div><span className="inline-flex rounded-full border border-red-200 bg-red-50 px-3.5 py-1.5 text-xs font-black tracking-widest text-red-700">PORTFÖY KATEGORİLERİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Aradığınız gayrimenkule <span className="text-red-700">doğrudan ulaşın</span></h1><p className="mt-2 text-sm font-medium text-slate-600">İşlem türünü ve gayrimenkul kategorisini seçerek ilanları hızlıca filtreleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex items-center justify-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg hover:bg-red-800">Tüm İlanları Gör <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
-        <div className="mt-10 space-y-12">{groups.map((group) => <section key={group.title}><div className="mb-5 flex items-end gap-4"><div><p className={`text-2xl font-black tracking-[.08em] ${group.accent}`}>{group.title}</p><p className="mt-1 text-xs font-semibold text-slate-500">{group.description}</p></div><span className={`mb-1 hidden h-1 flex-1 rounded-full opacity-15 sm:block ${group.line}`}/></div><div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">{group.items.slice(0,4).map((item) => <button key={`${group.title}-${item.title}`} onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(group.title === 'SATILIK' ? 'Satılık' : 'Kiralık') + '&propertyType=' + encodeURIComponent(item.propertyType))} className={`group min-h-44 rounded-2xl border p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl ${item.tone}`}><div className="flex items-start justify-between"><span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-2xl shadow-sm">{item.icon}</span><ArrowRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-red-700"/></div><h2 className="mt-5 text-xl font-black text-slate-900">{item.title}</h2><p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{item.subtitle}</p><span className="mt-4 inline-flex text-[10px] font-black tracking-widest text-slate-500">{group.title} İLANLAR</span></button>)}</div></section>)}</div>
+        <div className="flex flex-col gap-5 border-b border-slate-200 pb-8 sm:flex-row sm:items-end sm:justify-between"><div><span className="inline-flex rounded-full border border-red-200 bg-red-50 px-3.5 py-1.5 text-xs font-black tracking-widest text-red-700">PORTFÖY KATEGORİLERİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Gayrimenkul kategorileri</h1><p className="mt-2 text-sm font-medium text-slate-600">Önce ana kategoriyi, ardından kare içindeki gayrimenkul türünü seçin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex items-center justify-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg hover:bg-red-800">Tüm İlanları Gör <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
+        <div className="mt-10 grid gap-7 md:grid-cols-2 xl:grid-cols-3">{groups.map((group) => <section key={group.title}><div className={`overflow-hidden rounded-3xl border-2 bg-white shadow-[0_12px_30px_rgba(15,23,42,.08)] ${group.tone}`}><div className={`flex items-center gap-3 px-6 py-5 text-white ${group.head}`}><span className="text-3xl">{group.icon}</span><div><h2 className="text-xl font-black tracking-[.08em]">{group.title}</h2><p className="mt-0.5 text-[10px] font-bold text-white/75">Alt kategoriyi seçin</p></div></div><div className="grid aspect-square grid-cols-2 grid-rows-2 divide-x divide-y divide-slate-200">{group.items.map(([label,propertyType]) => <button key={`${group.title}-${label}`} onClick={() => openCategory(group, propertyType)} className={`group flex flex-col items-center justify-center gap-2 bg-white p-4 text-center text-sm font-black text-slate-800 transition ${group.cell}`}><span>{label}</span><ArrowRight className="h-4 w-4 text-slate-300 transition group-hover:translate-x-1 group-hover:text-current"/></button>)}</div></div></section>)}</div>
       </div>
     </div>
   );
