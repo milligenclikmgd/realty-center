@@ -737,6 +737,20 @@
 /* Bilgi Merkezi header'a bağlı açılır; hover geçişinde boşluk bırakmaz. */
 .information-dropdown::before{display:none;}
 
+/* Kategori bloklarında yalnızca yazı değil, alt kutular da pastel kimlik rengi taşır. */
+[class~="border-red-100"] button { background-color: rgba(254, 226, 226, .72); }
+[class~="border-blue-100"] button { background-color: rgba(219, 234, 254, .72); }
+[class~="border-violet-100"] button { background-color: rgba(237, 233, 254, .76); }
+[class~="border-amber-100"] button { background-color: rgba(254, 243, 199, .72); }
+[class~="border-emerald-100"] button { background-color: rgba(209, 250, 229, .70); }
+[class~="border-cyan-100"] button { background-color: rgba(207, 250, 254, .72); }
+[class~="border-red-100"] button:hover { background-color: rgb(254, 202, 202); }
+[class~="border-blue-100"] button:hover { background-color: rgb(191, 219, 254); }
+[class~="border-violet-100"] button:hover { background-color: rgb(221, 214, 254); }
+[class~="border-amber-100"] button:hover { background-color: rgb(253, 230, 138); }
+[class~="border-emerald-100"] button:hover { background-color: rgb(167, 243, 208); }
+[class~="border-cyan-100"] button:hover { background-color: rgb(165, 243, 252); }
+
 /* Alan çiziminde harita sürükleme eli yerine net bir seçim imleci göster. */
 .leaflet-container.map-drawing-mode,
 .leaflet-container.map-drawing-mode.leaflet-grab,
