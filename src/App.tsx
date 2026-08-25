@@ -711,19 +711,12 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
         </div>
       </Link>
 
-      <div className="p-3 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
+      <div className="p-3 border-t border-slate-100 bg-slate-50 flex items-center justify-between gap-3 text-xs">
         <div>
           <span className="text-[10px] text-slate-400 font-bold block">Danışman</span>
           <span className="font-extrabold text-slate-800">{item.agentName}</span>
         </div>
-        <a 
-          href={`tel:${item.agentPhone.replace(/\s+/g, '')}`}
-          onClick={(event) => event.stopPropagation()}
-          className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-700/20"
-        >
-          <Phone className="w-3 h-3" />
-          <span>Ara</span>
-        </a>
+        <div className="flex items-center gap-2"><Link to={`/ilan/${item.id}`} onClick={(event) => event.stopPropagation()} className="inline-flex items-center gap-1 rounded-lg border border-red-200 bg-white px-2.5 py-1.5 font-black text-red-700 transition hover:bg-red-50">İncele <ArrowRight className="h-3 w-3"/></Link><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} onClick={(event) => event.stopPropagation()} className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-700/20"><Phone className="w-3 h-3" /><span>Ara</span></a></div>
       </div>
     </div>
   );
@@ -1195,7 +1188,7 @@ function FeaturedListingsShowcase() {
                   </div>
                   <div className="shrink-0 text-right">
                     <p className="text-base font-black text-red-700 sm:text-xl">{item.price.toLocaleString('tr-TR')} ₺</p>
-                    <span className="mt-1 hidden items-center justify-end text-[10px] font-black text-slate-500 sm:flex">İlanı İncele <ArrowRight className="ml-1 h-3.5 w-3.5" /></span>
+                    <span className="mt-1 flex items-center justify-end text-[10px] font-black text-slate-500">İlanı İncele <ArrowRight className="ml-1 h-3.5 w-3.5" /></span>
                   </div>
                 </div>
               </Link>
