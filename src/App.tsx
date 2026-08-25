@@ -806,9 +806,13 @@ function SiteSearchPage() {
 }
 
 function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }: { item: HeaderMenuItem; root?: boolean; align?: 'left' | 'right'; menuLinkClass: (to: string) => string }) {
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hasChildren = item.children.length > 0;
   if (!hasChildren) return <Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}>{item.label}</Link>;
-  return <div className="group/menu relative z-30"><Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}><span>{item.label}</span><ChevronDown className={`ml-1 h-3 w-3 transition ${root ? 'group-hover/menu:rotate-180' : '-rotate-90'}`}/></Link><div className={`invisible absolute z-50 w-64 translate-y-2 rounded-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : `top-0 ${align === 'right' ? 'right-full mr-1' : 'left-full ml-1'}`}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
+  const enter = () => { if (closeTimer.current) clearTimeout(closeTimer.current); setOpen(true); };
+  const leave = () => { closeTimer.current = setTimeout(() => setOpen(false),120); };
+  return <div className="relative z-30" onMouseEnter={enter} onMouseLeave={leave}><Link to={item.path} className={root ? menuLinkClass(item.path) : `flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black transition ${open ? 'bg-red-50 text-red-700' : 'text-slate-700 hover:bg-red-50 hover:text-red-700'}`}><span>{item.label}</span><ChevronDown className={`ml-1 h-3 w-3 transition duration-200 ${root ? (open ? 'rotate-180' : '') : (align === 'right' ? 'rotate-90' : '-rotate-90')}`}/></Link><div className={`absolute z-50 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl transition duration-200 ${open ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-1 opacity-0'} ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : `top-0 ${align === 'right' ? 'right-full' : 'left-full'}`}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
 }
 
 function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
