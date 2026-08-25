@@ -796,9 +796,11 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     [t.agents, '/danismanlarimiz'],
     [t.listings, '/ilan-kategorileri'],
     [t.projects, '/projelerimiz'],
-    ['Videolar', '/videolar']
+    ['Videolar', '/videolar'],
+    ['Keşfet', '/kesfet/egitim']
   ];
   const rightLinks = [
+    ['Kazanç Modeli', '/kazanc-modeli/katki-payi'],
     [t.ai.replace('🤖 ', ''), '/ai-karar-asistani'],
     ['Realty Kütüphane', '/blog/rehber'],
     ['Neden Realty Center?', '/neden-realty-center'],
@@ -808,6 +810,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   ];
   const corporateMenu = [['Hakkımızda','/kurumsal/hakkimizda'],['Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Belgelerimiz','/kurumsal/belgelerimiz'],['Referanslarımız','/kurumsal/referanslar'],['İş Ortaklarımız','/kurumsal/is-ortaklarimiz']];
   const contactMenu = [['İletişim Bilgilerimiz','/iletisim'],['Müşteri Memnuniyeti','/geri-bildirim']];
+  const discoverMenu = [['Eğitim','/kesfet/egitim'],['Geleceğim İçin','/kesfet/gelecegim-icin'],['Sistem ve Modeller','/kesfet/sistem-ve-modeller'],['Gruplar','/kesfet/gruplar'],['Realty Center Kültürü','/kesfet/realty-center-kulturu'],['Dijital Emlakçılık','/kesfet/dijital-emlakcilik']];
+  const earningMenu = [['Katkı Payı','/kazanc-modeli/katki-payi'],['Paylaşım Modeli','/kazanc-modeli/paylasim-modeli'],['Keplemek','/kazanc-modeli/keplemek']];
   const isListingDetail = location.pathname.startsWith('/ilan/');
   const isHomePage = location.pathname === '/';
 
@@ -842,7 +846,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <Link to="/" onClick={close} className="my-2 flex w-[150px] shrink-0 items-center justify-center rounded-sm bg-white px-3 shadow-sm lg:w-[175px]" aria-label="Realty Center ana sayfa">
             <img src="/rlogotr.png" alt="Realty Center Türkiye" className="h-11 w-full object-contain lg:h-12" />
           </Link>
-          <nav className="ml-3 hidden min-w-0 flex-1 items-stretch xl:grid xl:grid-cols-12">
+          <nav className="ml-3 hidden min-w-0 flex-1 items-stretch xl:grid" style={{ gridTemplateColumns: 'repeat(14,minmax(0,1fr))' }}>
             {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`detail-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
           </nav>
           <div className="ml-auto flex items-center gap-2 xl:hidden">
@@ -858,7 +862,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   return (
     <header className="realty-header relative isolate z-40 w-full text-white">
       <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden lg:block ${showCompactHeader ? 'is-visible' : ''}`}>
-        <nav className="mx-auto grid min-h-[52px] w-full max-w-[1920px] grid-cols-12 items-stretch px-6 2xl:px-10">
+        <nav className="mx-auto grid min-h-[52px] w-full max-w-[1920px] items-stretch px-6 2xl:px-10" style={{ gridTemplateColumns: 'repeat(14,minmax(0,1fr))' }}>
           {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`compact-${label}-${to}`} to={to} className="realty-compact-link flex items-center justify-center px-2 text-center text-[10px] font-black leading-tight text-white 2xl:text-xs">{label}</Link>)}
         </nav>
       </div>
@@ -885,8 +889,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
-          <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+          <div className="grid min-w-0 grid-cols-7 items-stretch">
+            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : to.startsWith('/kesfet/') ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-60 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{discoverMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
 
           <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center ana sayfa">
@@ -896,8 +900,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             </span>
           </Link>
 
-          <div className="grid min-w-0 grid-cols-6 items-stretch">
-            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+          <div className="grid min-w-0 grid-cols-7 items-stretch">
+            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : to.startsWith('/kazanc-modeli/') ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{earningMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
           </div>
         </nav>
 
@@ -915,6 +919,24 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 text-sm font-black xl:hidden">{[...leftLinks.slice(1), ...rightLinks.slice(0,-1)].map(([label, to]) => <Link key={`${label}-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white transition hover:bg-white/20">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">KURUMSAL</p>{corporateMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">İLETİŞİM</p>{contactMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}</nav>}
     </header>
   );
+}
+
+function DiscoverEarningPage({ section }: { section: 'discover' | 'earning' }) {
+  const { slug = '' } = useParams();
+  const pages: Record<string, { title: string; eyebrow: string; image: string; text: string }> = {
+    'egitim': { title: 'Eğitim', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400', text: 'Realty Center eğitim programları; gayrimenkul danışmanlarının mesleki bilgi, saha becerisi ve müşteri deneyimi alanlarında sürekli gelişmesini destekler. Temel başlangıç eğitimlerinden ileri seviye satış, pazarlama ve mevzuat çalışmalarına kadar planlı bir öğrenme yolculuğu sunar.' },
+    'gelecegim-icin': { title: 'Geleceğim İçin', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400', text: 'Gayrimenkul sektöründe kendi kariyerini kurmak isteyen profesyonellere güçlü marka desteği, gelişim olanakları ve sürdürülebilir bir iş modeli sunuyoruz. Deneyiminiz ne olursa olsun, doğru eğitim ve mentorlukla geleceğinizi bugünden şekillendirebilirsiniz.' },
+    'sistem-ve-modeller': { title: 'Sistem ve Modeller', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400', text: 'Realty Center sistemleri; portföy yönetimi, müşteri takibi, pazarlama, raporlama ve ekip çalışmasını ortak standartlarda birleştirir. Kanıtlanmış iş modellerimiz danışmanların zamanını verimli kullanmasına ve ölçülebilir sonuçlar üretmesine yardımcı olur.' },
+    'gruplar': { title: 'Gruplar', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=90&w=1400', text: 'Uzmanlık, bölge ve ilgi alanlarına göre oluşturulan çalışma grupları sayesinde bilgi paylaşımı ve iş birliği güçlenir. Danışmanlarımız ortak portföy, deneyim ve fırsatları güvene dayalı bir ağ içerisinde paylaşır.' },
+    'realty-center-kulturu': { title: 'Realty Center Kültürü', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400', text: 'Önce Güven anlayışımız; şeffaflık, dayanışma, sürekli gelişim ve başarıyı paylaşma değerleri üzerine kuruludur. Realty Center kültürü yalnızca bir çalışma biçimi değil, müşterilerimiz ve iş ortaklarımızla kurduğumuz uzun vadeli ilişkinin temelidir.' },
+    'dijital-emlakcilik': { title: 'Dijital Emlakçılık', eyebrow: 'KEŞFET', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=90&w=1400', text: 'Dijital portföy yönetimi, veri odaklı analiz, yapay zekâ destekli arama ve güçlü çevrim içi pazarlama araçlarıyla gayrimenkul danışmanlığını geleceğe taşıyoruz. Teknoloji, danışmanın yerini almak yerine uzmanlığını daha görünür ve etkili hâle getirir.' },
+    'katki-payi': { title: 'Katkı Payı', eyebrow: 'KAZANÇ MODELİ', image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400', text: 'Katkı payı modeli; marka altyapısı, teknoloji, eğitim, pazarlama ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf bir sistemdir. Danışman ve ofislerin aldığı hizmetlerle doğru orantılı, anlaşılır ve planlanabilir bir yapı hedeflenir.' },
+    'paylasim-modeli': { title: 'Paylaşım Modeli', eyebrow: 'KAZANÇ MODELİ', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400', text: 'Realty Center paylaşım modeli, üretilen değerin adil ve açık kurallarla paylaşılmasını esas alır. Ortak portföy çalışmaları, yönlendirmeler ve ekip başarıları; tarafların katkısını koruyan kurumsal sistem içerisinde yönetilir.' },
+    'keplemek': { title: 'Keplemek', eyebrow: 'KAZANÇ MODELİ', image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400', text: 'Kepleme sistemi, belirlenen üretim seviyesine ulaşan danışmanın kazanç paylaşımında daha avantajlı bir döneme geçmesini ifade eder. Hedef; yüksek performansı ödüllendiren, danışmanın büyümesini destekleyen ve kazanç potansiyelini artıran sürdürülebilir bir model oluşturmaktır.' }
+  };
+  const fallback = section === 'discover' ? pages.egitim : pages['katki-payi'];
+  const page = pages[slug] || fallback;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid-cols-2"><img src={page.image} alt={page.title} className="h-72 w-full object-cover lg:h-full lg:min-h-[520px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">{page.eyebrow}</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.title}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 text-sm leading-8 text-slate-600">{page.text}</p><Link to={section === 'discover' ? '/danisman-basvuru' : '/franchise-basvuru'} className="mt-8 inline-flex w-fit items-center text-sm font-black text-red-700">Daha fazla bilgi alın <ArrowRight className="ml-2 h-4 w-4"/></Link></article></div></div></main>;
 }
 
 function CustomerFeedbackPage() {
@@ -4452,6 +4474,8 @@ export default function RealtyCenterApp() {
             <Route path="/kurumsal/belgelerimiz" element={<DocumentsPage />} />
             <Route path="/kurumsal/referanslar" element={<LogoShowcasePage mode="references" />} />
             <Route path="/kurumsal/is-ortaklarimiz" element={<LogoShowcasePage mode="partners" />} />
+            <Route path="/kesfet/:slug" element={<DiscoverEarningPage section="discover" />} />
+            <Route path="/kazanc-modeli/:slug" element={<DiscoverEarningPage section="earning" />} />
             <Route path="/blog/rehber" element={<BlogCategoryPage category="Rehber" title="Gayrimenkul Rehberi" description="Ev alma, satma ve kiralama kararlarında ihtiyaç duyacağınız pratik bilgiler." />} />
             <Route path="/blog/hukuk" element={<BlogCategoryPage category="Hukuk" title="Gayrimenkul Hukuku" description="Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler." />} />
             <Route path="/blog/haberler" element={<BlogCategoryPage category="Haberler" title="Sektörden Haberler" description="Gayrimenkul piyasasındaki güncel gelişmeler ve gündem notları." />} />
