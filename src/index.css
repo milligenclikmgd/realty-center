@@ -155,8 +155,8 @@
 .realty-header-disc {
   position: relative;
   display: flex;
-  width: 210px;
-  height: 210px;
+  width: 196px;
+  height: 196px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -166,7 +166,7 @@
   box-shadow: 0 15px 32px rgba(0,0,0,.24), inset 0 0 0 5px var(--rc-red), inset 0 0 17px rgba(7,29,59,.05);
   transition: transform .3s ease;
 }
-.realty-header-main-logo { width: 190px; max-width: 94%; }
+.realty-header-main-logo { width: 176px; max-width: 92%; }
 
 .realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
 .realty-header-emblem-inner {
