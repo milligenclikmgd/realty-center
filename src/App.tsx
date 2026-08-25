@@ -658,10 +658,10 @@ function RealtyNetworkActivityPanel() {
 
 
 function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
-  const navigate = useNavigate();
   return (
-    <div role="link" tabIndex={0} onClick={() => navigate(`/ilan/${item.id}`)} onKeyDown={(event) => { if (event.key === 'Enter') navigate(`/ilan/${item.id}`); }} className="listing-cinematic-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:shadow-2xl hover:border-red-700 transition-all duration-300 flex flex-col justify-between group h-full cursor-pointer">
-      <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanını incele`} className="block text-inherit no-underline">
+    <article className="listing-cinematic-card relative flex h-full cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:border-red-700 hover:shadow-2xl group">
+      <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanını incele`} className="absolute inset-0 z-10" />
+      <div className="pointer-events-none relative z-20">
         <div className="relative h-48 overflow-hidden bg-slate-100">
           <img 
             src={item.image} 
@@ -709,16 +709,16 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
             </div>
           </div>
         </div>
-      </Link>
+      </div>
 
-      <div className="p-3 border-t border-slate-100 bg-slate-50 flex items-center justify-between gap-3 text-xs">
+      <div className="pointer-events-none relative z-20 flex items-center justify-between gap-3 border-t border-slate-100 bg-slate-50 p-3 text-xs">
         <div>
           <span className="text-[10px] text-slate-400 font-bold block">Danışman</span>
           <span className="font-extrabold text-slate-800">{item.agentName}</span>
         </div>
-        <div className="flex items-center gap-2"><Link to={`/ilan/${item.id}`} onClick={(event) => event.stopPropagation()} className="inline-flex items-center gap-1 rounded-lg border border-red-200 bg-white px-2.5 py-1.5 font-black text-red-700 transition hover:bg-red-50">İncele <ArrowRight className="h-3 w-3"/></Link><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} onClick={(event) => event.stopPropagation()} className="bg-red-700 hover:bg-red-800 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1 transition shadow-md shadow-red-700/20"><Phone className="w-3 h-3" /><span>Ara</span></a></div>
+        <div className="pointer-events-auto flex items-center gap-2"><Link to={`/ilan/${item.id}`} className="relative z-30 inline-flex items-center gap-1 rounded-lg border border-red-200 bg-white px-2.5 py-1.5 font-black text-red-700 transition hover:bg-red-50">İncele <ArrowRight className="h-3 w-3"/></Link><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} className="relative z-30 flex items-center space-x-1 rounded-lg bg-red-700 px-3 py-1.5 font-bold text-white shadow-md shadow-red-700/20 transition hover:bg-red-800"><Phone className="w-3 h-3" /><span>Ara</span></a></div>
       </div>
-    </div>
+    </article>
   );
 }
 
