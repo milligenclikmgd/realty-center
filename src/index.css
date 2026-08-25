@@ -110,6 +110,30 @@
   background: linear-gradient(110deg, transparent 18%, rgba(255,255,255,.045) 36%, transparent 53%);
 }
 
+.realty-header-bar::after {
+  content: 'REALTY CENTER';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #870015;
+  font-size: clamp(3.8rem, 7.2vw, 7.5rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  opacity: .38;
+  pointer-events: none;
+  user-select: none;
+}
+
+.realty-header-bar > * {
+  position: relative;
+  z-index: 1;
+}
+
 .realty-header-emblem {
   position: relative;
   z-index: 10;
