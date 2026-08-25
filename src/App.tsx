@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
@@ -85,6 +85,16 @@ const getCustomerFeedback = (): CustomerFeedback[] => {
 const saveCustomerFeedback = (items: CustomerFeedback[]) => {
   localStorage.setItem('realty-center-customer-feedback', JSON.stringify(items));
   window.dispatchEvent(new Event('realty-center-feedback-updated'));
+};
+
+type BuyerRequest = {
+  id: string; type: string; property: string; city: string; district: string; budget: string; payment: string; timing: string; name: string; phone: string;
+  createdAt: string; status: 'Yeni' | 'İnceleniyor' | 'Eşleştirildi'; officeNames: string[]; agentNames: string[];
+};
+const getBuyerRequests = (): BuyerRequest[] => { try { return JSON.parse(localStorage.getItem('realty-center-buyer-requests') || '[]'); } catch { return []; } };
+const saveBuyerRequests = (items: BuyerRequest[]) => {
+  localStorage.setItem('realty-center-buyer-requests', JSON.stringify(items));
+  window.dispatchEvent(new Event('realty-center-buyer-requests-updated'));
 };
 
 type ManagementMember = { id: string; name: string; title: string; image: string; biography: string };
@@ -1286,8 +1296,18 @@ function BuyerRequestModule() {
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ type: 'Satılık', property: 'Daire', city: 'Ankara', district: 'Çankaya', budget: '', payment: 'Kredi + Peşinat', timing: '1 ay içinde', name: '', phone: '' });
   const update = (key: keyof typeof form, value: string) => setForm({ ...form, [key]: value });
-  if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">✓</div><h2 className="mt-5 text-3xl font-black">Talebiniz uzman eşleştirme ekibine iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">Size uygun portföyleri hazırlıyor, kısa süre içinde sizinle iletişime geçiyoruz.</p></div></div></section>;
-  return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid lg:grid-cols-[.9fr_1.1fr]"><div className="bg-[#CD011E] p-8 text-white sm:p-10"><span className="text-xs font-black tracking-[.2em] text-white/75">ALICI TALEBİ</span><h2 className="mt-4 text-3xl font-black leading-tight sm:text-4xl">Siz Aradığınızı Söyleyin, Biz Bulalım</h2><p className="mt-4 text-sm leading-relaxed text-white/85">Kriterlerinizi paylaşın; uzmanlarımız uygun portföyleri sizin için eşleştirip size ulaşsın.</p><div className="mt-8 space-y-4 text-sm font-bold"><p>01 · İhtiyacınızı seçin</p><p>02 · Bölge ve bütçeyi belirtin</p><p>03 · Ödeme ve zaman planınızı paylaşın</p></div></div><div className="p-6 sm:p-10"><div className="mb-7 flex items-center gap-2">{[1,2,3].map(n=><span key={n} className={`h-1.5 flex-1 rounded-full ${n<=step?'bg-[#CD011E]':'bg-slate-200'}`}/>)}</div>{step===1&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">İLAN TÜRÜ<select value={form.type} onChange={e=>update('type',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Satılık</option><option>Kiralık</option></select></label><label className="text-xs font-black text-slate-700">NE ARIYORSUNUZ?<select value={form.property} onChange={e=>update('property',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option></select></label></div>}{step===2&&<div className="grid gap-4 sm:grid-cols-3"><label className="text-xs font-black text-slate-700">İL<input value={form.city} onChange={e=>update('city',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">İLÇE<input value={form.district} onChange={e=>update('district',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">BÜTÇE<input value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="Örn. 8.000.000 ₺" className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}{step===3&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">ÖDEME ŞEKLİ<select value={form.payment} onChange={e=>update('payment',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Kredi + Peşinat</option><option>Peşin</option><option>Takas</option></select></label><label className="text-xs font-black text-slate-700">SATIN ALMA ZAMANI<select value={form.timing} onChange={e=>update('timing',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Hemen</option><option>1 ay içinde</option><option>3 ay içinde</option></select></label><label className="text-xs font-black text-slate-700">AD SOYAD<input value={form.name} onChange={e=>update('name',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">TELEFON<input value={form.phone} onChange={e=>update('phone',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}<div className="mt-7 flex justify-between">{step>1?<button onClick={()=>setStep(step-1)} className="rounded-xl px-4 py-3 text-sm font-black text-slate-500">← Geri</button>:<span/>}<button onClick={()=>step<3?setStep(step+1):setSent(true)} className="rounded-xl bg-[#CD011E] px-6 py-3 text-sm font-black text-white shadow-lg">{step<3?'Devam Et →':'Talebimi Oluştur'}</button></div></div></div></div></section>;
+  const submitRequest = () => {
+    const normalize = (value: string) => value.trim().toLocaleLowerCase('tr-TR');
+    const city = normalize(form.city), district = normalize(form.district);
+    const cityOffices = SAMPLE_OFFICES.filter((office) => normalize(office.city) === city);
+    const matchedOffices = cityOffices.filter((office) => normalize(office.district) === district);
+    const offices = matchedOffices.length ? matchedOffices : cityOffices;
+    const agents = SAMPLE_AGENTS.filter((agent) => normalize(agent.city) === city && (!district || normalize(agent.district) === district || offices.some((office) => office.name === agent.office)));
+    saveBuyerRequests([{ id: `TR-${Date.now()}`, ...form, createdAt: new Date().toISOString(), status: 'Yeni', officeNames: offices.map((office) => office.name), agentNames: agents.map((agent) => agent.name) }, ...getBuyerRequests()]);
+    setSent(true);
+  };
+  if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">✓</div><h2 className="mt-5 text-3xl font-black">Talebiniz ilgili ekiplere iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">Yönetici paneli, ilgili ofis ve bölgedeki danışmanlar için bildirim oluşturuldu. Size uygun portföylerle kısa süre içinde iletişime geçiyoruz.</p></div></div></section>;
+  return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid lg:grid-cols-[.9fr_1.1fr]"><div className="bg-[#CD011E] p-8 text-white sm:p-10"><span className="text-xs font-black tracking-[.2em] text-white/75">ALICI TALEBİ</span><h2 className="mt-4 text-3xl font-black leading-tight sm:text-4xl">Siz Aradığınızı Söyleyin, Biz Bulalım</h2><p className="mt-4 text-sm leading-relaxed text-white/85">Kriterlerinizi paylaşın; uzmanlarımız uygun portföyleri sizin için eşleştirip size ulaşsın.</p><div className="mt-8 space-y-4 text-sm font-bold"><p>01 · İhtiyacınızı seçin</p><p>02 · Bölge ve bütçeyi belirtin</p><p>03 · Ödeme ve zaman planınızı paylaşın</p></div></div><div className="p-6 sm:p-10"><div className="mb-7 flex items-center gap-2">{[1,2,3].map(n=><span key={n} className={`h-1.5 flex-1 rounded-full ${n<=step?'bg-[#CD011E]':'bg-slate-200'}`}/>)}</div>{step===1&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">İLAN TÜRÜ<select value={form.type} onChange={e=>update('type',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Satılık</option><option>Kiralık</option></select></label><label className="text-xs font-black text-slate-700">NE ARIYORSUNUZ?<select value={form.property} onChange={e=>update('property',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option></select></label></div>}{step===2&&<div className="grid gap-4 sm:grid-cols-3"><label className="text-xs font-black text-slate-700">İL<input value={form.city} onChange={e=>update('city',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">İLÇE<input value={form.district} onChange={e=>update('district',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">BÜTÇE<input value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="Örn. 8.000.000 ₺" className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}{step===3&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">ÖDEME ŞEKLİ<select value={form.payment} onChange={e=>update('payment',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Kredi + Peşinat</option><option>Peşin</option><option>Takas</option></select></label><label className="text-xs font-black text-slate-700">SATIN ALMA ZAMANI<select value={form.timing} onChange={e=>update('timing',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Hemen</option><option>1 ay içinde</option><option>3 ay içinde</option></select></label><label className="text-xs font-black text-slate-700">AD SOYAD<input required value={form.name} onChange={e=>update('name',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">TELEFON<input required value={form.phone} onChange={e=>update('phone',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}<div className="mt-7 flex justify-between">{step>1?<button onClick={()=>setStep(step-1)} className="rounded-xl px-4 py-3 text-sm font-black text-slate-500">← Geri</button>:<span/>}<button onClick={()=>step<3?setStep(step+1):submitRequest()} className="rounded-xl bg-[#CD011E] px-6 py-3 text-sm font-black text-white shadow-lg">{step<3?'Devam Et →':'Talebimi Oluştur'}</button></div></div></div></div></section>;
 }
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
@@ -1485,6 +1505,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <FeaturedListingsShowcase />
 
+      <BuyerRequestModule />
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
           <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-white tracking-widest bg-red-700 px-3 py-1 rounded-full border border-red-700 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
@@ -1514,8 +1535,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center’ı takip edin.</h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
 
       <TurkeyListingMap />
-
-      <BuyerRequestModule />
 
       <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -3338,7 +3357,7 @@ function HeaderMenuEditorNode({ item, depth, onUpdate, onRemove, onAddChild }: {
 
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'messages' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -3349,6 +3368,7 @@ function SuperAdminDashboard() {
   const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', url: '', title: '', thumbnail: '' });
   const [videoSaving, setVideoSaving] = useState(false);
   const [feedbackItems, setFeedbackItems] = useState<CustomerFeedback[]>(getCustomerFeedback);
+  const [buyerRequests, setBuyerRequests] = useState<BuyerRequest[]>(getBuyerRequests);
   const [aboutStory, setAboutStory] = useState(getAboutStory);
   const [management, setManagement] = useState<ManagementMember[]>(getManagementTeam);
   const [corporateDocuments, setCorporateDocuments] = useState<CorporateDocument[]>(() => getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS));
@@ -3360,6 +3380,7 @@ function SuperAdminDashboard() {
   const [libraryCategories,setLibraryCategories]=useState<LibraryCategory[]>(getLibraryCategories);
   const [librarySaved,setLibrarySaved]=useState(false);
   const [editingLibraryArticle,setEditingLibraryArticle]=useState<{categoryId:string;articleId:string}|null>(null);
+  useEffect(() => { const refresh = () => setBuyerRequests(getBuyerRequests()); window.addEventListener('realty-center-buyer-requests-updated', refresh); return () => window.removeEventListener('realty-center-buyer-requests-updated', refresh); }, []);
 
   const updateManagedHeaderItem = (id: string, patch: Partial<HeaderMenuItem>) => setHeaderMenuItems((current) => updateHeaderMenuItem(current,id,patch));
   const removeManagedHeaderItem = (id: string) => setHeaderMenuItems((current) => removeHeaderMenuItem(current,id));
@@ -3495,6 +3516,7 @@ function SuperAdminDashboard() {
     { key: 'videos' as const, label: 'Video Yönetimi', icon: PlayCircle },
     { key: 'library' as const, label: 'Realty Kütüphane Yönetimi', icon: GraduationCap },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
+    { key: 'buyerRequests' as const, label: 'Alıcı Talepleri', icon: Bell, badge: buyerRequests.filter((item) => item.status === 'Yeni').length },
     { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
     { key: 'corporate' as const, label: 'Kurumsal İçerik Yönetimi', icon: Briefcase },
     { key: 'header' as const, label: 'Header & Sayfa Yönetimi', icon: Menu },
@@ -3903,6 +3925,10 @@ function SuperAdminDashboard() {
             )}
 
             {/* 6. SİSTEM MESAJLARI TABI */}
+            {activeTab === 'buyerRequests' && (
+              <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Alıcı Talepleri ve Bildirimler</h2><p className="mt-1 text-xs text-slate-500">Her talep genel merkeze, ilgili ofise ve bölgedeki danışmanlara yönlendirilir.</p></div>{buyerRequests.length ? buyerRequests.map((item) => <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-col justify-between gap-3 sm:flex-row"><div><p className="text-xs font-black text-red-700">{item.id} · {new Date(item.createdAt).toLocaleString('tr-TR')}</p><h3 className="mt-1 font-black text-slate-900">{item.name} · {item.type} {item.property}</h3><p className="mt-1 text-xs text-slate-600">{item.city} / {item.district} · {item.budget || 'Bütçe belirtilmedi'} · {item.phone}</p></div><select value={item.status} onChange={(e) => { const next = buyerRequests.map((entry) => entry.id === item.id ? { ...entry, status: e.target.value as BuyerRequest['status'] } : entry); setBuyerRequests(next); saveBuyerRequests(next); }} className="h-fit rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700"><option>Yeni</option><option>İnceleniyor</option><option>Eşleştirildi</option></select></div><div className="mt-3 grid gap-2 text-xs sm:grid-cols-2"><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">Ofis bildirimi:</strong> {item.officeNames.length ? item.officeNames.join(', ') : 'Genel merkez eşleştirmesi bekliyor'}</p><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">Danışman bildirimi:</strong> {item.agentNames.length ? item.agentNames.join(', ') : 'Bölge danışmanı eşleştirmesi bekliyor'}</p></div></div>) : <p className="py-10 text-center text-sm font-bold text-slate-500">Henüz alıcı talebi yok.</p>}</div>
+            )}
+
             {activeTab === 'messages' && (
               <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
                 <div className="border-b border-slate-200 pb-4">
