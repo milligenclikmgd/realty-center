@@ -93,6 +93,14 @@
   .header-search-pop { animation: none; }
 }
 
+.library-rich-content h2 { margin: 1.6rem 0 .65rem; font-size: 1.55rem; font-weight: 900; color: #0f172a; }
+.library-rich-content h3 { margin: 1.35rem 0 .55rem; font-size: 1.2rem; font-weight: 850; color: #0f172a; }
+.library-rich-content p { margin: .7rem 0; }
+.library-rich-content ul { margin: .8rem 0; padding-left: 1.4rem; list-style: disc; }
+.library-rich-content blockquote { margin: 1.2rem 0; border-left: 4px solid #cd011e; background: #f8fafc; padding: 1rem 1.2rem; font-style: italic; }
+.library-rich-content a { color: #cd011e; font-weight: 800; text-decoration: underline; }
+[contenteditable][data-placeholder]:empty::before { content: attr(data-placeholder); color: #94a3b8; pointer-events: none; }
+
 .realty-header-bar {
   position: relative;
   min-height: 90px;
