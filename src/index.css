@@ -119,12 +119,12 @@
   justify-content: center;
   overflow: hidden;
   color: #870015;
-  font-size: clamp(3.8rem, 7.2vw, 7.5rem);
+  font-size: clamp(3.8rem, 7.6vw, 7.8rem);
   font-weight: 950;
   line-height: 1;
-  letter-spacing: .1em;
+  letter-spacing: .18em;
   white-space: nowrap;
-  opacity: .38;
+  opacity: .2;
   pointer-events: none;
   user-select: none;
 }
