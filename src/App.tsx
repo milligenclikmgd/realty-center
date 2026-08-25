@@ -92,6 +92,31 @@ const DEFAULT_PARTNERS: CorporateLogoItem[] = [
 ];
 const getStoredCorporateItems = <T,>(key: string, fallback: T): T => { try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch { return fallback; } };
 
+type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 'right'; image?: string; content?: string; children: HeaderMenuItem[] };
+const headerItem = (id: string, label: string, path: string, side: 'left' | 'right', children: HeaderMenuItem[] = [], image = '', content = ''): HeaderMenuItem => ({ id, label, path, side, image, content, children });
+const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
+  headerItem('corporate','Kurumsal','/kurumsal/hakkimizda','left',[headerItem('about','Hakkımızda','/kurumsal/hakkimizda','left'),headerItem('mission','Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon','left'),headerItem('team','Yönetim Kadromuz','/kurumsal/ekibimiz','left'),headerItem('documents','Belgelerimiz','/kurumsal/belgelerimiz','left'),headerItem('references','Referanslarımız','/kurumsal/referanslar','left'),headerItem('partners','İş Ortaklarımız','/kurumsal/is-ortaklarimiz','left')]),
+  headerItem('offices','Ofislerimiz','/ofislerimiz','left'), headerItem('agents','Danışmanlarımız','/danismanlarimiz','left'), headerItem('listings','İlanlarımız','/ilan-kategorileri','left'), headerItem('projects','Projelerimiz','/projelerimiz','left'), headerItem('videos','Videolar','/videolar','left'),
+  headerItem('discover','Keşfet','/icerik/education','left',[
+    headerItem('education','Eğitim','/icerik/education','left',[
+      headerItem('education-calendar','Eğitim Takvimi','/icerik/education-calendar','left',[],'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=90&w=1400','Realty Center eğitim takvimi; çevrim içi programları, sınıf eğitimlerini, saha çalışmalarını ve gelişim buluşmalarını tek planda takip etmenizi sağlar.'),
+      headerItem('education-centers','Eğitim Merkezleri','/icerik/education-centers','left',[],'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=90&w=1400','Türkiye genelindeki eğitim merkezlerimiz, danışmanlarımızın güncel sektör bilgisine ve uygulamalı gelişim programlarına erişmesini sağlar.'),
+      headerItem('education-types','Eğitim Çeşitlerimiz','/icerik/education-types','left',[],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','Başlangıç, uzmanlık, mevzuat, satış, pazarlama ve teknoloji eğitimleriyle her kariyer aşamasına uygun gelişim seçenekleri sunuyoruz.')
+    ],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','Realty Center eğitim programları, gayrimenkul profesyonellerinin bilgi ve saha becerilerini sürekli geliştiren planlı bir öğrenme yolculuğudur.'),
+    headerItem('future','Geleceğim İçin','/icerik/future','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Gayrimenkul sektöründe güçlü bir kariyer kurmanız için eğitim, mentorluk ve kurumsal marka desteğini bir araya getiriyoruz.'),
+    headerItem('systems','Sistem ve Modeller','/icerik/systems','left',[],'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400','Portföy, müşteri, pazarlama ve raporlama süreçlerini ölçülebilir sistemlerle yönetiyoruz.'),
+    headerItem('culture','Realty Center Kültürü','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Önce Güven anlayışı; şeffaflık, dayanışma, gelişim ve başarıyı paylaşma değerleri üzerine kuruludur.')
+  ]),
+  headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.'),headerItem('capping','Keplemek','/icerik/capping','right',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','Yüksek performansı ödüllendiren ve danışmanın kazanç potansiyelini artıran sürdürülebilir sistem.')]),
+  headerItem('ai','Yapay Zeka Asistanı','/ai-karar-asistani','right'), headerItem('library','Realty Kütüphane','/blog/rehber','right'), headerItem('why','Neden Realty Center?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','Danışman Ol','/danisman-basvuru','right'), headerItem('contact','İletişim','/iletisim','right',[headerItem('contact-info','İletişim Bilgilerimiz','/iletisim','right'),headerItem('feedback','Müşteri Memnuniyeti','/geri-bildirim','right')])
+];
+const getHeaderMenu = (): HeaderMenuItem[] => { try { return JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU; } catch { return DEFAULT_HEADER_MENU; } };
+const saveHeaderMenu = (items: HeaderMenuItem[]) => { localStorage.setItem('realty-center-header-menu', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-header-updated')); };
+const findHeaderItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem | undefined => { for (const item of items) { if (item.id === id) return item; const found = findHeaderItem(item.children, id); if (found) return found; } return undefined; };
+const updateHeaderMenuItem = (items: HeaderMenuItem[], id: string, patch: Partial<HeaderMenuItem>): HeaderMenuItem[] => items.map((item) => item.id === id ? { ...item, ...patch } : { ...item, children: updateHeaderMenuItem(item.children, id, patch) });
+const removeHeaderMenuItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem[] => items.filter((item) => item.id !== id).map((item) => ({ ...item, children: removeHeaderMenuItem(item.children, id) }));
+const appendHeaderMenuChild = (items: HeaderMenuItem[], parentId: string, child: HeaderMenuItem): HeaderMenuItem[] => items.map((item) => item.id === parentId ? { ...item, children: [...item.children, child] } : { ...item, children: appendHeaderMenuChild(item.children, parentId, child) });
+
 // TÜRKİYE 81 İL VE İLÇE VERİ HARİTASI
 const TURKEY_CITIES: Record<string, string[]> = {
   "Adana": ["Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Kozan", "İmamoğlu", "Karataş", "Pozantı"],
@@ -780,42 +805,37 @@ function SiteSearchPage() {
   return <div className="min-h-[65vh] bg-slate-50 py-12"><div className="mx-auto max-w-5xl px-6"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER SİTE İÇİ ARAMA</p><h1 className="mt-2 text-3xl font-black text-slate-900">Tüm sitede arayın</h1><form onSubmit={submit} className="mt-6 flex overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="İlan, rehber yazısı, danışman, ofis veya sayfa ara..." className="min-w-0 flex-1 px-5 py-4 text-sm font-semibold outline-none"/><button className="bg-red-700 px-6 text-sm font-black text-white">Ara</button></form><div className="mt-7 flex items-center justify-between border-b border-slate-200 pb-3"><h2 className="font-black text-slate-900">“{initialQuery}” sonuçları</h2><span className="text-xs font-bold text-slate-500">{results.length} sonuç</span></div>{results.length ? <div className="divide-y divide-slate-200">{results.map((item,index) => <Link key={`${item.to}-${item.title}-${index}`} to={item.to} className="group block py-5"><span className="text-[10px] font-black uppercase tracking-widest text-red-700">{item.category}</span><h3 className="mt-1 text-lg font-black text-slate-900 group-hover:text-red-700">{item.title}</h3><p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-600">{item.content}</p></Link>)}</div> : <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-10 text-center"><Search className="mx-auto h-8 w-8 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">Aramanızla eşleşen içerik bulunamadı.</p><p className="mt-1 text-xs text-slate-500">Daha kısa veya farklı bir kelime deneyebilirsiniz.</p></div>}</div></div>;
 }
 
+function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }: { item: HeaderMenuItem; root?: boolean; align?: 'left' | 'right'; menuLinkClass: (to: string) => string }) {
+  const hasChildren = item.children.length > 0;
+  if (!hasChildren) return <Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}>{item.label}</Link>;
+  return <div className="group/menu relative z-30"><Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}><span>{item.label}</span><ChevronDown className={`ml-1 h-3 w-3 transition ${root ? 'group-hover/menu:rotate-180' : '-rotate-90'}`}/></Link><div className={`invisible absolute z-50 w-64 translate-y-2 rounded-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : `top-0 ${align === 'right' ? 'right-full mr-1' : 'left-full ml-1'}`}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
+}
+
+function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
+  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-sm'}`} style={{ marginLeft: `${depth * 8}px` }}><span>{depth ? '↳ ' : ''}{item.label}</span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
+}
+
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [siteSearch, setSiteSearch] = useState('');
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showCompactHeader, setShowCompactHeader] = useState(false);
+  const [managedMenu, setManagedMenu] = useState<HeaderMenuItem[]>(getHeaderMenu);
   const location = useLocation();
   const navigate = useNavigate();
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
-  const leftLinks = [
-    ['Kurumsal', '/kurumsal/hakkimizda'],
-    [t.offices, '/ofislerimiz'],
-    [t.agents, '/danismanlarimiz'],
-    [t.listings, '/ilan-kategorileri'],
-    [t.projects, '/projelerimiz'],
-    ['Videolar', '/videolar'],
-    ['Keşfet', '/kesfet/egitim']
-  ];
-  const rightLinks = [
-    ['Kazanç Modeli', '/kazanc-modeli/katki-payi'],
-    [t.ai.replace('🤖 ', ''), '/ai-karar-asistani'],
-    ['Realty Kütüphane', '/blog/rehber'],
-    ['Neden Realty Center?', '/neden-realty-center'],
-    ['Franchise Ol', '/franchise-basvuru'],
-    [t.advisor, '/danisman-basvuru'],
-    [t.contact, '/iletisim']
-  ];
-  const corporateMenu = [['Hakkımızda','/kurumsal/hakkimizda'],['Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon'],['Yönetim Kadromuz','/kurumsal/ekibimiz'],['Belgelerimiz','/kurumsal/belgelerimiz'],['Referanslarımız','/kurumsal/referanslar'],['İş Ortaklarımız','/kurumsal/is-ortaklarimiz']];
-  const contactMenu = [['İletişim Bilgilerimiz','/iletisim'],['Müşteri Memnuniyeti','/geri-bildirim']];
-  const discoverMenu = [['Eğitim','/kesfet/egitim'],['Geleceğim İçin','/kesfet/gelecegim-icin'],['Sistem ve Modeller','/kesfet/sistem-ve-modeller'],['Gruplar','/kesfet/gruplar'],['Realty Center Kültürü','/kesfet/realty-center-kulturu'],['Dijital Emlakçılık','/kesfet/dijital-emlakcilik']];
-  const earningMenu = [['Katkı Payı','/kazanc-modeli/katki-payi'],['Paylaşım Modeli','/kazanc-modeli/paylasim-modeli'],['Keplemek','/kazanc-modeli/keplemek']];
+  const leftItems = managedMenu.filter((item) => item.side === 'left');
+  const rightItems = managedMenu.filter((item) => item.side === 'right');
+  const leftLinks = leftItems.map((item) => [item.label,item.path]);
+  const rightLinks = rightItems.map((item) => [item.label,item.path]);
   const isListingDetail = location.pathname.startsWith('/ilan/');
   const isHomePage = location.pathname === '/';
 
   useEffect(() => {
+    const refreshMenu = () => setManagedMenu(getHeaderMenu());
+    window.addEventListener('realty-center-header-updated', refreshMenu);
     const updateProgress = () => {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
@@ -825,6 +845,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     window.addEventListener('scroll', updateProgress, { passive: true });
     window.addEventListener('resize', updateProgress);
     return () => {
+      window.removeEventListener('realty-center-header-updated', refreshMenu);
       window.removeEventListener('scroll', updateProgress);
       window.removeEventListener('resize', updateProgress);
     };
@@ -890,7 +911,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
           <div className="grid min-w-0 grid-cols-7 items-stretch">
-            {leftLinks.map(([label, to], index) => index === 0 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-64 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{corporateMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : to.startsWith('/kesfet/') ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-60 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{discoverMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {leftItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </div>
 
           <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center ana sayfa">
@@ -901,7 +922,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           </Link>
 
           <div className="grid min-w-0 grid-cols-7 items-stretch">
-            {rightLinks.map(([label, to], index) => index === rightLinks.length - 1 ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute right-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{contactMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : to.startsWith('/kazanc-modeli/') ? <div key={to} className="group relative z-30"><Link to={to} className={menuLinkClass(to)}><span>{label}</span><ChevronDown className="ml-1 h-3 w-3 transition group-hover:rotate-180"/></Link><div className="header-nav-dropdown invisible absolute left-0 top-full w-56 translate-y-2 rounded-b-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">{earningMenu.map(([itemLabel,itemTo]) => <Link key={itemTo} to={itemTo} className="block rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700">{itemLabel}</Link>)}</div></div> : <Link key={to} to={to} className={menuLinkClass(to)}>{label}</Link>)}
+            {rightItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
           </div>
         </nav>
 
@@ -916,7 +937,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
         </div>
       </div>
 
-      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 text-sm font-black xl:hidden">{[...leftLinks.slice(1), ...rightLinks.slice(0,-1)].map(([label, to]) => <Link key={`${label}-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white transition hover:bg-white/20">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">KURUMSAL</p>{corporateMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}<p className="col-span-2 mt-2 text-[10px] tracking-widest text-red-100">İLETİŞİM</p>{contactMenu.map(([label,to]) => <Link key={`mobile-${to}`} onClick={close} to={to} className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 text-white">{label}</Link>)}</nav>}
+      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 font-black xl:hidden"><MobileHeaderNodes items={managedMenu} close={close}/></nav>}
     </header>
   );
 }
@@ -937,6 +958,15 @@ function DiscoverEarningPage({ section }: { section: 'discover' | 'earning' }) {
   const fallback = section === 'discover' ? pages.egitim : pages['katki-payi'];
   const page = pages[slug] || fallback;
   return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid-cols-2"><img src={page.image} alt={page.title} className="h-72 w-full object-cover lg:h-full lg:min-h-[520px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">{page.eyebrow}</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.title}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 text-sm leading-8 text-slate-600">{page.text}</p><Link to={section === 'discover' ? '/danisman-basvuru' : '/franchise-basvuru'} className="mt-8 inline-flex w-fit items-center text-sm font-black text-red-700">Daha fazla bilgi alın <ArrowRight className="ml-2 h-4 w-4"/></Link></article></div></div></main>;
+}
+
+function ManagedHeaderContentPage() {
+  const { id = '' } = useParams();
+  const [menus, setMenus] = useState<HeaderMenuItem[]>(getHeaderMenu);
+  useEffect(() => { const refresh = () => setMenus(getHeaderMenu()); window.addEventListener('realty-center-header-updated', refresh); return () => window.removeEventListener('realty-center-header-updated', refresh); }, []);
+  const page = findHeaderItem(menus, id);
+  if (!page) return <main className="min-h-[60vh] bg-slate-50 py-16"><div className="mx-auto max-w-4xl px-6 text-center"><h1 className="text-3xl font-black text-slate-900">İçerik bulunamadı</h1><Link to="/" className="mt-5 inline-flex font-black text-red-700">Ana sayfaya dön</Link></div></main>;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid-cols-2"><img src={page.image || '/rlogo2.png'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
 }
 
 function CustomerFeedbackPage() {
@@ -3255,9 +3285,13 @@ function SuperAdminLoginPage() {
 }
 
 // SÜPER ADMİN YÖNETİM PANELİ DASHBOARD (KAPSAMLI KOD)
+function HeaderMenuEditorNode({ item, depth, onUpdate, onRemove, onAddChild }: { item: HeaderMenuItem; depth: number; onUpdate: (id: string, patch: Partial<HeaderMenuItem>) => void; onRemove: (id: string) => void; onAddChild: (id: string, side: 'left' | 'right') => void }) {
+  return <div className={`rounded-2xl border p-4 ${depth === 0 ? 'border-slate-300 bg-white shadow-sm' : depth === 1 ? 'border-red-100 bg-red-50/40' : 'border-slate-200 bg-slate-50'}`}><div className="mb-3 flex items-center justify-between gap-3"><div className="flex items-center gap-2"><span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-700 text-[10px] font-black text-white">{depth + 1}</span><strong className="text-xs text-slate-800">{depth === 0 ? 'Ana başlık' : depth === 1 ? 'Alt başlık' : 'Alt başlığın altı'}</strong></div><button type="button" onClick={() => onRemove(item.id)} className="text-[10px] font-black text-red-700">Kaldır</button></div><div className="grid gap-3 md:grid-cols-2"><input value={item.label} onChange={(e) => onUpdate(item.id,{ label:e.target.value })} placeholder="Menü başlığı" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><input value={item.path} onChange={(e) => onUpdate(item.id,{ path:e.target.value })} placeholder="/icerik/sayfa-adi" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/>{depth === 0 && <select value={item.side} onChange={(e) => onUpdate(item.id,{ side:e.target.value as 'left' | 'right' })} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"><option value="left">Logonun solu</option><option value="right">Logonun sağı</option></select>}<input value={item.image || ''} onChange={(e) => onUpdate(item.id,{ image:e.target.value })} placeholder="Sol bölüm görsel URL'si" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><textarea rows={4} value={item.content || ''} onChange={(e) => onUpdate(item.id,{ content:e.target.value })} placeholder="Sayfanın sağında gösterilecek metin" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs leading-5 md:col-span-2"/></div>{depth < 2 && <button type="button" onClick={() => onAddChild(item.id,item.side)} className="mt-3 rounded-lg border border-red-200 bg-white px-3 py-2 text-[10px] font-black text-red-700">+ Alt başlık ekle</button>}{item.children.length > 0 && <div className="mt-4 space-y-3 border-l-2 border-red-200 pl-3">{item.children.map((child) => <HeaderMenuEditorNode key={child.id} item={child} depth={depth + 1} onUpdate={onUpdate} onRemove={onRemove} onAddChild={onAddChild}/>)}</div>}</div>;
+}
+
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'feedback' | 'corporate' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'messages' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -3274,6 +3308,14 @@ function SuperAdminDashboard() {
   const [corporateReferences, setCorporateReferences] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-references', DEFAULT_REFERENCES));
   const [corporatePartners, setCorporatePartners] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-partners', DEFAULT_PARTNERS));
   const [corporateSaved, setCorporateSaved] = useState(false);
+  const [headerMenuItems, setHeaderMenuItems] = useState<HeaderMenuItem[]>(getHeaderMenu);
+  const [headerSaved, setHeaderSaved] = useState(false);
+
+  const updateManagedHeaderItem = (id: string, patch: Partial<HeaderMenuItem>) => setHeaderMenuItems((current) => updateHeaderMenuItem(current,id,patch));
+  const removeManagedHeaderItem = (id: string) => setHeaderMenuItems((current) => removeHeaderMenuItem(current,id));
+  const addManagedHeaderChild = (parentId: string, side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => appendHeaderMenuChild(current,parentId,headerItem(id,'Yeni Alt Başlık',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazın.'))); };
+  const addManagedHeaderRoot = (side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => [...current,headerItem(id,'Yeni Ana Başlık',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazın.')]); };
+  const saveManagedHeader = () => { saveHeaderMenu(headerMenuItems); setHeaderSaved(true); setTimeout(() => setHeaderSaved(false),2200); };
 
   const addVideo = async () => {
     if (!videoDraft.url) return alert('YouTube bağlantısı veya video dosyası ekleyin.');
@@ -3398,6 +3440,7 @@ function SuperAdminDashboard() {
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
     { key: 'corporate' as const, label: 'Kurumsal İçerik Yönetimi', icon: Briefcase },
+    { key: 'header' as const, label: 'Header & Sayfa Yönetimi', icon: Menu },
     { key: 'settings' as const, label: 'Sistem Ayarları', icon: Settings }
   ];
 
@@ -3836,6 +3879,8 @@ function SuperAdminDashboard() {
               {([['Referanslarımız',corporateReferences,setCorporateReferences],['İş Ortaklarımız',corporatePartners,setCorporatePartners]] as const).map(([title,items,setItems]) => <section key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">{title}</h3><p className="mt-1 text-xs text-slate-500">Logo ve tıklandığında açılacak çalışma içeriğini yönetin.</p></div><button onClick={() => setItems([...items,{id:`logo-${Date.now()}`,name:'Yeni Kurum',logo:'/demo-placeholder.svg',content:'İş birliği veya referans açıklaması.'}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Logo Ekle</button></div><div className="mt-5 space-y-3">{items.map((item,index) => <div key={item.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={item.name} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,name:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
               <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'Tüm içerikler kaydedildi ✓' : 'Belgeler, Referanslar ve İş Ortaklarını Kaydet'}</button>
             </div>}
+
+            {activeTab === 'header' && <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center"><div><h2 className="text-lg font-black text-slate-900">Header ve İçerik Sayfaları</h2><p className="mt-1 max-w-3xl text-xs leading-5 text-slate-500">Ana başlıkları, alt başlıkları ve üçüncü seviye başlıkları yönetin. Dinamik sayfalarda görsel solda, metin sağda gösterilir.</p></div><div className="flex gap-2"><button onClick={() => addManagedHeaderRoot('left')} className="rounded-lg border border-red-200 px-3 py-2 text-xs font-black text-red-700">+ Sola Başlık</button><button onClick={() => addManagedHeaderRoot('right')} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Sağa Başlık</button></div></div><div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>Bağlantı kullanımı:</strong> Panelde oluşturulan içerik sayfaları için <code>/icerik/sayfa-kimligi</code> biçimini kullanın. Mevcut bir sayfaya yönlendirmek isterseniz onun bağlantısını doğrudan yazabilirsiniz.</div><div className="mt-5 grid gap-5 xl:grid-cols-2">{(['left','right'] as const).map((side) => <div key={side}><div className="mb-3 flex items-center justify-between"><h3 className="text-sm font-black text-slate-900">{side === 'left' ? 'Logonun Solundaki Menüler' : 'Logonun Sağındaki Menüler'}</h3><span className="rounded-full bg-slate-100 px-2 py-1 text-[10px] font-black text-slate-500">{headerMenuItems.filter((item) => item.side === side).length} başlık</span></div><div className="space-y-4">{headerMenuItems.filter((item) => item.side === side).map((item) => <HeaderMenuEditorNode key={item.id} item={item} depth={0} onUpdate={updateManagedHeaderItem} onRemove={removeManagedHeaderItem} onAddChild={addManagedHeaderChild}/>)}</div></div>)}</div><button onClick={saveManagedHeader} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-700/20">{headerSaved ? 'Header ve sayfalar kaydedildi ✓' : 'Header ve Sayfa Yapısını Kaydet'}</button></section></div>}
 
             {/* 7. SİSTEM AYARLARI TABI */}
             {activeTab === 'settings' && (
@@ -4476,6 +4521,7 @@ export default function RealtyCenterApp() {
             <Route path="/kurumsal/is-ortaklarimiz" element={<LogoShowcasePage mode="partners" />} />
             <Route path="/kesfet/:slug" element={<DiscoverEarningPage section="discover" />} />
             <Route path="/kazanc-modeli/:slug" element={<DiscoverEarningPage section="earning" />} />
+            <Route path="/icerik/:id" element={<ManagedHeaderContentPage />} />
             <Route path="/blog/rehber" element={<BlogCategoryPage category="Rehber" title="Gayrimenkul Rehberi" description="Ev alma, satma ve kiralama kararlarında ihtiyaç duyacağınız pratik bilgiler." />} />
             <Route path="/blog/hukuk" element={<BlogCategoryPage category="Hukuk" title="Gayrimenkul Hukuku" description="Tapu, sözleşme, yetkilendirme ve yasal süreçlere dair içerikler." />} />
             <Route path="/blog/haberler" element={<BlogCategoryPage category="Haberler" title="Sektörden Haberler" description="Gayrimenkul piyasasındaki güncel gelişmeler ve gündem notları." />} />
