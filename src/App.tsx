@@ -1100,7 +1100,7 @@ function FeaturedListingsShowcase() {
   };
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
-    if ((event.target as HTMLElement).closest('button')) return;
+    if ((event.target as HTMLElement).closest('a, button')) return;
     dragStartX.current = event.clientX;
     dragMoved.current = false;
     event.currentTarget.setPointerCapture(event.pointerId);
@@ -1248,6 +1248,7 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
 
   if (!listings.length) return null;
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest('a, button')) return;
     draggingRef.current = true;
     hoveredRef.current = true;
     dragStartRef.current = { x: event.clientX, position: positionRef.current };
