@@ -119,7 +119,7 @@
 }
 
 .realty-header-bar::after {
-  content: 'REALTY CENTER';
+  content: 'REALTY CENTER®';
   position: absolute;
   inset: 0;
   display: flex;
@@ -163,8 +163,8 @@
 .realty-header-disc {
   position: relative;
   display: flex;
-  width: 132px;
-  height: 132px;
+  width: 96px;
+  height: 96px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -187,10 +187,10 @@
   box-shadow: 0 10px 24px rgba(0,0,0,.2), inset 0 0 0 3px var(--rc-red), inset 0 0 12px rgba(7,29,59,.04);
   animation: realtyInnerLogoShrink .55s cubic-bezier(.2,.82,.25,1) both;
 }
-.realty-header-emblem-inner .realty-header-main-logo { width: 60px; }
+.realty-header-emblem-inner .realty-header-main-logo { width: 78px; }
 @keyframes realtyInnerLogoShrink {
   from { width: 210px; height: 210px; opacity: .65; transform: scale(1.04); }
-  to { width: 132px; height: 132px; opacity: 1; transform: scale(1); }
+  to { width: 96px; height: 96px; opacity: 1; transform: scale(1); }
 }
 .realty-header-emblem-inner:hover .realty-header-disc { transform: scale(1.025); }
 @media (prefers-reduced-motion: reduce) {
@@ -492,9 +492,7 @@
 .turkey-listing-map g[data-realty-city] path {
   fill: #CD011E !important;
   fill-opacity: .34 !important;
-  stroke: #ffffff !important;
-  stroke-opacity: .8 !important;
-  stroke-width: .75 !important;
+  stroke: none !important;
 }
 .turkey-listing-map g[data-realty-city]:hover path {
   fill: #820014 !important;
