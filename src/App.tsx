@@ -265,24 +265,37 @@ const SAMPLE_LISTING_SEEDS: Array<[string, string, string, string, string, numbe
   ['Plaza', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Söğütözü'nde Plaza Katı", 'Plaza', 540, 39800000],
   ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
 ];
-const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => ({
+const DAYLIGHT_LISTING_IMAGES: Record<string, string[]> = {
+  'Daire': ['/slider/slider1.jpg', '/slider/slider4.jpg'],
+  'Villa': ['/slider/slider2.jpg', '/ev.jpg'],
+  'Residence': ['/slider/slider1.jpg', '/slider/slider4.jpg'],
+  'Müstakil Ev': ['/ev.jpg', '/slider/slider2.jpg'],
+  'Arsa': ['/slider/slider4.jpg', '/slider/slider2.jpg'],
+  'Tarla': ['/slider/slider4.jpg', '/slider/slider2.jpg'],
+  'Fabrika': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
+  'Depo': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
+  'Ofis': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
+  'Plaza': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
+  'Otel': ['/slider/slider4.jpg', '/slider/slider2.jpg']
+};
+const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => {
+  const images = DAYLIGHT_LISTING_IMAGES[propertyType] || ['/slider/slider1.jpg', '/slider/slider4.jpg'];
+  return ({
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
-  image: `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1200`,
+  image: images[0],
   agentName: 'Realty Center Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
   details: getSampleListingDetails(propertyType, rooms),
-  images: [
-    `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1400`,
-    `https://images.unsplash.com/photo-${['1600573472550-8090b5e0745e','1600607687920-4e2a09cf159d','1600210492486-724fe5c67fb0','1600047509807-ba8f99d2cdde','1500534314209-a25ddb2bd429','1500382017468-9049fed747ef','1486406146926-c627a92ad1ab','1553413077-190dd305871c','1497366754035-f200968a6e72','1497366754035-f200968a6e72','1542314831-068cd1dbfeeb'][index]}?auto=format&fit=crop&q=86&w=1400`
-  ],
+  images,
   description: `${title}; Realty Center güvencesiyle sunulan, konumu ve kullanım özellikleriyle öne çıkan seçkin bir gayrimenkuldür. Ayrıntılı bilgi ve yerinde sunum için yetkili danışmanımızla iletişime geçebilirsiniz.`,
   monthlyFee: ['Arsa','Tarla'].includes(propertyType) ? 'Yok' : '2.750 ₺',
   deedInfo: 'Kat Mülkiyetli / Müstakil Tapu',
   technicalFeatures: 'Otopark, güvenlik, ulaşım akslarına yakınlık, yüksek hızlı internet altyapısı',
   updatedAt: '15 Ağustos 2026',
   mapUrl: `https://www.google.com/maps?q=${encodeURIComponent('Çankaya Ankara')}&output=embed`
-})),
-  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=88&w=1400', images:['https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=88&w=1400','https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&q=88&w=1400'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
-  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1400', images:['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1400','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=88&w=1400'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
+  });
+}),
+  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'/slider/slider4.jpg', images:['/slider/slider4.jpg','/slider/slider1.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
+  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'/slider/slider2.jpg', images:['/slider/slider2.jpg','/ev.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
 ];
 const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
