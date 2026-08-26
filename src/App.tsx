@@ -699,7 +699,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
           <img 
             src={item.image} 
             alt={item.title} 
-            className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            className="w-full h-full bg-white object-contain transition duration-500"
           />
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
             <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
@@ -1206,7 +1206,7 @@ function FeaturedListingsShowcase() {
                 aria-label={`${item.title} ilanını incele`}
               >
                 <div className="relative h-[245px] shrink-0 overflow-hidden bg-slate-100 sm:h-[285px]">
-                  <img src={item.image} alt={item.title} draggable={false} className={`h-full w-full object-cover transition duration-700 ${isActive ? 'scale-[1.02]' : 'scale-100'}`} />
+                  <img src={item.image} alt={item.title} draggable={false} className="h-full w-full bg-white object-contain transition duration-700" />
                   <div className="absolute left-5 top-5 flex items-center gap-2">
                     <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
                     <span className="rounded-full border border-slate-200 bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 shadow-sm">{item.type}</span>
@@ -1423,13 +1423,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out bg-cover bg-center transform ${
+              className={`absolute inset-0 h-full w-full bg-white object-contain transition-all duration-1000 ease-in-out transform ${
                 index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
               }`}
-              style={{ backgroundImage: `url('${imgUrl}')` }}
+              src={imgUrl}
+              alt="Realty Center gayrimenkul fırsatları"
             />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
@@ -1576,7 +1577,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2 rounded-3xl overflow-hidden relative min-h-72 bg-slate-900"><img src="/slider/slider3.jpg" alt="İncek Vadi Evleri" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 to-transparent" /><div className="relative p-9 max-w-md text-white"><span className="text-xs font-black tracking-widest text-red-200">YENİ PROJELER</span><h2 className="mt-3 text-3xl font-black">İncek Vadi Evleri</h2><p className="mt-3 text-sm text-white/85">Çankaya İncek'te doğayla iç içe, geniş sosyal alanlara sahip yeni nesil yaşam projesi.</p><Link to="/projelerimiz" className="inline-flex mt-6 rounded-xl bg-red-700 px-5 py-3 text-sm font-black hover:bg-red-800">Projeleri İncele</Link></div></div>
+          <div className="lg:col-span-2 relative min-h-72 overflow-hidden rounded-3xl bg-white"><img src="/slider/slider3.jpg" alt="İncek Vadi Evleri" className="absolute inset-0 h-full w-full object-contain" /><div className="relative max-w-md p-9 text-slate-950"><span className="text-xs font-black tracking-widest text-red-700">YENİ PROJELER</span><h2 className="mt-3 text-3xl font-black">İncek Vadi Evleri</h2><p className="mt-3 text-sm text-slate-700">Çankaya İncek'te doğayla iç içe, geniş sosyal alanlara sahip yeni nesil yaşam projesi.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white hover:bg-red-800">Projeleri İncele</Link></div></div>
           <div className="rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">YATIRIM FIRSATLARI</span><h2 className="mt-3 text-3xl font-black">Projenize, doğru yatırım ile başlayın.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Konut ve ticari projelerde lokasyon, değerleme ve satış süreçlerini uzmanlarımızla planlayın.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Projeleri Gör</Link></div>
         </div>
       </section>
@@ -1618,7 +1619,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 alt="Realty Center Emlak Danışmanlığı Eğitimi" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/15 via-transparent to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-slate-200 shadow-xl flex items-center justify-between">
                 <div className="flex items-center space-x-3">
@@ -2898,9 +2899,9 @@ function ListingDetailPage() {
 
         <section className="grid items-start gap-4 xl:grid-cols-[minmax(0,1.15fr)_320px_275px]">
           <div className="min-w-0 xl:flex xl:h-[620px] xl:flex-col">
-            <div className="relative h-[310px] shrink-0 overflow-hidden border border-slate-200 bg-slate-100 sm:h-[390px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full object-contain"/>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronLeft className="h-5 w-5"/></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronRight className="h-5 w-5"/></button></>}</div>
+            <div className="relative h-[310px] shrink-0 overflow-hidden border border-slate-200 bg-white sm:h-[390px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full bg-white object-contain"/>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronLeft className="h-5 w-5"/></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronRight className="h-5 w-5"/></button></>}</div>
             <div className="mt-1.5 flex items-center justify-between border-y border-slate-200 bg-slate-50 px-3 py-1.5 text-[11px] font-black text-slate-600"><span className="inline-flex items-center gap-1.5"><Camera className="h-3.5 w-3.5 text-red-700"/>Büyük Fotoğraf</span><span>{activeImage + 1} / {gallery.length}</span></div>
-            <div className="mt-1.5 grid min-h-[138px] flex-1 grid-cols-5 grid-rows-3 gap-1.5 border border-dashed border-slate-300 bg-slate-50/60 p-1.5 sm:grid-cols-7 sm:grid-rows-2">{thumbnailSlots.map((image, index) => image ? <button key={`${image}-${index}`} onClick={() => setActiveImage(index)} className={`min-h-0 overflow-hidden border-2 bg-white ${activeImage === index ? 'border-red-700' : 'border-slate-200 hover:border-red-300'}`}><img src={image} alt="" className="h-full w-full object-cover"/></button> : <span key={`empty-${index}`} aria-hidden="true" className="min-h-0 border border-dashed border-slate-200 bg-white/70" />)}</div>
+            <div className="mt-1.5 grid min-h-[138px] flex-1 grid-cols-5 grid-rows-3 gap-1.5 border border-dashed border-slate-300 bg-slate-50/60 p-1.5 sm:grid-cols-7 sm:grid-rows-2">{thumbnailSlots.map((image, index) => image ? <button key={`${image}-${index}`} onClick={() => setActiveImage(index)} className={`min-h-0 overflow-hidden border-2 bg-white ${activeImage === index ? 'border-red-700' : 'border-slate-200 hover:border-red-300'}`}><img src={image} alt="" className="h-full w-full bg-white object-contain"/></button> : <span key={`empty-${index}`} aria-hidden="true" className="min-h-0 border border-dashed border-slate-200 bg-white/70" />)}</div>
           </div>
 
           <div className="min-w-0 xl:h-[620px] xl:overflow-hidden">
@@ -2935,7 +2936,7 @@ function ProjectsPage() {
     { category: 'TİCARİ PROJE', title: 'Söğütözü Business Hub', location: 'Çankaya · Söğütözü', description: 'Yüksek görünürlük, esnek ofis metrekareleri ve toplantı alanlarıyla şirketler ve yatırımcılar için tasarlanan çağdaş ticari proje.', status: 'Ön talep dönemi', image: '/slider/slider2.jpg', tags: ['Ofis katları', 'Cadde mağazaları', 'Metroya yakın'] }
   ];
   return (
-    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="max-w-3xl"><span className="text-xs font-black tracking-widest text-red-700">REALTY CENTER PROJELER</span><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">Yeni yaşam ve yatırım <span className="text-red-700">projeleri</span></h1><p className="mt-5 text-lg leading-relaxed text-slate-600">Yeni inşaat ve ticari projeleri; lokasyon, teslim takvimi ve öne çıkan özellikleriyle inceleyin. Proje danışmanlarımız size en uygun seçenek için yanınızda.</p></div><div className="mt-10 grid gap-7 lg:grid-cols-2">{projects.map((project) => <article key={project.title} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="relative h-64 overflow-hidden"><img src={project.image} alt={project.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"/><span className="absolute left-5 top-5 rounded-full bg-red-700 px-3 py-1.5 text-[11px] font-black tracking-wider text-white">{project.category}</span><div className="absolute bottom-5 left-5 flex items-center gap-2 text-sm font-bold text-white"><MapPin className="h-4 w-4 text-red-300"/>{project.location}</div></div><div className="p-6"><h2 className="text-2xl font-black text-slate-900">{project.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">{tag}</span>)}</div><div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5"><span className="text-sm font-black text-red-700">{project.status}</span><Link to="/iletisim" className="inline-flex items-center gap-1 text-sm font-black text-slate-900 transition hover:text-red-700">Bilgi Al <ArrowRight className="h-4 w-4"/></Link></div></div></article>)}</div></div></div>
+    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="max-w-3xl"><span className="text-xs font-black tracking-widest text-red-700">REALTY CENTER PROJELER</span><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">Yeni yaşam ve yatırım <span className="text-red-700">projeleri</span></h1><p className="mt-5 text-lg leading-relaxed text-slate-600">Yeni inşaat ve ticari projeleri; lokasyon, teslim takvimi ve öne çıkan özellikleriyle inceleyin. Proje danışmanlarımız size en uygun seçenek için yanınızda.</p></div><div className="mt-10 grid gap-7 lg:grid-cols-2">{projects.map((project) => <article key={project.title} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="relative h-64 overflow-hidden bg-white"><img src={project.image} alt={project.title} className="h-full w-full object-contain transition duration-500"/><span className="absolute left-5 top-5 rounded-full bg-red-700 px-3 py-1.5 text-[11px] font-black tracking-wider text-white">{project.category}</span><div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 text-sm font-bold text-slate-800 shadow"><MapPin className="h-4 w-4 text-red-700"/>{project.location}</div></div><div className="p-6"><h2 className="text-2xl font-black text-slate-900">{project.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">{tag}</span>)}</div><div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5"><span className="text-sm font-black text-red-700">{project.status}</span><Link to="/iletisim" className="inline-flex items-center gap-1 text-sm font-black text-slate-900 transition hover:text-red-700">Bilgi Al <ArrowRight className="h-4 w-4"/></Link></div></div></article>)}</div></div></div>
   );
 }
 
