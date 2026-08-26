@@ -149,7 +149,7 @@
   height: 90px;
   align-items: center;
   justify-content: center;
-  transform: translateY(22px);
+  transform: translateY(50px);
 }
 
 .realty-header-led {
@@ -163,8 +163,8 @@
 .realty-header-disc {
   position: relative;
   display: flex;
-  width: 116px;
-  height: 116px;
+  width: 186px;
+  height: 186px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -174,23 +174,23 @@
   box-shadow: 0 15px 32px rgba(0,0,0,.24), inset 0 0 0 5px var(--rc-red), inset 0 0 17px rgba(7,29,59,.05);
   transition: transform .3s ease;
 }
-.realty-header-main-logo { width: 94px; max-width: 86%; }
+.realty-header-main-logo { width: 150px; max-width: 86%; }
 
 .realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
 .realty-header-emblem-inner {
-  transform: translateY(22px);
+  transform: translateY(50px);
 }
 .realty-header-emblem-inner .realty-header-disc {
-  width: 116px;
-  height: 116px;
+  width: 186px;
+  height: 186px;
   border-width: 5px;
   box-shadow: 0 10px 24px rgba(0,0,0,.2), inset 0 0 0 3px var(--rc-red), inset 0 0 12px rgba(7,29,59,.04);
   animation: realtyInnerLogoShrink .55s cubic-bezier(.2,.82,.25,1) both;
 }
-.realty-header-emblem-inner .realty-header-main-logo { width: 94px; }
+.realty-header-emblem-inner .realty-header-main-logo { width: 150px; }
 @keyframes realtyInnerLogoShrink {
   from { width: 210px; height: 210px; opacity: .65; transform: scale(1.04); }
-  to { width: 116px; height: 116px; opacity: 1; transform: scale(1); }
+  to { width: 186px; height: 186px; opacity: 1; transform: scale(1); }
 }
 .realty-header-emblem-inner:hover .realty-header-disc { transform: scale(1.025); }
 @media (prefers-reduced-motion: reduce) {
@@ -209,6 +209,17 @@
   transform: scaleX(0);
   transition: transform .25s ease;
 }
+
+/* Barter Bank: iki sütunlu form tek masaüstü ekranda dengeli kalır. */
+#barter-bank { padding-top: 28px; padding-bottom: 28px; }
+#barter-bank header { padding-top: 16px; padding-bottom: 16px; }
+#barter-bank header p:first-child { font-size: clamp(1.6rem, 3vw, 2.5rem); }
+#barter-bank form { padding: 16px; }
+#barter-bank form section { padding: 12px; }
+#barter-bank form label { margin-top: 8px; }
+#barter-bank form input, #barter-bank form select { padding-top: 8px; padding-bottom: 8px; }
+#barter-bank form .mt-5 { margin-top: 12px; }
+#barter-bank form .mt-6 { margin-top: 14px; }
 .realty-header-link {
   padding-top: 8px;
   padding-bottom: 13px;
