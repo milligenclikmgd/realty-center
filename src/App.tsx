@@ -1353,7 +1353,7 @@ function BarterBankModuleV3() {
 }
 
 function ListingActionShortcuts() {
-  return <aside className="grid gap-3 sm:grid-cols-2"><Link to="/#barter-bank" className="min-h-36 border border-red-200 bg-red-50 p-4 transition hover:bg-red-100"><p className="text-[10px] font-black tracking-widest text-red-700">BARTER BANK</p><strong className="mt-1 block text-sm text-slate-900">Takas fırsatlarını görün →</strong></Link><Link to="/#buyer-request" className="min-h-36 border border-slate-200 bg-slate-50 p-4 transition hover:bg-white"><p className="text-[10px] font-black tracking-widest text-red-700">SİZ ARADIĞINIZI SÖYLEYİN</p><strong className="mt-1 block text-sm text-slate-900">Size uygun ilanı bulalım →</strong></Link></aside>;
+  return <aside className="grid gap-2 sm:grid-cols-2"><Link to="/#barter-bank" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[9px] font-black tracking-widest text-white/75">BARTER BANK</p><strong className="mt-1 block text-xs">Takas fırsatlarını görün →</strong></Link><Link to="/#buyer-request" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[9px] font-black tracking-widest text-white/75">SİZ ARADIĞINIZI SÖYLEYİN</p><strong className="mt-1 block text-xs">Size uygun ilanı bulalım →</strong></Link></aside>;
 }
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
