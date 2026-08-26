@@ -1362,7 +1362,8 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <>
+    <div className="homepage-shell">
+      <div className="homepage-logo-watermark" aria-hidden="true" />
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
@@ -1633,7 +1634,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
