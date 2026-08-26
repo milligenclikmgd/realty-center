@@ -149,7 +149,7 @@
   height: 90px;
   align-items: center;
   justify-content: center;
-  transform: translateY(50px);
+  transform: translateY(-12px);
 }
 
 .realty-header-led {
@@ -178,7 +178,7 @@
 
 .realty-header-emblem:hover .realty-header-disc { transform: scale(1.035); }
 .realty-header-emblem-inner {
-  transform: translateY(50px);
+  transform: translateY(-12px);
 }
 .realty-header-emblem-inner .realty-header-disc {
   width: 149px;
