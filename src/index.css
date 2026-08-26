@@ -789,24 +789,3 @@
 .leaflet-container.map-drawing-mode .leaflet-interactive {
   cursor: crosshair !important;
 }
-
-/* Ana sayfanın geniş, açık alanlarında markayı baskınlaşmadan hissettiren logo dokusu. */
-.homepage-shell { position: relative; isolation: isolate; }
-.homepage-logo-watermark {
-  position: absolute;
-  z-index: 5;
-  top: 68vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  opacity: .055;
-  background-image: url('/rlogo2.png');
-  background-repeat: repeat;
-  background-position: center 60px;
-  background-size: 220px auto;
-  mix-blend-mode: multiply;
-}
-@media (max-width: 640px) {
-  .homepage-logo-watermark { background-size: 155px auto; background-position: center 36px; opacity: .04; }
-}
