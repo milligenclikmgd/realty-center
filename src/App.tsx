@@ -142,7 +142,7 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
     headerItem('culture','Realty Center Kültürü','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Önce Güven anlayışı; şeffaflık, dayanışma, gelişim ve başarıyı paylaşma değerleri üzerine kuruludur.')
   ]),
   headerItem('videos','Videolar','/videolar','left'),
-  headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.'),headerItem('capping','Keplemek','/icerik/capping','right',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','Yüksek performansı ödüllendiren ve danışmanın kazanç potansiyelini artıran sürdürülebilir sistem.')]),
+  headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.')]),
   headerItem('ai','Yapay Zeka Asistanı','/ai-karar-asistani','right'), headerItem('library','Realty Kütüphane','/kutuphane','right'), headerItem('why','Neden Realty Center?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','Danışman Ol','/danisman-basvuru','right'), headerItem('contact','İletişim','/iletisim','right',[headerItem('contact-info','İletişim Bilgilerimiz','/iletisim','right'),headerItem('feedback','Müşteri Memnuniyeti','/geri-bildirim','right')])
 ];
 const getHeaderMenu = (): HeaderMenuItem[] => { try { const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU).map((item: HeaderMenuItem)=>item.id==='library'?{...item,path:'/kutuphane'}:item); const discover = stored.find((item) => item.id === 'discover'); const future = discover?.children.find((item) => item.id === 'future'); const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children.find((item) => item.id === 'future')?.children.find((item) => item.id === 'build-my-team')?.content || ''; const team = future?.children.find((item) => item.id === 'build-my-team'); if (!team && future) future.children.push(headerItem('build-my-team','Bana Takım Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent)); else if (team && !team.content?.includes('Takımınızı kurun')) team.content = teamContent; const discoverIndex = stored.findIndex((item) => item.id === 'discover'); const videosIndex = stored.findIndex((item) => item.id === 'videos'); if (discoverIndex > videosIndex && videosIndex >= 0) { const reordered = [...stored]; const [discover] = reordered.splice(discoverIndex,1); reordered.splice(videosIndex,0,discover); return reordered; } return stored; } catch { return DEFAULT_HEADER_MENU; } };
@@ -546,7 +546,7 @@ function TurkeyListingMap() {
           const city = group.dataset.cityName || '';
           group.setAttribute('data-realty-city', city);
           group.querySelectorAll('path').forEach((path) => {
-            path.setAttribute('style', 'fill:#CD011E;fill-opacity:0.34;stroke:#ffffff;stroke-opacity:0.8;stroke-width:0.75;');
+            path.setAttribute('style', 'fill:#CD011E;fill-opacity:0.34;stroke:none;');
           });
         });
         setSvgMarkup(parsed.documentElement.outerHTML);
@@ -585,7 +585,7 @@ function TurkeyListingMap() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center max-w-2xl mx-auto mb-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />ETKİLEŞİMLİ TÜRKİYE HARİTASI</span>
-          <h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>TÜRKİYE'DE</span><img src="/rlogo2.png" alt="Realty Center" className="h-8 sm:h-9 w-auto object-contain" /></h2>
+          <h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>DÜNYADA REALTY CENTER®</span></h2>
           <p className="mt-2 text-sm font-medium text-slate-600">İlin üzerine gelin, seçmek için tıklayın.</p>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-5 shadow-lg">
@@ -761,7 +761,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-slate-950">
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
-      <div className={`absolute inset-0 ${franchise ? 'bg-red-800/50' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
+      <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
       <img src="/rlogo2.png" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
       <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
         <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
@@ -1492,7 +1492,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <RealtyNetworkActivityPanel />
           <div className="flex justify-center lg:justify-end">
             <Link to="/ilanlarimiz" className="sales-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
-              Dünyada her <span className="sales-pulse-highlight text-red-700">30 saniyede 1 gayrimenkul</span> Realty Center ile satılıyor.
+              DÜNYADA HER <span className="sales-pulse-highlight text-red-700">10 SANİYEDE 1 GAYRİMENKUL</span> REALTY CENTER® İLE İŞLEM GÖRÜYOR.
             </Link>
           </div>
         </div>
@@ -2315,8 +2315,6 @@ function ListingCategoriesPage() {
     { title: 'Kiralık Gayrimenkuller', label: 'KİRALIK', color: '#275B9B', transaction: 'Kiralık', description: 'Konut ve ticari kullanım için güncel kiralama fırsatları.', items: [['Konut','Ev','https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=80&w=900'],['İşyeri','Dükkan','https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=900'],['Villa','Villa','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=900'],['Tüm kiralık ilanlar','','https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=900']] },
     { title: 'Devren İşyerleri', label: 'DEVREN', color: '#72529C', transaction: 'Devren Satılık', description: 'Faaliyetine devam eden işletme ve ticari alan seçenekleri.', items: [['İşyeri','Dükkan','https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=900'],['Dükkan','Dükkan','https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=900'],['Ofis','Ofis','https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=900'],['Tüm devren ilanlar','','https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=900']] },
     { title: 'Yeni Projeler', label: 'PROJELER', color: '#A66A18', route: '/projelerimiz', description: 'Öne çıkan konut, villa ve ticari proje seçeneklerini inceleyin.', items: [['Yeni Konut','','https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=900'],['Ticari Proje','','https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=900'],['Villa Projesi','','https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=900'],['Tüm projeleri incele','','https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=900']] },
-    { title: 'Arsa ve Arazi', label: 'ARSA', color: '#18735D', transaction: 'Satılık', description: 'Konut, ticari ve sanayi yatırımları için arazi seçenekleri.', items: [['Konut','Arsa','https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=900'],['Ticari','Arsa','https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=900'],['Sanayi','Arsa','https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=900'],['Tarla','Arsa','https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=900']] },
-    { title: 'Ticari Gayrimenkuller', label: 'TİCARİ', color: '#17758A', transaction: 'Satılık', description: 'İşletmeniz veya yatırımınız için profesyonel ticari alanlar.', items: [['Plaza','Ofis','https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=900'],['Ofis','Ofis','https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=900'],['Dükkan','Dükkan','https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=900'],['Tüm ticari ilanlar','','https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=900']] }
   ];
   const openCategory = (group: typeof groups[number], propertyType: string) => {
     if ('route' in group && group.route) { navigate(group.route); return; }
