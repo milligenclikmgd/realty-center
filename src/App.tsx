@@ -265,7 +265,7 @@ const SAMPLE_LISTING_SEEDS: Array<[string, string, string, string, string, numbe
   ['Plaza', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Söğütözü'nde Plaza Katı", 'Plaza', 540, 39800000],
   ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
 ];
-const SAMPLE_LISTINGS: ListingItem[] = SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => ({
+const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => ({
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
   image: `https://images.unsplash.com/photo-${['1600585154340-be6161a56a0c','1613490493576-7fde63acd811','1600566753086-00f18fb6b3ea','1600607687939-ce8a6c25118c','1500382017468-9049fed747ef','1469474968028-56623f02e42e','1504917595217-d4dc5ebe6122','1565793298595-6a879b1d9492','1497366216548-37526070297c','1497366811353-6870744d04b2','1566073771259-6a8506099945'][index]}?auto=format&fit=crop&q=88&w=1200`,
   agentName: 'Realty Center Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
@@ -280,7 +280,11 @@ const SAMPLE_LISTINGS: ListingItem[] = SAMPLE_LISTING_SEEDS.map(([propertyType, 
   technicalFeatures: 'Otopark, güvenlik, ulaşım akslarına yakınlık, yüksek hızlı internet altyapısı',
   updatedAt: '15 Ağustos 2026',
   mapUrl: `https://www.google.com/maps?q=${encodeURIComponent('Çankaya Ankara')}&output=embed`
-}));
+})),
+  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=88&w=1400', images:['https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=88&w=1400','https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&q=88&w=1400'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
+  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1400', images:['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=88&w=1400','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=88&w=1400'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
+];
+const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
 const SAMPLE_OFFICES = [
   {
@@ -512,11 +516,11 @@ function getCategoryTransactionType(item: ListingCategory) {
   return item.type === 'Devren' ? 'Devren Satılık' : item.type;
 }
 
-const DEFAULT_FEATURED_LISTING_IDS = SAMPLE_LISTINGS.filter((listing) => listing.price <= 8000000).sort((a, b) => a.price - b.price).slice(0, 5).map((listing) => listing.id);
+const DEFAULT_FEATURED_LISTING_IDS = ['RC-201', 'RC-202', ...SAMPLE_LISTINGS.filter((listing) => listing.price <= 8000000 && listing.currency === '₺').sort((a, b) => a.price - b.price).slice(0, 3).map((listing) => listing.id)];
 function getFeaturedListingIds(): string[] {
   try {
     const saved = JSON.parse(localStorage.getItem('realty-center-featured-listing-ids') || 'null');
-    return Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string') : DEFAULT_FEATURED_LISTING_IDS;
+    return Array.isArray(saved) ? [...new Set(['RC-201', 'RC-202', ...saved.filter((id): id is string => typeof id === 'string')])] : DEFAULT_FEATURED_LISTING_IDS;
   } catch { return DEFAULT_FEATURED_LISTING_IDS; }
 }
 function saveFeaturedListingIds(ids: string[]) {
@@ -1197,7 +1201,7 @@ function FeaturedListingsShowcase() {
                     <p className="mt-1 truncate text-[10px] font-semibold text-slate-500">{item.district}, {item.neighborhood}</p>
                   </div>
                   <div className="shrink-0 text-right">
-                    <p className="text-base font-black text-red-700 sm:text-xl">{item.price.toLocaleString('tr-TR')} ₺</p>
+                    <p className="text-base font-black text-red-700 sm:text-xl">{formatListingPrice(item.price, item.currency)}</p>
                     <span className="mt-1 flex items-center justify-end text-[10px] font-black text-slate-500">İlanı İncele <ArrowRight className="ml-1 h-3.5 w-3.5" /></span>
                   </div>
                 </div>
