@@ -266,20 +266,20 @@ const SAMPLE_LISTING_SEEDS: Array<[string, string, string, string, string, numbe
   ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
 ];
 const DAYLIGHT_LISTING_IMAGES: Record<string, string[]> = {
-  'Daire': ['/slider/slider1.jpg', '/slider/slider4.jpg'],
-  'Villa': ['/slider/slider2.jpg', '/ev.jpg'],
-  'Residence': ['/slider/slider1.jpg', '/slider/slider4.jpg'],
-  'Müstakil Ev': ['/ev.jpg', '/slider/slider2.jpg'],
-  'Arsa': ['/slider/slider4.jpg', '/slider/slider2.jpg'],
-  'Tarla': ['/slider/slider4.jpg', '/slider/slider2.jpg'],
-  'Fabrika': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
-  'Depo': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
-  'Ofis': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
-  'Plaza': ['/slider/slider3.jpg', '/slider/slider1.jpg'],
-  'Otel': ['/slider/slider4.jpg', '/slider/slider2.jpg']
+  'Daire': ['/ev2.jpg', '/slider/realty-seaside.jpg'],
+  'Villa': ['/ev.jpg', '/ev.jpg'],
+  'Residence': ['/ev2.jpg', '/slider/realty-seaside.jpg'],
+  'Müstakil Ev': ['/ev.jpg', '/ev.jpg'],
+  'Arsa': ['/slider/realty-seaside.jpg', '/ev.jpg'],
+  'Tarla': ['/slider/realty-seaside.jpg', '/ev.jpg'],
+  'Fabrika': ['/slider/realty-city.jpg', '/ev2.jpg'],
+  'Depo': ['/slider/realty-city.jpg', '/ev2.jpg'],
+  'Ofis': ['/slider/realty-city.jpg', '/ev2.jpg'],
+  'Plaza': ['/slider/realty-city.jpg', '/ev2.jpg'],
+  'Otel': ['/slider/realty-seaside.jpg', '/ev.jpg']
 };
 const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => {
-  const images = DAYLIGHT_LISTING_IMAGES[propertyType] || ['/slider/slider1.jpg', '/slider/slider4.jpg'];
+  const images = DAYLIGHT_LISTING_IMAGES[propertyType] || ['/ev2.jpg', '/slider/realty-seaside.jpg'];
   return ({
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
   image: images[0],
@@ -294,8 +294,8 @@ const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyTy
   mapUrl: `https://www.google.com/maps?q=${encodeURIComponent('Çankaya Ankara')}&output=embed`
   });
 }),
-  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'/slider/slider4.jpg', images:['/slider/slider4.jpg','/slider/slider1.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
-  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'/slider/slider2.jpg', images:['/slider/slider2.jpg','/ev.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
+  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'/slider/realty-seaside.jpg', images:['/slider/realty-seaside.jpg','/ev2.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
+  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'/ev.jpg', images:['/ev.jpg','/ev.jpg'], agentName:'Realty Center International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
 ];
 const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
@@ -375,10 +375,10 @@ const SAMPLE_AGENTS = [
 ];
 
 const SLIDER_IMAGES = [
-  "/slider/slider1.jpg",
-  "/slider/slider2.jpg",
-  "/slider/slider3.jpg",
-  "/slider/slider4.jpg"
+  "/ev2.jpg",
+  "/ev.jpg",
+  "/slider/realty-city.jpg",
+  "/slider/realty-seaside.jpg"
 ];
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
@@ -1577,7 +1577,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="bg-slate-50 py-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2 relative min-h-72 overflow-hidden rounded-3xl bg-white"><img src="/slider/slider3.jpg" alt="İncek Vadi Evleri" className="absolute inset-0 h-full w-full object-contain" /><div className="relative max-w-md p-9 text-slate-950"><span className="text-xs font-black tracking-widest text-red-700">YENİ PROJELER</span><h2 className="mt-3 text-3xl font-black">İncek Vadi Evleri</h2><p className="mt-3 text-sm text-slate-700">Çankaya İncek'te doğayla iç içe, geniş sosyal alanlara sahip yeni nesil yaşam projesi.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white hover:bg-red-800">Projeleri İncele</Link></div></div>
+          <div className="lg:col-span-2 relative min-h-72 overflow-hidden rounded-3xl bg-white"><img src="/slider/realty-city.jpg" alt="İncek Vadi Evleri" className="absolute inset-0 h-full w-full object-contain" /><div className="relative max-w-md p-9 text-slate-950"><span className="text-xs font-black tracking-widest text-red-700">YENİ PROJELER</span><h2 className="mt-3 text-3xl font-black">İncek Vadi Evleri</h2><p className="mt-3 text-sm text-slate-700">Çankaya İncek'te doğayla iç içe, geniş sosyal alanlara sahip yeni nesil yaşam projesi.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white hover:bg-red-800">Projeleri İncele</Link></div></div>
           <div className="rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">YATIRIM FIRSATLARI</span><h2 className="mt-3 text-3xl font-black">Projenize, doğru yatırım ile başlayın.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Konut ve ticari projelerde lokasyon, değerleme ve satış süreçlerini uzmanlarımızla planlayın.</p><Link to="/projelerimiz" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Projeleri Gör</Link></div>
         </div>
       </section>
@@ -2932,8 +2932,8 @@ function ListingDetailPage() {
 
 function ProjectsPage() {
   const projects = [
-    { category: 'YENİ İNŞAAT PROJESİ', title: 'İncek Vadi Evleri', location: 'Çankaya · İncek', description: '2+1, 3+1 ve 4+1 seçenekleri; peyzaj alanları, kapalı otopark ve sosyal tesisleriyle aile yaşamına odaklanan yeni konut projesi.', status: 'Teslim: Aralık 2027', image: '/slider/slider3.jpg', tags: ['2+1 – 4+1', 'Sosyal tesis', 'Kapalı otopark'] },
-    { category: 'TİCARİ PROJE', title: 'Söğütözü Business Hub', location: 'Çankaya · Söğütözü', description: 'Yüksek görünürlük, esnek ofis metrekareleri ve toplantı alanlarıyla şirketler ve yatırımcılar için tasarlanan çağdaş ticari proje.', status: 'Ön talep dönemi', image: '/slider/slider2.jpg', tags: ['Ofis katları', 'Cadde mağazaları', 'Metroya yakın'] }
+    { category: 'YENİ İNŞAAT PROJESİ', title: 'İncek Vadi Evleri', location: 'Çankaya · İncek', description: '2+1, 3+1 ve 4+1 seçenekleri; peyzaj alanları, kapalı otopark ve sosyal tesisleriyle aile yaşamına odaklanan yeni konut projesi.', status: 'Teslim: Aralık 2027', image: '/slider/realty-city.jpg', tags: ['2+1 – 4+1', 'Sosyal tesis', 'Kapalı otopark'] },
+    { category: 'TİCARİ PROJE', title: 'Söğütözü Business Hub', location: 'Çankaya · Söğütözü', description: 'Yüksek görünürlük, esnek ofis metrekareleri ve toplantı alanlarıyla şirketler ve yatırımcılar için tasarlanan çağdaş ticari proje.', status: 'Ön talep dönemi', image: '/ev.jpg', tags: ['Ofis katları', 'Cadde mağazaları', 'Metroya yakın'] }
   ];
   return (
     <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="max-w-3xl"><span className="text-xs font-black tracking-widest text-red-700">REALTY CENTER PROJELER</span><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">Yeni yaşam ve yatırım <span className="text-red-700">projeleri</span></h1><p className="mt-5 text-lg leading-relaxed text-slate-600">Yeni inşaat ve ticari projeleri; lokasyon, teslim takvimi ve öne çıkan özellikleriyle inceleyin. Proje danışmanlarımız size en uygun seçenek için yanınızda.</p></div><div className="mt-10 grid gap-7 lg:grid-cols-2">{projects.map((project) => <article key={project.title} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="relative h-64 overflow-hidden bg-white"><img src={project.image} alt={project.title} className="h-full w-full object-contain transition duration-500"/><span className="absolute left-5 top-5 rounded-full bg-red-700 px-3 py-1.5 text-[11px] font-black tracking-wider text-white">{project.category}</span><div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 text-sm font-bold text-slate-800 shadow"><MapPin className="h-4 w-4 text-red-700"/>{project.location}</div></div><div className="p-6"><h2 className="text-2xl font-black text-slate-900">{project.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">{tag}</span>)}</div><div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5"><span className="text-sm font-black text-red-700">{project.status}</span><Link to="/iletisim" className="inline-flex items-center gap-1 text-sm font-black text-slate-900 transition hover:text-red-700">Bilgi Al <ArrowRight className="h-4 w-4"/></Link></div></div></article>)}</div></div></div>
