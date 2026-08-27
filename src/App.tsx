@@ -611,10 +611,24 @@ function TurkeyListingMap() {
 
 
 function WorldNetworkModal({ onClose }: { onClose: () => void }) {
-  const offices = [{country:'İngiltere',name:'Londra',pos:[51.5,-.12] as [number,number]},{country:'Birleşik Arap Emirlikleri',name:'Dubai',pos:[25.2,55.27] as [number,number]},{country:'ABD',name:'New York',pos:[40.7,-74] as [number,number]},{country:'Almanya',name:'Berlin',pos:[52.52,13.4] as [number,number]},{country:'Avustralya',name:'Sidney',pos:[-33.8,151.2] as [number,number]},{country:'Türkiye',name:'İstanbul',pos:[41.01,28.98] as [number,number]}];
+  const offices = [
+    {country:'İngiltere',name:'Londra',pos:[51.5,-.12] as [number,number]},
+    {country:'Almanya',name:'Berlin',pos:[52.52,13.4] as [number,number]},
+    {country:'Fransa',name:'Paris',pos:[48.86,2.35] as [number,number]},
+    {country:'İspanya',name:'Madrid',pos:[40.42,-3.7] as [number,number]},
+    {country:'İtalya',name:'Roma',pos:[41.9,12.5] as [number,number]},
+    {country:'Hollanda',name:'Amsterdam',pos:[52.37,4.9] as [number,number]},
+    {country:'Belçika',name:'Brüksel',pos:[50.85,4.35] as [number,number]},
+    {country:'Birleşik Arap Emirlikleri',name:'Dubai',pos:[25.2,55.27] as [number,number]},
+    {country:'ABD',name:'New York',pos:[40.7,-74] as [number,number]},
+    {country:'Avustralya',name:'Sidney',pos:[-33.8,151.2] as [number,number]},
+    {country:'Yeni Zelanda',name:'Auckland',pos:[-36.85,174.76] as [number,number]},
+    {country:'Türkiye',name:'İstanbul',pos:[41.01,28.98] as [number,number]},
+    {country:'Türkiye',name:'Ankara',pos:[39.93,32.86] as [number,number]}
+  ];
   const [zoom, setZoom] = useState(2);
   const WorldZoomListener = () => { useMapEvents({ zoomend: (event) => setZoom(event.target.getZoom()) }); return null; };
-  return <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={onClose}><section className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex items-center justify-between bg-[#CD011E] px-6 py-5 text-white"><div><p className="text-[10px] font-black tracking-[.2em] text-white/70">KÜRESEL AĞ</p><h2 className="mt-1 text-2xl font-black">DÜNYADA REALTY CENTER®</h2></div><button onClick={onClose} className="rounded-full bg-white/15 px-4 py-2 text-xs font-black">Kapat</button></header><div className="h-[460px]"><MapContainer center={[25,20]} zoom={2} scrollWheelZoom className="h-full w-full"><TileLayer attribution="&copy; CARTO" url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" /><WorldZoomListener />{offices.map((office) => <CircleMarker key={office.name} center={office.pos} radius={9} pathOptions={{color:'#fff',fillColor:'#CD011E',fillOpacity:1,weight:3}}><Tooltip permanent direction="top" opacity={1}>{zoom < 4 ? office.country : office.name}</Tooltip></CircleMarker>)}</MapContainer></div><p className="px-6 py-4 text-xs text-slate-500">Önce ülkeleri görün; haritayı yakınlaştırdıkça ofis şehirleri görünür.</p></section></div>;
+  return <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={onClose}><section className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex items-center justify-between bg-[#CD011E] px-6 py-5 text-white"><div><p className="text-[10px] font-black tracking-[.2em] text-white/70">KÜRESEL AĞ</p><h2 className="mt-1 text-2xl font-black">DÜNYADA REALTY CENTER®</h2></div><button onClick={onClose} className="rounded-full bg-white/15 px-4 py-2 text-xs font-black">Kapat</button></header><div className="h-[460px]"><MapContainer center={[25,20]} zoom={2} scrollWheelZoom className="h-full w-full"><TileLayer attribution="&copy; CARTO" url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" /><WorldZoomListener />{offices.map((office, index) => <CircleMarker key={office.name} center={office.pos} radius={9} pathOptions={{color:'#fff',fillColor:'#CD011E',fillOpacity:1,weight:3}}>{zoom >= 4 ? <Tooltip permanent direction="top" opacity={1}>{office.name}</Tooltip> : offices.findIndex((item) => item.country === office.country) === index ? <Tooltip permanent direction="top" opacity={1}>{office.country}</Tooltip> : null}</CircleMarker>)}</MapContainer></div><p className="px-6 py-4 text-xs text-slate-500">Önce ülkeleri görün; haritayı yakınlaştırdıkça ofis şehirleri görünür.</p></section></div>;
 }
 
 function RealtyNetworkActivityPanel() {
