@@ -810,12 +810,12 @@
 
 
 /* Header ölçüsü ve menü hizası: tüm başlıklar aynı düşey merkezde kalır. */
-.realty-header-top-space { height: 40px; }
-.realty-header-bar { min-height: 81px; }
-.realty-header-emblem { height: 81px; }
-.realty-header-desktop { min-height: 81px; }
+.realty-header-top-space { height: 34px; }
+.realty-header-bar { min-height: 69px; }
+.realty-header-emblem { height: 69px; }
+.realty-header-desktop { min-height: 69px; }
 .realty-header-desktop > div { align-items: stretch; }
 .realty-header-desktop .realty-header-link { height: 100%; min-height: 0; }
 @media (max-width: 1279px) {
-  .realty-header-bar > .relative.z-10 { min-height: 68px; }
+  .realty-header-bar > .relative.z-10 { min-height: 58px; }
 }
