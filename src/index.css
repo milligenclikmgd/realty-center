@@ -735,6 +735,15 @@
 
 .listing-cinematic-card{will-change:transform;}
 .listing-cinematic-card:hover{transform:translate3d(0,-7px,0) scale(1.012);}
+.listing-card-photo {
+  /* İlan kartları geniş slider görsellerini de kartı boş bırakmadan dengeli gösterir. */
+  aspect-ratio: 3 / 2;
+  height: auto;
+}
+.listing-card-photo img {
+  object-fit: cover;
+  object-position: center;
+}
 .listing-detail-enter{animation:listingDetailEnter .5s cubic-bezier(.2,.8,.2,1) both;}
 @keyframes listingDetailEnter{from{opacity:0;transform:translate3d(0,18px,0) scale(.988)}to{opacity:1;transform:none}}
 
