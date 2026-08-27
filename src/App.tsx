@@ -1206,7 +1206,7 @@ function FeaturedListingsShowcase() {
                 aria-label={`${item.title} ilanını incele`}
               >
                 <div className="relative h-[245px] shrink-0 overflow-hidden bg-slate-100 sm:h-[285px]">
-                  <img src={item.image} alt={item.title} draggable={false} className="h-full w-full bg-white object-contain transition duration-700" />
+                  <img src={item.image} alt={item.title} draggable={false} className="h-full w-full object-cover object-center transition duration-700" />
                   <div className="absolute left-5 top-5 flex items-center gap-2">
                     <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
                     <span className="rounded-full border border-slate-200 bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 shadow-sm">{item.type}</span>
@@ -1421,13 +1421,13 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
-            <div
+            <img
               key={index}
-              className={`absolute inset-0 h-full w-full bg-white object-contain transition-all duration-1000 ease-in-out transform ${
-                index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-              }`}
               src={imgUrl}
               alt="Realty Center gayrimenkul fırsatları"
+              className={`absolute inset-0 h-full w-full object-cover object-center transition-all duration-1000 ease-in-out transform ${
+                index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+              }`}
             />
           ))}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent" />
