@@ -1,0 +1,71 @@
+/* Realty Center® büyük modül tasarım standardı
+   - Büyük beyaz modül kutuları tamamen oval köşeli
+   - Kırmızı/beyaz geçişlerinde açık lacivert kontur
+   - BARTERBANK® üst modülle aynı genişlikte
+*/
+
+:root {
+  --rc-panel-red: #CD011E;
+  --rc-panel-navy-light: #9BB6D0;
+  --rc-panel-radius: 1.5rem;
+}
+
+/* Ana sayfadaki büyük beyaz modül kutularında köşe standardı */
+main section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow"],
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-xl"],
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-lg"] {
+  border-radius: var(--rc-panel-radius) !important;
+  overflow: hidden !important;
+}
+
+/* Yan yana kırmızı + beyaz büyük modüllerde kırmızı taraf da dört köşeden oval olsun.
+   Sağdaki hafif lacivert gölge, kırmızıdan beyaza geçiş konturunu oluşturur. */
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow"] > div[class*="bg-[#CD011E]"],
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-xl"] > div[class*="bg-[#CD011E]"] {
+  position: relative;
+  z-index: 1;
+  border-radius: var(--rc-panel-radius) !important;
+  box-shadow: 2px 0 0 var(--rc-panel-navy-light);
+}
+
+/* Üstü kırmızı, altı beyaz olan büyük modüllerde de aynı standardı koru. */
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow"] > header[class*="bg-[#CD011E]"],
+section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-lg"] > header[class*="bg-[#CD011E]"] {
+  position: relative;
+  z-index: 1;
+  border-radius: var(--rc-panel-radius) !important;
+  box-shadow: 0 2px 0 var(--rc-panel-navy-light);
+}
+
+/* BARTERBANK®: üstteki ALICI TALEBİ modülü ile aynı maksimum genişlik */
+#barter-bank > div {
+  max-width: 80rem !important;
+}
+
+/* EMLAK TAKAS SİSTEMİ alt markasını daha görünür yap */
+#barter-bank header h2 + span {
+  font-size: 0.9rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.14em !important;
+  opacity: 0.82;
+}
+
+/* FAZLANI VER / EKSİĞİNİ AL yuvarlak slogan logosunu büyüt */
+#barter-bank header [aria-label="Fazlanı ver, eksiğini al"] {
+  width: 5rem !important;
+  height: 5rem !important;
+  font-size: 0.62rem !important;
+  line-height: 1.15 !important;
+  border-width: 2px !important;
+}
+
+#barter-bank header [aria-label="Fazlanı ver, eksiğini al"] span[class*="h-px"] {
+  width: 2.25rem !important;
+}
+
+/* Mobilde büyük modüller birbirine girmeden oval yapıyı korusun. */
+@media (max-width: 1023px) {
+  section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow"] > div[class*="bg-[#CD011E]"] {
+    box-shadow: 0 2px 0 var(--rc-panel-navy-light);
+  }
+}
