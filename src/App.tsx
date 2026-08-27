@@ -137,7 +137,7 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
       headerItem('education-centers','Eğitim Merkezleri','/icerik/education-centers','left',[],'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=90&w=1400','Türkiye genelindeki eğitim merkezlerimiz, danışmanlarımızın güncel sektör bilgisine ve uygulamalı gelişim programlarına erişmesini sağlar.'),
       headerItem('education-types','Eğitim Çeşitlerimiz','/icerik/education-types','left',[],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','Başlangıç, uzmanlık, mevzuat, satış, pazarlama ve teknoloji eğitimleriyle her kariyer aşamasına uygun gelişim seçenekleri sunuyoruz.')
     ],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','Realty Center eğitim programları, gayrimenkul profesyonellerinin bilgi ve saha becerilerini sürekli geliştiren planlı bir öğrenme yolculuğudur.'),
-    headerItem('future','Geleceğim İçin','/icerik/future','left',[headerItem('build-my-team','Bana Takım Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Takımınızı kurun, etkinizi büyütün.\n\nGayrimenkulde kalıcı büyüme yalnızca daha çok satış yapmakla değil; doğru insanları, doğru görevlerle bir araya getirmekle başlar. Realty Center danışmanları, iş hacimleri geliştikçe kendi işlerini sistemli bir ekip yapısına dönüştürebilir.\n\nİlk aşamada operasyon ve takip süreçlerini düzenleyecek bir idari asistan; müşteri trafiği arttığında alıcı ihtiyaçlarını yönetecek bir danışman; portföy hacmi büyüdüğünde ise satışa sunulacak gayrimenkullerden sorumlu bir portföy uzmanı ekibe değer katar.\n\nAmaç herkesin aynı işi yapması değil, her rolün kendi uzmanlığında güçlenmesidir. Eğitim, mentorluk ve kurumsal sistem desteğimizle ekibinizi planlı biçimde büyütür; daha düzenli, daha verimli ve sürdürülebilir bir iş modeli kurmanıza eşlik ederiz.\n\nBirlikte çalışan güçlü bir ekip, kariyerinizdeki en sağlam yatırımlardan biridir.')],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Gayrimenkul sektöründe güçlü bir kariyer kurmanız için eğitim, mentorluk ve kurumsal marka desteğini bir araya getiriyoruz.'),
+    headerItem('future','Geleceğim İçin','/icerik/future','left',[headerItem('build-my-team','KENDİ TAKIMINI KUR','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Takımınızı kurun, etkinizi büyütün.\n\nGayrimenkulde kalıcı büyüme yalnızca daha çok satış yapmakla değil; doğru insanları, doğru görevlerle bir araya getirmekle başlar. Realty Center danışmanları, iş hacimleri geliştikçe kendi işlerini sistemli bir ekip yapısına dönüştürebilir.\n\nİlk aşamada operasyon ve takip süreçlerini düzenleyecek bir idari asistan; müşteri trafiği arttığında alıcı ihtiyaçlarını yönetecek bir danışman; portföy hacmi büyüdüğünde ise satışa sunulacak gayrimenkullerden sorumlu bir portföy uzmanı ekibe değer katar.\n\nAmaç herkesin aynı işi yapması değil, her rolün kendi uzmanlığında güçlenmesidir. Eğitim, mentorluk ve kurumsal sistem desteğimizle ekibinizi planlı biçimde büyütür; daha düzenli, daha verimli ve sürdürülebilir bir iş modeli kurmanıza eşlik ederiz.\n\nBirlikte çalışan güçlü bir ekip, kariyerinizdeki en sağlam yatırımlardan biridir.')],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Gayrimenkul sektöründe güçlü bir kariyer kurmanız için eğitim, mentorluk ve kurumsal marka desteğini bir araya getiriyoruz.'),
     headerItem('systems','Sistem ve Modeller','/icerik/systems','left',[],'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400','Portföy, müşteri, pazarlama ve raporlama süreçlerini ölçülebilir sistemlerle yönetiyoruz.'),
     headerItem('culture','Realty Center Kültürü','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Önce Güven anlayışı; şeffaflık, dayanışma, gelişim ve başarıyı paylaşma değerleri üzerine kuruludur.')
   ]),
@@ -145,7 +145,7 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
   headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.')]),
   headerItem('ai','Yapay Zeka Asistanı','/ai-karar-asistani','right'), headerItem('library','Realty Kütüphane','/kutuphane','right'), headerItem('why','Neden Realty Center?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','Danışman Ol','/danisman-basvuru','right'), headerItem('contact','İletişim','/iletisim','right',[headerItem('contact-info','İletişim Bilgilerimiz','/iletisim','right'),headerItem('feedback','Müşteri Memnuniyeti','/geri-bildirim','right')])
 ];
-const getHeaderMenu = (): HeaderMenuItem[] => { try { const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU).map((item: HeaderMenuItem)=>item.id==='library'?{...item,path:'/kutuphane'}:item); const discover = stored.find((item) => item.id === 'discover'); const future = discover?.children.find((item) => item.id === 'future'); const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children.find((item) => item.id === 'future')?.children.find((item) => item.id === 'build-my-team')?.content || ''; const team = future?.children.find((item) => item.id === 'build-my-team'); if (!team && future) future.children.push(headerItem('build-my-team','Bana Takım Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent)); else if (team && !team.content?.includes('Takımınızı kurun')) team.content = teamContent; const discoverIndex = stored.findIndex((item) => item.id === 'discover'); const videosIndex = stored.findIndex((item) => item.id === 'videos'); if (discoverIndex > videosIndex && videosIndex >= 0) { const reordered = [...stored]; const [discover] = reordered.splice(discoverIndex,1); reordered.splice(videosIndex,0,discover); return reordered; } return stored; } catch { return DEFAULT_HEADER_MENU; } };
+const getHeaderMenu = (): HeaderMenuItem[] => { try { const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU).map((item: HeaderMenuItem)=>item.id==='library'?{...item,path:'/kutuphane'}:item); const discover = stored.find((item) => item.id === 'discover'); const future = discover?.children.find((item) => item.id === 'future'); const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children.find((item) => item.id === 'future')?.children.find((item) => item.id === 'build-my-team')?.content || ''; const team = future?.children.find((item) => item.id === 'build-my-team'); if (!team && future) future.children.push(headerItem('build-my-team','Bana Takım Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent)); else if (team) { team.label = 'KENDİ TAKIMINI KUR'; if (!team.content?.includes('Takımınızı kurun')) team.content = teamContent; } const discoverIndex = stored.findIndex((item) => item.id === 'discover'); const videosIndex = stored.findIndex((item) => item.id === 'videos'); if (discoverIndex > videosIndex && videosIndex >= 0) { const reordered = [...stored]; const [discover] = reordered.splice(discoverIndex,1); reordered.splice(videosIndex,0,discover); return reordered; } return stored; } catch { return DEFAULT_HEADER_MENU; } };
 const saveHeaderMenu = (items: HeaderMenuItem[]) => { localStorage.setItem('realty-center-header-menu', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-header-updated')); };
 const findHeaderItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem | undefined => { for (const item of items) { if (item.id === id) return item; const found = findHeaderItem(item.children, id); if (found) return found; } return undefined; };
 const updateHeaderMenuItem = (items: HeaderMenuItem[], id: string, patch: Partial<HeaderMenuItem>): HeaderMenuItem[] => items.map((item) => item.id === id ? { ...item, ...patch } : { ...item, children: updateHeaderMenuItem(item.children, id, patch) });
@@ -932,7 +932,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   }, [location.pathname]);
 
   const menuLinkClass = (_to: string) =>
-    'realty-header-link relative flex min-h-12 items-center justify-center px-1.5 text-center text-[10px] font-black leading-tight text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
+    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-[10px] font-black leading-[1.15] text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
   const submitSiteSearch = (event: React.FormEvent) => {
     event.preventDefault();
     if (!siteSearch.trim()) return;
@@ -1434,11 +1434,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="hero-search-entrance w-full max-w-2xl -ml-4 sm:-ml-10 lg:-ml-20">
-            <div className="grid grid-cols-3 gap-2 mb-2">
+          <div className="hero-search-entrance w-full max-w-[34rem] -ml-4 sm:-ml-10 lg:-ml-20">
+            <div className="grid grid-cols-[1.2fr_.9fr_.9fr] gap-2 mb-2">
               <button
                 onClick={() => setActiveTab('search')}
-                className={`relative overflow-hidden group h-24 rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
+                className={`relative overflow-hidden group h-[4.5rem] rounded-t-lg font-black flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md ${
                   activeTab === 'search' 
                     ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
@@ -1450,7 +1450,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <Link
                 to="/franchise-basvuru"
-                className="relative overflow-hidden group h-24 rounded-t-xl bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-[4.5rem] rounded-t-xl bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Building2 className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
@@ -1458,14 +1458,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <Link
                 to="/danisman-basvuru"
-                className="relative overflow-hidden group h-24 rounded-t-lg bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-[4.5rem] rounded-t-lg bg-white/92 text-red-700 hover:bg-slate-100 font-extrabold flex flex-col items-center justify-center space-y-1 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
               >
                 <Briefcase className="w-6 h-6 text-red-700 relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
               </Link>
             </div>
 
-            <div className="bg-white/84 text-slate-900 p-6 rounded-b-2xl rounded-tr-2xl shadow-2xl shadow-black/30 space-y-4 border border-white/65 backdrop-blur-xl">
+            <div className="bg-white/84 text-slate-900 p-5 rounded-b-2xl rounded-tr-2xl shadow-2xl shadow-black/30 space-y-4 border border-white/65 backdrop-blur-xl">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div>
                   <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Satılık / Kiralık</label>
