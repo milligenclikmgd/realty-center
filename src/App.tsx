@@ -695,11 +695,11 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
     <article className="listing-cinematic-card relative flex h-full cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:border-red-700 hover:shadow-2xl group">
       <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanını incele`} className="absolute inset-0 z-10" />
       <div className="pointer-events-none relative z-20">
-        <div className="relative h-48 overflow-hidden bg-slate-100">
+        <div className="listing-card-photo relative h-48 overflow-hidden bg-slate-100">
           <img 
             src={item.image} 
             alt={item.title} 
-            className="w-full h-full bg-white object-contain transition duration-500"
+            className="block h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.035]"
           />
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
             <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
