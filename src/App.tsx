@@ -1376,7 +1376,7 @@ function BarterBankModuleV3() {
   const [request, setRequest] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'Diğer'>('Ev');
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
-  const fields = (type: typeof offer) => type === 'Ev' ? ['İl', 'İlçe', 'Mahalle', 'Konut özellikleri'] : type === 'Arsa' ? ['İl', 'İlçe', 'Mahalle', 'Ada', 'Parsel'] : type === 'Otomobil' ? ['Marka', 'Model'] : ['Şehir / İlçe'];
+  const fields = (type: typeof offer) => type === 'Ev' ? ['İl', 'İlçe', 'Mahalle'] : type === 'Arsa' ? ['İl', 'İlçe', 'Mahalle', 'Ada', 'Parsel'] : type === 'Otomobil' ? ['Marka', 'Model'] : ['Şehir / İlçe'];
   const column = (title: string, subtitle: string, type: typeof offer, setType: (type: typeof offer) => void, prefix: string) => (
     <section className="barter-property-card rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm">
       <div className="mb-4 flex items-start justify-between gap-3">
