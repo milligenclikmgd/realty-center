@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 992 471" role="img" aria-label="Realty Center"><image href="/rlogo2.png" x="0" y="0" width="992" height="471"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Realty Center kırmızı ev simgesi">
+  <path fill="#e30b17" d="M27 92 123 18l97 74h-14v67c0 39-28 69-67 69h-2l17 28-43-28H93c-25 0-43-7-43-39V92H27Z"/>
+  <path fill="#000" d="M106 106h32v49h-32z"/>
+</svg>
