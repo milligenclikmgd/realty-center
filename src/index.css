@@ -954,3 +954,13 @@
     transition: none;
   }
 }
+
+
+/* Franchise fırsatları sayfasında global scroll bulanıklığı devre dışıdır. */
+[data-no-scroll-reveal="true"] .site-scroll-reveal,
+[data-no-scroll-reveal="true"].site-scroll-reveal {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
