@@ -903,41 +903,6 @@
 }
 
 
-/* Tüm sayfalarda modüller ekrana girdikçe bulanıklıktan netliğe geçer. */
-.site-scroll-reveal {
-  opacity: .14;
-  filter: blur(11px);
-  transform: translate3d(0, 34px, 0) scale(.985);
-  transform-origin: center top;
-  transition:
-    opacity .82s cubic-bezier(.2,.8,.2,1),
-    filter .9s cubic-bezier(.2,.8,.2,1),
-    transform .9s cubic-bezier(.2,.8,.2,1);
-  will-change: opacity, filter, transform;
-}
-.site-scroll-reveal.is-visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translate3d(0, 0, 0) scale(1);
-  will-change: auto;
-}
-@media (max-width: 640px) {
-  .site-scroll-reveal {
-    filter: blur(7px);
-    transform: translate3d(0, 22px, 0) scale(.99);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .site-scroll-reveal,
-  .site-scroll-reveal.is-visible {
-    opacity: 1;
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-}
-
-
 /* Franchise fırsatları landing page: premium kart etkileşimleri */
 .franchise-benefit-card {
   transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
@@ -953,14 +918,4 @@
     transform: none;
     transition: none;
   }
-}
-
-
-/* Franchise fırsatları sayfasında global scroll bulanıklığı devre dışıdır. */
-[data-no-scroll-reveal="true"] .site-scroll-reveal,
-[data-no-scroll-reveal="true"].site-scroll-reveal {
-  opacity: 1 !important;
-  filter: none !important;
-  transform: none !important;
-  transition: none !important;
 }
