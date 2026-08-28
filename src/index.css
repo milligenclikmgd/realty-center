@@ -438,6 +438,26 @@
   .gold-showcase-glow, .gold-showcase-spark, .gold-showcase-card::after { animation: none; }
 }
 
+/* Büyük kurumsal kırmızı modüller: header ile aynı lacivert kontur dili */
+.rc-navy-frame {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #071d3b !important;
+  border-radius: 1.5rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .22),
+    0 0 0 1px rgba(7, 29, 59, .08),
+    0 14px 30px rgba(7, 29, 59, .16) !important;
+}
+
+.rc-navy-frame:hover {
+  border-color: #0b2b54 !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .26),
+    0 0 0 1px rgba(7, 29, 59, .1),
+    0 17px 36px rgba(7, 29, 59, .2) !important;
+}
+
 /* Realty Center kurumsal kırmızısı: KW referans rengi #CD011E */
 .bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900 { background-color: #CD011E !important; }
 .text-red-500, .text-red-600, .text-red-700, .text-red-800, .text-red-900 { color: #CD011E !important; }
