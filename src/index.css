@@ -843,3 +843,61 @@
 @media (max-width: 1279px) {
   .realty-header-bar > .relative.z-10 { min-height: 58px; }
 }
+
+
+/* BARTERBANK: daha yumuşak kart yapısı ve sakin mikro animasyonlar */
+.barter-shell {
+  border-radius: 1.75rem;
+  box-shadow: 0 22px 55px rgba(7, 29, 59, .14) !important;
+  transition: box-shadow .35s ease, transform .35s ease;
+}
+.barter-shell:hover { box-shadow: 0 27px 65px rgba(7, 29, 59, .18) !important; }
+.barter-header::after {
+  content: '';
+  position: absolute;
+  inset: -60% auto -60% -35%;
+  width: 30%;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,.16), transparent);
+  transform: skewX(-18deg);
+  animation: barterHeaderSheen 8s ease-in-out infinite;
+}
+.barter-toggle:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(7,29,59,.22); }
+.barter-form-reveal {
+  transform-origin: top center;
+  animation: barterFormReveal .55s cubic-bezier(.2,.82,.25,1) both;
+}
+.barter-property-card {
+  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+.barter-property-card:hover {
+  border-color: rgba(205,1,30,.25);
+  box-shadow: 0 15px 35px rgba(7,29,59,.09);
+  transform: translateY(-3px);
+}
+.barter-field {
+  outline: none;
+  transition: border-color .22s ease, background-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.barter-field:focus {
+  border-color: #12345b;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(18,52,91,.09);
+  transform: translateY(-1px);
+}
+.barter-submit { transition: transform .25s ease, filter .25s ease, box-shadow .25s ease; }
+.barter-submit:hover { filter: brightness(1.06); transform: translateY(-2px); box-shadow: 0 14px 30px rgba(125,0,19,.22); }
+.barter-success { animation: barterFormReveal .55s cubic-bezier(.2,.82,.25,1) both; }
+@keyframes barterFormReveal {
+  from { opacity: 0; transform: translateY(-16px) scaleY(.96); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0) scaleY(1); filter: blur(0); }
+}
+@keyframes barterHeaderSheen {
+  0%, 58%, 100% { left: -35%; opacity: 0; }
+  68% { opacity: .8; }
+  84% { left: 115%; opacity: .35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .barter-header::after, .barter-form-reveal, .barter-success { animation: none; }
+  .barter-property-card:hover, .barter-toggle:hover, .barter-submit:hover { transform: none; }
+}
