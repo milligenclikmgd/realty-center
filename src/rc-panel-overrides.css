@@ -10,6 +10,11 @@
   --rc-panel-radius: 1.5rem;
 }
 
+/* Header üstündeki beyaz alanı bir miktar büyüt */
+.realty-header-top-space {
+  height: 58px !important;
+}
+
 /* Ana sayfadaki büyük beyaz modül kutularında köşe standardı */
 main section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow"],
 section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-xl"],
