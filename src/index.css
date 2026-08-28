@@ -934,3 +934,12 @@
   transition: opacity 900ms ease-in-out !important;
 }
 
+/* Ana sayfa kart odaklama istisnası: diğer kartlar soft biçimde bulanıklaşır */
+.home-page-static .card-focus-item,
+.home-page-static .gold-showcase-card {
+  transition:
+    filter 320ms ease,
+    opacity 320ms ease,
+    transform 320ms ease !important;
+}
+
