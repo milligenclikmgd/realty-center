@@ -936,3 +936,21 @@
     transition: none;
   }
 }
+
+
+/* Franchise fırsatları landing page: premium kart etkileşimleri */
+.franchise-benefit-card {
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+.franchise-benefit-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(205, 1, 30, .24);
+  box-shadow: 0 20px 45px rgba(7, 29, 59, .12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .franchise-benefit-card,
+  .franchise-benefit-card:hover {
+    transform: none;
+    transition: none;
+  }
+}
