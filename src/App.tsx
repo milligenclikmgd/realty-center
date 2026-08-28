@@ -1545,6 +1545,7 @@ function HomeLibraryPreview() {
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const navigate = useNavigate();
+  const homeRootRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
@@ -1588,10 +1589,36 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
     return () => window.clearTimeout(timeoutId);
   }, [aiDemoPaused]);
 
+  useEffect(() => {
+    const root = homeRootRef.current;
+    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const modules = Array.from(root.querySelectorAll<HTMLElement>('section'))
+      .filter((section) => !section.parentElement?.closest('section'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+
+    modules.forEach((module) => {
+      module.classList.add('home-scroll-fade');
+      observer.observe(module);
+    });
+
+    return () => {
+      observer.disconnect();
+      modules.forEach((module) => module.classList.remove('home-scroll-fade', 'is-visible'));
+    };
+  }, []);
+
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <div>
+    <div ref={homeRootRef}>
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
