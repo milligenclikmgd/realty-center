@@ -919,3 +919,29 @@
     transition: none;
   }
 }
+
+/* Ana sayfa modülleri: bulanıklık kullanmadan hafif scroll fade-up */
+.home-scroll-fade {
+  opacity: 0.82;
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity 480ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 480ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.home-scroll-fade.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-scroll-fade,
+  .home-scroll-fade.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
