@@ -844,7 +844,7 @@ function FranchiseOpportunitiesPage() {
     'Bölgesinde güçlü bir gayrimenkul organizasyonu kurmayı hedefleyen profesyoneller'
   ];
 
-  return <main className="overflow-hidden bg-[#f7f9fc] text-slate-900">
+  return <main data-no-scroll-reveal="true" className="overflow-hidden bg-[#f7f9fc] text-slate-900">
     <section className="relative min-h-[660px] overflow-hidden bg-[#071d3b] text-white">
       <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=2000" alt="Realty Center franchise iş ortaklığı ve profesyonel gayrimenkul ekibi" className="absolute inset-0 h-full w-full object-cover opacity-55"/>
       <div className="absolute inset-0 bg-gradient-to-r from-[#06182f] via-[#071d3b]/90 to-[#071d3b]/35"/>
@@ -889,8 +889,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center® danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
       <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
       <img src="/rlogo2.png" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
-      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center gap-7 lg:flex-row lg:justify-between' : 'justify-start'}`}>
-        {franchise && <aside className="w-full max-w-xl rounded-3xl border border-white/25 bg-[#071d3b]/82 p-7 text-white shadow-2xl backdrop-blur-md sm:p-10"><p className="text-xs font-black tracking-[.2em] text-red-300">FRANCHISE DÜNYASI</p><h2 className="mt-4 text-3xl font-black leading-tight sm:text-4xl">Realty Center® Franchise Dünyasını Keşfedin</h2><p className="mt-5 text-sm leading-7 text-slate-200">Güçlü bir marka, yenilikçi teknoloji, eğitim desteği ve sürdürülebilir bir iş modeliyle gayrimenkul sektöründe kendi başarı hikâyenizi oluşturun.</p><Link to="/franchise-firsatlari" className="mt-7 inline-flex rounded-xl bg-white px-5 py-3.5 text-sm font-black text-[#CD011E] shadow-lg transition hover:-translate-y-1">Franchise Fırsatlarını Keşfet →</Link></aside>}
+      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
         <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'rc-navy-frame bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
             <img src="/rlogo2.png" alt="Realty Center®" className="h-11 w-full object-contain drop-shadow-sm" />
@@ -899,6 +898,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
           <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center® ol.' : 'Realty Center® ailesine katıl.'}</h1>
           <p className={`mt-3 text-sm leading-relaxed ${franchise ? 'text-white/85' : 'text-slate-600'}`}>Bilgilerinizi bırakın, başvurunuz ilgili ekip tarafından değerlendirilsin.</p>
+          {franchise && <Link to="/franchise-firsatlari" className="mt-3 inline-flex text-xs font-black text-white/85 underline decoration-white/40 underline-offset-4 transition hover:text-white">Franchise fırsatlarını keşfet →</Link>}
           <form className="mt-8 grid gap-4 sm:grid-cols-2">
             <input required placeholder="Ad Soyad" className={fieldClass} />
             <input required placeholder="Telefon" className={fieldClass} />
@@ -4631,7 +4631,7 @@ function GlobalScrollReveal() {
     let observer: IntersectionObserver;
     const prepareSections = () => {
       const sections = Array.from(document.querySelectorAll<HTMLElement>('main section'))
-        .filter((section) => !section.parentElement?.closest('section') && !section.dataset.scrollRevealReady);
+        .filter((section) => !section.parentElement?.closest('section') && !section.closest('[data-no-scroll-reveal="true"]') && !section.dataset.scrollRevealReady);
 
       sections.forEach((section) => {
         section.dataset.scrollRevealReady = 'true';
