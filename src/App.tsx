@@ -1508,7 +1508,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               key={index}
               src={imgUrl}
               alt="Realty Center® gayrimenkul fırsatları"
-              className={`absolute inset-0 h-full w-full object-cover object-center transition-all duration-1000 ease-in-out transform ${
+              className={`home-slider-image absolute inset-0 h-full w-full object-cover object-center transition-all duration-1000 ease-in-out transform ${
                 index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
               }`}
             />
