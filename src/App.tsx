@@ -1324,7 +1324,10 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
         </div>
 
         <div className="mt-7 rounded-lg border border-slate-200 bg-white p-4 text-[10px] leading-relaxed text-slate-500">Realty Center®’da yayımlanan ilan, açıklama ve görseller ilan sahibi veya yetkili gayrimenkul danışmanı tarafından sağlanır. Taşınmaz satın alma ve kiralama işlemlerinde tapu kayıtlarını, yetki belgelerini ve sözleşme koşullarını kontrol ediniz. Sitedeki içerikler yatırım veya hukuk danışmanlığı niteliğinde değildir.</div>
-        <div className="mt-5 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-5 text-[10px] font-semibold text-slate-500 sm:flex-row"><span>© 2026 Realty Center® Türkiye. Tüm hakları saklıdır.</span><span className="flex items-center gap-2">Dijital Çözüm Ortağı <img src="/klogo.png" alt="Kriter Medya" className="h-6 w-auto object-contain"/></span></div>
+        <div className="mt-5 border-t border-slate-200 pt-5 text-center text-[10px] font-semibold text-slate-500">
+          <span className="block">© 2026 Realty Center® Türkiye. Tüm hakları saklıdır.</span>
+          <span className="mt-3 flex items-center justify-center gap-2">Dijital Çözüm Ortağı <img src="/klogo.png" alt="Kriter Medya" className="h-6 w-auto object-contain"/></span>
+        </div>
       </div>
     </footer>
   );
