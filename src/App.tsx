@@ -1614,10 +1614,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <TurkeyListingMap />
 
-      <section id="kurumsal" className="bg-slate-950 py-20 text-white border-b border-red-700">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between mb-10"><div><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tight">NEDEN <span className="text-red-500">REALTY CENTER®?</span></h2></div><Link to="/neden-realty-center" className="inline-flex w-fit rounded-xl border border-red-400 bg-red-700 px-5 py-3 text-sm font-black text-white transition hover:bg-red-600">Tümünü Göster →</Link></div>
-          <div className="grid gap-3 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.slice(0, 4).map((item, index) => <div key={item} className="flex items-center gap-4 rounded-xl bg-red-700 px-5 py-4 font-black"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span><span>{item}</span></div>)}</div>
+      <section id="kurumsal" className="relative overflow-hidden border-y border-slate-200 bg-[#fffafa] py-20 text-slate-950">
+        <div className="pointer-events-none absolute -right-28 -top-32 h-80 w-80 rounded-full bg-red-700/5 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-24 h-80 w-80 rounded-full bg-red-700/5 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h2 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">NEDEN <span className="text-red-700">REALTY CENTER®?</span></h2><div className="mt-4 h-1 w-24 rounded-full bg-red-700" /></div><Link to="/neden-realty-center" className="inline-flex w-fit rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800">Tümünü Göster →</Link></div>
+          <div className="grid gap-4 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.slice(0, 4).map((item, index) => <div key={item} className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-5 font-black text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-red-700 hover:shadow-lg"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-700 text-sm text-white shadow-sm">{index + 1}</span><span>{item}</span></div>)}</div>
         </div>
       </section>
 
@@ -1737,7 +1739,23 @@ function TrustPrinciplePage() {
 
 function WhyRealtyCenterPage() {
   return (
-    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-5xl px-6 lg:px-12"><Link to="/" className="text-sm font-black text-red-700">← Ana sayfaya dön</Link><div className="mt-7 rounded-3xl bg-slate-950 p-8 text-white sm:p-12"><span className="text-xs font-black tracking-widest text-red-200">GÜVEN · UZMANLIK · ŞEFFAFLIK</span><h1 className="mt-3 text-4xl font-black sm:text-5xl">NEDEN <span className="text-red-500">REALTY CENTER®?</span></h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Gayrimenkul yolculuğunuzda doğru kararlar almanız için şeffaf, uzman ve çözüm odaklı bir hizmet anlayışı sunuyoruz.</p></div><div className="mt-8 space-y-3">{WHY_REALTY_CENTER_ITEMS.map((item, index) => <div key={item} className="flex items-center gap-5 rounded-2xl bg-red-700 px-6 py-5 text-lg font-black text-white shadow-lg shadow-red-700/20"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-sm text-red-700">{index + 1}</span>{item}</div>)}</div></div></div>
+    <main className="min-h-screen bg-[#fffafa] py-12 sm:py-16">
+      <div className="mx-auto max-w-6xl px-6 lg:px-12">
+        <Link to="/" className="inline-flex items-center text-sm font-black text-red-700 transition hover:text-red-800">← Ana sayfaya dön</Link>
+        <section className="relative mt-7 overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+          <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-red-700/5 blur-3xl" />
+          <div className="relative">
+            <span className="text-xs font-black tracking-widest text-red-700">GÜVEN · UZMANLIK · ŞEFFAFLIK</span>
+            <h1 className="mt-3 text-4xl font-black text-slate-950 sm:text-5xl">NEDEN <span className="text-red-700">REALTY CENTER®?</span></h1>
+            <div className="mt-4 h-1 w-24 rounded-full bg-red-700" />
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">Gayrimenkul yolculuğunuzda doğru kararlar almanız için şeffaf, uzman ve çözüm odaklı bir hizmet anlayışı sunuyoruz.</p>
+          </div>
+        </section>
+        <section className="mt-8 grid gap-4 md:grid-cols-2">
+          {WHY_REALTY_CENTER_ITEMS.map((item, index) => <article key={item} className="group flex items-center gap-5 rounded-2xl border border-slate-200 bg-white px-6 py-5 text-base font-black text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-red-700 hover:shadow-lg"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-700 text-sm text-white shadow-sm">{index + 1}</span><span className="leading-6">{item}</span></article>)}
+        </section>
+      </div>
+    </main>
   );
 }
 
