@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell, Music2, VolumeX
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
@@ -4501,6 +4501,78 @@ function ScrollToTopOnRouteChange() {
   return null;
 }
 
+function AmbientMusicButton() {
+  const [playing, setPlaying] = useState(false);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const masterGainRef = useRef<GainNode | null>(null);
+  const loopRef = useRef<number | null>(null);
+
+  const stopMusic = useCallback(async () => {
+    if (loopRef.current !== null) window.clearInterval(loopRef.current);
+    loopRef.current = null;
+    const context = audioContextRef.current;
+    const master = masterGainRef.current;
+    if (context && master) {
+      master.gain.cancelScheduledValues(context.currentTime);
+      master.gain.setValueAtTime(Math.max(master.gain.value, 0.0001), context.currentTime);
+      master.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.35);
+      window.setTimeout(() => { void context.close(); }, 420);
+    }
+    audioContextRef.current = null;
+    masterGainRef.current = null;
+    setPlaying(false);
+  }, []);
+
+  const startMusic = useCallback(async () => {
+    const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!AudioContextClass) return;
+    const context = new AudioContextClass();
+    const master = context.createGain();
+    master.gain.setValueAtTime(0.0001, context.currentTime);
+    master.gain.exponentialRampToValueAtTime(0.032, context.currentTime + 1.2);
+    master.connect(context.destination);
+    audioContextRef.current = context;
+    masterGainRef.current = master;
+
+    const playNote = (frequency: number, start: number, duration: number) => {
+      const oscillator = context.createOscillator();
+      const noteGain = context.createGain();
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(frequency, start);
+      noteGain.gain.setValueAtTime(0.0001, start);
+      noteGain.gain.exponentialRampToValueAtTime(0.17, start + 0.08);
+      noteGain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+      oscillator.connect(noteGain);
+      noteGain.connect(master);
+      oscillator.start(start);
+      oscillator.stop(start + duration + 0.05);
+    };
+
+    const playPhrase = () => {
+      const now = context.currentTime + 0.08;
+      const notes = [261.63, 329.63, 392, 523.25, 440, 349.23, 329.63, 293.66, 261.63, 329.63, 392, 493.88, 440, 392, 329.63, 261.63];
+      notes.forEach((frequency, index) => playNote(frequency, now + index * 0.48, 1.35));
+      [130.81, 110, 146.83, 98].forEach((frequency, index) => playNote(frequency, now + index * 1.92, 2.5));
+    };
+
+    await context.resume();
+    playPhrase();
+    loopRef.current = window.setInterval(playPhrase, 7680);
+    setPlaying(true);
+  }, []);
+
+  useEffect(() => () => {
+    if (loopRef.current !== null) window.clearInterval(loopRef.current);
+    void audioContextRef.current?.close();
+  }, []);
+
+  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Müziği sessize al' : 'Klasik müzik çal'} className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
+    {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
+    <span>{playing ? 'Sessize Al' : 'Müzik Çal'}</span>
+    {playing && <span className="h-2 w-2 animate-pulse rounded-full bg-[#CD011E]"/>}
+  </button>;
+}
+
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [language, setLanguage] = useState<StaticLanguage>(() => (localStorage.getItem('realty-language') as StaticLanguage) || 'tr');
@@ -4707,6 +4779,7 @@ export default function RealtyCenterApp() {
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header language={language} setLanguage={setLanguage} />
+        <AmbientMusicButton />
 
         <main className="flex-1">
           <Routes>
