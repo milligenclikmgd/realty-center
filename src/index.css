@@ -364,8 +364,9 @@
 
 .gold-showcase {
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 208, 93, .18), transparent 32%),
-    linear-gradient(125deg, #090e1a 0%, #182238 48%, #080c15 100%);
+    radial-gradient(circle at 18% 10%, rgba(255, 255, 255, .9), transparent 30%),
+    radial-gradient(circle at 84% 82%, rgba(125, 211, 252, .34), transparent 34%),
+    linear-gradient(135deg, #f7fdff 0%, #e6f7ff 46%, #d5effb 100%);
 }
 
 .gold-showcase-glow {
@@ -373,10 +374,10 @@
   width: 30rem;
   height: 30rem;
   border-radius: 9999px;
-  filter: blur(42px);
-  opacity: .34;
+  filter: blur(48px);
+  opacity: .3;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 208, 93, .9) 0%, rgba(217, 152, 25, .2) 42%, transparent 70%);
+  background: radial-gradient(circle, rgba(56, 189, 248, .72) 0%, rgba(186, 230, 253, .34) 43%, transparent 72%);
   animation: goldGlow 10s ease-in-out infinite alternate;
 }
 
@@ -385,9 +386,9 @@
 
 .gold-showcase-spark {
   position: absolute;
-  color: #f8d36a;
-  opacity: .75;
-  text-shadow: 0 0 16px rgba(255, 210, 95, .95);
+  color: #38bdf8;
+  opacity: .45;
+  text-shadow: 0 0 18px rgba(125, 211, 252, .75);
   pointer-events: none;
   animation: goldSpark 5s ease-in-out infinite;
 }
@@ -399,13 +400,17 @@
 .gold-showcase-spark-five { right: 28%; bottom: 19%; font-size: 1.4rem; animation-delay: -4.1s; }
 .gold-showcase-spark-six { left: 18%; bottom: 20%; font-size: 1.05rem; animation-delay: -2.6s; }
 
+.gold-showcase-card {
+  box-shadow: 0 14px 34px rgba(14, 116, 144, .11);
+}
+
 .gold-showcase-card::after {
   content: '';
   position: absolute;
   inset: -35% auto -35% -55%;
   width: 38%;
   pointer-events: none;
-  background: linear-gradient(105deg, transparent 8%, rgba(255, 232, 157, .06) 35%, rgba(255, 244, 201, .42) 50%, rgba(255, 224, 133, .08) 66%, transparent 92%);
+  background: linear-gradient(105deg, transparent 8%, rgba(255, 255, 255, .08) 35%, rgba(255, 255, 255, .82) 50%, rgba(186, 230, 253, .18) 66%, transparent 92%);
   transform: skewX(-17deg) translateX(-220%);
   animation: goldCardSheen 8.5s ease-in-out infinite;
 }
@@ -419,19 +424,18 @@
   84% { opacity: 0; }
 }
 
-
 @keyframes goldGlow {
-  from { transform: translate3d(-3%, -2%, 0) scale(.85); opacity: .18; }
-  to { transform: translate3d(14%, 9%, 0) scale(1.15); opacity: .48; }
+  from { transform: translate3d(-3%, -2%, 0) scale(.85); opacity: .14; }
+  to { transform: translate3d(14%, 9%, 0) scale(1.15); opacity: .36; }
 }
 
 @keyframes goldSpark {
-  0%, 100% { transform: translateY(0) scale(.65) rotate(0deg); opacity: .18; }
-  50% { transform: translateY(-24px) scale(1.15) rotate(28deg); opacity: 1; }
+  0%, 100% { transform: translateY(0) scale(.65) rotate(0deg); opacity: .12; }
+  50% { transform: translateY(-24px) scale(1.15) rotate(28deg); opacity: .62; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .gold-showcase-glow, .gold-showcase-spark { animation: none; }
+  .gold-showcase-glow, .gold-showcase-spark, .gold-showcase-card::after { animation: none; }
 }
 
 /* Realty Center kurumsal kırmızısı: KW referans rengi #CD011E */
