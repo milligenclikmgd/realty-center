@@ -458,6 +458,30 @@
     0 17px 36px rgba(7, 29, 59, .2) !important;
 }
 
+/* BARTERBANK sloganı: beyaz, doğal kenarlı fırça darbesi */
+.barter-slogan-brush::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  inset: 2px -8px;
+  background: repeating-linear-gradient(178deg, #fff 0 5px, #fffdfd 5px 8px);
+  clip-path: polygon(2% 15%, 8% 9%, 20% 12%, 31% 6%, 44% 10%, 57% 5%, 71% 11%, 84% 7%, 98% 15%, 95% 27%, 100% 38%, 96% 50%, 100% 62%, 95% 74%, 98% 87%, 85% 92%, 72% 88%, 59% 95%, 45% 90%, 31% 96%, 18% 89%, 4% 93%, 7% 78%, 1% 67%, 5% 54%, 0% 42%, 5% 29%);
+  filter: drop-shadow(0 8px 14px rgba(7, 29, 59, .2));
+  transform: rotate(-1deg);
+}
+.barter-slogan-brush::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: -3px;
+  right: 4px;
+  top: 12px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, .88);
+  clip-path: polygon(0 22%, 9% 10%, 24% 17%, 40% 7%, 58% 15%, 75% 8%, 100% 20%, 96% 82%, 80% 91%, 61% 84%, 43% 94%, 25% 86%, 3% 94%);
+  transform: rotate(.8deg);
+}
+
 /* Realty Center kurumsal kırmızısı: KW referans rengi #CD011E */
 .bg-red-50, .bg-red-100, .bg-red-200, .bg-red-300, .bg-red-400, .bg-red-500, .bg-red-600, .bg-red-700, .bg-red-800, .bg-red-900 { background-color: #CD011E !important; }
 .text-red-500, .text-red-600, .text-red-700, .text-red-800, .text-red-900 { color: #CD011E !important; }
