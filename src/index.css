@@ -662,20 +662,6 @@
 
 
 /* Ana sayfa arama alanı: yumuşak bulanık başlangıçtan net cam panele geçiş */
-.hero-search-entrance {
-  animation: heroSearchReveal 1.05s cubic-bezier(.16, .82, .26, 1) both;
-  transform-origin: left center;
-}
-@keyframes heroSearchReveal {
-  0% { opacity: 0; filter: blur(18px); transform: translate3d(-18px, 10px, 0) scale(.965); }
-  58% { opacity: .9; filter: blur(3px); }
-  100% { opacity: 1; filter: blur(0); transform: translate3d(0, 0, 0) scale(1); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-search-entrance { animation: none; }
-}
-
-
 /* Kurumsal bordo cam header: hafif, yavaş hareket eden geometrik arka plan */
 .header-corporate-glass::before {
   content: '';
@@ -920,28 +906,25 @@
   }
 }
 
-/* Ana sayfa modülleri: bulanıklık kullanmadan hafif scroll fade-up */
-.home-scroll-fade {
-  opacity: 0.82;
-  transform: translate3d(0, 14px, 0);
-  transition:
-    opacity 480ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    transform 480ms cubic-bezier(0.2, 0.8, 0.2, 1);
-  will-change: opacity, transform;
+/* Ana sayfa sabit görünüm: giriş, hover ve dekoratif hareketler kapalı */
+.home-page-static *,
+.home-page-static *::before,
+.home-page-static *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
 }
 
-.home-scroll-fade.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  will-change: auto;
+.home-page-static .gold-showcase-glow,
+.home-page-static .gold-showcase-spark,
+.home-page-static .gold-showcase-card::after {
+  display: none !important;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-scroll-fade,
-  .home-scroll-fade.is-visible {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+.home-page-static [class*="hover:-translate"],
+.home-page-static [class*="hover:scale"],
+.home-page-static [class*="group-hover:translate"],
+.home-page-static [class*="group-hover:scale"] {
+  transform: none !important;
 }
 
