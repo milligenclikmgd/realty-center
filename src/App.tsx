@@ -142,10 +142,46 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
     headerItem('culture','Realty Center® Kültürü','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Önce Güven anlayışı; şeffaflık, dayanışma, gelişim ve başarıyı paylaşma değerleri üzerine kuruludur.')
   ]),
   headerItem('videos','Videolar','/videolar','left'),
-  headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.')]),
+  headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.'),headerItem('financial-solutions','Finansal Çözümler','/finansal-cozumler','right',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','Bankalar, katılım bankaları ve Eminevim finansman seçenekleri için çözüm talebi oluşturun.')]),
   headerItem('ai','Yapay Zeka Asistanı','/ai-karar-asistani','right'), headerItem('library','Realty Kütüphane','/kutuphane','right'), headerItem('why','Neden Realty Center®?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','Danışman Ol','/danisman-basvuru','right'), headerItem('contact','İletişim','/iletisim','right',[headerItem('contact-info','İletişim Bilgilerimiz','/iletisim','right'),headerItem('feedback','Müşteri Memnuniyeti','/geri-bildirim','right')])
 ];
-const getHeaderMenu = (): HeaderMenuItem[] => { try { const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU).map((item: HeaderMenuItem)=>item.id==='library'?{...item,path:'/kutuphane'}:item); const discover = stored.find((item) => item.id === 'discover'); const future = discover?.children.find((item) => item.id === 'future'); const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children.find((item) => item.id === 'future')?.children.find((item) => item.id === 'build-my-team')?.content || ''; const team = future?.children.find((item) => item.id === 'build-my-team'); if (!team && future) future.children.push(headerItem('build-my-team','Kendi Takımını Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent)); else if (team) { team.label = 'Kendi Takımını Kur'; if (!team.content?.includes('Takımınızı kurun')) team.content = teamContent; } const discoverIndex = stored.findIndex((item) => item.id === 'discover'); const videosIndex = stored.findIndex((item) => item.id === 'videos'); if (discoverIndex > videosIndex && videosIndex >= 0) { const reordered = [...stored]; const [discover] = reordered.splice(discoverIndex,1); reordered.splice(videosIndex,0,discover); return reordered; } return stored; } catch { return DEFAULT_HEADER_MENU; } };
+const getHeaderMenu = (): HeaderMenuItem[] => {
+  try {
+    const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU)
+      .map((item: HeaderMenuItem) => item.id === 'library' ? { ...item, path: '/kutuphane' } : item);
+
+    const discover = stored.find((item) => item.id === 'discover');
+    const future = discover?.children.find((item) => item.id === 'future');
+    const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children
+      .find((item) => item.id === 'future')?.children
+      .find((item) => item.id === 'build-my-team')?.content || '';
+    const team = future?.children.find((item) => item.id === 'build-my-team');
+
+    if (!team && future) {
+      future.children.push(headerItem('build-my-team','Kendi Takımını Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent));
+    } else if (team) {
+      team.label = 'Kendi Takımını Kur';
+      if (!team.content?.includes('Takımınızı kurun')) team.content = teamContent;
+    }
+
+    const earning = stored.find((item) => item.id === 'earning');
+    if (earning && !earning.children.some((item) => item.id === 'financial-solutions')) {
+      earning.children.push(headerItem('financial-solutions','Finansal Çözümler','/finansal-cozumler','right',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','Bankalar, katılım bankaları ve Eminevim finansman seçenekleri için çözüm talebi oluşturun.'));
+    }
+
+    const discoverIndex = stored.findIndex((item) => item.id === 'discover');
+    const videosIndex = stored.findIndex((item) => item.id === 'videos');
+    if (discoverIndex > videosIndex && videosIndex >= 0) {
+      const reordered = [...stored];
+      const [discoverItem] = reordered.splice(discoverIndex, 1);
+      reordered.splice(videosIndex, 0, discoverItem);
+      return reordered;
+    }
+    return stored;
+  } catch {
+    return DEFAULT_HEADER_MENU;
+  }
+};
 const saveHeaderMenu = (items: HeaderMenuItem[]) => { localStorage.setItem('realty-center-header-menu', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-header-updated')); };
 const findHeaderItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem | undefined => { for (const item of items) { if (item.id === id) return item; const found = findHeaderItem(item.children, id); if (found) return found; } return undefined; };
 const updateHeaderMenuItem = (items: HeaderMenuItem[], id: string, patch: Partial<HeaderMenuItem>): HeaderMenuItem[] => items.map((item) => item.id === id ? { ...item, ...patch } : { ...item, children: updateHeaderMenuItem(item.children, id, patch) });
@@ -788,6 +824,79 @@ function EyeIcon() {
       <circle cx="12" cy="12" r="3" />
     </svg>
   );
+}
+
+function FinancialSolutionsPage() {
+  const [sent, setSent] = useState(false);
+
+  const submit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const requests = JSON.parse(localStorage.getItem('realty-center-financial-requests') || '[]');
+    localStorage.setItem('realty-center-financial-requests', JSON.stringify([
+      {
+        id: `FC-${Date.now()}`,
+        status: 'Yeni',
+        createdAt: new Date().toISOString(),
+        data: Object.fromEntries(form)
+      },
+      ...requests
+    ]));
+    window.dispatchEvent(new Event('realty-center-financial-requests-updated'));
+    event.currentTarget.reset();
+    setSent(true);
+  };
+
+  const solutions = [
+    ['BANKALAR', 'Konut kredisi seçenekleri ve ödeme planları için talep oluşturun.'],
+    ['KATILIM BANKALARI', 'Kâr payı esaslı konut finansmanı alternatiflerini değerlendirin.'],
+    ['EMİNEVİM', 'Tasarruf finansman modeli hakkında bilgi ve yönlendirme talep edin.']
+  ];
+
+  return <div className="min-h-screen bg-slate-50">
+    <section className="border-b border-slate-200 bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-14 lg:px-12">
+        <p className="text-xs font-black tracking-[.22em] text-red-700">KAZANÇ MODELİ</p>
+        <h1 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">Finansal Çözümler</h1>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">Gayrimenkul yatırımınız için bankalar, katılım bankaları ve tasarruf finansman seçenekleri arasından ihtiyacınıza uygun çözüm için talep oluşturun.</p>
+      </div>
+    </section>
+
+    <section className="mx-auto grid max-w-7xl gap-8 px-6 py-12 lg:grid-cols-[.8fr_1.2fr] lg:px-12">
+      <aside className="space-y-4">
+        {solutions.map(([title, description], index) => <div key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="flex items-start gap-4">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-sm font-black text-amber-300">0{index + 1}</span>
+            <div><h2 className="font-black text-slate-950">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{description}</p></div>
+          </div>
+        </div>)}
+        <div className="rounded-2xl bg-slate-950 p-6 text-sm leading-6 text-slate-300">
+          Başvurunuz bir kredi veya finansman onayı değildir. Uygunluk ve nihai koşullar ilgili kuruluşların değerlendirmesine tabidir.
+        </div>
+      </aside>
+
+      <div className="rounded-3xl border-2 border-slate-900 bg-white p-6 shadow-xl sm:p-9">
+        {sent && <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm font-bold text-emerald-800">Finansal çözüm talebiniz alındı. Ekibimiz sizinle iletişime geçecektir.</div>}
+        <div className="mb-7">
+          <p className="text-xs font-black tracking-[.18em] text-red-700">FİNANSAL ÇÖZÜM FORMU</p>
+          <h2 className="mt-2 text-2xl font-black text-slate-950">Size uygun seçeneği birlikte değerlendirelim.</h2>
+        </div>
+        <form onSubmit={submit} className="grid gap-4 sm:grid-cols-2">
+          <label className="text-xs font-black text-slate-700">AD SOYAD<input required name="name" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700">TELEFON<input required name="phone" type="tel" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700 sm:col-span-2">E-POSTA<input name="email" type="email" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700 sm:col-span-2">İLGİLENDİĞİNİZ ÇÖZÜM<select required name="solution" defaultValue="" className="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3.5 text-sm font-semibold outline-none focus:border-red-700"><option value="" disabled>Seçiniz</option><option>Banka Kredisi</option><option>Katılım Bankası Finansmanı</option><option>Eminevim Modeli</option><option>Kararsızım, danışmanlık istiyorum</option></select></label>
+          <label className="text-xs font-black text-slate-700">GAYRİMENKUL BEDELİ<input name="propertyValue" inputMode="numeric" placeholder="Örn. 5.000.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700">PEŞİNAT TUTARI<input name="downPayment" inputMode="numeric" placeholder="Örn. 1.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700">TALEP EDİLEN FİNANSMAN<input name="requestedAmount" inputMode="numeric" placeholder="Örn. 3.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="text-xs font-black text-slate-700">VADE TERCİHİ<select name="term" className="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3.5 text-sm font-semibold outline-none focus:border-red-700"><option>Belirlemedim</option><option>12 Ay</option><option>24 Ay</option><option>36 Ay</option><option>60 Ay</option><option>120 Ay</option></select></label>
+          <label className="text-xs font-black text-slate-700 sm:col-span-2">EK AÇIKLAMA<textarea name="message" rows={4} placeholder="Finansman ihtiyacınızı ve ilgilendiğiniz gayrimenkulü kısaca anlatabilirsiniz." className="mt-2 w-full resize-y rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+          <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="kvkk" value="Onaylandı" type="checkbox" className="mt-1"/><span><Link to="/kvkk" className="font-bold text-red-700 underline">KVKK Aydınlatma Metni</Link>'ni okudum ve başvurum kapsamında iletişime geçilmesini kabul ediyorum.</span></label>
+          <button type="submit" className="rounded-xl bg-red-700 px-6 py-4 text-sm font-black text-white shadow-lg hover:bg-red-800 sm:col-span-2">FİNANSAL ÇÖZÜM TALEBİMİ GÖNDER</button>
+        </form>
+      </div>
+    </section>
+  </div>;
 }
 
 function FranchiseOpportunitiesPage() {
@@ -4920,6 +5029,7 @@ export default function RealtyCenterApp() {
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
             <Route path="/neden-realty-center" element={<WhyRealtyCenterPage />} />
+            <Route path="/finansal-cozumler" element={<FinancialSolutionsPage />} />
             <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
             <Route path="/kurumsal/yonetim-kurulu" element={<TeamPage />} />
             <Route path="/kurumsal/misyon-vizyon" element={<MissionVisionPage />} />
