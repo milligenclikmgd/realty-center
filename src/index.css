@@ -901,3 +901,38 @@
   .barter-header::after, .barter-form-reveal, .barter-success { animation: none; }
   .barter-property-card:hover, .barter-toggle:hover, .barter-submit:hover { transform: none; }
 }
+
+
+/* Tüm sayfalarda modüller ekrana girdikçe bulanıklıktan netliğe geçer. */
+.site-scroll-reveal {
+  opacity: .14;
+  filter: blur(11px);
+  transform: translate3d(0, 34px, 0) scale(.985);
+  transform-origin: center top;
+  transition:
+    opacity .82s cubic-bezier(.2,.8,.2,1),
+    filter .9s cubic-bezier(.2,.8,.2,1),
+    transform .9s cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, filter, transform;
+}
+.site-scroll-reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0) scale(1);
+  will-change: auto;
+}
+@media (max-width: 640px) {
+  .site-scroll-reveal {
+    filter: blur(7px);
+    transform: translate3d(0, 22px, 0) scale(.99);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-scroll-reveal,
+  .site-scroll-reveal.is-visible {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+}
