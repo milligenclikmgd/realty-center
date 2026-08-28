@@ -930,8 +930,7 @@
 
 /* Ana sayfadaki tek hareketli istisna: slider geçişi */
 .home-page-static .home-slider-image {
-  transition:
-    opacity 1000ms ease-in-out,
-    transform 1000ms ease-in-out !important;
+  transform: none !important;
+  transition: opacity 900ms ease-in-out !important;
 }
 
