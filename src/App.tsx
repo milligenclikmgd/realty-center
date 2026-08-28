@@ -700,7 +700,7 @@ function RealtyNetworkActivityPanel() {
     <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-label="Dönen Realty Center® Network haritası" />
     <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/96 via-white/30 to-white/5" />
     <div className="relative z-10 p-5"><p className="text-sm font-black tracking-[.16em] text-red-700 sm:text-base">DÜNYADA REALTY CENTER®</p><h3 className="mt-2 text-xl font-black text-slate-950">Küresel bağlantı ağı</h3>
-      <div key={noticeOffset} className="network-notice-swap mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-red-700"/>{notices[noticeOffset]}</div><div className="w-fit rounded-full border border-slate-200 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>{notices[(noticeOffset+1)%notices.length]}</div></div>
+      <div key={noticeOffset} className="network-notice-swap mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-red-700"/>{notices[noticeOffset]}</div><div className="w-fit rounded-full border border-slate-200 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>{notices[(noticeOffset+1)%notices.length]}</div></div>
       <span className="absolute bottom-4 right-4 rounded-full bg-[#CD011E] px-3 py-2 text-[10px] font-black text-white opacity-0 shadow-lg transition group-hover:opacity-100">Haritayı aç →</span>
     </div>
   </button>{worldOpen && <WorldNetworkModal onClose={() => setWorldOpen(false)} />}</>;
@@ -1350,78 +1350,19 @@ function FeaturedListingsShowcase() {
 }
 
 function LiveListingStream({ listings }: { listings: ListingItem[] }) {
-  const [direction, setDirection] = useState<'left' | 'right'>('left');
-  const trackRef = useRef<HTMLDivElement | null>(null);
-  const positionRef = useRef(0);
-  const directionRef = useRef<'left' | 'right'>('left');
-  const hoveredRef = useRef(false);
-  const draggingRef = useRef(false);
-  const dragStartRef = useRef({ x: 0, position: 0 });
-
-  const applyPosition = () => {
-    const track = trackRef.current;
-    if (track) track.style.transform = `translate3d(${positionRef.current}px, 0, 0)`;
-  };
-  const setStreamDirection = (next: 'left' | 'right') => {
-    directionRef.current = next;
-    setDirection(next);
-  };
-
-  useEffect(() => {
-    let frameId = 0;
-    let lastTime = performance.now();
-    const move = (time: number) => {
-      const elapsed = Math.min(64, time - lastTime);
-      lastTime = time;
-      const track = trackRef.current;
-      const loopWidth = track ? track.scrollWidth / 2 : 0;
-      if (loopWidth && !hoveredRef.current && !draggingRef.current) {
-        positionRef.current += (directionRef.current === 'left' ? -1 : 1) * elapsed * 0.028;
-        while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
-        while (positionRef.current >= 0) positionRef.current -= loopWidth;
-        applyPosition();
-      }
-      frameId = requestAnimationFrame(move);
-    };
-    frameId = requestAnimationFrame(move);
-    return () => cancelAnimationFrame(frameId);
-  }, [listings.length]);
-
   if (!listings.length) return null;
-  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
-    if ((event.target as HTMLElement).closest('a, button')) return;
-    draggingRef.current = true;
-    hoveredRef.current = true;
-    dragStartRef.current = { x: event.clientX, position: positionRef.current };
-    event.currentTarget.setPointerCapture(event.pointerId);
-  };
-  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!draggingRef.current) return;
-    const track = trackRef.current;
-    const loopWidth = track ? track.scrollWidth / 2 : 0;
-    const delta = event.clientX - dragStartRef.current.x;
-    positionRef.current = dragStartRef.current.position + delta;
-    if (loopWidth) {
-      while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
-      while (positionRef.current >= 0) positionRef.current -= loopWidth;
-    }
-    applyPosition();
-  };
-  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
-    if (!draggingRef.current) return;
-    const delta = event.clientX - dragStartRef.current.x;
-    if (Math.abs(delta) > 8) setStreamDirection(delta > 0 ? 'right' : 'left');
-    draggingRef.current = false;
-    hoveredRef.current = event.pointerType === 'mouse';
-    try { event.currentTarget.releasePointerCapture(event.pointerId); } catch {}
-  };
 
   return <div className="relative mx-auto max-w-[1780px] px-5 sm:px-8 lg:px-12">
-    <div className="mb-4 flex items-center justify-between gap-3"><p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p><div className="flex items-center gap-2"><button type="button" onClick={() => setStreamDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => setStreamDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button></div></div>
-    <div className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing" onMouseEnter={() => { hoveredRef.current = true; }} onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerCancel={handlePointerUp}><div ref={trackRef} className="live-listing-track card-focus-group">{[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="card-focus-item w-72 shrink-0"><ListingCard item={item} /></div>)}</div></div>
+    <div className="mb-4 flex items-center justify-between gap-3">
+      <p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Yeni portföyler</p>
+    </div>
+    <div className="overflow-x-auto py-2">
+      <div className="flex gap-4 card-focus-group">
+        {listings.map((item) => <div key={item.id} className="card-focus-item w-72 shrink-0"><ListingCard item={item} /></div>)}
+      </div>
+    </div>
   </div>;
 }
-
 function BuyerRequestModule() {
   const [step, setStep] = useState(1);
   const [sent, setSent] = useState(false);
@@ -1545,7 +1486,6 @@ function HomeLibraryPreview() {
 
 function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
   const navigate = useNavigate();
-  const homeRootRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
@@ -1555,70 +1495,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
     "İncek'te havuzlu, krediye uygun villa öner."
   ];
   const [aiQuery, setAiQuery] = useState('');
-  const [aiDemoPaused, setAiDemoPaused] = useState(false);
-  useEffect(() => {
-    if (aiDemoPaused) return;
-    let exampleIndex = 0;
-    let characterIndex = 0;
-    let deleting = false;
-    let timeoutId: number;
-    const animate = () => {
-      const current = aiExamples[exampleIndex];
-      if (!deleting) {
-        characterIndex += 1;
-        setAiQuery(current.slice(0, characterIndex));
-        if (characterIndex === current.length) {
-          deleting = true;
-          timeoutId = window.setTimeout(animate, 1200);
-          return;
-        }
-        timeoutId = window.setTimeout(animate, 18);
-        return;
-      }
-      characterIndex -= 1;
-      setAiQuery(current.slice(0, Math.max(0, characterIndex)));
-      if (characterIndex === 0) {
-        deleting = false;
-        exampleIndex = (exampleIndex + 1) % aiExamples.length;
-        timeoutId = window.setTimeout(animate, 350);
-        return;
-      }
-      timeoutId = window.setTimeout(animate, 12);
-    };
-    timeoutId = window.setTimeout(animate, 450);
-    return () => window.clearTimeout(timeoutId);
-  }, [aiDemoPaused]);
 
-  useEffect(() => {
-    const root = homeRootRef.current;
-    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-    const modules = Array.from(root.querySelectorAll<HTMLElement>('section'))
-      .filter((section) => !section.parentElement?.closest('section'));
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
-
-    modules.forEach((module) => {
-      module.classList.add('home-scroll-fade');
-      observer.observe(module);
-    });
-
-    return () => {
-      observer.disconnect();
-      modules.forEach((module) => module.classList.remove('home-scroll-fade', 'is-visible'));
-    };
-  }, []);
 
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <div ref={homeRootRef}>
+    <div className="home-page-static">
       <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
         <div className="absolute inset-0 z-0">
           {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
@@ -1635,7 +1517,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="hero-search-entrance w-full max-w-[34rem] -ml-4 sm:-ml-10 lg:-ml-20">
+          <div className="w-full max-w-[34rem] -ml-4 sm:-ml-10 lg:-ml-20">
             <div className="grid grid-cols-[1.2fr_.9fr_.9fr] gap-2 mb-2">
               <button
                 onClick={() => setActiveTab('search')}
@@ -1727,7 +1609,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
             <div className="mt-3 rounded-2xl border border-cyan-300/45 bg-[#071a3b]/95 p-3 shadow-xl backdrop-blur-md">
               <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300"/></div>
-              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => { setAiDemoPaused(true); setAiQuery(event.target.value); }} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
+              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
             </div>
 
           </div>
@@ -1770,7 +1652,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       <BarterBankModuleV3 />
       <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-white tracking-widest bg-red-700 px-3 py-1 rounded-full border border-red-700 mb-2"><Flame className="w-3.5 h-3.5 animate-bounce" /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
+          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-white tracking-widest bg-red-700 px-3 py-1 rounded-full border border-red-700 mb-2"><Flame className="w-3.5 h-3.5 " /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
           <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
         </div>
         <LiveListingStream listings={sortedListings} />
