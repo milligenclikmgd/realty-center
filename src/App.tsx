@@ -4622,47 +4622,6 @@ function ScrollToTopOnRouteChange() {
   return null;
 }
 
-function GlobalScrollReveal() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-    let observer: IntersectionObserver;
-    const prepareSections = () => {
-      const sections = Array.from(document.querySelectorAll<HTMLElement>('main section'))
-        .filter((section) => !section.parentElement?.closest('section') && !section.closest('[data-no-scroll-reveal="true"]') && !section.dataset.scrollRevealReady);
-
-      sections.forEach((section) => {
-        section.dataset.scrollRevealReady = 'true';
-        section.classList.add('site-scroll-reveal');
-        observer.observe(section);
-      });
-    };
-
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -7% 0px' });
-
-    const frame = window.requestAnimationFrame(prepareSections);
-    const mutationObserver = new MutationObserver(prepareSections);
-    const main = document.querySelector('main');
-    if (main) mutationObserver.observe(main, { childList: true, subtree: true });
-
-    return () => {
-      window.cancelAnimationFrame(frame);
-      mutationObserver.disconnect();
-      observer.disconnect();
-    };
-  }, [location.pathname, location.search]);
-
-  return null;
-}
-
 function AmbientMusicButton() {
   const [playing, setPlaying] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -4938,7 +4897,6 @@ export default function RealtyCenterApp() {
   return (
     <Router>
       <ScrollToTopOnRouteChange />
-      <GlobalScrollReveal />
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header language={language} setLanguage={setLanguage} />
