@@ -375,10 +375,10 @@ const SAMPLE_AGENTS = [
 ];
 
 const SLIDER_IMAGES = [
-  "/ev2.jpg",
-  "/ev.jpg",
-  "/slider/realty-city.jpg",
-  "/slider/realty-seaside.jpg"
+  "/slider/slider-01-tall-building.webp",
+  "/slider/slider-02-villa-sign.webp",
+  "/slider/slider-03-city-terrace.webp",
+  "/slider/slider-04-seaside-pool.webp"
 ];
 
 const PROPERTY_TYPES = ["EV", "ARSA", "OFİS", "VİLLA", "PORTFÖY"];
