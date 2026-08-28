@@ -1185,8 +1185,15 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <Link to="/" onClick={close} className="my-2 flex w-[150px] shrink-0 items-center justify-center rounded-sm bg-white px-3 shadow-sm lg:w-[175px]" aria-label="Realty Center® ana sayfa">
               <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="h-11 w-full object-contain lg:h-12" />
             </Link>
-            <nav className="ml-3 grid min-w-0 flex-1 items-stretch" style={{ gridTemplateColumns: 'repeat(14,minmax(0,1fr))' }}>
-              {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`compact-home-${label}-${to}`} to={to} className="realty-compact-link flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+            <nav className="ml-3 grid min-w-0 flex-1 items-stretch" style={{ gridTemplateColumns: `repeat(${managedMenu.length},minmax(0,1fr))` }}>
+              {managedMenu.map((item) => (
+                <DesktopHeaderNode
+                  key={`compact-home-${item.id}`}
+                  item={item}
+                  align={item.side === 'right' || item.id === 'discover' ? 'right' : 'left'}
+                  menuLinkClass={menuLinkClass}
+                />
+              ))}
             </nav>
           </div>
         ) : (
