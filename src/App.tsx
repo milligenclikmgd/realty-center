@@ -1608,7 +1608,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             </div>
 
             <div className="mt-3 rounded-2xl border border-cyan-300/45 bg-[#071a3b]/95 p-3 shadow-xl backdrop-blur-md">
-              <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300"/></div>
+              <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 rounded-full bg-cyan-300"/></div>
               <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
             </div>
 
@@ -4599,7 +4599,7 @@ function AmbientMusicButton() {
   return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Müziği sessize al' : 'Klasik müzik çal'} className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
     {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
     <span>{playing ? 'Sessize Al' : 'Müzik Çal'}</span>
-    {playing && <span className="h-2 w-2 animate-pulse rounded-full bg-[#CD011E]"/>}
+    {playing && <span className="h-2 w-2 rounded-full bg-[#CD011E]"/>}
   </button>;
 }
 
@@ -4755,7 +4755,7 @@ export default function RealtyCenterApp() {
   if (loading) {
     return (
       <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center text-slate-900 px-4 select-none overflow-hidden font-sans">
-        <div className="relative mb-10 transform animate-pulse">
+        <div className="relative mb-10 transform">
           <img 
             src="/rlogo2.png"
             alt="Realty Center®" 
@@ -4780,7 +4780,7 @@ export default function RealtyCenterApp() {
                 : 'translate-x-0 opacity-100 rotate-90 scale-100'
             }`}>
               <div className="bg-red-700 text-white p-2.5 rounded-full shadow-lg shadow-red-700/30 border-2 border-white">
-                <Key className="w-5 h-5 animate-pulse" />
+                <Key className="w-5 h-5" />
               </div>
             </div>
           ) : (
