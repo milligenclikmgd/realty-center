@@ -889,7 +889,8 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center® danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
       <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
       <img src="/rlogo2.png" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
-      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
+      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center' : 'justify-start'}`}>
+        {franchise && <Link to="/franchise-firsatlari" className="mb-4 inline-flex max-w-max whitespace-nowrap rounded-full border border-[#f2c66d]/55 bg-[#071d3b]/95 px-4 py-2.5 text-xs font-black tracking-wide text-[#f4cf7a] shadow-[0_10px_28px_rgba(7,29,59,.28)] backdrop-blur transition hover:-translate-y-0.5 hover:border-[#f4cf7a] hover:text-[#ffe7a8] lg:absolute lg:left-10 lg:top-[18%] lg:mb-0 xl:left-16">Franchise Fırsatlarını Keşfet →</Link>}
         <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'rc-navy-frame bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
             <img src="/rlogo2.png" alt="Realty Center®" className="h-11 w-full object-contain drop-shadow-sm" />
@@ -898,7 +899,6 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
           <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center® ol.' : 'Realty Center® ailesine katıl.'}</h1>
           <p className={`mt-3 text-sm leading-relaxed ${franchise ? 'text-white/85' : 'text-slate-600'}`}>Bilgilerinizi bırakın, başvurunuz ilgili ekip tarafından değerlendirilsin.</p>
-          {franchise && <Link to="/franchise-firsatlari" className="mt-3 inline-flex text-xs font-black text-white/85 underline decoration-white/40 underline-offset-4 transition hover:text-white">Franchise fırsatlarını keşfet →</Link>}
           <form className="mt-8 grid gap-4 sm:grid-cols-2">
             <input required placeholder="Ad Soyad" className={fieldClass} />
             <input required placeholder="Telefon" className={fieldClass} />
