@@ -790,6 +790,96 @@ function EyeIcon() {
   );
 }
 
+function FranchiseOpportunitiesPage() {
+  useEffect(() => {
+    const previousTitle = document.title;
+    document.title = 'Gayrimenkul Franchise Fırsatları | Realty Center®';
+
+    const managed: HTMLElement[] = [];
+    const setMeta = (selector: string, attributes: Record<string, string>) => {
+      let element = document.head.querySelector<HTMLElement>(selector);
+      if (!element) {
+        element = document.createElement(selector.startsWith('link') ? 'link' : 'meta');
+        document.head.appendChild(element);
+        managed.push(element);
+      }
+      Object.entries(attributes).forEach(([key, value]) => element?.setAttribute(key, value));
+    };
+
+    const canonicalUrl = `${window.location.origin}/franchise-firsatlari`;
+    setMeta('meta[name="description"]', { name: 'description', content: 'Realty Center® gayrimenkul franchise sistemiyle kendi emlak ofisinizi güçlü marka, teknoloji, eğitim ve pazarlama desteğiyle büyütün. Franchise fırsatlarını keşfedin.' });
+    setMeta('link[rel="canonical"]', { rel: 'canonical', href: canonicalUrl });
+    setMeta('meta[property="og:title"]', { property: 'og:title', content: 'Gayrimenkul Franchise Fırsatları | Realty Center®' });
+    setMeta('meta[property="og:description"]', { property: 'og:description', content: 'Realty Center® ile gayrimenkul sektöründe güçlü bir marka ve sürdürülebilir iş modeli kurun.' });
+    setMeta('meta[property="og:type"]', { property: 'og:type', content: 'website' });
+    setMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
+
+    return () => {
+      document.title = previousTitle;
+      managed.forEach((element) => element.remove());
+    };
+  }, []);
+
+  const benefits = [
+    ['Güçlü Marka Değeri', 'Realty Center® kurumsal kimliği, sektörel deneyimi ve büyüyen ağıyla bulunduğunuz bölgede güven veren, güçlü bir marka algısı oluşturun.'],
+    ['Teknoloji Altyapısı', 'Portföy sunumu, gelişmiş ilan altyapısı, müşteri taleplerinin yönetimi ve veri odaklı karar süreçlerini destekleyen dijital araçlardan yararlanın.'],
+    ['Eğitim ve Akademi', 'Ofis sahipleri ile danışmanların satış, portföy, iletişim ve ekip yönetimi yetkinliklerini geliştiren sistemli eğitim yaklaşımına dahil olun.'],
+    ['Pazarlama Desteği', 'Kurumsal sosyal medya materyalleri, kampanyalar, açılış çalışmaları ve marka iletişimiyle bölgenizde daha görünür hâle gelin.'],
+    ['Geniş İş Ağı', 'Realty Center® ofisleri ve danışmanlarıyla iş birliği yaparak portföy, müşteri ve yönlendirme fırsatlarınızı genişletin.'],
+    ['Operasyonel Destek', 'Ofis hazırlığından ekip yapılanmasına ve büyüme planına kadar ihtiyaç duyduğunuz kurumsal rehberlikten faydalanın.']
+  ];
+  const process = [
+    ['01', 'Başvuru', 'Franchise formu üzerinden temel bilgileriniz alınır.'],
+    ['02', 'Ön Görüşme', 'Bölge, yatırım planı ve hedefleriniz birlikte değerlendirilir.'],
+    ['03', 'Bölge ve İş Modeli Analizi', 'Planlanan ofisin bölgesel potansiyeli ve iş modeli ele alınır.'],
+    ['04', 'Mutabakat ve Kurulum', 'Kurumsal standartlar ile ofis hazırlıkları planlanır.'],
+    ['05', 'Eğitim ve Açılış', 'Ekip, Realty Center® çalışma yaklaşımına uygun biçimde hazırlanır.'],
+    ['06', 'Sürekli Gelişim', 'Eğitim, teknoloji, pazarlama ve operasyon süreçleriyle gelişim desteklenir.']
+  ];
+  const suitableFor = [
+    'Gayrimenkul sektöründe kendi işini kurmak isteyen girişimciler',
+    'Mevcut emlak ofisini güçlü bir marka altında büyütmek isteyen işletmeler',
+    'Gayrimenkul sektörüne yatırım yapmak isteyen iş insanları',
+    'Satış ve ekip yönetimi deneyimini yeni bir iş modeline taşımak isteyenler',
+    'Bölgesinde güçlü bir gayrimenkul organizasyonu kurmayı hedefleyen profesyoneller'
+  ];
+
+  return <main className="overflow-hidden bg-[#f7f9fc] text-slate-900">
+    <section className="relative min-h-[660px] overflow-hidden bg-[#071d3b] text-white">
+      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=2000" alt="Realty Center franchise iş ortaklığı ve profesyonel gayrimenkul ekibi" className="absolute inset-0 h-full w-full object-cover opacity-55"/>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#06182f] via-[#071d3b]/90 to-[#071d3b]/35"/>
+      <div className="relative mx-auto flex min-h-[660px] max-w-7xl items-center px-6 py-20 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="text-xs font-black tracking-[.24em] text-red-300">REALTY CENTER® FRANCHISE FIRSATLARI</p>
+          <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Gayrimenkulde Kendi Başarı Hikâyenizi Yazın</h1>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">Realty Center® franchise sistemi; güçlü marka değeri, teknoloji altyapısı, eğitim yaklaşımı, pazarlama desteği ve geniş iş ağıyla girişimcilere sürdürülebilir bir gayrimenkul işletmesi kurma fırsatı sunar.</p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row"><Link to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-6 py-4 text-center text-sm font-black text-white shadow-xl shadow-black/20 transition hover:-translate-y-1 hover:bg-[#e20a2a]">Franchise Başvurusu Yap</Link><a href="#avantajlar" className="rounded-xl border border-white/55 bg-white/10 px-6 py-4 text-center text-sm font-black text-white backdrop-blur transition hover:bg-white/20">Avantajları Keşfet</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="avantajlar" className="py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="mx-auto max-w-3xl text-center"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">GÜÇLÜ BİR BAŞLANGIÇ</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Neden Realty Center® Franchise?</h2><p className="mt-5 text-sm leading-7 text-slate-600 sm:text-base">Gayrimenkul franchise sistemi, emlak ofisi açmak isteyen girişimcilerin güçlü bir marka, hazır iş modeli, eğitim, pazarlama ve teknolojik altyapı desteğiyle sektöre daha sağlam adımlarla girmesini sağlar. Realty Center® yalnızca marka kullanım hakkı değil, işinizi büyütebileceğiniz bütüncül bir gayrimenkul ekosistemi sunmayı hedefler.</p></div>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{benefits.map(([title,text],index)=><article key={title} className="franchise-benefit-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm" style={{transitionDelay:`${index*35}ms`}}><span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-red-50 text-sm font-black text-[#CD011E]">{String(index+1).padStart(2,'0')}</span><h3 className="mt-5 text-lg font-black text-[#071d3b]">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{text}</p></article>)}</div>
+      </div>
+    </section>
+
+    <section className="bg-white py-20"><div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2 lg:px-12"><div className="overflow-hidden rounded-3xl shadow-2xl"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=88&w=1400" alt="Modern ve ölçeklenebilir Realty Center gayrimenkul ofisi" className="h-[420px] w-full object-cover"/></div><div><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">SÜRDÜRÜLEBİLİR BÜYÜME</p><h2 className="mt-3 text-3xl font-black leading-tight text-[#071d3b] sm:text-4xl">Sadece Bir Emlak Ofisi Değil, Ölçeklenebilir Bir İş Modeli</h2><p className="mt-5 text-sm leading-7 text-slate-600">Realty Center® franchise modeli; ekip kurabilen, portföy üretebilen, danışman yetiştirebilen ve bulunduğu bölgede sürdürülebilir biçimde büyüyebilen bir işletme oluşturmanıza yardımcı olacak şekilde kurgulanır.</p><p className="mt-4 text-sm leading-7 text-slate-600">Değişen müşteri alışkanlıklarını, dijitalleşmeyi ve veri odaklı çalışma yöntemlerini dikkate alan modern yaklaşım; teknolojinin gücünü insan ilişkilerindeki güvenle bir araya getirir.</p></div></div></section>
+
+    <section className="bg-gradient-to-br from-[#06182f] to-[#0c315f] py-20 text-white"><div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-12"><div><p className="text-xs font-black tracking-[.2em] text-cyan-300">DİJİTAL DÖNÜŞÜM</p><h2 className="mt-3 text-3xl font-black sm:text-4xl">Gayrimenkulün Geleceğine Hazır Teknoloji</h2><p className="mt-5 text-sm leading-7 text-slate-200">Realty Center® dijital altyapısı; gelişmiş ilan sunumu, müşteri taleplerinin yönetimi, bölgesel fiyat analizleri ve danışman-ofis süreçlerini destekleyen araçlarla daha bilinçli kararlar alınmasına yardımcı olur. Yapay zekâ destekli gayrimenkul araçları, gayrimenkul değerleme ve veri odaklı analiz yaklaşımı sitede geliştirilen karar destek deneyiminin önemli parçalarıdır.</p><p className="mt-4 text-sm leading-7 text-slate-300">Teknolojik özellikler geliştikçe sisteme kontrollü biçimde dahil edilir; henüz kullanıma hazır olmayan çözümler kesin bir hizmet vaadi olarak sunulmaz.</p><Link to="/ai-karar-asistani" className="mt-7 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-[#071d3b]">Yapay Zekâ Karar Asistanını İncele →</Link></div><div className="grid grid-cols-2 gap-3">{['Dijital portföy yönetimi','Müşteri talepleri','Gelişmiş ilan altyapısı','Bölgesel fiyat analizi','Gayrimenkul değerleme','Ofis ve danışman yönetimi'].map((item)=><div key={item} className="rounded-2xl border border-white/15 bg-white/8 p-5 text-sm font-bold text-slate-100 backdrop-blur">{item}</div>)}</div></div></section>
+
+    <section className="py-20"><div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-2 lg:px-12"><article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">EĞİTİM VE GELİŞİM</p><h2 className="mt-3 text-3xl font-black text-[#071d3b]">Başarı Tesadüf Değil, Sistemli Bir Süreçtir</h2><p className="mt-5 text-sm leading-7 text-slate-600">Realty Center® Akademi yaklaşımı; gayrimenkul danışmanları ve franchise ofislerinin satış, portföy oluşturma, müşteri ilişkileri, dijital pazarlama, gayrimenkul mevzuatı, kişisel marka, ekip ve ofis yönetimi alanlarında gelişimini desteklemeyi amaçlar.</p><Link to="/akademi" className="mt-6 inline-flex font-black text-[#CD011E]">Realty Center® Akademi’yi keşfedin →</Link></article><article className="rounded-3xl bg-[#CD011E] p-8 text-white shadow-xl sm:p-10"><p className="text-xs font-black tracking-[.2em] text-white/70">PAZARLAMA VE MARKA</p><h2 className="mt-3 text-3xl font-black">Güçlü Marka, Güçlü Görünürlük</h2><p className="mt-5 text-sm leading-7 text-white/85">Kurumsal kimlik ve ofis görsel standartlarından dijital pazarlama materyallerine; sosyal medya içeriklerinden afiş, kampanya, araç giydirme, açılış materyalleri ve dijital ilan görünürlüğüne kadar bütünlüklü bir marka dili hedeflenir.</p></article></div></section>
+
+    <section className="bg-white py-20"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="grid items-center gap-10 lg:grid-cols-2"><div><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">REALTY CENTER® AĞI</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Yerel Gücünüzü Büyük Bir Ağla Birleştirin</h2><p className="mt-5 text-sm leading-7 text-slate-600">Bir Realty Center® ofisi açtığınızda yalnızca tek başınıza bir emlak ofisi kurmaz; ofislerin ve danışmanların bilgi, portföy ve müşteri fırsatlarını paylaşabildiği mevcut bir sistemin parçası olursunuz. Yerel uzmanlığınızı kurumsal iş ağıyla birleştirerek daha geniş bir hareket alanı kazanırsınız.</p><div className="mt-6 flex gap-4"><Link to="/ofislerimiz" className="font-black text-[#CD011E]">Ofislerimiz →</Link><Link to="/danismanlarimiz" className="font-black text-[#071d3b]">Danışmanlarımız →</Link></div></div><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=88&w=1400" alt="Realty Center ofis ve danışman iş ağı" className="h-[380px] w-full rounded-3xl object-cover shadow-xl"/></div></div></section>
+
+    <section className="py-20"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="mx-auto max-w-3xl text-center"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">ADIM ADIM</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty Center® Franchise Süreci</h2><p className="mt-4 text-sm leading-7 text-slate-600">Aşağıdaki akış bilgilendirme amaçlıdır; adayın bölgesi ve koşullarına göre değerlendirme süreci farklılaşabilir.</p></div><div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{process.map(([no,title,text])=><article key={no} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><span className="text-3xl font-black text-red-100">{no}</span><h3 className="mt-3 text-lg font-black text-[#071d3b]">{title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{text}</p></article>)}</div></div></section>
+
+    <section className="bg-white py-20"><div className="mx-auto max-w-6xl px-6 lg:px-12"><div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr]"><div><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">GİRİŞİMCİ PROFİLİ</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty Center® Franchise Kimler İçin Uygun?</h2></div><div className="grid gap-3">{suitableFor.map((item)=><div key={item} className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#CD011E] text-xs font-black text-white">✓</span><p className="text-sm font-bold leading-6 text-slate-700">{item}</p></div>)}</div></div></div></section>
+
+    <section className="bg-[#CD011E] py-20 text-white"><div className="mx-auto max-w-5xl px-6 text-center lg:px-12"><p className="text-xs font-black tracking-[.22em] text-white/70">ŞİMDİ SIRA SİZDE</p><h2 className="mt-3 text-3xl font-black sm:text-5xl">Bölgenizde Realty Center® Gücünü Temsil Edin</h2><p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/85">Gayrimenkul sektöründeki deneyiminizi, girişimci ruhunuzu ve bölgesel gücünüzü Realty Center® sistemiyle bir araya getirin.</p><Link to="/franchise-basvuru" className="mt-8 inline-flex rounded-xl bg-white px-7 py-4 text-sm font-black text-[#CD011E] shadow-xl">Franchise Başvurusu Yap →</Link><div className="mt-8 flex flex-wrap justify-center gap-5 text-xs font-bold text-white/75"><Link to="/kurumsal/hakkimizda">Hakkımızda</Link><Link to="/iletisim">İletişim</Link><Link to="/akademi">Akademi</Link></div></div></section>
+  </main>;
+}
+
 function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   const franchise = type === 'franchise';
   const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-recruitment-v2.webp';
@@ -799,7 +889,8 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center® danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
       <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
       <img src="/rlogo2.png" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
-      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'justify-center' : 'justify-start'}`}>
+      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center gap-7 lg:flex-row lg:justify-between' : 'justify-start'}`}>
+        {franchise && <aside className="w-full max-w-xl rounded-3xl border border-white/25 bg-[#071d3b]/82 p-7 text-white shadow-2xl backdrop-blur-md sm:p-10"><p className="text-xs font-black tracking-[.2em] text-red-300">FRANCHISE DÜNYASI</p><h2 className="mt-4 text-3xl font-black leading-tight sm:text-4xl">Realty Center® Franchise Dünyasını Keşfedin</h2><p className="mt-5 text-sm leading-7 text-slate-200">Güçlü bir marka, yenilikçi teknoloji, eğitim desteği ve sürdürülebilir bir iş modeliyle gayrimenkul sektöründe kendi başarı hikâyenizi oluşturun.</p><Link to="/franchise-firsatlari" className="mt-7 inline-flex rounded-xl bg-white px-5 py-3.5 text-sm font-black text-[#CD011E] shadow-lg transition hover:-translate-y-1">Franchise Fırsatlarını Keşfet →</Link></aside>}
         <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'rc-navy-frame bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
             <img src="/rlogo2.png" alt="Realty Center®" className="h-11 w-full object-contain drop-shadow-sm" />
@@ -4908,6 +4999,7 @@ export default function RealtyCenterApp() {
             <Route path="/videolar" element={<VideosPage />} />
             <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
             <Route path="/geri-bildirim" element={<CustomerFeedbackPage />} />
+            <Route path="/franchise-firsatlari" element={<FranchiseOpportunitiesPage />} />
             <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
             <Route path="/danisman-basvuru" element={<ApplicationPage type="agent" />} />
           </Routes>
