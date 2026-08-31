@@ -943,3 +943,55 @@
     transform 320ms ease !important;
 }
 
+
+
+/* Header orta amblemi: kalın kırmızı-lacivert çift çerçeve ve hover alt ışığı */
+.realty-header-disc {
+  border: 6px solid #CD011E;
+  box-shadow:
+    0 0 0 5px #071D3B,
+    0 0 0 8px #CD011E,
+    0 15px 32px rgba(0,0,0,.24),
+    inset 0 0 14px rgba(7,29,59,.06);
+}
+.realty-header-main-logo {
+  width: 128px;
+  height: 132px;
+  max-width: 86%;
+  object-fit: contain;
+}
+.realty-header-emblem::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -46px;
+  z-index: -1;
+  width: 108px;
+  height: 22px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(255,20,48,.72) 0%, rgba(205,1,30,.32) 44%, rgba(205,1,30,0) 75%);
+  filter: blur(7px);
+  opacity: 0;
+  transform: translateX(-50%) scale(.72);
+  transition: opacity .35s ease, transform .35s ease;
+}
+.realty-header-emblem:hover::after {
+  opacity: .8;
+  transform: translateX(-50%) scale(1);
+}
+.realty-header-emblem-inner .realty-header-disc {
+  border-width: 6px;
+  box-shadow:
+    0 0 0 5px #071D3B,
+    0 0 0 8px #CD011E,
+    0 10px 24px rgba(0,0,0,.2),
+    inset 0 0 12px rgba(7,29,59,.05);
+}
+.realty-header-emblem-inner .realty-header-main-logo {
+  width: 128px;
+  height: 132px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .realty-header-emblem::after { transition: none; }
+}
