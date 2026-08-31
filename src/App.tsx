@@ -992,8 +992,19 @@ function FranchiseOpportunitiesPage() {
 
 function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   const franchise = type === 'franchise';
+  const [hasVehicle, setHasVehicle] = useState('');
   const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-recruitment-v2.webp';
   const fieldClass = 'rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-[#CD011E] focus:ring-2 focus:ring-[#CD011E]/15';
+  const submitApplication = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const saved = JSON.parse(localStorage.getItem('realty-center-applications') || '[]');
+    const data = Object.fromEntries(new FormData(event.currentTarget));
+    localStorage.setItem('realty-center-applications', JSON.stringify([{ id: `${franchise ? 'FR' : 'DN'}-${Date.now()}`, type, data, status: 'Yeni', createdAt: new Date().toISOString() }, ...saved]));
+    window.dispatchEvent(new Event('realty-center-applications-updated'));
+    alert(franchise ? 'Franchise başvurunuz alındı.' : 'Danışmanlık başvurunuz alındı.');
+    event.currentTarget.reset();
+    setHasVehicle('');
+  };
   return (
     <div className="relative min-h-screen overflow-hidden bg-slate-950">
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center® danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
@@ -1001,29 +1012,51 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
       <img src="/dglogo.svg" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
       <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center' : 'justify-start'}`}>
         {franchise && <Link to="/franchise-firsatlari" className="mb-4 inline-flex max-w-max whitespace-nowrap rounded-full border border-[#f2c66d]/55 bg-[#071d3b]/95 px-4 py-2.5 text-xs font-black tracking-wide text-[#f4cf7a] shadow-[0_10px_28px_rgba(7,29,59,.28)] backdrop-blur transition hover:-translate-y-0.5 hover:border-[#f4cf7a] hover:text-[#ffe7a8] lg:absolute lg:left-10 lg:top-[18%] lg:mb-0 xl:left-16">Franchise Fırsatlarını Keşfet →</Link>}
-        <div className={`relative w-full max-w-xl rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'rc-navy-frame bg-red-700/95 text-white' : 'border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
+        <div className={`relative w-full rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'max-w-xl rc-navy-frame bg-red-700/95 text-white' : 'max-w-3xl border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
             <img src="/dglogo.svg" alt="Realty Center®" className="h-11 w-full object-contain drop-shadow-sm" />
           </div>
           <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>← Ana Sayfaya Dön</Link>
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
-          <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center® ol.' : 'Realty Center® ailesine katıl.'}</h1>
+          <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Şehrinde Realty Center® ol.' : 'Realty Center® ailesinde danışman ol.'}</h1>
           <p className={`mt-3 text-sm leading-relaxed ${franchise ? 'text-white/85' : 'text-slate-600'}`}>Bilgilerinizi bırakın, başvurunuz ilgili ekip tarafından değerlendirilsin.</p>
-          <form className="mt-8 grid gap-4 sm:grid-cols-2">
-            <input required placeholder="Ad Soyad" className={fieldClass} />
-            <input required placeholder="Telefon" className={fieldClass} />
-            <input required placeholder="E-posta" className={`${fieldClass} sm:col-span-2`} />
-            <input placeholder={franchise ? 'İl / İlçe' : 'Bulunduğunuz şehir'} className={`${fieldClass} sm:col-span-2`} />
-            <textarea placeholder="Mesajınız" className={`${fieldClass} min-h-28 sm:col-span-2`} />
-            <label className={`flex items-start gap-2 text-xs sm:col-span-2 ${franchise ? 'text-white/85' : 'text-slate-600'}`}><input type="checkbox" className="mt-0.5 accent-[#CD011E]" />KVKK Aydınlatma Metni'ni okudum ve kabul ediyorum.</label>
-            <button type="button" className={`sm:col-span-2 rounded-xl py-3.5 font-black transition ${franchise ? 'bg-white text-red-700 hover:bg-red-50' : 'bg-[#CD011E] text-white shadow-lg shadow-red-900/20 hover:bg-[#a90019]'}`}>Başvuruyu Gönder</button>
-          </form>
+
+          {franchise ? (
+            <form onSubmit={submitApplication} className="mt-8 grid gap-4 sm:grid-cols-2">
+              <input required name="Ad Soyad" placeholder="Ad Soyad" className={fieldClass} />
+              <input required name="Telefon" type="tel" placeholder="Telefon" className={fieldClass} />
+              <input required name="E-posta" type="email" placeholder="E-posta" className={`${fieldClass} sm:col-span-2`} />
+              <input name="İl / İlçe" placeholder="İl / İlçe" className={`${fieldClass} sm:col-span-2`} />
+              <textarea name="Mesaj" placeholder="Mesajınız" className={`${fieldClass} min-h-28 sm:col-span-2`} />
+              <label className="flex items-start gap-2 text-xs text-white/85 sm:col-span-2"><input required type="checkbox" className="mt-0.5 accent-[#CD011E]" /><span><Link to="/kvkk" className="font-black underline">KVKK Aydınlatma Metni</Link>'ni okudum ve kabul ediyorum.</span></label>
+              <label className="flex items-start gap-2 text-xs text-white/85 sm:col-span-2"><input required type="checkbox" className="mt-0.5 accent-[#CD011E]" /><span><Link to="/kullanim-kosullari" className="font-black underline">Site Kullanım Koşulları</Link>'nı okudum ve kabul ediyorum.</span></label>
+              <button type="submit" className="rounded-xl bg-white py-3.5 font-black text-red-700 transition hover:bg-red-50 sm:col-span-2">Başvuruyu Gönder</button>
+            </form>
+          ) : (
+            <form onSubmit={submitApplication} className="mt-8 grid gap-4 sm:grid-cols-2">
+              <input required name="Ad Soyad" placeholder="Ad Soyad" autoComplete="name" className={fieldClass} />
+              <input required name="Telefon" type="tel" placeholder="Telefon" autoComplete="tel" className={fieldClass} />
+              <input required name="E-posta" type="email" placeholder="E-posta" autoComplete="email" className={fieldClass} />
+              <select required name="Eğitim Durumu" defaultValue="" className={fieldClass}><option value="" disabled>Eğitim Durumu</option><option>Lise</option><option>Ön Lisans</option><option>Lisans</option><option>Yüksek Lisans</option><option>Doktora</option></select>
+              <input required name="İl" placeholder="İl" className={fieldClass} />
+              <input required name="İlçe" placeholder="İlçe" className={fieldClass} />
+              <input required name="Talep Ettiği İlçe" placeholder="Çalışmak istediğiniz ilçe" className={fieldClass} />
+              <select required name="Kendine Ait Taşıtı Var mı" value={hasVehicle} onChange={(event) => setHasVehicle(event.target.value)} className={fieldClass}><option value="" disabled>Kendinize ait taşıtınız var mı?</option><option value="Evet">Evet</option><option value="Hayır">Hayır</option></select>
+              {hasVehicle === 'Evet' && <input required name="Taşıt Kaç Yıllık" type="number" min="0" max="50" placeholder="Taşıtınız kaç yıllık?" className={fieldClass} />}
+              <select required name="Gayrimenkul Deneyimi" defaultValue="" className={fieldClass}><option value="" disabled>Gayrimenkul firmalarında deneyiminiz</option><option>Deneyimim yok</option><option>1 yıldan az</option><option>1–3 yıl</option><option>4–6 yıl</option><option>7–10 yıl</option><option>10 yıldan fazla</option></select>
+              <textarea required name="Diğer Açıklamalar" placeholder="Diğer açıklamalarınızı buraya yazınız" className={`${fieldClass} min-h-32 sm:col-span-2`} />
+              <div className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:col-span-2">
+                <label className="flex items-start gap-2 text-xs leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-[#CD011E]" /><span><Link to="/kvkk" className="font-black text-[#CD011E]">KVKK Aydınlatma Metni</Link>'ni okudum; bilgilerimin başvurumun değerlendirilmesi amacıyla işlenmesini kabul ediyorum.</span></label>
+                <label className="flex items-start gap-2 text-xs leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-[#CD011E]" /><span><Link to="/kullanim-kosullari" className="font-black text-[#CD011E]">Site Kullanım Koşulları</Link>'nı okudum ve kabul ediyorum.</span></label>
+              </div>
+              <button type="submit" className="rounded-xl bg-[#CD011E] py-3.5 font-black text-white shadow-lg shadow-red-900/20 transition hover:bg-[#a90019] sm:col-span-2">Danışmanlık Başvurusunu Gönder</button>
+            </form>
+          )}
         </div>
       </div>
     </div>
   );
 }
-
 
 function LibraryHomePage() {
   const [categories,setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
@@ -1948,12 +1981,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       
 
-      <section className="bg-white py-16 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid gap-6 lg:grid-cols-2">
-          <div className="rc-navy-frame rounded-3xl bg-red-700 p-8 text-white"><span className="text-xs font-black tracking-widest text-red-100">KARİYER</span><h2 className="mt-3 text-3xl font-black">Gayrimenkul kariyerine güçlü bir başlangıç.</h2><p className="mt-4 text-sm leading-relaxed text-red-50">Danışmanlık fırsatları, eğitimler ve kariyer başvuruları bu alandan yönetilecektir.</p><Link to="/danisman-basvuru" className="mt-6 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-red-700">Kariyer Başvurusu</Link></div>
-          <div className="rounded-3xl border border-slate-200 p-8"><span className="text-xs font-black tracking-widest text-red-700">İLETİŞİM FORMU</span><h2 className="mt-3 text-3xl font-black text-slate-900">Size ulaşalım.</h2><form className="mt-5 grid gap-3 sm:grid-cols-2"><input placeholder="Ad Soyad" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="Telefon" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/><input placeholder="E-posta" className="sm:col-span-2 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><textarea placeholder="Mesajınız" className="sm:col-span-2 min-h-24 rounded-xl border border-slate-200 px-4 py-3 text-sm"/><button type="button" className="w-fit rounded-xl bg-slate-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">Bilgi Talebi Gönder</button></form></div>
-        </div>
-      </section>
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center®’ı takip edin.</h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
 
       <TurkeyListingMap />
