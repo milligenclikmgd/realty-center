@@ -1032,3 +1032,52 @@
   max-width: 72%;
   object-fit: contain;
 }
+
+
+/* Alıcı talebi: kompakt başlık, tek form ve yumuşak açılış */
+.buyer-request-shell { border-radius: 1.75rem; }
+.buyer-request-toggle,
+.buyer-request-submit {
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.buyer-request-toggle:hover,
+.buyer-request-submit:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
+.buyer-request-field {
+  outline: none;
+  transition: border-color .22s ease, box-shadow .22s ease, background-color .22s ease;
+}
+.buyer-request-field:focus {
+  border-color: #12345b;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(18,52,91,.09);
+}
+.buyer-request-reveal {
+  transform-origin: top center;
+  animation: buyerRequestReveal .58s cubic-bezier(.2,.82,.25,1) both;
+}
+@keyframes buyerRequestReveal {
+  from { opacity: 0; transform: translateY(-15px) scaleY(.96); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0) scaleY(1); filter: blur(0); }
+}
+
+/* Ana sayfadaki genel animasyon kilidinde bu iki formun açılışı özellikle korunur. */
+.home-page-static .buyer-request-reveal {
+  animation: buyerRequestReveal .58s cubic-bezier(.2,.82,.25,1) both !important;
+}
+.home-page-static .barter-form-reveal {
+  animation: barterFormReveal .55s cubic-bezier(.2,.82,.25,1) both !important;
+}
+.home-page-static .buyer-request-toggle,
+.home-page-static .buyer-request-submit,
+.home-page-static .barter-toggle,
+.home-page-static .barter-submit {
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .buyer-request-reveal,
+  .home-page-static .buyer-request-reveal,
+  .home-page-static .barter-form-reveal { animation: none !important; }
+}
