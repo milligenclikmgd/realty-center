@@ -1977,13 +1977,25 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       </section>
 
       <section className="gold-showcase relative isolate overflow-hidden border-y border-sky-200 py-16"><div className="gold-showcase-glow gold-showcase-glow-one"/><div className="gold-showcase-glow gold-showcase-glow-two"/><div className="gold-showcase-spark gold-showcase-spark-one">✦</div><div className="gold-showcase-spark gold-showcase-spark-two">✦</div><div className="gold-showcase-spark gold-showcase-spark-three">✦</div><div className="gold-showcase-spark gold-showcase-spark-four">✦</div><div className="gold-showcase-spark gold-showcase-spark-five">✦</div><div className="gold-showcase-spark gold-showcase-spark-six">✦</div><div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12"><div className="mb-10 text-center"><span className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-white/70 shadow-sm backdrop-blur-md px-4 py-1.5 text-[10px] font-black tracking-[.2em] text-sky-800">✦ REALTY CENTER® SEÇKİNLERİ ✦</span><h2 className="mt-4 text-3xl font-black text-slate-950 sm:text-4xl">Öne Çıkan <span className="text-sky-600">Yıldızlarımız</span></h2><p className="mt-2 text-sm text-slate-600">Başarıları ve uzmanlıklarıyla öne çıkan ofislerimiz ile danışmanlarımız.</p></div><div className="grid gap-10 xl:grid-cols-2 xl:gap-12"><div><div className="mb-5 flex items-end justify-between gap-3"><div><span className="text-xs font-black tracking-widest text-sky-600">SEÇKİN OFİSLER</span><h3 className="mt-1 text-2xl font-black text-slate-950">Öne çıkan ofislerimiz</h3></div><Link to="/ofislerimiz" className="rounded-full border border-sky-300 bg-white/70 px-3 py-1.5 text-xs font-black text-sky-800 shadow-sm transition hover:border-sky-500 hover:bg-sky-100">Tümü →</Link></div><div className="grid grid-cols-3 gap-3">{SAMPLE_OFFICES.slice(0, 3).map((office) => <Link key={office.id} to="/ofislerimiz" className="gold-showcase-card group relative overflow-hidden rounded-2xl border border-sky-200/90 bg-white/100 p-2 backdrop-blur-md transition hover:-translate-y-1 hover:border-sky-400 hover:bg-white"><img src={office.image} alt={office.name} className="h-20 w-full rounded-xl object-cover ring-1 ring-sky-200"/><p className="mt-3 text-[9px] font-black tracking-wide text-sky-600">ÖNE ÇIKAN OFİS</p><h3 className="mt-1 line-clamp-2 text-xs font-black text-slate-950">{office.name}</h3><p className="mt-1 text-[10px] text-slate-600">{office.district}, {office.city}</p></Link>)}</div></div><div><div className="mb-5 flex items-end justify-between gap-3"><div><span className="text-xs font-black tracking-widest text-sky-600">SEÇKİN DANIŞMANLAR</span><h3 className="mt-1 text-2xl font-black text-slate-950">Öne çıkan danışmanlarımız</h3></div><Link to="/danismanlarimiz" className="rounded-full border border-sky-300 bg-white/70 px-3 py-1.5 text-xs font-black text-sky-800 shadow-sm transition hover:border-sky-500 hover:bg-sky-100">Tümü →</Link></div><div className="grid grid-cols-3 gap-3">{SAMPLE_AGENTS.slice(0, 3).map((agent) => <Link key={agent.id} to="/danismanlarimiz" className="gold-showcase-card group relative overflow-hidden rounded-2xl border border-sky-200/90 bg-white/100 p-2 backdrop-blur-md transition hover:-translate-y-1 hover:border-sky-400 hover:bg-white"><img src={agent.image} alt={agent.name} className="h-20 w-full rounded-xl object-cover ring-1 ring-sky-200"/><p className="mt-3 text-[9px] font-black tracking-wide text-sky-600">ÖNE ÇIKAN DANIŞMAN</p><h3 className="mt-1 line-clamp-2 text-xs font-black text-slate-950">{agent.name}</h3><p className="mt-1 text-[10px] text-slate-600">{agent.title}</p></Link>)}</div></div></div></div></section>
-      <HomeLibraryPreview />
+      <section className="border-b border-slate-200 bg-white py-12">
+        <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-2 lg:px-12">
+          <Link to="/franchise-firsatlari" className="group rc-navy-frame relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#cd011e] to-[#a90019] p-8 text-white shadow-xl shadow-red-950/10 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <div className="pointer-events-none absolute -right-12 -top-16 h-44 w-44 rounded-full bg-white/10" />
+            <span className="text-xs font-black tracking-[0.22em] text-red-100">FRANCHISE OL</span>
+            <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Franchise fırsatlarını görün.</h2>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-red-50/90">Realty Center® gücüyle kendi ofisinizi kurmak için mevcut fırsatları inceleyin.</p>
+            <span className="mt-7 inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-black text-red-700 transition group-hover:gap-3">Franchise Fırsatlarını Gör <span className="ml-2">→</span></span>
+          </Link>
 
-      
-
-      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center®’ı takip edin.</h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
-
-      <TurkeyListingMap />
+          <Link to="/icerik/bana-takim-kur" className="group rc-navy-frame relative overflow-hidden rounded-[2rem] bg-[#071f3d] p-8 text-white shadow-xl shadow-slate-950/10 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <div className="pointer-events-none absolute -bottom-16 -right-12 h-48 w-48 rounded-full bg-red-600/20" />
+            <span className="text-xs font-black tracking-[0.22em] text-red-300">GÜÇLÜ BİR EKİP KUR</span>
+            <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Kendi takımını kur.</h2>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-slate-200">Gayrimenkul sektöründe kendi ekibinizi oluşturun, birlikte büyüyün.</p>
+            <span className="mt-7 inline-flex items-center rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-black text-white transition group-hover:bg-white group-hover:text-[#071f3d]">Ayrıntıları Gör <span className="ml-2">→</span></span>
+          </Link>
+        </div>
+      </section>
 
       <section id="kurumsal" className="relative overflow-hidden border-y border-slate-200 bg-[#fffafa] py-20 text-slate-950">
         <div className="pointer-events-none absolute -right-28 -top-32 h-80 w-80 rounded-full bg-red-700/5 blur-3xl" />
@@ -1993,6 +2005,29 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <div className="grid gap-4 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.slice(0, 4).map((item, index) => <div key={item} className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-5 font-black text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-red-700 hover:shadow-lg"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-700 text-sm text-white shadow-sm">{index + 1}</span><span>{item}</span></div>)}</div>
         </div>
       </section>
+
+      <TurkeyListingMap />
+
+      <section className="border-b border-slate-200 bg-white py-14">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="rc-navy-frame relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-slate-50 to-white p-8 shadow-lg sm:p-10">
+            <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-red-700/5" />
+            <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+              <div>
+                <span className="text-xs font-black tracking-[0.22em] text-red-700">FİNANSAL ÇÖZÜMLER</span>
+                <h2 className="mt-3 max-w-3xl text-3xl font-black tracking-tight text-[#071f3d] sm:text-4xl">Yatırımınıza uygun finansman seçeneklerini karşılaştırın.</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Bankalar, katılım bankaları ve Eminevim çözümlerini tek noktadan değerlendirin.</p>
+                <div className="mt-5 flex flex-wrap gap-2">{["Bankalar", "Katılım Bankaları", "Eminevim"].map((item) => <span key={item} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-black text-slate-700 shadow-sm">{item}</span>)}</div>
+              </div>
+              <Link to="/finansal-cozumler" className="inline-flex w-fit items-center justify-center rounded-full bg-red-700 px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-red-700/20 transition hover:-translate-y-0.5 hover:bg-red-800">Finansal Çözümleri Gör <span className="ml-2">→</span></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <HomeLibraryPreview />
+
+      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center®’ı takip edin.</h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
 
       <section id="akademi" className="py-20 px-6 lg:px-12 bg-white text-slate-900 border-b-4 border-red-700 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
