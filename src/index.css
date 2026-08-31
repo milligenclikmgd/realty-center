@@ -1081,3 +1081,14 @@
   .home-page-static .buyer-request-reveal,
   .home-page-static .barter-form-reveal { animation: none !important; }
 }
+
+
+/* Alıcı talebi ve BARTERBANK kapalı kartları aynı yatay ölçü ve başlık yüksekliğindedir. */
+.buyer-request-container,
+.barter-container { width: 100%; }
+.buyer-request-shell > header,
+.barter-shell > header { min-height: 112px; }
+@media (max-width: 639px) {
+  .buyer-request-shell > header,
+  .barter-shell > header { min-height: 0; }
+}
