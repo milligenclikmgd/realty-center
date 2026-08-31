@@ -89,6 +89,7 @@ const saveCustomerFeedback = (items: CustomerFeedback[]) => {
 
 type BuyerRequest = {
   id: string; type: string; property: string; city: string; district: string; budget: string; payment: string; timing: string; name: string; phone: string;
+  description: string;
   createdAt: string; status: 'Yeni' | 'İnceleniyor' | 'Eşleştirildi'; officeNames: string[]; agentNames: string[];
 };
 const getBuyerRequests = (): BuyerRequest[] => { try { return JSON.parse(localStorage.getItem('realty-center-buyer-requests') || '[]'); } catch { return []; } };
@@ -1579,11 +1580,23 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
   </div>;
 }
 function BuyerRequestModule() {
-  const [step, setStep] = useState(1);
+  const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({ type: 'Satılık', property: 'Daire', city: 'Ankara', district: 'Çankaya', budget: '', payment: 'Kredi + Peşinat', timing: '1 ay içinde', name: '', phone: '' });
+  const [form, setForm] = useState({
+    type: 'Satılık',
+    property: 'Daire',
+    city: 'Ankara',
+    district: 'Çankaya',
+    budget: '',
+    payment: 'Kredi + Peşinat',
+    timing: '1 ay içinde',
+    name: '',
+    phone: '',
+    description: ''
+  });
   const update = (key: keyof typeof form, value: string) => setForm({ ...form, [key]: value });
-  const submitRequest = () => {
+  const submitRequest = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     const normalize = (value: string) => value.trim().toLocaleLowerCase('tr-TR');
     const city = normalize(form.city), district = normalize(form.district);
     const cityOffices = SAMPLE_OFFICES.filter((office) => normalize(office.city) === city);
@@ -1594,7 +1607,57 @@ function BuyerRequestModule() {
     setSent(true);
   };
   if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">✓</div><h2 className="mt-5 text-3xl font-black">Talebiniz ilgili ekiplere iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">Yönetici paneli, ilgili ofis ve bölgedeki danışmanlar için bildirim oluşturuldu. Size uygun portföylerle kısa süre içinde iletişime geçiyoruz.</p></div></div></section>;
-  return <section id="buyer-request" className="border-b border-slate-200 bg-slate-50 py-10"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="rc-navy-frame overflow-hidden rounded-3xl bg-white shadow-xl lg:grid lg:grid-cols-[.9fr_1.1fr]"><div className="bg-[#CD011E] p-6 text-white sm:p-7"><span className="text-xs font-black tracking-[.2em] text-white/75">ALICI TALEBİ</span><div className="mt-3 w-full max-w-[430px] -rotate-[1.5deg] rounded-[48%_52%_46%_54%/_55%_45%_55%_45%] bg-white px-5 py-3 shadow-md sm:px-7 sm:py-4"><h2 className="text-[26px] font-black leading-tight text-slate-950 sm:text-3xl"><span className="block whitespace-nowrap">Siz Aradığınızı Söyleyin,</span><span className="mt-1 block whitespace-nowrap text-center">Biz Bulalım</span></h2></div><p className="mt-3 text-sm leading-relaxed text-white/85">Kriterlerinizi paylaşın; uzmanlarımız uygun portföyleri sizin için eşleştirip size ulaşsın.</p><div className="mt-5 space-y-3 text-sm font-bold"><p>01 · İhtiyacınızı seçin</p><p>02 · Bölge ve bütçeyi belirtin</p><p>03 · Ödeme ve zaman planınızı paylaşın</p></div></div><div className="p-4 sm:p-6"><div className="mb-4 flex items-center gap-2">{[1,2,3].map(n=><span key={n} className={`h-1.5 flex-1 rounded-full ${n<=step?'bg-[#CD011E]':'bg-slate-200'}`}/>)}</div>{step===1&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">İLAN TÜRÜ<select value={form.type} onChange={e=>update('type',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Satılık</option><option>Kiralık</option></select></label><label className="text-xs font-black text-slate-700">NE ARIYORSUNUZ?<select value={form.property} onChange={e=>update('property',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option></select></label></div>}{step===2&&<div className="grid gap-4 sm:grid-cols-3"><label className="text-xs font-black text-slate-700">İL<input value={form.city} onChange={e=>update('city',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">İLÇE<input value={form.district} onChange={e=>update('district',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">BÜTÇE<input value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="Örn. 8.000.000 ₺" className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}{step===3&&<div className="grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">ÖDEME ŞEKLİ<select value={form.payment} onChange={e=>update('payment',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Kredi + Peşinat</option><option>Peşin</option><option>Takas</option></select></label><label className="text-xs font-black text-slate-700">SATIN ALMA ZAMANI<select value={form.timing} onChange={e=>update('timing',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"><option>Hemen</option><option>1 ay içinde</option><option>3 ay içinde</option></select></label><label className="text-xs font-black text-slate-700">AD SOYAD<input required value={form.name} onChange={e=>update('name',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label><label className="text-xs font-black text-slate-700">TELEFON<input required value={form.phone} onChange={e=>update('phone',e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm font-bold"/></label></div>}<div className="mt-7 flex justify-between">{step>1?<button onClick={()=>setStep(step-1)} className="rounded-xl px-4 py-3 text-sm font-black text-slate-500">← Geri</button>:<span/>}<button onClick={()=>step<3?setStep(step+1):submitRequest()} className="rounded-xl bg-[#CD011E] px-6 py-3 text-sm font-black text-white shadow-lg">{step<3?'Devam Et →':'Talebimi Oluştur'}</button></div></div></div></div></section>;
+  const fieldClass = 'buyer-request-field mt-2 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm font-semibold text-slate-800';
+  return (
+    <section id="buyer-request" className="border-b border-slate-200 bg-slate-50 py-8 sm:py-10">
+      <div className="mx-auto max-w-6xl px-6 lg:px-12">
+        <div className="buyer-request-shell rc-navy-frame overflow-hidden bg-white shadow-xl">
+          <header className="flex flex-col gap-5 bg-gradient-to-r from-[#b9001b] via-[#CD011E] to-[#dc1733] p-5 text-white sm:flex-row sm:items-center sm:justify-between sm:px-7">
+            <div className="min-w-0 flex-1">
+              <span className="text-[10px] font-black tracking-[.2em] text-white/75">ALICI TALEBİ</span>
+              <div className="mt-3 w-full max-w-[520px] rounded-2xl bg-white px-5 py-3 text-center shadow-md sm:px-7">
+                <h2 className="break-words text-xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-2xl">
+                  <span className="block">Siz Aradığınızı Söyleyin,</span>
+                  <span className="mt-1 block">Biz Bulalım</span>
+                </h2>
+              </div>
+            </div>
+            <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="buyer-request-toggle flex w-full shrink-0 items-center justify-center gap-2 rounded-full border border-white/70 bg-white px-5 py-3 text-sm font-black text-[#CD011E] shadow-lg sm:w-auto">
+              {open ? 'Formu Kapat' : 'Talep Oluştur'}
+              <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} />
+            </button>
+          </header>
+          {open && (
+            <form onSubmit={submitRequest} className="buyer-request-reveal border-t-2 border-[#12345b] bg-gradient-to-br from-white via-slate-50/70 to-red-50/20 p-5 sm:p-8">
+              <div className="mb-5">
+                <h3 className="text-base font-black text-[#071d3b]">Gayrimenkul talebinizi anlatın</h3>
+                <p className="mt-1 text-xs text-slate-500">Tüm bilgileri tek form üzerinden doldurun; uzmanlarımız size uygun portföyleri eşleştirsin.</p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <label className="text-xs font-black text-slate-700">İLAN TÜRÜ<select required value={form.type} onChange={e=>update('type',e.target.value)} className={fieldClass}><option>Satılık</option><option>Kiralık</option><option>Devren Satılık</option></select></label>
+                <label className="text-xs font-black text-slate-700">NE ARIYORSUNUZ?<select required value={form.property} onChange={e=>update('property',e.target.value)} className={fieldClass}><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option><option>Diğer</option></select></label>
+                <label className="text-xs font-black text-slate-700">BÜTÇE<input required value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="Örn. 8.000.000 ₺" className={fieldClass}/></label>
+                <label className="text-xs font-black text-slate-700">İL<input required value={form.city} onChange={e=>update('city',e.target.value)} className={fieldClass}/></label>
+                <label className="text-xs font-black text-slate-700">İLÇE<input required value={form.district} onChange={e=>update('district',e.target.value)} className={fieldClass}/></label>
+                <label className="text-xs font-black text-slate-700">ÖDEME ŞEKLİ<select required value={form.payment} onChange={e=>update('payment',e.target.value)} className={fieldClass}><option>Kredi + Peşinat</option><option>Peşin</option><option>Takas</option></select></label>
+                <label className="text-xs font-black text-slate-700">İŞLEM ZAMANI<select required value={form.timing} onChange={e=>update('timing',e.target.value)} className={fieldClass}><option>Hemen</option><option>1 ay içinde</option><option>3 ay içinde</option><option>6 ay içinde</option></select></label>
+                <label className="text-xs font-black text-slate-700">AD SOYAD<input required value={form.name} onChange={e=>update('name',e.target.value)} autoComplete="name" className={fieldClass}/></label>
+                <label className="text-xs font-black text-slate-700">TELEFON<input required type="tel" value={form.phone} onChange={e=>update('phone',e.target.value)} autoComplete="tel" className={fieldClass}/></label>
+              </div>
+              <label className="mt-4 block text-xs font-black text-slate-700">TALEBİNİZ İLE İLGİLİ AÇIKLAMALAR
+                <textarea required rows={5} value={form.description} onChange={e=>update('description',e.target.value)} placeholder="Aradığınız mülkün konumu, özellikleri, öncelikleriniz ve diğer ayrıntıları buraya yazınız." className={`${fieldClass} resize-y leading-6`}></textarea>
+              </label>
+              <div className="mt-5 space-y-3 rounded-2xl border border-slate-200 bg-white p-4">
+                <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK Aydınlatma Metni</Link>’ni okudum; bilgilerimin talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.</span></label>
+                <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Koşulları</Link>’nı okudum ve kabul ediyorum.</span></label>
+              </div>
+              <button type="submit" className="buyer-request-submit mt-5 w-full rounded-xl bg-gradient-to-r from-[#b9001b] to-[#CD011E] px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-900/15">TALEBİMİ İLET</button>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function BarterBankModule() {
