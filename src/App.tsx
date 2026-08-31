@@ -1232,7 +1232,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <Link to="/" onClick={close} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center® ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
-              <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" />
+              <img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" />
             </span>
           </Link>
 
