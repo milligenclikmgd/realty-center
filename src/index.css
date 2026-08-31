@@ -906,26 +906,30 @@
   }
 }
 
-/* Ana sayfa sabit görünüm: giriş, hover ve dekoratif hareketler kapalı */
+/* Ana sayfa: otomatik/giriş animasyonları kapalı, kullanıcı etkileşimleri yumuşak */
 .home-page-static *,
 .home-page-static *::before,
 .home-page-static *::after {
   animation: none !important;
-  transition: none !important;
   scroll-behavior: auto !important;
+}
+
+.home-page-static a,
+.home-page-static button,
+.home-page-static input,
+.home-page-static select,
+.home-page-static textarea,
+.home-page-static [class*="transition"],
+.home-page-static [class*="group-hover"],
+.home-page-static [class*="hover:"] {
+  transition-duration: 360ms !important;
+  transition-timing-function: cubic-bezier(.22, .72, .25, 1) !important;
 }
 
 .home-page-static .gold-showcase-glow,
 .home-page-static .gold-showcase-spark,
 .home-page-static .gold-showcase-card::after {
   display: none !important;
-}
-
-.home-page-static [class*="hover:-translate"],
-.home-page-static [class*="hover:scale"],
-.home-page-static [class*="group-hover:translate"],
-.home-page-static [class*="group-hover:scale"] {
-  transform: none !important;
 }
 
 /* Ana sayfadaki tek hareketli istisna: slider geçişi */
