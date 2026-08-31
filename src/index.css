@@ -1092,3 +1092,25 @@
   .buyer-request-shell > header,
   .barter-shell > header { min-height: 0; }
 }
+
+
+/* Alıcı talebi sloganı: kutu yerine yatay elips */
+.buyer-request-slogan {
+  min-height: 78px;
+  border-radius: 50% / 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buyer-request-slogan h2 {
+  width: 82%;
+  max-width: 100%;
+}
+@media (max-width: 639px) {
+  .buyer-request-slogan {
+    min-height: 72px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .buyer-request-slogan h2 { width: 88%; }
+}
