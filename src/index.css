@@ -995,3 +995,21 @@
 @media (prefers-reduced-motion: reduce) {
   .realty-header-emblem::after { transition: none; }
 }
+
+
+/* Güncel header logo oranı: dışta kalın lacivert, içte ince kırmızı çerçeve */
+.realty-header-disc,
+.realty-header-emblem-inner .realty-header-disc {
+  border: 3px solid #CD011E;
+  box-shadow:
+    0 0 0 7px #071D3B,
+    0 15px 32px rgba(0,0,0,.24),
+    inset 0 0 14px rgba(7,29,59,.06);
+}
+.realty-header-main-logo,
+.realty-header-emblem-inner .realty-header-main-logo {
+  width: 138px;
+  height: 141px;
+  max-width: 94%;
+  object-fit: contain;
+}
