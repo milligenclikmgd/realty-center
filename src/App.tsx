@@ -3430,7 +3430,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
             Bize Ulaşın
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
-            İLETİŞİM & <span className="text-red-700">DESTEK</span>
+            BİZİMLE <span className="text-red-700">İLETİŞİME GEÇ</span>
           </h1>
           <p className="text-slate-600 text-sm font-medium mt-2">
             Sorularınız, gayrimenkul talepleriniz veya iş birliği fırsatları için ekibimizle iletişime geçebilirsiniz.
@@ -3440,12 +3440,13 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
-            <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+            <img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-5 top-5 h-11 w-24 object-contain sm:right-8 sm:top-7 sm:h-12 sm:w-32" />
+            <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4 pr-24 sm:pr-36">
               <div className="p-3 bg-red-100 text-red-700 rounded-xl">
                 <MessageSquare className="w-6 h-6" />
               </div>
               <div>
-                <h2 className="text-xl font-black text-slate-900">Bize Mesaj Gönderin</h2>
+                <h2 className="text-xl font-black text-slate-900">İletişime Geç</h2>
                 <p className="text-xs text-slate-500 font-medium">Formu doldurun, uzman ekibimiz en kısa sürede dönüş yapsın.</p>
               </div>
             </div>
@@ -3530,7 +3531,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
             <div className="bg-slate-900 text-white p-8 rounded-2xl border-2 border-slate-800 shadow-xl space-y-6">
               <div className="border-b border-slate-800 pb-4">
                 <h3 className="text-xl font-black text-white">Genel Merkez İletişim</h3>
-                <p className="text-xs text-red-600 font-bold tracking-wider mt-0.5">REALTY CENTER® GAYRİMENKUL A.Ş.</p>
+                <p className="text-xs text-red-600 font-bold tracking-wider mt-0.5">REALTY CENTER®</p>
               </div>
 
               <div className="space-y-4 text-xs font-medium text-slate-300">
