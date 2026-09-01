@@ -5125,24 +5125,28 @@ function AmbientMusicButton() {
 
     const playPhrase = () => {
       const now = context.currentTime + 0.12;
+      // Beethoven – Für Elise giriş motifi. Beste kamu malıdır; ses kaydı kullanılmaz,
+      // bütün notalar ziyaretçinin tarayıcısında Web Audio ile anlık üretilir.
       const melody = [
-        [329.63,0],[392,0.72],[493.88,1.44],[440,2.16],
-        [392,3.12],[329.63,3.84],[293.66,4.56],[329.63,5.28],
-        [392,6.24],[440,6.96],[523.25,7.68],[493.88,8.4],
-        [440,9.36],[392,10.08],[329.63,10.8],[293.66,11.52]
+        [659.25,0],[622.25,0.34],[659.25,0.68],[622.25,1.02],[659.25,1.36],
+        [493.88,1.78],[587.33,2.2],[523.25,2.62],[440,3.04],
+        [261.63,3.64],[329.63,4.06],[440,4.48],[493.88,4.9],
+        [329.63,5.5],[415.3,5.92],[493.88,6.34],[523.25,6.76],
+        [329.63,7.36],[659.25,7.78],[622.25,8.12],[659.25,8.46],[622.25,8.8],
+        [659.25,9.14],[493.88,9.56],[587.33,9.98],[523.25,10.4],[440,10.82]
       ] as Array<[number, number]>;
-      melody.forEach(([frequency, offset], index) => playPianoNote(frequency, now + offset, 2.35, index % 4 === 0 ? 0.13 : 0.105));
+      melody.forEach(([frequency, offset], index) => playPianoNote(frequency, now + offset, index < 5 ? 1.45 : 2.1, index % 9 === 0 ? 0.125 : 0.1));
       [
-        [130.81,0],[164.81,0],[196,0],
-        [110,3.12],[164.81,3.12],[220,3.12],
-        [146.83,6.24],[174.61,6.24],[220,6.24],
-        [98,9.36],[146.83,9.36],[196,9.36]
-      ].forEach(([frequency, offset]) => playPianoNote(frequency, now + offset, 3.7, 0.055));
+        [130.81,3.04],[164.81,3.64],[220,4.48],
+        [123.47,4.9],[164.81,5.5],[207.65,6.34],
+        [130.81,6.76],[164.81,7.36],[220,7.78],
+        [130.81,10.4],[164.81,10.82]
+      ].forEach(([frequency, offset]) => playPianoNote(frequency, now + offset, 2.7, 0.052));
     };
 
     await context.resume();
     playPhrase();
-    loopRef.current = window.setInterval(playPhrase, 12480);
+    loopRef.current = window.setInterval(playPhrase, 11880);
     setPlaying(true);
   }, []);
 
@@ -5151,9 +5155,9 @@ function AmbientMusicButton() {
     if (audioContextRef.current?.state !== 'closed') void audioContextRef.current?.close();
   }, []);
 
-  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Piyano müziğini sessize al' : 'Telif içermeyen piyano müziği çal'} title="Özgün, telifsiz piyano müziği" className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
+  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Piyano müziğini sessize al' : 'Telif içermeyen piyano müziği çal'} title="Beethoven – Für Elise · Telifsiz piyano düzenlemesi" className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
     {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
-    <span>{playing ? 'Sessize Al' : 'Piyano Çal'}</span>
+    <span>{playing ? 'Sessize Al' : 'Müzik Çal'}</span>
     {playing && <span className="h-2 w-2 rounded-full bg-[#CD011E]"/>}
   </button>;
 }
