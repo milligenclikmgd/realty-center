@@ -1,5 +1,40 @@
-/* İlan detay sayfasındaki orta çember logoyu 56px'den 84px'e (%50) büyütür. */
+/* İlan detay sayfası: header yüksekliği büyümeden ana sayfadaki lacivert kontur sistemini kullanır.
+   Orta rozet header dışına taşabilir ve içinde Önce Güven logosu gösterilir. */
+header.border-red-800 {
+  position: relative;
+  overflow: visible !important;
+  border-top: 4px solid #071d3b !important;
+  border-bottom: 4px solid #071d3b !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  background: linear-gradient(90deg, #a90019 0%, #cd011e 24%, #dc0827 50%, #cd011e 76%, #a90019 100%) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.24), inset 0 -1px 0 rgba(255,255,255,.14), 0 10px 24px rgba(7,29,59,.2) !important;
+}
+
+header.border-red-800 > div {
+  min-height: 90px !important;
+  overflow: visible !important;
+}
+
 header.border-red-800 > div > a[aria-label="Realty Center® ana sayfa"] {
-  width: 84px !important;
-  height: 84px !important;
+  position: relative;
+  z-index: 20;
+  width: 149px !important;
+  height: 149px !important;
+  margin-top: -30px !important;
+  margin-bottom: -30px !important;
+  overflow: hidden !important;
+  border: 5px solid #fff !important;
+  border-radius: 9999px !important;
+  background: #fff !important;
+  box-shadow: 0 15px 32px rgba(0,0,0,.24), inset 0 0 0 5px #cd011e, inset 0 0 17px rgba(7,29,59,.05) !important;
+}
+
+header.border-red-800 > div > a[aria-label="Realty Center® ana sayfa"] > img {
+  content: url('/rlogo2.png');
+  width: 120px !important;
+  height: auto !important;
+  max-width: 86% !important;
+  object-fit: contain !important;
+  padding: 0 !important;
 }
