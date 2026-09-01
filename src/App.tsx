@@ -34,6 +34,44 @@ const SOCIAL_MEDIA_LINKS = [
   { name: 'LinkedIn', icon: '/linkedin.svg' }
 ];
 
+type TrainingEvent = { id: string; title: string; date: string; time: string; location: string; format: string };
+type TrainingCenter = { id: string; name: string; city: string; address: string; description: string };
+type TrainingType = { id: string; title: string; duration: string; description: string };
+type TrainingContent = {
+  calendarIntro: string;
+  centersIntro: string;
+  typesIntro: string;
+  events: TrainingEvent[];
+  centers: TrainingCenter[];
+  types: TrainingType[];
+};
+const DEFAULT_TRAINING_CONTENT: TrainingContent = {
+  calendarIntro: 'Realty Center® eğitim takviminden yaklaşan sınıf eğitimlerini, çevrim içi programları ve saha çalışmalarını takip edebilirsiniz.',
+  centersIntro: 'Eğitim merkezlerimiz; danışmanlarımızın mesleki gelişimini destekleyen, uygulamalı çalışmalar ve güncel sektör eğitimleri için hazırlanan öğrenme alanlarıdır.',
+  typesIntro: 'Gayrimenkul kariyerinin her aşamasına uygun eğitim programlarımızla satış, mevzuat, pazarlama, teknoloji ve portföy yönetimi alanlarında sürekli gelişim sağlıyoruz.',
+  events: [
+    { id: 'training-event-1', title: 'Gayrimenkule Başlangıç', date: '2026-09-05', time: '10:00', location: 'Ankara Eğitim Merkezi', format: 'Sınıf Eğitimi' },
+    { id: 'training-event-2', title: 'Dijital Pazarlama Atölyesi', date: '2026-09-12', time: '14:00', location: 'Çevrim içi', format: 'Online' },
+    { id: 'training-event-3', title: 'Portföy ve Müşteri Yönetimi', date: '2026-09-19', time: '10:30', location: 'İstanbul Eğitim Merkezi', format: 'Sınıf Eğitimi' }
+  ],
+  centers: [
+    { id: 'training-center-1', name: 'Ankara Eğitim Merkezi', city: 'Ankara', address: 'Konutkent Mah. 3028. Cad. West Gate Residence, Çankaya / Ankara', description: 'Genel merkez bünyesinde sınıf ve uygulama eğitimleri.' }
+  ],
+  types: [
+    { id: 'training-type-1', title: 'Gayrimenkule Başlangıç Eğitimi', duration: '2 Gün', description: 'Sektöre yeni başlayan danışmanlar için temel süreçler, mevzuat ve müşteri iletişimi.' },
+    { id: 'training-type-2', title: 'Portföy Yönetimi', duration: '1 Gün', description: 'Doğru portföy alma, fiyatlama, sunum ve takip yöntemleri.' },
+    { id: 'training-type-3', title: 'Dijital Pazarlama', duration: '1 Gün', description: 'İlan sunumu, sosyal medya, kişisel marka ve dijital müşteri kazanımı.' }
+  ]
+};
+const getTrainingContent = (): TrainingContent => {
+  try { return { ...DEFAULT_TRAINING_CONTENT, ...(JSON.parse(localStorage.getItem('realty-center-training-content') || 'null') || {}) }; }
+  catch { return DEFAULT_TRAINING_CONTENT; }
+};
+const saveTrainingContent = (content: TrainingContent) => {
+  localStorage.setItem('realty-center-training-content', JSON.stringify(content));
+  window.dispatchEvent(new Event('realty-center-training-updated'));
+};
+
 type RealtyVideo = { id: string; source: 'youtube' | 'upload'; url: string; title: string; thumbnail: string; createdAt: string };
 const getRealtyVideos = (): RealtyVideo[] => {
   try { return JSON.parse(localStorage.getItem('realty-center-videos') || '[]'); } catch { return []; }
@@ -1309,15 +1347,90 @@ function DiscoverEarningPage({ section }: { section: 'discover' | 'earning' }) {
   return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image} alt={page.title} className="h-72 w-full object-cover lg:h-full lg:min-h-[520px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">{page.eyebrow}</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.title}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 text-sm leading-8 text-slate-600">{page.text}</p><Link to={section === 'discover' ? '/danisman-basvuru' : '/franchise-basvuru'} className="mt-8 inline-flex w-fit items-center text-sm font-black text-red-700">Daha fazla bilgi alın <ArrowRight className="ml-2 h-4 w-4"/></Link></article></div></div></main>;
 }
 
+function EducationManagedPage({ page, pageId }: { page: HeaderMenuItem; pageId: string }) {
+  const [training, setTraining] = useState<TrainingContent>(getTrainingContent);
+  const [month, setMonth] = useState(() => { const now = new Date(); return new Date(now.getFullYear(), now.getMonth(), 1); });
+  useEffect(() => {
+    const refresh = () => setTraining(getTrainingContent());
+    window.addEventListener('realty-center-training-updated', refresh);
+    return () => window.removeEventListener('realty-center-training-updated', refresh);
+  }, []);
+
+  const isCalendar = pageId === 'education-calendar';
+  const isCenters = pageId === 'education-centers';
+  const isTypes = pageId === 'education-types';
+  const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
+  const firstDay = (new Date(month.getFullYear(), month.getMonth(), 1).getDay() + 6) % 7;
+  const monthLabel = month.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
+  const dateKey = (day: number) => [month.getFullYear(), String(month.getMonth() + 1).padStart(2, '0'), String(day).padStart(2, '0')].join('-');
+
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16">
+    <div className="mx-auto max-w-6xl px-6">
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-10">
+        <img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-14 w-36 object-contain sm:right-10 sm:top-8 sm:h-16 sm:w-44" />
+        <div className="max-w-3xl pr-32 sm:pr-48">
+          <p className="text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER® EĞİTİM</p>
+          <h1 className="mt-3 text-3xl font-black text-slate-900 sm:text-5xl">{page.label}</h1>
+          <div className="mt-4 h-1 w-16 rounded-full bg-red-700" />
+        </div>
+
+        {pageId === 'education' && <div className="mt-8">
+          <p className="max-w-4xl whitespace-pre-line text-sm leading-8 text-slate-600">{page.content}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {[
+              { to: '/icerik/education-calendar', title: 'Eğitim Takvimi', text: training.calendarIntro, icon: Calendar },
+              { to: '/icerik/education-centers', title: 'Eğitim Merkezlerimiz', text: training.centersIntro, icon: MapPinned },
+              { to: '/icerik/education-types', title: 'Eğitim Çeşitlerimiz', text: training.typesIntro, icon: GraduationCap }
+            ].map((item) => { const Icon = item.icon; return <Link key={item.to} to={item.to} className="group rounded-2xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:bg-white hover:shadow-xl"><Icon className="h-8 w-8 text-red-700"/><h2 className="mt-4 text-lg font-black text-slate-900">{item.title}</h2><p className="mt-2 line-clamp-4 text-xs leading-6 text-slate-600">{item.text}</p><span className="mt-5 inline-flex text-xs font-black text-red-700">İncele →</span></Link>; })}
+          </div>
+        </div>}
+
+        {isCalendar && <div className="mt-8">
+          <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.calendarIntro}</p>
+          <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200">
+            <div className="flex items-center justify-between bg-[#071f3d] px-5 py-4 text-white">
+              <button onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))} className="rounded-full p-2 transition hover:bg-white/10" aria-label="Önceki ay"><ChevronLeft className="h-5 w-5"/></button>
+              <h2 className="text-lg font-black capitalize">{monthLabel}</h2>
+              <button onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() + 1, 1))} className="rounded-full p-2 transition hover:bg-white/10" aria-label="Sonraki ay"><ChevronRight className="h-5 w-5"/></button>
+            </div>
+            <div className="grid grid-cols-7 border-b border-slate-200 bg-slate-100 text-center text-[10px] font-black text-slate-500">{['Pzt','Sal','Çar','Per','Cum','Cmt','Paz'].map((day) => <div key={day} className="p-3">{day}</div>)}</div>
+            <div className="grid grid-cols-7 bg-white">
+              {Array.from({ length: firstDay }).map((_, index) => <div key={'empty-' + index} className="min-h-24 border-b border-r border-slate-100 bg-slate-50/60" />)}
+              {Array.from({ length: daysInMonth }, (_, index) => index + 1).map((day) => {
+                const events = training.events.filter((event) => event.date === dateKey(day));
+                return <div key={day} className={'min-h-24 border-b border-r border-slate-100 p-2 ' + (events.length ? 'bg-red-50/60' : 'bg-white')}>
+                  <span className={'flex h-7 w-7 items-center justify-center rounded-full text-xs font-black ' + (events.length ? 'bg-red-700 text-white' : 'text-slate-600')}>{day}</span>
+                  <div className="mt-1 space-y-1">{events.map((event) => <div key={event.id} title={event.title + ' · ' + event.time} className="rounded-md bg-[#071f3d] px-1.5 py-1 text-[9px] font-bold leading-3 text-white"><span className="block truncate">{event.title}</span><span className="text-red-200">{event.time}</span></div>)}</div>
+                </div>;
+              })}
+            </div>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">{training.events.slice().sort((a,b) => a.date.localeCompare(b.date)).map((event) => <article key={event.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div className="flex gap-4"><div className="rounded-xl bg-red-700 px-3 py-2 text-center text-white"><span className="block text-xl font-black">{new Date(event.date + 'T12:00:00').getDate()}</span><span className="text-[9px] font-black uppercase">{new Date(event.date + 'T12:00:00').toLocaleDateString('tr-TR',{month:'short'})}</span></div><div><h3 className="font-black text-slate-900">{event.title}</h3><p className="mt-1 text-xs text-slate-500">{event.time} · {event.format}</p><p className="mt-2 flex items-center gap-1 text-xs font-bold text-slate-700"><MapPin className="h-3.5 w-3.5 text-red-700"/>{event.location}</p></div></div></article>)}</div>
+        </div>}
+
+        {isCenters && <div className="mt-8">
+          <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.centersIntro}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">{training.centers.map((center) => <article key={center.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-6"><div className="flex items-start gap-4"><div className="rounded-xl bg-red-700 p-3 text-white"><MapPinned className="h-6 w-6"/></div><div><p className="text-[10px] font-black tracking-widest text-red-700">{center.city}</p><h2 className="mt-1 text-xl font-black text-slate-900">{center.name}</h2><p className="mt-3 text-xs leading-6 text-slate-600">{center.description}</p><p className="mt-4 border-t border-slate-200 pt-4 text-xs font-bold leading-5 text-slate-800">{center.address}</p></div></div></article>)}</div>
+        </div>}
+
+        {isTypes && <div className="mt-8">
+          <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.typesIntro}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{training.types.map((type, index) => <article key={type.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-sm font-black text-white">{index + 1}</span><h2 className="mt-4 text-lg font-black text-slate-900">{type.title}</h2><p className="mt-2 text-[10px] font-black tracking-widest text-red-700">{type.duration}</p><p className="mt-3 text-xs leading-6 text-slate-600">{type.description}</p></article>)}</div>
+        </div>}
+      </section>
+    </div>
+  </main>;
+}
+
 function ManagedHeaderContentPage() {
   const { id = '' } = useParams();
   const [menus, setMenus] = useState<HeaderMenuItem[]>(getHeaderMenu);
   useEffect(() => { const refresh = () => setMenus(getHeaderMenu()); window.addEventListener('realty-center-header-updated', refresh); return () => window.removeEventListener('realty-center-header-updated', refresh); }, []);
   const page = findHeaderItem(menus, id);
   if (!page) return <main className="min-h-[60vh] bg-slate-50 py-16"><div className="mx-auto max-w-4xl px-6 text-center"><h1 className="text-3xl font-black text-slate-900">İçerik bulunamadı</h1><Link to="/" className="mt-5 inline-flex font-black text-red-700">Ana sayfaya dön</Link></div></main>;
-  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/dglogo.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
+  if (['education','education-calendar','education-centers','education-types'].includes(id)) return <EducationManagedPage page={page} pageId={id} />;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/dglogo.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
 }
-
 function CustomerFeedbackPage() {
   const [type, setType] = useState<CustomerFeedback['type']>('Memnuniyet');
   const [rating, setRating] = useState(5);
@@ -3866,7 +3979,7 @@ function HeaderMenuEditorNode({ item, depth, onUpdate, onRemove, onAddChild }: {
 
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -3886,6 +3999,9 @@ function SuperAdminDashboard() {
   const [corporateSaved, setCorporateSaved] = useState(false);
   const [headerMenuItems, setHeaderMenuItems] = useState<HeaderMenuItem[]>(getHeaderMenu);
   const [headerSaved, setHeaderSaved] = useState(false);
+  const [trainingContent, setTrainingContent] = useState<TrainingContent>(getTrainingContent);
+  const [trainingSection, setTrainingSection] = useState<'calendar' | 'centers' | 'types'>('calendar');
+  const [trainingSaved, setTrainingSaved] = useState(false);
   const [libraryCategories,setLibraryCategories]=useState<LibraryCategory[]>(getLibraryCategories);
   const [librarySaved,setLibrarySaved]=useState(false);
   const [editingLibraryArticle,setEditingLibraryArticle]=useState<{categoryId:string;articleId:string}|null>(null);
@@ -3896,6 +4012,10 @@ function SuperAdminDashboard() {
   const addManagedHeaderChild = (parentId: string, side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => appendHeaderMenuChild(current,parentId,headerItem(id,'Yeni Alt Başlık',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazın.'))); };
   const addManagedHeaderRoot = (side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => [...current,headerItem(id,'Yeni Ana Başlık',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazın.')]); };
   const saveManagedHeader = () => { saveHeaderMenu(headerMenuItems); setHeaderSaved(true); setTimeout(() => setHeaderSaved(false),2200); };
+  const saveTraining = () => { saveTrainingContent(trainingContent); setTrainingSaved(true); setTimeout(() => setTrainingSaved(false), 2200); };
+  const addTrainingEvent = () => setTrainingContent((current) => ({ ...current, events: [...current.events, { id: 'training-event-' + Date.now(), title: 'Yeni Eğitim', date: new Date().toISOString().slice(0,10), time: '10:00', location: '', format: 'Sınıf Eğitimi' }] }));
+  const addTrainingCenter = () => setTrainingContent((current) => ({ ...current, centers: [...current.centers, { id: 'training-center-' + Date.now(), name: 'Yeni Eğitim Merkezi', city: '', address: '', description: '' }] }));
+  const addTrainingType = () => setTrainingContent((current) => ({ ...current, types: [...current.types, { id: 'training-type-' + Date.now(), title: 'Yeni Eğitim', duration: '', description: '' }] }));
   const updateLibraryCategory=(id:string,patch:Partial<LibraryCategory>)=>setLibraryCategories((current)=>current.map((item)=>item.id===id?{...item,...patch}:item));
   const updateLibraryArticle=(categoryId:string,articleId:string,patch:Partial<LibraryArticle>)=>setLibraryCategories((current)=>current.map((category)=>category.id===categoryId?{...category,articles:category.articles.map((article)=>article.id===articleId?{...article,...patch}:article)}:category));
   const addLibraryCategory=()=>{const id=`library-${Date.now()}`;setLibraryCategories((current)=>[...current,{id,slug:`yeni-kategori-${Date.now()}`,title:'Yeni Kategori',description:'Kategori açıklaması',color:'#CD011E',articles:[]}]);};
@@ -4024,6 +4144,7 @@ function SuperAdminDashboard() {
     { key: 'categories' as const, label: 'Kategori Yönetimi', icon: Tag },
     { key: 'videos' as const, label: 'Video Yönetimi', icon: PlayCircle },
     { key: 'library' as const, label: 'Realty Kütüphane Yönetimi', icon: GraduationCap },
+    { key: 'education' as const, label: 'Eğitim Yönetimi', icon: Calendar },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'buyerRequests' as const, label: 'Alıcı Talepleri', icon: Bell, badge: buyerRequests.filter((item) => item.status === 'Yeni').length },
     { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
@@ -4472,6 +4593,54 @@ function SuperAdminDashboard() {
               <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">Belgelerimiz</h3><p className="mt-1 text-xs text-slate-500">PDF dosyaları sitede çerçeveli belge kartı olarak görünür.</p></div><button onClick={() => setCorporateDocuments([...corporateDocuments,{id:`belge-${Date.now()}`,title:'Yeni Belge',description:'Belge açıklaması',fileUrl:''}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Belge Ekle</button></div><div className="mt-5 space-y-3">{corporateDocuments.map((document,index) => <div key={document.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={document.title} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,title:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge adı"/><input value={document.description} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,description:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge açıklaması"/><label className="cursor-pointer rounded-lg border border-dashed border-red-300 bg-red-50 px-3 py-3 text-center text-xs font-black text-red-700"><input type="file" accept="application/pdf" className="hidden" onChange={(e) => uploadCorporatePdf(index,e.target.files?.[0])}/>{document.fileUrl ? 'PDF yüklendi ✓ Değiştir' : 'PDF Belgesi Yükle'}</label><button onClick={() => setCorporateDocuments(corporateDocuments.filter((_,i)=>i!==index))} className="text-xs font-black text-red-700">Belgeyi kaldır</button></div>)}</div></section>
               {([['Referanslarımız',corporateReferences,setCorporateReferences],['İş Ortaklarımız',corporatePartners,setCorporatePartners]] as const).map(([title,items,setItems]) => <section key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">{title}</h3><p className="mt-1 text-xs text-slate-500">Logo ve tıklandığında açılacak çalışma içeriğini yönetin.</p></div><button onClick={() => setItems([...items,{id:`logo-${Date.now()}`,name:'Yeni Kurum',logo:'/demo-placeholder.svg',content:'İş birliği veya referans açıklaması.'}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Logo Ekle</button></div><div className="mt-5 space-y-3">{items.map((item,index) => <div key={item.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={item.name} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,name:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
               <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'Tüm içerikler kaydedildi ✓' : 'Belgeler, Referanslar ve İş Ortaklarını Kaydet'}</button>
+            </div>}
+
+            {activeTab === 'education' && <div className="space-y-6">
+              <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center">
+                  <div><h2 className="text-lg font-black text-slate-900">Eğitim Yönetimi</h2><p className="mt-1 text-xs leading-5 text-slate-500">Takvim, eğitim merkezleri ve eğitim çeşitlerinin tamamını tek ekrandan yönetin.</p></div>
+                  <button onClick={saveTraining} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white">{trainingSaved ? 'Eğitim içerikleri kaydedildi ✓' : 'Tümünü Kaydet'}</button>
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {([['calendar','Eğitim Takvimi'],['centers','Eğitim Merkezleri'],['types','Eğitim Çeşitleri']] as const).map(([key,label]) => <button key={key} onClick={() => setTrainingSection(key)} className={'rounded-full px-4 py-2 text-xs font-black transition ' + (trainingSection === key ? 'bg-[#071f3d] text-white' : 'border border-slate-200 bg-slate-50 text-slate-600 hover:border-red-300')}>{label}</button>)}
+                </div>
+
+                {trainingSection === 'calendar' && <div className="mt-6 space-y-5">
+                  <div><label className="mb-1 block text-xs font-black text-slate-600">Takvim üstü açıklama</label><textarea rows={3} value={trainingContent.calendarIntro} onChange={(e) => setTrainingContent({ ...trainingContent, calendarIntro: e.target.value })} className="w-full rounded-xl border border-slate-300 p-3 text-sm"/></div>
+                  <div className="flex items-center justify-between"><h3 className="font-black text-slate-900">Takvimdeki Eğitimler</h3><button onClick={addTrainingEvent} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Eğitim Ekle</button></div>
+                  <div className="space-y-4">{trainingContent.events.map((event) => <div key={event.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-2">
+                    <input value={event.title} onChange={(e) => setTrainingContent({ ...trainingContent, events: trainingContent.events.map((item) => item.id === event.id ? { ...item, title: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Eğitim adı"/>
+                    <input type="date" value={event.date} onChange={(e) => setTrainingContent({ ...trainingContent, events: trainingContent.events.map((item) => item.id === event.id ? { ...item, date: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/>
+                    <input type="time" value={event.time} onChange={(e) => setTrainingContent({ ...trainingContent, events: trainingContent.events.map((item) => item.id === event.id ? { ...item, time: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/>
+                    <input value={event.format} onChange={(e) => setTrainingContent({ ...trainingContent, events: trainingContent.events.map((item) => item.id === event.id ? { ...item, format: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Online / Sınıf eğitimi"/>
+                    <input value={event.location} onChange={(e) => setTrainingContent({ ...trainingContent, events: trainingContent.events.map((item) => item.id === event.id ? { ...item, location: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="Konum"/>
+                    <button onClick={() => setTrainingContent({ ...trainingContent, events: trainingContent.events.filter((item) => item.id !== event.id) })} className="w-fit text-xs font-black text-red-700">Eğitimi kaldır</button>
+                  </div>)}</div>
+                </div>}
+
+                {trainingSection === 'centers' && <div className="mt-6 space-y-5">
+                  <div><label className="mb-1 block text-xs font-black text-slate-600">Eğitim merkezleri açıklaması</label><textarea rows={4} value={trainingContent.centersIntro} onChange={(e) => setTrainingContent({ ...trainingContent, centersIntro: e.target.value })} className="w-full rounded-xl border border-slate-300 p-3 text-sm"/></div>
+                  <div className="flex items-center justify-between"><h3 className="font-black text-slate-900">Eğitim Merkezi Adresleri</h3><button onClick={addTrainingCenter} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Merkez Ekle</button></div>
+                  <div className="space-y-4">{trainingContent.centers.map((center) => <div key={center.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-2">
+                    <input value={center.name} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, name: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Merkez adı"/>
+                    <input value={center.city} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, city: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Şehir"/>
+                    <textarea rows={2} value={center.address} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, address: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="Açık adres"/>
+                    <textarea rows={3} value={center.description} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, description: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="Merkez açıklaması"/>
+                    <button onClick={() => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.filter((item) => item.id !== center.id) })} className="w-fit text-xs font-black text-red-700">Merkezi kaldır</button>
+                  </div>)}</div>
+                </div>}
+
+                {trainingSection === 'types' && <div className="mt-6 space-y-5">
+                  <div><label className="mb-1 block text-xs font-black text-slate-600">Eğitim çeşitleri açıklaması</label><textarea rows={4} value={trainingContent.typesIntro} onChange={(e) => setTrainingContent({ ...trainingContent, typesIntro: e.target.value })} className="w-full rounded-xl border border-slate-300 p-3 text-sm"/></div>
+                  <div className="flex items-center justify-between"><h3 className="font-black text-slate-900">Eğitim Çeşitleri</h3><button onClick={addTrainingType} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Eğitim Çeşidi Ekle</button></div>
+                  <div className="space-y-4">{trainingContent.types.map((type) => <div key={type.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-2">
+                    <input value={type.title} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, title: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Eğitim adı"/>
+                    <input value={type.duration} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, duration: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Süre"/>
+                    <textarea rows={3} value={type.description} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, description: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="Eğitim açıklaması"/>
+                    <button onClick={() => setTrainingContent({ ...trainingContent, types: trainingContent.types.filter((item) => item.id !== type.id) })} className="w-fit text-xs font-black text-red-700">Eğitim çeşidini kaldır</button>
+                  </div>)}</div>
+                </div>}
+              </section>
             </div>}
 
             {activeTab === 'header' && <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center"><div><h2 className="text-lg font-black text-slate-900">Header ve İçerik Sayfaları</h2><p className="mt-1 max-w-3xl text-xs leading-5 text-slate-500">Ana başlıkları, alt başlıkları ve üçüncü seviye başlıkları yönetin. Dinamik sayfalarda görsel solda, metin sağda gösterilir.</p></div><div className="flex gap-2"><button onClick={() => addManagedHeaderRoot('left')} className="rounded-lg border border-red-200 px-3 py-2 text-xs font-black text-red-700">+ Sola Başlık</button><button onClick={() => addManagedHeaderRoot('right')} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Sağa Başlık</button></div></div><div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>Bağlantı kullanımı:</strong> Panelde oluşturulan içerik sayfaları için <code>/icerik/sayfa-kimligi</code> biçimini kullanın. Mevcut bir sayfaya yönlendirmek isterseniz onun bağlantısını doğrudan yazabilirsiniz.</div><div className="mt-5 grid gap-5 xl:grid-cols-2">{(['left','right'] as const).map((side) => <div key={side}><div className="mb-3 flex items-center justify-between"><h3 className="text-sm font-black text-slate-900">{side === 'left' ? 'Logonun Solundaki Menüler' : 'Logonun Sağındaki Menüler'}</h3><span className="rounded-full bg-slate-100 px-2 py-1 text-[10px] font-black text-slate-500">{headerMenuItems.filter((item) => item.side === side).length} başlık</span></div><div className="space-y-4">{headerMenuItems.filter((item) => item.side === side).map((item) => <HeaderMenuEditorNode key={item.id} item={item} depth={0} onUpdate={updateManagedHeaderItem} onRemove={removeManagedHeaderItem} onAddChild={addManagedHeaderChild}/>)}</div></div>)}</div><button onClick={saveManagedHeader} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-700/20">{headerSaved ? 'Header ve sayfalar kaydedildi ✓' : 'Header ve Sayfa Yapısını Kaydet'}</button></section></div>}
