@@ -1,0 +1,5 @@
+/* İlan detay sayfasındaki orta çember logoyu 56px'den 84px'e (%50) büyütür. */
+header.border-red-800 > div > a[aria-label="Realty Center® ana sayfa"] {
+  width: 84px !important;
+  height: 84px !important;
+}
