@@ -5063,8 +5063,8 @@ function AmbientMusicButton() {
     if (context && master) {
       master.gain.cancelScheduledValues(context.currentTime);
       master.gain.setValueAtTime(Math.max(master.gain.value, 0.0001), context.currentTime);
-      master.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.35);
-      window.setTimeout(() => { void context.close(); }, 420);
+      master.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.45);
+      window.setTimeout(() => { if (context.state !== 'closed') void context.close(); }, 520);
     }
     audioContextRef.current = null;
     masterGainRef.current = null;
@@ -5076,47 +5076,84 @@ function AmbientMusicButton() {
     if (!AudioContextClass) return;
     const context = new AudioContextClass();
     const master = context.createGain();
+    const warmth = context.createBiquadFilter();
+    const compressor = context.createDynamicsCompressor();
+    warmth.type = 'lowpass';
+    warmth.frequency.setValueAtTime(4200, context.currentTime);
+    warmth.Q.setValueAtTime(0.65, context.currentTime);
+    compressor.threshold.setValueAtTime(-24, context.currentTime);
+    compressor.knee.setValueAtTime(18, context.currentTime);
+    compressor.ratio.setValueAtTime(3, context.currentTime);
     master.gain.setValueAtTime(0.0001, context.currentTime);
-    master.gain.exponentialRampToValueAtTime(0.032, context.currentTime + 1.2);
-    master.connect(context.destination);
+    master.gain.exponentialRampToValueAtTime(0.055, context.currentTime + 1.8);
+    master.connect(warmth);
+    warmth.connect(compressor);
+    compressor.connect(context.destination);
     audioContextRef.current = context;
     masterGainRef.current = master;
 
-    const playNote = (frequency: number, start: number, duration: number) => {
-      const oscillator = context.createOscillator();
+    const playPianoNote = (frequency: number, start: number, duration = 2.8, velocity = 0.12) => {
       const noteGain = context.createGain();
-      oscillator.type = 'sine';
-      oscillator.frequency.setValueAtTime(frequency, start);
+      const tone = context.createBiquadFilter();
+      tone.type = 'lowpass';
+      tone.frequency.setValueAtTime(Math.min(5200, frequency * 10), start);
+      tone.frequency.exponentialRampToValueAtTime(Math.max(900, frequency * 3.4), start + duration);
       noteGain.gain.setValueAtTime(0.0001, start);
-      noteGain.gain.exponentialRampToValueAtTime(0.17, start + 0.08);
+      noteGain.gain.exponentialRampToValueAtTime(velocity, start + 0.012);
+      noteGain.gain.exponentialRampToValueAtTime(Math.max(velocity * 0.34, 0.0002), start + 0.32);
       noteGain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
-      oscillator.connect(noteGain);
-      noteGain.connect(master);
-      oscillator.start(start);
-      oscillator.stop(start + duration + 0.05);
+      noteGain.connect(tone);
+      tone.connect(master);
+
+      [
+        { ratio: 1, level: 1, type: 'triangle' as OscillatorType },
+        { ratio: 2, level: 0.24, type: 'sine' as OscillatorType },
+        { ratio: 3, level: 0.1, type: 'sine' as OscillatorType }
+      ].forEach((harmonic) => {
+        const oscillator = context.createOscillator();
+        const harmonicGain = context.createGain();
+        oscillator.type = harmonic.type;
+        oscillator.frequency.setValueAtTime(frequency * harmonic.ratio, start);
+        oscillator.detune.setValueAtTime((harmonic.ratio - 1) * 1.5, start);
+        harmonicGain.gain.setValueAtTime(harmonic.level, start);
+        oscillator.connect(harmonicGain);
+        harmonicGain.connect(noteGain);
+        oscillator.start(start);
+        oscillator.stop(start + duration + 0.08);
+      });
     };
 
     const playPhrase = () => {
-      const now = context.currentTime + 0.08;
-      const notes = [261.63, 329.63, 392, 523.25, 440, 349.23, 329.63, 293.66, 261.63, 329.63, 392, 493.88, 440, 392, 329.63, 261.63];
-      notes.forEach((frequency, index) => playNote(frequency, now + index * 0.48, 1.35));
-      [130.81, 110, 146.83, 98].forEach((frequency, index) => playNote(frequency, now + index * 1.92, 2.5));
+      const now = context.currentTime + 0.12;
+      const melody = [
+        [329.63,0],[392,0.72],[493.88,1.44],[440,2.16],
+        [392,3.12],[329.63,3.84],[293.66,4.56],[329.63,5.28],
+        [392,6.24],[440,6.96],[523.25,7.68],[493.88,8.4],
+        [440,9.36],[392,10.08],[329.63,10.8],[293.66,11.52]
+      ] as Array<[number, number]>;
+      melody.forEach(([frequency, offset], index) => playPianoNote(frequency, now + offset, 2.35, index % 4 === 0 ? 0.13 : 0.105));
+      [
+        [130.81,0],[164.81,0],[196,0],
+        [110,3.12],[164.81,3.12],[220,3.12],
+        [146.83,6.24],[174.61,6.24],[220,6.24],
+        [98,9.36],[146.83,9.36],[196,9.36]
+      ].forEach(([frequency, offset]) => playPianoNote(frequency, now + offset, 3.7, 0.055));
     };
 
     await context.resume();
     playPhrase();
-    loopRef.current = window.setInterval(playPhrase, 7680);
+    loopRef.current = window.setInterval(playPhrase, 12480);
     setPlaying(true);
   }, []);
 
   useEffect(() => () => {
     if (loopRef.current !== null) window.clearInterval(loopRef.current);
-    void audioContextRef.current?.close();
+    if (audioContextRef.current?.state !== 'closed') void audioContextRef.current?.close();
   }, []);
 
-  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Müziği sessize al' : 'Klasik müzik çal'} className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
+  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Piyano müziğini sessize al' : 'Telif içermeyen piyano müziği çal'} title="Özgün, telifsiz piyano müziği" className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
     {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
-    <span>{playing ? 'Sessize Al' : 'Müzik Çal'}</span>
+    <span>{playing ? 'Sessize Al' : 'Piyano Çal'}</span>
     {playing && <span className="h-2 w-2 rounded-full bg-[#CD011E]"/>}
   </button>;
 }
