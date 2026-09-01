@@ -1291,14 +1291,17 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   if (isListingDetail) {
     return (
       <header className="relative z-40 w-full border-b border-red-800 bg-[#CD011E] text-white shadow-md">
-        <div className="mx-auto flex min-h-[64px] max-w-[1920px] items-stretch px-3 lg:px-6">
-          <Link to="/" onClick={close} className="my-2 flex w-[150px] shrink-0 items-center justify-center rounded-sm bg-white px-3 shadow-sm lg:w-[175px]" aria-label="Realty Center® ana sayfa">
-            <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="h-11 w-full object-contain lg:h-12" />
-          </Link>
-          <nav className="ml-3 hidden min-w-0 flex-1 items-stretch xl:grid" style={{ gridTemplateColumns: 'repeat(14,minmax(0,1fr))' }}>
-            {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`detail-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+        <div className="mx-auto flex min-h-[68px] max-w-[1920px] items-center px-3 lg:px-6">
+          <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(leftLinks.length,1)},minmax(0,1fr))` }}>
+            {leftLinks.map(([label, to]) => <Link key={`detail-left-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
           </nav>
-          <div className="ml-auto flex items-center gap-2 xl:hidden">
+          <Link to="/" onClick={close} className="mx-auto my-1.5 flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-white/80 bg-white shadow-lg xl:mx-4" aria-label="Realty Center® ana sayfa">
+            <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="h-full w-full object-contain p-0.5" />
+          </Link>
+          <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(rightLinks.length,1)},minmax(0,1fr))` }}>
+            {rightLinks.map(([label, to]) => <Link key={`detail-right-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+          </nav>
+          <div className="absolute right-3 flex items-center gap-2 xl:hidden">
             <Link to="/ilanlarimiz?all=1" className="hidden rounded-md border border-white/40 px-3 py-2 text-xs font-black sm:inline-flex">İlanlarımız</Link>
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
@@ -1928,7 +1931,7 @@ function BarterBankModuleV3() {
 }
 
 function ListingActionShortcuts() {
-  return <aside className="grid self-start gap-2 sm:grid-cols-2"><Link to="/#barter-bank" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[10px] font-black tracking-widest text-white/85">BARTERBANK®</p><strong className="mt-1 block text-sm leading-tight text-white">Takas fırsatlarını görün →</strong></Link><Link to="/#buyer-request" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[10px] font-black tracking-widest text-white/85">SİZ ARADIĞINIZI SÖYLEYİN</p><strong className="mt-1 block text-sm leading-tight text-white">Size uygun ilanı bulalım →</strong></Link></aside>;
+  return <aside className="grid self-start gap-2 sm:grid-cols-2"><Link to="/#barter-bank" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[10px] font-black tracking-widest text-white/85">BARTERBANK®</p><strong className="mt-1 block text-sm leading-tight text-white">Takas fırsatlarını görün →</strong></Link><Link to="/#buyer-request" className="border border-red-700 bg-[#CD011E] px-4 py-3 text-white shadow-sm transition hover:bg-red-800"><p className="text-[10px] font-black tracking-widest text-white/85">SİZ ARADIĞINIZI SÖYLEYİN</p><strong className="mt-1 block text-sm leading-tight text-white">Size uygun ilanı bulalım →</strong></Link><Link to="/finansal-cozumler" className="border border-[#183B66] bg-[#071d3b] px-4 py-3 text-white shadow-sm transition hover:bg-[#0d315c]"><p className="text-[10px] font-black tracking-widest text-white/75">FİNANSAL ÇÖZÜMLER</p><strong className="mt-1 block text-sm leading-tight text-white">Finansman seçeneklerini inceleyin →</strong></Link></aside>;
 }
 
 function HomeLibraryPreview() {
