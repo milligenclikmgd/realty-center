@@ -597,7 +597,7 @@ function WhatsAppSupportButton() {
 type ListingCategory = { id: string; title: string; type: string; category: string; image: string };
 const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
   { id: 'sale-home', title: 'Satılık Evler', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
-  { id: 'rent-home', title: 'Kiralık Evler', type: 'Kiralık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'rent-home', title: 'Kiralık Gayrimenkuller', type: 'Kiralık', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
   { id: 'sale-land', title: 'Satılık Arsalar', type: 'Satılık', category: 'Arsa', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=90&w=1200' },
   { id: 'transfer-shop', title: 'Devren Dükkanlar', type: 'Devren', category: 'İşyeri', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=90&w=1200' },
   { id: 'sale-villa', title: 'Satılık Villalar', type: 'Satılık', category: 'Konut', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=90&w=1200' },
@@ -608,7 +608,8 @@ const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
 function getListingCategories(): ListingCategory[] {
   try {
     const saved = localStorage.getItem('realty-center-listing-categories');
-    return saved ? JSON.parse(saved) : DEFAULT_LISTING_CATEGORIES;
+    const categories: ListingCategory[] = saved ? JSON.parse(saved) : DEFAULT_LISTING_CATEGORIES;
+    return categories.map((item) => item.id === 'rent-home' ? { ...item, title: 'Kiralık Gayrimenkuller' } : item);
   } catch { return DEFAULT_LISTING_CATEGORIES; }
 }
 
