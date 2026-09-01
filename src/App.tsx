@@ -182,7 +182,7 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
     headerItem('systems','Sistem ve Modeller','/icerik/systems','left',[],'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400','Portföy, müşteri, pazarlama ve raporlama süreçlerini ölçülebilir sistemlerle yönetiyoruz.'),
     headerItem('culture','Realty Center® Kültürü','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Önce Güven anlayışı; şeffaflık, dayanışma, gelişim ve başarıyı paylaşma değerleri üzerine kuruludur.')
   ]),
-  headerItem('videos','REALTY MEDYA','/videolar','left'),
+  headerItem('videos','Realty Medya','/videolar','left',[headerItem('realty-tv','Realty TV','/videolar?bolum=tv','left'),headerItem('realty-news','Realty Haberler','/videolar?bolum=haberler','left')]),
   headerItem('earning','Kazanç Modeli','/icerik/contribution','right',[headerItem('contribution','Katkı Payı','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eğitim ve operasyon desteğinin sürdürülebilir biçimde sunulmasını sağlayan şeffaf model.'),headerItem('sharing','Paylaşım Modeli','/icerik/sharing','right',[
       headerItem('sharing-advisors','Danışman Kazanç Paylaşımı','/icerik/sharing-advisors','right',[],'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=90&w=1400','Danışmanın emeğini ve üretimini merkeze alan şeffaf kazanç modeli.\n\nRealty Center® danışman paylaşım yaklaşımında; portföyün kazanılması, alıcı veya satıcı ilişkisinin yönetilmesi, pazarlama çalışması, işlem takibi ve sonuçlandırma sürecindeki katkılar ayrı ayrı değerlendirilir. Amaç yalnızca işlem sonunda bir oran bölmek değil, değeri oluşturan emeği görünür ve ölçülebilir hâle getirmektir.\n\nDanışman; marka gücü, teknoloji altyapısı, eğitim, ilan ve pazarlama desteği, ofis olanakları ve operasyonel hizmetlerden yararlanırken kendi üretiminden doğan kazancını önceden bilinen esaslarla takip eder. Ortak portföy, yönlendirme veya birden fazla danışmanın görev aldığı işlemlerde paylaşım; çalışma başlamadan önce görev, sorumluluk ve katkı kapsamı belirlenerek kayıt altına alınır.\n\nUygulanacak oranlar; ofis yapısı, danışmanın deneyimi, üretim seviyesi, kullanılan hizmetler ve ilgili sözleşmeye göre değişebilir. Esas olan sürpriz kesintilerin olmadığı, performansı destekleyen ve sürdürülebilir büyümeyi hedefleyen açık bir sistemdir.'),
       headerItem('sharing-franchise','Franchise Ofis Kazanç Modeli','/icerik/sharing-franchise','right',[],'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1400','Ofis yatırımını, yerel büyümeyi ve danışman başarısını birlikte gözeten sürdürülebilir franchise yaklaşımı.\n\nRealty Center® franchise ofisi; marka kullanım hakkı, kurumsal sistemler, eğitim programları, teknoloji altyapısı, pazarlama desteği ve operasyon standartlarıyla yerel bir gayrimenkul işletmesi oluşturur. Ofisin kazanç modeli; danışman üretimi, işlem hacmi, hizmet gelirleri ve yerel iş geliştirme faaliyetlerinin sürdürülebilir biçimde yönetilmesine dayanır.\n\nPaylaşım yapısında ofisin üstlendiği mekân, personel, tanıtım, teknoloji, mevzuat uyumu, işlem kontrolü ve danışman desteği gibi sorumluluklar dikkate alınır. Danışman ile ofis arasındaki model; sabit gider, hizmet paketi, işlem bazlı paylaşım veya performans basamakları gibi farklı bileşenlerle sözleşmeye bağlanabilir.\n\nHer franchise ofisinin pazar koşulları ve operasyon yapısı farklıdır. Bu nedenle sitedeki açıklamalar sabit bir gelir ya da oran taahhüdü değildir. Nihai koşullar; bölge, yatırım planı, ofis kapasitesi ve tarafların yazılı mutabakatıyla belirlenir.'),
@@ -221,6 +221,14 @@ const getHeaderMenu = (): HeaderMenuItem[] => {
       if (requiredSharingChildren.length) storedSharing.children.push(...requiredSharingChildren);
       storedSharing.label = 'Paylaşım Modeli';
       storedSharing.path = '/icerik/sharing';
+    }
+
+    const media = stored.find((item) => item.id === 'videos');
+    if (media) {
+      media.label = 'Realty Medya';
+      media.path = '/videolar';
+      const mediaChildren = [headerItem('realty-tv','Realty TV','/videolar?bolum=tv','left'),headerItem('realty-news','Realty Haberler','/videolar?bolum=haberler','left')];
+      media.children = mediaChildren;
     }
 
     const discoverIndex = stored.findIndex((item) => item.id === 'discover');
@@ -3629,10 +3637,12 @@ function ProjectsPage() {
 }
 
 function VideosPage() {
+  const location = useLocation();
   const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
   const [channelVideos, setChannelVideos] = useState<RealtyVideo[]>([]);
-  const [activeMedia, setActiveMedia] = useState<'tv' | 'news'>('tv');
+  const [activeMedia, setActiveMedia] = useState<'tv' | 'news'>(() => new URLSearchParams(location.search).get('bolum') === 'haberler' ? 'news' : 'tv');
   useEffect(() => { const refresh = () => setVideos(getRealtyVideos()); window.addEventListener('realty-center-videos-updated', refresh); return () => window.removeEventListener('realty-center-videos-updated', refresh); }, []);
+  useEffect(() => { setActiveMedia(new URLSearchParams(location.search).get('bolum') === 'haberler' ? 'news' : 'tv'); }, [location.search]);
   useEffect(() => { const channelUrl = getYoutubeChannelUrl(); if (!channelUrl) return; fetch(`/api/youtube-channel-videos?channelUrl=${encodeURIComponent(channelUrl)}`).then((response) => response.ok ? response.json() : Promise.reject()).then((data) => setChannelVideos(Array.isArray(data.videos) ? data.videos : [])).catch(() => setChannelVideos([])); }, []);
   const allVideos = [...videos, ...channelVideos.filter((channelVideo) => !videos.some((video) => getYoutubeId(video.url) === getYoutubeId(channelVideo.url)))];
   const visibleVideos = allVideos.filter((video) => video.category === activeMedia);
