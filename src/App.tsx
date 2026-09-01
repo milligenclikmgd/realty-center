@@ -1005,6 +1005,18 @@ function FranchiseOpportunitiesPage() {
     'Bölgesinde güçlü bir gayrimenkul organizasyonu kurmayı hedefleyen profesyoneller'
   ];
 
+  const supportServices = [
+    { title: 'Eğitim Desteği', text: 'Satış, müşteri ilişkileri, portföy yönetimi ve gayrimenkul mevzuatı alanlarında sürekli gelişim odaklı eğitimler.', icon: GraduationCap },
+    { title: 'Hukuk Desteği', text: 'Gayrimenkul işlemlerinde karşılaşılabilecek hukuki süreçlere ilişkin kurumsal yönlendirme ve bilgilendirme.', icon: ShieldAlert },
+    { title: 'Sözleşme Desteği', text: 'Yetkilendirme, kiralama, satış ve hizmet süreçlerinde ihtiyaç duyulan güncel sözleşme ve form şablonları.', icon: FileText },
+    { title: 'Reklam ve Sosyal Medya', text: 'Kurumsal kimliğe uygun sosyal medya içerikleri, kampanyalar ve bölgesel görünürlüğü destekleyen tanıtım çalışmaları.', icon: Megaphone },
+    { title: 'Muhasebe Desteği', text: 'Ofislerin temel mali süreçleri, faturalandırma ve muhasebe düzeni konusunda bilgilendirici operasyon rehberliği.', icon: PieChart },
+    { title: 'Portföy Desteği', text: 'Portföy oluşturma, doğru sunum, fiyatlandırma ve pazarlama aşamalarında sistemli çalışma desteği.', icon: Building2 },
+    { title: 'Doküman Desteği', text: 'Kurumsal sunum, form, kontrol listesi ve operasyonel dokümanlara tek merkezden kolay erişim.', icon: Layers },
+    { title: 'Finans Desteği', text: 'Gayrimenkul finansmanı ve müşterilerin kredi süreçlerine ilişkin doğru kanallara yönlendirme desteği.', icon: Briefcase },
+    { title: 'İlan Yayınlama Desteği', text: 'İlanların doğru içerik, nitelikli görsel ve uygun yayın standartlarıyla etkili biçimde sunulması.', icon: Send }
+  ];
+
   return <main className="overflow-hidden bg-[#f7f9fc] text-slate-900">
     <section className="relative min-h-[660px] overflow-hidden bg-[#071d3b] text-white">
       <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=2000" alt="Realty Center franchise iş ortaklığı ve profesyonel gayrimenkul ekibi" className="absolute inset-0 h-full w-full object-cover opacity-55"/>
@@ -1015,6 +1027,31 @@ function FranchiseOpportunitiesPage() {
           <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Gayrimenkulde Kendi Başarı Hikâyenizi Yazın</h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">Realty Center® franchise sistemi; güçlü marka değeri, teknoloji altyapısı, eğitim yaklaşımı, pazarlama desteği ve geniş iş ağıyla girişimcilere sürdürülebilir bir gayrimenkul işletmesi kurma fırsatı sunar.</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row"><Link to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-6 py-4 text-center text-sm font-black text-white shadow-xl shadow-black/20 transition hover:-translate-y-1 hover:bg-[#e20a2a]">Franchise Başvurusu Yap</Link><a href="#avantajlar" className="rounded-xl border border-white/55 bg-white/10 px-6 py-4 text-center text-sm font-black text-white backdrop-blur transition hover:bg-white/20">Avantajları Keşfet</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desteklerimiz" className="relative overflow-hidden bg-white py-20">
+      <div className="pointer-events-none absolute -right-28 -top-28 h-80 w-80 rounded-full bg-red-50 blur-3xl"/>
+      <div className="pointer-events-none absolute -bottom-36 -left-24 h-96 w-96 rounded-full bg-blue-50 blur-3xl"/>
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-black tracking-[.22em] text-[#CD011E]">HER ADIMDA YANINIZDAYIZ</p>
+          <h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty Center® Desteklerimiz</h2>
+          <p className="mt-5 text-sm leading-7 text-slate-600 sm:text-base">Franchise ofislerimizin güçlü bir başlangıç yapması ve sürdürülebilir biçimde büyümesi için eğitimden hukuka, pazarlamadan portföy yönetimine kadar bütüncül bir destek sistemi sunuyoruz.</p>
+        </div>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {supportServices.map(({title,text,icon:Icon},index)=><article key={title} className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-[#f9fbfd] p-7 shadow-sm transition duration-500 hover:-translate-y-1.5 hover:border-[#183B66]/35 hover:bg-[#071d3b] hover:shadow-2xl hover:shadow-slate-950/15">
+            <span className="absolute right-5 top-4 text-5xl font-black text-slate-100 transition duration-500 group-hover:text-white/5">{String(index+1).padStart(2,'0')}</span>
+            <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-[#CD011E] text-white shadow-lg shadow-red-900/15 transition duration-500 group-hover:rotate-3 group-hover:scale-110"><Icon className="h-6 w-6"/></span>
+            <h3 className="relative mt-6 text-lg font-black text-[#071d3b] transition group-hover:text-white">{title}</h3>
+            <p className="relative mt-3 text-sm leading-7 text-slate-600 transition group-hover:text-slate-300">{text}</p>
+            <span className="relative mt-5 inline-flex items-center text-xs font-black text-red-300 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100">Realty Center® desteği <ArrowRight className="ml-2 h-3.5 w-3.5"/></span>
+          </article>)}
+        </div>
+        <div className="mt-10 overflow-hidden rounded-3xl bg-gradient-to-r from-[#071d3b] to-[#0d3c70] px-7 py-8 text-white shadow-xl sm:flex sm:items-center sm:justify-between sm:px-10">
+          <div><p className="text-xs font-black tracking-[.18em] text-red-300">GÜÇLÜ SİSTEM · GÜÇLÜ OFİS</p><h3 className="mt-2 text-2xl font-black">Realty Center® ailesine katılın, desteğimizle büyüyün.</h3></div>
+          <Link to="/franchise-basvuru" className="mt-6 inline-flex shrink-0 items-center rounded-xl bg-[#CD011E] px-6 py-4 text-sm font-black text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#e20a2a] sm:ml-8 sm:mt-0">Franchise Başvurusu Yap <ArrowRight className="ml-2 h-4 w-4"/></Link>
         </div>
       </div>
     </section>
