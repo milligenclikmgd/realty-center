@@ -22,7 +22,7 @@ export default function handler(request: any, response: any) {
   const estimatedMin = Math.round(centerValue * 0.88 / 1000) * 1000;
   const estimatedMax = Math.round(centerValue * 1.12 / 1000) * 1000;
   const confidence = features.length > 40 ? 'Orta–Yüksek' : 'Orta';
-  const analysis = [
+  let analysis = [
     'GENEL DEĞERLENDİRME',
     district + ', ' + city + ' bölgesindeki ' + propertyType.toLocaleLowerCase('tr-TR') + ' için girilen ' + area + ' m² alan, ' + rooms + ' oda düzeni, bina yaşı ve belirtilen özellikler birlikte değerlendirildi. Yaklaşık değer aralığı ' + estimatedMin.toLocaleString('tr-TR') + ' TL ile ' + estimatedMax.toLocaleString('tr-TR') + ' TL arasındadır.',
     '',
@@ -38,5 +38,47 @@ export default function handler(request: any, response: any) {
     'SONRAKİ ADIM',
     'Yerinde inceleme, güncel emsal kontrolü ve yetkili uzman görüşüyle bu ön analiz daraltılabilir. Sonuç bilgilendirme amaçlıdır; resmî ekspertiz raporu veya yatırım tavsiyesi değildir.'
   ].join('\n');
-  return response.status(200).json({ analysis, estimatedMin, estimatedMax, squareMeterPrice, confidence, mode: 'local-analysis' });
+
+  let mode = 'local-analysis';
+  const geminiKey = process.env.GEMINI_API_KEY;
+  if (geminiKey) {
+    const prompt = [
+      'Sen Realty Center® için çalışan Türkçe gayrimenkul ön analiz asistanısın.',
+      'Kesin değer, yatırım garantisi veya resmî ekspertiz sonucu verme.',
+      'Yanıtı GENEL DEĞERLENDİRME, DEĞERİ ETKİLEYEN UNSURLAR, KULLANICININ SORUSUNA YANIT, RİSKLER VE KONTROLLER, SONRAKİ ADIM başlıklarıyla yaz.',
+      'Tahmini hesap aralığı: ' + estimatedMin.toLocaleString('tr-TR') + ' - ' + estimatedMax.toLocaleString('tr-TR') + ' TL.',
+      'İl: ' + city,
+      'İlçe: ' + district,
+      'Gayrimenkul türü: ' + propertyType,
+      'Yaklaşık brüt alan: ' + area + ' m²',
+      'Oda: ' + rooms,
+      'Bina yaşı: ' + age,
+      'Özellikler: ' + features,
+      'Kullanıcının öğrenmek istediği: ' + question,
+      'Sonunda bunun bilgilendirme amaçlı ön analiz olduğunu, yerinde inceleme ve resmî ekspertiz gerekebileceğini belirt.'
+    ].join('\n');
+
+    try {
+      const geminiResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=' + encodeURIComponent(geminiKey), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.3, maxOutputTokens: 1100 }
+        })
+      });
+      if (geminiResponse.ok) {
+        const geminiData: any = await geminiResponse.json();
+        const generated = geminiData?.candidates?.[0]?.content?.parts?.map((part: any) => part.text || '').join('\n').trim();
+        if (generated) {
+          analysis = generated;
+          mode = 'gemini';
+        }
+      }
+    } catch {
+      // Bağlantı geçici olarak kullanılamazsa güvenli yerel analiz sunulur.
+    }
+  }
+
+  return response.status(200).json({ analysis, estimatedMin, estimatedMax, squareMeterPrice, confidence, mode });
 }
