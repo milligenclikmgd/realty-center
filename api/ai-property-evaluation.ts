@@ -1,84 +1,64 @@
-const CITY_SQUARE_METER_BASE: Record<string, number> = {
-  İstanbul: 72000, Ankara: 45500, İzmir: 56000, Antalya: 52000, Bursa: 41000,
-  Muğla: 68000, Kocaeli: 42000, Adana: 31500, Mersin: 34000, Konya: 30000
+import type { IncomingMessage, ServerResponse } from 'node:http';
+
+type EvaluationRequest = {
+  city?: string;
+  district?: string;
+  propertyType?: string;
+  propertyDetails?: string;
+  features?: string;
+  question?: string;
+  kvkkAccepted?: boolean;
+  termsAccepted?: boolean;
 };
-const clean = (value: unknown, max = 1200) => String(value || '').trim().slice(0, max);
 
-export default function handler(request: any, response: any) {
-  if (request.method !== 'POST') return response.status(405).json({ error: 'Yalnızca POST isteği kabul edilir.' });
-  const body = typeof request.body === 'string' ? JSON.parse(request.body || '{}') : (request.body || {});
-  const city = clean(body.city, 80), district = clean(body.district, 80), propertyType = clean(body.propertyType, 80);
-  const area = Math.max(1, Math.min(100000, Number(clean(body.area, 12)) || 0));
-  const rooms = clean(body.rooms, 30), age = clean(body.age, 30);
-  const features = clean(body.features, 1800), question = clean(body.question, 1200);
-  if (!body.kvkkAccepted || !body.termsAccepted) return response.status(400).json({ error: 'KVKK ve kullanım koşulları onayı gereklidir.' });
-  if (!city || !district || !area || !features || !question) return response.status(400).json({ error: 'Zorunlu alanları eksiksiz doldurun.' });
+const sendJson = (response: ServerResponse, status: number, body: unknown) => {
+  response.statusCode = status;
+  response.setHeader('Content-Type', 'application/json; charset=utf-8');
+  response.end(JSON.stringify(body));
+};
 
-  const base = CITY_SQUARE_METER_BASE[city] || 38500;
-  const typeFactor: Record<string, number> = { Daire: 1, Villa: 1.32, Ofis: 1.08, Arsa: 0.72, Dükkan: 1.18, 'Ticari Gayrimenkul': 1.16 };
-  const ageFactor: Record<string, number> = { '0-4': 1.08, '5-10': 1, '11-20': 0.92, '20+': 0.82, Bilinmiyor: 0.94 };
-  const squareMeterPrice = Math.round(base * (typeFactor[propertyType] || 1) * (ageFactor[age] || 1));
-  const centerValue = Math.round(area * squareMeterPrice);
-  const estimatedMin = Math.round(centerValue * 0.88 / 1000) * 1000;
-  const estimatedMax = Math.round(centerValue * 1.12 / 1000) * 1000;
-  const confidence = features.length > 40 ? 'Orta–Yüksek' : 'Orta';
-  let analysis = [
-    'GENEL DEĞERLENDİRME',
-    district + ', ' + city + ' bölgesindeki ' + propertyType.toLocaleLowerCase('tr-TR') + ' için girilen ' + area + ' m² alan, ' + rooms + ' oda düzeni, bina yaşı ve belirtilen özellikler birlikte değerlendirildi. Yaklaşık değer aralığı ' + estimatedMin.toLocaleString('tr-TR') + ' TL ile ' + estimatedMax.toLocaleString('tr-TR') + ' TL arasındadır.',
-    '',
-    'DEĞERİ ETKİLEYEN UNSURLAR',
-    'Mahalle içindeki kesin konum, kat ve cephe, yapının fiziksel durumu, ulaşım olanakları, otopark, manzara, tapu niteliği ve aynı dönemde gerçekleşen emsal satışlar nihai değeri önemli ölçüde değiştirebilir.',
-    '',
-    'SORUNUZA GÖRE DEĞERLENDİRME',
-    question + ' Talebiniz açısından aynı mahallede benzer yaş, alan ve nitelikte en az üç güncel emsalin karşılaştırılması önerilir. Yazdığınız özellikler ilk fiyat aralığının oluşturulmasına dâhil edilmiştir.',
-    '',
-    'RİSKLER VE KONTROLLER',
-    'Tapu ve takyidat bilgileri, imar durumu, yapı kullanım belgesi, aidat ve ortak giderler ile taşınmazın yerinde fiziksel durumu doğrulanmalıdır.',
-    '',
-    'SONRAKİ ADIM',
-    'Yerinde inceleme, güncel emsal kontrolü ve yetkili uzman görüşüyle bu ön analiz daraltılabilir. Sonuç bilgilendirme amaçlıdır; resmî ekspertiz raporu veya yatırım tavsiyesi değildir.'
-  ].join('\n');
+export default async function handler(request: IncomingMessage & { body?: EvaluationRequest }, response: ServerResponse) {
+  if (request.method !== 'POST') return sendJson(response, 405, { error: 'Yalnızca POST isteği kabul edilir.' });
 
-  let mode = 'local-analysis';
-  const geminiKey = process.env.GEMINI_API_KEY;
-  if (geminiKey) {
-    const prompt = [
-      'Sen Realty Center® için çalışan Türkçe gayrimenkul ön analiz asistanısın.',
-      'Kesin değer, yatırım garantisi veya resmî ekspertiz sonucu verme.',
-      'Yanıtı GENEL DEĞERLENDİRME, DEĞERİ ETKİLEYEN UNSURLAR, KULLANICININ SORUSUNA YANIT, RİSKLER VE KONTROLLER, SONRAKİ ADIM başlıklarıyla yaz.',
-      'Tahmini hesap aralığı: ' + estimatedMin.toLocaleString('tr-TR') + ' - ' + estimatedMax.toLocaleString('tr-TR') + ' TL.',
-      'İl: ' + city,
-      'İlçe: ' + district,
-      'Gayrimenkul türü: ' + propertyType,
-      'Yaklaşık brüt alan: ' + area + ' m²',
-      'Oda: ' + rooms,
-      'Bina yaşı: ' + age,
-      'Özellikler: ' + features,
-      'Kullanıcının öğrenmek istediği: ' + question,
-      'Sonunda bunun bilgilendirme amaçlı ön analiz olduğunu, yerinde inceleme ve resmî ekspertiz gerekebileceğini belirt.'
-    ].join('\n');
+  const body = request.body || {};
+  if (!body.kvkkAccepted || !body.termsAccepted) return sendJson(response, 400, { error: 'KVKK ve kullanım koşulları onayı gereklidir.' });
+  const required = [body.city, body.district, body.propertyType, body.propertyDetails, body.question];
+  if (required.some((value) => !value?.trim())) return sendJson(response, 400, { error: 'Lütfen zorunlu alanları eksiksiz doldurun.' });
 
-    try {
-      const geminiResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=' + encodeURIComponent(geminiKey), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.3, maxOutputTokens: 1100 }
-        })
-      });
-      if (geminiResponse.ok) {
-        const geminiData: any = await geminiResponse.json();
-        const generated = geminiData?.candidates?.[0]?.content?.parts?.map((part: any) => part.text || '').join('\n').trim();
-        if (generated) {
-          analysis = generated;
-          mode = 'gemini';
-        }
-      }
-    } catch {
-      // Bağlantı geçici olarak kullanılamazsa güvenli yerel analiz sunulur.
-    }
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return sendJson(response, 503, { error: 'Yapay zeka servisi henüz etkinleştirilmedi.' });
+
+  const prompt = `Sen Realty Center® için çalışan, Türkiye gayrimenkul piyasasına odaklı bir analiz asistanısın.
+Kullanıcıya Türkçe, anlaşılır ve ihtiyatlı bir ön değerlendirme sun. Kesin fiyat, resmî ekspertiz veya yatırım garantisi verme.
+
+İl: ${body.city}
+İlçe: ${body.district}
+Gayrimenkul türü: ${body.propertyType}
+Mülkün temel bilgileri: ${body.propertyDetails}
+Ek özellikler: ${body.features || 'Belirtilmedi'}
+Kullanıcının öğrenmek istediği: ${body.question}
+
+Yanıtını şu başlıklarla ver:
+1. Ön değerlendirme
+2. Değeri etkileyen unsurlar
+3. Bölgesel piyasa yorumu
+4. Kullanıcının sorusuna yanıt
+5. Sonraki adım
+En sonda bunun bilgi amaçlı bir yapay zeka analizi olduğunu ve resmî ekspertiz yerine geçmediğini belirt.`;
+
+  try {
+    const geminiResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${encodeURIComponent(apiKey)}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.35, maxOutputTokens: 1200 } }),
+    });
+    const data = await geminiResponse.json() as { candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>; error?: { message?: string } };
+    if (!geminiResponse.ok) throw new Error(data.error?.message || 'Gemini yanıt veremedi.');
+    const result = data.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('\n').trim();
+    if (!result) throw new Error('Analiz sonucu oluşturulamadı.');
+    return sendJson(response, 200, { result });
+  } catch (error) {
+    console.error('Gemini evaluation error:', error instanceof Error ? error.message : error);
+    return sendJson(response, 502, { error: 'Analiz şu anda tamamlanamadı. Lütfen biraz sonra tekrar deneyin.' });
   }
-
-  return response.status(200).json({ analysis, estimatedMin, estimatedMax, squareMeterPrice, confidence, mode });
 }

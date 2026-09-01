@@ -1819,7 +1819,7 @@ function BuyerRequestModule() {
   );
 }
 
-function BarterBankModule() {
+export function BarterBankModule() {
   const [mode, setMode] = useState<'Önce Takasla Öner' | 'Takasa Talebi'>('Önce Takasla Öner');
   const [offer, setOffer] = useState('Gayrimenkul');
   const [request, setRequest] = useState('Gayrimenkul');
@@ -1830,7 +1830,7 @@ function BarterBankModule() {
   return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid lg:grid-cols-[.78fr_1.22fr]"><aside className="bg-slate-950 p-8 text-white sm:p-10"><p className="text-xs font-black tracking-[.2em] text-red-300">BARTERBANK®</p><h2 className="mt-4 text-3xl font-black">Fazlanı ver, eksiğini al.</h2><p className="mt-4 text-sm leading-7 text-slate-300">Gayrimenkul, otomobil veya diğer değerlerinizi; kısmi ya da tam barter seçenekleriyle değerlendirin.</p><div className="mt-8 space-y-3 text-sm font-bold"><p>01 · Takas teklifini oluştur</p><p>02 · İstediğin değeri belirt</p><p>03 · Uygun eşleşmeyi bekle</p></div></aside><form onSubmit={submit} className="p-6 sm:p-10"><div className="grid gap-3 sm:grid-cols-2"><button type="button" onClick={()=>setMode('Önce Takasla Öner')} className={`rounded-xl p-3 text-xs font-black ${mode==='Önce Takasla Öner'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>ÖNCE TAKASLA ÖNER</button><button type="button" onClick={()=>setMode('Takasa Talebi')} className={`rounded-xl p-3 text-xs font-black ${mode==='Takasa Talebi'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>TAKASA TALEBİ</button></div><div className="mt-5 grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">VERMEK İSTEDİĞİN<select value={offer} onChange={e=>setOffer(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>Diğer</option></select></label><label className="text-xs font-black text-slate-700">ALMAK İSTEDİĞİN<select value={request} onChange={e=>setRequest(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>Diğer</option></select></label></div><div className="mt-5 grid gap-3 sm:grid-cols-2">{[...fields(offer).map(x=>`Verilecek ${x}`),...fields(request).map(x=>`İstenen ${x}`)].map(x=><input key={x} required name={x} placeholder={x} className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/>)}<select name="Barter türü" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"><option>Tam Barter</option><option>Kısmi Barter</option></select></div><label className="mt-5 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>Bilgilerimin değerlendirilmesini kabul ediyorum; <Link to="/kvkk" className="font-black text-red-700">KVKK</Link> ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metinlerini okudum.</label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">Barter Talebini Gönder</button></form></div></div></section>;
 }
 
-function BarterBankModuleV2() {
+export function BarterBankModuleV2() {
   const [mode, setMode] = useState<'Takas Önerisi' | 'Takas Talebi'>('Takas Önerisi');
   const [asset, setAsset] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'Diğer'>('Ev');
   const [sent, setSent] = useState(false);
@@ -2967,6 +2967,81 @@ function ListingCategoriesPage() {
 
 
 function AIDecisionAssistantPage() {
+  const [activeTab, setActiveTab] = useState<'valuation' | 'search'>('valuation');
+  const [form, setForm] = useState({ city: '', district: '', propertyType: 'Daire', propertyDetails: '', features: '', question: '' });
+  const [kvkkApproved, setKvkkApproved] = useState(false);
+  const [termsApproved, setTermsApproved] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState('');
+  const [error, setError] = useState('');
+
+  const updateField = (field: keyof typeof form, value: string) => setForm((current) => ({ ...current, [field]: value }));
+  const canSubmit = Boolean(form.city.trim() && form.district.trim() && form.propertyDetails.trim() && form.question.trim() && kvkkApproved && termsApproved && !loading);
+
+  const submitEvaluation = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!canSubmit) return;
+    setLoading(true);
+    setError('');
+    setResult('');
+    try {
+      const response = await fetch('/api/ai-property-evaluation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, kvkkAccepted: kvkkApproved, termsAccepted: termsApproved }),
+      });
+      const data = await response.json() as { result?: string; error?: string };
+      if (!response.ok || !data.result) throw new Error(data.error || 'Analiz tamamlanamadı.');
+      setResult(data.result);
+    } catch (requestError) {
+      setError(requestError instanceof Error ? requestError.message : 'Beklenmeyen bir hata oluştu.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return <div className="min-h-screen bg-slate-50 py-10">
+    <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <header className="overflow-hidden rounded-3xl bg-gradient-to-br from-[#061a39] via-[#0b315e] to-[#071a3b] px-6 py-9 text-white shadow-2xl sm:px-10">
+        <p className="text-[11px] font-black tracking-[.2em] text-cyan-200">REALTY CENTER® YAPAY ZEKA</p>
+        <h1 className="mt-3 text-3xl font-black sm:text-5xl">Gayrimenkul kararlarınız için <span className="text-cyan-300">akıllı analiz.</span></h1>
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-300">Mülkünüzün konumunu, temel bilgilerini ve öğrenmek istediğiniz konuyu yazın; yapay zeka size bilgi amaçlı bir ön değerlendirme sunsun.</p>
+        <div className="mt-6 inline-flex rounded-xl border border-white/15 bg-black/15 p-1">
+          <button type="button" onClick={() => setActiveTab('valuation')} className={`rounded-lg px-5 py-3 text-sm font-black transition duration-300 ${activeTab === 'valuation' ? 'bg-cyan-300 text-slate-950 shadow-lg' : 'text-cyan-100 hover:bg-white/10'}`}>Otomatik Değerleme</button>
+          <button type="button" onClick={() => setActiveTab('search')} className={`rounded-lg px-5 py-3 text-sm font-black transition duration-300 ${activeTab === 'search' ? 'bg-cyan-300 text-slate-950 shadow-lg' : 'text-cyan-100 hover:bg-white/10'}`}>Akıllı Arama</button>
+        </div>
+      </header>
+
+      {activeTab === 'valuation' ? <div className="mt-7 grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
+        <form onSubmit={submitEvaluation} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div><p className="text-xs font-black tracking-[.16em] text-red-700">OTOMATİK DEĞERLEME FORMU</p><h2 className="mt-2 text-2xl font-black text-slate-950">Mülkünüzü anlatın</h2><p className="mt-2 text-sm leading-6 text-slate-500">Yıldızlı alanların tamamını doldurun. Daha ayrıntılı bilgi, daha açıklayıcı bir ön analiz sağlar.</p></div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <label className="text-xs font-black text-slate-700">İL *<input required value={form.city} onChange={(e) => updateField('city', e.target.value)} placeholder="Örn. Ankara" className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700">İLÇE *<input required value={form.district} onChange={(e) => updateField('district', e.target.value)} placeholder="Örn. Çankaya" className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">GAYRİMENKUL TÜRÜ *<select value={form.propertyType} onChange={(e) => updateField('propertyType', e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none"><option>Daire</option><option>Villa</option><option>Müstakil Ev</option><option>Arsa</option><option>Ofis</option><option>Dükkan</option><option>Ticari Gayrimenkul</option><option>Diğer</option></select></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">GAYRİMENKULÜN TEMEL BİLGİLERİ *<textarea required value={form.propertyDetails} onChange={(e) => updateField('propertyDetails', e.target.value)} rows={4} placeholder="Örn. 145 m² brüt, 3+1, 6 yaşında, 4. kat, merkezi ısıtma, otoparklı..." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">EK ÖZELLİKLER<textarea value={form.features} onChange={(e) => updateField('features', e.target.value)} rows={3} placeholder="Cephe, manzara, ulaşım, site özellikleri, tapu durumu veya önemli gördüğünüz diğer bilgiler..." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">NEYİ ÖĞRENMEK İSTİYORSUNUZ? *<textarea required value={form.question} onChange={(e) => updateField('question', e.target.value)} rows={4} placeholder="Örn. Tahmini satış aralığını, kira getirisini ve yatırım açısından güçlü/zayıf yönlerini öğrenmek istiyorum." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+          </div>
+          <div className="mt-5 space-y-3 rounded-2xl bg-slate-50 p-4 text-xs leading-5 text-slate-600">
+            <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" checked={kvkkApproved} onChange={(e) => setKvkkApproved(e.target.checked)} className="mt-1 h-4 w-4 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700 underline">KVKK Aydınlatma Metni</Link>’ni okudum ve kişisel verilerimin analiz amacıyla işlenmesini kabul ediyorum.</span></label>
+            <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" checked={termsApproved} onChange={(e) => setTermsApproved(e.target.checked)} className="mt-1 h-4 w-4 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700 underline">Site Kullanım Politikası</Link>’nı okudum ve kabul ediyorum.</span></label>
+          </div>
+          <button disabled={!canSubmit} className="mt-5 flex w-full items-center justify-center rounded-xl bg-[#CD011E] px-6 py-4 text-sm font-black text-white shadow-lg shadow-red-900/20 transition duration-300 hover:bg-red-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">{loading ? <><span className="mr-3 h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"/>Analiz hazırlanıyor…</> : 'Yapay Zekaya Sorgula'}</button>
+          {error && <p className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700">{error}</p>}
+        </form>
+        <aside className="space-y-5">
+          <div className="rounded-3xl bg-[#071a3b] p-6 text-white shadow-xl"><p className="text-xs font-black tracking-[.16em] text-cyan-300">NASIL ÇALIŞIR?</p><ol className="mt-5 space-y-4 text-sm leading-6 text-slate-200"><li><b className="mr-2 text-cyan-300">01</b> Konum ve mülk bilgilerini girin.</li><li><b className="mr-2 text-cyan-300">02</b> Özellikle neyi öğrenmek istediğinizi anlatın.</li><li><b className="mr-2 text-cyan-300">03</b> Yapay zeka, verdiğiniz bilgilere göre ön analiz oluştursun.</li></ol></div>
+          <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6 text-sm leading-6 text-amber-950"><b>Önemli bilgilendirme</b><p className="mt-2">Oluşturulan sonuç bilgi amaçlıdır; resmî ekspertiz raporu, kesin satış değeri veya yatırım tavsiyesi değildir.</p></div>
+        </aside>
+      </div> : <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm"><p className="text-xs font-black tracking-[.16em] text-cyan-700">AKILLI ARAMA</p><h2 className="mt-3 text-2xl font-black text-slate-950">İhtiyacınıza uygun gayrimenkulleri keşfedin</h2><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-500">İlan arama ve gelişmiş filtreleme seçenekleriyle güncel portföyümüzü inceleyebilirsiniz.</p><Link to="/ilanlarimiz" className="mt-6 inline-flex rounded-xl bg-[#071a3b] px-6 py-3 text-sm font-black text-white transition hover:bg-[#123b69]">İlanları İncele <ArrowRight className="ml-2 h-4 w-4"/></Link></section>}
+
+      {result && <section className="mt-7 rounded-3xl border border-cyan-200 bg-white p-6 shadow-lg sm:p-8"><p className="text-xs font-black tracking-[.16em] text-cyan-700">YAPAY ZEKA ANALİZ SONUCU</p><h2 className="mt-2 text-2xl font-black text-slate-950">{form.district}, {form.city} · {form.propertyType}</h2><div className="mt-6 whitespace-pre-wrap rounded-2xl bg-slate-50 p-5 text-sm font-medium leading-7 text-slate-700">{result}</div><p className="mt-4 text-xs leading-5 text-slate-400">Bu çıktı bilgi amaçlı bir yapay zeka ön analizidir ve resmî ekspertiz yerine geçmez.</p></section>}
+    </div>
+  </div>;
+}
+
+export function LegacyAIDecisionAssistantPage() {
   const location = useLocation();
   const [query, setQuery] = useState(() => new URLSearchParams(location.search).get('q') || "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.");
   const [searched, setSearched] = useState(true);
@@ -3151,7 +3226,7 @@ function MapSearchPage() {
   </div>;
 }
 
-function ListingsPage() {
+export function ListingsPage() {
   const location = useLocation();
   const initialCity = new URLSearchParams(location.search).get('city') || '';
   const initialType = new URLSearchParams(location.search).get('type') || '';
@@ -4859,6 +4934,7 @@ function AgentDashboard() {
   const removeImage = (index: number) => {
     setNewListing((prev) => ({ ...prev, images: prev.images.filter((_, i) => i !== index) }));
   };
+  void removeImage;
 
   const resetListingForm = () => {
     setNewListing(emptyListing);
@@ -5184,7 +5260,7 @@ export default function RealtyCenterApp() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [formType, setFormType] = useState<'franchise' | 'agent'>('franchise');
-  const [scrolled, setScrolled] = useState(false);
+  const [, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const [, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
