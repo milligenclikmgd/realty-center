@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tüm arayüzde okunabilirliği bir punto artırır; rem ile kurulan ölçeği korur. */
+html { font-size: 106.25%; }
+
 /* Yeni Realty Center header: lacivert konturlu kırmızı kuşak ve merkez logo rozeti */
 .realty-header {
   --rc-red: #cd011e;
