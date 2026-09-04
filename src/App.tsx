@@ -2173,10 +2173,10 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         <LiveListingStream listings={sortedListings} />
       </section>
 
-      <section className="border-b border-slate-200 bg-slate-50 py-14 sm:py-16">
+      <section className="border-b border-slate-200 bg-slate-50 py-9 sm:py-10">
         <div className="mx-auto grid max-w-7xl gap-5 px-6 lg:grid-cols-[minmax(0,1.92fr)_minmax(290px,.88fr)] lg:px-12">
           <article className="group relative min-h-[260px] overflow-hidden rounded-3xl bg-slate-900 shadow-xl">
-            <img src="/project-feature-v2.jpg" alt="İncek Vadi Evleri modern yaşam projesi" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" />
+            <img src="/project-feature-v2.jpg?v=20260904-2" alt="İncek Vadi Evleri modern yaşam projesi" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" />
             <div className="absolute inset-0 bg-gradient-to-r from-white/82 via-white/50 to-transparent" />
             <div className="relative z-10 flex min-h-[260px] max-w-[84%] flex-col justify-between p-6 sm:max-w-[62%] sm:p-8">
               <div><span className="flex items-center gap-3 text-[10px] font-black tracking-[.34em] text-slate-600"><span className="h-[2px] w-8 bg-red-700" /> YENİ PROJELER</span><h2 className="mt-4 whitespace-nowrap text-3xl font-light tracking-tight text-[#071d3b] sm:text-4xl">İncek <strong className="font-black">Vadi Evleri</strong></h2><p className="mt-3 max-w-sm text-sm font-medium leading-6 text-slate-600">Doğayla iç içe, modern yaşam alanlarıyla Ankara’nın yeni yaşam projesi.</p><Link to="/projelerimiz" className="mt-4 inline-flex items-center gap-3 rounded-full bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-900/20 transition hover:bg-red-800">Projeleri İncele <ArrowRight className="h-4 w-4" /></Link></div>
