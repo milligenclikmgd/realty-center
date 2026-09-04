@@ -1051,6 +1051,46 @@ html { font-size: 106.25%; }
   object-fit: contain;
 }
 
+/* Laptop genişliklerinde menü, orta logo ve boşluklar birlikte ölçeklenir.
+   Böylece masaüstü düzeni korunurken 1280–1535 px aralığında başlıklar sıkışmaz. */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .realty-header-top-space { height: 26px; }
+  .realty-header-social { left: 16px; gap: 5px; }
+  .realty-header-social a { width: 22px; height: 22px; }
+  .realty-header-contact { right: 16px; gap: 6px; }
+  .realty-header-contact-item { font-size: 9px; gap: 4px; }
+  .realty-header-contact-icon { width: 24px; height: 24px; }
+  .realty-header-bar { min-height: 56px; }
+  .realty-header-desktop {
+    grid-template-columns: minmax(0,1fr) 144px minmax(0,1fr) !important;
+    min-height: 56px;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .realty-header-emblem { height: 56px; }
+  .realty-header-disc,
+  .realty-header-emblem-inner .realty-header-disc { width: 112px; height: 112px; }
+  .realty-header-main-logo,
+  .realty-header-emblem-inner .realty-header-main-logo { width: 84px; height: 86px; }
+  .realty-header-link {
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+    font-size: clamp(7px, .64vw, 10px) !important;
+    line-height: 1.08 !important;
+  }
+  .realty-header-link .inline-flex { gap: 3px; }
+  .realty-header-link .inline-flex > svg { width: 11px; height: 11px; }
+  .realty-header-link > svg { width: 9px; height: 9px; margin-left: 2px; }
+  .realty-header-link::after { right: 20%; bottom: 3px; left: 20%; }
+  .realty-compact-layout {
+    grid-template-columns: minmax(0,1fr) 132px minmax(0,1fr) !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .realty-compact-emblem .realty-header-disc { width: 90px; height: 90px; }
+  .realty-compact-emblem .realty-header-main-logo { width: 66px; height: 68px; }
+}
+
 
 /* Alıcı talebi: kompakt başlık, tek form ve yumuşak açılış */
 .buyer-request-shell { border-radius: 1.75rem; }
