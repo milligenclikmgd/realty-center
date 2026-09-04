@@ -10,7 +10,7 @@ html { font-size: 106.25%; }
 /* Yeni Realty Center header: lacivert konturlu kırmızı kuşak ve merkez logo rozeti */
 .realty-header {
   --rc-red: #cd011e;
-  --rc-navy: #071d3b;
+  --rc-navy: #244a70;
 }
 
 .realty-header-top-space {
@@ -823,12 +823,23 @@ html { font-size: 106.25%; }
 
 
 /* Header ölçüsü ve menü hizası: tüm başlıklar aynı düşey merkezde kalır. */
-.realty-header-top-space { height: 34px; }
-.realty-header-bar { min-height: 69px; }
-.realty-header-emblem { height: 69px; }
-.realty-header-desktop { min-height: 69px; }
+.realty-header-top-space { height: 30px; }
+.realty-header-bar { min-height: 62px; border-top-width: 3px; border-bottom-width: 3px; }
+.realty-header-emblem { height: 62px; }
+.realty-header-desktop { min-height: 62px; }
 .realty-header-desktop > div { align-items: stretch; }
 .realty-header-desktop .realty-header-link { height: 100%; min-height: 0; }
+.realty-header-disc,
+.realty-header-emblem-inner .realty-header-disc { width: 132px; height: 132px; box-shadow: 0 0 0 2px #fff, 0 0 0 7px #244a70, 0 12px 26px rgba(0,0,0,.2), inset 0 0 12px rgba(36,74,112,.06); }
+.realty-header-main-logo,
+.realty-header-emblem-inner .realty-header-main-logo { width: 94px; height: 96px; }
+
+/* Kaydırma sonrası header ana düzeni korur; yalnızca daha kompakt ve ince görünür. */
+.realty-compact-layout { min-height: 54px; }
+.realty-compact-header { border-bottom-color: #244a70; box-shadow: 0 6px 18px rgba(36,74,112,.18); }
+.realty-compact-emblem { height: 54px; transform: translateY(-1px); }
+.realty-compact-emblem .realty-header-disc { width: 108px; height: 108px; border-width: 2px; box-shadow: 0 0 0 2px #fff, 0 0 0 6px #244a70, 0 8px 18px rgba(0,0,0,.18), inset 0 0 9px rgba(36,74,112,.06); }
+.realty-compact-emblem .realty-header-main-logo { width: 78px; height: 80px; }
 @media (max-width: 1279px) {
   .realty-header-bar > .relative.z-10 { min-height: 58px; }
 }
