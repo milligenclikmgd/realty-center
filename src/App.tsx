@@ -1322,27 +1322,17 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   return (
     <header className="realty-header relative isolate z-40 w-full text-white">
       <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden lg:block ${showCompactHeader ? 'is-visible' : ''}`}>
-        {isHomePage ? (
-          <div className="mx-auto flex min-h-[64px] w-full max-w-[1920px] items-stretch px-3 lg:px-6">
-            <Link to="/" onClick={close} className="my-2 flex w-[150px] shrink-0 items-center justify-center rounded-sm bg-white px-3 shadow-sm lg:w-[175px]" aria-label="Realty Center® ana sayfa">
-              <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="h-11 w-full object-contain lg:h-12" />
-            </Link>
-            <nav className="ml-3 grid min-w-0 flex-1 items-stretch" style={{ gridTemplateColumns: `repeat(${managedMenu.length},minmax(0,1fr))` }}>
-              {managedMenu.map((item) => (
-                <DesktopHeaderNode
-                  key={`compact-home-${item.id}`}
-                  item={item}
-                  align={item.side === 'right' || item.id === 'discover' ? 'right' : 'left'}
-                  menuLinkClass={menuLinkClass}
-                />
-              ))}
-            </nav>
+        <nav className="realty-compact-layout mx-auto grid w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_154px_minmax(0,1fr)] items-center px-4 2xl:px-8">
+          <div className="grid min-w-0 grid-cols-7 items-stretch">
+            {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
           </div>
-        ) : (
-          <nav className="mx-auto grid min-h-[52px] w-full max-w-[1920px] items-stretch px-6 2xl:px-10" style={{ gridTemplateColumns: 'repeat(14,minmax(0,1fr))' }}>
-            {[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`compact-${label}-${to}`} to={to} className="realty-compact-link flex items-center justify-center px-2 text-center text-[10px] font-black leading-tight text-white 2xl:text-xs">{label}</Link>)}
-          </nav>
-        )}
+          <Link to="/" onClick={close} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
+            <span className="realty-header-disc"><img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
+          </Link>
+          <div className="grid min-w-0 grid-cols-7 items-stretch">
+            {rightItems.map((item) => <DesktopHeaderNode key={`compact-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>) }
+          </div>
+        </nav>
       </div>
       <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
       <div className="realty-header-top-space">
