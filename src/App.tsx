@@ -515,7 +515,7 @@ const ALL_LISTING_PROPERTY_TYPES = Object.values(LISTING_PROPERTY_TYPES).flat() 
 const LISTING_SEARCH_TRANSACTION_TYPES = ['Satılık', 'Kiralık', 'Devren'] as const;
 const LISTING_MAIN_CATEGORIES = ['Konut', 'Arsa', 'İşyeri'] as const;
 const LISTING_PROPERTY_TYPES_BY_MAIN_CATEGORY = {
-  'Konut': ['Daire', 'Residence', 'Villa', 'Müstakil Ev', 'Ev'],
+  'Konut': ['Daire', 'Residence', 'Villa', 'Müstakil Ev'],
   'Arsa': ['Arsa', 'Tarla', 'Bağ', 'Bahçe', 'Zeytinlik', 'Çiftlik', 'Arazi'],
   'İşyeri': ['Ofis', 'Dükkan', 'Mağaza', 'Market', 'AVM', 'Plaza', 'Depo', 'Antrepo', 'Fabrika', 'Atölye', 'İmalathane', 'Akaryakıt İstasyonu', 'Otel', 'Motel', 'Pansiyon', 'Apart Otel', 'Butik Otel', 'Restoran', 'Kafe', 'Pastane', 'Eğlence Merkezi', 'Sağlık Tesisi', 'Okul', 'Kreş', 'Dershane', 'Otopark']
 } as const;
