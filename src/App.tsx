@@ -847,7 +847,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
           </span>
         </div>
 
-        <div className="p-4">
+        <div className="relative p-4">
           <div className="mb-2 flex items-center justify-between gap-3">
             <p className="text-xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} <span className="text-sm">{item.currency}</span></p>
             <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">{item.propertyType}</span>
@@ -871,6 +871,9 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
               <span>{item.area} m²</span>
             </div>
           </div>
+          <span aria-hidden="true" className="pointer-events-none absolute bottom-3 right-4 h-11 w-10 overflow-hidden opacity-[0.13]">
+            <img src="/rlogotr.png" alt="" className="h-11 w-auto max-w-none" />
+          </span>
         </div>
       </div>
 
