@@ -1835,17 +1835,13 @@ function BuyerRequestModule() {
     <section id="buyer-request" className="border-b border-slate-200 bg-slate-50 py-8 sm:py-10">
       <div className="buyer-request-container mx-auto max-w-7xl px-6 lg:px-12">
         <div className="buyer-request-shell rc-navy-frame overflow-hidden bg-white shadow-xl">
-          <header className="flex flex-col gap-5 bg-gradient-to-r from-[#b9001b] via-[#CD011E] to-[#dc1733] p-5 text-white sm:flex-row sm:items-center sm:justify-between sm:px-7">
-            <div className="min-w-0 flex-1">
-              {open && <span className="text-[10px] font-black tracking-[.2em] text-white/75">ALICI TALEBİ</span>}
-              <div className={`buyer-request-slogan ${open ? 'mt-3' : ''} w-full max-w-[580px] overflow-hidden bg-white px-8 py-3 text-center shadow-md sm:px-12`}>
-                <h2 className="mx-auto max-w-full break-words text-[clamp(17px,2vw,24px)] font-black leading-[1.08] tracking-tight text-slate-950">
-                  <span className="block">Siz Aradığınızı Söyleyin,</span>
-                  <span className="mt-1 block">Biz Bulalım</span>
-                </h2>
-              </div>
+          <header className="buyer-request-banner">
+            <div className="buyer-request-banner-photo" aria-hidden="true" />
+            <div className="buyer-request-banner-copy">
+              {open && <span className="text-[10px] font-black tracking-[.2em] text-red-700">ALICI TALEBİ</span>}
+              <h2 className={`${open ? 'mt-2' : ''} buyer-request-slogan`}> <span>Siz Aradığınızı Söyleyin,</span><em>Biz Bulalım</em></h2>
             </div>
-            <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="buyer-request-toggle flex w-full shrink-0 items-center justify-center gap-2 rounded-full border border-white/70 bg-white px-5 py-3 text-sm font-black text-[#CD011E] shadow-lg sm:w-auto">
+            <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="buyer-request-toggle buyer-request-banner-button">
               {open ? 'Formu Kapat' : 'Talep Oluştur'}
               <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} />
             </button>
@@ -1931,9 +1927,11 @@ function BarterBankModuleV3() {
   const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, offer, request, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(new FormData(event.currentTarget)) }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
   if (sent) return <section id="barter-bank" className="bg-slate-50 py-10"><div className="mx-auto max-w-5xl px-6"><div className="barter-success rc-navy-frame bg-[#CD011E] p-8 text-center text-white"><h2 className="text-2xl font-black">BARTERBANK® kaydınız alındı.</h2><p className="mt-2 text-sm text-white/85">Teklifiniz ve talebiniz yönetici paneline iletildi.</p></div></div></section>;
   return <section id="barter-bank" className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-12"><div className="barter-container mx-auto max-w-7xl px-6 lg:px-12"><div className="barter-shell rc-navy-frame overflow-hidden bg-white/95">
-    <header className="barter-header relative flex flex-col gap-5 overflow-hidden bg-gradient-to-r from-[#b9001b] via-[#CD011E] to-[#dc1733] p-6 text-white sm:flex-row sm:items-center sm:justify-between sm:px-8">
-      <div className="relative z-10"><div className="flex flex-wrap items-baseline gap-x-3"><h2 className="text-2xl font-black tracking-[.08em] sm:text-3xl">BARTERBANK®</h2><span className="text-xs font-bold tracking-[.16em] text-white/65">EMLAK TAKAS SİSTEMİ</span></div></div>
-      <div className="relative z-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center"><div aria-label="Fazlanı ver, eksiğini al" className="min-w-[238px] shrink-0 border-0 bg-transparent px-2 py-2 text-center text-white shadow-none outline-none ring-0 sm:min-w-[306px]" style={{ background: 'transparent', border: 'none', boxShadow: 'none' }}><span className="block text-lg font-black tracking-[.12em] sm:text-xl">FAZLANI VER</span><span className="mx-auto my-2 block h-[3px] w-24 rounded-full bg-[#071d3b] sm:w-28"></span><span className="block text-lg font-black tracking-[.12em] sm:text-xl">EKSİĞİNİ AL</span></div><button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="barter-toggle flex w-full items-center justify-center gap-2 rounded-full border border-white/70 bg-white px-5 py-3 text-sm font-black text-[#CD011E] shadow-lg shadow-[#7d0013]/20 transition sm:w-auto">{open ? 'Formu Kapat' : 'Takasa Başla'} <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} /></button></div>
+    <header className="barter-hero-banner">
+      <div className="barter-hero-photo" aria-hidden="true"><span>↔</span></div>
+      <div className="barter-hero-brand"><div className="text-2xl font-black tracking-[.04em] text-[#071d3b] sm:text-3xl">BARTER<span className="text-[#CD011E]">BANK</span><sup className="ml-0.5 text-sm">®</sup></div><span>EMLAK TAKAS SİSTEMİ</span></div>
+      <div className="barter-hero-motto">Fazlanı ver,<br/><strong>eksiğini al.</strong></div>
+      <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="barter-toggle barter-hero-button">{open ? 'Formu Kapat' : 'Takasa Başla'} <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} /></button>
     </header>
     {open && <form onSubmit={submit} className="barter-form-reveal border-t-2 border-[#12345b] bg-gradient-to-br from-white via-slate-50/60 to-red-50/20 p-5 sm:p-8">
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-sm font-black text-[#071d3b]">Takas bilgilerinizi oluşturun</p><p className="mt-1 text-xs text-slate-500">Vereceğiniz ve almak istediğiniz mülkü aynı formda anlatın.</p></div><button type="button" onClick={() => setOpen(false)} className="self-start rounded-full px-3 py-1.5 text-xs font-black text-[#CD011E] transition hover:bg-red-50">KAPAT</button></div>
