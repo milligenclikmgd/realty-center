@@ -10,7 +10,7 @@ html { font-size: 106.25%; }
 /* Yeni Realty Center header: lacivert konturlu kırmızı kuşak ve merkez logo rozeti */
 .realty-header {
   --rc-red: #cd011e;
-  --rc-navy: #244a70;
+  --rc-navy: #1f5a94;
 }
 
 .realty-header-top-space {
@@ -284,7 +284,7 @@ html { font-size: 106.25%; }
 }
 .realty-header-mobile-menu {
   border-bottom: 3px solid var(--rc-red);
-  background: linear-gradient(145deg, #06182f, var(--rc-navy));
+  background: linear-gradient(145deg, #173f68, var(--rc-navy));
   box-shadow: 0 18px 34px rgba(7,29,59,.26);
 }
 @media (max-width: 1279px) {
@@ -445,7 +445,7 @@ html { font-size: 106.25%; }
 .rc-navy-frame {
   position: relative;
   overflow: hidden;
-  border: 3px solid #071d3b !important;
+  border: 3px solid #1f5a94 !important;
   border-radius: 1.5rem;
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, .22),
@@ -830,15 +830,15 @@ html { font-size: 106.25%; }
 .realty-header-desktop > div { align-items: stretch; }
 .realty-header-desktop .realty-header-link { height: 100%; min-height: 0; }
 .realty-header-disc,
-.realty-header-emblem-inner .realty-header-disc { width: 132px; height: 132px; box-shadow: 0 0 0 2px #fff, 0 0 0 7px #244a70, 0 12px 26px rgba(0,0,0,.2), inset 0 0 12px rgba(36,74,112,.06); }
+.realty-header-emblem-inner .realty-header-disc { width: 132px; height: 132px; box-shadow: 0 0 0 2px #fff, 0 0 0 7px #1f5a94, 0 12px 26px rgba(0,0,0,.2), inset 0 0 12px rgba(31,90,148,.07); }
 .realty-header-main-logo,
 .realty-header-emblem-inner .realty-header-main-logo { width: 94px; height: 96px; }
 
 /* Kaydırma sonrası header ana düzeni korur; yalnızca daha kompakt ve ince görünür. */
 .realty-compact-layout { min-height: 54px; }
-.realty-compact-header { border-bottom-color: #244a70; box-shadow: 0 6px 18px rgba(36,74,112,.18); }
+.realty-compact-header { border-bottom-color: #1f5a94; box-shadow: 0 6px 18px rgba(31,90,148,.2); }
 .realty-compact-emblem { height: 54px; transform: translateY(-1px); }
-.realty-compact-emblem .realty-header-disc { width: 108px; height: 108px; border-width: 2px; box-shadow: 0 0 0 2px #fff, 0 0 0 6px #244a70, 0 8px 18px rgba(0,0,0,.18), inset 0 0 9px rgba(36,74,112,.06); }
+.realty-compact-emblem .realty-header-disc { width: 108px; height: 108px; border-width: 2px; box-shadow: 0 0 0 2px #fff, 0 0 0 6px #1f5a94, 0 8px 18px rgba(0,0,0,.18), inset 0 0 9px rgba(31,90,148,.07); }
 .realty-compact-emblem .realty-header-main-logo { width: 78px; height: 80px; }
 @media (max-width: 1279px) {
   .realty-header-bar > .relative.z-10 { min-height: 58px; }
@@ -967,7 +967,7 @@ html { font-size: 106.25%; }
 .realty-header-disc {
   border: 6px solid #CD011E;
   box-shadow:
-    0 0 0 5px #071D3B,
+    0 0 0 5px #1F5A94,
     0 0 0 8px #CD011E,
     0 15px 32px rgba(0,0,0,.24),
     inset 0 0 14px rgba(7,29,59,.06);
@@ -1001,7 +1001,7 @@ html { font-size: 106.25%; }
 .realty-header-emblem-inner .realty-header-disc {
   border-width: 6px;
   box-shadow:
-    0 0 0 5px #071D3B,
+    0 0 0 5px #1F5A94,
     0 0 0 8px #CD011E,
     0 10px 24px rgba(0,0,0,.2),
     inset 0 0 12px rgba(7,29,59,.05);
@@ -1020,7 +1020,7 @@ html { font-size: 106.25%; }
 .realty-header-emblem-inner .realty-header-disc {
   border: 3px solid #CD011E;
   box-shadow:
-    0 0 0 7px #071D3B,
+    0 0 0 7px #1F5A94,
     0 15px 32px rgba(0,0,0,.24),
     inset 0 0 14px rgba(7,29,59,.06);
 }
@@ -1039,7 +1039,7 @@ html { font-size: 106.25%; }
   border: 3px solid #CD011E;
   box-shadow:
     0 0 0 2px #FFFFFF,
-    0 0 0 9px #071D3B,
+    0 0 0 9px #1F5A94,
     0 15px 32px rgba(0,0,0,.24),
     inset 0 0 14px rgba(7,29,59,.06);
 }
