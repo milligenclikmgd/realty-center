@@ -1617,14 +1617,12 @@ function FeaturedListingsShowcase() {
   if (!featuredListings.length) return null;
 
   return (
-    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-14 sm:py-16">
+    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-8 sm:py-10">
       <span className="featured-opportunities-arc featured-opportunities-arc-left" aria-hidden="true" />
       <span className="featured-opportunities-building featured-opportunities-building-right" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-        <div className="relative mb-7 text-center sm:mb-8">
-          <p className="featured-opportunities-slogan">Doğru<br/>Yatırım<br/>Güçlü Yarınlar</p>
-          <p className="text-[10px] font-black tracking-[.38em] text-slate-500"><span className="mr-3 inline-block h-px w-9 align-middle bg-slate-400"/> REALTY CENTER TÜRKİYE <span className="ml-3 inline-block h-px w-9 align-middle bg-slate-400"/></p>
-          <h2 className="mt-3 text-4xl font-black italic tracking-tight text-[#071d3b] sm:text-5xl">
+        <div className="relative mb-5 text-center sm:mb-6">
+          <h2 className="text-4xl font-black italic tracking-tight text-[#071d3b] sm:text-5xl">
             Fırsat <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">Gayrimenkuller</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
