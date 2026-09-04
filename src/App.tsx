@@ -2104,7 +2104,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </div>
 
-      <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
+      {false && <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto grid items-center gap-6 px-6 lg:grid-cols-[1.05fr_.95fr_.7fr] lg:px-12">
           <div className="grid grid-cols-2 gap-3 text-center">
             <div className="p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.offices}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Franchise Ofis</div></div>
@@ -2119,14 +2119,19 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             </Link>
           </div>
         </div>
-      </section>
+      </section>}
 
       
 
-      <section className="bg-slate-50 py-16 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-end justify-between gap-6 mb-8"><div><span className="text-xs font-black tracking-widest text-red-700">KATEGORİLER</span><h2 className="mt-2 text-3xl font-black text-slate-900">Portföylerimizi <span className="text-red-700">Keşfedin</span></h2></div><Link to="/ilan-kategorileri" className="text-sm font-black text-red-700 hover:text-red-800">Tümünü Gör →</Link></div>
-          <div className="grid gap-px overflow-hidden rounded-xl border border-slate-200 bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">{getListingCategories().slice(0,4).map((category,index) => <Link key={category.id} to={"/ilanlarimiz?type="+encodeURIComponent(getCategoryTransactionType(category))+"&propertyType="+encodeURIComponent(getCategoryPropertyType(category))} className="group bg-white px-5 py-5 transition hover:bg-slate-50"><div className="flex items-start justify-between gap-3"><div><p className="text-[10px] font-black tracking-[.16em] text-red-700">0{index+1} · KATEGORİ</p><h3 className="mt-2 text-base font-black text-slate-900">{category.title}</h3><p className="mt-2 text-xs leading-5 text-slate-500">Uygun ilanları inceleyin.</p></div><ArrowRight className="mt-1 h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></div></Link>)}</div>
+      <section className="border-b border-slate-200 bg-slate-50 py-14 sm:py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="mb-8 flex items-end justify-between gap-6"><div><span className="text-xs font-black tracking-widest text-red-700">PORTFÖYLER</span><h2 className="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Portföylerimizi <span className="text-red-700">Keşfedin</span></h2></div><Link to="/ilan-kategorileri" className="hidden text-sm font-black text-red-700 transition hover:text-red-800 sm:inline-flex">Tümünü Gör <ArrowRight className="ml-2 h-4 w-4"/></Link></div>
+          <div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_16px_36px_rgba(15,23,42,.08)] lg:grid-cols-[.95fr_1.05fr]">
+            <div className="p-5 sm:p-7"><div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+              {[{title:'Satılık Gayrimenkuller',icon:Home,to:'/ilanlarimiz?type=Satılık'},{title:'Kiralık Gayrimenkuller',icon:Key,to:'/ilanlarimiz?type=Kiralık'},{title:'Devren İşyerleri',icon:Briefcase,to:'/ilanlarimiz?type=Devren%20Satılık'},{title:'Yeni Projeler',icon:Building2,to:'/projelerimiz'}].map((item) => { const Icon = item.icon; return <Link key={item.title} to={item.to} className="group flex items-center gap-4 rounded-2xl border border-slate-100 px-4 py-4 transition hover:border-red-200 hover:bg-red-50/40"><Icon className="h-6 w-6 shrink-0 text-red-700" strokeWidth={2.1}/><span className="h-7 w-px bg-slate-200"/><span className="min-w-0 flex-1 text-[15px] font-black tracking-tight text-slate-900">{item.title}</span><ArrowRight className="h-4 w-4 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></Link> })}
+            </div><Link to="/ilan-kategorileri" className="mt-5 inline-flex items-center text-sm font-black text-red-700 sm:hidden">Tümünü Gör <ArrowRight className="ml-2 h-4 w-4"/></Link></div>
+            <Link to="/ilan-kategorileri" className="group relative min-h-[270px] overflow-hidden bg-slate-100"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=82&w=1400" alt="Realty Center portföyleri" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/><span className="absolute inset-0 bg-gradient-to-r from-[#071f3d]/62 via-[#071f3d]/20 to-transparent"/><span className="absolute bottom-7 left-7 right-7 text-white"><span className="block text-xs font-black tracking-[.18em] text-white/75">REALTY CENTER®</span><span className="mt-2 block max-w-xs text-2xl font-black leading-tight">Size uygun portföyü birlikte bulalım.</span><span className="mt-4 inline-flex items-center text-sm font-black">İlanları incele <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-1"/></span></span></Link>
+          </div>
         </div>
       </section>
 
@@ -2187,7 +2192,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      <TurkeyListingMap />
+      {false && <TurkeyListingMap />}
 
       <section className="border-b border-slate-200 bg-white py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
