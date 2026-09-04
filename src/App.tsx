@@ -1927,7 +1927,7 @@ function BarterBankModuleV3() {
   if (sent) return <section id="barter-bank" className="bg-slate-50 py-10"><div className="mx-auto max-w-5xl px-6"><div className="barter-success rc-navy-frame bg-[#CD011E] p-8 text-center text-white"><h2 className="text-2xl font-black">BARTERBANK® kaydınız alındı.</h2><p className="mt-2 text-sm text-white/85">Teklifiniz ve talebiniz yönetici paneline iletildi.</p></div></div></section>;
   return <section id="barter-bank" className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-12"><div className="barter-container mx-auto max-w-7xl px-6 lg:px-12"><div className="barter-shell rc-navy-frame overflow-hidden bg-white/95">
     <header className="barter-hero-banner">
-      <div className="barter-hero-photo" aria-hidden="true"><span>↔</span></div>
+      <div className="barter-hero-photo" aria-hidden="true"><span>⇄</span></div>
       <div className="barter-hero-brand"><div className="text-2xl font-black tracking-[.04em] text-[#071d3b] sm:text-3xl">BARTER<span className="text-[#CD011E]">BANK</span><sup className="ml-0.5 text-sm">®</sup></div><span>EMLAK TAKAS SİSTEMİ</span></div>
       <div className="barter-hero-motto">Fazlanı ver,<br/><strong>eksiğini al.</strong></div>
       <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="barter-toggle barter-hero-button">{open ? 'Formu Kapat' : 'Takasa Başla'} <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} /></button>
