@@ -61,7 +61,7 @@ html { font-size: 106.25%; }
 .barter-toggle.barter-hero-button:hover { background:#bd0707; transform:translateY(-1px); }
 
 .barter-hero-banner { grid-template-columns:29% minmax(250px,1.2fr) minmax(175px,.74fr) minmax(190px,22%); align-items:center; }
-.barter-hero-photo { min-height:150px; height:100%; margin:0; background-image:linear-gradient(rgba(7,29,59,.78),rgba(7,29,59,.78)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=82&w=1000'); }
+.barter-hero-photo { width:100%; min-height:0; margin:0; background-image:linear-gradient(rgba(7,29,59,.78),rgba(7,29,59,.78)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=82&w=1000'); }
 .barter-hero-photo span { position:relative; z-index:2; display:flex; height:100%; align-items:center; justify-content:center; color:#fff; font-size:4rem; font-weight:400; line-height:1; }
 .barter-hero-brand { position:relative; z-index:2; padding:1rem 2rem; border-right:1px solid #dbe1e9; text-align:center; }
 .barter-hero-brand > span { display:block; margin-top:.42rem; color:#7e8898; font-size:.66rem; font-weight:900; letter-spacing:.24em; }
