@@ -1052,26 +1052,26 @@ html { font-size: 106.25%; }
 }
 
 /* Laptop genişliklerinde menü, orta logo ve boşluklar birlikte ölçeklenir.
-   Böylece masaüstü düzeni korunurken 1280–1535 px aralığında başlıklar sıkışmaz. */
-@media (min-width: 1280px) and (max-width: 1535px) {
+   Bazı cihazlarda ekran ölçeklendirmesi 1536 px olarak raporlandığından eşik 1700 px'e kadar uzatılır. */
+@media (min-width: 1280px) and (max-width: 1700px) {
   .realty-header-top-space { height: 26px; }
   .realty-header-social { left: 16px; gap: 5px; }
   .realty-header-social a { width: 22px; height: 22px; }
   .realty-header-contact { right: 16px; gap: 6px; }
   .realty-header-contact-item { font-size: 9px; gap: 4px; }
   .realty-header-contact-icon { width: 24px; height: 24px; }
-  .realty-header-bar { min-height: 56px; }
+  .realty-header-bar { min-height: 56px !important; }
   .realty-header-desktop {
     grid-template-columns: minmax(0,1fr) 144px minmax(0,1fr) !important;
-    min-height: 56px;
+    min-height: 56px !important;
     padding-right: 8px !important;
     padding-left: 8px !important;
   }
-  .realty-header-emblem { height: 56px; }
+  .realty-header-emblem { height: 56px !important; }
   .realty-header-disc,
-  .realty-header-emblem-inner .realty-header-disc { width: 112px; height: 112px; }
+  .realty-header-emblem-inner .realty-header-disc { width: 112px !important; height: 112px !important; }
   .realty-header-main-logo,
-  .realty-header-emblem-inner .realty-header-main-logo { width: 84px; height: 86px; }
+  .realty-header-emblem-inner .realty-header-main-logo { width: 84px !important; height: 86px !important; }
   .realty-header-link {
     padding-right: 2px !important;
     padding-left: 2px !important;
