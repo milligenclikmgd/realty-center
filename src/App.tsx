@@ -1617,12 +1617,17 @@ function FeaturedListingsShowcase() {
   if (!featuredListings.length) return null;
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-red-50/30 to-white py-16 sm:py-20">
+    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-14 sm:py-16">
+      <span className="featured-opportunities-arc featured-opportunities-arc-left" aria-hidden="true" />
+      <span className="featured-opportunities-building featured-opportunities-building-right" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-        <div className="mb-8 text-center sm:mb-10">
-          <h2 className="mt-4 font-serif text-4xl font-black italic tracking-tight text-slate-950 sm:text-5xl">
+        <div className="relative mb-7 text-center sm:mb-8">
+          <p className="featured-opportunities-slogan">Doğru<br/>Yatırım<br/>Güçlü Yarınlar</p>
+          <p className="text-[10px] font-black tracking-[.38em] text-slate-500"><span className="mr-3 inline-block h-px w-9 align-middle bg-slate-400"/> REALTY CENTER TÜRKİYE <span className="ml-3 inline-block h-px w-9 align-middle bg-slate-400"/></p>
+          <h2 className="mt-3 text-4xl font-black italic tracking-tight text-[#071d3b] sm:text-5xl">
             Fırsat <span className="relative text-red-700 after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-red-200">Gayrimenkuller</span>
           </h2>
+          <p className="mx-auto mt-3 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {[
               ['Tümü', '/ilanlarimiz?all=1'],
@@ -1631,13 +1636,13 @@ function FeaturedListingsShowcase() {
               ['Arsa', '/ilanlarimiz?propertyType=Arsa'],
               ['Ticari', '/ilanlarimiz?category=Ticari%20Gayrimenkul'],
               ['Turizm', '/ilanlarimiz?propertyType=Otel']
-            ].map(([label, to]) => <Link key={label} to={to} className="min-w-24 rounded-xl border border-slate-200 bg-slate-100 px-5 py-3 text-xs font-black tracking-wide text-slate-700 transition hover:-translate-y-0.5 hover:border-red-700 hover:bg-red-700 hover:text-white hover:shadow-lg sm:min-w-28">{label}</Link>)}
+            ].map(([label, to], index) => <Link key={label} to={to} className={`min-w-20 rounded-full border px-5 py-3 text-xs font-black tracking-wide transition hover:-translate-y-0.5 hover:border-red-700 hover:bg-red-700 hover:text-white hover:shadow-lg sm:min-w-24 ${index === 0 ? 'border-red-700 bg-red-700 text-white shadow-md shadow-red-200' : 'border-slate-200 bg-white/80 text-slate-700 shadow-sm'}`}>{label}</Link>)}
+            <Link to="/ilanlarimiz" className="ml-1 inline-flex items-center gap-2 text-xs font-black text-[#071d3b] transition hover:text-red-700"><MapPin className="h-5 w-5 text-red-700"/> Haritada Görüntüle <ArrowRight className="h-4 w-4 text-red-700"/></Link>
           </div>
-          <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-slate-500">Özenle seçilmiş, dikkat çeken gayrimenkul fırsatları</p>
         </div>
 
         <div
-          className="relative h-[430px] cursor-grab select-none touch-pan-y active:cursor-grabbing sm:h-[470px]"
+          className="relative h-[365px] cursor-grab select-none touch-pan-y active:cursor-grabbing sm:h-[395px]"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
@@ -1654,7 +1659,7 @@ function FeaturedListingsShowcase() {
                 to={`/ilan/${item.id}`}
                 draggable={false}
                 onClick={(event) => { if (dragMoved.current) event.preventDefault(); }}
-                className="absolute left-1/2 top-0 flex h-[400px] w-[78vw] max-w-[620px] flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl transition-all duration-500 ease-out sm:h-[440px] sm:w-[58vw]"
+                className="absolute left-1/2 top-0 flex h-[340px] w-[76vw] max-w-[690px] flex-col overflow-hidden rounded-[1.7rem] border border-slate-200 bg-white shadow-[0_18px_36px_rgba(7,29,59,.16)] transition-all duration-500 ease-out sm:h-[375px] sm:w-[56vw]"
                 style={{
                   transform: `translateX(${offset === 0 ? '-50%' : offset < 0 ? '-128%' : '28%'}) scale(${isActive ? 1 : 0.82})`,
                   opacity: isActive ? 1 : 0.58,
@@ -1663,8 +1668,9 @@ function FeaturedListingsShowcase() {
                 }}
                 aria-label={`${item.title} ilanını incele`}
               >
-                <div className="relative h-[245px] shrink-0 overflow-hidden bg-slate-100 sm:h-[285px]">
+                <div className="relative h-[205px] shrink-0 overflow-hidden bg-slate-100 sm:h-[245px]">
                   <img src={item.image} alt={item.title} draggable={false} className="h-full w-full object-cover object-center transition duration-700" />
+                  {isActive && <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071d3b]/72 to-transparent px-7 pb-5 pt-12 text-left text-white"><p className="text-lg font-light">Sıradan Değil,</p><p className="text-xl font-black">Özel Yaşam Alanları</p><span className="mt-3 block h-1 w-12 rounded-full bg-red-600"/></div>}
                   <div className="absolute left-5 top-5 flex items-center gap-2">
                     <span className="rounded-full bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wider text-white shadow-lg">VİTRİN</span>
                     <span className="rounded-full border border-slate-200 bg-white/95 px-3 py-1.5 text-[10px] font-black text-slate-800 shadow-sm">{item.type}</span>
