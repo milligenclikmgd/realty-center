@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -54,8 +54,8 @@ html { font-size: 106.25%; }
 .buyer-request-banner-copy { position: relative; z-index: 2; padding: 1.2rem 2.5rem; text-align: center; }
 .buyer-request-slogan { margin: 0; color: #071d3b; font-weight: 900; line-height: .96; letter-spacing: -.065em; font-size: clamp(1.55rem, 2.8vw, 2.55rem); }
 .buyer-request-slogan span { display: block; }
-.buyer-request-slogan em { position:relative; display: inline-block; margin-top: .08em; color: #cd011e; font-family: 'Caveat', cursive; font-size: 1.92em; font-style: normal; font-weight: 700; letter-spacing: -.055em; line-height: .67; }
-.buyer-request-slogan em::after { content:''; position:absolute; bottom:-.12em; left:3%; width:95%; height:3px; border-radius:999px; background:#cd011e; transform:rotate(-2deg); }
+.buyer-request-slogan em { position:relative; display: inline-block; margin-top: .11em; color: #cd011e; font-family: 'Great Vibes', cursive; font-size: 2.18em; font-style: normal; font-weight: 400; letter-spacing: .005em; line-height: .62; transform: rotate(-2deg); }
+.buyer-request-slogan em::after { content:''; position:absolute; bottom:-.1em; left:6%; width:91%; height:3px; border-radius:999px; background:#cd011e; transform:rotate(-2deg); }
 .buyer-request-toggle.buyer-request-banner-button,
 .barter-toggle.barter-hero-button { position: relative; z-index: 3; display: inline-flex; align-items: center; justify-content: center; gap: .7rem; margin-right: 2.3rem; min-width: 175px; border: 0; border-radius: 999px; background: #cd011e; padding: .95rem 1.55rem; color: #fff; font-size: .93rem; font-weight: 900; box-shadow: 0 11px 21px rgba(205,1,30,.19); transition: transform .2s ease, background .2s ease; }
 .buyer-request-toggle.buyer-request-banner-button:hover,
