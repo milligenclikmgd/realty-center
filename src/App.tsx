@@ -15,7 +15,7 @@ import {
   Users, Navigation, UserCheck, Filter,
   Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
   ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
-  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell, Music2, VolumeX
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell, Music2, VolumeX, BookOpen, ShieldCheck
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
@@ -1230,18 +1230,25 @@ function SiteSearchPage() {
   return <div className="min-h-[65vh] bg-slate-50 py-12"><div className="mx-auto max-w-5xl px-6"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER® SİTE İÇİ ARAMA</p><h1 className="mt-2 text-3xl font-black text-slate-900">Tüm sitede arayın</h1><form onSubmit={submit} className="mt-6 flex overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="İlan, rehber yazısı, danışman, ofis veya sayfa ara..." className="min-w-0 flex-1 px-5 py-4 text-sm font-semibold outline-none"/><button className="bg-red-700 px-6 text-sm font-black text-white">Ara</button></form><div className="mt-7 flex items-center justify-between border-b border-slate-200 pb-3"><h2 className="font-black text-slate-900">“{initialQuery}” sonuçları</h2><span className="text-xs font-bold text-slate-500">{results.length} sonuç</span></div>{results.length ? <div className="divide-y divide-slate-200">{results.map((item,index) => <Link key={`${item.to}-${item.title}-${index}`} to={item.to} className="group block py-5"><span className="text-[10px] font-black uppercase tracking-widest text-red-700">{item.category}</span><h3 className="mt-1 text-lg font-black text-slate-900 group-hover:text-red-700">{item.title}</h3><p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-600">{item.content}</p></Link>)}</div> : <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-10 text-center"><Search className="mx-auto h-8 w-8 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">Aramanızla eşleşen içerik bulunamadı.</p><p className="mt-1 text-xs text-slate-500">Daha kısa veya farklı bir kelime deneyebilirsiniz.</p></div>}</div></div>;
 }
 
+const HEADER_MENU_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { corporate: Building2, offices: MapPin, agents: Users, listings: Home, projects: Layers, discover: Navigation, videos: PlayCircle, earning: TrendingUp, ai: Search, library: BookOpen, why: ShieldCheck, franchise: Briefcase, advisor: UserCheck, contact: MessageCircle };
+
+function HeaderItemLabel({ item, root }: { item: HeaderMenuItem; root: boolean }) {
+  const Icon = HEADER_MENU_ICONS[item.id];
+  return <span className={root ? 'inline-flex items-center justify-center gap-1.5' : 'inline-flex items-center gap-2'}>{Icon && <Icon className={root ? 'h-3.5 w-3.5 shrink-0 opacity-90' : 'h-3.5 w-3.5 shrink-0 text-red-700'} />}<span>{item.label}</span></span>;
+}
+
 function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }: { item: HeaderMenuItem; root?: boolean; align?: 'left' | 'right'; menuLinkClass: (to: string) => string }) {
   const [open, setOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hasChildren = item.children.length > 0;
-  if (!hasChildren) return <Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}>{item.label}</Link>;
+  if (!hasChildren) return <Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}><HeaderItemLabel item={item} root={root}/></Link>;
   const enter = () => { if (closeTimer.current) clearTimeout(closeTimer.current); setOpen(true); };
   const leave = () => { closeTimer.current = setTimeout(() => setOpen(false),120); };
-  return <div className="relative z-30" onMouseEnter={enter} onMouseLeave={leave}><Link to={item.path} className={root ? menuLinkClass(item.path) : `flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black transition ${open ? 'bg-red-50 text-red-700' : 'text-slate-700 hover:bg-red-50 hover:text-red-700'}`}><span>{item.label}</span><ChevronDown className={`ml-1 h-3 w-3 transition duration-200 ${root ? (open ? 'rotate-180' : '') : '-rotate-90'}`}/></Link><div className={`absolute z-50 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl transition duration-200 ${open ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-1 opacity-0'} ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : 'left-full top-0'}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
+  return <div className="relative z-30" onMouseEnter={enter} onMouseLeave={leave}><Link to={item.path} className={root ? menuLinkClass(item.path) : `flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black transition ${open ? 'bg-red-50 text-red-700' : 'text-slate-700 hover:bg-red-50 hover:text-red-700'}`}><HeaderItemLabel item={item} root={root}/><ChevronDown className={`ml-1 h-3 w-3 shrink-0 transition duration-200 ${root ? (open ? 'rotate-180' : '') : '-rotate-90'}`}/></Link><div className={`absolute z-50 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl transition duration-200 ${open ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-1 opacity-0'} ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : 'left-full top-0'}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
 }
 
 function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
-  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-sm'}`} style={{ marginLeft: `${depth * 8}px` }}><span>{depth ? '↳ ' : ''}{item.label}</span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
+  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-sm'}`} style={{ marginLeft: `${depth * 8}px` }}><span className="inline-flex items-center gap-2">{depth ? '↳ ' : ''}<HeaderItemLabel item={item} root={false}/></span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
 }
 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
@@ -1294,20 +1301,20 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       <header className="relative z-40 w-full border-b border-red-800 bg-[#CD011E] text-white shadow-md">
         <div className="mx-auto flex min-h-[68px] max-w-[1920px] items-center px-3 lg:px-6">
           <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(leftLinks.length,1)},minmax(0,1fr))` }}>
-            {leftLinks.map(([label, to]) => <Link key={`detail-left-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+            {leftItems.map((item) => <DesktopHeaderNode key={`detail-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </nav>
-          <Link to="/" onClick={close} className="mx-auto my-1.5 flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-white/80 bg-white shadow-lg xl:mx-4" aria-label="Realty Center® ana sayfa">
-            <img src="/rlogotr.png" alt="Realty Center® Türkiye" className="h-full w-full object-contain p-0.5" />
+          <Link to="/" onClick={close} className="realty-header-emblem realty-header-emblem-inner mx-auto my-1.5 flex h-[68px] w-[210px] shrink-0 items-center justify-center xl:mx-4" aria-label="Realty Center® ana sayfa">
+            <span className="realty-header-led" /><span className="realty-header-disc"><img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(rightLinks.length,1)},minmax(0,1fr))` }}>
-            {rightLinks.map(([label, to]) => <Link key={`detail-right-${label}-${to}`} to={to} className="flex items-center justify-center px-1 text-center text-[10px] font-black leading-tight text-white transition hover:bg-white/12 2xl:text-[11px]">{label}</Link>)}
+            {rightItems.map((item) => <DesktopHeaderNode key={`detail-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
           </nav>
           <div className="absolute right-3 flex items-center gap-2 xl:hidden">
             <Link to="/ilanlarimiz?all=1" className="hidden rounded-md border border-white/40 px-3 py-2 text-xs font-black sm:inline-flex">İlanlarımız</Link>
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
         </div>
-        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden">{[...leftLinks, ...rightLinks].map(([label, to]) => <Link key={`detail-mobile-${label}-${to}`} onClick={close} to={to} className="rounded-md bg-white/10 px-3 py-2.5">{label}</Link>)}</nav>}
+        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden"><MobileHeaderNodes items={managedMenu} close={close}/></nav>}
       </header>
     );
   }
@@ -2096,7 +2103,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
             <div className="mt-3 rounded-2xl border border-cyan-300/45 bg-[#071a3b]/95 p-3 shadow-xl backdrop-blur-md">
               <div className="mb-2 flex items-center justify-between gap-3"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><span className="h-2 w-2 rounded-full bg-cyan-300"/></div>
-              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">YZ ile Ara</button></div>
+              <div className="flex flex-col gap-2 sm:flex-row"><input value={aiQuery} onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-xl border border-cyan-100/30 bg-white px-4 py-3 text-sm font-semibold text-slate-800 outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-black text-slate-950 transition hover:bg-cyan-300">AI ile Ara</button></div>
             </div>
 
           </div>
@@ -3792,7 +3799,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-slate-900 text-white p-8 rounded-2xl border-2 border-slate-800 shadow-xl space-y-6">
               <div className="border-b border-slate-800 pb-4">
-                <h3 className="text-xl font-black text-white">Genel Merkez İletişim</h3>
+                <h3 className="text-xl font-black text-white">Merkez Ofis</h3>
                 <p className="text-xs text-red-600 font-bold tracking-wider mt-0.5">REALTY CENTER®</p>
               </div>
 
