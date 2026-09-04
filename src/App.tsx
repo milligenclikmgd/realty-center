@@ -1838,8 +1838,7 @@ function BuyerRequestModule() {
           <header className="buyer-request-banner">
             <div className="buyer-request-banner-photo" aria-hidden="true" />
             <div className="buyer-request-banner-copy">
-              {open && <span className="text-[10px] font-black tracking-[.2em] text-red-700">ALICI TALEBİ</span>}
-              <h2 className={`${open ? 'mt-2' : ''} buyer-request-slogan`}> <span>Siz Aradığınızı Söyleyin,</span><em>Biz Bulalım</em></h2>
+              <h2 className="buyer-request-slogan"><span>Siz Aradığınızı Söyleyin,</span><em>Biz Bulalım</em></h2>
             </div>
             <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="buyer-request-toggle buyer-request-banner-button">
               {open ? 'Formu Kapat' : 'Talep Oluştur'}
