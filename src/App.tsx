@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { Circle, CircleMarker, MapContainer, Popup, Rectangle, TileLayer, Tooltip, useMapEvents } from 'react-leaflet';
+import { Circle, CircleMarker, MapContainer, Marker, Popup, Rectangle, TileLayer, Tooltip, useMapEvents } from 'react-leaflet';
 import { 
   BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
 } from 'react-router-dom';
@@ -744,6 +744,19 @@ function WorldNetworkModal({ onClose }: { onClose: () => void }) {
   return <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={onClose}><section className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex items-center justify-between bg-[#CD011E] px-6 py-5 text-white"><div><p className="text-[10px] font-black tracking-[.2em] text-white/70">KÜRESEL AĞ</p><h2 className="mt-1 text-2xl font-black">DÜNYADA REALTY CENTER®</h2></div><button onClick={onClose} className="rounded-full bg-white/15 px-4 py-2 text-xs font-black">Kapat</button></header><div className="h-[460px]"><MapContainer center={[25,20]} zoom={2} scrollWheelZoom className="h-full w-full"><TileLayer attribution="&copy; CARTO" url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" /><WorldZoomListener />{offices.map((office, index) => <CircleMarker key={office.name} center={office.pos} radius={9} pathOptions={{color:'#fff',fillColor:'#CD011E',fillOpacity:1,weight:3}}>{zoom >= 4 ? <Tooltip permanent direction="top" opacity={1}>{office.name}</Tooltip> : offices.findIndex((item) => item.country === office.country) === index ? <Tooltip permanent direction="top" opacity={1}>{office.country}</Tooltip> : null}</CircleMarker>)}</MapContainer></div><p className="px-6 py-4 text-xs text-slate-500">Önce ülkeleri görün; haritayı yakınlaştırdıkça ofis şehirleri görünür.</p></section></div>;
 }
 
+function WorldRealtyCenterModule() {
+  const offices = [
+    { country:'Türkiye', city:'İstanbul', pos:[41.01,28.98] as [number,number] }, { country:'Türkiye', city:'Ankara', pos:[39.93,32.86] as [number,number] },
+    { country:'İngiltere', city:'Londra', pos:[51.5,-.12] as [number,number] }, { country:'Almanya', city:'Berlin', pos:[52.52,13.4] as [number,number] }, { country:'Fransa', city:'Paris', pos:[48.86,2.35] as [number,number] }, { country:'İspanya', city:'Madrid', pos:[40.42,-3.7] as [number,number] }, { country:'İtalya', city:'Roma', pos:[41.9,12.5] as [number,number] }, { country:'Hollanda', city:'Amsterdam', pos:[52.37,4.9] as [number,number] }, { country:'İsveç', city:'Stockholm', pos:[59.33,18.07] as [number,number] }, { country:'Polonya', city:'Varşova', pos:[52.23,21.01] as [number,number] },
+    { country:'ABD', city:'New York', pos:[40.71,-74] as [number,number] }, { country:'Kanada', city:'Toronto', pos:[43.65,-79.38] as [number,number] }, { country:'Meksika', city:'Mexico City', pos:[19.43,-99.13] as [number,number] }, { country:'Brezilya', city:'São Paulo', pos:[-23.55,-46.63] as [number,number] }, { country:'Arjantin', city:'Buenos Aires', pos:[-34.6,-58.38] as [number,number] },
+    { country:'Birleşik Arap Emirlikleri', city:'Dubai', pos:[25.2,55.27] as [number,number] }, { country:'Hindistan', city:'Mumbai', pos:[19.08,72.88] as [number,number] }, { country:'Singapur', city:'Singapur', pos:[1.35,103.82] as [number,number] }, { country:'Japonya', city:'Tokyo', pos:[35.68,139.69] as [number,number] }, { country:'Avustralya', city:'Sidney', pos:[-33.87,151.21] as [number,number] }, { country:'Yeni Zelanda', city:'Auckland', pos:[-36.85,174.76] as [number,number] }
+  ];
+  const [zoom, setZoom] = useState(2);
+  const WorldZoomListener = () => { useMapEvents({ zoomend: (event) => setZoom(event.target.getZoom()) }); return null; };
+  const markerIcon = L.divIcon({ className:'realty-world-marker-shell', html:'<span class="realty-world-marker">⌂</span>', iconSize:[30,30], iconAnchor:[15,15] });
+  return <section className="border-b border-slate-200 bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"><div><p className="text-xs font-black tracking-[.24em] text-red-700">KÜRESEL AĞ</p><h2 className="mt-2 text-3xl font-black tracking-tight text-[#071d3b] sm:text-4xl">DÜNYADA <span className="text-red-700">REALTY CENTER®</span></h2><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Uluslararası ağımızı keşfedin. Haritayı yakınlaştırdıkça ülkelerin ardından şehir ve ofis noktaları görünür.</p></div><span className="w-fit rounded-full border border-red-100 bg-white px-4 py-2 text-xs font-black text-red-700 shadow-sm">20+ ÜLKEDE AĞ</span></div><div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-xl sm:p-3"><div className="relative h-[420px] overflow-hidden rounded-2xl bg-slate-100 sm:h-[540px]"><MapContainer center={[22,8]} zoom={2} minZoom={2} maxZoom={8} scrollWheelZoom className="h-full w-full"><TileLayer attribution="&copy; CARTO" url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"/><WorldZoomListener />{offices.map((office,index) => <Marker key={`${office.country}-${office.city}`} position={office.pos} icon={markerIcon}><Tooltip permanent direction="top" offset={[0,-14]} opacity={1}>{zoom >= 4 ? office.city : offices.findIndex((item) => item.country === office.country) === index ? office.country : ''}</Tooltip><Popup><strong>{office.city}</strong><br/>{office.country}<br/><span className="text-xs text-red-700">REALTY CENTER® ağı</span></Popup></Marker>)}</MapContainer><div className="pointer-events-none absolute bottom-4 left-4 z-[500] rounded-xl bg-white/95 px-3 py-2 text-[11px] font-bold text-slate-600 shadow-lg backdrop-blur">{zoom < 4 ? 'Ülke görünümü' : 'Şehir ve ofis görünümü'}</div></div></div></div></section>;
+}
+
 function RealtyNetworkActivityPanel() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [noticeOffset, setNoticeOffset] = useState(0);
@@ -1157,6 +1170,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
               <input required name="İlçe" placeholder="İlçe" className={fieldClass} />
               <input required name="Talep Ettiği İlçe" placeholder="Çalışmak istediğiniz ilçe" className={fieldClass} />
               <select required name="Kendine Ait Taşıtı Var mı" value={hasVehicle} onChange={(event) => setHasVehicle(event.target.value)} className={fieldClass}><option value="" disabled>Kendinize ait taşıtınız var mı?</option><option value="Evet">Evet</option><option value="Hayır">Hayır</option></select>
+              <details className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800"><summary className="cursor-pointer font-black marker:text-[#CD011E]">Hangi yetki belgelerine sahipsiniz?</summary><div className="mt-3 grid gap-2"><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Taşınmaz Ticareti Yetki Belgesi" className="accent-[#CD011E]"/>Taşınmaz Ticareti Yetki Belgesi</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Mesleki Yeterlilik Belgesi Seviye 5" className="accent-[#CD011E]"/>Mesleki Yeterlilik Belgesi (Seviye 5)</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Sorumlu Emlak Danışmanı Belgesi" className="accent-[#CD011E]"/>Sorumlu Emlak Danışmanı Belgesi</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Gayrimenkul Danışmanlığı Sertifikası" className="accent-[#CD011E]"/>Gayrimenkul Danışmanlığı Sertifikası</label></div></details>
               {hasVehicle === 'Evet' && <input required name="Taşıt Kaç Yıllık" type="number" min="0" max="50" placeholder="Taşıtınız kaç yıllık?" className={fieldClass} />}
               <select required name="Gayrimenkul Deneyimi" defaultValue="" className={fieldClass}><option value="" disabled>Gayrimenkul firmalarında deneyiminiz</option><option>Deneyimim yok</option><option>1 yıldan az</option><option>1–3 yıl</option><option>4–6 yıl</option><option>7–10 yıl</option><option>10 yıldan fazla</option></select>
               <textarea required name="Diğer Açıklamalar" placeholder="Diğer açıklamalarınızı buraya yazınız" className={`${fieldClass} min-h-32 sm:col-span-2`} />
@@ -2162,7 +2176,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
       </section>
 
-      {false && <TurkeyListingMap />}
+      <WorldRealtyCenterModule />
 
       <section className="border-b border-slate-200 bg-white py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
