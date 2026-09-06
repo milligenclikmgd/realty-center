@@ -1813,14 +1813,14 @@ function BuyerRequestModule() {
               <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} />
             </button>
           </header>
-          {open && (
+          {open && (<><div className="bg-white px-5 pt-6"><h2 className="mx-auto max-w-2xl text-center text-3xl font-black leading-tight text-[#071d3b] sm:text-4xl">SİZ ARADIĞINIZI SÖYLEYİN,<br/><span className="text-[#CD011E]">BİZ BULALIM</span></h2></div>
             <form onSubmit={submitRequest} className="buyer-request-reveal bg-white p-5 sm:p-7"><div className="mx-auto max-w-2xl space-y-3"><select required aria-label="İlan türü" value={form.type} onChange={e=>update('type',e.target.value)} className={fieldClass}><option>Satılık</option><option>Kiralık</option><option>Devren Satılık</option></select><select required aria-label="Mülk türü" value={form.property} onChange={e=>update('property',e.target.value)} className={fieldClass}><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option><option>Diğer</option></select><input required value={form.city} onChange={e=>update('city',e.target.value)} placeholder="İl" className={fieldClass}/><input required value={form.district} onChange={e=>update('district',e.target.value)} placeholder="İlçe" className={fieldClass}/><input required value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="Bütçe" className={fieldClass}/><textarea required rows={4} value={form.description} onChange={e=>update('description',e.target.value)} placeholder="Mülk özelliklerini buraya yazınız" className={`${fieldClass} resize-y leading-6`}></textarea><input required value={form.name} onChange={e=>update('name',e.target.value)} placeholder="Ad Soyad" autoComplete="name" className={fieldClass}/><input required type="tel" value={form.phone} onChange={e=>update('phone',e.target.value)} placeholder="Telefon" autoComplete="tel" className={fieldClass}/>
               <div className="mt-5 space-y-3 rounded-2xl border border-slate-200 bg-white p-4">
                 <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK Aydınlatma Metni</Link>’ni okudum; bilgilerimin talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.</span></label>
                 <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Koşulları</Link>’nı okudum ve kabul ediyorum.</span></label>
               </div>
               <button type="submit" className="buyer-request-submit mt-5 w-full rounded-xl bg-gradient-to-r from-[#b9001b] to-[#CD011E] px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-900/15">TALEBİMİ İLET</button></div>
-            </form>
+            </form></>
           )}
         </div>
       </div>
