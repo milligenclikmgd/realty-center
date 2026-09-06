@@ -926,7 +926,7 @@ html { font-size: 106.25%; }
 /* Kaydırma sonrası header ana düzeni korur; yalnızca daha kompakt ve ince görünür. */
 .realty-compact-layout { min-height: 54px; }
 .realty-compact-header { border-bottom-color: #123499; box-shadow: 0 6px 18px rgba(18,52,153,.2); }
-.realty-compact-emblem { height: 54px; transform: translateY(-1px); }
+.realty-compact-emblem { height: 54px; transform: translateY(28px); }
 .realty-compact-emblem .realty-header-disc { width: 108px; height: 108px; border-width: 2px; box-shadow: 0 0 0 2px #fff, 0 0 0 6px #123499, 0 8px 18px rgba(0,0,0,.18), inset 0 0 9px rgba(18,52,153,.07); }
 .realty-compact-emblem .realty-header-main-logo { width: 78px; height: 80px; }
 @media (max-width: 1279px) {
@@ -1176,6 +1176,7 @@ html { font-size: 106.25%; }
     padding-right: 8px !important;
     padding-left: 8px !important;
   }
+  .realty-compact-emblem { transform: translateY(20px); }
   .realty-compact-emblem .realty-header-disc { width: 90px; height: 90px; }
   .realty-compact-emblem .realty-header-main-logo { width: 66px; height: 68px; }
 }
