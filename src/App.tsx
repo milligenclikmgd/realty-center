@@ -1129,7 +1129,7 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
         {franchise && <Link to="/franchise-firsatlari" className="mb-4 inline-flex max-w-max whitespace-nowrap rounded-full border border-[#f2c66d]/55 bg-[#071d3b]/95 px-4 py-2.5 text-xs font-black tracking-wide text-[#f4cf7a] shadow-[0_10px_28px_rgba(7,29,59,.28)] backdrop-blur transition hover:-translate-y-0.5 hover:border-[#f4cf7a] hover:text-[#ffe7a8] lg:absolute lg:left-10 lg:top-[18%] lg:mb-0 xl:left-16">Franchise Fırsatlarını Keşfet →</Link>}
         <div className={`relative w-full rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'max-w-xl rc-navy-frame bg-red-700/95 text-white' : 'max-w-3xl border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
-            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className={`h-12 w-full object-contain drop-shadow-sm ${franchise ? 'brightness-0 invert' : ''}`} />
+            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="h-12 w-full object-contain drop-shadow-sm" />
           </div>
           <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>← Ana Sayfaya Dön</Link>
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
