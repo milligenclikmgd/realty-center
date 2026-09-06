@@ -1741,11 +1741,10 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
   };
 
   return <div className="relative mx-auto max-w-[1780px] px-5 sm:px-8 lg:px-12">
-    <div className="mb-4 flex items-center justify-between gap-3">
-      <p className="text-xs font-bold text-slate-500"><span className="font-black text-red-700">{listings.length}</span> ilan · Kartların üzerine gelince akış durur.</p>
+    <div className="mb-4 flex items-center justify-end gap-3">
       <div className="flex items-center gap-2">
-        <button type="button" onClick={() => setStreamDirection('left')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button>
-        <button type="button" onClick={() => setStreamDirection('right')} className={`flex h-9 w-9 items-center justify-center rounded-full border shadow-sm ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button>
+        <button type="button" onClick={() => setStreamDirection('left')} className={`flex h-10 w-10 items-center justify-center rounded-full border shadow-sm ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sola yönlendir"><ChevronLeft className="h-5 w-5" /></button>
+        <button type="button" onClick={() => setStreamDirection('right')} className={`flex h-10 w-10 items-center justify-center rounded-full border shadow-sm ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="Akışı sağa yönlendir"><ChevronRight className="h-5 w-5" /></button>
       </div>
     </div>
     <div
@@ -1758,7 +1757,19 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
       onPointerCancel={handlePointerUp}
     >
       <div ref={trackRef} className="live-listing-track card-focus-group">
-        {[...listings, ...listings].map((item, index) => <div key={`${item.id}-${index}`} className="card-focus-item w-72 shrink-0"><ListingCard item={item} /></div>)}
+        {[...listings, ...listings].map((item, index) => <article key={`${item.id}-${index}`} className="card-focus-item w-[285px] shrink-0 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0_12px_26px_rgba(7,29,59,.09)]">
+          <div className="relative h-44 overflow-hidden bg-slate-100">
+            <img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 hover:scale-105" />
+            <span className="absolute left-3 top-3 rounded-lg bg-red-700 px-3 py-1.5 text-[10px] font-black tracking-wide text-white">{item.type.toUpperCase()}</span>
+          </div>
+          <div className="p-4">
+            <p className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-500"><MapPin className="h-3.5 w-3.5 text-red-700" />{item.district}, {item.city}</p>
+            <h3 className="mt-2 line-clamp-2 min-h-[2.7rem] text-base font-black leading-snug text-[#071d3b]">{item.title}</h3>
+            <p className="mt-3 text-xl font-black text-red-700">{formatListingPrice(item.price, item.currency)}</p>
+            <div className="mt-3 flex items-center gap-2 text-[11px] font-bold text-slate-600"><span className="rounded-lg bg-slate-50 px-2.5 py-1.5">{item.rooms}</span><span className="inline-flex items-center gap-1 rounded-lg bg-slate-50 px-2.5 py-1.5"><Maximize2 className="h-3.5 w-3.5" />{item.area} m²</span></div>
+            <Link to={`/ilan/${item.id}`} className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-red-700 px-3 py-2.5 text-xs font-black text-red-700 transition hover:bg-red-700 hover:text-white">İlan Detayını Gör <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+        </article>)}
       </div>
     </div>
   </div>;
@@ -2103,10 +2114,10 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <BuyerRequestModule />
       <BarterBankModuleV3 />
-      <section className="py-16 bg-white text-slate-900 overflow-hidden border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-8 flex items-center justify-between">
-          <div><span className="inline-flex items-center space-x-1.5 text-xs font-black text-white tracking-widest bg-red-700 px-3 py-1 rounded-full border border-red-700 mb-2"><Flame className="w-3.5 h-3.5 " /><span>Canlı İlan Akışı</span></span><h2 className="text-2xl sm:text-3xl font-black text-slate-900">EN YENİ <span className="text-red-700">GAYRİMENKUL İLANLARI</span></h2><p className="text-slate-500 text-xs font-medium mt-1">Yeni portföyler güncel olarak akışta yer alır.</p></div>
-          <Link to="/ilan-kategorileri" className="hidden sm:flex items-center space-x-2 text-xs font-black text-white bg-red-700 hover:bg-red-800 px-5 py-2.5 rounded-xl transition shadow-lg shadow-red-700/30"><span>Tümünü Gör</span><ArrowRight className="w-4 h-4" /></Link>
+      <section className="overflow-hidden border-b border-slate-200 bg-white py-12 text-slate-900">
+        <div className="mx-auto mb-3 flex max-w-[1780px] items-end justify-between gap-5 px-5 sm:px-8 lg:px-12">
+          <div><p className="flex items-center gap-3 text-[10px] font-black tracking-[.24em] text-red-700"><span className="h-0.5 w-8 bg-red-700"/>YENİ PORTFÖYLER</p><h2 className="mt-2 text-3xl font-black tracking-[-.045em] text-[#071d3b] sm:text-4xl">Canlı <span className="text-red-700">İlan Akışı</span></h2></div>
+          <Link to="/ilan-kategorileri" className="hidden items-center gap-2 border-b border-[#071d3b] pb-1 text-xs font-black text-[#071d3b] transition hover:border-red-700 hover:text-red-700 sm:inline-flex">Tüm İlanları Gör <ArrowRight className="h-4 w-4" /></Link>
         </div>
         <LiveListingStream listings={sortedListings} />
       </section>
