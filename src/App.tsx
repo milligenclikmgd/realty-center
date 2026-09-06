@@ -1619,42 +1619,40 @@ function FeaturedListingsShowcase() {
   const sideListings = featuredListings.filter((item) => item.id !== activeListing.id).slice(0, 3);
 
   return (
-    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-10 sm:py-12">
+    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-6 sm:py-8">
       <span className="featured-opportunities-arc featured-opportunities-arc-left" aria-hidden="true" />
       <span className="featured-opportunities-building featured-opportunities-building-right" aria-hidden="true" />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-        <div className="relative mb-7 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+        <div className="relative mb-4 flex flex-col justify-between gap-3 lg:flex-row lg:items-end">
           <div>
-            <p className="flex items-center gap-3 text-[11px] font-black tracking-[.2em] text-slate-500"><span className="h-0.5 w-9 bg-red-700"/>REALTY CENTER</p>
-            <h2 className="mt-3 text-4xl font-black tracking-[-.055em] text-[#071d3b] sm:text-5xl">Fırsat <span className="text-red-700">Gayrimenkuller</span></h2>
-            <p className="mt-2 text-base font-medium text-slate-500">Kaçırılmayacak fırsatlar, sizin için seçildi.</p>
+            <h2 className="text-3xl font-black tracking-[-.055em] text-[#071d3b] sm:text-4xl">Fırsat <span className="text-red-700">Gayrimenkuller</span></h2>
           </div>
           <div className="flex items-center gap-3">
-            <Link to="/ilanlarimiz?all=1" className="inline-flex items-center gap-3 rounded-full border border-red-700 bg-white px-5 py-3 text-xs font-black text-red-700 transition hover:bg-red-700 hover:text-white">Tüm Fırsatları Gör <ArrowRight className="h-4 w-4"/></Link>
-            <button type="button" onClick={() => move(-1)} className="grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white text-[#071d3b] shadow-sm transition hover:border-red-700 hover:text-red-700" aria-label="Önceki fırsat"><ChevronLeft className="h-5 w-5"/></button>
-            <button type="button" onClick={() => move(1)} className="grid h-11 w-11 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800" aria-label="Sonraki fırsat"><ChevronRight className="h-5 w-5"/></button>
+            <Link to="/ilanlarimiz?all=1" className="inline-flex items-center gap-2 rounded-full border border-red-700 bg-white px-4 py-2.5 text-[11px] font-black text-red-700 transition hover:bg-red-700 hover:text-white">Tüm Fırsatları Gör <ArrowRight className="h-3.5 w-3.5"/></Link>
+            <button type="button" onClick={() => move(-1)} className="grid h-9 w-9 place-items-center rounded-full border border-slate-200 bg-white text-[#071d3b] shadow-sm transition hover:border-red-700 hover:text-red-700" aria-label="Önceki fırsat"><ChevronLeft className="h-4 w-4"/></button>
+            <button type="button" onClick={() => move(1)} className="grid h-9 w-9 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800" aria-label="Sonraki fırsat"><ChevronRight className="h-4 w-4"/></button>
           </div>
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-[1.38fr_.98fr]">
-          <Link to={`/ilan/${activeListing.id}`} className="group relative min-h-[430px] overflow-hidden rounded-[1.55rem] bg-[#071d3b] shadow-[0_18px_35px_rgba(7,29,59,.15)] sm:min-h-[520px]">
+        <div className="grid gap-3 lg:grid-cols-[1.38fr_.98fr]">
+          <Link to={`/ilan/${activeListing.id}`} className="group relative min-h-[330px] overflow-hidden rounded-[1.35rem] bg-[#071d3b] shadow-[0_14px_28px_rgba(7,29,59,.13)] sm:min-h-[410px]">
             <img src={activeListing.image} alt={activeListing.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/>
             <div className="absolute inset-0 bg-gradient-to-r from-white via-white/74 to-transparent"/>
             <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#071d3b]/72 to-transparent"/>
-            <div className="relative z-10 flex h-full max-w-[60%] flex-col justify-center p-7 sm:p-10">
-              <p className="flex items-center gap-3 text-[10px] font-black tracking-[.26em] text-[#071d3b]"><span className="h-8 w-0.5 bg-red-700"/>HAFTANIN<br/>FIRSATI</p>
-              <h3 className="mt-8 font-serif text-4xl leading-[1.02] text-[#071d3b] sm:text-5xl">{activeListing.title}</h3>
-              <p className="mt-3 text-sm font-medium text-slate-700 sm:text-base">Seçkin konumu ve ayrıcalıklı yaşam alanlarıyla öne çıkıyor.</p>
-              <div className="mt-6 flex flex-wrap items-center gap-4 text-xs font-semibold text-[#071d3b]"><span className="inline-flex items-center gap-1.5"><MapPin className="h-4 w-4"/>{activeListing.district}, {activeListing.city}</span><span className="inline-flex items-center gap-1.5"><Home className="h-4 w-4"/>{activeListing.rooms}</span><span className="inline-flex items-center gap-1.5"><Maximize2 className="h-4 w-4"/>{activeListing.area} m²</span></div>
-              <span className="mt-8 inline-flex w-fit items-center gap-3 rounded-full bg-red-700 px-6 py-3 text-sm font-black text-white shadow-lg shadow-red-700/25">Detayları İncele <ArrowRight className="h-4 w-4"/></span>
+            <div className="relative z-10 flex h-full max-w-[60%] flex-col justify-center p-6 sm:p-7">
+              <p className="flex items-center gap-2 text-[8px] font-black tracking-[.24em] text-[#071d3b]"><span className="h-5 w-0.5 bg-red-700"/>HAFTANIN FIRSATI</p>
+              <h3 className="mt-4 font-serif text-3xl leading-[1.03] text-[#071d3b] sm:text-4xl">{activeListing.title}</h3>
+              <p className="mt-2 text-xs font-medium text-slate-700 sm:text-sm">Seçkin konumu ve ayrıcalıklı yaşam alanlarıyla öne çıkıyor.</p>
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-[11px] font-semibold text-[#071d3b]"><span className="inline-flex items-center gap-1"><MapPin className="h-3.5 w-3.5"/>{activeListing.district}, {activeListing.city}</span><span className="inline-flex items-center gap-1"><Home className="h-3.5 w-3.5"/>{activeListing.rooms}</span><span className="inline-flex items-center gap-1"><Maximize2 className="h-3.5 w-3.5"/>{activeListing.area} m²</span></div>
+              <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-red-700 px-4 py-2 text-xs font-black text-white shadow-lg shadow-red-700/25">Detayları İncele <ArrowRight className="h-3.5 w-3.5"/></span>
             </div>
-            <div className="absolute bottom-5 left-7 flex gap-2"><span className="h-1 w-8 rounded-full bg-red-700"/><span className="h-1 w-6 rounded-full bg-white/70"/><span className="h-1 w-6 rounded-full bg-white/70"/></div>
-            <div className="absolute bottom-5 right-7 text-right text-white"><p className="text-[10px] font-black tracking-widest">{activeListing.type.toUpperCase()} · {activeListing.propertyType.toUpperCase()}</p><p className="mt-1 text-2xl font-black">{formatListingPrice(activeListing.price, activeListing.currency)}</p></div>
+            <div className="absolute bottom-4 left-6 flex gap-2"><span className="h-1 w-7 rounded-full bg-red-700"/><span className="h-1 w-5 rounded-full bg-white/70"/><span className="h-1 w-5 rounded-full bg-white/70"/></div>
+            <div className="absolute bottom-4 right-6 text-right text-white"><p className="text-[8px] font-black tracking-widest">{activeListing.type.toUpperCase()} · {activeListing.propertyType.toUpperCase()}</p><p className="mt-1 text-xl font-black">{formatListingPrice(activeListing.price, activeListing.currency)}</p></div>
           </Link>
           <div className="grid gap-3 sm:grid-rows-3">
-            {sideListings.map((item) => <Link key={item.id} to={`/ilan/${item.id}`} className="group grid min-h-[135px] grid-cols-[50%_1fr] overflow-hidden rounded-2xl border border-white bg-white shadow-[0_10px_24px_rgba(7,29,59,.08)] transition hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="relative overflow-hidden"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><span className="absolute left-3 top-3 rounded-full bg-[#071d3b] px-3 py-1 text-[9px] font-black tracking-wider text-white">{item.type.toUpperCase()} · {item.propertyType.toUpperCase()}</span></div>
-              <div className="relative flex min-w-0 flex-col justify-center p-4"><p className="flex items-center gap-1 text-[10px] font-semibold text-slate-400"><MapPin className="h-3.5 w-3.5"/>{item.city}, {item.district}</p><h3 className="mt-2 line-clamp-2 text-sm font-black leading-tight text-[#071d3b] sm:text-base">{item.title}</h3><div className="mt-3 flex items-center justify-between gap-2"><span className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-500"><Maximize2 className="h-3.5 w-3.5"/>{item.area} m²</span><span className="text-sm font-black text-red-700">{formatListingPrice(item.price, item.currency)}</span></div><span className="absolute bottom-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-slate-200 text-[#071d3b] transition group-hover:border-red-700 group-hover:bg-red-700 group-hover:text-white"><ArrowRight className="h-4 w-4"/></span></div>
+            {sideListings.map((item) => <Link key={item.id} to={`/ilan/${item.id}`} className="group grid min-h-[104px] grid-cols-[50%_1fr] overflow-hidden rounded-xl border border-white bg-white shadow-[0_8px_18px_rgba(7,29,59,.07)] transition hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="relative overflow-hidden"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><span className="absolute left-2 top-2 rounded-full bg-[#071d3b] px-2.5 py-1 text-[8px] font-black tracking-wider text-white">{item.type.toUpperCase()} · {item.propertyType.toUpperCase()}</span></div>
+              <div className="relative flex min-w-0 flex-col justify-center p-3"><p className="flex items-center gap-1 text-[9px] font-semibold text-slate-400"><MapPin className="h-3 w-3"/>{item.city}, {item.district}</p><h3 className="mt-1.5 line-clamp-2 text-xs font-black leading-tight text-[#071d3b] sm:text-sm">{item.title}</h3><div className="mt-2 flex items-center justify-between gap-2"><span className="inline-flex items-center gap-1 text-[10px] font-bold text-slate-500"><Maximize2 className="h-3 w-3"/>{item.area} m²</span><span className="text-xs font-black text-red-700">{formatListingPrice(item.price, item.currency)}</span></div><span className="absolute bottom-3 right-3 grid h-7 w-7 place-items-center rounded-full border border-slate-200 text-[#071d3b] transition group-hover:border-red-700 group-hover:bg-red-700 group-hover:text-white"><ArrowRight className="h-3.5 w-3.5"/></span></div>
             </Link>)}
           </div>
         </div>
