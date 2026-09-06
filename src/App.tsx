@@ -1,5 +1,3 @@
-[main ba53b2a] Refine Realty Center stars card design
- 1 file changed, 1 insertion(+), 1 deletion(-)
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
 import 'leaflet/dist/leaflet.css';
