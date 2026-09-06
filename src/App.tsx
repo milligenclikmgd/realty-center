@@ -1956,6 +1956,19 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [isCityMenuOpen, setIsCityMenuOpen] = useState(false);
   const [isDistrictMenuOpen, setIsDistrictMenuOpen] = useState(false);
   const [isPropertyMenuOpen, setIsPropertyMenuOpen] = useState(false);
+  const homeSearchRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const closeMenus = (event: PointerEvent) => {
+      if (!homeSearchRef.current?.contains(event.target as Node)) {
+        setIsTransactionMenuOpen(false);
+        setIsCityMenuOpen(false);
+        setIsDistrictMenuOpen(false);
+        setIsPropertyMenuOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', closeMenus);
+    return () => document.removeEventListener('pointerdown', closeMenus);
+  }, []);
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
@@ -1976,7 +1989,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
+          <div ref={homeSearchRef} className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActiveTab('search')}
@@ -2025,12 +2038,12 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
                   <Building2 className="h-4 w-4 shrink-0 text-[#071d3b]"/>
                   <button type="button" disabled={!selectedCity} onClick={() => setIsDistrictMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className={`flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold outline-none ${selectedCity ? 'text-slate-700' : 'cursor-not-allowed text-slate-400'}`} aria-haspopup="listbox" aria-expanded={isDistrictMenuOpen}><span className="truncate">{searchDistrict || (selectedCity ? 'İlçe Seçiniz' : 'Önce İl Seçin')}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isDistrictMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isDistrictMenuOpen && selectedCity && <div role="listbox" className="absolute left-0 top-[calc(100%+.3rem)] z-50 max-h-52 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İLÇE SEÇİNİZ</p>{TURKEY_CITIES[selectedCity]?.map((district) => <button key={district} type="button" role="option" aria-selected={searchDistrict === district} onClick={() => { setSearchDistrict(district); setIsDistrictMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchDistrict === district ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{district}</span>{searchDistrict === district && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  {isDistrictMenuOpen && selectedCity && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] left-0 z-50 max-h-52 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İLÇE SEÇİNİZ</p>{TURKEY_CITIES[selectedCity]?.map((district) => <button key={district} type="button" role="option" aria-selected={searchDistrict === district} onClick={() => { setSearchDistrict(district); setIsDistrictMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchDistrict === district ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{district}</span>{searchDistrict === district && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
                 </div>
                 <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
                   <Home className="h-4 w-4 shrink-0 text-[#071d3b]"/>
                   <button type="button" onClick={() => setIsPropertyMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsDistrictMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isPropertyMenuOpen}><span className="truncate">{searchPropertyType || 'Gayrimenkul Türü'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isPropertyMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isPropertyMenuOpen && <div role="listbox" className="absolute right-0 top-[calc(100%+.3rem)] z-50 max-h-60 w-52 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">GAYRİMENKUL TÜRÜ</p>{ALL_LISTING_PROPERTY_TYPES.map((propertyType) => <button key={propertyType} type="button" role="option" aria-selected={searchPropertyType === propertyType} onClick={() => { setSearchPropertyType(propertyType); setIsPropertyMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchPropertyType === propertyType ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{propertyType}</span>{searchPropertyType === propertyType && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  {isPropertyMenuOpen && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] right-0 z-50 max-h-60 w-52 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">GAYRİMENKUL TÜRÜ</p>{ALL_LISTING_PROPERTY_TYPES.map((propertyType) => <button key={propertyType} type="button" role="option" aria-selected={searchPropertyType === propertyType} onClick={() => { setSearchPropertyType(propertyType); setIsPropertyMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchPropertyType === propertyType ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{propertyType}</span>{searchPropertyType === propertyType && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
                 </div>
                 <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-9 w-9 place-items-center self-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800" aria-label="İlanları ara"><Search className="h-4 w-4"/></button>
                 </div>
