@@ -1757,15 +1757,15 @@ function LiveListingStream({ listings }: { listings: ListingItem[] }) {
       onPointerCancel={handlePointerUp}
     >
       <div ref={trackRef} className="live-listing-track card-focus-group">
-        {[...listings, ...listings].map((item, index) => <article key={`${item.id}-${index}`} className="card-focus-item w-[143px] shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm">
-          <div className="relative h-22 overflow-hidden bg-slate-100">
+        {[...listings, ...listings].map((item, index) => <article key={`${item.id}-${index}`} className="card-focus-item w-[180px] shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm">
+          <div className="relative h-[110px] overflow-hidden bg-slate-100">
             <img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 hover:scale-105" />
             <span className="absolute left-1.5 top-1.5 rounded bg-red-700 px-1.5 py-0.5 text-[7px] font-black text-white">{item.type.toUpperCase()}</span>
           </div>
-          <div className="p-2">
-            <p className="flex items-center gap-1 text-[8px] font-semibold text-slate-500"><MapPin className="h-2.5 w-2.5 text-red-700" />{item.district}, {item.city}</p>
-            <h3 className="mt-1 line-clamp-2 min-h-[1.9rem] text-[10px] font-black leading-snug text-[#071d3b]">{item.title}</h3>
-            <p className="mt-1.5 text-xs font-black text-red-700">{formatListingPrice(item.price, item.currency)}</p>
+          <div className="p-2.5">
+            <p className="flex items-center gap-1 text-[9px] font-semibold text-slate-500"><MapPin className="h-3 w-3 text-red-700" />{item.district}, {item.city}</p>
+            <h3 className="mt-1.5 line-clamp-2 min-h-[2.1rem] text-[11px] font-black leading-snug text-[#071d3b]">{item.title}</h3>
+            <p className="mt-2 text-sm font-black text-red-700">{formatListingPrice(item.price, item.currency)}</p>
             <div className="mt-1.5 flex items-center gap-1 text-[8px] font-bold text-slate-600"><span className="rounded bg-slate-50 px-1 py-0.5">{item.rooms}</span><span className="inline-flex items-center gap-0.5 rounded bg-slate-50 px-1 py-0.5"><Maximize2 className="h-2.5 w-2.5" />{item.area}m²</span></div>
             <Link to={`/ilan/${item.id}`} className="mt-2 inline-flex w-full items-center justify-center gap-1 rounded-lg border border-red-700 px-1.5 py-1.5 text-[8px] font-black text-red-700 transition hover:bg-red-700 hover:text-white">Detayı Gör <ArrowRight className="h-3 w-3" /></Link>
           </div>
