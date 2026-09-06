@@ -1239,6 +1239,22 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   .realty-compact-emblem .realty-header-disc { width: 90px !important; height: 90px !important; }
   .realty-compact-emblem .realty-header-main-logo { width: 80px !important; height: 82px !important; }
 }
+
+.realty-world-marker-shell { background: transparent; border: 0; }
+.realty-world-marker {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 9999px;
+  background: #CD011E;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 950;
+  line-height: 1;
+  box-shadow: 0 5px 14px rgba(205,1,30,.42);
+}
 .buyer-request-toggle,
 .buyer-request-submit {
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
