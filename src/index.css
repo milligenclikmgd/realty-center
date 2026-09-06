@@ -211,7 +211,7 @@ html { font-size: 106.25%; }
 }
 
 .realty-header-bar::after {
-  content: 'REALTY CENTER®';
+  content: none;
   position: absolute;
   inset: 0;
   display: flex;
