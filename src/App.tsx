@@ -159,7 +159,7 @@ const DEFAULT_DOCUMENTS: CorporateDocument[] = [
   { id: 'belge-2', title: 'Kalite ve Hizmet Belgesi', description: 'Hizmet süreçlerimize ilişkin kurumsal belge.', fileUrl: '' }
 ];
 const DEFAULT_REFERENCES: CorporateLogoItem[] = [
-  { id: 'ref-1', name: 'Kurumsal Referans', logo: '/dglogo.svg', content: 'Referans kurum ve yürütülen çalışma bilgileri bu alana eklenecektir.' }
+  { id: 'ref-1', name: 'Kurumsal Referans', logo: '/rc_logo_og.svg', content: 'Referans kurum ve yürütülen çalışma bilgileri bu alana eklenecektir.' }
 ];
 const DEFAULT_PARTNERS: CorporateLogoItem[] = [
   { id: 'partner-1', name: 'Anlaşmalı Banka', logo: '/demo-placeholder.svg', content: 'Gayrimenkul finansmanı ve müşterilere sunulan avantajlı çözümlere ilişkin anlaşma ayrıntıları burada yer alacaktır.' },
@@ -872,7 +872,7 @@ function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
             </div>
           </div>
           <span aria-hidden="true" className="pointer-events-none absolute bottom-3 right-4 h-11 w-10 overflow-hidden opacity-[0.13]">
-            <img src="/rlogotr.png" alt="" className="h-11 w-auto max-w-none" />
+            <img src="/rc_logo_og.svg" alt="" className="h-11 w-auto max-w-none" />
           </span>
         </div>
       </div>
@@ -1124,12 +1124,12 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
     <div className="relative min-h-screen overflow-hidden bg-slate-950">
       <img src={backgroundImage} alt={franchise ? 'Franchise iş ortaklığı' : 'Realty Center® danışmanları'} className="absolute inset-0 h-full w-full object-cover" />
       <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
-      <img src="/dglogo.svg" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
+      <img src="/rc_logo_og.svg" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
       <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center' : 'justify-start'}`}>
         {franchise && <Link to="/franchise-firsatlari" className="mb-4 inline-flex max-w-max whitespace-nowrap rounded-full border border-[#f2c66d]/55 bg-[#071d3b]/95 px-4 py-2.5 text-xs font-black tracking-wide text-[#f4cf7a] shadow-[0_10px_28px_rgba(7,29,59,.28)] backdrop-blur transition hover:-translate-y-0.5 hover:border-[#f4cf7a] hover:text-[#ffe7a8] lg:absolute lg:left-10 lg:top-[18%] lg:mb-0 xl:left-16">Franchise Fırsatlarını Keşfet →</Link>}
         <div className={`relative w-full rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'max-w-xl rc-navy-frame bg-red-700/95 text-white' : 'max-w-3xl border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
           <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
-            <img src="/dglogo.svg" alt="Realty Center®" className="h-11 w-full object-contain drop-shadow-sm" />
+            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className={`h-12 w-full object-contain drop-shadow-sm ${franchise ? 'brightness-0 invert' : ''}`} />
           </div>
           <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>← Ana Sayfaya Dön</Link>
           <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAŞVURUSU' : 'DANIŞMAN BAŞVURUSU'}</p>
@@ -1321,7 +1321,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             {leftItems.map((item) => <DesktopHeaderNode key={`detail-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </nav>
           <Link to="/" onClick={close} className="realty-header-emblem realty-header-emblem-inner mx-auto my-1.5 flex h-[68px] w-[210px] shrink-0 items-center justify-center xl:mx-4" aria-label="Realty Center® ana sayfa">
-            <span className="realty-header-led" /><span className="realty-header-disc"><img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
+            <span className="realty-header-led" /><span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(rightLinks.length,1)},minmax(0,1fr))` }}>
             {rightItems.map((item) => <DesktopHeaderNode key={`detail-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
@@ -1344,7 +1344,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
           </div>
           <Link to="/" onClick={() => { close(); window.location.href = '/'; }} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
-            <span className="realty-header-disc"><img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
+            <span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <div className="grid min-w-0 grid-cols-7 items-stretch">
             {rightItems.map((item) => <DesktopHeaderNode key={`compact-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>) }
@@ -1381,7 +1381,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <Link to="/" onClick={() => { close(); window.location.href = '/'; }} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center® ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
-              <img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" />
+              <img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" />
             </span>
           </Link>
 
@@ -1392,7 +1392,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
         <div className="relative z-10 flex min-h-[76px] items-center justify-between px-4 xl:hidden">
           <Link to="/" onClick={close} className="realty-header-mobile-logo">
-            <img src="/rlogo2.png" alt="Realty Center® Türkiye" className="h-14 w-auto object-contain" />
+            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="h-16 w-auto object-contain brightness-0 invert" />
           </Link>
           <div className="flex items-center gap-2">
             <Link to="/panel" className="rounded-lg bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-lg">{t.panel}</Link>
@@ -1444,7 +1444,7 @@ function EducationManagedPage({ page, pageId }: { page: HeaderMenuItem; pageId: 
   return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16">
     <div className="mx-auto max-w-6xl px-6">
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-10">
-        <img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-14 w-36 object-contain sm:right-10 sm:top-8 sm:h-16 sm:w-44" />
+        <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-16 w-40 object-contain sm:right-10 sm:top-8 sm:h-20 sm:w-48" />
         <div className="max-w-3xl pr-32 sm:pr-48">
           <p className="text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER® EĞİTİM</p>
           <h1 className="mt-3 text-3xl font-black text-slate-900 sm:text-5xl">{page.label}</h1>
@@ -1506,7 +1506,7 @@ function ManagedHeaderContentPage() {
   const page = findHeaderItem(menus, id);
   if (!page) return <main className="min-h-[60vh] bg-slate-50 py-16"><div className="mx-auto max-w-4xl px-6 text-center"><h1 className="text-3xl font-black text-slate-900">İçerik bulunamadı</h1><Link to="/" className="mt-5 inline-flex font-black text-red-700">Ana sayfaya dön</Link></div></main>;
   if (['education','education-calendar','education-centers','education-types'].includes(id)) return <EducationManagedPage page={page} pageId={id} />;
-  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/dglogo.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/rc_logo_og.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
 }
 function CustomerFeedbackPage() {
   const [type, setType] = useState<CustomerFeedback['type']>('Memnuniyet');
@@ -1523,7 +1523,7 @@ function CustomerFeedbackPage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const fieldClass = 'w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-4 focus:ring-red-100';
-  return <div className="min-h-screen bg-slate-50 py-10 lg:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><div className="mb-8 text-center"><span className="inline-flex rounded-full bg-red-100 px-4 py-1.5 text-[10px] font-black tracking-[.18em] text-red-700">MÜŞTERİ DENEYİMİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Görüşünüz bizim için değerli</h1><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">Memnuniyetinizi paylaşabilir, danışmanlarımızı ve ofislerimizi değerlendirebilir; şikâyet, dilek ve önerilerinizi doğrudan genel merkezimize iletebilirsiniz.</p></div>{submitted && <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-center"><CheckCircle2 className="mx-auto h-8 w-8 text-emerald-600"/><h2 className="mt-2 font-black text-emerald-900">Geri bildiriminiz alındı</h2><p className="mt-1 text-xs text-emerald-700">Kaydınız ilgili birime iletildi. Gerekli görülürse verdiğiniz iletişim bilgileri üzerinden sizinle irtibat kurulacaktır.</p></div>}<div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.8fr_1.2fr]"><aside className="bg-gradient-to-br from-[#b9001c] to-[#700012] p-7 text-white lg:p-10"><img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="h-20 w-auto object-contain brightness-0 invert drop-shadow-sm"/><h2 className="mt-8 text-2xl font-black">Size kulak veriyoruz</h2><p className="mt-3 text-sm leading-6 text-red-50/85">Her bildirim kayıt altına alınır, ilgili ofis veya birime yönlendirilir ve hizmet kalitemizin geliştirilmesinde değerlendirilir.</p><div className="mt-8 space-y-3 text-xs font-bold">{['Gizlilikle değerlendirme','Genel merkez takibi','Danışman ve ofis bazlı ölçüm','Çözüm odaklı geri dönüş'].map((item) => <div key={item} className="flex items-center gap-2 rounded-xl bg-white/10 p-3"><CheckCircle2 className="h-4 w-4"/>{item}</div>)}</div></aside><form onSubmit={submit} className="p-6 sm:p-8 lg:p-10"><h2 className="text-lg font-black text-slate-900">Geri bildirim türünü seçin</h2><div className="mt-4 grid gap-2 sm:grid-cols-2">{types.map((item) => <button type="button" key={item} onClick={() => setType(item)} className={`rounded-xl border px-3 py-3 text-xs font-black transition ${type === item ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/20' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-red-300'}`}>{item}</button>)}</div>{!['Şikâyet','Dilek / Öneri'].includes(type) && <div className="mt-6"><label className="text-xs font-black text-slate-700">Genel değerlendirmeniz</label><div className="mt-2 flex gap-1">{[1,2,3,4,5].map((star) => <button type="button" key={star} onClick={() => setRating(star)} aria-label={`${star} yıldız`} className={`text-3xl transition hover:scale-110 ${star <= rating ? 'text-amber-400' : 'text-slate-200'}`}>★</button>)}</div></div>}<div className="mt-6 grid gap-4 sm:grid-cols-2"><input required value={form.name} onChange={(e) => setForm({...form,name:e.target.value})} placeholder="Adınız Soyadınız *" className={fieldClass}/><input required value={form.phone} onChange={(e) => setForm({...form,phone:e.target.value})} placeholder="Telefonunuz *" className={fieldClass}/><input type="email" value={form.email} onChange={(e) => setForm({...form,email:e.target.value})} placeholder="E-posta adresiniz" className={fieldClass}/>{type === 'Danışman Değerlendirmesi' ? <select required value={form.agent} onChange={(e) => setForm({...form,agent:e.target.value})} className={fieldClass}><option value="">Danışman seçin *</option>{SAMPLE_AGENTS.map((agent) => <option key={agent.id} value={agent.name}>{agent.name}</option>)}</select> : type === 'Ofis Değerlendirmesi' ? <select required value={form.office} onChange={(e) => setForm({...form,office:e.target.value})} className={fieldClass}><option value="">Ofis seçin *</option>{SAMPLE_OFFICES.map((office) => <option key={office.id} value={office.name}>{office.name}</option>)}</select> : <input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Konu" className={fieldClass}/>}<input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Geri bildirim başlığı" className={`${fieldClass} sm:col-span-2`}/><textarea required rows={6} value={form.message} onChange={(e) => setForm({...form,message:e.target.value})} placeholder="Görüş, şikâyet, dilek veya önerinizi ayrıntılı biçimde yazın *" className={`${fieldClass} resize-none sm:col-span-2`}/></div><label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span>Geri bildirimin değerlendirilmesi ve gerektiğinde tarafımla iletişim kurulması amacıyla bilgilerimin işlenmesini kabul ediyorum. <Link to="/kvkk" className="font-black text-red-700">KVKK metni</Link></span></label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-xl shadow-red-700/20 transition hover:bg-red-800">Geri Bildirimi Gönder</button></form></div></div></div>;
+  return <div className="min-h-screen bg-slate-50 py-10 lg:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><div className="mb-8 text-center"><span className="inline-flex rounded-full bg-red-100 px-4 py-1.5 text-[10px] font-black tracking-[.18em] text-red-700">MÜŞTERİ DENEYİMİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Görüşünüz bizim için değerli</h1><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">Memnuniyetinizi paylaşabilir, danışmanlarımızı ve ofislerimizi değerlendirebilir; şikâyet, dilek ve önerilerinizi doğrudan genel merkezimize iletebilirsiniz.</p></div>{submitted && <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-center"><CheckCircle2 className="mx-auto h-8 w-8 text-emerald-600"/><h2 className="mt-2 font-black text-emerald-900">Geri bildiriminiz alındı</h2><p className="mt-1 text-xs text-emerald-700">Kaydınız ilgili birime iletildi. Gerekli görülürse verdiğiniz iletişim bilgileri üzerinden sizinle irtibat kurulacaktır.</p></div>}<div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.8fr_1.2fr]"><aside className="bg-gradient-to-br from-[#b9001c] to-[#700012] p-7 text-white lg:p-10"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="h-20 w-auto object-contain brightness-0 invert drop-shadow-sm"/><h2 className="mt-8 text-2xl font-black">Size kulak veriyoruz</h2><p className="mt-3 text-sm leading-6 text-red-50/85">Her bildirim kayıt altına alınır, ilgili ofis veya birime yönlendirilir ve hizmet kalitemizin geliştirilmesinde değerlendirilir.</p><div className="mt-8 space-y-3 text-xs font-bold">{['Gizlilikle değerlendirme','Genel merkez takibi','Danışman ve ofis bazlı ölçüm','Çözüm odaklı geri dönüş'].map((item) => <div key={item} className="flex items-center gap-2 rounded-xl bg-white/10 p-3"><CheckCircle2 className="h-4 w-4"/>{item}</div>)}</div></aside><form onSubmit={submit} className="p-6 sm:p-8 lg:p-10"><h2 className="text-lg font-black text-slate-900">Geri bildirim türünü seçin</h2><div className="mt-4 grid gap-2 sm:grid-cols-2">{types.map((item) => <button type="button" key={item} onClick={() => setType(item)} className={`rounded-xl border px-3 py-3 text-xs font-black transition ${type === item ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/20' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-red-300'}`}>{item}</button>)}</div>{!['Şikâyet','Dilek / Öneri'].includes(type) && <div className="mt-6"><label className="text-xs font-black text-slate-700">Genel değerlendirmeniz</label><div className="mt-2 flex gap-1">{[1,2,3,4,5].map((star) => <button type="button" key={star} onClick={() => setRating(star)} aria-label={`${star} yıldız`} className={`text-3xl transition hover:scale-110 ${star <= rating ? 'text-amber-400' : 'text-slate-200'}`}>★</button>)}</div></div>}<div className="mt-6 grid gap-4 sm:grid-cols-2"><input required value={form.name} onChange={(e) => setForm({...form,name:e.target.value})} placeholder="Adınız Soyadınız *" className={fieldClass}/><input required value={form.phone} onChange={(e) => setForm({...form,phone:e.target.value})} placeholder="Telefonunuz *" className={fieldClass}/><input type="email" value={form.email} onChange={(e) => setForm({...form,email:e.target.value})} placeholder="E-posta adresiniz" className={fieldClass}/>{type === 'Danışman Değerlendirmesi' ? <select required value={form.agent} onChange={(e) => setForm({...form,agent:e.target.value})} className={fieldClass}><option value="">Danışman seçin *</option>{SAMPLE_AGENTS.map((agent) => <option key={agent.id} value={agent.name}>{agent.name}</option>)}</select> : type === 'Ofis Değerlendirmesi' ? <select required value={form.office} onChange={(e) => setForm({...form,office:e.target.value})} className={fieldClass}><option value="">Ofis seçin *</option>{SAMPLE_OFFICES.map((office) => <option key={office.id} value={office.name}>{office.name}</option>)}</select> : <input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Konu" className={fieldClass}/>}<input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Geri bildirim başlığı" className={`${fieldClass} sm:col-span-2`}/><textarea required rows={6} value={form.message} onChange={(e) => setForm({...form,message:e.target.value})} placeholder="Görüş, şikâyet, dilek veya önerinizi ayrıntılı biçimde yazın *" className={`${fieldClass} resize-none sm:col-span-2`}/></div><label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span>Geri bildirimin değerlendirilmesi ve gerektiğinde tarafımla iletişim kurulması amacıyla bilgilerimin işlenmesini kabul ediyorum. <Link to="/kvkk" className="font-black text-red-700">KVKK metni</Link></span></label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-xl shadow-red-700/20 transition hover:bg-red-800">Geri Bildirimi Gönder</button></form></div></div></div>;
 }
 
 function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
@@ -2051,7 +2051,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="absolute bottom-6 right-8 z-10">
-          <img src="/dglogo.svg" alt="Realty Center®" className="h-12 w-auto object-contain brightness-0 invert drop-shadow-md sm:h-14" />
+          <img src="/rc_logo_og.svg" alt="Realty Center®" className="h-12 w-auto object-contain brightness-0 invert drop-shadow-md sm:h-14" />
         </div>
       </div>
 
@@ -2278,7 +2278,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 function AboutPage() {
   const [story, setStory] = useState(getAboutStory);
   useEffect(() => { const update = () => setStory(getAboutStory()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
-  return <main className="min-h-screen bg-slate-50"><section className="bg-slate-950 py-16 text-white"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTER® · ÖNCE GÜVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde güveni, uzmanlık ve teknolojiyle büyüten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Türkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doğru kararların, sürdürülebilir başarının ve güçlü iş birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.35fr_.65fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty Center®’ın Hikâyesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="flex min-h-80 items-center justify-center rounded-3xl border border-red-100 bg-white p-8 shadow-sm"><img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="w-full max-w-xs object-contain"/></aside></section></main>;
+  return <main className="min-h-screen bg-slate-50"><section className="bg-slate-950 py-16 text-white"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTER® · ÖNCE GÜVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde güveni, uzmanlık ve teknolojiyle büyüten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Türkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doğru kararların, sürdürülebilir başarının ve güçlü iş birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.35fr_.65fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty Center®’ın Hikâyesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="flex min-h-80 items-center justify-center rounded-3xl border border-red-100 bg-white p-8 shadow-sm"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="w-full max-w-xs object-contain"/></aside></section></main>;
 }
 
 function MissionVisionPage() {
@@ -2688,7 +2688,7 @@ function OfficesPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/dglogo.svg"
+                          src="/rc_logo_og.svg"
                           alt="Realty Center®" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -2882,7 +2882,7 @@ function AgentsPage() {
                     ) : (
                       <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
                         <img 
-                          src="/dglogo.svg"
+                          src="/rc_logo_og.svg"
                           alt="Realty Center®" 
                           className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
                           onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -3677,7 +3677,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
-            <img src="/dglogo.svg" alt="Realty Center® Önce Güven" className="absolute right-5 top-5 h-11 w-24 object-contain sm:right-8 sm:top-7 sm:h-12 sm:w-32" />
+            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="absolute right-5 top-5 h-14 w-32 object-contain sm:right-8 sm:top-7 sm:h-16 sm:w-40" />
             <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4 pr-24 sm:pr-36">
               <div className="p-3 bg-red-100 text-red-700 rounded-xl">
                 <MessageSquare className="w-6 h-6" />
@@ -3866,7 +3866,7 @@ function LoginPage() {
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
           <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
             <img
-              src="/dglogo.svg"
+              src="/rc_logo_og.svg"
               alt="Realty Center®"
               className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
             />
@@ -5455,7 +5455,7 @@ export default function RealtyCenterApp() {
       <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center text-slate-900 px-4 select-none overflow-hidden font-sans">
         <div className="relative mb-10 transform">
           <img 
-            src="/dglogo.svg"
+            src="/rc_logo_og.svg"
             alt="Realty Center®" 
             className="h-24 sm:h-28 w-auto object-contain"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
