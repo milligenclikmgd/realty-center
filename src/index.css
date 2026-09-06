@@ -101,6 +101,8 @@ html { font-size: 106.25%; }
   --rc-red: #cd011e;
   --rc-navy: #123499;
   overflow: visible;
+  /* Leaflet controls/panes use z-index values up to 1000. */
+  z-index: 2000 !important;
 }
 
 .realty-header-top-space {
