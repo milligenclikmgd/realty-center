@@ -1189,6 +1189,33 @@ html { font-size: 106.25%; }
 
 /* Alıcı talebi: kompakt başlık, tek form ve yumuşak açılış */
 .buyer-request-shell { border-radius: 1.75rem; }
+
+/* Kurumsal logo hiyerarşisi: orta Türkiye logosu belirgin, diğer Önce Güven logoları %30 daha görünür. */
+.realty-header-disc,
+.realty-header-emblem-inner .realty-header-disc {
+  width: 170px !important;
+  height: 170px !important;
+}
+.realty-header-main-logo,
+.realty-header-emblem-inner .realty-header-main-logo {
+  width: 136px !important;
+  height: 139px !important;
+  max-width: 84% !important;
+}
+.realty-compact-emblem .realty-header-disc { width: 140px !important; height: 140px !important; }
+.realty-compact-emblem .realty-header-main-logo { width: 102px !important; height: 104px !important; }
+img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
+  transform: scale(1.3);
+  transform-origin: center;
+}
+@media (min-width: 1280px) and (max-width: 1700px) {
+  .realty-header-disc,
+  .realty-header-emblem-inner .realty-header-disc { width: 146px !important; height: 146px !important; }
+  .realty-header-main-logo,
+  .realty-header-emblem-inner .realty-header-main-logo { width: 109px !important; height: 112px !important; }
+  .realty-compact-emblem .realty-header-disc { width: 117px !important; height: 117px !important; }
+  .realty-compact-emblem .realty-header-main-logo { width: 86px !important; height: 88px !important; }
+}
 .buyer-request-toggle,
 .buyer-request-submit {
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
