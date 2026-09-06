@@ -1343,7 +1343,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <div className="grid min-w-0 grid-cols-7 items-stretch">
             {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
           </div>
-          <Link to="/" onClick={close} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
+          <Link to="/" onClick={() => { close(); window.location.href = '/'; }} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
             <span className="realty-header-disc"><img src="/dlogo.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <div className="grid min-w-0 grid-cols-7 items-stretch">
@@ -1799,8 +1799,15 @@ function BuyerRequestModule() {
     const offices = matchedOffices.length ? matchedOffices : cityOffices;
     const agents = SAMPLE_AGENTS.filter((agent) => normalize(agent.city) === city && (!district || normalize(agent.district) === district || offices.some((office) => office.name === agent.office)));
     saveBuyerRequests([{ id: `TR-${Date.now()}`, ...form, createdAt: new Date().toISOString(), status: 'Yeni', officeNames: offices.map((office) => office.name), agentNames: agents.map((agent) => agent.name) }, ...getBuyerRequests()]);
+    const notice = document.createElement('div');
+    notice.textContent = '✓ Talebiniz iletildi.';
+    notice.setAttribute('role', 'status');
+    notice.setAttribute('style', 'position:fixed;right:24px;bottom:24px;z-index:100;opacity:0;transform:translateY(12px);transition:opacity .32s ease,transform .32s ease;border:1px solid #bbf7d0;border-radius:14px;background:#fff;color:#166534;padding:14px 18px;font:700 14px/1.3 system-ui,sans-serif;box-shadow:0 14px 34px rgba(7,29,59,.16);');
+    document.body.appendChild(notice);
+    requestAnimationFrame(() => { notice.style.opacity = '1'; notice.style.transform = 'translateY(0)'; });
     setForm({ type: 'Satılık', property: 'Daire', city: 'Ankara', district: 'Çankaya', budget: '', payment: 'Kredi + Peşinat', timing: '1 ay içinde', name: '', phone: '', description: '' });
-    setOpen(false);
+    window.setTimeout(() => { notice.style.opacity = '0'; notice.style.transform = 'translateY(12px)'; }, 1700);
+    window.setTimeout(() => { notice.remove(); setOpen(false); }, 2050);
   };
   if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">✓</div><h2 className="mt-5 text-3xl font-black">Talebiniz ilgili ekiplere iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">Yönetici paneli, ilgili ofis ve bölgedeki danışmanlar için bildirim oluşturuldu. Size uygun portföylerle kısa süre içinde iletişime geçiyoruz.</p></div></div></section>;
   const fieldClass = 'buyer-request-field mt-2 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm font-semibold text-slate-800';
@@ -1889,10 +1896,8 @@ function BarterBankModuleV3() {
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-sm font-black text-[#071d3b]">Takas bilgilerinizi oluşturun</p><p className="mt-1 text-xs text-slate-500">Vereceğiniz ve almak istediğiniz mülkü aynı formda anlatın.</p></div><button type="button" onClick={() => setOpen(false)} className="self-start rounded-full px-3 py-1.5 text-xs font-black text-[#CD011E] transition hover:bg-red-50">KAPAT</button></div>
       <div className="grid gap-5 lg:grid-cols-2">{column('TAKAS ÖNERİSİ', 'VERMEK İSTEDİĞİNİZ MÜLK', offer, setOffer, 'öneri')}{column('TAKAS TALEBİ', 'ALMAK İSTEDİĞİNİZ MÜLK', request, setRequest, 'talep')}</div>
       <section className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p className="mb-4 text-xs font-black tracking-[.12em] text-[#071d3b]">İLETİŞİM BİLGİLERİNİZ</p><div className="grid gap-3 sm:grid-cols-3"><input required name="Ad Soyad" placeholder="Ad Soyad" autoComplete="name" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/><input required name="Telefon" type="tel" placeholder="Telefon" autoComplete="tel" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/><select required name="Barter türü" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"><option value="">Barter türünü seçin</option><option>Tam Barter</option><option>Kısmi Barter</option></select></div></section>
-      <label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>KVKK ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metinlerini okudum ve onaylıyorum.</label>
+      <div className="mt-4 space-y-2"><label className="flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK Aydınlatma Metni</Link>’ni okudum ve onaylıyorum.</span></label><label className="flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metnini okudum ve onaylıyorum.</span></label></div>
       <button className="barter-submit mt-5 w-full rounded-xl bg-gradient-to-r from-[#b9001b] to-[#CD011E] px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-900/15">TAKAS ÖNERİSİ VE TALEBİNİ GÖNDER</button>
-      <label className="mt-3 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK Aydınlatma Metni</Link>’ni okudum ve onaylıyorum.</span></label>
-      <label className="mt-2 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metnini okudum ve onaylıyorum.</span></label>
     </form>}
   </div></div></section>;
 }
