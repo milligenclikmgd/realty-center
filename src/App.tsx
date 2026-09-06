@@ -1982,57 +1982,60 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     : 'bg-white text-slate-900 hover:bg-slate-100'
                 }`}
               >
-                <Home className="w-5 h-5 relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">İlanlar</span>
+                <Home className="w-4 h-4 relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">İlanlar</span>
               </button>
 
               <Link
                 to="/franchise-basvuru"
                 className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
-                <Building2 className="w-5 h-5 text-[#071d3b] relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol</span>
+                <Building2 className="w-4 h-4 text-[#071d3b] relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">Franchise Ol</span>
               </Link>
 
               <Link
                 to="/danisman-basvuru"
                 className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
-                <Briefcase className="w-5 h-5 text-[#071d3b] relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol</span>
+                <Briefcase className="w-4 h-4 text-[#071d3b] relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">Danışman Ol</span>
               </Link>
             </div>
 
             <div className="mt-5 rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
-              <div className="grid gap-1 lg:grid-cols-[.9fr_1fr_1fr_1.18fr_auto] lg:items-center">
-                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
-                  <Key className="h-5 w-5 shrink-0 text-[#071d3b]"/>
-                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none">
+              <div className="grid gap-1">
+                <div className="grid grid-cols-2 gap-1">
+                  <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <Key className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full appearance-none bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
                     <option value="">İşlem Türü</option>
                     {LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}
                   </select>
-                </div>
-                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
-                  <MapPin className="h-5 w-5 shrink-0 text-[#071d3b]"/>
+                  </div>
+                  <div className="flex items-center gap-2 px-3 py-2">
+                  <MapPin className="h-4 w-4 shrink-0 text-[#071d3b]"/>
                   <select 
                     value={selectedCity} 
                     onChange={(e) => {
                       setSelectedCity(e.target.value);
                       setSearchDistrict('');
                     }}
-                    className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none"
+                    className="w-full appearance-none bg-transparent text-[11px] font-semibold text-slate-700 outline-none"
                   >
                     <option value="">İl Seçiniz</option>
                     {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
-                  <Building2 className="h-5 w-5 shrink-0 text-[#071d3b]"/>
+                <div className="grid grid-cols-[1fr_1.15fr_auto] gap-1 border-t border-slate-200 pt-1">
+                <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <Building2 className="h-4 w-4 shrink-0 text-[#071d3b]"/>
                   <select 
                     disabled={!selectedCity}
                     value={searchDistrict}
                     onChange={(e) => setSearchDistrict(e.target.value)}
-                    className={`w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none ${
+                    className={`w-full appearance-none bg-transparent text-[11px] font-semibold text-slate-700 outline-none ${
                       !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   >
@@ -2040,14 +2043,15 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
                   </select>
                 </div>
-                <div className="flex items-center gap-2 px-3 py-2.5">
-                  <Home className="h-5 w-5 shrink-0 text-[#071d3b]"/>
-                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none">
+                <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <Home className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full appearance-none bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
                     <option value="">Gayrimenkul Türü</option>
                     {ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}
                   </select>
                 </div>
-                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-11 w-11 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800 lg:ml-1" aria-label="İlanları ara"><Search className="h-5 w-5"/></button>
+                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-9 w-9 place-items-center self-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800" aria-label="İlanları ara"><Search className="h-4 w-4"/></button>
+                </div>
               </div>
             </div>
             <Link to="/harita-ile-ara" className="mt-2.5 inline-flex items-center gap-2 rounded-full border border-white/75 bg-white/90 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-lg shadow-black/10 transition hover:border-red-200 hover:text-red-700"><Map className="h-4 w-4"/>Harita ile Ara</Link>
