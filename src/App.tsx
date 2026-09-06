@@ -1972,11 +1972,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="w-full max-w-[44rem] -ml-1 sm:-ml-4 lg:-ml-10">
-            <div className="flex flex-wrap gap-2.5">
+          <div className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
+            <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActiveTab('search')}
-                className={`relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
+                className={`relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
                   activeTab === 'search' 
                     ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
@@ -1988,7 +1988,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <Link
                 to="/franchise-basvuru"
-                className="relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
+                className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
                 <Building2 className="w-5 h-5 text-[#071d3b] relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol</span>
@@ -1996,36 +1996,43 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <Link
                 to="/danisman-basvuru"
-                className="relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
+                className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
                 <Briefcase className="w-5 h-5 text-[#071d3b] relative z-10" />
                 <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol</span>
               </Link>
             </div>
 
-            <div className="mt-7 rounded-[1.6rem] border border-white/80 bg-white/95 p-3 shadow-2xl shadow-black/20 backdrop-blur-xl">
-              <div className="grid gap-1 sm:grid-cols-[1fr_1fr_1.18fr_auto] sm:items-center">
-                <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 sm:border-b-0 sm:border-r">
-                  <MapPin className="h-6 w-6 shrink-0 text-[#071d3b]"/>
+            <div className="mt-5 rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
+              <div className="grid gap-1 lg:grid-cols-[.9fr_1fr_1fr_1.18fr_auto] lg:items-center">
+                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
+                  <Key className="h-5 w-5 shrink-0 text-[#071d3b]"/>
+                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none">
+                    <option value="">İşlem Türü</option>
+                    {LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}
+                  </select>
+                </div>
+                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
+                  <MapPin className="h-5 w-5 shrink-0 text-[#071d3b]"/>
                   <select 
                     value={selectedCity} 
                     onChange={(e) => {
                       setSelectedCity(e.target.value);
                       setSearchDistrict('');
                     }}
-                    className="w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none"
+                    className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none"
                   >
                     <option value="">İl Seçiniz</option>
                     {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
-                <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 sm:border-b-0 sm:border-r">
-                  <Building2 className="h-6 w-6 shrink-0 text-[#071d3b]"/>
+                <div className="flex items-center gap-2 border-b border-slate-200 px-3 py-2.5 lg:border-b-0 lg:border-r">
+                  <Building2 className="h-5 w-5 shrink-0 text-[#071d3b]"/>
                   <select 
                     disabled={!selectedCity}
                     value={searchDistrict}
                     onChange={(e) => setSearchDistrict(e.target.value)}
-                    className={`w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none ${
+                    className={`w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none ${
                       !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   >
@@ -2033,17 +2040,17 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
                   </select>
                 </div>
-                <div className="flex items-center gap-3 px-4 py-3">
-                  <Home className="h-6 w-6 shrink-0 text-[#071d3b]"/>
-                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none">
+                <div className="flex items-center gap-2 px-3 py-2.5">
+                  <Home className="h-5 w-5 shrink-0 text-[#071d3b]"/>
+                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full appearance-none bg-transparent text-xs font-semibold text-slate-700 outline-none">
                     <option value="">Gayrimenkul Türü</option>
                     {ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}
                   </select>
                 </div>
-                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-14 w-14 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800 sm:ml-1" aria-label="İlanları ara"><Search className="h-6 w-6"/></button>
+                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-11 w-11 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800 lg:ml-1" aria-label="İlanları ara"><Search className="h-5 w-5"/></button>
               </div>
             </div>
-            <Link to="/harita-ile-ara" className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/75 bg-white/90 px-5 py-3 text-sm font-black text-[#071d3b] shadow-lg shadow-black/10 transition hover:border-red-200 hover:text-red-700"><Map className="h-4 w-4"/>Harita ile Ara</Link>
+            <Link to="/harita-ile-ara" className="mt-2.5 inline-flex items-center gap-2 rounded-full border border-white/75 bg-white/90 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-lg shadow-black/10 transition hover:border-red-200 hover:text-red-700"><Map className="h-4 w-4"/>Harita ile Ara</Link>
 
           </div>
         </div>
