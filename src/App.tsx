@@ -1952,13 +1952,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
-  const aiExamples = [
-    "Çankaya'da 8 milyon TL'ye kadar 3+1 daire arıyorum.",
-    "İncek'te havuzlu, krediye uygun villa öner."
-  ];
-  const [aiQuery, setAiQuery] = useState('');
-
-
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
@@ -1979,16 +1972,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div className="w-full max-w-[50rem] -ml-1 sm:-ml-4 lg:-ml-10">
-            <div className="mb-5 max-w-3xl">
-              <p className="flex items-center gap-3 text-[10px] font-black tracking-[.28em] text-slate-600 sm:text-xs"><span className="h-0.5 w-9 bg-red-700"/>DAHA İYİ BİR YAŞAM İÇİN</p>
-              <h1 className="mt-3 text-4xl font-black leading-[.98] tracking-[-.055em] text-[#071d3b] sm:text-5xl lg:text-6xl">Doğru Gayrimenkul,<br/><span className="text-red-700">Daha Güzel Yarınlar.</span></h1>
-              <p className="mt-3 text-sm font-semibold text-slate-600 sm:text-base">Hayalinizdeki evi, yatırımı veya iş yerini şimdi keşfedin.</p>
-            </div>
-            <div className="grid grid-cols-[1.05fr_1fr_1fr] gap-1.5 sm:gap-2">
+          <div className="w-full max-w-[44rem] -ml-1 sm:-ml-4 lg:-ml-10">
+            <div className="flex flex-wrap gap-2.5">
               <button
                 onClick={() => setActiveTab('search')}
-                className={`relative overflow-hidden group h-[3.6rem] rounded-t-2xl font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
+                className={`relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
                   activeTab === 'search' 
                     ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
                     : 'bg-white text-slate-900 hover:bg-slate-100'
@@ -2000,61 +1988,44 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
               <Link
                 to="/franchise-basvuru"
-                className="relative overflow-hidden group h-[3.6rem] rounded-t-2xl bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
                 <Building2 className="w-5 h-5 text-[#071d3b] relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol!</span>
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Franchise Ol</span>
               </Link>
 
               <Link
                 to="/danisman-basvuru"
-                className="relative overflow-hidden group h-[3.6rem] rounded-t-2xl bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border-b-2 border-transparent hover:border-red-700 hover:-translate-y-1"
+                className="relative overflow-hidden group h-[3.35rem] min-w-[11rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
               >
                 <Briefcase className="w-5 h-5 text-[#071d3b] relative z-10" />
-                <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol!</span>
+                <span className="text-sm font-extrabold tracking-wide relative z-10">Danışman Ol</span>
               </Link>
             </div>
 
-            <div className="bg-white/95 text-slate-900 p-4 sm:p-5 rounded-b-[1.7rem] rounded-tr-[1.7rem] shadow-2xl shadow-black/20 space-y-4 border border-white/65 backdrop-blur-xl">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Satılık / Kiralık</label>
-                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
-                    <option value="">Seçiniz</option>
-                    {LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlan Türü</label>
-                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
-                    <option value="">Seçiniz</option>
-                    {ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">Şehir</label>
+            <div className="mt-7 rounded-[1.6rem] border border-white/80 bg-white/95 p-3 shadow-2xl shadow-black/20 backdrop-blur-xl">
+              <div className="grid gap-1 sm:grid-cols-[1fr_1fr_1.18fr_auto] sm:items-center">
+                <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 sm:border-b-0 sm:border-r">
+                  <MapPin className="h-6 w-6 shrink-0 text-[#071d3b]"/>
                   <select 
                     value={selectedCity} 
                     onChange={(e) => {
                       setSelectedCity(e.target.value);
                       setSearchDistrict('');
                     }}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+                    className="w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none"
                   >
                     <option value="">İl Seçiniz</option>
                     {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
-
-                <div>
-                  <label className="text-xs font-black text-slate-700 mb-1.5 block tracking-wider">İlçe</label>
+                <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 sm:border-b-0 sm:border-r">
+                  <Building2 className="h-6 w-6 shrink-0 text-[#071d3b]"/>
                   <select 
                     disabled={!selectedCity}
                     value={searchDistrict}
                     onChange={(e) => setSearchDistrict(e.target.value)}
-                    className={`w-full bg-slate-50 border border-slate-300 rounded-md p-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
+                    className={`w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none ${
                       !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   >
@@ -2062,26 +2033,20 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                     {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
                   </select>
                 </div>
+                <div className="flex items-center gap-3 px-4 py-3">
+                  <Home className="h-6 w-6 shrink-0 text-[#071d3b]"/>
+                  <select value={searchPropertyType} onChange={(e) => setSearchPropertyType(e.target.value)} className="w-full appearance-none bg-transparent text-sm font-semibold text-slate-700 outline-none">
+                    <option value="">Gayrimenkul Türü</option>
+                    {ALL_LISTING_PROPERTY_TYPES.map((type) => <option key={type}>{type}</option>)}
+                  </select>
+                </div>
+                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-14 w-14 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800 sm:ml-1" aria-label="İlanları ara"><Search className="h-6 w-6"/></button>
               </div>
-
-              <div className="flex flex-col gap-2 pt-1 sm:flex-row">
-                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="relative overflow-hidden group w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-black px-10 py-3.5 rounded-full text-sm flex items-center justify-center space-x-2 transition duration-300 shadow-lg shadow-red-700/40">
-                  <Search className="w-3.5 h-3.5 relative z-10" />
-                  <span className="relative z-10">İlanları Ara</span><ArrowRight className="h-4 w-4"/>
-                </button>
-                <Link to="/harita-ile-ara" className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-black text-[#071d3b] shadow-sm transition hover:border-red-200 hover:text-red-700 sm:w-auto"><Map className="h-4 w-4"/>Harita ile Ara</Link>
-              </div>
-
             </div>
-
-            <div className="mt-3 rounded-2xl border border-[#123499]/30 bg-[#071d3b]/95 p-3 shadow-xl backdrop-blur-md">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center"><div className="min-w-0 sm:w-[53%]"><p className="text-[10px] font-black tracking-[.16em] text-cyan-200">🤖 YAPAY ZEKA GAYRİMENKUL ASİSTANI</p><p className="mt-1 text-xs font-semibold text-white/85">Ne aradığınızı söyleyin, size en uygun ilanları bulalım.</p></div><div className="flex min-w-0 flex-1 rounded-full bg-white p-1"><input value={aiQuery} placeholder="Örn. Çankaya'da 3+1 daire" onChange={(event) => setAiQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="min-w-0 flex-1 rounded-full bg-transparent px-3 text-xs font-semibold text-slate-800 outline-none" aria-label="Yapay zeka gayrimenkul araması" /><button onClick={() => navigate('/ai-karar-asistani?q=' + encodeURIComponent(aiQuery))} className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#123499] text-white transition hover:bg-red-700" aria-label="AI ile ara"><ArrowRight className="h-4 w-4"/></button></div></div>
-            </div>
+            <Link to="/harita-ile-ara" className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/75 bg-white/90 px-5 py-3 text-sm font-black text-[#071d3b] shadow-lg shadow-black/10 transition hover:border-red-200 hover:text-red-700"><Map className="h-4 w-4"/>Harita ile Ara</Link>
 
           </div>
         </div>
-
-        <div className="pointer-events-none absolute right-[13%] top-[31%] z-10 hidden max-w-[12rem] border-y-2 border-red-700 py-3 font-serif text-2xl italic leading-tight text-[#071d3b] xl:block">İyi Lokasyonlar,<br/>Daha Büyük<br/>Fırsatlar.</div>
 
         <div className="absolute bottom-6 right-8 z-10">
           <img src="/dglogo.svg" alt="Realty Center®" className="h-12 w-auto object-contain brightness-0 invert drop-shadow-md sm:h-14" />
