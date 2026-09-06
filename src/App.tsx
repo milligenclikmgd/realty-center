@@ -1952,6 +1952,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
+  const [isTransactionMenuOpen, setIsTransactionMenuOpen] = useState(false);
   const sortedListings = [...SAMPLE_LISTINGS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
@@ -1968,7 +1969,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               }`}
             />
           ))}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/88 via-white/38 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/58 via-white/16 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
@@ -2006,12 +2007,10 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             <div className="mt-5 rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
               <div className="grid gap-1">
                 <div className="grid grid-cols-2 gap-1">
-                  <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
                   <Key className="h-4 w-4 shrink-0 text-[#071d3b]"/>
-                  <select value={searchTransactionType} onChange={(e) => setSearchTransactionType(e.target.value)} className="w-full appearance-none bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
-                    <option value="">İşlem Türü</option>
-                    {LISTING_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}
-                  </select>
+                  <button type="button" onClick={() => setIsTransactionMenuOpen((open) => !open)} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isTransactionMenuOpen}><span className="truncate">{searchTransactionType || 'İşlem Türü'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isTransactionMenuOpen ? 'rotate-180' : ''}`}/></button>
+                  {isTransactionMenuOpen && <div role="listbox" className="absolute left-1 top-[calc(100%+.3rem)] z-50 w-48 overflow-hidden rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İŞLEM TÜRÜ</p>{LISTING_TRANSACTION_TYPES.map((type) => <button key={type} type="button" role="option" aria-selected={searchTransactionType === type} onClick={() => { setSearchTransactionType(type); setIsTransactionMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchTransactionType === type ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{type}</span>{searchTransactionType === type && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
                   </div>
                   <div className="flex items-center gap-2 px-3 py-2">
                   <MapPin className="h-4 w-4 shrink-0 text-[#071d3b]"/>
