@@ -1216,6 +1216,29 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   .realty-compact-emblem .realty-header-disc { width: 117px !important; height: 117px !important; }
   .realty-compact-emblem .realty-header-main-logo { width: 86px !important; height: 88px !important; }
 }
+
+/* Orta logoda çember sabit kalır; yalnızca iç logo büyük ve menüden bağımsız görünür. */
+.realty-header-disc,
+.realty-header-emblem-inner .realty-header-disc {
+  width: 132px !important;
+  height: 132px !important;
+}
+.realty-header-main-logo,
+.realty-header-emblem-inner .realty-header-main-logo {
+  width: 122px !important;
+  height: 124px !important;
+  max-width: 90% !important;
+}
+.realty-compact-emblem .realty-header-disc { width: 108px !important; height: 108px !important; }
+.realty-compact-emblem .realty-header-main-logo { width: 96px !important; height: 98px !important; }
+@media (min-width: 1280px) and (max-width: 1700px) {
+  .realty-header-disc,
+  .realty-header-emblem-inner .realty-header-disc { width: 112px !important; height: 112px !important; }
+  .realty-header-main-logo,
+  .realty-header-emblem-inner .realty-header-main-logo { width: 100px !important; height: 102px !important; }
+  .realty-compact-emblem .realty-header-disc { width: 90px !important; height: 90px !important; }
+  .realty-compact-emblem .realty-header-main-logo { width: 80px !important; height: 82px !important; }
+}
 .buyer-request-toggle,
 .buyer-request-submit {
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
