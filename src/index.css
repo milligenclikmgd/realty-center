@@ -1353,7 +1353,7 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   white-space: nowrap;
 }
 
-/* Leaflet içindeki marka noktası, metin/emoji yerine çizgisel ev ikonu kullanır. */
+/* Leaflet içindeki ofis noktası, site genelindeki çizgisel ikon dilini kullanır. */
 .realty-world-marker-shell { background: transparent !important; border: 0 !important; }
 .realty-world-marker {
   display: grid;
@@ -1365,25 +1365,7 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   background: #d6001c;
   box-shadow: 0 5px 14px rgba(214,0,28,.42);
 }
-.realty-world-marker span {
-  position: relative;
-  width: 10px;
-  height: 9px;
-  border: 1.8px solid #fff;
-  border-top: 0;
-  border-radius: 1px;
-}
-.realty-world-marker span::before {
-  position: absolute;
-  top: -5px;
-  left: -2px;
-  width: 9px;
-  height: 9px;
-  border-left: 1.8px solid #fff;
-  border-top: 1.8px solid #fff;
-  content: '';
-  transform: rotate(45deg);
-}
+.realty-world-marker svg { width: 14px; height: 14px; stroke: #fff; stroke-width: 2.2; fill: none; }
 @media (max-width: 639px) {
   .home-title-en { display: block; margin: .45rem 0 0; font-size: .34em; }
 }
