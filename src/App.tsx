@@ -3053,6 +3053,16 @@ function AIDecisionAssistantPage() {
     }
   };
 
+  const printEvaluation = () => {
+    if (!result) return;
+    const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' }[character] || character));
+    const printWindow = window.open('', '_blank', 'noopener,noreferrer,width=900,height=760');
+    if (!printWindow) return;
+    const location = `${form.district}, ${form.city} · ${form.propertyType}`;
+    printWindow.document.write(`<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>REALTY CENTER® Yapay Zeka Analizi</title><style>body{margin:0;background:#f4f6f8;color:#10213d;font-family:Arial,sans-serif}.page{max-width:800px;margin:36px auto;background:#fff;padding:48px;box-shadow:0 8px 32px rgba(15,23,42,.1)}.brand{color:#cd011e;font-size:11px;font-weight:800;letter-spacing:2px}.title{margin:12px 0 4px;font-size:28px}.meta{color:#64748b;font-size:14px}.result{margin-top:28px;padding:24px;background:#f8fafc;border-radius:12px;white-space:pre-wrap;font-size:14px;line-height:1.8}.note{margin-top:24px;color:#64748b;font-size:11px;line-height:1.6}@media print{body{background:#fff}.page{margin:0;box-shadow:none;padding:0}}</style></head><body><main class="page"><div class="brand">REALTY CENTER® · YAPAY ZEKA ANALİZİ</div><h1 class="title">Gayrimenkul Ön Analizi</h1><p class="meta">${escapeHtml(location)} · ${new Date().toLocaleDateString('tr-TR')}</p><div class="result">${escapeHtml(result)}</div><p class="note">Bu çıktı bilgi amaçlı bir yapay zeka ön analizidir ve resmî ekspertiz yerine geçmez.</p></main><script>window.onload=()=>window.print()<\/script></body></html>`);
+    printWindow.document.close();
+  };
+
   return <div className="min-h-screen bg-slate-50 py-10">
     <div className="mx-auto max-w-6xl px-5 lg:px-8">
       <header className="overflow-hidden rounded-3xl bg-gradient-to-br from-[#061a39] via-[#0b315e] to-[#071a3b] px-6 py-9 text-white shadow-2xl sm:px-10">
@@ -3089,7 +3099,7 @@ function AIDecisionAssistantPage() {
         </aside>
       </div> : <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm"><p className="text-xs font-black tracking-[.16em] text-cyan-700">AKILLI ARAMA</p><h2 className="mt-3 text-2xl font-black text-slate-950">İhtiyacınıza uygun gayrimenkulleri keşfedin</h2><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-500">İlan arama ve gelişmiş filtreleme seçenekleriyle güncel portföyümüzü inceleyebilirsiniz.</p><Link to="/ilanlarimiz" className="mt-6 inline-flex rounded-xl bg-[#071a3b] px-6 py-3 text-sm font-black text-white transition hover:bg-[#123b69]">İlanları İncele <ArrowRight className="ml-2 h-4 w-4"/></Link></section>}
 
-      {result && <section className="mt-7 rounded-3xl border border-cyan-200 bg-white p-6 shadow-lg sm:p-8"><p className="text-xs font-black tracking-[.16em] text-cyan-700">YAPAY ZEKA ANALİZ SONUCU</p><h2 className="mt-2 text-2xl font-black text-slate-950">{form.district}, {form.city} · {form.propertyType}</h2><div className="mt-6 whitespace-pre-wrap rounded-2xl bg-slate-50 p-5 text-sm font-medium leading-7 text-slate-700">{result}</div><p className="mt-4 text-xs leading-5 text-slate-400">Bu çıktı bilgi amaçlı bir yapay zeka ön analizidir ve resmî ekspertiz yerine geçmez.</p></section>}
+      {result && <section className="mt-7 rounded-3xl border border-cyan-200 bg-white p-6 shadow-lg sm:p-8"><div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"><div><p className="text-xs font-black tracking-[.16em] text-cyan-700">YAPAY ZEKA ANALİZ SONUCU</p><h2 className="mt-2 text-2xl font-black text-slate-950">{form.district}, {form.city} · {form.propertyType}</h2></div><button type="button" onClick={printEvaluation} className="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-black text-slate-700 shadow-sm transition hover:border-cyan-400 hover:text-cyan-800"><Printer className="h-4 w-4"/>Analizi Yazdır</button></div><div className="mt-6 whitespace-pre-wrap rounded-2xl bg-slate-50 p-5 text-sm font-medium leading-7 text-slate-700">{result}</div><p className="mt-4 text-xs leading-5 text-slate-400">Bu çıktı bilgi amaçlı bir yapay zeka ön analizidir ve resmî ekspertiz yerine geçmez.</p></section>}
     </div>
   </div>;
 }
