@@ -1333,6 +1333,11 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     navigate(`/arama?q=${encodeURIComponent(siteSearch.trim())}`);
     setSearchOpen(false);
   };
+  const reloadHomeWithLoader = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    close();
+    window.location.assign('/');
+  };
 
   if (isListingDetail) {
     return (
@@ -1341,7 +1346,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(leftLinks.length,1)},minmax(0,1fr))` }}>
             {leftItems.map((item) => <DesktopHeaderNode key={`detail-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </nav>
-          <Link to="/" onClick={close} className="realty-header-emblem realty-header-emblem-inner mx-auto my-1.5 flex h-[68px] w-[210px] shrink-0 items-center justify-center xl:mx-4" aria-label="Realty Center® ana sayfa">
+          <Link to="/" onClick={reloadHomeWithLoader} className="realty-header-emblem realty-header-emblem-inner mx-auto my-1.5 flex h-[68px] w-[210px] shrink-0 items-center justify-center xl:mx-4" aria-label="Realty Center® ana sayfa">
             <span className="realty-header-led" /><span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(rightLinks.length,1)},minmax(0,1fr))` }}>
@@ -1364,7 +1369,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           <div className="grid min-w-0 grid-cols-7 items-stretch">
             {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
           </div>
-          <Link to="/" onClick={() => { close(); window.location.href = '/'; }} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
+          <Link to="/" onClick={reloadHomeWithLoader} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
             <span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
           <div className="grid min-w-0 grid-cols-7 items-stretch">
@@ -1399,7 +1404,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             {leftItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </div>
 
-          <Link to="/" onClick={() => { close(); window.location.href = '/'; }} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center® ana sayfa">
+          <Link to="/" onClick={reloadHomeWithLoader} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty Center® ana sayfa">
             <span className="realty-header-led" />
             <span className="realty-header-disc">
               <img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" />
