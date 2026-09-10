@@ -2144,14 +2144,14 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
         <div className="relative z-10 mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-7 xl:grid-cols-[1.08fr_.92fr] xl:gap-12">
           
-          <div className="group relative order-2 mx-auto w-full max-w-3xl">
+          <div className="group relative order-2 mx-auto w-full max-w-2xl">
             <div className="absolute -inset-3 rounded-[2.2rem] border border-red-200/70 bg-white/50" />
             
-            <div className="relative aspect-[16/8] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-2xl shadow-slate-900/15">
+            <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-2xl shadow-slate-900/15">
               <img 
                 src="/realty-academy-training.png"
                 alt="Realty Center® Emlak Danışmanlığı Eğitimi" 
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.025]"
+                className="block h-auto w-full transition duration-700 group-hover:scale-[1.015]"
               />
               
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur-md">
@@ -2183,10 +2183,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
                 Eğitimimize Katıl
               </span><span className="home-title-en">REALTY ACADEMY</span>
             </h2>
-
-            <p className="text-slate-600 text-base font-medium leading-relaxed">
-              Gayrimenkul sektöründe fark yaratmak için uzman eğitmenlerle hazırlanan eğitim programlarımızla kariyerinizi bir üst seviyeye taşıyın.
-            </p>
 
             <div className="grid grid-cols-2 gap-2 pt-1 sm:grid-cols-4">
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
