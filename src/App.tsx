@@ -1466,6 +1466,11 @@ function EducationManagedPage({ page, pageId }: { page: HeaderMenuItem; pageId: 
   const firstDay = (new Date(month.getFullYear(), month.getMonth(), 1).getDay() + 6) % 7;
   const monthLabel = month.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
   const dateKey = (day: number) => [month.getFullYear(), String(month.getMonth() + 1).padStart(2, '0'), String(day).padStart(2, '0')].join('-');
+  const trainingTypeVisuals = [
+    { icon: GraduationCap, image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=88&w=900', label: 'TEMEL EĞİTİM' },
+    { icon: Layers, image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=900', label: 'UYGULAMALI GELİŞİM' },
+    { icon: Megaphone, image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&q=88&w=900', label: 'DİJİTAL BECERİLER' }
+  ];
 
   return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16">
     <div className="mx-auto max-w-6xl px-6">
@@ -1518,7 +1523,8 @@ function EducationManagedPage({ page, pageId }: { page: HeaderMenuItem; pageId: 
 
         {isTypes && <div className="mt-8">
           <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.typesIntro}</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{training.types.map((type, index) => <article key={type.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-sm font-black text-white">{index + 1}</span><h2 className="mt-4 text-lg font-black text-slate-900">{type.title}</h2><p className="mt-2 text-[10px] font-black tracking-widest text-red-700">{type.duration}</p><p className="mt-3 text-xs leading-6 text-slate-600">{type.description}</p></article>)}</div>
+          <div className="relative mt-8 overflow-hidden rounded-2xl bg-[#071f3d] p-6 text-white sm:p-8"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=88&w=1400" alt="Realty Center® eğitim ortamı" className="absolute inset-0 h-full w-full object-cover opacity-25"/><div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.2em] text-red-200">REALTY CENTER® AKADEMİ</p><h2 className="mt-2 text-2xl font-black">Bilgiyi sahadaki başarıya dönüştürün.</h2></div><div className="flex gap-3"><span className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center"><strong className="block text-lg">{training.types.length}</strong><small className="text-[9px] font-black tracking-wider text-white/70">PROGRAM</small></span><span className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center"><strong className="block text-lg">360°</strong><small className="text-[9px] font-black tracking-wider text-white/70">GELİŞİM</small></span></div></div></div>
+          <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{training.types.map((type, index) => { const visual=trainingTypeVisuals[index % trainingTypeVisuals.length]; const Icon=visual.icon; return <article key={type.id} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><div className="relative h-32 overflow-hidden"><img src={visual.image} alt="" className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-[#071f3d]/80 to-[#071f3d]/10"/><span className="absolute bottom-3 left-4 text-[10px] font-black tracking-[.16em] text-white">{visual.label}</span><span className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-red-700 shadow-lg"><Icon className="h-5 w-5"/></span></div><div className="p-6"><h2 className="text-lg font-black text-slate-900">{type.title}</h2><p className="mt-2 inline-flex rounded-full bg-red-50 px-2.5 py-1 text-[10px] font-black tracking-widest text-red-700">{type.duration}</p><p className="mt-4 text-xs leading-6 text-slate-600">{type.description}</p></div></article>; })}</div>
         </div>}
       </section>
     </div>
