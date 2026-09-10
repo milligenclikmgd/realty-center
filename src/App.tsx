@@ -1298,8 +1298,9 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   const navigate = useNavigate();
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
-  const leftItems = managedMenu.filter((item) => item.side === 'left');
-  const rightItems = managedMenu.filter((item) => item.side === 'right');
+  const visibleMenu = managedMenu.filter((item) => item.id !== 'why');
+  const leftItems = visibleMenu.filter((item) => item.side === 'left');
+  const rightItems = visibleMenu.filter((item) => item.side === 'right');
   const leftLinks = leftItems.map((item) => [item.label,item.path]);
   const rightLinks = rightItems.map((item) => [item.label,item.path]);
   const isListingDetail = location.pathname.startsWith('/ilan/');
@@ -1324,7 +1325,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   }, [location.pathname]);
 
   const menuLinkClass = (_to: string) =>
-    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-xs font-black leading-[1.15] text-white transition lg:text-[13px] 2xl:px-2 2xl:text-sm';
+    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-sm font-black leading-[1.15] text-white transition lg:text-[14px] 2xl:px-2 2xl:text-[15px]';
   const submitSiteSearch = (event: React.FormEvent) => {
     event.preventDefault();
     if (!siteSearch.trim()) return;
@@ -1355,7 +1356,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
         </div>
-        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden"><MobileHeaderNodes items={managedMenu} close={close}/></nav>}
+        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
       </header>
     );
   }
@@ -1364,13 +1365,13 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
     <header className="realty-header relative isolate z-40 w-full text-white">
       <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden lg:block ${showCompactHeader ? 'is-visible' : ''}`}>
         <nav className="realty-compact-layout mx-auto grid w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_154px_minmax(0,1fr)] items-center px-4 2xl:px-8">
-          <div className="grid min-w-0 grid-cols-7 items-stretch">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(leftItems.length,1)},minmax(0,1fr))` }}>
             {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
           </div>
           <Link to="/" onClick={reloadHomeWithLoader} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty Center® ana sayfa">
             <span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty Center® Türkiye" className="realty-header-main-logo object-contain" /></span>
           </Link>
-          <div className="grid min-w-0 grid-cols-7 items-stretch">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(rightItems.length,1)},minmax(0,1fr))` }}>
             {rightItems.map((item) => <DesktopHeaderNode key={`compact-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>) }
           </div>
         </nav>
@@ -1398,7 +1399,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
       </div>
       <div className="realty-header-bar">
         <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
-          <div className="grid min-w-0 grid-cols-7 items-stretch">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(leftItems.length,1)},minmax(0,1fr))` }}>
             {leftItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
           </div>
 
@@ -1409,7 +1410,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             </span>
           </Link>
 
-          <div className="grid min-w-0 grid-cols-7 items-stretch">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(rightItems.length,1)},minmax(0,1fr))` }}>
             {rightItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
           </div>
         </nav>
@@ -1425,7 +1426,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
         </div>
       </div>
 
-      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 font-black xl:hidden"><MobileHeaderNodes items={managedMenu} close={close}/></nav>}
+      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 font-black xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
     </header>
   );
 }
