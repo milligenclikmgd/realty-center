@@ -2138,22 +2138,21 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty Center®’ı takip edin.<span className="home-title-en">STAY CONNECTED</span></h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
 
-      <section id="akademi" className="relative overflow-hidden border-b border-slate-200 bg-[#f4f3f0] px-6 py-14 text-slate-900 sm:py-16 lg:px-12">
+      <section id="akademi" className="relative overflow-hidden border-b border-slate-200 bg-[#f4f3f0] px-6 py-8 text-slate-900 sm:py-10 lg:px-12">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
 
-        <div className="relative z-10 mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-10 xl:grid-cols-[1.08fr_.92fr] xl:gap-14">
+        <div className="relative z-10 mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-7 xl:grid-cols-[1.08fr_.92fr] xl:gap-12">
           
           <div className="group relative order-2 mx-auto w-full max-w-3xl">
             <div className="absolute -inset-3 rounded-[2.2rem] border border-red-200/70 bg-white/50" />
             
-            <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem] border-2 border-white bg-white p-2 shadow-2xl shadow-slate-900/15">
+            <div className="relative aspect-[16/8] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-2xl shadow-slate-900/15">
               <img 
                 src="/realty-academy-training.png"
                 alt="Realty Center® Emlak Danışmanlığı Eğitimi" 
-                className="h-full w-full rounded-[1.55rem] object-cover transition duration-700 group-hover:scale-[1.025]"
+                className="absolute inset-0 h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.025]"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/15 via-transparent to-transparent" />
               
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur-md">
                 <div className="flex items-center space-x-3">
@@ -2172,13 +2171,13 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             </div>
           </div>
 
-          <div className="order-1 space-y-6">
+          <div className="order-1 space-y-4">
             <span className="inline-flex items-center space-x-2 rounded-xl bg-red-100/80 px-4 py-2 text-xs font-black tracking-[.2em] text-red-700">
               <GraduationCap className="w-4 h-4" />
               <span>REALTY CENTER® AKADEMİ</span>
             </span>
 
-            <h2 className="text-4xl font-black leading-[1.02] tracking-[-.045em] text-[#071f3d] sm:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-black leading-[1.02] tracking-[-.045em] text-[#071f3d] sm:text-5xl">
               Emlak Danışmanlığı <br className="hidden sm:inline" />
               <span className="text-red-700">
                 Eğitimimize Katıl
@@ -2189,7 +2188,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               Gayrimenkul sektöründe fark yaratmak için uzman eğitmenlerle hazırlanan eğitim programlarımızla kariyerinizi bir üst seviyeye taşıyın.
             </p>
 
-            <div className="grid grid-cols-2 gap-3 pt-2 sm:grid-cols-4">
+            <div className="grid grid-cols-2 gap-2 pt-1 sm:grid-cols-4">
               <div className="flex items-center space-x-2.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-red-700 flex-shrink-0" />
                 <span className="text-xs font-bold text-slate-800">Kapsamlı Ofis ve Online Eğitim</span>
@@ -2211,10 +2210,10 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
               </div>
             </div>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-4">
-              <button 
+            <div className="flex flex-col gap-4 pt-2 sm:flex-row">
+              <button
                 onClick={() => openDrawer('agent')} 
-                className="relative overflow-hidden group bg-red-700 hover:bg-red-800 text-white font-black px-8 py-4 rounded-xl text-sm flex items-center justify-center space-x-3 shadow-xl shadow-red-700/30 transition duration-300 transform hover:scale-105 tracking-wider"
+                className="relative flex items-center justify-center space-x-3 overflow-hidden rounded-xl bg-red-700 px-7 py-3.5 text-sm font-black tracking-wider text-white shadow-xl shadow-red-700/30 transition duration-300 hover:bg-red-800"
               >
                 <span className="relative z-10">Eğitime Hemen Başvur</span>
                 <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
