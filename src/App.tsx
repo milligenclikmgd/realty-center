@@ -1269,11 +1269,8 @@ function SiteSearchPage() {
   return <div className="min-h-[65vh] bg-slate-50 py-12"><div className="mx-auto max-w-5xl px-6"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER® SİTE İÇİ ARAMA</p><h1 className="mt-2 text-3xl font-black text-slate-900">Tüm sitede arayın</h1><form onSubmit={submit} className="mt-6 flex overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="İlan, rehber yazısı, danışman, ofis veya sayfa ara..." className="min-w-0 flex-1 px-5 py-4 text-sm font-semibold outline-none"/><button className="bg-red-700 px-6 text-sm font-black text-white">Ara</button></form><div className="mt-7 flex items-center justify-between border-b border-slate-200 pb-3"><h2 className="font-black text-slate-900">“{initialQuery}” sonuçları</h2><span className="text-xs font-bold text-slate-500">{results.length} sonuç</span></div>{results.length ? <div className="divide-y divide-slate-200">{results.map((item,index) => <Link key={`${item.to}-${item.title}-${index}`} to={item.to} className="group block py-5"><span className="text-[10px] font-black uppercase tracking-widest text-red-700">{item.category}</span><h3 className="mt-1 text-lg font-black text-slate-900 group-hover:text-red-700">{item.title}</h3><p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-600">{item.content}</p></Link>)}</div> : <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-10 text-center"><Search className="mx-auto h-8 w-8 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">Aramanızla eşleşen içerik bulunamadı.</p><p className="mt-1 text-xs text-slate-500">Daha kısa veya farklı bir kelime deneyebilirsiniz.</p></div>}</div></div>;
 }
 
-const HEADER_MENU_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { corporate: Building2, offices: MapPin, agents: Users, listings: Home, projects: Layers, discover: Navigation, videos: PlayCircle, earning: TrendingUp, ai: Search, library: BookOpen, why: ShieldCheck, franchise: Briefcase, advisor: UserCheck, contact: MessageCircle };
-
-function HeaderItemLabel({ item, root }: { item: HeaderMenuItem; root: boolean }) {
-  const Icon = HEADER_MENU_ICONS[item.id];
-  return <span className={root ? 'inline-flex items-center justify-center gap-1.5' : 'inline-flex items-center gap-2'}>{Icon && <Icon className={root ? 'h-3.5 w-3.5 shrink-0 opacity-90' : 'h-3.5 w-3.5 shrink-0 text-red-700'} />}<span>{item.label}</span></span>;
+function HeaderItemLabel({ item }: { item: HeaderMenuItem; root: boolean }) {
+  return <span>{item.label}</span>;
 }
 
 function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }: { item: HeaderMenuItem; root?: boolean; align?: 'left' | 'right'; menuLinkClass: (to: string) => string }) {
@@ -1287,7 +1284,7 @@ function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }:
 }
 
 function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
-  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-sm'}`} style={{ marginLeft: `${depth * 8}px` }}><span className="inline-flex items-center gap-2">{depth ? '↳ ' : ''}<HeaderItemLabel item={item} root={false}/></span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
+  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-base'}`} style={{ marginLeft: `${depth * 8}px` }}><span className="inline-flex items-center gap-2">{depth ? '↳ ' : ''}<HeaderItemLabel item={item} root={false}/></span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
 }
 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
@@ -1327,7 +1324,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   }, [location.pathname]);
 
   const menuLinkClass = (_to: string) =>
-    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-[10px] font-black leading-[1.15] text-white transition lg:text-[11px] 2xl:px-2 2xl:text-xs';
+    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-xs font-black leading-[1.15] text-white transition lg:text-[13px] 2xl:px-2 2xl:text-sm';
   const submitSiteSearch = (event: React.FormEvent) => {
     event.preventDefault();
     if (!siteSearch.trim()) return;
