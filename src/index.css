@@ -1338,3 +1338,52 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
 
 /* Yeni yatay kapalı kart düzeni, eski elips slogan kuralını ezerek referans kompozisyonu korur. */
 .buyer-request-banner .buyer-request-slogan { display:block; min-height:0; border-radius:0; padding:0; }
+
+/* Ana sayfa başlıklarında Türkçe önceliğini koruyan uluslararası etiket dili. */
+.home-title-en {
+  display: inline-block;
+  margin-left: .7rem;
+  color: #cbd5e1;
+  font-size: .32em;
+  font-weight: 800;
+  letter-spacing: .12em;
+  line-height: 1;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Leaflet içindeki marka noktası, metin/emoji yerine çizgisel ev ikonu kullanır. */
+.realty-world-marker-shell { background: transparent !important; border: 0 !important; }
+.realty-world-marker {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 999px;
+  background: #d6001c;
+  box-shadow: 0 5px 14px rgba(214,0,28,.42);
+}
+.realty-world-marker span {
+  position: relative;
+  width: 10px;
+  height: 9px;
+  border: 1.8px solid #fff;
+  border-top: 0;
+  border-radius: 1px;
+}
+.realty-world-marker span::before {
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  width: 9px;
+  height: 9px;
+  border-left: 1.8px solid #fff;
+  border-top: 1.8px solid #fff;
+  content: '';
+  transform: rotate(45deg);
+}
+@media (max-width: 639px) {
+  .home-title-en { display: block; margin: .45rem 0 0; font-size: .34em; }
+}
