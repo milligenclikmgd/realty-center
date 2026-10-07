@@ -7,6 +7,7 @@ import { Circle, CircleMarker, MapContainer, Marker, Popup, Rectangle, TileLayer
 import { 
   BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
 } from 'react-router-dom';
+import { isSupabaseConfigured, supabase } from './lib/supabase';
 
 import { 
   Search, MapPin, Phone, Mail, Globe, 
@@ -3802,21 +3803,76 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
   );
 }
 
+type PanelRole = 'advisor' | 'manager' | 'admin';
+type PanelProfile = { id: string; first_name: string; last_name: string; role: PanelRole; status: 'active' | 'inactive' | 'suspended' | 'left'; force_password_change: boolean };
+
+function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children: React.ReactNode }) {
+  const [state, setState] = useState<'loading' | 'allowed' | 'denied'>('loading');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    let active = true;
+    const verify = async () => {
+      if (!isSupabaseConfigured) { if (active) setState('denied'); return; }
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) { if (active) setState('denied'); return; }
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('id, first_name, last_name, role, status, force_password_change')
+        .eq('id', user.id)
+        .maybeSingle<PanelProfile>();
+      if (!profile || profile.status !== 'active' || !roles.includes(profile.role)) {
+        await supabase.auth.signOut();
+        if (active) setState('denied');
+        return;
+      }
+      if (active) setState('allowed');
+    };
+    void verify();
+    return () => { active = false; };
+  }, [roles.join(',')]);
+
+  if (state === 'loading') return <div className="min-h-[60vh] grid place-items-center text-sm font-bold text-slate-500">Oturum doğrulanıyor…</div>;
+  if (state === 'denied') return <div className="min-h-[60vh] grid place-items-center px-4 text-center"><div><ShieldAlert className="mx-auto mb-3 h-10 w-10 text-red-700"/><p className="font-black text-slate-900">Bu alan için yetkiniz yok.</p><button onClick={() => navigate('/panel')} className="mt-4 rounded-xl bg-red-700 px-4 py-2 text-sm font-black text-white">Giriş ekranına dön</button></div></div>;
+  return <>{children}</>;
+}
+
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [forgotMode, setForgotMode] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (!username.trim() || !password.trim()) {
+    setErrorMsg(''); setMessage('');
+    if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
+    if (!email.trim() || !password.trim()) { setErrorMsg('E-posta ve şifrenizi girin.'); return; }
+    setLoading(true);
+    const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim().toLowerCase(), password });
+    if (error || !data.user) { setErrorMsg('E-posta veya şifre hatalı.'); setLoading(false); return; }
+    const { data: profile } = await supabase.from('profiles').select('role, status').eq('id', data.user.id).maybeSingle();
+    if (!profile || profile.status !== 'active') {
+      await supabase.auth.signOut();
+      setErrorMsg('Bu hesap panel erişimine uygun değil veya aktif değil.'); setLoading(false);
       return;
     }
+    navigate(profile.role === 'admin' ? '/super-admin-panel' : '/danisman-panel');
+  };
 
-    navigate('/danisman-panel');
+  const handlePasswordReset = async (e: React.FormEvent) => {
+    e.preventDefault(); setErrorMsg(''); setMessage('');
+    if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
+    setLoading(true);
+    const { error } = await supabase.auth.resetPasswordForEmail(email.trim().toLowerCase(), { redirectTo: `${window.location.origin}/panel` });
+    setLoading(false);
+    if (error) { setErrorMsg('İşlem şu anda tamamlanamadı. Lütfen daha sonra tekrar deneyin.'); return; }
+    setMessage('Bu e-posta adresiyle kayıtlı bir hesap varsa şifre yenileme bağlantısı gönderilecektir.');
   };
 
   return (
@@ -3836,25 +3892,28 @@ function LoginPage() {
             </p>
           </div>
 
-          <form onSubmit={handleLogin} className="p-6 space-y-4">
+          <form onSubmit={forgotMode ? handlePasswordReset : handleLogin} className="p-6 space-y-4">
+            {(errorMsg || message) && <div className={`rounded-xl border p-3 text-xs font-bold ${errorMsg ? 'border-red-200 bg-red-50 text-red-700' : 'border-emerald-200 bg-emerald-50 text-emerald-700'}`}>{errorMsg || message}</div>}
+            {forgotMode && <p className="text-sm font-medium leading-6 text-slate-600">Realty Center hesabınıza bağlı e-posta adresini girin.</p>}
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-1.5">
-                Kullanıcı Adı / E-posta
+                E-posta Adresi
               </label>
               <div className="relative">
                 <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
                   type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="Kullanıcı adınızı veya e-postanızı girin"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="E-posta adresinizi girin"
+                  autoComplete="email"
                   className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
               </div>
             </div>
 
-            <div>
+            {!forgotMode && <div>
               <label className="block text-sm font-bold text-slate-700 mb-1.5">
                 Şifre
               </label>
@@ -3865,6 +3924,7 @@ function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Şifrenizi girin"
+                  autoComplete="current-password"
                   className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
@@ -3877,9 +3937,9 @@ function LoginPage() {
                   {showPassword ? <X className="w-5 h-5" /> : <EyeIcon />}
                 </button>
               </div>
-            </div>
+            </div>}
 
-            <div className="flex items-center justify-between text-sm">
+            {!forgotMode && <><div className="flex items-center justify-between text-sm">
               <label className="flex items-center space-x-2 cursor-pointer">
                 <input type="checkbox" className="w-4 h-4 accent-red-700" />
                 <span className="text-slate-600 font-medium">Beni hatırla</span>
@@ -3888,7 +3948,7 @@ function LoginPage() {
               <button
                 type="button"
                 className="text-red-700 hover:text-red-800 font-bold text-xs"
-                onClick={() => alert('Şifre yenileme bağlantısı e-posta adresinize gönderildi.')}
+                onClick={() => { setForgotMode(true); setErrorMsg(''); setMessage(''); }}
               >
                 Şifremi unuttum
               </button>
@@ -3898,29 +3958,12 @@ function LoginPage() {
               type="submit"
               className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
             >
-              <span>Danışman Girişi Yap</span>
+              <span>{loading ? 'İşlem yapılıyor…' : 'Giriş Yap'}</span>
               <ArrowRight className="w-5 h-5" />
             </button>
+            </>}
+            {forgotMode && <button type="button" onClick={() => { setForgotMode(false); setErrorMsg(''); setMessage(''); }} className="w-full text-center text-xs font-bold text-slate-500 hover:text-red-700">Giriş ekranına dön</button>}
           </form>
-
-          {/* SÜPER ADMİN GEÇİŞ BUTONU */}
-          <div className="px-6 pb-6 pt-2">
-            <div className="relative flex py-2 items-center">
-              <div className="flex-grow border-t border-slate-200"></div>
-              <span className="flex-shrink mx-3 text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">
-                Sistem Yönetimi
-              </span>
-              <div className="flex-grow border-t border-slate-200"></div>
-            </div>
-
-            <Link
-              to="/super-admin"
-              className="w-full bg-slate-900 hover:bg-black text-slate-200 font-extrabold py-2.5 rounded-xl text-xs flex items-center justify-center space-x-2 border border-slate-800 transition shadow-md group"
-            >
-              <ShieldAlert className="w-4 h-4 text-red-600 group-hover:scale-110 transition-transform" />
-              <span>Süper Admin Giriş Paneli</span>
-            </Link>
-          </div>
 
           <div className="border-t border-slate-200 px-6 py-3 text-center bg-slate-50">
             <p className="text-[11px] text-slate-500 font-medium">
@@ -3931,122 +3974,6 @@ function LoginPage() {
 
         <div className="text-center mt-3">
           <Link to="/" className="text-sm text-slate-500 hover:text-red-700 font-bold transition">
-            ← Ana sayfaya dön
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function SuperAdminLoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-  const [errorMsg, setErrorMsg] = useState('');
-  const navigate = useNavigate();
-
-  const handleAdminLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMsg('');
-
-    if (!username.trim() || !password.trim()) {
-      setErrorMsg('Lütfen tüm alanları doldurunuz.');
-      return;
-    }
-
-    if (username === 'admin' && password === '123456') {
-      navigate('/super-admin-panel');
-    } else {
-      setErrorMsg('Süper Admin yetkisi bulunamadı veya bilgiler hatalı!');
-    }
-  };
-
-  return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-50 flex items-center justify-center px-4 py-8 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-700/10 rounded-full blur-3xl pointer-events-none" />
-
-      <div className="w-full max-w-md relative z-10">
-        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
-          
-          <div className="p-6 text-center border-b border-slate-200 bg-white">
-            <div className="w-14 h-14 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-700/10">
-              <ShieldAlert className="w-8 h-8" />
-            </div>
-
-            <h1 className="text-2xl font-black text-slate-900 tracking-wide">SÜPER ADMİN</h1>
-            <p className="text-xs text-red-600 font-extrabold tracking-widest mt-1 uppercase">
-              Sistem Yönetim Merkezi
-            </p>
-          </div>
-
-          <form onSubmit={handleAdminLogin} className="p-6 space-y-4">
-            {errorMsg && (
-              <div className="bg-red-600/10 border border-red-600/30 text-red-500 p-3 rounded-xl text-xs font-bold flex items-center justify-between">
-                <span>{errorMsg}</span>
-                <X className="w-4 h-4 cursor-pointer" onClick={() => setErrorMsg('')} />
-              </div>
-            )}
-
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
-                Yönetici Kullanıcı Adı
-              </label>
-              <div className="relative">
-                <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
-                <input
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="Admin kullanıcı adı"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-900 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
-                Güvenlik Parolası
-              </label>
-              <div className="relative">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
-                <input
-                  type={showPassword ? 'text' : 'password'}
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="••••••••••••"
-                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-900 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition"
-                  required
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-500 hover:text-slate-700 font-bold"
-                >
-                  {showPassword ? 'Gizle' : 'Göster'}
-                </button>
-              </div>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3.5 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.01]"
-            >
-              <span>Sistem Paneline Giriş Yap</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </form>
-
-          <div className="border-t border-slate-200 px-6 py-3.5 text-center bg-slate-50">
-            <p className="text-[10px] text-slate-500 font-medium">
-              Bu alan üst düzey yönetici erişimi içindir. Tüm erişim logları tutulmaktadır.
-            </p>
-          </div>
-        </div>
-
-        <div className="text-center mt-4">
-          <Link to="/" className="text-xs text-slate-500 hover:text-red-600 font-bold transition">
             ← Ana sayfaya dön
           </Link>
         </div>
@@ -5481,9 +5408,9 @@ export default function RealtyCenterApp() {
             } />
 
             <Route path="/panel" element={<LoginPage />} />
-            <Route path="/danisman-panel" element={<AgentDashboard />} />
-            <Route path="/super-admin" element={<SuperAdminLoginPage />} />
-            <Route path="/super-admin-panel" element={<SuperAdminDashboard />} />
+            <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor', 'manager']}><AgentDashboard /></ProtectedPanelRoute>} />
+            <Route path="/super-admin" element={<LoginPage />} />
+            <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><SuperAdminDashboard /></ProtectedPanelRoute>} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
