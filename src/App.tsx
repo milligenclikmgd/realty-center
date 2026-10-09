@@ -4051,7 +4051,14 @@ function SuperAdminDashboard() {
     setCreatingUser(true);
     const { data, error } = await supabase.functions.invoke('admin-users', { body: { action: 'create_user', payload: { firstName: newUser.firstName.trim(), lastName: newUser.lastName.trim(), username, email, phone: newUser.phone.trim() || null, role: newUser.role, password: newUser.password, status: newUser.status, forcePasswordChange: newUser.forcePasswordChange } } });
     setCreatingUser(false);
-    if (error || data?.error) { setUserFormError(data?.error || 'Kullanıcı oluşturulamadı. Sunucu yapılandırmasını kontrol edin.'); return; }
+    if (error || data?.error) {
+      let detail = data?.error || error?.message || 'Bilinmeyen bağlantı hatası.';
+      if (error && 'context' in error && error.context instanceof Response) {
+        const responseBody = await error.context.clone().json().catch(() => null) as { error?: string } | null;
+        detail = responseBody?.error || detail;
+      }
+      setUserFormError(`Kullanıcı oluşturulamadı: ${detail}`); return;
+    }
     setUserFormSuccess('Kullanıcı gerçek giriş hesabıyla oluşturuldu.'); setNewUser(EMPTY_NEW_USER); setShowNewUser(false); void loadManagedUsers();
   };
 
