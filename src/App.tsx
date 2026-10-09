@@ -3050,7 +3050,7 @@ export function LegacyAIDecisionAssistantPage() {
         <div className="ai-world-first-badge absolute right-4 top-4 z-10 flex h-24 w-24 rotate-3 flex-col items-center justify-center rounded-full border border-cyan-100/60 bg-[#071a3b]/80 text-center shadow-[0_0_30px_rgba(34,211,238,.38)] backdrop-blur-md sm:right-7 sm:top-7 sm:h-28 sm:w-28">
           <span className="text-[8px] font-black tracking-[.08em] text-cyan-200">DÜNYADA</span><span className="text-[10px] font-black leading-none text-white">İLK</span><span className="my-1.5 h-px w-11 bg-cyan-200/60"/><span className="text-[7px] font-bold tracking-[.09em] text-white/90">WORLD'S</span><span className="text-[8px] font-black leading-none text-white">FIRST</span>
         </div>
-        <span className="inline-flex rounded-full border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-cyan-200">ÜCRETSİZ DEMO · YAPAY ZEKA GAYRİMENKUL ASİSTANI</span>
+        <span className="inline-flex rounded-full border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-cyan-200">YAPAY ZEKA GAYRİMENKUL ASİSTANI</span>
         <h1 className="mt-4 text-3xl font-black sm:text-5xl">Yapay Zeka <span className="text-cyan-300">Gayrimenkul Asistanı.</span></h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">İhtiyacınızı günlük dille yazın veya mülkünüzün bilgilerini girerek tahmini değer aralığını görün.</p>
         <div className="mt-6 inline-flex rounded-xl border border-white/15 bg-[#03142e]/60 p-1">
@@ -3862,7 +3862,7 @@ function LoginPage() {
       setErrorMsg('Bu hesap panel erişimine uygun değil veya aktif değil.'); setLoading(false);
       return;
     }
-    navigate(profile.role === 'admin' ? '/super-admin-panel' : '/danisman-panel');
+    navigate(profile.role === 'admin' ? '/super-admin-panel' : profile.role === 'manager' ? '/yonetici-panel' : '/danisman-panel');
   };
 
   const handlePasswordReset = async (e: React.FormEvent) => {
@@ -4779,8 +4779,9 @@ function ListingOptionalDetailFields({ listing, onChange }: { listing: any; onCh
   return <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5"><div className="mb-4"><h3 className="font-black text-slate-900">İlan Detay Sayfası Bilgileri</h3><p className="mt-1 text-xs text-slate-500">Bu alanların tamamı isteğe bağlıdır. Girilen bilgiler ilan detayında gösterilir.</p></div><div className="grid grid-cols-1 gap-4 md:grid-cols-2"><div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">İlan Açıklaması</label><textarea value={listing.description} onChange={(e) => onChange({ description: e.target.value })} rows={5} placeholder="Gayrimenkulün konumu, avantajları ve kullanım özellikleri..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Video Bağlantısı</label><input value={listing.videoUrl} onChange={(e) => onChange({ videoUrl: e.target.value })} placeholder="YouTube/Vimeo embed bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">360° Sanal Tur Bağlantısı</label><input value={listing.virtualTourUrl} onChange={(e) => onChange({ virtualTourUrl: e.target.value })} placeholder="Sanal tur bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Harita Bağlantısı</label><input value={listing.mapUrl} onChange={(e) => onChange({ mapUrl: e.target.value })} placeholder="Google Maps embed bağlantısı" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Aidat</label><input value={listing.monthlyFee} onChange={(e) => onChange({ monthlyFee: e.target.value })} placeholder="Örn. 2.750 ₺" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Tapu Bilgisi</label><input value={listing.deedInfo} onChange={(e) => onChange({ deedInfo: e.target.value })} placeholder="Kat mülkiyetli, müstakil tapu..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Teknik Özellikler</label><input value={listing.technicalFeatures} onChange={(e) => onChange({ technicalFeatures: e.target.value })} placeholder="Virgülle ayırın: otopark, güvenlik, internet..." className={fieldClass} /></div></div></section>;
 }
 
-function AgentDashboard() {
+function AgentDashboard({ panelRole = 'advisor' }: { panelRole?: 'advisor' | 'manager' }) {
   const navigate = useNavigate();
+  const isManager = panelRole === 'manager';
   const [activeSection, setActiveSection] = useState<'overview' | 'listings' | 'portfolio' | 'customers' | 'messages' | 'statistics' | 'profile'>('overview');
   const [showListingForm, setShowListingForm] = useState(false);
   const [editingListingId, setEditingListingId] = useState<string | null>(null);
@@ -4812,41 +4813,45 @@ function AgentDashboard() {
     images: [] as string[]
   };
 
-  const [myListings, setMyListings] = useState(() =>
-    SAMPLE_LISTINGS.map((item) => ({
-      ...item,
-      images: item.images?.length ? item.images : [item.image],
-      agentName: 'DEMO Danışman',
-      status: 'Taslak'
-    }))
-  );
+  // Gerçek ilan kayıtları bağlanana kadar panel boş başlar; örnek/demo kayıt gösterilmez.
+  const [myListings, setMyListings] = useState<any[]>([]);
 
   const [newListing, setNewListing] = useState(emptyListing);
 
-  const [customers, setCustomers] = useState([
-    { id: 1, name: 'DEMO Müşteri', phone: '', email: '', type: 'Demo', status: 'Demo', lastContact: '—' }
-  ]);
+  const [customers, setCustomers] = useState<Array<{ id: number; name: string; phone: string; email: string; type: string; status: string; lastContact: string }>>([]);
 
   const [customerForm, setCustomerForm] = useState({
     name: '', phone: '', email: '', type: 'Alıcı', status: 'Yeni'
   });
 
-  const [messages, setMessages] = useState([
-    { id: 1, sender: 'DEMO Müşteri', subject: 'DEMO mesaj', text: 'Gerçek mesajlar burada görüntülenecektir.', time: '—', unread: false }
-  ]);
+  const [messages, setMessages] = useState<Array<{ id: number; sender: string; subject: string; text: string; time: string; unread: boolean }>>([]);
 
   const [profile, setProfile] = useState({
-    name: 'DEMO Danışman',
+    name: '',
     email: '',
     phone: '',
-    title: 'DEMO PROFİL',
-    office: 'DEMO OFİS',
+    title: isManager ? 'Yönetici' : 'Gayrimenkul Danışmanı',
+    office: '',
     region: ''
   });
 
-  const appointments = [
-    { time: '—', title: 'DEMO Randevu', customer: 'DEMO Müşteri', type: 'Demo' }
-  ];
+  const appointments: Array<{ time: string; title: string; customer: string; type: string }> = [];
+
+  useEffect(() => {
+    const loadProfile = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+      const { data } = await supabase.from('profiles').select('first_name, last_name, email, phone').eq('id', user.id).maybeSingle();
+      setProfile((current) => ({
+        ...current,
+        name: [data?.first_name, data?.last_name].filter(Boolean).join(' ') || current.name,
+        email: data?.email || user.email || current.email,
+        phone: data?.phone || current.phone,
+        title: isManager ? 'Yönetici' : 'Gayrimenkul Danışmanı',
+      }));
+    };
+    void loadProfile();
+  }, [isManager]);
 
   const filteredListings = myListings.filter((item) =>
     `${item.title} ${item.id} ${item.city} ${item.district}`.toLocaleLowerCase('tr-TR').includes(listingSearch.toLocaleLowerCase('tr-TR'))
@@ -4857,20 +4862,20 @@ function AgentDashboard() {
   );
 
   const navItems = [
-    { key: 'overview' as const, label: 'Panel Anasayfa', icon: Home },
-    { key: 'listings' as const, label: 'İlanlarım', icon: Building2 },
-    { key: 'portfolio' as const, label: 'Portföylerim', icon: Briefcase },
-    { key: 'customers' as const, label: 'Müşterilerim', icon: Users },
+    { key: 'overview' as const, label: isManager ? 'Yönetici Ana Sayfa' : 'Panel Anasayfa', icon: Home },
+    { key: 'listings' as const, label: isManager ? 'İlan Yönetimi' : 'İlanlarım', icon: Building2 },
+    { key: 'portfolio' as const, label: isManager ? 'Portföy Yönetimi' : 'Portföylerim', icon: Briefcase },
+    { key: 'customers' as const, label: isManager ? 'Müşteri Yönetimi' : 'Müşterilerim', icon: Users },
     { key: 'messages' as const, label: 'Mesajlar', icon: MessageSquare },
     { key: 'statistics' as const, label: 'İstatistikler', icon: BarChart3 },
     { key: 'profile' as const, label: 'Profil & Ayarlar', icon: Settings }
   ];
 
   const sectionTitles: Record<typeof activeSection, { title: string; description: string }> = {
-    overview: { title: 'Panel Anasayfa', description: 'Bugünkü çalışmalarınıza genel bakış.' },
-    listings: { title: 'İlanlarım', description: 'Yönettiğiniz tüm ilanları buradan takip edin.' },
-    portfolio: { title: 'Portföylerim', description: 'Portföylerinizin durumunu ve dağılımını yönetin.' },
-    customers: { title: 'Müşterilerim', description: 'Müşteri ilişkilerinizi tek ekrandan yönetin.' },
+    overview: { title: isManager ? 'Yönetici Paneli' : 'Danışman Paneli', description: isManager ? 'Operasyonlarınız için genel görünüm.' : 'Bugünkü çalışmalarınıza genel bakış.' },
+    listings: { title: isManager ? 'İlan Yönetimi' : 'İlanlarım', description: 'Yönettiğiniz tüm ilanları buradan takip edin.' },
+    portfolio: { title: isManager ? 'Portföy Yönetimi' : 'Portföylerim', description: 'Portföylerin durumunu ve dağılımını yönetin.' },
+    customers: { title: isManager ? 'Müşteri Yönetimi' : 'Müşterilerim', description: 'Müşteri ilişkilerini tek ekrandan yönetin.' },
     messages: { title: 'Mesajlar', description: 'Müşterilerinizden gelen mesajları takip edin.' },
     statistics: { title: 'İstatistikler', description: 'Performansınızı ve ilanlarınızın erişimini inceleyin.' },
     profile: { title: 'Profil & Ayarlar', description: 'Hesap ve iletişim bilgilerinizi güncelleyin.' }
@@ -5034,7 +5039,7 @@ function AgentDashboard() {
         details: newListing.details,
         image: primaryImage,
         images: newListing.images.length ? newListing.images : [primaryImage],
-        agentName: profile.name || 'DEMO Danışman',
+        agentName: profile.name || (isManager ? 'Yönetici' : 'Danışman'),
         agentPhone: profile.phone || '',
         date: new Date().toISOString().slice(0, 10),
         isFeatured: false,
@@ -5130,8 +5135,10 @@ function AgentDashboard() {
     <div className="grid grid-cols-1 xl:grid-cols-3 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 xl:col-span-2"><div className="flex items-center justify-between mb-6"><div><h2 className="text-lg font-black text-slate-900">Profil Bilgileri</h2><p className="text-xs text-slate-500 mt-1">Danışman profilinizde görünen bilgileri yönetin.</p></div>{profileSaved&&<span className="text-xs font-black text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full">Kaydedildi</span>}</div><div className="grid grid-cols-1 md:grid-cols-2 gap-5">{([['name','Ad Soyad'],['email','E-posta'],['phone','Telefon'],['title','Unvan'],['office','Ofis'],['region','Bölge']] as const).map(([key,label])=><div key={key}><label className="text-xs font-black text-slate-700 mb-2 block">{label}</label><input value={profile[key]} onChange={e=>setProfile({...profile,[key]:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}</div><button onClick={saveProfile} className="mt-6 bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl">Değişiklikleri Kaydet</button></section><section className="bg-slate-900 rounded-2xl shadow-xl p-6 text-white h-fit"><div className="w-20 h-20 rounded-full bg-red-700 flex items-center justify-center text-2xl font-black mx-auto">MY</div><h3 className="text-center text-xl font-black mt-4">{profile.name}</h3><p className="text-center text-sm text-slate-400 mt-1">{profile.title}</p><div className="mt-6 pt-5 border-t border-slate-700 space-y-4 text-sm"><div className="flex justify-between"><span className="text-slate-400">Aktif İlan</span><strong>{myListings.filter((x)=>x.status==='Aktif').length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Müşteri</span><strong>{customers.length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Ofis</span><strong>{profile.office.replace('Realty Center® ','')}</strong></div></div></section></div>
   );
 
+  const profileInitials = profile.name ? profile.name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase() : 'RC';
+
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">MY</div><div><div className="text-white font-black text-sm">{profile.name}</div><div className="text-slate-400 text-xs">Gayrimenkul Danışmanı</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">{profileInitials}</div><div><div className="text-white font-black text-sm">{profile.name || 'Realty Center'}</div><div className="text-slate-400 text-xs">{isManager ? 'Yönetici' : 'Gayrimenkul Danışmanı'}</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Çıkış Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">Hoş geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni İlan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
 
       {showListingForm && (<div className="fixed inset-0 z-[60] overflow-y-auto bg-slate-950/70 p-4"><form onSubmit={handleCreateListing} className="mx-auto max-w-4xl space-y-5 rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-black">{editingListingId ? 'İlanı Düzenle' : 'Yeni İlan Ekle'}</h2><button type="button" onClick={resetListingForm}><X /></button></div><input required value={newListing.title} onChange={e=>setNewListing({...newListing,title:e.target.value})} placeholder="İlan Başlığı" className="w-full rounded-xl border p-3" /><div className="grid gap-3 md:grid-cols-3"><select value={newListing.category} onChange={e=>{const category=e.target.value;setNewListing({...newListing,category,propertyType:LISTING_PROPERTY_TYPES[category as keyof typeof LISTING_PROPERTY_TYPES][0],details:{}})}} className="rounded-xl border p-3">{LISTING_CATEGORIES.map(x=><option key={x}>{x}</option>)}</select><select value={newListing.propertyType} onChange={e=>setNewListing({...newListing,propertyType:e.target.value,details:{}})} className="rounded-xl border p-3">{(LISTING_PROPERTY_TYPES[newListing.category as keyof typeof LISTING_PROPERTY_TYPES]||[]).map(x=><option key={x}>{x}</option>)}</select><select value={newListing.type} onChange={e=>setNewListing({...newListing,type:e.target.value})} className="rounded-xl border p-3">{LISTING_TRANSACTION_TYPES.map(x=><option key={x}>{x}</option>)}</select></div><div className="rounded-xl bg-red-50 p-4"><h3 className="mb-3 font-black text-red-800">{newListing.propertyType} Özellikleri</h3><div className="grid gap-3 sm:grid-cols-2">{(PROPERTY_DETAIL_FIELDS[newListing.propertyType]||[]).map(field=><div key={field.key}><label className="mb-1 block text-xs font-black">{field.label}</label><input type={field.type || 'text'} value={newListing.details[field.key] || ''} onChange={e=>setNewListing({...newListing,details:{...newListing.details,[field.key]:e.target.value},...(field.key === 'roomCount'?{rooms:e.target.value}:{})})} placeholder={field.placeholder||field.label} className="w-full rounded-xl border p-3" /></div>)}</div></div><div className="grid gap-3 md:grid-cols-2"><input required value={newListing.price} onChange={e=>setNewListing({...newListing,price:e.target.value})} placeholder="Fiyat" className="rounded-xl border p-3" /><input required value={newListing.area} onChange={e=>setNewListing({...newListing,area:e.target.value})} placeholder="Toplam alan m²" className="rounded-xl border p-3" /></div><ListingOptionalDetailFields listing={newListing} onChange={(updates) => setNewListing({ ...newListing, ...updates })} /><label><input type="file" accept="image/*" multiple onChange={handleImageChange} /> Görsel seç ({newListing.images.length}/10)</label><div className="flex justify-end gap-3"><button type="button" onClick={resetListingForm}>Vazgeç</button><button type="submit" className="rounded-xl bg-red-700 px-5 py-3 font-black text-white">İlanı Kaydet</button></div></form></div>)}
     </div>
@@ -5482,7 +5489,8 @@ export default function RealtyCenterApp() {
             } />
 
             <Route path="/panel" element={<LoginPage />} />
-            <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor', 'manager']}><AgentDashboard /></ProtectedPanelRoute>} />
+            <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor']}><AgentDashboard panelRole="advisor" /></ProtectedPanelRoute>} />
+            <Route path="/yonetici-panel" element={<ProtectedPanelRoute roles={['manager']}><AgentDashboard panelRole="manager" /></ProtectedPanelRoute>} />
             <Route path="/super-admin" element={<LoginPage />} />
             <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><SuperAdminDashboard /></ProtectedPanelRoute>} />
             
