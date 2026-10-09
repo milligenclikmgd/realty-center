@@ -3987,9 +3987,22 @@ function HeaderMenuEditorNode({ item, depth, onUpdate, onRemove, onAddChild }: {
   return <div className={`rounded-2xl border p-4 ${depth === 0 ? 'border-slate-300 bg-white shadow-sm' : depth === 1 ? 'border-red-100 bg-red-50/40' : 'border-slate-200 bg-slate-50'}`}><div className="mb-3 flex items-center justify-between gap-3"><div className="flex items-center gap-2"><span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-700 text-[10px] font-black text-white">{depth + 1}</span><strong className="text-xs text-slate-800">{depth === 0 ? 'Ana başlık' : depth === 1 ? 'Alt başlık' : 'Alt başlığın altı'}</strong></div><button type="button" onClick={() => onRemove(item.id)} className="text-[10px] font-black text-red-700">Kaldır</button></div><div className="grid gap-3 md:grid-cols-2"><input value={item.label} onChange={(e) => onUpdate(item.id,{ label:e.target.value })} placeholder="Menü başlığı" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><input value={item.path} onChange={(e) => onUpdate(item.id,{ path:e.target.value })} placeholder="/icerik/sayfa-adi" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/>{depth === 0 && <select value={item.side} onChange={(e) => onUpdate(item.id,{ side:e.target.value as 'left' | 'right' })} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"><option value="left">Logonun solu</option><option value="right">Logonun sağı</option></select>}<input value={item.image || ''} onChange={(e) => onUpdate(item.id,{ image:e.target.value })} placeholder="Sol bölüm görsel URL'si" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><textarea rows={4} value={item.content || ''} onChange={(e) => onUpdate(item.id,{ content:e.target.value })} placeholder="Sayfanın sağında gösterilecek metin" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs leading-5 md:col-span-2"/></div>{depth < 2 && <button type="button" onClick={() => onAddChild(item.id,item.side)} className="mt-3 rounded-lg border border-red-200 bg-white px-3 py-2 text-[10px] font-black text-red-700">+ Alt başlık ekle</button>}{item.children.length > 0 && <div className="mt-4 space-y-3 border-l-2 border-red-200 pl-3">{item.children.map((child) => <HeaderMenuEditorNode key={child.id} item={child} depth={depth + 1} onUpdate={onUpdate} onRemove={onRemove} onAddChild={onAddChild}/>)}</div>}</div>;
 }
 
+type ManagedUser = {
+  id: string; first_name: string; last_name: string; username: string; email: string; phone: string | null;
+  role: PanelRole; status: 'active' | 'inactive' | 'suspended' | 'left'; last_login_at: string | null; created_at: string;
+};
+const EMPTY_NEW_USER = { firstName: '', lastName: '', username: '', email: '', phone: '', role: 'advisor' as Exclude<PanelRole, 'admin'>, password: '', passwordRepeat: '', status: 'active' as 'active' | 'inactive', forcePasswordChange: true };
+
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [managedUsers, setManagedUsers] = useState<ManagedUser[]>([]);
+  const [usersLoading, setUsersLoading] = useState(false);
+  const [showNewUser, setShowNewUser] = useState(false);
+  const [newUser, setNewUser] = useState(EMPTY_NEW_USER);
+  const [userFormError, setUserFormError] = useState('');
+  const [userFormSuccess, setUserFormSuccess] = useState('');
+  const [creatingUser, setCreatingUser] = useState(false);
   const [contactSettings, setContactSettings] = useState(getContactSettings);
   const [settingsSaved, setSettingsSaved] = useState(false);
   const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
@@ -4018,6 +4031,29 @@ function SuperAdminDashboard() {
   const [librarySaved,setLibrarySaved]=useState(false);
   const [editingLibraryArticle,setEditingLibraryArticle]=useState<{categoryId:string;articleId:string}|null>(null);
   useEffect(() => { const refresh = () => setBuyerRequests(getBuyerRequests()); window.addEventListener('realty-center-buyer-requests-updated', refresh); return () => window.removeEventListener('realty-center-buyer-requests-updated', refresh); }, []);
+
+  const loadManagedUsers = async () => {
+    setUsersLoading(true);
+    const { data, error } = await supabase.from('profiles').select('id, first_name, last_name, username, email, phone, role, status, last_login_at, created_at').is('deleted_at', null).order('created_at', { ascending: false });
+    if (!error) setManagedUsers((data || []) as ManagedUser[]);
+    setUsersLoading(false);
+  };
+  useEffect(() => { if (activeTab === 'users') void loadManagedUsers(); }, [activeTab]);
+  const submitNewUser = async (event: React.FormEvent) => {
+    event.preventDefault(); setUserFormError(''); setUserFormSuccess('');
+    const username = newUser.username.trim().toLocaleLowerCase('tr-TR');
+    const email = newUser.email.trim().toLowerCase();
+    if (!newUser.firstName.trim() || !newUser.lastName.trim() || !username || !email) return setUserFormError('Ad, soyad, kullanıcı adı ve e-posta zorunludur.');
+    if (!/^[a-z0-9._-]{3,40}$/i.test(username)) return setUserFormError('Kullanıcı adı 3–40 karakter olmalı; boşluk içeremez.');
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setUserFormError('Geçerli bir e-posta adresi girin.');
+    if (newUser.password.length < 10) return setUserFormError('Şifre en az 10 karakter olmalıdır.');
+    if (newUser.password !== newUser.passwordRepeat) return setUserFormError('Şifreler eşleşmiyor.');
+    setCreatingUser(true);
+    const { data, error } = await supabase.functions.invoke('admin-users', { body: { action: 'create_user', payload: { firstName: newUser.firstName.trim(), lastName: newUser.lastName.trim(), username, email, phone: newUser.phone.trim() || null, role: newUser.role, password: newUser.password, status: newUser.status, forcePasswordChange: newUser.forcePasswordChange } } });
+    setCreatingUser(false);
+    if (error || data?.error) { setUserFormError(data?.error || 'Kullanıcı oluşturulamadı. Sunucu yapılandırmasını kontrol edin.'); return; }
+    setUserFormSuccess('Kullanıcı gerçek giriş hesabıyla oluşturuldu.'); setNewUser(EMPTY_NEW_USER); setShowNewUser(false); void loadManagedUsers();
+  };
 
   const updateManagedHeaderItem = (id: string, patch: Partial<HeaderMenuItem>) => setHeaderMenuItems((current) => updateHeaderMenuItem(current,id,patch));
   const removeManagedHeaderItem = (id: string) => setHeaderMenuItems((current) => removeHeaderMenuItem(current,id));
@@ -4149,6 +4185,7 @@ function SuperAdminDashboard() {
 
   const navButtons = [
     { key: 'overview' as const, label: 'Genel Bakış & İstatistik', icon: PieChart },
+    { key: 'users' as const, label: 'Kullanıcılar', icon: Users },
     { key: 'franchise' as const, label: 'Franchise Başvuruları', icon: FileText, badge: franchiseApps.filter(a => a.status === 'Beklemede').length },
     { key: 'offices' as const, label: 'Franchise Ofis Yönetimi', icon: Building2 },
     { key: 'agents' as const, label: 'Danışman Kontrolü', icon: Users },
@@ -4355,6 +4392,36 @@ function SuperAdminDashboard() {
             )}
 
             {/* 2. FRANCHİSE BAŞVURULARI TABI */}
+            {activeTab === 'users' && (
+              <div className="space-y-6">
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                  <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 sm:flex-row sm:items-center">
+                    <div><h2 className="text-xl font-black text-slate-900">Kullanıcılar</h2><p className="mt-1 text-xs font-medium text-slate-500">Danışman ve Yönetici hesaplarını buradan gerçek giriş hesabıyla oluşturun.</p></div>
+                    <button onClick={() => { setShowNewUser((value) => !value); setUserFormError(''); setUserFormSuccess(''); }} className="rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/20">{showNewUser ? 'Formu Kapat' : '+ Yeni Kullanıcı'}</button>
+                  </div>
+                  {showNewUser && <form onSubmit={submitNewUser} className="mt-5 rounded-2xl border border-red-100 bg-red-50/40 p-5">
+                    <div className="mb-4"><h3 className="font-black text-slate-900">Yeni Kullanıcı</h3><p className="mt-1 text-xs text-slate-500">Yıldızlı alanlar zorunludur. E-posta ve kullanıcı adı sistem genelinde benzersizdir.</p></div>
+                    {userFormError && <div className="mb-4 rounded-xl border border-red-200 bg-white p-3 text-xs font-bold text-red-700">{userFormError}</div>}
+                    {userFormSuccess && <div className="mb-4 rounded-xl border border-emerald-200 bg-white p-3 text-xs font-bold text-emerald-700">{userFormSuccess}</div>}
+                    <div className="grid gap-3 md:grid-cols-2">
+                      <label className="text-xs font-black text-slate-700">AD *<input value={newUser.firstName} onChange={(e) => setNewUser({ ...newUser, firstName: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">SOYAD *<input value={newUser.lastName} onChange={(e) => setNewUser({ ...newUser, lastName: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">KULLANICI ADI *<input value={newUser.username} onChange={(e) => setNewUser({ ...newUser, username: e.target.value.toLowerCase().replace(/\s/g, '') })} placeholder="ahmet.yilmaz" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">E-POSTA *<input type="email" value={newUser.email} onChange={(e) => setNewUser({ ...newUser, email: e.target.value })} placeholder="ahmet@ornek.com" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">TELEFON<input value={newUser.phone} onChange={(e) => setNewUser({ ...newUser, phone: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" /></label>
+                      <label className="text-xs font-black text-slate-700">ROL *<select value={newUser.role} onChange={(e) => setNewUser({ ...newUser, role: e.target.value as Exclude<PanelRole, 'admin'> })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium"><option value="advisor">Danışman</option><option value="manager">Yönetici</option></select></label>
+                      <label className="text-xs font-black text-slate-700">ŞİFRE *<input type="password" value={newUser.password} onChange={(e) => setNewUser({ ...newUser, password: e.target.value })} autoComplete="new-password" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">ŞİFRE TEKRAR *<input type="password" value={newUser.passwordRepeat} onChange={(e) => setNewUser({ ...newUser, passwordRepeat: e.target.value })} autoComplete="new-password" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">HESAP DURUMU<select value={newUser.status} onChange={(e) => setNewUser({ ...newUser, status: e.target.value as 'active' | 'inactive' })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium"><option value="active">Aktif</option><option value="inactive">Pasif</option></select></label>
+                      <label className="flex items-center gap-2 self-end pb-3 text-xs font-bold text-slate-700"><input type="checkbox" checked={newUser.forcePasswordChange} onChange={(e) => setNewUser({ ...newUser, forcePasswordChange: e.target.checked })} className="h-4 w-4 accent-red-700"/> İlk girişte şifre değişikliği zorunlu</label>
+                    </div>
+                    <button disabled={creatingUser} className="mt-5 rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{creatingUser ? 'Kullanıcı oluşturuluyor…' : 'KULLANICI OLUŞTUR'}</button>
+                  </form>}
+                </section>
+                <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl"><div className="overflow-x-auto"><table className="w-full min-w-[900px] text-left"><thead className="bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500"><tr><th className="px-5 py-4">Kullanıcı</th><th className="px-5 py-4">Kullanıcı Adı</th><th className="px-5 py-4">E-posta</th><th className="px-5 py-4">Rol</th><th className="px-5 py-4">Durum</th><th className="px-5 py-4">Son Giriş</th><th className="px-5 py-4">Oluşturulma</th></tr></thead><tbody className="divide-y divide-slate-100">{usersLoading ? <tr><td colSpan={7} className="px-5 py-10 text-center text-sm font-bold text-slate-400">Kullanıcılar yükleniyor…</td></tr> : managedUsers.length === 0 ? <tr><td colSpan={7} className="px-5 py-10 text-center text-sm font-bold text-slate-400">Henüz kullanıcı bulunmuyor.</td></tr> : managedUsers.map((user) => <tr key={user.id} className="text-xs text-slate-700"><td className="px-5 py-4 font-black text-slate-900">{user.first_name} {user.last_name}</td><td className="px-5 py-4 font-mono">{user.username}</td><td className="px-5 py-4">{user.email}</td><td className="px-5 py-4">{user.role === 'advisor' ? 'Danışman' : user.role === 'manager' ? 'Yönetici' : 'Admin'}</td><td className="px-5 py-4"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${user.status === 'active' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-600'}`}>{user.status === 'active' ? 'Aktif' : user.status === 'inactive' ? 'Pasif' : user.status === 'suspended' ? 'Askıya alındı' : 'Ayrıldı'}</span></td><td className="px-5 py-4">{user.last_login_at ? new Date(user.last_login_at).toLocaleString('tr-TR') : '—'}</td><td className="px-5 py-4">{new Date(user.created_at).toLocaleDateString('tr-TR')}</td></tr>)}</tbody></table></div></section>
+              </div>
+            )}
+
             {activeTab === 'franchise' && (
               <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
                 <div className="flex items-center justify-between border-b border-slate-200 pb-4">
