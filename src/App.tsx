@@ -1224,13 +1224,22 @@ function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[
       const hasChildren = item.children.length > 0;
       const isOpen = openItemId === item.id;
       const itemClass = depth === 0
-        ? 'realty-mobile-menu-root flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-black text-slate-800 shadow-sm transition hover:border-red-200 hover:text-red-700'
+        ? 'realty-mobile-menu-root flex w-full items-center justify-between border-b border-slate-200 px-1 py-3.5 text-left text-[15px] font-black text-slate-800 transition hover:text-red-700'
         : 'realty-mobile-menu-child flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-[13px] font-bold text-slate-700 transition hover:bg-red-50 hover:text-red-700';
       return <div key={item.id}>
         {hasChildren ? <button type="button" onClick={() => setOpenItemId(isOpen ? null : item.id)} aria-expanded={isOpen} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/><ChevronDown className={`h-4 w-4 shrink-0 transition ${isOpen ? 'rotate-180 text-red-700' : 'text-slate-400'}`}/></button> : <Link onClick={close} to={item.path} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/></Link>}
         {hasChildren && isOpen && <div className="mt-2 space-y-2"><Link onClick={close} to={item.path} className="realty-mobile-menu-all block px-3 py-2 text-xs font-black text-red-700">Tümünü Gör</Link><MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/></div>}
       </div>;
     })}
+  </div>;
+}
+
+function MobileMenuFooter() {
+  return <div className="realty-mobile-menu-footer mt-auto pt-8">
+    <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Bizi Takip Edin</p>
+    <div className="flex items-center gap-2.5">
+      {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="realty-mobile-social-link"><img src={social.icon} alt="" /></a>)}
+    </div>
   </div>;
 }
 
@@ -1303,7 +1312,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
         </div>
-        {mobileOpen && <nav className="realty-header-mobile-menu px-3 py-3 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
+        {mobileOpen && <nav className="realty-header-mobile-menu flex min-h-[calc(100vh-68px)] flex-col px-4 py-5 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/><MobileMenuFooter /></nav>}
       </header>
     );
   }
@@ -1362,18 +1371,18 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           </div>
         </nav>
 
-        <div className="relative z-10 flex min-h-[76px] items-center justify-between px-4 xl:hidden">
+        <div className="realty-mobile-mainbar relative z-10 flex min-h-[68px] items-center justify-between px-4 xl:hidden">
           <Link to="/" onClick={close} className="realty-header-mobile-logo">
-            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="object-contain brightness-0 invert" />
+            <img src="/logo.png" alt="Realty Center® Önce Güven" className="object-contain" />
           </Link>
           <div className="flex items-center gap-2">
-            <Link to="/panel" className="rounded-lg bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-lg">{t.panel}</Link>
-            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/40 bg-white/10 text-white">{mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button>
+            <Link to="/panel" className="realty-mobile-panel-link rounded-lg border border-red-200 bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-sm">{t.panel}</Link>
+            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="realty-mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[#CD011E] bg-[#CD011E] text-white">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
         </div>
       </div>
 
-      {mobileOpen && <nav className="realty-header-mobile-menu px-4 py-4 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
+      {mobileOpen && <nav className="realty-header-mobile-menu flex min-h-[calc(100vh-108px)] flex-col px-5 py-5 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/><MobileMenuFooter /></nav>}
     </header>
   );
 }
