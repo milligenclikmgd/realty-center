@@ -308,7 +308,7 @@ const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyTy
   return ({
   id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
   image: images[0],
-  agentName: 'Realty Center® Çankaya', agentPhone: '0532 567 48 45', date: '2026-08-15', isFeatured: index < 4,
+  agentName: 'Realty Center® Çankaya', agentPhone: '0 554 322 22 22', date: '2026-08-15', isFeatured: index < 4,
   details: getSampleListingDetails(propertyType, rooms),
   images,
   description: `${title}; Realty Center® güvencesiyle sunulan, konumu ve kullanım özellikleriyle öne çıkan seçkin bir gayrimenkuldür. Ayrıntılı bilgi ve yerinde sunum için yetkili danışmanımızla iletişime geçebilirsiniz.`,
@@ -331,7 +331,7 @@ const SAMPLE_OFFICES = [
     city: "Ankara",
     district: "Çankaya",
     address: "Çukurambar Mah. Muhsin Yazıcıoğlu Cad. No: 39, Çankaya / Ankara",
-    phone: "0532 567 48 45",
+    phone: "0 554 322 22 22",
     email: "cankaya@realtycenter.com.tr",
     manager: "Mert Yalçın",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=88&w=1200"
@@ -368,7 +368,7 @@ const SAMPLE_AGENTS = [
     office: "Realty Center® Çankaya",
     city: "Ankara",
     district: "Çankaya",
-    phone: "0532 567 48 45",
+    phone: "0 554 322 22 22",
     email: "mert.yalcin@realtycenter.com.tr",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
     activeListings: 18
@@ -510,12 +510,20 @@ export interface ContactMessage {
 
 const INITIAL_MESSAGES: ContactMessage[] = [];
 
-const DEFAULT_CONTACT_SETTINGS = { phone: '', email: '', address: '', whatsapp: '' };
+const REALTY_PHONE_DISPLAY = '0 554 322 22 22';
+const REALTY_PHONE_E164 = '905543222222';
+const REALTY_WHATSAPP_MESSAGE = 'Merhaba, Realty Center hakkında bilgi almak istiyorum.';
+const DEFAULT_CONTACT_SETTINGS = { phone: REALTY_PHONE_DISPLAY, email: '', address: '', whatsapp: REALTY_PHONE_E164 };
 
 function getContactSettings() {
   try {
     const saved = localStorage.getItem('realty-center-contact-settings');
-    return saved ? { ...DEFAULT_CONTACT_SETTINGS, ...JSON.parse(saved) } : DEFAULT_CONTACT_SETTINGS;
+    if (!saved) return DEFAULT_CONTACT_SETTINGS;
+    const settings = { ...DEFAULT_CONTACT_SETTINGS, ...JSON.parse(saved) };
+    const normalize = (value: string) => value.replace(/\D/g, '');
+    if (normalize(settings.phone) === '905325674845' || normalize(settings.phone) === '05325674845') settings.phone = REALTY_PHONE_DISPLAY;
+    if (normalize(settings.whatsapp) === '905325674845' || normalize(settings.whatsapp) === '05325674845') settings.whatsapp = REALTY_PHONE_E164;
+    return settings;
   } catch { return DEFAULT_CONTACT_SETTINGS; }
 }
 
@@ -526,7 +534,8 @@ function WhatsAppSupportButton() {
     window.addEventListener('realty-center-contact-updated', refresh);
     return () => window.removeEventListener('realty-center-contact-updated', refresh);
   }, []);
-  const href = settings.whatsapp.replace(/\D/g, '') ? 'https://wa.me/' + settings.whatsapp.replace(/\D/g, '') : '#';
+  const whatsappNumber = settings.whatsapp.replace(/\D/g, '') || REALTY_PHONE_E164;
+  const href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(REALTY_WHATSAPP_MESSAGE)}`;
   return (
     <a href={href} target="_blank" rel="noreferrer" aria-label="WhatsApp destek hattı" className="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white px-4 py-3.5 shadow-2xl shadow-emerald-950/30 transition-transform duration-300 hover:scale-105">
       <MessageCircle className="w-6 h-6 fill-white/10" />
@@ -1209,7 +1218,20 @@ function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }:
 }
 
 function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
-  return <>{items.map((item) => <React.Fragment key={item.id}><Link onClick={close} to={item.path} className={`flex items-center justify-between rounded-xl border px-3 py-3 text-white transition hover:bg-white/20 ${depth ? 'border-white/10 bg-black/10 text-xs' : 'border-white/15 bg-white/10 text-base'}`} style={{ marginLeft: `${depth * 8}px` }}><span className="inline-flex items-center gap-2">{depth ? '↳ ' : ''}<HeaderItemLabel item={item} root={false}/></span>{item.children.length > 0 && <ChevronDown className="h-3.5 w-3.5"/>}</Link>{item.children.length > 0 && <MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/>}</React.Fragment>)}</>;
+  const [openItemId, setOpenItemId] = useState<string | null>(null);
+  return <div className={`space-y-2 ${depth ? 'border-l border-slate-200 pl-3' : ''}`}>
+    {items.map((item) => {
+      const hasChildren = item.children.length > 0;
+      const isOpen = openItemId === item.id;
+      const itemClass = depth === 0
+        ? 'realty-mobile-menu-root flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-black text-slate-800 shadow-sm transition hover:border-red-200 hover:text-red-700'
+        : 'realty-mobile-menu-child flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-[13px] font-bold text-slate-700 transition hover:bg-red-50 hover:text-red-700';
+      return <div key={item.id}>
+        {hasChildren ? <button type="button" onClick={() => setOpenItemId(isOpen ? null : item.id)} aria-expanded={isOpen} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/><ChevronDown className={`h-4 w-4 shrink-0 transition ${isOpen ? 'rotate-180 text-red-700' : 'text-slate-400'}`}/></button> : <Link onClick={close} to={item.path} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/></Link>}
+        {hasChildren && isOpen && <div className="mt-2 space-y-2"><Link onClick={close} to={item.path} className="realty-mobile-menu-all block px-3 py-2 text-xs font-black text-red-700">Tümünü Gör</Link><MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/></div>}
+      </div>;
+    })}
+  </div>;
 }
 
 function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
@@ -1281,7 +1303,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menüyü aç" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
           </div>
         </div>
-        {mobileOpen && <nav className="grid grid-cols-2 gap-1.5 border-t border-white/15 px-3 py-3 text-xs font-black xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
+        {mobileOpen && <nav className="realty-header-mobile-menu px-3 py-3 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
       </header>
     );
   }
@@ -1311,13 +1333,13 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
             {searchOpen && <form onSubmit={submitSiteSearch} className="header-search-pop flex w-[min(320px,36vw)] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site içinde ara..." className="min-w-0 flex-1 px-3 py-1.5 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="shrink-0 bg-[#CD011E] px-3 text-[10px] font-black text-white">Ara</button></form>}
             <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site içinde ara" className="relative z-10 inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
           </div>
-          <div className="hidden overflow-hidden rounded-md border border-slate-200 bg-white text-[9px] font-black shadow-sm sm:flex">{(['tr','en','ar'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} aria-label={item === 'ar' ? 'العربية' : item.toUpperCase()} className={`px-2 py-1.5 transition ${language===item?'bg-[#CD011E] text-white':'text-slate-600 hover:bg-red-50'}`}>{item === 'ar' ? 'عربي' : item.toUpperCase()}</button>)}</div>
+          <div className="realty-header-language flex overflow-hidden rounded-md border border-slate-200 bg-white text-[9px] font-black shadow-sm">{(['en','ar','tr'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} aria-label={item === 'ar' ? 'العربية' : item.toUpperCase()} className={`px-2 py-1.5 transition ${language===item?'bg-[#CD011E] text-white':'text-slate-600 hover:bg-red-50'}`}>{item === 'ar' ? 'AR' : item.toUpperCase()}</button>)}</div>
           <Link to="/panel" className="hidden rounded-md border border-red-700/20 bg-white px-2.5 py-1.5 text-[10px] font-black text-[#CD011E] shadow-sm transition hover:border-red-700/50 sm:inline-flex">{t.panel}</Link>
-          <a href="tel:+905325674845" aria-label="Realty Center® telefon" className="realty-header-contact-item">
+          <a href={`tel:+${REALTY_PHONE_E164}`} aria-label="Realty Center® telefon" className="realty-header-contact-item realty-header-phone">
             <Phone className="h-3.5 w-3.5" />
-            <span>0532 567 48 45</span>
+            <span>{REALTY_PHONE_DISPLAY}</span>
           </a>
-          <a href="https://wa.me/905325674845" target="_blank" rel="noreferrer" aria-label="WhatsApp ile iletişim" className="realty-header-contact-icon realty-header-whatsapp">
+          <a href={`https://wa.me/${REALTY_PHONE_E164}?text=${encodeURIComponent(REALTY_WHATSAPP_MESSAGE)}`} target="_blank" rel="noreferrer" aria-label="WhatsApp ile iletişim" className="realty-header-contact-icon realty-header-whatsapp">
             <MessageCircle className="h-4 w-4" />
           </a>
         </div>
@@ -1342,7 +1364,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
 
         <div className="relative z-10 flex min-h-[76px] items-center justify-between px-4 xl:hidden">
           <Link to="/" onClick={close} className="realty-header-mobile-logo">
-            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="h-16 w-auto object-contain brightness-0 invert" />
+            <img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="object-contain brightness-0 invert" />
           </Link>
           <div className="flex items-center gap-2">
             <Link to="/panel" className="rounded-lg bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-lg">{t.panel}</Link>
@@ -1351,7 +1373,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
         </div>
       </div>
 
-      {mobileOpen && <nav className="realty-header-mobile-menu grid grid-cols-2 gap-2 px-4 py-4 font-black xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
+      {mobileOpen && <nav className="realty-header-mobile-menu px-4 py-4 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/></nav>}
     </header>
   );
 }
@@ -1498,7 +1520,7 @@ function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => v
         </div>
 
         <div className="mt-10 grid gap-4 border-t border-slate-200 pt-7 md:grid-cols-3">
-          <a href="tel:+905325674845" className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"><Phone className="h-5 w-5"/></span><span><b className="block text-xs text-red-700">Müşteri Hizmetleri</b><strong className="text-sm text-slate-900">0532 567 48 45</strong></span></a>
+          <a href={`tel:+${REALTY_PHONE_E164}`} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"><Phone className="h-5 w-5"/></span><span><b className="block text-xs text-red-700">Müşteri Hizmetleri</b><strong className="text-sm text-slate-900">{REALTY_PHONE_DISPLAY}</strong></span></a>
           <a href="mailto:info@realtycenter.com.tr" className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-700 text-white"><Mail className="h-5 w-5"/></span><span><b className="block text-xs text-red-700">Yardım ve İletişim</b><strong className="text-sm text-slate-900">info@realtycenter.com.tr</strong></span></a>
           <div className="flex gap-2"><a href="https://parselsorgu.tkgm.gov.tr/" target="_blank" rel="noreferrer" className="flex flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 text-center text-xs font-black text-slate-800 hover:border-red-300">TKGM Parsel Sorgulama ↗</a><a href="https://www.mevzuat.gov.tr/" target="_blank" rel="noreferrer" className="flex flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 text-center text-xs font-black text-slate-800 hover:border-red-300">Emlak Mevzuatı ↗</a></div>
         </div>
@@ -3748,7 +3770,7 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                   </div>
                   <div>
                     <strong className="text-white block font-bold mb-0.5">Telefon / Danışma Hattı</strong>
-                    <span className="text-sm font-black text-white">0532 567 48 45</span>
+                    <span className="text-sm font-black text-white">{REALTY_PHONE_DISPLAY}</span>
                   </div>
                 </div>
 
