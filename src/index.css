@@ -1426,7 +1426,10 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
     background: transparent !important;
     box-shadow: none !important;
   }
-  .realty-header-mobile-logo img { height: 37px !important; }
+  .realty-header-mobile-logo img {
+    height: 37px !important;
+    transform: none !important;
+  }
   .realty-header-mobile-menu {
     max-height: calc(100vh - 104px);
     overflow-y: auto;
