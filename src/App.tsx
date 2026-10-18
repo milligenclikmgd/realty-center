@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
+import { PAGE_COPY, MEDIA_SELECTION } from './content-refresh';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
@@ -21,7 +22,7 @@ import {
 } from 'lucide-react';
 
 const STATIC_LANGUAGES = {
-  tr: { corporate:'Kurumsal', offices:'Ofislerimiz', agents:'Danışmanlarımız', listings:'İlanlarımız', ai:'🤖 Yapay Zeka Asistanı', projects:'Projelerimiz', contact:'İletişim', advisor:'Danışman Ol', franchise:'Franchise Ol!', panel:'Panel' },
+  tr: { corporate:'Kurumsal', offices:'Ofislerimiz', agents:'Danışmanlar', listings:'İlanlarımız', ai:'🤖 Yapay Zeka Asistanı', projects:'Projelerimiz', contact:'İletişim', advisor:'Danışman Ol', franchise:'Franchise Ol!', panel:'Panel' },
   en: { corporate:'Corporate', offices:'Our Offices', agents:'Our Advisors', listings:'Listings', ai:'🤖 AI Real Estate Assistant', projects:'Projects', contact:'Contact', advisor:'Become an Advisor', franchise:'Become a Franchise!', panel:'Panel' },
   ar: { corporate:'الشركة', offices:'مكاتبنا', agents:'مستشارونا', listings:'العقارات', ai:'🤖 مساعد العقارات الذكي', projects:'المشاريع', contact:'اتصل بنا', advisor:'كن مستشاراً', franchise:'كن شريك امتياز!', panel:'لوحة التحكم' }
 } as const;
@@ -75,8 +76,25 @@ const saveTrainingContent = (content: TrainingContent) => {
 };
 
 type RealtyVideo = { id: string; source: 'youtube' | 'upload' | 'youtube-channel'; category: 'tv' | 'news'; url: string; title: string; thumbnail: string; description: string; createdAt: string };
+const DEFAULT_REALTY_VIDEOS: RealtyVideo[] = MEDIA_SELECTION.map((video) => ({
+  id: video.id, source: 'youtube', category: video.category,
+  url: `https://www.youtube.com/watch?v=${video.youtubeId}`, title: video.title,
+  thumbnail: `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`,
+  description: video.description, createdAt: '2026-10-18T18:00:00.000Z'
+}));
 const getRealtyVideos = (): RealtyVideo[] => {
-  try { return (JSON.parse(localStorage.getItem('realty-center-videos') || '[]') as Partial<RealtyVideo>[]).map((video) => ({ ...video, source: video.source || 'youtube', category: video.category || 'tv', description: video.description || '' } as RealtyVideo)); } catch { return []; }
+  try {
+    const raw = localStorage.getItem('realty-center-videos');
+    const saved = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(saved)) return structuredClone(DEFAULT_REALTY_VIDEOS);
+    let videos: RealtyVideo[] = saved.map((video: RealtyVideo) => ({ ...video, source: video.source || 'youtube', category: video.category || 'tv', description: video.description || '' }));
+    if (localStorage.getItem('realty-media-seed-version') !== '2026-10-18') {
+      videos = [...videos, ...DEFAULT_REALTY_VIDEOS.filter((seed) => !videos.some((video) => video.id === seed.id || video.url === seed.url))];
+      localStorage.setItem('realty-center-videos', JSON.stringify(videos));
+      localStorage.setItem('realty-media-seed-version', '2026-10-18');
+    }
+    return videos;
+  } catch { return structuredClone(DEFAULT_REALTY_VIDEOS); }
 };
 const getYoutubeId = (url: string) => url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/)?.[1] || '';
 const saveRealtyVideos = (videos: RealtyVideo[]) => { localStorage.setItem('realty-center-videos', JSON.stringify(videos)); window.dispatchEvent(new Event('realty-center-videos-updated')); };
@@ -173,7 +191,7 @@ type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 
 const headerItem = (id: string, label: string, path: string, side: 'left' | 'right', children: HeaderMenuItem[] = [], image = '', content = ''): HeaderMenuItem => ({ id, label, path, side, image, content, children });
 const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
   headerItem('corporate','Kurumsal','/kurumsal/hakkimizda','left',[headerItem('about','Hakkımızda','/kurumsal/hakkimizda','left'),headerItem('mission','Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon','left'),headerItem('team','Yönetim Kadromuz','/kurumsal/ekibimiz','left'),headerItem('documents','Belgelerimiz','/kurumsal/belgelerimiz','left'),headerItem('references','Referanslarımız','/kurumsal/referanslar','left'),headerItem('partners','İş Ortaklarımız','/kurumsal/is-ortaklarimiz','left',[headerItem('financial-solutions','Finansal Çözümler','/finansal-cozumler','left',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','Katılım bankaları ve evim sistemi seçenekleri için çözüm talebi oluşturun.')])]),
-  headerItem('offices','Ofislerimiz','/ofislerimiz','left'), headerItem('agents','Danışmanlarımız','/danismanlarimiz','left'), headerItem('listings','İlanlarımız','/ilan-kategorileri','left'), headerItem('projects','Projelerimiz','/projelerimiz','left'),
+  headerItem('offices','Ofislerimiz','/ofislerimiz','left'), headerItem('agents','Danışmanlar','/danismanlarimiz','left'), headerItem('listings','İlanlarımız','/ilan-kategorileri','left'), headerItem('projects','Projelerimiz','/projelerimiz','left'),
   headerItem('discover','Keşfet','/icerik/education','left',[
     headerItem('education','Eğitim','/icerik/education','left',[
       headerItem('education-calendar','Eğitim Takvimi','/icerik/education-calendar','left',[],'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=90&w=1400','Realty Center® eğitim takvimi; çevrim içi programları, sınıf eğitimlerini, saha çalışmalarını ve gelişim buluşmalarını tek planda takip etmenizi sağlar.'),
@@ -193,11 +211,27 @@ const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
     ],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Üretilen değerin katkıyı koruyan açık kurallarla paylaşıldığı kurumsal kazanç yaklaşımı.')]),
   headerItem('ai','Yapay Zeka Asistanı','/ai-karar-asistani','right'), headerItem('library','Realty Kütüphane','/kutuphane','right'), headerItem('why','Neden Realty Center®?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','Danışman Ol','/danisman-basvuru','right'), headerItem('contact','İletişim','/iletisim','right',[headerItem('contact-info','İletişim Bilgilerimiz','/iletisim','right'),headerItem('feedback','Müşteri Memnuniyeti','/geri-bildirim','right')])
 ];
+const applyRefreshedCopy = (items: HeaderMenuItem[]) => {
+  for (const item of items) {
+    if (PAGE_COPY[item.id]) item.content = PAGE_COPY[item.id].text;
+    if (item.id === 'culture') item.image = '/images/realty-culture-team.webp';
+    if (item.id === 'agents') item.label = 'Danışmanlar';
+    applyRefreshedCopy(item.children);
+  }
+};
+applyRefreshedCopy(DEFAULT_HEADER_MENU);
 const getHeaderMenu = (): HeaderMenuItem[] => {
   try {
-    const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || DEFAULT_HEADER_MENU)
+    const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || structuredClone(DEFAULT_HEADER_MENU))
       .map((item: HeaderMenuItem) => item.id === 'library' ? { ...item, path: '/kutuphane' } : item);
 
+    if (localStorage.getItem('realty-content-refresh-version') !== '2026-10-18') {
+      applyRefreshedCopy(stored);
+      localStorage.setItem('realty-center-header-menu', JSON.stringify(stored));
+      localStorage.setItem('realty-content-refresh-version', '2026-10-18');
+    }
+    const agents = stored.find((item) => item.id === 'agents');
+    if (agents?.label === 'Danışmanlarımız') agents.label = 'Danışmanlar';
     const discover = stored.find((item) => item.id === 'discover');
     const future = discover?.children.find((item) => item.id === 'future');
     const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children
@@ -1492,9 +1526,19 @@ function ManagedHeaderContentPage() {
   const [menus, setMenus] = useState<HeaderMenuItem[]>(getHeaderMenu);
   useEffect(() => { const refresh = () => setMenus(getHeaderMenu()); window.addEventListener('realty-center-header-updated', refresh); return () => window.removeEventListener('realty-center-header-updated', refresh); }, []);
   const page = findHeaderItem(menus, id);
+  useEffect(() => {
+    if (!page) return;
+    const previousTitle = document.title;
+    const meta = document.querySelector('meta[name="description"]');
+    const previousDescription = meta?.getAttribute('content') || '';
+    document.title = `${page.label} | Realty Center®`;
+    const description = meta || document.head.appendChild(Object.assign(document.createElement('meta'), { name: 'description' }));
+    description.setAttribute('content', PAGE_COPY[id]?.description || page.content?.slice(0,160) || page.label);
+    return () => { document.title = previousTitle; if (meta) meta.setAttribute('content', previousDescription); else description.remove(); };
+  }, [id, page]);
   if (!page) return <main className="min-h-[60vh] bg-slate-50 py-16"><div className="mx-auto max-w-4xl px-6 text-center"><h1 className="text-3xl font-black text-slate-900">İçerik bulunamadı</h1><Link to="/" className="mt-5 inline-flex font-black text-red-700">Ana sayfaya dön</Link></div></main>;
   if (['education','education-calendar','education-centers','education-types'].includes(id)) return <EducationManagedPage page={page} pageId={id} />;
-  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/rc_logo_og.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 whitespace-pre-line text-sm leading-8 text-slate-600">{page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.'}</p></article></div></div></main>;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/rc_logo_og.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTER®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><div className="mt-7 space-y-5 text-sm leading-8 text-slate-600">{(page.content || 'Bu sayfanın içeriği yönetim panelinden eklenecektir.').split(/\n\n+/).map((paragraph,index) => <p key={index}>{paragraph}</p>)}</div></article></div></div></main>;
 }
 function CustomerFeedbackPage() {
   const [type, setType] = useState<CustomerFeedback['type']>('Memnuniyet');
@@ -2260,7 +2304,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 function AboutPage() {
   const [story, setStory] = useState(getAboutStory);
   useEffect(() => { const update = () => setStory(getAboutStory()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
-  return <main className="min-h-screen bg-slate-50"><section className="bg-slate-950 py-16 text-white"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTER® · ÖNCE GÜVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde güveni, uzmanlık ve teknolojiyle büyüten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Türkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doğru kararların, sürdürülebilir başarının ve güçlü iş birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.35fr_.65fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty Center®’ın Hikâyesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="flex min-h-80 items-center justify-center rounded-3xl border border-red-100 bg-white p-8 shadow-sm"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="w-full max-w-xs object-contain"/></aside></section></main>;
+  return <main className="min-h-screen bg-slate-50"><section className="relative isolate overflow-hidden bg-slate-950 py-20 text-white sm:py-28"><img src="/images/about-realty-hero.webp" alt="İstanbul manzaralı çağdaş gayrimenkul ofisi ve kent mimarisi" fetchPriority="high" className="absolute inset-0 -z-20 h-full w-full object-cover"/><div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/20"/><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTER® · ÖNCE GÜVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde güveni, uzmanlık ve teknolojiyle büyüten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">Türkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doğru kararların, sürdürülebilir başarının ve güçlü iş birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.35fr_.65fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty Center®’ın Hikâyesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="flex min-h-80 items-center justify-center rounded-3xl border border-red-100 bg-white p-8 shadow-sm"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="w-full max-w-xs object-contain"/></aside></section></main>;
 }
 
 function MissionVisionPage() {
@@ -3620,7 +3664,7 @@ function VideosPage() {
   return <div className="min-h-screen bg-slate-50 py-12"><div className="mx-auto max-w-7xl px-6 lg:px-12">
     <p className="text-xs font-black tracking-widest text-red-700">REALTY CENTER®</p><h1 className="mt-2 text-4xl font-black text-slate-900">REALTY MEDYA</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Realty TV yayınlarını, proje tanıtımlarını ve gayrimenkul gündemine ilişkin video içeriklerini tek merkezden izleyin.</p>
     <div className="mt-7 inline-flex rounded-xl border border-slate-200 bg-white p-1 shadow-sm"><button onClick={() => setActiveMedia('tv')} className={`inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-black transition ${activeMedia === 'tv' ? 'bg-[#071d3b] text-white' : 'text-slate-600 hover:bg-slate-50'}`}><PlayCircle className="h-4 w-4"/>Realty TV</button><button onClick={() => setActiveMedia('news')} className={`inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-black transition ${activeMedia === 'news' ? 'bg-[#CD011E] text-white' : 'text-slate-600 hover:bg-slate-50'}`}><Bell className="h-4 w-4"/>Realty Haberler</button></div>
-    {visibleVideos.length ? <div className="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{visibleVideos.map((video) => <article key={video.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="aspect-video bg-slate-950">{video.source === 'youtube' || video.source === 'youtube-channel' ? <iframe title={video.title} src={`https://www.youtube.com/embed/${getYoutubeId(video.url)}`} className="h-full w-full" allowFullScreen/> : <video src={video.url} controls poster={video.thumbnail || undefined} className="h-full w-full object-contain"/>}</div><div className="p-5"><span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-widest text-red-700">{video.source === 'youtube-channel' ? <><PlayCircle className="h-3.5 w-3.5"/>YOUTUBE KANALI</> : video.category === 'news' ? <><Bell className="h-3.5 w-3.5"/>REALTY HABERLER</> : <><PlayCircle className="h-3.5 w-3.5"/>REALTY TV</>}</span><h2 className="mt-2 text-lg font-black text-slate-900">{video.title}</h2>{video.category === 'news' && video.description && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-slate-600">{video.description}</p>}</div></article>)}</div> : <div className="mt-9 rounded-2xl border-2 border-dashed border-slate-200 bg-white p-12 text-center"><PlayCircle className="mx-auto h-10 w-10 text-slate-300"/><h2 className="mt-3 font-black text-slate-800">Bu bölümde henüz video yok</h2><p className="mt-1 text-xs text-slate-500">İçerikler Realty Medya panelinden yayınlandığında burada görüntülenecek.</p></div>}
+    {visibleVideos.length ? <div className="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{visibleVideos.map((video) => <article key={video.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="aspect-video bg-slate-950">{video.source === 'youtube' || video.source === 'youtube-channel' ? <iframe title={video.title} src={`https://www.youtube.com/embed/${getYoutubeId(video.url)}`} className="h-full w-full" allowFullScreen/> : <video src={video.url} controls poster={video.thumbnail || undefined} className="h-full w-full object-contain"/>}</div><div className="p-5"><span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-widest text-red-700">{video.source === 'youtube-channel' ? <><PlayCircle className="h-3.5 w-3.5"/>YOUTUBE KANALI</> : video.category === 'news' ? <><Bell className="h-3.5 w-3.5"/>REALTY HABERLER</> : <><PlayCircle className="h-3.5 w-3.5"/>REALTY TV</>}</span><h2 className="mt-2 text-lg font-black text-slate-900">{video.title}</h2>{video.description && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-slate-600">{video.description}</p>}</div></article>)}</div> : <div className="mt-9 rounded-2xl border-2 border-dashed border-slate-200 bg-white p-12 text-center"><PlayCircle className="mx-auto h-10 w-10 text-slate-300"/><h2 className="mt-3 font-black text-slate-800">Bu bölümde henüz video yok</h2><p className="mt-1 text-xs text-slate-500">İçerikler Realty Medya panelinden yayınlandığında burada görüntülenecek.</p></div>}
   </div></div>;
 }
 
@@ -4042,6 +4086,7 @@ function SuperAdminDashboard() {
   const [categorySaved, setCategorySaved] = useState(false);
   const [newCategory, setNewCategory] = useState<ListingCategory>({ id: '', title: '', type: 'Satılık', category: 'Konut', image: '' });
   const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
+  const [editingVideoId, setEditingVideoId] = useState<string | null>(null);
   const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', category: 'tv' as 'tv' | 'news', url: '', title: '', thumbnail: '', description: '' });
   const [videoSaving, setVideoSaving] = useState(false);
   const [youtubeChannelUrl, setYoutubeChannelUrl] = useState(getYoutubeChannelUrl);
@@ -4116,17 +4161,25 @@ function SuperAdminDashboard() {
     let title = videoDraft.title.trim();
     let thumbnail = videoDraft.thumbnail.trim();
     if (videoDraft.source === 'youtube') {
+      const previous = videos.find((video) => video.id === editingVideoId);
+      if (previous && previous.url !== videoDraft.url && thumbnail.includes('img.youtube.com/vi/')) thumbnail = '';
       const youtubeId = getYoutubeId(videoDraft.url);
       if (!youtubeId) { setVideoSaving(false); return alert('Geçerli bir YouTube bağlantısı girin.'); }
       if (!thumbnail) thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
       if (!title) try { const response = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(videoDraft.url)}&format=json`); if (response.ok) { const data = await response.json(); title = data.title || ''; thumbnail = data.thumbnail_url || thumbnail; } } catch { /* YouTube kapak ve varsayılan başlıkla devam eder. */ }
     }
-    const next: RealtyVideo[] = [{ id: `video-${Date.now()}`, source: videoDraft.source, category: videoDraft.category, url: videoDraft.url, title: title || (videoDraft.source === 'upload' ? 'Realty Center® Videosu' : 'YouTube Videosu'), thumbnail, description: videoDraft.description.trim(), createdAt: new Date().toISOString() }, ...videos];
-    try { saveRealtyVideos(next); setVideos(next); setVideoDraft({ source: 'youtube', category: 'tv', url: '', title: '', thumbnail: '', description: '' }); } catch { alert('Video dosyası tarayıcı depolama sınırını aşıyor. Canlı sistemde dosya sunucuya yüklenecektir.'); }
+    const entry: RealtyVideo = { id: editingVideoId || `video-${Date.now()}`, source: videoDraft.source, category: videoDraft.category, url: videoDraft.url, title: title || (videoDraft.source === 'upload' ? 'Realty Center® Videosu' : 'YouTube Videosu'), thumbnail, description: videoDraft.description.trim(), createdAt: videos.find((video) => video.id === editingVideoId)?.createdAt || new Date().toISOString() };
+    const next = editingVideoId ? videos.map((video) => video.id === editingVideoId ? entry : video) : [entry, ...videos];
+    try { saveRealtyVideos(next); setEditingVideoId(null); setVideos(next); setVideoDraft({ source: 'youtube', category: 'tv', url: '', title: '', thumbnail: '', description: '' }); } catch { alert('Video dosyası tarayıcı depolama sınırını aşıyor. Canlı sistemde dosya sunucuya yüklenecektir.'); }
     setVideoSaving(false);
   };
   const handleDirectVideo = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, source: 'upload', url: String(reader.result), title: current.title || file.name.replace(/\.[^.]+$/, '') })); reader.readAsDataURL(file); };
   const handleVideoCover = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, thumbnail: String(reader.result) })); reader.readAsDataURL(file); };
+  const editVideo = (video: RealtyVideo) => {
+    setEditingVideoId(video.id);
+    setVideoDraft({ source: video.source === 'upload' ? 'upload' : 'youtube', category: video.category, url: video.url, title: video.title, thumbnail: video.thumbnail, description: video.description });
+    document.getElementById('realty-media-editor')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   const removeVideo = (id: string) => { const next = videos.filter((video) => video.id !== id); setVideos(next); saveRealtyVideos(next); };
   const updateFeedbackStatus = (id: string, status: CustomerFeedback['status']) => {
     const next = feedbackItems.map((item) => item.id === id ? { ...item, status } : item);
@@ -4668,7 +4721,7 @@ function SuperAdminDashboard() {
             {activeTab === 'videos' && (
               <div className="space-y-6">
                 <section className="rounded-2xl border border-slate-200 bg-gradient-to-br from-[#071d3b] to-[#0d3c70] p-6 text-white shadow-xl"><div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-end"><div className="max-w-2xl"><p className="text-[10px] font-black tracking-[.2em] text-red-300">OTOMATİK YOUTUBE SENKRONİZASYONU</p><h2 className="mt-2 text-xl font-black">YouTube kanalını daha sonra bağlayın</h2><p className="mt-2 text-xs leading-6 text-slate-300">Kanal açıldığında bağlantısını buraya yapıştırın. Kanaldaki videolar manuel eklenen içeriklerle birlikte otomatik olarak Realty TV bölümünde gösterilir. Alan boşken sistem yalnızca panelden eklenen videoları kullanır.</p></div><div className="w-full lg:max-w-md"><label className="mb-1 block text-xs font-black text-slate-200">YouTube kanal bağlantısı</label><div className="flex gap-2"><input value={youtubeChannelUrl} onChange={(e) => setYoutubeChannelUrl(e.target.value)} placeholder="https://www.youtube.com/@kanaliniz" className="min-w-0 flex-1 rounded-xl border border-white/20 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none"/><button onClick={() => { saveYoutubeChannelUrl(youtubeChannelUrl); setYoutubeChannelSaved(true); setTimeout(() => setYoutubeChannelSaved(false),2200); }} className="shrink-0 rounded-xl bg-[#CD011E] px-4 py-3 text-xs font-black text-white">{youtubeChannelSaved ? 'Kaydedildi ✓' : 'Kaydet'}</button></div></div></div></section>
-                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                <section id="realty-media-editor" className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
                   <div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Realty Medya Yönetimi</h2><p className="mt-1 text-xs text-slate-500">İçeriğin Realty TV veya Realty Haberler bölümünde yayınlanacağını seçin; YouTube bağlantısı ekleyin ya da kendi video dosyanızı yükleyin.</p></div>
                   <div className="mt-5 grid gap-4 md:grid-cols-2">
                     <div className="md:col-span-2"><label className="mb-2 block text-xs font-black text-slate-600">YAYINLANACAĞI BÖLÜM</label><div className="flex gap-2"><button onClick={() => setVideoDraft({ ...videoDraft, category: 'tv' })} className={`rounded-lg px-5 py-2.5 text-xs font-black ${videoDraft.category === 'tv' ? 'bg-[#071d3b] text-white' : 'bg-slate-100 text-slate-700'}`}>Realty TV</button><button onClick={() => setVideoDraft({ ...videoDraft, category: 'news' })} className={`rounded-lg px-5 py-2.5 text-xs font-black ${videoDraft.category === 'news' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>Realty Haberler</button></div></div>
@@ -4676,11 +4729,11 @@ function SuperAdminDashboard() {
                     {videoDraft.source === 'youtube' ? <div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">YouTube bağlantısı</label><input value={videoDraft.url} onChange={(e) => setVideoDraft({ ...videoDraft, url: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div> : <label className="md:col-span-2 cursor-pointer rounded-xl border-2 border-dashed border-red-200 bg-red-50 p-6 text-center text-xs font-black text-red-700"><input type="file" accept="video/*" className="hidden" onChange={(e) => handleDirectVideo(e.target.files?.[0])}/>{videoDraft.url ? 'Video dosyası seçildi ✓' : 'Bilgisayardan video dosyası seç'}</label>}
                     <div><label className="mb-1 block text-xs font-black text-slate-600">Başlık</label><input value={videoDraft.title} onChange={(e) => setVideoDraft({ ...videoDraft, title: e.target.value })} placeholder="Boşsa YouTube başlığı kullanılır" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div>
                     <div><label className="mb-1 block text-xs font-black text-slate-600">Kapak görseli URL’si</label><input value={videoDraft.thumbnail.startsWith('data:') ? '' : videoDraft.thumbnail} onChange={(e) => setVideoDraft({ ...videoDraft, thumbnail: e.target.value })} placeholder="Boşsa YouTube kapağı kullanılır" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div>
-                    {videoDraft.category === 'news' && <div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">Haber metni</label><textarea rows={5} value={videoDraft.description} onChange={(e) => setVideoDraft({ ...videoDraft, description: e.target.value })} placeholder="Videoyla birlikte yayınlanacak haber metnini yazın..." className="w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6"/></div>}
-                    <label className="cursor-pointer rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-xs font-black text-slate-700"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleVideoCover(e.target.files?.[0])}/>Özel kapak görseli seç</label><button onClick={addVideo} disabled={videoSaving} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{videoSaving ? 'YouTube bilgileri alınıyor…' : 'Videoyu Yayınla'}</button>
+                    {<div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">Açıklama / Haber metni</label><textarea rows={5} value={videoDraft.description} onChange={(e) => setVideoDraft({ ...videoDraft, description: e.target.value })} placeholder="Videoyla birlikte yayınlanacak haber metnini yazın..." className="w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6"/></div>}
+                    <label className="cursor-pointer rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-xs font-black text-slate-700"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleVideoCover(e.target.files?.[0])}/>Özel kapak görseli seç</label><button onClick={() => { setEditingVideoId(null); setVideoDraft({ source: 'youtube', category: 'tv', url: '', title: '', thumbnail: '', description: '' }); }} className="rounded-xl border border-slate-300 px-4 py-3 text-xs font-black">Formu Temizle / Vazgeç</button><button onClick={addVideo} disabled={videoSaving} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{videoSaving ? 'YouTube bilgileri alınıyor…' : editingVideoId ? 'Değişiklikleri Kaydet' : 'Videoyu Yayınla'}</button>
                   </div>
                 </section>
-                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><h3 className="font-black text-slate-900">Yayındaki Medya İçerikleri ({videos.length})</h3><div className="mt-4 grid gap-4 md:grid-cols-2">{videos.map((video) => <div key={video.id} className="flex gap-3 rounded-xl border border-slate-200 p-3"><img src={video.thumbnail || '/demo-placeholder.svg'} alt="" className="h-20 w-28 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><p className="line-clamp-2 text-xs font-black text-slate-900">{video.title}</p><p className="mt-1 text-[10px] font-bold text-red-700">{video.category === 'news' ? 'Realty Haberler' : 'Realty TV'} · {video.source === 'youtube' ? 'YouTube' : 'Yüklenen Video'}</p><button onClick={() => removeVideo(video.id)} className="mt-3 text-[10px] font-black text-red-700">Videoyu kaldır</button></div></div>)}</div></section>
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><h3 className="font-black text-slate-900">Yayındaki Medya İçerikleri ({videos.length})</h3><div className="mt-4 grid gap-4 md:grid-cols-2">{videos.map((video) => <div key={video.id} className="flex gap-3 rounded-xl border border-slate-200 p-3"><img src={video.thumbnail || '/demo-placeholder.svg'} alt="" className="h-20 w-28 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><p className="line-clamp-2 text-xs font-black text-slate-900">{video.title}</p><p className="mt-1 text-[10px] font-bold text-red-700">{video.category === 'news' ? 'Realty Haberler' : 'Realty TV'} · {video.source === 'youtube' ? 'YouTube' : 'Yüklenen Video'}</p><button onClick={() => editVideo(video)} className="mr-4 mt-3 text-[10px] font-black text-slate-700">Düzenle</button><button onClick={() => removeVideo(video.id)} className="mt-3 text-[10px] font-black text-red-700">Videoyu kaldır</button></div></div>)}</div></section>
               </div>
             )}
 
