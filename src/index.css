@@ -1215,7 +1215,7 @@ html { font-size: 106.25%; }
   .realty-header-link {
     padding-right: 2px !important;
     padding-left: 2px !important;
-    font-size: clamp(7px, .64vw, 10px) !important;
+    font-size: clamp(11px, .9vw, 15px) !important;
     line-height: 1.08 !important;
   }
   .realty-header-link .inline-flex { gap: 3px; }
@@ -1453,3 +1453,12 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   .realty-mobile-social-link:hover { transform: translateY(-2px); background: #cd011e; }
   .realty-mobile-social-link img { width: 16px; height: 16px; filter: brightness(0) invert(1); }
 }
+
+/* Assistant shortcut in the upper utility bar. */
+.realty-header-ai { display: inline-flex; flex-shrink: 0; align-items: center; gap: 6px; padding: 4px 9px; border: 1px solid rgba(205,1,30,.2); border-radius: 999px; background: #fff; color: #cd011e; font-size: 11px; font-weight: 800; white-space: nowrap; transition: background .2s ease, border-color .2s ease; }
+.realty-header-ai svg { width: 17px; height: 17px; flex-shrink: 0; }
+.realty-header-ai:hover { background: #fff1f2; border-color: #cd011e; }
+.realty-header-ai:focus-visible { outline: 2px solid #123499; outline-offset: 2px; }
+@media (min-width: 1701px) { .realty-header-link { font-size: 16px; } }
+@media (max-width: 639px) { .realty-header-ai { padding: 4px; } .realty-header-ai span { display: none; } }
+

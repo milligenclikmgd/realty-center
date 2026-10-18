@@ -10,7 +10,7 @@ import {
 import { isSupabaseConfigured, supabase } from './lib/supabase';
 
 import { 
-  Search, MapPin, Phone, Mail, Globe, 
+  Bot, Search, MapPin, Phone, Mail, Globe, 
   CheckCircle2, X, 
   Building2, Briefcase, Megaphone,
   TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
@@ -1255,8 +1255,8 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
   const visibleMenu = managedMenu.filter((item) => item.id !== 'why');
-  const leftItems = visibleMenu.filter((item) => item.side === 'left');
-  const rightItems = visibleMenu.filter((item) => item.side === 'right');
+  const leftItems = visibleMenu.filter((item) => item.side === 'left' && item.path !== '/ai-karar-asistani');
+  const rightItems = visibleMenu.filter((item) => item.side === 'right' && item.path !== '/ai-karar-asistani');
   const leftLinks = leftItems.map((item) => [item.label,item.path]);
   const rightLinks = rightItems.map((item) => [item.label,item.path]);
   const isListingDetail = location.pathname.startsWith('/ilan/');
@@ -1338,6 +1338,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
           {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name}><img src={social.icon} alt="" /></a>)}
         </div>
         <div className="realty-header-contact">
+          <Link to="/ai-karar-asistani" className="realty-header-ai" aria-label={t.ai.replace("🤖 ", "")} title={t.ai.replace("🤖 ", "")}><Bot aria-hidden="true"/><span>{t.ai.replace("🤖 ", "")}</span></Link>
           <div className="flex items-center gap-1.5">
             {searchOpen && <form onSubmit={submitSiteSearch} className="header-search-pop flex w-[min(320px,36vw)] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site içinde ara..." className="min-w-0 flex-1 px-3 py-1.5 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="shrink-0 bg-[#CD011E] px-3 text-[10px] font-black text-white">Ara</button></form>}
             <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site içinde ara" className="relative z-10 inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
@@ -5744,3 +5745,4 @@ export default function RealtyCenterApp() {
     </Router>
   );
 }
+
