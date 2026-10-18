@@ -1461,4 +1461,3 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
 .realty-header-ai:focus-visible { outline: 2px solid #123499; outline-offset: 2px; }
 @media (min-width: 1701px) { .realty-header-link { font-size: 16px; } }
 @media (max-width: 639px) { .realty-header-ai { padding: 4px; } .realty-header-ai span { display: none; } }
-
