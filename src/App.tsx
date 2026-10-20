@@ -2167,14 +2167,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
 
       
 
-      <section className="border-b border-slate-200 bg-slate-50 py-9 sm:py-10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-12">
-          <div className="mb-8 flex items-end justify-between gap-6"><div><span className="text-xs font-black tracking-widest text-red-700">PORTFÖYLER</span><h2 className="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Portföylerimizi <span className="text-red-700">Keşfedin</span><span className="home-title-en">PROPERTY PORTFOLIO</span></h2></div><Link to="/ilan-kategorileri" className="hidden text-sm font-black text-red-700 transition hover:text-red-800 sm:inline-flex">Tümünü Gör <ArrowRight className="ml-2 h-4 w-4"/></Link></div>
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            {[{title:'Satılık Gayrimenkuller',icon:Home,to:'/ilanlarimiz?type=Satılık',image:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=78&w=800'},{title:'Kiralık Gayrimenkuller',icon:Key,to:'/ilanlarimiz?type=Kiralık',image:'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=78&w=800'},{title:'Devren İşyerleri',icon:Briefcase,to:'/ilanlarimiz?type=Devren%20Satılık',image:'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=78&w=800'},{title:'Yeni Projeler',icon:Building2,to:'/projelerimiz',image:'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&q=78&w=800'}].map((item) => { const Icon = item.icon; return <Link key={item.title} to={item.to} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg"><div className="mb-3 flex items-center gap-3"><Icon className="h-6 w-6 shrink-0 text-red-700" strokeWidth={2.1}/><span className="h-6 w-px bg-slate-200"/><h3 className="min-w-0 text-sm font-black tracking-tight text-slate-900">{item.title}</h3></div><div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-slate-100"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><span className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/45 to-transparent"/><ArrowRight className="absolute bottom-3 right-3 h-4 w-4 text-white transition group-hover:translate-x-1"/></div></Link> })}
-          </div>
-        </div>
-      </section>
+      <ListingCategoriesPage embedded />
 
       <FeaturedListingsShowcase />
 
@@ -2953,7 +2946,7 @@ function AgentsPage() {
   );
 }
 
-function ListingCategoriesPage() {
+function ListingCategoriesPage({ embedded = false }: { embedded?: boolean }) {
   const navigate = useNavigate();
   const groups = [
     { title: 'Satılık Gayrimenkuller', label: 'SATILIK', transaction: 'Satılık', icon: Home, accent: '#CD011E', items: [['Konut','Ev','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=78&w=900'],['Ticari','Ticari Gayrimenkul','https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=78&w=900'],['Arsa','Arsa','https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=78&w=900']] },
@@ -2969,7 +2962,7 @@ function ListingCategoriesPage() {
     navigate(`/ilanlarimiz?${query.toString()}`);
   };
   return (
-    <div className="min-h-screen bg-[#f7f8fa] py-12 sm:py-16">
+    <div className={embedded ? 'border-b border-slate-200 bg-[#f7f8fa] py-12 sm:py-16' : 'min-h-screen bg-[#f7f8fa] py-12 sm:py-16'}>
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="border-b border-slate-200 pb-9"><div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"><div><p className="text-[10px] font-black tracking-[.22em] text-red-700">REALTY CENTER® · PORTFÖY KEŞFİ</p><h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Gayrimenkul kategorileri</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">İhtiyacınıza uygun kategoriyle başlayın; seçiminiz ilgili ilan listesine ve aktif filtrelere doğrudan uygulanır.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex shrink-0 items-center justify-center rounded-lg bg-[#CD011E] px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-900/15 transition hover:bg-red-800">Tüm ilanları incele <ArrowRight className="ml-2 h-4 w-4" /></Link></div></div>
         <div className="mt-9 grid gap-5 md:grid-cols-2 xl:grid-cols-4">{groups.map((group) => { const Icon = group.icon; const allLabel = group.route ? 'Tüm projeleri gör' : `Tüm ${group.label.toLocaleLowerCase('tr-TR')} ilanları gör`; return <section key={group.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_rgba(15,23,42,.07)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(15,23,42,.12)]"><div className="mb-4 flex items-center gap-3"><Icon className="h-7 w-7 shrink-0" style={{ color: group.accent }} strokeWidth={2.1}/><span className="h-7 w-px shrink-0 bg-slate-300"/><h2 className="min-w-0 text-[16px] font-black tracking-tight text-slate-900">{group.title}</h2></div><div className="grid grid-cols-2 gap-3">{group.items.map(([label,propertyType,image]) => <button key={`${group.title}-${label}`} onClick={() => openCategory(group, propertyType)} className="group/item relative aspect-[.92] overflow-hidden rounded-xl bg-slate-100 text-left"><img src={image} alt={label} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover/item:scale-105"/><span className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-slate-950/55 to-transparent"/><span className="absolute inset-x-3 bottom-3 flex items-end justify-between gap-2"><span className="text-sm font-black leading-tight text-white">{label}</span><ArrowRight className="h-4 w-4 shrink-0 text-white transition group-hover/item:translate-x-1"/></span></button>)}<button onClick={() => openCategory(group, '')} className="group/all flex aspect-[.92] flex-col items-start justify-between rounded-xl p-3 text-left transition hover:brightness-110" style={{ backgroundColor: group.accent }}><span className="text-[10px] font-black tracking-[.12em] text-white/65">TÜMÜNÜ GÖR</span><span className="flex w-full items-end justify-between gap-2 text-sm font-black leading-tight text-white"><span>{allLabel}</span><ArrowRight className="h-4 w-4 shrink-0 transition group-hover/all:translate-x-1"/></span></button></div></section>})}</div>
