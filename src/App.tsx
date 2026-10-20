@@ -1571,7 +1571,7 @@ function ManagedHeaderContentPage() {
   const { id = '' } = useParams();
   const [menus, setMenus] = useState<HeaderMenuItem[]>(getHeaderMenu);
   useEffect(() => { const refresh = () => setMenus(getHeaderMenu()); window.addEventListener('realty-center-header-updated', refresh); return () => window.removeEventListener('realty-center-header-updated', refresh); }, []);
-  const page = findHeaderItem(menus, id);
+  const page = findHeaderItem(menus, id) || (id === 'bana-takim-kur' ? findHeaderItem(menus, 'build-my-team') : undefined);
   useEffect(() => {
     if (!page) return;
     const previousTitle = document.title;
