@@ -5222,10 +5222,15 @@ function HomeReturnButton() {
     if (location.pathname !== '/') return;
     const saveHomePosition = () => sessionStorage.setItem('realty-center-home-scroll', String(window.scrollY));
     saveHomePosition();
+    const saveBeforeNavigation = () => saveHomePosition();
     window.addEventListener('scroll', saveHomePosition, { passive: true });
+    document.addEventListener('pointerdown', saveBeforeNavigation, true);
+    document.addEventListener('keydown', saveBeforeNavigation, true);
     return () => {
       saveHomePosition();
       window.removeEventListener('scroll', saveHomePosition);
+      document.removeEventListener('pointerdown', saveBeforeNavigation, true);
+      document.removeEventListener('keydown', saveBeforeNavigation, true);
     };
   }, [location.pathname]);
 
@@ -5239,7 +5244,7 @@ function HomeReturnButton() {
   return <button
     type="button"
     onClick={returnHome}
-    className="fixed right-4 top-24 z-[70] inline-flex items-center gap-2 rounded-full bg-[#CD011E] px-4 py-2.5 text-xs font-black text-white shadow-lg shadow-red-900/25 transition hover:-translate-y-0.5 hover:bg-[#A90018] sm:right-6"
+    className="fixed right-4 top-32 z-[70] inline-flex items-center gap-2 rounded-full bg-[#CD011E] px-4 py-2.5 text-xs font-black text-white shadow-lg shadow-red-900/25 transition hover:-translate-y-0.5 hover:bg-[#A90018] sm:right-6"
     aria-label="Ana sayfaya, kaldığınız yere dönün"
   >
     <Home className="h-4 w-4" />
