@@ -952,9 +952,12 @@ function FinancialSolutionsPage() {
 
     <section className="mx-auto max-w-7xl px-6 py-12 lg:px-12">
       <div className="grid gap-4 md:grid-cols-3">
-        {solutions.map((solution, index) => <button type="button" onClick={() => selectSolution(solution.title)} key={solution.title} className={`rounded-2xl border p-6 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md ${selectedSolution === solution.title ? 'border-red-600 bg-red-50 ring-2 ring-red-100' : 'border-slate-200 bg-white'}`}>
-          <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-sm font-black text-amber-300">0{index + 1}</span><div><h2 className="font-black text-slate-950">{solution.title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{solution.description}</p></div></div>
-        </button>)}
+        {solutions.map((solution, index) => {
+          const isActive = selectedSolution === solution.title;
+          return <button type="button" onClick={() => selectSolution(solution.title)} key={solution.title} className={`rounded-2xl border p-6 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md ${isActive ? 'border-red-700 bg-red-700 ring-2 ring-red-100' : 'border-slate-200 bg-white'}`}>
+            <div className="flex items-start gap-4"><span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-black ${isActive ? 'bg-white text-red-700' : 'bg-slate-950 text-amber-300'}`}>0{index + 1}</span><div><h2 className={`font-black ${isActive ? 'text-white' : 'text-slate-950'}`}>{solution.title}</h2><p className={`mt-2 text-sm leading-6 ${isActive ? 'text-white/85' : 'text-slate-600'}`}>{solution.description}</p></div></div>
+          </button>;
+        })}
       </div>
 
       {activeSolution ? <div className="mt-8 space-y-7">
@@ -964,10 +967,13 @@ function FinancialSolutionsPage() {
             {selectedInstitution && <span className="rounded-full bg-red-50 px-4 py-2 text-xs font-black text-red-700">Seçim: {selectedInstitution}</span>}
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            {activeSolution.institutions.map(([name, domain]) => <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${selectedInstitution === name ? 'border-red-700 bg-red-50 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
-              <img src={`https://logo.clearbit.com/${domain}`} alt={`${name} logosu`} loading="lazy" onError={(event) => { event.currentTarget.style.display = 'none'; }} className="h-11 max-w-[130px] object-contain mix-blend-multiply"/>
-              <span className="mt-3 text-center text-xs font-black text-slate-800">{name}</span>
-            </button>)}
+            {activeSolution.institutions.map(([name, domain]) => {
+              const isSelected = selectedInstitution === name;
+              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSelected ? 'border-red-700 bg-red-700 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
+                <span className="flex h-14 w-full max-w-[150px] items-center justify-center rounded-xl bg-white p-2 shadow-sm"><img src={`https://logo.clearbit.com/${domain}`} alt={`${name} logosu`} loading="lazy" onError={(event) => { event.currentTarget.style.display = 'none'; }} className="h-full w-full object-contain"/></span>
+                <span className={`mt-3 text-center text-xs font-black ${isSelected ? 'text-white' : 'text-slate-800'}`}>{name}</span>
+              </button>;
+            })}
           </div>
         </section>
 
