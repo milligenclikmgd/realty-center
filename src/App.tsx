@@ -2224,11 +2224,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
           <div className="group relative order-2 mx-auto w-full max-w-2xl">
             <div className="absolute -inset-3 rounded-[2.2rem] border border-red-200/70 bg-white/50" />
             
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-2 shadow-2xl shadow-slate-900/15 sm:p-3">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-2xl shadow-slate-900/15">
               <img 
-                src="/realty-academy-training.png"
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1600"
                 alt="Realty Center® Emlak Danışmanlığı Eğitimi" 
-                className="block h-full w-full rounded-[1.45rem] object-contain object-center transition duration-700 group-hover:scale-[1.015]"
+                className="block h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.035]"
               />
               
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-white/80 bg-white/90 p-4 shadow-xl backdrop-blur-md">
