@@ -892,30 +892,54 @@ function EyeIcon() {
 function FinancialSolutionsPage() {
   const [sent, setSent] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState('');
+  const [selectedInstitution, setSelectedInstitution] = useState('');
+
+  const solutions = [
+    {
+      title: 'Bankalar',
+      description: 'Konut kredisi seçenekleri ve ödeme planları için talep oluşturun.',
+      institutions: [
+        ['Ziraat Bankası', 'ziraatbank.com.tr'], ['Türkiye İş Bankası', 'isbank.com.tr'], ['Garanti BBVA', 'garantibbva.com.tr'],
+        ['Akbank', 'akbank.com'], ['Yapı Kredi', 'yapikredi.com.tr'], ['Halkbank', 'halkbank.com.tr'], ['VakıfBank', 'vakifbank.com.tr']
+      ]
+    },
+    {
+      title: 'Katılım Bankaları',
+      description: 'Kâr payı esaslı konut finansmanı alternatiflerini değerlendirin.',
+      institutions: [
+        ['Kuveyt Türk', 'kuveytturk.com.tr'], ['Türkiye Finans', 'turkiyefinans.com.tr'], ['Albaraka Türk', 'albaraka.com.tr'],
+        ['Ziraat Katılım', 'ziraatkatilim.com.tr'], ['Vakıf Katılım', 'vakifkatilim.com.tr'], ['Emlak Katılım', 'emlakkatilim.com.tr']
+      ]
+    },
+    {
+      title: 'Evim Sistemleri',
+      description: 'Tasarruf finansmanı modelleri hakkında bilgi ve yönlendirme talep edin.',
+      institutions: [
+        ['Eminevim', 'eminevim.com'], ['Katılımevim', 'katilimevim.com.tr'], ['FuzulEv', 'fuzulev.com.tr'], ['Birevim', 'birevim.com']
+      ]
+    }
+  ];
+
+  const activeSolution = solutions.find((solution) => solution.title === selectedSolution);
+
+  const selectSolution = (title: string) => {
+    setSelectedSolution(title);
+    setSelectedInstitution('');
+    setSent(false);
+  };
 
   const submit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const requests = JSON.parse(localStorage.getItem('realty-center-financial-requests') || '[]');
     localStorage.setItem('realty-center-financial-requests', JSON.stringify([
-      {
-        id: `FC-${Date.now()}`,
-        status: 'Yeni',
-        createdAt: new Date().toISOString(),
-        data: Object.fromEntries(form)
-      },
+      { id: `FC-${Date.now()}`, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(form) },
       ...requests
     ]));
     window.dispatchEvent(new Event('realty-center-financial-requests-updated'));
     event.currentTarget.reset();
     setSent(true);
   };
-
-  const solutions = [
-    ['Bankalar', 'Konut kredisi seçenekleri ve ödeme planları için talep oluşturun.'],
-    ['Katılım Bankaları', 'Kâr payı esaslı konut finansmanı alternatiflerini değerlendirin.'],
-    ['Evim Sistemleri', 'Tasarruf finansmanı modelleri hakkında bilgi ve yönlendirme talep edin.']
-  ];
 
   return <div className="min-h-screen bg-slate-50">
     <section className="border-b border-slate-200 bg-white">
@@ -926,40 +950,48 @@ function FinancialSolutionsPage() {
       </div>
     </section>
 
-    <section className="mx-auto grid max-w-7xl gap-8 px-6 py-12 lg:grid-cols-[.8fr_1.2fr] lg:px-12">
-      <aside className="space-y-4">
-        {solutions.map(([title, description], index) => <button type="button" onClick={()=>{setSelectedSolution(title);setSent(false);}} key={title} className={`w-full rounded-2xl border p-6 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md ${selectedSolution===title?'border-red-600 bg-red-50':'border-slate-200 bg-white'}`}>
-          <div className="flex items-start gap-4">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-sm font-black text-amber-300">0{index + 1}</span>
-            <div><h2 className="font-black text-slate-950">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{description}</p></div>
-          </div>
+    <section className="mx-auto max-w-7xl px-6 py-12 lg:px-12">
+      <div className="grid gap-4 md:grid-cols-3">
+        {solutions.map((solution, index) => <button type="button" onClick={() => selectSolution(solution.title)} key={solution.title} className={`rounded-2xl border p-6 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md ${selectedSolution === solution.title ? 'border-red-600 bg-red-50 ring-2 ring-red-100' : 'border-slate-200 bg-white'}`}>
+          <div className="flex items-start gap-4"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-sm font-black text-amber-300">0{index + 1}</span><div><h2 className="font-black text-slate-950">{solution.title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{solution.description}</p></div></div>
         </button>)}
-        <div className="rounded-2xl bg-slate-950 p-6 text-sm leading-6 text-slate-300">
-          Başvurunuz bir kredi veya finansman onayı değildir. Uygunluk ve nihai koşullar ilgili kuruluşların değerlendirmesine tabidir.
-        </div>
-      </aside>
+      </div>
 
-      {selectedSolution ? <div className="rounded-3xl border-2 border-slate-900 bg-white p-6 shadow-xl sm:p-9">
-        {sent && <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm font-bold text-emerald-800">Finansal çözüm talebiniz alındı. Ekibimiz sizinle iletişime geçecektir.</div>}
-        <div className="mb-7">
-          <p className="text-xs font-black tracking-[.18em] text-red-700">{selectedSolution.toUpperCase()} FORMU</p>
-          <h2 className="mt-2 text-2xl font-black text-slate-950">Size uygun seçeneği birlikte değerlendirelim.</h2>
-        </div>
-        <form onSubmit={submit} className="grid gap-4 sm:grid-cols-2">
-          <label className="text-xs font-black text-slate-700">AD SOYAD<input required name="name" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="text-xs font-black text-slate-700">TELEFON<input required name="phone" type="tel" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="text-xs font-black text-slate-700 sm:col-span-2">E-POSTA<input name="email" type="email" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <input type="hidden" name="solution" value={selectedSolution}/>
-          <label className="text-xs font-black text-slate-700">GAYRİMENKUL BEDELİ<input name="propertyValue" inputMode="numeric" placeholder="Örn. 5.000.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="text-xs font-black text-slate-700">PEŞİNAT TUTARI<input name="downPayment" inputMode="numeric" placeholder="Örn. 1.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="text-xs font-black text-slate-700">TALEP EDİLEN FİNANSMAN<input name="requestedAmount" inputMode="numeric" placeholder="Örn. 3.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="text-xs font-black text-slate-700">VADE TERCİHİ<select name="term" className="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3.5 text-sm font-semibold outline-none focus:border-red-700"><option>Belirlemedim</option><option>12 Ay</option><option>24 Ay</option><option>36 Ay</option><option>60 Ay</option><option>120 Ay</option></select></label>
-          <label className="text-xs font-black text-slate-700 sm:col-span-2">EK AÇIKLAMA<textarea name="message" rows={4} placeholder="Finansman ihtiyacınızı ve ilgilendiğiniz gayrimenkulü kısaca anlatabilirsiniz." className="mt-2 w-full resize-y rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
-          <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="kvkk" value="Onaylandı" type="checkbox" className="mt-1"/><span><Link to="/kvkk" className="font-bold text-red-700 underline">KVKK Aydınlatma Metni</Link>'ni okudum ve başvurum kapsamında iletişime geçilmesini kabul ediyorum.</span></label>
-          <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="siteKullanim" value="Onaylandı" type="checkbox" className="mt-1"/><span><Link to="/kullanim-kosullari" className="font-bold text-red-700 underline">Site Kullanım Koşulları</Link>'nı okudum ve kabul ediyorum.</span></label>
-          <button type="submit" className="rounded-xl bg-red-700 px-6 py-4 text-sm font-black text-white shadow-lg hover:bg-red-800 sm:col-span-2">FİNANSAL ÇÖZÜM TALEBİMİ GÖNDER</button>
-        </form>
-      </div> : <div className="flex min-h-64 items-center justify-center rounded-3xl border-2 border-dashed border-slate-300 bg-white p-8 text-center"><div><Briefcase className="mx-auto h-10 w-10 text-red-700"/><h2 className="mt-4 text-xl font-black text-slate-900">Bir çözüm seçin</h2><p className="mt-2 text-sm leading-6 text-slate-500">Katılım bankaları, bankalar veya evim sistemlerinden birine tıklayın; size özel talep formu açılsın.</p></div></div>}
+      {activeSolution ? <div className="mt-8 space-y-7">
+        <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div><p className="text-xs font-black tracking-[.18em] text-red-700">{activeSolution.title.toUpperCase()}</p><h2 className="mt-2 text-2xl font-black text-slate-950">Tercih ettiğiniz kurumu seçin</h2><p className="mt-2 text-sm text-slate-500">Dilerseniz kurum seçmeden genel finansman talebi de bırakabilirsiniz.</p></div>
+            {selectedInstitution && <span className="rounded-full bg-red-50 px-4 py-2 text-xs font-black text-red-700">Seçim: {selectedInstitution}</span>}
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {activeSolution.institutions.map(([name, domain]) => <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${selectedInstitution === name ? 'border-red-700 bg-red-50 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
+              <img src={`https://logo.clearbit.com/${domain}`} alt={`${name} logosu`} loading="lazy" onError={(event) => { event.currentTarget.style.display = 'none'; }} className="h-11 max-w-[130px] object-contain mix-blend-multiply"/>
+              <span className="mt-3 text-center text-xs font-black text-slate-800">{name}</span>
+            </button>)}
+          </div>
+        </section>
+
+        <section className="rounded-3xl border-2 border-slate-900 bg-white p-6 shadow-xl sm:p-9">
+          {sent && <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm font-bold text-emerald-800">Finansal çözüm talebiniz alındı. Ekibimiz sizinle iletişime geçecektir.</div>}
+          <div className="mb-7"><p className="text-xs font-black tracking-[.18em] text-red-700">{activeSolution.title.toUpperCase()} FORMU</p><h2 className="mt-2 text-2xl font-black text-slate-950">Size uygun seçeneği birlikte değerlendirelim.</h2></div>
+          <form onSubmit={submit} className="grid gap-4 sm:grid-cols-2">
+            <label className="text-xs font-black text-slate-700">AD SOYAD<input required name="name" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">TELEFON<input required name="phone" type="tel" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">E-POSTA<input name="email" type="email" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <input type="hidden" name="solution" value={activeSolution.title}/><input type="hidden" name="institution" value={selectedInstitution || 'Genel talep'}/>
+            <label className="text-xs font-black text-slate-700">GAYRİMENKUL BEDELİ<input name="propertyValue" inputMode="numeric" placeholder="Örn. 5.000.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">PEŞİNAT TUTARI<input name="downPayment" inputMode="numeric" placeholder="Örn. 1.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">TALEP EDİLEN FİNANSMAN<input name="requestedAmount" inputMode="numeric" placeholder="Örn. 3.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">VADE TERCİHİ<select name="term" className="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3.5 text-sm font-semibold outline-none focus:border-red-700"><option>Belirlemedim</option><option>12 Ay</option><option>24 Ay</option><option>36 Ay</option><option>60 Ay</option><option>120 Ay</option></select></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">EK AÇIKLAMA<textarea name="message" rows={4} placeholder="Finansman ihtiyacınızı ve ilgilendiğiniz gayrimenkulü kısaca anlatabilirsiniz." className="mt-2 w-full resize-y rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="kvkk" value="Onaylandı" type="checkbox" className="mt-1"/><span><Link to="/kvkk" className="font-bold text-red-700 underline">KVKK Aydınlatma Metni</Link>'ni okudum ve başvurum kapsamında iletişime geçilmesini kabul ediyorum.</span></label>
+            <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="siteKullanim" value="Onaylandı" type="checkbox" className="mt-1"/><span><Link to="/kullanim-kosullari" className="font-bold text-red-700 underline">Site Kullanım Koşulları</Link>'nı okudum ve kabul ediyorum.</span></label>
+            <button type="submit" className="rounded-xl bg-red-700 px-6 py-4 text-sm font-black text-white shadow-lg hover:bg-red-800 sm:col-span-2">FİNANSAL ÇÖZÜM TALEBİMİ GÖNDER</button>
+          </form>
+        </section>
+      </div> : <div className="mt-8 flex min-h-64 items-center justify-center rounded-3xl border-2 border-dashed border-slate-300 bg-white p-8 text-center"><div><Briefcase className="mx-auto h-10 w-10 text-red-700"/><h2 className="mt-4 text-xl font-black text-slate-900">Bir çözüm seçin</h2><p className="mt-2 text-sm leading-6 text-slate-500">Katılım bankaları, bankalar veya evim sistemlerinden birine tıklayın; önce kurumları görün, ardından talep formunu doldurun.</p></div></div>}
+
+      <div className="mt-8 rounded-2xl bg-slate-950 p-6 text-sm leading-6 text-slate-300">Başvurunuz bir kredi veya finansman onayı değildir. Uygunluk ve nihai koşullar ilgili kuruluşların değerlendirmesine tabidir.</div>
     </section>
   </div>;
 }
