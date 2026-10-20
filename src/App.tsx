@@ -5199,10 +5199,52 @@ function ScrollToTopOnRouteChange() {
   const location = useLocation();
 
   useEffect(() => {
+    const shouldRestoreHomePosition = location.pathname === '/' && sessionStorage.getItem('realty-center-restore-home-position') === 'true';
+    if (shouldRestoreHomePosition) {
+      sessionStorage.removeItem('realty-center-restore-home-position');
+      const savedPosition = Number(sessionStorage.getItem('realty-center-home-scroll') || '0');
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        window.scrollTo({ top: Number.isFinite(savedPosition) ? savedPosition : 0, left: 0, behavior: 'auto' });
+      }));
+      return;
+    }
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }, [location.pathname, location.search]);
 
   return null;
+}
+
+function HomeReturnButton() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname !== '/') return;
+    const saveHomePosition = () => sessionStorage.setItem('realty-center-home-scroll', String(window.scrollY));
+    saveHomePosition();
+    window.addEventListener('scroll', saveHomePosition, { passive: true });
+    return () => {
+      saveHomePosition();
+      window.removeEventListener('scroll', saveHomePosition);
+    };
+  }, [location.pathname]);
+
+  if (location.pathname === '/') return null;
+
+  const returnHome = () => {
+    sessionStorage.setItem('realty-center-restore-home-position', 'true');
+    navigate('/');
+  };
+
+  return <button
+    type="button"
+    onClick={returnHome}
+    className="fixed right-4 top-24 z-[70] inline-flex items-center gap-2 rounded-full bg-[#CD011E] px-4 py-2.5 text-xs font-black text-white shadow-lg shadow-red-900/25 transition hover:-translate-y-0.5 hover:bg-[#A90018] sm:right-6"
+    aria-label="Ana sayfaya, kaldığınız yere dönün"
+  >
+    <Home className="h-4 w-4" />
+    Ana Sayfaya Dön
+  </button>;
 }
 
 function AmbientMusicButton() {
@@ -5524,6 +5566,7 @@ export default function RealtyCenterApp() {
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header language={language} setLanguage={setLanguage} />
+        <HomeReturnButton />
         <AmbientMusicButton />
 
         <main className="flex-1">
