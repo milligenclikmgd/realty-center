@@ -899,23 +899,23 @@ function FinancialSolutionsPage() {
       title: 'Bankalar',
       description: 'Konut kredisi seçenekleri ve ödeme planları için talep oluşturun.',
       institutions: [
-        ['Ziraat Bankası', 'ziraatbank.com.tr'], ['Türkiye İş Bankası', 'isbank.com.tr'], ['Garanti BBVA', 'garantibbva.com.tr'],
-        ['Akbank', 'akbank.com'], ['Yapı Kredi', 'yapikredi.com.tr'], ['Halkbank', 'halkbank.com.tr'], ['VakıfBank', 'vakifbank.com.tr']
+        ['Ziraat Bankası', 'ziraatbank.com.tr', 'ziraatbankasi'], ['Türkiye İş Bankası', 'isbank.com.tr', 'turkiyeisbankasi'], ['Garanti BBVA', 'garantibbva.com.tr', 'garantibbva'],
+        ['Akbank', 'akbank.com', 'akbank'], ['Yapı Kredi', 'yapikredi.com.tr', 'yapikredi'], ['Halkbank', 'halkbank.com.tr', 'halkbank'], ['VakıfBank', 'vakifbank.com.tr', 'vakifbank']
       ]
     },
     {
       title: 'Katılım Bankaları',
       description: 'Kâr payı esaslı konut finansmanı alternatiflerini değerlendirin.',
       institutions: [
-        ['Kuveyt Türk', 'kuveytturk.com.tr'], ['Türkiye Finans', 'turkiyefinans.com.tr'], ['Albaraka Türk', 'albaraka.com.tr'],
-        ['Ziraat Katılım', 'ziraatkatilim.com.tr'], ['Vakıf Katılım', 'vakifkatilim.com.tr'], ['Emlak Katılım', 'emlakkatilim.com.tr']
+        ['Kuveyt Türk', 'kuveytturk.com.tr', 'kuveytturk'], ['Türkiye Finans', 'turkiyefinans.com.tr', 'turkiyefinans'], ['Albaraka Türk', 'albaraka.com.tr', 'albaraka'],
+        ['Ziraat Katılım', 'ziraatkatilim.com.tr', 'ziraatkatilim'], ['Vakıf Katılım', 'vakifkatilim.com.tr', 'vakifkatilim'], ['Emlak Katılım', 'emlakkatilim.com.tr', 'emlakkatilim']
       ]
     },
     {
       title: 'Evim Sistemleri',
       description: 'Tasarruf finansmanı modelleri hakkında bilgi ve yönlendirme talep edin.',
       institutions: [
-        ['Eminevim', 'eminevim.com'], ['Katılımevim', 'katilimevim.com.tr'], ['FuzulEv', 'fuzulev.com.tr'], ['Birevim', 'birevim.com']
+        ['Eminevim', 'eminevim.com', 'eminevim'], ['Katılımevim', 'katilimevim.com.tr', 'katilimevim'], ['FuzulEv', 'fuzulev.com.tr', 'fuzulev'], ['Birevim', 'birevim.com', 'birevim']
       ]
     }
   ];
@@ -967,10 +967,18 @@ function FinancialSolutionsPage() {
             {selectedInstitution && <span className="rounded-full bg-red-50 px-4 py-2 text-xs font-black text-red-700">Seçim: {selectedInstitution}</span>}
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            {activeSolution.institutions.map(([name, domain]) => {
+            {activeSolution.institutions.map(([name, domain, logoSlug]) => {
               const isSelected = selectedInstitution === name;
               return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSelected ? 'border-red-700 bg-red-700 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
-                <span className="flex h-14 w-full max-w-[150px] items-center justify-center rounded-xl bg-white p-2 shadow-sm"><img src={`https://logo.clearbit.com/${domain}`} alt={`${name} logosu`} loading="lazy" onError={(event) => { event.currentTarget.style.display = 'none'; }} className="h-full w-full object-contain"/></span>
+                <span className="flex h-14 w-full max-w-[150px] items-center justify-center rounded-xl bg-white p-2 shadow-sm"><img src={`https://cdn.simpleicons.org/${logoSlug}`} alt={`${name} logosu`} loading="lazy" onError={(event) => {
+                            const image = event.currentTarget;
+                            if (!image.dataset.fallback) {
+                              image.dataset.fallback = 'true';
+                              image.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+                              return;
+                            }
+                            image.style.display = 'none';
+                          }} className="h-full w-full object-contain"/></span>
                 <span className={`mt-3 text-center text-xs font-black ${isSelected ? 'text-white' : 'text-slate-800'}`}>{name}</span>
               </button>;
             })}
