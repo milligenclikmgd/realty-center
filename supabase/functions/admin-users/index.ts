@@ -10,7 +10,8 @@ const corsHeaders = {
 
 type CreateUserPayload = {
   firstName: string; lastName: string; username: string; email: string; phone?: string | null;
-  role: 'advisor' | 'manager'; password: string; status: 'active' | 'inactive'; forcePasswordChange: boolean;
+  role: 'advisor' | 'manager' | 'admin'; password: string; status: 'active' | 'inactive'; forcePasswordChange: boolean;
+  avatarUrl?: string | null; expertiseAreas?: string[]; whatsapp?: string | null; bio?: string | null;
 };
 
 Deno.serve(async (request) => {
@@ -38,7 +39,7 @@ Deno.serve(async (request) => {
   if (!/^[a-z0-9._-]{3,40}$/.test(username)) return json({ error: 'Geçerli bir kullanıcı adı girin.' }, 400);
   if (!/^\S+@\S+\.\S+$/.test(email)) return json({ error: 'Geçerli bir e-posta adresi girin.' }, 400);
   if (payload.password.length < 10) return json({ error: 'Şifre en az 10 karakter olmalıdır.' }, 400);
-  if (!['advisor', 'manager'].includes(payload.role) || !['active', 'inactive'].includes(payload.status)) return json({ error: 'Geçersiz rol veya durum.' }, 400);
+  if (!['advisor', 'manager', 'admin'].includes(payload.role) || !['active', 'inactive'].includes(payload.status)) return json({ error: 'Geçersiz rol veya durum.' }, 400);
 
   const { data: duplicate } = await admin.from('profiles').select('id').or(`username.eq.${username},email.eq.${email}`).limit(1);
   if (duplicate?.length) return json({ error: 'Bu kullanıcı adı veya e-posta zaten kullanılıyor.' }, 409);
@@ -52,6 +53,7 @@ Deno.serve(async (request) => {
   const { error: profileError } = await admin.from('profiles').insert({
     id: created.user.id, first_name: payload.firstName.trim(), last_name: payload.lastName.trim(), username, email,
     phone: payload.phone || null, role: payload.role, status: payload.status, force_password_change: Boolean(payload.forcePasswordChange),
+    avatar_url: payload.avatarUrl || null, expertise_areas: payload.expertiseAreas || [], whatsapp: payload.whatsapp || null, bio: payload.bio || null,
   });
   if (profileError) {
     await admin.auth.admin.deleteUser(created.user.id);

@@ -5308,7 +5308,7 @@ function HomeReturnButton() {
     };
   }, [location.pathname]);
 
-  if (location.pathname === '/') return null;
+  if (location.pathname === '/' || ['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
 
   const returnHome = () => {
     sessionStorage.setItem('realty-center-restore-home-position', 'true');
@@ -5327,6 +5327,7 @@ function HomeReturnButton() {
 }
 
 function AmbientMusicButton() {
+  const location = useLocation();
   const [playing, setPlaying] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const masterGainRef = useRef<GainNode | null>(null);
@@ -5432,6 +5433,7 @@ function AmbientMusicButton() {
     if (audioContextRef.current?.state !== 'closed') void audioContextRef.current?.close();
   }, []);
 
+  if (['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
   return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Piyano müziğini sessize al' : 'Telif içermeyen piyano müziği çal'} title="Beethoven – Für Elise · Telifsiz piyano düzenlemesi" className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
     {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
     <span>{playing ? 'Sessize Al' : 'Müzik Çal'}</span>
