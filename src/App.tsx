@@ -307,80 +307,8 @@ type ListingItem = {
 const SAMPLE_LISTINGS: ListingItem[] = [];
 const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
-const SAMPLE_OFFICES = [
-  {
-    id: 1,
-    name: "Realty Center® Çankaya",
-    city: "Ankara",
-    district: "Çankaya",
-    address: "Çukurambar Mah. Muhsin Yazıcıoğlu Cad. No: 39, Çankaya / Ankara",
-    phone: "0 554 322 22 22",
-    email: "cankaya@realtycenter.com.tr",
-    manager: "Mert Yalçın",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=88&w=1200"
-  },
-  {
-    id: 2,
-    name: "Realty Center® İncek",
-    city: "Ankara",
-    district: "Çankaya",
-    address: "İncek Bulvarı No: 118, Çankaya / Ankara",
-    phone: "0532 567 48 46",
-    email: "incek@realtycenter.com.tr",
-    manager: "Selin Arslan",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=88&w=1200"
-  },
-  {
-    id: 3,
-    name: "Realty Center® Söğütözü",
-    city: "Ankara",
-    district: "Çankaya",
-    address: "Söğütözü Mah. 2176. Cad. No: 7, Çankaya / Ankara",
-    phone: "0532 567 48 47",
-    email: "sogutozu@realtycenter.com.tr",
-    manager: "Burak Demir",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=88&w=1200"
-  }
-];
-
-const SAMPLE_AGENTS = [
-  {
-    id: 1,
-    name: "Mert Yalçın",
-    title: "Gayrimenkul Danışmanı",
-    office: "Realty Center® Çankaya",
-    city: "Ankara",
-    district: "Çankaya",
-    phone: "0 554 322 22 22",
-    email: "mert.yalcin@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
-    activeListings: 18
-  },
-  {
-    id: 2,
-    name: "Selin Arslan",
-    title: "Konut Projeleri Uzmanı",
-    office: "Realty Center® İncek",
-    city: "Ankara",
-    district: "Çankaya",
-    phone: "0532 567 48 46",
-    email: "selin.arslan@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=88&w=1200",
-    activeListings: 14
-  },
-  {
-    id: 3,
-    name: "Burak Demir",
-    title: "Ticari Gayrimenkul Uzmanı",
-    office: "Realty Center® Söğütözü",
-    city: "Ankara",
-    district: "Çankaya",
-    phone: "0532 567 48 47",
-    email: "burak.demir@realtycenter.com.tr",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=1200",
-    activeListings: 22
-  }
-];
+const SAMPLE_OFFICES: Array<{id:string; name:string; city:string; district:string; address:string; phone:string; email:string; manager:string; image:string}> = [];
+const SAMPLE_AGENTS: Array<{id:string; name:string; title:string; office:string; city:string; district:string; phone:string; email:string; image:string; activeListings:number}> = [];
 
 const SLIDER_IMAGES = [
   "/slider/slider-01-tall-building.webp",
@@ -2516,8 +2444,14 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
 function OfficesPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [offices, setOffices] = useState<typeof SAMPLE_OFFICES>([]);
+  useEffect(() => {
+    void supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').eq('status','active').order('created_at',{ascending:false}).then(({ data }) => {
+      setOffices((data || []).map((office: any) => ({ id: office.id, name: office.name, city: office.city, district: office.district, address: office.address, phone: office.phone || '', email: office.email || '', manager: office.manager_name || 'Belirtilmedi', image: office.image_url || '' })));
+    });
+  }, []);
 
-  const filteredOffices = SAMPLE_OFFICES.filter((office) => {
+  const filteredOffices = offices.filter((office) => {
     if (selectedCity && office.city !== selectedCity) return false;
     if (selectedDistrict && office.district !== selectedDistrict) return false;
     return true;
@@ -2705,8 +2639,16 @@ function AgentsPage() {
   const [selectedDistrict, setSelectedDistrict] = useState('');
   const [agentNameInput, setAgentNameInput] = useState('');
   const [agentNameQuery, setAgentNameQuery] = useState('');
+  const [agents, setAgents] = useState<typeof SAMPLE_AGENTS>([]);
+  useEffect(() => {
+    void supabase.from('profiles').select('id,first_name,last_name,email,phone,avatar_url,expertise_areas,whatsapp,bio').eq('role','advisor').eq('status','active').is('deleted_at',null).order('created_at',{ascending:false}).then(({ data }) => {
+      setAgents((data || []).map((agent: any) => ({
+        id: agent.id, name: [agent.first_name, agent.last_name].filter(Boolean).join(' '), title: agent.expertise_areas?.[0] || 'Gayrimenkul Danışmanı', office: 'Realty Center®', city: agent.expertise_areas?.[1] || '', district: agent.expertise_areas?.[2] || '', phone: agent.whatsapp || agent.phone || '', email: agent.email || '', image: agent.avatar_url || '', activeListings: 0
+      })));
+    });
+  }, []);
 
-  const filteredAgents = SAMPLE_AGENTS.filter((agent) => {
+  const filteredAgents = agents.filter((agent) => {
     if (selectedCity && agent.city !== selectedCity) return false;
     if (selectedDistrict && agent.district !== selectedDistrict) return false;
     if (agentNameQuery && !agent.name.toLocaleLowerCase('tr-TR').includes(agentNameQuery.toLocaleLowerCase('tr-TR').trim())) return false;
@@ -4147,10 +4089,32 @@ function SuperAdminDashboard() {
   ]);
 
   // Ofis Listesi Verileri
-  const [offices] = useState(SAMPLE_OFFICES);
+  const [offices, setOffices] = useState<typeof SAMPLE_OFFICES>([]);
 
   // Danışman Verileri
-  const [agents] = useState(SAMPLE_AGENTS);
+  const [agents, setAgents] = useState<typeof SAMPLE_AGENTS>([]);
+
+  const loadOffices = async () => {
+    const { data } = await supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').order('created_at',{ ascending:false });
+    setOffices((data || []).map((office: any) => ({ id:office.id, name:office.name, city:office.city, district:office.district, address:office.address, phone:office.phone || '', email:office.email || '', manager:office.manager_name || '', image:office.image_url || '' })));
+  };
+  const loadAgents = async () => {
+    const { data } = await supabase.from('profiles').select('id,first_name,last_name,email,phone,avatar_url,expertise_areas,whatsapp').eq('role','advisor').is('deleted_at',null).order('created_at',{ascending:false});
+    setAgents((data || []).map((agent: any) => ({ id:agent.id, name:[agent.first_name,agent.last_name].filter(Boolean).join(' '), title:agent.expertise_areas?.[0] || 'Gayrimenkul Danışmanı', office:'Realty Center®', city:agent.expertise_areas?.[1] || '', district:agent.expertise_areas?.[2] || '', phone:agent.whatsapp || agent.phone || '', email:agent.email || '', image:agent.avatar_url || '', activeListings:0 })));
+  };
+  useEffect(() => { if (activeTab === 'offices') void loadOffices(); if (activeTab === 'agents') void loadAgents(); }, [activeTab]);
+  const addOffice = async () => {
+    const name = window.prompt('Ofis adı'); if (!name?.trim()) return;
+    const city = window.prompt('İl'); if (!city?.trim()) return;
+    const district = window.prompt('İlçe'); if (!district?.trim()) return;
+    const address = window.prompt('Açık adres') || '';
+    const phone = window.prompt('Telefon') || '';
+    const email = window.prompt('E-posta') || '';
+    const manager_name = window.prompt('Ofis yöneticisi') || '';
+    const { error } = await supabase.from('offices').insert({ name:name.trim(), city:city.trim(), district:district.trim(), address, phone, email, manager_name, status:'active' });
+    if (error) return alert(`Ofis eklenemedi: ${error.message}`);
+    await loadOffices(); alert('Ofis eklendi ve sitede yayına alındı.');
+  };
 
   // İlan Verileri (Onay Bekleyenler)
   const [listings, setListings] = useState<any[]>([]);
@@ -4480,7 +4444,7 @@ function SuperAdminDashboard() {
                     <h2 className="text-lg font-black text-slate-900">Franchise Ofis Yönetimi</h2>
                     <p className="text-xs text-slate-500 font-medium mt-0.5">Sistemde aktif çalışan tüm bölge başkanlıkları ve temsilcilikler</p>
                   </div>
-                  <button onClick={() => alert("Yeni ofis ekleme modülü açılıyor...")} className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
+                  <button onClick={addOffice} className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2 rounded-xl text-xs flex items-center space-x-1.5 shadow-md">
                     <PlusCircle className="w-4 h-4" />
                     <span>Yeni Ofis Ekle</span>
                   </button>
