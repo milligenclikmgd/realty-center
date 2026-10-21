@@ -4839,7 +4839,8 @@ const getCRMCustomers = (): CRMCustomer[] => {
 };
 
 function CRMWorkspace({ isManager, advisorName }: { isManager: boolean; advisorName: string }) {
-  const [records, setRecords] = useState<CRMCustomer[]>(getCRMCustomers);
+  const [records, setRecords] = useState<CRMCustomer[]>([]);
+  const [crmConnection, setCrmConnection] = useState<'loading' | 'connected' | 'offline'>('loading');
   const [tab, setTab] = useState<'customers' | 'leads' | 'followups' | 'appointments'>('customers');
   const [query, setQuery] = useState('');
   const [stageFilter, setStageFilter] = useState<'Tümü' | CRMStage>('Tümü');
@@ -4848,6 +4849,29 @@ function CRMWorkspace({ isManager, advisorName }: { isManager: boolean; advisorN
   const [noteText, setNoteText] = useState('');
   const emptyForm = { name: '', phone: '', email: '', type: 'Alıcı', stage: 'Yeni' as CRMStage, source: 'Manuel kayıt', city: '', district: '', budget: '', preference: '', nextAction: '' };
   const [form, setForm] = useState(emptyForm);
+
+  const mapRemoteRecord = (record: any, activities: any[] = []): CRMCustomer => ({
+    id: record.id, name: record.name, phone: record.phone, email: record.email || '', type: record.customer_type,
+    stage: record.stage as CRMStage, source: record.source, city: record.city || '', district: record.district || '',
+    budget: record.budget || '', preference: record.preference || '', owner: record.assigned_to ? 'Atanmış danışman' : 'Merkez',
+    lastContact: record.last_contact_at ? new Date(record.last_contact_at).toLocaleDateString('tr-TR') : new Date(record.created_at).toLocaleDateString('tr-TR'),
+    nextAction: record.next_action || '', notes: activities.filter((activity) => activity.customer_id === record.id).map((activity) => ({ id: activity.id, text: activity.body, date: new Date(activity.created_at).toLocaleString('tr-TR') }))
+  });
+
+  useEffect(() => {
+    let mounted = true;
+    const loadCRM = async () => {
+      const cached = getCRMCustomers();
+      if (!isSupabaseConfigured) { if (mounted) { setRecords(cached); setCrmConnection('offline'); } return; }
+      const { data: customers, error } = await supabase.from('crm_customers').select('*').is('archived_at', null).order('created_at', { ascending: false });
+      if (error || !customers) { if (mounted) { setRecords(cached); setCrmConnection('offline'); } return; }
+      const ids = customers.map((customer) => customer.id);
+      const { data: activities } = ids.length ? await supabase.from('crm_activities').select('id, customer_id, body, created_at').in('customer_id', ids).order('created_at', { ascending: false }) : { data: [] };
+      if (mounted) { setRecords(customers.map((customer) => mapRemoteRecord(customer, activities || []))); setCrmConnection('connected'); }
+    };
+    void loadCRM();
+    return () => { mounted = false; };
+  }, []);
 
   useEffect(() => { localStorage.setItem('realty-center-crm-customers', JSON.stringify(records)); }, [records]);
 
@@ -4864,25 +4888,52 @@ function CRMWorkspace({ isManager, advisorName }: { isManager: boolean; advisorN
     { label: 'Randevu', value: records.filter((record) => record.stage === 'Randevu').length, accent: 'bg-blue-50 text-blue-700' },
     { label: 'Sonuçlanan', value: records.filter((record) => record.stage === 'Sonuçlandı').length, accent: 'bg-emerald-50 text-emerald-700' }
   ];
-  const saveRecord = (event: React.FormEvent) => {
+  const saveRecord = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!form.name.trim() || !form.phone.trim()) return;
-    const now = new Date().toLocaleDateString('tr-TR');
-    setRecords((current) => [{ id: `crm-${Date.now()}`, ...form, owner: advisorName || (isManager ? 'Yönetici' : 'Danışman'), lastContact: now, notes: [] }, ...current]);
+    const now = new Date();
+    let record: CRMCustomer = { id: `crm-${Date.now()}`, ...form, owner: advisorName || (isManager ? 'Yönetici' : 'Danışman'), lastContact: now.toLocaleDateString('tr-TR'), notes: [] };
+    if (isSupabaseConfigured) {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        const { data, error } = await supabase.from('crm_customers').insert({
+          owner_id: user.id, assigned_to: user.id, name: form.name.trim(), phone: form.phone.trim(), email: form.email.trim() || null,
+          customer_type: form.type, stage: form.stage, source: form.source, city: form.city.trim() || null, district: form.district.trim() || null,
+          budget: form.budget.trim() || null, preference: form.preference.trim() || null, next_action: form.nextAction.trim() || null, last_contact_at: now.toISOString()
+        }).select('*').single();
+        if (!error && data) { record = mapRemoteRecord(data); setCrmConnection('connected'); }
+      }
+    }
+    setRecords((current) => [record, ...current]);
     setForm(emptyForm); setShowForm(false); setTab('customers');
   };
-  const changeStage = (stage: CRMStage) => {
+  const changeStage = async (stage: CRMStage) => {
     if (!selected) return;
-    setRecords((current) => current.map((record) => record.id === selected.id ? { ...record, stage, lastContact: new Date().toLocaleDateString('tr-TR') } : record));
+    const now = new Date();
+    setRecords((current) => current.map((record) => record.id === selected.id ? { ...record, stage, lastContact: now.toLocaleDateString('tr-TR') } : record));
+    if (isSupabaseConfigured && !selected.id.startsWith('crm-')) {
+      await supabase.from('crm_customers').update({ stage, last_contact_at: now.toISOString() }).eq('id', selected.id);
+    }
   };
-  const addNote = () => {
+  const addNote = async () => {
     if (!selected || !noteText.trim()) return;
     const note = { id: `note-${Date.now()}`, text: noteText.trim(), date: new Date().toLocaleString('tr-TR') };
     setRecords((current) => current.map((record) => record.id === selected.id ? { ...record, lastContact: 'Bugün', notes: [note, ...record.notes] } : record));
+    if (isSupabaseConfigured && !selected.id.startsWith('crm-')) {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        const { data } = await supabase.from('crm_activities').insert({ customer_id: selected.id, actor_id: user.id, activity_type: 'note', body: note.text }).select('id, created_at').single();
+        if (data) setRecords((current) => current.map((record) => record.id === selected.id ? { ...record, notes: record.notes.map((item) => item.id === note.id ? { ...item, id: data.id, date: new Date(data.created_at).toLocaleString('tr-TR') } : item) } : record));
+      }
+    }
     setNoteText('');
   };
-  const deleteRecord = () => {
+  const deleteRecord = async () => {
     if (!selected || !window.confirm('Bu müşteri kaydı çöp kutusuna alınacak. Devam edilsin mi?')) return;
+    if (isSupabaseConfigured && !selected.id.startsWith('crm-')) {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) await supabase.from('crm_customers').update({ archived_at: new Date().toISOString(), archived_by: user.id }).eq('id', selected.id);
+    }
     setRecords((current) => current.filter((record) => record.id !== selected.id));
     setSelectedId(null);
   };
@@ -4894,7 +4945,7 @@ function CRMWorkspace({ isManager, advisorName }: { isManager: boolean; advisorN
   return <div className="space-y-5">
     <section className="overflow-hidden rounded-2xl bg-[#071d3b] p-5 text-white shadow-xl sm:p-7">
       <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-        <div><p className="text-[10px] font-black tracking-[.22em] text-red-200">REALTY CENTER® CRM</p><h2 className="mt-2 text-2xl font-black">Müşteri ilişkilerini tek yerden yönetin.</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-white/70">Müşteri, talep, not, takip ve randevu süreçlerini kategorilere ayırarak kolayca yönetin.</p></div>
+        <div><p className="text-[10px] font-black tracking-[.22em] text-red-200">REALTY CENTER® CRM</p><h2 className="mt-2 text-2xl font-black">Müşteri ilişkilerini tek yerden yönetin.</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-white/70">Müşteri, talep, not, takip ve randevu süreçlerini kategorilere ayırarak kolayca yönetin.</p><span className={`mt-3 inline-flex rounded-full px-2.5 py-1 text-[10px] font-black ${crmConnection === 'connected' ? 'bg-emerald-400/20 text-emerald-100' : crmConnection === 'offline' ? 'bg-amber-300/20 text-amber-100' : 'bg-white/10 text-white/70'}`}>{crmConnection === 'connected' ? 'Supabase senkronize' : crmConnection === 'offline' ? 'Bağlantı bekleniyor' : 'CRM yükleniyor'}</span></div>
         <button onClick={() => setShowForm(true)} className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#CD011E] px-5 py-3 text-sm font-black text-white transition hover:bg-red-700"><PlusCircle className="h-4 w-4"/> Yeni müşteri</button>
       </div>
       <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">{statCards.map((item) => <div key={item.label} className="rounded-xl bg-white/10 p-4"><p className="text-[10px] font-black tracking-wider text-white/65">{item.label.toUpperCase()}</p><div className="mt-2 flex items-center justify-between"><strong className="text-2xl">{item.value}</strong><span className={`rounded-lg px-2 py-1 text-[10px] font-black ${item.accent}`}>CRM</span></div></div>)}</div>
