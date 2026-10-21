@@ -1406,11 +1406,12 @@ img[src="/rc_logo_og.svg"]:not([aria-hidden="true"]) {
   place-items: center;
   border: 3px solid #fff;
   border-radius: 999px;
-  background: #d6001c;
+  background: #fff;
+  border-color: #CD011E;
   box-shadow: 0 5px 14px rgba(214,0,28,.42);
 }
 .realty-world-marker svg { width: 14px; height: 14px; stroke: #fff; stroke-width: 2.2; fill: none; }
-.realty-world-brand-mark { width: 21px; height: 21px; object-fit: contain; filter: brightness(0) invert(1); }
+.realty-world-brand-mark { width: 21px; height: 21px; object-fit: contain; }
 @media (max-width: 639px) {
   .home-title-en { display: block; margin: .45rem 0 0; font-size: .34em; }
 }
