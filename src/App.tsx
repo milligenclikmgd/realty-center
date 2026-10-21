@@ -1234,6 +1234,7 @@ function Header({ language, setLanguage }: { language: StaticLanguage; setLangua
   const [managedMenu, setManagedMenu] = useState<HeaderMenuItem[]>(getHeaderMenu);
   const location = useLocation();
   const navigate = useNavigate();
+  if (['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
   const close = () => setMobileOpen(false);
   const t = STATIC_LANGUAGES[language];
   const visibleMenu = managedMenu.filter((item) => item.id !== 'why');
