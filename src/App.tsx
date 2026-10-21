@@ -4029,7 +4029,7 @@ const EMPTY_NEW_USER = { firstName: '', lastName: '', username: '', email: '', p
 
 function SuperAdminDashboard() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'crm' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
   const [managedUsers, setManagedUsers] = useState<ManagedUser[]>([]);
   const [usersLoading, setUsersLoading] = useState(false);
   const [showNewUser, setShowNewUser] = useState(false);
@@ -4244,6 +4244,7 @@ function SuperAdminDashboard() {
     { key: 'videos' as const, label: 'Realty Medya Yönetimi', icon: PlayCircle },
     { key: 'library' as const, label: 'Realty Kütüphane Yönetimi', icon: GraduationCap },
     { key: 'education' as const, label: 'Eğitim Yönetimi', icon: Calendar },
+    { key: 'crm' as const, label: 'CRM & Müşteriler', icon: Users },
     { key: 'messages' as const, label: 'Sistem Mesajları', icon: MessageSquare },
     { key: 'buyerRequests' as const, label: 'Alıcı Talepleri', icon: Bell, badge: buyerRequests.filter((item) => item.status === 'Yeni').length },
     { key: 'feedback' as const, label: 'Müşteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
@@ -4699,6 +4700,8 @@ function SuperAdminDashboard() {
             {activeTab === 'buyerRequests' && (
               <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Alıcı Talepleri ve Bildirimler</h2><p className="mt-1 text-xs text-slate-500">Her talep genel merkeze, ilgili ofise ve bölgedeki danışmanlara yönlendirilir.</p></div>{buyerRequests.length ? buyerRequests.map((item) => <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-col justify-between gap-3 sm:flex-row"><div><p className="text-xs font-black text-red-700">{item.id} · {new Date(item.createdAt).toLocaleString('tr-TR')}</p><h3 className="mt-1 font-black text-slate-900">{item.name} · {item.type} {item.property}</h3><p className="mt-1 text-xs text-slate-600">{item.city} / {item.district} · {item.budget || 'Bütçe belirtilmedi'} · {item.phone}</p></div><select value={item.status} onChange={(e) => { const next = buyerRequests.map((entry) => entry.id === item.id ? { ...entry, status: e.target.value as BuyerRequest['status'] } : entry); setBuyerRequests(next); saveBuyerRequests(next); }} className="h-fit rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700"><option>Yeni</option><option>İnceleniyor</option><option>Eşleştirildi</option></select></div><div className="mt-3 grid gap-2 text-xs sm:grid-cols-2"><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">Ofis bildirimi:</strong> {item.officeNames.length ? item.officeNames.join(', ') : 'Genel merkez eşleştirmesi bekliyor'}</p><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">Danışman bildirimi:</strong> {item.agentNames.length ? item.agentNames.join(', ') : 'Bölge danışmanı eşleştirmesi bekliyor'}</p></div></div>) : <p className="py-10 text-center text-sm font-bold text-slate-500">Henüz alıcı talebi yok.</p>}</div>
             )}
+
+            {activeTab === 'crm' && <CRMWorkspace isManager={true} advisorName="Merkez Yönetim" />}
 
             {activeTab === 'messages' && (
               <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
