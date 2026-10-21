@@ -179,17 +179,37 @@ const DEFAULT_DOCUMENTS: CorporateDocument[] = [
   { id: 'belge-2', title: 'Kalite ve Hizmet Belgesi', description: 'Hizmet süreçlerimize ilişkin kurumsal belge.', fileUrl: '' }
 ];
 const DEFAULT_REFERENCES: CorporateLogoItem[] = [
-  { id: 'ref-1', name: 'Kurumsal Referans', logo: '/rc_logo_og.svg', content: 'Referans kurum ve yürütülen çalışma bilgileri bu alana eklenecektir.' }
+  { id: 'ref-ato', name: 'Ankara Ticaret Odası (ATO)', logo: '/partner-ato.png', content: 'Kurumsal gelişim, ticaret ağı ve sektörel iş birliği çalışmaları.' },
+  { id: 'ref-tedb', name: 'Tüm Emlak Danışmanları Birliği', logo: '/partner-tedb.png', content: 'Gayrimenkul danışmanlığı alanındaki mesleki iş birlikleri ve sektörel gelişim çalışmaları.' },
+  { id: 'ref-business', name: 'Business Akademi', logo: '/partner-business-akademi.png', content: 'Eğitim, gelişim ve kurumsal yetkinlik programları.' },
+  { id: 'ref-tobb', name: 'Türkiye Odalar ve Borsalar Birliği (TOBB)', logo: '/partner-tobb.png', content: 'İş dünyası, oda-borsa ağı ve kurumsal iş birliği çalışmaları.' }
 ];
 const DEFAULT_PARTNERS: CorporateLogoItem[] = [
   { id: 'partner-tedb', name: 'Tüm Emlak Danışmanları Birliği', logo: '/partner-tedb.png', content: 'Gayrimenkul danışmanlığı alanındaki mesleki iş birlikleri ve sektörel gelişim çalışmaları.' },
-  { id: 'partner-ato', name: 'Ankara Ticaret Odası (ATO)', logo: 'https://www.google.com/s2/favicons?domain=ato.org.tr&sz=256', content: 'Kurumsal gelişim, ticaret ağı ve sektörel iş birliği çalışmaları.' },
+  { id: 'partner-ato', name: 'Ankara Ticaret Odası (ATO)', logo: '/partner-ato.png', content: 'Kurumsal gelişim, ticaret ağı ve sektörel iş birliği çalışmaları.' },
   { id: 'partner-trade', name: 'T.C. Ticaret Bakanlığı', logo: 'https://www.google.com/s2/favicons?domain=ticaret.gov.tr&sz=256', content: 'Gayrimenkul ticareti ve ilgili mevzuat süreçlerinde kamu kurumu bilgileri.' },
   { id: 'partner-business', name: 'Business Akademi', logo: '/partner-business-akademi.png', content: 'Eğitim, gelişim ve kurumsal yetkinlik programları.' },
   { id: 'partner-tobb', name: 'Türkiye Odalar ve Borsalar Birliği (TOBB)', logo: '/partner-tobb.png', content: 'İş dünyası, oda-borsa ağı ve kurumsal iş birliği çalışmaları.' },
-  { id: 'partner-kriter', name: 'Kriter Medya', logo: '/klogo.png', content: 'Realty Center® dijital çözüm ortağı; web altyapısı, içerik ve teknik operasyon desteği.' }
+  { id: 'partner-kriter', name: 'Kriter Medya', logo: '/klogo.png', content: 'Realty Center® dijital çözüm ortağı; web altyapısı, içerik ve teknik operasyon desteği.' },
+  { id: 'partner-eminevim', name: 'Eminevim', logo: 'https://www.google.com/s2/favicons?domain=eminevim.com&sz=256', content: 'Tasarruf finansmanı alanında kurumsal çözüm ortağı.' },
+  { id: 'partner-katilimevim', name: 'Katılımevim', logo: 'https://www.google.com/s2/favicons?domain=katilimevim.com.tr&sz=256', content: 'Tasarruf finansmanı alanında çözüm ve bilgi iş birliği.' },
+  { id: 'partner-fuzulev', name: 'Fuzulev', logo: 'https://www.google.com/s2/favicons?domain=fuzulev.com.tr&sz=256', content: 'Tasarruf finansmanı alanında çözüm ve bilgi iş birliği.' },
+  { id: 'partner-ziraat', name: 'Ziraat Bankası', logo: 'https://www.google.com/s2/favicons?domain=ziraatbank.com.tr&sz=256', content: 'Gayrimenkul finansmanı ve bankacılık çözümlerine ilişkin iş birliği.' },
+  { id: 'partner-garanti', name: 'Garanti BBVA', logo: 'https://www.google.com/s2/favicons?domain=garantibbva.com.tr&sz=256', content: 'Bankacılık ve finansal çözüm iş birliği.' },
+  { id: 'partner-halkbank', name: 'Halkbank', logo: 'https://www.google.com/s2/favicons?domain=halkbank.com.tr&sz=256', content: 'Bankacılık ve finansal çözüm iş birliği.' },
+  { id: 'partner-kuveyt', name: 'Kuveyt Türk', logo: 'https://www.google.com/s2/favicons?domain=kuveytturk.com.tr&sz=256', content: 'Katılım bankacılığı ve finansal çözüm iş birliği.' },
+  { id: 'partner-albaraka', name: 'Albaraka Türk', logo: 'https://www.google.com/s2/favicons?domain=albaraka.com.tr&sz=256', content: 'Katılım bankacılığı ve finansal çözüm iş birliği.' },
+  { id: 'partner-denizbank', name: 'DenizBank', logo: 'https://www.google.com/s2/favicons?domain=denizbank.com&sz=256', content: 'Bankacılık ve finansal çözüm iş birliği.' }
 ];
-const getStoredCorporateItems = <T,>(key: string, fallback: T): T => { try { const stored = JSON.parse(localStorage.getItem(key) || 'null'); if (key === 'realty-center-partners' && Array.isArray(stored) && stored.some((item) => item.name === 'Anlaşmalı Banka' || item.name === 'Çözüm Ortağı Kurum')) return fallback; return stored || fallback; } catch { return fallback; } };
+const getStoredCorporateItems = <T,>(key: string, fallback: T): T => {
+  try {
+    const stored = JSON.parse(localStorage.getItem(key) || 'null');
+    if (!Array.isArray(stored)) return stored || fallback;
+    const defaults = fallback as unknown as CorporateLogoItem[];
+    const savedExtras = (stored as CorporateLogoItem[]).filter((item) => item.id !== 'ref-1' && !defaults.some((defaultItem) => defaultItem.id === item.id));
+    return [...defaults, ...savedExtras] as T;
+  } catch { return fallback; }
+};
 
 type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 'right'; image?: string; content?: string; children: HeaderMenuItem[] };
 const headerItem = (id: string, label: string, path: string, side: 'left' | 'right', children: HeaderMenuItem[] = [], image = '', content = ''): HeaderMenuItem => ({ id, label, path, side, image, content, children });
