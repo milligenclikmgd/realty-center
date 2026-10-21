@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
 } from 'react-router-dom';
 import { isSupabaseConfigured, supabase } from './lib/supabase';
+import AdminControlCenter from './AdminControlCenter';
 
 import { 
   Bot, Search, MapPin, Phone, Mail, Globe, 
@@ -5662,7 +5663,7 @@ export default function RealtyCenterApp() {
             <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor']}><AgentDashboard panelRole="advisor" /></ProtectedPanelRoute>} />
             <Route path="/yonetici-panel" element={<ProtectedPanelRoute roles={['manager']}><AgentDashboard panelRole="manager" /></ProtectedPanelRoute>} />
             <Route path="/super-admin" element={<LoginPage />} />
-            <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><SuperAdminDashboard /></ProtectedPanelRoute>} />
+            <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><AdminControlCenter /></ProtectedPanelRoute>} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
             <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
