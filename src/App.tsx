@@ -182,10 +182,14 @@ const DEFAULT_REFERENCES: CorporateLogoItem[] = [
   { id: 'ref-1', name: 'Kurumsal Referans', logo: '/rc_logo_og.svg', content: 'Referans kurum ve yürütülen çalışma bilgileri bu alana eklenecektir.' }
 ];
 const DEFAULT_PARTNERS: CorporateLogoItem[] = [
-  { id: 'partner-1', name: 'Anlaşmalı Banka', logo: '/demo-placeholder.svg', content: 'Gayrimenkul finansmanı ve müşterilere sunulan avantajlı çözümlere ilişkin anlaşma ayrıntıları burada yer alacaktır.' },
-  { id: 'partner-2', name: 'Çözüm Ortağı Kurum', logo: '/demo-placeholder.svg', content: 'Realty Center® ile kurum arasında yürütülen iş birliği ve müşterilere sağlanan avantajlar burada açıklanacaktır.' }
+  { id: 'partner-tedb', name: 'Tüm Emlak Danışmanları Birliği', logo: 'https://www.google.com/s2/favicons?domain=tumemlakdanismanlaribirligi.org.tr&sz=256', content: 'Gayrimenkul danışmanlığı alanındaki mesleki iş birlikleri ve sektörel gelişim çalışmaları.' },
+  { id: 'partner-ato', name: 'Ankara Ticaret Odası (ATO)', logo: 'https://www.google.com/s2/favicons?domain=ato.org.tr&sz=256', content: 'Kurumsal gelişim, ticaret ağı ve sektörel iş birliği çalışmaları.' },
+  { id: 'partner-trade', name: 'T.C. Ticaret Bakanlığı', logo: 'https://www.google.com/s2/favicons?domain=ticaret.gov.tr&sz=256', content: 'Gayrimenkul ticareti ve ilgili mevzuat süreçlerinde kamu kurumu bilgileri.' },
+  { id: 'partner-business', name: 'Business Akademi', logo: 'https://www.google.com/s2/favicons?domain=businessakademi.com.tr&sz=256', content: 'Eğitim, gelişim ve kurumsal yetkinlik programları.' },
+  { id: 'partner-tobb', name: 'Türkiye Odalar ve Borsalar Birliği (TOBB)', logo: 'https://www.google.com/s2/favicons?domain=tobb.org.tr&sz=256', content: 'İş dünyası, oda-borsa ağı ve kurumsal iş birliği çalışmaları.' },
+  { id: 'partner-kriter', name: 'Kriter Medya', logo: '/klogo.png', content: 'Realty Center® dijital çözüm ortağı; web altyapısı, içerik ve teknik operasyon desteği.' }
 ];
-const getStoredCorporateItems = <T,>(key: string, fallback: T): T => { try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch { return fallback; } };
+const getStoredCorporateItems = <T,>(key: string, fallback: T): T => { try { const stored = JSON.parse(localStorage.getItem(key) || 'null'); if (key === 'realty-center-partners' && Array.isArray(stored) && stored.some((item) => item.name === 'Anlaşmalı Banka' || item.name === 'Çözüm Ortağı Kurum')) return fallback; return stored || fallback; } catch { return fallback; } };
 
 type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 'right'; image?: string; content?: string; children: HeaderMenuItem[] };
 const headerItem = (id: string, label: string, path: string, side: 'left' | 'right', children: HeaderMenuItem[] = [], image = '', content = ''): HeaderMenuItem => ({ id, label, path, side, image, content, children });
