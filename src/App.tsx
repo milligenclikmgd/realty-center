@@ -296,7 +296,7 @@ if (TURKEY_PROVINCES.length !== 81 || TURKEY_PROVINCES.reduce((total, city) => t
   throw new Error('Türkiye il-ilçe verisi eksik veya hatalı.');
 }
 
-// ÖRNEK İLAN VERİLERİ
+// İLAN MODELİ — ilanlar yalnızca yönetim paneli üzerinden oluşturulur.
 type ListingItem = {
   id: string; title: string; category: string; propertyType: string; type: string; price: number; currency: string;
   city: string; district: string; neighborhood: string; rooms: string; area: number; image: string;
@@ -304,58 +304,7 @@ type ListingItem = {
   images?: string[]; description?: string; videoUrl?: string; virtualTourUrl?: string; mapUrl?: string;
   monthlyFee?: string; deedInfo?: string; technicalFeatures?: string; updatedAt?: string;
 };
-function getSampleListingDetails(propertyType: string, rooms: string): Record<string, string> {
-  if (['Ev','Villa','Daire','Residence','Müstakil Ev'].includes(propertyType)) return { rooms, buildingAge: '1-5', floor: '5', heating: 'Doğalgaz Kombi', furnished: 'Hayır', mortgage: 'Evet', bathroom: '2' };
-  if (['Arsa','Tarla'].includes(propertyType)) return { zoning: propertyType === 'Arsa' ? 'Konut' : 'Tarla', deed: 'Müstakil Tapu', landQuality: propertyType, frontage: '35', road: 'Kadastro Yolu', infrastructure: 'Elektrik' };
-  if (['Fabrika','Depo'].includes(propertyType)) return { closedArea: propertyType === 'Fabrika' ? '3200' : '1250', ceilingHeight: '8', power: '630', loading: 'Var', crane: 'Var', zoning: 'Var', deed: 'Müstakil Tapu' };
-  if (propertyType === 'Otel') return { hotelRooms: '28', beds: '64', stars: '3', buildingAge: '6-10', restaurant: 'Var', pool: 'Yok', deed: 'Müstakil Tapu' };
-  return { sections: rooms, buildingAge: '1-5', floor: '8', heating: 'Merkezi', furnished: 'Hayır', parking: 'Var', usage: 'Boş' };
-}
-const SAMPLE_LISTING_SEEDS: Array<[string, string, string, string, string, number, number]> = [
-  ['Daire', 'Konut', 'Satılık', "Çankaya Yaşamkent'te Site İçinde 3+1 Daire", '3+1', 165, 7450000],
-  ['Villa', 'Konut', 'Satılık', "Çankaya İncek'te Havuzlu Müstakil Villa", '5+1', 420, 28900000],
-  ['Residence', 'Konut', 'Kiralık', "Çankaya Söğütözü'nde Manzaralı Residence", '2+1', 118, 62000],
-  ['Müstakil Ev', 'Konut', 'Satılık', "Çankaya Oran'da Bahçeli Müstakil Ev", '4+1', 280, 18400000],
-  ['Arsa', 'Arazi', 'Satılık', "Çankaya Karataş'ta Konut İmarlı Arsa", 'Arsa', 650, 9750000],
-  ['Tarla', 'Arazi', 'Satılık', "Çankaya Tulumtaş'ta Yola Cepheli Tarla", 'Tarla', 4800, 12600000],
-  ['Fabrika', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Sanayi Bölgesinde Üretime Hazır Fabrika", 'Fabrika', 3200, 68500000],
-  ['Depo', 'Ticari Gayrimenkul', 'Kiralık', "Çankaya Balgat'ta Yükleme Rampalı Depo", 'Depo', 1250, 185000],
-  ['Ofis', 'Ticari Gayrimenkul', 'Kiralık', "Çankaya Çukurambar'da Prestijli Ofis Katı", '6 Bölüm', 310, 118000],
-  ['Plaza', 'Ticari Gayrimenkul', 'Satılık', "Çankaya Söğütözü'nde Plaza Katı", 'Plaza', 540, 39800000],
-  ['Otel', 'Ticari Gayrimenkul', 'Devren Satılık', "Çankaya Kızılay'da İşletmesi Devam Eden Butik Otel", '28 Oda', 1750, 54500000]
-];
-const DAYLIGHT_LISTING_IMAGES: Record<string, string[]> = {
-  'Daire': ['/ev2.jpg', '/slider/realty-seaside.jpg'],
-  'Villa': ['/ev.jpg', '/ev.jpg'],
-  'Residence': ['/ev2.jpg', '/slider/realty-seaside.jpg'],
-  'Müstakil Ev': ['/ev.jpg', '/ev.jpg'],
-  'Arsa': ['/slider/realty-seaside.jpg', '/ev.jpg'],
-  'Tarla': ['/slider/realty-seaside.jpg', '/ev.jpg'],
-  'Fabrika': ['/slider/realty-city.jpg', '/ev2.jpg'],
-  'Depo': ['/slider/realty-city.jpg', '/ev2.jpg'],
-  'Ofis': ['/slider/realty-city.jpg', '/ev2.jpg'],
-  'Plaza': ['/slider/realty-city.jpg', '/ev2.jpg'],
-  'Otel': ['/slider/realty-seaside.jpg', '/ev.jpg']
-};
-const SAMPLE_LISTINGS: ListingItem[] = [...SAMPLE_LISTING_SEEDS.map(([propertyType, category, type, title, rooms, area, price], index) => {
-  const images = DAYLIGHT_LISTING_IMAGES[propertyType] || ['/ev2.jpg', '/slider/realty-seaside.jpg'];
-  return ({
-  id: `RC-${String(index + 101).padStart(3, '0')}`, title, category, propertyType, type, price, currency: '₺', city: 'Ankara', district: 'Çankaya', neighborhood: ['Yaşamkent', 'İncek', 'Söğütözü', 'Oran', 'Karataş', 'Tulumtaş', 'Balgat', 'Çukurambar', 'Kızılay'][index % 9], rooms, area,
-  image: images[0],
-  agentName: 'Realty Center® Çankaya', agentPhone: '0 554 322 22 22', date: '2026-08-15', isFeatured: index < 4,
-  details: getSampleListingDetails(propertyType, rooms),
-  images,
-  description: `${title}; Realty Center® güvencesiyle sunulan, konumu ve kullanım özellikleriyle öne çıkan seçkin bir gayrimenkuldür. Ayrıntılı bilgi ve yerinde sunum için yetkili danışmanımızla iletişime geçebilirsiniz.`,
-  monthlyFee: ['Arsa','Tarla'].includes(propertyType) ? 'Yok' : '2.750 ₺',
-  deedInfo: 'Kat Mülkiyetli / Müstakil Tapu',
-  technicalFeatures: 'Otopark, güvenlik, ulaşım akslarına yakınlık, yüksek hızlı internet altyapısı',
-  updatedAt: '15 Ağustos 2026',
-  mapUrl: `https://www.google.com/maps?q=${encodeURIComponent('Çankaya Ankara')}&output=embed`
-  });
-}),
-  { id:'RC-201', title:'Dubai Palm Jumeirah’te Deniz Manzaralı Lüks Residence', category:'Konut', propertyType:'Residence', type:'Satılık', price:1850000, currency:'USD', city:'Dubai', district:'Palm Jumeirah', neighborhood:'Palm West Beach', rooms:'3+1', area:214, image:'/slider/realty-seaside.jpg', images:['/slider/realty-seaside.jpg','/ev2.jpg'], agentName:'Realty Center® International', agentPhone:'+90 532 567 48 45', date:'2026-08-26', isFeatured:true, details:getSampleListingDetails('Residence','3+1'), description:'Dubai Palm Jumeirah’te plaj erişimli, panoramik deniz manzaralı ve seçkin sosyal alanlara sahip uluslararası yatırım fırsatı.', monthlyFee:'1.250 USD', deedInfo:'Freehold Tapu', technicalFeatures:'Özel plaj erişimi, vale, havuz, spor salonu, 7/24 güvenlik', updatedAt:'26 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Palm+Jumeirah+Dubai&output=embed' },
-  { id:'RC-202', title:'İspanya Marbella’da Golf Sahasına Cepheli Akdeniz Villası', category:'Konut', propertyType:'Villa', type:'Satılık', price:1250000, currency:'EUR', city:'Marbella', district:'Nueva Andalucía', neighborhood:'Golf Valley', rooms:'4+1', area:318, image:'/ev.jpg', images:['/ev.jpg','/ev.jpg'], agentName:'Realty Center® International', agentPhone:'+90 532 567 48 45', date:'2026-08-25', isFeatured:true, details:getSampleListingDetails('Villa','4+1'), description:'Marbella Nueva Andalucía’da golf sahasına cepheli, özel havuzlu ve geniş teraslı prestijli Akdeniz villası.', monthlyFee:'320 EUR', deedInfo:'Escritura / Mülkiyet Tapusu', technicalFeatures:'Özel havuz, golf manzarası, kapalı otopark, akıllı ev altyapısı', updatedAt:'25 Ağustos 2026', mapUrl:'https://www.google.com/maps?q=Nueva+Andalucia+Marbella&output=embed' }
-];
+const SAMPLE_LISTINGS: ListingItem[] = [];
 const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
 const SAMPLE_OFFICES = [
@@ -612,11 +561,11 @@ function getCategoryTransactionType(item: ListingCategory) {
   return item.type === 'Devren' ? 'Devren Satılık' : item.type;
 }
 
-const DEFAULT_FEATURED_LISTING_IDS = ['RC-201', 'RC-202', ...SAMPLE_LISTINGS.filter((listing) => listing.price <= 8000000 && listing.currency === '₺').sort((a, b) => a.price - b.price).slice(0, 3).map((listing) => listing.id)];
+const DEFAULT_FEATURED_LISTING_IDS: string[] = [];
 function getFeaturedListingIds(): string[] {
   try {
     const saved = JSON.parse(localStorage.getItem('realty-center-featured-listing-ids') || 'null');
-    return Array.isArray(saved) ? [...new Set(['RC-201', 'RC-202', ...saved.filter((id): id is string => typeof id === 'string')])] : DEFAULT_FEATURED_LISTING_IDS;
+    return Array.isArray(saved) ? [...new Set(saved.filter((id): id is string => typeof id === 'string'))] : DEFAULT_FEATURED_LISTING_IDS;
   } catch { return DEFAULT_FEATURED_LISTING_IDS; }
 }
 function saveFeaturedListingIds(ids: string[]) {
@@ -803,7 +752,7 @@ function RealtyNetworkActivityPanel() {
 }
 
 
-function ListingCard({ item }: { item: typeof SAMPLE_LISTINGS[0] }) {
+function ListingCard({ item }: { item: ListingItem }) {
   return (
     <article className="listing-cinematic-card relative flex h-full cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:border-red-700 hover:shadow-2xl group">
       <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanını incele`} className="absolute inset-0 z-10" />
@@ -4204,10 +4153,7 @@ function SuperAdminDashboard() {
   const [agents] = useState(SAMPLE_AGENTS);
 
   // İlan Verileri (Onay Bekleyenler)
-  const [listings, setListings] = useState([
-    ...SAMPLE_LISTINGS.map(l => ({ ...l, approvalStatus: 'Yayında' })),
-    { id: 'RC-999', title: 'Çankaya\'da Lüks Ofis Katı', category: 'İşyeri', type: 'Kiralık', price: 95000, city: 'Ankara', district: 'Çankaya', agentName: 'Hakan Uçar', date: '2026-08-12', approvalStatus: 'Onay Bekliyor' }
-  ]);
+  const [listings, setListings] = useState<any[]>([]);
 
   // Genel Mesajlar
   const [contactMessages] = useState([
