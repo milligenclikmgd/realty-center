@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArchiveRestore,
   BarChart3,
@@ -3608,28 +3608,21 @@ function NewOfficeModal({
     email: "",
     address: "",
     description: "",
-    hours: "09:00 - 18:00",
+    hoursStart: "09:00",
+    hoursEnd: "18:00",
     latitude: 39.9334,
     longitude: 32.8597,
   });
   const [imageUrl, setImageUrl] = useState("");
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState("");
+  const [mapPickerOpen, setMapPickerOpen] = useState(false);
+  const timeOptions = Array.from({ length: 35 }, (_, index) => {
+    const minutes = 6 * 60 + index * 30;
+    return `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
+  });
   const set = (key: string, value: string | number) =>
     setForm((old) => ({ ...old, [key]: value }));
-  const selectMapPoint = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const r = event.currentTarget.getBoundingClientRect();
-    const x = (event.clientX - r.left) / r.width;
-    const y = (event.clientY - r.top) / r.height;
-    setForm((old) => ({
-      ...old,
-      longitude: Number((32.8597 + (x - 0.5) * 0.42).toFixed(6)),
-      latitude: Number((39.9334 - (y - 0.5) * 0.27).toFixed(6)),
-    }));
-    setNotice(
-      "Konum harita üzerinde seçildi. Kaydedildiğinde ofis profilinde görünür.",
-    );
-  };
   const loadImage = (file?: File) => {
     if (!file) return;
     if (!file.type.startsWith("image/") || file.size > 5 * 1024 * 1024)
@@ -3662,7 +3655,7 @@ function NewOfficeModal({
         phone: form.mobile,
         mobile_phone: form.mobile,
         landline_phone: form.landline || null,
-        work_hours: form.hours,
+        work_hours: `${form.hoursStart} - ${form.hoursEnd}`,
         description: form.description || null,
         latitude: form.latitude,
         longitude: form.longitude,
@@ -3810,18 +3803,17 @@ function NewOfficeModal({
                     className="rc-office-input"
                   />
                 </Field>
-                <Field label="Çalışma saatleri">
-                  <select
-                    value={form.hours}
-                    onChange={(e) => set("hours", e.target.value)}
-                    className="rc-office-input"
-                  >
-                    <option>09:00 - 18:00</option>
-                    <option>09:00 - 19:00</option>
-                    <option>10:00 - 18:00</option>
-                    <option>Hafta içi 09:00 - 18:00</option>
-                    <option>Haftanın her günü 09:00 - 18:00</option>
-                  </select>
+                <Field label="Çalışma saatleri *">
+                  <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                    <select value={form.hoursStart} onChange={(e) => set("hoursStart", e.target.value)} className="rc-office-input">
+                      {timeOptions.map((time) => <option key={time}>{time}</option>)}
+                    </select>
+                    <span className="text-slate-400">–</span>
+                    <select value={form.hoursEnd} onChange={(e) => set("hoursEnd", e.target.value)} className="rc-office-input">
+                      {timeOptions.map((time) => <option key={time}>{time}</option>)}
+                    </select>
+                  </div>
+                  <p className="mt-1.5 text-[10px] font-medium text-slate-400">Önce giriş, sonra çıkış saatini seçin.</p>
                 </Field>
                 <Field label="Açık adres *" wide>
                   <textarea
@@ -3914,29 +3906,10 @@ function NewOfficeModal({
                   Harita üzerinde ofis konumunu seçin.
                 </p>
               </div>
-              <button
-                type="button"
-                onClick={selectMapPoint}
-                className="relative m-4 block h-56 w-[calc(100%-2rem)] overflow-hidden rounded-xl border text-left"
-              >
-                <div
-                  className="h-full w-full bg-[linear-gradient(135deg,#e8f0f7_0%,#f8fafc_38%,#ddecdd_39%,#edf5ec_57%,#e6edf5_58%,#f8fafc_100%)]"
-                  aria-label="Konum seçme haritası"
-                >
-                  <div className="h-full w-full opacity-40 [background-image:linear-gradient(28deg,transparent_46%,#90a4b7_47%,#90a4b7_49%,transparent_50%),linear-gradient(-18deg,transparent_47%,#9fb6cc_48%,#9fb6cc_50%,transparent_51%)] [background-size:110px_70px,150px_100px]" />
-                </div>
-                <span
-                  style={{
-                    left: `${50 + ((form.longitude - 32.8597) / 0.42) * 100}%`,
-                    top: `${50 - ((form.latitude - 39.9334) / 0.27) * 100}%`,
-                  }}
-                  className="absolute -translate-x-1/2 -translate-y-full text-3xl drop-shadow"
-                >
-                  📍
-                </span>
-                <span className="absolute inset-x-0 bottom-0 bg-slate-950/60 px-3 py-2 text-center text-xs font-bold text-white">
-                  Haritada bir noktaya tıklayarak konum seçin
-                </span>
+              <button type="button" onClick={() => setMapPickerOpen(true)} className="m-4 flex h-40 w-[calc(100%-2rem)] flex-col items-center justify-center rounded-xl border border-dashed border-blue-300 bg-blue-50 text-center transition hover:border-[#cd011e] hover:bg-red-50">
+                <MapPin className="h-8 w-8 text-[#cd011e]" />
+                <b className="mt-2 text-sm text-[#0b2450]">Google Haritalar&apos;da konum seç</b>
+                <span className="mt-1 text-[11px] text-slate-500">Haritayı açın, noktayı tıklayın ve konumu kaydedin.</span>
               </button>
               <div className="mx-4 mb-4 rounded-lg bg-blue-50 px-3 py-2 text-center text-[11px] font-bold text-blue-800">
                 {form.latitude.toFixed(6)}, {form.longitude.toFixed(6)}
@@ -3944,6 +3917,18 @@ function NewOfficeModal({
             </section>
           </div>
         </div>
+        {mapPickerOpen && (
+          <GoogleMapPicker
+            initial={{ lat: form.latitude, lng: form.longitude }}
+            query={[form.address, form.district, form.city].filter(Boolean).join(", ")}
+            close={() => setMapPickerOpen(false)}
+            select={(lat, lng) => {
+              setForm((old) => ({ ...old, latitude: lat, longitude: lng }));
+              setNotice("Konum Google Haritalar üzerinden seçildi.");
+              setMapPickerOpen(false);
+            }}
+          />
+        )}
         {notice && (
           <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-sm font-bold text-blue-800">
             {notice}
@@ -3968,6 +3953,88 @@ function NewOfficeModal({
           </button>
         </div>
       </form>
+    </div>
+  );
+}
+function GoogleMapPicker({
+  initial,
+  query,
+  close,
+  select,
+}: {
+  initial: { lat: number; lng: number };
+  query: string;
+  close: () => void;
+  select: (lat: number, lng: number) => void;
+}) {
+  const mapNode = useRef<HTMLDivElement>(null);
+  const [point, setPoint] = useState(initial);
+  const [error, setError] = useState("");
+  const googleKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string | undefined;
+  const googleUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query || `${initial.lat},${initial.lng}`)}`;
+  useEffect(() => {
+    if (!googleKey || !mapNode.current) return;
+    const setup = () => {
+      const google = (window as any).google;
+      if (!google?.maps) return setError("Google Haritalar yüklenemedi.");
+      const map = new google.maps.Map(mapNode.current, {
+        center: point,
+        zoom: 14,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: true,
+      });
+      const marker = new google.maps.Marker({ position: point, map, draggable: true });
+      const choose = (position: any) => {
+        const next = { lat: Number(position.lat().toFixed(6)), lng: Number(position.lng().toFixed(6)) };
+        marker.setPosition(next);
+        setPoint(next);
+      };
+      map.addListener("click", (event: any) => choose(event.latLng));
+      marker.addListener("dragend", (event: any) => choose(event.latLng));
+    };
+    const existing = (window as any).google?.maps;
+    if (existing) return void setup();
+    const scriptId = "realty-google-maps-api";
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = scriptId;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${googleKey}&v=weekly`;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+    script.addEventListener("load", setup);
+    script.addEventListener("error", () => setError("Google Haritalar anahtarı veya Maps JavaScript API ayarı kontrol edilmeli."));
+    return () => script?.removeEventListener("load", setup);
+  }, [googleKey]);
+  return (
+    <div className="fixed inset-0 z-[130] flex items-center justify-center bg-slate-950/65 p-4">
+      <div className="w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-start justify-between border-b px-5 py-4">
+          <div>
+            <p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">GOOGLE HARİTALAR</p>
+            <h3 className="mt-1 text-lg font-black text-[#0b2450]">Ofis konumunu seçin</h3>
+            <p className="mt-1 text-xs text-slate-500">Haritaya tıklayın veya işaretçiyi sürükleyin.</p>
+          </div>
+          <button type="button" onClick={close} className="rounded-lg bg-slate-100 px-3 py-2 text-xs font-black text-slate-600">Kapat</button>
+        </div>
+        {googleKey ? (
+          <div ref={mapNode} className="h-[420px] w-full bg-slate-100" />
+        ) : (
+          <div className="flex h-[300px] flex-col items-center justify-center bg-slate-50 px-6 text-center">
+            <MapPin className="h-10 w-10 text-[#cd011e]" />
+            <b className="mt-3 text-[#0b2450]">Google Haritalar bağlantısı hazır</b>
+            <p className="mt-2 max-w-lg text-sm text-slate-500">Canlı harita üzerinden noktayı seçme özelliği için Google Maps JavaScript API anahtarı gerekir. Anahtar eklendiğinde bu alan otomatik olarak interaktif haritaya dönüşür.</p>
+            <a href={googleUrl} target="_blank" rel="noreferrer" className="mt-4 rounded-xl bg-[#0b2450] px-5 py-3 text-xs font-black text-white transition hover:bg-[#cd011e]">Google Haritalar&apos;da aç</a>
+          </div>
+        )}
+        {error && <p className="mx-5 mt-3 rounded-lg bg-red-50 px-3 py-2 text-xs font-bold text-red-700">{error}</p>}
+        <div className="flex items-center justify-between gap-4 border-t px-5 py-4">
+          <span className="text-xs font-bold text-slate-500">{point.lat.toFixed(6)}, {point.lng.toFixed(6)}</span>
+          <button type="button" onClick={() => select(point.lat, point.lng)} className="rounded-xl bg-[#d70724] px-5 py-3 text-xs font-black text-white active:scale-95">Bu konumu kullan</button>
+        </div>
+      </div>
     </div>
   );
 }
