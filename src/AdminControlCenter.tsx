@@ -2730,12 +2730,16 @@ export default function AdminControlCenter() {
             ),
           )}
         </div>
-        <ListingForm
-          alert={alert}
-          profiles={profiles}
-          mode={listingMode}
-          setMode={setListingMode}
-        />
+        {listingMode === "add" ? (
+          <ListingEntryPage profiles={profiles} alert={alert} close={() => setListingMode("all")} />
+        ) : (
+          <ListingForm
+            alert={alert}
+            profiles={profiles}
+            mode={listingMode}
+            setMode={setListingMode}
+          />
+        )}
       </>
     );
   else view = <FeaturePage title={titleOf(page)} page={page} />;
@@ -3364,6 +3368,76 @@ type ListingRow = {
 const listingCities = TURKEY_PROVINCES;
 const listingDistricts: Record<string, string[]> = Object.fromEntries(listingCities.map((city) => [city, getTurkeyDistricts(city)]));
 const listingInput = "mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm outline-none transition focus:border-[#cd011e] focus:ring-2 focus:ring-[#cd011e]/10";
+
+function ListingEntryPage({ profiles, alert, close }: { profiles: Profile[]; alert: (text: string) => void; close: () => void }) {
+  const advisors = profiles.filter((profile) => profile.role === "advisor" || profile.role === "manager");
+  const [viewerRole, setViewerRole] = useState("admin");
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
+  const [uploading, setUploading] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [form, setForm] = useState({ title: "", advisor: "", transaction_type: "Satılık", category: "Konut", property_type: "Daire", price: "", currency: "₺", city: "", district: "", neighborhood: "", rooms: "", gross: "", net: "", floor: "", total_floors: "", building_age: "", heating: "", parking: "", credit: "", deed: "", furnished: "", occupancy: "", bathrooms: "", balcony: "", elevator: "", site: "", dues: "", description: "", video_url: "", virtual_tour_url: "" });
+  const districts = form.city ? getTurkeyDistricts(form.city) : [];
+  const directPublish = viewerRole === "admin" || viewerRole === "manager";
+  const options = (values: string[]) => values.map((value) => <option key={value} value={value}>{value}</option>);
+
+  useEffect(() => {
+    void (async () => {
+      const { data: auth } = await supabase.auth.getUser();
+      if (!auth.user) return;
+      const { data } = await supabase.from("profiles").select("role").eq("id", auth.user.id).maybeSingle();
+      if (data?.role) setViewerRole(data.role);
+    })();
+  }, []);
+
+  const chooseFiles = (files: FileList | null) => setSelectedFiles(Array.from(files || []).filter((file) => file.type.startsWith("image/") || file.type.startsWith("video/")).slice(0, 16));
+  const uploadFiles = async () => {
+    if (!selectedFiles.length) return alert("Önce fotoğraf veya video seçin.");
+    setUploading(true);
+    try {
+      const additions: { url: string; type: string }[] = [];
+      for (const file of selectedFiles) {
+        const fileName = file.name.replace(/[^a-zA-Z0-9._-]/g, "-");
+        const path = `listings/${Date.now()}-${crypto.randomUUID()}-${fileName}`;
+        const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false });
+        if (error) throw error;
+        additions.push({ url: supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl, type: file.type });
+      }
+      setUploaded((current) => [...current, ...additions]);
+      setSelectedFiles([]);
+      alert(`${additions.length} dosya ilan medyasına eklendi.`);
+    } catch (error: any) {
+      alert(`Dosyalar eklenemedi: ${error.message || "Tekrar deneyin."}`);
+    } finally { setUploading(false); }
+  };
+  const addMarkup = (prefix: string, suffix = "") => setForm((current) => ({ ...current, description: `${current.description}${current.description ? "\n" : ""}${prefix}${suffix}` }));
+  const submit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!form.title || !form.price || !form.city || !form.district || !form.neighborhood || !form.advisor) return alert("Başlık, danışman, fiyat, il, ilçe ve mahalle zorunludur.");
+    setSaving(true);
+    try {
+      const details = { gross_sqm: form.gross, net_sqm: form.net, floor: form.floor, total_floors: form.total_floors, building_age: form.building_age, heating: form.heating, parking: form.parking, credit: form.credit, deed: form.deed, furnished: form.furnished, occupancy: form.occupancy, bathrooms: form.bathrooms, balcony: form.balcony, elevator: form.elevator, site: form.site, dues: form.dues };
+      const { error } = await supabase.from("listings").insert({ owner_id: form.advisor, title: form.title, category: form.category, property_type: form.property_type, transaction_type: form.transaction_type, price: Number(form.price.replaceAll(".", "")), currency: form.currency, city: form.city, district: form.district, neighborhood: form.neighborhood, rooms: form.rooms || null, area: Number(form.gross || form.net || 0), description: form.description || null, images: uploaded.filter((item) => item.type.startsWith("image/")).map((item) => item.url), video_url: form.video_url || uploaded.find((item) => item.type.startsWith("video/"))?.url || null, virtual_tour_url: form.virtual_tour_url || null, details, approval_status: directPublish ? "approved" : "pending", is_featured: false });
+      if (error) throw error;
+      alert(directPublish ? "İlan doğrudan yayına alındı." : "İlan onay merkezine gönderildi.");
+      close();
+    } catch (error: any) {
+      alert(`İlan kaydedilemedi: ${error.message || "Tekrar deneyin."}`);
+    } finally { setSaving(false); }
+  };
+
+  return <form onSubmit={submit} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <header className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">İLAN YÖNETİMİ / YENİ İLAN</p><h2 className="mt-1 text-xl font-black">Detaylı ilan girişi</h2><p className="mt-1 text-sm text-slate-500">{directPublish ? "Bu rol ile eklenen ilanlar doğrudan yayınlanır." : "Danışman ilanları onay merkezine gönderilir."}</p></div><button type="button" onClick={close} className="rc-secondary">Listeye dön</button></header>
+    <div className="space-y-8 p-6">
+      <section><h3 className="font-black">Temel bilgiler</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3"><label className="text-xs font-black">İlan başlığı *<input required className={listingInput} value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} /></label><label className="text-xs font-black">Ekleyen danışman *<select required className={listingInput} value={form.advisor} onChange={(e) => setForm({ ...form, advisor: e.target.value })}><option value="">Danışman seçiniz</option>{advisors.map((advisor) => <option key={advisor.id} value={advisor.id}>{advisor.first_name} {advisor.last_name} · {advisor.phone || advisor.email}</option>)}</select></label><label className="text-xs font-black">İşlem tipi *<select className={listingInput} value={form.transaction_type} onChange={(e) => setForm({ ...form, transaction_type: e.target.value })}>{options(["Satılık", "Kiralık", "Devren Satılık", "Devren Kiralık"])}</select></label><label className="text-xs font-black">Ana kategori *<select className={listingInput} value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })}>{options(["Konut", "Arsa", "İşyeri", "Turistik Tesis"])}</select></label><label className="text-xs font-black">İlan türü *<select className={listingInput} value={form.property_type} onChange={(e) => setForm({ ...form, property_type: e.target.value })}>{options(["Daire", "Villa", "Müstakil Ev", "Arsa", "Tarla", "Ofis", "Dükkan", "Depo", "Otel", "Bina"])}</select></label><label className="text-xs font-black">Oda sayısı<select className={listingInput} value={form.rooms} onChange={(e) => setForm({ ...form, rooms: e.target.value })}><option value="">Belirtilmemiş</option>{options(["1+0", "1+1", "2+1", "3+1", "4+1", "5+1", "5+2", "6+1 ve üzeri"])}</select></label></div></section>
+      <section className="border-t border-slate-100 pt-7"><h3 className="font-black">Fiyat ve seçilebilir konum</h3><p className="mt-1 text-xs text-slate-500">İl ve ilçe listeleri 81 il / 973 ilçe verisiyle bağlıdır.</p><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3"><label className="text-xs font-black">Fiyat *<input required inputMode="numeric" className={listingInput} value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder="0" /></label><label className="text-xs font-black">Para birimi<select className={listingInput} value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })}>{options(["₺", "USD", "EUR", "GBP"])}</select></label><label className="text-xs font-black">İl *<select required className={listingInput} value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value, district: "", neighborhood: "" })}><option value="">İl seçiniz</option>{options(TURKEY_PROVINCES)}</select></label><label className="text-xs font-black">İlçe *<select required disabled={!form.city} className={listingInput} value={form.district} onChange={(e) => setForm({ ...form, district: e.target.value, neighborhood: "" })}><option value="">İlçe seçiniz</option>{options(districts)}</select></label><label className="text-xs font-black">Mahalle *<input required list="listing-neighborhoods" disabled={!form.district} className={listingInput} value={form.neighborhood} onChange={(e) => setForm({ ...form, neighborhood: e.target.value })} placeholder="Mahalle ara veya seç" /><datalist id="listing-neighborhoods"><option value="Merkez Mahallesi" /><option value="Yeni Mahalle" /><option value="Cumhuriyet Mahallesi" /></datalist></label><label className="text-xs font-black">Aylık aidat<input inputMode="numeric" className={listingInput} value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value })} /></label></div></section>
+      <section className="border-t border-slate-100 pt-7"><h3 className="font-black">İlan detayları</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4"><label className="text-xs font-black">Brüt m²<input inputMode="numeric" className={listingInput} value={form.gross} onChange={(e) => setForm({ ...form, gross: e.target.value })} /></label><label className="text-xs font-black">Net m²<input inputMode="numeric" className={listingInput} value={form.net} onChange={(e) => setForm({ ...form, net: e.target.value })} /></label><label className="text-xs font-black">Bulunduğu kat<select className={listingInput} value={form.floor} onChange={(e) => setForm({ ...form, floor: e.target.value })}><option value="">Seçiniz</option>{options(["Bodrum", "Zemin", "Yüksek giriş", ...Array.from({ length: 30 }, (_, i) => String(i + 1))])}</select></label><label className="text-xs font-black">Toplam kat<select className={listingInput} value={form.total_floors} onChange={(e) => setForm({ ...form, total_floors: e.target.value })}><option value="">Seçiniz</option>{options(Array.from({ length: 40 }, (_, i) => String(i + 1)))}</select></label><label className="text-xs font-black">Bina yaşı<select className={listingInput} value={form.building_age} onChange={(e) => setForm({ ...form, building_age: e.target.value })}><option value="">Seçiniz</option>{options(["0", "1-5", "6-10", "11-15", "16-20", "21-25", "26-30", "31 ve üzeri"])}</select></label><label className="text-xs font-black">Isıtma<select className={listingInput} value={form.heating} onChange={(e) => setForm({ ...form, heating: e.target.value })}><option value="">Seçiniz</option>{options(["Kombi (Doğalgaz)", "Merkezi", "Merkezi (Pay Ölçer)", "Yerden Isıtma", "Klima", "Soba", "Elektrikli", "Güneş Enerjisi", "Yok"])}</select></label><label className="text-xs font-black">Otopark<select className={listingInput} value={form.parking} onChange={(e) => setForm({ ...form, parking: e.target.value })}><option value="">Seçiniz</option>{options(["Açık Otopark", "Kapalı Otopark", "Açık ve Kapalı", "Yok"])}</select></label><label className="text-xs font-black">Kredi durumu<select className={listingInput} value={form.credit} onChange={(e) => setForm({ ...form, credit: e.target.value })}><option value="">Seçiniz</option>{options(["Krediye Uygun", "Krediye Uygun Değil", "Bilinmiyor"])}</select></label><label className="text-xs font-black">Tapu durumu<select className={listingInput} value={form.deed} onChange={(e) => setForm({ ...form, deed: e.target.value })}><option value="">Seçiniz</option>{options(["Kat Mülkiyeti", "Kat İrtifakı", "Hisseli Tapu", "Arsa Tapulu", "Tapu Yok"])}</select></label><label className="text-xs font-black">Eşyalı mı?<select className={listingInput} value={form.furnished} onChange={(e) => setForm({ ...form, furnished: e.target.value })}><option value="">Seçiniz</option>{options(["Evet", "Hayır", "Kısmen"])}</select></label><label className="text-xs font-black">Kullanım durumu<select className={listingInput} value={form.occupancy} onChange={(e) => setForm({ ...form, occupancy: e.target.value })}><option value="">Seçiniz</option>{options(["Boş", "Kiracılı", "Mal sahibi oturuyor", "Yapım aşamasında"])}</select></label><label className="text-xs font-black">Banyo sayısı<select className={listingInput} value={form.bathrooms} onChange={(e) => setForm({ ...form, bathrooms: e.target.value })}><option value="">Seçiniz</option>{options(["1", "2", "3", "4 ve üzeri"])}</select></label><label className="text-xs font-black">Balkon<select className={listingInput} value={form.balcony} onChange={(e) => setForm({ ...form, balcony: e.target.value })}><option value="">Seçiniz</option>{options(["Var", "Yok", "Fransız balkon", "Teras"])}</select></label><label className="text-xs font-black">Asansör<select className={listingInput} value={form.elevator} onChange={(e) => setForm({ ...form, elevator: e.target.value })}><option value="">Seçiniz</option>{options(["Var", "Yok"])}</select></label><label className="text-xs font-black">Site içerisinde<select className={listingInput} value={form.site} onChange={(e) => setForm({ ...form, site: e.target.value })}><option value="">Seçiniz</option>{options(["Evet", "Hayır"])}</select></label></div></section>
+      <section className="border-t border-slate-100 pt-7"><h3 className="font-black">Açıklama</h3><div className="mt-3 flex flex-wrap gap-2"><button type="button" onClick={() => addMarkup("## Başlık")} className="rc-secondary">Başlık</button><button type="button" onClick={() => addMarkup("**vurgulu metin**")} className="rc-secondary">Kalın</button><button type="button" onClick={() => addMarkup("- madde")} className="rc-secondary">Liste</button></div><textarea className={listingInput + " min-h-48 leading-6"} value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını düzenli biçimde yazın." /><div className="mt-3 grid gap-3 md:grid-cols-2"><input className={listingInput + " mt-0"} value={form.video_url} onChange={(e) => setForm({ ...form, video_url: e.target.value })} placeholder="Video bağlantısı (isteğe bağlı)" /><input className={listingInput + " mt-0"} value={form.virtual_tour_url} onChange={(e) => setForm({ ...form, virtual_tour_url: e.target.value })} placeholder="Sanal tur bağlantısı (isteğe bağlı)" /></div></section>
+      <section className="border-t border-slate-100 pt-7"><h3 className="font-black">Fotoğraf ve video</h3><p className="mt-1 text-xs text-slate-500">Önce dosyaları seçin, ardından ayrı “Fotoğrafları ekle” işlemiyle yükleyin.</p><div className="mt-4 flex flex-col gap-3 rounded-2xl border-2 border-dashed border-slate-200 p-5 sm:flex-row sm:items-center sm:justify-between"><label className="cursor-pointer text-sm font-black text-[#cd011e]">Dosyaları seç<input type="file" accept="image/*,video/mp4,video/webm" multiple className="hidden" onChange={(e) => chooseFiles(e.target.files)} /></label><span className="text-xs text-slate-500">{selectedFiles.length ? `${selectedFiles.length} dosya seçildi` : "Henüz dosya seçilmedi"}</span><button type="button" onClick={() => void uploadFiles()} disabled={uploading || !selectedFiles.length} className="rc-primary disabled:opacity-50">{uploading ? "YÜKLENİYOR…" : "FOTOĞRAFLARI EKLE"}</button></div>{uploaded.length > 0 && <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">{uploaded.map((item) => item.type.startsWith("image/") ? <img key={item.url} src={item.url} className="h-24 w-full rounded-xl object-cover" /> : <div key={item.url} className="grid h-24 place-items-center rounded-xl bg-slate-100 text-xs font-bold">Video eklendi</div>)}</div>}</section>
+      <footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row"><p className="text-xs text-slate-500">{directPublish ? "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür." : "İlan, gönderildiğinde yönetici onayını bekler."}</p><button disabled={saving} className="rc-primary min-w-56 px-6 py-4 disabled:opacity-60">{saving ? "İŞLEM YAPILIYOR…" : directPublish ? "İLANI YAYINLA" : "İLANI ONAYA GÖNDER"}</button></footer>
+    </div>
+  </form>;
+}
 
 function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) => void; profiles: Profile[]; mode: "all" | "approval" | "add"; setMode: (v: "all" | "approval" | "add") => void }) {
   const [listings, setListings] = useState<ListingRow[]>([]);
