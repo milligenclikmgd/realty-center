@@ -336,7 +336,7 @@ function usePublishedListings() {
   const [items, setItems] = useState<ListingItem[]>([]);
   useEffect(() => {
     const load = async () => {
-      const { data } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').eq('approval_status', 'approved').is('deleted_at', null).order('created_at', { ascending: false });
+      const { data } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').eq('approval_status', 'Yayında').is('deleted_at', null).order('created_at', { ascending: false });
       const rows: any[] = data || [];
       const ids = [...new Set(rows.map((row) => row.owner_id).filter(Boolean))];
       const { data: profiles } = ids.length ? await supabase.from('profiles').select('id,first_name,last_name,phone').in('id', ids) : { data: [] as any[] };
