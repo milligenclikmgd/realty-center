@@ -2483,11 +2483,17 @@ function OfficesPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState('');
   const [offices, setOffices] = useState<typeof SAMPLE_OFFICES>([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
   useEffect(() => {
-    void supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').eq('status','active').order('created_at',{ascending:false}).then(({ data }) => {
+    void supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').eq('status','active').is('deleted_at',null).order('created_at',{ascending:false}).then(({ data, error }) => {
       setOffices((data || []).map((office: any) => ({ id: office.id, name: office.name, city: office.city, district: office.district, address: office.address, phone: office.phone || '', email: office.email || '', manager: office.manager_name || 'Belirtilmedi', image: office.image_url || '' })));
+      setLoadError(error ? 'Ofisler şu an yüklenemedi. Lütfen biraz sonra tekrar deneyin.' : '');
+      setLoading(false);
     });
   }, []);
+
+  const activeCities = [...new Set(offices.map((office) => office.city).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr'));
 
   const filteredOffices = offices.filter((office) => {
     if (selectedCity && office.city !== selectedCity) return false;
@@ -2554,7 +2560,7 @@ function OfficesPage() {
                 className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
               >
                 <option value="">-- Tüm İller (81 İl) --</option>
-                {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
+                {activeCities.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
             </div>
 
@@ -2568,14 +2574,14 @@ function OfficesPage() {
                 }`}
               >
                 <option value="">{selectedCity ? '-- Tüm İlçeler --' : 'Önce İl Seçiniz'}</option>
-                {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
+                {selectedCity && [...new Set(offices.filter((office) => office.city === selectedCity).map((office) => office.district).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr')).map(d => <option key={d} value={d}>{d}</option>)}
               </select>
             </div>
           </div>
 
         </div>
 
-        {filteredOffices.length > 0 ? (
+        {loading ? <div className="bg-white rounded-2xl p-12 text-center border border-slate-200 text-sm font-bold text-slate-400">Ofisler yükleniyor…</div> : loadError ? <div className="bg-white rounded-2xl p-12 text-center border border-red-100 text-sm font-bold text-red-700">{loadError}</div> : filteredOffices.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredOffices.map((office) => (
               <div 

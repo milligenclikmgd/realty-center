@@ -3545,10 +3545,12 @@ function NewOfficeModal({
   advisers,
   close,
   done,
+  office,
 }: {
   advisers: Profile[];
   close: () => void;
   done: () => Promise<void>;
+  office?: Office;
 }) {
   const cities = [
     "Adana",
@@ -3598,20 +3600,21 @@ function NewOfficeModal({
     Kocaeli: ["Başiskele", "Gebze", "İzmit"],
     Konya: ["Karatay", "Meram", "Selçuklu"],
   };
+  const savedHours = (office?.work_hours || "09:00 - 18:00").match(/(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/);
   const [form, setForm] = useState({
-    name: "",
-    ownerId: "",
-    city: "",
-    district: "",
-    mobile: "",
-    landline: "",
-    email: "",
-    address: "",
-    description: "",
-    hoursStart: "09:00",
-    hoursEnd: "18:00",
+    name: office?.name || "",
+    ownerId: office?.owner_profile_id || "",
+    city: office?.city || "",
+    district: office?.district || "",
+    mobile: office?.mobile_phone || office?.phone || "",
+    landline: office?.landline_phone || "",
+    email: office?.email || "",
+    address: office?.address || "",
+    description: office?.description || "",
+    hoursStart: savedHours?.[1] || "09:00",
+    hoursEnd: savedHours?.[2] || "18:00",
   });
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState(office?.image_url || "");
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState("");
   const timeOptions = Array.from({ length: 35 }, (_, index) => {
@@ -3638,12 +3641,12 @@ function NewOfficeModal({
       return setNotice(
         "Sabit telefon alan koduyla birlikte 0XXX XXX XX XX biçiminde olmalı.",
       );
+    if (form.hoursStart >= form.hoursEnd)
+      return setNotice("Çıkış saati giriş saatinden sonra olmalı.");
     setBusy(true);
-    setNotice("Ofis kaydı oluşturuluyor…");
+    setNotice(office ? "Ofis bilgileri güncelleniyor…" : "Ofis kaydı oluşturuluyor…");
     const owner = advisers.find((item) => item.id === form.ownerId);
-    const { data, error } = await supabase
-      .from("offices")
-      .insert({
+    const payload = {
         name: form.name,
         city: form.city,
         district: form.district,
@@ -3658,20 +3661,24 @@ function NewOfficeModal({
         manager_name: owner ? `${owner.first_name} ${owner.last_name}` : null,
         image_url: imageUrl || null,
         status: "active",
-      })
-      .select("id")
-      .single();
-    if (!error && data && form.ownerId)
+      };
+    const request = office
+      ? supabase.from("offices").update(payload).eq("id", office.id).select("id").single()
+      : supabase.from("offices").insert(payload).select("id").single();
+    const { data, error } = await request;
+    if (!error && data && form.ownerId) {
+      await supabase.from("office_advisors").update({ is_manager: false }).eq("office_id", data.id);
       await supabase.from("office_advisors").upsert({
         office_id: data.id,
         advisor_id: form.ownerId,
         is_manager: true,
       });
+    }
     setBusy(false);
     if (error) return setNotice(error.message);
     await done();
     setNotice(
-      "Ofis başarıyla oluşturuldu ve web sitesindeki Ofislerimiz alanına yansıtıldı.",
+      office ? "Ofis güncellendi ve Ofislerimiz alanına yansıtıldı." : "Ofis başarıyla oluşturuldu ve web sitesindeki Ofislerimiz alanına yansıtıldı.",
     );
     window.setTimeout(close, 900);
   };
@@ -3687,11 +3694,10 @@ function NewOfficeModal({
               REALTY CENTER
             </p>
             <h2 className="mt-1 text-3xl font-black tracking-tight text-[#0b2450]">
-              Yeni Ofis Ekle
+              {office ? "Ofis Bilgilerini Düzenle" : "Yeni Ofis Ekle"}
             </h2>
             <p className="mt-2 text-sm text-slate-500">
-              Sistemde görünecek yeni ofisi oluşturun. Konum ve iletişim
-              bilgilerini eksiksiz girin.
+              {office ? "Mevcut bilgileri güncelleyin. İl, ilçe ve iletişim alanları düzenlenebilir." : "Sistemde görünecek yeni ofisi oluşturun. Konum ve iletişim bilgilerini eksiksiz girin."}
             </p>
           </div>
           <button
@@ -3913,7 +3919,7 @@ function NewOfficeModal({
             {busy && (
               <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
             )}
-            {busy ? "Kaydediliyor…" : "Ofisi Kaydet"}
+            {busy ? "Kaydediliyor…" : office ? "Değişiklikleri Kaydet" : "Ofisi Kaydet"}
           </button>
         </div>
       </form>
@@ -3951,136 +3957,7 @@ function OfficeDrawer({
   close: () => void;
   done: () => Promise<void>;
 }) {
-  const [f, setF] = useState<any>({ ...office }),
-    [busy, setBusy] = useState(false);
-  const team = members
-    .filter((m) => m.office_id === office.id)
-    .map((m) => profiles.find((p) => p.id === m.advisor_id))
-    .filter(Boolean) as Profile[];
-  const save = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setBusy(true);
-    const { error } = await supabase
-      .from("offices")
-      .update({
-        name: f.name,
-        city: f.city,
-        district: f.district,
-        address: f.address || "",
-        phone: f.mobile_phone || f.phone || null,
-        mobile_phone: f.mobile_phone || null,
-        landline_phone: f.landline_phone || null,
-        email: f.email || null,
-        manager_name: f.manager_name || null,
-        image_url: f.image_url || null,
-        work_hours: f.work_hours || null,
-        description: f.description || null,
-      })
-      .eq("id", office.id);
-    setBusy(false);
-    if (error) return alert(error.message);
-    await done();
-    close();
-  };
-  return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/45 p-4">
-      <form
-        onSubmit={save}
-        className="max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"
-      >
-        <div className="flex justify-between border-b pb-5">
-          <div>
-            <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
-              OFİS PROFİLİ / DÜZENLE
-            </p>
-            <h2 className="mt-1 text-xl font-black">{office.name}</h2>
-          </div>
-          <button
-            type="button"
-            onClick={close}
-            className="rounded-lg border px-3 py-2 text-xs font-black"
-          >
-            Kapat
-          </button>
-        </div>
-        <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_280px]">
-          <section>
-            <h3 className="font-black">Ofis Bilgileri</h3>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {[
-                ["name", "Ofis adı *"],
-                ["city", "İl *"],
-                ["district", "İlçe *"],
-                ["mobile_phone", "Cep telefonu"],
-                ["landline_phone", "Sabit telefon"],
-                ["email", "E-posta"],
-                ["manager_name", "Ofis lideri"],
-                ["work_hours", "Çalışma saatleri"],
-                ["description", "Ofis açıklaması"],
-                ["address", "Adres"],
-                ["image_url", "Kapak görseli URL"],
-              ].map(([k, l]) => (
-                <label key={k} className="text-xs font-bold">
-                  {l}
-                  <input
-                    required={k === "name" || k === "city" || k === "district"}
-                    value={f[k] || ""}
-                    onChange={(e) => setF({ ...f, [k]: e.target.value })}
-                    className="mt-1 w-full rounded-xl border p-3 text-sm"
-                  />
-                </label>
-              ))}
-            </div>
-          </section>
-          <aside className="rounded-2xl bg-slate-50 p-4">
-            <h3 className="font-black">Ofis Kadrosu</h3>
-            <p className="mt-1 text-xs text-slate-400">Atanmış danışmanlar</p>
-            <div className="mt-4 space-y-2">
-              {team.map((p) => (
-                <div
-                  key={p.id}
-                  className="flex items-center gap-2 rounded-xl bg-white p-2"
-                >
-                  {p.avatar_url ? (
-                    <img
-                      src={p.avatar_url}
-                      className="h-9 w-9 rounded-full object-cover"
-                    />
-                  ) : (
-                    <span className="grid h-9 w-9 place-items-center rounded-full bg-red-50 text-xs font-black text-[#cd011e]">
-                      {p.first_name[0]}
-                      {p.last_name[0]}
-                    </span>
-                  )}
-                  <b className="text-xs">
-                    {p.first_name} {p.last_name}
-                  </b>
-                </div>
-              ))}
-              {!team.length && (
-                <small className="text-slate-400">Henüz danışman yok.</small>
-              )}
-            </div>
-          </aside>
-        </div>
-        <div className="mt-6 flex justify-end gap-3 border-t pt-5">
-          <button
-            type="button"
-            onClick={close}
-            className="rounded-xl border px-5 py-3 text-xs font-black"
-          >
-            İptal
-          </button>
-          <button
-            disabled={busy}
-            className="rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-black text-white"
-          >
-            {busy ? "Kaydediliyor…" : "Değişiklikleri Kaydet"}
-          </button>
-        </div>
-      </form>
-    </div>
-  );
+  return <NewOfficeModal advisers={profiles.filter((profile) => profile.role === "advisor")} office={office} close={close} done={done} />;
 }
 function Export({
   fields,
