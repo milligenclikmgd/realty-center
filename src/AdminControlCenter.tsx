@@ -2516,11 +2516,22 @@ export default function AdminControlCenter() {
             ))}
           </select>
         </div>
-        <div className="mb-5 rounded-2xl border border-red-100 bg-red-50 p-4 text-sm">
-          <b>REALTY CENTER Yıldızlarımız:</b> Ana sayfada gösterilecek en fazla
-          3 ofisi seçin. {stars.filter((s) => s.kind === "office").length}/3
-          seçildi.
-        </div>
+        <section className="mb-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div><p className="text-[10px] font-black tracking-[.2em] text-white/75">REALTY CENTER YILDIZ OFİSLERİ</p><h2 className="mt-1 text-base font-black">Ana sayfada gösterilen seçili ofisler</h2></div>
+            <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-black">{stars.filter((s) => s.kind === "office").length}/3 seçildi</span>
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            {stars.filter(s=>s.kind==='office').map(s=>offices.find(o=>o.id===s.entity_id)).filter(Boolean).map((o:any)=>{
+              const staff=officeMembers.filter(m=>m.office_id===o.id).map(m=>advisers.find(a=>a.id===m.advisor_id)).filter(Boolean) as Profile[];
+              return <button key={o.id} onClick={()=>setOfficeDrawer(o)} className="group flex items-center gap-3 rounded-xl border border-white/25 bg-white/10 p-3 text-left transition hover:bg-white hover:text-[#cd011e]">
+                {o.image_url?<img src={o.image_url} className="h-14 w-14 rounded-xl object-cover"/>:<span className="grid h-14 w-14 place-items-center rounded-xl bg-white/15"><Building2 size={22}/></span>}
+                <span className="min-w-0 flex-1"><b className="block truncate text-sm">★ {o.name}</b><small className="mt-1 block text-[11px] opacity-75">{o.city} / {o.district}</small><small className="block text-[10px] opacity-70">{o.manager_name||'Lider atanmadı'} · {staff.length} danışman</small></span>
+              </button>
+            })}
+            {!stars.some(s=>s.kind==='office')&&<p className="py-3 text-sm text-red-100">Henüz yıldız ofis seçilmedi.</p>}
+          </div>
+        </section>
         <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
           <table className="w-full min-w-[1050px] text-left">
             <thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500"><tr><th className="p-4">Ofis</th><th className="p-4">Konum / İletişim</th><th className="p-4">Ofis Lideri</th><th className="p-4">Danışmanlar</th><th className="p-4 text-right">İşlemler</th></tr></thead>
