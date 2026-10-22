@@ -27,6 +27,7 @@ import {
 import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 import ListingEntryPageV2 from "./ListingEntryPage";
+import ListingManagementPage from "./ListingManagementPage";
 
 type Page =
   | "overview"
@@ -1662,7 +1663,7 @@ export default function AdminControlCenter() {
     "Durum",
     "Telefon",
   ]);
-  const [listingMode, setListingMode] = useState<"all" | "approval" | "add">(
+  const [listingMode, setListingMode] = useState<"all" | "approval" | "rejected" | "archived" | "add">(
     "all",
   );
   const [notice, setNotice] = useState("");
@@ -2714,32 +2715,10 @@ export default function AdminControlCenter() {
   } else if (page === "listings")
     view = (
       <>
-        {heading(
-          "İlan Yönetimi",
-          "Kapsamlı ilan girişi, ilan onayı ve vitrinde öne çıkarma.",
-        )}
-        <div className="mb-5 flex gap-2">
-          {(["all", "approval", "add"] as const).map((k) =>
-            button(
-              k === "all"
-                ? "Tüm İlanlar"
-                : k === "approval"
-                  ? "İlan Onay Merkezi"
-                  : "İlan Ekle",
-              () => setListingMode(k),
-              listingMode === k,
-            ),
-          )}
-        </div>
         {listingMode === "add" ? (
           <ListingEntryPageV2 profiles={profiles} alert={alert} close={() => setListingMode("all")} />
         ) : (
-          <ListingForm
-            alert={alert}
-            profiles={profiles}
-            mode={listingMode}
-            setMode={setListingMode}
-          />
+          <ListingManagementPage profiles={profiles} alert={alert} openAdd={() => setListingMode("add")} initialTab={listingMode === "approval" ? "pending" : listingMode === "rejected" ? "rejected" : listingMode === "archived" ? "archived" : "all"} />
         )}
       </>
     );
@@ -2770,17 +2749,28 @@ export default function AdminControlCenter() {
               {g.items.map((i) => {
                 const Icon = i.icon;
                 return (
-                  <button
-                    key={i.id}
-                    onClick={() => {
-                      setPage(i.id);
-                      setMobile(false);
-                    }}
-                    className={`mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white" : "text-slate-600 hover:bg-slate-50"}`}
-                  >
-                    <Icon size={18} />
-                    {i.label}
-                  </button>
+                  <div key={i.id}>
+                    <button
+                      onClick={() => {
+                        setPage(i.id);
+                        if (i.id === "listings") setListingMode("all");
+                        setMobile(false);
+                      }}
+                      className={`mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white" : "text-slate-600 hover:bg-slate-50"}`}
+                    >
+                      <Icon size={18} />
+                      {i.label}
+                    </button>
+                    {i.id === "listings" && page === "listings" && (
+                      <div className="mb-2 ml-5 border-l border-slate-200 pl-3">
+                        {([ ["all", "Tüm İlanlar"], ["approval", "Onay Bekleyenler"], ["rejected", "Reddedilenler"], ["archived", "Arşivlenenler"] ] as const).map(([mode, label]) => (
+                          <button key={mode} onClick={() => setListingMode(mode)} className={`relative flex w-full items-center rounded-lg px-3 py-2 text-left text-xs font-semibold ${listingMode === mode ? "bg-rose-50 text-[#cd011e]" : "text-slate-500 hover:bg-slate-50"}`}>
+                            {label}{mode === "approval" && <span className="ml-auto rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] text-amber-700">•</span>}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 );
               })}
             </div>
