@@ -1,94 +1,354 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Õ¥µÁ½ÉĞìÕÍ•™™•Ğ°ÕÍ•5•µ¼°ÕÍ•MÑ…Ñ”ô™É½´€‰É•…Ğˆì)¥µÁ½ÉĞì(€É¡¥Ù•I•ÍÑ½É”°(€	…É¡…ÉĞÌ°(€	Õ¥±‘¥¹œÈ°(€±½¬Ì°(€¡•ÙÉ½¹I¥¡Ğ°(€½İ¹±½…°(€½±‘•É-…¹‰…¸°(€1…å½ÕÑA…¹•±Q½À°(€1¥‰É…Éä°(€1¥ÍÑ¡•­Ì°(€5•¹Ô°(€5…ÁA¥¸°(€5•ÍÍ…•MÅÕ…É”°(€A±ÕÌ°(€I•™É•Í¡Ü°(€M•…É °(€M¡¥•±‘¡•¬°(€QÉ…Í È°(€QØ°(€UÍ•É½œ°(€UÍ•ÉÌ°(€UÁ±½…°(€`°)ô™É½´€‰±Õ¥‘”µÉ•…Ğˆì)¥µÁ½ÉĞìÍÕÁ…‰…Í”ô™É½´€ˆ¸½±¥ˆ½ÍÕÁ…‰…Í”ˆì()ÑåÁ”A…”€ô(€ğ€‰½Ù•ÉÙ¥•Üˆ(€ğ€‰ÕÍ•ÉÌˆ(€ğ€‰ÕÍ•ÈµÉ•…Ñ”ˆ(€ğ€‰…‘Ù¥Í½ÉÌˆ(€ğ€‰½™™¥•Ìˆ(€ğ€‰±¥ÍÑ¥¹Ìˆ(€ğ€‰¡•…‘•Èˆ(€ğ€‰½ÉÁ½É…Ñ”ˆ(€ğ€‰µ•‘¥„ˆ(€ğ€‰±¥‰É…Éäˆ(€ğ€‰É´ˆ(€ğ€‰¥¹‰½àˆ(€ğ€‰‰…­ÕÀˆ(€ğ€‰±½Ìˆ(€ğ€‰ÑÉ…Í ˆì)ÑåÁ”AÉ½™¥±”€ôì(€¥èÍÑÉ¥¹œì(€™¥ÉÍÑ}¹…µ”èÍÑÉ¥¹œì(€±…ÍÑ}¹…µ”èÍÑÉ¥¹œì(€ÕÍ•É¹…µ”èÍÑÉ¥¹œì(€•µ…¥°èÍÑÉ¥¹œì(€Á¡½¹”èÍÑÉ¥¹œğ¹Õ±°ì(€É½±”èÍÑÉ¥¹œì(€ÍÑ…ÑÕÌèÍÑÉ¥¹œì(€±…ÍÑ}±½¥¹}…ĞèÍÑÉ¥¹œğ¹Õ±°ì(€É•…Ñ•‘}…ĞèÍÑÉ¥¹œì(€…Ù…Ñ…É}ÕÉ°üèÍÑÉ¥¹œğ¹Õ±°ì)ôì)ÑåÁ”=™™¥”€ôì(€¥èÍÑÉ¥¹œì(€¹…µ”èÍÑÉ¥¹œì(€¥ÑäèÍÑÉ¥¹œì(€‘¥ÍÑÉ¥ĞèÍÑÉ¥¹œì(€…‘‘É•ÍÌèÍÑÉ¥¹œì(€Á¡½¹”èÍÑÉ¥¹œğ¹Õ±°ì(€•µ…¥°èÍÑÉ¥¹œğ¹Õ±°ì(€µ…¹…•É}¹…µ”èÍÑÉ¥¹œğ¹Õ±°ì(€½İ¹•É}ÁÉ½™¥±•}¥üèÍÑÉ¥¹œğ¹Õ±°ì(€¥µ…•}ÕÉ°üèÍÑÉ¥¹œğ¹Õ±°ì(€µ½‰¥±•}Á¡½¹”üèÍÑÉ¥¹œğ¹Õ±°ì(€±…¹‘±¥¹•}Á¡½¹”üèÍÑÉ¥¹œğ¹Õ±°ì(€İ½É­}¡½ÕÉÌüèÍÑÉ¥¹œğ¹Õ±°ì(€‘•ÍÉ¥ÁÑ¥½¸üèÍÑÉ¥¹œğ¹Õ±°ì(€±…Ñ¥ÑÕ‘”üè¹Õµ‰•Èğ¹Õ±°ì(€±½¹¥ÑÕ‘”üè¹Õµ‰•Èğ¹Õ±°ì(€‘•±•Ñ•‘}…ĞüèÍÑÉ¥¹œğ¹Õ±°ì)ôì)ÑåÁ”‘Ù¥Í½É5•ÑÉ¥Œ€ôì(€…‘Ù¥Í½É}¥èÍÑÉ¥¹œì(€µ•ÍÍ…•Í}…¹Íİ•É•è¹Õµ‰•Èì(€ÍÑ…É}É…Ñ¥¹œè¹Õµ‰•Èì)ôì)½¹ÍĞÉ½ÕÁÌèì(€Ñ¥Ñ±”èÍÑÉ¥¹œì(€¥Ñ•µÌèì¥èA…”ì±…‰•°èÍÑÉ¥¹œì¥½¸è…¹äõmtì)õmt€ôl(€ì(€€€Ñ¥Ñ±”è€‰gY9SÁ4ˆ°(€€€¥Ñ•µÌèl(€€€€€ì¥è€‰½Ù•ÉÙ¥•Üˆ°±…‰•°è€‰•¹•°	…¯Ç|ˆ°¥½¸è	…É¡…ÉĞÌô°(€€€€€ì¥è€‰ÕÍ•ÉÌˆ°±…‰•°è€‰-Õ±±…»ÅÅ±…Èˆ°¥½¸èUÍ•ÉÌô°(€€€€€ì¥è€‰…‘Ù¥Í½ÉÌˆ°±…‰•°è€‰…»Ç}µ…¸gÙ¹•Ñ¥µ¤ˆ°¥½¸èUÍ•É½œô°(€€€€€ì¥è€‰½™™¥•Ìˆ°±…‰•°è€‰=™¥ÌgÙ¹•Ñ¥µ¤ˆ°¥½¸è	Õ¥±‘¥¹œÈô°(€€€t°(€ô°(€ì(€€€Ñ¥Ñ±”è€‹ÃKÁ,YƒÁ18ˆ°(€€€¥Ñ•µÌèl(€€€€€ì¥è€‰±¥ÍÑ¥¹Ìˆ°±…‰•°è€‹Á±…¸gÙ¹•Ñ¥µ¤ˆ°¥½¸è1…å½ÕÑA…¹•±Q½Àô°(€€€€€ì¥è€‰¡•…‘•Èˆ°±…‰•°è€‰!•…‘•ÈgÙ¹•Ñ¥µ¤ˆ°¥½¸è1…å½ÕÑA…¹•±Q½Àô°(€€€€€ì¥è€‰½ÉÁ½É…Ñ”ˆ°±…‰•°è€‰-ÕÉÕµÍ…°gÙ¹•Ñ¥´ˆ°¥½¸è	Õ¥±‘¥¹œÈô°(€€€€€ì¥è€‰µ•‘¥„ˆ°±…‰•°è€‰I•…±Ñä5•‘å„ˆ°¥½¸èQØô°(€€€€€ì¥è€‰±¥‰É…Éäˆ°±…‰•°è€‰I•…±Ñä/ñÓñÁ¡…¹”ˆ°¥½¸è1¥‰É…Éäô°(€€€t°(€ô°(€ì(€€€Ñ¥Ñ±”è€‰=AIMe=8ˆ°(€€€¥Ñ•µÌèl(€€€€€ì¥è€‰É´ˆ°±…‰•°è€‰I4ˆ°¥½¸è½±‘•É-…¹‰…¸ô°(€€€€€ì¥è€‰¥¹‰½àˆ°±…‰•°è€‹Á±•Ñ§}¥´5•É­•é¤ˆ°¥½¸è5•ÍÍ…•MÅÕ…É”ô°(€€€t°(€ô°(€ì(€€€Ñ¥Ñ±”è€‰OÁMQ4ˆ°(€€€¥Ñ•µÌèl(€€€€€ì¥è€‰‰…­ÕÀˆ°±…‰•°è€‰e•‘•­±•µ”ˆ°¥½¸èÉ¡¥Ù•I•ÍÑ½É”ô°(€€€€€ì¥è€‰±½Ìˆ°±…‰•°è€‹Ã}±•´-…çÅÑ±…ËÄˆ°¥½¸è1¥ÍÑ¡•­Ìô°(€€€€€ì¥è€‰ÑÉ…Í ˆ°±…‰•°è€‹ÙÀ-ÕÑÕÍÔˆ°¥½¸èQÉ…Í Èô°(€€€t°(€ô°)tì)½¹ÍĞÑ¥Ñ±•=˜€ô€¡¥èA…”¤€ôø(€É½ÕÁÌ¹™±…Ñ5…À ¡œ¤€ôøœ¹¥Ñ•µÌ¤¹™¥¹ ¡¤¤€ôø¤¹¥€ôôô¥¤ü¹±…‰•°ñğ(€€‰‘µ¥¸A…¹•±¤ˆì)½¹ÍĞÉ½±•9…µ”€ô€¡É½±”èÍÑÉ¥¹œ¤€ôø(€É½±”€ôôô€‰…‘Ù¥Í½Èˆ€ü€‰…»Ç}µ…¸ˆ€èÉ½±”€ôôô€‰µ…¹…•Èˆ€ü€‰gÙ¹•Ñ¥¤ˆ€è€‰‘µ¥¸ˆì)½¹ÍĞÍÑ…ÑÕÍ9…µ”€ô€¡ÍÑ…ÑÕÌèÍÑÉ¥¹œ¤€ôø(€€¡ì(€€€…Ñ¥Ù”è€‰­Ñ¥˜ˆ°(€€€¥¹…Ñ¥Ù”è€‰A…Í¥˜ˆ°(€€€ÍÕÍÁ•¹‘•è€‰Í¯Åå„…³Å¹“Äˆ°(€€€‘•Á…ÉÑ•è€‰åËÅ±“Äˆ°(€ô¥mÍÑ…ÑÕÍtñğÍÑ…ÑÕÌì()™Õ¹Ñ¥½¸ÍØ¡¹…µ”èÍÑÉ¥¹œ°É½İÌèI•½ÉñÍÑÉ¥¹œ°Õ¹­¹½İ¸ùmt°­•åÌèÍÑÉ¥¹mt¤ì(€½¹ÍĞÑ•áĞ€ôl(€€€­•åÌ¹©½¥¸ ˆìˆ¤°(€€€€¸¸¹É½İÌ¹µ…À ¡È¤€ôø(€€€€€­•åÌ(€€€€€€€€¹µ…À ¡¬¤€ôø€œˆœ€¬MÑÉ¥¹œ¡Ém­tñğ€ˆˆ¤¹É•Á±…•±° œˆœ°€œˆˆœ¤€¬€œˆœ¤(€€€€€€€€¹©½¥¸ ˆìˆ¤°(€€€€¤°(€t¹©½¥¸ ‰q¸ˆ¤ì(€½¹ÍĞ„€ô‘½Õµ•¹Ğ¹É•…Ñ•±•µ•¹Ğ ‰„ˆ¤ì(€„¹¡É•˜€ôUI0¹É•…Ñ•=‰©•ÑUI0 (€€€¹•Ü	±½ˆ¡l‰qÕ™•™˜ˆ€¬Ñ•áÑt°ìÑåÁ”è€‰Ñ•áĞ½ÍØˆô¤°(€€¤ì(€„¹‘½İ¹±½…€ô¹…µ”€¬€ˆ¹ÍØˆì(€„¹±¥¬ ¤ì)ô)™Õ¹Ñ¥½¸‘Ù¥Í½ÉÍA…•XÈ¡ì(€ÁÉ½™¥±•Ì°(€½™™¥•Ì°(€µ•µ‰•ÉÌ°(€µ•ÑÉ¥Ì°(€ÍÑ…ÉÌ°(€É•™É•Í °(€ÍÑ…È°(€ÑÉ…Í °(€É•…Ñ”°)ôèì(€ÁÉ½™¥±•ÌèAÉ½™¥±•mtì(€½™™¥•Ìè=™™¥•mtì(€µ•µ‰•ÉÌèì½™™¥•}¥èÍÑÉ¥¹œì…‘Ù¥Í½É}¥èÍÑÉ¥¹œõmtì(€µ•ÑÉ¥Ìè‘Ù¥Í½É5•ÑÉ¥mtì(€ÍÑ…ÉÌèì­¥¹èÍÑÉ¥¹œì•¹Ñ¥Ñå}¥èÍÑÉ¥¹œõmtì(€É•™É•Í è€ ¤€ôøAÉ½µ¥Í”ñÙ½¥øì(€ÍÑ…Èè€¡¥èÍÑÉ¥¹œ¤€ôøAÉ½µ¥Í”ñÙ½¥øì(€ÑÉ…Í è€¡ÀèAÉ½™¥±”¤€ôøAÉ½µ¥Í”ñÙ½¥øì(€É•…Ñ”è€ ¤€ôøÙ½¥ì)ô¤ì(€½¹ÍĞmÄ°Í•ÑEt€ôÕÍ•MÑ…Ñ” ˆˆ¤°(€€€mÁ¡½¹”°Í•ÑA¡½¹•t€ôÕÍ•MÑ…Ñ” ˆˆ¤°(€€€m¥Ñä°Í•Ñ¥Ñåt€ôÕÍ•MÑ…Ñ” ˆˆ¤°(€€€m‘¥ÍÑÉ¥Ğ°Í•Ñ¥ÍÑÉ¥Ñt€ôÕÍ•MÑ…Ñ” ˆˆ¤ì(€½¹ÍĞm‰ÕÍä°Í•Ñ	ÕÍåt€ôÕÍ•MÑ…Ñ” ˆˆ¤°(€€€mµ½‘…°°Í•Ñ5½‘…±t€ôÕÍ•MÑ…Ñ”ñAÉ½™¥±”ğ¹Õ±°ø¡¹Õ±°¤°(€€€m±½Ì°Í•Ñ1½Ít€ôÕÍ•MÑ…Ñ”ñ…¹åmtğ¹Õ±°ø¡¹Õ±°¤ì(€½¹ÍĞ±¥ÍĞ€ôÁÉ½™¥±•Ì¹™¥±Ñ•È ¡À¤€ôøÀ¹É½±”€ôôô€‰…‘Ù¥Í½Èˆ¤ì(€ÕÍ•™™•Ğ  ¤€ôøì(€€€‘½Õµ•¹Ğ¹ÅÕ•ÉåM•±•Ñ½É±° ˆ¹…‘Ù¥Í½ÈµÑ…Àˆ¤¹™½É…  ¡‰ÕÑÑ½¸¤€ôøì(€€€€€¥˜€¡‰ÕÑÑ½¸¹Ñ•áÑ½¹Ñ•¹Ğü¹ÑÉ¥´ ¤€ôôô€‰ÙËñ¹Óñ±”ˆ¤(€€€€€€€‰ÕÑÑ½¸¹Ñ•áÑm4ÖÚ$z{-®éÜj×ÛÛœİÛÜÙHH
+import { useEffect, useMemo, useState } from "react";
+import {
+  ArchiveRestore,
+  BarChart3,
+  Building2,
+  Clock3,
+  ChevronRight,
+  Download,
+  FolderKanban,
+  LayoutPanelTop,
+  Library,
+  ListChecks,
+  Menu,
+  MapPin,
+  MessageSquare,
+  Plus,
+  RefreshCw,
+  Search,
+  ShieldCheck,
+  Trash2,
+  Tv,
+  UserCog,
+  Users,
+  Upload,
+  X,
+} from "lucide-react";
+import { supabase } from "./lib/supabase";
 
-HOˆ[Ù[œ™[[İ™J
-Kˆ›Ü›HH[Ù[œ]Y\TÙ[XİÜŠ™›Ü›HŠH\ÈS›Ü›Q[[Y[ˆ[œ]H[Ù[œ]Y\TÙ[XİÜŠ–Û˜[YOX]˜]\—HŠH\ÈS[œ][[Y[ˆİÈH[Ù[œ]Y\TÙ[XİÜŠ–Ù]K\İ×HŠHNÂˆ[Ù[ˆœ]Y\TÙ[XİÜ[
-–Ù]KXÛÜÙWHŠBˆ™›Ü‘XXÚ
+type Page =
+  | "overview"
+  | "users"
+  | "user-create"
+  | "advisors"
+  | "offices"
+  | "listings"
+  | "header"
+  | "corporate"
+  | "media"
+  | "library"
+  | "crm"
+  | "inbox"
+  | "backup"
+  | "logs"
+  | "trash";
+type Profile = {
+  id: string;
+  first_name: string;
+  last_name: string;
+  username: string;
+  email: string;
+  phone: string | null;
+  role: string;
+  status: string;
+  last_login_at: string | null;
+  created_at: string;
+  avatar_url?: string | null;
+};
+type Office = {
+  id: string;
+  name: string;
+  city: string;
+  district: string;
+  address: string;
+  phone: string | null;
+  email: string | null;
+  manager_name: string | null;
+  owner_profile_id?: string | null;
+  image_url?: string | null;
+  mobile_phone?: string | null;
+  landline_phone?: string | null;
+  work_hours?: string | null;
+  description?: string | null;
+  latitude?: number | null;
+  longitude?: number | null;
+  deleted_at?: string | null;
+};
+type AdvisorMetric = {
+  advisor_id: string;
+  messages_answered: number;
+  star_rating: number;
+};
+const groups: {
+  title: string;
+  items: { id: Page; label: string; icon: any }[];
+}[] = [
+  {
+    title: "YÃ–NETÄ°M",
+    items: [
+      { id: "overview", label: "Genel BakÄ±ÅŸ", icon: BarChart3 },
+      { id: "users", label: "KullanÄ±cÄ±lar", icon: Users },
+      { id: "advisors", label: "DanÄ±ÅŸman YÃ¶netimi", icon: UserCog },
+      { id: "offices", label: "Ofis YÃ¶netimi", icon: Building2 },
+    ],
+  },
+  {
+    title: "Ä°Ã‡ERÄ°K VE Ä°LAN",
+    items: [
+      { id: "listings", label: "Ä°lan YÃ¶netimi", icon: LayoutPanelTop },
+      { id: "header", label: "Header YÃ¶netimi", icon: LayoutPanelTop },
+      { id: "corporate", label: "Kurumsal YÃ¶netim", icon: Building2 },
+      { id: "media", label: "Realty Medya", icon: Tv },
+      { id: "library", label: "Realty KÃ¼tÃ¼phane", icon: Library },
+    ],
+  },
+  {
+    title: "OPERASYON",
+    items: [
+      { id: "crm", label: "CRM", icon: FolderKanban },
+      { id: "inbox", label: "Ä°letiÅŸim Merkezi", icon: MessageSquare },
+    ],
+  },
+  {
+    title: "SÄ°STEM",
+    items: [
+      { id: "backup", label: "Yedekleme", icon: ArchiveRestore },
+      { id: "logs", label: "Ä°ÅŸlem KayÄ±tlarÄ±", icon: ListChecks },
+      { id: "trash", label: "Ã‡Ã¶p Kutusu", icon: Trash2 },
+    ],
+  },
+];
+const titleOf = (id: Page) =>
+  groups.flatMap((g) => g.items).find((i) => i.id === id)?.label ||
+  "Admin Paneli";
+const roleName = (role: string) =>
+  role === "advisor" ? "DanÄ±ÅŸman" : role === "manager" ? "YÃ¶netici" : "Admin";
+const statusName = (status: string) =>
+  ({
+    active: "Aktif",
+    inactive: "Pasif",
+    suspended: "AskÄ±ya alÄ±ndÄ±",
+    departed: "AyrÄ±ldÄ±",
+  })[status] || status;
 
-
-HOˆ˜Y]™[\İ[™\Š˜ÛXÚÈ‹ÛÜÙJJNÂˆİË˜Y]™[\İ[™\Š˜ÛXÚÈ‹
-
-HOˆ[œ]˜ÛXÚÊ
-JNÂˆİË˜Y]™[\İ[™\Š™˜YÛİ™\ˆ‹
-JHOˆKœ™]™[Y˜][
-
-JNÂˆİË˜Y]™[\İ[™\Š™›Ü‹
-JHOˆÂˆKœ™]™[Y˜][
-
-NÂˆ[œ]™š[\ÈHK™]U˜[œÙ™\Ë™š[\È[ÂˆJNÂˆ›Ü›K˜Y]™[\İ[™\ŠœİX›Z]‹\Ş[˜È
-JHOˆÂˆKœ™]™[Y˜][
-
-NÂˆÛÛœİ™H™]È›Ü›Q]J›Ü›JKˆ\ÜİÛÜ™Hİš[™Ê™™Ù]
-œ\ÜİÛÜ™ŠHˆŠNÂˆYˆ
-\ÜİÛÜ™OOHİš[™Ê™™Ù]
-œ\ÜİÛÜ™Ü™\X]ŠHˆŠJBˆ™]\›ˆ[\
-±gšYœ™HZÜ˜\±,HqgÛqgÛZ^[Ü‹ˆŠNÂˆÛÛœİ[XYÙHH™™Ù]
-˜]˜]\ˆŠH\Èš[NÂˆÛÛœİ]˜]\ˆH[XYÙOËœÚ^™BˆÈ]ØZ]™]È›ÛZ\ÙOİš[™ÏŠ
-™\ÛÛ™JHOˆÂˆÛÛœİˆH™]Èš[T™XY\Š
-NÂˆ‹›Û›ØYH
-
-HOˆ™\ÛÛ™Jİš[™Ê‹œ™\İ[
-JNÂˆ‹œ™XY\Ñ]UT“
-[XYÙJNÂˆJBˆˆ˜]˜]\—İ\›[ÂˆÛÛœİ]ÛˆH›Ü›Kœ]Y\TÙ[XİÜŠˆ˜]Û–İ\O\İX›Z]H‹ˆ
-H\ÈS]Û‘[[Y[Âˆ]Û‹™\ØX›YHYNÂˆ]Û‹^ÛÛ[H’ĞVQQ1,1,SÔ¸ )ˆÂˆÛÛœİÈ\œ›ÜˆHH]ØZ]İ\X˜\ÙBˆ™œ›ÛJœ›Ùš[\ÈŠBˆ\]JÂˆš\œİÛ˜[YNˆİš[™Ê™™Ù]
-™š\œİÛ˜[YHŠJKš[J
-Kˆ\İÛ˜[YNˆİš[™Ê™™Ù]
-›\İÛ˜[YHŠJKš[J
-Kˆ\Ù\›˜[YNˆİš[™Ê™™Ù]
-\Ù\›˜[YHŠJBˆš[J
-BˆÓİÙ\Ø\ÙJ
-Bˆœ™\XÙJ×ËÙËˆŠKˆ[XZ[ˆİš[™Ê™™Ù]
-™[XZ[ŠJKš[J
-KÓİÙ\Ø\ÙJ
-KˆÛ™Nˆİš[™Ê™™Ù]
-œÛ™HŠJKš[J
-H[ˆ›ÛNˆİš[™Ê™™Ù]
-œ›ÛHŠJKˆİ]\Îˆİš[™Ê™™Ù]
-œİ]\ÈŠJKˆ]˜]\—İ\›ˆ]˜]\‹ˆ^\\ÙWØ\™X\ÎˆÂˆİš[™Ê™™Ù]
-˜Ú]HŠJKš[J
-Kˆİš[™Ê™™Ù]
-™\İšXİŠJKš[J
-KˆK™š[\Š›ÛÛX[ŠKˆJBˆ™\JšY‹šY
-NÂˆYˆ
-\œ›ÜŠHÂˆ[\
-\œ›Ü‹›Y\ÜØYÙJNÂˆ]Û‹™\ØX›YH˜[ÙNÂˆ]Û‹^ÛÛ[H‘q'±,1g±,Ó1,ÓT±,ĞVQUÂˆ™]\›ÂˆBˆYˆ
-\ÜİÛÜ™
-HÂˆÛÛœİÈ]K\œ›Üˆ\ÜİÛÜ™\œ›ÜˆHH]ØZ]İ\X˜\ÙK™[˜İ[ÛœËš[›ÚÙJˆ˜YZ[‹]\Ù\œÈ‹ˆÂˆ›ÙNˆÂˆXİ[Ûˆ\]Wİ\Ù\ˆ‹ˆ^[ØYˆÂˆYˆšYˆ\ÜİÛÜ™ˆ›Ü˜ÙT\ÜİÛÜ™Ú[™ÙNˆ™™Ù]
-™›Ü˜ÙHŠHOOH›Ûˆ‹ˆKˆKˆKˆ
-NÂˆYˆ
-\ÜİÛÜ™\œ›Üˆ]OË™\œ›ÜŠHÂˆ[\
-ˆ”›Ùš[Ø^YY[NÈ1gÚYœ™Hğï˜Ù[[™[YYNˆˆ
-Âˆ
-]OË™\œ›Üˆ\ÜİÛÜ™\œ›ÜË›Y\ÜØYÙJKˆ
-NÂˆ]Û‹™\ØX›YH˜[ÙNÂˆ]Û‹^ÛÛ[H‘q'±,1g±,Ó1,ÓT±,ĞVQUÂˆ™]\›ÂˆBˆBˆÛÜÙJ
-NÂˆ]ØZ]™Yœ™\Ú
-
-NÂˆ[\
-‘[±,qgÛX[ˆš[Ú[\šH˜qgØ\±,^[Hğï˜Ù[[™KˆŠNÂˆJNÂˆØİ[Y[˜›ÙK˜\[™Ú[
-[Ù[
-NÂˆNÂˆÛÛœİÚİÓÙÜÈH\Ş[˜È
-ˆ›Ùš[JHOˆÂˆÙ][Ù[
-
-NÂˆÙ]ÙÜÊ[
-NÂˆÙ]\ŞJ’\™ZÙ]\ˆpïÛ[š^[ÜˆŠNÂˆHÂˆÛÛœİÈ]HHH]ØZ]İ\X˜\ÙBˆ™œ›ÛJ˜]Y]ÛÙÜÈŠBˆœÙ[Xİ
-˜Xİ[Û‹Ü™X]YØ]ŠBˆ™\J™[]WÚY‹šY
-Bˆ›Ü™\Š˜Ü™X]YØ]‹È\ØÙ[™[™Îˆ˜[ÙHJBˆ›[Z]
-Ì
-NÂˆÙ]ÙÜÊ]H×JNÂˆHš[˜[HÂˆÙ]\ŞJˆŠNÂˆBˆNÂˆÛÛœİ^Ü›İÜÈH
-
-HO‚ˆ[Š‘^Ù[ÜŞX\ñ,H^±,\›[±,^[Üˆ‹\Ş[˜È
-
-HOˆÂˆ]ØZ]™]È›ÛZ\ÙJ
-ŠHOˆÙ][Y[İ]
-‹L
-JNÂˆÜİŠˆœ™X[KXÙ[\‹Y[š\ÛX[›\ˆ‹ˆ›İÜË›X\
-
-
-HOˆ
-Âˆ[±,qgÛX[ˆ	Ü™š\œİÛ˜[Y_H	Ü›\İÛ˜[Y_Xˆ[Y›ÛˆœÛ™Hˆ‹ˆ\ÜİNˆ™[XZ[ˆÙš\ÎˆÙ™šXÙJ
-OË›˜[YHˆ‹ˆ\[Nˆİ]\Ó˜[YJœİ]\ÊKˆJJKˆÈ‘[±,qgÛX[ˆ‹•[Y›Ûˆ‹‘\ÜİH‹“Ùš\È‹‘\[H—Kˆ
-NÂˆJNÂˆ™]\›ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH›Z[‹Z\ØÜ™Y[ˆ™ËVÈÙÙY˜×H^\Û]KNL‚ˆİ[OØ˜Yš\ÛÜ‹]\İ˜[œÚ][Û˜[ŒNÈX\Ù_K˜Yš\ÛÜ‹]\šİ™\İ˜[œÙ›Ü›N˜[œÛ]VJLœ
-NØ›Ş\ÚYİÎŒLŒœÌŒMÌŒŒXßK˜Yš\ÛÜ‹]\˜Xİ]™^İ˜[œÙ›Ü›NœØØ[JMÊ_XOÜİ[O‚ˆXY\ˆÛ\ÜÓ˜[YOH™›^LMˆ][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLL™Ë]Ú]HMHÎœN‚ˆ]ˆÛ\ÜÓ˜[YOHšY[ˆ][\ËXÙ[\ˆØ\Lˆ^^È^\Û]KMY™›^‚ˆj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5     <UserCog size={15} />
+function csv(name: string, rows: Record<string, unknown>[], keys: string[]) {
+  const text = [
+    keys.join(";"),
+    ...rows.map((r) =>
+      keys
+        .map((k) => '"' + String(r[k] || "").replaceAll('"', '""') + '"')
+        .join(";"),
+    ),
+  ].join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(
+    new Blob(["\ufeff" + text], { type: "text/csv" }),
+  );
+  a.download = name + ".csv";
+  a.click();
+}
+function AdvisorsPageV2({
+  profiles,
+  offices,
+  members,
+  metrics,
+  stars,
+  refresh,
+  star,
+  trash,
+  create,
+}: {
+  profiles: Profile[];
+  offices: Office[];
+  members: { office_id: string; advisor_id: string }[];
+  metrics: AdvisorMetric[];
+  stars: { kind: string; entity_id: string }[];
+  refresh: () => Promise<void>;
+  star: (id: string) => Promise<void>;
+  trash: (p: Profile) => Promise<void>;
+  create: () => void;
+}) {
+  const [q, setQ] = useState(""),
+    [phone, setPhone] = useState(""),
+    [city, setCity] = useState(""),
+    [district, setDistrict] = useState("");
+  const [busy, setBusy] = useState(""),
+    [modal, setModal] = useState<Profile | null>(null),
+    [logs, setLogs] = useState<any[] | null>(null);
+  const list = profiles.filter((p) => p.role === "advisor");
+  useEffect(() => {
+    document.querySelectorAll(".advisor-tap").forEach((button) => {
+      if (button.textContent?.trim() === "GÃ¶rÃ¼ntÃ¼le")
+        button.textContent = "GÃ¶rÃ¼ntÃ¼le / DÃ¼zenle";
+    });
+  });
+  const office = (p: Profile) =>
+    offices.find((o) =>
+      members.some((m) => m.advisor_id === p.id && m.office_id === o.id),
+    );
+  const rows = list.filter((p) => {
+    const o = office(p);
+    return (
+      `${p.first_name} ${p.last_name}`
+        .toLowerCase()
+        .includes(q.toLowerCase()) &&
+      (!phone || (p.phone || "").includes(phone)) &&
+      (!city || o?.city === city) &&
+      (!district || o?.district === district)
+    );
+  });
+  const cities = [...new Set(offices.map((o) => o.city).filter(Boolean))],
+    districts = [
+      ...new Set(
+        offices
+          .filter((o) => !city || o.city === city)
+          .map((o) => o.district)
+          .filter(Boolean),
+      ),
+    ];
+  const featured = stars
+    .filter((s) => s.kind === "advisor")
+    .map((s) => list.find((p) => p.id === s.entity_id))
+    .filter(Boolean) as Profile[];
+  const run = async (label: string, action: () => Promise<void>) => {
+    setBusy(label);
+    try {
+      await action();
+    } finally {
+      setBusy("");
+    }
+  };
+  const showProfile = (p: Profile) => {
+    const currentOffice = office(p),
+      modal = document.createElement("div");
+    modal.className =
+      "fixed inset-0 z-[130] flex items-center justify-center bg-slate-950/45 p-4";
+    modal.innerHTML = `<form class="max-h-[92vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"><div class="flex items-start justify-between border-b border-slate-100 pb-5"><div><p class="text-[10px] font-black tracking-[.18em] text-[#cd011e]">DANIÅMAN PROFÄ°LÄ° / DÃœZENLE</p><h2 class="mt-1 text-xl font-black">${p.first_name} ${p.last_name}</h2><p class="mt-1 text-xs text-slate-400">Profil, giriÅŸ ve bÃ¶lge bilgilerini gÃ¼ncelleyebilirsiniz.</p></div><button type="button" data-close class="rounded-lg border border-slate-200 px-3 py-2 text-xs font-black">Kapat</button></div><div class="mt-6 grid gap-7 lg:grid-cols-[250px_1fr]"><section><p class="text-sm font-black">Profil FotoÄŸrafÄ±</p><label data-photo class="mt-4 flex h-52 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 text-center hover:border-[#cd011e]"><input name="avatar" type="file" accept="image/*" class="hidden"/>${p.avatar_url ? `<img src="${p.avatar_url}" class="h-28 w-28 rounded-full object-cover"/>` : `<span class="grid h-24 w-24 place-items-center rounded-full bg-red-50 text-2xl font-black text-[#cd011e]">${p.first_name[0]}${p.last_name[0]}</span>`}<b class="mt-3 text-xs">Resmi deÄŸiÅŸtir</b><small class="mt-1 text-[10px] text-slate-400">TÄ±kla veya sÃ¼rÃ¼kle bÄ±rak</small></label></section><section><p class="text-sm font-black">KiÅŸisel ve Ä°letiÅŸim Bilgileri</p><div class="mt-4 grid gap-3 sm:grid-cols-2"><label class="text-xs font-bold">Ad *<input required name="first_name" value="${p.first_name}" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Soyad *<input required name="last_name" value="${p.last_name}" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">KullanÄ±cÄ± adÄ± *<input required name="username" value="${p.username}" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">E-posta *<input required type="email" name="email" value="${p.email}" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Telefon<input name="phone" value="${p.phone || ""}" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Ä°l<input name="city" value="${currentOffice?.city || ""}" placeholder="Ã–rn. Ankara" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Ä°lÃ§e<input name="district" value="${currentOffice?.district || ""}" placeholder="Ã–rn. Ã‡ankaya" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Ofis bilgisi<input disabled value="${currentOffice?.name || "Ofis atanmamÄ±ÅŸ"}" class="mt-1 w-full rounded-xl border bg-slate-50 p-3 text-sm text-slate-400"/></label></div><div class="mt-6 border-t border-slate-100 pt-5"><p class="text-sm font-black">Yetki ve GÃ¼venlik</p><div class="mt-4 grid gap-3 sm:grid-cols-2"><label class="text-xs font-bold">Rol<select name="role" class="mt-1 w-full rounded-xl border p-3 text-sm"><option value="advisor" ${p.role === "advisor" ? "selected" : ""}>DanÄ±ÅŸman</option><option value="manager" ${p.role === "manager" ? "selected" : ""}>YÃ¶netici</option><option value="admin" ${p.role === "admin" ? "selected" : ""}>Admin</option></select></label><label class="text-xs font-bold">Hesap durumu<select name="status" class="mt-1 w-full rounded-xl border p-3 text-sm"><option value="active" ${p.status === "active" ? "selected" : ""}>Aktif</option><option value="inactive" ${p.status === "inactive" ? "selected" : ""}>Pasif</option><option value="suspended" ${p.status === "suspended" ? "selected" : ""}>AskÄ±ya alÄ±ndÄ±</option></select></label><label class="text-xs font-bold">Yeni ÅŸifre<input name="password" type="password" minlength="10" placeholder="DeÄŸiÅŸtirmek istemiyorsanÄ±z boÅŸ bÄ±rakÄ±n" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label><label class="text-xs font-bold">Yeni ÅŸifre tekrar<input name="password_repeat" type="password" minlength="10" placeholder="Yeni ÅŸifreyi tekrar girin" class="mt-1 w-full rounded-xl border p-3 text-sm"/></label></div><label class="mt-3 flex items-center gap-2 text-xs font-bold"><input name="force" type="checkbox"/> Ä°lk giriÅŸte ÅŸifre deÄŸiÅŸikliÄŸi zorunlu</label></div></section></div><div class="mt-7 flex justify-end gap-3 border-t border-slate-100 pt-5"><button type="button" data-close class="rounded-xl border border-slate-200 px-5 py-3 text-xs font-black">Ä°ptal</button><button class="rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-black text-white">DEÄÄ°ÅÄ°KLÄ°KLERÄ° KAYDET</button></div></form>`;
+    const close = () => modal.remove(),
+      form = modal.querySelector("form") as HTMLFormElement,
+      input = modal.querySelector("[name=avatar]") as HTMLInputElement,
+      photo = modal.querySelector("[data-photo]")!;
+    modal
+      .querySelectorAll("[data-close]")
+      .forEach((x) => x.addEventListener("click", close));
+    photo.addEventListener("click", () => input.click());
+    photo.addEventListener("dragover", (e) => e.preventDefault());
+    photo.addEventListener("drop", (e) => {
+      e.preventDefault();
+      input.files = e.dataTransfer?.files || null;
+    });
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form),
+        password = String(fd.get("password") || "");
+      if (password !== String(fd.get("password_repeat") || ""))
+        return alert("Åifre tekrarÄ± eÅŸleÅŸmiyor.");
+      const image = fd.get("avatar") as File;
+      const avatar = image?.size
+        ? await new Promise<string>((resolve) => {
+            const r = new FileReader();
+            r.onload = () => resolve(String(r.result));
+            r.readAsDataURL(image);
+          })
+        : p.avatar_url || null;
+      const button = form.querySelector(
+        "button[type=submit]",
+      ) as HTMLButtonElement;
+      button.disabled = true;
+      button.textContent = "KAYDEDÄ°LÄ°YORâ€¦";
+      const { error } = await supabase
+        .from("profiles")
+        .update({
+          first_name: String(fd.get("first_name")).trim(),
+          last_name: String(fd.get("last_name")).trim(),
+          username: String(fd.get("username"))
+            .trim()
+            .toLowerCase()
+            .replace(/\\s/g, ""),
+          email: String(fd.get("email")).trim().toLowerCase(),
+          phone: String(fd.get("phone")).trim() || null,
+          role: String(fd.get("role")),
+          status: String(fd.get("status")),
+          avatar_url: avatar,
+          expertise_areas: [
+            String(fd.get("city")).trim(),
+            String(fd.get("district")).trim(),
+          ].filter(Boolean),
+        })
+        .eq("id", p.id);
+      if (error) {
+        alert(error.message);
+        button.disabled = false;
+        button.textContent = "DEÄÄ°ÅÄ°KLÄ°KLERÄ° KAYDET";
+        return;
+      }
+      if (password) {
+        const { data, error: passwordError } = await supabase.functions.invoke(
+          "admin-users",
+          {
+            body: {
+              action: "update_user",
+              payload: {
+                id: p.id,
+                password,
+                forcePasswordChange: fd.get("force") === "on",
+              },
+            },
+          },
+        );
+        if (passwordError || data?.error) {
+          alert(
+            "Profil kaydedildi; ÅŸifre gÃ¼ncellenemedi: " +
+              (data?.error || passwordError?.message),
+          );
+          button.disabled = false;
+          button.textContent = "DEÄÄ°ÅÄ°KLÄ°KLERÄ° KAYDET";
+          return;
+        }
+      }
+      close();
+      await refresh();
+      alert("DanÄ±ÅŸman bilgileri baÅŸarÄ±yla gÃ¼ncellendi.");
+    });
+    document.body.appendChild(modal);
+  };
+  const showLogs = async (p: Profile) => {
+    setModal(p);
+    setLogs(null);
+    setBusy("Hareketler yÃ¼kleniyor");
+    try {
+      const { data } = await supabase
+        .from("audit_logs")
+        .select("action,created_at")
+        .eq("entity_id", p.id)
+        .order("created_at", { ascending: false })
+        .limit(30);
+      setLogs(data || []);
+    } finally {
+      setBusy("");
+    }
+  };
+  const exportRows = () =>
+    run("Excel dosyasÄ± hazÄ±rlanÄ±yor", async () => {
+      await new Promise((r) => setTimeout(r, 500));
+      csv(
+        "realty-center-danismanlar",
+        rows.map((p) => ({
+          DanÄ±ÅŸman: `${p.first_name} ${p.last_name}`,
+          Telefon: p.phone || "",
+          Eposta: p.email,
+          Ofis: office(p)?.name || "",
+          Durum: statusName(p.status),
+        })),
+        ["DanÄ±ÅŸman", "Telefon", "Eposta", "Ofis", "Durum"],
+      );
+    });
+  return (
+    <div className="min-h-screen bg-[#f7f9fc] text-slate-900">
+      <style>{`.advisor-tap{transition:all .18s ease}.advisor-tap:hover{transform:translateY(-2px);box-shadow:0 10px 22px #0f17221c}.advisor-tap:active{transform:scale(.97)}`}</style>
+      <header className="flex h-16 items-center justify-between border-b border-slate-100 bg-white px-5 lg:px-8">
+        <div className="hidden items-center gap-2 text-xs text-slate-400 md:flex">
+          <UserCog size={15} />
           <span>DanÄ±ÅŸmanlar / YÃ¶netim Merkezi</span>
         </div>
         <div className="ml-auto flex items-center gap-2">
@@ -191,98 +451,935 @@ NØ›Ş\ÚYİÎŒLŒœÌŒMÌŒŒXßK˜Yš\ÛÜ‹]\˜Xİ]™^İ˜[œÙ›Ü›NœØØ[JMÊ_XOÜ
                   onClick={() => showProfile(p)}
                   className="advisor-tap flex items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-left hover:bg-white hover:text-[#cd011e]"
                 >
-           ÛM5¶‰ËkºwµçFâ6Æ74æÖSÒ'FW‡B×6ÆFRÓC#à¢¶ÓòæÖW76vW5öç7vW&VBÇÂÒ–ìK@¢Â÷7ãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓB#à¢Ç7à¢6Æ74æÖS×¶&÷VæFVBÖgVÆÂ‚Ó2’ÓFW‡BÕ³…ÒföçBÖ&Æ6²G·ç7FGW2ÓÓÒ&7F—fR"ò&&rÖVÖW&ÆBÓFW‡BÖVÖW&ÆBÓs"¢&&rÖÖ&W"ÓFW‡BÖÖ&W"Ós'ÖĞ¢à¢)xş8·7FGW4æÖR‡ç7FGW2—Ğ¢Â÷7ãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓB#à¢ÆF—b6Æ74æÖSÒ&fÆW‚§W7F–g’ÖVæBvÓ"#à¢Æ'WGFöà¢öä6Æ–6³×²‚’Óà¢'Vâ€¢—57F ¢ò%œKÆLK¦Æ&Fâ:|K¶,KÌK–÷" ¢¢%œKÆLK¦Æ&V¶ÆVæ—–÷""À¢‚’Óâ7F"‡æ–B’À¢¢Ğ¢6Æ74æÖS×¶Gf—6÷"×F&÷VæFVBÖÆr‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FRG¶—57F"ò&&rÖÖ&W"ÓS†÷fW#¦&rÖÖ&W"Óc"¢&&rÕ²66CUÒ†÷fW#¦&rÕ²6“•Ò'ÖĞ¢à¢¶—57F"ò.)ˆR8|K¶""¢.)ˆbœKÆLK¦Æ&V¶ÆR'Ğ¢Âö'WGFöãà¢Æ'WGFöà¢öä6Æ–6³×²‚’Óâfö–B6†÷tÆöw2‡—Ğ¢6Æ74æÖSÒ&Gf—6÷"×F&÷VæFVBÖÆr&r×6ÆFRÓs‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FR†÷fW#¦&r×6ÆFRÓ“ ¢à¢†&V¶WFÆW&’|;g ¢Âö'WGFöãà¢Æ'WGFöà¢öä6Æ–6³×²‚’Óâ6†÷u&öf–ÆR‡—Ğ¢6Æ74æÖSÒ&Gf—6÷"×F&÷VæFVBÖÆr&r×6ÆFRÓ#‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓs†÷fW#¦&r×6ÆFRÓ3 ¢à¢|;g,;ÆçL;ÆÆP¢Âö'WGFöãà¢Æ'WGFöà¢öä6Æ–6³×²‚’Óâ°¢–b†6öæf—&Ò‚$FìKYöÖâ:|;g·WGW7VæFYüKç<KâÜKò"’¢fö–B'Vâ‚$FìKYöÖâ:|;g·WGW7VæFYüKìK–÷""Â‚’Óà¢G&6‚‡’À¢“°¢×Ğ¢6Æ74æÖSÒ&Gf—6÷"×F&÷VæFVBÖÆr&r×&÷6RÓc‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FR†÷fW#¦&r×&÷6RÓs ¢à¢8|;g·WGW7P¢Âö'WGFöãà¢ÂöF—cà¢Â÷FCà¢Â÷G#à¢“°¢Ò—Ğ¢Â÷F&öG“à¢Â÷F&ÆSà¢²&÷w2æÆVæwF‚bb€¢ÆF—b6Æ74æÖSÒ'Ó"FW‡BÖ6VçFW"FW‡B×6ÒFW‡B×6ÆFRÓC#à¢'Rf–ÇG&VÆW&ÆR\YöÆ\YöVâFìKYöÖâ'VÇVæ×W–÷"à¢ÂöF—cà¢—Ğ¢Ç6Æ74æÖSÒ'ÓBFW‡B×‡2FW‡B×6ÆFRÓC#à¢·&÷w2æÆVæwF‡ÒFìKYöÖâ|;g7FW&–Æ—–÷ ¢Â÷à¢ÂöF—cà¢ÂöÖ–ãà¢¶ÖöFÂbb€¢ÆF—b6Æ74æÖSÒ&f—†VB–ç6WBÓ¢Õ³ÒfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&r×6ÆFRÓ“SóCRÓB#à¢Æ'F–6ÆR6Æ74æÖSÒ&Ö‚Ö‚Õ³“f…ÒrÖgVÆÂÖ‚×rÓ'†Â÷fW&fÆ÷r×’ÖWFò&÷VæFVBÓ'†Â&r×v†—FRÓb6†F÷rÓ'†Â#à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2×7F'B§W7F–g’Ö&WGvVVâ#à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓB#à¢¶ÖöFÂæfF%÷W&Âò€¢Æ–Öp¢7&3×¶ÖöFÂæfF%÷W&ÇĞ¢6Æ74æÖSÒ&‚ÓbrÓb&÷VæFVBÓ'†Âö&¦V7BÖ6÷fW" ¢óà¢’¢€¢Ç7â6Æ74æÖSÒ&w&–B‚ÓbrÓbÆ6RÖ—FV×2Ö6VçFW"&÷VæFVBÓ'†Â&r×&VBÓSFW‡B×†ÂföçBÖ&Æ6²FW‡BÕ²66CUÒ#à¢¶ÖöFÂæf—'7EöæÖU³×Ğ¢¶ÖöFÂæÆ7EöæÖU³×Ğ¢Â÷7ãà¢—Ğ¢ÆF—cà¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã†VÕÒFW‡BÕ²66CUÒ#à¢DäœYäÔâ$ôlKÌK ¢Â÷à¢Æƒ"6Æ74æÖSÒ&×BÓFW‡B×†ÂföçBÖ&Æ6²#à¢¶ÖöFÂæf—'7EöæÖWÒ¶ÖöFÂæÆ7EöæÖWĞ¢Âöƒ#à¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓC#ä¶ÖöFÂçW6W&æÖWÓÂ÷à¢ÂöF—cà¢ÂöF—cà¢Æ'WGFöà¢öä6Æ–6³×²‚’Óâ°¢6WDÖöFÂ†çVÆÂ“°¢6WDÆöw2†çVÆÂ“°¢×Ğ¢6Æ74æÖSÒ&Gf—6÷"×F&÷Uš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLˆ^^È›ÛX›XÚÈ‚ˆ‚ˆØ\]ˆØ]Û‚ˆÙ]‚ˆÛÙÜÈÈ
-ˆ]ˆÛ\ÜÓ˜[YOH›]MˆÜXÙK^KLˆ‚ˆÛÙÜË›[™İÈ
-ˆÙÜË›X\
+                  <span className="grid h-8 w-8 place-items-center overflow-hidden rounded-full bg-white/20 text-xs font-black">
+                    {p.avatar_url ? (
+                      <img
+                        src={p.avatar_url}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      `${p.first_name[0]}${p.last_name[0]}`
+                    )}
+                  </span>
+                  <span>
+                    <b className="block text-xs">
+                      â˜… {p.first_name} {p.last_name}
+                    </b>
+                    <small className="text-[10px] opacity-75">
+                      KartÄ± gÃ¶rÃ¼ntÃ¼le
+                    </small>
+                  </span>
+                </button>
+              ))
+            ) : (
+              <span className="text-sm text-red-100">
+                HenÃ¼z yÄ±ldÄ±z danÄ±ÅŸman seÃ§ilmedi.
+              </span>
+            )}
+          </div>
+        </section>
+        <div className="mt-5 grid gap-3 lg:grid-cols-[1fr_180px_180px_180px_auto]">
+          <label className="flex items-center rounded-xl border border-slate-200 bg-white px-4 py-3">
+            <Search size={16} className="mr-3 text-slate-400" />
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              className="w-full bg-transparent text-sm outline-none"
+              placeholder="Ad soyad ara..."
+            />
+          </label>
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+            placeholder="Telefon ara"
+          />
+          <select
+            value={city}
+            onChange={(e) => {
+              setCity(e.target.value);
+              setDistrict("");
+            }}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m iller</option>
+            {cities.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+          <select
+            value={district}
+            onChange={(e) => setDistrict(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m ilÃ§eler</option>
+            {districts.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+          <button
+            onClick={() => {
+              setQ("");
+              setPhone("");
+              setCity("");
+              setDistrict("");
+            }}
+            className="advisor-tap rounded-xl border border-slate-200 bg-white px-4 py-3 text-xs font-black"
+          >
+            Temizle
+          </button>
+        </div>
+        <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <table className="w-full min-w-[1120px] text-left">
+            <thead className="border-b border-slate-100 bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="p-4">DanÄ±ÅŸman</th>
+                <th className="p-4">Ä°letiÅŸim Bilgileri</th>
+                <th className="p-4">Ofis</th>
+                <th className="p-4">Puan / Mesaj</th>
+                <th className="p-4">Durum</th>
+                <th className="p-4 text-right">Ä°ÅŸlemler</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((p) => {
+                const o = office(p),
+                  m = metrics.find((x) => x.advisor_id === p.id),
+                  isStar = stars.some(
+                    (x) => x.kind === "advisor" && x.entity_id === p.id,
+                  );
+                return (
+                  <tr
+                    key={p.id}
+                    className="border-b border-slate-100 text-sm transition hover:bg-slate-50"
+                  >
+                    <td className="p-4">
+                      <button
+                        onClick={() => showProfile(p)}
+                        className="advisor-tap flex items-center gap-3 text-left"
+                      >
+                        {p.avatar_url ? (
+                          <img
+                            src={p.avatar_url}
+                            className="h-10 w-10 rounded-full object-cover"
+                          />
+                        ) : (
+                          <span className="grid h-10 w-10 place-items-center rounded-full bg-red-50 text-xs font-black text-[#cd011e]">
+                            {p.first_name[0]}
+                            {p.last_name[0]}
+                          </span>
+                        )}
+                        <span>
+                          <b className="block text-xs">
+                            {p.first_name} {p.last_name}
+                          </b>
+                          <small className="text-[11px] text-slate-400">
+                            @{p.username}
+                          </small>
+                        </span>
+                      </button>
+                    </td>
+                    <td className="p-4 text-xs text-slate-600">
+                      âœ‰ã€€{p.email}
+                      <br />
+                      <span className="text-slate-400">
+                        âŒ•ã€€{p.phone || "Telefon eklenmedi"}
+                      </span>
+                    </td>
+                    <td className="p-4 text-xs">
+                      <b>{o?.name || "Ofis atanmamÄ±ÅŸ"}</b>
+                      <br />
+                      <span className="text-slate-400">
+                        {o ? `${o.city} / ${o.district}` : "â€”"}
+                      </span>
+                    </td>
+                    <td className="p-4 text-xs">
+                      â˜… {m?.star_rating || 0}/5
+                      <br />
+                      <span className="text-slate-400">
+                        {m?.messages_answered || 0} yanÄ±t
+                      </span>
+                    </td>
+                    <td className="p-4">
+                      <span
+                        className={`rounded-full px-3 py-1 text-[11px] font-black ${p.status === "active" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}
+                      >
+                        â—ã€€{statusName(p.status)}
+                      </span>
+                    </td>
+                    <td className="p-4">
+                      <div className="flex justify-end gap-2">
+                        <button
+                          onClick={() =>
+                            run(
+                              isStar
+                                ? "YÄ±ldÄ±zlardan Ã§Ä±karÄ±lÄ±yor"
+                                : "YÄ±ldÄ±zlara ekleniyor",
+                              () => star(p.id),
+                            )
+                          }
+                          className={`advisor-tap rounded-lg px-3 py-2 text-xs font-black text-white ${isStar ? "bg-amber-500 hover:bg-amber-600" : "bg-[#cd011e] hover:bg-[#a90019]"}`}
+                        >
+                          {isStar ? "â˜… Ã‡Ä±kar" : "â˜† YÄ±ldÄ±zlara Ekle"}
+                        </button>
+                        <button
+                          onClick={() => void showLogs(p)}
+                          className="advisor-tap rounded-lg bg-slate-700 px-3 py-2 text-xs font-black text-white hover:bg-slate-900"
+                        >
+                          Hareketleri GÃ¶r
+                        </button>
+                        <button
+                          onClick={() => showProfile(p)}
+                          className="advisor-tap rounded-lg bg-slate-200 px-3 py-2 text-xs font-black text-slate-700 hover:bg-slate-300"
+                        >
+                          GÃ¶rÃ¼ntÃ¼le
+                        </button>
+                        <button
+                          onClick={() => {
+                            if (confirm("DanÄ±ÅŸman Ã§Ã¶p kutusuna taÅŸÄ±nsÄ±n mÄ±?"))
+                              void run("DanÄ±ÅŸman Ã§Ã¶p kutusuna taÅŸÄ±nÄ±yor", () =>
+                                trash(p),
+                              );
+                          }}
+                          className="advisor-tap rounded-lg bg-rose-600 px-3 py-2 text-xs font-black text-white hover:bg-rose-700"
+                        >
+                          Ã‡Ã¶p Kutusu
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          {!rows.length && (
+            <div className="p-12 text-center text-sm text-slate-400">
+              Bu filtrelerle eÅŸleÅŸen danÄ±ÅŸman bulunmuyor.
+            </div>
+          )}
+          <p className="p-4 text-xs text-slate-400">
+            {rows.length} danÄ±ÅŸman gÃ¶steriliyor
+          </p>
+        </div>
+      </main>
+      {modal && (
+        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/45 p-4">
+          <article className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl">
+            <div className="flex items-start justify-between">
+              <div className="flex items-center gap-4">
+                {modal.avatar_url ? (
+                  <img
+                    src={modal.avatar_url}
+                    className="h-16 w-16 rounded-2xl object-cover"
+                  />
+                ) : (
+                  <span className="grid h-16 w-16 place-items-center rounded-2xl bg-red-50 text-xl font-black text-[#cd011e]">
+                    {modal.first_name[0]}
+                    {modal.last_name[0]}
+                  </span>
+                )}
+                <div>
+                  <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
+                    DANIÅMAN PROFÄ°LÄ°
+                  </p>
+                  <h2 className="mt-1 text-xl font-black">
+                    {modal.first_name} {modal.last_name}
+                  </h2>
+                  <p className="text-xs text-slate-400">@{modal.username}</p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setModal(null);
+                  setLogs(null);
+                }}
+                className="advisor-tap rounded-lg border border-slate-200 px-3 py-2 text-xs font-black"
+              >
+                Kapat
+              </button>
+            </div>
+            {logs ? (
+              <div className="mt-6 space-y-2">
+                {logs.length ? (
+                  logs.map((x, i) => (
+                    <div key={i} className="rounded-xl bg-slate-50 p-3 text-sm">
+                      <b>{x.action}</b>
+                      <p className="mt-1 text-xs text-slate-400">
+                        {new Date(x.created_at).toLocaleString("tr-TR")}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <p className="py-9 text-center text-sm text-slate-400">
+                    KayÄ±tlÄ± hareket bulunmuyor.
+                  </p>
+                )}
+              </div>
+            ) : (
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {[
+                  ["E-posta", modal.email],
+                  ["Telefon", modal.phone || "Eklenmedi"],
+                  ["Ofis", office(modal)?.name || "AtanmamÄ±ÅŸ"],
+                  [
+                    "Konum",
+                    office(modal)
+                      ? `${office(modal)?.city} / ${office(modal)?.district}`
+                      : "â€”",
+                  ],
+                  ["Hesap Durumu", statusName(modal.status)],
+                  [
+                    "Puan",
+                    `â˜… ${metrics.find((m) => m.advisor_id === modal.id)?.star_rating || 0}/5`,
+                  ],
+                ].map(([label, value]) => (
+                  <div key={label} className="rounded-xl bg-slate-50 p-4">
+                    <p className="text-[10px] font-black text-slate-400">
+                      {label}
+                    </p>
+                    <b className="mt-1 block text-sm">{value}</b>
+                  </div>
+                ))}
+              </div>
+            )}
+          </article>
+        </div>
+      )}
+      {busy && (
+        <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/35">
+          <div className="rounded-2xl bg-white p-8 text-center shadow-2xl">
+            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-[#cd011e]" />
+            <h2 className="mt-5 font-black">{busy}</h2>
+            <p className="mt-1 text-xs text-slate-400">LÃ¼tfen bekleyin.</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+function AdvisorsPage({
+  profiles,
+  offices,
+  members,
+  metrics,
+  stars,
+  refresh,
+  star,
+  trash,
+  create,
+}: {
+  profiles: Profile[];
+  offices: Office[];
+  members: { office_id: string; advisor_id: string }[];
+  metrics: AdvisorMetric[];
+  stars: { kind: string; entity_id: string }[];
+  refresh: () => Promise<void>;
+  star: (id: string) => void;
+  trash: (p: Profile) => void;
+  create: () => void;
+}) {
+  const [q, setQ] = useState("");
+  const [phone, setPhone] = useState("");
+  const [city, setCity] = useState("");
+  const [district, setDistrict] = useState("");
+  const [busy, setBusy] = useState("");
+  const [modal, setModal] = useState<Profile | null>(null);
+  const [logs, setLogs] = useState<any[] | null>(null);
+  const list = profiles.filter((p) => p.role === "advisor");
+  const office = (p: Profile) =>
+    offices.find((o) =>
+      members.some((m) => m.advisor_id === p.id && m.office_id === o.id),
+    );
+  const rows = list.filter((p) => {
+    const o = office(p);
+    return (
+      (p.first_name + " " + p.last_name)
+        .toLowerCase()
+        .includes(q.toLowerCase()) &&
+      (!phone || (p.phone || "").includes(phone)) &&
+      (!city || o?.city === city) &&
+      (!district || o?.district === district)
+    );
+  });
+  const cities = [...new Set(offices.map((o) => o.city))],
+    districts = [
+      ...new Set(
+        offices.filter((o) => !city || o.city === city).map((o) => o.district),
+      ),
+    ],
+    featured = stars
+      .filter((s) => s.kind === "advisor")
+      .map((s) => list.find((p) => p.id === s.entity_id))
+      .filter(Boolean) as Profile[];
+  const reload = async () => {
+    setBusy("DanÄ±ÅŸmanlar yenileniyor");
+    await refresh();
+    setBusy("");
+  };
+  const exp = () => {
+    setBusy("Excel hazÄ±rlanÄ±yor");
+    setTimeout(() => {
+      csv(
+        "realty-center-danismanlar",
+        rows.map((p) => ({
+          DanÄ±ÅŸman: p.first_name + " " + p.last_name,
+          Telefon: p.phone || "",
+          Eposta: p.email,
+          Ofis: office(p)?.name || "",
+        })),
+        ["DanÄ±ÅŸman", "Telefon", "Eposta", "Ofis"],
+      );
+      setBusy("");
+    }, 550);
+  };
+  const move = async (p: Profile) => {
+    if (!confirm("DanÄ±ÅŸman Ã§Ã¶p kutusuna taÅŸÄ±nsÄ±n mÄ±?")) return;
+    setBusy("Ã‡Ã¶p kutusuna taÅŸÄ±nÄ±yor");
+    await supabase
+      .from("profiles")
+      .update({ deleted_at: new Date().toISOString(), status: "departed" })
+      .eq("id", p.id);
+    await refresh();
+    setBusy("");
+  };
+  const showLogs = async (p: Profile) => {
+    setModal(p);
+    setLogs(null);
+    const { data } = await supabase
+      .from("audit_logs")
+      .select("action,created_at")
+      .eq("entity_id", p.id)
+      .order("created_at", { ascending: false })
+      .limit(30);
+    setLogs(data || []);
+  };
+  return (
+    <div className="min-h-screen bg-[#f7f9fc] p-5 text-slate-900 lg:p-8">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="flex items-end justify-between border-b border-slate-100 pb-5">
+          <div>
+            <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
+              REALTY CENTER / YÃ–NETÄ°M
+            </p>
+            <h1 className="mt-1 text-2xl font-black">DanÄ±ÅŸman YÃ¶netimi</h1>
+            <p className="mt-1 text-sm text-slate-500">
+              DanÄ±ÅŸman profil, ofis ve aktivite kayÄ±tlarÄ±nÄ± yÃ¶netin.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={reload}
+              className="tap rounded-xl border bg-white px-4 py-3 text-xs font-black"
+            >
+              <RefreshCw size={15} className="mr-2 inline" />
+              Yenile
+            </button>
+            <button
+              onClick={exp}
+              className="tap rounded-xl border bg-white px-4 py-3 text-xs font-black"
+            >
+              <Download size={15} className="mr-2 inline" />
+              Excel'e Aktar
+            </button>
+            <button
+              onClick={create}
+              className="tap rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-black text-white"
+            >
+              <Plus size={15} className="mr-2 inline" />
+              DanÄ±ÅŸman Ekle
+            </button>
+          </div>
+        </div>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {[
+            ["Toplam DanÄ±ÅŸman", list.length],
+            [
+              "Aktif DanÄ±ÅŸman",
+              list.filter((p) => p.status === "active").length,
+            ],
+            [
+              "YanÄ±tlanan Mesaj",
+              metrics.reduce((a, m) => a + m.messages_answered, 0),
+            ],
+            ["Ofisli DanÄ±ÅŸman", list.filter((p) => office(p)).length],
+          ].map(([l, n]) => (
+            <div key={String(l)} className="rounded-xl bg-white p-4 shadow-sm">
+              <p className="text-xs font-bold text-slate-400">{l}</p>
+              <b className="text-xl">{n}</b>
+            </div>
+          ))}
+        </div>
+        <div className="mt-5 rounded-2xl bg-[#cd011e] p-5 text-white">
+          <p className="text-[10px] font-black tracking-[.18em]">
+            REALTY CENTER YILDIZLARIMIZ
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {featured.length ? (
+              featured.map((p) => (
+                <span
+                  className="rounded-full border border-white/30 px-3 py-1 text-xs font-bold"
+                  key={p.id}
+                >
+                  â˜… {p.first_name} {p.last_name}
+                </span>
+              ))
+            ) : (
+              <span className="text-sm text-red-100">
+                HenÃ¼z yÄ±ldÄ±z danÄ±ÅŸman seÃ§ilmedi.
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            className="rounded-xl border bg-white px-4 py-3 text-sm"
+            placeholder="Ad soyad ara"
+          />
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="rounded-xl border bg-white px-4 py-3 text-sm"
+            placeholder="Telefon ara"
+          />
+          <select
+            value={city}
+            onChange={(e) => {
+              setCity(e.target.value);
+              setDistrict("");
+            }}
+            className="rounded-xl border bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m iller</option>
+            {cities.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+          <select
+            value={district}
+            onChange={(e) => setDistrict(e.target.value)}
+            className="rounded-xl border bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m ilÃ§eler</option>
+            {districts.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+          <button
+            onClick={() => {
+              setQ("");
+              setPhone("");
+              setCity("");
+              setDistrict("");
+            }}
+            className="tap rounded-xl border bg-white px-4 py-3 text-xs font-black"
+          >
+            Filtreleri temizle
+          </button>
+        </div>
+        <div className="mt-4 overflow-x-auto rounded-2xl bg-white shadow-sm">
+          <table className="w-full min-w-[1050px] text-left">
+            <thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500">
+              <tr>
+                <th className="p-4">DanÄ±ÅŸman</th>
+                <th className="p-4">Ä°letiÅŸim / Ofis</th>
+                <th className="p-4">Puan / Mesaj</th>
+                <th className="p-4">Durum</th>
+                <th className="p-4 text-right">Ä°ÅŸlemler</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((p) => {
+                const o = office(p),
+                  m = metrics.find((x) => x.advisor_id === p.id),
+                  isStar = stars.some(
+                    (x) => x.kind === "advisor" && x.entity_id === p.id,
+                  );
+                return (
+                  <tr key={p.id} className="border-t text-sm">
+                    <td className="p-4">
+                      <div className="flex items-center gap-3">
+                        {p.avatar_url ? (
+                          <img
+                            src={p.avatar_url}
+                            className="h-10 w-10 rounded-full object-cover"
+                          />
+                        ) : (
+                          <span className="grid h-10 w-10 place-items-center rounded-full bg-red-50 text-xs font-black text-[#cd011e]">
+                            {p.first_name[0]}
+                            {p.last_name[0]}
+                          </span>
+                        )}
+                        <div>
+                          <b>
+                            {p.first_name} {p.last_name}
+                          </b>
+                          <p className="text-xs text-slate-400">
+                            @{p.username}
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="p-4 text-xs">
+                      {p.phone || "Telefon yok"}
+                      <br />
+                      <span className="text-slate-400">
+                        {o
+                          ? o.name + " Â· " + o.city + "/" + o.district
+                          : "Ofis atanmamÄ±ÅŸ"}
+                      </span>
+                    </td>
+                    <td className="p-4 text-xs">
+                      â˜… {m?.star_rating || 0}/5
+                      <br />
+                      {m?.messages_answered || 0} yanÄ±t
+                    </td>
+                    <td className="p-4 text-xs">{statusName(p.status)}</td>
+                    <td className="p-4">
+                      <div className="flex justify-end gap-2">
+                        <button
+                          onClick={() => star(p.id)}
+                          className="tap rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-black text-amber-700"
+                        >
+                          {isStar ? "â˜… Ã‡Ä±kar" : "â˜† YÄ±ldÄ±zlara Ekle"}
+                        </button>
+                        <button
+                          onClick={() => showLogs(p)}
+                          className="tap rounded-lg border px-3 py-2 text-xs font-black"
+                        >
+                          Hareketleri GÃ¶r
+                        </button>
+                        <button
+                          onClick={() => {
+                            setModal(p);
+                            setLogs(null);
+                          }}
+                          className="tap rounded-lg border px-3 py-2 text-xs font-black"
+                        >
+                          GÃ¶rÃ¼ntÃ¼le
+                        </button>
+                        <button
+                          onClick={() => move(p)}
+                          className="tap rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-xs font-black text-rose-700"
+                        >
+                          Ã‡Ã¶p Kutusu
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {modal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/40 p-4">
+          <div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl">
+            <div className="flex justify-between">
+              <div>
+                <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
+                  DANIÅMAN PROFÄ°LÄ°
+                </p>
+                <h2 className="mt-1 text-xl font-black">
+                  {modal.first_name} {modal.last_name}
+                </h2>
+              </div>
+              <button
+                onClick={() => {
+                  setModal(null);
+                  setLogs(null);
+                }}
+                className="tap rounded-lg border px-3 py-2 text-xs font-black"
+              >
+                Kapat
+              </button>
+            </div>
+            {logs ? (
+              <div className="mt-5 space-y-2">
+                {logs.length ? (
+                  logs.map((x, i) => (
+                    <div key={i} className="rounded-xl bg-slate-50 p-3 text-sm">
+                      <b>{x.action}</b>
+                      <p className="text-xs text-slate-400">
+                        {new Date(x.created_at).toLocaleString("tr-TR")}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <p className="py-8 text-center text-sm text-slate-400">
+                    KayÄ±tlÄ± hareket bulunmuyor.
+                  </p>
+                )}
+              </div>
+            ) : (
+              <div className="mt-5 grid gap-3 md:grid-cols-2">
+                {[
+                  ["Ad", modal.first_name],
+                  ["Soyad", modal.last_name],
+                  ["E-posta", modal.email],
+                  ["Telefon", modal.phone || "Eklenmedi"],
+                  ["Ofis", office(modal)?.name || "AtanmamÄ±ÅŸ"],
+                  ["Durum", statusName(modal.status)],
+                ].map(([l, v]) => (
+                  <div key={l} className="rounded-xl bg-slate-50 p-3">
+                    <p className="text-[10px] font-black text-slate-400">{l}</p>
+                    <b className="text-sm">{v}</b>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      {busy && (
+        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/35">
+          <div className="rounded-2xl bg-white p-7 text-center shadow-2xl">
+            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-[#cd011e]" />
+            <h2 className="mt-4 font-black">{busy}</h2>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+function PanelFrame({
+  page,
+  setPage,
+  children,
+}: {
+  page: Page;
+  setPage: (p: Page) => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-screen bg-[#f7f9fc]">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-72 border-r border-slate-200 bg-white lg:block">
+        <div className="border-b border-slate-100 px-6 py-5">
+          <p className="text-xs font-black tracking-[.2em] text-[#cd011e]">
+            REALTY CENTER
+          </p>
+          <p className="mt-1 text-lg font-black">Admin Paneli</p>
+        </div>
+        <nav className="p-4">
+          {groups.map((g) => (
+            <div key={g.title} className="mb-5">
+              <p className="mb-2 px-3 text-[10px] font-black tracking-wider text-slate-400">
+                {g.title}
+              </p>
+              {g.items.map((i) => {
+                const Icon = i.icon;
+                return (
+                  <button
+                    key={i.id}
+                    onClick={() => setPage(i.id)}
+                    className={`tap mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white" : "text-slate-600 hover:bg-slate-50"}`}
+                  >
+                    <Icon size={18} />
+                    {i.label}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+        </nav>
+      </aside>
+      <main className="min-h-screen lg:pl-72">{children}</main>
+    </div>
+  );
+}
 
-JHOˆ
-ˆ]ˆÙ^O^Ú_HÛ\ÜÓ˜[YOHœ›İ[™Y^™Ë\Û]KMLLÈ^\ÛH‚ˆŞ˜Xİ[ÛŸOØ‚ˆÛ\ÜÓ˜[YOH›]LH^^È^\Û]KM‚ˆÛ™]È]J˜Ü™X]YØ]
-KÓØØ[Tİš[™Ê‹UˆŠ_BˆÜ‚ˆÙ]‚ˆ
-JBˆ
-Hˆ
-ˆÛ\ÜÓ˜[YOHœKNH^XÙ[\ˆ^\ÛH^\Û]KM‚ˆØ^q,]1,H\™ZÙ][[›]^[Ü‹‚ˆÜ‚ˆ
-_BˆÙ]‚ˆ
-Hˆ
-ˆ]ˆÛ\ÜÓ˜[YOH›]MˆÜšYØ\LÈÛN™ÜšYXÛÛËLˆ‚ˆÖÂˆÈ‘K\ÜİH‹[Ù[™[XZ[KˆÈ•[Y›Ûˆ‹[Ù[œÛ™H‘ZÛ[›YYH—KˆÈ“Ùš\È‹Ù™šXÙJ[Ù[
-OË›˜[YH][›X[q,qgÈ—KˆÂˆ’ÛÛ[H‹ˆÙ™šXÙJ[Ù[
-BˆÈ	ÛÙ™šXÙJ[Ù[
-OË˜Ú]_HÈ	ÛÙ™šXÙJ[Ù[
-OË™\İšXİXˆˆ¸ %‹ˆKˆÈ’\Ø\\[]H‹İ]\Ó˜[YJ[Ù[œİ]\ÊWKˆÂˆ”X[ˆ‹ˆ8¦!H	ÛY]šXÜË™š[™
-
-JHOˆK˜Yš\ÛÜ—ÚYOOH[Ù[šY
-OËœİ\—Ü˜][™ÈKÍXˆKˆK›X\
-
-ÛX™[˜[YWJHOˆ
-ˆ]ˆÙ^O^ÛX™[HÛ\ÜÓ˜[YOHœ›İ[™Y^™Ë\Û]KMLM‚ˆÛ\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ^\Û]KM‚ˆÛX™[BˆÜ‚ˆˆÛ\ÜÓ˜[YOH›]LH›ØÚÈ^\ÛHİ˜[Y_OØ‚ˆÙ]‚ˆ
-J_BˆÙ]‚ˆ
-_BˆØ\XÛO‚ˆÙ]‚ˆ
-_BˆØ\ŞH	‰ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH™š^Y[œÙ]L‹VÌLŒH›^][\ËXÙ[\ˆ\İYKXÙ[\ˆ™Ë\Û]KNMLÌÍH‚ˆ]ˆÛ\ÜÓ˜[YOHœ›İ[™YL™Ë]Ú]HN^XÙ[\ˆÚYİËL‚ˆ]ˆÛ\ÜÓ˜[YOH›^X]]ÈLLËLL[š[X]K\Ü[ˆ›İ[™YY[›Ü™\‹M›Ü™\‹\Û]KLŒ›Ü™\‹]VÈØÙLYWHˆÏ‚ˆˆÛ\ÜÓ˜[YOH›]MH›ÛX›XÚÈØ\Ş_OÚ‚ˆÛ\ÜÓ˜[YOH›]LH^^È^\Û]KM“0ï™[ˆ™ZÛ^Z[‹Ü‚ˆÙ]‚ˆÙ]‚ˆ
-_BˆÙ]‚ˆ
-NÂŸB™[˜İ[ÛˆYš\ÛÜœÔYÙJÂˆ›Ùš[\ËˆÙ™šXÙ\ËˆY[X™\œËˆY]šXÜËˆİ\œËˆ™Yœ™\Úˆİ\‹ˆ˜\ÚˆÜ™X]KŸNˆÂˆ›Ùš[\Îˆ›Ùš[V×NÂˆÙ™šXÙ\ÎˆÙ™šXÙV×NÂˆY[X™\œÎˆÈÙ™šXÙWÚYˆİš[™ÎÈYš\ÛÜ—ÚYˆİš[™ÈV×NÂˆY]šXÜÎˆYš\ÛÜ“Y]šXÖ×NÂˆİ\œÎˆÈÚ[™ˆİš[™ÎÈ[]WÚYˆİš[™ÈV×NÂˆ™Yœ™\Úˆ
-
-HOˆ›ÛZ\ÙO›ÚYÂˆİ\ˆ
-Yˆİš[™ÊHOˆ›ÚYÂˆ˜\Úˆ
-ˆ›Ùš[JHOˆ›ÚYÂˆÜ™X]Nˆ
-
-HOˆ›ÚYÂŸJHÂˆÛÛœİÜKÙ]WHH\ÙTİ]JˆŠNÂˆÛÛœİÜÛ™KÙ]Û™WHH\ÙTİ]JˆŠNÂˆÛÛœİØÚ]KÙ]Ú]WHH\ÙTİ]JˆŠNÂˆÛÛœİÙ\İšXİÙ]\İšXİHH\ÙTİ]JˆŠNÂˆÛÛœİØ\ŞKÙ]\ŞWHH\ÙTİ]JˆŠNÂˆÛÛœİÛ[Ù[Ù][Ù[HH\ÙTİ]O›Ùš[H[Š[
-NÂˆÛÛœİÛÙÜËÙ]ÙÜ×HH\ÙTİ]O[V×H[Š[
-NÂˆÛÛœİ\İH›Ùš[\Ë™š[\Š
-
-HOˆœ›ÛHOOH˜Yš\ÛÜˆŠNÂˆÛÛœİÙ™šXÙHH
-ˆ›Ùš[JHO‚ˆÙ™šXÙ\Ë™š[™
-
-ÊHO‚ˆY[X™\œËœÛÛYJ
-JHOˆK˜Yš\ÛÜ—ÚYOOHšY	‰ˆK›Ù™šXÙWÚYOOHËšY
-Kˆ
-NÂˆÛÛœİ›İÜÈH\İ™š[\Š
-
-HOˆÂˆÛÛœİÈHÙ™šXÙJ
-NÂˆ™]\›ˆ
-ˆ
-™š\œİÛ˜[YH
-Èˆˆ
-È›\İÛ˜[YJBˆÓİÙ\Ø\ÙJ
-Bˆš[˜ÛY\ÊKÓİÙ\Ø\ÙJ
-JH	‰‚ˆ
-\Û™H
-œÛ™HˆŠKš[˜ÛY\ÊÛ™JJH	‰‚ˆ
-XÚ]HÏË˜Ú]HOOHÚ]JH	‰‚ˆ
-Y\İšXİÏË™\İšXİOOH\İšXİ
-Bˆ
-NÂˆJNÂˆÛÛœİÚ]Y\ÈHË‹‹›™]ÈÙ]
-Ù™šXÙ\Ë›X\
-
-ÊHOˆË˜Ú]JJWKˆ\İšXİÈHÂˆ‹‹›™]ÈÙ]
-ˆÙ™šXÙ\Ë™š[\Š
-ÊHOˆXÚ]HË˜Ú]HOOHÚ]JK›X\
-
-ÊHOˆË™\İšXİ
-Kˆ
-KˆKˆ™X]\™YHİ\œÂˆ™š[\Š
-ÊHOˆËšÚ[™OOH˜Yš\ÛÜˆŠBˆ›X\
-
-ÊHOˆ\İ™š[™
-
-
-HOˆšYOOHË™[]WÚY
-JBˆ™š[\Š›ÛÛX[ŠH\È›Ùš[V×NÂˆÛÛœİ™[ØYH\Ş[˜È
-
-HOˆÂˆÙ]\ŞJ‘[±,qgÛX[›\ˆY[š[[š^[ÜˆŠNÂˆ]ØZ]™Yœ™\Ú
-
-NÂˆÙ]\ŞJˆŠNÂˆNÂˆÛÛœİ^H
-
-HOˆÂˆÙ]\ŞJ‘^Ù[^±,\›[±,^[ÜˆŠNÂˆÙ][Y[İ]
-
-
-HOˆÂˆÜİŠˆœ™X[KXÙ[\‹Y[š\ÛX[›\ˆ‹ˆ›İÜË›X\
-
-
-HOˆ
-Âˆ[±,qgÛX[ˆ™š\œİÛ˜[YH
-Èˆˆ
-È›\İÛ˜[YKˆ[Y›ÛˆœÛ™Hˆ‹ˆ\ÜİNˆ™[XZ[ˆÙš\ÎˆÙ¶ÓMm¢G§²ÚîÆ­yĞ€€€€€€€€€€€€€€€´€ôµ•ÑÉ¥Ì¹™¥¹ ¡à¤€ôøà¹…‘Ù¥Í½É}¥€ôôôÀ¹¥¤°(€€€€€€€€€€€€€€€€€¥ÍMÑ…È€ôÍÑ…ÉÌ¹Í½µ” (€€€€€€€€€€€€€€€€€€€€¡à¤€ôøà¹­¥¹€ôôô€‰…‘Ù¥Í½Èˆ€˜˜à¹•¹Ñ¥Ñå}¥€ôôôÀ¹¥°(€€€€€€€€€€€€€€€€€€¤ì(€€€€€€€€€€€€€€€É•ÑÕÉ¸€ (€€€€€€€€€€€€€€€€€€ñÑÈ­•äõíÀ¹¥‘ô±…ÍÍ9…µ”ô‰‰½É‘•ÈµĞÑ•áĞµÍ´ˆø(€€€€€€€€€€€€€€€€€€€€ñÑ±…ÍÍ9…µ”ô‰À´Ğˆø(€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´Ìˆø(€€€€€€€€€€€€€€€€€€€€€€€íÀ¹…Ù…Ñ…É}ÕÉ°€ü€ (€€€€€€€€€€€€€€€€€€€€€€€€€€ñ¥µœ(€€€€€€€€€€€€€€€€€€€€€€€€€€€ÍÉŒõíÀ¹…Ù…Ñ…É}ÕÉ±ô(€€€€€€€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰ ´ÄÀÜ´ÄÀÉ½Õ¹‘•µ™Õ±°½‰©•Ğµ½Ù•Èˆ(€€€€€€€€€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€¤€è€ (€€€€€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰É¥ ´ÄÀÜ´ÄÀÁ±…”µ¥Ñ•µÌµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµÉ•´ÔÀÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµlÀÄÅ•tˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€íÀ¹™¥ÉÍÑ}¹…µ•lÁuô(€€€€€€€€€€€€€€€€€€€€€€€€€€€íÀ¹±…ÍÑ}¹…µ•lÁuô(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€€€€€€€¥ô(€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€íÀ¹™¥ÉÍÑ}¹…µ•ôíÀ¹±…ÍÑ}¹…µ•ô(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌÑ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€íÀ¹ÕÍ•É¹…µ•ô(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€€€ñÑ±…ÍÍ9…µ”ô‰À´ĞÑ•áĞµáÌˆø(€€€€€€€€€€€€€€€€€€€€€íÀ¹Á¡½¹”ñğ€‰Q•±•™½¸å½¬‰ô(€€€€€€€€€€€€€€€€€€€€€€ñ‰È€¼ø(€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€€€€€€€€€€€€€í¼(€€€€€€€€€€€€€€€€€€€€€€€€€€ü¼¹¹…µ”€¬€ˆƒ
-Ü€ˆ€¬¼¹¥Ñä€¬€ˆ¼ˆ€¬¼¹‘¥ÍÑÉ¥Ğ(€€€€€€€€€€€€€€€€€€€€€€€€€€è€‰=™¥Ì…Ñ…¹µ…·Ç|‰ô(€€€€€€€€€€€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€€€ñÑ±…ÍÍ9…µ”ô‰À´ĞÑ•áĞµáÌˆø(€€€€€€€€€€€€€€€€€€€€€ƒŠbí´ü¹ÍÑ…É}É…Ñ¥¹œñğ€Áô¼Ô(€€€€€€€€€€€€€€€€€€€€€€ñ‰È€¼ø(€€€€€€€€€€€€€€€€€€€€€í´ü¹µ•ÍÍ…•Í}…¹Íİ•É•ñğ€Áôå…»ÅĞ(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€€€ñÑ±…ÍÍ9…µ”ô‰À´ĞÑ•áĞµáÌˆùíÍÑ…ÑÕÍ9…µ”¡À¹ÍÑ…ÑÕÌ¥ôğ½Ñø(€€€€€€€€€€€€€€€€€€€€ñÑ±…ÍÍ9…µ”ô‰À´Ğˆø(€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à©ÕÍÑ¥™äµ•¹…À´Èˆø(€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøÍÑ…È¡À¹¥¥ô(€€€€€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•È‰½É‘•Èµ…µ‰•È´ÈÀÀ‰œµ…µ‰•È´ÔÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµ…µ‰•È´ÜÀÀˆ(€€€€€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€€€€í¥ÍMÑ…È€ü€‹ŠbƒÅ­…Èˆ€è€‹ŠbgÅ±“Åé±…É„­±”‰ô(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøÍ¡½İ1½Ì¡À¥ô(€€€€€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•ÈÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€€€€!…É•­•Ñ±•É¤ÙÈ(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøì(€€€€€€€€€€€€€€€€€€€€€€€€€€€Í•Ñ5½‘…°¡À¤ì(€€€€€€€€€€€€€€€€€€€€€€€€€€€Í•Ñ1½Ì¡¹Õ±°¤ì(€€€€€€€€€€€€€€€€€€€€€€€€€õô(€€€€€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•ÈÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€€€€ÙËñ¹Óñ±”(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøµ½Ù”¡À¥ô(€€€€€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÉ½Í”´ÈÀÀ‰œµÉ½Í”´ÔÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ½Í”´ÜÀÀˆ(€€€€€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€€€€ƒÙÀ-ÕÑÕÍÔ(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€ğ½ÑÈø(€€€€€€€€€€€€€€€€¤ì(€€€€€€€€€€€€€ô¥ô(€€€€€€€€€€€€ğ½Ñ‰½‘äø(€€€€€€€€€€ğ½Ñ…‰±”ø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½‘¥Øø(€€€€€íµ½‘…°€˜˜€ (€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥á•¥¹Í•Ğ´ÀèµlÄÀÁt™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´äÔÀ¼ĞÀÀ´Ğˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ…àµ µläÁÙ¡tÜµ™Õ±°µ…àµÜ´Éá°½Ù•É™±½Üµäµ…ÕÑ¼É½Õ¹‘•´Éá°‰œµİ¡¥Ñ”À´ØÍ¡…‘½Ü´Éá°ˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸Äá•µtÑ•áĞµlÀÄÅ•tˆø(€€€€€€€€€€€€€€€€€9'y58AI=Á3À(€€€€€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€€€€€íµ½‘…°¹™¥ÉÍÑ}¹…µ•ôíµ½‘…°¹±…ÍÑ}¹…µ•ô(€€€€€€€€€€€€€€€€ğ½ Èø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøì(€€€€€€€€€€€€€€€€€Í•Ñ5½‘…°¡¹Õ±°¤ì(€€€€€€€€€€€€€€€€€Í•Ñ1½Ì¡¹Õ±°¤ì(€€€€€€€€€€€€€€€õô(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•ÈÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€-…Á…Ğ(€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³R¶Æöw2ò€¢ÆF—b6Æ74æÖSÒ&×BÓR76R×’Ó"#à¢¶Æöw2æÆVæwF‚ò€¢Æöw2æÖ‚‡‚Â’’Óâ€¢ÆF—b¶W“×¶—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&r×6ÆFRÓSÓ2FW‡B×6Ò#à¢Æ#ç·‚æ7F–öçÓÂö#à¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓC#à¢¶æWrFFR‡‚æ7&VFVEöB’çFôÆö6ÆU7G&–ær‚'G"ÕE""—Ğ¢Â÷à¢ÂöF—cà¢’¢’¢€¢Ç6Æ74æÖSÒ'’Ó‚FW‡BÖ6VçFW"FW‡B×6ÒFW‡B×6ÆFRÓC#à¢¶œKFÌK†&V¶WB'VÇVæ×W–÷"à¢Â÷à¢—Ğ¢ÂöF—cà¢’¢€¢ÆF—b6Æ74æÖSÒ&×BÓRw&–BvÓ2ÖC¦w&–BÖ6öÇ2Ó"#à¢µ°¢²$B"ÂÖöFÂæf—'7EöæÖUÒÀ¢²%6÷–B"ÂÖöFÂæÆ7EöæÖUÒÀ¢²$R×÷7F"ÂÖöFÂæVÖ–ÅÒÀ¢²%FVÆVföâ"ÂÖöFÂç†öæRÇÂ$V¶ÆVæÖVF’%ÒÀ¢²$öf—2"Âöff–6R†ÖöFÂ“òææÖRÇÂ$FæÖÜKYò%ÒÀ¢²$GW'VÒ"Â7FGW4æÖR†ÖöFÂç7FGW2•ÒÀ¢ÒæÖ‚…¶ÂÂeÒ’Óâ€¢ÆF—b¶W“×¶ÇÒ6Æ74æÖSÒ'&÷VæFVB×†Â&r×6ÆFRÓSÓ2#à¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×6ÆFRÓC#ç¶ÇÓÂ÷à¢Æ"6Æ74æÖSÒ'FW‡B×6Ò#ç·gÓÂö#à¢ÂöF—cà¢’—Ğ¢ÂöF—cà¢—Ğ¢ÂöF—cà¢ÂöF—cà¢—Ğ¢¶'W7’bb€¢ÆF—b6Æ74æÖSÒ&f—†VB–ç6WBÓ¢Õ³ÒfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&r×6ÆFRÓ“Só3R#à¢ÆF—b6Æ74æÖSÒ'&÷VæFVBÓ'†Â&r×v†—FRÓrFW‡BÖ6VçFW"6†F÷rÓ'†Â#à¢ÆF—b6Æ74æÖSÒ&×‚ÖWFò‚ÓrÓæ–ÖFR×7–â&÷VæFVBÖgVÆÂ&÷&FW"ÓB&÷&FW"×6ÆFRÓ#&÷&FW"×BÕ²66CUÒ"óà¢Æƒ"6Æ74æÖSÒ&×BÓBföçBÖ&Æ6²#ç¶'W7—ÓÂöƒ#à¢ÂöF—cà¢ÂöF—cà¢—Ğ¢ÂöF—cà¢“°§Ğ¦gVæ7F–öâæVÄg&ÖR‡°¢vRÀ¢6WEvRÀ¢6†–ÆG&VâÀ§Ó¢°¢vS¢vS°¢6WEvS¢‡¢vR’Óâfö–C°¢6†–ÆG&Vã¢&V7Bå&V7DæöFS°§Ò’°¢&WGW&â€¢ÆF—b6Æ74æÖSÒ&Ö–âÖ‚×67&VVâ&rÕ²6cvc–f5Ò#à¢Æ6–FR6Æ74æÖSÒ&f—†VB–ç6WB×’ÓÆVgBÓ¢ÓC†–FFVârÓs"&÷&FW"×"&÷&FW"×6ÆFRÓ#&r×v†—FRÆs¦&Æö6²#à¢ÆF—b6Æ74æÖSÒ&&÷&FW"Ö"&÷&FW"×6ÆFRÓ‚Ób’ÓR#à¢Ç6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡BÕ²66CUÒ#à¢$TÅE’4TåDU ¢Â÷à¢Ç6Æ74æÖSÒ&×BÓFW‡BÖÆrföçBÖ&Æ6²#äFÖ–âæVÆ“Â÷à¢ÂöF—cà¢Ææb6Æ74æÖSÒ'ÓB#à¢¶w&÷W2æÖ‚†r’Óâ€¢ÆF—b¶W“×¶rçF—FÆWÒ6Æ74æÖSÒ&Ö"ÓR#à¢Ç6Æ74æÖSÒ&Ö"Ó"‚Ó2FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW"FW‡B×6ÆFRÓC#à¢¶rçF—FÆWĞ¢Â÷à¢¶ræ—FV×2æÖ‚†’’Óâ°¢6öç7B–6öâÒ’æ–6öã°¢&WGW&â€¢Æ'WGFöà¢¶W“×¶’æ–GĞ¢öä6Æ–6³×²‚’Óâ6WEvR†’æ–B—Ğ¢6Æ74æÖS×¶FÖ"ÓfÆW‚rÖgVÆÂ—FV×2Ö6VçFW"vÓ2&÷VæFVB×†Â‚Ó2’Ó2FW‡BÖÆVgBFW‡B×6ÒföçBÖ&öÆBG·vRÓÓÒ’æ–Bò&&rÕ²66CUÒFW‡B×v†—FR"¢'FW‡B×6ÆFRÓc†÷fW#¦&r×6ÆFRÓS'ÖĞ¢à¢Ä–6öâ6—¦S×³‡Òóà¢¶’æÆ&VÇĞ¢Âö'WGFöãà¢“°¢Ò—Ğ¢ÂöF—cà¢’—Ğ¢Âöæcà¢Âö6–FSà¢ÆÖ–â6Æ74æÖSÒ&Ö–âÖ‚×67&VVâÆs§ÂÓs"#ç¶6†–ÆG&VçÓÂöÖ–ãà¢ÂöF—cà¢“°§Ğ ¦gVæ7F–öâW6W'5vR‡°¢&öf–ÆW2À¢öff–6W2À¢7&VFRÀ¢&Vg&W6‚À§Ó¢°¢&öf–ÆW3¢&öf–ÆUµÓ°¢öff–6W3¢öff–6UµÓ°¢7&VFS¢‚’Óâfö–C°¢&Vg&W6ƒ¢‚’Óâfö–BÂ&öÖ—6SÇfö–Cã°§Ò’°¢6öç7B·Â6WEÒÒW6U7FFR‚""“°¢6öç7B·"Â6WE%ÒÒW6U7FFR‚&ÆÂ"“°¢6öç7B·2Â6WE5ÒÒW6U7FFR‚&ÆÂ"“°¢6öç7B¶'W7’Â6WD'W7•ÒÒW6U7FFR†fÇ6R“°¢6öç7B·6VÆV7FVBÂ6WE6VÆV7FVEÒÒW6U7FFSÅ&öf–ÆRÂçVÆÃâ†çVÆÂ“°¢6öç7B·6f–ærÂ6WE6f–æuÒÒW6U7FFR†fÇ6R“°¢6öç7B¶'W7•FW‡BÂ6WD'W7•FW‡EÒÒW6U7FFR‚""“°¢6öç7B&÷w2Ò&öf–ÆW2æf–ÇFW"€¢‡’Óà¢‡æf—'7EöæÖR²""²æÆ7EöæÖR²""²çW6W&æÖR²""²æVÖ–Â¢çFôÆ÷vW$66R‚¢æ–æ6ÇVFW2‡çFôÆ÷vW$66R‚’’b`¢‡"ÓÓÒ&ÆÂ"ÇÂç&öÆRÓÓÒ"’b`¢‡2ÓÓÒ&ÆÂ"ÇÂç7FGW2ÓÓÒ2’À¢“°¢6öç7B7F—fRÒ&öf–ÆW2æf–ÇFW"‚‡’Óâç7FGW2ÓÓÒ&7F—fR"’æÆVæwFƒ°¢6öç7B'VâÒ‚’Óâ°¢6WD'W7•FW‡B‚$W†6VÂ†¬K&ÆìK–÷""“°¢6WD'W7’‡G'VR“°¢6WEF–ÖV÷WB‚‚’Óâ°¢77b€¢'&VÇG’Ö6VçFW"Ö·VÆÆæ–6–Æ""À¢&÷w2æÖ‚‡’Óâ‡°¢·VÆÆìK<K¢æf—'7EöæÖR²""²æÆ7EöæÖRÀ¢$·VÆÆìK<KLK#¢çW6W&æÖRÀ¢´Ó[h‘éì¶»§q«^u"suspended">AskÄ±ya alÄ±ndÄ±</option>
+function UsersPage({
+  profiles,
+  offices,
+  create,
+  refresh,
+}: {
+  profiles: Profile[];
+  offices: Office[];
+  create: () => void;
+  refresh: () => void | Promise<void>;
+}) {
+  const [q, setQ] = useState("");
+  const [r, setR] = useState("all");
+  const [s, setS] = useState("all");
+  const [busy, setBusy] = useState(false);
+  const [selected, setSelected] = useState<Profile | null>(null);
+  const [saving, setSaving] = useState(false);
+  const [busyText, setBusyText] = useState("");
+  const rows = profiles.filter(
+    (p) =>
+      (p.first_name + " " + p.last_name + " " + p.username + " " + p.email)
+        .toLowerCase()
+        .includes(q.toLowerCase()) &&
+      (r === "all" || p.role === r) &&
+      (s === "all" || p.status === s),
+  );
+  const active = profiles.filter((p) => p.status === "active").length;
+  const run = () => {
+    setBusyText("Excel hazÄ±rlanÄ±yor");
+    setBusy(true);
+    setTimeout(() => {
+      csv(
+        "realty-center-kullanicilar",
+        rows.map((p) => ({
+          KullanÄ±cÄ±: p.first_name + " " + p.last_name,
+          "KullanÄ±cÄ± AdÄ±": p.username,
+          "E-posta": p.email,
+          Rol: roleName(p.role),
+          Durum: statusName(p.status),
+          Telefon: p.phone || "",
+        })),
+        ["KullanÄ±cÄ±", "KullanÄ±cÄ± AdÄ±", "E-posta", "Rol", "Durum", "Telefon"],
+      );
+      setBusy(false);
+    }, 650);
+  };
+  const reload = async () => {
+    setBusyText("KullanÄ±cÄ±lar yenileniyor");
+    setBusy(true);
+    await refresh();
+    setBusy(false);
+  };
+  if (selected)
+    return (
+      <UserEditPage
+        profile={selected}
+        cancel={() => setSelected(null)}
+        done={async () => {
+          await refresh();
+          setSelected(null);
+        }}
+      />
+    );
+  return (
+    <div className="min-h-screen bg-[#f7f9fc] text-slate-900">
+      <style>{`.tap{transition:transform .15s ease,box-shadow .15s ease}.tap:active{transform:scale(.96) translateY(1px);box-shadow:none}.tap:hover{box-shadow:0 8px 18px #0f172215}`}</style>
+      <header className="flex h-16 items-center justify-between border-b border-slate-100 bg-white px-5 lg:px-8">
+        <span className="hidden h-9 w-72 items-center rounded-lg border border-slate-200 bg-slate-50 px-3 text-xs text-slate-400 md:flex">
+          <Search size={15} className="mr-2" /> Ä°lan, kullanÄ±cÄ±, ofis ara...
+        </span>
+        <div className="flex items-center gap-3">
+          <span className="h-2 w-2 rounded-full bg-[#cd011e]" />
+          <span className="grid h-9 w-9 place-items-center rounded-full bg-[#cd011e] text-xs font-black text-white">
+            AR
+          </span>
+          <span className="hidden text-xs font-bold sm:block">
+            Admin
+            <br />
+            <i className="font-normal text-slate-400">YÃ¶netici</i>
+          </span>
+        </div>
+      </header>
+      <main className="mx-auto max-w-[1500px] p-5 lg:p-8">
+        <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
+              REALTY CENTERã€€â€ºã€€YÃ–NETÄ°M
+            </p>
+            <h1 className="mt-1 text-2xl font-black">KullanÄ±cÄ±lar</h1>
+            <p className="mt-1 text-sm text-slate-500">
+              TÃ¼m hesaplarÄ± rol, durum ve iletiÅŸim bilgileriyle yÃ¶netin.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={reload}
+              className="tap inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-xs font-black"
+            >
+              <RefreshCw size={15} /> Yenile
+            </button>
+            <button
+              onClick={run}
+              className="tap inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-xs font-black"
+            >
+              <Download size={15} /> Excel'e Aktar
+            </button>
+            <button
+              onClick={create}
+              className="tap inline-flex items-center gap-2 rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-black text-white"
+            >
+              <Plus size={16} /> Yeni KullanÄ±cÄ±
+            </button>
+          </div>
+        </div>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {[
+            [
+              Users,
+              "Toplam KullanÄ±cÄ±",
+              profiles.length,
+              "bg-blue-50 text-blue-600",
+            ],
+            [
+              Users,
+              "Aktif KullanÄ±cÄ±",
+              active,
+              "bg-emerald-50 text-emerald-600",
+            ],
+            [
+              Users,
+              "Pasif KullanÄ±cÄ±",
+              profiles.filter((p) => p.status === "inactive").length,
+              "bg-amber-50 text-amber-600",
+            ],
+            [
+              ShieldCheck,
+              "AskÄ±daki KullanÄ±cÄ±",
+              profiles.filter((p) => p.status === "suspended").length,
+              "bg-rose-50 text-rose-600",
+            ],
+          ].map(([I, l, n, c]: any) => (
+            <div
+              key={l}
+              className="rounded-xl border border-slate-100 bg-white p-4 shadow-sm"
+            >
+              <div className="flex items-center gap-3">
+                <span
+                  className={
+                    "grid h-10 w-10 place-items-center rounded-xl " + c
+                  }
+                >
+                  <I size={19} />
+                </span>
+                <div>
+                  <p className="text-xs font-bold text-slate-400">{l}</p>
+                  <b className="text-lg">{n}</b>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-5 grid gap-3 lg:grid-cols-[1fr_190px_190px_auto]">
+          <label className="flex items-center rounded-xl border border-slate-200 bg-white px-4 py-3">
+            <Search size={16} className="mr-3 text-slate-400" />
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              className="w-full bg-transparent text-sm outline-none"
+              placeholder="Ad, e-posta veya kullanÄ±cÄ± adÄ± ara..."
+            />
+          </label>
+          <select
+            value={r}
+            onChange={(e) => setR(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="all">TÃ¼m roller</option>
+            <option value="advisor">DanÄ±ÅŸman</option>
+            <option value="manager">YÃ¶netici</option>
+            <option value="admin">Admin</option>
+          </select>
+          <select
+            value={s}
+            onChange={(e) => setS(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="all">TÃ¼m durumlar</option>
+            <option value="active">Aktif</option>
+            <option value="inactive">Pasif</option>
+            <option value="suspended">AskÄ±ya alÄ±ndÄ±</option>
           </select>
           <button
             onClick={() => {
@@ -384,46 +1481,329 @@ HOˆ
                     <td className="p-4 text-right">
                       <button
                         onClick={() => setSelected(p)}
-          YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Ô€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€€ÙËñ¹Óñ±”(€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€ğ½ÑÈø(€€€€€€€€€€€€€€€€¤ì(€€€€€€€€€€€€€ô¥ô(€€€€€€€€€€€€ğ½Ñ‰½‘äø(€€€€€€€€€€ğ½Ñ…‰±”ø(€€€€€€€€€ì…É½İÌ¹±•¹Ñ €˜˜€ (€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰À´ÄÈÑ•áĞµ•¹Ñ•ÈÑ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€€€	Ô™¥±ÑÉ•±•É±”—}±—}•¸­Õ±±…»ÅÄ‰Õ±Õ¹µÕå½È¸(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€¥ô(€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰À´ĞÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€íÉ½İÌ¹±•¹Ñ¡ô­Õ±±…»ÅÄŸÙÍÑ•É¥±¥å½È(€€€€€€€€€€ğ½Àø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½µ…¥¸ø(€€€€€íÍ•±•Ñ•€˜˜€ (€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥á•¥¹Í•Ğ´ÀèµlÄÄÁt™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´äÔÀ¼ĞÀÀ´Ğˆø(€€€€€€€€€€ñ™½É´(€€€€€€€€€€€½¹MÕ‰µ¥Ğõí…Íå¹Œ€¡”¤€ôøì(€€€€€€€€€€€€€”¹ÁÉ•Ù•¹Ñ•™…Õ±Ğ ¤ì(€€€€€€€€€€€€€Í•ÑM…Ù¥¹œ¡ÑÉÕ”¤ì(€€€€€€€€€€€€€½¹ÍĞ˜€ô¹•Ü½Éµ…Ñ„¡”¹ÕÉÉ•¹ÑQ…É•Ğ¤ì(€€€€€€€€€€€€€½¹ÍĞì•ÉÉ½Èô€ô…İ…¥ĞÍÕÁ…‰…Í”(€€€€€€€€€€€€€€€€¹™É½´ ‰ÁÉ½™¥±•Ìˆ¤(€€€€€€€€€€€€€€€€¹ÕÁ‘…Ñ”¡ì(€€€€€€€€€€€€€€€€€™¥ÉÍÑ}¹…µ”èMÑÉ¥¹œ¡˜¹•Ğ ‰™¥ÉÍÑ}¹…µ”ˆ¤¤¹ÑÉ¥´ ¤°(€€€€€€€€€€€€€€€€€±…ÍÑ}¹…µ”èMÑÉ¥¹œ¡˜¹•Ğ ‰±…ÍÑ}¹…µ”ˆ¤¤¹ÑÉ¥´ ¤°(€€€€€€€€€€€€€€€€€ÕÍ•É¹…µ”èMÑÉ¥¹œ¡˜¹•Ğ ‰ÕÍ•É¹…µ”ˆ¤¤(€€€€€€€€€€€€€€€€€€€€¹ÑÉ¥´ ¤(€€€€€€€€€€€€€€€€€€€€¹Ñ½1½İ•É…Í” ¤(€€€€€€€€€€€€€€€€€€€€¹É•Á±…” ½qqÌ½œ°€ˆˆ¤°(€€€€€€€€€€€€€€€€€•µ…¥°èMÑÉ¥¹œ¡˜¹•Ğ ‰•µ…¥°ˆ¤¤¹ÑÉ¥´ ¤¹Ñ½1½İ•É…Í” ¤°(€€€€€€€€€€€€€€€€€Á¡½¹”èMÑÉ¥¹œ¡˜¹•Ğ ‰Á¡½¹”ˆ¤¤¹ÑÉ¥´ ¤ñğ¹Õ±°°(€€€€€€€€€€€€€€€€€É½±”èMÑÉ¥¹œ¡˜¹•Ğ ‰É½±”ˆ¤¤°(€€€€€€€€€€€€€€€€€ÍÑ…ÑÕÌèMÑÉ¥¹œ¡˜¹•Ğ ‰ÍÑ…ÑÕÌˆ¤¤°(€€€€€€€€€€€€€€€ô¤(€€€€€€€€€€€€€€€€¹•Ä ‰¥ˆ°Í•±•Ñ•¹¥¤ì(€€€€€€€€€€€€€Í•ÑM…Ù¥¹œ¡™…±Í”¤ì(€€€€€€€€€€€€€¥˜€¡•ÉÉ½È¤ì(€€€€€€€€€€€€€€€İ¥¹‘½Ü¹…±•ÉĞ¡•ÉÉ½È¹µ•ÍÍ…”¤ì(€€€€€€€€€€€€€€€É•ÑÕÉ¸ì(€€€€€€€€€€€€€ô(€€€€€€€€€€€€€…İ…¥ĞÉ•™É•Í  ¤ì(€€€€€€€€€€€€€Í•ÑM•±•Ñ•¡¹Õ±°¤ì(€€€€€€€€€€€õô(€€€€€€€€€€€±…ÍÍ9…µ”ô‰µ…àµ µläÁÙ¡tÜµ™Õ±°µ…àµÜµá°½Ù•É™±½Üµäµ…ÕÑ¼É½Õ¹‘•´Éá°‰œµİ¡¥Ñ”À´ØÍ¡…‘½Ü´Éá°ˆ(€€€€€€€€€€ø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸Äá•µtÑ•áĞµlÀÄÅ•tˆø(€€€€€€€€€€€€€€€€€-U119%$Qe$(€€€€€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€€€€€íÍ•±•Ñ•¹™¥ÉÍÑ}¹…µ•ôíÍ•±•Ñ•¹±…ÍÑ}¹…µ•ô(€€€€€€€€€€€€€€€€ğ½ Èø(€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€€€€€€€	¥±¥±•É¤“ñé•¹±•å¥À­…å‘•‘•‰¥±¥ÉÍ¥¹¥è¸(€€€€€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€€€ÑåÁ”ô‰‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôøÍ•ÑM•±•Ñ•¡¹Õ±°¥ô(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€-…Á…Ğ(€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÉ¥…À´ĞÍ´éÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€€íl(€€€€€€€€€€€€€€€l‰™¥ÉÍÑ}¹…µ”ˆ°€‰‰t°(€€€€€€€€€€€€€€€l‰±…ÍÑ}¹…µ”ˆ°€‰M½å…‰t°(€€€€€€€€€€€€€€€l‰ÕÍ•É¹…µ”ˆ°€‰-Õ±±…»ÅÄ…“Ä‰t°(€€€€€€€€€€€€€€€l‰•µ…¥°ˆ°€‰µÁ½ÍÑ„‰t°(€€€€€€€€€€€€€€€l‰Á¡½¹”ˆ°€‰Q•±•™½¸‰t°(€€€€€€€€€€€€€t¹µ…À ¡m­•ä°±…‰•±t¤€ôø€ (€€€€€€€€€€€€€€€€ñ±…‰•°­•äõí­•åô±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆø(€€€€€€€€€€€€€€€€€í±…‰•±ô(€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕĞ(€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•õí­•ä€„ôô€‰Á¡½¹”‰ô(€€€€€€€€€€€€€€€€€€€¹…µ”õí­•åô(€€€€€€€€€€€€€€€€€€€‘•™…Õ±ÑY…±Õ”õì¡Í•±•Ñ•…Ì…¹ä¥m­•åtñğ€ˆ‰ô(€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµlÀÄÅ•tˆ(€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€€€I½°(€€€€€€€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€€€€€€€¹…µ”ô‰É½±”ˆ(€€€€€€€€€€€€€€€€€‘•™…Õ±ÑY…±Õ”õíÍ•±•Ñ•¹É½±•ô(€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…‘Ù¥Í½Èˆù…»Ç}µ…¸ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰µ…¹…•ÈˆùgÙ¹•Ñ¥¤ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…‘µ¥¸ˆù‘µ¥¸ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€ğ½Í•±•Ğø(€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€€€!•Í…À‘ÕÉÕµÔ(€€€€€€€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€€€€€€€¹…µ”ô‰ÍÑ…ÑÕÌˆ(€€€€€€€€€€€€€€€€€‘•™…Õ±ÑY…±Õ”õíÍ•±•Ñ•¹ÍÑ…ÑÕÍô(€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…Ñ¥Ù”ˆù­Ñ¥˜ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰¥¹…Ñ¥Ù”ˆùA…Í§m4ÖÚ$z{-®éÜj×NL–Y[šHİ[[±,Xñ,OÚÛ\ÜÏH›]LH^\ÛH^\Û]KML’İ[[±,Xñ,HÙ\°éÙZÈ]][XØ][ÛˆÚ\İ[Z[™HØ^YY[\‹ÜÙ]]Ûˆ\OH˜]Ûˆˆ]KXÛÜÙHÛ\ÜÏHœ›İ[™Y[ÈLˆ^\Û]KML¸§%OØ]ÛÙ]]ˆ]KY\œ›ÜˆÛ\ÜÏH›]MY[ˆ›İ[™Y^™Ë\™YMLLÈ^^È›ÛX›Û^\™YMÌÙ]]ˆÛ\ÜÏH›]MHÜšYØ\LÈY™ÜšYXÛÛËLˆX™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌQ
-[œ]˜[YOH™š\œİ˜[YHˆ™\]Z\™YÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ”ÓÖPQ
-[œ]˜[YOH›\İ˜[YHˆ™\]Z\™YÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ’ÕSS’PÒHQH
-[œ]˜[YOH\Ù\›˜[YHˆ™\]Z\™YÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ‘KTÔÕH
-[œ]˜[YOH™[XZ[ˆ\OH™[XZ[ˆ™\]Z\™YÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ•SQ“Ó[œ]˜[YOHœÛ™HˆÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ”“Ó
-Ù[Xİ˜[YOHœ›ÛHˆÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛHÜ[Ûˆ˜[YOH˜Yš\ÛÜˆ‘[±,qgÛX[ÛÜ[ÛÜ[Ûˆ˜[YOH›X[˜YÙ\ˆ–pí›™]XÚOÛÜ[ÛÜ[Ûˆ˜[YOH˜YZ[ˆYZ[ÛÜ[ÛÜÙ[XİÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ±g±,”‘H
-[œ]˜[YOHœ\ÜİÛÜ™ˆ\OHœ\ÜİÛÜ™ˆ™\]Z\™YZ[›[™İHŒLˆÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ±g±,”‘HRÔTˆ
-[œ]˜[YOHœ™\X]ˆ\OHœ\ÜİÛÜ™ˆ™\]Z\™YZ[›[™İHŒLˆÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‹ÏÛX™[X™[Û\ÜÏH^^È›ÛX›XÚÈ^\Û]KMÌ’TĞTT•SUOÙ[Xİ˜[YOHœİ]\ÈˆÛ\ÜÏH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛHÜ[Ûˆ˜[YOH˜Xİ]™HZİYÛÜ[ÛÜ[Ûˆ˜[YOHš[˜Xİ]™H”\ÚYÛÜ[ÛÜÙ[XİÛX™[X™[Û\ÜÏH™›^][\ËY[™Ø\Lˆ‹LÈ^^È›ÛX›Û^\Û]KMÌ[œ]˜[YOH™›Ü˜ÙHˆ\OH˜ÚXÚØ›ŞˆÚXÚÙYÏˆ1,ÈÚ\šqgİH1gÚYœ™Hq'ÚqgÚZÛq'ÚH›Ü[›OÛX™[Ù]]Ûˆ]K\İX›Z]Û\ÜÏH›]MH›İ[™Y^™ËVÈØÙLYWHMHKLÈ^^È›ÛX›XÚÈ^]Ú]H’ÕSS’PÒHÓqg•TØ]ÛÙ›Ü›O˜ÂˆÛÛœİÛÜÙHH
+                        className="tap rounded-lg border border-slate-200 px-3 py-2 text-xs font-black"
+                      >
+                        GÃ¶rÃ¼ntÃ¼le
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          {!rows.length && (
+            <div className="p-12 text-center text-sm text-slate-400">
+              Bu filtrelerle eÅŸleÅŸen kullanÄ±cÄ± bulunmuyor.
+            </div>
+          )}
+          <p className="p-4 text-xs text-slate-400">
+            {rows.length} kullanÄ±cÄ± gÃ¶steriliyor
+          </p>
+        </div>
+      </main>
+      {selected && (
+        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/40 p-4">
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              setSaving(true);
+              const f = new FormData(e.currentTarget);
+              const { error } = await supabase
+                .from("profiles")
+                .update({
+                  first_name: String(f.get("first_name")).trim(),
+                  last_name: String(f.get("last_name")).trim(),
+                  username: String(f.get("username"))
+                    .trim()
+                    .toLowerCase()
+                    .replace(/\\s/g, ""),
+                  email: String(f.get("email")).trim().toLowerCase(),
+                  phone: String(f.get("phone")).trim() || null,
+                  role: String(f.get("role")),
+                  status: String(f.get("status")),
+                })
+                .eq("id", selected.id);
+              setSaving(false);
+              if (error) {
+                window.alert(error.message);
+                return;
+              }
+              await refresh();
+              setSelected(null);
+            }}
+            className="max-h-[90vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"
+          >
+            <div className="flex items-start justify-between">
+              <div>
+                <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
+                  KULLANICI DETAYI
+                </p>
+                <h2 className="mt-1 text-xl font-black">
+                  {selected.first_name} {selected.last_name}
+                </h2>
+                <p className="mt-1 text-xs text-slate-400">
+                  Bilgileri dÃ¼zenleyip kaydedebilirsiniz.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelected(null)}
+                className="tap rounded-lg border border-slate-200 px-3 py-2 text-xs font-black"
+              >
+                Kapat
+              </button>
+            </div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {[
+                ["first_name", "Ad"],
+                ["last_name", "Soyad"],
+                ["username", "KullanÄ±cÄ± adÄ±"],
+                ["email", "E-posta"],
+                ["phone", "Telefon"],
+              ].map(([key, label]) => (
+                <label key={key} className="text-xs font-black text-slate-700">
+                  {label}
+                  <input
+                    required={key !== "phone"}
+                    name={key}
+                    defaultValue={(selected as any)[key] || ""}
+                    className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-[#cd011e]"
+                  />
+                </label>
+              ))}
+              <label className="text-xs font-black">
+                Rol
+                <select
+                  name="role"
+                  defaultValue={selected.role}
+                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                >
+                  <option value="advisor">DanÄ±ÅŸman</option>
+                  <option value="manager">YÃ¶netici</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </label>
+              <label className="text-xs font-black">
+                Hesap durumu
+                <select
+                  name="status"
+                  defaultValue={selected.status}
+                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                >
+                  <option value="active">Aktif</option>
+                  <option value="inactive">Pasif</option>
+                  <option value="suspended">AskÄ±ya alÄ±ndÄ±</option>
+                  <option value="departed">AyrÄ±ldÄ±</option>
+                </select>
+              </label>
+            </div>
+            <div className="mt-7 flex justify-end gap-2 border-t border-slate-100 pt-5">
+              <button
+                type="button"
+                onClick={() => setSelected(null)}
+                className="tap rounded-xl border border-slate-200 px-4 py-3 text-xs font-black"
+              >
+                VazgeÃ§
+              </button>
+              <button
+                disabled={saving}
+                className="tap rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white disabled:opacity-60"
+              >
+                {saving ? "Kaydediliyorâ€¦" : "DeÄŸiÅŸiklikleri Kaydet"}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
+      {busy && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/35">
+          <div className="w-72 rounded-2xl bg-white p-7 text-center shadow-2xl">
+            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-[#cd011e]" />
+            <h2 className="mt-4 font-black">{busyText}</h2>
+            <p className="mt-1 text-xs text-slate-500">
+              {busyText.includes("Excel")
+                ? "KullanÄ±cÄ± listesi indirilmeye hazÄ±rlanÄ±yor."
+                : "YalnÄ±zca kullanÄ±cÄ± kayÄ±tlarÄ± gÃ¼ncelleniyor."}
+            </p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
-HOˆÙ]™]Õ\Ù\“Ü[Š˜[ÙJNÂˆ[Ù[œ]Y\TÙ[XİÜŠ–Ù]KXÛÜÙWHŠOË˜Y]™[\İ[™\Š˜ÛXÚÈ‹ÛÜÙJNÂˆ[Ù[˜Y]™[\İ[™\Š˜ÛXÚÈ‹
-JHOˆÂˆYˆ
-K\™Ù]OOH[Ù[
-HÛÜÙJ
-NÂˆJNÂˆÛÛœİ›Ü›HH[Ù[œ]Y\TÙ[XİÜŠ™›Ü›HŠHNÂˆ›Ü›K˜Y]™[\İ[™\ŠœİX›Z]‹\Ş[˜È
-JHOˆÂˆKœ™]™[Y˜][
-
-NÂˆÛÛœİ™H™]È›Ü›Q]J›Ü›JNÂˆÛÛœİ\ÜİÛÜ™Hİš[™Ê™™Ù]
-œ\ÜİÛÜ™ŠHˆŠNÂˆÛÛœİ™\X]Hİš[™Ê™™Ù]
-œ™\X]ŠHˆŠNÂˆÛÛœİ\œ›ÜˆH[Ù[œ]Y\TÙ[XİÜŠ–Ù]KY\œ›Ü—HŠH\ÈS[[Y[ÂˆYˆ
-\ÜİÛÜ™OOH™\X]
-HÂˆ\œ›Ü‹^ÛÛ[H±gšYœ™HZÜ˜\±,HqgÛqgÛZ^[Ü‹ˆÂˆ\œ›Ü‹˜Û\ÜÓ\İœ™[[İ™JšY[ˆŠNÂˆ™]\›ÂˆBˆÛÛœİ]ÛˆH[Ù[œ]Y\TÙ[XİÜŠ–Ù]K\İX›Z]HŠH\ÈS]Û‘[[Y[Âˆ]Û‹™\ØX›YHYNÂˆ]Û‹^ÛÛ[H’ÕSS’PÒHÓqg•T•SVSÔ¸ )ˆÂˆÛÛœİÈ]K\œ›Üˆ™\]Y\İ\œ›ÜˆHH]ØZ]İ\X˜\ÙK™[˜İ[ÛœËš[›ÚÙJˆ˜YZ[‹]\Ù\œÈ‹ˆÂˆ›ÙNˆÂˆXİ[Ûˆ˜Ü™X]Wİ\Ù\ˆ‹ˆ^[ØYˆÂˆš\œİ˜[YNˆİš[™Ê™™Ù]
-™š\œİ˜[YHŠHˆŠKš[J
-Kˆ\İ˜[YNˆİš[™Ê™™Ù]
-›\İ˜[YHŠHˆŠKš[J
-Kˆ\Ù\›˜[YNˆİš[™Ê™™Ù]
-\Ù\›˜[YHŠHˆŠBˆš[J
-BˆÓİÙ\Ø\ÙJ
-Bˆœ™\XÙJ×ËÙËˆŠKˆ[XZ[ˆİš[™Ê™™Ù]
-™[XZ[ŠHˆŠBˆš[J
-BˆÓİÙ\Ø\ÙJ
-KˆÛ™Nˆİš[™Ê™™Ù]
-œÛ™HŠHˆŠKš[J
-H[ˆ›ÛNˆİš[™Ê™™Ù]
-œ›ÛHŠH˜Yš\ÛÜˆŠKˆ\ÜİÛÜ™ˆİ]\Îˆİš[™Ê™™Ù]
-œİ]\ÈŠH˜Xİ]™HŠKˆ›Ü˜ÙT\ÜİÛÜ™Ú[™ÙNˆ™™Ù]
-™›Ü˜ÙHŠHOOH›Ûˆ‹ˆKˆKˆKˆ
-NÂˆYˆ
-™\]Y\İ\œ›Üˆ]OË™\œ›ÜŠHÂˆ\œ›Ü‹^ÛÛ[Bˆ’İ[[±,Xñ,HÛqgİ\[[XY1,Nˆˆ
-Âˆ
-]OË™\œ›Üˆ™\]Y\İ\œ›ÜË›Y\ÜØYÙHš[[›Y^Y[ˆ]HŠNÂˆ\œ›Ü‹˜Û\ÜÓ\İœ™[[İ™JšY[ˆŠNÂˆj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5    button.disabled = false;
+export default function AdminControlCenter() {
+  const [page, setPage] = useState<Page>("overview");
+  const [mobile, setMobile] = useState(false);
+  const [profiles, setProfiles] = useState<Profile[]>([]);
+  const [offices, setOffices] = useState<Office[]>([]);
+  const [metrics, setMetrics] = useState<AdvisorMetric[]>([]);
+  const [officeMembers, setOfficeMembers] = useState<
+    { office_id: string; advisor_id: string; is_manager: boolean }[]
+  >([]);
+  const [stars, setStars] = useState<
+    { kind: string; entity_id: string; position: number }[]
+  >([]);
+  const [search, setSearch] = useState("");
+  const [role, setRole] = useState("all");
+  const [officeCity, setOfficeCity] = useState("");
+  const [officeDistrict, setOfficeDistrict] = useState("");
+  const [drawer, setDrawer] = useState<Profile | null>(null);
+  const [officeDrawer, setOfficeDrawer] = useState<Office | null>(null);
+  const [showOfficeCreate, setShowOfficeCreate] = useState(false);
+  const [exporting, setExporting] = useState(false);
+  const [fields, setFields] = useState([
+    "Ad Soyad",
+    "KullanÄ±cÄ± AdÄ±",
+    "E-posta",
+    "Rol",
+    "Durum",
+    "Telefon",
+  ]);
+  const [listingMode, setListingMode] = useState<"all" | "approval" | "add">(
+    "all",
+  );
+  const [notice, setNotice] = useState("");
+  const [newUserOpen, setNewUserOpen] = useState(false);
+  const alert = (t: string) => {
+    if (t === "Yeni kullanÄ±cÄ± formu mevcut KullanÄ±cÄ±lar ekranÄ±ndan aÃ§Ä±lÄ±r.") {
+      setPage("user-create");
+      return;
+    }
+    setNotice(t);
+    setTimeout(() => setNotice(""), 2800);
+  };
+  const cacheKey = "realty-center:admin-bootstrap:v2";
+  const applyBootstrap = (data: {
+    profiles?: Profile[];
+    offices?: Office[];
+    metrics?: AdvisorMetric[];
+    officeMembers?: {
+      office_id: string;
+      advisor_id: string;
+      is_manager: boolean;
+    }[];
+    stars?: { kind: string; entity_id: string; position: number }[];
+  }) => {
+    if (data.profiles) setProfiles(data.profiles);
+    if (data.offices) setOffices(data.offices);
+    if (data.metrics) setMetrics(data.metrics);
+    if (data.officeMembers) setOfficeMembers(data.officeMembers);
+    if (data.stars) setStars(data.stars);
+  };
+  const load = async () => {
+    const [p, o, m, om, s] = await Promise.all([
+      supabase
+        .from("profiles")
+        .select(
+          "id,first_name,last_name,username,email,phone,role,status,last_login_at,created_at,avatar_url",
+        )
+        .is("deleted_at", null)
+        .order("created_at", { ascending: false }),
+      supabase
+        .from("offices")
+        .select(
+          "id,name,city,district,address,phone,email,manager_name,owner_profile_id,image_url,deleted_at",
+        )
+        .is("deleted_at", null)
+        .order("created_at", { ascending: false }),
+      supabase
+        .from("advisor_metrics")
+        .select("advisor_id,messages_answered,star_rating"),
+      supabase
+        .from("office_advisors")
+        .select("office_id,advisor_id,is_manager"),
+      supabase
+        .from("homepage_stars")
+        .select("kind,entity_id,position")
+        .order("position"),
+    ]);
+    const next = {
+      profiles: (p.data || []) as Profile[],
+      offices: (o.data || []) as Office[],
+      metrics: (m.data || []) as AdvisorMetric[],
+      officeMembers: (om.data || []) as {
+        office_id: string;
+        advisor_id: string;
+        is_manager: boolean;
+      }[],
+      stars: (s.data || []) as {
+        kind: string;
+        entity_id: string;
+        position: number;
+      }[],
+    };
+    applyBootstrap(next);
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify(next));
+    } catch {}
+  };
+  useEffect(() => {
+    try {
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) applyBootstrap(JSON.parse(cached));
+    } catch {}
+    void load();
+  }, []);
+  useEffect(() => {
+    if (!newUserOpen) return;
+    setPage("user-create");
+    setNewUserOpen(false);
+    return;
+    const modal = document.createElement("div");
+    modal.className =
+      "fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/50 p-4";
+    modal.innerHTML = `<form class="w-full max-w-2xl rounded-2xl bg-white p-6 shadow-2xl"><div class="flex items-start justify-between gap-3"><div><p class="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER</p><h2 class="mt-1 text-xl font-black text-slate-900">Yeni KullanÄ±cÄ±</h2><p class="mt-1 text-sm text-slate-500">KullanÄ±cÄ± gerÃ§ek authentication sistemine kaydedilir.</p></div><button type="button" data-close class="rounded-lg p-2 text-slate-500">âœ•</button></div><div data-error class="mt-4 hidden rounded-xl bg-red-50 p-3 text-xs font-bold text-red-700"></div><div class="mt-5 grid gap-3 md:grid-cols-2"><label class="text-xs font-black text-slate-700">AD *<input name="firstName" required class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">SOYAD *<input name="lastName" required class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">KULLANICI ADI *<input name="username" required class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">E-POSTA *<input name="email" type="email" required class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">TELEFON<input name="phone" class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">ROL *<select name="role" class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"><option value="advisor">DanÄ±ÅŸman</option><option value="manager">YÃ¶netici</option><option value="admin">Admin</option></select></label><label class="text-xs font-black text-slate-700">ÅÄ°FRE *<input name="password" type="password" required minlength="10" class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">ÅÄ°FRE TEKRAR *<input name="repeat" type="password" required minlength="10" class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"/></label><label class="text-xs font-black text-slate-700">HESAP DURUMU<select name="status" class="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"><option value="active">Aktif</option><option value="inactive">Pasif</option></select></label><label class="flex items-end gap-2 pb-3 text-xs font-bold text-slate-700"><input name="force" type="checkbox" checked/> Ä°lk giriÅŸte ÅŸifre deÄŸiÅŸikliÄŸi zorunlu</label></div><button data-submit class="mt-5 rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white">KULLANICI OLUÅTUR</button></form>`;
+    const close = () => setNewUserOpen(false);
+    modal.querySelector("[data-close]")?.addEventListener("click", close);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) close();
+    });
+    const form = modal.querySelector("form")!;
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const password = String(fd.get("password") || "");
+      const repeat = String(fd.get("repeat") || "");
+      const error = modal.querySelector("[data-error]") as HTMLElement;
+      if (password !== repeat) {
+        error.textContent = "Åifre tekrarÄ± eÅŸleÅŸmiyor.";
+        error.classList.remove("hidden");
+        return;
+      }
+      const button = modal.querySelector("[data-submit]") as HTMLButtonElement;
+      button.disabled = true;
+      button.textContent = "KULLANICI OLUÅTURULUYORâ€¦";
+      const { data, error: requestError } = await supabase.functions.invoke(
+        "admin-users",
+        {
+          body: {
+            action: "create_user",
+            payload: {
+              firstName: String(fd.get("firstName") || "").trim(),
+              lastName: String(fd.get("lastName") || "").trim(),
+              username: String(fd.get("username") || "")
+                .trim()
+                .toLowerCase()
+                .replace(/\s/g, ""),
+              email: String(fd.get("email") || "")
+                .trim()
+                .toLowerCase(),
+              phone: String(fd.get("phone") || "").trim() || null,
+              role: String(fd.get("role") || "advisor"),
+              password,
+              status: String(fd.get("status") || "active"),
+              forcePasswordChange: fd.get("force") === "on",
+            },
+          },
+        },
+      );
+      if (requestError || data?.error) {
+        error.textContent =
+          "KullanÄ±cÄ± oluÅŸturulamadÄ±: " +
+          (data?.error || requestError?.message || "Bilinmeyen hata");
+        error.classList.remove("hidden");
+        button.disabled = false;
         button.textContent = "KULLANICI OLUÅTUR";
         return;
       }
@@ -511,53 +1891,890 @@ NÂˆYˆ
     });
     modal.querySelector("form")!.addEventListener("submit", async (e) => {
       e.preventDefault();
-      coÛM5¶‰ËkºwµçG°¢6öç7B6†ö–6W2ÒGf—6W'2æf–ÇFW"€¢†’Óà¢öff–6TÖVÖ&W'2ç6öÖR€¢†Ò’ÓâÒæöff–6Uö–BÓÓÒòæ–BbbÒæGf—6÷%ö–BÓÓÒæ–BÀ¢’À¢“°¢6öç7B6VÆV7FVBÒv–æF÷rç&ö×B€¢$V¶ÆVæV6V²FìKYöÖìK6\:v–ã¥Æâ"°¢6†ö–6W0¢æÖ€¢†Â’’Óà¢G¶’²ÒâG¶æf—'7EöæÖWÒG¶æÆ7EöæÖWÒG¶ç†öæRÇÂ"'ÖÀ¢¢æ¦ö–â‚%Æâ"’À¢“°¢6öç7B’ÒçVÖ&W"‡6VÆV7FVB’Ò°¢–b‚çVÖ&W"æ—4–çFVvW"†’’ÇÂ6†ö–6W5¶•Ò’&WGW&ã°¢6öç7B²W'&÷"ÒÒv—B7W&6Ræg&öÒ‚&öff–6UöGf—6÷'2"’æ–ç6W'B‡°¢öff–6Uö–C¢òæ–BÀ¢Gf—6÷%ö–C¢6†ö–6W5¶•Òæ–BÀ¢—5öÖævW#¢fÇ6RÀ¢Ò“°¢–b†W'&÷"’&WGW&âÆW'B†W'&÷"æÖW76vR“°¢fö–BÆöB‚“°¢ÆW'B‚$FìKYöÖâöf—6RV¶ÆVæF’â"“°¢Ó°¢6öç7B†VF–ærÒ‡F—FÆS¢7G&–ærÂFW63¢7G&–ærÂ7F–öãó¢&V7Bå&V7DæöFR’Óâ€¢ÆF—b6Æ74æÖSÒ&Ö"ÓbfÆW‚fÆW‚Ö6öÂvÓB&÷&FW"Ö"&÷&FW"×6ÆFRÓ#"ÓRÖC¦fÆW‚×&÷rÖC¦—FV×2ÖVæBÖC¦§W7F–g’Ö&WGvVVâ#à¢ÆF—cà¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡BÕ²66CUÒ#à¢$TÅE’4TåDU"òœ9däULKĞ¢Â÷à¢Æƒ6Æ74æÖSÒ&×BÓFW‡BÓ'†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç·F—FÆWÓÂöƒà¢Ç6Æ74æÖSÒ&×BÓFW‡B×6ÒFW‡B×6ÆFRÓS#ç¶FW67ÓÂ÷à¢ÂöF—cà¢¶7F–öçĞ¢ÂöF—cà¢“°¢6öç7B'WGFöâÒ€¢6†–ÆG&Vã¢&V7Bå&V7DæöFRÀ¢öä6Æ–6³ó¢‚’Óâfö–BÀ¢&–Ö'’ÒfÇ6RÀ¢’Óâ€¢Æ'WGFöà¢öä6Æ–6³×¶öä6Æ–6·Ğ¢6Æ74æÖS×·&–Ö'’ò'&2×&–Ö'’"¢'&2×6V6öæF'’'Ğ¢à¢¶6†–ÆG&VçĞ¢Âö'WGFöãà¢“°¢6öç7BW6W%F&ÆRÒ†FF¢&öf–ÆUµÒÂGf—6÷"ÒfÇ6R’Óâ€¢ÆF—b6Æ74æÖSÒ&÷fW&fÆ÷r×‚ÖWFò&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FR6†F÷r×6Ò#à¢ÇF&ÆR6Æ74æÖSÒ'rÖgVÆÂÖ–â×rÕ³ƒS…ÒFW‡BÖÆVgB#à¢ÇF†VB6Æ74æÖSÒ&&r×6ÆFRÓSFW‡BÕ³…ÒföçBÖ&Æ6²WW&66RG&6¶–ær×v–FW"FW‡B×6ÆFRÓS#à¢ÇG#à¢ÇF‚6Æ74æÖSÒ'ÓB#ç¶Gf—6÷"ò$FìKYöÖâ"¢$·VÆÆìK<K'ÓÂ÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#ìKÆWFœYö–ÓÂ÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#å&öÂòGW'VÓÂ÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#ç¶Gf—6÷"ò%÷'Fl;g’òVâ"¢%6öâv—&œYò'ÓÂ÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓBFW‡B×&–v‡B#ìKYöÆVÓÂ÷Fƒà¢Â÷G#à¢Â÷F†VCà¢ÇF&öG“à¢¶FFæÖ‚‡’Óâ€¢ÇG ¢¶W“×·æ–GĞ¢6Æ74æÖSÒ&&÷&FW"×B&÷&FW"×6ÆFRÓFW‡B×6Ò†÷fW#¦&r×6ÆFRÓS ¢à¢ÇFB6Æ74æÖSÒ'ÓB#à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ2#à¢Ç7â6Æ74æÖSÒ&fÆW‚‚ÓrÓ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖgVÆÂ&rÕ²66CUÒóföçBÖ&Æ6²FW‡BÕ²66CUÒ#à¢·æfF%÷W&Âò€¢Æ–Öp¢7&3×·æfF%÷W&ÇĞ¢6Æ74æÖSÒ&‚ÖgVÆÂrÖgVÆÂ&÷VæFVBÖgVÆÂö&¦V7BÖ6÷fW" ¢óà¢’¢€¢‡æf—'7EöæÖU³ÒÇÂ%""’²‡æÆ7EöæÖU³ÒÇÂ$2"¢—Ğ¢Â÷7ãà¢ÆF—cà¢Æ#à¢·æf—'7EöæÖWÒ·æÆ7EöæÖWĞ¢Âö#à¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS#ä·çW6W&æÖWÓÂ÷à¢ÂöF—cà¢ÂöF—cà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×‡2FW‡B×6ÆFRÓc#à¢·æVÖ–ÇĞ¢Æ'"óà¢·ç†öæRÇÂ%FVÆVföâ–ö²'Ğ¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×‡2#à¢Æ#ç·&öÆTæÖR‡ç&öÆR—ÓÂö#à¢Æ'"óà¢Ç7à¢6Æ74æÖS×°¢ç7FGW2ÓÓÒ&7F—fR"ò'7FGW2ÖvööB"¢'7FGW2×v&â ¢Ğ¢à¢·7FGW4æÖR‡ç7FGW2—Ğ¢Â÷7ãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×‡2FW‡B×6ÆFRÓS#à¢¶Gf—6÷"ò€¢Ãà¢–Æà¢Æ'"óî)ˆbVâ–ö°¢Âóà¢’¢æÆ7EöÆöv–åöBò€¢æWrFFR‡æÆ7EöÆöv–åöB’çFôÆö6ÆU7G&–ær‚'G"ÕE""¢’¢€¢$†Vì;Ç¢v—&œYò–ö² ¢—Ğ¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×&–v‡B#à¢¶'WGFöâ‚$|;g,;ÆçL;ÆÆR"Â‚’Óâ6WDG&vW"‡’—Ğ¢Â÷FCà¢Â÷G#à¢’—Ğ¢²FFæÆVæwF‚bb€¢ÇG#à¢ÇF@¢6öÅ7ã×³WĞ¢6Æ74æÖSÒ'ÓFW‡BÖ6VçFW"FW‡B×6ÒFW‡B×6ÆFRÓC ¢š®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍH‚ˆØ^q,][[›]^[Ü‹‚ˆİ‚ˆİ‚ˆ
-_Bˆİ›ÙO‚ˆİX›O‚ˆÙ]‚ˆ
-NÂˆ]šY]Îˆ™XXİ”™XXİ›ÙNÂˆYˆ
-YÙHOOH\Ù\‹XÜ™X]HŠBˆ™]\›ˆ
-ˆ[™[œ˜[YHYÙO^ÜYÙ_HÙ]YÙO^ÜÙ]YÙ_O‚ˆ™]Õ\Ù\”YÙBˆÙ™šXÙ\Ï^ÛÙ™šXÙ\ßBˆØ[˜Ù[^Ê
-HOˆÙ]YÙJ\Ù\œÈŠ_BˆÛ™O^Ê
-HOˆÂˆ›ÚYØY
-
-NÂˆÙ]YÙJ\Ù\œÈŠNÂˆ[\
-’İ[[±,Xñ,H˜qgØ\±,^[HZÛ[™KˆŠNÂˆ_BˆÏ‚ˆÔ[™[œ˜[YO‚ˆ
-NÂˆYˆ
-YÙHOOH\Ù\œÈŠBˆ™]\›ˆ
-ˆ[™[œ˜[YHYÙO^ÜYÙ_HÙ]YÙO^ÜÙ]YÙ_O‚ˆ\Ù\œÔYÙBˆ›Ùš[\Ï^Ü›Ùš[\ßBˆÙ™šXÙ\Ï^ÛÙ™šXÙ\ßBˆÜ™X]O^Ê
-HOˆÙ]YÙJ\Ù\‹XÜ™X]HŠ_Bˆ™Yœ™\Ú^ÛØYBˆÏ‚ˆÔ[™[œ˜[YO‚ˆ
-NÂˆYˆ
-YÙHOOH˜Yš\ÛÜœÈŠBˆ™]\›ˆ
-ˆ[™[œ˜[YHYÙO^ÜYÙ_HÙ]YÙO^ÜÙ]YÙ_O‚ˆYš\ÛÜœÔYÙUŒ‚ˆ›Ùš[\Ï^Ü›Ùš[\ßBˆÙ™šXÙ\Ï^ÛÙ™šXÙ\ßBˆY[X™\œÏ^ÛÙ™šXÙSY[X™\œßBˆY]šXÜÏ^ÛY]šXÜßBˆİ\œÏ^Üİ\œßBˆ™Yœ™\Ú^ÛØYBˆİ\^ÊY
-HOˆÙ]İ\Š˜Yš\ÛÜˆ‹Y
-_Bˆ˜\Ú^İ˜\ÚBˆÜ™X]O^Ê
-HOˆÙ]YÙJ\Ù\‹XÜ™X]HŠ_BˆÏ‚ˆÔ[™[œ˜[YO‚ˆ
-NÂˆYˆ
-YÙHOOH›İ™\šY]ÈŠBˆšY]ÈH
-ˆ‚ˆ‚ˆÚXY[™Êˆ‘Ù[™[˜Zñ,qgÈ‹ˆ’İ[[±,Xñ,K[[‹˜qgİ\H™HpéÙ\šZÈğï™péÛ\š[š[ˆZÈY\šÙ^™[ˆ0í™]Kˆ‹ˆ
-_BˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYØ\MÛN™ÜšYXÛÛËLˆ™ÜšYXÛÛËM‚ˆY]šXÂˆX™[H•Ü[Hİ[[±,Xñ,H‚ˆ˜[YO^Ü›Ùš[\Ë›[™İBˆ]Z[^Ø	ØYš\Ù\œË›[™İH[±,qgÛX[˜BˆXÛÛ^Õ\Ù\œßBˆÏ‚ˆY]šXÂˆX™[HZİYˆÙš\È‚ˆ˜[YO^ÛÙ™šXÙ\Ë›[™İBˆ]Z[H–X^q,[™ZÚHØ^q,]\ˆ‚ˆXÛÛ^ĞZ[[™ÌŸBˆÏ‚ˆY]šXÂˆX™[H“Û˜^H™ZÛ^Y[ˆ1,[ˆ‚ˆ˜[YOHŒ‚ˆ]Z[H±,[ˆÛ˜^HY\šÙ^šH‚ˆXÛÛ^Ó^[İ][™[ÜBˆÏ‚ˆY]šXÂˆX™[H–Y[šH[\‚ˆ˜[YOHŒ‚ˆ]Z[H±,]qgÚ[HY\šÙ^šH‚ˆXÛÛ^ÓY\ÜØYÙTÜ]X\™_BˆÏ‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOH›]MˆÜšYØ\MHÎ™ÜšYXÛÛËLˆ‚ˆ[™[ˆ]OH’1,^›1,H1,1gÛ[[\ˆ‚ˆXİ[ÛœÏ^ÖÂˆÈ–Y[šHİ[[±,Xñ,HÛqgİ\ˆ‹\Ù\œÈ—KˆÈ“Ùš\ÈZÛH‹›Ù™šXÙ\È—KˆÈ±,[ˆÛ˜^HY\šÙ^šH‹›\İ[™ÜÈ—KˆÈ±,]qgÚ[H[\\šH‹š[˜›Ş—Kˆ_Bˆ[^Ê
-HOˆÙ]YÙJ\ÈYÙJ_BˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOHœ›İ[™YL™Ë\Û]KNLMˆ^]Ú]H‚ˆÚY[ÚXÚÈÛ\ÜÓ˜[YOH^\™YLÌˆÏ‚ˆˆÛ\ÜÓ˜[YOH›]M›ÛX›XÚÈ”Ú\İ[Hğï™[›q'ÚOÚ‚ˆÛ\ÜÓ˜[YOH›]Lˆ^\ÛHXY[™ËMˆ^\Û]KLÌ‚ˆİ[[±,Xñ,K[[‹Ú[YH™Hİ\[H\™ZÙ]\šHqgÛ[HØ^q,]\±,Bˆ[1,[™H^›[š\‹‚ˆÜ‚ˆØ]ÛŠ±,1gÛ[HØ^q,]\±,[±,HpéÈ‹
-
-HOˆÙ]YÙJ›ÙÜÈŠKYJ_BˆÙ]‚ˆÙ]‚ˆÏ‚ˆ
-NÂˆ[ÙHYˆ
-YÙHOOH\Ù\œÈˆYÙHOOH˜Yš\ÛÜœÈŠHÂˆÛÛœİYš\ÛÜˆHYÙHOOH˜Yš\ÛÜœÈÂˆÛÛœİ›İÜÈHYš\ÛÜ‚ˆÈš\ÚX›K™š[\Š
-
-HOˆœ›ÛHOOH˜Yš\ÛÜˆŠBˆˆš\ÚX›NÂˆšY]ÈH
-ˆ‚ˆÚXY[™ÊˆYš\ÛÜˆÈ‘[±,qgÛX[ˆpí›™][ZHˆˆ’İ[[±,Xñ,[\ˆ‹ˆYš\ÛÜ‚ˆÈ”›Ùš[Ùš\Ë[]qgÚ[KY\ØZˆ™Hq,[1,^ˆÙpéÚ[[\š[šHÙ\°éÙZÈØ^q,]\™[ˆpí›™][‹ˆ‚ˆˆ•0ïH\Ø\\±,H›Û\[H™H[]qgÚ[Hš[Ú[\š^[Hpí›™][‹ˆ‹ˆ]ˆÛ\ÜÓ˜[YOH™›^Ø\Lˆ‚ˆØ]ÛŠˆ‚ˆİÛ›ØYÚ^™O^ÌM_HÏˆ^Ù[8 &YHZİ\‚ˆÏ‹ˆ
-
-HO‚ˆYš\ÛÜ‚ˆÈÜİŠˆœ™X[KXÙ[\‹Y[š\ÛX[›\ˆ‹ˆ›İÜË›X\
-
-
-HOˆ
-Âˆ‹‹œˆ˜[YNˆ™š\œİÛ˜[YH
-Èˆˆ
-È›\İÛ˜[YKˆY\ÜØYÙ\Î‚ˆY]šXÜË™š[™
-
-JHOˆK˜Yš\ÛÜ—ÚYOOHšY
-BˆË›Y\ÜØYÙ\×Ø[œİÙ\™Yˆ˜][™Î‚ˆY]šXÜË™š[™
-
-JHOˆK˜Yš\ÛÜ—ÚYOOHšY
-BˆËœİ\—Ü˜][™ÈˆÙ™šXÙNˆÙ™šXÙ\Âˆ™š[\Š
-ÊHO‚ˆÙ™šXÙSY[X™\œËœÛÛYJˆ6ÓMm¢G§²ÚîÆ­yØ€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à©ÕÍÑ¥™äµ•¹…À´Èˆø(€€€€€€€€€€€€€€€€€€€€€€€í…‘Ù¥Í½È€˜˜(€€€€€€€€€€€€€€€€€€€€€€€€€‰ÕÑÑ½¸ (€€€€€€€€€€€€€€€€€€€€€€€€€€€ÍÑ…ÉÌ¹Í½µ” (€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€¡Ì¤€ôø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€Ì¹­¥¹€ôôô€‰…‘Ù¥Í½Èˆ€˜˜Ì¹•¹Ñ¥Ñå}¥€ôôôÀ¹¥°(€€€€€€€€€€€€€€€€€€€€€€€€€€€€¤(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ü€‰gÅ±“Åé‘…¸ƒÅ­…Èˆ(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€è€‰gÅ±“Åé±…É„­±”ˆ°(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ ¤€ôøÙ½¥Í•ÑMÑ…È ‰…‘Ù¥Í½Èˆ°À¹¥¤°(€€€€€€€€€€€€€€€€€€€€€€€€€€¥ô(€€€€€€€€€€€€€€€€€€€€€€€í‰ÕÑÑ½¸ ‰ÙËñ¹Óñ±”ˆ°€ ¤€ôøÍ•ÑÉ…İ•È¡À¤¥ô(€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ğ½Ñø(€€€€€€€€€€€€€€€€€€ğ½ÑÈø(€€€€€€€€€€€€€€€€¤ì(€€€€€€€€€€€€€ô¥ô(€€€€€€€€€€€€ğ½Ñ‰½‘äø(€€€€€€€€€€ğ½Ñ…‰±”ø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ¼ø(€€€€¤ì(€ô•±Í”¥˜€¡Á…”€ôôô€‰½™™¥•Ìˆ¤ì(€€€½¹ÍĞ™¥±Ñ•É•€ô½™™¥•Ì¹™¥±Ñ•È (€€€€€€¡¼¤€ôø(€€€€€€€€ …Í•…É ñğ(€€€€€€€€€€‘í¼¹¹…µ•ô€‘í¼¹¥Ñåô€‘í¼¹‘¥ÍÑÉ¥Ñõ€(€€€€€€€€€€€€¹Ñ½1½İ•É…Í” ¤(€€€€€€€€€€€€¹¥¹±Õ‘•Ì¡Í•…É ¹Ñ½1½İ•É…Í” ¤¤¤€˜˜(€€€€€€€€ …½™™¥•¥Ñäñğ¼¹¥Ñä€ôôô½™™¥•¥Ñä¤€˜˜(€€€€€€€€ …½™™¥•¥ÍÑÉ¥Ğñğ¼¹‘¥ÍÑÉ¥Ğ€ôôô½™™¥•¥ÍÑÉ¥Ğ¤°(€€€€¤ì(€€€½¹ÍĞ¥Ñ¥•Ì€ôl¸¸¹¹•ÜM•Ğ¡½™™¥•Ì¹µ…À ¡¼¤€ôø¼¹¥Ñä¤¥tì(€€€½¹ÍĞ‘¥ÍÑÉ¥ÑÌ€ôl(€€€€€€¸¸¹¹•ÜM•Ğ (€€€€€€€½™™¥•Ì(€€€€€€€€€€¹™¥±Ñ•È ¡¼¤€ôø€…½™™¥•¥Ñäñğ¼¹¥Ñä€ôôô½™™¥•¥Ñä¤(€€€€€€€€€€¹µ…À ¡¼¤€ôø¼¹‘¥ÍÑÉ¥Ğ¤°(€€€€€€¤°(€€€tì(€€€Ù¥•Ü€ô€ (€€€€€€ğø(€€€€€€€í¡•…‘¥¹œ (€€€€€€€€€€‰=™¥ÌgÙ¹•Ñ¥µ¤ˆ°(€€€€€€€€€€‰=™¥Í±•É¤¥°°¥³”°Í…¡¥ÀÙ”ÏÅ»ÅÉÏÅè‘…»Ç}µ…¸…Ñ…µ…ÏÅå±„çÙ¹•Ñ¥¸¸ˆ°(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à…À´Èˆø(€€€€€€€€€€€í‰ÕÑÑ½¸ (€€€€€€€€€€€€€€ğø(€€€€€€€€€€€€€€€€ñ½İ¹±½…Í¥é”õìÄÕô€¼øá•³Še”­Ñ…È(€€€€€€€€€€€€€€ğ¼ø°(€€€€€€€€€€€€€€ ¤€ôø(€€€€€€€€€€€€€€€ÍØ ‰É•…±Ñäµ•¹Ñ•Èµ½™¥Í±•Èˆ°™¥±Ñ•É•…Ì…¹ä°l(€€€€€€€€€€€€€€€€€€‰¹…µ”ˆ°(€€€€€€€€€€€€€€€€€€‰¥Ñäˆ°(€€€€€€€€€€€€€€€€€€‰‘¥ÍÑÉ¥Ğˆ°(€€€€€€€€€€€€€€€€€€‰…‘‘É•ÍÌˆ°(€€€€€€€€€€€€€€€€€€‰Á¡½¹”ˆ°(€€€€€€€€€€€€€€€€€€‰•µ…¥°ˆ°(€€€€€€€€€€€€€€€€€€‰µ…¹…•É}¹…µ”ˆ°(€€€€€€€€€€€€€€€t¤°(€€€€€€€€€€€€¥ô(€€€€€€€€€€€í‰ÕÑÑ½¸ (€€€€€€€€€€€€€€ğø(€€€€€€€€€€€€€€€€ñA±ÕÌÍ¥é”õìÄÕô€¼ø=™¥Ì­±”(€€€€€€€€€€€€€€ğ¼ø°(€€€€€€€€€€€€€€ ¤€ôøÍ•ÑM¡½İ=™™¥•É•…Ñ”¡ÑÉÕ”¤°(€€€€€€€€€€€€€ÑÉÕ”°(€€€€€€€€€€€€¥ô(€€€€€€€€€€ğ½‘¥Øø°(€€€€€€€€¥ô(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µˆ´ÔÉ¥…À´ÌµéÉ¥µ½±Ì´Ìˆø(€€€€€€€€€€ñ¥¹ÁÕĞ(€€€€€€€€€€€Ù…±Õ”õíÍ•…É¡ô(€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøÍ•ÑM•…É ¡”¹Ñ…É•Ğ¹Ù…±Õ”¥ô(€€€€€€€€€€€±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Áà´ĞÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€€Á±…•¡½±‘•Èô‰=™¥Ì…“Ä…É„ˆ(€€€€€€€€€€¼ø(€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€Ù…±Õ”õí½™™¥•¥Ñåô(€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøì(€€€€€€€€€€€€€Í•Ñ=™™¥•¥Ñä¡”¹Ñ…É•Ğ¹Ù…±Õ”¤ì(€€€€€€€€€€€€€Í•Ñ=™™¥•¥ÍÑÉ¥Ğ ˆˆ¤ì(€€€€€€€€€€€õô(€€€€€€€€€€€±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Áà´ĞÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€ø(€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ôˆˆùSñ´¥±±•Èğ½½ÁÑ¥½¸ø(€€€€€€€€€€€í¥Ñ¥•Ì¹µ…À ¡à¤€ôø€ (€€€€€€€€€€€€€€ñ½ÁÑ¥½¸­•äõíáôùíáôğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€¤¥ô(€€€€€€€€€€ğ½Í•±•Ğø(€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€Ù…±Õ”õí½™™¥•¥ÍÑÉ¥Ñô(€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøÍ•Ñ=™™¥•¥ÍÑÉ¥Ğ¡”¹Ñ…É•Ğ¹Ù…±Õ”¥ô(€€€€€€€€€€€±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Áà´ĞÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€ø(€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ôˆˆùSñ´¥³•±•Èğ½½ÁÑ¥½¸ø(€€€€€€€€€€€í‘¥ÍÑÉ¥ÑÌ¹µ…À ¡à¤€ôø€ (€€€€€€€€€€€€€€ñ½ÁÑ¥½¸­•äõíáôùíáôğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€¤¥ô(€€€€€€€€€€ğ½Í•±•Ğø(€€€€€€€€ğ½‘¥Øø(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µˆ´Ô½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰œµlÀÄÅ•tÀ´ÔÑ•áĞµİ¡¥Ñ”Í¡…‘½Üµ±œÍ¡…‘½ÜµÉ•´ÜÀÀ¼ÄÔˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµİÉ…À¥Ñ•µÌµÍÑ…ÉĞ©ÕÍÑ¥™äµ‰•Ñİ••¸…À´Ìˆø(€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµİ¡¥Ñ”¼ÜÔˆø(€€€€€€€€€€€€€€€I1Qd9QHe%1%h=ÁM1KÀ(€€€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµ‰…Í”™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€€€¹„Í…å™…‘„ŸÙÍÑ•É¥±•¸Í—¥±¤½™¥Í±•È(€€€€€€€€€€€€€€ğ½ Èø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰É½Õ¹‘•µ™Õ±°‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ÈÔ‰œµİ¡¥Ñ”¼ÄÀÁà´ÌÁä´ÄÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆø(€€€€€€€€€€€€€íÍÑ…ÉÌ¹™¥±Ñ•È ¡Ì¤€ôøÌ¹­¥¹€ôôô€‰½™™¥”ˆ¤¹±•¹Ñ¡ô¼ÌÍ—¥±‘¤(€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ĞÉ¥…À´ÌÍ´éÉ¥µ½±Ì´Èá°éÉ¥µ½±Ì´Ìˆø(€€€€€€€€€€€íÍÑ…ÉÌ(€€€€€€€€€€€€€€¹™¥±Ñ•È ¡Ì¤€ôøÌ¹­¥¹€ôôô€‰½™™¥”ˆ¤(€€€€€€€€€€€€€€¹µ…À ¡Ì¤€ôø½™™¥•Ì¹™¥¹ ¡¼¤€ôø¼¹¥€ôôôÌ¹•¹Ñ¥Ñå}¥¤¤(€€€€€€€€€€€€€€¹™¥±Ñ•È¡	½½±•…¸¤(€€€€€€€€€€€€€€¹µ…À ¡¼è…¹ä¤€ôøì(€€€€€€€€€€€€€€€½¹ÍĞÍÑ…™˜€ô½™™¥•5•µ‰•ÉÌ(€€€€€€€€€€€€€€€€€€¹™¥±Ñ•È ¡´¤€ôø´¹½™™¥•}¥€ôôô¼¹¥¤(€€€€€€€€€€€€€€€€€€¹µ…À ¡´¤€ôø…‘Ù¥Í•ÉÌ¹™¥¹ ¡„¤€ôø„¹¥€ôôô´¹…‘Ù¥Í½É}f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³V–B’¢æf–ÇFW"„&ööÆVâ’2&öf–ÆUµÓ°¢&WGW&â€¢Æ'WGFöà¢¶W“×¶òæ–GĞ¢öä6Æ–6³×²‚’Óâ6WDöff–6TG&vW"†ò—Ğ¢6Æ74æÖSÒ&w&÷WfÆW‚—FV×2Ö6VçFW"vÓ2&÷VæFVB×†Â&÷&FW"&÷&FW"×v†—FRó#R&r×v†—FRóÓ2FW‡BÖÆVgBG&ç6—F–öâ†÷fW#¦&r×v†—FR†÷fW#§FW‡BÕ²66CUÒ ¢à¢¶òæ–ÖvU÷W&Âò€¢Æ–Öp¢7&3×¶òæ–ÖvU÷W&ÇĞ¢6Æ74æÖSÒ&‚ÓBrÓB&÷VæFVB×†Âö&¦V7BÖ6÷fW" ¢óà¢’¢€¢Ç7â6Æ74æÖSÒ&w&–B‚ÓBrÓBÆ6RÖ—FV×2Ö6VçFW"&÷VæFVB×†Â&r×v†—FRóR#à¢Ä'V–ÆF–æs"6—¦S×³#'Òóà¢Â÷7ãà¢—Ğ¢Ç7â6Æ74æÖSÒ&Ö–â×rÓfÆW‚Ó#à¢Æ"6Æ74æÖSÒ&&Æö6²G'Væ6FRFW‡B×6Ò#î)ˆR¶òææÖWÓÂö#à¢Ç6ÖÆÂ6Æ74æÖSÒ&×BÓ&Æö6²FW‡BÕ³…Ò÷6—G’ÓsR#à¢¶òæ6—G—Òò¶òæF—7G&–7GĞ¢Â÷6ÖÆÃà¢Ç6ÖÆÂ6Æ74æÖSÒ&&Æö6²FW‡BÕ³…Ò÷6—G’Ós#à¢¶òæÖævW%öæÖRÇÂ$Æ–FW"FæÖLK'Ò+r·7FfbæÆVæwF‡×²"'Ğ¢FìKYöÖà¢Â÷6ÖÆÃà¢Â÷7ãà¢Âö'WGFöãà¢“°¢Ò—Ğ¢²7F'2ç6öÖR‚‡2’Óâ2æ¶–æBÓÓÒ&öff–6R"’bb€¢Ç6Æ74æÖSÒ'’Ó2FW‡B×6ÒFW‡B×&VBÓ#à¢†Vì;Ç¢œKÆLK¢öf—26\:v–ÆÖVF’à¢Â÷à¢—Ğ¢ÂöF—cà¢Â÷6V7F–öãà¢ÆF—b6Æ74æÖSÒ&÷fW&fÆ÷r×‚ÖWFò&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FR6†F÷r×6Ò#à¢ÇF&ÆR6Æ74æÖSÒ'rÖgVÆÂÖ–â×rÕ³S…ÒFW‡BÖÆVgB#à¢ÇF†VB6Æ74æÖSÒ&&r×6ÆFRÓSFW‡BÕ³…ÒföçBÖ&Æ6²WW&66RFW‡B×6ÆFRÓS#à¢ÇG#à¢ÇF‚6Æ74æÖSÒ'ÓB#äöf—3Â÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#ä¶öçVÒòKÆWFœYö–ÓÂ÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#äöf—2Æ–FW&“Â÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓB#äFìKYöÖæÆ#Â÷Fƒà¢ÇF‚6Æ74æÖSÒ'ÓBFW‡B×&–v‡B#ìKYöÆVÖÆW#Â÷Fƒà¢Â÷G#à¢Â÷F†VCà¢ÇF&öG“à¢¶f–ÇFW&VBæÖ‚†ò’Óâ°¢6öç7BFVÒÒöff–6TÖVÖ&W'0¢æf–ÇFW"‚†Ò’ÓâÒæöff–6Uö–BÓÓÒòæ–B¢æÖ‚†Ò’ÓâGf—6W'2æf–æB‚†’Óâæ–BÓÓÒÒæGf—6÷%ö–B’¢æf–ÇFW"„&ööÆVâ’2&öf–ÆUµÓ°¢6öç7B6÷VçBÒFVÒæÆVæwFƒ°¢&WGW&â€¢ÇG"¶W“×¶òæ–GÒ6Æ74æÖSÒ&&÷&FW"×BFW‡B×6Ò†÷fW#¦&r×6ÆFRÓS#à¢ÇFB6Æ74æÖSÒ'ÓB#à¢Æ'WGFöà¢öä6Æ–6³×²‚’Óâ6WDöff–6TG&vW"†ò—Ğ¢6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ2FW‡BÖÆVgB ¢à¢¶òæ–ÖvU÷W&Âò€¢Æ–Öp¢7&3×¶òæ–ÖvU÷W&ÇĞ¢6Æ74æÖSÒ&‚ÓrÓ&÷VæFVB×†Âö&¦V7BÖ6÷fW" ¢óà¢’¢€¢Ç7â6Æ74æÖSÒ&w&–B‚ÓrÓÆ6RÖ—FV×2Ö6VçFW"&÷VæFVB×†Â&r×&VBÓSFW‡BÕ²66CUÒ#à¢Ä'V–ÆF–æs"6—¦S×³‡Òóà¢Â÷7ãà¢—Ğ¢Ç7ãà¢Æ"6Æ74æÖSÒ&&Æö6²#ç¶òææÖWÓÂö#à¢Ç6ÖÆÂ6Æ74æÖSÒ'FW‡B×6ÆFRÓC#à¢¶6÷VçGÒFìKYöÖà¢Â÷6ÖÆÃà¢Â÷7ãà¢Âö'WGFöãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×‡2#à¢Æ#à¢¶òæ6—G—Òò¶òæF—7G&–7GĞ¢Âö#à¢Æ'"óà¢Ç7â6Æ74æÖSÒ'FW‡B×6ÆFRÓC#à¢¶òç†öæRÇÂ%FVÆVföâ–ö²'Ò+r¶òæVÖ–ÂÇÂ$R×÷7F–ö²'Ğ¢Â÷7ãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓBFW‡B×‡2#à¢Æ#ç¶òæÖævW%öæÖRÇÂ$FæÖLK'ÓÂö#à¢Æ'"óà¢Ç7â6Æ74æÖSÒ'FW‡B×6ÆFRÓC#äöf—2Æ–FW&“Â÷7ãà¢Â÷FCà¢ÇFB6Æ74æÖSÒ'ÓB#à¢ÆF—b6Æ74æÖSÒ&fÆW‚×76R×‚Ó"#à¢·FVÒç6Æ–6RƒÂR’æÖ‚‡’Óà¢æfF%÷W&Âò€¢´Ó[h‘éì¶»§q«^t             </button>
+      const fd = new FormData(e.currentTarget as HTMLFormElement);
+      const image = fd.get("image") as File;
+      const imageUrl = image?.size
+        ? await new Promise<string>((resolve) => {
+            const r = new FileReader();
+            r.onload = () => resolve(String(r.result));
+            r.readAsDataURL(image);
+          })
+        : null;
+      const { error } = await supabase.from("offices").insert({
+        name: String(fd.get("name")),
+        city: String(fd.get("city")),
+        district: String(fd.get("district")),
+        address: String(fd.get("address") || ""),
+        phone: String(fd.get("phone") || "") || null,
+        email: String(fd.get("email") || "") || null,
+        manager_name: String(fd.get("manager") || "") || null,
+        image_url: imageUrl,
+        status: "active",
+      });
+      if (error) {
+        alert(error.message);
+        return;
+      }
+      close();
+      void load();
+      alert("Ofis gerÃ§ek kayda eklendi ve yayÄ±na hazÄ±r.");
+    });
+    document.body.appendChild(modal);
+  };
+  const addOfficeWithOwner = () => {
+    const options = advisers
+      .map(
+        (a) =>
+          `<option value="${a.id}">${a.first_name} ${a.last_name}${a.phone ? " Â· " + a.phone : ""}</option>`,
+      )
+      .join("");
+    const modal = document.createElement("div");
+    modal.className =
+      "fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/50 p-4";
+    modal.innerHTML = `<form class="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"><div class="flex justify-between"><div><p class="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER</p><h2 class="mt-1 text-xl font-black">Yeni Ofis Ekle</h2><p class="mt-1 text-sm text-slate-500">Sahibi danÄ±ÅŸmanlar arasÄ±ndan isim veya telefonla seÃ§in.</p></div><button type="button" data-close>âœ•</button></div><div class="mt-5 grid gap-3 md:grid-cols-2"><label class="text-xs font-black">Ofis adÄ± *<input required name="name" class="mt-1 w-full rounded-xl border p-3"/></label><label class="text-xs font-black">Ofis sahibi / yÃ¶netici<select name="owner" class="mt-1 w-full rounded-xl border p-3"><option value="">AtanmadÄ±</option>${options}</select></label><label class="text-xs font-black">Ä°l *<input required name="city" class="mt-1 w-full rounded-xl border p-3"/></label><label class="text-xs font-black">Ä°lÃ§e *<input required name="district" class="mt-1 w-full rounded-xl border p-3"/></label><label class="text-xs font-black">Telefon<input name="phone" class="mt-1 w-full rounded-xl border p-3"/></label><label class="text-xs font-black">E-posta<input name="email" type="email" class="mt-1 w-full rounded-xl border p-3"/></label><label class="text-xs font-black md:col-span-2">AÃ§Ä±k adres<textarea name="address" class="mt-1 w-full rounded-xl border p-3"></textarea></label><label data-drop class="flex min-h-28 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-[#cd011e]/40 bg-red-50 text-xs font-black text-[#cd011e] md:col-span-2">Ofis gÃ¶rselini sÃ¼rÃ¼kleyip bÄ±rakÄ±n veya seÃ§in<input name="image" type="file" accept="image/*" class="hidden"/></label></div><button class="mt-5 rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white">OFÄ°SÄ° KAYDET</button></form>`;
+    const close = () => modal.remove();
+    modal.querySelector("[data-close]")?.addEventListener("click", close);
+    const zone = modal.querySelector("[data-drop]")!;
+    const input = modal.querySelector("[name=image]") as HTMLInputElement;
+    zone.addEventListener("click", () => input.click());
+    zone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      zone.classList.add("bg-red-100");
+    });
+    zone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      input.files = e.dataTransfer?.files || null;
+      zone.textContent = input.files?.[0]?.name || "GÃ¶rsel seÃ§ildi";
+    });
+    modal.querySelector("form")!.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fd = new FormData(e.currentTarget as HTMLFormElement);
+      const ownerId = String(fd.get("owner") || "");
+      const owner = advisers.find((a) => a.id === ownerId);
+      const image = fd.get("image") as File;
+      const imageUrl = image?.size
+        ? await new Promise<string>((resolve) => {
+            const r = new FileReader();
+            r.onload = () => resolve(String(r.result));
+            r.readAsDataURL(image);
+          })
+        : null;
+      const { data, error } = await supabase
+        .from("offices")
+        .insert({
+          name: String(fd.get("name")),
+          city: String(fd.get("city")),
+          district: String(fd.get("district")),
+          address: String(fd.get("address") || ""),
+          phone: String(fd.get("phone") || "") || null,
+          email: String(fd.get("email") || "") || null,
+          owner_profile_id: ownerId || null,
+          manager_name: owner ? owner.first_name + " " + owner.last_name : null,
+          image_url: imageUrl,
+          status: "active",
+        })
+        .select("id")
+        .single();
+      if (error) {
+        alert(error.message);
+        return;
+      }
+      if (ownerId && data)
+        await supabase.from("office_advisors").upsert({
+          office_id: data.id,
+          advisor_id: ownerId,
+          is_manager: true,
+        });
+      close();
+      void load();
+      alert("Ofis, sahibi ve gÃ¶rseli gerÃ§ek kayda eklendi.");
+    });
+    document.body.appendChild(modal);
+  };
+  const setStar = async (kind: "advisor" | "office", id: string) => {
+    const { data, error } = await supabase.rpc("toggle_homepage_star", {
+      p_kind: kind,
+      p_entity_id: id,
+    });
+    if (error) {
+      alert(error.message);
+      return;
+    }
+    await load();
+    alert(
+      data
+        ? "Ana sayfadaki YÄ±ldÄ±zlarÄ±mÄ±z alanÄ±na eklendi."
+        : "DanÄ±ÅŸman yÄ±ldÄ±zlardan Ã§Ä±karÄ±ldÄ±.",
+    );
+  };
+  const addAdvisorToOffice = async (o: Office) => {
+    const choices = advisers.filter(
+      (a) =>
+        !officeMembers.some(
+          (m) => m.office_id === o.id && m.advisor_id === a.id,
+        ),
+    );
+    const selected = window.prompt(
+      "Eklenecek danÄ±ÅŸmanÄ± seÃ§in:\n" +
+        choices
+          .map(
+            (a, i) =>
+              `${i + 1}. ${a.first_name} ${a.last_name} ${a.phone || ""}`,
+          )
+          .join("\n"),
+    );
+    const i = Number(selected) - 1;
+    if (!Number.isInteger(i) || !choices[i]) return;
+    const { error } = await supabase.from("office_advisors").insert({
+      office_id: o.id,
+      advisor_id: choices[i].id,
+      is_manager: false,
+    });
+    if (error) return alert(error.message);
+    void load();
+    alert("DanÄ±ÅŸman ofise eklendi.");
+  };
+  const heading = (title: string, desc: string, action?: React.ReactNode) => (
+    <div className="mb-6 flex flex-col gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">
+          REALTY CENTER / YÃ–NETÄ°M
+        </p>
+        <h1 className="mt-1 text-2xl font-black text-slate-900">{title}</h1>
+        <p className="mt-1 text-sm text-slate-500">{desc}</p>
+      </div>
+      {action}
+    </div>
+  );
+  const button = (
+    children: React.ReactNode,
+    onClick?: () => void,
+    primary = false,
+  ) => (
+    <button
+      onClick={onClick}
+      className={primary ? "rc-primary" : "rc-secondary"}
+    >
+      {children}
+    </button>
+  );
+  const userTable = (data: Profile[], advisor = false) => (
+    <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <table className="w-full min-w-[850px] text-left">
+        <thead className="bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500">
+          <tr>
+            <th className="p-4">{advisor ? "DanÄ±ÅŸman" : "KullanÄ±cÄ±"}</th>
+            <th className="p-4">Ä°letiÅŸim</th>
+            <th className="p-4">Rol / Durum</th>
+            <th className="p-4">{advisor ? "PortfÃ¶y / Puan" : "Son GiriÅŸ"}</th>
+            <th className="p-4 text-right">Ä°ÅŸlem</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((p) => (
+            <tr
+              key={p.id}
+              className="border-t border-slate-100 text-sm hover:bg-slate-50"
+            >
+              <td className="p-4">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#cd011e]/10 font-black text-[#cd011e]">
+                    {p.avatar_url ? (
+                      <img
+                        src={p.avatar_url}
+                        className="h-full w-full rounded-full object-cover"
+                      />
+                    ) : (
+                      (p.first_name[0] || "R") + (p.last_name[0] || "C")
+                    )}
+                  </span>
+                  <div>
+                    <b>
+                      {p.first_name} {p.last_name}
+                    </b>
+                    <p className="text-xs text-slate-500">@{p.username}</p>
+                  </div>
+                </div>
+              </td>
+              <td className="p-4 text-xs text-slate-600">
+                {p.email}
+                <br />
+                {p.phone || "Telefon yok"}
+              </td>
+              <td className="p-4 text-xs">
+                <b>{roleName(p.role)}</b>
+                <br />
+                <span
+                  className={
+                    p.status === "active" ? "status-good" : "status-warn"
+                  }
+                >
+                  {statusName(p.status)}
+                </span>
+              </td>
+              <td className="p-4 text-xs text-slate-500">
+                {advisor ? (
+                  <>
+                    0 ilan
+                    <br />â˜† Puan yok
+                  </>
+                ) : p.last_login_at ? (
+                  new Date(p.last_login_at).toLocaleString("tr-TR")
+                ) : (
+                  "HenÃ¼z giriÅŸ yok"
+                )}
+              </td>
+              <td className="p-4 text-right">
+                {button("GÃ¶rÃ¼ntÃ¼le", () => setDrawer(p))}
+              </td>
+            </tr>
+          ))}
+          {!data.length && (
+            <tr>
+              <td
+                colSpan={5}
+                className="p-10 text-center text-sm text-slate-400"
+              >
+                KayÄ±t bulunmuyor.
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
+  let view: React.ReactNode;
+  if (page === "user-create")
+    return (
+      <PanelFrame page={page} setPage={setPage}>
+        <NewUserPage
+          offices={offices}
+          cancel={() => setPage("users")}
+          done={() => {
+            void load();
+            setPage("users");
+            alert("KullanÄ±cÄ± baÅŸarÄ±yla eklendi.");
+          }}
+        />
+      </PanelFrame>
+    );
+  if (page === "users")
+    return (
+      <PanelFrame page={page} setPage={setPage}>
+        <UsersPage
+          profiles={profiles}
+          offices={offices}
+          create={() => setPage("user-create")}
+          refresh={load}
+        />
+      </PanelFrame>
+    );
+  if (page === "advisors")
+    return (
+      <PanelFrame page={page} setPage={setPage}>
+        <AdvisorsPageV2
+          profiles={profiles}
+          offices={offices}
+          members={officeMembers}
+          metrics={metrics}
+          stars={stars}
+          refresh={load}
+          star={(id) => setStar("advisor", id)}
+          trash={trash}
+          create={() => setPage("user-create")}
+        />
+      </PanelFrame>
+    );
+  if (page === "overview")
+    view = (
+      <>
+        <>
+          {heading(
+            "Genel BakÄ±ÅŸ",
+            "KullanÄ±cÄ±, ilan, baÅŸvuru ve iÃ§erik sÃ¼reÃ§lerinin tek merkezden Ã¶zeti.",
+          )}
+        </>
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <Metric
+            label="Toplam KullanÄ±cÄ±"
+            value={profiles.length}
+            detail={`${advisers.length} danÄ±ÅŸman`}
+            icon={Users}
+          />
+          <Metric
+            label="Aktif Ofis"
+            value={offices.length}
+            detail="YayÄ±ndaki kayÄ±tlar"
+            icon={Building2}
+          />
+          <Metric
+            label="Onay Bekleyen Ä°lan"
+            value="0"
+            detail="Ä°lan onay merkezi"
+            icon={LayoutPanelTop}
+          />
+          <Metric
+            label="Yeni Talep"
+            value="0"
+            detail="Ä°letiÅŸim merkezi"
+            icon={MessageSquare}
+          />
+        </div>
+        <div className="mt-6 grid gap-5 lg:grid-cols-2">
+          <Panel
+            title="HÄ±zlÄ± Ä°ÅŸlemler"
+            actions={[
+              ["Yeni kullanÄ±cÄ± oluÅŸtur", "users"],
+              ["Ofis ekle", "offices"],
+              ["Ä°lan onay merkezi", "listings"],
+              ["Ä°letiÅŸim talepleri", "inbox"],
+            ]}
+            run={(x) => setPage(x as Page)}
+          />
+          <div className="rounded-2xl bg-slate-900 p-6 text-white">
+            <ShieldCheck className="text-red-300" />
+            <h2 className="mt-4 font-black">Sistem gÃ¼venliÄŸi</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-300">
+              KullanÄ±cÄ±, ilan, silme ve oturum hareketleri iÅŸlem kayÄ±tlarÄ±
+              altÄ±nda izlenir.
+            </p>
+            {button("Ä°ÅŸlem kayÄ±tlarÄ±nÄ± aÃ§", () => setPage("logs"), true)}
+          </div>
+        </div>
+      </>
+    );
+  else if (page === "users" || page === "advisors") {
+    const advisor = page === "advisors";
+    const rows = advisor
+      ? visible.filter((p) => p.role === "advisor")
+      : visible;
+    view = (
+      <>
+        {heading(
+          advisor ? "DanÄ±ÅŸman YÃ¶netimi" : "KullanÄ±cÄ±lar",
+          advisor
+            ? "Profil, ofis, iletiÅŸim, mesaj ve yÄ±ldÄ±z seÃ§imlerini gerÃ§ek kayÄ±tlardan yÃ¶netin."
+            : "TÃ¼m hesaplarÄ± rol, durum ve iletiÅŸim bilgileriyle yÃ¶netin.",
+          <div className="flex gap-2">
+            {button(
+              <>
+                <Download size={15} /> Excelâ€™e Aktar
+              </>,
+              () =>
+                advisor
+                  ? csv(
+                      "realty-center-danismanlar",
+                      rows.map((p) => ({
+                        ...p,
+                        name: p.first_name + " " + p.last_name,
+                        messages:
+                          metrics.find((m) => m.advisor_id === p.id)
+                            ?.messages_answered || 0,
+                        rating:
+                          metrics.find((m) => m.advisor_id === p.id)
+                            ?.star_rating || 0,
+                        office: offices
+                          .filter((o) =>
+                            officeMembers.some(
+                              (m) =>
+                                m.office_id === o.id && m.advisor_id === p.id,
+                            ),
+                          )
+                          .map((o) => o.name)
+                          .join(", "),
+                      })),
+                      [
+                        "name",
+                        "email",
+                        "phone",
+                        "messages",
+                        "rating",
+                        "office",
+                      ],
+                    )
+                  : setExporting(true),
+            )}
+            {button(
+              <>
+                <Plus size={15} />
+                {advisor ? "DanÄ±ÅŸman Ekle" : "Yeni KullanÄ±cÄ±"}
+              </>,
+              () => setNewUserOpen(true),
+              true,
+            )}
+          </div>,
+        )}
+        <div className="mb-5 grid gap-3 md:grid-cols-[1fr_auto_auto]">
+          <label className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3">
+            <Search size={17} className="text-slate-400" />
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full py-3 text-sm outline-none"
+              placeholder="Ad, kullanÄ±cÄ± adÄ±, e-posta veya telefon ara"
+            />
+          </label>
+          {!advisor && (
+            <select
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
+              className="rounded-xl border border-slate-200 bg-white px-4 text-sm font-bold"
+            >
+              <option value="all">TÃ¼m roller</option>
+              <option value="advisor">DanÄ±ÅŸman</option>
+              <option value="manager">YÃ¶netici</option>
+              <option value="admin">Admin</option>
+            </select>
+          )}
+          {button("Filtreyi temizle", () => {
+            setSearch("");
+            setRole(advisor ? "advisor" : "all");
+          })}
+        </div>
+        {advisor && (
+          <div className="mb-5 rounded-2xl border border-red-100 bg-red-50 p-4 text-sm">
+            <b>REALTY CENTER YÄ±ldÄ±zlarÄ±mÄ±z:</b> Ana sayfada gÃ¶sterilecek en
+            fazla 3 danÄ±ÅŸmanÄ± seÃ§in.{" "}
+            {stars.filter((s) => s.kind === "advisor").length}/3 seÃ§ildi.
+          </div>
+        )}
+        <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <table className="w-full min-w-[850px] text-left">
+            <thead className="bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="p-4">{advisor ? "DanÄ±ÅŸman" : "KullanÄ±cÄ±"}</th>
+                <th className="p-4">Ä°letiÅŸim / Ofis</th>
+                <th className="p-4">Rol / Durum</th>
+                <th className="p-4">
+                  {advisor ? "Mesaj / Puan" : "Son GiriÅŸ"}
+                </th>
+                <th className="p-4 text-right">Ä°ÅŸlem</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((p) => {
+                const metric = metrics.find((m) => m.advisor_id === p.id);
+                const officeNames = offices
+                  .filter((o) =>
+                    officeMembers.some(
+                      (m) => m.office_id === o.id && m.advisor_id === p.id,
+                    ),
+                  )
+                  .map((o) => o.name);
+                return (
+                  <tr key={p.id} className="border-t border-slate-100 text-sm">
+                    <td className="p-4">
+                      <div className="flex items-center gap-3">
+                        <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-[#cd011e]/10 font-black text-[#cd011e]">
+                          {p.avatar_url ? (
+                            <img
+                              src={p.avatar_url}
+                              className="h-full w-full object-cover"
+                            />
+                          ) : (
+                            (p.first_name[0] || "R") + (p.last_name[0] || "C")
+                          )}
+                        </span>
+                        <div>
+                          <b>
+                            {p.first_name} {p.last_name}
+                          </b>
+                          <p className="text-xs text-slate-500">
+                            @{p.username}
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="p-4 text-xs">
+                      {p.email}
+                      <br />
+                      {p.phone || "Telefon yok"}
+                      {advisor && (
+                        <p className="mt-1 font-bold text-[#cd011e]">
+                          {officeNames.join(", ") || "Ofis atanmamÄ±ÅŸ"}
+                        </p>
+                      )}
+                    </td>
+                    <td className="p-4 text-xs">
+                      <b>{roleName(p.role)}</b>
+                      <br />
+                      <span
+                        className={
+                          p.status === "active" ? "status-good" : "status-warn"
+                        }
+                      >
+                        {statusName(p.status)}
+                      </span>
+                    </td>
+                    <td className="p-4 text-xs">
+                      {advisor ? (
+                        <>
+                          YanÄ±tlanan: {metric?.messages_answered || 0}
+                          <br />â˜… {metric?.star_rating || 0}/5
+                        </>
+                      ) : p.last_login_at ? (
+                        new Date(p.last_login_at).toLocaleString("tr-TR")
+                      ) : (
+                        "HenÃ¼z giriÅŸ yok"
+                      )}
+                    </td>
+                    <td className="p-4 text-right">
+                      <div className="flex justify-end gap-2">
+                        {advisor &&
+                          button(
+                            stars.some(
+                              (s) =>
+                                s.kind === "advisor" && s.entity_id === p.id,
+                            )
+                              ? "YÄ±ldÄ±zdan Ã‡Ä±kar"
+                              : "YÄ±ldÄ±zlara Ekle",
+                            () => void setStar("advisor", p.id),
+                          )}
+                        {button("GÃ¶rÃ¼ntÃ¼le", () => setDrawer(p))}
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </>
+    );
+  } else if (page === "offices") {
+    const filtered = offices.filter(
+      (o) =>
+        (!search ||
+          `${o.name} ${o.city} ${o.district}`
+            .toLowerCase()
+            .includes(search.toLowerCase())) &&
+        (!officeCity || o.city === officeCity) &&
+        (!officeDistrict || o.district === officeDistrict),
+    );
+    const cities = [...new Set(offices.map((o) => o.city))];
+    const districts = [
+      ...new Set(
+        offices
+          .filter((o) => !officeCity || o.city === officeCity)
+          .map((o) => o.district),
+      ),
+    ];
+    view = (
+      <>
+        {heading(
+          "Ofis YÃ¶netimi",
+          "Ofisleri il, ilÃ§e, sahip ve sÄ±nÄ±rsÄ±z danÄ±ÅŸman atamasÄ±yla yÃ¶netin.",
+          <div className="flex gap-2">
+            {button(
+              <>
+                <Download size={15} /> Excelâ€™e Aktar
+              </>,
+              () =>
+                csv("realty-center-ofisler", filtered as any, [
+                  "name",
+                  "city",
+                  "district",
+                  "address",
+                  "phone",
+                  "email",
+                  "manager_name",
+                ]),
+            )}
+            {button(
+              <>
+                <Plus size={15} /> Ofis Ekle
+              </>,
+              () => setShowOfficeCreate(true),
+              true,
+            )}
+          </div>,
+        )}
+        <div className="mb-5 grid gap-3 md:grid-cols-3">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+            placeholder="Ofis adÄ± ara"
+          />
+          <select
+            value={officeCity}
+            onChange={(e) => {
+              setOfficeCity(e.target.value);
+              setOfficeDistrict("");
+            }}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m iller</option>
+            {cities.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+          <select
+            value={officeDistrict}
+            onChange={(e) => setOfficeDistrict(e.target.value)}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
+          >
+            <option value="">TÃ¼m ilÃ§eler</option>
+            {districts.map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+        </div>
+        <section className="mb-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="text-[10px] font-black tracking-[.2em] text-white/75">
+                REALTY CENTER YILDIZ OFÄ°SLERÄ°
+              </p>
+              <h2 className="mt-1 text-base font-black">
+                Ana sayfada gÃ¶sterilen seÃ§ili ofisler
+              </h2>
+            </div>
+            <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-black">
+              {stars.filter((s) => s.kind === "office").length}/3 seÃ§ildi
+            </span>
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            {stars
+              .filter((s) => s.kind === "office")
+              .map((s) => offices.find((o) => o.id === s.entity_id))
+              .filter(Boolean)
+              .map((o: any) => {
+                const staff = officeMembers
+                  .filter((m) => m.office_id === o.id)
+                  .map((m) => advisers.find((a) => a.id === m.advisor_id))
+                  .filter(Boolean) as Profile[];
+                return (
+                  <button
+                    key={o.id}
+                    onClick={() => setOfficeDrawer(o)}
+                    className="group flex items-center gap-3 rounded-xl border border-white/25 bg-white/10 p-3 text-left transition hover:bg-white hover:text-[#cd011e]"
+                  >
+                    {o.image_url ? (
+                      <img
+                        src={o.image_url}
+                        className="h-14 w-14 rounded-xl object-cover"
+                      />
+                    ) : (
+                      <span className="grid h-14 w-14 place-items-center rounded-xl bg-white/15">
+                        <Building2 size={22} />
+                      </span>
+                    )}
+                    <span className="min-w-0 flex-1">
+                      <b className="block truncate text-sm">â˜… {o.name}</b>
+                      <small className="mt-1 block text-[11px] opacity-75">
+                        {o.city} / {o.district}
+                      </small>
+                      <small className="block text-[10px] opacity-70">
+                        {o.manager_name || "Lider atanmadÄ±"} Â· {staff.length}{" "}
+                        danÄ±ÅŸman
+                      </small>
+                    </span>
+                  </button>
+                );
+              })}
+            {!stars.some((s) => s.kind === "office") && (
+              <p className="py-3 text-sm text-red-100">
+                HenÃ¼z yÄ±ldÄ±z ofis seÃ§ilmedi.
+              </p>
+            )}
+          </div>
+        </section>
+        <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <table className="w-full min-w-[1050px] text-left">
+            <thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500">
+              <tr>
+                <th className="p-4">Ofis</th>
+                <th className="p-4">Konum / Ä°letiÅŸim</th>
+                <th className="p-4">Ofis Lideri</th>
+                <th className="p-4">DanÄ±ÅŸmanlar</th>
+                <th className="p-4 text-right">Ä°ÅŸlemler</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((o) => {
+                const team = officeMembers
+                  .filter((m) => m.office_id === o.id)
+                  .map((m) => advisers.find((a) => a.id === m.advisor_id))
+                  .filter(Boolean) as Profile[];
+                const count = team.length;
+                return (
+                  <tr key={o.id} className="border-t text-sm hover:bg-slate-50">
+                    <td className="p-4">
+                      <button
+                        onClick={() => setOfficeDrawer(o)}
+                        className="flex items-center gap-3 text-left"
+                      >
+                        {o.image_url ? (
+                          <img
+                            src={o.image_url}
+                            className="h-10 w-10 rounded-xl object-cover"
+                          />
+                        ) : (
+                          <span className="grid h-10 w-10 place-items-center rounded-xl bg-red-50 text-[#cd011e]">
+                            <Building2 size={18} />
+                          </span>
+                        )}
+                        <span>
+                          <b className="block">{o.name}</b>
+                          <small className="text-slate-400">
+                            {count} danÄ±ÅŸman
+                          </small>
+                        </span>
+                      </button>
+                    </td>
+                    <td className="p-4 text-xs">
+                      <b>
+                        {o.city} / {o.district}
+                      </b>
+                      <br />
+                      <span className="text-slate-400">
+                        {o.phone || "Telefon yok"} Â· {o.email || "E-posta yok"}
+                      </span>
+                    </td>
+                    <td className="p-4 text-xs">
+                      <b>{o.manager_name || "AtanmadÄ±"}</b>
+                      <br />
+                      <span className="text-slate-400">Ofis lideri</span>
+                    </td>
+                    <td className="p-4">
+                      <div className="flex -space-x-2">
+                        {team.slice(0, 5).map((p) =>
+                          p.avatar_url ? (
+                            <img
+                              key={p.id}
+                              title={p.first_name + " " + p.last_name}
+                              src={p.avatar_url}
+                              className="h-8 w-8 rounded-full border-2 border-white object-cover"
+                            />
+                          ) : (
+                            <span
+                              key={p.id}
+                              title={p.first_name + " " + p.last_name}
+                              className="grid h-8 w-8 place-items-center rounded-full border-2 border-white bg-slate-200 text-[10px] font-black"
+                            >
+                              {p.first_name[0]}
+                              {p.last_name[0]}
+                            </span>
+                          ),
+                        )}
+                      </div>
+                    </td>
+                    <td className="p-4">
+                      <div className="flex justify-end gap-2">
+                        <button
+                          onClick={() => void addAdvisorToOffice(o)}
+                          className="rounded-lg bg-slate-700 px-3 py-2 text-xs font-black text-white"
+                        >
+                          DanÄ±ÅŸman Ata
+                        </button>
+                        <button
+                          onClick={() => void setStar("office", o.id)}
+                          className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-black text-white"
+                        >
+                          {stars.some(
+                            (s) => s.kind === "office" && s.entity_id === o.id,
+                          )
+                            ? "â˜… Ã‡Ä±kar"
+                            : "â˜† YÄ±ldÄ±zlara Ekle"}
+                        </button>
+                        <button
+                          onClick={() => setOfficeDrawer(o)}
+                          className="rounded-lg bg-slate-200 px-3 py-2 text-xs font-black"
+                        >
+                          GÃ¶rÃ¼ntÃ¼le / DÃ¼zenle
+                        </button>
+                        <button
+                          onClick={() => {
+                            if (confirm("Ofis Ã§Ã¶p kutusuna taÅŸÄ±nsÄ±n mÄ±?"))
+                              void supabase
+                                .from("offices")
+                                .update({
+                                  deleted_at: new Date().toISOString(),
+                                })
+                                .eq("id", o.id)
+                                .then(() => load());
+                          }}
+                          className="rounded-lg bg-rose-600 px-3 py-2 text-xs font-black text-white"
+                        >
+                          Ã‡Ã¶p Kutusu
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </>
+    );
+  } else if (page === "listings")
+    view = (
+      <>
+        {heading(
+          "Ä°lan YÃ¶netimi",
+          "KapsamlÄ± ilan giriÅŸi, ilan onayÄ± ve vitrinde Ã¶ne Ã§Ä±karma.",
+        )}
+        <div className="mb-5 flex gap-2">
+          {(["all", "approval", "add"] as const).map((k) =>
+            button(
+              k === "all"
+                ? "TÃ¼m Ä°lanlar"
+                : k === "approval"
+                  ? "Ä°lan Onay Merkezi"
+                  : "Ä°lan Ekle",
+              () => setListingMode(k),
+              listingMode === k,
+            ),
+          )}
+        </div>
+        <ListingForm
+          alert={alert}
+          profiles={profiles}
+          mode={listingMode}
+          setMode={setListingMode}
+        />
+      </>
+    );
+  else view = <FeaturePage title={titleOf(page)} page={page} />;
+  return (
+    <div className="min-h-screen bg-[#f6f7f9] text-slate-900">
+      <style>{`.rc-primary,.rc-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:.75rem;padding:.7rem .9rem;font-size:.75rem;font-weight:800}.rc-primary{background:#cd011e;color:white}.rc-secondary{border:1px solid #e2e8f0;background:white;color:#475569}.status-good,.status-warn{display:inline-block;margin-top:.3rem;border-radius:999px;padding:.15rem .45rem;font-size:10px;font-weight:800}.status-good{background:#d1fae5;color:#047857}.status-warn{background:#fef3c7;color:#a16207}`}</style>
+      <aside
+        className={`fixed inset-y-0 left-0 z-40 w-72 border-r border-slate-200 bg-white transition-transform lg:translate-x-0 ${mobile ? "translate-x-0" : "-translate-x-full"}`}
+      >
+        <div className="flex h-[76px] items-center justify-between border-b border-slate-100 px-6">
+          <div>
+            <p className="text-xs font-black tracking-[.2em] text-[#cd011e]">
+              REALTY CENTER
+            </p>
+            <p className="mt-1 text-lg font-black">Admin Paneli</p>
+          </div>
+          <button onClick={() => setMobile(false)} className="lg:hidden">
+            <X />
+          </button>
+        </div>
+        <nav className="h-[calc(100vh-76px)] overflow-y-auto p-4">
+          {groups.map((g) => (
+            <div key={g.title} className="mb-5">
+              <p className="mb-2 px-3 text-[10px] font-black tracking-wider text-slate-400">
+                {g.title}
+              </p>
+              {g.items.map((i) => {
+                const Icon = i.icon;
+                return (
+                  <button
+                    key={i.id}
+                    onClick={() => {
+                      setPage(i.id);
+                      setMobile(false);
+                    }}
+                    className={`mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white" : "text-slate-600 hover:bg-slate-50"}`}
+                  >
+                    <Icon size={18} />
+                    {i.label}
+                  </button>
                 );
               })}
             </div>
@@ -695,25 +2912,367 @@ function UserEditPage({
                 />
                 {f.avatar_url ? (
                   <img
-                    src={f.avaYªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÕÑ…É}ÕÉ±ô(€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰ ´ÌÈÜ´ÌÈÉ½Õ¹‘•µ™Õ±°½‰©•Ğµ½Ù•Èˆ(€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€¤€è€ (€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰É¥ ´ÈàÜ´ÈàÁ±…”µ¥Ñ•µÌµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµÉ•´ÔÀÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµlÀÄÅ•tˆø(€€€€€€€€€€€€€€€€€€€íÁÉ½™¥±”¹™¥ÉÍÑ}¹…µ•lÁuô(€€€€€€€€€€€€€€€€€€€íÁÉ½™¥±”¹±…ÍÑ}¹…µ•lÁuô(€€€€€€€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€¥ô(€€€€€€€€€€€€€€€€ñˆ±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµÍ´ˆùAÉ½™¥°É•Íµ¥¹¤‘—}§}Ñ¥Èğ½ˆø(€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ĞÀÀˆø(€€€€€€€€€€€€€€€€€½Íå„Í—µ•¬§¥¸ÓÅ­±…çÅ¸(€€€€€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ñÍ•Ñ¥½¸ø(€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ‰…Í”™½¹Ğµ‰±…¬ˆùQ•µ•°	¥±¥±•Èğ½ Èø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ¥…À´ĞµéÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€€€€íl(€€€€€€€€€€€€€€€€€l‰™¥ÉÍÑ}¹…µ”ˆ°€‰€¨‰t°(€€€€€€€€€€€€€€€€€l‰±…ÍÑ}¹…µ”ˆ°€‰M½å…€¨‰t°(€€€€€€€€€€€€€€€€€l‰ÕÍ•É¹…µ”ˆ°€‰-Õ±±…»ÅÄ“Ä€¨‰t°(€€€€€€€€€€€€€€€€€l‰•µ…¥°ˆ°€‰µA½ÍÑ„€¨‰t°(€€€€€€€€€€€€€€€€€l‰Á¡½¹”ˆ°€‰Q•±•™½¸‰t°(€€€€€€€€€€€€€€€t¹µ…À ¡m­•ä°±…‰•±t¤€ôø€ (€€€€€€€€€€€€€€€€€€ñ±…‰•°­•äõí­•åô±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ÜÀÀˆø(€€€€€€€€€€€€€€€€€€€í±…‰•±ô(€€€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕĞ(€€€€€€€€€€€€€€€€€€€€€É•ÅÕ¥É•õí­•ä€„ôô€‰Á¡½¹”‰ô(€€€€€€€€€€€€€€€€€€€€€ÑåÁ”õí­•ä€ôôô€‰•µ…¥°ˆ€ü€‰•µ…¥°ˆ€è€‰Ñ•áĞ‰ô(€€€€€€€€€€€€€€€€€€€€€Ù…±Õ”õì¡˜…Ì…¹ä¥m­•åuô(€€€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøÍ•Ğ¡­•ä°”¹Ñ…É•Ğ¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµlÀÄÅ•tˆ(€€€€€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´Ü‰½É‘•ÈµĞ‰½É‘•ÈµÍ±…Ñ”´ÄÀÀÁĞ´Øˆø(€€€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ‰…Í”™½¹Ğµ‰±…¬ˆùe•Ñ­¤Ù”!•Í…Àğ½ Èø(€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ¥…À´ĞµéÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰½±ˆø(€€€€€€€€€€€€€€€€€€€I½°(€€€€€€€€€€€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€€€€€€€€€€€Ù…±Õ”õí˜¹É½±•ô(€€€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøÍ•Ğ ‰É½±”ˆ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…‘Ù¥Í½Èˆù…»Ç}µ…¸ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰µ…¹…•ÈˆùgÙ¹•Ñ¥¤ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…‘µ¥¸ˆù‘µ¥¸ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€ğ½Í•±•Ğø(€€€€€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰½±ˆø(€€€€€€€€€€€€€€€€€€€!•Í…ÀÕÉÕµÔ(€€€€€€€€€€€€€€€€€€€€ñÍ•±•Ğ(€€€€€€€€€€€€€€€€€€€€€Ù…±Õ”õí˜¹ÍÑ…ÑÕÍô(€€€€€€€€€€€€€€€€€€€€€½¹¡…¹”õì¡”¤€ôøÍ•Ğ ‰ÍÑ…ÑÕÌˆ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ô(€€€€€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰µĞ´Ä¸ÔÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÌÁä´ÌÑ•áĞµÍ´ˆ(€€€€€€€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰…Ñ¥Ù”ˆù­Ñ¥˜ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰¥¹…Ñ¥Ù”ˆùA…Í¥˜ğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰ÍÕÍÁ•¹‘•ˆùÍ¯Åå„…³Å¹“Äğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€€€ñ½ÁÑ¥½¸Ù…±Õ”ô‰‘•Á…ÉÑ•ˆùåËÅ±“Äğ½½ÁÑ¥½¸ø(€€€€€€€€€€€€€€€€€€€€ğ½Í•±•Ğø(€€€€€€€€€€€€€€€€€€ğ½±…‰•°ø(€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´Ü™±•à©ÕÍÑ¥™äµ•¹…À´Ì‰½É‘•ÈµĞ‰½É‘•ÈµÍ±…Ñ”´ÄÀÀÁĞ´Ôˆø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€ÑåÁ”ô‰‰ÕÑÑ½¸ˆ(€€€€€€€€€€€€€½¹±¥¬õí…¹•±ô(€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁà´ÔÁä´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆ(€€€€€€€€€€€€ø(€€€€€€€€€€€€€ƒÁÁÑ…°(€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸(€€€€€€€€€€€€€‘¥Í…‰±•õí‰ÕÍåô(€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Ñ…ÀÉ½Õ¹‘•µá°‰œµlÀÄÅ•tÁà´ØÁä´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”‘¥Í…‰±•é½Á…¥Ñä´ØÀˆ(€€€€€€€€€€€€ø(€€€€€€€€€€€€€í‰ÕÍä€ü€‰-…å‘•‘¥±¥å½ËŠ˜ˆ€è€‰—}§}¥­±¥­±•É¤-…å‘•Ğ‰ô(€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½™½É´ø(€€€€€€ğ½‘¥Øø(€€€€€í‰ÕÍä€˜˜€ (€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥á•¥¹Í•Ğ´ÀèµlÄÀÁt™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´äÔÀ¼ÌÔˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰œµİ¡¥Ñ”À´àÑ•áĞµ•¹Ñ•ÈÍ¡…‘½Ü´Éá°ˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼ ´ÄÀÜ´ÄÀ…¹¥µ…Ñ”µÍÁ¥¸É½Õ¹‘•µ™Õ±°‰½É‘•È´Ğ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰½É‘•ÈµĞµlÀÄÅ•tˆ€¼ø(€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰µĞ´Ô™½¹Ğµ‰±…¬ˆù-Õ±±…»ÅÄŸñ¹•±±•¹¥å½Èğ½ Èø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½‘¥Øø(€€€€€€¥ô(€€€€ğ½‘¥Øø(€€¤ì)ô)™Õ¹Ñ¥½¸9•İUÍ•ÉA…”¡ì(€½™™¥•Ì°(€…¹•°°(€‘½¹”°)ôèì(€½™™¥•Ìè=™™¥•mtì(€…¹•°è€ ¤€ôøÙ½¥ì(€‘½¹”è€ ¤€ôøÙ½¥ì)ô¤ì(€½¹ÍĞm™½É´°Í•Ñ½Éµt€ôÕÍ•MÑ…Ñ”¡ì(€€€™¥ÉÍÑ9…µ”è€ˆˆ°(€€€±…ÍÑ9…µ”è€ˆˆ°(€€€ÕÍ•É¹…µ”è€ˆˆ°+m4ÖÚ$z{-®éÜj×ÛÚ[™ÙO^ÊJHOˆ\]J™\İšXİ‹K\™Ù]˜[YJ_BˆÛ\ÜÓ˜[YOH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‚ˆ‚ˆÜ[Ûˆ˜[YOHˆ±,0éÙHÙpéÚ[ÛÜ[Û‚ˆÖÂˆ‹‹›™]ÈÙ]
-ˆÙ™šXÙ\Âˆ™š[\Š
-ÊHOˆY›Ü›K˜Ú]HË˜Ú]HOOH›Ü›K˜Ú]JBˆ›X\
-
-ÊHOˆË™\İšXİ
-Kˆ
-KˆK›X\
-
-
-HOˆ
-ˆÜ[ÛˆÙ^O^ŞOŞOÛÜ[Û‚ˆ
-J_BˆÜÙ[Xİ‚ˆÛX™[‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOH›]MÈ›Ü™\‹]›Ü™\‹\Û]KLLMˆ‚ˆˆÛ\ÜÓ˜[YOH^X˜\ÙH›ÛX›XÚÈ–Y]ÚH™H\Ø\Ú‚ˆ]ˆÛ\ÜÓ˜[YOH›]MHÜšYØ\MY™ÜšYXÛÛËLˆ‚ˆX™[Û\ÜÓ˜[YOH^^È›ÛX›Û‚ˆ›Û
-‚ˆÙ[Xİˆ˜[YO^Ù›Ü›Kœ›Û_BˆÛÚ[™ÙO^ÊJHOˆ\]Jœ›ÛH‹K\™Ù]˜[YJ_BˆÛ\ÜÓ˜[YOH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‚ˆ‚ˆÜ[Ûˆ˜[YOH˜Yš\ÛÜˆ‘[±,qgÛX[ÛÜ[Û‚ˆÜ[Ûˆ˜[YOH›X[˜YÙ\ˆ–pí›™]XÚOÛÜ[Û‚ˆÜ[Ûˆ˜[YOH˜YZ[ˆYZ[ÛÜ[Û‚ˆÜÙ[Xİ‚ˆÛX™[‚ˆX™[Û\ÜÓ˜[YOH^^È›ÛX›Û‚ˆ\Ø\\[]BˆÙ[Xİˆ˜[YO^Ù›Ü›Kœİ]\ßBˆÛÚ[™ÙO^ÊJHOˆ\]Jœİ]\È‹K\™Ù]˜[YJ_BˆÛ\ÜÓ˜[YOH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‚ˆ‚ˆÜ[Ûˆ˜[YOH˜Xİ]™HZİYÛÜ[Û‚ˆÜ[Ûˆ˜[YOHš[˜Xİ]™H”\ÚYÛÜ[Û‚ˆÜÙ[Xİ‚ˆÛX™[‚ˆX™[Û\ÜÓ˜[YOH^^È›ÛX›Û‚ˆ1gšYœ™H
-‚ˆ[œ]ˆ™\]Z\™Yˆ\OHœ\ÜİÛÜ™‚ˆZ[“[™İ^ÌLBˆ˜[YO^Ù›Ü›Kœ\ÜİÛÜ™BˆÛÚ[™ÙO^ÊJHOˆ\]Jœ\ÜİÛÜ™‹K\™Ù]˜[YJ_BˆXÙZÛ\H‘[ˆ^ˆLØ\˜Zİ\ˆ‚ˆÛ\ÜÓ˜[YOH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‚ˆÏ‚ˆÛX™[‚ˆX™[Û\ÜÓ˜[YOH^^È›ÛX›Û‚ˆ1gšYœ™HZÜ˜\ˆ
-‚ˆ[œ]ˆ™\]Z\™Yˆ\OHœ\ÜİÛÜ™‚ˆZ[“[™İ^ÌLBˆ˜[YO^Ù›Ü›Kœ™\X]BˆÛÚ[™ÙO^ÊJHOˆ\]Jœ™\X]‹K\™Ù]˜[YJ_BˆXÙZÛ\H±gšYœ™[š^šHZÜ˜\ˆÚ\š[ˆ‚ˆÛ\ÜÓ˜[YOH›]LKHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒLÈKLÈ^\ÛH‚ˆÏ‚ˆÛX™[‚ˆÙ]‚ˆX™[Û\ÜÓ˜[YOH›]MH›^][\ËXÙ[\ˆØ\Lˆ^^È›ÛX›Û‚ˆ[œ]ˆÚXÚÙY^Ù›Ü›K™›Ü˜Ù_BˆÛÚ[™ÙO^ÊJHOˆ\]J™›Ü˜ÙH‹K\™Ù]˜ÚXÚÙY
-_Bˆ\OH˜ÚXÚØ›Ş‚ˆÏÈˆŸBˆ1,ÈÚ\šqgİH1gÚYœ™Hq'ÚqgÚZÛq'ÚH›Ü[›BˆÛX™[‚ˆÙ]‚ˆÜÙXİ[Û‚ˆÙ]‚ˆÙ\œ›Üˆ	‰ˆ
-ˆÛ\ÜÓ˜[YOH›]MH›İ[™Y^™Ë\™YMLMKLÈ^\ÛH›ÛX›Û^\™YMÌ‚ˆÙ\œ›ÜŸBˆÜ‚ˆ
-_Bˆ]ˆÛ\ÜÓ˜[YOH›]MÈ›^\İYKY[™Ø\LÈ›Ü™\‹]›Ü™\‹\Û]KLLMH‚ˆ]Û‚ˆ\OH˜]Ûˆ‚ˆÛÛXÚÏ^ØØ[˜Ù[BˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒMHKLÈ^^È›ÛX›XÚÈ‚ˆ‚ˆ1,[ˆØ]Û‚ˆ]Û‚ˆ\ØX›Y^Ø\Ş_BˆÛ\ÜÓ˜[YOHœ›İ[™Y^™ËVÈØÙLYWHMˆKLÈ^^È›ÛX›XÚÈ^]Ú]H\ØX›Y›ÜXÚ]KMŒ‚ˆ‚ˆØ\ŞHÈ’İ[[±,Xñ,HÛqgİ\[^[Ü¸ )ˆˆˆ’İ[[±,Xñ,HÛqgİ\ˆŸBˆØ]Û‚ˆÙ]‚ˆÙ›Ü›O‚ˆÙ]‚ˆÊ\ŞHİXØÙ\ÜÊH	‰ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH™š^Y[œÙ]L‹VÌLH›^][\ËXÙ[\ˆ\İYKXÙ[\ˆ™Ë\Û]KNMLÌÍHM‚ˆ]ˆÛ\ÜÓ˜[YOH–j¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5w-full max-w-sm rounded-2xl bg-white p-8 text-center shadow-2xl">
+                    src={f.avatar_url}
+                    className="h-32 w-32 rounded-full object-cover"
+                  />
+                ) : (
+                  <span className="grid h-28 w-28 place-items-center rounded-full bg-red-50 text-3xl font-black text-[#cd011e]">
+                    {profile.first_name[0]}
+                    {profile.last_name[0]}
+                  </span>
+                )}
+                <b className="mt-4 text-sm">Profil resmini deÄŸiÅŸtir</b>
+                <span className="mt-1 text-xs text-slate-400">
+                  Dosya seÃ§mek iÃ§in tÄ±klayÄ±n
+                </span>
+              </label>
+            </section>
+            <section>
+              <h2 className="text-base font-black">Temel Bilgiler</h2>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                {[
+                  ["first_name", "Ad *"],
+                  ["last_name", "Soyad *"],
+                  ["username", "KullanÄ±cÄ± AdÄ± *"],
+                  ["email", "E-Posta *"],
+                  ["phone", "Telefon"],
+                ].map(([key, label]) => (
+                  <label key={key} className="text-xs font-bold text-slate-700">
+                    {label}
+                    <input
+                      required={key !== "phone"}
+                      type={key === "email" ? "email" : "text"}
+                      value={(f as any)[key]}
+                      onChange={(e) => set(key, e.target.value)}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-[#cd011e]"
+                    />
+                  </label>
+                ))}
+              </div>
+              <div className="mt-7 border-t border-slate-100 pt-6">
+                <h2 className="text-base font-black">Yetki ve Hesap</h2>
+                <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  <label className="text-xs font-bold">
+                    Rol
+                    <select
+                      value={f.role}
+                      onChange={(e) => set("role", e.target.value)}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    >
+                      <option value="advisor">DanÄ±ÅŸman</option>
+                      <option value="manager">YÃ¶netici</option>
+                      <option value="admin">Admin</option>
+                    </select>
+                  </label>
+                  <label className="text-xs font-bold">
+                    Hesap Durumu
+                    <select
+                      value={f.status}
+                      onChange={(e) => set("status", e.target.value)}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    >
+                      <option value="active">Aktif</option>
+                      <option value="inactive">Pasif</option>
+                      <option value="suspended">AskÄ±ya alÄ±ndÄ±</option>
+                      <option value="departed">AyrÄ±ldÄ±</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div className="mt-7 flex justify-end gap-3 border-t border-slate-100 pt-5">
+            <button
+              type="button"
+              onClick={cancel}
+              className="tap rounded-xl border border-slate-200 px-5 py-3 text-xs font-black"
+            >
+              Ä°ptal
+            </button>
+            <button
+              disabled={busy}
+              className="tap rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-black text-white disabled:opacity-60"
+            >
+              {busy ? "Kaydediliyorâ€¦" : "DeÄŸiÅŸiklikleri Kaydet"}
+            </button>
+          </div>
+        </form>
+      </div>
+      {busy && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/35">
+          <div className="rounded-2xl bg-white p-8 text-center shadow-2xl">
+            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-[#cd011e]" />
+            <h2 className="mt-5 font-black">KullanÄ±cÄ± gÃ¼ncelleniyor</h2>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+function NewUserPage({
+  offices,
+  cancel,
+  done,
+}: {
+  offices: Office[];
+  cancel: () => void;
+  done: () => void;
+}) {
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    username: "",
+    email: "",
+    phone: "",
+    city: "",
+    district: "",
+    role: "advisor",
+    status: "active",
+    password: "",
+    repeat: "",
+    force: true,
+  });
+  const [avatar, setAvatar] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+  const update = (key: string, value: string | boolean) =>
+    setForm((x) => ({ ...x, [key]: value }));
+  const file = (f?: File) => {
+    if (!f) return;
+    const r = new FileReader();
+    r.onload = () => setAvatar(String(r.result));
+    r.readAsDataURL(f);
+  };
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    if (form.password !== form.repeat)
+      return setError("Åifre tekrarÄ± eÅŸleÅŸmiyor.");
+    setBusy(true);
+    const { data, error: requestError } = await supabase.functions.invoke(
+      "admin-users",
+      {
+        body: {
+          action: "create_user",
+          payload: {
+            firstName: form.firstName.trim(),
+            lastName: form.lastName.trim(),
+            username: form.username.trim().toLowerCase().replace(/\s/g, ""),
+            email: form.email.trim().toLowerCase(),
+            phone: form.phone.trim() || null,
+            role: form.role,
+            password: form.password,
+            status: form.status,
+            forcePasswordChange: form.force,
+            avatarUrl: avatar || null,
+            expertiseAreas: [form.city, form.district].filter(Boolean),
+          },
+        },
+      },
+    );
+    setBusy(false);
+    if (requestError || data?.error)
+      return setError(
+        data?.error || requestError?.message || "KullanÄ±cÄ± oluÅŸturulamadÄ±.",
+      );
+    setSuccess(true);
+    setTimeout(done, 1600);
+  };
+  return (
+    <div className="min-h-screen bg-[#f7f9fc] p-5 text-slate-900 lg:p-9">
+      <div className="mx-auto max-w-6xl">
+        <button onClick={cancel} className="hidden">
+          â† KullanÄ±cÄ±lara dÃ¶n
+        </button>
+        <h1 className="text-3xl font-black tracking-tight">
+          Yeni KullanÄ±cÄ± Ekle
+        </h1>
+        <p className="mt-1 text-sm text-slate-500">
+          KullanÄ±cÄ± hesabÄ± ve yetki bilgilerini tanÄ±mlayÄ±n.
+        </p>
+        <form
+          onSubmit={submit}
+          className="mt-7 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:p-7"
+        >
+          <div className="grid gap-8 lg:grid-cols-[330px_1fr]">
+            <section className="border-b border-slate-100 pb-7 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
+              <h2 className="text-base font-black">Profil FotoÄŸrafÄ±</h2>
+              <p className="mt-1 text-xs text-slate-400">
+                JPG veya PNG, en fazla 5 MB.
+              </p>
+              <label
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  file(e.dataTransfer.files[0]);
+                }}
+                className="mt-5 flex h-60 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 text-center hover:border-[#cd011e]"
+              >
+                <input
+                  className="hidden"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => file(e.target.files?.[0])}
+                />
+                {avatar ? (
+                  <img
+                    src={avatar}
+                    className="h-32 w-32 rounded-full object-cover"
+                  />
+                ) : (
+                  <span className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-400">
+                    â—‰
+                  </span>
+                )}
+                <b className="mt-4 text-sm">Profil resmi yÃ¼kle</b>
+                <span className="mt-1 text-xs text-slate-400">
+                  SÃ¼rÃ¼kle bÄ±rak veya dosya seÃ§
+                </span>
+              </label>
+            </section>
+            <section>
+              <h2 className="text-base font-black">Temel Bilgiler</h2>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                {[
+                  ["firstName", "Ad *", "AdÄ±nÄ±zÄ± girin"],
+                  ["lastName", "Soyad *", "SoyadÄ±nÄ±zÄ± girin"],
+                  ["username", "KullanÄ±cÄ± AdÄ± *", "KullanÄ±cÄ± adÄ±nÄ± girin"],
+                  ["email", "E-Posta *", "ornek@realtycenter.com"],
+                  ["phone", "Telefon", "(554) 322 22 22"],
+                ].map(([key, label, placeholder]) => (
+                  <label key={key} className="text-xs font-bold text-slate-700">
+                    {label}
+                    <input
+                      required={key !== "phone"}
+                      type={key === "email" ? "email" : "text"}
+                      value={(form as any)[key]}
+                      onChange={(e) => update(key, e.target.value)}
+                      placeholder={placeholder}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-[#cd011e]"
+                    />
+                  </label>
+                ))}
+                <label className="text-xs font-bold text-slate-700">
+                  Ä°l
+                  <select
+                    value={form.city}
+                    onChange={(e) => update("city", e.target.value)}
+                    className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                  >
+                    <option value="">Ä°l seÃ§in</option>
+                    {[...new Set(offices.map((o) => o.city))].map((x) => (
+                      <option key={x}>{x}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="text-xs font-bold text-slate-700">
+                  Ä°lÃ§e
+                  <select
+                    value={form.district}
+                    onChange={(e) => update("district", e.target.value)}
+                    className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                  >
+                    <option value="">Ä°lÃ§e seÃ§in</option>
+                    {[
+                      ...new Set(
+                        offices
+                          .filter((o) => !form.city || o.city === form.city)
+                          .map((o) => o.district),
+                      ),
+                    ].map((x) => (
+                      <option key={x}>{x}</option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+              <div className="mt-7 border-t border-slate-100 pt-6">
+                <h2 className="text-base font-black">Yetki ve Hesap</h2>
+                <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  <label className="text-xs font-bold">
+                    Rol *
+                    <select
+                      value={form.role}
+                      onChange={(e) => update("role", e.target.value)}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    >
+                      <option value="advisor">DanÄ±ÅŸman</option>
+                      <option value="manager">YÃ¶netici</option>
+                      <option value="admin">Admin</option>
+                    </select>
+                  </label>
+                  <label className="text-xs font-bold">
+                    Hesap Durumu
+                    <select
+                      value={form.status}
+                      onChange={(e) => update("status", e.target.value)}
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    >
+                      <option value="active">Aktif</option>
+                      <option value="inactive">Pasif</option>
+                    </select>
+                  </label>
+                  <label className="text-xs font-bold">
+                    Åifre *
+                    <input
+                      required
+                      type="password"
+                      minLength={10}
+                      value={form.password}
+                      onChange={(e) => update("password", e.target.value)}
+                      placeholder="En az 10 karakter"
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    />
+                  </label>
+                  <label className="text-xs font-bold">
+                    Åifre Tekrar *
+                    <input
+                      required
+                      type="password"
+                      minLength={10}
+                      value={form.repeat}
+                      onChange={(e) => update("repeat", e.target.value)}
+                      placeholder="Åifrenizi tekrar girin"
+                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
+                    />
+                  </label>
+                </div>
+                <label className="mt-5 flex items-center gap-2 text-xs font-bold">
+                  <input
+                    checked={form.force}
+                    onChange={(e) => update("force", e.target.checked)}
+                    type="checkbox"
+                  />{" "}
+                  Ä°lk giriÅŸte ÅŸifre deÄŸiÅŸikliÄŸi zorunlu
+                </label>
+              </div>
+            </section>
+          </div>
+          {error && (
+            <p className="mt-5 rounded-xl bg-red-50 px-4 py-3 text-sm font-bold text-red-700">
+              {error}
+            </p>
+          )}
+          <div className="mt-7 flex justify-end gap-3 border-t border-slate-100 pt-5">
+            <button
+              type="button"
+              onClick={cancel}
+              className="rounded-xl border border-slate-200 px-5 py-3 text-xs font-black"
+            >
+              Ä°ptal
+            </button>
+            <button
+              disabled={busy}
+              className="rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-black text-white disabled:opacity-60"
+            >
+              {busy ? "KullanÄ±cÄ± oluÅŸturuluyorâ€¦" : "KullanÄ±cÄ± OluÅŸtur"}
+            </button>
+          </div>
+        </form>
+      </div>
+      {(busy || success) && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/35 p-4">
+          <div className="w-full max-w-sm rounded-2xl bg-white p-8 text-center shadow-2xl">
             {success ? (
               <>
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-2xl text-emerald-600">
@@ -813,33 +3372,477 @@ function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) =>
   const empty = { title: "", transaction_type: "SatÄ±lÄ±k", category: "Konut", property_type: "Daire", price: "", currency: "â‚º", city: "", district: "", neighborhood: "", rooms: "", gross: "", net: "", floor: "", total_floors: "", building_age: "", heating: "", parking: "", deed: "", credit: "", dues: "", description: "", video_url: "", virtual_tour_url: "", advisor: "" };
   const [form, setForm] = useState(empty);
   const [media, setMedia] = useState<File[]>([]);
-  const load = async () => { setLoading(true); const { data, error } = await supabase.from("listings").select("ÛM5¶‰ËkºwµçB$'6"Â%F&Æ"Â$öf—2"Â$L;Æ¶¶â"Â$FWò"Â$÷FVÂ%ÒæÖ‚‡‚’ÓâÆ÷F–öâ¶W“×·‡Óç·‡ÓÂö÷F–öãâ—ÓÂ÷6VÆV7CãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#äöF6œK<KÇ6VÆV7BfÇVS×¶f÷&Òç&öö×7Òöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ&öö×3¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÓãÆ÷F–öâfÇVSÒ"#ä&VÆ—'F–ÆÖVÖœYóÂö÷F–öãçµ²#³"Â#³"Â#"³"Â#2³"Â#B³"Â#R³fR;Ç¦W&’%ÒæÖ‚‡‚’ÓâÆ÷F–öâ¶W“×·‡Óç·‡ÓÂö÷F–öãâ—ÓÂ÷6VÆV7CãÂöÆ&VÃãÂöF—cãÂ÷6V7F–öããÇ6V7F–öâ6Æ74æÖSÒ&&÷&FW"×BBÓb#ãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²#äf—–BfR¶öçVÓÂöƒ3ãÆF—b6Æ74æÖSÒ&×BÓBw&–BvÓ2ÖC¦w&–BÖ6öÇ2Ó"#ãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#äf—–B£Æ–çWB&WV—&VB–çWDÖöFSÒ&çVÖW&–2"fÇVS×¶f÷&Òç&–6WÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ&–6S¢RçF&vWBçfÇVRç&WÆ6R‚õÄBörÂ""’ç&WÆ6R‚õÄ"ƒóÒ…ÆG³7Ò’²ƒòÆB’’örÂ"â"’Ò—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#Ò#"óãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#å&&—&–Ö“Ç6VÆV7BfÇVS×¶f÷&Òæ7W'&Væ7—Òöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ7W'&Væ7“¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÓãÆ÷F–öãî(+£Âö÷F–öããÆ÷F–öãåU4CÂö÷F–öããÆ÷F–öãäUU#Âö÷F–öããÂ÷6VÆV7CãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#ìKÂ£Ç6VÆV7B&WV—&VBfÇVS×¶f÷&Òæ6—G—Òöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ6—G“¢RçF&vWBçfÇVRÂF—7G&–7C¢""Ò—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÓãÆ÷F–öâfÇVSÒ"#ìKÂ6\:v–æ—£Âö÷F–öãç¶Æ—7F–æt6—F–W2æÖ‚‡‚’ÓâÆ÷F–öâ¶W“×·‡Óç·‡ÓÂö÷F–öãâ—ÓÂ÷6VÆV7CãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#ìKÌ:vR£Ç6VÆV7B&WV—&VBfÇVS×¶f÷&ÒæF—7G&–7GÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂF—7G&–7C¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÓãÆ÷F–öâfÇVSÒ"#ìKÌ:vR6\:v–æ—£Âö÷F–öãç²†Æ—7F–ætF—7G&–7G5¶f÷&Òæ6—G•ÒÇÂµÒ’æÖ‚‡‚’ÓâÆ÷F–öâ¶W“×·‡Óç·‡ÓÂö÷F–öãâ—ÓÂ÷6VÆV7CãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#äÖ†ÆÆSÆ–çWBfÇVS×¶f÷&ÒææV–v†&÷&†ööGÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂæV–v†&÷&†ööC¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#Ò$Ö†ÆÆRLK"óãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#ä–FCÆ–çWB–çWDÖöFSÒ&çVÖW&–2"fÇVS×¶f÷&ÒæGVW7Òöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂGVW3¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#Ò$–ÌK²–FB"óãÂöÆ&VÃãÂöF—cãÂ÷6V7F–öããÇ6V7F–öâ6Æ74æÖSÒ&&÷&FW"×BBÓb#ãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²#åFV¶æ–²9g¦VÆÆ–¶ÆW#Âöƒ3ãÆF—b6Æ74æÖSÒ&×BÓBw&–BvÓ2ÖC¦w&–BÖ6öÇ2Ó"†Ã¦w&–BÖ6öÇ2Ó2#çµµ²&w&÷72"Â$',;ÇBÜ+""Â,9g&ââCR%ÒÂ²&æWB"Â$æWBÜ+""Â,9g&ââ#R%ÒÂ²&fÆö÷""Â$'VÇVæG\I÷R¶B"Â,9g&ââ2%ÒÂ²'F÷FÅöfÆö÷'2"Â%F÷ÆÒ¶B"Â,9g&ââ‚%ÒÂ²&'V–ÆF–æuövR"Â$&–æ–YüK"Â,9g&ââÓR%ÒÂ²&†VF–ær"Â$—<KFÖ"Â,9g&ââ¶öÖ&’%ÒÂ²'&¶–ær"Â$÷F÷&²"Â,9g&ââ:|K²ò¶ÌK%ÒÂ²&FVVB"Â%FRGW'V×R"Â,9g&ââ¶BÜ;ÆÆ¶—–WF’%ÒÂ²&7&VF—B"Â$·&VF’W–wVæÇ\I÷R"Â%W–wVâòF\Iö–Â%ÕÒæÖ‚…¶¶W’ÂÆ&VÂÂÆ6V†öÆFW%Ò’ÓâÆÆ&VÂ¶W“×¶¶W—Ò6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²#ç¶Æ&VÇÓÆ–çWBfÇVS×²†f÷&Ò2ç’•¶¶W•×Òöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ¶¶W•Ó¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#×·Æ6V†öÆFW'ÒóãÂöÆ&VÃâ—ÓÂöF—cãÂ÷6V7F–öããÇ6V7F–öâ6Æ74æÖSÒ&&÷&FW"×BBÓb#ãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²#ä:|K¶ÆÖfR&IöÆçLKÆ#Âöƒ3ãÆF—b6Æ74æÖSÒ&×BÓBw&–BvÓ2#ãÇFW‡F&VfÇVS×¶f÷&ÒæFW67&—F–öçÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂFW67&—F–öã¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWB²"Ö–âÖ‚Ó3"'ÒÆ6V†öÆFW#Ò,KÆâFWF’:|K¶ÆÖ<K"óãÆ–çWBfÇVS×¶f÷&Òçf–FVõ÷W&ÇÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂf–FVõ÷W&Ã¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#Ò%f–FVòU$Â†—7F\IöR&IöÌK’"óãÆ–çWBfÇVS×¶f÷&Òçf—'GVÅ÷F÷W%÷W&ÇÒöä6†ævS×²†R’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂf—'GVÅ÷F÷W%÷W&Ã¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖS×¶Æ—7F–æt–çWGÒÆ6V†öÆFW#Ò%6æÂGW"U$Â†—7F\IöR&IöÌK’"óãÂöF—cãÂ÷6V7F–öããÂöF—cãÆ6–FSãÆF—b6Æ74æÖSÒ'7F–6·’F÷ÓR&÷VæFVBÓ'†Â&r×6ÆFRÓSÓR#ãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²#ä|;g'6VÂfRf–FVóÂöƒ3ãÆÆ&VÂ6Æ74æÖSÒ&×BÓBfÆW‚Ö–âÖ‚ÓC‚7W'6÷"×ö–çFW"fÆW‚Ö6öÂ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÓ'†Â&÷&FW"Ó"&÷&FW"ÖF6†VB&÷&FW"×6ÆFRÓ3&r×v†—FRÓBFW‡BÖ6VçFW"G&ç6—F–öâ†÷fW#¦&÷&FW"Õ²66CUÒ#ãÅWÆöB6—¦S×³#GÒ6Æ74æÖSÒ'FW‡BÕ²66CUÒ"óãÆ"6Æ74æÖSÒ&×BÓ2FW‡B×‡2#äf÷FüI÷&bfW–f–FVòV¶ÆSÂö#ãÇ6ÖÆÂ6Æ74æÖSÒ&×BÓFW‡BÕ³…ÒFW‡B×6ÆFRÓC#åLK¶Æ–F<;Ç,;Æ¶ÆR,K&²+rVâf¦Æ"F÷7–Â÷6ÖÆÃãÆ–çWBG—SÒ&f–ÆR"66WCÒ&–ÖvRò¢Çf–FVòö×BÇf–FVò÷vV&Ò"×VÇF—ÆR6Æ74æÖSÒ&†–FFVâ"öä6†ævS×²†R’Óâöäf–ÆW2†RçF&vWBæf–ÆW2—ÒóãÂöÆ&VÃç¶ÖVF–æÆVæwF‚âbbÆF—b6Æ74æÖSÒ&×BÓ276R×’ÓFW‡B×‡2FW‡B×6ÆFRÓc#ç¶ÖVF–æÖ‚†f–ÆR’ÓâÇ¶W“×¶f–ÆRææÖWÒ6Æ74æÖSÒ'G'Væ6FR#î(
-"¶f–ÆRææÖWÓÂ÷â—ÓÂöF—cçÓÆ'WGFöâF—6&ÆVC×¶'W7’ÓÓÒ&7&VFR'Ò6Æ74æÖSÒ&×BÓRfÆW‚rÖgVÆÅš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍH][\ËXÙ[\ˆ\İYKXÙ[\ˆØ\Lˆ›İ[™Y^™ËVÈØÙLYWHMKLÈ^^È›ÛX›XÚÈ^]Ú]HÚYİË[ÈÚYİË\™YMÌÌŒ˜[œÚ][Ûˆİ™\˜™Ë\™YN\ØX›Y›ÜXÚ]KMŒØ\ŞHOOH˜Ü™X]HˆÈ±,SˆĞVQQ1,1,SÔ¸ )ˆˆˆ±,S’HÓVPHğå“‘TˆŸOØ]ÛÛ\ÜÓ˜[YOH›]LÈ^XÙ[\ˆ^VÌLH^\Û]KML“Û˜^Y[ˆÛÛœ˜H1,[›\±,[q,^‹0í›™H0éñ,ZØ[›\ˆ™HØ[›1,HZñ,qgİHİ[[±,[Xš[\‹ÜÙ]Ø\ÚYOÙ]Ù›Ü›OÂˆ™]\›ˆ]ˆÛ\ÜÓ˜[YOHœÜXÙK^KMH]ˆÛ\ÜÓ˜[YOH™›^›^XÛÛØ\M›İ[™YL™ËVÈØÙLYWHMH^]Ú]HÛN™›^\›İÈÛNš][\ËXÙ[\ˆÛNš\İYKX™]ÙY[ˆ]Û\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ˜XÚÚ[™ËVËŒN[WH^]Ú]KÍÌ”‘PSHÑS•TˆÈ1,SˆQT’ÑV±,ÜˆÛ\ÜÓ˜[YOH›]LH^^›ÛX›XÚÈÛ[ÙHOOH˜\›İ˜[ˆÈ±,[ˆÛ˜^HY\šÙ^šHˆˆ•0ïH1,[›\ˆŸOÚÛ\ÜÓ˜[YOH›]LH^\ÛH^]Ú]KÍÍHÛ\İ[™ÜË›[™İHØ^q,]0­ÈÛ\İ[™ÜË™š[\Š
-
-HOˆ˜\›İ˜[Üİ]\ÈOOHœ[™[™ÈŠK›[™İHÛ˜^H™ZÛ^[ÜÜÙ]]ÛˆÛÛXÚÏ^Ê
-HOˆÙ][ÙJ˜YŠ_HÛ\ÜÓ˜[YOHœ›İ[™Y^™Ë]Ú]HMHKLÈ^^È›ÛX›XÚÈ^VÈØÙLYWHÚYİË\ÛH˜[œÚ][Ûˆİ™\œØØ[KVÌKŒ—HŠÈ1,SˆRÓOØ]ÛÙ]]ˆÛ\ÜÓ˜[YOH™ÜšYØ\LÈ›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HMY™ÜšYXÛÛËMH[œ]˜[YO^Ùš[\œËœ_HÛÚ[™ÙO^ÊJHOˆÙ]š[\œÊÈ‹‹™š[\œËNˆK\™Ù]˜[YHJ_HÛ\ÜÓ˜[YO^Û\İ[™Ò[œ]
-Èˆ]LŸHXÙZÛ\H±,[ˆ\˜HˆÏÙ[Xİ˜[YO^Ùš[\œË˜Ú]_HÛÚ[™ÙO^ÊJHOˆÙ]š[\œÊÈ‹‹™š[\œËÚ]NˆK\™Ù]˜[YK\İšXİˆˆˆJ_HÛ\ÜÓ˜[YO^Û\İ[™Ò[œ]
-Èˆ]LŸOÜ[Ûˆ˜[YOHˆ•0ïH[\ÛÜ[ÛÛ\İ[™ĞÚ]Y\Ë›X\
-
-
-HOˆÜ[ÛˆÙ^O^ŞOŞOÛÜ[ÛŠ_OÜÙ[XİÙ[Xİ˜[YO^Ùš[\œË™\İšXİHÛÚ[™ÙO^ÊJHOˆÙ]š[\œÊÈ‹‹™š[\œË\İšXİˆK\™Ù]˜[YHJ_HÛ\ÜÓ˜[YO^Û\İ[™Ò[œ]
-Èˆ]LŸOÜ[Ûˆ˜[YOHˆ•0ïH[0éÙ[\ÛÜ[ÛÊ\İ[™Ñ\İšXİÖÙš[\œË˜Ú]WH×JK›X\
-
-
-HOˆÜ[ÛˆÙ^O^ŞOŞOÛÜ[ÛŠ_OÜÙ[XİÙ[Xİ˜[YO^Ùš[\œË\_HÛÚ[™ÙO^ÊJHOˆÙ]š[\œÊÈ‹‹™š[\œË\NˆK\™Ù]˜[YHJ_HÛ\ÜÓ˜[YO^Û\İ[™Ò[œ]
-Èˆ]LŸOÜ[Ûˆ˜[YOHˆ•0ïH0ï›\ÛÜ[ÛÖÈ‘Z\™H‹•š[H‹“pïİZÚ[]ˆ‹\œØH‹•\›H‹“Ùš\È‹‘0ïÚØ[ˆ‹‘\È‹“İ[—K›X\
-
-
-HOˆÜ[ÛˆÙ^O^ŞOŞOÛÜ[ÛŠ_OÜÙ[XİÙ[Xİ˜[YO^Ùš[\œË˜Yš\ÛÜŸHÛÚ[™ÙO^ÊJHOˆÙ]š[\œÊÈ‹‹™š[\œËYš\ÛÜˆK\™Ù]˜[YHJ_HÛ\ÜÓ˜[YO^Û\İ[™Ò[œ]
-Èˆ]LŸOÜ[Ûˆ˜[YOHˆ•0ïH[±,qgÛX[›\ÛÜ[ÛØYš\ÛÜœË›X\
-
-
-HOˆÜ[ÛˆÙ^O^ÜšYH˜[YO^ÜšYOÜ™š\œİÛ˜[Y_HÜ›\İÛ˜[Y_OÛÜ[ÛŠ_OÜÙ[XİÙ]]ˆÛ\ÜÓ˜[YOH›İ™\™›İË^X]]È›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HX›HÛ\ÜÓ˜[YOHËY[Z[‹]ËVÎLŒH^[YXYÛ\ÜÓ˜[YOH˜™Ë\Û]KML^VÌLH›ÛX›XÚÈ\\˜Ø\ÙH^\Û]KMLÛ\ÜÓ˜[YOHœM±,[İÛ\ÜÓ˜[YOHœM’ÛÛ[OİÛ\ÜÓ˜[YOHœM‘š^X]Èp¬İÛ\ÜÓ˜[YOHœM‘ZÛ^Y[ˆ[±,qgÛX[İÛ\ÜÓ˜[YOHœM‘\[OİÛ\ÜÓ˜[YOHœM^\šYÚ±,1gÛ[[\İİİXY›ÙOÛØY[™ÈÈÛÛÜ[^ÍŸHÛ\ÜÓ˜[YOHœN^XÙ[\ˆ^\ÛH^\Û]KM±,[›\ˆpïÛ[š^[Ü¸ )İİˆˆš[\™Y›[™İÈš[\™Y›X\
-
-
-HOˆˆÙ^O^ŞšYHÛ\ÜÓ˜[YOH˜›Ü™\‹]^\ÛHİ™\˜™Ë\Û]KMLÛ\ÜÓ˜[YOHœM]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\LÈŞš[XYÙ\ÏË–ÌHÈ[YÈÜ˜Ï^Şš[XYÙ\ÖÌ_HÛ\ÜÓ˜[YOHšLLHËLM›İ[™Y[ÈØš™XİXÛİ™\ˆˆÏˆˆÜ[ˆÛ\ÜÓ˜[YOH™ÜšYLLHËLMXÙKZ][\ËXÙ[\ˆ›İ[™Y[È™Ë\™YML^^È›ÛX›XÚÈ^VÈØÙLYWH±,SÜÜ[ŸOÜ[ˆÛ\ÜÓ˜[YOH˜›ØÚÈX^]ËMLˆ[˜Ø]HŞ]_OØÛX[Û\ÜÓ˜[YOH^\Û]KMŞ˜[œØXİ[Û—İ\_H0­ÈŞœ›Ü\Wİ\_OÜÛX[ÜÜ[Ù]İÛ\ÜÓ˜[YOHœM^^È›ÛX›ÛŞ˜Ú]_HÈŞ™\İšXİOœ‹ÏÜ[ˆÛ\ÜÓ˜[YOH™›Û[YY][H^\Û]KMŞ›™ZYÚ›ÜšÛÙ‹HŸOÜÜ[İÛ\ÜÓ˜[YOHœMÓ[X™\ŠœšXÙJKÓØØ[Tİš[™Ê‹UˆŠ_HŞ˜İ\œ™[˜Ş_OØÛX[Û\ÜÓ˜[YOH˜›ØÚÈ^\Û]KMŞ˜\™XH‹HŸHp¬ÜÛX[İÛ\ÜÓ˜[YOHœM^^È›ÛX›ÛØYš\ÛÜ“˜[YJ›İÛ™\—ÚY
-_OİÛ\ÜÓ˜[YOHœMÜ[ˆÛ\ÜÓ˜[YO^Ø›İ[™YY[L‹HKLH^VÌLH›ÛX›XÚÈ	Ş˜\›İ˜[Üİ]\ÈOOH˜\›İ™YˆÈ˜™ËY[Y\˜[LL^Y[Y\˜[MÌˆˆ˜\›İ˜[Üİ]\ÈOOHœ™Z™XİYˆÈ˜™Ë\›ÜÙKLL^\›ÜÙKMÌˆˆ˜™ËX[X™\‹LL^X[X™\‹MÌŸXOŞ˜\›İ˜[Üİ]\ÈOOH˜\›İ™YˆÈ–X^q,[™Hˆˆ˜\›İ˜[Üİ]\ÈOOHœ™Z™XİYˆÈ”™YY[Hˆˆ“Û˜^H™ZÛ^[ÜˆŸOÜÜ[İÛ\ÜÓ˜[YOHœM^\šYÚ]ˆÛ\ÜÓ˜[YOH™›^\İYKY[™Ø\LˆŞ˜\›İ˜[Üİ]\ÈOOH˜\›İ™Yˆ	‰ˆ]Ûˆ\ØX›Y^Ø\ŞHOOHšY
-È“Û˜^[[™1,HŸHÛ¶ÓMm¢G§²ÚîÆ­yØ°€‰gÅ±“ÅËÅ´‰t°(€€€¹Ñ…±å„èl‰±…¹å„ˆ°€‰-½¹å……±ÓÄˆ°€‰5ÕÉ…ÑÁ‡}„‰t°(€€€-½…•±¤èl‰	‡}¥Í­•±”ˆ°€‰•‰é”ˆ°€‹Áéµ¥Ğ‰t°(€€€-½¹å„èl‰-…É…Ñ…äˆ°€‰5•É…´ˆ°€‰M•³Õ­±Ô‰t°(€ôì(€½¹ÍĞÍ…Ù•‘!½ÕÉÌ€ô€¡½™™¥”ü¹İ½É­}¡½ÕÉÌñğ€ˆÀäèÀÀ€´€ÄàèÀÀˆ¤¹µ…Ñ  ¼¡q‘ìÉôéq‘ìÉô¥qÌ¨µqÌ¨¡q‘ìÉôéq‘ìÉô¤¼¤ì(€½¹ÍĞm™½É´°Í•Ñ½Éµt€ôÕÍ•MÑ…Ñ”¡ì(€€€¹…µ”è½™™¥”ü¹¹…µ”ñğ€ˆˆ°(€€€½İ¹•É%è½™™¥”ü¹½İ¹•É}ÁÉ½™¥±•}¥ñğ€ˆˆ°(€€€¥Ñäè½™™¥”ü¹¥Ñäñğ€ˆˆ°(€€€‘¥ÍÑÉ¥Ğè½™™¥”ü¹‘¥ÍÑÉ¥Ğñğ€ˆˆ°(€€€µ½‰¥±”è½™™¥”ü¹µ½‰¥±•}Á¡½¹”ñğ½™™¥”ü¹Á¡½¹”ñğ€ˆˆ°(€€€±…¹‘±¥¹”è½™™¥”ü¹±…¹‘±¥¹•}Á¡½¹”ñğ€ˆˆ°(€€€•µ…¥°è½™™¥”ü¹•µ…¥°ñğ€ˆˆ°(€€€…‘‘É•ÍÌè½™™¥”ü¹…‘‘É•ÍÌñğ€ˆˆ°(€€€‘•ÍÉ¥ÁÑ¥½¸è½™™¥”ü¹‘•ÍÉ¥ÁÑ¥½¸ñğ€ˆˆ°(€€€¡½ÕÉÍMÑ…ÉĞèÍ…Ù•‘!½ÕÉÌü¹lÅtñğ€ˆÀäèÀÀˆ°(€€€¡½ÕÉÍ¹èÍ…Ù•‘!½ÕÉÌü¹lÉtñğ€ˆÄàèÀÀˆ°(€ô¤ì(€½¹ÍĞm¥µ…•UÉ°°Í•Ñ%µ…•UÉ±t€ôÕÍ•MÑ…Ñ”¡½™™¥”ü¹¥µ…•}ÕÉ°ñğ€ˆˆ¤ì(€½¹ÍĞm‰ÕÍä°Í•Ñ	ÕÍåt€ôÕÍ•MÑ…Ñ”¡™…±Í”¤ì(€½¹ÍĞm¹½Ñ¥”°Í•Ñ9½Ñ¥•t€ôÕÍ•MÑ…Ñ” ˆˆ¤ì(€½¹ÍĞÑ¥µ•=ÁÑ¥½¹Ì€ôÉÉ…ä¹™É½´¡ì±•¹Ñ è€ÌÔô°€¡|°¥¹‘•à¤€ôøì(€€€½¹ÍĞµ¥¹ÕÑ•Ì€ô€Ø€¨€ØÀ€¬¥¹‘•à€¨€ÌÀì(€€€É•ÑÕÉ¸€‘íMÑÉ¥¹œ¡5…Ñ ¹™±½½È¡µ¥¹ÕÑ•Ì€¼€ØÀ¤¤¹Á…‘MÑ…ÉĞ È°€ˆÀˆ¥ôè‘íMÑÉ¥¹œ¡µ¥¹ÕÑ•Ì€”€ØÀ¤¹Á…‘MÑ…ÉĞ È°€ˆÀˆ¥õ€ì(€ô¤ì(€½¹ÍĞÍ•Ğ€ô€¡­•äèÍÑÉ¥¹œ°Ù…±Õ”èÍÑÉ¥¹œğ¹Õµ‰•È¤€ôø(€€€Í•Ñ½É´ ¡½±¤€ôø€¡ì€¸¸¹½±°m­•åtèÙ…±Õ”ô¤¤ì(€½¹ÍĞ±½…‘%µ…”€ô€¡™¥±”üè¥±”¤€ôøì(€€€¥˜€ …™¥±”¤É•ÑÕÉ¸ì(€€€¥˜€ …™¥±”¹ÑåÁ”¹ÍÑ…ÉÑÍ]¥Ñ  ‰¥µ…”¼ˆ¤ñğ™¥±”¹Í¥é”€ø€Ô€¨€ÄÀÈĞ€¨€ÄÀÈĞ¤(€€€€€É•ÑÕÉ¸Í•Ñ9½Ñ¥” ‰3ñÑ™•¸€Ô5…±ÓÄ)A°A9Ù•å„]•‰@ŸÙÉÍ•°Í—¥¸¸ˆ¤ì(€€€½¹ÍĞÉ•…‘•È€ô¹•Ü¥±•I•…‘•È ¤ì(€€€É•…‘•È¹½¹±½…€ô€ ¤€ôøÍ•Ñ%µ…•UÉ°¡MÑÉ¥¹œ¡É•…‘•È¹É•ÍÕ±Ğ¤¤ì(€€€É•…‘•È¹É•…‘Í…Ñ…UI0¡™¥±”¤ì(€ôì(€½¹ÍĞÍ…Ù”€ô…Íå¹Œ€¡•Ù•¹ĞèI•…Ğ¹½ÉµÙ•¹Ğ¤€ôøì(€€€•Ù•¹Ğ¹ÁÉ•Ù•¹Ñ•™…Õ±Ğ ¤ì(€€€½¹ÍĞµ½‰¥±”€ô™½É´¹µ½‰¥±”¹É•Á±…” ½qÍñp¡ñp¥ğ´½œ°€ˆˆ¤ì(€€€½¹ÍĞ±…¹‘±¥¹”€ô™½É´¹±…¹‘±¥¹”¹É•Á±…” ½qÍñp¡ñp¥ğ´½œ°€ˆˆ¤ì(€€€¥˜€ „½xÀÕq‘ìåô¼¹Ñ•ÍĞ¡µ½‰¥±”¤¤(€€€€€É•ÑÕÉ¸Í•Ñ9½Ñ¥” ‰•ÀÑ•±•™½¹Ô€ÀÕa`aa`a`a`‰§¥µ¥¹‘”—•É±¤½±µ…³Ä¸ˆ¤ì(€€€¥˜€¡±…¹‘±¥¹”€˜˜€„½xÁlÈ´Ñuq‘ìåô¼¹Ñ•ÍĞ¡±…¹‘±¥¹”¤¤(€€€€€É•ÑÕÉ¸Í•Ñ9½Ñ¥” (€€€€€€€€‰M…‰¥ĞÑ•±•™½¸…±…¸­½‘Õå±„‰¥É±¥­Ñ”€Áaa`aa`a`a`‰§¥µ¥¹‘”½±µ…³Ä¸ˆ°(€€€€€€¤ì(€€€¥˜€¡™½É´¹¡½ÕÉÍMÑ…ÉĞ€øô™½É´¹¡½ÕÉÍ¹¤(€€€€€É•ÑÕÉ¸Í•Ñ9½Ñ¥” ‹Å¯Ç|Í……Ñ¤¥É§|Í……Ñ¥¹‘•¸Í½¹É„½±µ…³Ä¸ˆ¤ì(€€€Í•Ñ	ÕÍä¡ÑÉÕ”¤ì(€€€Í•Ñ9½Ñ¥”¡½™™¥”€ü€‰=™¥Ì‰¥±¥±•É¤Ÿñ¹•±±•¹¥å½ËŠ˜ˆ€è€‰=™¥Ì­…å“Ä½±×}ÑÕÉÕ±Õå½ËŠ˜ˆ¤ì(€€€½¹ÍĞ½İ¹•È€ô…‘Ù¥Í•ÉÌ¹™¥¹ ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô™½É´¹½İ¹•É%¤ì(€€€½¹ÍĞÁ…å±½…€ôì(€€€€€€€¹…µ”è™½É´¹¹…µ”°(€€€€€€€¥Ñäè™½É´¹¥Ñä°(€€€€€€€‘¥ÍÑÉ¥Ğè™½É´¹‘¥ÍÑÉ¥Ğ°(€€€€€€€…‘‘É•ÍÌè™½É´¹…‘‘É•ÍÌ°(€€€€€€€•µ…¥°è™½É´¹•µ…¥°ñğ¹Õ±°°(€€€€€€€Á¡½¹”è™½É´¹µ½‰¥±”°(€€€€€€€µ½‰¥±•}Á¡½¹”è™½É´¹µ½‰¥±”°(€€€€€€€±…¹‘±¥¹•}Á¡½¹”è™½É´¹±…¹‘±¥¹”ñğ¹Õ±°°(€€€€€€€İ½É­}¡½ÕÉÌè€‘í™½É´¹¡½ÕÉÍMÑ…ÉÑô€´€‘í™½É´¹¡½ÕÉÍ¹‘õ€°(€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è™½É´¹‘•ÍÉ¥ÁÑ¥½¸ñğ¹Õ±°°(€€€€€€€½İ¹•É}ÁÉ½™¥±•}¥è™½É´¹½İ¹•É%ñğ¹Õ±°°(€€€€€€€µ…¹…•É}¹…µ”è½İ¹•È€ü€‘í½İ¹•È¹™¥ÉÍÑ}¹…µ•ô€‘í½İ¹•È¹±…ÍÑ}¹…µ•õ€€è¹Õ±°°(€€€€€€€¥µ…•}ÕÉ°è¥µ…•UÉ°ñğ¹Õ±°°(€€€€€€€ÍÑ…ÑÕÌè€‰…Ñ¥Ù”ˆ°(€€€€€ôì(€€€½¹ÍĞÉ•ÅÕ•ÍĞ€ô½™™¥”(€€€€€€üÍÕÁ…‰…Í”¹™É½´ ‰½™™¥•Ìˆ¤¹ÕÁ‘…Ñ”¡Á…å±½…¤¹•Ä ‰¥ˆ°½™™¥”¹¥¤¹Í•±•Ğ ‰¥ˆ¤¹Í¥¹±” ¤(€€€€€€èÍÕÁ…‰…Í”¹™É½´ ‰½™™¥•Ìˆ¤¹¥¹Í•ÉĞ¡Á…å±½…¤¹Í•±•Ğ ‰¥ˆ¤¹Í¥¹±” ¤ì(€€€½¹ÍĞì‘…Ñ„°•ÉÉ½Èô€ô…İ…¥ĞÉ•ÅÕ•ÍĞì(€€€¥˜€ …•ÉÉ½È€˜˜‘…Ñ„€˜˜™½É´¹½İ¹•É%¤ì(€€€€€…İ…¥ĞÍÕÁ…‰…Í”¹™É½´ ‰½™™¥•}…‘Ù¥Í½ÉÌˆ¤¹ÕÁ‘…Ñ”¡ì¥Í}µ…¹…•Èè™…±Í”ô¤¹•Ä ‰½™™¥•}¥ˆ°‘…Ñ„¹¥¤ì(€€€€€…İ…¥ĞÍÕÁ…‰…Í”¹™É½´ ‰½™™¥•}…‘Ù¥Í½ÉÌˆ¤¹ÕÁÍ•ÉĞ¡ì(€€€€€€€½™™¥•}¥è‘…Ñ„¹¥°(€€€€€€€…‘Ù¥Í½É}¥è™½É´¹½İ¹•É%°(€€€€€€€¥Í}µ…¹…•ÈèÑÉÕ”°(€€€€€ô¤ì(€€€ô(€€€Í•Ñ	ÕÍä¡™…±Í”¤ì(€€€¥˜€¡•ÉÉ½È¤É•ÑÕÉ¸Í•Ñ9½Ñ¥”¡•ÉÉ½È¹µ•ÍÍ…”¤ì(€€€…İ…¥Ğ‘½¹” ¤ì(€€€Í•Ñ9½Ñ¥” (€€€€€½™™¥”€ü€‰=™¥ÌŸñ¹•±±•¹‘¤Ù”=™¥Í±•É¥µ¥è…±…»Å¹„å…¹ÏÅÓÅ±“Ä¸ˆ€è€‰=™¥Ì‰‡}…ËÅå±„½±×}ÑÕÉÕ±‘ÔÙ”İ•ˆÍ¥Ñ•Í¥¹‘•­¤=™¥Í±•É¥µ¥è…±…»Å¹„å…¹ÏÅÓÅ±“Ä¸ˆ°(€€€€¤ì(€€€İ¥¹‘½Ü¹Í•ÑQ¥µ•½ÕĞ¡±½Í”°€äÀÀ¤ì(€ôì(€É•ÑÕÉ¸€ (€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥á•¥¹Í•Ğ´ÀèµlÄÄÁt½Ù•É™±½Üµäµ…ÕÑ¼‰œµÍ±…Ñ”´äÔÀ¼ÔÔÀ´ÌÍ´éÀ´Øˆø(€€€€€€ñ™½É´(€€€€€€€½¹MÕ‰µ¥ĞõíÍ…Ù•ô(€€€€€€€±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µä´ÌÜµ™Õ±°µ…àµÜµlÄÌØÁÁátÉ½Õ¹‘•µlÈÑÁát‰œµİ¡¥Ñ”À´ÔÍ¡…‘½Ü´Éá°Í´éÀ´äˆ(€€€€€€ø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ©ÕÍÑ¥™äµ‰•Ñİ••¸…À´Ğˆø(€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÅÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸Èá•µtÑ•áĞµlÀÄÅ•tˆø(€€€€€€€€€€€€€I1Qd9QH(€€€€€€€€€€€€ğ½Àø(€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞ´Íá°™½¹Ğµ‰±…¬ÑÉ…­¥¹œµÑ¥¡ĞÑ•áĞµlŒÁˆÈĞÔÁtˆø(€€€€€€€€€€€€€í½™™¥”€ü€‰=™¥Ì	¥±¥±•É¥¹¤ñé•¹±”ˆ€è€‰e•¹¤=™¥Ì­±”‰ô(€€€€€€€€€€€€ğ½ Èø(€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ÔÀÀˆø(€€€f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·{Ñ:-jZ.¶›­–)Ş³R¶öff–6Rò$ÖWf7WB&–Æv–ÆW&’|;Ææ6VÆÆW––ââKÂÂ–Ì:vRfR–ÆWFœYö–ÒÆæÆ,KL;Ç¦VæÆVæV&–Æ—"â"¢%6—7FVÖFR|;g,;ÆæV6V²–Væ’öf—6’öÇ\Y÷GW'Vââ¶öçVÒfR–ÆWFœYö–Ò&–Æv–ÆW&–æ’V·6–·6—¢v—&–ââ'Ğ¢Â÷à¢ÂöF—cà¢Æ'WGFöà¢G—SÒ&'WGFöâ ¢öä6Æ–6³×¶6Æ÷6WĞ¢6Æ74æÖSÒ&w&–B‚ÓrÓÆ6RÖ—FV×2Ö6VçFW"&÷VæFVBÖgVÆÂ&r×6ÆFRÓFW‡B×†ÂFW‡B×6ÆFRÓcG&ç6—F–öâ†÷fW#¦&r×6ÆFRÓ# ¢à¢9p¢Âö'WGFöãà¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&×BÓrw&–BvÓRÆs¦w&–BÖ6öÇ2Õ³ã6g%òã–g%Ò#à¢ÆF—b6Æ74æÖSÒ'76R×’ÓR#à¢Ç6V7F–öâ6Æ74æÖSÒ&÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ##à¢ÆF—b6Æ74æÖSÒ&&÷&FW"Ö"&r×6ÆFRÓSós‚ÓR’ÓB#à¢Æƒ26Æ74æÖSÒ&föçBÖ&Æ6²FW‡BÕ²3##CSÒ#à¢Ä'V–ÆF–æs"6Æ74æÖSÒ&×"Ó"–æÆ–æR‚ÓRrÓRFW‡BÖ&ÇVRÓS"óà¢FVÖVÂ&–Æv–ÆW ¢Âöƒ3à¢Ç6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#à¢öf—2LKìKÂ¶öçV×VçRfR–ÆWFœYö–Ò&–Æv–ÆW&–æ’v—&–âà¢Â÷à¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&w&–BvÓBÓR6Ó¦w&–BÖ6öÇ2Ó"#à¢Äf–VÆBÆ&VÃÒ$öf—2LK¢#à¢Æ–çW@¢&WV—&V@¢fÇVS×¶f÷&ÒææÖWĞ¢öä6†ævS×²†R’Óâ6WB‚&æÖR"ÂRçF&vWBçfÇVR—Ğ¢Æ6V†öÆFW#Ò,9g&ââ8væ¶–öf—6’ ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢óà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ$öf—26†–&’òœ;fæWF–6’¢#à¢Ç6VÆV7@¢&WV—&V@¢fÇVS×¶f÷&Òæ÷væW$–GĞ¢öä6†ævS×²†R’Óâ6WB‚&÷væW$–B"ÂRçF&vWBçfÇVR—Ğ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢à¢Æ÷F–öâfÇVSÒ"#äFìKYöÖâ6\:v–ãÂö÷F–öãà¢¶Gf—6W'2æÖ‚†’Óâ€¢Æ÷F–öâ¶W“×¶æ–GÒfÇVS×¶æ–GÓà¢¶æf—'7EöæÖWÒ¶æÆ7EöæÖWĞ¢¶ç†öæRò+rG¶ç†öæWÖ¢"'Ğ¢Âö÷F–öãà¢’—Ğ¢Â÷6VÆV7Cà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ,KÂ¢#à¢Ç6VÆV7@¢&WV—&V@¢fÇVS×¶f÷&Òæ6—G—Ğ¢öä6†ævS×²†R’Óâ°¢6WB‚&6—G’"ÂRçF&vWBçfÇVR“°¢6WB‚&F—7G&–7B"Â""“°¢×Ğ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢à¢Æ÷F–öâfÇVSÒ"#ìKÂ6\:v–ãÂö÷F–öãà¢¶6—F–W2æÖ‚†6—G’’Óâ€¢Æ÷F–öâ¶W“×¶6—G—Óç¶6—G—ÓÂö÷F–öãà¢’—Ğ¢Â÷6VÆV7Cà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ,KÌ:vR¢#à¢Ç6VÆV7@¢&WV—&V@¢F—6&ÆVC×²f÷&Òæ6—G—Ğ¢fÇVS×¶f÷&ÒæF—7G&–7GĞ¢öä6†ævS×²†R’Óâ6WB‚&F—7G&–7B"ÂRçF&vWBçfÇVR—Ğ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWBF—6&ÆVC¦÷6—G’ÓS ¢à¢Æ÷F–öâfÇVSÒ"#ìKÌ:vR6\:v–ãÂö÷F–öãà¢²†F—7G&–7G5¶f÷&Òæ6—G•ÒÇÂ²$ÖW&¶W¢%Ò’æÖ‚†F—7G&–7B’Óâ€¢Æ÷F–öâ¶W“×¶F—7G&–7GÓç¶F—7G&–7GÓÂö÷F–öãà¢’—Ğ¢Â÷6VÆV7Cà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ$6WFVÆVföçR¢#à¢Æ–çW@¢&WV—&V@¢–çWDÖöFSÒ'FVÂ ¢fÇVS×¶f÷&ÒæÖö&–ÆWĞ¢öä6†ævS×²†R’Óâ6WB‚&Öö&–ÆR"ÂRçF&vWBçfÇVR—Ğ¢Æ6V†öÆFW#Ò#U…‚……‚…‚…‚ ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢óà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ%6&—BFVÆVföâ#à¢Æ–çW@¢–çWDÖöFSÒ'FVÂ ¢fÇVS×¶f÷&ÒæÆæFÆ–æWĞ¢öä6†ævS×²†R’Óâ6WB‚&ÆæFÆ–æR"ÂRçF&vWBçfÇVR—Ğ¢Æ6V†öÆFW#Ò#……‚……‚…‚…‚ ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢óà¢Âôf–VÆCà¢Äf–VÆBÆ&VÃÒ$R×÷7F#à¢Æ–çW@¢G—SÒ&VÖ–Â ¢fÇVS×¶f÷&ÒæVÖ–ÇĞ¢öä6†ævS×²†R’Óâ6WB‚&VÖ–Â"ÂRçF&vWBçfÇVR—Ğ¢Æ6V†öÆFW#Ò&÷&æV´&VÇG–6VçFW"æ6öÒ ¢6Æ74æÖSÒ'&2Ööff–6RÖ–çWB ¢uïKh‘éì¶»§q«^vpeg,image/webp"
+  const load = async () => { setLoading(true); const { data, error } = await supabase.from("listings").select("id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,images,approval_status,is_featured,created_at").is("deleted_at", null).order("created_at", { ascending: false }); if (error) alert(error.message); else setListings((data || []) as ListingRow[]); setLoading(false); };
+  useEffect(() => { void load(); }, []);
+  const advisors = profiles.filter((p) => p.role === "advisor" || p.role === "manager");
+  const advisorName = (id: string) => { const p = profiles.find((x) => x.id === id); return p ? `${p.first_name} ${p.last_name}` : "Sistem kullanÄ±cÄ±sÄ±"; };
+  const filtered = listings.filter((x) => (mode !== "approval" || x.approval_status === "Onay Bekliyor") && (!filters.q || `${x.title} ${x.city} ${x.district}`.toLocaleLowerCase("tr-TR").includes(filters.q.toLocaleLowerCase("tr-TR"))) && (!filters.city || x.city === filters.city) && (!filters.district || x.district === filters.district) && (!filters.type || x.property_type === filters.type) && (!filters.advisor || x.owner_id === filters.advisor));
+  const update = async (id: string, patch: Record<string, unknown>, label: string) => { setBusy(id + label); const { error } = await supabase.from("listings").update(patch).eq("id", id); if (error) alert(error.message); else { await load(); alert(label); } setBusy(""); };
+  const onFiles = (files: FileList | null) => setMedia(Array.from(files || []).filter((file) => file.type.startsWith("image/") || file.type.startsWith("video/")).slice(0, 12));
+  const submit = async (e: React.FormEvent) => { e.preventDefault(); if (!form.title || !form.price || !form.city || !form.district || !form.advisor) return alert("BaÅŸlÄ±k, fiyat, il, ilÃ§e ve ekleyen danÄ±ÅŸman zorunludur."); setBusy("create"); try { const urls: string[] = []; for (const file of media.filter((x) => x.type.startsWith("image/"))) { const path = `${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false }); if (error) throw error; urls.push(supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl); } let uploadedVideo = form.video_url; const video = media.find((x) => x.type.startsWith("video/")); if (video) { const path = `${Date.now()}-${crypto.randomUUID()}-${video.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, video, { upsert: false }); if (error) throw error; uploadedVideo = supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl; } const details = { gross_sqm: form.gross, net_sqm: form.net, floor: form.floor, total_floors: form.total_floors, building_age: form.building_age, heating: form.heating, parking: form.parking, deed: form.deed, credit: form.credit, dues: form.dues }; const { error } = await supabase.from("listings").insert({ owner_id: form.advisor, title: form.title, transaction_type: form.transaction_type, category: form.category, property_type: form.property_type, price: Number(form.price.replaceAll(".", "").replace(",", ".")), currency: form.currency, city: form.city, district: form.district, neighborhood: form.neighborhood || null, rooms: form.rooms || null, area: Number(form.gross || form.net || 0), description: form.description || null, video_url: uploadedVideo || null, virtual_tour_url: form.virtual_tour_url || null, images: urls, details, approval_status: "pending", is_featured: false }); if (error) throw error; setForm(empty); setMedia([]); await load(); setMode("approval"); alert("Ä°lan kaydedildi ve onay merkezine gÃ¶nderildi."); } catch (err: any) { alert(`Ä°lan kaydedilemedi: ${err.message || "Tekrar deneyin."}`); } finally { setBusy(""); } };
+  if (mode === "add") return <form onSubmit={submit} className="rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">Ä°LAN YÃ–NETÄ°MÄ° / YENÄ° Ä°LAN</p><h2 className="mt-1 text-xl font-black">DetaylÄ± ilan giriÅŸi</h2><p className="mt-1 text-sm text-slate-500">Zorunlu alanlarÄ± doldurun; ilan Ã¶nce onay merkezine dÃ¼ÅŸer.</p></div><button type="button" onClick={() => setMode("all")} className="rc-secondary">Listeye DÃ¶n</button></div><div className="grid gap-6 p-6 xl:grid-cols-[1fr_320px]"><div className="space-y-6"><section><h3 className="font-black">Temel Ä°lan Bilgileri</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">Ä°lan baÅŸlÄ±ÄŸÄ± *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={listingInput} placeholder="Ã–rn. Ã‡ankaya'da modern 3+1 daire" /></label><label className="text-xs font-black">Ekleyen danÄ±ÅŸman *<select required value={form.advisor} onChange={(e) => setForm({ ...form, advisor: e.target.value })} className={listingInput}><option value="">DanÄ±ÅŸman seÃ§iniz</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name} Â· {p.phone || p.email}</option>)}</select></label><label className="text-xs font-black">Ä°ÅŸlem tipi *<select value={form.transaction_type} onChange={(e) => setForm({ ...form, transaction_type: e.target.value })} className={listingInput}>{["SatÄ±lÄ±k", "KiralÄ±k", "Devren SatÄ±lÄ±k", "Devren KiralÄ±k"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Ana kategori *<select value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })} className={listingInput}>{["Konut", "Arsa", "Ä°ÅŸyeri", "Turistik Tesis"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Ä°lan tÃ¼rÃ¼ *<select value={form.property_type} onChange={(e) => setForm({ ...form, property_type: e.target.value })} className={listingInput}>{["Daire", "Villa", "MÃ¼stakil Ev", "Arsa", "Tarla", "Ofis", "DÃ¼kkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Oda sayÄ±sÄ±<select value={form.rooms} onChange={(e) => setForm({ ...form, rooms: e.target.value })} className={listingInput}><option value="">BelirtilmemiÅŸ</option>{["1+0", "1+1", "2+1", "3+1", "4+1", "5+1 ve Ã¼zeri"].map((x) => <option key={x}>{x}</option>)}</select></label></div></section><section className="border-t pt-6"><h3 className="font-black">Fiyat ve Konum</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">Fiyat *<input required inputMode="numeric" value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} className={listingInput} placeholder="0" /></label><label className="text-xs font-black">Para birimi<select value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })} className={listingInput}><option>â‚º</option><option>USD</option><option>EUR</option></select></label><label className="text-xs font-black">Ä°l *<select required value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value, district: "" })} className={listingInput}><option value="">Ä°l seÃ§iniz</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Ä°lÃ§e *<select required value={form.district} onChange={(e) => setForm({ ...form, district: e.target.value })} className={listingInput}><option value="">Ä°lÃ§e seÃ§iniz</option>{(listingDistricts[form.city] || []).map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Mahalle<input value={form.neighborhood} onChange={(e) => setForm({ ...form, neighborhood: e.target.value })} className={listingInput} placeholder="Mahalle adÄ±" /></label><label className="text-xs font-black">Aidat<input inputMode="numeric" value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value })} className={listingInput} placeholder="AylÄ±k aidat" /></label></div></section><section className="border-t pt-6"><h3 className="font-black">Teknik Ã–zellikler</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">{[["gross", "BrÃ¼t mÂ²", "Ã–rn. 145"], ["net", "Net mÂ²", "Ã–rn. 125"], ["floor", "BulunduÄŸu kat", "Ã–rn. 3"], ["total_floors", "Toplam kat", "Ã–rn. 8"], ["building_age", "Bina yaÅŸÄ±", "Ã–rn. 0-5"], ["heating", "IsÄ±tma", "Ã–rn. Kombi"], ["parking", "Otopark", "Ã–rn. AÃ§Ä±k / KapalÄ±"], ["deed", "Tapu durumu", "Ã–rn. Kat mÃ¼lkiyeti"], ["credit", "Kredi uygunluÄŸu", "Uygun / DeÄŸil"]].map(([key, label, placeholder]) => <label key={key} className="text-xs font-black">{label}<input value={(form as any)[key]} onChange={(e) => setForm({ ...form, [key]: e.target.value })} className={listingInput} placeholder={placeholder} /></label>)}</div></section><section className="border-t pt-6"><h3 className="font-black">AÃ§Ä±klama ve baÄŸlantÄ±lar</h3><div className="mt-4 grid gap-3"><textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} className={listingInput + " min-h-32"} placeholder="Ä°lan detay aÃ§Ä±klamasÄ±" /><input value={form.video_url} onChange={(e) => setForm({ ...form, video_url: e.target.value })} className={listingInput} placeholder="Video URL (isteÄŸe baÄŸlÄ±)" /><input value={form.virtual_tour_url} onChange={(e) => setForm({ ...form, virtual_tour_url: e.target.value })} className={listingInput} placeholder="Sanal tur URL (isteÄŸe baÄŸlÄ±)" /></div></section></div><aside><div className="sticky top-5 rounded-2xl bg-slate-50 p-5"><h3 className="font-black">GÃ¶rsel ve Video</h3><label className="mt-4 flex min-h-48 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-white p-4 text-center transition hover:border-[#cd011e]"><Upload size={24} className="text-[#cd011e]" /><b className="mt-3 text-xs">FotoÄŸraf veya video ekle</b><small className="mt-1 text-[10px] text-slate-400">TÄ±kla ya da sÃ¼rÃ¼kle bÄ±rak Â· en fazla 12 dosya</small><input type="file" accept="image/*,video/mp4,video/webm" multiple className="hidden" onChange={(e) => onFiles(e.target.files)} /></label>{media.length > 0 && <div className="mt-3 space-y-1 text-xs text-slate-600">{media.map((file) => <p key={file.name} className="truncate">â€¢ {file.name}</p>)}</div>}<button disabled={busy === "create"} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800 disabled:opacity-60">{busy === "create" ? "Ä°LAN KAYDEDÄ°LÄ°YORâ€¦" : "Ä°LANI ONAYA GÃ–NDER"}</button><p className="mt-3 text-center text-[10px] text-slate-500">Onaydan sonra Ä°lanlarÄ±mÄ±z, Ã¶ne Ã§Ä±kanlar ve canlÄ± akÄ±ÅŸta kullanÄ±labilir.</p></div></aside></div></form>;
+  return <div className="space-y-5"><div className="flex flex-col gap-4 rounded-2xl bg-[#cd011e] p-5 text-white sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-white/70">REALTY CENTER / Ä°LAN MERKEZÄ°</p><h2 className="mt-1 text-xl font-black">{mode === "approval" ? "Ä°lan Onay Merkezi" : "TÃ¼m Ä°lanlar"}</h2><p className="mt-1 text-sm text-white/75">{listings.length} kayÄ±t Â· {listings.filter((x) => x.approval_status === "pending").length} onay bekliyor</p></div><button onClick={() => setMode("add")} className="rounded-xl bg-white px-5 py-3 text-xs font-black text-[#cd011e] shadow-sm transition hover:scale-[1.02]">+ Ä°LAN EKLE</button></div><div className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 md:grid-cols-5"><input value={filters.q} onChange={(e) => setFilters({ ...filters, q: e.target.value })} className={listingInput + " mt-0"} placeholder="Ä°lan ara" /><select value={filters.city} onChange={(e) => setFilters({ ...filters, city: e.target.value, district: "" })} className={listingInput + " mt-0"}><option value="">TÃ¼m iller</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select><select value={filters.district} onChange={(e) => setFilters({ ...filters, district: e.target.value })} className={listingInput + " mt-0"}><option value="">TÃ¼m ilÃ§eler</option>{(listingDistricts[filters.city] || []).map((x) => <option key={x}>{x}</option>)}</select><select value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })} className={listingInput + " mt-0"}><option value="">TÃ¼m tÃ¼rler</option>{["Daire", "Villa", "MÃ¼stakil Ev", "Arsa", "Tarla", "Ofis", "DÃ¼kkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select><select value={filters.advisor} onChange={(e) => setFilters({ ...filters, advisor: e.target.value })} className={listingInput + " mt-0"}><option value="">TÃ¼m danÄ±ÅŸmanlar</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name}</option>)}</select></div><div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white"><table className="w-full min-w-[920px] text-left"><thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500"><tr><th className="p-4">Ä°lan</th><th className="p-4">Konum</th><th className="p-4">Fiyat / mÂ²</th><th className="p-4">Ekleyen danÄ±ÅŸman</th><th className="p-4">Durum</th><th className="p-4 text-right">Ä°ÅŸlemler</th></tr></thead><tbody>{loading ? <tr><td colSpan={6} className="p-8 text-center text-sm text-slate-400">Ä°lanlar yÃ¼kleniyorâ€¦</td></tr> : filtered.length ? filtered.map((x) => <tr key={x.id} className="border-t text-sm hover:bg-slate-50"><td className="p-4"><div className="flex items-center gap-3">{x.images?.[0] ? <img src={x.images[0]} className="h-11 w-14 rounded-lg object-cover" /> : <span className="grid h-11 w-14 place-items-center rounded-lg bg-red-50 text-xs font-black text-[#cd011e]">Ä°LAN</span>}<span><b className="block max-w-52 truncate">{x.title}</b><small className="text-slate-400">{x.transaction_type} Â· {x.property_type}</small></span></div></td><td className="p-4 text-xs font-bold">{x.city} / {x.district}<br/><span className="font-medium text-slate-400">{x.neighborhood || "-"}</span></td><td className="p-4"><b>{Number(x.price).toLocaleString("tr-TR")} {x.currency}</b><small className="block text-slate-400">{x.area || "-"} mÂ²</small></td><td className="p-4 text-xs font-bold">{advisorName(x.owner_id)}</td><td className="p-4"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${x.approval_status === "approved" ? "bg-emerald-100 text-emerald-700" : x.approval_status === "rejected" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{x.approval_status === "approved" ? "YayÄ±nda" : x.approval_status === "rejected" ? "Reddedildi" : "Onay bekliyor"}</span></td><td className="p-4 text-right"><div className="flex justify-end gap-2">{x.approval_status !== "approved" && <button disabled={busy === x.id + "OnaylandÄ±"} onClick={() => void update(x.id, { approval_status: "approved" }, "OnaylandÄ±")} className="rounded-lg bg-emerald-600 px-3 py-2 text-[10px] font-black text-white">{busy === x.id + "OnaylandÄ±" ? "â€¦" : "Onayla"}</button>}<button onClick={() => void update(x.id, { is_featured: !x.is_featured }, x.is_featured ? "Ã–ne Ã§Ä±karma kaldÄ±rÄ±ldÄ±" : "Ã–ne Ã§Ä±karÄ±ldÄ±")} className={`rounded-lg px-3 py-2 text-[10px] font-black ${x.is_featured ? "bg-amber-400 text-slate-900" : "bg-slate-800 text-white"}`}>â˜… {x.is_featured ? "Ã–ne Ã§Ä±ktÄ±" : "Ã–ne Ã§Ä±kar"}</button></div></td></tr>) : <tr><td colSpan={6} className="p-10 text-center text-sm text-slate-400">Bu kriterlerde ilan bulunmuyor.</td></tr>}</tbody></table></div></div>;
+}
+function FeaturePage({ title, page }: { title: string; page: Page }) {
+  const info: Record<string, string[]> = {
+    header: [
+      "MenÃ¼ aÄŸacÄ±, sÄ±ralama ve aktif/pasif kontrol",
+      "Yeni ana sayfa ile 2., 3. ve 4. seviye alt sayfa ekleme",
+      "Metin, resim, video ve tipografi dÃ¼zenleyicisi",
+    ],
+    corporate: [
+      "HakkÄ±mÄ±zda: metin, gÃ¶rsel ve video",
+      "YÃ¶netim kadrosu: fotoÄŸraf, isim ve CV",
+      "Belgeler, Referanslar ve Ä°ÅŸ OrtaklarÄ± yÃ¶netimi",
+    ],
+    media: [
+      "Realty TV ve Realty Haber",
+      "YouTube URL, kanal URL ve video yÃ¼kleme",
+      "Kapak gÃ¶rseli veya varsayÄ±lan Realty Center kapaÄŸÄ±",
+    ],
+    library: [
+      "Kategori yÃ¶netimi",
+      "Kapak gÃ¶rseli, zengin metin ve video baÄŸlantÄ±sÄ±",
+      "Etiketler ve yayÄ±n kontrolÃ¼",
+    ],
+    crm: [
+      "MÃ¼ÅŸteri kartÄ± ve hÄ±zlÄ± arama",
+      "Arama, mesaj, toplantÄ± ve gÃ¶rev geÃ§miÅŸi",
+      "DanÄ±ÅŸman atama ve portfÃ¶y eÅŸleÅŸtirme",
+    ],
+    inbox: [
+      "Ä°letiÅŸim, Barterbank ve Siz AradÄ±ÄŸÄ±nÄ±zÄ± SÃ¶yleyin talepleri",
+      "Ä°l/ilÃ§e bazlÄ± danÄ±ÅŸman bildirimi",
+      "Finansal Ã§Ã¶zÃ¼m form kayÄ±tlarÄ±",
+    ],
+    backup: [
+      "Otomatik gÃ¼nlÃ¼k, haftalÄ±k ve aylÄ±k yedek",
+      "Excel, PDF ve ZIP indirme seÃ§enekleri",
+      "Yetki kontrollÃ¼ gÃ¼venli eriÅŸim",
+    ],
+    logs: [
+      "BaÅŸarÄ±lÄ±/baÅŸarÄ±sÄ±z giriÅŸler",
+      "KullanÄ±cÄ±, rol ve ilan hareketleri",
+      "Oturum sonlandÄ±rma ve silme kayÄ±tlarÄ±",
+    ],
+    trash: [
+      "Silinen kayÄ±tlarÄ± gÃ¶rÃ¼ntÃ¼leme",
+      "Geri yÃ¼kleme ve kalÄ±cÄ± silme",
+      "Silme zamanÄ± ve iÅŸlemi yapan kullanÄ±cÄ±",
+    ],
+  };
+  return (
+    <>
+      <div className="mb-6 border-b border-slate-200 pb-5">
+        <p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">
+          REALTY CENTER / YÃ–NETÄ°M
+        </p>
+        <h1 className="mt-1 text-2xl font-black">{title}</h1>
+      </div>
+      <div className="grid gap-4 md:grid-cols-2">
+        {(info[page] || []).map((x, i) => (
+          <button
+            key={x}
+            className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm hover:border-[#cd011e]"
+          >
+            <span className="flex items-center gap-3">
+              <b className="rounded-xl bg-[#cd011e]/10 px-3 py-2 text-xs text-[#cd011e]">
+                0{i + 1}
+              </b>
+              <span className="text-sm font-black">{x}</span>
+            </span>
+            <ChevronRight size={18} className="text-slate-400" />
+          </button>
+        ))}
+      </div>
+    </>
+  );
+}
+function UserDrawer({
+  profile,
+  close,
+  trash,
+}: {
+  profile: Profile;
+  close: () => void;
+  trash: () => void;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 bg-slate-950/30" onClick={close}>
+      <aside
+        className="absolute right-0 top-0 h-full w-full max-w-md bg-white p-6 shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex justify-between">
+          <h2 className="text-lg font-black">KullanÄ±cÄ± DetayÄ±</h2>
+          <button onClick={close}>
+            <X />
+          </button>
+        </div>
+        <h3 className="mt-7 text-xl font-black">
+          {profile.first_name} {profile.last_name}
+        </h3>
+        <p className="text-sm text-slate-500">@{profile.username}</p>
+        <div className="mt-6 space-y-3 text-sm">
+          <p>
+            <b>E-posta:</b> {profile.email}
+          </p>
+          <p>
+            <b>Telefon:</b> {profile.phone || "Eklenmedi"}
+          </p>
+          <p>
+            <b>Rol:</b> {roleName(profile.role)}
+          </p>
+          <p>
+            <b>Durum:</b> {statusName(profile.status)}
+          </p>
+        </div>
+        <div className="mt-7 grid grid-cols-2 gap-2">
+          <button className="rc-secondary">Profili DÃ¼zenle</button>
+          <button className="rc-secondary">Åifreyi SÄ±fÄ±rla</button>
+          <button className="rc-secondary">OturumlarÄ± Bitir</button>
+          <button
+            onClick={trash}
+            className="rounded-xl border border-red-200 bg-red-50 px-3 py-3 text-xs font-black text-red-700"
+          >
+            Ã‡Ã¶p Kutusuna TaÅŸÄ±
+          </button>
+        </div>
+      </aside>
+    </div>
+  );
+}
+function NewOfficeModal({
+  advisers,
+  close,
+  done,
+  office,
+}: {
+  advisers: Profile[];
+  close: () => void;
+  done: () => Promise<void>;
+  office?: Office;
+}) {
+  const cities = [
+    "Adana",
+    "Ankara",
+    "Antalya",
+    "BalÄ±kesir",
+    "Bursa",
+    "EskiÅŸehir",
+    "Gaziantep",
+    "Ä°stanbul",
+    "Ä°zmir",
+    "Kayseri",
+    "Kocaeli",
+    "Konya",
+    "Mersin",
+    "MuÄŸla",
+    "Sakarya",
+    "Samsun",
+    "TekirdaÄŸ",
+    "Trabzon",
+  ];
+  const districts: Record<string, string[]> = {
+    Ankara: [
+      "AltÄ±ndaÄŸ",
+      "Ã‡ankaya",
+      "Etimesgut",
+      "KeÃ§iÃ¶ren",
+      "Mamak",
+      "Sincan",
+      "Yenimahalle",
+    ],
+    Ä°stanbul: [
+      "AtaÅŸehir",
+      "BakÄ±rkÃ¶y",
+      "BeÅŸiktaÅŸ",
+      "KadÄ±kÃ¶y",
+      "Kartal",
+      "Maltepe",
+      "Pendik",
+      "SarÄ±yer",
+      "ÅiÅŸli",
+      "ÃœskÃ¼dar",
+    ],
+    Ä°zmir: ["Bornova", "Buca", "Ã‡eÅŸme", "KarÅŸÄ±yaka", "Konak", "Urla"],
+    Bursa: ["NilÃ¼fer", "Osmangazi", "YÄ±ldÄ±rÄ±m"],
+    Antalya: ["Alanya", "KonyaaltÄ±", "MuratpaÅŸa"],
+    Kocaeli: ["BaÅŸiskele", "Gebze", "Ä°zmit"],
+    Konya: ["Karatay", "Meram", "SelÃ§uklu"],
+  };
+  const savedHours = (office?.work_hours || "09:00 - 18:00").match(/(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/);
+  const [form, setForm] = useState({
+    name: office?.name || "",
+    ownerId: office?.owner_profile_id || "",
+    city: office?.city || "",
+    district: office?.district || "",
+    mobile: office?.mobile_phone || office?.phone || "",
+    landline: office?.landline_phone || "",
+    email: office?.email || "",
+    address: office?.address || "",
+    description: office?.description || "",
+    hoursStart: savedHours?.[1] || "09:00",
+    hoursEnd: savedHours?.[2] || "18:00",
+  });
+  const [imageUrl, setImageUrl] = useState(office?.image_url || "");
+  const [busy, setBusy] = useState(false);
+  const [notice, setNotice] = useState("");
+  const timeOptions = Array.from({ length: 35 }, (_, index) => {
+    const minutes = 6 * 60 + index * 30;
+    return `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
+  });
+  const set = (key: string, value: string | number) =>
+    setForm((old) => ({ ...old, [key]: value }));
+  const loadImage = (file?: File) => {
+    if (!file) return;
+    if (!file.type.startsWith("image/") || file.size > 5 * 1024 * 1024)
+      return setNotice("LÃ¼tfen 5 MB altÄ± JPG, PNG veya WebP gÃ¶rsel seÃ§in.");
+    const reader = new FileReader();
+    reader.onload = () => setImageUrl(String(reader.result));
+    reader.readAsDataURL(file);
+  };
+  const save = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const mobile = form.mobile.replace(/\s|\(|\)|-/g, "");
+    const landline = form.landline.replace(/\s|\(|\)|-/g, "");
+    if (!/^05\d{9}$/.test(mobile))
+      return setNotice("Cep telefonu 05XX XXX XX XX biÃ§iminde geÃ§erli olmalÄ±.");
+    if (landline && !/^0[2-4]\d{9}$/.test(landline))
+      return setNotice(
+        "Sabit telefon alan koduyla birlikte 0XXX XXX XX XX biÃ§iminde olmalÄ±.",
+      );
+    if (form.hoursStart >= form.hoursEnd)
+      return setNotice("Ã‡Ä±kÄ±ÅŸ saati giriÅŸ saatinden sonra olmalÄ±.");
+    setBusy(true);
+    setNotice(office ? "Ofis bilgileri gÃ¼ncelleniyorâ€¦" : "Ofis kaydÄ± oluÅŸturuluyorâ€¦");
+    const owner = advisers.find((item) => item.id === form.ownerId);
+    const payload = {
+        name: form.name,
+        city: form.city,
+        district: form.district,
+        address: form.address,
+        email: form.email || null,
+        phone: form.mobile,
+        mobile_phone: form.mobile,
+        landline_phone: form.landline || null,
+        work_hours: `${form.hoursStart} - ${form.hoursEnd}`,
+        description: form.description || null,
+        owner_profile_id: form.ownerId || null,
+        manager_name: owner ? `${owner.first_name} ${owner.last_name}` : null,
+        image_url: imageUrl || null,
+        status: "active",
+      };
+    const request = office
+      ? supabase.from("offices").update(payload).eq("id", office.id).select("id").single()
+      : supabase.from("offices").insert(payload).select("id").single();
+    const { data, error } = await request;
+    if (!error && data && form.ownerId) {
+      await supabase.from("office_advisors").update({ is_manager: false }).eq("office_id", data.id);
+      await supabase.from("office_advisors").upsert({
+        office_id: data.id,
+        advisor_id: form.ownerId,
+        is_manager: true,
+      });
+    }
+    setBusy(false);
+    if (error) return setNotice(error.message);
+    await done();
+    setNotice(
+      office ? "Ofis gÃ¼ncellendi ve Ofislerimiz alanÄ±na yansÄ±tÄ±ldÄ±." : "Ofis baÅŸarÄ±yla oluÅŸturuldu ve web sitesindeki Ofislerimiz alanÄ±na yansÄ±tÄ±ldÄ±.",
+    );
+    window.setTimeout(close, 900);
+  };
+  return (
+    <div className="fixed inset-0 z-[110] overflow-y-auto bg-slate-950/55 p-3 sm:p-6">
+      <form
+        onSubmit={save}
+        className="mx-auto my-3 w-full max-w-[1360px] rounded-[24px] bg-white p-5 shadow-2xl sm:p-9"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-[11px] font-black tracking-[.28em] text-[#cd011e]">
+              REALTY CENTER
+            </p>
+            <h2 className="mt-1 text-3xl font-black tracking-tight text-[#0b2450]">
+              {office ? "Ofis Bilgilerini DÃ¼zenle" : "Yeni Ofis Ekle"}
+            </h2>
+            <p className="mt-2 text-sm text-slate-500">
+              {office ? "Mevcut bilgileri gÃ¼ncelleyin. Ä°l, ilÃ§e ve iletiÅŸim alanlarÄ± dÃ¼zenlenebilir." : "Sistemde gÃ¶rÃ¼necek yeni ofisi oluÅŸturun. Konum ve iletiÅŸim bilgilerini eksiksiz girin."}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={close}
+            className="grid h-11 w-11 place-items-center rounded-full bg-slate-100 text-xl text-slate-600 transition hover:bg-slate-200"
+          >
+            Ã—
+          </button>
+        </div>
+        <div className="mt-7 grid gap-5 lg:grid-cols-[1.3fr_.9fr]">
+          <div className="space-y-5">
+            <section className="overflow-hidden rounded-2xl border border-slate-200">
+              <div className="border-b bg-slate-50/70 px-5 py-4">
+                <h3 className="font-black text-[#0b2450]">
+                  <Building2 className="mr-2 inline h-5 w-5 text-blue-500" />
+                  Temel Bilgiler
+                </h3>
+                <p className="mt-1 text-xs text-slate-500">
+                  Ofis adÄ±nÄ±, konumunu ve iletiÅŸim bilgilerini girin.
+                </p>
+              </div>
+              <div className="grid gap-4 p-5 sm:grid-cols-2">
+                <Field label="Ofis adÄ± *">
+                  <input
+                    required
+                    value={form.name}
+                    onChange={(e) => set("name", e.target.value)}
+                    placeholder="Ã–rn. Ã‡ankaya Ofisi"
+                    className="rc-office-input"
+                  />
+                </Field>
+                <Field label="Ofis sahibi / yÃ¶netici *">
+                  <select
+                    required
+                    value={form.ownerId}
+                    onChange={(e) => set("ownerId", e.target.value)}
+                    className="rc-office-input"
+                  >
+                    <option value="">DanÄ±ÅŸman seÃ§in</option>
+                    {advisers.map((a) => (
+                      <option key={a.id} value={a.id}>
+                        {a.first_name} {a.last_name}
+                        {a.phone ? ` Â· ${a.phone}` : ""}
+                      </option>
+                    ))}
+                  </select>
+                </Field>
+                <Field label="Ä°l *">
+                  <select
+                    required
+                    value={form.city}
+                    onChange={(e) => {
+                      set("city", e.target.value);
+                      set("district", "");
+                    }}
+                    className="rc-office-input"
+                  >
+                    <option value="">Ä°l seÃ§in</option>
+                    {cities.map((city) => (
+                      <option key={city}>{city}</option>
+                    ))}
+                  </select>
+                </Field>
+                <Field label="Ä°lÃ§e *">
+                  <select
+                    required
+                    disabled={!form.city}
+                    value={form.district}
+                    onChange={(e) => set("district", e.target.value)}
+                    className="rc-office-input disabled:opacity-50"
+                  >
+                    <option value="">Ä°lÃ§e seÃ§in</option>
+                    {(districts[form.city] || ["Merkez"]).map((district) => (
+                      <option key={district}>{district}</option>
+                    ))}
+                  </select>
+                </Field>
+                <Field label="Cep telefonu *">
+                  <input
+                    required
+                    inputMode="tel"
+                    value={form.mobile}
+                    onChange={(e) => set("mobile", e.target.value)}
+                    placeholder="05XX XXX XX XX"
+                    className="rc-office-input"
+                  />
+                </Field>
+                <Field label="Sabit telefon">
+                  <input
+                    inputMode="tel"
+                    value={form.landline}
+                    onChange={(e) => set("landline", e.target.value)}
+                    placeholder="0XXX XXX XX XX"
+                    className="rc-office-input"
+                  />
+                </Field>
+                <Field label="E-posta">
+                  <input
+                    type="email"
+                    value={form.email}
+                    onChange={(e) => set("email", e.target.value)}
+                    placeholder="ornek@realtycenter.com"
+                    className="rc-office-input"
+                  />
+                </Field>
+                <Field label="Ã‡alÄ±ÅŸma saatleri *">
+                  <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                    <select value={form.hoursStart} onChange={(e) => set("hoursStart", e.target.value)} className="rc-office-input">
+                      {timeOptions.map((time) => <option key={time}>{time}</option>)}
+                    </select>
+                    <span className="text-slate-400">â€“</span>
+                    <select value={form.hoursEnd} onChange={(e) => set("hoursEnd", e.target.value)} className="rc-office-input">
+                      {timeOptions.map((time) => <option key={time}>{time}</option>)}
+                    </select>
+                  </div>
+                  <p className="mt-1.5 text-[10px] font-medium text-slate-400">Ã–nce giriÅŸ, sonra Ã§Ä±kÄ±ÅŸ saatini seÃ§in.</p>
+                </Field>
+                <Field label="AÃ§Ä±k adres *" wide>
+                  <textarea
+                    required
+                    value={form.address}
+                    onChange={(e) => set("address", e.target.value)}
+                    placeholder="Mahalle, cadde, sokak, bina no, daireâ€¦"
+                    className="rc-office-input min-h-24 resize-y"
+                  />
+                </Field>
+              </div>
+            </section>
+            <section className="overflow-hidden rounded-2xl border border-slate-200">
+              <div className="border-b bg-slate-50/70 px-5 py-4">
+                <h3 className="font-black text-[#0b2450]">
+                  <Clock3 className="mr-2 inline h-5 w-5 text-blue-500" />
+                  Ek Bilgiler
+                </h3>
+                <p className="mt-1 text-xs text-slate-500">
+                  Ofis bilgileri sayfasÄ±nda gÃ¶sterilecek aÃ§Ä±klama ve Ã§alÄ±ÅŸma
+                  dÃ¼zeni.
+                </p>
+              </div>
+              <div className="p-5">
+                <Field label="Ofis aÃ§Ä±klamasÄ±">
+                  <textarea
+                    value={form.description}
+                    onChange={(e) => set("description", e.target.value)}
+                    placeholder="Ofis ile ilgili kÄ±sa bilgi ekleyinâ€¦"
+                    className="rc-office-input min-h-24 resize-y"
+                  />
+                </Field>
+              </div>
+            </section>
+          </div>
+          <div className="space-y-5">
+            <section className="overflow-hidden rounded-2xl border border-slate-200">
+              <div className="border-b bg-slate-50/70 px-5 py-4">
+                <h3 className="font-black text-[#0b2450]">
+                  <Upload className="mr-2 inline h-5 w-5 text-blue-500" />
+                  Ofis GÃ¶rseli
+                </h3>
+                <p className="mt-1 text-xs text-slate-500">
+                  Ofisin dÄ±ÅŸ gÃ¶rÃ¼nÃ¼mÃ¼nÃ¼ yansÄ±tan bir fotoÄŸraf yÃ¼kleyin.
+                </p>
+              </div>
+              <label
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  loadImage(e.dataTransfer.files?.[0]);
+                }}
+                className="m-4 flex min-h-52 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition hover:border-[#cd011e] hover:bg-red-50"
+              >
+                <input
+                  type="file"
+                  accept="image/png,image/jpeg,image/webp"
                   className="hidden"
                   onChange={(e) => loadImage(e.target.files?.[0])}
                 />

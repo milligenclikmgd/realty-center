@@ -1,26 +1,156 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Õ¥µÁ½ÉĞI•…Ğ°ìÕÍ•MÑ…Ñ”°ÕÍ•™™•Ğ°ÕÍ•I•˜°ÕÍ•…±±‰…¬ô™É½´€É•…Ğœì)¥µÁ½ÉĞ€œ¸½¥¹‘•à¹ÍÌœì)¥µÁ½ÉĞìA}=Ad°5%}M1Q%=8ô™É½´€œ¸½½¹Ñ•¹ĞµÉ•™É•Í œì)¥µÁ½ÉĞ€±•…™±•Ğ½‘¥ÍĞ½±•…™±•Ğ¹ÍÌœì)¥µÁ½ÉĞ0™É½´€±•…™±•Ğœì)¥µÁ½ÉĞìÉ•¹‘•ÉQ½MÑ…Ñ¥5…É­ÕÀô™É½´€É•…Ğµ‘½´½Í•ÉÙ•Èœì)¥µÁ½ÉĞì¥É±”°¥É±•5…É­•È°5…Á½¹Ñ…¥¹•È°5…É­•È°A½ÁÕÀ°I•Ñ…¹±”°Q¥±•1…å•È°Q½½±Ñ¥À°ÕÍ•5…ÁÙ•¹ÑÌô™É½´€É•…Ğµ±•…™±•Ğœì)¥µÁ½ÉĞì€(€	É½İÍ•ÉI½ÕÑ•È…ÌI½ÕÑ•È°I½ÕÑ•Ì°I½ÕÑ”°1¥¹¬°ÕÍ•9…Ù¥…Ñ”°ÕÍ•1½…Ñ¥½¸°ÕÍ•A…É…µÌ)ô™É½´€É•…ĞµÉ½ÕÑ•Èµ‘½´œì)¥µÁ½ÉĞì¥ÍMÕÁ…‰…Í•½¹™¥ÕÉ•°ÍÕÁ…‰…Í”ô™É½´€œ¸½±¥ˆ½ÍÕÁ…‰…Í”œì)¥µÁ½ÉĞ‘µ¥¹½¹ÑÉ½±•¹Ñ•È™É½´€œ¸½‘µ¥¹½¹ÑÉ½±•¹Ñ•Èœì()¥µÁ½ÉĞì€(€	½Ğ°M•…É °5…ÁA¥¸°A¡½¹”°5…¥°°±½‰”°€(€¡•­¥É±”È°`°€(€	Õ¥±‘¥¹œÈ°	É¥•™…Í”°5•…Á¡½¹”°(€QÉ•¹‘¥¹UÀ°-•ä°!½µ”°É…‘Õ…Ñ¥½¹…À°ÉÉ½İI¥¡Ğ°ÉÉ½İUÀ°(€UÍ•ÉÌ°9…Ù¥…Ñ¥½¸°UÍ•É¡•¬°¥±Ñ•È°(€5…á¥µ¥é”È°	•°…±•¹‘…È°Q…œ°±…µ”°M•¹°±½¬°5•ÍÍ…•MÅÕ…É”°1½=ÕĞ°A±ÕÍ¥É±”°M•ÑÑ¥¹Ì°	…É¡…ÉĞÌ°(€M¡¥•±‘±•ÉĞ°1½¬°¡•¬°±•ÉÑ¥É±”°¥±•Q•áĞ°A¥•¡…ÉĞ°1…å•ÉÌ°5•ÍÍ…•¥É±”°5•¹Ô°(€!•…ÉĞ°AÉ¥¹Ñ•È°M¡…É”È°A±…å¥É±”°…µ•É„°5…À°¡•ÙÉ½¹1•™Ğ°¡•ÙÉ½¹I¥¡Ğ°¡•ÙÉ½¹½İ¸°1½…Ñ•¥á•°A•¹¥±IÕ±•È°I½Ñ…Ñ•Ü°5…ÁA¥¹¹•°±…œ°	•±°°5ÕÍ¥ŒÈ°Y½±Õµ•`°	½½­=Á•¸°M¡¥•±‘¡•¬°MÑ…È)ô™É½´€±Õ¥‘”µÉ•…Ğœì()½¹ÍĞMQQ%}19UL€ôì(€ÑÈèì½ÉÁ½É…Ñ”è-ÕÉÕµÍ…°œ°½™™¥•Ìè=™¥Í±•É¥µ¥èœ°…•¹ÑÌè…»Ç}µ…¹±…Èœ°±¥ÍÑ¥¹ÌèŸÁ±…¹±…ËÅ·Åèœ°…¤èŸÂ~’Xe…Á…äi•­„Í¥ÍÑ…»Äœ°ÁÉ½©•ÑÌèAÉ½©•±•É¥µ¥èœ°½¹Ñ…ĞèŸÁ±•Ñ§}¥´œ°…‘Ù¥Í½Èè…»Ç}µ…¸=°œ°™É…¹¡¥Í”èÉ…¹¡¥Í”=°„œ°Á…¹•°èA…¹•°œô°(€•¸èì½ÉÁ½É…Ñ”è½ÉÁ½É…Ñ”œ°½™™¥•Ìè=ÕÈ=™™¥•Ìœ°…•¹ÑÌè=ÕÈ‘Ù¥Í½ÉÌœ°±¥ÍÑ¥¹Ìè1¥ÍÑ¥¹Ìœ°…¤èŸÂ~’X$I•…°ÍÑ…Ñ”ÍÍ¥ÍÑ…¹Ğœ°ÁÉ½©•ÑÌèAÉ½©•ÑÌœ°½¹Ñ…Ğè½¹Ñ…Ğœ°…‘Ù¥Í½Èè	•½µ”…¸‘Ù¥Í½Èœ°™É…¹¡¥Í”è	•½µ”„É…¹¡¥Í”„œ°Á…¹•°èA…¹•°œô°(€…Èèì½ÉÁ½É…Ñ”èŸbŸfbÓbÇfb¤œ°½™™¥•ÌèŸffbŸb«b£fbœœ°…•¹ÑÌèŸfbÏb«bÓbŸbÇf#fbœœ°±¥ÍÑ¥¹ÌèŸbŸfbçfbŸbÇbŸb¨œ°…¤èŸÂ~’XƒfbÏbŸbçb¼ƒbŸfbçfbŸbÇbŸb¨ƒbŸfbÃff(œ°ÁÉ½©•ÑÌèŸbŸffbÓbŸbÇf+bäœ°½¹Ñ…ĞèŸbŸb«b×fƒb£fbœœ°…‘Ù¥Í½ÈèŸffƒfbÏb«bÓbŸbÇbŸf,œ°™É…¹¡¥Í”èŸffƒbÓbÇf+fƒbŸfb«f+bŸbÈ„œ°Á…¹•°èŸff#b·b¤ƒbŸfb«b·ffœô)ô…Ì½¹ÍĞì)ÑåÁ”MÑ…Ñ¥1…¹Õ…”€ô­•å½˜ÑåÁ•½˜MQQ%}19ULì()½¹ÍĞM=%1}5%}1%9-L€ôl(€ì¹…µ”è€%¹ÍÑ…É…´œ°¥½¸è€¡ÑÑÁÌè¼½‘¸¹Í¥µÁ±•¥½¹Ì¹½Éœ½¥¹ÍÑ…É…´½	ÄÈÍœô°(€ì¹…µ”è€`œ°¥½¸è€¡ÑÑÁÌè¼½‘¸¹Í¥µÁ±•¥½¹Ì¹½Éœ½à½	ÄÈÍœô°(€ì¹…µ”è€…•‰½½¬œ°¥½¸è€¡ÑÑÁÌè¼½‘¸¹Í¥µÁ±•¥½¹Ì¹½Éœ½™…•‰½½¬½	ÄÈÍœô°(€ì¹…µ”è€e½ÕQÕ‰”œ°¥½¸è€¡ÑÑÁÌè¼½‘¸¹Í¥µÁ±•¥½¹Ì¹½Éœ½å½ÕÑÕ‰”½	ÄÈÍœô°(€ì¹…µ”è€Q•±•É…´œ°¥½¸è€¡ÑÑÁÌè¼½‘¸¹Í¥µÁ±•¥½¹Ì¹½Éœ½Ñ•±•É…´½	ÄÈÍœô°(€ì¹…µ”è€1¥¹­•‘%¸œ°¥½¸è€œ½±¥¹­•‘¥¸¹ÍÙœœô)tì()ÑåÁ”QÉ…¥¹¥¹Ù•¹Ğ€ôì¥èÍÑÉ¥¹œìÑ¥Ñ±”èÍÑÉ¥¹œì‘…Ñ”èÍÑÉ¥¹œìÑ¥µ”èÍÑÉ¥¹œì±½…Ñ¥½¸èÍÑÉ¥¹œì™½Éµ…ĞèÍÑÉ¥¹œôì)ÑåÁ”QÉ…¥¹¥¹•¹Ñ•È€ôì¥èÍÑÉ¥¹œì¹…µ”èÍÑÉ¥¹œì¥ÑäèÍÑÉ¥¹œì…‘‘É•ÍÌèÍÑÉ¥¹œì‘•ÍÉ¥ÁÑ¥½¸èÍÑÉ¥¹œôì)ÑåÁ”QÉ…¥¹¥¹QåÁ”€ôì¥èÍÑÉ¥¹œìÑ¥Ñ±”èÍÑÉ¥¹œì‘ÕÉ…Ñ¥½¸èÍÑÉ¥¹œì‘•ÍÉ¥ÁÑ¥½¸èÍÑÉ¥¹œôì)ÑåÁ”QÉ…¥¹¥¹½¹Ñ•¹Ğ€ôì(€…±•¹‘…É%¹ÑÉ¼èÍÑÉ¥¹œì(€•¹Ñ•ÉÍ%¹ÑÉ¼èÍÑÉ¥¹œì(€ÑåÁ•Í%¹ÑÉ¼èÍÑÉ¥¹œì(€•Ù•¹ÑÌèQÉ…¥¹¥¹Ù•¹Ñmtì(€•¹Ñ•ÉÌèQÉ…¥¹¥¹•¹Ñ•Émtì(€ÑåÁ•ÌèQÉ…¥¹¥¹QåÁ•mtì)ôì)½¹ÍĞU1Q}QI%9%9}=9Q9PèQÉ…¥¹¥¹½¹Ñ•¹Ğ€ôì(€…±•¹‘…É%¹ÑÉ¼è€I•…±Ñä•¹Ñ•Ë
-¸—}¥Ñ¥´Ñ…­Ù¥µ¥¹‘•¸å…­±‡}…¸ÏÅ»Å˜—}¥Ñ¥µ±•É¥¹¤°ƒ•ÙÉ¥´§¤ÁÉ½É…µ±…ËÄÙ”Í…¡„ƒ…³Ç}µ…±…ËÅ»ÄÑ…­¥À•‘•‰¥±¥ÉÍ¥¹¥è¸œ°(€•¹Ñ•ÉÍ%¹ÑÉ¼è€}¥Ñ¥´µ•É­•é±•É¥µ¥èì‘…»Ç}µ…¹±…ËÅ·ÅëÅ¸µ•Í±•­¤•±§}¥µ¥¹¤‘•ÍÑ•­±•å•¸°ÕåÕ±…µ…³Äƒ…³Ç}µ…±…ÈÙ”Ÿñ¹•°Í•­ÓÙÈ—}¥Ñ¥µ±•É¤§¥¸¡…ëÅÉ±…¹…¸ƒÛ}É•¹µ”…±…¹±…ËÅ“ÅÈ¸œ°(€ÑåÁ•Í%¹ÑÉ¼è€…åÉ¥µ•¹­Õ°­…É¥å•É¥¹¥¸¡•È‡}…µ…ÏÅ¹„ÕåÕ¸—}¥Ñ¥´ÁÉ½É…µ±…ËÅ·Åé±„Í…ÓÇ|°µ•ÙéÕ…Ğ°Á…é…É±…µ„°Ñ•­¹½±½©¤Ù”Á½ÉÑ›ÙäçÙ¹•Ñ¥µ¤…±…¹±…ËÅ¹‘„ÏñÉ•­±¤•±§}¥´Í‡}³Åå½ÉÕè¸œ°(€•Ù•¹ÑÌèl(€€€ì¥è€ÑÉ…¥¹¥¹œµ•Ù•¹Ğ´Äœ°Ñ¥Ñ±”è€…åÉ¥µ•¹­Õ±”	‡}±…¹ŸÇœœ°‘…Ñ”è€œÈÀÈØ´Àä´ÀÔœ°Ñ¥µ”è€œÄÀèÀÀœ°±½…Ñ¥½¸è€¹­…É„}¥Ñ¥´5•É­•é¤œ°™½Éµ…Ğè€OÅ»Å˜}¥Ñ¥µ¤œô°(€€€ì¥è€ÑÉ…¥¹¥¹œµ•Ù•¹Ğ´Èœ°Ñ¥Ñ±”è€¥©¥Ñ…°A…é…É±…µ„ÓÙ±å•Í¤œ°‘…Ñ”è€œÈÀÈØ´Àä´ÄÈœ°Ñ¥µ”è€œÄĞèÀÀœ°±½…Ñ¥½¸è€Ÿ•ÙÉ¥´§¤œ°™½Éµ…Ğè€=¹±¥¹”œô°(€€€ì¥è€ÑÉ…¥¹¥¹œµ•Ù•¹Ğ´Ìœ°Ñ¥Ñ±”è€A½ÉÑ›ÙäÙ”7ó}Ñ•É¤gÙ¹•Ñ¥µ¤œ°‘…Ñ”è€œÈÀÈØ´Àä´Ääœ°Ñ¥µ”è€œÄÀèÌÀœ°±½…Ñ¥½¸è€ŸÁÍÑ…¹‰Õ°}¥Ñ¥´5•É­•é¤œ°™½Éµ…Ğè€OÅ»Å˜}¥Ñ¥µ¤œô(€t°(€•¹Ñ•ÉÌèl(€€€ì¥è€ÑÉ…¥¹¥¹œµ•¹Ñ•È´Äœ°¹…µ”è€¹­…É„}¥Ñ¥´5•É­•é¤œ°¥Ñäè€¹­…É„œ°…‘‘É•ÍÌè€-½¹ÕÑ­•¹Ğ5… ¸€ÌÀÈà¸…¸]•ÍĞ…Ñ”I•Í¥‘•¹”°ƒ…¹­…å„€¼¹­…É„œ°‘•ÍÉ¥ÁÑ¥½¸è€•¹•°µ•É­•è‹ñ¹å•Í¥¹‘”ÏÅ»Å˜Ù”ÕåÕ±…µ„—}¥Ñ¥µ±•É¤¸œƒm4ÖÚ$z{-®éÜj×\Û[Hğï™XÚ[™H[Y[Y1,[[\‰Ëİ[[X\N‰Ğš\ˆqgÛ[YH[™ÚHqgØ[XYH[™ÚH™[Ù[š[ˆ™HÛÛ›Û0ïˆÙ\™ZÛHÛq'İ[HY1,[HY1,[H0í±'Ü™[š[‹‰Ë[XYÙN‰ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMLLMNLMŒËXÎÍ˜ØNOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œON	ÏLLŒ	ËX›\ÚY]‰ÌŒ‹LKLLŒŒŒ‰ËÛÛ[‰Ï‘ZÜÜ\^‹0í™[YH[±,K\H™H\Û[HY1,[[\±,[±,[ˆñ'ÜHñ,\˜^[Hpï°ï0ïY\ÚHØq'Û1,ZÛ1,Hš\ˆØ^\š[Y[šİ[qgÛ[Z[š[ˆ[Y[Y\‹Ü‰ÈBˆHKˆÈY‰ÛXœ˜\KXZIËÛYÎ‰ŞX\^K^™ZØ[K\™Z™\‰Ë]N‰ÖX\^H™Zğè›1,H™Z™\‰Ë\ØÜš\[Û‰ÑØ^\š[Y[šİ[Ø\˜\›\±,[™HX\^H™Zğè™[ˆX\˜\›[›X^q,HÛÛ^[qgİ1,\˜[ˆ^Yİ[[X[1,H™Z™\›\‹‰ËÛÛÜ‰ÈÍ‘IË\XÛ\Î–ÂˆÈY‰ØZKYYÙ\›[YIË]N‰ÖX\^H™Zğèˆ[H°í›Ù\Ù[š^X]\˜qgİ1,\›X\ñ,H˜\ñ,[X\1,[1,\ÉËİ[[X\N‰Ğš\ˆX]1,\±,[H°í›Ù\Ú[šH[˜[^ˆY\šÙ[ˆX\^H™Zğè™[ˆñ'ÜHÛÜ[\›H˜\ñ,[X\˜\›[˜Xš[XÙq'Ú[š^šH0í±'Ü™[š[‹‰Ë[XYÙN‰ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMLLKX™X™MLÎÌOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œON	ÏLLŒ	ËX›\ÚY]‰ÌŒ‹LLŒÕLŒŒŒ‰ËÛÛ[‰Ï–X\^H™Zğè‹Ø\˜\±,[ˆY\š[™HÙpéÛY^Èq'ñ,[±,ZÈ™\š[\šHØ\±gñ,[qgİ1,\›XZÈ™H\˜qgİ1,\›XHğï™XÚ[šH1,^›[™1,\›XZÈpéÚ[ˆğï0éÛ0ïš\ˆX\™1,[Xñ,Y1,\‹Ü‰ÈBˆHKˆÈY‰ÛXœ˜\KZ[™\İY[	ËÛYÎ‰ŞX]\š[KYš\œØ]\šKX[˜[^›\‰Ë]N‰ÖX]1,\±,[H±,\œØ]\±,H™H[˜[^›\‰Ë\ØÜš\[Û‰Ğ°í›Ù\Ù[š^X]\™ZÙ]\šKÚ\˜HÙ]\š[\šH™HX]1,\±,[H±,\œØ]\±,[˜HZ\ˆ^›X[ˆ[˜[^›\šK‰ËÛÛÜ‰ÈÌÎMÉË\XÛ\Î–ÂˆÈY‰ŞX]\š[KZÚ\˜KYÙ]\š\ÚIË]N‰ÒÚ\˜HÙ]\š\ÚH[˜[^š[™HX[±,^˜ØHš^X]H˜ZÛX^q,[‰Ëİ[[X\N‰Ğœ°ïÚ\˜H0éØ\œ[±,K˜Zñ,[HÚY\šH™H°í›Ù\Ù[[\ÚXšHq'ÚqgÚÙ[›\ˆX]1,\±,[q,[ˆÙ\°éÙZÈ™\ÛZ[šH™\š\‹‰Ë[XYÙN‰ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒML‹XÍŒØNL˜YXXØ]]ÏY›Ü›X]	™š]XÜ›Ü	œON	ÏLLŒ	ËX›\ÚY]‰ÌŒ‹LLŒLŒŒŒ‰ËÛÛ[‰Ï”Øq'Û1,ZÛ1,HX]1,\±,[H[˜[^šKØ]1,[ˆ[XH™Y[[š[ˆX[±,[™H0ï™[›HÚY\›\šH™H^[ˆ0í›™[[H°í›ÙHİ[œÚ^Y[[šHZÚØ]H[1,\‹Ü‰ÈBˆHB—NÂ˜ÛÛœİÙ]Xœ˜\PØ]YÛÜšY\ÈH
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import './index.css';
+import { PAGE_COPY, MEDIA_SELECTION } from './content-refresh';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { Circle, CircleMarker, MapContainer, Marker, Popup, Rectangle, TileLayer, Tooltip, useMapEvents } from 'react-leaflet';
+import { 
+  BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation, useParams
+} from 'react-router-dom';
+import { isSupabaseConfigured, supabase } from './lib/supabase';
+import AdminControlCenter from './AdminControlCenter';
 
-NˆXœ˜\PØ]YÛÜV×HOˆÈHÈÛÛœİ][\ÏR”ÓÓ‹œ\œÙJØØ[İÜ˜YÙK™Ù]][J	Ü™X[KXÙ[\‹[Xœ˜\IÊH	Û[	ÊHQUSÓP”T–WĞĞUQÓÔ’QTÎÈÛÛœİY˜][ÏSØš™Xİ™œ›ÛQ[šY\ÊQUSÓP”T–WĞĞUQÓÔ’QTË™›]X\
+import { 
+  Bot, Search, MapPin, Phone, Mail, Globe, 
+  CheckCircle2, X, 
+  Building2, Briefcase, Megaphone,
+  TrendingUp, Key, Home, GraduationCap, ArrowRight, ArrowUp,
+  Users, Navigation, UserCheck, Filter,
+  Maximize2, Bed, Calendar, Tag, Flame, Send, Clock, MessageSquare, LogOut, PlusCircle, Settings, BarChart3,
+  ShieldAlert, Lock, Check, AlertCircle, FileText, PieChart, Layers, MessageCircle, Menu,
+  Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell, Music2, VolumeX, BookOpen, ShieldCheck, Star
+} from 'lucide-react';
 
-Ø]YÛÜJOO˜Ø]YÛÜK˜\XÛ\Ë›X\
+const STATIC_LANGUAGES = {
+  tr: { corporate:'Kurumsal', offices:'Ofislerimiz', agents:'DanÄ±ÅŸmanlar', listings:'Ä°lanlarÄ±mÄ±z', ai:'ğŸ¤– Yapay Zeka AsistanÄ±', projects:'Projelerimiz', contact:'Ä°letiÅŸim', advisor:'DanÄ±ÅŸman Ol', franchise:'Franchise Ol!', panel:'Panel' },
+  en: { corporate:'Corporate', offices:'Our Offices', agents:'Our Advisors', listings:'Listings', ai:'ğŸ¤– AI Real Estate Assistant', projects:'Projects', contact:'Contact', advisor:'Become an Advisor', franchise:'Become a Franchise!', panel:'Panel' },
+  ar: { corporate:'Ø§Ù„Ø´Ø±ÙƒØ©', offices:'Ù…ÙƒØ§ØªØ¨Ù†Ø§', agents:'Ù…Ø³ØªØ´Ø§Ø±ÙˆÙ†Ø§', listings:'Ø§Ù„Ø¹Ù‚Ø§Ø±Ø§Øª', ai:'ğŸ¤– Ù…Ø³Ø§Ø¹Ø¯ Ø§Ù„Ø¹Ù‚Ø§Ø±Ø§Øª Ø§Ù„Ø°ÙƒÙŠ', projects:'Ø§Ù„Ù…Ø´Ø§Ø±ÙŠØ¹', contact:'Ø§ØªØµÙ„ Ø¨Ù†Ø§', advisor:'ÙƒÙ† Ù…Ø³ØªØ´Ø§Ø±Ø§Ù‹', franchise:'ÙƒÙ† Ø´Ø±ÙŠÙƒ Ø§Ù…ØªÙŠØ§Ø²!', panel:'Ù„ÙˆØ­Ø© Ø§Ù„ØªØ­ÙƒÙ…' }
+} as const;
+type StaticLanguage = keyof typeof STATIC_LANGUAGES;
 
-\XÛJOO–Ø\XÛKšY\XÛWJJJNÈÛÛœİYØXŞU]\Ï[™]ÈÙ]
-ÉÑØ^\š[Y[šİ[HŒ¸ &[±,[ˆZÚ[˜ÚHX\±,\ñ,[˜H˜Zñ,qgÉË	ÑØ^\š[Y[šİ[[±,qgÛX[›1,q'ñ,[™Hğï™[ˆ™Y[ˆ™[\›^ZXÚOÉË	Ô™X[HÙ[\°«ˆ8 '0å›˜ÙHğï™[¸ 'HXZÛqgñ,[q,[±,H[›]1,I×JNÈ™]\›ˆ][\Ë›X\
+const SOCIAL_MEDIA_LINKS = [
+  { name: 'Instagram', icon: 'https://cdn.simpleicons.org/instagram/BE123C' },
+  { name: 'X', icon: 'https://cdn.simpleicons.org/x/BE123C' },
+  { name: 'Facebook', icon: 'https://cdn.simpleicons.org/facebook/BE123C' },
+  { name: 'YouTube', icon: 'https://cdn.simpleicons.org/youtube/BE123C' },
+  { name: 'Telegram', icon: 'https://cdn.simpleicons.org/telegram/BE123C' },
+  { name: 'LinkedIn', icon: '/linkedin.svg' }
+];
 
-][N“Xœ˜\PØ]YÛÜJOOØÛÛœİ›Ü›X[^™YZ][KšYOOIÛXœ˜\K[™]ÜÉß][KœÛYÏOOIÜÙZİÜ‹ZX™\›\šIÏŞË‹‹š][KY‰ÛXœ˜\KYİZYIËÛYÎ‰ÙØ^\š[Y[šİ[\™Z™\šIË]N‰ÑØ^\š[Y[šİ[™Z™\šIË\ØÜš\[Û‰Ğ[1,[KØ]1,[H™HÚ\˜[[XHğï™XÚ[šHÛÛ^[qgİ1,\˜[ˆ˜]ZÈš[ÚHX^±,[\±,H™HÛÛ›Û\İ[\šK‰ßNš][KšYOOIÛXœ˜\K\™\ÜÉß][KœÛYÏOOIØ˜\Ú[™KXš^‰ÏŞË‹‹š][KY‰ÛXœ˜\K\›ØÙ\ÜÉËÛYÎ‰Ú\Û[K\™Z™\›\šIË]N‰ñ,1gÛ[H™Z™\›\šIË\ØÜš\[Û‰Õ\KZÜÜ\^‹ğí›qgÛYH™H\Û[Hğï™péÛ\šHpéÚ[ˆØYH™Hpéñ,ZÛ^q,Xñ,HpéÙ\šZÛ\‹‰ßNš][NÈ™]\›ˆË‹‹››Ü›X[^™Y\XÛ\Î››Ü›X[^™Y˜\XÛ\Ë›X\
+type TrainingEvent = { id: string; title: string; date: string; time: string; location: string; format: string };
+type TrainingCenter = { id: string; name: string; city: string; address: string; description: string };
+type TrainingType = { id: string; title: string; duration: string; description: string };
+type TrainingContent = {
+  calendarIntro: string;
+  centersIntro: string;
+  typesIntro: string;
+  events: TrainingEvent[];
+  centers: TrainingCenter[];
+  types: TrainingType[];
+};
+const DEFAULT_TRAINING_CONTENT: TrainingContent = {
+  calendarIntro: 'Realty CenterÂ® eÄŸitim takviminden yaklaÅŸan sÄ±nÄ±f eÄŸitimlerini, Ã§evrim iÃ§i programlarÄ± ve saha Ã§alÄ±ÅŸmalarÄ±nÄ± takip edebilirsiniz.',
+  centersIntro: 'EÄŸitim merkezlerimiz; danÄ±ÅŸmanlarÄ±mÄ±zÄ±n mesleki geliÅŸimini destekleyen, uygulamalÄ± Ã§alÄ±ÅŸmalar ve gÃ¼ncel sektÃ¶r eÄŸitimleri iÃ§in hazÄ±rlanan Ã¶ÄŸrenme alanlarÄ±dÄ±r.',
+  typesIntro: 'Gayrimenkul kariyerinin her aÅŸamasÄ±na uygun eÄŸitim programlarÄ±mÄ±zla satÄ±ÅŸ, mevzuat, pazarlama, teknoloji ve portfÃ¶y yÃ¶netimi alanlarÄ±nda sÃ¼rekli geliÅŸim saÄŸlÄ±yoruz.',
+  events: [
+    { id: 'training-event-1', title: 'Gayrimenkule BaÅŸlangÄ±Ã§', date: '2026-09-05', time: '10:00', location: 'Ankara EÄŸitim Merkezi', format: 'SÄ±nÄ±f EÄŸitimi' },
+    { id: 'training-event-2', title: 'Dijital Pazarlama AtÃ¶lyesi', date: '2026-09-12', time: '14:00', location: 'Ã‡evrim iÃ§i', format: 'Online' },
+    { id: 'training-event-3', title: 'PortfÃ¶y ve MÃ¼ÅŸteri YÃ¶netimi', date: '2026-09-19', time: '10:30', location: 'Ä°stanbul EÄŸitim Merkezi', format: 'SÄ±nÄ±f EÄŸitimi' }
+  ],
+  centers: [
+    { id: 'training-center-1', name: 'Ankara EÄŸitim Merkezi', city: 'Ankara', address: 'Konutkent Mah. 3028. Cad. West Gate Residence, Ã‡ankaya / Ankara', description: 'Genel merkez bÃ¼nyesinde sÄ±nÄ±f ve uygulama eÄŸitimleri.' }
+  ],
+  types: [
+    { id: 'training-type-1', title: 'Gayrimenkule BaÅŸlangÄ±Ã§ EÄŸitimi', duration: '2 GÃ¼n', description: 'SektÃ¶re yeni baÅŸlayan danÄ±ÅŸmanlar iÃ§in temel sÃ¼reÃ§ler, mevzuat ve mÃ¼ÅŸteri iletiÅŸimi.' },
+    { id: 'training-type-2', title: 'PortfÃ¶y YÃ¶netimi', duration: '1 GÃ¼n', description: 'DoÄŸru portfÃ¶y alma, fiyatlama, sunum ve takip yÃ¶ntemleri.' },
+    { id: 'training-type-3', title: 'Dijital Pazarlama', duration: '1 GÃ¼n', description: 'Ä°lan sunumu, sosyal medya, kiÅŸisel marka ve dijital mÃ¼ÅŸteri kazanÄ±mÄ±.' }
+  ]
+};
+const getTrainingContent = (): TrainingContent => {
+  try { return { ...DEFAULT_TRAINING_CONTENT, ...(JSON.parse(localStorage.getItem('realty-center-training-content') || 'null') || {}) }; }
+  catch { return DEFAULT_TRAINING_CONTENT; }
+};
+const saveTrainingContent = (content: TrainingContent) => {
+  localStorage.setItem('realty-center-training-content', JSON.stringify(content));
+  window.dispatchEvent(new Event('realty-center-training-updated'));
+};
 
-\XÛJOO›YØXŞU]\Ëš\Ê\XÛK]JOÊY˜][ÖØ\XÛKšY_\XÛJN˜\XÛJ_NßJNÈHØ]ÚÈ™]\›ˆQUSÓP”T–WĞĞUQÓÔ’QTÎÈHNÂ˜ÛÛœİØ]™SXœ˜\PØ]YÛÜšY\ÈH
-][\ÎˆXœ˜\PØ]YÛÜV×JHOˆÈØØ[İÜ˜YÙKœÙ]][J	Ü™X[KXÙ[\‹[Xœ˜\IË”ÓÓ‹œİš[™ÚYJ][\ÊJNÈÚ[™İË™\Ü]Ú]™[
-™]È]™[
-	Ü™X[KXÙ[\‹[Xœ˜\K]\]Y	ÊJNÈNÂ˜ÛÛœİİš\šXÚ^H
-[ˆİš[™ÊHOˆ[œ™\XÙJÏ×—J‹ÙË	È	ÊKœ™\XÙJ×ÊËÙË	È	ÊKš[J
-NÂ‚\Hİ\İÛY\‘™YY˜XÚÈHÂˆYˆİš[™ÎÂˆ\Nˆ	ÓY[[[š^Y]	È	Ñ[±,qgÛX[ˆq'Ù\›[™\›Y\ÚIÈ	ÓÙš\Èq'Ù\›[™\›Y\ÚIÈ	ñgšZğèY]	È	Ñ[ZÈÈ0å›™\šIÎÂˆ˜[YNˆİš[™ÎÂˆÛ™Nˆİš[™ÎÂˆ[XZ[ˆİš[™ÎÂˆİXš™Xİˆİš[™ÎÂˆY\ÜØYÙNˆİš[™ÎÂˆ˜][™Îˆ[X™\ÂˆYÙ[ˆİš[™ÎÂˆÙ™šXÙNˆİš[™ÎÂˆİ]\Îˆ	ÖY[šIÈ	ñ,˜Ù[[š^[Ü‰È	ÖX[±,][™1,IÎÂˆÜ™X]Y]ˆİš[™ÎÂŸNÂ˜ÛÛœİÙ]İ\İÛY\‘™YY˜XÚÈH
+type RealtyVideo = { id: string; source: 'youtube' | 'upload' | 'youtube-channel'; category: 'tv' | 'news'; url: string; title: string; thumbnail: string; description: string; createdAt: string };
+const DEFAULT_REALTY_VIDEOS: RealtyVideo[] = MEDIA_SELECTION.map((video) => ({
+  id: video.id, source: 'youtube', category: video.category,
+  url: `https://www.youtube.com/watch?v=${video.youtubeId}`, title: video.title,
+  thumbnail: `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`,
+  description: video.description, createdAt: '2026-10-18T18:00:00.000Z'
+}));
+const getRealtyVideos = (): RealtyVideo[] => {
+  try {
+    const raw = localStorage.getItem('realty-center-videos');
+    const saved = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(saved)) return structuredClone(DEFAULT_REALTY_VIDEOS);
+    let videos: RealtyVideo[] = saved.map((video: RealtyVideo) => ({ ...video, source: video.source || 'youtube', category: video.category || 'tv', description: video.description || '' }));
+    if (localStorage.getItem('realty-media-seed-version') !== '2026-10-18') {
+      videos = [...videos, ...DEFAULT_REALTY_VIDEOS.filter((seed) => !videos.some((video) => video.id === seed.id || video.url === seed.url))];
+      localStorage.setItem('realty-center-videos', JSON.stringify(videos));
+      localStorage.setItem('realty-media-seed-version', '2026-10-18');
+    }
+    return videos;
+  } catch { return structuredClone(DEFAULT_REALTY_VIDEOS); }
+};
+const getYoutubeId = (url: string) => url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/)?.[1] || '';
+const saveRealtyVideos = (videos: RealtyVideo[]) => { localStorage.setItem('realty-center-videos', JSON.stringify(videos)); window.dispatchEvent(new Event('realty-center-videos-updated')); };
+const getYoutubeChannelUrl = () => localStorage.getItem('realty-center-youtube-channel-url') || '';
+const saveYoutubeChannelUrl = (url: string) => { localStorage.setItem('realty-center-youtube-channel-url', url.trim()); window.dispatchEvent(new Event('realty-center-youtube-channel-updated')); };
 
-Nˆİ\İÛY\‘™YY˜XÚÖ×HOˆÂˆHÈ™]\›ˆ”ÓÓ‹œ\œÙJØØ[İÜ˜YÙK™Ù]][J	Ü™X[KXÙ[\‹Xİ\İÛY\‹Y™YY˜XÚÉÊH	Ö×IÊNÈHØ]ÚÈ™]\›ˆ×NÈBŸNÂ˜ÛÛœİØ]™Pİ\İÛY\‘™YY˜XÚÈH
-][\Îˆİ\İÛY\‘™YY˜XÚÖ×JHOˆÂˆØØ[İÜ˜YÙKœÙ]][J	Ü™X[KXÙ[\‹Xİ\İÛY\‹Y™YY˜XÚÉË”ÓÓ‹œİš[™ÚYJ][\ÊJNÂˆÚ[™İË™\Ü]Ú]™[
-™]È]™[
-	Ü™X[KXÙ[\‹Y™YY˜XÚË]\]Y	ÊJNÂŸNÂ‚\H^Y\”™\]Y\İHÂˆYˆİš[™ÎÈ\Nˆİš[™ÎÈ›Ü\Nˆİš[™ÎÈÚ]Nˆİš[™ÎÈ\İšXİˆİš[™ÎÈYÙ]ˆİš[™ÎÈ^[Y[ˆİš[™ÎÈ[Z[™Îˆİš[™ÎÈ˜[YNˆİš[™ÎÈÛ™Nˆİš[™ÎÂˆ\ØÜš\Vj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5on: string;
+type LibraryArticle = { id: string; title: string; summary: string; image: string; content: string; publishedAt: string };
+type LibraryCategory = { id: string; slug: string; title: string; description: string; color: string; articles: LibraryArticle[] };
+const DEFAULT_LIBRARY_CATEGORIES: LibraryCategory[] = [
+  { id:'library-guide', slug:'gayrimenkul-rehberi', title:'Gayrimenkul Rehberi', description:'AlÄ±m, satÄ±m ve kiralama sÃ¼recini kolaylaÅŸtÄ±ran pratik bilgi yazÄ±larÄ± ve kontrol listeleri.', color:'#CD011E', articles:[
+    { id:'sektor-2026', title:'Gayrimenkul alÄ±rken doÄŸru fiyat nasÄ±l deÄŸerlendirilir?', summary:'BÃ¶lge, metrekare, bina niteliÄŸi ve gÃ¼ncel emsalleri birlikte inceleyerek daha saÄŸlÄ±klÄ± karar verin.', image:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-10T10:00:00.000Z', content:'<p>DoÄŸru fiyat deÄŸerlendirmesi; yalnÄ±zca ilan bedeline deÄŸil, bÃ¶lgesel emsallere, taÅŸÄ±nmazÄ±n fiziksel durumuna ve kullanÄ±m amacÄ±na bakmayÄ± gerektirir.</p><h2>Kontrol edilmesi gerekenler</h2><ul><li>AynÄ± bÃ¶lgedeki gÃ¼ncel emsal ilanlar</li><li>Metrekare, bina yaÅŸÄ± ve ulaÅŸÄ±m avantajlarÄ±</li><li>Tapu, iskan ve kullanÄ±m durumu</li></ul>' },
+    { id:'sektor-danismanlik', title:'SatÄ±ÅŸ ve kiralama sÃ¼recinde gÃ¼venli ilerleme rehberi', summary:'Åeffaf bilgi, doÄŸru fiyatlama ve yazÄ±lÄ± sÃ¼reÃ§ takibi; taraflarÄ±n gÃ¼venle ilerlemesini saÄŸlar.', image:'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-18T12:00:00.000Z', content:'<p>Gayrimenkul sÃ¼recinde ilk gÃ¶rÃ¼ÅŸmeden sÃ¶zleÅŸmeye kadar her adÄ±mÄ± yazÄ±lÄ± ve doÄŸrulanabilir ÅŸekilde yÃ¼rÃ¼tmek gÃ¼veni gÃ¼Ã§lendirir.</p>' }
+  ] },
+  { id:'library-law', slug:'hukuk-mevzuat', title:'Hukuk & Mevzuat', description:'Tapu, sÃ¶zleÅŸme, yetkilendirme ve gayrimenkul mevzuatÄ±na dair aÃ§Ä±klayÄ±cÄ± iÃ§erikler.', color:'#183B66', articles:[
+    { id:'hukuk-tapu', title:'Tapu iÅŸlemi Ã¶ncesinde kontrol edilmesi gereken 6 baÅŸlÄ±k', summary:'Tapu kaydÄ±, yetki belgeleri ve Ã¶deme planÄ± gibi kritik noktalarÄ± iÅŸlem Ã¶ncesinde gÃ¶zden geÃ§irin.', image:'https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-09T10:00:00.000Z', content:'<p>Tapu iÅŸlemlerinde taÅŸÄ±nmaza ve taraflara iliÅŸkin bilgilerin doÄŸrulanmasÄ±, saÄŸlÄ±klÄ± bir sÃ¼recin temelidir.</p><h2>Ã–n kontrol listesi</h2><ul><li>Tapu kaydÄ± ve taÅŸÄ±nmaz bilgileri</li><li>TaraflarÄ±n kimlik ve temsil yetkileri</li><li>Ã–deme yÃ¶ntemi ve resmi belgeler</li></ul>' }
+  ] },
+  { id:'library-process', slug:'islem-rehberleri', title:'Ä°ÅŸlem Rehberleri', description:'Tapu, ekspertiz, sÃ¶zleÅŸme ve teslim sÃ¼reÃ§leri iÃ§in sade ve aÃ§Ä±klayÄ±cÄ± iÃ§erikler.', color:'#7C2D12', articles:[
+    { id:'islem-ekspertiz', title:'Ekspertiz, tapu ve teslim sÃ¼recinde temel adÄ±mlar', summary:'Bir iÅŸlemde hangi aÅŸamada hangi belgenin ve kontrolÃ¼n gerekli olduÄŸunu adÄ±m adÄ±m Ã¶ÄŸrenin.', image:'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-08T10:00:00.000Z', content:'<p>Ekspertiz, Ã¶deme planÄ±, tapu ve teslim adÄ±mlarÄ±nÄ±n doÄŸru sÄ±rayla yÃ¼rÃ¼tÃ¼lmesi saÄŸlÄ±klÄ± bir gayrimenkul iÅŸleminin temelidir.</p>' }
+  ] },
+  { id:'library-ai', slug:'yapay-zekali-rehber', title:'Yapay ZekÃ¢lÄ± Rehber', description:'Gayrimenkul kararlarÄ±nda yapay zekÃ¢dan yararlanmayÄ± kolaylaÅŸtÄ±ran uygulamalÄ± rehberler.', color:'#6D28D9', articles:[
+    { id:'ai-degerleme', title:'Yapay zekÃ¢ ile bÃ¶lgesel fiyat araÅŸtÄ±rmasÄ± nasÄ±l yapÄ±lÄ±r?', summary:'Bir yatÄ±rÄ±m bÃ¶lgesini analiz ederken yapay zekÃ¢dan doÄŸru sorularla nasÄ±l yararlanabileceÄŸinizi Ã¶ÄŸrenin.', image:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-23T12:00:00.000Z', content:'<p>Yapay zekÃ¢, kararÄ±n yerine geÃ§mez; daÄŸÄ±nÄ±k verileri karÅŸÄ±laÅŸtÄ±rmak ve araÅŸtÄ±rma sÃ¼recini hÄ±zlandÄ±rmak iÃ§in gÃ¼Ã§lÃ¼ bir yardÄ±mcÄ±dÄ±r.</p>' }
+  ] },
+  { id:'library-investment', slug:'yatirim-firsatlari-analizler', title:'YatÄ±rÄ±m FÄ±rsatlarÄ± ve Analizler', description:'BÃ¶lgesel fiyat hareketleri, kira getirileri ve yatÄ±rÄ±m fÄ±rsatlarÄ±na dair uzman analizleri.', color:'#047857', articles:[
+    { id:'yatirim-kira-getirisi', title:'Kira getirisi analizinde yalnÄ±zca fiyata bakmayÄ±n', summary:'BrÃ¼t kira Ã§arpanÄ±, bakÄ±m gideri ve bÃ¶lgesel talep gibi deÄŸiÅŸkenler yatÄ±rÄ±mÄ±n gerÃ§ek resmini verir.', image:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-20T12:00:00.000Z', content:'<p>SaÄŸlÄ±klÄ± yatÄ±rÄ±m analizi, satÄ±n alma bedelinin yanÄ±nda dÃ¼zenli giderleri ve uzun dÃ¶nemli bÃ¶lge potansiyelini dikkate alÄ±r.</p>' }
+  ] }
+];
+const getLibraryCategories = (): LibraryCategory[] => { try { const items=JSON.parse(localStorage.getItem('realty-center-library') || 'null') || DEFAULT_LIBRARY_CATEGORIES; const defaults=Object.fromEntries(DEFAULT_LIBRARY_CATEGORIES.flatMap((category)=>category.articles.map((article)=>[article.id,article]))); const legacyTitles=new Set(['Gayrimenkulde 2026â€™nÄ±n ikinci yarÄ±sÄ±na bakÄ±ÅŸ','Gayrimenkul danÄ±ÅŸmanlÄ±ÄŸÄ±nda gÃ¼ven neden belirleyici?','Realty CenterÂ® â€œÃ–nce GÃ¼venâ€ yaklaÅŸÄ±mÄ±nÄ± anlattÄ±']); return items.map((item:LibraryCategory)=>{const normalized=item.id==='library-news'||item.slug==='sektor-haberleri'?{...item,id:'library-guide',slug:'gayrimenkul-rehberi',title:'Gayrimenkul Rehberi',description:'AlÄ±m, satÄ±m ve kiralama sÃ¼recini kolaylaÅŸtÄ±ran pratik bilgi yazÄ±larÄ± ve kontrol listeleri.'}:item.id==='library-press'||item.slug==='basinda-biz'?{...item,id:'library-process',slug:'islem-rehberleri',title:'Ä°ÅŸlem Rehberleri',description:'Tapu, ekspertiz, sÃ¶zleÅŸme ve teslim sÃ¼reÃ§leri iÃ§in sade ve aÃ§Ä±klayÄ±cÄ± iÃ§erikler.'}:item; return {...normalized,articles:normalized.articles.map((article)=>legacyTitles.has(article.title)?(defaults[article.id]||article):article)};}); } catch { return DEFAULT_LIBRARY_CATEGORIES; } };
+const saveLibraryCategories = (items: LibraryCategory[]) => { localStorage.setItem('realty-center-library',JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-library-updated')); };
+const stripRichText = (html: string) => html.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+
+type CustomerFeedback = {
+  id: string;
+  type: 'Memnuniyet' | 'DanÄ±ÅŸman DeÄŸerlendirmesi' | 'Ofis DeÄŸerlendirmesi' | 'ÅikÃ¢yet' | 'Dilek / Ã–neri';
+  name: string;
+  phone: string;
+  email: string;
+  subject: string;
+  message: string;
+  rating: number;
+  agent: string;
+  office: string;
+  status: 'Yeni' | 'Ä°nceleniyor' | 'YanÄ±tlandÄ±';
+  createdAt: string;
+};
+const getCustomerFeedback = (): CustomerFeedback[] => {
+  try { return JSON.parse(localStorage.getItem('realty-center-customer-feedback') || '[]'); } catch { return []; }
+};
+const saveCustomerFeedback = (items: CustomerFeedback[]) => {
+  localStorage.setItem('realty-center-customer-feedback', JSON.stringify(items));
+  window.dispatchEvent(new Event('realty-center-feedback-updated'));
+};
+
+type BuyerRequest = {
+  id: string; type: string; property: string; city: string; district: string; budget: string; payment: string; timing: string; name: string; phone: string;
+  description: string;
   createdAt: string; status: 'Yeni' | 'Ä°nceleniyor' | 'EÅŸleÅŸtirildi'; officeNames: string[]; agentNames: string[];
 };
 const getBuyerRequests = (): BuyerRequest[] => { try { return JSON.parse(localStorage.getItem('realty-center-buyer-requests') || '[]'); } catch { return []; } };
@@ -51,7 +181,167 @@ const DEFAULT_DOCUMENTS: CorporateDocument[] = [
 ];
 const DEFAULT_REFERENCES: CorporateLogoItem[] = [
   { id: 'ref-ato', name: 'Ankara Ticaret OdasÄ± (ATO)', logo: '/partner-ato.png', content: 'Kurumsal geliÅŸim, ticaret aÄŸÄ± ve sektÃ¶rel iÅŸ birliÄŸi Ã§alÄ±ÅŸmalarÄ±.' },
-  { id: 'ref-tedb', name: 'TÃ¼m EmÛM5¶‰ËkºwµçrÂrö–6W&–²öVGV6F–öâÖ6VçFW'2rÂvÆVgBrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓS#3#Cs“Sc"Ó–SF#F#cCCöWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂuL;Ç&¶—–RvVæVÆ–æFV¶’\Iö—F–ÒÖW&¶W¦ÆW&–Ö—¢ÂFìKYöÖæÆ,KÜK¬Kâ|;Ææ6VÂ6V·L;g"&–Æv—6–æRfRW–wVÆÖÌKvVÆœYö–Ò&öw&ÖÆ,KæW&œYöÖW6–æ’6IöÆ"âr’À¢†VFW$—FVÒ‚vVGV6F–öâ×G—W2rÂt\Iö—F–Ò8v\Yö—FÆW&–Ö—¢rÂrö–6W&–²öVGV6F–öâ×G—W2rÂvÆVgBrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓS#Csƒ#3#3c2Óf#&#sV#cSSöWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂt&YöÆæ|K:rÂW¦ÖæÌK²ÂÖWg§VBÂ6LKYòÂ¦&ÆÖfRFV¶æöÆö¦’\Iö—F–ÖÆW&—–ÆR†W"¶&—–W"YöÖ<KæW–wVâvVÆœYö–Ò6\:vVæV¶ÆW&’7VçW–÷'W¢âr¢ÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓS#Csƒ#3#3c2Óf#&#sV#cSSöWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂu&VÇG’6VçFW,*â\Iö—F–Ò&öw&ÖÆ,KÂv—&–ÖVæ·VÂ&öfW7–öæVÆÆW&–æ–â&–Æv’fR6†&V6W&–ÆW&–æ’<;Ç&V¶Æ’vVÆœY÷F—&VâÆæÌK&—";lI÷&VæÖR–öÆ7VÇ\I÷VGW"âr’À¢†VFW$—FVÒ‚vgWGW&RrÂtvVÆV6\Iö–ÒK:v–ârÂrö–6W&–²ögWGW&RrÂvÆVgBrÅ¶†VFW$—FVÒ‚v'V–ÆBÖ×’×FVÒrÂt¶VæF’F¼KÜKìK·W"rÂrö–6W&–²ö&æ×F¶–ÒÖ·W"rÂvÆVgBrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓS#s3ssƒcrÖS6#“s3sVc“#öWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂuF¼KÜKìK¬K·W'VâÂWF¶–æ—¦’,;Çœ;ÇL;ÆâåÆåÆäv—&–ÖVæ·VÆFR¶ÌK<K,;Çœ;ÆÖR–ÆìK¦6F†:vö²6LKYò–Ö¶ÆF\Iö–Ã²FüI÷'R–ç6æÆ,KÂFüI÷'R|;g&WfÆW&ÆR&—"&–vWF—&ÖV¶ÆR&YöÆ"â&VÇG’6VçFW,*âFìKYöÖæÆ,KÂœYò†6–ÖÆW&’vVÆœY÷F–¼:vR¶VæF’œYöÆW&–æ’6—7FVÖÆ’&—"V¶—–K<KæL;fì;ÌY÷L;Ç&V&–Æ—"åÆåÆìKÆ²YöÖF÷W&7–öâfRF¶—<;Ç&\:vÆW&–æ’L;Ç¦VæÆW–V6V²&—"–F&’6—7Fã²Ü;ÌY÷FW&’G&fœIö’'GLKIüKæFÌK<K–‡F—–:vÆ,KìKœ;fæWFV6V²&—"FìKYöÖã²÷'Fl;g’†6Ö’,;Çœ;ÆL;ÌIü;ÆæFR—6R6LKYö7VçVÆ6²v—&–ÖVæ·VÆÆW&FVâ6÷'VÖÇR&—"÷'Fl;g’W¦ÖìKV¶–&RF\IöW"¶F"åÆåÆäÖ:r†W&¶W6–â–ìKœYö’–Ö<KF\Iö–ÂÂ†W"&öÌ;Æâ¶VæF’W¦ÖæÌKIüKæF|;Ì:vÆVæÖW6–F—"â\Iö—F–ÒÂÖVçF÷&ÇV²fR·W'V×6Â6—7FVÒFW7F\Iö–Ö—¦ÆRV¶–&–æ—¦’ÆæÌK&œ:v–ÖFR,;Çœ;ÇL;Ç#²F†L;Ç¦VæÆ’ÂF†fW&–ÖÆ’fR<;Ç&L;Ç,;ÆÆV&–Æ—"&—"œYòÖöFVÆ’·W&ÖìK¦\YöÆ–²VFW&—¢åÆåÆä&—&Æ–·FR:vÌKYöâ|;Ì:vÌ;Â&—"V¶—Â¶&—–W&–æ—¦FV¶’Vâ6IöÆÒ–LK,KÖÆ&Fâ&—&–F—"âr•ÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓS#s3ssƒcrÖS6#“s3sVc“#öWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂtv—&–ÖVæ·VÂ6V·L;g,;ÆæFR|;Ì:vÌ;Â&—"¶&—–W"·W&ÖìK¢œ:v–â\Iö—F–ÒÂÖVçF÷&ÇV²fR·W'V×6ÂÖ&¶FW7F\Iö–æ’&—"&–vWF—&—–÷'W¢âr’À¢†VFW$—FVÒ‚w7—7FV×2rÂu6—7FVÒfRÖöFVÆÆW"rÂrö–6W&–²÷7—7FV×2rÂvÆVgBrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓCSCcSƒCcbÖ36CSv&3ƒf#CöWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂu÷'Fl;g’ÂÜ;ÌY÷FW&’Â¦&ÆÖfR&÷&ÆÖ<;Ç&\:vÆW&–æ’;fÌ:|;ÆÆV&–Æ—"6—7FVÖÆW&ÆRœ;fæWF—–÷'W¢âr’À¢†VFW$—FVÒ‚v7VÇGW&RrÂu&VÇG’6VçFW,*â¼;ÆÇL;Ç,;ÂrÂrö–6W&–²ö7VÇGW&RrÂvÆVgBrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓSs#CS3ƒcƒrÖ&#C6cƒ&3363CöWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂ|9fæ6R|;ÇfVâæÆœKYüK²YöVfffÌK²ÂF–ìKYöÖÂvVÆœYö–ÒfR&Yö,KœK–ÆYöÖF\IöW&ÆW&’;Ç¦W&–æR·W'VÇVGW"âr¢Ò’À¢†VFW$—FVÒ‚wf–FV÷2rÂu&VÇG’ÖVG–rÂr÷f–FVöÆ"rÂvÆVgBrÅ¶†VFW$—FVÒ‚w&VÇG’×GbrÂu&VÇG’EbrÂr÷f–FVöÆ#ö&öÇVÓ×GbrÂvÆVgBr’Æ†VFW$—FVÒ‚w&VÇG’ÖæWw2rÂu&VÇG’†&W&ÆW"rÂr÷f–FVöÆ#ö&öÇVÓÖ†&W&ÆW"rÂvÆVgBr•Ò’À¢†VFW$—FVÒ‚vV&æ–ærrÂt¶¦ì:rÖöFVÆ’rÂrö–6W&–²ö6öçG&–'WF–öârÂw&–v‡BrÅ¶†VFW$—FVÒ‚v6öçG&–'WF–öârÂt¶F¼KœKrÂrö–6W&–²ö6öçG&–'WF–öârÂw&–v‡BrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓSScscsRÖ#C6FF&cs#öWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂtÖ&¶ÂFV¶æöÆö¦’Â\Iö—F–ÒfR÷W&7–öâFW7F\Iö–æ–â<;Ç&L;Ç,;ÆÆV&–Æ—"&œ:v–ÖFR7VçVÆÖ<KìK6IöÆ–âYöVffbÖöFVÂâr’Æ†VFW$—FVÒ‚w6†&–ærrÂu–ÆYüKÒÖöFVÆ’rÂrö–6W&–²÷6†&–ærrÂw&–v‡BrÅ°¢†VFW$—FVÒ‚w6†&–ærÖGf—6÷'2rÂtFìKYöÖâ¶¦ì:r–ÆYüKÜKrÂrö–6W&–²÷6†&–ærÖGf—6÷'2rÂw&–v‡BrÅµÒÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓSc#S“rÓ#“3S#†33öWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓCrÂtFìKYöÖìKâVÖ\Iö–æ’fR;Ç&WF–Ö–æ’ÖW&¶W¦RÆâYöVffb¶¦ì:rÖöFVÆ’åÆåÆå&VÇG’6VçFW,*âFìKYöÖâ–ÆYüKÒ–¶ÆYüKÜKæF²÷'Fl;gœ;Æâ¶¦ìKÆÖ<KÂÌK<KfW–6LK<K–ÆœYö¶—6–æ–âœ;fæWF–ÆÖW6’Â¦&ÆÖ:vÌKYöÖ<KÂœYöÆVÒF¶–&’fR6öç\:vÆæLK&Ö<;Ç&V6–æFV¶’¶F¼KÆ"—,K—,KF\IöW&ÆVæF—&–Æ—"âÖ:r–ÆìK¦6œYöÆVÒ6öçVæF&—"÷&â,;fÆÖV²F\Iö–ÂÂF\IöW&’öÇ\Y÷GW&âVÖ\Iö’|;g,;Æì;Ç"fR;fÌ:|;ÆÆV&–Æ—"Œ:&ÆRvWF—&ÖV·F—"åÆåÆäFìKYöÖã²Ö&¶|;Æ<;ÂÂFV¶æöÆö¦’ÇG–K<KÂ\Iö—F–ÒÂ–ÆâfR¦&ÆÖFW7F\Iö’Âöf—2öÆæ¶Æ,KfR÷W&7–öæVÂ†—¦ÖWFÆW&FVâ–&&ÆìK&¶Vâ¶VæF’;Ç&WF–Ö–æFVâFüIöâ¶¦æ<KìK;fæ6VFVâ&–Æ–æVâW66Æ&ÆF¶—VFW"â÷'F²÷'Fl;g’Âœ;fæÆVæF—&ÖRfW–&—&FVâf¦ÆFìKYöÖìEš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍl[ˆğíœ™]ˆ[1,q'ñ,HqgÛ[[\™H^[qgñ,[NÈ0éØ[1,qgÛXH˜qgÛ[XY[ˆ0í›˜ÙHğíœ™]‹ÛÜ[[[ZÈ™HØ]ñ,HØ\Ø[q,H™[\›[™\™ZÈØ^q,][1,[˜H[1,[±,\‹——•^Yİ[[˜XØZÈÜ˜[›\ÈÙš\ÈX\1,\ñ,K[±,qgÛX[±,[ˆ[™^Z[ZK0ï™][HÙ]š^Y\ÚKİ[[±,[[ˆ^›Y]\ˆ™H[Ú[Hğí›qgÛY^YHğíœ™Hq'ÚqgÙXš[\‹ˆ\Ø\ÈÛ[ˆğïœš^ˆÙ\Ú[[\š[ˆÛXY1,q'ñ,K\™›Ü›X[œñ,H\İZÛ^Y[ˆ™Hğï™0ï°ïXš[\ˆ°ïpïY^ZHYY›^Y[ˆpéñ,ZÈš\ˆÚ\İ[Y\‹‰ÊKˆXY\’][J	ÜÚ\š[™ËYœ˜[˜Ú\ÙIË	Ñœ˜[˜Ú\ÙHÙš\ÈØ^˜[°éÈ[Ù[IË	ËÚXÙ\šZËÜÚ\š[™ËYœ˜[˜Ú\ÙIË	ÜšYÚ	Ë×K	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMÌÍÍMÍKYŒŒMM™MÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLM	Ë	ÓÙš\ÈX]1,\±,[q,[±,KY\™[°ïpïY^ZH™H[±,qgÛX[ˆ˜qgØ\±,\ñ,[±,Hš\›ZİHğí™][ˆğï™0ï°ïXš[\ˆœ˜[˜Ú\ÙHXZÛqgñ,[q,K——”™X[HÙ[\°«ˆœ˜[˜Ú\ÙHÙš\ÚNÈX\šØHİ[[±,[HZÚñ,Kİ\[\Ø[Ú\İ[[\‹q'Ú][H›ÙÜ˜[[\±,KZÛ›ÛÚšH[X\1,\ñ,K^˜\›[XH\İq'ÚH™HÜ\˜\Ş[Ûˆİ[™\\±,^[HY\™[š\ˆØ^\š[Y[šİ[qgÛ]Y\ÚHÛqgİ\\‹ˆÙš\Ú[ˆØ^˜[°éÈ[Ù[NÈ[±,qgÛX[ˆ0ï™][ZKqgÛ[HXÛZK^›Y]Ù[\›\šH™HY\™[qgÈÙ[qgİ\›YH˜X[^Y]\š[š[ˆğï™0ï°ïXš[\ˆšpéÚ[YHpí›™][Y\Ú[™H^X[±,\‹——”^[qgñ,[HX\1,\ñ,[™HÙš\Ú[ˆ0ïİ[™q'ÚHYZğè›‹\œÛÛ™[[±,]1,[KZÛ›ÛÚšKY]X]^][]KqgÛ[HÛÛ›Û0ï™H[±,qgÛX[ˆ\İq'ÚHÚXšHÛÜ[[[ZÛ\ˆZÚØ]H[1,[±,\‹ˆ[±,qgÛX[ˆ[HÙš\È\˜\ñ,[™ZÚH[Ù[ÈØXš]ÚY\‹^›Y]ZÙ]KqgÛ[H˜^›1,H^[qgñ,[H™^XH\™›Ü›X[œÈ˜\Ø[XZÛ\±,HÚXšH˜\šÛ1,Hš[qgÙ[›\›Hğí›qgÛY^YH˜q'Û[˜Xš[\‹——’\ˆœ˜[˜Ú\ÙHÙš\Ú[š[ˆ^˜\ˆÛñgİ[\±,H™HÜ\˜\Ş[ÛˆX\1,\ñ,H˜\šÛ1,Y1,\‹ˆH™Y[›HÚ]YZÚHpéñ,ZÛ[X[\ˆØXš]š\ˆÙ[\ˆXHHÜ˜[ˆXZ0ï0ïq'Ú[\‹ˆšZZHÛñgİ[\È°í›ÙKX]1,\±,[H[±,KÙš\ÈØ\\Ú]\ÚH™H\˜Y›\±,[ˆX^±,[1,H]]X˜ZØ]1,^[H™[\›[š\‹‰ÊKˆXY\’][J	ÜÚ\š[™Ë]X[IË	ÕZñ,[HY\›q'ÚH™HZÚ\^[qgñ,[q,IË	ËÚXÙ\šZËÜÚ\š[™Ë]X[IË	ÜšYÚ	Ë×K	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMLŒMÌÍÍÌLNËYLØMÌÍÍYLØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLM	Ë	ÕZñ,[HY\š[š[ˆİ\™q'İHÚ\İ[ZH™HZÚ\0ïY[\š[š[ˆ0ï™][Z[šH[™Ù[HšpéÚ[YHÛÜ^X[ˆqgÈ[Ù[K——’Ù[™HZñ,[q,[±,HÛqgİ\˜[ˆ[±,qgÛX[Èpï1gİ\šH™HÜ°íHZñ,qgñ,[±,Hpí›™]Y[š[ˆX[±,[™HZÚ\ÙpéÚ[ZKq'Ú][KY[Ü›ZË^˜\›[XKğíœ™]ˆq'ñ,[1,[q,K\™›Ü›X[œÈZÚXšH™HÜ\˜\Ş[ÛˆÛÛÜ™[˜\Ş[ÛHÚXšHÛÜ[[[ZÛ\ˆ0ïİ[š\‹ˆZÚ\^[qgñ,[H[Ù[KY\š[ˆØq'ÛY1,q'ñ,HÚ\İ[H™H±,\œØ]\›HZÚ\0ïY\Ú[š[ˆqgÛ[YZÚHñ'ÜY[ˆ[Yq'Ú[šHš\›ZİHq'Ù\›[™\š\‹——’\ˆqgÛ[YHpï1gİ\šHØ^[˜q'ñ,KÜ°íHØ^[˜q'ñ,K˜[™]H™Hğíœİ\š[Hğï™XÚKpï˜ZÙ\™Kğí›qgÛYHZÚXšH™HØ\[±,qgÈÛÜ[[[ZÛ\±,H™]qgİ\š[\‹ˆ^[qgñ,[HÜ˜[±,NÈHğíœ™]ˆq'ñ,[1,[q,KØq'Û[˜[ˆ\İZÈ™HqgÛ[H0ï°ï\Ø\È[1,[˜\˜ZÈ0í›˜ÙY[ˆX^±,[1,H0è›HÙ]\š[\‹ˆ°í[XÙHZÚ\°ïpïšÙ[ˆğíœ™]ˆ™[\œÚ^›q'ÚH™HÛÛœ˜Y[ˆÜ^XH0éñ,ZØ[ˆ^[qgñ,[H[›qgÛX^›1,ZÛ\±,H^˜[1,[1,\‹——•Zñ,[HY\›q'ÚHX[±,^˜ØHZÚ\İ\›XZÈq'Ú[È0ï™][ZH\1,\˜[‹[±,qgÛX[±,HÙ[qgİ\™[ˆ™Hpï1gİ\šH[™^Z[Z[šHÛÜ^X[ˆš\ˆÚ\İ[HÛqgİ\›XZİ1,\‹ˆØ^˜[°éÈ[Ù[HHHY\›ZÈÛÜ[[[q'İ[H\™›Ü›X[œËØ[]H™Hğï™0ï°ïXš[\›ZÈ[Ù[\š^[H\İZÛ\‹‰ÊKˆXY\’][J	ÜÚ\š[™Ë[İ\‰Ë	ñ,1gÈš\›q'ÚH™Hq'Ù\ˆ^[qgñ,[H[Ù[\šIË	ËÚXÙ\šZËÜÚ\š[™Ë[İ\‰Ë	ÜšYÚ	Ë×K	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMMÍŒLMÍKXLÙM˜YÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLM	Ë	Öpí››[™\›YKÜZÈÜ°íK›Ú™H™H^›X[›1,ZÈqgÈš\›ZÛ\šHpéÚ[ˆØ]ñ,H˜^›1,H\Û™ZÈ[Ù[\‹——‘Ø^\š[Y[šİ[qgÛ[[\šH\ˆ˜[X[ˆZÈš\ˆ[±,qgÛX[ˆ™^XHZÈš\ˆÙš\È\˜Y±,[™[ˆpï°ï0ïY^YXš[\‹ˆ˜\šÛ1,H1gÙZ\›\™[ˆÙ[[ˆpï1gİ\šHpí››[™\›Y[\šKÜZÈÜ°íH0éØ[1,qgÛX[\±,K›Ú™HØ]1,qgÛ\±,KXØ\šHØ^\š[Y[šİ[^›X[›1,q'ñ,Kİ\[\Ø[pï1gİ\šH^›Y]\šH™H0éğí°ïHÜZÛ1,ZÛ\±,HpéÚ[ˆ^\±,H^[qgñ,[H[Ù[\šH^Yİ[[˜Xš[\‹——–pí››[™\›YH[Ù[[™Hpï1gİ\š^ZH™^XHqgÈ±,\œØ]1,[±,HÚ\İ[YHØ^˜[™1,\˜[ˆ\˜Y±,[ˆØ]ñ,\ñ,NÈÜZÈqgÛ[H[Ù[[™H\ÙHÜ°ípïpí›™][‹pï1gİ\š^ZH[\Ú[Y[ˆ™Hğï™XÚHÛÛpéÛ[™1,\˜[ˆ\˜Y›\±,[ˆğíœ™]›\šHÛÜ[\‹ˆ›Ú™H™Hİ\[\Ø[[›qgÛX[\™H^˜\›[XH°ï0éÙ\ÚKZÚ\Ø\\Ú]\ÚKÜ\˜\Ş[Ûˆğï™\ÚH™H^›X[›1,ZÈÛÜ[[[q'İH^[qgñ,[H0éÙ\°éÙ]™\Ú[™H0èš[Y[\‹——•0ïH[Ù[\™H[Y[[ÙH^[±,Y1,\ˆğíœ™]›\ˆqgÛ[H0í›˜Ù\Ú[™H[±,[[[±,\‹^[qgñ,[HX^±,[1,HÛ\˜ZÈØ^q,][1,[˜H[1,[±,\‹X\Ø[™H™\™Ú\Ù[pïğï[0ï0ïÛ\ˆğí™][\ˆ™H0í™[YH[˜ØZÈÙ\°éÙZÛqgÙ[ˆqgÛ[H[Hñ'Ü[[›q,qgÈØ]ñ,H0ï™\š[™[ˆq'Ù\›[™\š[\‹ˆ]^[\ˆ[Ú[HÙš\Ë›Ú™H™Hğí›qgÛYvÓMm¢G§²ÚîÆ­yÑ¥±‘É•¸èl¸¸¹¥Ñ•´¹¡¥±‘É•¸°¡¥±‘tô€èì€¸¸¹¥Ñ•´°¡¥±‘É•¸è…ÁÁ•¹‘!•…‘•É5•¹Õ¡¥±¡¥Ñ•´¹¡¥±‘É•¸°Á…É•¹Ñ%°¡¥±¤ô¤ì(¼¼SqI/Áe€àÄƒÁ0Y€äÜÌƒÁ3YKÀ!KÁQM$)½¹ÍĞQUI-e}%Q%LèI•½ÉñÍÑÉ¥¹œ°ÍÑÉ¥¹mtø€ôì‰‘…¹„ˆél‰±…‘‡|ˆ°‰•å¡…¸ˆ°‹Õ­ÕÉ½Ù„ˆ°‰•­”ˆ°‹Áµ…µ¿}±Ôˆ°‰-…É…¥Í…³Äˆ°‰-…É…Ñ‡|ˆ°‰-½é…¸ˆ°‰A½é…¹ÓÄˆ°‰M…¥µ‰•å±¤ˆ°‰M…ËÇ…´ˆ°‰M•å¡…¸ˆ°‰QÕ™…¹‰•å±¤ˆ°‰eÕµÕÉÑ…³Å¬ˆ°‰gñÉ—}¥È‰t°‰“Åå…µ…¸ˆél‰	•Í¹¤ˆ°‹•±¥­¡…¸ˆ°‰•É•Èˆ°‰Ù±‰‡Äˆ°‰-…¡Ñ„ˆ°‰5•É­•èˆ°‰M…µÍ…Ğˆ°‰M¥¹¥¬ˆ°‰QÕĞ‰t°‰™å½¹­…É…¡¥Í…Èˆél‰	‡}µ…¯ŸÄˆ°‰	…å…Ğˆ°‰	½±Ù…‘¥¸ˆ°‹…äˆ°‹½‰…¹±…Èˆ°‰…é¯ÅËÄˆ°‰¥¹…Èˆ°‰µ¥É‘‡|ˆ°‰Ù¥±•Èˆ°‰!½…±…Èˆ°‹Á¡Í…¹¥å”ˆ°‹ÁÍ•¡¥Í…Èˆ°‰/ÅëÅ³ÙÉ•¸ˆ°‰5•É­•èˆ°‰M…¹“Å­³Äˆ°‰M¥¹…¹Á‡}„ˆ°‰MÕ±Ñ…¹‘‡Äˆ°‹yÕ¡ÕĞ‰t°‰}ËÄˆél‰¥å…‘¥¸ˆ°‰¿}Õ‰…å…ëÅĞˆ°‰±—}­¥ÉĞˆ°‰!…µÕÈˆ°‰5•É­•èˆ°‰A…Ñ¹½Ìˆ°‰Q‡}³Ç…äˆ°‰QÕÑ…¬‰t°‰­Í…É…äˆél‰}‡ŸÙÉ•¸ˆ°‰Í­¥°ˆ°‰ñ±‡}‡œˆ°‰ñé•±åÕÉĞˆ°‰5•É­•èˆ°‰=ÉÑ…¯Ùäˆ°‰M…ËÅå…£}¤ˆ°‰MÕ±Ñ…¹¡…»Ä‰t°‰µ…Íå„ˆél‰Ùå»ñ•¬ˆ°‰ñ·ó}¡…Å¯Ùäˆ°‰!…µ…·Ùëğˆ°‰5•É­•èˆ°‰5•Éé¥™½¸ˆ°‰MÕ±Õ½Ù„ˆ°‰Q‡}½Ù„‰t°‰¹­…É„ˆél‰­åÕÉĞˆ°‰±ÓÅ¹‘‡|ˆ°‰å‡|ˆ°‰	…±„ˆ°‰	•åÁ…é…ËÄˆ°‹…µ³Å‘•É”ˆ°‹…¹­…å„ˆ°‹Õ‰Õ¬ˆ°‰±µ…‘‡|ˆ°‰Ñ¥µ•ÍÕĞˆ°‰ÙÉ•¸ˆ°‰Ù±‰‡Äˆ°‰ñ“ñ°ˆ°‰!…åµ…¹„ˆ°‰-…¡É…µ…¹­…é…¸ˆ°‰-…±•¥¬ˆ°‰-—§ÙÉ•¸ˆ°‰/ÅëÅ±…¡…µ…´ˆ°‰5…µ…¬ˆ°‰9…±³Å¡…¸ˆ°‰A½±…Ñ³Äˆ°‰AÕÉÍ…­±…Èˆ°‰M¥¹…¸ˆ°‹y•É•™±¥­¿¡¥Í…Èˆ°‰e•¹¥µ…¡…±±”‰t°‰¹Ñ…±å„ˆél‰­Í•­¤ˆ°‰­ÍÔˆ°‰±…¹å„ˆ°‰•µÉ”ˆ°‰Û}•µ•…±ÓÄˆ°‰±µ…³Äˆ°‰¥¹¥­”ˆ°‰…é¥Á‡}„ˆ°‰ñ¹‘¿}µ×|ˆ°‹Á‰É…“Äˆ°‰-‡|ˆ°‰-•µ•Èˆ°‰-•Á•èˆ°‰-½¹å……±ÓÄˆ°‰-½É­ÕÑ•±¤ˆ°‰-Õµ±Õ„ˆ°‰5…¹…Ù…Ğˆ°‰5ÕÉ…ÑÁ‡}„ˆ°‰M•É¥¬‰t°‰É‘…¡…¸ˆél‹Å±“ÅÈˆ°‰…µ…°ˆ°‰Ù±”ˆ°‰!…¹…¬ˆ°‰5•É­•èˆ°‰A½Í½˜‰t°‰ÉÑÙ¥¸ˆél‰É‘…¹×œˆ°‰É¡…Ù¤ˆ°‰	½Ë­„ˆ°‰!½Á„ˆ°‰-•µ…±Á‡}„ˆ°‰5•É­•èˆ°‰5ÕÉÕ°ˆ°‹y…Û}…Ğˆ°‰eÕÍÕ™•±¤‰t°‰å“Å¸ˆél‰	½é‘¿}…¸ˆ°‰	Õ¡…É­•¹Ğˆ°‹¥¹”ˆ°‰¥‘¥´ˆ°‰™•±•Èˆ°‰•Éµ•¹¥¬ˆ°‹Á¹¥É±¥½Ù„ˆ°‰-…É……ÍÔˆ°‰-…ÉÁÕé±Ôˆ°‰-¿…É³Äˆ°‰/Û}¬ˆ°‰-×}…‘…ÏÄˆ°‰-ÕåÕ…¬ˆ°‰9…é¥±±¤ˆ°‰OÙ­”ˆ°‰MÕ±Ñ…¹¡¥Í…Èˆ°‰e•¹¥Á…é…È‰t°‰	…³Å­•Í¥Èˆél‰±ÓÅ•å³ñ°ˆ°‰åÙ…³Å¬ˆ°‰	…±å„ˆ°‰	…¹“ÅÉµ„ˆ°‰	¥…‘§œˆ°‰	ÕÉ¡…¹¥å”ˆ°‰ÕÉÍÕ¹‰•äˆ°‰‘É•µ¥Ğˆ°‰É‘•¬ˆ°‰Ùµ—œˆ°‰Ù¹•¸ˆ°‰!…ÙÉ…¸ˆ°‹ÁÙÉ¥¹‘¤ˆ°‰-…É•Í¤ˆ°‰-•ÁÍÕĞˆ°‰5…¹å…Ìˆ°‰5…Éµ…É„ˆ°‰M…Ù‡}Ñ•Á”ˆ°‰OÅ¹“ÅÉŸÄˆ°‰MÕÍÕÉ±Õ¬‰t°‰	…ÉÓÅ¸ˆél‰µ…ÍÉ„ˆ°‰-ÕÉÕ‡}¥±”ˆ°‰5•É­•èˆ°‰U±ÕÌ‰t°‰	…Ñµ…¸ˆél‰	—}¥É¤ˆ°‰•Éó|ˆ°‰!…Í…¹­•å˜ˆ°‰-½é±Õ¬ˆ°‰5•É­•èˆ°‰M…Í½¸‰t°‰	…å‰ÕÉĞˆél‰å“Å¹Ñ•Á”ˆ°‰•µ¥ËÙëğˆ°‰5•É­•è‰t°‰	¥±•¥¬ˆél‰	½ëñçñ¬ˆ°‰Ù±Á…é…ËÄˆ°‹Á¹¡¥Í…Èˆ°‰5•É­•èˆ°‰=Íµ…¹•±¤ˆ°‰A…é…Éå•É¤ˆ°‰OÛñĞˆ°‰e•¹¥Á…é…È‰t°‰	¥¹ŸÙ°ˆél‰‘…­³Äˆ°‰•»œˆ°‰-…É³Å½Ù„ˆ°‰-§Äˆ°‰5•É­•èˆ°‰M½±¡…¸ˆ°‰e…å±…‘•É”ˆ°‰e•‘¥ÍÔ‰t°‰	¥Ñ±¥Ìˆél‰‘¥±•Ù…èˆ°‰¡±…Ğˆ°‰ñÉ½åµ…¬ˆ°‰!¥é…¸ˆ°‰5•É­•èˆ°‰5ÕÑ­¤ˆ°‰Q…ÑÙ…¸‰t°‰	½±Ôˆél‰ÙÉÑ‘¥Ù…¸ˆ°‰•É•‘”ˆ°‰Ùå»ñ¬ˆ°‰/Å‰ËÅÍÅ¬ˆ°‰5•¹•¸ˆ°‰5•É­•èˆ°‰5Õ‘ÕÉ¹Ôˆ°‰M•‰•¸ˆ°‰e•¹§‡}„‰t°‰	ÕÉ‘ÕÈˆél‰}±…ÍÕ¸ˆ°‰±ÓÅ¹å…å±„ˆ°‰	Õ…¬ˆ°‹…Ù“ÅÈˆ°‹•±Ñ¥¯¤ˆ°‰Ù±¡¥Í…Èˆ°‰-…É…µ…¹³Äˆ°‰-•µ•Èˆ°‰5•É­•èˆ°‰Q•™•¹¹¤ˆ°‰e—}¥±½Ù„‰t°‰	ÕÉÍ„ˆél‰ñçñ­½É¡…¸ˆ°‰•µ±¥¬ˆ°‰ñÉÍÔˆ°‰!…Éµ…¹Å¬ˆ°‹Á¹•ŸÙ°ˆ°‹Áé¹¥¬ˆ°‰-…É……‰•äˆ°‰-•±•Ìˆ°‰-•ÍÑ•°ˆ°‰5Õ‘…¹å„ˆ°‰5ÕÍÑ…™…­•µ…±Á‡}„ˆ°‰9¥³ñ™•Èˆ°‰=É¡…¹•±¤ˆ°‰=É¡…¹…é¤ˆ°‰=Íµ…¹…é¤ˆ°‰e•¹§}•¡¥Èˆ°‰gÅ±“ÅËÅ´‰t°‹…¹…­­…±”ˆél‰åÙ…Å¬ˆ°‰	…åÉ…µ§œˆ°‰	¥„ˆ°‰	½é……‘„ˆ°‹…¸ˆ°‰•…‰…Ğˆ°‰é¥¹”ˆ°‰•±¥‰½±Ôˆ°‰Ù¯•…‘„ˆ°‰1…ÁÍ•­¤ˆ°‰5•É­•èˆ°‰e•¹¥”‰t°‹…¹¯ÅËÄˆél‰Ñ­…É……±…Èˆ°‰	…åÉ…·ÙÉ•¸ˆ°‹•É­—|ˆ°‰±‘¥Ù…¸ˆ°‰%±…èˆ°‰/ÅëÅ³ÅÉµ…¬ˆ°‰-½ÉÕ¸ˆ°‰-ÕË}Õ¹±Ôˆ°‰5•É­•èˆ°‰=ÉÑ„ˆ°‹y…‰…»Ùëğˆ°‰e…ÁÉ…­³Ä‰t°‹½ÉÕ´ˆél‰±…„ˆ°‰	…å…Ğˆ°‰	¿}…é­…±”ˆ°‰½‘ÕÉ„ˆ°‹ÁÍ­¥±¥Àˆ°‰-…ÉŸÄˆ°‰1‡¥¸ˆ°‰5•¥ÓÙëğˆ°‰5•É­•èˆ°‰?}Õé±…Èˆ°‰=ÉÑ…¯Ùäˆ°‰=Íµ…¹Å¬ˆ°‰MÕ¹ÕÉ±Ôˆ°‰W}ÕÉ±Õ‘‡|‰t°‰•¹¥é±¤ˆél‰ÅÁ…å…´ˆ°‰	…‰…‘‡|ˆ°‰	…­±…¸ˆ°‰	•­¥±±¤ˆ°‰	•å‡}‡œˆ°‰	½é­ÕÉĞˆ°‰	Õ±‘…¸ˆ°‹…°ˆ°‹…µ•±¤ˆ°‹…É‘…¬ˆ°‹¥ÙÉ¥°ˆ°‰ñ¹•äˆ°‰!½¹…èˆ°‰-…±”ˆ°‰5•É­•é•™•¹‘¤ˆ°‰A…µÕ­­…±”ˆ°‰M…É…å¯Ùäˆ°‰M•É¥¹¡¥Í…Èˆ°‰Q…Ù…Ì‰t°‰¥å…É‰…¯ÅÈˆél‰	‡}±…Èˆ°‰	¥Íµ¥°ˆ°‹•Éµ¥¬ˆ°‹Å¹…Èˆ°‹ñ¹Ÿó|ˆ°‰¥±”ˆ°‰}¥°ˆ°‰É…¹¤ˆ°‰!…¹¤ˆ°‰!…éÉ¼ˆ°‰-…å…ÃÅ¹…Èˆ°‰-½…¯Ùäˆ°‰-Õ±Àˆ°‰1¥”ˆ°‰M¥±Ù…¸ˆ°‰MÕÈˆ°‰e•¹§}•¡¥È‰t°‰ñé”ˆél‰¯…­½„ˆ°‰Õµ…å•É¤ˆ°‹¥±¥µ±¤ˆ°‰Ù±å…­„ˆ°‰ñ·ó}½Ù„ˆ°‰-…å¹‡}³Äˆ°‰5•É­•èˆ°‰gÇÅ±„‰t°‰‘¥É¹”ˆél‰¹•èˆ°‰!…ÙÍ„ˆ°‹ÁÁÍ…±„ˆ°‰-—}…¸ˆ°‰1…±…Á‡}„ˆ°‰5•É§œˆ°‰5•É­•èˆ°‰Oñ±¿}±Ôˆ°‰UéÕ¹¯ÙÁËğ‰t°‰±…ëÇ|ˆél‰Å¸ˆ°‰±……­…å„ˆ°‰ËÅ…¬ˆ°‰	…Í­¥°ˆ°‰-…É…­¿…¸ˆ°‰-•‰…¸ˆ°‰-½Ù…¹Å±…Èˆ°‰5…‘•¸ˆ°‰5•É­•èˆ°‰A…±Ôˆ°‰M¥ÙÉ¥”‰t°‰Éé¥¹…¸ˆél‹…çÅÉ³Äˆ°‹Á±§œˆ°‰-•µ… ˆ°‰-•µ…±¥å”ˆ°‰5•É­•èˆ°‰=Ñ±Õ­‰•±¤ˆ°‰I•™…¡¥å”ˆ°‰Q•É…¸ˆ°‹qëñµ³ğ‰t°‰ÉéÕÉÕ´ˆél‰}­…±”ˆ°‰é¥é¥å”ˆ°‹…Ğˆ°‰#Å»ÅÌˆ°‰!½É…Í…¸ˆ°‹ÁÍÁ¥Èˆ°‰-…É‡½‰…¸ˆ°‰-…É…å…ëÄˆ°‰/ÙÁËñ¯Ùäˆ°‰9…Éµ…¸ˆ°‰=±ÑÔˆ°‰=±ÕÈˆ°‰A…±…¹“Ù­•¸ˆ°‰A…Í¥¹±•Èˆ°‰A…é…Éå½±Ôˆ°‹y•¹­…å„ˆ°‰Q•­µ…¸ˆ°‰Q½ÉÑÕ´ˆ°‰UéÕ¹‘•É”ˆ°‰e…­ÕÑ¥å”‰t°‰Í­§}•¡¥Èˆél‰±ÁÔˆ°‰	•å±¥f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³V¶÷f"Â,8v–gFVÆW""Â$|;Æçœ;Ç¬;Â"Â$†â"Â,Kì;fì;Â"Â$Ö†×VF—–R"Â$Ö–†Æv¦’"Â$Ö–†ÌK:|:|K²"Â$öGVç¦,K"Â%6,K6¶–"Â%6W–—Fv¦’"Â%6—g&–†—6""Â%FWV&YüK%ÒÂ$v¦–çFW#¥²$&&â"Â,K6Æ†—–R"Â$¶&¶ÜKYò"Â$æ—¦—"Â$çW&FIüK"Â$üI÷W¦VÆ’"Â,Yæ†–æ&W’"Â,YæV†—F¶Ö–Â"Â%–gW¦VÆ’%ÒÂ$v—&W7Vâ#¥²$ÇV7&"Â$'VÆæ6²"Â,8vÖöÇV²"Â,8væ¼:|K"Â$FW&VÆ’"Â$FüIöæ¶VçB"Â$W7—–R"Â$W–æW6–Â"Â$|;g&VÆR"Â$|;Æ6R"Â$¶\Yö"Â$ÖW&¶W¢"Â%—&¦—¢"Â,YæV&–æ¶&†—6""Â%F—&V&öÇR"Â%–IöÌKFW&R%ÒÂ$|;ÆÜ;ÌYö†æR#¥²$¶VÆ¶—B"Â$¼;g6R"Â$¼;Ç'L;Æâ"Â$ÖW&¶W¢"Â,Yæ—&â"Â%F÷'VÂ%ÒÂ$†¶¶&’#¥²,8wV·W&6"Â$FW&V6–²"Â$ÖW&¶W¢"Â,YæVÖF–æÆ’"Â%œ;Æ·6V¶÷f%ÒÂ$†F’#¥²$ÇLKì;g¬;Â"Â$çF·–"Â$'7W¢"Â$&VÆVâ"Â$FVfæR"Â$L;g'G–öÂ"Â$W'¦–â"Â$†76"Â,K6¶VæFW'Vâ"Â$¼K,K¶†â"Â$·VÖÇR"Â%–2"Â%&W–†æÌK"Â%6ÖæFIò"Â%––ÆFIüK%ÒÂ$œIöLK"#¥²$&ÌK²"Â$¶&¶÷—VæÇR"Â$ÖW&¶W¢"Â%GW¦ÇV6%ÒÂ$—7'F#¥²$·7R"Â$F&W’"Â$\Iö—&F—""Â$vVÆVæF÷7B"Â$|;fæVâ"Â$¶\:v–&÷&ÇR"Â$ÖW&¶W¢"Â%6Væ—&¶VçB"Â%<;ÇL:|;ÆÆW""Â,Yæ&¶–¶&Iö:r"Â%VÇV&÷&ÇR"Â%–Çf:r"Â%–VæœYö&&FVÖÆ’%ÒÂ,K7Fæ'VÂ#¥²$FÆ""Â$&ægWF¼;g’"Â$FYöV†—""Â$f<KÆ""Â$&Iö<KÆ""Â$&Œ:vVÆ–WfÆW""Â$&¼K&¼;g’"Â$&Yö¼YöV†—""Â$&—&×Yö"Â$&\Yö–·FYò"Â$&W–¶÷¢"Â$&W–Æ–¶L;Ç¬;Â"Â$&W–üIöÇR"Â$,;Çœ;Æ¼:vV¶ÖV6R"Â,8vFÆ6"Â,8vV¶ÖV¼;g’"Â$W6VæÆW""Â$W6Vç—W'B"Â$Wœ;Ç7VÇFâ"Â$fF–‚"Â$v¦–÷6ÖçYö"Â$|;Ææ|;g&Vâ"Â$¶LK¼;g’"Â$¶IüKF†æR"Â$¶'FÂ"Â$¼;Ì:|;Æ¼:vV¶ÖV6R"Â$ÖÇFWR"Â%VæF–²"Â%6æ6·FWR"Â%6,K–W""Â%6–Æ—g&’"Â%7VÇFæ&W–Æ’"Â%7VÇFæv¦’"Â,Yæ–ÆR"Â,YæœYöÆ’"Â%GW¦Æ"Â,9Æ×&æ—–R"Â,9Ç6¼;ÆF""Â%¦W—F–æ'W&çR%ÒÂ,K¦Ö—"#¥²$Æ–Iö"Â$&Ì:v÷f"Â$&œKæLK""Â$&—&¶ÌK"Â$&W&vÖ"Â$&W–FIò"Â$&÷&æ÷f"Â$'V6"Â,8v\YöÖR"Â,8vœIöÆ’"Â$F–¶–Æ’"Â$fü:v"Â$v¦–VÖ—""Â$|;Ç¦VÆ&Œ:vR"Â$¶&&IöÆ""Â$¶&'W'Vâ"Â$¶,YüK–¶"Â$¶VÖÇYö"Â$¼KìK²"Â$¶—&¢"Â$¶öæ²"Â$ÖVæFW&W2"Â$ÖVæVÖVâ"Â$æ&ÌKFW&R"Â,9fFVÖœYò"Â%6VfW&–†—6""Â%6VÌ:wV²"Â%F—&R"Â%F÷&&ÌK"Â%W&Æ%ÒÂ$¶‡&ÖæÖ&Yò#¥²$lYö–â"Â$æLK,Kâ"Â,8vIöÆ–æ6W&—B"Â$GVÆ¶F—&üIöÇR"Â$V¶–ì;g¬;Â"Â$VÆ&—7Fâ"Â$|;f·7Vâ"Â$çW&†²"Â$öæ–¶œY÷V&B"Â%¦&<K²"Â%L;Ç&¶üIöÇR%ÒÂ$¶&,;Æ²#¥²$VfÆæ’"Â$W6¶—¦""Â$ÖW&¶W¢"Â$÷f<K²"Â%6g&æ&öÇR"Â%–Væ–6R%ÒÂ$¶&Öâ#¥²$—&æ<K"Â$&Y÷––Æ"Â$W&ÖVæV²"Â$¶¬KÖ¶&&V¶—""Â$ÖW&¶W¢"Â%6,KfVÆ–ÆW"%ÒÂ$¶'2#¥²$·–¶"Â$':v’"Â$F–v÷""Â$¶IüK¦Öâ"Â$ÖW&¶W¢"Â%6,K¶ÜKYò"Â%6VÆ–Ò"Â%7W7W¢%ÒÂ$¶7FÖöçR#¥²$&æ"Â$IöÌK"Â$&:r"Â$¦Ff’"Â$&÷¦·W'B"Â$6–FR"Â,8vFÇ¦W—F–â"Â$FF’"Â$FWg&V¶æ’"Â$FüIöç—W'B"Â$†ì;fì;Â"Â,K‡6æv¦’"Â,KæV&öÇR"Â$¼;Ç&R"Â$ÖW&¶W¢"Â%Kæ&&YüK"Â%6W–F–ÆW""Â,YæVç¦""Â%FYö¼;g,;Â"Â%F÷7–%ÒÂ$¶—6W&’#¥²$¶¼KYöÆ"Â$,;Æç–â"Â$FWfVÆ’"Â$fVÆ†—–R"Â$†<KÆ""Â,Kæ6W7R"Â$¶ö66–æâ"Â$ÖVÆ–¶v¦’"Â,9g§fFâ"Â%Kæ&&YüK"Â%6,KüIöÆâ"Â%6,K¢"Â%FÆ2"Â%FöÖ'¦"Â%–‡–ÌK"Â%–\Yö–Æ†—6"%ÒÂ$¼K,K¶¶ÆR#¥²$&ŒYüKÌK"Â$&ÌKYöW–‚"Â,8vVÆV&’"Â$FVÆ–6R"Â$¶&¶\:v–Æ’"Â$¶W6¶–â"Â$ÖW&¶W¢"Â%7VÆ·—W'B"Â%–ŒYö–†â%ÒÂ$¼K&¶Æ&VÆ’#¥²$&&W6¶’"Â$FVÖ—&¼;g’"Â$¶öl:v¢"Â$Ì;ÆÆV'W&v¢"Â$ÖW&¶W¢"Â%V†Æ—fæ¼;g’"Â%Kæ&†—6""Â%f—¦R%ÒÂ$¼K,YöV†—"#¥²$¼:v¶VçB"Â$·Kæ""Â$&÷§FWR"Â,8vœ:vV¶FIüK"Â$¶Öâ"Â$ÖW&¶W¢"Â$×V7W"%ÒÂ$¶–Æ—2#¥²$VÆ&W–Æ’"Â$ÖW&¶W¢"Â$×W6&W–Æ’"Â%öÆFVÆ’%ÒÂ$¶ö6VÆ’#¥²$&Yö—6¶VÆR"Â,8vœK&÷f"Â$F,K6"Â$FW&–æ6R"Â$F–Æ÷f<K"Â$vV'¦R"Â$|;fÆ<;Æ²"Â,K¦Ö—B"Â$¶æLK&"Â$¶&Ü;Ç'6VÂ"Â$¶'FWR"Â$¼;g&fW¢%ÒÂ$¶öç–#¥²$ŒK&ÌK"Â$¼;g&Vâ"Â$¼YöV†—""Â$ÇLKæV¶–â"Â$&WœYöV†—""Â$&÷¦¼K""Â$6–†æ&W–Æ’"Â,8vVÇF–²"Â,8wV×&"Â$FW&&VçB"Â$FW&V'V6²"Â$FüIöæ†—6""Â$VÖ—&v¦’"Â$W&\IöÆ’"Â$|;ÆæW—<KìK""Â$†F–Ò"Â$†Æ¶Kæ""Â$Œ;Çœ;Æ²"Â$–Æ|Kâ"Â$¶LKæ†ìK"Â$¶&Kæ""Â$¶&F’"Â$·VÇR"Â$ÖW&Ò"Â%6&œ;fì;Â"Â%6VÌ:wV¶ÇR"Â%6W–FœYöV†—""Â%FYö¶VçB"Â%GW¦ÇV¼:wR"Â%–ÌKŒ;Çœ;Æ²"Â%—Væ²%ÒÂ$¼;ÇF‡–#¥²$ÇLKçFYò"Â$6Ææ"Â,8vfF&†—6""Â$FöÖæœ:r"Â$GVÖÇWKæ""Â$VÖWB"Â$vVF—¢"Â$†—6&<K²"Â$ÖW&¶W¢"Â%¦&Æ""Â%6–Öb"Â,Yæ†æR"Â%FlYöæÌK%ÒÂ$ÖÆG–#¥²$¼:vFIò"Â$&v—""Â$&wWfâ"Â$&GFÆv¦’"Â$F&VæFR"Â$FüIöìYöV†—""Â$FüIöç–öÂ"Â$†V¶–Ö†â"Â$¶ÆR"Â$·VÇVæ6²"Â%;ÇL;Ç&vR"Â%–¬K†â"Â%–\Yö–Ç—W'B%ÒÂ$Öæ—6#¥²$†ÖWFÆ’"Â$¶†—6""Â$ÆYöV†—""Â$FVÖ—&6’"Â$|;fÆÖ&Ö&"Â$|;g&FW2"Â$¼K&¶Iö:r"Â$¼;g,;Æ&YüK"Â$·VÆ"Â%6Æ–†Æ’"Â%6,K|;fÂ"Â%6'V†æÌK"Â%6VÆVæF’"Â%6öÖ"Â,YæV‡¦FVÆW""Â%GW&wWFÇR"Â%—VçW6V×&R%ÒÂ$Ö&F–â#¥²$'GV¶ÇR"Â$F&v\:v—B"Â$FW&–²"Â$¼K¬KÇFWR"Â$Ö¬KFIüK"Â$Ö–G–B"Â$çW6–&–â"Â,9fÖW&Æ’"Â%6gW""Â%–\Yö–ÆÆ’%ÒÂ$ÖW'6–â#¥²$¶FVæ—¢"Â$æ×W""Â$–LKæ<K²"Â$&÷§–¬K"Â,8vÖÌK––Æ"Â$W&FVÖÆ’"Â$|;ÆÆæ""Â$ÖW¦—FÆ’"Â$×WB"Â%6–Æ–f¶R"Â%F'7W2"Â%F÷&÷6Æ""Â%–VæœYöV†—"%ÒÂ$×\IöÆ#¥²$&öG'VÒ"Â$FÆÖâ"Â$FL:v"Â$fWF†—–R"Â$¶f¶ÌKFW&R"Â$¼;g–6\Iö—¢"Â$Ö&Ö&—2"Â$ÖVçF\YöR"Â$Ö–Æ2"Â$÷'F6"Â%6W–F–¶VÖW""Â%VÆ"Â%–FIöâ%ÒÂ$×\Yò#¥²$'VÆìK²"Â$†6¼;g’"Â$¶÷&·WB"Â$ÖÆ¦v—'B"Â$ÖW&¶W¢"Â%f'Fò%ÒÂ$æWm´Ó[h‘éì¶»§q«^w, details: row.details || {} })));
+  { id: 'ref-tedb', name: 'TÃ¼m Emlak DanÄ±ÅŸmanlarÄ± BirliÄŸi', logo: '/partner-tedb.png', content: 'Gayrimenkul danÄ±ÅŸmanlÄ±ÄŸÄ± alanÄ±ndaki mesleki iÅŸ birlikleri ve sektÃ¶rel geliÅŸim Ã§alÄ±ÅŸmalarÄ±.' },
+  { id: 'ref-business', name: 'Business Akademi', logo: '/partner-business-akademi.png', content: 'EÄŸitim, geliÅŸim ve kurumsal yetkinlik programlarÄ±.' },
+  { id: 'ref-tobb', name: 'TÃ¼rkiye Odalar ve Borsalar BirliÄŸi (TOBB)', logo: '/partner-tobb.png', content: 'Ä°ÅŸ dÃ¼nyasÄ±, oda-borsa aÄŸÄ± ve kurumsal iÅŸ birliÄŸi Ã§alÄ±ÅŸmalarÄ±.' }
+];
+const DEFAULT_PARTNERS: CorporateLogoItem[] = [
+  { id: 'partner-tedb', name: 'TÃ¼m Emlak DanÄ±ÅŸmanlarÄ± BirliÄŸi', logo: '/partner-tedb.png', content: 'Gayrimenkul danÄ±ÅŸmanlÄ±ÄŸÄ± alanÄ±ndaki mesleki iÅŸ birlikleri ve sektÃ¶rel geliÅŸim Ã§alÄ±ÅŸmalarÄ±.' },
+  { id: 'partner-ato', name: 'Ankara Ticaret OdasÄ± (ATO)', logo: '/partner-ato.png', content: 'Kurumsal geliÅŸim, ticaret aÄŸÄ± ve sektÃ¶rel iÅŸ birliÄŸi Ã§alÄ±ÅŸmalarÄ±.' },
+  { id: 'partner-trade', name: 'T.C. Ticaret BakanlÄ±ÄŸÄ±', logo: 'https://www.google.com/s2/favicons?domain=ticaret.gov.tr&sz=256', content: 'Gayrimenkul ticareti ve ilgili mevzuat sÃ¼reÃ§lerinde kamu kurumu bilgileri.' },
+  { id: 'partner-business', name: 'Business Akademi', logo: '/partner-business-akademi.png', content: 'EÄŸitim, geliÅŸim ve kurumsal yetkinlik programlarÄ±.' },
+  { id: 'partner-tobb', name: 'TÃ¼rkiye Odalar ve Borsalar BirliÄŸi (TOBB)', logo: '/partner-tobb.png', content: 'Ä°ÅŸ dÃ¼nyasÄ±, oda-borsa aÄŸÄ± ve kurumsal iÅŸ birliÄŸi Ã§alÄ±ÅŸmalarÄ±.' },
+  { id: 'partner-kriter', name: 'Kriter Medya', logo: '/klogo.png', content: 'Realty CenterÂ® dijital Ã§Ã¶zÃ¼m ortaÄŸÄ±; web altyapÄ±sÄ±, iÃ§erik ve teknik operasyon desteÄŸi.' },
+  { id: 'partner-eminevim', name: 'Eminevim', logo: 'https://www.google.com/s2/favicons?domain=eminevim.com&sz=256', content: 'Tasarruf finansmanÄ± alanÄ±nda kurumsal Ã§Ã¶zÃ¼m ortaÄŸÄ±.' },
+  { id: 'partner-katilimevim', name: 'KatÄ±lÄ±mevim', logo: 'https://www.google.com/s2/favicons?domain=katilimevim.com.tr&sz=256', content: 'Tasarruf finansmanÄ± alanÄ±nda Ã§Ã¶zÃ¼m ve bilgi iÅŸ birliÄŸi.' },
+  { id: 'partner-fuzulev', name: 'Fuzulev', logo: 'https://www.google.com/s2/favicons?domain=fuzulev.com.tr&sz=256', content: 'Tasarruf finansmanÄ± alanÄ±nda Ã§Ã¶zÃ¼m ve bilgi iÅŸ birliÄŸi.' },
+  { id: 'partner-ziraat', name: 'Ziraat BankasÄ±', logo: 'https://www.google.com/s2/favicons?domain=ziraatbank.com.tr&sz=256', content: 'Gayrimenkul finansmanÄ± ve bankacÄ±lÄ±k Ã§Ã¶zÃ¼mlerine iliÅŸkin iÅŸ birliÄŸi.' },
+  { id: 'partner-garanti', name: 'Garanti BBVA', logo: 'https://www.google.com/s2/favicons?domain=garantibbva.com.tr&sz=256', content: 'BankacÄ±lÄ±k ve finansal Ã§Ã¶zÃ¼m iÅŸ birliÄŸi.' },
+  { id: 'partner-halkbank', name: 'Halkbank', logo: 'https://www.google.com/s2/favicons?domain=halkbank.com.tr&sz=256', content: 'BankacÄ±lÄ±k ve finansal Ã§Ã¶zÃ¼m iÅŸ birliÄŸi.' },
+  { id: 'partner-kuveyt', name: 'Kuveyt TÃ¼rk', logo: 'https://www.google.com/s2/favicons?domain=kuveytturk.com.tr&sz=256', content: 'KatÄ±lÄ±m bankacÄ±lÄ±ÄŸÄ± ve finansal Ã§Ã¶zÃ¼m iÅŸ birliÄŸi.' },
+  { id: 'partner-albaraka', name: 'Albaraka TÃ¼rk', logo: 'https://www.google.com/s2/favicons?domain=albaraka.com.tr&sz=256', content: 'KatÄ±lÄ±m bankacÄ±lÄ±ÄŸÄ± ve finansal Ã§Ã¶zÃ¼m iÅŸ birliÄŸi.' },
+  { id: 'partner-denizbank', name: 'DenizBank', logo: 'https://www.google.com/s2/favicons?domain=denizbank.com&sz=256', content: 'BankacÄ±lÄ±k ve finansal Ã§Ã¶zÃ¼m iÅŸ birliÄŸi.' }
+];
+const getStoredCorporateItems = <T,>(key: string, fallback: T): T => {
+  try {
+    const stored = JSON.parse(localStorage.getItem(key) || 'null');
+    if (!Array.isArray(stored)) return stored || fallback;
+    const defaults = fallback as unknown as CorporateLogoItem[];
+    const savedExtras = (stored as CorporateLogoItem[]).filter((item) => item.id !== 'ref-1' && !defaults.some((defaultItem) => defaultItem.id === item.id));
+    return [...defaults, ...savedExtras] as T;
+  } catch { return fallback; }
+};
+
+type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 'right'; image?: string; content?: string; children: HeaderMenuItem[] };
+const headerItem = (id: string, label: string, path: string, side: 'left' | 'right', children: HeaderMenuItem[] = [], image = '', content = ''): HeaderMenuItem => ({ id, label, path, side, image, content, children });
+const DEFAULT_HEADER_MENU: HeaderMenuItem[] = [
+  headerItem('corporate','Kurumsal','/kurumsal/hakkimizda','left',[headerItem('about','HakkÄ±mÄ±zda','/kurumsal/hakkimizda','left'),headerItem('mission','Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon','left'),headerItem('team','YÃ¶netim Kadromuz','/kurumsal/ekibimiz','left'),headerItem('documents','Belgelerimiz','/kurumsal/belgelerimiz','left'),headerItem('references','ReferanslarÄ±mÄ±z','/kurumsal/referanslar','left'),headerItem('partners','Ä°ÅŸ OrtaklarÄ±mÄ±z','/kurumsal/is-ortaklarimiz','left',[headerItem('financial-solutions','Finansal Ã‡Ã¶zÃ¼mler','/finansal-cozumler','left',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','KatÄ±lÄ±m bankalarÄ± ve evim sistemi seÃ§enekleri iÃ§in Ã§Ã¶zÃ¼m talebi oluÅŸturun.')])]),
+  headerItem('offices','Ofislerimiz','/ofislerimiz','left'), headerItem('agents','DanÄ±ÅŸmanlar','/danismanlarimiz','left'), headerItem('listings','Ä°lanlarÄ±mÄ±z','/ilan-kategorileri','left'), headerItem('projects','Projelerimiz','/projelerimiz','left'),
+  headerItem('discover','KeÅŸfet','/icerik/education','left',[
+    headerItem('education','EÄŸitim','/icerik/education','left',[
+      headerItem('education-calendar','EÄŸitim Takvimi','/icerik/education-calendar','left',[],'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=90&w=1400','Realty CenterÂ® eÄŸitim takvimi; Ã§evrim iÃ§i programlarÄ±, sÄ±nÄ±f eÄŸitimlerini, saha Ã§alÄ±ÅŸmalarÄ±nÄ± ve geliÅŸim buluÅŸmalarÄ±nÄ± tek planda takip etmenizi saÄŸlar.'),
+      headerItem('education-centers','EÄŸitim Merkezleri','/icerik/education-centers','left',[],'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=90&w=1400','TÃ¼rkiye genelindeki eÄŸitim merkezlerimiz, danÄ±ÅŸmanlarÄ±mÄ±zÄ±n gÃ¼ncel sektÃ¶r bilgisine ve uygulamalÄ± geliÅŸim programlarÄ±na eriÅŸmesini saÄŸlar.'),
+      headerItem('education-types','EÄŸitim Ã‡eÅŸitlerimiz','/icerik/education-types','left',[],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','BaÅŸlangÄ±Ã§, uzmanlÄ±k, mevzuat, satÄ±ÅŸ, pazarlama ve teknoloji eÄŸitimleriyle her kariyer aÅŸamasÄ±na uygun geliÅŸim seÃ§enekleri sunuyoruz.')
+    ],'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400','Realty CenterÂ® eÄŸitim programlarÄ±, gayrimenkul profesyonellerinin bilgi ve saha becerilerini sÃ¼rekli geliÅŸtiren planlÄ± bir Ã¶ÄŸrenme yolculuÄŸudur.'),
+    headerItem('future','GeleceÄŸim Ä°Ã§in','/icerik/future','left',[headerItem('build-my-team','Kendi TakÄ±mÄ±nÄ± Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','TakÄ±mÄ±nÄ±zÄ± kurun, etkinizi bÃ¼yÃ¼tÃ¼n.\n\nGayrimenkulde kalÄ±cÄ± bÃ¼yÃ¼me yalnÄ±zca daha Ã§ok satÄ±ÅŸ yapmakla deÄŸil; doÄŸru insanlarÄ±, doÄŸru gÃ¶revlerle bir araya getirmekle baÅŸlar. Realty CenterÂ® danÄ±ÅŸmanlarÄ±, iÅŸ hacimleri geliÅŸtikÃ§e kendi iÅŸlerini sistemli bir ekip yapÄ±sÄ±na dÃ¶nÃ¼ÅŸtÃ¼rebilir.\n\nÄ°lk aÅŸamada operasyon ve takip sÃ¼reÃ§lerini dÃ¼zenleyecek bir idari asistan; mÃ¼ÅŸteri trafiÄŸi arttÄ±ÄŸÄ±nda alÄ±cÄ± ihtiyaÃ§larÄ±nÄ± yÃ¶netecek bir danÄ±ÅŸman; portfÃ¶y hacmi bÃ¼yÃ¼dÃ¼ÄŸÃ¼nde ise satÄ±ÅŸa sunulacak gayrimenkullerden sorumlu bir portfÃ¶y uzmanÄ± ekibe deÄŸer katar.\n\nAmaÃ§ herkesin aynÄ± iÅŸi yapmasÄ± deÄŸil, her rolÃ¼n kendi uzmanlÄ±ÄŸÄ±nda gÃ¼Ã§lenmesidir. EÄŸitim, mentorluk ve kurumsal sistem desteÄŸimizle ekibinizi planlÄ± biÃ§imde bÃ¼yÃ¼tÃ¼r; daha dÃ¼zenli, daha verimli ve sÃ¼rdÃ¼rÃ¼lebilir bir iÅŸ modeli kurmanÄ±za eÅŸlik ederiz.\n\nBirlikte Ã§alÄ±ÅŸan gÃ¼Ã§lÃ¼ bir ekip, kariyerinizdeki en saÄŸlam yatÄ±rÄ±mlardan biridir.')],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','Gayrimenkul sektÃ¶rÃ¼nde gÃ¼Ã§lÃ¼ bir kariyer kurmanÄ±z iÃ§in eÄŸitim, mentorluk ve kurumsal marka desteÄŸini bir araya getiriyoruz.'),
+    headerItem('systems','Sistem ve Modeller','/icerik/systems','left',[],'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400','PortfÃ¶y, mÃ¼ÅŸteri, pazarlama ve raporlama sÃ¼reÃ§lerini Ã¶lÃ§Ã¼lebilir sistemlerle yÃ¶netiyoruz.'),
+    headerItem('culture','Realty CenterÂ® KÃ¼ltÃ¼rÃ¼','/icerik/culture','left',[],'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400','Ã–nce GÃ¼ven anlayÄ±ÅŸÄ±; ÅŸeffaflÄ±k, dayanÄ±ÅŸma, geliÅŸim ve baÅŸarÄ±yÄ± paylaÅŸma deÄŸerleri Ã¼zerine kuruludur.')
+  ]),
+  headerItem('videos','Realty Medya','/videolar','left',[headerItem('realty-tv','Realty TV','/videolar?bolum=tv','left'),headerItem('realty-news','Realty Haberler','/videolar?bolum=haberler','left')]),
+  headerItem('earning','KazanÃ§ Modeli','/icerik/contribution','right',[headerItem('contribution','KatkÄ± PayÄ±','/icerik/contribution','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','Marka, teknoloji, eÄŸitim ve operasyon desteÄŸinin sÃ¼rdÃ¼rÃ¼lebilir biÃ§imde sunulmasÄ±nÄ± saÄŸlayan ÅŸeffaf model.'),headerItem('sharing','PaylaÅŸÄ±m Modeli','/icerik/sharing','right',[
+      headerItem('sharing-advisors','DanÄ±ÅŸman KazanÃ§ PaylaÅŸÄ±mÄ±','/icerik/sharing-advisors','right',[],'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=90&w=1400','DanÄ±ÅŸmanÄ±n emeÄŸini ve Ã¼retimini merkeze alan ÅŸeffaf kazanÃ§ modeli.\n\nRealty CenterÂ® danÄ±ÅŸman paylaÅŸÄ±m yaklaÅŸÄ±mÄ±nda; portfÃ¶yÃ¼n kazanÄ±lmasÄ±, alÄ±cÄ± veya satÄ±cÄ± iliÅŸkisinin yÃ¶netilmesi, pazarlama Ã§alÄ±ÅŸmasÄ±, iÅŸlem takibi ve sonuÃ§landÄ±rma sÃ¼recindeki katkÄ±lar ayrÄ± ayrÄ± deÄŸerlendirilir. AmaÃ§ yalnÄ±zca iÅŸlem sonunda bir oran bÃ¶lmek deÄŸil, deÄŸeri oluÅŸturan emeÄŸi gÃ¶rÃ¼nÃ¼r ve Ã¶lÃ§Ã¼lebilir hÃ¢le getirmektir.\n\nDanÄ±ÅŸman; marka gÃ¼cÃ¼, teknoloji altyapÄ±sÄ±, eÄŸitim, ilan ve pazarlama desteÄŸi, ofis olanaklarÄ± ve operasyonel hizmetlerden yararlanÄ±rken kendi Ã¼retiminden doÄŸan kazancÄ±nÄ± Ã¶nceden bilinen esaslarla takip eder. Ortak portfÃ¶y, yÃ¶nlendirme veya birden fazla danÄ±ÅŸmanÄ±n gÃ¶rev aldÄ±ÄŸÄ± iÅŸlemlerde paylaÅŸÄ±m; Ã§alÄ±ÅŸma baÅŸlamadan Ã¶nce gÃ¶rev, sorumluluk ve katkÄ± kapsamÄ± belirlenerek kayÄ±t altÄ±na alÄ±nÄ±r.\n\nUygulanacak oranlar; ofis yapÄ±sÄ±, danÄ±ÅŸmanÄ±n deneyimi, Ã¼retim seviyesi, kullanÄ±lan hizmetler ve ilgili sÃ¶zleÅŸmeye gÃ¶re deÄŸiÅŸebilir. Esas olan sÃ¼rpriz kesintilerin olmadÄ±ÄŸÄ±, performansÄ± destekleyen ve sÃ¼rdÃ¼rÃ¼lebilir bÃ¼yÃ¼meyi hedefleyen aÃ§Ä±k bir sistemdir.'),
+      headerItem('sharing-franchise','Franchise Ofis KazanÃ§ Modeli','/icerik/sharing-franchise','right',[],'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1400','Ofis yatÄ±rÄ±mÄ±nÄ±, yerel bÃ¼yÃ¼meyi ve danÄ±ÅŸman baÅŸarÄ±sÄ±nÄ± birlikte gÃ¶zeten sÃ¼rdÃ¼rÃ¼lebilir franchise yaklaÅŸÄ±mÄ±.\n\nRealty CenterÂ® franchise ofisi; marka kullanÄ±m hakkÄ±, kurumsal sistemler, eÄŸitim programlarÄ±, teknoloji altyapÄ±sÄ±, pazarlama desteÄŸi ve operasyon standartlarÄ±yla yerel bir gayrimenkul iÅŸletmesi oluÅŸturur. Ofisin kazanÃ§ modeli; danÄ±ÅŸman Ã¼retimi, iÅŸlem hacmi, hizmet gelirleri ve yerel iÅŸ geliÅŸtirme faaliyetlerinin sÃ¼rdÃ¼rÃ¼lebilir biÃ§imde yÃ¶netilmesine dayanÄ±r.\n\nPaylaÅŸÄ±m yapÄ±sÄ±nda ofisin Ã¼stlendiÄŸi mekÃ¢n, personel, tanÄ±tÄ±m, teknoloji, mevzuat uyumu, iÅŸlem kontrolÃ¼ ve danÄ±ÅŸman desteÄŸi gibi sorumluluklar dikkate alÄ±nÄ±r. DanÄ±ÅŸman ile ofis arasÄ±ndaki model; sabit gider, hizmet paketi, iÅŸlem bazlÄ± paylaÅŸÄ±m veya performans basamaklarÄ± gibi farklÄ± bileÅŸenlerle sÃ¶zleÅŸmeye baÄŸlanabilir.\n\nHer franchise ofisinin pazar koÅŸullarÄ± ve operasyon yapÄ±sÄ± farklÄ±dÄ±r. Bu nedenle sitedeki aÃ§Ä±klamalar sabit bir gelir ya da oran taahhÃ¼dÃ¼ deÄŸildir. Nihai koÅŸullar; bÃ¶lge, yatÄ±rÄ±m planÄ±, ofis kapasitesi ve taraflarÄ±n yazÄ±lÄ± mutabakatÄ±yla belirlenir.'),
+      headerItem('sharing-team','TakÄ±m LiderliÄŸi ve Ekip PaylaÅŸÄ±mÄ±','/icerik/sharing-team','right',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400','TakÄ±m liderinin kurduÄŸu sistemi ve ekip Ã¼yelerinin Ã¼retimini dengeli biÃ§imde koruyan iÅŸ modeli.\n\nKendi takÄ±mÄ±nÄ± oluÅŸturan danÄ±ÅŸman; mÃ¼ÅŸteri ve portfÃ¶y akÄ±ÅŸÄ±nÄ± yÃ¶netmenin yanÄ±nda ekip seÃ§imi, eÄŸitim, mentorluk, pazarlama, gÃ¶rev daÄŸÄ±lÄ±mÄ±, performans takibi ve operasyon koordinasyonu gibi sorumluluklar Ã¼stlenir. Ekip paylaÅŸÄ±m modeli, liderin saÄŸladÄ±ÄŸÄ± sistem ve fÄ±rsatlarla ekip Ã¼yesinin iÅŸlemdeki doÄŸrudan emeÄŸini birlikte deÄŸerlendirir.\n\nHer iÅŸlemde mÃ¼ÅŸteri kaynaÄŸÄ±, portfÃ¶y kaynaÄŸÄ±, randevu ve gÃ¶sterim sÃ¼reci, mÃ¼zakere, sÃ¶zleÅŸme takibi ve kapanÄ±ÅŸ sorumluluklarÄ± netleÅŸtirilir. PaylaÅŸÄ±m oranÄ±; bu gÃ¶rev daÄŸÄ±lÄ±mÄ±, saÄŸlanan destek ve iÅŸlem tÃ¼rÃ¼ esas alÄ±narak Ã¶nceden yazÄ±lÄ± hÃ¢le getirilir. BÃ¶ylece ekip bÃ¼yÃ¼rken gÃ¶rev belirsizliÄŸi ve sonradan ortaya Ã§Ä±kan paylaÅŸÄ±m anlaÅŸmazlÄ±klarÄ± azaltÄ±lÄ±r.\n\nTakÄ±m liderliÄŸi yalnÄ±zca ekip kurmak deÄŸil; Ã¼retimi artÄ±ran, danÄ±ÅŸmanÄ± geliÅŸtiren ve mÃ¼ÅŸteri deneyimini koruyan bir sistem oluÅŸturmaktÄ±r. KazanÃ§ modeli de bu liderlik sorumluluÄŸunu performans, kalite ve sÃ¼rdÃ¼rÃ¼lebilirlik ilkeleriyle destekler.'),
+      headerItem('sharing-other','Ä°ÅŸ BirliÄŸi ve DiÄŸer PaylaÅŸÄ±m Modelleri','/icerik/sharing-other','right',[],'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400','YÃ¶nlendirme, ortak portfÃ¶y, proje ve uzmanlÄ±k iÅŸ birlikleri iÃ§in katkÄ± bazlÄ± esnek modeller.\n\nGayrimenkul iÅŸlemleri her zaman tek bir danÄ±ÅŸman veya tek bir ofis tarafÄ±ndan yÃ¼rÃ¼tÃ¼lmeyebilir. FarklÄ± ÅŸehirlerden gelen mÃ¼ÅŸteri yÃ¶nlendirmeleri, ortak portfÃ¶y Ã§alÄ±ÅŸmalarÄ±, proje satÄ±ÅŸlarÄ±, ticari gayrimenkul uzmanlÄ±ÄŸÄ±, kurumsal mÃ¼ÅŸteri hizmetleri ve Ã§Ã¶zÃ¼m ortaklÄ±klarÄ± iÃ§in ayrÄ± paylaÅŸÄ±m modelleri uygulanabilir.\n\nYÃ¶nlendirme modelinde mÃ¼ÅŸteriyi veya iÅŸ fÄ±rsatÄ±nÄ± sisteme kazandÄ±ran tarafÄ±n katkÄ±sÄ±; ortak iÅŸlem modelinde ise portfÃ¶yÃ¼ yÃ¶neten, mÃ¼ÅŸteriyi temsil eden ve sÃ¼reci sonuÃ§landÄ±ran taraflarÄ±n gÃ¶revleri korunur. Proje ve kurumsal anlaÅŸmalarda pazarlama bÃ¼tÃ§esi, ekip kapasitesi, operasyon sÃ¼resi ve uzmanlÄ±k sorumluluÄŸu paylaÅŸÄ±m Ã§erÃ§evesine dÃ¢hil edilir.\n\nTÃ¼m modellerde temel ilke aynÄ±dÄ±r: gÃ¶revler iÅŸlem Ã¶ncesinde tanÄ±mlanÄ±r, paylaÅŸÄ±m yazÄ±lÄ± olarak kayÄ±t altÄ±na alÄ±nÄ±r, yasal ve vergisel yÃ¼kÃ¼mlÃ¼lÃ¼kler gÃ¶zetilir ve Ã¶deme ancak gerÃ§ekleÅŸen iÅŸlem ile doÄŸrulanmÄ±ÅŸ katkÄ± Ã¼zerinden deÄŸerlendirilir. Detaylar ilgili ofis, proje ve sÃ¶zleÅŸme koÅŸullarÄ±na gÃ¶re belirlenir.')
+    ],'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400','Ãœretilen deÄŸerin katkÄ±yÄ± koruyan aÃ§Ä±k kurallarla paylaÅŸÄ±ldÄ±ÄŸÄ± kurumsal kazanÃ§ yaklaÅŸÄ±mÄ±.')]),
+  headerItem('ai','Yapay Zeka AsistanÄ±','/ai-karar-asistani','right'), headerItem('library','Realty KÃ¼tÃ¼phane','/kutuphane','right'), headerItem('why','Neden Realty CenterÂ®?','/neden-realty-center','right'), headerItem('franchise','Franchise Ol','/franchise-basvuru','right'), headerItem('advisor','DanÄ±ÅŸman Ol','/danisman-basvuru','right'), headerItem('contact','Ä°letiÅŸim','/iletisim','right',[headerItem('contact-info','Ä°letiÅŸim Bilgilerimiz','/iletisim','right'),headerItem('feedback','MÃ¼ÅŸteri Memnuniyeti','/geri-bildirim','right')])
+];
+const applyRefreshedCopy = (items: HeaderMenuItem[]) => {
+  for (const item of items) {
+    if (PAGE_COPY[item.id]) item.content = PAGE_COPY[item.id].text;
+    if (item.id === 'culture') item.image = '/images/realty-culture-team.webp';
+    if (item.id === 'agents') item.label = 'DanÄ±ÅŸmanlar';
+    applyRefreshedCopy(item.children);
+  }
+};
+applyRefreshedCopy(DEFAULT_HEADER_MENU);
+const getHeaderMenu = (): HeaderMenuItem[] => {
+  try {
+    const stored: HeaderMenuItem[] = (JSON.parse(localStorage.getItem('realty-center-header-menu') || 'null') || structuredClone(DEFAULT_HEADER_MENU))
+      .map((item: HeaderMenuItem) => item.id === 'library' ? { ...item, path: '/kutuphane' } : item);
+
+    if (localStorage.getItem('realty-content-refresh-version') !== '2026-10-18') {
+      applyRefreshedCopy(stored);
+      localStorage.setItem('realty-center-header-menu', JSON.stringify(stored));
+      localStorage.setItem('realty-content-refresh-version', '2026-10-18');
+    }
+    const agents = stored.find((item) => item.id === 'agents');
+    if (agents?.label === 'DanÄ±ÅŸmanlarÄ±mÄ±z') agents.label = 'DanÄ±ÅŸmanlar';
+    const discover = stored.find((item) => item.id === 'discover');
+    const future = discover?.children.find((item) => item.id === 'future');
+    const teamContent = DEFAULT_HEADER_MENU.find((item) => item.id === 'discover')?.children
+      .find((item) => item.id === 'future')?.children
+      .find((item) => item.id === 'build-my-team')?.content || '';
+    const team = future?.children.find((item) => item.id === 'build-my-team');
+
+    if (!team && future) {
+      future.children.push(headerItem('build-my-team','Kendi TakÄ±mÄ±nÄ± Kur','/icerik/bana-takim-kur','left',[],'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400',teamContent));
+    } else if (team) {
+      team.label = 'Kendi TakÄ±mÄ±nÄ± Kur';
+      if (!team.content?.includes('TakÄ±mÄ±nÄ±zÄ± kurun')) team.content = teamContent;
+    }
+
+    const earning = stored.find((item) => item.id === 'earning');
+    if (earning) earning.children = earning.children.filter((item) => item.id !== 'financial-solutions');
+    const corporate = stored.find((item) => item.id === 'corporate');
+    const partners = corporate?.children.find((item) => item.id === 'partners');
+    if (partners && !partners.children.some((item) => item.id === 'financial-solutions')) partners.children.push(headerItem('financial-solutions','Finansal Ã‡Ã¶zÃ¼mler','/finansal-cozumler','left',[],'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400','KatÄ±lÄ±m bankalarÄ± ve evim sistemi seÃ§enekleri iÃ§in Ã§Ã¶zÃ¼m talebi oluÅŸturun.'));
+    const defaultSharing = DEFAULT_HEADER_MENU.find((item) => item.id === 'earning')?.children.find((item) => item.id === 'sharing');
+    const storedSharing = earning?.children.find((item) => item.id === 'sharing');
+    if (storedSharing && defaultSharing) {
+      const requiredSharingChildren = defaultSharing.children.filter((required) => !storedSharing.children.some((child) => child.id === required.id));
+      if (requiredSharingChildren.length) storedSharing.children.push(...requiredSharingChildren);
+      storedSharing.label = 'PaylaÅŸÄ±m Modeli';
+      storedSharing.path = '/icerik/sharing';
+    }
+
+    const media = stored.find((item) => item.id === 'videos');
+    if (media) {
+      media.label = 'Realty Medya';
+      media.path = '/videolar';
+      const mediaChildren = [headerItem('realty-tv','Realty TV','/videolar?bolum=tv','left'),headerItem('realty-news','Realty Haberler','/videolar?bolum=haberler','left')];
+      media.children = mediaChildren;
+    }
+
+    const discoverIndex = stored.findIndex((item) => item.id === 'discover');
+    const videosIndex = stored.findIndex((item) => item.id === 'videos');
+    if (discoverIndex > videosIndex && videosIndex >= 0) {
+      const reordered = [...stored];
+      const [discoverItem] = reordered.splice(discoverIndex, 1);
+      reordered.splice(videosIndex, 0, discoverItem);
+      return reordered;
+    }
+    return stored;
+  } catch {
+    return DEFAULT_HEADER_MENU;
+  }
+};
+const saveHeaderMenu = (items: HeaderMenuItem[]) => { localStorage.setItem('realty-center-header-menu', JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-header-updated')); };
+const findHeaderItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem | undefined => { for (const item of items) { if (item.id === id) return item; const found = findHeaderItem(item.children, id); if (found) return found; } return undefined; };
+const updateHeaderMenuItem = (items: HeaderMenuItem[], id: string, patch: Partial<HeaderMenuItem>): HeaderMenuItem[] => items.map((item) => item.id === id ? { ...item, ...patch } : { ...item, children: updateHeaderMenuItem(item.children, id, patch) });
+const removeHeaderMenuItem = (items: HeaderMenuItem[], id: string): HeaderMenuItem[] => items.filter((item) => item.id !== id).map((item) => ({ ...item, children: removeHeaderMenuItem(item.children, id) }));
+const appendHeaderMenuChild = (items: HeaderMenuItem[], parentId: string, child: HeaderMenuItem): HeaderMenuItem[] => items.map((item) => item.id === parentId ? { ...item, children: [...item.children, child] } : { ...item, children: appendHeaderMenuChild(item.children, parentId, child) });
+// TÃœRKÄ°YE 81 Ä°L VE 973 Ä°LÃ‡E VERÄ° HARÄ°TASI
+const TURKEY_CITIES: Record<string, string[]> = {"Adana":["AladaÄŸ","Ceyhan","Ã‡ukurova","Feke","Ä°mamoÄŸlu","KaraisalÄ±","KarataÅŸ","Kozan","PozantÄ±","Saimbeyli","SarÄ±Ã§am","Seyhan","Tufanbeyli","YumurtalÄ±k","YÃ¼reÄŸir"],"AdÄ±yaman":["Besni","Ã‡elikhan","Gerger","GÃ¶lbaÅŸÄ±","Kahta","Merkez","Samsat","Sincik","Tut"],"Afyonkarahisar":["BaÅŸmakÃ§Ä±","Bayat","Bolvadin","Ã‡ay","Ã‡obanlar","DazkÄ±rÄ±","Dinar","EmirdaÄŸ","Evciler","Hocalar","Ä°hsaniye","Ä°scehisar","KÄ±zÄ±lÃ¶ren","Merkez","SandÄ±klÄ±","SinanpaÅŸa","SultandaÄŸÄ±","Åuhut"],"AÄŸrÄ±":["Diyadin","DoÄŸubayazÄ±t","EleÅŸkirt","Hamur","Merkez","Patnos","TaÅŸlÄ±Ã§ay","Tutak"],"Aksaray":["AÄŸaÃ§Ã¶ren","Eskil","GÃ¼laÄŸaÃ§","GÃ¼zelyurt","Merkez","OrtakÃ¶y","SarÄ±yahÅŸi","SultanhanÄ±"],"Amasya":["GÃ¶ynÃ¼cek","GÃ¼mÃ¼ÅŸhacÄ±kÃ¶y","HamamÃ¶zÃ¼","Merkez","Merzifon","Suluova","TaÅŸova"],"Ankara":["Akyurt","AltÄ±ndaÄŸ","AyaÅŸ","Bala","BeypazarÄ±","Ã‡amlÄ±dere","Ã‡ankaya","Ã‡ubuk","ElmadaÄŸ","Etimesgut","Evren","GÃ¶lbaÅŸÄ±","GÃ¼dÃ¼l","Haymana","Kahramankazan","Kalecik","KeÃ§iÃ¶ren","KÄ±zÄ±lcahamam","Mamak","NallÄ±han","PolatlÄ±","Pursaklar","Sincan","ÅereflikoÃ§hisar","Yenimahalle"],"Antalya":["Akseki","Aksu","Alanya","Demre","DÃ¶ÅŸemealtÄ±","ElmalÄ±","Finike","GazipaÅŸa","GÃ¼ndoÄŸmuÅŸ","Ä°bradÄ±","KaÅŸ","Kemer","Kepez","KonyaaltÄ±","Korkuteli","Kumluca","Manavgat","MuratpaÅŸa","Serik"],"Ardahan":["Ã‡Ä±ldÄ±r","Damal","GÃ¶le","Hanak","Merkez","Posof"],"Artvin":["ArdanuÃ§","Arhavi","BorÃ§ka","Hopa","KemalpaÅŸa","Merkez","Murgul","ÅavÅŸat","Yusufeli"],"AydÄ±n":["BozdoÄŸan","Buharkent","Ã‡ine","Didim","Efeler","Germencik","Ä°ncirliova","Karacasu","Karpuzlu","KoÃ§arlÄ±","KÃ¶ÅŸk","KuÅŸadasÄ±","Kuyucak","Nazilli","SÃ¶ke","Sultanhisar","Yenipazar"],"BalÄ±kesir":["AltÄ±eylÃ¼l","AyvalÄ±k","Balya","BandÄ±rma","BigadiÃ§","Burhaniye","Dursunbey","Edremit","Erdek","GÃ¶meÃ§","GÃ¶nen","Havran","Ä°vrindi","Karesi","Kepsut","Manyas","Marmara","SavaÅŸtepe","SÄ±ndÄ±rgÄ±","Susurluk"],"BartÄ±n":["Amasra","KurucaÅŸile","Merkez","Ulus"],"Batman":["BeÅŸiri","GercÃ¼ÅŸ","Hasankeyf","Kozluk","Merkez","Sason"],"Bayburt":["AydÄ±ntepe","DemirÃ¶zÃ¼","Merkez"],"Bilecik":["BozÃ¼yÃ¼k","GÃ¶lpazarÄ±","Ä°nhisar","Merkez","Osmaneli","Pazaryeri","SÃ¶ÄŸÃ¼t","Yenipazar"],"BingÃ¶l":["AdaklÄ±","GenÃ§","KarlÄ±ova","KiÄŸÄ±","Merkez","Solhan","Yayladere","Yedisu"],"Bitlis":["Adilcevaz","Ahlat","GÃ¼roymak","Hizan","Merkez","Mutki","Tatvan"],"Bolu":["DÃ¶rtdivan","Gerede","GÃ¶ynÃ¼k","KÄ±brÄ±scÄ±k","Mengen","Merkez","Mudurnu","Seben","YeniÃ§aÄŸa"],"Burdur":["AÄŸlasun","AltÄ±nyayla","Bucak","Ã‡avdÄ±r","Ã‡eltikÃ§i","GÃ¶lhisar","KaramanlÄ±","Kemer","Merkez","Tefenni","YeÅŸilova"],"Bursa":["BÃ¼yÃ¼korhan","Gemlik","GÃ¼rsu","HarmancÄ±k","Ä°negÃ¶l","Ä°znik","Karacabey","Keles","Kestel","Mudanya","MustafakemalpaÅŸa","NilÃ¼fer","Orhaneli","Orhangazi","Osmangazi","YeniÅŸehir","YÄ±ldÄ±rÄ±m"],"Ã‡anakkale":["AyvacÄ±k","BayramiÃ§","Biga","Bozcaada","Ã‡an","Eceabat","Ezine","Gelibolu","GÃ¶kÃ§eada","Lapseki","Merkez","Yenice"],"Ã‡ankÄ±rÄ±":["Atkaracalar","BayramÃ¶ren","Ã‡erkeÅŸ","Eldivan","Ilgaz","KÄ±zÄ±lÄ±rmak","Korgun","KurÅŸunlu","Merkez","Orta","ÅabanÃ¶zÃ¼","YapraklÄ±"],"Ã‡orum":["Alaca","Bayat","BoÄŸazkale","Dodurga","Ä°skilip","KargÄ±","LaÃ§in","MecitÃ¶zÃ¼","Merkez","OÄŸuzlar","OrtakÃ¶y","OsmancÄ±k","Sungurlu","UÄŸurludaÄŸ"],"Denizli":["AcÄ±payam","BabadaÄŸ","Baklan","Bekilli","BeyaÄŸaÃ§","Bozkurt","Buldan","Ã‡al","Ã‡ameli","Ã‡ardak","Ã‡ivril","GÃ¼ney","Honaz","Kale","Merkezefendi","Pamukkale","SaraykÃ¶y","Serinhisar","Tavas"],"DiyarbakÄ±r":["BaÄŸlar","Bismil","Ã‡ermik","Ã‡Ä±nar","Ã‡Ã¼ngÃ¼ÅŸ","Dicle","EÄŸil","Ergani","Hani","Hazro","KayapÄ±nar","KocakÃ¶y","Kulp","Lice","Silvan","Sur","YeniÅŸehir"],"DÃ¼zce":["AkÃ§akoca","Cumayeri","Ã‡ilimli","GÃ¶lyaka","GÃ¼mÃ¼ÅŸova","KaynaÅŸlÄ±","Merkez","YÄ±ÄŸÄ±lca"],"Edirne":["Enez","Havsa","Ä°psala","KeÅŸan","LalapaÅŸa","MeriÃ§","Merkez","SÃ¼loÄŸlu","UzunkÃ¶prÃ¼"],"ElazÄ±ÄŸ":["AÄŸÄ±n","Alacakaya","ArÄ±cak","Baskil","KarakoÃ§an","Keban","KovancÄ±lar","Maden","Merkez","Palu","Sivrice"],"Erzincan":["Ã‡ayÄ±rlÄ±","Ä°liÃ§","Kemah","Kemaliye","Merkez","Otlukbeli","Refahiye","Tercan","ÃœzÃ¼mlÃ¼"],"Erzurum":["AÅŸkale","Aziziye","Ã‡at","HÄ±nÄ±s","Horasan","Ä°spir","KaraÃ§oban","KarayazÄ±","KÃ¶prÃ¼kÃ¶y","Narman","Oltu","Olur","PalandÃ¶ken","Pasinler","Pazaryolu","Åenkaya","Tekman","Tortum","Uzundere","Yakutiye"],"EskiÅŸehir":["Alpu","Beylikova","Ã‡ifteler","GÃ¼nyÃ¼zÃ¼","Han","Ä°nÃ¶nÃ¼","Mahmudiye","Mihalgazi","MihalÄ±Ã§Ã§Ä±k","OdunpazarÄ±","SarÄ±cakaya","Seyitgazi","Sivrihisar","TepebaÅŸÄ±"],"Gaziantep":["Araban","Ä°slahiye","KarkamÄ±ÅŸ","Nizip","NurdaÄŸÄ±","OÄŸuzeli","Åahinbey","Åehitkamil","Yavuzeli"],"Giresun":["Alucra","Bulancak","Ã‡amoluk","Ã‡anakÃ§Ä±","Dereli","DoÄŸankent","Espiye","Eynesil","GÃ¶rele","GÃ¼ce","KeÅŸap","Merkez","Piraziz","Åebinkarahisar","Tirebolu","YaÄŸlÄ±dere"],"GÃ¼mÃ¼ÅŸhane":["Kelkit","KÃ¶se","KÃ¼rtÃ¼n","Merkez","Åiran","Torul"],"Hakkari":["Ã‡ukurca","Derecik","Merkez","Åemdinli","YÃ¼ksekova"],"Hatay":["AltÄ±nÃ¶zÃ¼","Antakya","Arsuz","Belen","Defne","DÃ¶rtyol","Erzin","Hassa","Ä°skenderun","KÄ±rÄ±khan","Kumlu","Payas","ReyhanlÄ±","SamandaÄŸ","YayladaÄŸÄ±"],"IÄŸdÄ±r":["AralÄ±k","Karakoyunlu","Merkez","Tuzluca"],"Isparta":["Aksu","Atabey","EÄŸirdir","Gelendost","GÃ¶nen","KeÃ§iborlu","Merkez","Senirkent","SÃ¼tÃ§Ã¼ler","ÅarkikaraaÄŸaÃ§","Uluborlu","YalvaÃ§","YeniÅŸarbademli"],"Ä°stanbul":["Adalar","ArnavutkÃ¶y","AtaÅŸehir","AvcÄ±lar","BaÄŸcÄ±lar","BahÃ§elievler","BakÄ±rkÃ¶y","BaÅŸakÅŸehir","BayrampaÅŸa","BeÅŸiktaÅŸ","Beykoz","BeylikdÃ¼zÃ¼","BeyoÄŸlu","BÃ¼yÃ¼kÃ§ekmece","Ã‡atalca","Ã‡ekmekÃ¶y","Esenler","Esenyurt","EyÃ¼psultan","Fatih","GaziosmanpaÅŸa","GÃ¼ngÃ¶ren","KadÄ±kÃ¶y","KaÄŸÄ±thane","Kartal","KÃ¼Ã§Ã¼kÃ§ekmece","Maltepe","Pendik","Sancaktepe","SarÄ±yer","Silivri","Sultanbeyli","Sultangazi","Åile","ÅiÅŸli","Tuzla","Ãœmraniye","ÃœskÃ¼dar","Zeytinburnu"],"Ä°zmir":["AliaÄŸa","BalÃ§ova","BayÄ±ndÄ±r","BayraklÄ±","Bergama","BeydaÄŸ","Bornova","Buca","Ã‡eÅŸme","Ã‡iÄŸli","Dikili","FoÃ§a","Gaziemir","GÃ¼zelbahÃ§e","KarabaÄŸlar","Karaburun","KarÅŸÄ±yaka","KemalpaÅŸa","KÄ±nÄ±k","Kiraz","Konak","Menderes","Menemen","NarlÄ±dere","Ã–demiÅŸ","Seferihisar","SelÃ§uk","Tire","TorbalÄ±","Urla"],"KahramanmaraÅŸ":["AfÅŸin","AndÄ±rÄ±n","Ã‡aÄŸlayancerit","DulkadiroÄŸlu","EkinÃ¶zÃ¼","Elbistan","GÃ¶ksun","Nurhak","OnikiÅŸubat","PazarcÄ±k","TÃ¼rkoÄŸlu"],"KarabÃ¼k":["Eflani","Eskipazar","Merkez","OvacÄ±k","Safranbolu","Yenice"],"Karaman":["AyrancÄ±","BaÅŸyayla","Ermenek","KazÄ±mkarabekir","Merkez","SarÄ±veliler"],"Kars":["Akyaka","ArpaÃ§ay","Digor","KaÄŸÄ±zman","Merkez","SarÄ±kamÄ±ÅŸ","Selim","Susuz"],"Kastamonu":["Abana","AÄŸlÄ±","AraÃ§","Azdavay","Bozkurt","Cide","Ã‡atalzeytin","Daday","Devrekani","DoÄŸanyurt","HanÃ¶nÃ¼","Ä°hsangazi","Ä°nebolu","KÃ¼re","Merkez","PÄ±narbaÅŸÄ±","Seydiler","Åenpazar","TaÅŸkÃ¶prÃ¼","Tosya"],"Kayseri":["AkkÄ±ÅŸla","BÃ¼nyan","Develi","Felahiye","HacÄ±lar","Ä°ncesu","Kocasinan","Melikgazi","Ã–zvatan","PÄ±narbaÅŸÄ±","SarÄ±oÄŸlan","SarÄ±z","Talas","Tomarza","YahyalÄ±","YeÅŸilhisar"],"KÄ±rÄ±kkale":["BahÅŸÄ±lÄ±","BalÄ±ÅŸeyh","Ã‡elebi","Delice","KarakeÃ§ili","Keskin","Merkez","Sulakyurt","YahÅŸihan"],"KÄ±rklareli":["Babaeski","DemirkÃ¶y","KofÃ§az","LÃ¼leburgaz","Merkez","PehlivankÃ¶y","PÄ±narhisar","Vize"],"KÄ±rÅŸehir":["AkÃ§akent","AkpÄ±nar","Boztepe","Ã‡iÃ§ekdaÄŸÄ±","Kaman","Merkez","Mucur"],"Kilis":["Elbeyli","Merkez","Musabeyli","Polateli"],"Kocaeli":["BaÅŸiskele","Ã‡ayÄ±rova","DarÄ±ca","Derince","DilovasÄ±","Gebze","GÃ¶lcÃ¼k","Ä°zmit","KandÄ±ra","KaramÃ¼rsel","Kartepe","KÃ¶rfez"],"Konya":["AhÄ±rlÄ±","AkÃ¶ren","AkÅŸehir","AltÄ±nekin","BeyÅŸehir","BozkÄ±r","Cihanbeyli","Ã‡eltik","Ã‡umra","Derbent","Derebucak","DoÄŸanhisar","Emirgazi","EreÄŸli","GÃ¼neysÄ±nÄ±r","Hadim","HalkapÄ±nar","HÃ¼yÃ¼k","IlgÄ±n","KadÄ±nhanÄ±","KarapÄ±nar","Karatay","Kulu","Meram","SarayÃ¶nÃ¼","SelÃ§uklu","SeydiÅŸehir","TaÅŸkent","TuzlukÃ§u","YalÄ±hÃ¼yÃ¼k","Yunak"],"KÃ¼tahya":["AltÄ±ntaÅŸ","Aslanapa","Ã‡avdarhisar","DomaniÃ§","DumlupÄ±nar","Emet","Gediz","HisarcÄ±k","Merkez","Pazarlar","Simav","Åaphane","TavÅŸanlÄ±"],"Malatya":["AkÃ§adaÄŸ","Arapgir","Arguvan","Battalgazi","Darende","DoÄŸanÅŸehir","DoÄŸanyol","Hekimhan","Kale","Kuluncak","PÃ¼tÃ¼rge","YazÄ±han","YeÅŸilyurt"],"Manisa":["Ahmetli","Akhisar","AlaÅŸehir","Demirci","GÃ¶lmarmara","GÃ¶rdes","KÄ±rkaÄŸaÃ§","KÃ¶prÃ¼baÅŸÄ±","Kula","Salihli","SarÄ±gÃ¶l","SaruhanlÄ±","Selendi","Soma","Åehzadeler","Turgutlu","Yunusemre"],"Mardin":["Artuklu","DargeÃ§it","Derik","KÄ±zÄ±ltepe","MazÄ±daÄŸÄ±","Midyat","Nusaybin","Ã–merli","Savur","YeÅŸilli"],"Mersin":["Akdeniz","Anamur","AydÄ±ncÄ±k","BozyazÄ±","Ã‡amlÄ±yayla","Erdemli","GÃ¼lnar","Mezitli","Mut","Silifke","Tarsus","Toroslar","YeniÅŸehir"],"MuÄŸla":["Bodrum","Dalaman","DatÃ§a","Fethiye","KavaklÄ±dere","KÃ¶yceÄŸiz","Marmaris","MenteÅŸe","Milas","Ortaca","Seydikemer","Ula","YataÄŸan"],"MuÅŸ":["BulanÄ±k","HaskÃ¶y","Korkut","Malazgirt","Merkez","Varto"],"NevÅŸehir":["AcÄ±gÃ¶l","Avanos","Derinkuyu","GÃ¼lÅŸehir","HacÄ±bektaÅŸ","KozaklÄ±","Merkez","ÃœrgÃ¼p"],"NiÄŸde":["Altunhisar","Bor","Ã‡amardÄ±","Ã‡iftlik","Merkez","UlukÄ±ÅŸla"],"Ordu":["AkkuÅŸ","AltÄ±nordu","AybastÄ±","Ã‡amaÅŸ","Ã‡atalpÄ±nar","Ã‡aybaÅŸÄ±","Fatsa","GÃ¶lkÃ¶y","GÃ¼lyalÄ±","GÃ¼rgentepe","Ä°kizce","KabadÃ¼z","KabataÅŸ","Korgan","Kumru","Mesudiye","PerÅŸembe","Ulubey","Ãœnye"],"Osmaniye":["BahÃ§e","DÃ¼ziÃ§i","Hasanbeyli","Kadirli","Merkez","Sumbas","Toprakkale"],"Rize":["ArdeÅŸen","Ã‡amlÄ±hemÅŸin","Ã‡ayeli","DerepazarÄ±","FÄ±ndÄ±klÄ±","GÃ¼neysu","HemÅŸin","Ä°kizdere","Ä°yidere","Kalkandere","Merkez","Pazar"],"Sakarya":["AdapazarÄ±","AkyazÄ±","Arifiye","Erenler","Ferizli","Geyve","Hendek","KarapÃ¼rÃ§ek","Karasu","Kaynarca","Kocaali","Pamukova","Sapanca","Serdivan","SÃ¶ÄŸÃ¼tlÃ¼","TaraklÄ±"],"Samsun":["19 MayÄ±s","AlaÃ§am","AsarcÄ±k","Atakum","AyvacÄ±k","Bafra","Canik","Ã‡arÅŸamba","Havza","Ä°lkadÄ±m","Kavak","Ladik","SalÄ±pazarÄ±","TekkekÃ¶y","Terme","VezirkÃ¶prÃ¼","Yakakent"],"Siirt":["Baykan","Eruh","Kurtalan","Merkez","Pervari","Åirvan","Tillo"],"Sinop":["AyancÄ±k","Boyabat","Dikmen","DuraÄŸan","Erfelek","Gerze","Merkez","SaraydÃ¼zÃ¼","TÃ¼rkeli"],"Sivas":["AkÄ±ncÄ±lar","AltÄ±nyayla","DivriÄŸi","DoÄŸanÅŸar","Gemerek","GÃ¶lova","GÃ¼rÃ¼n","Hafik","Ä°mranlÄ±","Kangal","Koyulhisar","Merkez","SuÅŸehri","ÅarkÄ±ÅŸla","UlaÅŸ","YÄ±ldÄ±zeli","Zara"],"ÅanlÄ±urfa":["AkÃ§akale","Birecik","Bozova","CeylanpÄ±nar","EyyÃ¼biye","Halfeti","Haliliye","Harran","Hilvan","KarakÃ¶prÃ¼","Siverek","SuruÃ§","ViranÅŸehir"],"ÅÄ±rnak":["BeytÃ¼ÅŸÅŸebap","Cizre","GÃ¼Ã§lÃ¼konak","Ä°dil","Merkez","Silopi","Uludere"],"TekirdaÄŸ":["Ã‡erkezkÃ¶y","Ã‡orlu","Ergene","Hayrabolu","KapaklÄ±","Malkara","MarmaraereÄŸlisi","MuratlÄ±","Saray","SÃ¼leymanpaÅŸa","ÅarkÃ¶y"],"Tokat":["Almus","Artova","BaÅŸÃ§iftlik","Erbaa","Merkez","Niksar","Pazar","ReÅŸadiye","Sulusaray","Turhal","YeÅŸilyurt","Zile"],"Trabzon":["AkÃ§aabat","AraklÄ±","Arsin","BeÅŸikdÃ¼zÃ¼","Ã‡arÅŸÄ±baÅŸÄ±","Ã‡aykara","DernekpazarÄ±","DÃ¼zkÃ¶y","Hayrat","KÃ¶prÃ¼baÅŸÄ±","MaÃ§ka","Of","Ortahisar","SÃ¼rmene","ÅalpazarÄ±","Tonya","VakfÄ±kebir","Yomra"],"Tunceli":["Ã‡emiÅŸgezek","Hozat","Mazgirt","Merkez","NazÄ±miye","OvacÄ±k","Pertek","PÃ¼lÃ¼mÃ¼r"],"UÅŸak":["Banaz","EÅŸme","KarahallÄ±","Merkez","SivaslÄ±","Ulubey"],"Van":["BahÃ§esaray","BaÅŸkale","Ã‡aldÄ±ran","Ã‡atak","Edremit","ErciÅŸ","GevaÅŸ","GÃ¼rpÄ±nar","Ä°pekyolu","Muradiye","Ã–zalp","Saray","TuÅŸba"],"Yalova":["AltÄ±nova","Armutlu","Ã‡Ä±narcÄ±k","Ã‡iftlikkÃ¶y","Merkez","Termal"],"Yozgat":["AkdaÄŸmadeni","AydÄ±ncÄ±k","BoÄŸazlÄ±yan","Ã‡andÄ±r","Ã‡ayÄ±ralan","Ã‡ekerek","KadÄ±ÅŸehri","Merkez","Saraykent","SarÄ±kaya","Sorgun","Åefaatli","YenifakÄ±lÄ±","YerkÃ¶y"],"Zonguldak":["AlaplÄ±","Ã‡aycuma","Devrek","EreÄŸli","GÃ¶kÃ§ebey","Kilimli","Kozlu","Merkez"]};
+
+const TURKEY_PROVINCES = Object.keys(TURKEY_CITIES).sort((a, b) => a.localeCompare(b, 'tr-TR'));
+const getTurkeyDistricts = (city: string) => (TURKEY_CITIES[city] || []).slice().sort((a, b) => a.localeCompare(b, 'tr-TR'));
+
+if (TURKEY_PROVINCES.length !== 81 || TURKEY_PROVINCES.reduce((total, city) => total + TURKEY_CITIES[city].length, 0) !== 973) {
+  throw new Error('TÃ¼rkiye il-ilÃ§e verisi eksik veya hatalÄ±.');
+}
+
+// Ä°LAN MODELÄ° â€” ilanlar yalnÄ±zca yÃ¶netim paneli Ã¼zerinden oluÅŸturulur.
+type ListingItem = {
+  id: string; title: string; category: string; propertyType: string; type: string; price: number; currency: string;
+  city: string; district: string; neighborhood: string; rooms: string; area: number; image: string;
+  agentName: string; agentPhone: string; date: string; isFeatured: boolean; details: Record<string, string>;
+  images?: string[]; description?: string; videoUrl?: string; virtualTourUrl?: string; mapUrl?: string;
+  monthlyFee?: string; deedInfo?: string; technicalFeatures?: string; updatedAt?: string;
+};
+const SAMPLE_LISTINGS: ListingItem[] = [];
+const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
+
+function usePublishedListings() {
+  const [items, setItems] = useState<ListingItem[]>([]);
+  useEffect(() => {
+    const load = async () => {
+      const { data } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').eq('approval_status', 'approved').is('deleted_at', null).order('created_at', { ascending: false });
+      const rows: any[] = data || [];
+      const ids = [...new Set(rows.map((row) => row.owner_id).filter(Boolean))];
+      const { data: profiles } = ids.length ? await supabase.from('profiles').select('id,first_name,last_name,phone').in('id', ids) : { data: [] as any[] };
+      const names = new Map((profiles || []).map((profile: any) => [profile.id, { name: [profile.first_name, profile.last_name].filter(Boolean).join(' ') || 'Realty Center DanÄ±ÅŸmanÄ±', phone: profile.phone || '0 554 322 22 22' }]));
+      setItems(rows.map((row) => ({ id: row.id, title: row.title, category: row.category, propertyType: row.property_type, type: row.transaction_type, price: Number(row.price || 0), currency: row.currency || 'â‚º', city: row.city, district: row.district, neighborhood: row.neighborhood || '', rooms: row.rooms || 'BelirtilmemiÅŸ', area: Number(row.area || 0), image: row.images?.[0] || '/slider/slider-01-tall-building.webp', images: row.images || [], agentName: names.get(row.owner_id)?.name || 'Realty Center DanÄ±ÅŸmanÄ±', agentPhone: names.get(row.owner_id)?.phone || '0 554 322 22 22', date: row.created_at, updatedAt: row.updated_at || row.created_at, isFeatured: Boolean(row.is_featured), description: row.description || '', videoUrl: row.video_url || '', virtualTourUrl: row.virtual_tour_url || '', mapUrl: row.map_url || '', monthlyFee: row.monthly_fee || '', deedInfo: row.deed_info || '', technicalFeatures: row.technical_features || '', details: row.details || {} })));
     };
     void load();
   }, []);
@@ -124,80 +414,190 @@ const DISTRICT_NEIGHBORHOODS: Record<string, string[]> = {
 
 type SearchField = { key: string; label: string; type?: 'number' | 'text'; options?: string[] };
 const COMMON_PRICE_AREA_FIELDS: SearchField[] = [
-  { key: 'minPrice', label: 'En Az Fiyat', type: 'numbeYªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÕÈœô°ì­•äè€µ…áAÉ¥”œ°±…‰•°è€¸ƒ½¬¥å…Ğœ°ÑåÁ”è€¹Õµ‰•Èœô°(€ì­•äè€µ¥¹É•„œ°±…‰•°è€¸è·
-Èœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€µ…áÉ•„œ°±…‰•°è€¸ƒ½¬·
-Èœ°ÑåÁ”è€¹Õµ‰•Èœô)tì)½¹ÍĞY9}%1QIM}	e}QeAèI•½ÉñÍÑÉ¥¹œ°M•…É¡¥•±‘mtø€ôì(€¡½µ”èl¸¸¹=55=9}AI%}I}%1L°ì­•äè€É½½µÌœ°±…‰•°è€=‘„M…çÅÏÄœ°½ÁÑ¥½¹ÌèlœÄ¬Àœ°œÄ¬Äœ°œÈ¬Äœ°œÌ¬Äœ°œĞ¬Äœ°œÔ¬Ätô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœ°½ÁÑ¥½¹ÌèlœÀœ°œÄ´Ôœ°œØ´ÄÀœ°œÄÄ´ÈÀœ°œÈÄ¬tô°ì­•äè€™±½½Èœ°±…‰•°è€	Õ±Õ¹‘×}Ô-…Ğœô°ì­•äè€¡•…Ñ¥¹œœ°±…‰•°è€%ÏÅ¹µ„œ°½ÁÑ¥½¹Ìèl¿}…±…è-½µ‰¤œ°5•É­•é¤œ°e•É‘•¸%ÏÅÑµ„œ°-±¥µ„tô°ì­•äè€™ÕÉ¹¥Í¡•œ°±…‰•°è€}å…³Äœ°½ÁÑ¥½¹ÌèlÙ•Ğœ°!…çÅÈtô°ì­•äè€µ½ÉÑ…”œ°±…‰•°è€-É•‘¥å”UåÕ¸œ°½ÁÑ¥½¹ÌèlÙ•Ğœ°!…çÅÈtô°ì­•äè€‰…Ñ¡É½½´œ°±…‰•°è€	…¹å¼M…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœõt°(€±…¹èl¸¸¹=55=9}AI%}I}%1L°ì­•äè€é½¹¥¹œœ°±…‰•°è€ŸÁµ…ÈÕÉÕµÔœ°½ÁÑ¥½¹Ìèl-½¹ÕĞœ°Q¥…É¤œ°M…¹…å¤œ°Q…É±„œ°	‡|	…£”tô°ì­•äè€‘••œ°±…‰•°è€Q…ÁÔÕÉÕµÔœ°½ÁÑ¥½¹Ìèl7ñÍÑ…­¥°Q…ÁÔœ°!¥ÍÍ•±¤Q…ÁÔœ°-…ĞƒÁÉÑ¥™…¯Ätô°ì­•äè€±…¹‘EÕ…±¥Ñäœ°±…‰•°è€ÉÍ„9¥Ñ•±§}¤œ°½ÁÑ¥½¹ÌèlÉÍ„œ°Q…É±„œ°	‡|œ°	…£”œ°i•åÑ¥¹±¥¬tô°ì­•äè€™É½¹Ñ…”œ°±…‰•°è€•Á¡”€¡´¤œ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€É½…œ°±…‰•°è€e½°ÕÉÕµÔœ°½ÁÑ¥½¹Ìèl-…‘…ÍÑÉ¼e½±Ôœ°Í™…±Ğœ°MÑ…‰¥±¥é”tô°ì­•äè€¥¹™É…ÍÑÉÕÑÕÉ”œ°±…‰•°è€±Ñå…ÃÄœ°½ÁÑ¥½¹Ìèl±•­ÑÉ¥¬œ°MÔœ°¿}…±…èœ°-…¹…±¥é…Íå½¸tõt°(€¥¹‘ÕÍÑÉ¥…°èl¸¸¹=55=9}AI%}I}%1L°ì­•äè€±½Í•‘É•„œ°±…‰•°è€-…Á…³Ä±…¸€¡·
-È¤œ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€•¥±¥¹!•¥¡Ğœ°±…‰•°è€Q…Ù…¸gñ­Í•­±§}¤œ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€Á½İ•Èœ°±…‰•°è€±•­ÑÉ¥¬ñğ€¡­Y¤œ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€±½…‘¥¹œœ°±…‰•°è€gñ­±•µ”I…µÁ…ÏÄœ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€É…¹”œ°±…‰•°è€Y¥»œœ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€é½¹¥¹œœ°±…‰•°è€M…¹…å¤ƒÁµ…ËÄœ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€‘••œ°±…‰•°è€Q…ÁÔÕÉÕµÔœõt°(€½µµ•É¥…°èl¸¸¹=55=9}AI%}I}%1L°ì­•äè€Í•Ñ¥½¹Ìœ°±…‰•°è€Ù³ñ´€¼=‘„M…çÅÏÄœô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœô°ì­•äè€™±½½Èœ°±…‰•°è€-…Ğœô°ì­•äè€¡•…Ñ¥¹œœ°±…‰•°è€%ÏÅ¹µ„œô°ì­•äè€™ÕÉ¹¥Í¡•œ°±…‰•°è€}å…³Äœ°½ÁÑ¥½¹ÌèlÙ•Ğœ°!…çÅÈtô°ì­•äè€Á…É­¥¹œœ°±…‰•°è€=Ñ½Á…É¬œ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€ÕÍ…”œ°±…‰•°è€-Õ±±…»Å´ÕÉÕµÔœ°½ÁÑ¥½¹Ìèl	¿|œ°-¥É…Å³Äœ°7ñ±¬M…¡¥‰¤tõt°(€¡½Ñ•°èl¸¸¹=55=9}AI%}I}%1L°ì­•äè€¡½Ñ•±I½½µÌœ°±…‰•°è€=Ñ•°=‘„M…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€‰•‘Ìœ°±…‰•°è€e…Ñ…¬-…Á…Í¥Ñ•Í¤œ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€ÍÑ…ÉÌœ°±…‰•°è€gÅ±“ÅèM…çÅÏÄœ°½ÁÑ¥½¹Ìèl	ÕÑ¥¬œ°œÈœ°œÌœ°œĞœ°œÔtô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœô°ì­•äè€É•ÍÑ…ÕÉ…¹Ğœ°±…‰•°è€I•ÍÑ½É…¸œ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€Á½½°œ°±…‰•°è€!…ÙÕèœ°½ÁÑ¥½¹ÌèlY…Èœ°e½¬tô°ì­•äè€‘••œ°±…‰•°è€Q…ÁÔÕÉÕµÔœõt)ôì()™Õ¹Ñ¥½¸•Ñ‘Ù…¹•‘¥±Ñ•ÉÉ½ÕÀ¡ÁÉ½Á•ÉÑåQåÁ”èÍÑÉ¥¹œ¤ì(€¥˜€¡lØœ°Y¥±±„œ°…¥É”œ°I•Í¥‘•¹”œ°7ñÍÑ…­¥°Øt¹¥¹±Õ‘•Ì¡ÁÉ½Á•ÉÑåQåÁ”¤¤É•ÑÕÉ¸€¡½µ”œì(€¥˜€¡lÉÍ„œ°Q…É±„œ°	‡|œ°	…£”œ°i•åÑ¥¹±¥¬œ°Ÿ¥™Ñ±¥¬œ°É…é¤t¹¥¹±Õ‘•Ì¡ÁÉ½Á•ÉÑåQåÁ”¤¤É•ÑÕÉ¸€±…¹œì(€¥˜€¡l…‰É¥­„œ°•Á¼œ°¹ÑÉ•Á¼œ°ÓÙ±å”œ°ŸÁµ…±…Ñ¡…¹”t¹¥¹±Õ‘•Ì¡ÁÉ½Á•ÉÑåQåÁ”¤¤É•ÑÕÉ¸€¥¹‘ÕÍÑÉ¥…°œì(€¥˜€¡l=Ñ•°œ°5½Ñ•°œ°A…¹Í¥å½¸œ°Á…ÉĞ=Ñ•°œ°	ÕÑ¥¬=Ñ•°t¹¥¹±Õ‘•Ì¡ÁÉ½Á•ÉÑåQåÁ”¤¤É•ÑÕÉ¸€¡½Ñ•°œì(€É•ÑÕÉ¸€½µµ•É¥…°œì)ô()ÑåÁ”AÉ½Á•ÉÑå•Ñ…¥±¥•±€ôì­•äèÍÑÉ¥¹œì±…‰•°èÍÑÉ¥¹œìÁ±…•¡½±‘•ÈüèÍÑÉ¥¹œìÑåÁ”üè€Ñ•áĞœğ€¹Õµ‰•Èœôì)½¹ÍĞAI=AIQe}Q%1}%1LèI•½ÉñÍÑÉ¥¹œ°AÉ½Á•ÉÑå•Ñ…¥±¥•±‘mtø€ôì(€€Øœèmì­•äè€É½½µ½Õ¹Ğœ°±…‰•°è€=‘„M…çÅÏÄœ°Á±…•¡½±‘•Èè€œÌ¬Äœô°ì­•äè€‰…Ñ¡É½½µ½Õ¹Ğœ°±…‰•°è€	…¹å¼M…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€™±½½Èœ°±…‰•°è€	Õ±Õ¹‘×}Ô-…Ğœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœ°ÑåÁ”è€¹Õµ‰•Èœõt°(€€Y¥±±„œèmì­•äè€É½½µ½Õ¹Ğœ°±…‰•°è€=‘„M…çÅÏÄœ°Á±…•¡½±‘•Èè€œÔ¬Äœô°ì­•äè€‰…Ñ¡É½½µ½Õ¹Ğœ°±…‰•°è€	…¹å¼M…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€™±½½É½Õ¹Ğœ°±…‰•°è€-…ĞM…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€…É‘•¹É•„œ°±…‰•°è€	…£”±…»Ä€¡·
-È¤œ°ÑåÁ”è€¹Õµ‰•Èœõt°(€€…¥É”œèmì­•äè€É½½µ½Õ¹Ğœ°±…‰•°è€=‘„M…çÅÏÄœ°Á±…•¡½±‘•Èè€œÌ¬Äœô°ì­•äè€‰…Ñ¡É½½µ½Õ¹Ğœ°±…‰•°è€	…¹å¼M…çÅÏÄœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€™±½½Èœ°±…‰•°è€	Õ±Õ¹‘×}Ô-…Ğœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœ°ÑåÁ”è€¹Õµ‰•Èœõt°(€€I•Í¥‘•¹”œèmì­•äè€É½½µ½Õ¹Ğœ°±…‰•°è€=‘„M…çÅÏÄœ°Á±…•¡½±‘•Èè€œÈ¬Äœô°ì­•äè€™±½½Èœ°±…‰•°è€	Õ±Õ¹‘×}Ô-…Ğœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€‰Õ¥±‘¥¹”œ°±…‰•°è€	¥¹„e‡Äœ°ÑåÁ”è€¹Õµ‰•Èœô°ì­•äè€Í¥Ñ••…ÑÕÉ•Ìœ°±…‰•°è€Ÿm4ÖÚ$z{-®éÜj×İËLMŒLÍLLÍMÍ‹MÙ™MŒØXÙLOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLLŒ	ÈKˆÈYˆ	Ü™[[Ù™šXÙIË]Nˆ	ÒÚ\˜[1,ZÈÙš\Û\‰Ë\Nˆ	ÒÚ\˜[1,ZÉËØ]YÛÜNˆ	ñ,1gŞY\šIË[XYÙNˆ	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMÌÍŒŒMMLÍÍLŒÌMØÏØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLLŒ	ÈKˆÈYˆ	ÜØ[K]ÛÜšÜXÙIË]Nˆ	ÔØ]1,[1,ZÈ1,1gÈY\›\šIË\Nˆ	ÔØ]1,[1,ZÉËØ]YÛÜNˆ	ñ,1gŞY\šIË[XYÙNˆ	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMÌÍÍMÍKYŒŒMM™MÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLLŒ	ÈKˆÈYˆ	Ú[™\İY[	Ë]Nˆ	ÖX]1,\±,[[1,ZÈ±,\œØ]\‰Ë\Nˆ	ÔØ]1,[1,ZÉËØ]YÛÜNˆ	ÉË[XYÙNˆ	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMŒLNËXÙLLNYYY™˜OØ]]ÏY›Ü›X]	™š]XÜ›Ü	œONL	ÏLLŒ	ÈB—NÂ™[˜İ[ÛˆÙ]\İ[™ĞØ]YÛÜšY\Ê
-Nˆ\İ[™ĞØ]YÛÜV×HÂˆHÂˆÛÛœİØ]™YHØØ[İÜ˜YÙK™Ù]][J	Ü™X[KXÙ[\‹[\İ[™ËXØ]YÛÜšY\ÉÊNÂˆÛÛœİØ]YÛÜšY\Îˆ\İ[™ĞØ]YÛÜV×HHØ]™YÈ”ÓÓ‹œ\œÙJØ]™Y
-HˆQUSÓTÕS‘×ĞĞUQÓÔ’QTÎÂˆ™]\›ˆØ]YÛÜšY\Ë›X\
+  { key: 'minPrice', label: 'En Az Fiyat', type: 'number' }, { key: 'maxPrice', label: 'En Ã‡ok Fiyat', type: 'number' },
+  { key: 'minArea', label: 'En Az mÂ²', type: 'number' }, { key: 'maxArea', label: 'En Ã‡ok mÂ²', type: 'number' }
+];
+const ADVANCED_FILTERS_BY_TYPE: Record<string, SearchField[]> = {
+  home: [...COMMON_PRICE_AREA_FIELDS, { key: 'rooms', label: 'Oda SayÄ±sÄ±', options: ['1+0','1+1','2+1','3+1','4+1','5+1'] }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±', options: ['0','1-5','6-10','11-20','21+'] }, { key: 'floor', label: 'BulunduÄŸu Kat' }, { key: 'heating', label: 'IsÄ±nma', options: ['DoÄŸalgaz Kombi','Merkezi','Yerden IsÄ±tma','Klima'] }, { key: 'furnished', label: 'EÅŸyalÄ±', options: ['Evet','HayÄ±r'] }, { key: 'mortgage', label: 'Krediye Uygun', options: ['Evet','HayÄ±r'] }, { key: 'bathroom', label: 'Banyo SayÄ±sÄ±', type: 'number' }],
+  land: [...COMMON_PRICE_AREA_FIELDS, { key: 'zoning', label: 'Ä°mar Durumu', options: ['Konut','Ticari','Sanayi','Tarla','BaÄŸ BahÃ§e'] }, { key: 'deed', label: 'Tapu Durumu', options: ['MÃ¼stakil Tapu','Hisseli Tapu','Kat Ä°rtifakÄ±'] }, { key: 'landQuality', label: 'Arsa NiteliÄŸi', options: ['Arsa','Tarla','BaÄŸ','BahÃ§e','Zeytinlik'] }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'road', label: 'Yol Durumu', options: ['Kadastro Yolu','Asfalt','Stabilize'] }, { key: 'infrastructure', label: 'AltyapÄ±', options: ['Elektrik','Su','DoÄŸalgaz','Kanalizasyon'] }],
+  industrial: [...COMMON_PRICE_AREA_FIELDS, { key: 'closedArea', label: 'KapalÄ± Alan (mÂ²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan YÃ¼ksekliÄŸi', type: 'number' }, { key: 'power', label: 'Elektrik GÃ¼cÃ¼ (kVA)', type: 'number' }, { key: 'loading', label: 'YÃ¼kleme RampasÄ±', options: ['Var','Yok'] }, { key: 'crane', label: 'VinÃ§', options: ['Var','Yok'] }, { key: 'zoning', label: 'Sanayi Ä°marÄ±', options: ['Var','Yok'] }, { key: 'deed', label: 'Tapu Durumu' }],
+  commercial: [...COMMON_PRICE_AREA_FIELDS, { key: 'sections', label: 'BÃ¶lÃ¼m / Oda SayÄ±sÄ±' }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±' }, { key: 'floor', label: 'Kat' }, { key: 'heating', label: 'IsÄ±nma' }, { key: 'furnished', label: 'EÅŸyalÄ±', options: ['Evet','HayÄ±r'] }, { key: 'parking', label: 'Otopark', options: ['Var','Yok'] }, { key: 'usage', label: 'KullanÄ±m Durumu', options: ['BoÅŸ','KiracÄ±lÄ±','MÃ¼lk Sahibi'] }],
+  hotel: [...COMMON_PRICE_AREA_FIELDS, { key: 'hotelRooms', label: 'Otel Oda SayÄ±sÄ±', type: 'number' }, { key: 'beds', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'stars', label: 'YÄ±ldÄ±z SayÄ±sÄ±', options: ['Butik','2','3','4','5'] }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±' }, { key: 'restaurant', label: 'Restoran', options: ['Var','Yok'] }, { key: 'pool', label: 'Havuz', options: ['Var','Yok'] }, { key: 'deed', label: 'Tapu Durumu' }]
+};
 
-][JHOˆ][KšYOOH	Ü™[ZÛYIÈÈÈ‹‹š][K]Nˆ	ÒÚ\˜[1,ZÈØ^\š[Y[šİ[\‰ÈHˆ][JNÂˆHØ]ÚÈ™]\›ˆQUSÓTÕS‘×ĞĞUQÓÔ’QTÎÈBŸB‚™[˜İ[ÛˆÙ]Ø]YÛÜT›Ü\U\J][Nˆ\İ[™ĞØ]YÛÜJHÂˆÛÛœİ^H	Ú][K]_H	Ú][K˜Ø]YÛÜ_XÓØØ[SİÙ\Ø\ÙJ	İ‹U‰ÊNÂˆYˆ
-^š[˜ÛY\Ê	İš[IÊJH™]\›ˆ	Õš[IÎÂˆYˆ
-^š[˜ÛY\Ê	Ø\œØIÊJH™]\›ˆ	Ğ\œØIÎÂˆYˆ
-^š[˜ÛY\Ê	ÛÙš\ÉÊJH™]\›ˆ	ÓÙš\ÉÎÂˆYˆ
-^š[˜ÛY\Ê	Ù0ïÚØ[‰ÊJH™]\›ˆ	Ñ0ïÚØ[‰ÎÂˆYˆ
-^š[˜ÛY\Ê	ÚqgÈY\šIÊH^š[˜ÛY\Ê	ÚqgŞY\šIÊJH™]\›ˆ	Ñ0ïÚØ[‰ÎÂˆYˆ
-^š[˜ÛY\Ê	ÚÛÛ]	ÊH^š[˜ÛY\Ê	Ù]‰ÊJH™]\›ˆ	Ñ]‰ÎÂˆ™]\›ˆ	ÉÎÂŸB‚™[˜İ[ÛˆÙ]Ø]YÛÜU˜[œØXİ[Û•\J][Nˆ\İ[™ĞØ]YÛÜJHÂˆ™]\›ˆ][K\HOOH	Ñ]œ™[‰ÈÈ	Ñ]œ™[ˆØ]1,[1,ZÉÈˆ][K\NÂŸB‚˜ÛÛœİQUSÑ‘PUT‘QÓTÕS‘×ÒQÎˆİš[™Ö×HH×NÂ™[˜İ[ÛˆÙ]™X]\™Y\İ[™ÒYÊ
-Nˆİš[™Ö×HÂˆHÂˆÛÛœİØ]™YH”ÓÓ‹œ\œÙJØØ[İÜ˜YÙK™Ù]][J	Ü™X[KXÙ[\‹Y™X]\™Y[\İ[™ËZYÉÊH	Û[	ÊNÂˆ™]\›ˆ\œ˜^Kš\Ğ\œ˜^JØ]™Y
-HÈË‹‹›™]ÈÙ]
-Ø]™Y™š[\Š
-Y
-NˆY\Èİš[™ÈOˆ\[ÙˆYOOH	Üİš[™ÉÊJWHˆQUSÑ‘PUT‘QÓTÕS‘×ÒQÎÂˆHØ]ÚÈ™]\›ˆQUSÑ‘PUT‘QÓTÕS‘×ÒQÎÈBŸB™[˜İ[ÛˆØ]™Q™X]\™Y\İ[™ÒYÊYÎˆİš[™Ö×JHÂˆØØ[İÜ˜YÙKœÙ]][J	Ü™X[KXÙ[\‹Y™X]\™Y[\İ[™ËZYÉË”ÓÓ‹œİš[™ÚYJYÊJNÂˆÚ[™İË™\Ü]Ú]™[
-™]È]™[
-	Ü™X[KXÙ[\‹Y™X]\™Y[\İ[™ÜË]\]Y	ÊJNÂŸB‚™[˜İ[Ûˆ\šÙ^S\İ[™ÓX\
+function getAdvancedFilterGroup(propertyType: string) {
+  if (['Ev','Villa','Daire','Residence','MÃ¼stakil Ev'].includes(propertyType)) return 'home';
+  if (['Arsa','Tarla','BaÄŸ','BahÃ§e','Zeytinlik','Ã‡iftlik','Arazi'].includes(propertyType)) return 'land';
+  if (['Fabrika','Depo','Antrepo','AtÃ¶lye','Ä°malathane'].includes(propertyType)) return 'industrial';
+  if (['Otel','Motel','Pansiyon','Apart Otel','Butik Otel'].includes(propertyType)) return 'hotel';
+  return 'commercial';
+}
 
-HÂˆÛÛœİ˜]šYØ]HH\ÙS˜]šYØ]J
-NÂˆÛÛœİÛÛ\™YˆH\ÙT™YS]‘[[Y[Š[
-NÂˆÛÛœİÜİ™ÓX\šİ\Ù]İ™ÓX\šİ\HH\ÙTİ]J	ÉÊNÂˆÛÛœİÛX\\œ›Ü‹Ù]X\\œ›Ü—HH\ÙTİ]J˜[ÙJNÂ‚ˆ\ÙQY™™Xİ
+type PropertyDetailField = { key: string; label: string; placeholder?: string; type?: 'text' | 'number' };
+const PROPERTY_DETAIL_FIELDS: Record<string, PropertyDetailField[]> = {
+  'Ev': [{ key: 'roomCount', label: 'Oda SayÄ±sÄ±', placeholder: '3+1' }, { key: 'bathroomCount', label: 'Banyo SayÄ±sÄ±', type: 'number' }, { key: 'floor', label: 'BulunduÄŸu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±', type: 'number' }],
+  'Villa': [{ key: 'roomCount', label: 'Oda SayÄ±sÄ±', placeholder: '5+1' }, { key: 'bathroomCount', label: 'Banyo SayÄ±sÄ±', type: 'number' }, { key: 'floorCount', label: 'Kat SayÄ±sÄ±', type: 'number' }, { key: 'gardenArea', label: 'BahÃ§e AlanÄ± (mÂ²)', type: 'number' }],
+  'Daire': [{ key: 'roomCount', label: 'Oda SayÄ±sÄ±', placeholder: '3+1' }, { key: 'bathroomCount', label: 'Banyo SayÄ±sÄ±', type: 'number' }, { key: 'floor', label: 'BulunduÄŸu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±', type: 'number' }],
+  'Residence': [{ key: 'roomCount', label: 'Oda SayÄ±sÄ±', placeholder: '2+1' }, { key: 'floor', label: 'BulunduÄŸu Kat', type: 'number' }, { key: 'buildingAge', label: 'Bina YaÅŸÄ±', type: 'number' }, { key: 'siteFeatures', label: 'Site Ã–zellikleri', placeholder: 'GÃ¼venlik, havuz, otopark' }],
+  'MÃ¼stakil Ev': [{ key: 'roomCount', label: 'Oda SayÄ±sÄ±', placeholder: '4+1' }, { key: 'bathroomCount', label: 'Banyo SayÄ±sÄ±', type: 'number' }, { key: 'floorCount', label: 'Kat SayÄ±sÄ±', type: 'number' }, { key: 'gardenArea', label: 'BahÃ§e AlanÄ± (mÂ²)', type: 'number' }],
+  'Arsa': [{ key: 'zoningStatus', label: 'Ä°mar Durumu', placeholder: 'Konut imarlÄ±' }, { key: 'parcelNo', label: 'Ada / Parsel No', placeholder: '123 / 45' }, { key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'titleDeed', label: 'Tapu Durumu', placeholder: 'MÃ¼stakil tapu' }],
+  'Tarla': [{ key: 'zoningStatus', label: 'Ä°mar Durumu', placeholder: 'Tarla' }, { key: 'parcelNo', label: 'Ada / Parsel No', placeholder: '123 / 45' }, { key: 'waterSource', label: 'Su KaynaÄŸÄ±', placeholder: 'Kuyu, sulama kanalÄ±' }, { key: 'roadAccess', label: 'Yol Durumu', placeholder: 'Kadastro yolu' }],
+  'Fabrika': [{ key: 'closedArea', label: 'KapalÄ± Alan (mÂ²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan YÃ¼ksekliÄŸi (m)', type: 'number' }, { key: 'powerCapacity', label: 'Elektrik GÃ¼cÃ¼ (kVA)', type: 'number' }, { key: 'loadingDocks', label: 'YÃ¼kleme RampasÄ± SayÄ±sÄ±', type: 'number' }],
+  'Depo': [{ key: 'closedArea', label: 'KapalÄ± Alan (mÂ²)', type: 'number' }, { key: 'ceilingHeight', label: 'Tavan YÃ¼ksekliÄŸi (m)', type: 'number' }, { key: 'loadingDocks', label: 'YÃ¼kleme RampasÄ± SayÄ±sÄ±', type: 'number' }, { key: 'security', label: 'GÃ¼venlik', placeholder: '7/24 gÃ¼venlik' }],
+  'Ofis': [{ key: 'roomCount', label: 'BÃ¶lÃ¼m / Oda SayÄ±sÄ±', placeholder: '4 bÃ¶lÃ¼m' }, { key: 'floor', label: 'BulunduÄŸu Kat', type: 'number' }, { key: 'meetingRooms', label: 'ToplantÄ± OdasÄ± SayÄ±sÄ±', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'AÃ§Ä±k / kapalÄ±' }],
+  'DÃ¼kkan': [{ key: 'frontage', label: 'Cephe (m)', type: 'number' }, { key: 'floor', label: 'Kat', type: 'number' }, { key: 'warehouseArea', label: 'Depo AlanÄ± (mÂ²)', type: 'number' }, { key: 'usageStatus', label: 'KullanÄ±m Durumu', placeholder: 'BoÅŸ / kiracÄ±lÄ±' }],
+  'Plaza': [{ key: 'floor', label: 'BulunduÄŸu Kat', type: 'number' }, { key: 'floorCount', label: 'Toplam Kat SayÄ±sÄ±', type: 'number' }, { key: 'elevatorCount', label: 'AsansÃ¶r SayÄ±sÄ±', type: 'number' }, { key: 'parking', label: 'Otopark', placeholder: 'AÃ§Ä±k / kapalÄ±' }],
+  'Otel': [{ key: 'hotelRoomCount', label: 'Otel Oda SayÄ±sÄ±', type: 'number' }, { key: 'bedCapacity', label: 'Yatak Kapasitesi', type: 'number' }, { key: 'starRating', label: 'YÄ±ldÄ±z SayÄ±sÄ±', placeholder: '5 yÄ±ldÄ±z' }, { key: 'restaurantCount', label: 'Restoran SayÄ±sÄ±', type: 'number' }]
+};
 
+export interface ContactMessage {
+  id: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  message: string;
+  createdAt: string;
+  status: 'unread' | 'read' | 'archived';
+}
 
-HOˆÂˆ™]Ú
-	Ëİ\šÙ^Kœİ™ÉÊBˆ[Š
-™\ÜÛœÙJHOˆÂˆYˆ
-\™\ÜÛœÙK›ÚÊH›İÈ™]È\œ›ÜŠ	Ò\š]HpïÛ[™[YYIÊNÂˆ™]\›ˆ™\ÜÛœÙK^
+const INITIAL_MESSAGES: ContactMessage[] = [];
 
-NÂˆJBˆ[Š
-İ™Õ^
-HOˆÂˆÛÛœİ\œÙYH™]ÈÓT\œÙ\Š
-Kœ\œÙQœ›ÛTİš[™Êİ™Õ^	Ú[XYÙKÜİ™ÊŞ[	ÊNÂˆ\œÙYœ]Y\TÙ[XİÜ[Õ‘ÑÑ[[Y[Š	ÙÖÙ]KXÚ]K[˜[YWIÊK™›Ü‘XXÚ
+const REALTY_PHONE_DISPLAY = '0 554 322 22 22';
+const REALTY_PHONE_E164 = '905543222222';
+const REALTY_WHATSAPP_MESSAGE = 'Merhaba, Realty Center hakkÄ±nda bilgi almak istiyorum.';
+const DEFAULT_CONTACT_SETTINGS = { phone: REALTY_PHONE_DISPLAY, email: '', address: '', whatsapp: REALTY_PHONE_E164 };
 
-Ü›İ\
-HOˆÂˆÛÛœİÚ]HHÜ›İ\™]\Ù]˜Ú]S˜[YH	ÉÎÂˆÜ›İ\œÙ]]šX]J	Ù]K\™X[KXÚ]IËÚ]JNÂˆÜ›İ\œ]Y\TÙ[XİÜ[
-	Ü]	ÊK™›Ü‘XXÚ
+function getContactSettings() {
+  try {
+    const saved = localStorage.getItem('realty-center-contact-settings');
+    if (!saved) return DEFAULT_CONTACT_SETTINGS;
+    const settings = { ...DEFAULT_CONTACT_SETTINGS, ...JSON.parse(saved) };
+    const normalize = (value: string) => value.replace(/\D/g, '');
+    if (normalize(settings.phone) === '905325674845' || normalize(settings.phone) === '05325674845') settings.phone = REALTY_PHONE_DISPLAY;
+    if (normalize(settings.whatsapp) === '905325674845' || normalize(settings.whatsapp) === '05325674845') settings.whatsapp = REALTY_PHONE_E164;
+    return settings;
+  } catch { return DEFAULT_CONTACT_SETTINGS; }
+}
 
-]
-HOˆÂˆ]œÙ]]šX]J	Üİ[IË	Ùš[ˆĞÑLQNÙš[[ÜXÚ]NŒŒÍÜİ›ÚÙN››Û™NÉÊNÂˆJNÂˆJNÂˆÙ]İ™ÓX\šİ\
-\œÙY™Øİ[Y[[[Y[›İ]\’S
-NÂˆJBˆ˜Ø]Ú
+function WhatsAppSupportButton() {
+  const [settings, setSettings] = useState(getContactSettings);
+  useEffect(() => {
+    const refresh = () => setSettings(getContactSettings());
+    window.addEventListener('realty-center-contact-updated', refresh);
+    return () => window.removeEventListener('realty-center-contact-updated', refresh);
+  }, []);
+  const whatsappNumber = settings.whatsapp.replace(/\D/g, '') || REALTY_PHONE_E164;
+  const href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(REALTY_WHATSAPP_MESSAGE)}`;
+  return (
+    <a href={href} target="_blank" rel="noreferrer" aria-label="WhatsApp destek hattÄ±" className="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white px-4 py-3.5 shadow-2xl shadow-emerald-950/30 transition-transform duration-300 hover:scale-105">
+      <MessageCircle className="w-6 h-6 fill-white/10" />
+      <span className="hidden sm:inline text-sm font-black">WhatsApp Destek</span>
+    </a>
+  );
+}
 
+type ListingCategory = { id: string; title: string; type: string; category: string; image: string };
+const DEFAULT_LISTING_CATEGORIES: ListingCategory[] = [
+  { id: 'sale-home', title: 'SatÄ±lÄ±k Evler', type: 'SatÄ±lÄ±k', category: 'Konut', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'rent-home', title: 'KiralÄ±k Gayrimenkuller', type: 'KiralÄ±k', category: 'Konut', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-land', title: 'SatÄ±lÄ±k Arsalar', type: 'SatÄ±lÄ±k', category: 'Arsa', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'transfer-shop', title: 'Devren DÃ¼kkanlar', type: 'Devren', category: 'Ä°ÅŸyeri', image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-villa', title: 'SatÄ±lÄ±k Villalar', type: 'SatÄ±lÄ±k', category: 'Konut', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'rent-office', title: 'KiralÄ±k Ofisler', type: 'KiralÄ±k', category: 'Ä°ÅŸyeri', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'sale-workplace', title: 'SatÄ±lÄ±k Ä°ÅŸ Yerleri', type: 'SatÄ±lÄ±k', category: 'Ä°ÅŸyeri', image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=90&w=1200' },
+  { id: 'investment', title: 'YatÄ±rÄ±mlÄ±k FÄ±rsatlar', type: 'SatÄ±lÄ±k', category: '', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' }
+];
+function getListingCategories(): ListingCategory[] {
+  try {
+    const saved = localStorage.getItem('realty-center-listing-categories');
+    const categories: ListingCategory[] = saved ? JSON.parse(saved) : DEFAULT_LISTING_CATEGORIES;
+    return categories.map((item) => item.id === 'rent-home' ? { ...item, title: 'KiralÄ±k Gayrimenkuller' } : item);
+  } catch { return DEFAULT_LISTING_CATEGORIES; }
+}
 
-HOˆÙ]X\\œ›ÜŠYJJNÂˆK×JNÂ‚ˆÛÛœİ[™SX\[İ™HH
-]™[ˆ™XXİ“[İ\ÙQ]™[S]‘[[Y[ŠHOˆÂˆÛÛœİ\™Ù]H]™[\™Ù]ÂˆÛÛœİÜ›İ\H\™Ù][œİ[˜Ù[Ùˆ[[Y[È\™Ù]˜ÛÜÙ\İ
-	ÙÖÙ]K\™X[KXÚ]WIÊHˆ[ÂˆÛÛœİÚ]HHÜ›İ\Ë™Ù]]šX]J	Ù]K\™X[KXÚ]IÊNÂˆÛÛœİÛÛ\HÛÛ\™Y‹˜İ\œ™[ÂˆYˆ
-]ÛÛ\
-H™]\›ÂˆYˆ
-XÚ]JHÂˆÛÛ\œİ[K™\Ü^HH	Û›Û™IÎÂˆ™]\›ÂˆBˆÛÛ\^ÛÛ[HÚ]NÂˆÛÛ\œİ[K˜[œÙ›Ü›HH	İ˜[œÛ]LÙ
-	È
-È
-]™[˜ÛY[
-ÈMŠH
-È	Ü	È
-È
-]™[˜ÛY[H
-ÈMŠH
-È	Ü
-IÎÂˆÛÛ\œİ[K™\Ü^HH	Ø›ØÚÉÎÂˆNÂ‚ˆÛÛœİYSX\ÛÛ\H
+function getCategoryPropertyType(item: ListingCategory) {
+  const text = `${item.title} ${item.category}`.toLocaleLowerCase('tr-TR');
+  if (text.includes('villa')) return 'Villa';
+  if (text.includes('arsa')) return 'Arsa';
+  if (text.includes('ofis')) return 'Ofis';
+  if (text.includes('dÃ¼kkan')) return 'DÃ¼kkan';
+  if (text.includes('iÅŸ yeri') || text.includes('iÅŸyeri')) return 'DÃ¼kkan';
+  if (text.includes('konut') || text.includes('ev')) return 'Ev';
+  return '';
+}
 
-HOˆÂˆYˆ
-ÛÛ\™Y‹˜İ\œ™[
-HÛÛ\™Y‹˜İ\œ™[œİ[K™\Ü^HH	Û›Û™IÎÂˆNÂ‚ˆÛÛœİ[™SX\ÛXÚÈH
-]™[ˆ™XXİ“[İ\ÙQ]™[S]‘[[Y[ŠHOˆÂˆÛÛœİ\™Ù]H]™[\™Ù]ÂˆÛÛœİÜ›İ\H\™Ù][œİ[˜Ù[Ùˆ[[Y[È\™Ù]˜ÛÜÙ\İ
-	ÙÖÙ]K\™X[KXÚ]WIÊHˆ[ÂˆÛÛœİÚ]HHÜ›İ\Ë™Ù]]šX]J	Ù]K\™X[KXÚ]IÊNÂˆYˆ
-Ú]JH˜]šYØ]J	ËÚ[[›\š[Z^ØÚ]OIÈ
-È[˜ÛÙUT’PÛÛ\Û™[
-Ú]JJNÂˆNÂ‚ˆ™]\›ˆ
-ˆÙXİ[ÛˆÛ\ÜÓ˜[YOH˜™Ë]Ú]HKLLˆ^\Û]KNLİ™\™›İËZY[ˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‚ˆ]ˆÛ\ÜÓ˜[YOH›X^]ËM^X]]ÈMˆÎœLLˆ‚ˆ]ˆÛ\ÜÓ˜[YOH^Vj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5center max-w-2xl mx-auto mb-6">
+function getCategoryTransactionType(item: ListingCategory) {
+  return item.type === 'Devren' ? 'Devren SatÄ±lÄ±k' : item.type;
+}
+
+const DEFAULT_FEATURED_LISTING_IDS: string[] = [];
+function getFeaturedListingIds(): string[] {
+  try {
+    const saved = JSON.parse(localStorage.getItem('realty-center-featured-listing-ids') || 'null');
+    return Array.isArray(saved) ? [...new Set(saved.filter((id): id is string => typeof id === 'string'))] : DEFAULT_FEATURED_LISTING_IDS;
+  } catch { return DEFAULT_FEATURED_LISTING_IDS; }
+}
+function saveFeaturedListingIds(ids: string[]) {
+  localStorage.setItem('realty-center-featured-listing-ids', JSON.stringify(ids));
+  window.dispatchEvent(new Event('realty-center-featured-listings-updated'));
+}
+
+function TurkeyListingMap() {
+  const navigate = useNavigate();
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const [svgMarkup, setSvgMarkup] = useState('');
+  const [mapError, setMapError] = useState(false);
+
+  useEffect(() => {
+    fetch('/turkey.svg')
+      .then((response) => {
+        if (!response.ok) throw new Error('Harita yÃ¼klenemedi');
+        return response.text();
+      })
+      .then((svgText) => {
+        const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+        parsed.querySelectorAll<SVGGElement>('g[data-city-name]').forEach((group) => {
+          const city = group.dataset.cityName || '';
+          group.setAttribute('data-realty-city', city);
+          group.querySelectorAll('path').forEach((path) => {
+            path.setAttribute('style', 'fill:#CD011E;fill-opacity:0.34;stroke:none;');
+          });
+        });
+        setSvgMarkup(parsed.documentElement.outerHTML);
+      })
+      .catch(() => setMapError(true));
+  }, []);
+
+  const handleMapMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target;
+    const group = target instanceof Element ? target.closest('g[data-realty-city]') : null;
+    const city = group?.getAttribute('data-realty-city');
+    const tooltip = tooltipRef.current;
+    if (!tooltip) return;
+    if (!city) {
+      tooltip.style.display = 'none';
+      return;
+    }
+    tooltip.textContent = city;
+    tooltip.style.transform = 'translate3d(' + (event.clientX + 16) + 'px, ' + (event.clientY + 16) + 'px, 0)';
+    tooltip.style.display = 'block';
+  };
+
+  const hideMapTooltip = () => {
+    if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+  };
+
+  const handleMapClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target;
+    const group = target instanceof Element ? target.closest('g[data-realty-city]') : null;
+    const city = group?.getAttribute('data-realty-city');
+    if (city) navigate('/ilanlarimiz?city=' + encodeURIComponent(city));
+  };
+
+  return (
+    <section className="bg-white py-12 text-slate-900 overflow-hidden border-b border-slate-200">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-red-100 px-4 py-1.5 text-xs font-black tracking-widest text-red-700"><MapPin className="w-4 h-4" />ETKÄ°LEÅÄ°MLÄ° TÃœRKÄ°YE HARÄ°TASI</span>
           <h2 className="mt-3 flex items-center justify-center gap-2 text-2xl sm:text-3xl font-black"><span>TÃœRKÄ°YE'DE REALTY CENTERÂ®</span></h2>
           <p className="mt-2 text-sm font-medium text-slate-600">Ä°lin Ã¼zerine gelin, seÃ§mek iÃ§in tÄ±klayÄ±n.</p>
@@ -235,12 +635,404 @@ function WorldNetworkModal({ onClose }: { onClose: () => void }) {
 function WorldRealtyCenterModule() {
   const offices = [
     { country:'TÃ¼rkiye', city:'Ä°stanbul', pos:[41.01,28.98] as [number,number] }, { country:'TÃ¼rkiye', city:'Ankara', pos:[39.93,32.86] as [number,number] },
-    { country:'Ä°ngiltere', city:'Londra', pos:[51.5,-.12] as [number,number] }, { country:'Almanya', city:'Berlin', pos:[52.52,13.4] as [number,number] }, { country:'Fransa', city:'Paris', pos:[48.86,2.35] as [number,number] }, { country:'Ä°spanya', city:'Madrid', pos:[40.42,-3.7] as [number,number] }, ÛM5¶‰Ëkºwµçv‡B’¢ã‚“°¢vÆ÷ræFD6öÆ÷%7F÷ƒÂw&v&ƒ#RÃÃ3Âã’r“²vÆ÷ræFD6öÆ÷%7F÷‚ãSRÂw&v&ƒƒbÃsÃ#SRÂãB’r“²vÆ÷ræFD6öÆ÷%7F÷ƒÂw&v&ƒ#SRÃ#SRÃ#SRÃ’r“°¢7G‚æf–ÆÅ7G–ÆSÖvÆ÷s²7G‚æf–ÆÅ&V7BƒÃÇv–GF‚Æ†V–v‡B“°¢ö–çG2æÖ‡ö–çCÓâ‡²ââç&ö¦V7B‡ö–çBæÆærÇö–çBæÆBÆævÆR’ÂÇ†§ö–çBæÇ†Ò’’æf–ÇFW"‡ö–çCÓçö–çBç£âÓã‚’ç6÷'B‚†Æ"“Óæç¢Ö"ç¢’æf÷$V6‚‚‡ö–çBÆ’“Óç°¢7G‚æf–ÆÅ7G–ÆSÒw&v&‚r²†’SSÓÓÓòs#RÃÃ3s¢sC"Ã3Ã#r’²rÂr²‡ö–çBæÇ†¤ÖF‚æÖ‚‚ã‚Çö–çBç¢²ã"’’²r’s°¢7G‚æ&Vv–åF‚‚“²7G‚æ&2‡ö–çBç‚Çö–çBç’Çö–çBç£âã#SóãS¢ãrÃÄÖF‚å’£"“²7G‚æf–ÆÂ‚“°¢Ò“°¢6öç7B&ö¦V7FVD‡V'3Ö‡V'2æÖ†‡V#Óç&ö¦V7B†‡V"æÆærÆ‡V"æÆBÆævÆR’“°¢6öææV7F–öç2æf÷$V6‚‚…¶Æ%ÒÆ–æFW‚“Óç°¢6öç7Bg&öÓ×&ö¦V7FVD‡V'5¶ÒÇFó×&ö¦V7FVD‡V'5¶%Ó²–b†g&öÒç£ÂÒãRbgFòç£ÂÒãR—&WGW&ã°¢6öç7B7ƒÒ†g&öÒç‚·Fòç‚’ó"Æ7“Ò†g&öÒç’·Fòç’’ó"ÔÖF‚æÖ–â‡v–GF‚Æ†V–v‡B’¢ãC°¢6öç7BÆ–æSÖ7G‚æ7&VFTÆ–æV$w&F–VçB†g&öÒç‚Æg&öÒç’ÇFòç‚ÇFòç’“²Æ–æRæFD6öÆ÷%7F÷ƒÂw&v&ƒ‚Ã#BÃCRÂã‚’r“¶Æ–æRæFD6öÆ÷%7F÷‚ãRÂw&v&ƒ#RÃÃ3ÂãS‚’r“¶Æ–æRæFD6öÆ÷%7F÷ƒÂw&v&ƒRÃƒÃ#SRÂã#b’r“°¢7G‚ç7G&ö¶U7G–ÆSÖÆ–æS¶7G‚æÆ–æUv–GFƒÓ¶7G‚æ&Vv–åF‚‚“¶7G‚æÖ÷fUFò†g&öÒç‚Æg&öÒç’“¶7G‚çVG&F–47W'fUFò†7‚Æ7’ÇFòç‚ÇFòç’“¶7G‚ç7G&ö¶R‚“°¢6öç7BÒ‡F–ÖR¢ãB¶–æFW‚¢ãr’SÇƒÒƒ×’¢ƒ×’¦g&öÒç‚³"¢ƒ×’§¦7‚·§§Fòç‚Ç“Òƒ×’¢ƒ×’¦g&öÒç’³"¢ƒ×’§¦7’·§§Fòç“°¢7G‚æf–ÆÅ7G–ÆSÒr44CRs¶7G‚ç6†F÷t6öÆ÷#Òr6VccSsrs¶7G‚ç6†F÷t&ÇW#Ó3¶7G‚æ&Vv–åF‚‚“¶7G‚æ&2‡‚Ç’Ã"ãRÃÄÖF‚å’£"“¶7G‚æf–ÆÂ‚“¶7G‚ç6†F÷t&ÇW#Ó°¢Ò“°¢&ö¦V7FVD‡V'2æf–ÇFW"†‡V#Óæ‡V"ç£âÒã‚’æf÷$V6‚‚†‡V"Æ–æFW‚“Óç¶6öç7BVÇ6SÓ2ãB´ÖF‚ç6–â‡F–ÖR¢ã2¶–æFW‚’¢ã“¶7G‚æf–ÆÅ7G–ÆSÒr44CRs¶7G‚æ&Vv–åF‚‚“¶7G‚æ&2†‡V"ç‚Æ‡V"ç’ÇVÇ6RÃÄÖF‚å’£"“¶7G‚æf–ÆÂ‚“¶7G‚æf–ÆÅ7G–ÆSÒr6ffbs¶7G‚æ&Vv–åF‚‚“¶7G‚æ&2†‡V"ç‚Æ‡V"ç’ÃãÃÄÖF‚å’£"“¶7G‚æf–ÆÂ‚“·Ò“°¢&c×&WVW7Dæ–ÖF–öäg&ÖR†G&r“°¢Ó°¢&W6—¦R‚“²6öç7Bö'6W'fW#ÖæWr&W6—¦Tö'6W'fW"‡&W6—¦R“¶ö'6W'fW"æö'6W'fR†6çf2“·&c×&WVW7Dæ–ÖF–öäg&ÖR†G&r“°¢&WGW&â‚“Óç¶6æ6VÄæ–ÖF–öäg&ÖR‡&b“¶ö'6W'fW"æF—66öææV7B‚“·Ó°¢ÒÂµÒ“° ¢&WGW&âÃãÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚’Óâ6WEv÷&ÆD÷Vâ‡G'VR—Ò6Æ74æÖSÒ&w&÷W&VÆF—fRÖ–âÖ‚Õ³#3‡…ÒrÖgVÆÂ7W'6÷"×ö–çFW"÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRFW‡BÖÆVgB6†F÷rÖÆrG&ç6—F–öâ†÷fW#¢×G&ç6ÆFR×’Ó†÷fW#¦&÷&FW"×&VBÓS†÷fW#§6†F÷r×†Â#à¢Æ6çf2&Vc×¶6çf5&VgÒ6Æ74æÖSÒ&'6öÇWFR–ç6WBÓ‚ÖgVÆÂrÖgVÆÂ"&–ÖÆ&VÃÒ$L;fæVâ&VÇG’6VçFW,*âæWGv÷&²†&—F<K"óà¢ÆF—b6Æ74æÖSÒ'ö–çFW"ÖWfVçG2ÖæöæR'6öÇWFR–ç6WBÓ&rÖw&F–VçB×Fò×"g&öÒ×v†—FRó“bf–×v†—FRó3Fò×v†—FRóR"óà¢ÆF—b6Æ74æÖSÒ'&VÆF—fR¢ÓÓR#ãÇ6Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²G&6¶–ærÕ²ãfVÕÒFW‡B×&VBÓs6Ó§FW‡BÖ&6R#äL9Äå”D$TÅE’4TåDU,*ãÂ÷ãÆƒ26Æ74æÖSÒ&×BÓ"FW‡B×†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“S#ä¼;Ç&W6VÂ&IöÆçLKIüKÂöƒ3à¢ÆF—b¶W“×¶æ÷F–6Töfg6WGÒ6Æ74æÖSÒ&æWGv÷&²Öæ÷F–6R×7v×BÓB76R×’Ó"FW‡B×‡2föçBÖ&öÆB#ãÆF—b6Æ74æÖSÒ'rÖf—B&÷VæFVBÖgVÆÂ&÷&FW"&÷&FW"×&VBÓ&r×v†—FRó“"‚Ó2’Ó"FW‡B×6ÆFRÓs6†F÷r×6Ò#ãÇ7â6Æ74æÖSÒ&×"Ó"–æÆ–æRÖ&Æö6²‚Ó"rÓ"&÷VæFVBÖgVÆÂ&r×&VBÓs"óç¶æ÷F–6W5¶æ÷F–6Töfg6WE×ÓÂöF—cãÆF—b6Æ74æÖSÒ'rÖf—B&÷VæFVBÖgVÆÂ&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRó“"‚Ó2’Ó"FW‡B×6ÆFRÓs6†F÷r×6Ò#ãÇ7â6Æ74æÖSÒ&×"Ó"–æÆ–æRÖ&Æö6²‚Ó"rÓ"&÷VæFVBÖgVÆÂ&r×6ÆFRÓ“"óç¶æ÷F–6W5²†æ÷F–6Töfg6WB³’Væ÷F–6W2æÆVæwF…×ÓÂöF—cãÂöF—cà¢Ç7â6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓB&–v‡BÓB&÷VæFVBÖgVÆÂ&rÕ²44CUÒ‚Ó2’Ó"FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×v†—FR÷6—G’Ó6†F÷rÖÆrG&ç6—F–öâw&÷WÖ†÷fW#¦÷6—G’Ó#ä†&—FœK:r(i#Â÷7ãà¢ÂöF—cà¢Âö'WGFöãç·v÷&ÆD÷VâbbÅv÷&ÆDæWGv÷&´ÖöFÂöä6Æ÷6S×²‚’Óâ6WEv÷&ÆD÷Vâ†fÇ6R—ÒóçÓÂóã°§Ğ  ¦gVæ7F–öâÆ—7F–æt6&B‡²—FVÒÓ¢²—FVÓ¢Æ—7F–æt—FVÒÒ’°¢&WGW&â€¢Æ'F–6ÆR6Æ74æÖSÒ&Æ—7F–ærÖ6–æVÖF–2Ö6&B&VÆF—fRfÆW‚‚ÖgVÆÂ7W'6÷"×ö–çFW"fÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâ÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FR6†F÷rÖÖBG&ç6—F–öâÖÆÂGW&F–öâÓ3†÷fW#¦&÷&FW"×&VBÓs†÷fW#§6†F÷rÓ'†Âw&÷W#à¢ÄÆ–æ²Fó×¶ö–ÆâòG¶—FVÒæ–GÖÒ&–ÖÆ&VÃ×¶G¶—FVÒçF—FÆWÒ–ÆìKìK–æ6VÆVÒ6Æ74æÖSÒ&'6öÇWFR–ç6WBÓ¢Ó"óà¢ÆF—b6Æ74æÖSÒ'ö–çFW"ÖWfVçG2ÖæöæR&VÆF—fR¢Ó##à¢ÆF—b6Æ74æÖSÒ&Æ—7F–ærÖ6&B×†÷Fò&VÆF—fR‚ÓC‚÷fW&fÆ÷rÖ†–FFVâ&r×6ÆFRÓ#à¢Æ–Ör ¢7&3×¶—FVÒæ–ÖvWÒ ¢ÇC×¶—FVÒçF—FÆWÒ ¢6Æ74æÖSÒ&&Æö6²‚ÖgVÆÂrÖgVÆÂö&¦V7BÖ6÷fW"ö&¦V7BÖ6VçFW"G&ç6—F–öâGW&F–öâÓSw&÷WÖ†÷fW#§66ÆRÕ³ã3UÒ ¢óà¢ÆF—b6Æ74æÖSÒ&'6öÇWFRF÷Ó2ÆVgBÓ2fÆW‚fÆW‚×w&vÓãR#à¢Ç7š®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍX[ˆÛ\ÜÓ˜[YO^Ø^VÌLH›ÛX›XÚÈ^]Ú]HL‹HKLH›İ[™YÚYİÈ˜XÚÚ[™Ë]ÚY\ˆ	Âˆ][K\HOOH	ÔØ]1,[1,ZÉÈÈ	Ø™Ë\™YMÌ	Èˆ][K\HOOH	ÒÚ\˜[1,ZÉÈÈ	Ø™ËX›YKMŒ	Èˆ	Ø™ËY[Y\˜[MŒ	ÂˆXO‚ˆÚ][K\_BˆÜÜ[‚ˆÜ[ˆÛ\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ^\Û]KNL™Ë]Ú]KÎL˜XÚÙ›ÜX›\‹[YL‹HKLH›İ[™YÚYİÈ˜XÚÚ[™Ë]ÚY\ˆ‚ˆÚ][K˜Ø]YÛÜ_BˆÜÜ[‚ˆÙ]‚‚ˆÜ[ˆÛ\ÜÓ˜[YOH˜XœÛÛ]HÜLÈšYÚLÈ›İ[™Y›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]KÎMHLˆKLH^VÌLH›ÛX›Û^\Û]KMÌÚYİË\ÛH‚ˆÚ][KšYBˆÜÜ[‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™HM‚ˆ]ˆÛ\ÜÓ˜[YOH›X‹Lˆ›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆØ\LÈ‚ˆÛ\ÜÓ˜[YOH^^›ÛX›XÚÈ^\™YMÌÚ][KœšXÙKÓØØ[Tİš[™Ê	İ‹U‰Ê_HÜ[ˆÛ\ÜÓ˜[YOH^\ÛHÚ][K˜İ\œ™[˜Ş_OÜÜ[Ü‚ˆÜ[ˆÛ\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ\\˜Ø\ÙH˜XÚÚ[™Ë]ÚY\ˆ^\Û]KMÚ][Kœ›Ü\U\_OÜÜ[‚ˆÙ]‚ˆÈÛ\ÜÓ˜[YOH^\ÛH›ÛX›XÚÈ^\Û]KNLX‹Lˆ[™KXÛ[\LˆÜ›İ\Zİ™\^\™YMÌ˜[œÚ][ÛˆLL‚ˆÚ][K]_BˆÚÏ‚‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆÜXÙK^LH^^È^\Û]KML›Û\Ù[ZX›ÛX‹LÈ‚ˆX\[ˆÛ\ÜÓ˜[YOHËLËHLËH^\™YMÌ›^\Úš[šËLˆÏ‚ˆÜ[ˆÛ\ÜÓ˜[YOH[˜Ø]HÚ][K˜Ú]_HÈÚ][K™\İšXİHÈÚ][K›™ZYÚ›ÜšÛÙOÜÜ[‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLˆØ\Lˆ^^È^\Û]KMÌ™Ë\Û]KMLL‹H›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLL›ÛX›ÛX‹LÈ‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆÜXÙK^LKH‚ˆ™YÛ\ÜÓ˜[YOHËLËHLËH^\Û]KMˆÏ‚ˆÜ[Ú][Kœ›ÛÛ\ßOÜÜ[‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆÜXÙK^LKH‚ˆX^[Z^™LˆÛ\ÜÓ˜[YOHËLËHLËH^\Û]KMˆÏ‚ˆÜ[Ú][K˜\™X_Hp¬ÜÜ[‚ˆÙ]‚ˆÙ]‚ˆÜ[ˆ\šXKZY[HYHˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]H›İÛKLÈšYÚMLLHËLLİ™\™›İËZY[ˆÜXÚ]KVÌŒL×H‚ˆ[YÈÜ˜ÏH‹Ü˜×ÛÙÛ×ÛÙËœİ™Èˆ[HˆˆÛ\ÜÓ˜[YOHšLLHËX]]ÈX^]Ë[›Û™HˆÏ‚ˆÜÜ[‚ˆÙ]‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™H™[]]™H‹LŒ›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆØ\LÈ›Ü™\‹]›Ü™\‹\Û]KLL™Ë\Û]KMLLÈ^^È‚ˆ]‚ˆÜ[ˆÛ\ÜÓ˜[YOH^VÌLH^\Û]KM›ÛX›Û›ØÚÈ‘[±,qgÛX[ÜÜ[‚ˆÜ[ˆÛ\ÜÓ˜[YOH™›ÛY^˜X›Û^\Û]KNÚ][K˜YÙ[˜[Y_OÜÜ[‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[ËX]]È›^][\ËXÙ[\ˆØ\Lˆ[šÈÏ^ØÚ[[‹ÉÚ][KšYXHÛ\ÜÓ˜[YOHœ™[]]™H‹LÌ[›[™KY›^][\ËXÙ[\ˆØ\LH›İ[™Y[È›Ü™\ˆ›Ü™\‹\™YLŒ™Ë]Ú]HL‹HKLKH›ÛX›XÚÈ^\™YMÌ˜[œÚ][Ûˆİ™\˜™Ë\™YML±,˜Ù[H\œ›İÔšYÚÛ\ÜÓ˜[YOHšLÈËLÈ‹ÏÓ[šÏH™Y^Ø[‰Ú][K˜YÙ[Û™Kœ™\XÙJ×ÊËÙË	ÉÊ_XHÛ\ÜÓ˜[YOHœ™[]]™H‹LÌ›^][\ËXÙ[\ˆÜXÙK^LH›İ[™Y[È™Ë\™YMÌLÈKLKH›ÛX›Û^]Ú]HÚYİË[YÚYİË\™YMÌÌŒ˜[œÚ][Ûˆİ™\˜™Ë\™YNÛ™HÛ\ÜÓ˜[YOHËLÈLÈˆÏÜ[\˜OÜÜ[ØOÙ]‚ˆÙ]‚ˆØ\XÛO‚ˆ
-NÂŸB‚™[˜İ[Ûˆ^YRXÛÛŠ
-HÂˆ™]\›ˆ
-ˆİ™ÂˆšY]Ğ›ŞHŒ‚ˆš[H››Û™H‚ˆİ›ÚÙOH˜İ\œ™[ÛÛÜˆ‚ˆİ›ÚÙUÚYHŒˆ‚ˆİ›ÚÙS[™XØ\Hœ›İ[™‚ˆİ›ÚÙS[™Z›Ú[Hœ›İ[™‚ˆÛ\ÜÓ˜[YOHËMHMH‚ˆ\šXKZY[HYH‚ˆ‚ˆ]H“LˆLœÌËKMÈLMÈLÈLËLËHËLLÔÌˆLˆˆL–ˆˆÏ‚ˆÚ\˜ÛHŞHŒLˆˆŞOHŒLˆˆHŒÈˆÏ‚ˆÜİ™Ï‚ˆ
-NÂŸB‚™[˜İ[Ûˆš[˜[˜ÚX[ÛÛ][ÛœÔYÙJ
-HÂˆÛÛœİÜÙ[Ù]Ù[HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÙ[XİYÛÛ][Û‹Ù]Ù[XİYÛÛ][Û—HH\ÙTİ]J	ÉÊNÂˆÛÛœİÜÙ[XİY[œİ]][Û‹Ù]Ù[XİY[œİ]][Û—HH\ÙTİ]J	ÉÊNÂ‚ˆÛÛœİÛÛ][ÛœÈHÂˆÂˆ]Nˆ	Ğ˜[šØ[\‰Ëˆ\ØÜš\[Ûˆ	ÒÛÛ]Ü™Y\ÚHÙpéÙ[™ZÛ\šH™H0í™[YH[›\±,HpéÚ[ˆ[\Ûqgİ\[‹‰Ëˆ[œİ]][ÛœÎˆÂˆÉÖš\˜X]˜[šØ\ñ,IË	Şš\˜X]˜[šË˜ÛÛK‰Ë	Şš\˜X]˜[šØ\ÚI×KÉÕ0ïšÚ^YH1,1gÈ˜[šØ\ñ,IË	Ú\Ø˜[šË˜ÛÛK‰Ë	İ\šÚ^YZ\Ø˜[šØ\ÚI×KÉÑØ\˜[H•IË	ÙØ\˜[X˜˜K˜ÛÛK‰Ë	ÙØ\˜[X˜˜I×KˆÉĞZØ˜[šÉË	ØZØ˜[šË˜ÛÛIË	ØZØ˜[šÉ×KÉÖX\1,HÜ™YIË	ŞX\ZÜ™YK˜ÛÛK‰Ë	ŞX\ZÜ™YI×KÉÒ[Ø˜[šÉË	Ú[Ø˜[šË˜ÛÛK‰Ë	Ú[Ø˜[šÉ×KÉÕ˜Zñ,Y˜[šÉË	İ˜ZÚY˜˜[šË˜ÛÛK‰Ë	İ˜ZÚY˜˜[šÉ×BˆBˆKˆÂˆ]Nˆ	ÒØ]1,[1,[H˜[šØ[\±,IËˆ6ÓMm¢G§²ÚîÆ­yİ¥µ”—••­Ñ¥È¸ğ½‘¥Øùô(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µˆ´ÜˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸Äá•µtÑ•áĞµÉ•´ÜÀÀˆùí…Ñ¥Ù•M½±ÕÑ¥½¸¹Ñ¥Ñ±”¹Ñ½UÁÁ•É…Í” ¥ô=I5Tğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÔÀˆùM¥é”ÕåÕ¸Í—•¹—}¤‰¥É±¥­Ñ”‘—}•É±•¹‘¥É•±¥´¸ğ½ Èøğ½‘¥Øø(€€€€€€€€€€ñ™½É´½¹MÕ‰µ¥ĞõíÍÕ‰µ¥Ñô±…ÍÍ9…µ”ô‰É¥…À´ĞÍ´éÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùM=eñ¥¹ÁÕĞÉ•ÅÕ¥É•¹…µ”ô‰¹…µ”ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùQ1=8ñ¥¹ÁÕĞÉ•ÅÕ¥É•¹…µ”ô‰Á¡½¹”ˆÑåÁ”ô‰Ñ•°ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´ÈˆùµA=MQñ¥¹ÁÕĞ¹…µ”ô‰•µ…¥°ˆÑåÁ”ô‰•µ…¥°ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ¥¹ÁÕĞÑåÁ”ô‰¡¥‘‘•¸ˆ¹…µ”ô‰Í½±ÕÑ¥½¸ˆÙ…±Õ”õí…Ñ¥Ù•M½±ÕÑ¥½¸¹Ñ¥Ñ±•ô¼øñ¥¹ÁÕĞÑåÁ”ô‰¡¥‘‘•¸ˆ¹…µ”ô‰¥¹ÍÑ¥ÑÕÑ¥½¸ˆÙ…±Õ”õíÍ•±•Ñ•‘%¹ÍÑ¥ÑÕÑ¥½¸ñğ€•¹•°Ñ…±•Àô¼ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùeKÁ59-U0	3Àñ¥¹ÁÕĞ¹…µ”ô‰ÁÉ½Á•ÉÑåY…±Õ”ˆ¥¹ÁÕÑ5½‘”ô‰¹Õµ•É¥ŒˆÁ±…•¡½±‘•Èô‹YÉ¸¸€Ô¸ÀÀÀ¸ÀÀÀQ0ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùA{Á9PQUQI$ñ¥¹ÁÕĞ¹…µ”ô‰‘½İ¹A…åµ•¹Ğˆ¥¹ÁÕÑ5½‘”ô‰¹Õµ•É¥ŒˆÁ±…•¡½±‘•Èô‹YÉ¸¸€Ä¸ÔÀÀ¸ÀÀÀQ0ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùQ1@Á18Á99M58ñ¥¹ÁÕĞ¹…µ”ô‰É•ÅÕ•ÍÑ•‘µ½Õ¹Ğˆ¥¹ÁÕÑ5½‘”ô‰¹Õµ•É¥ŒˆÁ±…•¡½±‘•Èô‹YÉ¸¸€Ì¸ÔÀÀ¸ÀÀÀQ0ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùYQIÁ#ÀñÍ•±•Ğ¹…µ”ô‰Ñ•É´ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀ‰œµİ¡¥Ñ”À´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆøñ½ÁÑ¥½¸ù	•±¥É±•µ•‘¥´ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸øÄÈäğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸øÈĞäğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸øÌØäğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸øØÀäğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸øÄÈÀäğ½½ÁÑ¥½¸øğ½Í•±•Ğøğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´Èˆù,%-15ñÑ•áÑ…É•„¹…µ”ô‰µ•ÍÍ…”ˆÉ½İÌõìÑôÁ±…•¡½±‘•Èô‰¥¹…¹Íµ…¸¥¡Ñ¥å…Å»ÅëÄÙ”¥±¥±•¹‘§}¥¹¥è…åÉ¥µ•¹­Õ³ğ¯ÅÍ…„…¹±…Ñ…‰¥±¥ÉÍ¥¹¥è¸ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É•Í¥é”µäÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´Ì¸ÔÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”™½ÕÌé‰½É‘•ÈµÉ•´ÜÀÀˆ¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´ÌÑ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ØÀÀÍ´é½°µÍÁ…¸´Èˆøñ¥¹ÁÕĞÉ•ÅÕ¥É•¹…µ”ô‰­Ù­¬ˆÙ…±Õ”ô‰=¹…å±…¹“ÄˆÑåÁ”ô‰¡•­‰½àˆ±…ÍÍ9…µ”ô‰µĞ´Äˆ¼øñÍÁ…¸øñ1¥¹¬Ñ¼ôˆ½­Ù­¬ˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰½±Ñ•áĞµÉ•´ÜÀÀÕ¹‘•É±¥¹”ˆù-Y-,å“Å¹±…Ñµ„5•Ñ¹¤ğ½1¥¹¬ø¹¤½­Õ‘Õ´Ù”‰‡}ÙÕÉÕ´­…ÁÍ…·Å¹‘„¥±•Ñ§}¥µ”—¥±µ•Í¥¹¤­…‰Õ°•‘¥å½ÉÕ´¸ğ½ÍÁ…¸øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´ÌÑ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ØÀÀÍ´é½°µÍÁ…¸´Èˆøñ¥¹ÁÕĞÉ•ÅÕ¥É•¹…µ”ô‰Í¥Ñ•-Õ±±…¹¥´ˆÙ…±Õ”ô‰=¹…å±…¹“ÄˆÑåÁ”ô‰¡•­‰½àˆ±…ÍÍ9…µ”ô‰µĞ´Äˆ¼øñÍÁ…¸øñ1¥¹¬Ñ¼ôˆ½­Õ±±…¹¥´µ­½ÍÕ±±…É¤ˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰½±Ñ•áĞµÉ•´ÜÀÀÕ¹‘•É±¥¹”ˆùM¥Ñ”-Õ±±…»Å´-¿}Õ±±…ËÄğ½1¥¹¬ø»Ä½­Õ‘Õ´Ù”­…‰Õ°•‘¥å½ÉÕ´¸ğ½ÍÁ…¸øğ½±…‰•°ø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ğˆ±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÜÀÀÁà´ØÁä´ĞÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”Í¡…‘½Üµ±œ¡½Ù•Èé‰œµÉ•´àÀÀÍ´é½°µÍÁ…¸´ÈˆùÁ99M0ƒYkq4Q1Á7ÀY9Hğ½‰ÕÑÑ½¸ø(€€€€€€€€€€ğ½™½É´ø(€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€ğ½‘¥Øø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´à™±•àµ¥¸µ ´ØĞ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•´Íá°‰½É‘•È´È‰½É‘•Èµ‘…Í¡•‰½É‘•ÈµÍ±…Ñ”´ÌÀÀ‰œµİ¡¥Ñ”À´àÑ•áĞµ•¹Ñ•Èˆøñ‘¥Øøñ	É¥•™…Í”±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼ ´ÄÀÜ´ÄÀÑ•áĞµÉ•´ÜÀÀˆ¼øñ È±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù	¥ÈƒŸÙëñ´Í—¥¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ÔÀÀˆù-…ÓÅ³Å´‰…¹­…±…ËÄ°‰…¹­…±…ÈÙ•å„•Ù¥´Í¥ÍÑ•µ±•É¥¹‘•¸‰¥É¥¹”ÓÅ­±…çÅ¸ìƒÙ¹”­ÕÉÕµ±…ËÄŸÙËñ¸°…É“Å¹‘…¸Ñ…±•À™½ÉµÕ¹Ô‘½±‘ÕÉÕ¸¸ğ½Àøğ½‘¥Øøğ½‘¥Øùô((€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´àÉ½Õ¹‘•´Éá°‰œµÍ±…Ñ”´äÔÀÀ´ØÑ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ÌÀÀˆù	‡}ÙÕÉÕ¹Õè‰¥È­É•‘¤Ù•å„™¥¹…¹Íµ…¸½¹…çÄ‘—}¥±‘¥È¸UåÕ¹±Õ¬Ù•f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³Ræ–†’¶üY÷VÆÆ"–Æv–Æ’·W'VÇ\YöÆ,KâF\IöW&ÆVæF—&ÖW6–æRF&–F—"ãÂöF—cà¢Â÷6V7F–öãà¢ÂöF—cã°§Ğ ¦gVæ7F–öâg&æ6†—6T÷÷'GVæ—F–W5vR‚’°¢W6TVffV7B‚‚’Óâ°¢6öç7B&Wf–÷W5F—FÆRÒFö7VÖVçBçF—FÆS°¢Fö7VÖVçBçF—FÆRÒtv—&–ÖVæ·VÂg&æ6†—6RlK'6FÆ,KÂ&VÇG’6VçFW,*âs° ¢6öç7BÖævVC¢…DÔÄVÆVÖVçEµÒÒµÓ°¢6öç7B6WDÖWFÒ‡6VÆV7F÷#¢7G&–ærÂGG&–'WFW3¢&V6÷&CÇ7G&–ærÂ7G&–æsâ’Óâ°¢ÆWBVÆVÖVçBÒFö7VÖVçBæ†VBçVW'•6VÆV7F÷#Ä…DÔÄVÆVÖVçCâ‡6VÆV7F÷"“°¢–b‚VÆVÖVçB’°¢VÆVÖVçBÒFö7VÖVçBæ7&VFTVÆVÖVçB‡6VÆV7F÷"ç7F'G5v—F‚‚vÆ–æ²r’òvÆ–æ²r¢vÖWFr“°¢Fö7VÖVçBæ†VBæVæD6†–ÆB†VÆVÖVçB“°¢ÖævVBçW6‚†VÆVÖVçB“°¢Ğ¢ö&¦V7BæVçG&–W2†GG&–'WFW2’æf÷$V6‚‚…¶¶W’ÂfÇVUÒ’ÓâVÆVÖVçCòç6WDGG&–'WFR†¶W’ÂfÇVR’“°¢Ó° ¢6öç7B6æöæ–6ÅW&ÂÒG·v–æF÷ræÆö6F–öâæ÷&–v–çÒög&æ6†—6RÖf—'6FÆ&–°¢6WDÖWF‚vÖWF¶æÖSÒ&FW67&—F–öâ%ÒrÂ²æÖS¢vFW67&—F–öârÂ6öçFVçC¢u&VÇG’6VçFW,*âv—&–ÖVæ·VÂg&æ6†—6R6—7FVÖ—–ÆR¶VæF’VÖÆ²öf—6–æ—¦’|;Ì:vÌ;ÂÖ&¶ÂFV¶æöÆö¦’Â\Iö—F–ÒfR¦&ÆÖFW7F\Iö—–ÆR,;Çœ;ÇL;Æââg&æ6†—6RlK'6FÆ,KìK¶\YöfVF–âârÒ“°¢6WDÖWF‚vÆ–æµ·&VÃÒ&6æöæ–6Â%ÒrÂ²&VÃ¢v6æöæ–6ÂrÂ‡&Vc¢6æöæ–6ÅW&ÂÒ“°¢6WDÖWF‚vÖWF·&÷W'G“Ò&ös§F—FÆR%ÒrÂ²&÷W'G“¢vös§F—FÆRrÂ6öçFVçC¢tv—&–ÖVæ·VÂg&æ6†—6RlK'6FÆ,KÂ&VÇG’6VçFW,*ârÒ“°¢6WDÖWF‚vÖWF·&÷W'G“Ò&ös¦FW67&—F–öâ%ÒrÂ²&÷W'G“¢vös¦FW67&—F–öârÂ6öçFVçC¢u&VÇG’6VçFW,*â–ÆRv—&–ÖVæ·VÂ6V·L;g,;ÆæFR|;Ì:vÌ;Â&—"Ö&¶fR<;Ç&L;Ç,;ÆÆV&–Æ—"œYòÖöFVÆ’·W'VâârÒ“°¢6WDÖWF‚vÖWF·&÷W'G“Ò&ös§G—R%ÒrÂ²&÷W'G“¢vös§G—RrÂ6öçFVçC¢wvV'6—FRrÒ“°¢6WDÖWF‚vÖWF·&÷W'G“Ò&ös§W&Â%ÒrÂ²&÷W'G“¢vös§W&ÂrÂ6öçFVçC¢6æöæ–6ÅW&ÂÒ“° ¢&WGW&â‚’Óâ°¢Fö7VÖVçBçF—FÆRÒ&Wf–÷W5F—FÆS°¢ÖævVBæf÷$V6‚‚†VÆVÖVçB’ÓâVÆVÖVçBç&VÖ÷fR‚’“°¢Ó°¢ÒÂµÒ“° ¢6öç7B&VæVf—G2Ò°¢²t|;Ì:vÌ;ÂÖ&¶F\IöW&’rÂu&VÇG’6VçFW,*â·W'V×6Â¶–ÖÆœIö’Â6V·L;g&VÂFVæW––Ö’fR,;Çœ;Ç–VâIüK–Æ'VÇVæG\I÷VçW¢,;fÆvVFR|;ÇfVâfW&VâÂ|;Ì:vÌ;Â&—"Ö&¶Æ|K<KöÇ\Y÷GW'VââuÒÀ¢²uFV¶æöÆö¦’ÇG–K<KrÂu÷'Fl;g’7VçV×RÂvVÆœYöÖœYò–ÆâÇG–K<KÂÜ;ÌY÷FW&’FÆWÆW&–æ–âœ;fæWF–Ö’fRfW&’öF¶ÌK¶&"<;Ç&\:vÆW&–æ’FW7FV¶ÆW–VâF–¦—FÂ&:vÆ&Fâ–&&ÆìKââuÒÀ¢²t\Iö—F–ÒfR¶FVÖ’rÂtöf—26†—ÆW&’–ÆRFìKYöÖæÆ,Kâ6LKYòÂ÷'Fl;g’Â–ÆWFœYö–ÒfRV¶—œ;fæWF–Ö’–WF¶–æÆ–¶ÆW&–æ’vVÆœY÷F—&Vâ6—7FVÖÆ’\Iö—F–Ò–¶ÆYüKÜKæF†–ÂöÇVââuÒÀ¢²u¦&ÆÖFW7F\Iö’rÂt·W'V×6Â6÷7–ÂÖVG–ÖFW'–ÆÆW&’Â¶×ç–Æ"Â:|KÌKYò:vÌKYöÖÆ,KfRÖ&¶–ÆWFœYö–Ö—–ÆR,;fÆvVæ—¦FRF†|;g,;Æì;Ç"Œ:&ÆRvVÆ–ââuÒÀ¢²tvVæœYòKYòIüKrÂu&VÇG’6VçFW,*âöf—6ÆW&’fRFìKYöÖæÆ,K–ÆœYò&—&ÆœIö’–&²÷'Fl;g’ÂÜ;ÌY÷FW&’fRœ;fæÆVæF—&ÖRlK'6FÆ,KìK¬KvVæœYöÆWF–ââuÒÀ¢²t÷W&7–öæVÂFW7FV²rÂtöf—2†¬K&ÌKIüKæFâV¶—–KÆæÖ<KæfR,;Çœ;ÆÖRÆìKæ¶F"–‡F—–:rGW–G\I÷VçW¢·W'V×6Â&V†&W&Æ–·FVâf–FÆìKââuĞ¢Ó°¢6öç7B&ö6W72Ò°¢²srÂt&Y÷gW'RrÂtg&æ6†—6Rf÷&×R;Ç¦W&–æFVâFVÖVÂ&–Æv–ÆW&–æ—¢ÌKìK"âuÒÀ¢²s"rÂ|9fâ|;g,;ÌYöÖRrÂt,;fÆvRÂ–LK,KÒÆìKfR†VFVfÆW&–æ—¢&—&Æ–·FRF\IöW&ÆVæF—&–Æ—"âuÒÀ¢²s2rÂt,;fÆvRfRKYòÖöFVÆ’æÆ—¦’rÂuÆæÆæâöf—6–â,;fÆvW6VÂ÷Fç6—–VÆ’fRœYòÖöFVÆ’VÆRÌKìK"âuÒÀ¢²sBrÂt×WF&¶BfR·W'VÇVÒrÂt·W'V×6Â7FæF'FÆ"–ÆRöf—2†¬K&ÌK¶Æ,KÆæÆìK"âuÒÀ¢²sRrÂt\Iö—F–ÒfR:|KÌKYòrÂtV¶—Â&VÇG’6VçFW,*â:vÌKYöÖ–¶ÆYüKÜKæW–wVâ&œ:v–ÖFR†¬K&ÆìK"âuÒÀ¢²sbrÂu<;Ç&V¶Æ’vVÆœYö–ÒrÂt\Iö—F–ÒÂFV¶æöÆö¦’Â¦&ÆÖfR÷W&7–öâ<;Ç&\:vÆW&—–ÆRvVÆœYö–ÒFW7FV¶ÆVæ—"âuĞ¢Ó°¢6öç7B7V—F&ÆTf÷"Ò°¢tv—&–ÖVæ·VÂ6V·L;g,;ÆæFR¶VæF’œYö–æ’·W&Ö²—7FW–Vâv—&œYö–Ö6–ÆW"rÀ¢tÖWf7WBVÖÆ²öf—6–æ’|;Ì:vÌ;Â&—"Ö&¶ÇLKæF,;Çœ;ÇFÖV²—7FW–VâœYöÆWFÖVÆW"rÀ¢tv—&–ÖVæ·VÂ6V·L;g,;ÆæR–LK,KÒ–Ö²—7FW–VâœYò–ç6æÆ,KrÀ¢u6LKYòfRV¶—œ;fæWF–Ö’FVæW––Ö–æ’–Væ’&—"œYòÖöFVÆ–æRFYüKÖ²—7FW–VæÆW"rÀ¢t,;fÆvW6–æFR|;Ì:vÌ;Â&—"v—&–ÖVæ·VÂ÷&væ—¦7–öçR·W&ÖœK†VFVfÆW–Vâ&öfW7–öæVÆÆW"p¢Ó°¢6öç7B7W÷'E6W'f–6W2Ò°¢²F—FÆS¢t\Iö—F–ÒFW7F\Iö’rÂFW‡C¢u6LKYòÂÜ;ÌY÷FW&’–ÆœYö¶–ÆW&’Â÷'Fl;g’œ;fæWF–Ö’fRv—&–ÖVæ·VÂÖWg§VLKÆæÆ,KæF<;Ç&V¶Æ’vVÆœYö–ÒöF¶ÌK\Iö—F–ÖÆW"ârÂ–6öã¢w&GVF–öä6ÒÀ¢²F—FÆS¢t‡V·V²FW7F\Iö’rÂFW‡C¢tv—&–ÖVæ·VÂœYöÆVÖÆW&–æFR¶,YüKÆYüKÆ&–ÆV6V²‡V·V¶’<;Ç&\:vÆW&R–ÆœYö¶–â·W'V×6Âœ;fæÆVæF—&ÖRfR&–Æv–ÆVæF—&ÖRârÂ–6öã¢6†–VÆDÆW'BÒÀ¢²F—FÆS¢u<;g¦Æ\YöÖRFW7F\Iö’rÂFW‡C¢u–WF¶–ÆVæF—&ÖRÂ¶—&ÆÖÂ6LKYòfR†—¦ÖWB<;Ç&\:vÆW&–æFR–‡F—–=´Ó[h‘éì¶»§q«^tion id="avantajlar" className="py-20">
+    { country:'Ä°ngiltere', city:'Londra', pos:[51.5,-.12] as [number,number] }, { country:'Almanya', city:'Berlin', pos:[52.52,13.4] as [number,number] }, { country:'Fransa', city:'Paris', pos:[48.86,2.35] as [number,number] }, { country:'Ä°spanya', city:'Madrid', pos:[40.42,-3.7] as [number,number] }, { country:'Ä°talya', city:'Roma', pos:[41.9,12.5] as [number,number] }, { country:'Hollanda', city:'Amsterdam', pos:[52.37,4.9] as [number,number] }, { country:'Ä°sveÃ§', city:'Stockholm', pos:[59.33,18.07] as [number,number] }, { country:'Polonya', city:'VarÅŸova', pos:[52.23,21.01] as [number,number] },
+    { country:'ABD', city:'New York', pos:[40.71,-74] as [number,number] }, { country:'Kanada', city:'Toronto', pos:[43.65,-79.38] as [number,number] }, { country:'Meksika', city:'Mexico City', pos:[19.43,-99.13] as [number,number] }, { country:'Brezilya', city:'SÃ£o Paulo', pos:[-23.55,-46.63] as [number,number] }, { country:'Arjantin', city:'Buenos Aires', pos:[-34.6,-58.38] as [number,number] },
+    { country:'BirleÅŸik Arap Emirlikleri', city:'Dubai', pos:[25.2,55.27] as [number,number] }, { country:'Hindistan', city:'Mumbai', pos:[19.08,72.88] as [number,number] }, { country:'Singapur', city:'Singapur', pos:[1.35,103.82] as [number,number] }, { country:'Japonya', city:'Tokyo', pos:[35.68,139.69] as [number,number] }, { country:'Avustralya', city:'Sidney', pos:[-33.87,151.21] as [number,number] }, { country:'Yeni Zelanda', city:'Auckland', pos:[-36.85,174.76] as [number,number] }
+  ];
+  const [zoom, setZoom] = useState(2);
+  const WorldZoomListener = () => { useMapEvents({ zoomend: (event) => setZoom(event.target.getZoom()) }); return null; };
+  const markerIcon = L.divIcon({ className:'realty-world-marker-shell', html:'<span class="realty-world-marker"><img src="/favicon.png" alt="Realty Center ev simgesi" class="realty-world-brand-mark" /></span>', iconSize:[34,34], iconAnchor:[17,17] });
+  return <section className="relative overflow-hidden border-t border-slate-200 bg-[#f5f8fc] py-14 sm:py-20"><div className="pointer-events-none absolute left-0 top-0 h-72 w-72 rounded-full bg-red-100/50 blur-3xl"/><div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-sky-100/70 blur-3xl"/><div className="relative mx-auto max-w-7xl px-6 lg:px-12"><div className="mb-8 flex items-end justify-between gap-5"><h2 className="text-4xl font-black tracking-tight text-[#071d3b] sm:text-5xl">DÃœNYADA <span className="text-red-700">REALTY CENTERÂ®</span><span className="home-title-en">GLOBAL REAL ESTATE NETWORK</span></h2><span className="hidden items-center gap-2 rounded-full border border-red-100 bg-white px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-sm sm:inline-flex"><Globe className="h-4 w-4 text-red-700"/>20+ ÃœLKE</span></div><div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-3 shadow-[0_24px_60px_rgba(15,23,42,.11)] sm:p-5"><div className="relative h-[390px] overflow-hidden rounded-2xl border border-slate-100 bg-[#edf3fa] sm:h-[540px]"><MapContainer center={[22,8]} zoom={2} minZoom={2} maxZoom={8} scrollWheelZoom className="h-full w-full"><TileLayer attribution="&copy; OpenStreetMap contributors &copy; CARTO" url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png"/><WorldZoomListener />{offices.map((office,index) => <Marker key={`${office.country}-${office.city}`} position={office.pos} icon={markerIcon}><Tooltip permanent direction="top" offset={[0,-14]} opacity={1}>{zoom >= 4 ? office.city : offices.findIndex((item) => item.country === office.country) === index ? office.country : ''}</Tooltip><Popup><strong>{office.city}</strong><br/>{office.country}<br/><span className="text-xs text-red-700">REALTY CENTERÂ® aÄŸÄ±</span></Popup></Marker>)}</MapContainer></div></div></div></section>;
+}
+
+function RealtyNetworkActivityPanel() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [noticeOffset, setNoticeOffset] = useState(0);
+  const [worldOpen, setWorldOpen] = useState(false);
+  const notices = [
+    'Londraâ€™da yeni ofis aÃ§Ä±ldÄ±', 'Ankaraâ€™da 1 yeni ilan eklendi', 'Dubaiâ€™de yeni danÄ±ÅŸman aÄŸa katÄ±ldÄ±',
+    'Ä°stanbulâ€™da 3 portfÃ¶y gÃ¼ncellendi', 'Berlinâ€™den yatÄ±rÄ±m talebi alÄ±ndÄ±'
+  ];
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setNoticeOffset((value) => (value + 1) % notices.length), 4400);
+    return () => window.clearInterval(timer);
+  }, [notices.length]);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext('2d');
+    if (!canvas || !ctx) return;
+    let raf = 0, width = 0, height = 0;
+    const random = (seed: number) => { const value = Math.sin(seed * 91.731) * 43758.5453; return value - Math.floor(value); };
+    const regions = [[-102,40,23,19,160],[-63,-16,15,24,115],[11,48,19,13,135],[22,7,17,26,145],[92,34,34,18,210],[135,-24,15,10,65]] as const;
+    const points = regions.flatMap(([lng,lat,lngSpread,latSpread,count], region) => Array.from({ length: count }, (_, i) => ({
+      lng: lng + (random(i*7+region*47)-.5) * lngSpread * 2,
+      lat: lat + (random(i*11+region*23)-.5) * latSpread * 2,
+      alpha: .16 + random(i+region*13) * .35
+    })));
+    const hubs = [{lng:32.86,lat:39.93},{lng:-.12,lat:51.5},{lng:55.27,lat:25.2},{lng:-74,lat:40.7},{lng:28.98,lat:41.01},{lng:151.2,lat:-33.8}];
+    const connections = [[0,1],[0,2],[1,3],[4,0],[2,5],[3,4]];
+
+    const resize = () => {
+      const box = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width=box.width; height=box.height; canvas.width=Math.max(1,Math.floor(width*dpr)); canvas.height=Math.max(1,Math.floor(height*dpr)); ctx.setTransform(dpr,0,0,dpr,0,0);
+    };
+    const project = (lng:number,lat:number,angle:number) => {
+      const longitude=lng*Math.PI/180+angle, latitude=lat*Math.PI/180;
+      const x=Math.cos(latitude)*Math.sin(longitude), y=Math.sin(latitude), z=Math.cos(latitude)*Math.cos(longitude);
+      const size=Math.min(width,height)*.67;
+      return {x:width*.66+x*size, y:height*.54-y*size, z};
+    };
+    const draw = (time:number) => {
+      const angle=time*.000055;
+      ctx.clearRect(0,0,width,height);
+      const glow=ctx.createRadialGradient(width*.65,height*.52,8,width*.65,height*.52,Math.min(width,height)*.8);
+      glow.addColorStop(0,'rgba(205,1,30,.1)'); glow.addColorStop(.55,'rgba(86,71,255,.04)'); glow.addColorStop(1,'rgba(255,255,255,0)');
+      ctx.fillStyle=glow; ctx.fillRect(0,0,width,height);
+      points.map(point=>({ ...project(point.lng,point.lat,angle), alpha:point.alpha })).filter(point=>point.z>-0.18).sort((a,b)=>a.z-b.z).forEach((point,i)=>{
+        ctx.fillStyle='rgba('+(i%5===0?'205,1,30':'42,31,120')+','+(point.alpha*Math.max(.18,point.z+.2))+')';
+        ctx.beginPath(); ctx.arc(point.x,point.y,point.z>.25?1.05:.7,0,Math.PI*2); ctx.fill();
+      });
+      const projectedHubs=hubs.map(hub=>project(hub.lng,hub.lat,angle));
+      connections.forEach(([a,b],index)=>{
+        const from=projectedHubs[a],to=projectedHubs[b]; if(from.z<-.05&&to.z<-.05)return;
+        const cx=(from.x+to.x)/2,cy=(from.y+to.y)/2-Math.min(width,height)*.14;
+        const line=ctx.createLinearGradient(from.x,from.y,to.x,to.y); line.addColorStop(0,'rgba(18,24,45,.18)');line.addColorStop(.5,'rgba(205,1,30,.58)');line.addColorStop(1,'rgba(115,80,255,.26)');
+        ctx.strokeStyle=line;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(from.x,from.y);ctx.quadraticCurveTo(cx,cy,to.x,to.y);ctx.stroke();
+        const p=(time*.00014+index*.17)%1,px=(1-p)*(1-p)*from.x+2*(1-p)*p*cx+p*p*to.x,py=(1-p)*(1-p)*from.y+2*(1-p)*p*cy+p*p*to.y;
+        ctx.fillStyle='#CD011E';ctx.shadowColor='#ef6577';ctx.shadowBlur=13;ctx.beginPath();ctx.arc(px,py,2.5,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
+      });
+      projectedHubs.filter(hub=>hub.z>-.08).forEach((hub,index)=>{const pulse=3.4+Math.sin(time*.003+index)*.9;ctx.fillStyle='#CD011E';ctx.beginPath();ctx.arc(hub.x,hub.y,pulse,0,Math.PI*2);ctx.fill();ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(hub.x,hub.y,1.1,0,Math.PI*2);ctx.fill();});
+      raf=requestAnimationFrame(draw);
+    };
+    resize(); const observer=new ResizeObserver(resize);observer.observe(canvas);raf=requestAnimationFrame(draw);
+    return()=>{cancelAnimationFrame(raf);observer.disconnect();};
+  }, []);
+
+  return <><button type="button" onClick={() => setWorldOpen(true)} className="group relative min-h-[238px] w-full cursor-pointer overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-lg transition hover:-translate-y-1 hover:border-red-500 hover:shadow-xl">
+    <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-label="DÃ¶nen Realty CenterÂ® Network haritasÄ±" />
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/96 via-white/30 to-white/5" />
+    <div className="relative z-10 p-5"><p className="text-sm font-black tracking-[.16em] text-red-700 sm:text-base">DÃœNYADA REALTY CENTERÂ®</p><h3 className="mt-2 text-xl font-black text-slate-950">KÃ¼resel baÄŸlantÄ± aÄŸÄ±</h3>
+      <div key={noticeOffset} className="network-notice-swap mt-4 space-y-2 text-xs font-bold"><div className="w-fit rounded-full border border-red-100 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-red-700"/>{notices[noticeOffset]}</div><div className="w-fit rounded-full border border-slate-200 bg-white/92 px-3 py-2 text-slate-700 shadow-sm"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-slate-900"/>{notices[(noticeOffset+1)%notices.length]}</div></div>
+      <span className="absolute bottom-4 right-4 rounded-full bg-[#CD011E] px-3 py-2 text-[10px] font-black text-white opacity-0 shadow-lg transition group-hover:opacity-100">HaritayÄ± aÃ§ â†’</span>
+    </div>
+  </button>{worldOpen && <WorldNetworkModal onClose={() => setWorldOpen(false)} />}</>;
+}
+
+
+function ListingCard({ item }: { item: ListingItem }) {
+  return (
+    <article className="listing-cinematic-card relative flex h-full cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:border-red-700 hover:shadow-2xl group">
+      <Link to={`/ilan/${item.id}`} aria-label={`${item.title} ilanÄ±nÄ± incele`} className="absolute inset-0 z-10" />
+      <div className="pointer-events-none relative z-20">
+        <div className="listing-card-photo relative h-48 overflow-hidden bg-slate-100">
+          <img 
+            src={item.image} 
+            alt={item.title} 
+            className="block h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.035]"
+          />
+          <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
+            <span className={`text-[10px] font-black text-white px-2.5 py-1 rounded shadow tracking-wider ${
+              item.type === 'SatÄ±lÄ±k' ? 'bg-red-700' : item.type === 'KiralÄ±k' ? 'bg-blue-600' : 'bg-emerald-600'
+            }`}>
+              {item.type}
+            </span>
+            <span className="text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded shadow tracking-wider">
+              {item.category}
+            </span>
+          </div>
+
+          <span className="absolute top-3 right-3 rounded border border-slate-200 bg-white/95 px-2 py-1 text-[10px] font-bold text-slate-700 shadow-sm">
+            {item.id}
+          </span>
+        </div>
+
+        <div className="relative p-4">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <p className="text-xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} <span className="text-sm">{item.currency}</span></p>
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">{item.propertyType}</span>
+          </div>
+          <h3 className="text-sm font-black text-slate-900 mb-2 line-clamp-2 group-hover:text-red-700 transition h-10">
+            {item.title}
+          </h3>
+
+          <div className="flex items-center space-x-1 text-xs text-slate-500 font-semibold mb-3">
+            <MapPin className="w-3.5 h-3.5 text-red-700 flex-shrink-0" />
+            <span className="truncate">{item.city} / {item.district} / {item.neighborhood}</span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 text-xs text-slate-700 bg-slate-50 p-2.5 rounded-xl border border-slate-100 font-bold mb-3">
+            <div className="flex items-center space-x-1.5">
+              <Bed className="w-3.5 h-3.5 text-slate-400" />
+              <span>{item.rooms}</span>
+            </div>
+            <div className="flex items-center space-x-1.5">
+              <Maximize2 className="w-3.5 h-3.5 text-slate-400" />
+              <span>{item.area} mÂ²</span>
+            </div>
+          </div>
+          <span aria-hidden="true" className="pointer-events-none absolute bottom-3 right-4 h-11 w-10 overflow-hidden opacity-[0.13]">
+            <img src="/rc_logo_og.svg" alt="" className="h-11 w-auto max-w-none" />
+          </span>
+        </div>
+      </div>
+
+      <div className="pointer-events-none relative z-20 flex items-center justify-between gap-3 border-t border-slate-100 bg-slate-50 p-3 text-xs">
+        <div>
+          <span className="text-[10px] text-slate-400 font-bold block">DanÄ±ÅŸman</span>
+          <span className="font-extrabold text-slate-800">{item.agentName}</span>
+        </div>
+        <div className="pointer-events-auto flex items-center gap-2"><Link to={`/ilan/${item.id}`} className="relative z-30 inline-flex items-center gap-1 rounded-lg border border-red-200 bg-white px-2.5 py-1.5 font-black text-red-700 transition hover:bg-red-50">Ä°ncele <ArrowRight className="h-3 w-3"/></Link><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} className="relative z-30 flex items-center space-x-1 rounded-lg bg-red-700 px-3 py-1.5 font-bold text-white shadow-md shadow-red-700/20 transition hover:bg-red-800"><Phone className="w-3 h-3" /><span>Ara</span></a></div>
+      </div>
+    </article>
+  );
+}
+
+function EyeIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-5 h-5"
+      aria-hidden="true"
+    >
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+function FinancialSolutionsPage() {
+  const [sent, setSent] = useState(false);
+  const [selectedSolution, setSelectedSolution] = useState('');
+  const [selectedInstitution, setSelectedInstitution] = useState('');
+
+  const solutions = [
+    {
+      title: 'Bankalar',
+      description: 'Konut kredisi seÃ§enekleri ve Ã¶deme planlarÄ± iÃ§in talep oluÅŸturun.',
+      institutions: [
+        ['Ziraat BankasÄ±', 'ziraatbank.com.tr', 'ziraatbankasi'], ['TÃ¼rkiye Ä°ÅŸ BankasÄ±', 'isbank.com.tr', 'turkiyeisbankasi'], ['Garanti BBVA', 'garantibbva.com.tr', 'garantibbva'],
+        ['Akbank', 'akbank.com', 'akbank'], ['YapÄ± Kredi', 'yapikredi.com.tr', 'yapikredi'], ['Halkbank', 'halkbank.com.tr', 'halkbank'], ['VakÄ±fBank', 'vakifbank.com.tr', 'vakifbank']
+      ]
+    },
+    {
+      title: 'KatÄ±lÄ±m BankalarÄ±',
+      description: 'KÃ¢r payÄ± esaslÄ± konut finansmanÄ± alternatiflerini deÄŸerlendirin.',
+      institutions: [
+        ['Kuveyt TÃ¼rk', 'kuveytturk.com.tr', 'kuveytturk'], ['TÃ¼rkiye Finans', 'turkiyefinans.com.tr', 'turkiyefinans'], ['Albaraka TÃ¼rk', 'albaraka.com.tr', 'albaraka'],
+        ['Ziraat KatÄ±lÄ±m', 'ziraatkatilim.com.tr', 'ziraatkatilim'], ['VakÄ±f KatÄ±lÄ±m', 'vakifkatilim.com.tr', 'vakifkatilim'], ['Emlak KatÄ±lÄ±m', 'emlakkatilim.com.tr', 'emlakkatilim']
+      ]
+    },
+    {
+      title: 'Evim Sistemleri',
+      description: 'Tasarruf finansmanÄ± modelleri hakkÄ±nda bilgi ve yÃ¶nlendirme talep edin.',
+      institutions: [
+        ['Eminevim', 'eminevim.com', 'eminevim'], ['KatÄ±lÄ±mevim', 'katilimevim.com.tr', 'katilimevim'], ['FuzulEv', 'fuzulev.com.tr', 'fuzulev'], ['Birevim', 'birevim.com', 'birevim']
+      ]
+    }
+  ];
+
+  const activeSolution = solutions.find((solution) => solution.title === selectedSolution);
+
+  const selectSolution = (title: string) => {
+    setSelectedSolution(title);
+    setSelectedInstitution('');
+    setSent(false);
+  };
+
+  const submit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const requests = JSON.parse(localStorage.getItem('realty-center-financial-requests') || '[]');
+    localStorage.setItem('realty-center-financial-requests', JSON.stringify([
+      { id: `FC-${Date.now()}`, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(form) },
+      ...requests
+    ]));
+    window.dispatchEvent(new Event('realty-center-financial-requests-updated'));
+    event.currentTarget.reset();
+    setSent(true);
+  };
+
+  return <div className="min-h-screen bg-slate-50">
+    <section className="border-b border-slate-200 bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-14 lg:px-12">
+        <p className="text-xs font-black tracking-[.22em] text-red-700">KAZANÃ‡ MODELÄ°</p>
+        <h1 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">Finansal Ã‡Ã¶zÃ¼mler</h1>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">Gayrimenkul yatÄ±rÄ±mÄ±nÄ±z iÃ§in bankalar, katÄ±lÄ±m bankalarÄ± ve tasarruf finansman seÃ§enekleri arasÄ±ndan ihtiyacÄ±nÄ±za uygun Ã§Ã¶zÃ¼m iÃ§in talep oluÅŸturun.</p>
+      </div>
+    </section>
+
+    <section className="mx-auto max-w-7xl px-6 py-12 lg:px-12">
+      <div className="grid gap-4 md:grid-cols-3">
+        {solutions.map((solution, index) => {
+          const isActive = selectedSolution === solution.title;
+          return <button type="button" onClick={() => selectSolution(solution.title)} key={solution.title} className={`rounded-2xl border p-6 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md ${isActive ? 'border-red-700 bg-red-700 ring-2 ring-red-100' : 'border-slate-200 bg-white'}`}>
+            <div className="flex items-start gap-4"><span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-black ${isActive ? 'bg-white text-red-700' : 'bg-slate-950 text-amber-300'}`}>0{index + 1}</span><div><h2 className={`font-black ${isActive ? 'text-white' : 'text-slate-950'}`}>{solution.title}</h2><p className={`mt-2 text-sm leading-6 ${isActive ? 'text-white/85' : 'text-slate-600'}`}>{solution.description}</p></div></div>
+          </button>;
+        })}
+      </div>
+
+      {activeSolution ? <div className="mt-8 space-y-7">
+        <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div><p className="text-xs font-black tracking-[.18em] text-red-700">{activeSolution.title.toUpperCase()}</p><h2 className="mt-2 text-2xl font-black text-slate-950">Tercih ettiÄŸiniz kurumu seÃ§in</h2><p className="mt-2 text-sm text-slate-500">Dilerseniz kurum seÃ§meden genel finansman talebi de bÄ±rakabilirsiniz.</p></div>
+            {selectedInstitution && <span className="rounded-full bg-red-50 px-4 py-2 text-xs font-black text-red-700">SeÃ§im: {selectedInstitution}</span>}
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {activeSolution.institutions.map(([name, domain, logoSlug]) => {
+              const isSelected = selectedInstitution === name;
+              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSelected ? 'border-red-700 bg-red-700 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
+                <span className="flex h-14 w-full max-w-[150px] items-center justify-center rounded-xl bg-white p-2 shadow-sm"><img src={`https://cdn.simpleicons.org/${logoSlug}`} alt={`${name} logosu`} loading="lazy" onError={(event) => {
+                            const image = event.currentTarget;
+                            if (!image.dataset.fallback) {
+                              image.dataset.fallback = 'true';
+                              image.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+                              return;
+                            }
+                            image.style.display = 'none';
+                          }} className="h-full w-full object-contain"/></span>
+                <span className={`mt-3 text-center text-xs font-black ${isSelected ? 'text-white' : 'text-slate-800'}`}>{name}</span>
+              </button>;
+            })}
+          </div>
+        </section>
+
+        <section className="rounded-3xl border-2 border-slate-900 bg-white p-6 shadow-xl sm:p-9">
+          {sent && <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm font-bold text-emerald-800">Finansal Ã§Ã¶zÃ¼m talebiniz alÄ±ndÄ±. Ekibimiz sizinle iletiÅŸime geÃ§ecektir.</div>}
+          <div className="mb-7"><p className="text-xs font-black tracking-[.18em] text-red-700">{activeSolution.title.toUpperCase()} FORMU</p><h2 className="mt-2 text-2xl font-black text-slate-950">Size uygun seÃ§eneÄŸi birlikte deÄŸerlendirelim.</h2></div>
+          <form onSubmit={submit} className="grid gap-4 sm:grid-cols-2">
+            <label className="text-xs font-black text-slate-700">AD SOYAD<input required name="name" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">TELEFON<input required name="phone" type="tel" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">E-POSTA<input name="email" type="email" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <input type="hidden" name="solution" value={activeSolution.title}/><input type="hidden" name="institution" value={selectedInstitution || 'Genel talep'}/>
+            <label className="text-xs font-black text-slate-700">GAYRÄ°MENKUL BEDELÄ°<input name="propertyValue" inputMode="numeric" placeholder="Ã–rn. 5.000.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">PEÅÄ°NAT TUTARI<input name="downPayment" inputMode="numeric" placeholder="Ã–rn. 1.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">TALEP EDÄ°LEN FÄ°NANSMAN<input name="requestedAmount" inputMode="numeric" placeholder="Ã–rn. 3.500.000 TL" className="mt-2 w-full rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="text-xs font-black text-slate-700">VADE TERCÄ°HÄ°<select name="term" className="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3.5 text-sm font-semibold outline-none focus:border-red-700"><option>Belirlemedim</option><option>12 Ay</option><option>24 Ay</option><option>36 Ay</option><option>60 Ay</option><option>120 Ay</option></select></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">EK AÃ‡IKLAMA<textarea name="message" rows={4} placeholder="Finansman ihtiyacÄ±nÄ±zÄ± ve ilgilendiÄŸiniz gayrimenkulÃ¼ kÄ±saca anlatabilirsiniz." className="mt-2 w-full resize-y rounded-xl border border-slate-300 p-3.5 text-sm font-semibold outline-none focus:border-red-700"/></label>
+            <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="kvkk" value="OnaylandÄ±" type="checkbox" className="mt-1"/><span><Link to="/kvkk" className="font-bold text-red-700 underline">KVKK AydÄ±nlatma Metni</Link>'ni okudum ve baÅŸvurum kapsamÄ±nda iletiÅŸime geÃ§ilmesini kabul ediyorum.</span></label>
+            <label className="flex items-start gap-3 text-xs leading-5 text-slate-600 sm:col-span-2"><input required name="siteKullanim" value="OnaylandÄ±" type="checkbox" className="mt-1"/><span><Link to="/kullanim-kosullari" className="font-bold text-red-700 underline">Site KullanÄ±m KoÅŸullarÄ±</Link>'nÄ± okudum ve kabul ediyorum.</span></label>
+            <button type="submit" className="rounded-xl bg-red-700 px-6 py-4 text-sm font-black text-white shadow-lg hover:bg-red-800 sm:col-span-2">FÄ°NANSAL Ã‡Ã–ZÃœM TALEBÄ°MÄ° GÃ–NDER</button>
+          </form>
+        </section>
+      </div> : <div className="mt-8 flex min-h-64 items-center justify-center rounded-3xl border-2 border-dashed border-slate-300 bg-white p-8 text-center"><div><Briefcase className="mx-auto h-10 w-10 text-red-700"/><h2 className="mt-4 text-xl font-black text-slate-900">Bir Ã§Ã¶zÃ¼m seÃ§in</h2><p className="mt-2 text-sm leading-6 text-slate-500">KatÄ±lÄ±m bankalarÄ±, bankalar veya evim sistemlerinden birine tÄ±klayÄ±n; Ã¶nce kurumlarÄ± gÃ¶rÃ¼n, ardÄ±ndan talep formunu doldurun.</p></div></div>}
+
+      <div className="mt-8 rounded-2xl bg-slate-950 p-6 text-sm leading-6 text-slate-300">BaÅŸvurunuz bir kredi veya finansman onayÄ± deÄŸildir. Uygunluk ve nihai koÅŸullar ilgili kuruluÅŸlarÄ±n deÄŸerlendirmesine tabidir.</div>
+    </section>
+  </div>;
+}
+
+function FranchiseOpportunitiesPage() {
+  useEffect(() => {
+    const previousTitle = document.title;
+    document.title = 'Gayrimenkul Franchise FÄ±rsatlarÄ± | Realty CenterÂ®';
+
+    const managed: HTMLElement[] = [];
+    const setMeta = (selector: string, attributes: Record<string, string>) => {
+      let element = document.head.querySelector<HTMLElement>(selector);
+      if (!element) {
+        element = document.createElement(selector.startsWith('link') ? 'link' : 'meta');
+        document.head.appendChild(element);
+        managed.push(element);
+      }
+      Object.entries(attributes).forEach(([key, value]) => element?.setAttribute(key, value));
+    };
+
+    const canonicalUrl = `${window.location.origin}/franchise-firsatlari`;
+    setMeta('meta[name="description"]', { name: 'description', content: 'Realty CenterÂ® gayrimenkul franchise sistemiyle kendi emlak ofisinizi gÃ¼Ã§lÃ¼ marka, teknoloji, eÄŸitim ve pazarlama desteÄŸiyle bÃ¼yÃ¼tÃ¼n. Franchise fÄ±rsatlarÄ±nÄ± keÅŸfedin.' });
+    setMeta('link[rel="canonical"]', { rel: 'canonical', href: canonicalUrl });
+    setMeta('meta[property="og:title"]', { property: 'og:title', content: 'Gayrimenkul Franchise FÄ±rsatlarÄ± | Realty CenterÂ®' });
+    setMeta('meta[property="og:description"]', { property: 'og:description', content: 'Realty CenterÂ® ile gayrimenkul sektÃ¶rÃ¼nde gÃ¼Ã§lÃ¼ bir marka ve sÃ¼rdÃ¼rÃ¼lebilir iÅŸ modeli kurun.' });
+    setMeta('meta[property="og:type"]', { property: 'og:type', content: 'website' });
+    setMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
+
+    return () => {
+      document.title = previousTitle;
+      managed.forEach((element) => element.remove());
+    };
+  }, []);
+
+  const benefits = [
+    ['GÃ¼Ã§lÃ¼ Marka DeÄŸeri', 'Realty CenterÂ® kurumsal kimliÄŸi, sektÃ¶rel deneyimi ve bÃ¼yÃ¼yen aÄŸÄ±yla bulunduÄŸunuz bÃ¶lgede gÃ¼ven veren, gÃ¼Ã§lÃ¼ bir marka algÄ±sÄ± oluÅŸturun.'],
+    ['Teknoloji AltyapÄ±sÄ±', 'PortfÃ¶y sunumu, geliÅŸmiÅŸ ilan altyapÄ±sÄ±, mÃ¼ÅŸteri taleplerinin yÃ¶netimi ve veri odaklÄ± karar sÃ¼reÃ§lerini destekleyen dijital araÃ§lardan yararlanÄ±n.'],
+    ['EÄŸitim ve Akademi', 'Ofis sahipleri ile danÄ±ÅŸmanlarÄ±n satÄ±ÅŸ, portfÃ¶y, iletiÅŸim ve ekip yÃ¶netimi yetkinliklerini geliÅŸtiren sistemli eÄŸitim yaklaÅŸÄ±mÄ±na dahil olun.'],
+    ['Pazarlama DesteÄŸi', 'Kurumsal sosyal medya materyalleri, kampanyalar, aÃ§Ä±lÄ±ÅŸ Ã§alÄ±ÅŸmalarÄ± ve marka iletiÅŸimiyle bÃ¶lgenizde daha gÃ¶rÃ¼nÃ¼r hÃ¢le gelin.'],
+    ['GeniÅŸ Ä°ÅŸ AÄŸÄ±', 'Realty CenterÂ® ofisleri ve danÄ±ÅŸmanlarÄ±yla iÅŸ birliÄŸi yaparak portfÃ¶y, mÃ¼ÅŸteri ve yÃ¶nlendirme fÄ±rsatlarÄ±nÄ±zÄ± geniÅŸletin.'],
+    ['Operasyonel Destek', 'Ofis hazÄ±rlÄ±ÄŸÄ±ndan ekip yapÄ±lanmasÄ±na ve bÃ¼yÃ¼me planÄ±na kadar ihtiyaÃ§ duyduÄŸunuz kurumsal rehberlikten faydalanÄ±n.']
+  ];
+  const process = [
+    ['01', 'BaÅŸvuru', 'Franchise formu Ã¼zerinden temel bilgileriniz alÄ±nÄ±r.'],
+    ['02', 'Ã–n GÃ¶rÃ¼ÅŸme', 'BÃ¶lge, yatÄ±rÄ±m planÄ± ve hedefleriniz birlikte deÄŸerlendirilir.'],
+    ['03', 'BÃ¶lge ve Ä°ÅŸ Modeli Analizi', 'Planlanan ofisin bÃ¶lgesel potansiyeli ve iÅŸ modeli ele alÄ±nÄ±r.'],
+    ['04', 'Mutabakat ve Kurulum', 'Kurumsal standartlar ile ofis hazÄ±rlÄ±klarÄ± planlanÄ±r.'],
+    ['05', 'EÄŸitim ve AÃ§Ä±lÄ±ÅŸ', 'Ekip, Realty CenterÂ® Ã§alÄ±ÅŸma yaklaÅŸÄ±mÄ±na uygun biÃ§imde hazÄ±rlanÄ±r.'],
+    ['06', 'SÃ¼rekli GeliÅŸim', 'EÄŸitim, teknoloji, pazarlama ve operasyon sÃ¼reÃ§leriyle geliÅŸim desteklenir.']
+  ];
+  const suitableFor = [
+    'Gayrimenkul sektÃ¶rÃ¼nde kendi iÅŸini kurmak isteyen giriÅŸimciler',
+    'Mevcut emlak ofisini gÃ¼Ã§lÃ¼ bir marka altÄ±nda bÃ¼yÃ¼tmek isteyen iÅŸletmeler',
+    'Gayrimenkul sektÃ¶rÃ¼ne yatÄ±rÄ±m yapmak isteyen iÅŸ insanlarÄ±',
+    'SatÄ±ÅŸ ve ekip yÃ¶netimi deneyimini yeni bir iÅŸ modeline taÅŸÄ±mak isteyenler',
+    'BÃ¶lgesinde gÃ¼Ã§lÃ¼ bir gayrimenkul organizasyonu kurmayÄ± hedefleyen profesyoneller'
+  ];
+  const supportServices = [
+    { title: 'EÄŸitim DesteÄŸi', text: 'SatÄ±ÅŸ, mÃ¼ÅŸteri iliÅŸkileri, portfÃ¶y yÃ¶netimi ve gayrimenkul mevzuatÄ± alanlarÄ±nda sÃ¼rekli geliÅŸim odaklÄ± eÄŸitimler.', icon: GraduationCap },
+    { title: 'Hukuk DesteÄŸi', text: 'Gayrimenkul iÅŸlemlerinde karÅŸÄ±laÅŸÄ±labilecek hukuki sÃ¼reÃ§lere iliÅŸkin kurumsal yÃ¶nlendirme ve bilgilendirme.', icon: ShieldAlert },
+    { title: 'SÃ¶zleÅŸme DesteÄŸi', text: 'Yetkilendirme, kiralama, satÄ±ÅŸ ve hizmet sÃ¼reÃ§lerinde ihtiyaÃ§ duyulan gÃ¼ncel sÃ¶zleÅŸme ve form ÅŸablonlarÄ±.', icon: FileText },
+    { title: 'Reklam ve Sosyal Medya', text: 'Kurumsal kimliÄŸe uygun sosyal medya iÃ§erikleri, kampanyalar ve bÃ¶lgesel gÃ¶rÃ¼nÃ¼rlÃ¼ÄŸÃ¼ destekleyen tanÄ±tÄ±m Ã§alÄ±ÅŸmalarÄ±.', icon: Megaphone },
+    { title: 'Muhasebe DesteÄŸi', text: 'Ofislerin temel mali sÃ¼reÃ§leri, faturalandÄ±rma ve muhasebe dÃ¼zeni konusunda bilgilendirici operasyon rehberliÄŸi.', icon: PieChart },
+    { title: 'PortfÃ¶y DesteÄŸi', text: 'PortfÃ¶y oluÅŸturma, doÄŸru sunum, fiyatlandÄ±rma ve pazarlama aÅŸamalarÄ±nda sistemli Ã§alÄ±ÅŸma desteÄŸi.', icon: Building2 },
+    { title: 'DokÃ¼man DesteÄŸi', text: 'Kurumsal sunum, form, kontrol listesi ve operasyonel dokÃ¼manlara tek merkezden kolay eriÅŸim.', icon: Layers },
+    { title: 'Finans DesteÄŸi', text: 'Gayrimenkul finansmanÄ± ve mÃ¼ÅŸterilerin kredi sÃ¼reÃ§lerine iliÅŸkin doÄŸru kanallara yÃ¶nlendirme desteÄŸi.', icon: Briefcase },
+    { title: 'Ä°lan YayÄ±nlama DesteÄŸi', text: 'Ä°lanlarÄ±n doÄŸru iÃ§erik, nitelikli gÃ¶rsel ve uygun yayÄ±n standartlarÄ±yla etkili biÃ§imde sunulmasÄ±.', icon: Send }
+  ];
+
+  return <main className="overflow-hidden bg-[#f7f9fc] text-slate-900">
+    <section className="relative min-h-[660px] overflow-hidden bg-[#071d3b] text-white">
+      <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=2000" alt="Realty Center franchise iÅŸ ortaklÄ±ÄŸÄ± ve profesyonel gayrimenkul ekibi" className="absolute inset-0 h-full w-full object-cover opacity-55"/>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#06182f] via-[#071d3b]/90 to-[#071d3b]/35"/>
+      <div className="relative mx-auto flex min-h-[660px] max-w-7xl items-center px-6 py-20 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="text-xs font-black tracking-[.24em] text-red-300">REALTY CENTERÂ® FRANCHISE FIRSATLARI</p>
+          <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Gayrimenkulde Kendi BaÅŸarÄ± HikÃ¢yenizi YazÄ±n</h1>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">Realty CenterÂ® franchise sistemi; gÃ¼Ã§lÃ¼ marka deÄŸeri, teknoloji altyapÄ±sÄ±, eÄŸitim yaklaÅŸÄ±mÄ±, pazarlama desteÄŸi ve geniÅŸ iÅŸ aÄŸÄ±yla giriÅŸimcilere sÃ¼rdÃ¼rÃ¼lebilir bir gayrimenkul iÅŸletmesi kurma fÄ±rsatÄ± sunar.</p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row"><Link to="/franchise-basvuru" className="rounded-xl bg-[#CD011E] px-6 py-4 text-center text-sm font-black text-white shadow-xl shadow-black/20 transition hover:-translate-y-1 hover:bg-[#e20a2a]">Franchise BaÅŸvurusu Yap</Link><a href="#avantajlar" className="rounded-xl border border-white/55 bg-white/10 px-6 py-4 text-center text-sm font-black text-white backdrop-blur transition hover:bg-white/20">AvantajlarÄ± KeÅŸfet</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desteklerimiz" className="relative overflow-hidden bg-white py-20">
+      <div className="pointer-events-none absolute -right-28 -top-28 h-80 w-80 rounded-full bg-red-50 blur-3xl"/>
+      <div className="pointer-events-none absolute -bottom-36 -left-24 h-96 w-96 rounded-full bg-blue-50 blur-3xl"/>
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-black tracking-[.22em] text-[#CD011E]">HER ADIMDA YANINIZDAYIZ</p>
+          <h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty CenterÂ® Desteklerimiz</h2>
+          <p className="mt-5 text-sm leading-7 text-slate-600 sm:text-base">Franchise ofislerimizin gÃ¼Ã§lÃ¼ bir baÅŸlangÄ±Ã§ yapmasÄ± ve sÃ¼rdÃ¼rÃ¼lebilir biÃ§imde bÃ¼yÃ¼mesi iÃ§in eÄŸitimden hukuka, pazarlamadan portfÃ¶y yÃ¶netimine kadar bÃ¼tÃ¼ncÃ¼l bir destek sistemi sunuyoruz.</p>
+        </div>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {supportServices.map(({title,text,icon:Icon},index)=><article key={title} className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-[#f9fbfd] p-7 shadow-sm transition duration-500 hover:-translate-y-1.5 hover:border-[#183B66]/35 hover:bg-[#071d3b] hover:shadow-2xl hover:shadow-slate-950/15">
+            <span className="absolute right-5 top-4 text-5xl font-black text-slate-100 transition duration-500 group-hover:text-white/5">{String(index+1).padStart(2,'0')}</span>
+            <span className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-[#CD011E] text-white shadow-lg shadow-red-900/15 transition duration-500 group-hover:rotate-3 group-hover:scale-110"><Icon className="h-6 w-6"/></span>
+            <h3 className="relative mt-6 text-lg font-black text-[#071d3b] transition group-hover:text-white">{title}</h3>
+            <p className="relative mt-3 text-sm leading-7 text-slate-600 transition group-hover:text-slate-300">{text}</p>
+            <span className="relative mt-5 inline-flex items-center text-xs font-black text-red-300 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100">Realty CenterÂ® desteÄŸi <ArrowRight className="ml-2 h-3.5 w-3.5"/></span>
+          </article>)}
+        </div>
+        <div className="mt-10 overflow-hidden rounded-3xl bg-gradient-to-r from-[#071d3b] to-[#0d3c70] px-7 py-8 text-white shadow-xl sm:flex sm:items-center sm:justify-between sm:px-10">
+          <div><p className="text-xs font-black tracking-[.18em] text-red-300">GÃœÃ‡LÃœ SÄ°STEM Â· GÃœÃ‡LÃœ OFÄ°S</p><h3 className="mt-2 text-2xl font-black">Realty CenterÂ® ailesine katÄ±lÄ±n, desteÄŸimizle bÃ¼yÃ¼yÃ¼n.</h3></div>
+          <Link to="/franchise-basvuru" className="mt-6 inline-flex shrink-0 items-center rounded-xl bg-[#CD011E] px-6 py-4 text-sm font-black text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#e20a2a] sm:ml-8 sm:mt-0">Franchise BaÅŸvurusu Yap <ArrowRight className="ml-2 h-4 w-4"/></Link>
+        </div>
+      </div>
+    </section>
+
+    <section id="avantajlar" className="py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="mx-auto max-w-3xl text-center"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">GÃœÃ‡LÃœ BÄ°R BAÅLANGIÃ‡</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Neden Realty CenterÂ® Franchise?</h2><p className="mt-5 text-sm leading-7 text-slate-600 sm:text-base">Gayrimenkul franchise sistemi, emlak ofisi aÃ§mak isteyen giriÅŸimcilerin gÃ¼Ã§lÃ¼ bir marka, hazÄ±r iÅŸ modeli, eÄŸitim, pazarlama ve teknolojik altyapÄ± desteÄŸiyle sektÃ¶re daha saÄŸlam adÄ±mlarla girmesini saÄŸlar. Realty CenterÂ® yalnÄ±zca marka kullanÄ±m hakkÄ± deÄŸil, iÅŸinizi bÃ¼yÃ¼tebileceÄŸiniz bÃ¼tÃ¼ncÃ¼l bir gayrimenkul ekosistemi sunmayÄ± hedefler.</p></div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{benefits.map(([title,text],index)=><article key={title} className="franchise-benefit-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm" style={{transitionDelay:`${index*35}ms`}}><span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-red-50 text-sm font-black text-[#CD011E]">{String(index+1).padStart(2,'0')}</span><h3 className="mt-5 text-lg font-black text-[#071d3b]">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{text}</p></article>)}</div>
       </div>
@@ -250,19 +1042,77 @@ HÂˆÛÛœİÜÙ[Ù]Ù[HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÙ[XİYÛÛ][Û‹Ù]Ù[
 
     <section className="bg-gradient-to-br from-[#06182f] to-[#0c315f] py-20 text-white"><div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-12"><div><p className="text-xs font-black tracking-[.2em] text-cyan-300">DÄ°JÄ°TAL DÃ–NÃœÅÃœM</p><h2 className="mt-3 text-3xl font-black sm:text-4xl">GayrimenkulÃ¼n GeleceÄŸine HazÄ±r Teknoloji</h2><p className="mt-5 text-sm leading-7 text-slate-200">Realty CenterÂ® dijital altyapÄ±sÄ±; geliÅŸmiÅŸ ilan sunumu, mÃ¼ÅŸteri taleplerinin yÃ¶netimi, bÃ¶lgesel fiyat analizleri ve danÄ±ÅŸman-ofis sÃ¼reÃ§lerini destekleyen araÃ§larla daha bilinÃ§li kararlar alÄ±nmasÄ±na yardÄ±mcÄ± olur. Yapay zekÃ¢ destekli gayrimenkul araÃ§larÄ±, gayrimenkul deÄŸerleme ve veri odaklÄ± analiz yaklaÅŸÄ±mÄ± sitede geliÅŸtirilen karar destek deneyiminin Ã¶nemli parÃ§alarÄ±dÄ±r.</p><p className="mt-4 text-sm leading-7 text-slate-300">Teknolojik Ã¶zellikler geliÅŸtikÃ§e sisteme kontrollÃ¼ biÃ§imde dahil edilir; henÃ¼z kullanÄ±ma hazÄ±r olmayan Ã§Ã¶zÃ¼mler kesin bir hizmet vaadi olarak sunulmaz.</p><Link to="/ai-karar-asistani" className="mt-7 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black text-[#071d3b]">Yapay ZekÃ¢ Karar AsistanÄ±nÄ± Ä°ncele â†’</Link></div><div className="grid grid-cols-2 gap-3">{['Dijital portfÃ¶y yÃ¶netimi','MÃ¼ÅŸteri talepleri','GeliÅŸmiÅŸ ilan altyapÄ±sÄ±','BÃ¶lgesel fiyat analizi','Gayrimenkul deÄŸerleme','Ofis ve danÄ±ÅŸman yÃ¶netimi'].map((item)=><div key={item} className="rounded-2xl border border-white/15 bg-white/10 p-5 text-sm font-bold text-slate-100 backdrop-blur">{item}</div>)}</div></div></section>
 
-    <section className="py-20"><div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-2 lg:px-12"><article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">EÄÄ°TÄ°M VE GELYªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬×Ã{Á4ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tˆù	‡}…ËÄQ•Í…“ñ˜—}¥°°M¥ÍÑ•µ±¤	¥ÈOñÉ—Ñ¥Èğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÔÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆùI•…±Ñä•¹Ñ•Ë
-¸­…‘•µ¤å…­±‡Å·Äì…åÉ¥µ•¹­Õ°‘…»Ç}µ…¹±…ËÄÙ”™É…¹¡¥Í”½™¥Í±•É¥¹¥¸Í…ÓÇ|°Á½ÉÑ›Ùä½±×}ÑÕÉµ„°·ó}Ñ•É¤¥±§}­¥±•É¤°‘¥©¥Ñ…°Á…é…É±…µ„°…åÉ¥µ•¹­Õ°µ•ÙéÕ…ÓÄ°­§}¥Í•°µ…É­„°•­¥ÀÙ”½™¥ÌçÙ¹•Ñ¥µ¤…±…¹±…ËÅ¹‘„•±§}¥µ¥¹¤‘•ÍÑ•­±•µ•å¤…µ‡±…È¸ğ½Àøñ1¥¹¬Ñ¼ôˆ½…­…‘•µ¤ˆ±…ÍÍ9…µ”ô‰µĞ´Ø¥¹±¥¹”µ™±•à™½¹Ğµ‰±…¬Ñ•áĞµlÀÄÅtˆùI•…±Ñä•¹Ñ•Ë
-¸­…‘•µ§Šeå¤­—}™•‘¥¸ƒŠHğ½1¥¹¬øğ½…ÉÑ¥±”øñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰œµlÀÄÅtÀ´àÑ•áĞµİ¡¥Ñ”Í¡…‘½Üµá°Í´éÀ´ÄÀˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµİ¡¥Ñ”¼ÜÀˆùAiI15Y5I-ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬ˆùó³ğ5…É­„°ó³ğÙËñ»ñÉ³ñ¬ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÔÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµİ¡¥Ñ”¼àÔˆù-ÕÉÕµÍ…°­¥µ±¥¬Ù”½™¥ÌŸÙÉÍ•°ÍÑ…¹‘…ÉÑ±…ËÅ¹‘…¸‘¥©¥Ñ…°Á…é…É±…µ„µ…Ñ•Éå…±±•É¥¹”ìÍ½Íå…°µ•‘å„§•É¥­±•É¥¹‘•¸…™§|°­…µÁ…¹å„°…É‡œ¥å‘¥Éµ”°‡ŸÅ³Ç|µ…Ñ•Éå…±±•É¤Ù”‘¥©¥Ñ…°¥±…¸ŸÙËñ»ñÉ³óñ¹”­…‘…È‹ñÓñ¹³ñ­³ğ‰¥Èµ…É­„‘¥±¤¡•‘•™±•¹¥È¸ğ½Àøğ½…ÉÑ¥±”øğ½‘¥Øøğ½Í•Ñ¥½¸ø((€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”Áä´ÈÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´İá°Áà´Ø±œéÁà´ÄÈˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥¥Ñ•µÌµ•¹Ñ•È…À´ÄÀ±œéÉ¥µ½±Ì´Èˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµlÀÄÅtˆùI1Qd9QK
-¸y$ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tÍ´éÑ•áĞ´Ñá°ˆùe•É•°ññ»ñëğñçñ¬	¥È}±„	¥É±—}Ñ¥É¥¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÔÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆù	¥ÈI•…±Ñä•¹Ñ•Ë
-¸½™¥Í¤‡ÓÇÅ»Åé‘„å…±»Åé„Ñ•¬‰‡Å»Åé„‰¥È•µ±…¬½™¥Í¤­ÕÉµ…èì½™¥Í±•É¥¸Ù”‘…»Ç}µ…¹±…ËÅ¸‰¥±¤°Á½ÉÑ›ÙäÙ”·ó}Ñ•É¤›ÅÉÍ…Ñ±…ËÅ»ÄÁ…å±‡}…‰¥±‘§}¤µ•ÙÕĞ‰¥ÈÍ¥ÍÑ•µ¥¸Á…Ë…ÏÄ½±ÕÉÍÕ¹Õè¸e•É•°Õéµ…¹³ÇÅ»ÅëÄ­ÕÉÕµÍ…°§|‡Åå±„‰¥É±—}Ñ¥É•É•¬‘…¡„•¹§|‰¥È¡…É•­•Ğ…±…»Ä­…é…»ÅÉÏÅ»Åè¸ğ½Àøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´Ø™±•à…À´Ğˆøñ1¥¹¬Ñ¼ôˆ½½™¥Í±•É¥µ¥èˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµlÀÄÅtˆù=™¥Í±•É¥µ¥èƒŠHğ½1¥¹¬øñ1¥¹¬Ñ¼ôˆ½‘…¹¥Íµ…¹±…É¥µ¥èˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tˆù…»Ç}µ…¹±…ËÅ·ÅèƒŠHğ½1¥¹¬øğ½‘¥Øøğ½‘¥Øøñ¥µœÍÉŒô‰¡ÑÑÁÌè¼½¥µ…•Ì¹Õ¹ÍÁ±…Í ¹½´½Á¡½Ñ¼´ÄÔÈÄÜÌÜÜÄÄàØÜµ”ÍˆäÜÌÜÕ˜äÀÈı…ÕÑ¼õ™½Éµ…Ğ™™¥ĞõÉ½À™Äôàà™ÜôÄĞÀÀˆ…±Ğô‰I•…±Ñä•¹Ñ•È½™¥ÌÙ”‘…»Ç}µ…¸§|‡Äˆ±…ÍÍ9…µ”ô‰ µlÌàÁÁátÜµ™Õ±°É½Õ¹‘•´Íá°½‰©•Ğµ½Ù•ÈÍ¡…‘½Üµá°ˆ¼øğ½‘¥Øøğ½‘¥Øøğ½Í•Ñ¥½¸ø((€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰Áä´ÈÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´İá°Áà´Ø±œéÁà´ÄÈˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Íá°Ñ•áĞµ•¹Ñ•ÈˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµlÀÄÅtˆù%4%4ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tÍ´éÑ•áĞ´Ñá°ˆùI•…±Ñä•¹Ñ•Ë
-¸É…¹¡¥Í”OñÉ•¤ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆù}‡Å‘…­¤…¯Ç|‰¥±¥±•¹‘¥Éµ”…µ‡³Å“ÅÈì…‘…çÅ¸‹Ù±•Í¤Ù”­¿}Õ±±…ËÅ¹„ŸÙÉ”‘—}•É±•¹‘¥Éµ”ÏñÉ•¤™…É­³Å±‡}…‰¥±¥È¸ğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÄÈÉ¥…À´ĞµéÉ¥µ½±Ì´È±œéÉ¥µ½±Ì´ÌˆùíÁÉ½•ÍÌ¹µ…À ¡m¹¼±Ñ¥Ñ±”±Ñ•áÑt¤ôøñ…ÉÑ¥±”­•äõí¹½ô±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´ˆøñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÄÀÀˆùí¹½ôğ½ÍÁ…¸øñ Ì±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞµ±œ™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tˆùíÑ¥Ñ±•ôğ½ ÌøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ØÀÀˆùíÑ•áÑôğ½Àøğ½…ÉÑ¥±”ø¥ôğ½‘¥Øøğ½‘¥Øøğ½Í•Ñ¥½¸ø((€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”Áä´ÈÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Ùá°Áà´Ø±œéÁà´ÄÈˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÄÀ±œéÉ¥µ½±Ìµl¸àÕ™É|Ä¸ÄÕ™Étˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµlÀÄÅtˆùÁKÃ{Á5ÀAI=Á3Àğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµlŒÀÜÅÍ‰tÍ´éÑ•áĞ´Ñá°ˆùI•…±Ñä•¹Ñ•Ë
-¸É…¹¡¥Í”-¥µ±•ÈƒÃ¥¸UåÕ¸üğ½ Èøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌˆùíÍÕ¥Ñ…‰±•½È¹µ…À ¡¥Ñ•´¤ôøñ‘¥Ø­•äõí¥Ñ•µô±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´ÌÉ½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÀ´ĞˆøñÍÁ…¸±…ÍÍ9…µ”ô‰µĞ´À¸Ô™±•à ´ØÜ´ØÍ¡É¥¹¬´À¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµlÀÄÅtÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”ˆûŠrLğ½ÍÁ…¸øñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ´™½¹Ğµ‰½±±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ÜÀÀˆùí¥Ñ•µôğ½Àøğ½‘¥Øø¥ôğ½‘¥Øøğ½‘¥Øøğ½‘¥Øøğ½Í•Ñ¥½¸ø((€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰‰œµlÀÄÅtÁä´ÈÀÑ•áĞµİ¡¥Ñ”ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Õá°Áà´ØÑ•áĞµ•¹Ñ•È±œéÁà´ÄÈˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸ÈÉ•µtÑ•áĞµİ¡¥Ñ”¼ÜÀˆû{Á5ÀM%IOÁiğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Í´éÑ•áĞ´Õá°ˆùÙ±•¹¥é‘”I•…±Ñä•¹Ñ•Ë
-¸ññ»ğQ•µÍ¥°‘¥¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µĞ´Ôµ…àµÜ´Éá°Ñ•áĞµ‰…Í”±•…‘¥¹œ´àÑ•áĞµİ¡¥Ñ”¼àÔˆù…åÉ¥µ•¹­Õ°Í•­ÓÙËñ¹‘•­¤‘•¹•å¥µ§m4ÖÚ$z{-®éÜj×[ZÈ™[Ù\ÚHÙ]š^YHH‹Ï“Y\ÛZÚHY]\›[ZÈ™[Ù\ÚH
-Ù]š^YHJOÛX™[X™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH™[Ù[\ˆˆ\OH˜ÚXÚØ›Şˆ˜[YOH•™\™ÚH]š\ñ,H‹Ï•™\™ÚH]š\ñ,OÛX™[X™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH™[Ù[\ˆˆ\OH˜ÚXÚØ›Şˆ˜[YOH±gš\šÙ]İ\[qgÈ™[Ù\ÚH‹Ï±gš\šÙ]İ\[qgÈ™[Ù\ÚOÛX™[Ù]Ù]Z[Ï‚ˆ^\™XH™\]Z\™Y˜[YOH˜qgİ\Hpéñ,ZÛ[X\ñ,HˆXÙZÛ\H“Ùš\È[±,[±,^‹ZÚXš[š^ˆ™H°í›Ù[š^›H[Ú[Hš[Ú[\šHX^±,[±,^ˆˆÛ\ÜÓ˜[YO^Ø	ÙšY[Û\ÜßHZ[‹ZLÛN˜ÛÛ\Ü[‹L˜HÏ‚ˆX™[Û\ÜÓ˜[YOH™›^][\Ë\İ\Ø\Lˆ^^È^]Ú]KÎHÛN˜ÛÛ\Ü[‹Lˆ[œ]™\]Z\™Y\OH˜ÚXÚØ›ŞˆÛ\ÜÓ˜[YOH›]LHXØÙ[VÈĞÑLQWHˆÏÜ[[šÈÏH‹ÚİšÚÈˆÛ\ÜÓ˜[YOH™›ÛX›XÚÈ[™\›[™H’Õ’ÒÈ^Y1,[›]XHY]šOÓ[šÏ‰ÛšHÚİY[H™HØX[Y^[Ü[KÜÜ[ÛX™[‚ˆX™[Û\ÜÓ˜[YOH™›^][\Ë\İ\Ø\Lˆ^^È^]Ú]KÎHÛN˜ÛÛ\Ü[‹Lˆ[œ]™\]Z\™Y\OH˜ÚXÚØ›ŞˆÛ\ÜÓ˜[YOH›]LHXØÙ[VÈĞÑLQWHˆÏÜ[[šÈÏH‹Úİ[[š[KZÛÜİ[\šHˆÛ\ÜÓ˜[YOH™›ÛX›XÚÈ[™\›[™H”Ú]Hİ[[±,[HÛñgİ[\±,OÓ[šÏ‰Û±,HÚİY[H™HØX[Y^[Ü[KÜÜ[ÛX™[‚ˆ]Ûˆ\OHœİX›Z]ˆÛ\ÜÓ˜[YOHœ›İ[™Y^™Ë]Ú]HKLËH›ÛX›XÚÈ^\™YMÌ˜[œÚ][Ûˆİ™\˜™Ë\™YMLÛN˜ÛÛ\Ü[‹Lˆ˜qgİ\^]Hğí›™\Ø]Û‚ˆÙ›Ü›O‚ˆ
-Hˆ
-ˆ›Ü›HÛ”İX›Z]^ÜİX›Z]\XØ][ÛŸHÛ\ÜÓ˜[YOH›]NÜšYØ\MÛN™ÜšYXÛÛËLˆ‚ˆ[œ]™\]Z\™Y˜[YOHYÛŞXYˆXÙZÛ\HYÛŞXYˆ]]ĞÛÛ\]OH›˜[YHˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆ[œ]™\]Z\™Y˜[YOH•[Y›Ûˆˆ\OH[ˆXÙZÛ\H•[Y›Ûˆˆ]]ĞÛÛ\]OH[ˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆ[œ]™\]Z\™Y˜[YOH‘K\ÜİHˆ\OH™[XZ[ˆXÙZÛ\H‘K\ÜİHˆ]]ĞÛÛ\]OH™[XZ[ˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆÙ[Xİ™\]Z\™Y˜[YOH‘q'Ú][H\[]HˆY˜][˜[YOHˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßOÜ[Ûˆ˜[YOHˆˆ\ØX›Y‘q'Ú][H\[]OÛÜ[ÛÜ[Û“\ÙOÛÜ[ÛÜ[Û°å›ˆ\Ø[œÏÛÜ[ÛÜ[Û“\Ø[œÏÛÜ[ÛÜ[Û–pïÜÙZÈ\Ø[œÏÛÜ[ÛÜ[Û‘ÚİÜ˜OÛÜ[ÛÜÙ[Xİ‚ˆ[œ]™\]Z\™Y˜[YOH±,ˆXÙZÛ\H±,ˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆ[œ]™\]Z\™Y˜[YOH±,0éÙHˆXÙZÛ\H±,0éÙHˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆ[œ]™\]Z\™Y˜[YOH•[\]q'ÚH1,0éÙHˆXÙZÛ\H°áØ[1,qgÛXZÈ\İYq'Ú[š^ˆ[0éÙHˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏ‚ˆÙ[Xİ™\]Z\™Y˜[YOH’Ù[™[™HZ]qgñ,]1,H˜\ˆq,Hˆ˜[YO^Ú\Õ™ZXÛ_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]\Õ™ZXÛJ]™[\™Ù]˜[YJ_HÛ\ÜÓ˜[YO^ÙšY[Û\ÜßOÜ[Ûˆ˜[YOHˆˆ\ØX›Y’Ù[™[š^™HZ]qgñ,]1,[±,^ˆ˜\ˆq,OÏÛÜ[ÛÜ[Ûˆ˜[YOH‘]™]‘]™]ÛÜ[ÛÜ[Ûˆ˜[YOH’^q,\ˆ’^q,\ÛÜ[ÛÜÙ[Xİ‚ˆ]Z[ÈÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛH^\Û]KNİ[[X\HÛ\ÜÓ˜[YOH˜İ\œÛÜ‹\Ú[\ˆ›ÛX›XÚÈX\šÙ\^VÈĞÑLQWH’[™ÚHY]ÚH™[Ù[\š[™HØZ\Ú[š^ÏÜİ[[X\O]ˆÛ\ÜÓ˜[YOH›]LÈÜšYØ\LˆX™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH–Y]ÚH™[Ù[\šHˆ\OH˜ÚXÚØ›Şˆ˜[YOH•qgñ,[›X^ˆXØ\™]HY]ÚH™[Ù\ÚHˆÛ\ÜÓ˜[YOH˜XØÙ[VÈĞÑLQWH‹Ï•qgñ,[›X^ˆXØ\™]HY]ÚH™[Ù\ÚOÛX™[X™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH–Y]ÚH™[Ù[\šHˆ\OH˜ÚXÚØ›Şˆ˜[YOH“Y\ÛZÚHY]\›[ZÈ™[Ù\ÚHÙ]š^YHHˆÛ\ÜÓ˜[YOH˜XØÙ[VÈĞÑLQWH‹Ï“Y\ÛZÚHY]\›[ZÈ™[Ù\ÚH
-Ù]š^YHJOÛX™[X™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH–Y]ÚH™[Ù[\šHˆ\OH˜ÚXÚØ›Şˆ˜[YOH”ÛÜ[[H[[ZÈ[±,qgÛX[±,H™[Ù\ÚHˆÛ\ÜÓ˜[YOH˜XØÙ[VÈĞÑLQWH‹Ï”ÛÜ[[H[[ZÈ[±,qgÛX[±,H™[Ù\ÚOÛX™[X™[Û\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ^^È›Û\Ù[ZX›Û[œ]˜[YOH–Y]ÚH™[Ù[\šHˆ\OH˜ÚXÚØ›Şˆ˜[YOH‘Ø^\š[Y[šİ[[±,qgÛX[›1,q'ñ,HÙ\YšZØ\ñ,HˆÛ\ÜÓ˜[YOH˜XØÙ[VÈĞÑLQWH‹Ï‘Ø^\š[Y[šİ[[±,qgÛX[›1,q'ñ,HÙ\YšZØ\ñ,OÛX™[Ù]Ù]Z[Ï‚ˆÚ\Õ™ZXÛHOOH	Ñ]™]	È	‰ˆ[œ]™\]Z\™Y˜[YOH•qgñ,]ØpéÈq,[1,ZÈˆ\OH›[X™\ˆˆZ[HŒˆX^HLˆXÙZÛ\H•qgñ,]1,[±,^ˆØpéÈq,[1,ZÏÈˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏŸBˆÙ[Xİ™\]Z\™Y˜[YOH‘Ø^\š[Y[šİ[[™^Z[ZHˆY˜][˜[YOHˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßOÜ[Ûˆ˜[YOHˆˆ\ØX›Y‘Ø^\š[Y[šİ[š\›X[\±,[™H[™^Z[Z[š^ÛÜ[ÛÜ[Û‘[™^Z[Z[H[ÚÏÛÜ[ÛÜ[ÛŒHq,[[ˆ^ÛÜ[ÛÜ[ÛŒx $ÌÈq,[ÛÜ[ÛÜ[Û8 $Íˆq,[ÛÜ[ÛÜ[Ûø $ÌLq,[ÛÜ[ÛÜ[ÛŒLq,[[ˆ˜^›OÛÜ[Û–j¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5></select>
+    <section className="py-20"><div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-2 lg:px-12"><article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">EÄÄ°TÄ°M VE GELÄ°ÅÄ°M</p><h2 className="mt-3 text-3xl font-black text-[#071d3b]">BaÅŸarÄ± TesadÃ¼f DeÄŸil, Sistemli Bir SÃ¼reÃ§tir</h2><p className="mt-5 text-sm leading-7 text-slate-600">Realty CenterÂ® Akademi yaklaÅŸÄ±mÄ±; gayrimenkul danÄ±ÅŸmanlarÄ± ve franchise ofislerinin satÄ±ÅŸ, portfÃ¶y oluÅŸturma, mÃ¼ÅŸteri iliÅŸkileri, dijital pazarlama, gayrimenkul mevzuatÄ±, kiÅŸisel marka, ekip ve ofis yÃ¶netimi alanlarÄ±nda geliÅŸimini desteklemeyi amaÃ§lar.</p><Link to="/akademi" className="mt-6 inline-flex font-black text-[#CD011E]">Realty CenterÂ® Akademiâ€™yi keÅŸfedin â†’</Link></article><article className="rounded-3xl bg-[#CD011E] p-8 text-white shadow-xl sm:p-10"><p className="text-xs font-black tracking-[.2em] text-white/70">PAZARLAMA VE MARKA</p><h2 className="mt-3 text-3xl font-black">GÃ¼Ã§lÃ¼ Marka, GÃ¼Ã§lÃ¼ GÃ¶rÃ¼nÃ¼rlÃ¼k</h2><p className="mt-5 text-sm leading-7 text-white/85">Kurumsal kimlik ve ofis gÃ¶rsel standartlarÄ±ndan dijital pazarlama materyallerine; sosyal medya iÃ§eriklerinden afiÅŸ, kampanya, araÃ§ giydirme, aÃ§Ä±lÄ±ÅŸ materyalleri ve dijital ilan gÃ¶rÃ¼nÃ¼rlÃ¼ÄŸÃ¼ne kadar bÃ¼tÃ¼nlÃ¼klÃ¼ bir marka dili hedeflenir.</p></article></div></section>
+
+    <section className="bg-white py-20"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="grid items-center gap-10 lg:grid-cols-2"><div><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">REALTY CENTERÂ® AÄI</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Yerel GÃ¼cÃ¼nÃ¼zÃ¼ BÃ¼yÃ¼k Bir AÄŸla BirleÅŸtirin</h2><p className="mt-5 text-sm leading-7 text-slate-600">Bir Realty CenterÂ® ofisi aÃ§tÄ±ÄŸÄ±nÄ±zda yalnÄ±zca tek baÅŸÄ±nÄ±za bir emlak ofisi kurmaz; ofislerin ve danÄ±ÅŸmanlarÄ±n bilgi, portfÃ¶y ve mÃ¼ÅŸteri fÄ±rsatlarÄ±nÄ± paylaÅŸabildiÄŸi mevcut bir sistemin parÃ§asÄ± olursunuz. Yerel uzmanlÄ±ÄŸÄ±nÄ±zÄ± kurumsal iÅŸ aÄŸÄ±yla birleÅŸtirerek daha geniÅŸ bir hareket alanÄ± kazanÄ±rsÄ±nÄ±z.</p><div className="mt-6 flex gap-4"><Link to="/ofislerimiz" className="font-black text-[#CD011E]">Ofislerimiz â†’</Link><Link to="/danismanlarimiz" className="font-black text-[#071d3b]">DanÄ±ÅŸmanlarÄ±mÄ±z â†’</Link></div></div><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=88&w=1400" alt="Realty Center ofis ve danÄ±ÅŸman iÅŸ aÄŸÄ±" className="h-[380px] w-full rounded-3xl object-cover shadow-xl"/></div></div></section>
+
+    <section className="py-20"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="mx-auto max-w-3xl text-center"><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">ADIM ADIM</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty CenterÂ® Franchise SÃ¼reci</h2><p className="mt-4 text-sm leading-7 text-slate-600">AÅŸaÄŸÄ±daki akÄ±ÅŸ bilgilendirme amaÃ§lÄ±dÄ±r; adayÄ±n bÃ¶lgesi ve koÅŸullarÄ±na gÃ¶re deÄŸerlendirme sÃ¼reci farklÄ±laÅŸabilir.</p></div><div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{process.map(([no,title,text])=><article key={no} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><span className="text-3xl font-black text-red-100">{no}</span><h3 className="mt-3 text-lg font-black text-[#071d3b]">{title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{text}</p></article>)}</div></div></section>
+
+    <section className="bg-white py-20"><div className="mx-auto max-w-6xl px-6 lg:px-12"><div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr]"><div><p className="text-xs font-black tracking-[.2em] text-[#CD011E]">GÄ°RÄ°ÅÄ°MCÄ° PROFÄ°LÄ°</p><h2 className="mt-3 text-3xl font-black text-[#071d3b] sm:text-4xl">Realty CenterÂ® Franchise Kimler Ä°Ã§in Uygun?</h2></div><div className="grid gap-3">{suitableFor.map((item)=><div key={item} className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#CD011E] text-xs font-black text-white">âœ“</span><p className="text-sm font-bold leading-6 text-slate-700">{item}</p></div>)}</div></div></div></section>
+
+    <section className="bg-[#CD011E] py-20 text-white"><div className="mx-auto max-w-5xl px-6 text-center lg:px-12"><p className="text-xs font-black tracking-[.22em] text-white/70">ÅÄ°MDÄ° SIRA SÄ°ZDE</p><h2 className="mt-3 text-3xl font-black sm:text-5xl">BÃ¶lgenizde Realty CenterÂ® GÃ¼cÃ¼nÃ¼ Temsil Edin</h2><p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/85">Gayrimenkul sektÃ¶rÃ¼ndeki deneyiminizi, giriÅŸimci ruhunuzu ve bÃ¶lgesel gÃ¼cÃ¼nÃ¼zÃ¼ Realty CenterÂ® sistemiyle bir araya getirin.</p><Link to="/franchise-basvuru" className="mt-8 inline-flex rounded-xl bg-white px-7 py-4 text-sm font-black text-[#CD011E] shadow-xl">Franchise BaÅŸvurusu Yap â†’</Link><div className="mt-8 flex flex-wrap justify-center gap-5 text-xs font-bold text-white/75"><Link to="/kurumsal/hakkimizda">HakkÄ±mÄ±zda</Link><Link to="/iletisim">Ä°letiÅŸim</Link><Link to="/akademi">Akademi</Link></div></div></section>
+  </main>;
+}
+
+function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
+  const franchise = type === 'franchise';
+  const [hasVehicle, setHasVehicle] = useState('');
+  const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-recruitment-v2.webp';
+  const fieldClass = 'rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-[#CD011E] focus:ring-2 focus:ring-[#CD011E]/15';
+  const submitApplication = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const saved = JSON.parse(localStorage.getItem('realty-center-applications') || '[]');
+    const data = Object.fromEntries(new FormData(event.currentTarget));
+    localStorage.setItem('realty-center-applications', JSON.stringify([{ id: `${franchise ? 'FR' : 'DN'}-${Date.now()}`, type, data, status: 'Yeni', createdAt: new Date().toISOString() }, ...saved]));
+    window.dispatchEvent(new Event('realty-center-applications-updated'));
+    alert(franchise ? 'Franchise baÅŸvurunuz alÄ±ndÄ±.' : 'DanÄ±ÅŸmanlÄ±k baÅŸvurunuz alÄ±ndÄ±.');
+    event.currentTarget.reset();
+    setHasVehicle('');
+  };
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-slate-950">
+      <img src={backgroundImage} alt={franchise ? 'Franchise iÅŸ ortaklÄ±ÄŸÄ±' : 'Realty CenterÂ® danÄ±ÅŸmanlarÄ±'} className="absolute inset-0 h-full w-full object-cover" />
+      <div className={`absolute inset-0 ${franchise ? 'bg-white/10' : 'bg-gradient-to-r from-black/28 via-transparent to-black/5'}`} />
+      <img src="/rc_logo_og.svg" alt="" aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 w-[72vw] max-w-[1050px] -translate-x-1/2 -translate-y-1/2 opacity-[.075] mix-blend-soft-light" />
+      <div className={`relative mx-auto flex min-h-screen max-w-[1600px] items-center px-5 py-12 sm:px-10 ${franchise ? 'flex-col justify-center' : 'justify-start'}`}>
+        {franchise && <Link to="/franchise-firsatlari" className="mb-4 inline-flex max-w-max whitespace-nowrap rounded-full border border-[#f2c66d]/55 bg-[#071d3b]/95 px-4 py-2.5 text-xs font-black tracking-wide text-[#f4cf7a] shadow-[0_10px_28px_rgba(7,29,59,.28)] backdrop-blur transition hover:-translate-y-0.5 hover:border-[#f4cf7a] hover:text-[#ffe7a8] lg:absolute lg:left-10 lg:top-[18%] lg:mb-0 xl:left-16">Franchise FÄ±rsatlarÄ±nÄ± KeÅŸfet â†’</Link>}
+        <div className={`relative w-full rounded-3xl p-7 shadow-2xl backdrop-blur-sm sm:p-10 ${franchise ? 'max-w-xl rc-navy-frame bg-red-700/95 text-white' : 'max-w-3xl border border-white/70 bg-white/96 text-slate-900 shadow-black/30'}`}>
+          <div className="absolute right-6 top-5 flex h-14 w-32 items-center justify-center sm:right-8 sm:top-7">
+            <img src="/rc_logo_og.svg" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="h-12 w-full object-contain drop-shadow-sm" />
+          </div>
+          <Link to="/" className={`text-sm font-black ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>â† Ana Sayfaya DÃ¶n</Link>
+          <p className={`mt-8 text-xs font-black tracking-widest ${franchise ? 'text-white' : 'text-[#CD011E]'}`}>{franchise ? 'FRANCHISE BAÅVURUSU' : 'DANIÅMAN BAÅVURUSU'}</p>
+          <h1 className={`mt-3 text-3xl font-black ${franchise ? 'text-white' : 'text-slate-950'}`}>{franchise ? 'Åehrinde Realty CenterÂ® ol.' : 'Realty CenterÂ® ailesinde danÄ±ÅŸman ol.'}</h1>
+          <p className={`mt-3 text-sm leading-relaxed ${franchise ? 'text-white/85' : 'text-slate-600'}`}>Bilgilerinizi bÄ±rakÄ±n, baÅŸvurunuz ilgili ekip tarafÄ±ndan deÄŸerlendirilsin.</p>
+
+          {franchise ? (
+            <form onSubmit={submitApplication} className="mt-8 grid gap-4 sm:grid-cols-2">
+              <input required name="Ad Soyad" placeholder="Ad Soyad" className={fieldClass} />
+              <input required name="Telefon" type="tel" placeholder="Telefon" className={fieldClass} />
+              <input required name="E-posta" type="email" placeholder="E-posta" className={`${fieldClass} sm:col-span-2`} />
+              <input required name="Ä°l" placeholder="Ofis aÃ§mak istediÄŸiniz il" className={fieldClass} />
+              <input required name="Ä°lÃ§e" placeholder="Ofis aÃ§mak istediÄŸiniz ilÃ§e" className={fieldClass} />
+              <select required name="Gayrimenkul Deneyimi" defaultValue="" className={fieldClass}><option value="" disabled>Gayrimenkul sektÃ¶rÃ¼ deneyiminiz</option><option>Deneyimim yok</option><option>1â€“3 yÄ±l</option><option>4â€“6 yÄ±l</option><option>7â€“10 yÄ±l</option><option>10 yÄ±ldan fazla</option></select>
+              <select required name="YatÄ±rÄ±m BÃ¼tÃ§esi" defaultValue="" className={fieldClass}><option value="" disabled>Ã–ngÃ¶rÃ¼len yatÄ±rÄ±m bÃ¼tÃ§eniz</option><option>GÃ¶rÃ¼ÅŸmek istiyorum</option><option>Belirledim</option><option>Finansman desteÄŸi araÅŸtÄ±rÄ±yorum</option></select>
+              <details className="rounded-xl border border-white/25 bg-white/10 px-4 py-3 text-sm sm:col-span-2"><summary className="cursor-pointer font-black">Sahip olduÄŸunuz yetki ve mesleki belgeler</summary><div className="mt-3 grid gap-2 sm:grid-cols-2"><label className="flex items-center gap-2 text-xs font-semibold"><input name="Belgeler" type="checkbox" value="TaÅŸÄ±nmaz Ticareti Yetki Belgesi"/>TaÅŸÄ±nmaz Ticareti Yetki Belgesi</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Belgeler" type="checkbox" value="Mesleki Yeterlilik Belgesi Seviye 5"/>Mesleki Yeterlilik Belgesi (Seviye 5)</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Belgeler" type="checkbox" value="Vergi LevhasÄ±"/>Vergi LevhasÄ±</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Belgeler" type="checkbox" value="Åirket KuruluÅŸ Belgesi"/>Åirket KuruluÅŸ Belgesi</label></div></details>
+              <textarea required name="BaÅŸvuru AÃ§Ä±klamasÄ±" placeholder="Ofis planÄ±nÄ±z, ekibiniz ve bÃ¶lgenizle ilgili bilgileri yazÄ±nÄ±z" className={`${fieldClass} min-h-28 sm:col-span-2`} />
+              <label className="flex items-start gap-2 text-xs text-white/85 sm:col-span-2"><input required type="checkbox" className="mt-0.5 accent-[#CD011E]" /><span><Link to="/kvkk" className="font-black underline">KVKK AydÄ±nlatma Metni</Link>'ni okudum ve kabul ediyorum.</span></label>
+              <label className="flex items-start gap-2 text-xs text-white/85 sm:col-span-2"><input required type="checkbox" className="mt-0.5 accent-[#CD011E]" /><span><Link to="/kullanim-kosullari" className="font-black underline">Site KullanÄ±m KoÅŸullarÄ±</Link>'nÄ± okudum ve kabul ediyorum.</span></label>
+              <button type="submit" className="rounded-xl bg-white py-3.5 font-black text-red-700 transition hover:bg-red-50 sm:col-span-2">BaÅŸvuruyu GÃ¶nder</button>
+            </form>
+          ) : (
+            <form onSubmit={submitApplication} className="mt-8 grid gap-4 sm:grid-cols-2">
+              <input required name="Ad Soyad" placeholder="Ad Soyad" autoComplete="name" className={fieldClass} />
+              <input required name="Telefon" type="tel" placeholder="Telefon" autoComplete="tel" className={fieldClass} />
+              <input required name="E-posta" type="email" placeholder="E-posta" autoComplete="email" className={fieldClass} />
+              <select required name="EÄŸitim Durumu" defaultValue="" className={fieldClass}><option value="" disabled>EÄŸitim Durumu</option><option>Lise</option><option>Ã–n Lisans</option><option>Lisans</option><option>YÃ¼ksek Lisans</option><option>Doktora</option></select>
+              <input required name="Ä°l" placeholder="Ä°l" className={fieldClass} />
+              <input required name="Ä°lÃ§e" placeholder="Ä°lÃ§e" className={fieldClass} />
+              <input required name="Talep EttiÄŸi Ä°lÃ§e" placeholder="Ã‡alÄ±ÅŸmak istediÄŸiniz ilÃ§e" className={fieldClass} />
+              <select required name="Kendine Ait TaÅŸÄ±tÄ± Var mÄ±" value={hasVehicle} onChange={(event) => setHasVehicle(event.target.value)} className={fieldClass}><option value="" disabled>Kendinize ait taÅŸÄ±tÄ±nÄ±z var mÄ±?</option><option value="Evet">Evet</option><option value="HayÄ±r">HayÄ±r</option></select>
+              <details className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800"><summary className="cursor-pointer font-black marker:text-[#CD011E]">Hangi yetki belgelerine sahipsiniz?</summary><div className="mt-3 grid gap-2"><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="TaÅŸÄ±nmaz Ticareti Yetki Belgesi" className="accent-[#CD011E]"/>TaÅŸÄ±nmaz Ticareti Yetki Belgesi</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Mesleki Yeterlilik Belgesi Seviye 5" className="accent-[#CD011E]"/>Mesleki Yeterlilik Belgesi (Seviye 5)</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Sorumlu Emlak DanÄ±ÅŸmanÄ± Belgesi" className="accent-[#CD011E]"/>Sorumlu Emlak DanÄ±ÅŸmanÄ± Belgesi</label><label className="flex items-center gap-2 text-xs font-semibold"><input name="Yetki Belgeleri" type="checkbox" value="Gayrimenkul DanÄ±ÅŸmanlÄ±ÄŸÄ± SertifikasÄ±" className="accent-[#CD011E]"/>Gayrimenkul DanÄ±ÅŸmanlÄ±ÄŸÄ± SertifikasÄ±</label></div></details>
+              {hasVehicle === 'Evet' && <input required name="TaÅŸÄ±t KaÃ§ YÄ±llÄ±k" type="number" min="0" max="50" placeholder="TaÅŸÄ±tÄ±nÄ±z kaÃ§ yÄ±llÄ±k?" className={fieldClass} />}
+              <select required name="Gayrimenkul Deneyimi" defaultValue="" className={fieldClass}><option value="" disabled>Gayrimenkul firmalarÄ±nda deneyiminiz</option><option>Deneyimim yok</option><option>1 yÄ±ldan az</option><option>1â€“3 yÄ±l</option><option>4â€“6 yÄ±l</option><option>7â€“10 yÄ±l</option><option>10 yÄ±ldan fazla</option></select>
               <textarea required name="DiÄŸer AÃ§Ä±klamalar" placeholder="DiÄŸer aÃ§Ä±klamalarÄ±nÄ±zÄ± buraya yazÄ±nÄ±z" className={`${fieldClass} min-h-32 sm:col-span-2`} />
               <div className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:col-span-2">
                 <label className="flex items-start gap-2 text-xs leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-[#CD011E]" /><span><Link to="/kvkk" className="font-black text-[#CD011E]">KVKK AydÄ±nlatma Metni</Link>'ni okudum; bilgilerimin baÅŸvurumun deÄŸerlendirilmesi amacÄ±yla iÅŸlenmesini kabul ediyorum.</span></label>
@@ -281,61 +1131,293 @@ function LibraryHomePage() {
   const [categories,setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
   useEffect(() => { const refresh=()=>setCategories(getLibraryCategories()); window.addEventListener('realty-center-library-updated',refresh); return()=>window.removeEventListener('realty-center-library-updated',refresh); },[]);
   const latestArticles = categories.flatMap((category) => category.articles.map((article) => ({ category, article }))).sort((a,b) => new Date(b.article.publishedAt).getTime() - new Date(a.article.publishedAt).getTime());
-  return <main className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6"><p className="text-xs font-black tracking-[.24em] text-red-700">REALTY CENTERÂ®</p><h1 className="mt-3 text-4xl font-black text-slate-950">Realty KÃ¼tÃ¼phane</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Hukuk ve mevzuat, iÅŸlem rehberleri, yatÄ±rÄ±m analizi ve Ã§eÅŸitli bilgilendirici gayrimenkul yazÄ±larÄ±nÄ± tek merkezden takip edin.</p><div className="mt-10 grid gap-8 lg:grid-cols-[270px_minmax(0,1fr)]"><aside className="h-fit rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-28"><div className="flex items-center justify-between border-b border-slate-100 pb-4"><h2 className="text-sm font-black text-slate-900">Bilgi BaÅŸlÄ±klarÄ±</h2><span className="text-[10px] font-black text-slate-400">{categories.length} bÃ¶lÃ¼m</span></div><nav className="mt-2">{categories.map((category) => <Link key={category.id} to={`/kutuphane/${category.slug}`} className="group flex items-center gap-3 border-b border-slate-100 py-4 last:border-0"><span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{backgroundColor:category.color}}/><span className="flex-1 text-sm font-black text-slate-700 transition group-hover:text-slate-950">{category.title}</span><span className="text-[10px] font-black text-slate-400">{category.articles.length}</span><ArrowRight className="h-3.5 w-3.5 text-slate-300 transition group-hover:translate-x-1"/></Link>)}</nav></aside><section><div className="flex items-end justify-between gap-4 border-b border-slate-200 pb-4"><div><p className="text-[10px] font-black tracking-[.18em] text-red-700">BÄ°LGÄ°LENDÄ°RÄ°CÄ° Ä°Ã‡ERÄ°KLER</p><h2 className="mt-1 text-2xl font-black text-slate-950">Son Eklenen YazÄ±lar</h2></div><span className="hidden text-xs font-bold text-slate-400 sm:block">{latestArticles.length} iÃ§erik</span></div>{latestArticles.length ? <div className="mt-5 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">{latestArticles.map(({category,article}) => <Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="h-48 w-full bg-slate-100 object-cover transition duration-500 group-hover:scale-105"/><div className="p-5"><div className="flex items-center justify-between gap-3 text-[10px] font-black"><span style={{color:category.color}}>{category.title.toUpperCase()}</span><span className="shrink-0 text-slate-400">{new Date(article.publiÛM5¶‰ËkºwµçWBçfÇVR—Ò6Æ74æÖSÒ&‚ÓRrÓb"óãÂöÆ&VÃãÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚“Óç¶6öç7BW&Ã×&ö×B‚t&IöÆçLKG&W6’r“¶–b‡W&Â–6öÖÖæB‚v7&VFTÆ–æ²rÇW&Â“·×Ò6Æ74æÖSÒ&‚Ó‚&÷VæFVB&÷&FW"&r×v†—FR‚Ó"FW‡B×‡2föçBÖ&öÆB#ä&IöÆçLKÂö'WGFöããÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚“Óæ6öÖÖæB‚w&VÖ÷fTf÷&ÖBr—Ò6Æ74æÖSÒ&‚Ó‚&÷VæFVB&÷&FW"&r×v†—FR‚Ó"FW‡B×‡2föçBÖ&öÆB#ä&œ:v–Ö’FVÖ—¦ÆSÂö'WGFöããÂöF—cãÆF—b&Vc×¶VF—F÷%&VgÒ6öçFVçDVF—F&ÆR7W&W746öçFVçDVF—F&ÆUv&æ–æröä–çWC×²†R“Óæöä6†ævR†Ræ7W'&VçEF&vWBæ–ææW$…DÔÂ—Ò6Æ74æÖSÒ&Ö–âÖ‚ÓcBÓBFW‡B×6ÒÆVF–ærÓrFW‡B×6ÆFRÓƒ÷WFÆ–æRÖæöæR"FF×Æ6V†öÆFW#Ò%–¬Kœ:vW&œIö–æ’'W&–v—&–ââââ"óãÂöF—cã°§Ğ ¦gVæ7F–öâÆVvÄ–æfõvR‡²F—FÆRÂFW67&—F–öâÓ¢²F—FÆS¢7G&–æs²FW67&—F–öã¢7G&–ærÒ’°¢&WGW&âÆÖ–â6Æ74æÖSÒ&Ö–âÖ‚Õ³cWf…Ò&r×6ÆFRÓS’ÓB#ãÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÓG†Â‚Ób#ãÄÆ–æ²FóÒ"ò"6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓs#î(iæ6–f–L;fãÂôÆ–æ³ãÆ'F–6ÆR6Æ74æÖSÒ&×BÓb&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓr6†F÷r×6Ò6Ó§Ó#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡B×&VBÓs#å$TÅE’4TåDU,*âL9Å$¼K”SÂ÷ãÆƒ6Æ74æÖSÒ&×BÓ2FW‡BÓ7†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç·F—FÆWÓÂöƒãÇ6Æ74æÖSÒ&×BÓbFW‡B×6ÒÆVF–ærÓrFW‡B×6ÆFRÓc#ç¶FW67&—F–öçÓÂ÷ãÇ6Æ74æÖSÒ&×BÓRFW‡B×6ÒÆVF–ærÓrFW‡B×6ÆFRÓc#ä'RÖWF–ã²·VÆÆìK<KÆ,Kâ&–Æv–ÆVæF—&–ÆÖW6’Â¶œYö—6VÂfW&–ÆW&–â¶÷'VæÖ<KÂ|;ÇfVæÆ’·VÆÆìKÒfRYöVffb†—¦ÖWB–Æ¶VÆW&–Ö—¦–â:|K¶ÆæÖ<KÖ<K–Æ†¬K&ÆæÜKY÷LK"â—,KçLKÌK&–Æv’fW–&Y÷gW'Rœ:v–â–æfô&VÇG–6VçFW"æ6öÒçG"G&W6–æFVâ&—¦–ÖÆR–ÆWFœYö–ÖRv\:vV&–Æ—'6–æ—¢ãÂ÷ãÇ6Æ74æÖSÒ&×BÓ‚&÷&FW"×B&÷&FW"×6ÆFRÓBÓBFW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓC#å6öâ|;Ææ6VÆÆVÖS¢#BI÷W7F÷2##cÂ÷ãÂö'F–6ÆSãÂöF—cãÂöÖ–ãã°§Ğ ¦gVæ7F–öâ6—FU6V&6…vR‚’°¢6öç7BÆö6F–öâÒW6TÆö6F–öâ‚“°¢6öç7Bæf–vFRÒW6Tæf–vFR‚“°¢6öç7B–æ—F–ÅVW'’ÒæWrU$Å6V&6…&×2†Æö6F–öâç6V&6‚’ævWB‚wr’ÇÂrs°¢6öç7B·VW'’Â6WEVW'•ÒÒW6U7FFR†–æ—F–ÅVW'’“°¢6öç7B6V&6†&ÆUvW2Ò°¢²tv—&–ÖVæ·VÂ&V†&W&’rÂu&V†&W"rÂtWbÆÖÂ6FÖfR¶—&ÆÖ¶&&Æ,K²FRfR<;g¦Æ\YöÖR<;Ç&\:vÆW&’Â,;fÆvW6VÂf—–B†&V¶WFÆW&’fRFüI÷'R¶,YüKÆY÷LK&Öœ;fçFVÖÆW&’ârÂrö&Æör÷&V†&W"uÒÀ¢²tv—&–ÖVæ·VÂ‡V·V·RrÂu&VÇG’¼;ÇL;Ç†æRrÂuFRÂ<;g¦Æ\YöÖRÂ–WF¶–ÆVæF—&ÖRfR–6Â<;Ç&\:vÆW&RF—"œ:vW&–¶ÆW"ârÂrö&Æörö‡V·V²uÒÀ¢²u6V·L;g&FVâ†&W&ÆW"rÂu&VÇG’¼;ÇL;Ç†æRrÂtv—&–ÖVæ·VÂ—–6<KæF¶’|;Ææ6VÂvVÆœYöÖVÆW"fR|;ÆæFVÒæ÷FÆ,KârÂrö&Æörö†&W&ÆW"uÒÀ¢²u–LK,KÒæÆ—¦ÆW&’rÂu&VÇG’¼;ÇL;Ç†æRrÂt,;fÆvRÂÖWG&V¶&Rf—–LKÂ¶—&vWF—&—6’fR–LK,KÒlK'6FÆ,KârÂrö&ÆöröæÆ—¦ÆW"uÒÀ¢²t†¶¼KÜK¦FrÂt·W'V×6ÂrÂu&VÇG’6VçFW,*â·W'V×6Âf—§–öçRÂ|;ÇfVâæÆœKYüKÂW¦ÖæÌK²fRg&æ6†—6RIüKârÂrö·W'V×6Âö†¶¶–Ö—¦FuÒÀ¢²uœ;fæWF–Ò·W'VÇV×W¢rÂt·W'V×6ÂrÂu7G&FV¦–²¶&"ÆÖÂ·W'V×6ÂvVÆœYö–ÒfR¶Æ—FR7FæF'FÆ,KârÂrö·W'V×6Â÷–öæWF–ÒÖ·W'VÇRuÒÀ¢²u&VfW&ç6Æ,KÜK¢rÂt·W'V×6ÂrÂtöf—2IüKÂFìKYöÖâIüKÂœYò÷'F¶ÌK¶Æ,KfRFÖÖÆæâ÷'Fl;g’\YöÆ\Y÷F—&ÖVÆW&’ârÂrö·W'V×6Â÷&VfW&ç6Æ"uÒÀ¢²tæVFVâ&VÇG’6VçFW,*ãòrÂt·W'V×6ÂrÂuFV¶æöÆö¦–²ÇG–KÂ\Iö—F–ÒÂFìKLKÒÂg&æ6†—6RfRFìKYöÖæÌK²fçF¦Æ,KârÂröæVFVâ×&VÇG’Ö6VçFW"uÒÀ¢²töf—6ÆW&–Ö—¢rÂt·W'V×6ÂrÂuL;Ç&¶—–RvVæVÆ–æFV¶’&VÇG’6VçFW,*âg&æ6†—6Röf—6ÆW&’fR–ÆWFœYö–Ò&–Æv–ÆW&’ârÂrööf—6ÆW&–Ö—¢uÒÀ¢²tFìKYöÖæÆ,KÜK¢rÂt·W'V×6ÂrÂuW¦Öâv—&–ÖVæ·VÂFìKYöÖæÆ,KÂYöV†—"fR–Ì:vR&¦ÌKFìKYöÖâ&ÖârÂröFæ—6ÖæÆ&–Ö—¢uÒÀ¢²u&ö¦VÆW&–Ö—¢rÂtv—&–ÖVæ·VÂrÂu–Væ’¶öçWBÂF–6&’–LK,KÒfR–YöÒ&ö¦VÆW&’ârÂr÷&ö¦VÆW&–Ö—¢uÒÀ¢²u$TÅE’ÔTE”rÂtÖVG–rÂu&VÇG’EbÂ&VÇG’†&W&ÆW"Â&ö¦RFìKLKÖÆ,KfRv—&–ÖVæ·VÂf–FVòœ:vW&–¶ÆW&’ârÂr÷f–FVöÆ"uÒÀ¢²t†&—F–ÆR&rÂtv—&–ÖVæ·VÂrÂuL;Ç&¶—–R†&—F<KæFâYöV†—"Â–Ì:vRfR¶öçVÖ|;g&R–Æâ&ÖârÂrö†&—FÖ–ÆRÖ&uÒÀ¢²u–’¦V¶v—&–ÖVæ·VÂ6—7FìKrÂuFV¶æöÆö¦’rÂuW–wVâ–ÆæÆ"ÂÖWG&V¶&Rf—–LKÂ¶—&vWF—&—6’Â–LK,KÒvW&’L;fì;ÌYü;ÂfR÷FöÖF–²F\IöW&ÆVÖRârÂrö’Ö¶&"Ö6—7Fæ’uÒÀ¢²tg&æ6†—6RöÂrÂt&Y÷gW'RrÂu&VÇG’6VçFW,*âg&æ6†—6RIüKæ¶LKÆÖfRöf—2&Y÷gW'W7RârÂrög&æ6†—6RÖ&7gW'RuÒÀ¢²tFìKYöÖâöÂrÂt&Y÷gW'RrÂtv—&–ÖVæ·VÂFìKYöÖæÌKIüK¶&—–W&’fR&Y÷gW'Rf÷&×RârÂröFæ—6ÖâÖ&7gW'RuÒÀ¢²tµd´²–LKæÆFÖÖWFæ’rÂu–6ÂrÂt¶œYö—6VÂfW&–ÆW&–âœYöÆVæÖW6’Â6¶ÆæÖ<KfR·VÆÆìK<K†¶Æ,KârÂrö·f¶²uÒÀ¢²|8vW&W¢öÆ—F–¶<KrÂu–6ÂrÂu¦÷'VæÇRÂœYöÆWg6VÂfRæÆ—F–²:vW&W¦ÆW&–â·VÆÆìKÒÖ:vÆ,KârÂrö6W&W¢×öÆ—F–¶6’uÒÀ¢²tv—¦Æ–Æ–²öÆ—F–¶<KrÂu–6ÂrÂt·VÆÆìK<K&–Æv–ÆW&–æ–âv•š®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍ^›[q'ÚH™HÛÜ[›X\ñ,K‰Ë	ËÙÚ^›[ZË\Û]ZØ\ÚI×KˆÉÒİ[[±,[HÛñgİ[\±,IË	ÖX\Ø[	Ë	ÔÚ]Hİ[[±,[q,KpéÙ\šZÛ\ˆ™Hİ[[±,Xñ,HÛÜ[[[ZÛ\±,K‰Ë	ËÚİ[[š[KZÛÜİ[\šI×BˆK›X\
+  return <main className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6"><p className="text-xs font-black tracking-[.24em] text-red-700">REALTY CENTERÂ®</p><h1 className="mt-3 text-4xl font-black text-slate-950">Realty KÃ¼tÃ¼phane</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Hukuk ve mevzuat, iÅŸlem rehberleri, yatÄ±rÄ±m analizi ve Ã§eÅŸitli bilgilendirici gayrimenkul yazÄ±larÄ±nÄ± tek merkezden takip edin.</p><div className="mt-10 grid gap-8 lg:grid-cols-[270px_minmax(0,1fr)]"><aside className="h-fit rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-28"><div className="flex items-center justify-between border-b border-slate-100 pb-4"><h2 className="text-sm font-black text-slate-900">Bilgi BaÅŸlÄ±klarÄ±</h2><span className="text-[10px] font-black text-slate-400">{categories.length} bÃ¶lÃ¼m</span></div><nav className="mt-2">{categories.map((category) => <Link key={category.id} to={`/kutuphane/${category.slug}`} className="group flex items-center gap-3 border-b border-slate-100 py-4 last:border-0"><span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{backgroundColor:category.color}}/><span className="flex-1 text-sm font-black text-slate-700 transition group-hover:text-slate-950">{category.title}</span><span className="text-[10px] font-black text-slate-400">{category.articles.length}</span><ArrowRight className="h-3.5 w-3.5 text-slate-300 transition group-hover:translate-x-1"/></Link>)}</nav></aside><section><div className="flex items-end justify-between gap-4 border-b border-slate-200 pb-4"><div><p className="text-[10px] font-black tracking-[.18em] text-red-700">BÄ°LGÄ°LENDÄ°RÄ°CÄ° Ä°Ã‡ERÄ°KLER</p><h2 className="mt-1 text-2xl font-black text-slate-950">Son Eklenen YazÄ±lar</h2></div><span className="hidden text-xs font-bold text-slate-400 sm:block">{latestArticles.length} iÃ§erik</span></div>{latestArticles.length ? <div className="mt-5 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">{latestArticles.map(({category,article}) => <Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="h-48 w-full bg-slate-100 object-cover transition duration-500 group-hover:scale-105"/><div className="p-5"><div className="flex items-center justify-between gap-3 text-[10px] font-black"><span style={{color:category.color}}>{category.title.toUpperCase()}</span><span className="shrink-0 text-slate-400">{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</span></div><h3 className="mt-3 text-lg font-black leading-6 text-slate-900">{article.title}</h3><p className="mt-3 line-clamp-3 text-xs leading-5 text-slate-600">{article.summary||stripRichText(article.content)}</p><span className="mt-5 inline-flex items-center gap-1 text-xs font-black text-red-700">Ä°Ã§eriÄŸi oku <ArrowRight className="h-3.5 w-3.5"/></span></div></Link>)}</div> : <div className="mt-5 rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-sm font-bold text-slate-500">HenÃ¼z yayÄ±nlanmÄ±ÅŸ bir iÃ§erik bulunmuyor.</div>}</section></div></div></main>;
+}
 
-İ]KØ]YÛÜKÛÛ[×JHOˆ
-È]KØ]YÛÜKÛÛ[ÈJJNÂˆÛÛœİ[™^HÂˆ‹‹œÙX\˜ÚX›TYÙ\Ëˆ‹‹™Ù]Xœ˜\PØ]YÛÜšY\Ê
-K™›]X\
+function LibraryCategoryPage() {
+  const { slug='' }=useParams();
+  const [categories,setCategories]=useState<LibraryCategory[]>(getLibraryCategories);
+  useEffect(()=>{const refresh=()=>setCategories(getLibraryCategories());window.addEventListener('realty-center-library-updated',refresh);return()=>window.removeEventListener('realty-center-library-updated',refresh);},[]);
+  const category=categories.find((item)=>item.slug===slug);
+  if(!category)return <LibraryHomePage/>;
+  return <main className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6"><Link to="/kutuphane" className="text-xs font-black text-red-700">â† Realty KÃ¼tÃ¼phane</Link><div className="mt-6 rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200"><div className="h-1.5 w-20 rounded-full" style={{backgroundColor:category.color}}/><h1 className="mt-5 text-4xl font-black text-slate-950">{category.title}</h1><p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">{category.description}</p></div>{category.articles.length?<div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{category.articles.map((article)=><Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="h-48 w-full bg-slate-100 object-cover"/><div className="p-5"><p className="text-[10px] font-black" style={{color:category.color}}>{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</p><h2 className="mt-2 text-lg font-black text-slate-900">{article.title}</h2><p className="mt-3 line-clamp-3 text-xs leading-5 text-slate-600">{article.summary||stripRichText(article.content)}</p><span className="mt-5 inline-flex text-xs font-black" style={{color:category.color}}>Ä°Ã§eriÄŸi oku â†’</span></div></Link>)}</div>:<div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-sm font-bold text-slate-500">Bu bÃ¶lÃ¼me henÃ¼z iÃ§erik eklenmedi.</div>}</div></main>;
+}
 
-Ø]YÛÜJHOˆŞÈ]NˆØ]YÛÜK]KØ]YÛÜNˆ	Ô™X[Hğï0ï[™IËÛÛ[ˆØ]YÛÜK™\ØÜš\[Û‹ÎˆÚİ]\[™KÉØØ]YÛÜKœÛYßXK‹‹˜Ø]YÛÜK˜\XÛ\Ë›X\
+function LibraryArticlePage(){
+  const {slug='',articleId=''}=useParams(); const categories=getLibraryCategories(); const category=categories.find((item)=>item.slug===slug); const article=category?.articles.find((item)=>item.id===articleId);
+  if(!category||!article)return <LibraryHomePage/>;
+  return <main className="min-h-[70vh] bg-slate-50 py-12"><article className="mx-auto max-w-4xl px-6"><Link to={`/kutuphane/${category.slug}`} className="text-xs font-black text-red-700">â† {category.title}</Link><div className="mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="max-h-[480px] w-full bg-slate-100 object-cover"/><div className="p-7 sm:p-10"><p className="text-[10px] font-black tracking-widest" style={{color:category.color}}>{category.title.toUpperCase()} Â· {new Date(article.publishedAt).toLocaleDateString('tr-TR')}</p><h1 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl">{article.title}</h1>{article.summary&&<p className="mt-5 border-l-4 pl-4 text-sm font-semibold leading-7 text-slate-600" style={{borderColor:category.color}}>{article.summary}</p>}<div className="library-rich-content mt-8 text-sm leading-8 text-slate-700" dangerouslySetInnerHTML={{__html:article.content}}/></div></div></article></main>;
+}
 
-\XÛJHOˆ
-È]Nˆ\XÛK]KØ]YÛÜNˆØ]YÛÜK]KÛÛ[ˆ	Ø\XÛKœİ[[X\_H	Üİš\šXÚ^
-\XÛK˜ÛÛ[
-_XÎˆÚİ]\[™KÉØØ]YÛÜKœÛYßKÉØ\XÛKšYXJJWJKˆ‹‹”ĞSTWÓTÕS‘ÔË›X\
+function RichTextEditor({value,onChange}:{value:string;onChange:(value:string)=>void}){
+  const editorRef=useRef<HTMLDivElement>(null);
+  const command=(name:string,arg?:string)=>{editorRef.current?.focus();document.execCommand(name,false,arg);onChange(editorRef.current?.innerHTML||'');};
+  useEffect(()=>{if(editorRef.current&&editorRef.current.innerHTML!==value)editorRef.current.innerHTML=value;},[value]);
+  return <div className="overflow-hidden rounded-xl border border-slate-300 bg-white"><div className="flex flex-wrap items-center gap-1 border-b border-slate-200 bg-slate-50 p-2"><button type="button" onClick={()=>command('bold')} className="h-8 min-w-8 rounded border bg-white px-2 text-xs font-black">B</button><button type="button" onClick={()=>command('italic')} className="h-8 min-w-8 rounded border bg-white px-2 text-xs italic">I</button><button type="button" onClick={()=>command('underline')} className="h-8 min-w-8 rounded border bg-white px-2 text-xs underline">U</button><button type="button" onClick={()=>command('insertUnorderedList')} className="h-8 rounded border bg-white px-2 text-xs font-bold">â€¢ Liste</button><select onChange={(e)=>command('formatBlock',e.target.value)} defaultValue="p" className="h-8 rounded border bg-white px-2 text-xs"><option value="p">Normal</option><option value="h2">BaÅŸlÄ±k</option><option value="h3">Alt BaÅŸlÄ±k</option><option value="blockquote">AlÄ±ntÄ±</option></select><select onChange={(e)=>command('fontName',e.target.value)} defaultValue="Arial" className="h-8 rounded border bg-white px-2 text-xs"><option>Arial</option><option>Georgia</option><option>Verdana</option><option>Tahoma</option><option>Times New Roman</option></select><label className="flex h-8 items-center gap-1 rounded border bg-white px-2 text-[10px] font-bold">Renk<input type="color" onChange={(e)=>command('foreColor',e.target.value)} className="h-5 w-6"/></label><button type="button" onClick={()=>{const url=prompt('BaÄŸlantÄ± adresi');if(url)command('createLink',url);}} className="h-8 rounded border bg-white px-2 text-xs font-bold">BaÄŸlantÄ±</button><button type="button" onClick={()=>command('removeFormat')} className="h-8 rounded border bg-white px-2 text-xs font-bold">BiÃ§imi temizle</button></div><div ref={editorRef} contentEditable suppressContentEditableWarning onInput={(e)=>onChange(e.currentTarget.innerHTML)} className="min-h-64 p-4 text-sm leading-7 text-slate-800 outline-none" data-placeholder="YazÄ± iÃ§eriÄŸini buraya girin..."/></div>;
+}
 
-][JHOˆ
-È]Nˆ][K]KØ]YÛÜNˆ	ñ,[‰ËÛÛ[ˆ	Ú][K\_H	Ú][Kœ›Ü\U\_H	Ú][K˜Ú]_H	Ú][K™\İšXİH	Ú][K›™ZYÚ›ÜšÛÙH	Ú][Kœ›ÛÛ\ßH	Ú][K˜\™X_HY]™ZØ\™H	Ú][K™\ØÜš\[Ûˆ	ÉßXÎˆÚ[[‹ÉÚ][KšYXJJKˆ‹‹”ĞSTWĞQÑS•Ë›X\
+function LegalInfoPage({ title, description }: { title: string; description: string }) {
+  return <main className="min-h-[65vh] bg-slate-50 py-14"><div className="mx-auto max-w-4xl px-6"><Link to="/" className="text-xs font-black text-red-700">â† Ana sayfaya dÃ¶n</Link><article className="mt-6 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><p className="text-[10px] font-black tracking-[.2em] text-red-700">REALTY CENTERÂ® TÃœRKÄ°YE</p><h1 className="mt-3 text-3xl font-black text-slate-900">{title}</h1><p className="mt-6 text-sm leading-7 text-slate-600">{description}</p><p className="mt-5 text-sm leading-7 text-slate-600">Bu metin; kullanÄ±cÄ±larÄ±n bilgilendirilmesi, kiÅŸisel verilerin korunmasÄ±, gÃ¼venli kullanÄ±m ve ÅŸeffaf hizmet ilkelerimizin aÃ§Ä±klanmasÄ± amacÄ±yla hazÄ±rlanmÄ±ÅŸtÄ±r. AyrÄ±ntÄ±lÄ± bilgi veya baÅŸvuru iÃ§in info@realtycenter.com.tr adresinden bizimle iletiÅŸime geÃ§ebilirsiniz.</p><p className="mt-8 border-t border-slate-100 pt-4 text-xs font-bold text-slate-400">Son gÃ¼ncelleme: 24 AÄŸustos 2026</p></article></div></main>;
+}
 
-][JHOˆ
-È]Nˆ][K›˜[YKØ]YÛÜNˆ	Ñ[±,qgÛX[‰ËÛÛ[ˆ	Ú][K]_H	Ú][K˜Ú]_H	Ú][K™\İšXİH	Ú][K›Ù™šXÙ_H	Ú][K™[XZ[XÎˆ	ËÙ[š\ÛX[›\š[Z^‰ÈJJKˆ‹‹”ĞSTWÓÑ‘’PÑTË›X\
+function SiteSearchPage() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const initialQuery = new URLSearchParams(location.search).get('q') || '';
+  const [query, setQuery] = useState(initialQuery);
+  const searchablePages = [
+    ['Gayrimenkul Rehberi','Rehber','Ev alma, satma ve kiralama kararlarÄ±; tapu ve sÃ¶zleÅŸme sÃ¼reÃ§leri, bÃ¶lgesel fiyat hareketleri ve doÄŸru karÅŸÄ±laÅŸtÄ±rma yÃ¶ntemleri.','/blog/rehber'],
+    ['Gayrimenkul Hukuku','Realty KÃ¼tÃ¼phane','Tapu, sÃ¶zleÅŸme, yetkilendirme ve yasal sÃ¼reÃ§lere dair iÃ§erikler.','/blog/hukuk'],
+    ['SektÃ¶rden Haberler','Realty KÃ¼tÃ¼phane','Gayrimenkul piyasasÄ±ndaki gÃ¼ncel geliÅŸmeler ve gÃ¼ndem notlarÄ±.','/blog/haberler'],
+    ['YatÄ±rÄ±m Analizleri','Realty KÃ¼tÃ¼phane','BÃ¶lge, metrekare fiyatÄ±, kira getirisi ve yatÄ±rÄ±m fÄ±rsatlarÄ±.','/blog/analizler'],
+    ['HakkÄ±mÄ±zda','Kurumsal','Realty CenterÂ® kurumsal vizyonu, gÃ¼ven anlayÄ±ÅŸÄ±, uzmanlÄ±k ve franchise aÄŸÄ±.','/kurumsal/hakkimizda'],
+    ['YÃ¶netim Kurulumuz','Kurumsal','Stratejik karar alma, kurumsal geliÅŸim ve kalite standartlarÄ±.','/kurumsal/yonetim-kurulu'],
+    ['ReferanslarÄ±mÄ±z','Kurumsal','Ofis aÄŸÄ±, danÄ±ÅŸman aÄŸÄ±, iÅŸ ortaklÄ±klarÄ± ve tamamlanan portfÃ¶y eÅŸleÅŸtirmeleri.','/kurumsal/referanslar'],
+    ['Neden Realty CenterÂ®?','Kurumsal','Teknolojik altyapÄ±, eÄŸitim, tanÄ±tÄ±m, franchise ve danÄ±ÅŸmanlÄ±k avantajlarÄ±.','/neden-realty-center'],
+    ['Ofislerimiz','Kurumsal','TÃ¼rkiye genelindeki Realty CenterÂ® franchise ofisleri ve iletiÅŸim bilgileri.','/ofislerimiz'],
+    ['DanÄ±ÅŸmanlarÄ±mÄ±z','Kurumsal','Uzman gayrimenkul danÄ±ÅŸmanlarÄ±, ÅŸehir ve ilÃ§e bazlÄ± danÄ±ÅŸman arama.','/danismanlarimiz'],
+    ['Projelerimiz','Gayrimenkul','Yeni konut, ticari yatÄ±rÄ±m ve yaÅŸam projeleri.','/projelerimiz'],
+    ['REALTY MEDYA','Medya','Realty TV, Realty Haberler, proje tanÄ±tÄ±mlarÄ± ve gayrimenkul video iÃ§erikleri.','/videolar'],
+    ['Harita ile Ara','Gayrimenkul','TÃ¼rkiye haritasÄ±ndan ÅŸehir, ilÃ§e ve konuma gÃ¶re ilan arama.','/harita-ile-ara'],
+    ['Yapay Zeka Gayrimenkul AsistanÄ±','Teknoloji','Uygun ilanlar, metrekare fiyatÄ±, kira getirisi, yatÄ±rÄ±m geri dÃ¶nÃ¼ÅŸÃ¼ ve otomatik deÄŸerleme.','/ai-karar-asistani'],
+    ['Franchise Ol','BaÅŸvuru','Realty CenterÂ® franchise aÄŸÄ±na katÄ±lma ve ofis baÅŸvurusu.','/franchise-basvuru'],
+    ['DanÄ±ÅŸman Ol','BaÅŸvuru','Gayrimenkul danÄ±ÅŸmanlÄ±ÄŸÄ± kariyeri ve baÅŸvuru formu.','/danisman-basvuru'],
+    ['KVKK AydÄ±nlatma Metni','Yasal','KiÅŸisel verilerin iÅŸlenmesi, saklanmasÄ± ve kullanÄ±cÄ± haklarÄ±.','/kvkk'],
+    ['Ã‡erez PolitikasÄ±','Yasal','Zorunlu, iÅŸlevsel ve analitik Ã§erezlerin kullanÄ±m amaÃ§larÄ±.','/cerez-politikasi'],
+    ['Gizlilik PolitikasÄ±','Yasal','KullanÄ±cÄ± bilgilerinin gizliliÄŸi ve korunmasÄ±.','/gizlilik-politikasi'],
+    ['KullanÄ±m KoÅŸullarÄ±','Yasal','Site kullanÄ±mÄ±, iÃ§erikler ve kullanÄ±cÄ± sorumluluklarÄ±.','/kullanim-kosullari']
+  ].map(([title,category,content,to]) => ({ title, category, content, to }));
+  const index = [
+    ...searchablePages,
+    ...getLibraryCategories().flatMap((category) => [{ title: category.title, category: 'Realty KÃ¼tÃ¼phane', content: category.description, to: `/kutuphane/${category.slug}` }, ...category.articles.map((article) => ({ title: article.title, category: category.title, content: `${article.summary} ${stripRichText(article.content)}`, to: `/kutuphane/${category.slug}/${article.id}` }))]),
+    ...SAMPLE_LISTINGS.map((item) => ({ title: item.title, category: 'Ä°lan', content: `${item.type} ${item.propertyType} ${item.city} ${item.district} ${item.neighborhood} ${item.rooms} ${item.area} metrekare ${item.description || ''}`, to: `/ilan/${item.id}` })),
+    ...SAMPLE_AGENTS.map((item) => ({ title: item.name, category: 'DanÄ±ÅŸman', content: `${item.title} ${item.city} ${item.district} ${item.office} ${item.email}`, to: '/danismanlarimiz' })),
+    ...SAMPLE_OFFICES.map((item) => ({ title: item.name, category: 'Ofis', content: `${item.city} ${item.district} ${item.address} ${item.manager}`, to: '/ofislerimiz' })),
+    ...WHY_REALTY_CENTER_ITEMS.map((content) => ({ title: content, category: 'Neden Realty CenterÂ®?', content, to: '/neden-realty-center' }))
+  ];
+  const terms = initialQuery.toLocaleLowerCase('tr-TR').split(/\s+/).filter(Boolean);
+  const results = terms.length ? index.filter((item) => { const haystack = `${item.title} ${item.category} ${item.content}`.toLocaleLowerCase('tr-TR'); return terms.every((term) => haystack.includes(term)); }) : [];
+  const submit = (event: React.FormEvent) => { event.preventDefault(); if (query.trim()) navigate(`/arama?q=${encodeURIComponent(query.trim())}`); };
+  return <div className="min-h-[65vh] bg-slate-50 py-12"><div className="mx-auto max-w-5xl px-6"><p className="text-xs font-black tracking-widest text-red-700">REALTY CENTERÂ® SÄ°TE Ä°Ã‡Ä° ARAMA</p><h1 className="mt-2 text-3xl font-black text-slate-900">TÃ¼m sitede arayÄ±n</h1><form onSubmit={submit} className="mt-6 flex overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ä°lan, rehber yazÄ±sÄ±, danÄ±ÅŸman, ofis veya sayfa ara..." className="min-w-0 flex-1 px-5 py-4 text-sm font-semibold outline-none"/><button className="bg-red-700 px-6 text-sm font-black text-white">Ara</button></form><div className="mt-7 flex items-center justify-between border-b border-slate-200 pb-3"><h2 className="font-black text-slate-900">â€œ{initialQuery}â€ sonuÃ§larÄ±</h2><span className="text-xs font-bold text-slate-500">{results.length} sonuÃ§</span></div>{results.length ? <div className="divide-y divide-slate-200">{results.map((item,index) => <Link key={`${item.to}-${item.title}-${index}`} to={item.to} className="group block py-5"><span className="text-[10px] font-black uppercase tracking-widest text-red-700">{item.category}</span><h3 className="mt-1 text-lg font-black text-slate-900 group-hover:text-red-700">{item.title}</h3><p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-600">{item.content}</p></Link>)}</div> : <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-10 text-center"><Search className="mx-auto h-8 w-8 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">AramanÄ±zla eÅŸleÅŸen iÃ§erik bulunamadÄ±.</p><p className="mt-1 text-xs text-slate-500">Daha kÄ±sa veya farklÄ± bir kelime deneyebilirsiniz.</p></div>}</div></div>;
+}
 
-][JHOˆ
-È]Nˆ][K›˜[YKØ]YÛÜNˆ	ÓÙš\ÉËÛÛ[ˆ	Ú][K˜Ú]_H	Ú][K™\İšXİH	Ú][K˜Y™\ÜßH	Ú][K›X[˜YÙ\ŸXÎˆ	ËÛÙš\Û\š[Z^‰ÈJJKˆ‹‹•ÒWÔ‘PSWĞÑS•T—ÒUSTË›X\
+function HeaderItemLabel({ item }: { item: HeaderMenuItem; root: boolean }) {
+  return <span>{item.label}</span>;
+}
 
-ÛÛ[
-HOˆ
-È]NˆÛÛ[Ø]YÛÜNˆ	Ó™Y[ˆ™X[HÙ[\°«ÉËÛÛ[Îˆ	ËÛ™Y[‹\™X[KXÙ[\‰ÈJJBˆNÂˆÛÛœİ\›\ÈH[š]X[]Y\KÓØØ[SİÙ\Ø\ÙJ	İ‹U‰ÊKœÜ]
-×ÊËÊK™š[\Š›ÛÛX[ŠNÂˆÛÛœİ™\İ[ÈH\›\Ë›[™İÈ[™^™š[\Š
-][JHOˆÈÛÛœİ^\İXÚÈH	Ú][K]_H	Ú][K˜Ø]YÛÜ_H	Ú][K˜ÛÛ[XÓØØ[SİÙ\Ø\ÙJ	İ‹U‰ÊNÈ™]\›ˆ\›\Ë™]™\J
-\›JHOˆ^\İXÚËš[˜ÛY\Ê\›JJNÈJHˆ×NÂˆÛÛœİİX›Z]H
-]™[ˆ™XXİ‘›Ü›Q]™[
-HOˆÈ]™[œ™]™[Y˜][
+function DesktopHeaderNode({ item, root = true, align = 'left', menuLinkClass }: { item: HeaderMenuItem; root?: boolean; align?: 'left' | 'right'; menuLinkClass: (to: string) => string }) {
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hasChildren = item.children.length > 0;
+  if (!hasChildren) return <Link to={item.path} className={root ? menuLinkClass(item.path) : 'flex items-center rounded-xl px-4 py-3 text-xs font-black text-slate-700 transition hover:bg-red-50 hover:text-red-700'}><HeaderItemLabel item={item} root={root}/></Link>;
+  const enter = () => { if (closeTimer.current) clearTimeout(closeTimer.current); setOpen(true); };
+  const leave = () => { closeTimer.current = setTimeout(() => setOpen(false),120); };
+  return <div className="relative z-30" onMouseEnter={enter} onMouseLeave={leave}><Link to={item.path} className={root ? menuLinkClass(item.path) : `flex items-center justify-between rounded-xl px-4 py-3 text-xs font-black transition ${open ? 'bg-red-50 text-red-700' : 'text-slate-700 hover:bg-red-50 hover:text-red-700'}`}><HeaderItemLabel item={item} root={root}/><ChevronDown className={`ml-1 h-3 w-3 shrink-0 transition duration-200 ${root ? (open ? 'rotate-180' : '') : '-rotate-90'}`}/></Link><div className={`absolute z-50 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl transition duration-200 ${open ? 'visible translate-y-0 opacity-100' : 'invisible translate-y-1 opacity-0'} ${root ? `top-full ${align === 'right' ? 'right-0' : 'left-0'}` : 'left-full top-0'}`}>{item.children.map((child) => <DesktopHeaderNode key={child.id} item={child} root={false} align={align} menuLinkClass={menuLinkClass}/>)}</div></div>;
+}
 
-NÈYˆ
-]Y\Kš[J
-JH˜]šYØ]JØ\˜[XOÜOIÙ[˜ÛÙUT’PÛÛ\Û™[
-]Y\Kš[J
-J_X
-NÈNÂˆ™]\›ˆ]ˆÛ\ÜÓ˜[YOH›Z[‹ZVÍ]šH™Ë\Û]KMLKLLˆ]ˆÛ\ÜÓ˜[YOH›^X]]ÈX^]ËM^MˆÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ˜XÚÚ[™Ë]ÚY\İ^\™YMÌ”‘PSHÑS•T°«ˆñ,H1,0áñ,TSPOÜHÛ\ÜÓ˜[YOH›]Lˆ^LŞ›ÛX›XÚÈ^\Û]KNL•0ïHÚ]YH\˜^q,[ÚO›Ü›HÛ”İX›Z]^ÜİX›Z]HÛ\ÜÓ˜[YOH›]Mˆ›^İ™\™›İËZY[ˆ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HÚYİË\ÛH[œ]˜[YO^Ü]Y\_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]]Y\J]™[\™Ù]˜[YJ_HXÙZÛ\H±,[‹™Z™\ˆX^±,\ñ,K[±,qgÛX[‹Ùš\È™^XHØ^Y˜H\˜K‹‹ˆˆÛ\ÜÓ˜[YOH›Z[‹]ËL›^LHMHKM^\ÛH›Û\Ù[ZX›Ûİ][™K[›Û™H‹Ï]ÛˆÛ\ÜÓ˜[YOH˜™Ë\™YMÌMˆ^\ÛH›ÛX›XÚÈ^]Ú]H\˜OØ]ÛÙ›Ü›O]ˆÛ\ÜÓ˜[YOH›]MÈ›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‹LÈˆÛ\ÜÓ˜[YOH™›ÛX›XÚÈ^\Û]KNL¸ 'Ú[š]X[]Y\_x 'HÛÛpéÛ\±,OÚÜ[ˆÛ\ÜÓ˜[YOH^^È›ÛX›Û^\Û]KMLÜ™\İ[Ë›[™İHÛÛpéÏÜÜ[Ù]Ü™\İ[Ë›[™İÈ]ˆÛ\ÜÓ˜[YOH™]šYK^H]šYK\Û]KLŒÜ™\İ[Ë›X\
+function MobileHeaderNodes({ items, close, depth = 0 }: { items: HeaderMenuItem[]; close: () => void; depth?: number }) {
+  const [openItemId, setOpenItemId] = useState<string | null>(null);
+  return <div className={`space-y-2 ${depth ? 'border-l border-slate-200 pl-3' : ''}`}>
+    {items.map((item) => {
+      const hasChildren = item.children.length > 0;
+      const isOpen = openItemId === item.id;
+      const itemClass = depth === 0
+        ? 'realty-mobile-menu-root flex w-full items-center justify-between border-b border-slate-200 px-1 py-3.5 text-left text-[15px] font-black text-slate-800 transition hover:text-red-700'
+        : 'realty-mobile-menu-child flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-[13px] font-bold text-slate-700 transition hover:bg-red-50 hover:text-red-700';
+      return <div key={item.id}>
+        {hasChildren ? <button type="button" onClick={() => setOpenItemId(isOpen ? null : item.id)} aria-expanded={isOpen} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/><ChevronDown className={`h-4 w-4 shrink-0 transition ${isOpen ? 'rotate-180 text-red-700' : 'text-slate-400'}`}/></button> : <Link onClick={close} to={item.path} className={itemClass}><HeaderItemLabel item={item} root={depth === 0}/></Link>}
+        {hasChildren && isOpen && <div className="mt-2 space-y-2"><Link onClick={close} to={item.path} className="realty-mobile-menu-all block px-3 py-2 text-xs font-black text-red-700">TÃ¼mÃ¼nÃ¼ GÃ¶r</Link><MobileHeaderNodes items={item.children} close={close} depth={depth + 1}/></div>}
+      </div>;
+    })}
+  </div>;
+}
 
-][K[™^
-HOˆ[šÈÙ^O^Ø	Ú][KßKIÚ][K]_KIÚ[™^XHÏ^Ú][KßHÛ\ÜÓ˜[YOH™Ü›İ\›ØÚÈKMHÜ[ˆÛ\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ\\˜Ø\ÙH˜XÚÚ[™Ë]ÚY\İ^\™YMÌÚ][K˜Ø]YÛÜ_OÜÜ[ÈÛ\ÜÓ˜[YOH›]LH^[È›ÛX›XÚÈ^\Û]KNLÜ›İ\Zİ™\^\™YMÌÚ][K]_OÚÏÛ\ÜÓ˜[YOH›]LH[™KXÛ[\Lˆ^^ÈXY[™ËMH^\Û]KMŒÚ][K˜ÛÛ[OÜÓ[šÏŠ_OÙ]ˆˆ]ˆÛ\ÜÓ˜[YOH›]N›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HLL^XÙ[\ˆÙX\˜ÚÛ\ÜÓ˜[YOH›^X]]ÈNËN^\Û]KLÌ‹ÏÛ\ÜÓ˜[YOH›]LÈ^\ÛH›ÛX›XÚÈ^\Û]KMÌ\˜[X[±,^›HqgÛqgÙ[ˆpéÙ\šZÈ[[˜[XY1,KÜÛ\ÜÓ˜[YOH›]LH^^È^\Û]KML‘ZHñ,\ØH™^XH˜\šÛ1,Hš\ˆÙ[[YH[™^YXš[\œÚ[š^‹ÜÙ]ŸOÙ]Ù]ÂŸB‚™[˜İ[ÛˆXY\’][SX™[
-È][HNˆÈ][NˆXY\“Y[R][NÈ›Ûİˆ›ÛÛX[ˆJHÂˆ™]\›ˆÜ[Ú][K›X™[OÜÜ[ÂŸB‚™[˜İ[Ûˆ\ÚİÜXY\“›ÙJÈ][K›ÛİHYK[YÛˆH	ÛY	ËY[S[šĞÛ\ÜÈNˆÈ][NˆXY\“Y[R][NÈ›ÛİÎˆ›ÛÛX[È[YÛÎˆ	ÛY	È	ÜšYÚ	ÎÈY[S[šĞÛ\ÜÎˆ
-Îˆİš[™ÊHOˆİš[™ÈJHÂˆÛÛœİÛÜ[‹Ù]Ü[—HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÛÜÙU[Y\ˆH\ÙT™Y™]\›•\O\[ÙˆÙ][Y[İ]ˆ[Š[
-NÂˆÛÛœİ\ĞÚ[™[ˆH][K˜Ú[™[‹›[™İˆÂˆYˆ
-Z\ĞÚ[™[ŠH™]\›ˆ[šÈÏ^Ú][Kœ]HÛ\ÜÓ˜[YO^Ü›ÛİÈY[S[šĞÛ\ÜÊ][Kœ]
-Hˆ	Ù›^][\ËXÙ[\ˆ›İ[™Y^MKLÈ^^È›ÛX›XÚÈ^\Û]KMÌ˜[œÚ][Ûˆİ™\˜™Ë\™YMLİ™\^\™YMÌ	ßOXY\’][SX™[][O^Ú][_H›Ûİ^Ü›ÛİKÏÓ[šÏÂˆÛÛœİ[\ˆH
+function MobileMenuFooter() {
+  return <div className="realty-mobile-menu-footer mt-auto pt-8">
+    <p className="mb-3 text-xs font-black uppercase tracking-[0.14em] text-slate-500">Bizi Takip Edin</p>
+    <div className="flex items-center gap-2.5">
+      {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="realty-mobile-social-link"><img src={social.icon} alt="" /></a>)}
+    </div>
+  </div>;
+}
 
-HOˆÈYˆ
-ÛÜÙU[Y\‹˜İ\œ™[
-HÛX\•[Y[İ]
-6ÓMm¢G§²ÚîÆ­yÕµ”ô‰É•±…Ñ¥Ù”è´ĞÀÜµ™Õ±°‰½É‘•Èµˆ‰½É‘•ÈµÉ•´àÀÀ‰œµlÀÄÅtÑ•áĞµİ¡¥Ñ”Í¡…‘½Üµµˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼™±•àµ¥¸µ µlØáÁátµ…àµÜµlÄäÈÁÁát¥Ñ•µÌµ•¹Ñ•ÈÁà´Ì±œéÁà´Øˆø(€€€€€€€€€€ñ¹…Ø±…ÍÍ9…µ”ô‰¡¥‘‘•¸µ¥¸µÜ´À™±•à´ÄÍ•±˜µÍÑÉ•Ñ á°éÉ¥ˆÍÑå±”õíìÉ¥‘Q•µÁ±…Ñ•½±Õµ¹ÌèÉ•Á•…Ğ ‘í5…Ñ ¹µ…à¡±•™Ñ1¥¹­Ì¹±•¹Ñ °Ä¥ô±µ¥¹µ…à À°Å™È¤¥€õôø(€€€€€€€€€€€í±•™Ñ%Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ•Í­Ñ½Á!•…‘•É9½‘”­•äõí‘•Ñ…¥°µ±•™Ğ´‘í¥Ñ•´¹¥‘õô¥Ñ•´õí¥Ñ•µô…±¥¸õí¥Ñ•´¹¥€ôôô€‘¥Í½Ù•Èœ€ü€É¥¡Ğœ€è€±•™Ğôµ•¹Õ1¥¹­±…ÍÌõíµ•¹Õ1¥¹­±…ÍÍô¼ø¥ô(€€€€€€€€€€ğ½¹…Øø(€€€€€€€€€€ñ1¥¹¬Ñ¼ôˆ¼ˆ½¹±¥¬õíÉ•±½…‘!½µ•]¥Ñ¡1½…‘•Éô±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ•µ‰±•´É•…±Ñäµ¡•…‘•Èµ•µ‰±•´µ¥¹¹•Èµàµ…ÕÑ¼µä´Ä¸Ô™±•à µlØáÁátÜµlÈÄÁÁátÍ¡É¥¹¬´À¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•Èá°éµà´Ğˆ…É¥„µ±…‰•°ô‰I•…±Ñä•¹Ñ•Ë
-¸…¹„Í…å™„ˆø(€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ±•ˆ€¼øñÍÁ…¸±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ‘¥ÍŒˆøñ¥µœÍÉŒôˆ½É}±½½}ÑÈ¹ÍÙœˆ…±Ğô‰I•…±Ñä•¹Ñ•Ë
-¸SñÉ­¥å”ˆ±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµµ…¥¸µ±½¼½‰©•Ğµ½¹Ñ…¥¸ˆ€¼øğ½ÍÁ…¸ø(€€€€€€€€€€ğ½1¥¹¬ø(€€€€€€€€€€ñ¹…Ø±…ÍÍ9…µ”ô‰¡¥‘‘•¸µ¥¸µÜ´À™±•à´ÄÍ•±˜µÍÑÉ•Ñ á°éÉ¥ˆÍÑå±”õíìÉ¥‘Q•µÁ±…Ñ•½±Õµ¹ÌèÉ•Á•…Ğ ‘í5…Ñ ¹µ…à¡É¥¡Ñ1¥¹­Ì¹±•¹Ñ °Ä¥ô±µ¥¹µ…à À°Å™È¤¥€õôø(€€€€€€€€€€€íÉ¥¡Ñ%Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ•Í­Ñ½Á!•…‘•É9½‘”­•äõí‘•Ñ…¥°µÉ¥¡Ğ´‘í¥Ñ•´¹¥‘õô¥Ñ•´õí¥Ñ•µô…±¥¸ô‰É¥¡Ğˆµ•¹Õ1¥¹­±…ÍÌõíµ•¹Õ1¥¹­±…ÍÍô¼ø¥ô(€€€€€€€€€€ğ½¹…Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”É¥¡Ğ´Ì™±•à¥Ñ•µÌµ•¹Ñ•È…À´Èá°é¡¥‘‘•¸ˆø(€€€€€€€€€€€€ñ1¥¹¬Ñ¼ôˆ½¥±…¹±…É¥µ¥èı…±°ôÄˆ±…ÍÍ9…µ”ô‰¡¥‘‘•¸É½Õ¹‘•µµ‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ĞÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Í´é¥¹±¥¹”µ™±•àˆûÁ±…¹±…ËÅ·Åèğ½1¥¹¬ø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•Ñ5½‰¥±•=Á•¸ …µ½‰¥±•=Á•¸¥ô…É¥„µ±…‰•°ô‰5•»ñçğ‡œˆ±…ÍÍ9…µ”ô‰¥¹±¥¹”µ™±•à ´ÄÀÜ´ÄÀ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µµ‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ĞÀ‰œµİ¡¥Ñ”¼ÄÀˆùíµ½‰¥±•=Á•¸€ü€ñ`±…ÍÍ9…µ”ô‰ ´ÔÜ´Ôˆ€¼ø€è€ñ5•¹Ô±…ÍÍ9…µ”ô‰ ´ÔÜ´Ôˆ€¼ùôğ½‰ÕÑÑ½¸ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½‘¥Øø(€€€€€€€íµ½‰¥±•=Á•¸€˜˜€ñ¹…Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµµ½‰¥±”µµ•¹Ô™±•àµ¥¸µ µm…±Œ ÄÀÁÙ ´ØáÁà¥t™±•àµ½°Áà´ĞÁä´Ôá°é¡¥‘‘•¸ˆøñ5½‰¥±•!•…‘•É9½‘•Ì¥Ñ•µÌõíÙ¥Í¥‰±•5•¹Õô±½Í”õí±½Í•ô¼øñ5½‰¥±•5•¹Õ½½Ñ•È€¼øğ½¹…Øùô(€€€€€€ğ½¡•…‘•Èø(€€€€¤ì(€ô((€É•ÑÕÉ¸€ (€€€€ñ¡•…‘•È±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•ÈÉ•±…Ñ¥Ù”¥Í½±…Ñ”è´ĞÀÜµ™Õ±°Ñ•áĞµİ¡¥Ñ”ˆø(€€€€€€ñ‘¥Ø±…ÍÍ9…µ”õíÉ•…±Ñäµ½µÁ…Ğµ¡•…‘•È™¥á•¥¹Í•Ğµà´ÀÑ½À´ÀèµlØÁt¡¥‘‘•¸±œé‰±½¬€‘íÍ¡½İ½µÁ…Ñ!•…‘•È€ü€¥ÌµÙ¥Í¥‰±”œ€è€œõôø(€€€€€€€€ñ¹…Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ½µÁ…Ğµ±…å½ÕĞµàµ…ÕÑ¼É¥Üµ™Õ±°µ…àµÜµlÄäÈÁÁátÉ¥µ½±Ìµmµ¥¹µ…à À°Å™È¥|ÄÔÑÁá}µ¥¹µ…à À°Å™È¥t¥Ñ•µÌµ•¹Ñ•ÈÁà´Ğ€Éá°éÁà´àˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥µ¥¸µÜ´À¥Ñ•µÌµÍÑÉ•Ñ ˆÍÑå±”õíìÉ¥‘Q•µÁ±…Ñ•½±Õµ¹ÌèÉ•Á•…Ğ ‘í5…Ñ ¹µ…à¡±•™Ñ%Ñ•µÌ¹±•¹Ñ °Ä¥ô±µ¥¹µ…à À°Å™È¤¥€õôø(€€€€€€€€€€€í±•™Ñ%Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ•Í­Ñ½Á!•…‘•É9½‘”­•äõí½µÁ…Ğµ±•™Ğ´‘í¥Ñ•´¹¥‘õô¥Ñ•´õí¥Ñ•µô…±¥¸õí¥Ñ•´¹¥€ôôô€‘¥Í½Ù•Èœ€ü€É¥¡Ğœ€è€±•™Ğôµ•¹Õ1¥¹­±…ÍÌõíµ•¹Õ1¥¹­±…ÍÍô¼ø¤ô(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñ1¥¹¬Ñ¼ôˆ¼ˆ½¹±¥¬õíÉ•±½…‘!½µ•]¥Ñ¡1½…‘•Éô±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ•µ‰±•´É•…±Ñäµ½µÁ…Ğµ•µ‰±•´µàµ…ÕÑ¼ˆ…É¥„µ±…‰•°ô‰I•…±Ñä•¹Ñ•Ë
-¸…¹„Í…å™„ˆø(€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ‘¥ÍŒˆøñ¥µœÍÉŒôˆ½É}±½½}ÑÈ¹ÍÙœˆ…±Ğô‰I•…±Ñä•¹Ñ•Ë
-¸SñÉ­¥å”ˆ±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµµ…¥¸µ±½¼½‰©•Ğµ½¹Ñ…¥¸ˆ€¼øğ½ÍÁ…¸ø(€€€€€€€€€€ğ½1¥¹¬ø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥µ¥¸µÜ´À¥Ñ•µÌµÍÑÉ•Ñ ˆÍÑå±”õíìÉ¥‘Q•µÁ±…Ñ•½±Õµ¹ÌèÉ•Á•…Ğ ‘í5…Ñ ¹µ…à¡É¥¡Ñ%Ñ•µÌ¹±•¹Ñ °Ä¥ô±µ¥¹µ…à À°Å™È¤¥€õôø(€€€€€€€€€€€íÉ¥¡Ñ%Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ•Í­Ñ½Á!•…‘•É9½‘”­•äõí½µÁ…ĞµÉ¥¡Ğ´‘í¥Ñ•´¹¥‘õô¥Ñ•´õí¥Ñ•µô…±¥¸ô‰É¥¡Ğˆµ•¹Õ1¥¹­±…ÍÌõíµ•¹Õ1¥¹­±…ÍÍô¼ø¤ô(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½¹…Øø(€€€€€€ğ½‘¥Øø(€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•ÈµÁÉ½É•ÍÌˆÍÑå±”õíìÑÉ…¹Í™½É´èÍ…±•` ‘íÍÉ½±±AÉ½É•ÍÌ€¼€ÄÀÁô¥€õô€¼ø(€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•ÈµÑ½ÀµÍÁ…”ˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•ÈµÍ½¥…°ˆø(€€€€€€€€€íM=%1}5%}1%9-L¹µ…À ¡Í½¥…°¤€ôø€ñ„­•äõíÍ½¥…°¹¹…µ•ô¡É•˜ôˆŒˆ…É¥„µ±…‰•°õíÍ½¥…°¹¹…µ•ôÑ¥Ñ±”õíÍ½¥…°¹¹…µ•ôøñ¥µœÍÉŒõíÍ½¥…°¹¥½¹ô…±Ğôˆˆ€¼øğ½„ø¥ô(€€€€€€€€ğ½‘¥Øø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ½¹Ñ…Ğˆø(€€€€€€€€€€ñ1¥¹¬Ñ¼ôˆ½…¤µ­…É…Èµ…Í¥ÍÑ…¹¤ˆ±…ÍÍ9…µ”ô‰É•…±Ñäµ¡•…‘•Èµ…¤ˆ…É¥„µ±…‰•°õíĞ¹…¤¹É•Á±…” ‹Â~’X€ˆ°€ˆˆ¥ôÑ¥Ñ±”õíĞ¹…¤¹É•Á±…” ‹Â~’X€ˆ°€ˆˆ¥ôøñ	½Ğ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆ¼øñÍÁ…¸ùíĞ¹…¤¹É•Á±…” ‹Â~’X€ˆ°€ˆˆ¥ôğ½ÍÁ…¸øğ½1¥¹¬ø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´Ä¸Ôˆø(€€€€€€€€€€€íÍ•…É¡=Á•¸€˜˜€ñ™½É´½¹MÕ‰µ¥ĞõíÍÕ‰µ¥ÑM¥Ñ•M•…É¡ô±…ÍÍ9…µ”ô‰¡•…‘•ÈµÍ•…É µÁ½À™±•àÜµmµ¥¸ ÌÈÁÁà°ÌÙÙÜ¥t½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½Üµ±œˆøñ¥¹ÁÕĞ…ÕÑ½½ÕÌÙ…±Õ”õíÍ¥Ñ•M•…É¡ô½¹¡…¹”õì¡•Ù•¹Ğ¤€ôøÍ•ÑM¥Ñ•M•…É ¡•Ù•¹Ğ¹Ñ…É•Ğ¹Ù…±Õ”¥ôÁ±…•¡f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³VöÆFW#Ò%6—FRœ:v–æFR&âââ"6Æ74æÖSÒ&Ö–â×rÓfÆW‚Ó‚Ó2’ÓãRFW‡B×‡2föçB×6VÖ–&öÆBFW‡B×6ÆFRÓƒ÷WFÆ–æRÖæöæR"óãÆ'WGFöâG—SÒ'7V&Ö—B"6Æ74æÖSÒ'6‡&–æ²Ó&rÕ²44CUÒ‚Ó2FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×v†—FR#ä&Âö'WGFöããÂöf÷&ÓçĞ¢Æ'WGFöâöä6Æ–6³×²‚’Óâ6WE6V&6„÷Vâ‚6V&6„÷Vâ—Ò&–ÖÆ&VÃÒ%6—FRœ:v–æFR&"6Æ74æÖSÒ'&VÆF—fR¢Ó–æÆ–æRÖfÆW‚‚ÓrrÓr—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖgVÆÂ&÷&FW"&÷&FW"×&VBÓsóR&r×v†—FRFW‡BÕ²44CUÒG&ç6—F–öâ†÷fW#¦&÷&FW"×&VBÓsóC†÷fW#§6†F÷r×6Ò#ãÅ6V&6‚6Æ74æÖSÒ&‚Ó2ãRrÓ2ãR"óãÂö'WGFöãà¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖÆæwVvRfÆW‚÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÖÖB&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRFW‡BÕ³—…ÒföçBÖ&Æ6²6†F÷r×6Ò#ç²…²vVârÂv"rÂwG"uÒ27FF–4ÆæwVvUµÒ’æÖ‚†—FVÒ“ÓãÆ'WGFöâ¶W“×¶—FV×Òöä6Æ–6³×²‚“Óç6WDÆæwVvR†—FVÒ—Ò&–ÖÆ&VÃ×¶—FVÒÓÓÒv"rò}Š}˜M‹‹Š˜­Š’r¢—FVÒçFõWW$66R‚—Ò6Æ74æÖS×¶‚Ó"’ÓãRG&ç6—F–öâG¶ÆæwVvSÓÓÖ—FVÓòv&rÕ²44CUÒFW‡B×v†—FRs¢wFW‡B×6ÆFRÓc†÷fW#¦&r×&VBÓSwÖÓç¶—FVÒÓÓÒv"ròt"r¢—FVÒçFõWW$66R‚—ÓÂö'WGFöãâ—ÓÂöF—cà¢ÄÆ–æ²FóÒ"÷æVÂ"6Æ74æÖSÒ&†–FFVâ&÷VæFVBÖÖB&÷&FW"&÷&FW"×&VBÓsó#&r×v†—FR‚Ó"ãR’ÓãRFW‡BÕ³…ÒföçBÖ&Æ6²FW‡BÕ²44CUÒ6†F÷r×6ÒG&ç6—F–öâ†÷fW#¦&÷&FW"×&VBÓsóS6Ó¦–æÆ–æRÖfÆW‚#ç·BçæVÇÓÂôÆ–æ³à¢Æ‡&Vc×¶FVÃ¢²Gµ$TÅE•õ„ôäUôScGÖÒ&–ÖÆ&VÃÒ%&VÇG’6VçFW,*âFVÆVföâ"6Æ74æÖSÒ'&VÇG’Ö†VFW"Ö6öçF7BÖ—FVÒ&VÇG’Ö†VFW"×†öæR#à¢Å†öæR6Æ74æÖSÒ&‚Ó2ãRrÓ2ãR"óà¢Ç7ãçµ$TÅE•õ„ôäUôD•5Ä—ÓÂ÷7ãà¢Âöà¢Æ‡&Vc×¶‡GG3¢ò÷væÖRòGµ$TÅE•õ„ôäUôScGÓ÷FW‡CÒG¶Væ6öFUU$”6ö×öæVçB…$TÅE•õt„E4ôÔU54tR—ÖÒF&vWCÒ%ö&Ææ²"&VÃÒ&æ÷&VfW'&W""&–ÖÆ&VÃÒ%v†G4–ÆR–ÆWFœYö–Ò"6Æ74æÖSÒ'&VÇG’Ö†VFW"Ö6öçF7BÖ–6öâ&VÇG’Ö†VFW"×v†G6#à¢ÄÖW76vT6—&6ÆR6Æ74æÖSÒ&‚ÓBrÓB"óà¢Âöà¢ÂöF—cà¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ'&VÇG’Ö†VFW"Ö&"#à¢Ææb6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖFW6·F÷×‚ÖWFò†–FFVârÖgVÆÂÖ‚×rÕ³“#…Òw&–BÖ6öÇ2Õ¶Ö–æÖ‚ƒÃg"•ó#…öÖ–æÖ‚ƒÃg"•Ò—FV×2Ö6VçFW"‚ÓB†Ã¦w&–B'†Ã§‚Ó‚#à¢ÆF—b6Æ74æÖSÒ&w&–BÖ–â×rÓ—FV×2×7G&WF6‚"7G–ÆS×·²w&–EFV×ÆFT6öÇVÖç3¢&WVB‚G´ÖF‚æÖ‚†ÆVgD—FV×2æÆVæwF‚Ã—ÒÆÖ–æÖ‚ƒÃg"’–×Óà¢¶ÆVgD—FV×2æÖ‚†—FVÒ’ÓâÄFW6·F÷†VFW$æöFR¶W“×¶—FVÒæ–GÒ—FVÓ×¶—FV×ÒÆ–vã×¶—FVÒæ–BÓÓÒvF—66÷fW"ròw&–v‡Br¢vÆVgBwÒÖVçTÆ–æ´6Æ73×¶ÖVçTÆ–æ´6Æ77Òóâ—Ğ¢ÂöF—cà ¢ÄÆ–æ²FóÒ"ò"öä6Æ–6³×·&VÆöD†öÖUv—F„ÆöFW'Ò6Æ74æÖS×¶&VÇG’Ö†VFW"ÖVÖ&ÆVÒG¶—4†öÖUvRòrr¢w&VÇG’Ö†VFW"ÖVÖ&ÆVÒÖ–ææW"wÖÒ&–ÖÆ&VÃÒ%&VÇG’6VçFW,*âæ6–f#à¢Ç7â6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖÆVB"óà¢Ç7â6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖF—62#à¢Æ–Ör7&3Ò"÷&5öÆövõ÷G"ç7fr"ÇCÒ%&VÇG’6VçFW,*âL;Ç&¶—–R"6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖÖ–âÖÆövòö&¦V7BÖ6öçF–â"óà¢Â÷7ãà¢ÂôÆ–æ³à ¢ÆF—b6Æ74æÖSÒ&w&–BÖ–â×rÓ—FV×2×7G&WF6‚"7G–ÆS×·²w&–EFV×ÆFT6öÇVÖç3¢&WVB‚G´ÖF‚æÖ‚‡&–v‡D—FV×2æÆVæwF‚Ã—ÒÆÖ–æÖ‚ƒÃg"’–×Óà¢·&–v‡D—FV×2æÖ‚†—FVÒ’ÓâÄFW6·F÷†VFW$æöFR¶W“×¶—FVÒæ–GÒ—FVÓ×¶—FV×ÒÆ–vãÒ'&–v‡B"ÖVçTÆ–æ´6Æ73×¶ÖVçTÆ–æ´6Æ77Òóâ—Ğ¢ÂöF—cà¢Âöæcà ¢ÆF—b6Æ74æÖSÒ'&VÇG’ÖÖö&–ÆRÖÖ–æ&"&VÆF—fR¢ÓfÆW‚Ö–âÖ‚Õ³c‡…Ò—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ‚ÓB†Ã¦†–FFVâ#à¢ÄÆ–æ²FóÒ"ò"öä6Æ–6³×¶6Æ÷6WÒ6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖÖö&–ÆRÖÆövò#à¢Æ–Ör7&3Ò"öÆövòçær"ÇCÒ%&VÇG’6VçFW,*â9fæ6R|;ÇfVâ"6Æ74æÖSÒ&ö&¦V7BÖ6öçF–â"óà¢ÂôÆ–æ³à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ"#à¢ÄÆ–æ²FóÒ"÷æVÂ"6Æ74æÖSÒ'&VÇG’ÖÖö&–ÆR×æVÂÖÆ–æ²&÷VæFVBÖÆr&÷&FW"&÷&FW"×&VBÓ#&r×v†—FR‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡BÕ²44CUÒ6†F÷r×6Ò#ç·BçæVÇÓÂôÆ–æ³à¢Æ'WGFöâöä6Æ–6³×²‚’Óâ6WDÖö&–ÆT÷Vâ‚Öö&–ÆT÷Vâ—Ò&–ÖÆ&VÃÒ$ÖVì;Çœ;Â:r"6Æ74æÖSÒ'&VÇG’ÖÖö&–ÆRÖÖVçR×FövvÆR–æÆ–æRÖfÆW‚‚ÓrÓ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVB×†Â&÷&FW"&÷&FW"Õ²44CUÒ&rÕ²44CUÒFW‡B×v†—FR#ç¶Öö&–ÆT÷VâòÅ‚6Æ74æÖSÒ&‚ÓRrÓR"óâ¢ÄÖVçR6Æ74æÖSÒ&‚ÓRrÓR"óçÓÂö'WGFöãà¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà ¢¶Öö&–ÆT÷VâbbÆæb6Æ74æÖSÒ'&VÇG’Ö†VFW"ÖÖö&–ÆRÖÖVçRfÆW‚Ö–âÖ‚Õ¶6Æ2ƒf‚Ó‡‚•ÒfÆW‚Ö6öÂ‚ÓR’ÓR†Ã¦†–FFVâ#ãÄÖö&–ÆT†VFW$æöFW2—FV×3×·f—6–&ÆTÖVçWÒ6Æ÷6S×¶6Æ÷6WÒóãÄÖö&–ÆTÖVçTfö÷FW"óãÂöæcçĞ¢Âö†VFW#à¢“°§Ğ ¦gVæ7F–öâF—66÷fW$V&æ–æuvR‡²6V7F–öâÓ¢²6V7F–öã¢vF—66÷fW"rÂvV&æ–ærrÒ’°¢6öç7B²6ÇVrÒrrÒÒW6U&×2‚“°¢6öç7BvW3¢&V6÷&CÇ7G&–ærÂ²F—FÆS¢7G&–æs²W–V'&÷s¢7G&–æs²–ÖvS¢7G-´Ó[h‘éì¶»§q«^tmonth.getFullYear(), month.getMonth() + 1, 0).getDate();
+function Header({ language, setLanguage }: { language: StaticLanguage; setLanguage: (language: StaticLanguage) => void }) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [siteSearch, setSiteSearch] = useState('');
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [showCompactHeader, setShowCompactHeader] = useState(false);
+  const [managedMenu, setManagedMenu] = useState<HeaderMenuItem[]>(getHeaderMenu);
+  const location = useLocation();
+  const navigate = useNavigate();
+  if (['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
+  const close = () => setMobileOpen(false);
+  const t = STATIC_LANGUAGES[language];
+  const visibleMenu = managedMenu.filter((item) => item.id !== 'why');
+  const leftItems = visibleMenu.filter((item) => item.side === 'left' && item.path !== '/ai-karar-asistani');
+  const rightItems = visibleMenu.filter((item) => item.side === 'right' && item.path !== '/ai-karar-asistani');
+  const leftLinks = leftItems.map((item) => [item.label,item.path]);
+  const rightLinks = rightItems.map((item) => [item.label,item.path]);
+  const isListingDetail = location.pathname.startsWith('/ilan/');
+  const isHomePage = location.pathname === '/';
+
+  useEffect(() => {
+    const refreshMenu = () => setManagedMenu(getHeaderMenu());
+    window.addEventListener('realty-center-header-updated', refreshMenu);
+    const updateProgress = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(maxScroll > 0 ? Math.min(100, (window.scrollY / maxScroll) * 100) : 0);
+      setShowCompactHeader(window.scrollY > 215);
+    };
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    return () => {
+      window.removeEventListener('realty-center-header-updated', refreshMenu);
+      window.removeEventListener('scroll', updateProgress);
+      window.removeEventListener('resize', updateProgress);
+    };
+  }, [location.pathname]);
+
+  const menuLinkClass = (_to: string) =>
+    'realty-header-link relative flex h-full min-h-0 items-center justify-center px-1.5 text-center text-sm font-black leading-[1.15] text-white transition lg:text-[14px] 2xl:px-2 2xl:text-[15px]';
+  const submitSiteSearch = (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!siteSearch.trim()) return;
+    navigate(`/arama?q=${encodeURIComponent(siteSearch.trim())}`);
+    setSearchOpen(false);
+  };
+  const reloadHomeWithLoader = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    close();
+    window.location.assign('/');
+  };
+
+  if (isListingDetail) {
+    return (
+      <header className="relative z-40 w-full border-b border-red-800 bg-[#CD011E] text-white shadow-md">
+        <div className="mx-auto flex min-h-[68px] max-w-[1920px] items-center px-3 lg:px-6">
+          <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(leftLinks.length,1)},minmax(0,1fr))` }}>
+            {leftItems.map((item) => <DesktopHeaderNode key={`detail-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
+          </nav>
+          <Link to="/" onClick={reloadHomeWithLoader} className="realty-header-emblem realty-header-emblem-inner mx-auto my-1.5 flex h-[68px] w-[210px] shrink-0 items-center justify-center xl:mx-4" aria-label="Realty CenterÂ® ana sayfa">
+            <span className="realty-header-led" /><span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty CenterÂ® TÃ¼rkiye" className="realty-header-main-logo object-contain" /></span>
+          </Link>
+          <nav className="hidden min-w-0 flex-1 self-stretch xl:grid" style={{ gridTemplateColumns: `repeat(${Math.max(rightLinks.length,1)},minmax(0,1fr))` }}>
+            {rightItems.map((item) => <DesktopHeaderNode key={`detail-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
+          </nav>
+          <div className="absolute right-3 flex items-center gap-2 xl:hidden">
+            <Link to="/ilanlarimiz?all=1" className="hidden rounded-md border border-white/40 px-3 py-2 text-xs font-black sm:inline-flex">Ä°lanlarÄ±mÄ±z</Link>
+            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="MenÃ¼yÃ¼ aÃ§" className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 bg-white/10">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
+          </div>
+        </div>
+        {mobileOpen && <nav className="realty-header-mobile-menu flex min-h-[calc(100vh-68px)] flex-col px-4 py-5 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/><MobileMenuFooter /></nav>}
+      </header>
+    );
+  }
+
+  return (
+    <header className="realty-header relative isolate z-40 w-full text-white">
+      <div className={`realty-compact-header fixed inset-x-0 top-0 z-[60] hidden lg:block ${showCompactHeader ? 'is-visible' : ''}`}>
+        <nav className="realty-compact-layout mx-auto grid w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_154px_minmax(0,1fr)] items-center px-4 2xl:px-8">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(leftItems.length,1)},minmax(0,1fr))` }}>
+            {leftItems.map((item) => <DesktopHeaderNode key={`compact-left-${item.id}`} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>) }
+          </div>
+          <Link to="/" onClick={reloadHomeWithLoader} className="realty-header-emblem realty-compact-emblem mx-auto" aria-label="Realty CenterÂ® ana sayfa">
+            <span className="realty-header-disc"><img src="/rc_logo_tr.svg" alt="Realty CenterÂ® TÃ¼rkiye" className="realty-header-main-logo object-contain" /></span>
+          </Link>
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(rightItems.length,1)},minmax(0,1fr))` }}>
+            {rightItems.map((item) => <DesktopHeaderNode key={`compact-right-${item.id}`} item={item} align="right" menuLinkClass={menuLinkClass}/>) }
+          </div>
+        </nav>
+      </div>
+      <div className="realty-header-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }} />
+      <div className="realty-header-top-space">
+        <div className="realty-header-social">
+          {SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name}><img src={social.icon} alt="" /></a>)}
+        </div>
+        <div className="realty-header-contact">
+          <Link to="/ai-karar-asistani" className="realty-header-ai" aria-label={t.ai.replace("ğŸ¤– ", "")} title={t.ai.replace("ğŸ¤– ", "")}><Bot aria-hidden="true"/><span>{t.ai.replace("ğŸ¤– ", "")}</span></Link>
+          <div className="flex items-center gap-1.5">
+            {searchOpen && <form onSubmit={submitSiteSearch} className="header-search-pop flex w-[min(320px,36vw)] overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"><input autoFocus value={siteSearch} onChange={(event) => setSiteSearch(event.target.value)} placeholder="Site iÃ§inde ara..." className="min-w-0 flex-1 px-3 py-1.5 text-xs font-semibold text-slate-800 outline-none"/><button type="submit" className="shrink-0 bg-[#CD011E] px-3 text-[10px] font-black text-white">Ara</button></form>}
+            <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Site iÃ§inde ara" className="relative z-10 inline-flex h-7 w-7 items-center justify-center rounded-full border border-red-700/15 bg-white text-[#CD011E] transition hover:border-red-700/40 hover:shadow-sm"><Search className="h-3.5 w-3.5" /></button>
+          </div>
+          <div className="realty-header-language flex overflow-hidden rounded-md border border-slate-200 bg-white text-[9px] font-black shadow-sm">{(['en','ar','tr'] as StaticLanguage[]).map((item)=><button key={item} onClick={()=>setLanguage(item)} aria-label={item === 'ar' ? 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©' : item.toUpperCase()} className={`px-2 py-1.5 transition ${language===item?'bg-[#CD011E] text-white':'text-slate-600 hover:bg-red-50'}`}>{item === 'ar' ? 'AR' : item.toUpperCase()}</button>)}</div>
+          <Link to="/panel" className="hidden rounded-md border border-red-700/20 bg-white px-2.5 py-1.5 text-[10px] font-black text-[#CD011E] shadow-sm transition hover:border-red-700/50 sm:inline-flex">{t.panel}</Link>
+          <a href={`tel:+${REALTY_PHONE_E164}`} aria-label="Realty CenterÂ® telefon" className="realty-header-contact-item realty-header-phone">
+            <Phone className="h-3.5 w-3.5" />
+            <span>{REALTY_PHONE_DISPLAY}</span>
+          </a>
+          <a href={`https://wa.me/${REALTY_PHONE_E164}?text=${encodeURIComponent(REALTY_WHATSAPP_MESSAGE)}`} target="_blank" rel="noreferrer" aria-label="WhatsApp ile iletiÅŸim" className="realty-header-contact-icon realty-header-whatsapp">
+            <MessageCircle className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+      <div className="realty-header-bar">
+        <nav className="realty-header-desktop mx-auto hidden w-full max-w-[1920px] grid-cols-[minmax(0,1fr)_210px_minmax(0,1fr)] items-center px-4 xl:grid 2xl:px-8">
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(leftItems.length,1)},minmax(0,1fr))` }}>
+            {leftItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align={item.id === 'discover' ? 'right' : 'left'} menuLinkClass={menuLinkClass}/>)}
+          </div>
+
+          <Link to="/" onClick={reloadHomeWithLoader} className={`realty-header-emblem ${isHomePage ? '' : 'realty-header-emblem-inner'}`} aria-label="Realty CenterÂ® ana sayfa">
+            <span className="realty-header-led" />
+            <span className="realty-header-disc">
+              <img src="/rc_logo_tr.svg" alt="Realty CenterÂ® TÃ¼rkiye" className="realty-header-main-logo object-contain" />
+            </span>
+          </Link>
+
+          <div className="grid min-w-0 items-stretch" style={{ gridTemplateColumns: `repeat(${Math.max(rightItems.length,1)},minmax(0,1fr))` }}>
+            {rightItems.map((item) => <DesktopHeaderNode key={item.id} item={item} align="right" menuLinkClass={menuLinkClass}/>)}
+          </div>
+        </nav>
+
+        <div className="realty-mobile-mainbar relative z-10 flex min-h-[68px] items-center justify-between px-4 xl:hidden">
+          <Link to="/" onClick={close} className="realty-header-mobile-logo">
+            <img src="/logo.png" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="object-contain" />
+          </Link>
+          <div className="flex items-center gap-2">
+            <Link to="/panel" className="realty-mobile-panel-link rounded-lg border border-red-200 bg-white px-3 py-2 text-xs font-black text-[#CD011E] shadow-sm">{t.panel}</Link>
+            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="MenÃ¼yÃ¼ aÃ§" className="realty-mobile-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[#CD011E] bg-[#CD011E] text-white">{mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
+          </div>
+        </div>
+      </div>
+
+      {mobileOpen && <nav className="realty-header-mobile-menu flex min-h-[calc(100vh-108px)] flex-col px-5 py-5 xl:hidden"><MobileHeaderNodes items={visibleMenu} close={close}/><MobileMenuFooter /></nav>}
+    </header>
+  );
+}
+
+function DiscoverEarningPage({ section }: { section: 'discover' | 'earning' }) {
+  const { slug = '' } = useParams();
+  const pages: Record<string, { title: string; eyebrow: string; image: string; text: string }> = {
+    'egitim': { title: 'EÄŸitim', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=90&w=1400', text: 'Realty CenterÂ® eÄŸitim programlarÄ±; gayrimenkul danÄ±ÅŸmanlarÄ±nÄ±n mesleki bilgi, saha becerisi ve mÃ¼ÅŸteri deneyimi alanlarÄ±nda sÃ¼rekli geliÅŸmesini destekler. Temel baÅŸlangÄ±Ã§ eÄŸitimlerinden ileri seviye satÄ±ÅŸ, pazarlama ve mevzuat Ã§alÄ±ÅŸmalarÄ±na kadar planlÄ± bir Ã¶ÄŸrenme yolculuÄŸu sunar.' },
+    'gelecegim-icin': { title: 'GeleceÄŸim Ä°Ã§in', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=90&w=1400', text: 'Gayrimenkul sektÃ¶rÃ¼nde kendi kariyerini kurmak isteyen profesyonellere gÃ¼Ã§lÃ¼ marka desteÄŸi, geliÅŸim olanaklarÄ± ve sÃ¼rdÃ¼rÃ¼lebilir bir iÅŸ modeli sunuyoruz. Deneyiminiz ne olursa olsun, doÄŸru eÄŸitim ve mentorlukla geleceÄŸinizi bugÃ¼nden ÅŸekillendirebilirsiniz.' },
+    'sistem-ve-modeller': { title: 'Sistem ve Modeller', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=90&w=1400', text: 'Realty CenterÂ® sistemleri; portfÃ¶y yÃ¶netimi, mÃ¼ÅŸteri takibi, pazarlama, raporlama ve ekip Ã§alÄ±ÅŸmasÄ±nÄ± ortak standartlarda birleÅŸtirir. KanÄ±tlanmÄ±ÅŸ iÅŸ modellerimiz danÄ±ÅŸmanlarÄ±n zamanÄ±nÄ± verimli kullanmasÄ±na ve Ã¶lÃ§Ã¼lebilir sonuÃ§lar Ã¼retmesine yardÄ±mcÄ± olur.' },
+    'gruplar': { title: 'Gruplar', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=90&w=1400', text: 'UzmanlÄ±k, bÃ¶lge ve ilgi alanlarÄ±na gÃ¶re oluÅŸturulan Ã§alÄ±ÅŸma gruplarÄ± sayesinde bilgi paylaÅŸÄ±mÄ± ve iÅŸ birliÄŸi gÃ¼Ã§lenir. DanÄ±ÅŸmanlarÄ±mÄ±z ortak portfÃ¶y, deneyim ve fÄ±rsatlarÄ± gÃ¼vene dayalÄ± bir aÄŸ iÃ§erisinde paylaÅŸÄ±r.' },
+    'realty-center-kulturu': { title: 'Realty CenterÂ® KÃ¼ltÃ¼rÃ¼', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=90&w=1400', text: 'Ã–nce GÃ¼ven anlayÄ±ÅŸÄ±mÄ±z; ÅŸeffaflÄ±k, dayanÄ±ÅŸma, sÃ¼rekli geliÅŸim ve baÅŸarÄ±yÄ± paylaÅŸma deÄŸerleri Ã¼zerine kuruludur. Realty CenterÂ® kÃ¼ltÃ¼rÃ¼ yalnÄ±zca bir Ã§alÄ±ÅŸma biÃ§imi deÄŸil, mÃ¼ÅŸterilerimiz ve iÅŸ ortaklarÄ±mÄ±zla kurduÄŸumuz uzun vadeli iliÅŸkinin temelidir.' },
+    'dijital-emlakcilik': { title: 'Dijital EmlakÃ§Ä±lÄ±k', eyebrow: 'KEÅFET', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=90&w=1400', text: 'Dijital portfÃ¶y yÃ¶netimi, veri odaklÄ± analiz, yapay zekÃ¢ destekli arama ve gÃ¼Ã§lÃ¼ Ã§evrim iÃ§i pazarlama araÃ§larÄ±yla gayrimenkul danÄ±ÅŸmanlÄ±ÄŸÄ±nÄ± geleceÄŸe taÅŸÄ±yoruz. Teknoloji, danÄ±ÅŸmanÄ±n yerini almak yerine uzmanlÄ±ÄŸÄ±nÄ± daha gÃ¶rÃ¼nÃ¼r ve etkili hÃ¢le getirir.' },
+    'katki-payi': { title: 'KatkÄ± PayÄ±', eyebrow: 'KAZANÃ‡ MODELÄ°', image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=90&w=1400', text: 'KatkÄ± payÄ± modeli; marka altyapÄ±sÄ±, teknoloji, eÄŸitim, pazarlama ve operasyon desteÄŸinin sÃ¼rdÃ¼rÃ¼lebilir biÃ§imde sunulmasÄ±nÄ± saÄŸlayan ÅŸeffaf bir sistemdir. DanÄ±ÅŸman ve ofislerin aldÄ±ÄŸÄ± hizmetlerle doÄŸru orantÄ±lÄ±, anlaÅŸÄ±lÄ±r ve planlanabilir bir yapÄ± hedeflenir.' },
+    'paylasim-modeli': { title: 'PaylaÅŸÄ±m Modeli', eyebrow: 'KAZANÃ‡ MODELÄ°', image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=90&w=1400', text: 'Realty CenterÂ® paylaÅŸÄ±m modeli, Ã¼retilen deÄŸerin adil ve aÃ§Ä±k kurallarla paylaÅŸÄ±lmasÄ±nÄ± esas alÄ±r. Ortak portfÃ¶y Ã§alÄ±ÅŸmalarÄ±, yÃ¶nlendirmeler ve ekip baÅŸarÄ±larÄ±; taraflarÄ±n katkÄ±sÄ±nÄ± koruyan kurumsal sistem iÃ§erisinde yÃ¶netilir.' },
+    'keplemek': { title: 'Keplemek', eyebrow: 'KAZANÃ‡ MODELÄ°', image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=90&w=1400', text: 'Kepleme sistemi, belirlenen Ã¼retim seviyesine ulaÅŸan danÄ±ÅŸmanÄ±n kazanÃ§ paylaÅŸÄ±mÄ±nda daha avantajlÄ± bir dÃ¶neme geÃ§mesini ifade eder. Hedef; yÃ¼ksek performansÄ± Ã¶dÃ¼llendiren, danÄ±ÅŸmanÄ±n bÃ¼yÃ¼mesini destekleyen ve kazanÃ§ potansiyelini artÄ±ran sÃ¼rdÃ¼rÃ¼lebilir bir model oluÅŸturmaktÄ±r.' }
+  };
+  const fallback = section === 'discover' ? pages.egitim : pages['katki-payi'];
+  const page = pages[slug] || fallback;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image} alt={page.title} className="h-72 w-full object-cover lg:h-full lg:min-h-[520px]"/><article className="flex flex-col justify-center p-8 sm:p-12"><p className="text-xs font-black tracking-[.22em] text-red-700">{page.eyebrow}</p><h1 className="mt-4 text-4xl font-black text-slate-900">{page.title}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><p className="mt-7 text-sm leading-8 text-slate-600">{page.text}</p><Link to={section === 'discover' ? '/danisman-basvuru' : '/franchise-basvuru'} className="mt-8 inline-flex w-fit items-center text-sm font-black text-red-700">Daha fazla bilgi alÄ±n <ArrowRight className="ml-2 h-4 w-4"/></Link></article></div></div></main>;
+}
+
+function EducationManagedPage({ page, pageId }: { page: HeaderMenuItem; pageId: string }) {
+  const [training, setTraining] = useState<TrainingContent>(getTrainingContent);
+  const [month, setMonth] = useState(() => { const now = new Date(); return new Date(now.getFullYear(), now.getMonth(), 1); });
+  useEffect(() => {
+    const refresh = () => setTraining(getTrainingContent());
+    window.addEventListener('realty-center-training-updated', refresh);
+    return () => window.removeEventListener('realty-center-training-updated', refresh);
+  }, []);
+
+  const isCalendar = pageId === 'education-calendar';
+  const isCenters = pageId === 'education-centers';
+  const isTypes = pageId === 'education-types';
+  const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
   const firstDay = (new Date(month.getFullYear(), month.getMonth(), 1).getDay() + 6) % 7;
   const monthLabel = month.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
   const dateKey = (day: number) => [month.getFullYear(), String(month.getMonth() + 1).padStart(2, '0'), String(day).padStart(2, '0')].join('-');
@@ -379,31 +1461,74 @@ HÛX\•[Y[İ]
               {Array.from({ length: firstDay }).map((_, index) => <div key={'empty-' + index} className="min-h-24 border-b border-r border-slate-100 bg-slate-50/60" />)}
               {Array.from({ length: daysInMonth }, (_, index) => index + 1).map((day) => {
                 const events = training.events.filter((event) => event.date === dateKey(day));
-                return <div key={day} className={'min-h-24 border-b border-r border-slate-100 p-2 ' + (events.length ? 'bg-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÕÉ•´ÔÀ¼ØÀœ€è€‰œµİ¡¥Ñ”œ¥ôø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”õì™±•à ´ÜÜ´Ü¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°Ñ•áĞµáÌ™½¹Ğµ‰±…¬€œ€¬€¡•Ù•¹ÑÌ¹±•¹Ñ €ü€‰œµÉ•´ÜÀÀÑ•áĞµİ¡¥Ñ”œ€è€Ñ•áĞµÍ±…Ñ”´ØÀÀœ¥ôùí‘…åôğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÄÍÁ…”µä´Äˆùí•Ù•¹ÑÌ¹µ…À ¡•Ù•¹Ğ¤€ôø€ñ‘¥Ø­•äõí•Ù•¹Ğ¹¥‘ôÑ¥Ñ±”õí•Ù•¹Ğ¹Ñ¥Ñ±”€¬€œƒ
-Ü€œ€¬•Ù•¹Ğ¹Ñ¥µ•ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µµ‰œµlŒÀÜÅ˜Í‘tÁà´Ä¸ÔÁä´ÄÑ•áĞµlåÁát™½¹Ğµ‰½±±•…‘¥¹œ´ÌÑ•áĞµİ¡¥Ñ”ˆøñÍÁ…¸±…ÍÍ9…µ”ô‰‰±½¬ÑÉÕ¹…Ñ”ˆùí•Ù•¹Ğ¹Ñ¥Ñ±•ôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÉ•´ÈÀÀˆùí•Ù•¹Ğ¹Ñ¥µ•ôğ½ÍÁ…¸øğ½‘¥Øø¥ôğ½‘¥Øø(€€€€€€€€€€€€€€€€ğ½‘¥Øøì(€€€€€€€€€€€€€ô¥ô(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÉ¥…À´ĞµéÉ¥µ½±Ì´ÈˆùíÑÉ…¥¹¥¹œ¹•Ù•¹ÑÌ¹Í±¥” ¤¹Í½ÉĞ ¡„±ˆ¤€ôø„¹‘…Ñ”¹±½…±•½µÁ…É”¡ˆ¹‘…Ñ”¤¤¹µ…À ¡•Ù•¹Ğ¤€ôø€ñ…ÉÑ¥±”­•äõí•Ù•¹Ğ¹¥‘ô±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ÔÍ¡…‘½ÜµÍ´ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à…À´Ğˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÜÀÀÁà´ÌÁä´ÈÑ•áĞµ•¹Ñ•ÈÑ•áĞµİ¡¥Ñ”ˆøñÍÁ…¸±…ÍÍ9…µ”ô‰‰±½¬Ñ•áĞµá°™½¹Ğµ‰±…¬ˆùí¹•Ü…Ñ”¡•Ù•¹Ğ¹‘…Ñ”€¬€PÄÈèÀÀèÀÀœ¤¹•Ñ…Ñ” ¥ôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµlåÁát™½¹Ğµ‰±…¬ÕÁÁ•É…Í”ˆùí¹•Ü…Ñ”¡•Ù•¹Ğ¹‘…Ñ”€¬€PÄÈèÀÀèÀÀœ¤¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ ÑÈµQHœ±íµ½¹Ñ èÍ¡½ÉĞô¥ôğ½ÍÁ…¸øğ½‘¥Øøñ‘¥Øøñ Ì±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùí•Ù•¹Ğ¹Ñ¥Ñ±•ôğ½ ÌøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ÔÀÀˆùí•Ù•¹Ğ¹Ñ¥µ•ôƒ
-Üí•Ù•¹Ğ¹™½Éµ…Ñôğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´È™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÄÑ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ÜÀÀˆøñ5…ÁA¥¸±…ÍÍ9…µ”ô‰ ´Ì¸ÔÜ´Ì¸ÔÑ•áĞµÉ•´ÜÀÀˆ¼ùí•Ù•¹Ğ¹±½…Ñ¥½¹ôğ½Àøğ½‘¥Øøğ½‘¥Øøğ½…ÉÑ¥±”ø¥ôğ½‘¥Øø(€€€€€€€€ğ½‘¥Øùô((€€€€€€€í¥Í•¹Ñ•ÉÌ€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´àˆø(€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰µ…àµÜ´Ñá°Ñ•áĞµÍ´±•…‘¥¹œ´àÑ•áĞµÍ±…Ñ”´ØÀÀˆùíÑÉ…¥¹¥¹œ¹•¹Ñ•ÉÍ%¹ÑÉ½ôğ½Àø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´àÉ¥…À´ÔµéÉ¥µ½±Ì´ÈˆùíÑÉ…¥¹¥¹œ¹•¹Ñ•ÉÌ¹µ…À ¡•¹Ñ•È¤€ôø€ñ…ÉÑ¥±”­•äõí•¹Ñ•È¹¥‘ô±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÀ´Øˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´Ğˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÜÀÀÀ´ÌÑ•áĞµİ¡¥Ñ”ˆøñ5…ÁA¥¹¹•±…ÍÍ9…µ”ô‰ ´ØÜ´Øˆ¼øğ½‘¥Øøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÑ•áĞµÉ•´ÜÀÀˆùí•¹Ñ•È¹¥Ñåôğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùí•¹Ñ•È¹¹…µ•ôğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞµáÌ±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ØÀÀˆùí•¹Ñ•È¹‘•ÍÉ¥ÁÑ¥½¹ôğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´Ğ‰½É‘•ÈµĞ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁĞ´ĞÑ•áĞµáÌ™½¹Ğµ‰½±±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´àÀÀˆùí•¹Ñ•È¹…‘‘É•ÍÍôğ½Àøğ½‘¥Øøğ½‘¥Øøğ½…ÉÑ¥±”ø¥ôğ½‘¥Øø(€€€€€€€€ğ½‘¥Øùô((€€€€€€€í¥ÍQåÁ•Ì€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´àˆø(€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰µ…àµÜ´Ñá°Ñ•áĞµÍ´±•…‘¥¹œ´àÑ•áĞµÍ±…Ñ”´ØÀÀˆùíÑÉ…¥¹¥¹œ¹ÑåÁ•Í%¹ÑÉ½ôğ½Àø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”µĞ´à½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰œµlŒÀÜÅ˜Í‘tÀ´ØÑ•áĞµİ¡¥Ñ”Í´éÀ´àˆøñ¥µœÍÉŒô‰¡ÑÑÁÌè¼½¥µ…•Ì¹Õ¹ÍÁ±…Í ¹½´½Á¡½Ñ¼´ÄÔÈĞÄÜàÈÌÈÌØÌ´Å™ˆÉˆÀÜÕˆØÔÔı…ÕÑ¼õ™½Éµ…Ğ™™¥ĞõÉ½À™Äôàà™ÜôÄĞÀÀˆ…±Ğô‰I•…±Ñä•¹Ñ•Ë
-¸—}¥Ñ¥´½ÉÑ…·Äˆ±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğ´À µ™Õ±°Üµ™Õ±°½‰©•Ğµ½Ù•È½Á…¥Ñä´ÈÔˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”™±•à™±•àµ½°…À´ÔÍ´é™±•àµÉ½ÜÍ´é¥Ñ•µÌµ•¹Ñ•ÈÍ´é©ÕÍÑ¥™äµ‰•Ñİ••¸ˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµÉ•´ÈÀÀˆùI1Qd9QK
-¸-7Àğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬ˆù	¥±¥å¤Í…¡…‘…­¤‰‡}…ËÅå„“Ù»ó}ÓñËñ¸¸ğ½ Èøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à…À´ÌˆøñÍÁ…¸±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ÈÀ‰œµİ¡¥Ñ”¼ÄÀÁà´ĞÁä´ÌÑ•áĞµ•¹Ñ•ÈˆøñÍÑÉ½¹œ±…ÍÍ9…µ”ô‰‰±½¬Ñ•áĞµ±œˆùíÑÉ…¥¹¥¹œ¹ÑåÁ•Ì¹±•¹Ñ¡ôğ½ÍÑÉ½¹œøñÍµ…±°±…ÍÍ9…µ”ô‰Ñ•áĞµlåÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÈÑ•áĞµİ¡¥Ñ”¼ÜÀˆùAI=I4ğ½Íµ…±°øğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ÈÀ‰œµİ¡¥Ñ”¼ÄÀÁà´ĞÁä´ÌÑ•áĞµ•¹Ñ•ÈˆøñÍÑÉ½¹œ±…ÍÍ9…µ”ô‰‰±½¬Ñ•áĞµ±œˆøÌØÃ
-Àğ½ÍÑÉ½¹œøñÍµ…±°±…ÍÍ9…µ”ô‰Ñ•áĞµlåÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÈÑ•áĞµİ¡¥Ñ”¼ÜÀˆù3Ã{Á4ğ½Íµ…±°øğ½ÍÁ…¸øğ½‘¥Øøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ¥…À´ÔµéÉ¥µ½±Ì´È±œéÉ¥µ½±Ì´ÌˆùíÑÉ…¥¹¥¹œ¹ÑåÁ•Ì¹µ…À ¡ÑåÁ”°¥¹‘•à¤€ôøì½¹ÍĞÙ¥ÍÕ…°õÑÉ…¥¹¥¹QåÁ•Y¥ÍÕ…±Ím¥¹‘•à€”ÑÉ…¥¹¥¹QåÁ•Y¥ÍÕ…±Ì¹±•¹Ñ¡tì½¹ÍĞ%½¸õÙ¥ÍÕ…°¹¥½¸ìÉ•ÑÕÉ¸€ñ…ÉÑ¥±”­•äõíÑåÁ”¹¥‘ô±…ÍÍ9…µ”ô‰É½ÕÀ½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÌÀÀ¡½Ù•ÈèµÑÉ…¹Í±…Ñ”µä´Ä¡½Ù•Èé‰½É‘•ÈµÉ•´ÌÀÀ¡½Ù•ÈéÍ¡…‘½Üµá°ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù” ´ÌÈ½Ù•É™±½Üµ¡¥‘‘•¸ˆøñ¥µœÍÉŒõíÙ¥ÍÕ…°¹¥µ…•ô…±Ğôˆˆ±…ÍÍ9…µ”ô‰ µ™Õ±°Üµ™Õ±°½‰©•Ğµ½Ù•ÈÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÔÀÀÉ½ÕÀµ¡½Ù•ÈéÍ…±”´ÄÀÔˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğ´À‰œµÉ…‘¥•¹ĞµÑ¼µĞ™É½´µlŒÀÜÅ˜Í‘t¼àÀÑ¼µlŒÀÜÅ˜Í‘t¼ÄÀˆ¼øñÍÁ…¸±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”‰½ÑÑ½´´Ì±•™Ğ´ĞÑ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸ÄÙ•µtÑ•áĞµİ¡¥Ñ”ˆùíÙ¥ÍÕ…°¹±…‰•±ôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”É¥¡Ğ´ĞÑ½À´Ğ™±•à ´ÄÄÜ´ÄÄ¥Ñ•µÌµ•¹Ñ•Ëm4ÖÚ$z{-®éÜj×\‹Ü]ˆÛ\ÜÓ˜[YOH›]NÜXÙK^KLÈ^^È›ÛX›ÛÖÉÑÚ^›[ZÛHq'Ù\›[™\›YIË	ÑÙ[™[Y\šÙ^ˆZÚXšIË	Ñ[±,qgÛX[ˆ™HÙš\È˜^›1,H0í›0éğïIË	ğáğí°ïHÙZÛ1,HÙ\šH0í›°ï1gÉ×K›X\
+                return <div key={day} className={'min-h-24 border-b border-r border-slate-100 p-2 ' + (events.length ? 'bg-red-50/60' : 'bg-white')}>
+                  <span className={'flex h-7 w-7 items-center justify-center rounded-full text-xs font-black ' + (events.length ? 'bg-red-700 text-white' : 'text-slate-600')}>{day}</span>
+                  <div className="mt-1 space-y-1">{events.map((event) => <div key={event.id} title={event.title + ' Â· ' + event.time} className="rounded-md bg-[#071f3d] px-1.5 py-1 text-[9px] font-bold leading-3 text-white"><span className="block truncate">{event.title}</span><span className="text-red-200">{event.time}</span></div>)}</div>
+                </div>;
+              })}
+            </div>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">{training.events.slice().sort((a,b) => a.date.localeCompare(b.date)).map((event) => <article key={event.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div className="flex gap-4"><div className="rounded-xl bg-red-700 px-3 py-2 text-center text-white"><span className="block text-xl font-black">{new Date(event.date + 'T12:00:00').getDate()}</span><span className="text-[9px] font-black uppercase">{new Date(event.date + 'T12:00:00').toLocaleDateString('tr-TR',{month:'short'})}</span></div><div><h3 className="font-black text-slate-900">{event.title}</h3><p className="mt-1 text-xs text-slate-500">{event.time} Â· {event.format}</p><p className="mt-2 flex items-center gap-1 text-xs font-bold text-slate-700"><MapPin className="h-3.5 w-3.5 text-red-700"/>{event.location}</p></div></div></article>)}</div>
+        </div>}
 
-][JHOˆ]ˆÙ^O^Ú][_HÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ›İ[™Y^™Ë]Ú]KÌLLÈÚXÚĞÚ\˜ÛLˆÛ\ÜÓ˜[YOHšMËM‹ÏÚ][_OÙ]Š_OÙ]Ø\ÚYO›Ü›HÛ”İX›Z]^ÜİX›Z]HÛ\ÜÓ˜[YOHœMˆÛNœNÎœLLˆÛ\ÜÓ˜[YOH^[È›ÛX›XÚÈ^\Û]KNL‘Ù\šHš[\š[H0ï°ï°ïÙpéÚ[Ú]ˆÛ\ÜÓ˜[YOH›]MÜšYØ\LˆÛN™ÜšYXÛÛËLˆİ\\Ë›X\
+        {isCenters && <div className="mt-8">
+          <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.centersIntro}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">{training.centers.map((center) => <article key={center.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-6"><div className="flex items-start gap-4"><div className="rounded-xl bg-red-700 p-3 text-white"><MapPinned className="h-6 w-6"/></div><div><p className="text-[10px] font-black tracking-widest text-red-700">{center.city}</p><h2 className="mt-1 text-xl font-black text-slate-900">{center.name}</h2><p className="mt-3 text-xs leading-6 text-slate-600">{center.description}</p><p className="mt-4 border-t border-slate-200 pt-4 text-xs font-bold leading-5 text-slate-800">{center.address}</p></div></div></article>)}</div>
+        </div>}
 
-][JHOˆ]Ûˆ\OH˜]ÛˆˆÙ^O^Ú][_HÛÛXÚÏ^Ê
-HOˆÙ]\J][J_HÛ\ÜÓ˜[YO^Ø›İ[™Y^›Ü™\ˆLÈKLÈ^^È›ÛX›XÚÈ˜[œÚ][Ûˆ	İ\HOOH][HÈ	Ø›Ü™\‹\™YMÌ™Ë\™YMÌ^]Ú]HÚYİË[ÈÚYİË\™YMÌÌŒ	Èˆ	Ø›Ü™\‹\Û]KLŒ™Ë\Û]KML^\Û]KMÌİ™\˜›Ü™\‹\™YLÌ	ßXOÚ][_OØ]ÛŠ_OÙ]ÈVÉñgšZğèY]	Ë	Ñ[ZÈÈ0å›™\šI×Kš[˜ÛY\Ê\JH	‰ˆ]ˆÛ\ÜÓ˜[YOH›]MˆX™[Û\ÜÓ˜[YOH^^È›ÛX›XÚÈ^\Û]KMÌ‘Ù[™[q'Ù\›[™\›Y[š^ÛX™[]ˆÛ\ÜÓ˜[YOH›]Lˆ›^Ø\LHÖÌK‹ËWK›X\
+        {isTypes && <div className="mt-8">
+          <p className="max-w-4xl text-sm leading-8 text-slate-600">{training.typesIntro}</p>
+          <div className="relative mt-8 overflow-hidden rounded-2xl bg-[#071f3d] p-6 text-white sm:p-8"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=88&w=1400" alt="Realty CenterÂ® eÄŸitim ortamÄ±" className="absolute inset-0 h-full w-full object-cover opacity-25"/><div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.2em] text-red-200">REALTY CENTERÂ® AKADEMÄ°</p><h2 className="mt-2 text-2xl font-black">Bilgiyi sahadaki baÅŸarÄ±ya dÃ¶nÃ¼ÅŸtÃ¼rÃ¼n.</h2></div><div className="flex gap-3"><span className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center"><strong className="block text-lg">{training.types.length}</strong><small className="text-[9px] font-black tracking-wider text-white/70">PROGRAM</small></span><span className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center"><strong className="block text-lg">360Â°</strong><small className="text-[9px] font-black tracking-wider text-white/70">GELÄ°ÅÄ°M</small></span></div></div></div>
+          <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{training.types.map((type, index) => { const visual=trainingTypeVisuals[index % trainingTypeVisuals.length]; const Icon=visual.icon; return <article key={type.id} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><div className="relative h-32 overflow-hidden"><img src={visual.image} alt="" className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-[#071f3d]/80 to-[#071f3d]/10"/><span className="absolute bottom-3 left-4 text-[10px] font-black tracking-[.16em] text-white">{visual.label}</span><span className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-red-700 shadow-lg"><Icon className="h-5 w-5"/></span></div><div className="p-6"><h2 className="text-lg font-black text-slate-900">{type.title}</h2><p className="mt-2 inline-flex rounded-full bg-red-50 px-2.5 py-1 text-[10px] font-black tracking-widest text-red-700">{type.duration}</p><p className="mt-4 text-xs leading-6 text-slate-600">{type.description}</p></div></article>; })}</div>
+        </div>}
+      </section>
+    </div>
+  </main>;
+}
 
-İ\ŠHOˆ]Ûˆ\OH˜]ÛˆˆÙ^O^Üİ\ŸHÛÛXÚÏ^Ê
-HOˆÙ]˜][™Êİ\Š_H\šXK[X™[^Ø	Üİ\ŸHq,[1,^˜HÛ\ÜÓ˜[YO^Ø^LŞ˜[œÚ][Ûˆİ™\œØØ[KLLL	Üİ\ˆH˜][™ÈÈ	İ^X[X™\‹M	Èˆ	İ^\Û]KLŒ	ßXO¸¦!OØ]ÛŠ_OÙ]Ù]ŸO]ˆÛ\ÜÓ˜[YOH›]MˆÜšYØ\MÛN™ÜšYXÛÛËLˆ[œ]™\]Z\™Y˜[YO^Ù›Ü›K›˜[Y_HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›K˜[YN™K\™Ù]˜[Y_J_HXÙZÛ\HY1,[±,^ˆÛŞXY1,[±,^ˆ
-ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßKÏ[œ]™\]Z\™Y˜[YO^Ù›Ü›KœÛ™_HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KÛ™N™K\™Ù]˜[Y_J_HXÙZÛ\H•[Y›Û[^ˆ
-ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßKÏ[œ]\OH™[XZ[ˆ˜[YO^Ù›Ü›K™[XZ[HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›K[XZ[™K\™Ù]˜[Y_J_HXÙZÛ\H‘K\ÜİHY™\Ú[š^ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßKÏİ\HOOH	Ñ[±,qgÛX[ˆq'Ù\›[™\›Y\ÚIÈÈÙ[Xİ™\]Z\™Y˜[YO^Ù›Ü›K˜YÙ[HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KYÙ[™K\™Ù]˜[Y_J_HÛ\ÜÓ˜[YO^ÙšY[Û\ÜßOÜ[Ûˆ˜[YOHˆ‘[±,qgÛX[ˆÙpéÚ[ˆ
-ÛÜ[ÛÔĞSTWĞQÑS•Ë›X\
+function ManagedHeaderContentPage() {
+  const { id = '' } = useParams();
+  const [menus, setMenus] = useState<HeaderMenuItem[]>(getHeaderMenu);
+  useEffect(() => { const refresh = () => setMenus(getHeaderMenu()); window.addEventListener('realty-center-header-updated', refresh); return () => window.removeEventListener('realty-center-header-updated', refresh); }, []);
+  const page = findHeaderItem(menus, id) || (id === 'bana-takim-kur' ? findHeaderItem(menus, 'build-my-team') : undefined);
+  useEffect(() => {
+    if (!page) return;
+    const previousTitle = document.title;
+    const meta = document.querySelector('meta[name="description"]');
+    const previousDescription = meta?.getAttribute('content') || '';
+    document.title = `${page.label} | Realty CenterÂ®`;
+    const description = meta || document.head.appendChild(Object.assign(document.createElement('meta'), { name: 'description' }));
+    description.setAttribute('content', PAGE_COPY[id]?.description || page.content?.slice(0,160) || page.label);
+    return () => { document.title = previousTitle; if (meta) meta.setAttribute('content', previousDescription); else description.remove(); };
+  }, [id, page]);
+  if (!page) return <main className="min-h-[60vh] bg-slate-50 py-16"><div className="mx-auto max-w-4xl px-6 text-center"><h1 className="text-3xl font-black text-slate-900">Ä°Ã§erik bulunamadÄ±</h1><Link to="/" className="mt-5 inline-flex font-black text-red-700">Ana sayfaya dÃ¶n</Link></div></main>;
+  if (['education','education-calendar','education-centers','education-types'].includes(id)) return <EducationManagedPage page={page} pageId={id} />;
+  return <main className="min-h-[70vh] bg-slate-50 py-12 lg:py-16"><div className="mx-auto max-w-6xl px-6"><div className="relative grid overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2"><img src={page.image || '/rc_logo_og.svg'} alt={page.label} className="h-72 w-full bg-slate-100 object-cover lg:h-full lg:min-h-[500px]"/><article className="relative flex flex-col justify-center p-8 sm:p-12"><img src="/rc_logo_og.svg" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="absolute right-6 top-6 h-12 w-32 object-contain"/><p className="pr-32 text-xs font-black tracking-[.22em] text-red-700">REALTY CENTERÂ®</p><h1 className="mt-4 pr-32 text-4xl font-black text-slate-900">{page.label}</h1><div className="mt-6 h-1 w-16 rounded-full bg-red-700"/><div className="mt-7 space-y-5 text-sm leading-8 text-slate-600">{(page.content || 'Bu sayfanÄ±n iÃ§eriÄŸi yÃ¶netim panelinden eklenecektir.').split(/\n\n+/).map((paragraph,index) => <p key={index}>{paragraph}</p>)}</div></article></div></div></main>;
+}
+function CustomerFeedbackPage() {
+  const [type, setType] = useState<CustomerFeedback['type']>('Memnuniyet');
+  const [rating, setRating] = useState(5);
+  const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
+  const types: CustomerFeedback['type'][] = ['Memnuniyet', 'DanÄ±ÅŸman DeÄŸerlendirmesi', 'Ofis DeÄŸerlendirmesi', 'ÅikÃ¢yet', 'Dilek / Ã–neri'];
+  const submit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const item: CustomerFeedback = { id: `GB-${Date.now()}`, type, ...form, rating: type === 'ÅikÃ¢yet' || type === 'Dilek / Ã–neri' ? 0 : rating, status: 'Yeni', createdAt: new Date().toISOString() };
+    saveCustomerFeedback([item, ...getCustomerFeedback()]);
+    setSubmitted(true);
+    setForm({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const fieldClass = 'w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-4 focus:ring-red-100';
+  return <div className="min-h-screen bg-slate-50 py-10 lg:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><div className="mb-8 text-center"><span className="inline-flex rounded-full bg-red-100 px-4 py-1.5 text-[10px] font-black tracking-[.18em] text-red-700">MÃœÅTERÄ° DENEYÄ°MÄ°</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">GÃ¶rÃ¼ÅŸÃ¼nÃ¼z bizim iÃ§in deÄŸerli</h1><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">Memnuniyetinizi paylaÅŸabilir, danÄ±ÅŸmanlarÄ±mÄ±zÄ± ve ofislerimizi deÄŸerlendirebilir; ÅŸikÃ¢yet, dilek ve Ã¶nerilerinizi doÄŸrudan genel merkezimize iletebilirsiniz.</p></div>{submitted && <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-center"><CheckCircle2 className="mx-auto h-8 w-8 text-emerald-600"/><h2 className="mt-2 font-black text-emerald-900">Geri bildiriminiz alÄ±ndÄ±</h2><p className="mt-1 text-xs text-emerald-700">KaydÄ±nÄ±z ilgili birime iletildi. Gerekli gÃ¶rÃ¼lÃ¼rse verdiÄŸiniz iletiÅŸim bilgileri Ã¼zerinden sizinle irtibat kurulacaktÄ±r.</p></div>}<div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.8fr_1.2fr]"><aside className="bg-gradient-to-br from-[#b9001c] to-[#700012] p-7 text-white lg:p-10"><img src="/rc_logo_og.svg" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="h-20 w-auto object-contain brightness-0 invert drop-shadow-sm"/><h2 className="mt-8 text-2xl font-black">Size kulak veriyoruz</h2><p className="mt-3 text-sm leading-6 text-red-50/85">Her bildirim kayÄ±t altÄ±na alÄ±nÄ±r, ilgili ofis veya birime yÃ¶nlendirilir ve hizmet kalitemizin geliÅŸtirilmesinde deÄŸerlendirilir.</p><div className="mt-8 space-y-3 text-xs font-bold">{['Gizlilikle deÄŸerlendirme','Genel merkez takibi','DanÄ±ÅŸman ve ofis bazlÄ± Ã¶lÃ§Ã¼m','Ã‡Ã¶zÃ¼m odaklÄ± geri dÃ¶nÃ¼ÅŸ'].map((item) => <div key={item} className="flex items-center gap-2 rounded-xl bg-white/10 p-3"><CheckCircle2 className="h-4 w-4"/>{item}</div>)}</div></aside><form onSubmit={submit} className="p-6 sm:p-8 lg:p-10"><h2 className="text-lg font-black text-slate-900">Geri bildirim tÃ¼rÃ¼nÃ¼ seÃ§in</h2><div className="mt-4 grid gap-2 sm:grid-cols-2">{types.map((item) => <button type="button" key={item} onClick={() => setType(item)} className={`rounded-xl border px-3 py-3 text-xs font-black transition ${type === item ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/20' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-red-300'}`}>{item}</button>)}</div>{!['ÅikÃ¢yet','Dilek / Ã–neri'].includes(type) && <div className="mt-6"><label className="text-xs font-black text-slate-700">Genel deÄŸerlendirmeniz</label><div className="mt-2 flex gap-1">{[1,2,3,4,5].map((star) => <button type="button" key={star} onClick={() => setRating(star)} aria-label={`${star} yÄ±ldÄ±z`} className={`text-3xl transition hover:scale-110 ${star <= rating ? 'text-amber-400' : 'text-slate-200'}`}>â˜…</button>)}</div></div>}<div className="mt-6 grid gap-4 sm:grid-cols-2"><input required value={form.name} onChange={(e) => setForm({...form,name:e.target.value})} placeholder="AdÄ±nÄ±z SoyadÄ±nÄ±z *" className={fieldClass}/><input required value={form.phone} onChange={(e) => setForm({...form,phone:e.target.value})} placeholder="Telefonunuz *" className={fieldClass}/><input type="email" value={form.email} onChange={(e) => setForm({...form,email:e.target.value})} placeholder="E-posta adresiniz" className={fieldClass}/>{type === 'DanÄ±ÅŸman DeÄŸerlendirmesi' ? <select required value={form.agent} onChange={(e) => setForm({...form,agent:e.target.value})} className={fieldClass}><option value="">DanÄ±ÅŸman seÃ§in *</option>{SAMPLE_AGENTS.map((agent) => <option key={agent.id} value={agent.name}>{agent.name}</option>)}</select> : type === 'Ofis DeÄŸerlendirmesi' ? <select required value={form.office} onChange={(e) => setForm({...form,office:e.target.value})} className={fieldClass}><option value="">Ofis seÃ§in *</option>{SAMPLE_OFFICES.map((office) => <option key={office.id} value={office.name}>{office.name}</option>)}</select> : <input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Konu" className={fieldClass}/>}<input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Geri bildirim baÅŸlÄ±ÄŸÄ±" className={`${fieldClass} sm:col-span-2`}/><textarea required rows={6} value={form.message} onChange={(e) => setForm({...form,message:e.target.value})} placeholder="GÃ¶rÃ¼ÅŸ, ÅŸikÃ¢yet, dilek veya Ã¶nerinizi ayrÄ±ntÄ±lÄ± biÃ§imde yazÄ±n *" className={`${fieldClass} resize-none sm:col-span-2`}/></div><label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span>Geri bildirimin deÄŸerlendirilmesi ve gerektiÄŸinde tarafÄ±mla iletiÅŸim kurulmasÄ± amacÄ±yla bilgilerimin iÅŸlenmesini kabul ediyorum. <Link to="/kvkk" className="font-black text-red-700">KVKK metni</Link></span></label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-xl shadow-red-700/20 transition hover:bg-red-800">Geri Bildirimi GÃ¶nder</button></form></div></div></div>;
+}
 
-YÙ[
-HOˆÜ[ÛˆÙ^O^ØYÙ[šYH˜[YO^ØYÙ[›˜[Y_OØYÙ[›˜[Y_OÛÜ[ÛŠ_OÜÙ[Xİˆˆ\HOOH	ÓÙš\Èq'Ù\›[™\›Y\ÚIÈÈÙ[Xİ™\]Z\™Y˜[YO^Ù›Ü›K›Ù™šXÙ_HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KÙ™šXÙN™K\™Ù]˜[Y_J_HÛ\ÜÓ˜[YO^ÙšY[Û\ÜßOÜ[Ûˆ˜[YOHˆ“Ùš\ÈÙpéÚ[ˆ
-ÛÜ[ÛÔĞSTWÓÑ‘’PÑTË›X\
-
-Ù™šXÙJHOˆÜ[ÛˆÙ^O^ÛÙ™šXÙKšYH˜[YO^ÛÙ™šXÙK›˜[Y_OÛÙ™šXÙK›˜[Y_OÛÜ[ÛŠ_OÜÙ[Xİˆˆ[œ]˜[YO^Ù›Ü›KœİXš™XİHÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KİXš™Xİ™K\™Ù]˜[Y_J_HXÙZÛ\H’ÛÛHˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßKÏŸO[œ]˜[YO^Ù›Ü›KœİXš™XİHÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KİXš™Xİ™K\™Ù]˜[Y_J_HXÙZÛ\H‘Ù\šHš[\š[H˜qgÛ1,q'ñ,HˆÛ\ÜÓ˜[YO^Ø	ÙšY[Û\ÜßHÛN˜ÛÛ\Ü[‹L˜KÏ^\™XH™\]Z\™Y›İÜÏ^ÍŸH˜[YO^Ù›Ü›K›Y\ÜØYÙ_HÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JË‹‹™›Ü›KY\ÜØYÙN™K\™Ù]˜[Y_J_HXÙZÛ\H‘ğíœ°ï1gË1gÚZğèY][ZÈ™^XH0í›™\š[š^šH^\±,[1,[1,HšpéÚ[YHX^±,[ˆ
-ˆˆÛ\ÜÓ˜[YO^Ø	ÙšY[Û\ÜßH™\Ú^™K[›Û™HÛN˜ÛÛ\Ü[‹L˜KÏÙ]X™[Û\ÜÓ˜[YOH›]M›^][\Ë\İ\Ø\Lˆ^VÌL\HXY[™ËMH^\Û]KML[œ]™\]Z\™Y\OH˜ÚXÚØ›ŞˆÛ\ÜÓ˜[YOH›]LHXØÙ[\™YMÌ‹ÏÜ[‘Ù\šHš[\š[Z[ˆq'Ù\›[™\š[Y\ÚH™HÙ\™Zİq'Ú[™H\˜Y±,[[H[]qgÚ[Hİ\[X\ñ,H[XXñ,^[Hš[Ú[\š[Z[ˆqgÛ[›Y\Ú[šHØX[Y^[Ü[Kˆ[šÈÏH‹ÚİšÚÈˆÛ\ÜÓ˜[YOH™›ÛX›XÚÈ^\™YMÌ’Õ’ÒÈY]šOÓ[šÏÜÜ[ÛX™[]ÛˆÛ\ÜÓ˜[YOH›]MˆËY[›İ[™Y^™Ë\™YMÌMHKM^\ÛH›ÛX›XÚÈ^]Ú]HÚYİË^ÚYİË\™YMÌÌŒ˜[œÚ][Ûˆİ™\˜™Ë\™YN‘Ù\šHš[\š[ZHğí›™\Ø]ÛÙ›Ü›OÙ]Ù]Ù]ÂŸB‚™[˜İ[Ûˆ›Ûİ\ŠÈÜ[‘˜]Ù\ˆNˆÈÜ[‘˜]Ù\ˆ
-\Nˆ	Ùœ˜[˜Ú\ÙIÈ	ØYÙ[	ÊHOˆ›ÚYJHÂˆÛÛœİ›Ûİ\‘Ü›İ\ÈHÂˆÈ]Nˆ	Òİ\[\Ø[	Ë[šÜÎˆÖÉÒZÚñ,[q,^™IË	ËÚİ\[\Ø[ÚZÚÚ[Z^™I×KÉÓZ\Ş[Û[]^ˆ™Hš^[Û[]^‰Ë	ËÚİ\[\Ø[ÛZ\Ş[Û‹]š^[Û‰×KÉÖpí›™][HØY›Û]^‰Ë	ËÚİ\[\Ø[ÙZÚXš[Z^‰×KÉĞ™[Ù[\š[Z^‰Ë	ËÚİ\[\Ø[Ø™[Ù[\š[Z^‰×KÉÔ™Y™\˜[œÛ\±,[q,^‰Ë	ËÚİ\[\Ø[Ü™Y™\˜[œÛ\‰×KÉñ,1gÈÜZÛ\±,[q,^‰Ë	ËÚİ\[\Ø[Ú\Ë[ÜZÛ\š[Z^‰×WHKˆÈ]Nˆ	ÑØ^\š[Y[šİ[	Ë[šÜÎˆÖÉñ,[›\±,[q,^‰Ë	ËÚ[[›\š[Z^Ø[LI×KÉÔ›Ú™[\š[Z^‰Ë	ËÜ›Ú™[\š[Z^‰×KÉÓÙš\Û\š[Z^‰Ë	ËÛÙš\Û\š[Z^‰×KÉÑ[±,qgÛX[›\±,[q,^‰Ë	ËÙ[š\ÛX[›\š[Z^‰×KÉÒ\š]H[H\˜IË	ËÚ\š]KZ[KX\˜I×WHKˆÈ]Nˆ	ÒØ\š^Y\ˆ™H1,1gÈÜZÛ1,q'ñ,IË[šÜÎˆÖÉÑœ˜[˜Ú\ÙHÛ	Ë	ËÙœ˜[˜Ú\ÙKX˜\İ\I×KÉÑ[±,qgÛX[ˆÛ	Ë	ËÙ[š\ÛX[‹X˜\İ\I×KÉÔ™X[Hğï0ï[™IË	ËÚİ]\[™I×KÉÒZİZÈ	ˆY]X]	Ë	ËÚİ]\[™KÚZİZË[Y]X]	×KÉÖX\^H™ZØH\Ú\İ[±,IË	ËØZKZØ\˜\‹X\Ú\İ[šI×WHKˆÈ]Nˆ	ÑÚ^›j¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5ilik ve KullanÄ±m', links: [['KVKK AydÄ±nlatma Metni','/kvkk'],['Gizlilik PolitikasÄ±','/gizlilik-politikasi'],['Ã‡erez PolitikasÄ±','/cerez-politikasi'],['KullanÄ±m KoÅŸullarÄ±','/kullanim-kosullari'],['Ä°lan YayÄ±nlama KurallarÄ±','/ilan-yayinlama-kurallari']] }
+function Footer({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
+  const footerGroups = [
+    { title: 'Kurumsal', links: [['HakkÄ±mÄ±zda','/kurumsal/hakkimizda'],['Misyonumuz ve Vizyonumuz','/kurumsal/misyon-vizyon'],['YÃ¶netim Kadromuz','/kurumsal/ekibimiz'],['Belgelerimiz','/kurumsal/belgelerimiz'],['ReferanslarÄ±mÄ±z','/kurumsal/referanslar'],['Ä°ÅŸ OrtaklarÄ±mÄ±z','/kurumsal/is-ortaklarimiz']] },
+    { title: 'Gayrimenkul', links: [['Ä°lanlarÄ±mÄ±z','/ilanlarimiz?all=1'],['Projelerimiz','/projelerimiz'],['Ofislerimiz','/ofislerimiz'],['DanÄ±ÅŸmanlarÄ±mÄ±z','/danismanlarimiz'],['Harita ile Ara','/harita-ile-ara']] },
+    { title: 'Kariyer ve Ä°ÅŸ OrtaklÄ±ÄŸÄ±', links: [['Franchise Ol','/franchise-basvuru'],['DanÄ±ÅŸman Ol','/danisman-basvuru'],['Realty KÃ¼tÃ¼phane','/kutuphane'],['Hukuk & Mevzuat','/kutuphane/hukuk-mevzuat'],['Yapay Zeka AsistanÄ±','/ai-karar-asistani']] },
+    { title: 'Gizlilik ve KullanÄ±m', links: [['KVKK AydÄ±nlatma Metni','/kvkk'],['Gizlilik PolitikasÄ±','/gizlilik-politikasi'],['Ã‡erez PolitikasÄ±','/cerez-politikasi'],['KullanÄ±m KoÅŸullarÄ±','/kullanim-kosullari'],['Ä°lan YayÄ±nlama KurallarÄ±','/ilan-yayinlama-kurallari']] }
   ];
   return (
     <footer className="border-t-4 border-red-700 bg-[#f7f7f7] text-slate-600">
@@ -433,41 +1558,341 @@ function CookieConsent() {
   const [visible, setVisible] = useState(() => !localStorage.getItem('realty-center-cookie-choice'));
   if (!visible) return null;
   const choose = (choice: 'all' | 'essential') => { localStorage.setItem('realty-center-cookie-choice', choice); setVisible(false); };
-  return <div className="fixed inset-x-3 bottom-3 z-[90] mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:p-5"><div className="flex flex-col gap-4 sm:flex-ÛM5¶‰Ëkºwµçsç¶7F—fTÆ—7F–æræF—7G&–7GÒÂ¶7F—fTÆ—7F–æræ6—G—ÓÂ÷7ããÇ7â6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓ#ãÄÖ†–Ö—¦S"6Æ74æÖSÒ&‚Ó2ãRrÓ2ãR"óç¶7F—fTÆ—7F–æræ&VÒÜ+#Â÷7ããÂöF—cà¢Ç7â6Æ74æÖSÒ&×BÓB–æÆ–æRÖfÆW‚rÖf—B—FV×2Ö6VçFW"vÓ"&÷VæFVBÖgVÆÂ&r×&VBÓs‚Ó2ãR’Ó"FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×v†—FR6†F÷rÖÆr6†F÷r×&VBÓsó#R#äFWF–Æ,KKæ6VÆRÄ'&÷u&–v‡B6Æ74æÖSÒ&‚Ó2ãRrÓ2ãR"óãÂ÷7ãà¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓBÆVgBÓbfÆW‚vÓ"#ãÇ7â6Æ74æÖSÒ&‚ÓrÓr&÷VæFVBÖgVÆÂ&r×&VBÓs"óãÇ7â6Æ74æÖSÒ&‚ÓrÓR&÷VæFVBÖgVÆÂ&r×v†—FRós"óãÇ7â6Æ74æÖSÒ&‚ÓrÓR&÷VæFVBÖgVÆÂ&r×v†—FRós"óãÂöF—cà¢ÆF—b6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓB&–v‡BÓbFW‡B×&–v‡BFW‡B×v†—FR#ãÇ6Æ74æÖSÒ'FW‡BÕ³‡…ÒföçBÖ&Æ6²G&6¶–ær×v–FW7B#ç¶7F—fTÆ—7F–ærçG—RçFõWW$66R‚—Ò+r¶7F—fTÆ—7F–ærç&÷W'G•G—RçFõWW$66R‚—ÓÂ÷ãÇ6Æ74æÖSÒ&×BÓFW‡B×†ÂföçBÖ&Æ6²#ç¶f÷&ÖDÆ—7F–æu&–6R†7F—fTÆ—7F–ærç&–6RÂ7F—fTÆ—7F–æræ7W'&Væ7’—ÓÂ÷ãÂöF—cà¢ÂôÆ–æ³à¢ÆF—b6Æ74æÖSÒ&w&–BvÓ26Ó¦w&–B×&÷w2Ó2#à¢·6–FTÆ—7F–æw2æÖ‚†—FVÒ’ÓâÄÆ–æ²¶W“×¶—FVÒæ–GÒFó×¶ö–ÆâòG¶—FVÒæ–GÖÒ6Æ74æÖSÒ&w&÷Ww&–BÖ–âÖ‚Õ³ƒg…Òw&–BÖ6öÇ2Õ³C‚Uóg%Ò÷fW&fÆ÷rÖ†–FFVâ&÷VæFVB×†Â&÷&FW"&÷&FW"×v†—FR&r×v†—FR6†F÷rÕ³ó‡…ó‡…÷&v&ƒrÃ#’ÃS’Âãr•ÒG&ç6—F–öâ†÷fW#¢×G&ç6ÆFR×’ÓãR†÷fW#§6†F÷rÖÆr#à¢ÆF—b6Æ74æÖSÒ'&VÆF—fR÷fW&fÆ÷rÖ†–FFVâ#ãÆ–Ör7&3×¶—FVÒæ–ÖvWÒÇC×¶—FVÒçF—FÆWÒ6Æ74æÖSÒ&‚ÖgVÆÂrÖgVÆÂö&¦V7BÖ6÷fW"G&ç6—F–öâGW&F–öâÓSw&÷WÖ†÷fW#§66ÆRÓR"óãÇ7â6Æ74æÖSÒ&'6öÇWFRÆVgBÓ"F÷Ó"&÷VæFVBÖgVÆÂ&rÕ²3sC6%Ò‚Ó"ãR’ÓFW‡BÕ³‡…ÒföçBÖ&Æ6²G&6¶–ær×v–FW"FW‡B×v†—FR#ç¶—FVÒçG—RçFõWW$66R‚—Ò+r¶—FVÒç&÷W'G•G—RçFõWW$66R‚—ÓÂ÷7ããÂöF—cà¢ÆF—b6Æ74æÖSÒ'&VÆF—fRfÆW‚Ö–â×rÓfÆW‚Ö6öÂ§W7F–g’Ö6VçFW"Ó"ãR#ãÇ6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓFW‡BÕ³—…ÒföçB×6VÖ–&öÆBFW‡B×6ÆFRÓC#ãÄÖ–â6Æ74æÖSÒ&‚Ó2rÓ2"óç¶—FVÒæ6—G—ÓÂ÷ãÆƒ26Æ74æÖSÒ&×BÓÆ–æRÖ6Æ×Ó"FW‡BÕ³…ÒföçBÖ&Æ6²ÆVF–ær×F–v‡BFW‡BÕ²3sC6%Ò6Ó§FW‡B×‡2#ç¶—FVÒçF—FÆWÓÂöƒ3ãÆF—b6Æ74æÖSÒ&×BÓãRfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâvÓ"#ãÇ7â6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓFW‡BÕ³—…ÒföçBÖ&öÆBFW‡B×6ÆFRÓS#ãÄÖ†–Ö—¦S"6Æ74æÖSÒ&‚Ó2rÓ2"óç¶—FVÒæ&VÒÜ+#Â÷7ããÇ7â6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×&VBÓs#ç¶f÷&ÖDÆ—7F–æu&–6R†—FVÒç&–6RÂ—FVÒæ7W'&Væ7’—ÓÂ÷7ããÂöF—cãÇ7â6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓ"ãR&–v‡BÓ"ãRw&–B‚ÓbrÓbÆ6RÖ—FV×2Ö6VçFW"&÷VæFVBÖgVÆÂ&÷&FW"&÷&FW"×6ÆFRÓ#FW‡BÕ²3sC6%ÒG&ç6—F–öâw&÷WÖ†÷fW#¦&÷&FW"×&VBÓsw&÷WÖ†÷fW#¦&r×&VBÓsw&÷WÖ†÷fW#§FW‡B×v†—FR#ãÄ'&÷u&–v‡B6Æ74æÖSÒ&‚Ó2rÓ2"óãÂ÷7ããÂöF—cà¢ÂôÆ–æ³â—Ğ¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà¢Â÷6V7F–öãà¢“°§Ğ ¦gVæ7F–öâÆ—fTÆ—7F–æu7G&VÒ‡²Æ—7F–æw2Ó¢²Æ—7F–æw3¢Æ—7F–æt—FVÕµÒÒ’°¢6öç7B¶F—&V7F–öâÂ6WDF—&V7F–öåÒÒW6U7FFSÂvÆVgBrÂw&–v‡Bsâ‚vÆVgBr“°¢6öç7BG&6µ&VbÒW6U&VcÄ…DÔÄF—dVÆVÖVçBÂçVÆÃâ†çVÆÂ“°¢6öç7B÷6—F–öå&VbÒW6U&Vbƒ“°¢6öç7BF—&V7F–öå&VbÒW6U&VcÂvÆVgBrÂw&–v‡Bsâ‚vÆVgBr“°¢6öç7B†÷fW&VE&VbÒW6U&Vb†fÇ6R“°¢6öç7BG&vv–æu&VbÒW6U&Vb†fÇ6R“°¢6öç7BG&u7F'E&VbÒW6U&Vb‡²ƒ¢Â÷6—F–öã¢Ò“° ¢6öç7BÇ•÷6—F–öâÒ‚’Óâ°¢6öç7BG&6²ÒG&6µ&Vbæ7W'&VçC°¢–b‡G&6²’G&6²ç7G–ÆRçG&ç6f÷&ÒÒG&ç6ÆFS6B‚G·÷6—F–öå&Vbæ7W'&VçG×‚ÂÂ–°¢Ó° ¢6öç7B6WE7G&VÔF—&V7F–öâÒ†æW‡C¢vÆVgBrÂw&–v‡Br’Óâ°¢F—&V7F–öå&Vbæ7W'&VçBÒæW‡C°¢6WDF—&V7F–öâ†æW‡B“°¢Ó° ¢W6TVffV7B‚‚’Óâ°¢ÆWBg&ÖT–BÒ°¢ÆWBÆ7EF–ÖRÒW&f÷&Öæ6Rææ÷r‚“° ¢6öç7BÖ÷fRÒ‡F–ÖS¢çVÖ&W"’Óâ°¢6öç7BVÆ6VBÒÖF‚æÖ–âƒcBÂF–ÖRÒÆ7EF–ÖR“°¢Æ7EF–ÖRÒF–ÖS°¢6öç7BG&6²ÒG&6µ&Vbæ7W'&VçC°¢6öç7BÆö÷v–GF‚ÒG&6²òG&6²ç67&öÆÅv–GF‚ò"¢° ¢–b†Æö÷v–GF‚bb†÷fW&VE&Vbæ7W'&VçBbbG&vv–æu&Vbæ7W'&VçB’°¢÷6—F–öå&Vbæ7W'&VçB³Ò†F—&V7F–öå&Vbæ7W'&VçBÓÓÒvÆVgBròÓ¢’¢VÆ6VB¢ã#ƒ°¢v†–ÆR‡÷6—F–öå&Vbæ7W'&VçBÃÒÖÆö÷v–GF‚’÷6—F–öå&Vbæ7W'&VçB³ÒÆö÷v–GFƒ°¢v†–ÆR‡÷6—F–öå&Vbæ7W'&VçBãÒ’÷6—F–öå&Vbæ7W'&VçBÓÒÆö÷v–GFƒ°¢Ç•÷6—F–öâ‚“°¢Ğ ¢g&ÖT–BÒ&WVW7Dæ–ÖF–öäg&ÖR†Ö÷fR“°¢Ó° ¢g&ÖT–BÒ&WVW7Dæ–ÖF–öäg&ÖR†Ö÷fR“°¢&WGW&â‚’Óâ6æ6VÄæ–ÖF–öäg&ÖR†g&ÖT–B“°¢ÒÂ¶Æ—7F–æw2æÆVæwF…Ò“° ¢–b‚Æ—7F–æw2æÆVæwF‚’&WGW&âçVÆÃ° ¢6öç7B†æFÆUö–çFW$F÷vâÒ†WfVçC¢&V7Båö–çFW$WfVçCÄ…DÔÄF—dVÆVÖVçCâ’Óâ°¢–b‚†WfVçBçF&vWB2…DÔÄVÆVÖVçB’æ6Æ÷6W7B‚vÂ'WGFöâr’’&WGW&ã°¢G&vv–æu&Vbæ7W'&VçBÒG'VS°¢†÷fW&VE&Vbæ7W'&VçBÒG'VS°¢G&u7F'E&Vbæ5š®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍ]\œ™[HÈˆ]™[˜ÛY[ÜÚ][ÛˆÜÚ][Û”™Y‹˜İ\œ™[NÂˆ]™[˜İ\œ™[\™Ù]œÙ]Ú[\Ø\\™J]™[œÚ[\’Y
-NÂˆNÂ‚ˆÛÛœİ[™TÚ[\“[İ™HH
-]™[ˆ™XXİ”Ú[\‘]™[S]‘[[Y[ŠHOˆÂˆYˆ
-Y˜YÙÚ[™Ô™Y‹˜İ\œ™[
-H™]\›ÂˆÛÛœİ˜XÚÈH˜XÚÔ™Y‹˜İ\œ™[ÂˆÛÛœİÛÜÚYH˜XÚÈÈ˜XÚËœØÜ›ÛÚYÈˆˆÂˆÛÛœİ[HH]™[˜ÛY[H˜YÔİ\™Y‹˜İ\œ™[ÂˆÜÚ][Û”™Y‹˜İ\œ™[H˜YÔİ\™Y‹˜İ\œ™[œÜÚ][Ûˆ
-È[NÂ‚ˆYˆ
-ÛÜÚY
-HÂˆÚ[H
-ÜÚ][Û”™Y‹˜İ\œ™[H[ÛÜÚY
-HÜÚ][Û”™Y‹˜İ\œ™[
-ÏHÛÜÚYÂˆÚ[H
-ÜÚ][Û”™Y‹˜İ\œ™[H
-HÜÚ][Û”™Y‹˜İ\œ™[OHÛÜÚYÂˆB‚ˆ\TÜÚ][ÛŠ
-NÂˆNÂ‚ˆÛÛœİ[™TÚ[\•\H
-]™[ˆ™XXİ”Ú[\‘]™[S]‘[[Y[ŠHOˆÂˆYˆ
-Y˜YÙÚ[™Ô™Y‹˜İ\œ™[
-H™]\›ÂˆÛÛœİ[HH]™[˜ÛY[H˜YÔİ\™Y‹˜İ\œ™[ÂˆYˆ
-X]˜XœÊ[JHˆ
-HÙ]İ™X[Q\™Xİ[ÛŠ[HˆÈ	ÜšYÚ	Èˆ	ÛY	ÊNÂˆ˜YÙÚ[™Ô™Y‹˜İ\œ™[H˜[ÙNÂˆİ™\™Y™Y‹˜İ\œ™[H]™[œÚ[\•\HOOH	Û[İ\ÙIÎÂ‚ˆHÂˆ]™[˜İ\œ™[\™Ù]œ™[X\ÙTÚ[\Ø\\™J]™[œÚ[\’Y
-NÂˆHØ]ÚßBˆNÂ‚ˆ™]\›ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H^X]]ÈX^]ËVÌMÎHMHÛNœNÎœLLˆ‚ˆ]ˆÛ\ÜÓ˜[YOH›X‹M›^][\ËXÙ[\ˆ\İYKY[™Ø\LÈ‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\Lˆ‚ˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÙ]İ™X[Q\™Xİ[ÛŠ	ÛY	Ê_HÛ\ÜÓ˜[YO^Ø›^LLËLL][\ËXÙ[\ˆ\İYKXÙ[\ˆ›İ[™YY[›Ü™\ˆÚYİË\ÛH	Ù\™Xİ[ÛˆOOH	ÛY	ÈÈ	Ø›Ü™\‹\™YMÌ™Ë\™YMÌ^]Ú]IÈˆ	Ø›Ü™\‹\Û]KLŒ™Ë]Ú]H^\Û]KMÌİ™\˜›Ü™\‹\™YMÌİ™\^\™YMÌ	ßXH\šXK[X™[HZñ,qgñ,HÛÛHpí››[™\ˆÚ]œ›Û“YÛ\ÜÓ˜[YOHšMHËMHˆÏØ]Û‚ˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÙ]İ™X[Q\™Xİ[ÛŠ	ÜšYÚ	Ê_HÛ\ÜÓ˜[YO^Ø›^LLËLL][\ËXÙ[\ˆ\İYKXÙ[\ˆ›İ[™YY[›Ü™\ˆÚYİË\ÛH	Ù\™Xİ[ÛˆOOH	ÜšYÚ	ÈÈ	Ø›Ü™\‹\™YMÌ™Ë\™YMÌ^]Ú]IÈˆ	Ø›Ü™\‹\Û]KLŒ™Ë]Ú]H^\Û]KMÌİ™\˜›Ü™\‹\™YMÌİ™\^\™YMÌ	ßXH\šXK[X™[HZñ,qgñ,HØq'ØHpí››[™\ˆÚ]œ›Û”šYÚÛ\ÜÓ˜[YOHšMHËMHˆÏØ]Û‚ˆÙ]‚ˆÙ]‚ˆ]‚ˆÛ\ÜÓ˜[YOHœ™[]]™Hİ\œÛÜ‹YÜ˜Xˆİ™\™›İËZY[ˆKLˆXİ]™N˜İ\œÛÜ‹YÜ˜X˜š[™È‚ˆÛ“[İ\ÙQ[\^Ê
-HOˆÈİ™\™Y™Y‹˜İ\œ™[HYNÈ_BˆÛ“[İ\ÙSX]™O^Ê
-HOˆÈYˆ
-Y˜YÙÚ[™Ô™Y‹˜İ\œ™[
-Hİ™\™Y™Y‹˜İ\œ™[H˜[ÙNÈ_BˆÛ”Ú[\‘İÛ^Ú[™TÚ[\‘İÛŸBˆÛ”Ú[\“[İ™O^Ú[™TÚ[\“[İ™_BˆÛ”Ú[\•\^Ú[™TÚ[\•\BˆÛ”Ú[\Ø[˜Ù[^Ú[™TÚ[\•\Bˆ‚ˆ]ˆ™Y^İ˜XÚÔ™YŸHÛ\ÜÓ˜[YOH›]™K[\İ[™Ë]˜XÚÈØ\™Y›Øİ\ËYÜ›İ\‚ˆÖË‹‹›\İ[™ÜË‹‹›\İ[™Ü×K›X\
+  return <div className="fixed inset-x-3 bottom-3 z-[90] mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:p-5"><div className="flex flex-col gap-4 sm:flex-row sm:items-center"><div className="flex-1"><h3 className="text-sm font-black text-slate-900">Ã‡erez kullanÄ±mÄ±</h3><p className="mt-1 text-xs leading-5 text-slate-600">Site deneyimini geliÅŸtirmek, tercihlerinizi hatÄ±rlamak ve gÃ¼venli kullanÄ±m saÄŸlamak iÃ§in Ã§erezlerden yararlanÄ±yoruz. AyrÄ±ntÄ±larÄ± <Link to="/cerez-politikasi" className="font-black text-red-700">Ã‡erez PolitikasÄ±</Link> sayfasÄ±nda inceleyebilirsiniz.</p></div><div className="flex shrink-0 gap-2"><button onClick={() => choose('essential')} className="rounded-lg border border-slate-300 px-4 py-2 text-xs font-black text-slate-700">YalnÄ±zca Zorunlu</button><button onClick={() => choose('all')} className="rounded-lg bg-red-700 px-4 py-2 text-xs font-black text-white">TÃ¼mÃ¼nÃ¼ Kabul Et</button></div></div></div>;
+}
 
-][K[™^
-HOˆ\XÛHÙ^O^Ø	Ú][KšYKIÚ[™^XHÛ\ÜÓ˜[YOH˜Ø\™Y›Øİ\ËZ][HËVÌNHÚš[šËLİ™\™›İËZY[ˆ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLL™Ë]Ú]HÚYİË\ÛH‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™HVÌLLHİ™\™›İËZY[ˆ™Ë\Û]KLL‚ˆ[YÈÜ˜Ï^Ú][Kš[XYÙ_H[^Ú][K]_HÛ\ÜÓ˜[YOHšY[ËY[Øš™XİXÛİ™\ˆ˜[œÚ][Ûˆ\˜][Û‹MLİ™\œØØ[KLLHˆÏ‚ˆÜ[ˆÛ\ÜÓ˜[YOH˜XœÛÛ]HYLKHÜLKH›İ[™Y™Ë\™YMÌLKHKLH^VÍÜH›ÛX›XÚÈ^]Ú]HÚ][K\KÕ\\Ø\ÙJ
-_OÜÜ[‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOHœL‹H‚ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\LH^VÎ\H›Û\Ù[ZX›Û^\Û]KMLX\[ˆÛ\ÜÓ˜[YOHšLÈËLÈ^\™YMÌˆÏÚ][K™\İšXİKÚ][K˜Ú]_OÜ‚ˆÈÛ\ÜÓ˜[YOH›]LKH[™KXÛ[\LˆZ[‹ZVÌ‹Œ\™[WH^VÌL\H›ÛX›XÚÈXY[™Ë\ÛYÈ^VÈÌÌYØ—HÚ][K]_OÚÏ‚ˆÛ\ÜÓ˜[YOH›]Lˆ^\ÛH›ÛX›XÚÈ^\™YMÌÙ›Ü›X]\İ[™ÔšXÙJ][KœšXÙK][K˜İ\œ™[˜ŞJ_OÜ‚ˆ]ˆÛ\ÜÓ˜[YOH›]LKH›^][\ËXÙ[\ˆØ\LH^VÎH›ÛX›Û^\Û]KMŒÜ[ˆÛ\ÜÓ˜[YOHœ›İ[™Y™Ë\Û]KMLLHKLHÚ][Kœ›ÛÛ\ßOÜÜ[Ü[ˆÛ\ÜÓ˜[YOHš[›[™KY›^][\ËXÙ[\ˆØ\LH›İ[™Y™Ë\Û]KMLLHKLHX^[Z^™LˆÛ\ÜÓ˜[YOHšL‹HËL‹HˆÏÚ][K˜\™X_[p¬ÜÜ[Ù]‚ˆ[šÈÏ^ØÚ[[‹ÉÚ][KšYXHÛ\ÜÓ˜[YOH›]Lˆ[›[™KY›^ËY[][\ËXÙ[\ˆ\İYKXÙ[\ˆØ\LH›İ[™Y[È›Ü™\ˆ›Ü™\‹\™YMÌLKHKLKH^VÎH›ÛX›XÚÈ^\™YMÌ˜[œÚ][Ûˆİ™\˜™Ë\™YMÌİ™\^]Ú]H‘]^q,Hğíœˆ\œ›İÔšYÚÛ\ÜÓ˜[YOHšLÈËLÈˆÏÓ[šÏ‚ˆÙ]‚ˆØ\XÛOŠ_BˆÙ]‚ˆÙ]‚ˆÙ]ÂŸB™[˜İ[Ûˆ^Y\”™\]Y\İ[Ù[J
-HÂˆÛÛœİÛÜ[‹Ù]Ü[—HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÙ[Ù]Ù[HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÙ›Ü›KÙ]›Ü›WHH\ÙTİ]JÂˆ\Nˆ	ÔØ]1,[1,ZÉËˆ›Ü\Nˆ6ÓMm¢G§²ÚîÆ­yÕ¡½±‘•Èô‰7ñ±¬ƒÙé•±±¥­±•É¥¹¤‰ÕÉ…å„å…ëÅ»Åèˆ±…ÍÍ9…µ”õí€‘í™¥•±‘±…ÍÍôÉ•Í¥é”µä±•…‘¥¹œ´Ùôøğ½Ñ•áÑ…É•„øñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí™½É´¹¹…µ•ô½¹¡…¹”õí”ôùÕÁ‘…Ñ” ¹…µ”œ±”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÁ±…•¡½±‘•Èô‰M½å…ˆ…ÕÑ½½µÁ±•Ñ”ô‰¹…µ”ˆ±…ÍÍ9…µ”õí™¥•±‘±…ÍÍô¼øñ¥¹ÁÕĞÉ•ÅÕ¥É•ÑåÁ”ô‰Ñ•°ˆÙ…±Õ”õí™½É´¹Á¡½¹•ô½¹¡…¹”õí”ôùÕÁ‘…Ñ” Á¡½¹”œ±”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÁ±…•¡½±‘•Èô‰Q•±•™½¸ˆ…ÕÑ½½µÁ±•Ñ”ô‰Ñ•°ˆ±…ÍÍ9…µ”õí™¥•±‘±…ÍÍô¼ø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÍÁ…”µä´ÌÉ½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´Ğˆø(€€€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´ÈÑ•áĞµlÄÅÁát±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ØÀÀˆøñ¥¹ÁÕĞÉ•ÅÕ¥É•ÑåÁ”ô‰¡•­‰½àˆ±…ÍÍ9…µ”ô‰µĞ´Ä…•¹ĞµÉ•´ÜÀÀˆ¼øñÍÁ…¸øñ1¥¹¬Ñ¼ôˆ½­Ù­¬ˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆù-Y-,å“Å¹±…Ñµ„5•Ñ¹¤ğ½1¥¹¬ûŠe¹¤½­Õ‘Õ´ì‰¥±¥±•É¥µ¥¸Ñ…±•‰¥µ¥¸‘—}•É±•¹‘¥É¥±µ•Í¤…µ…Åå±„§}±•¹µ•Í¥¹¤­…‰Õ°•‘¥å½ÉÕ´¸ğ½ÍÁ…¸øğ½±…‰•°ø(€€€€€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµÍÑ…ÉĞ…À´ÈÑ•áĞµlÄÅÁát±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ØÀÀˆøñ¥¹ÁÕĞÉ•ÅÕ¥É•ÑåÁ”ô‰¡•­‰½àˆ±…ÍÍ9…µ”ô‰µĞ´Ä…•¹ĞµÉ•´ÜÀÀˆ¼øñÍÁ…¸øñ1¥¹¬Ñ¼ôˆ½­Õ±±…¹¥´µ­½ÍÕ±±…É¤ˆ±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆùM¥Ñ”-Õ±±…»Å´-¿}Õ±±…ËÄğ½1¥¹¬ûŠe»Ä½­Õ‘Õ´Ù”­…‰Õ°•‘¥å½ÉÕ´¸ğ½ÍÁ…¸øğ½±…‰•°ø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ğˆ±…ÍÍ9…µ”ô‰‰Õå•ÈµÉ•ÅÕ•ÍĞµÍÕ‰µ¥ĞµĞ´ÔÜµ™Õ±°É½Õ¹‘•µá°‰œµÉ…‘¥•¹ĞµÑ¼µÈ™É½´µlˆäÀÀÅ‰tÑ¼µlÀÄÅtÁà´ÔÁä´ĞÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”Í¡…‘½Üµ±œÍ¡…‘½ÜµÉ•´äÀÀ¼ÄÔˆùQ1Á7ÀƒÁ1Pğ½‰ÕÑÑ½¸øğ½‘¥Øø(€€€€€€€€€€€€ğ½™½É´øğ½‘¥Øø(€€€€€€€€€€¥ô(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½‘¥Øø(€€€€ğ½Í•Ñ¥½¸ø(€€¤ì)ô()•áÁ½ÉĞ™Õ¹Ñ¥½¸	…ÉÑ•É	…¹­5½‘Õ±” ¤ì(€½¹ÍĞmµ½‘”°Í•Ñ5½‘•t€ôÕÍ•MÑ…Ñ”ğŸY¹”Q…­…Í±„ƒY¹•Èœğ€Q…­…Í„Q…±•‰¤œø ŸY¹”Q…­…Í±„ƒY¹•Èœ¤ì(€½¹ÍĞm½™™•È°Í•Ñ=™™•Ét€ôÕÍ•MÑ…Ñ” …åÉ¥µ•¹­Õ°œ¤ì(€½¹ÍĞmÉ•ÅÕ•ÍĞ°Í•ÑI•ÅÕ•ÍÑt€ôÕÍ•MÑ…Ñ” …åÉ¥µ•¹­Õ°œ¤ì(€½¹ÍĞmÍ•¹Ğ°Í•ÑM•¹Ñt€ôÕÍ•MÑ…Ñ”¡™…±Í”¤ì(€½¹ÍĞÍÕ‰µ¥Ğ€ô€¡•Ù•¹ĞèI•…Ğ¹½ÉµÙ•¹Ğñ!Q51½Éµ±•µ•¹Ğø¤€ôøì•Ù•¹Ğ¹ÁÉ•Ù•¹Ñ•™…Õ±Ğ ¤ì½¹ÍĞ™½É´€ô¹•Ü½Éµ…Ñ„¡•Ù•¹Ğ¹ÕÉÉ•¹ÑQ…É•Ğ¤ì½¹ÍĞ¥Ñ•µÌ€ô)M=8¹Á…ÉÍ”¡±½…±MÑ½É…”¹•Ñ%Ñ•´ É•…±Ñäµ•¹Ñ•Èµ‰…ÉÑ•ÈµÉ•ÅÕ•ÍÑÌœ¤ñğ€mtœ¤ì±½…±MÑ½É…”¹Í•Ñ%Ñ•´ É•…±Ñäµ•¹Ñ•Èµ‰…ÉÑ•ÈµÉ•ÅÕ•ÍÑÌœ°)M=8¹ÍÑÉ¥¹¥™ä¡mí¥é	´‘í…Ñ”¹¹½Ü ¥õ€°µ½‘”°½™™•È°É•ÅÕ•ÍĞ°É•…Ñ•‘Ğé¹•Ü…Ñ” ¤¹Ñ½%M=MÑÉ¥¹œ ¤°ÍÑ…ÑÕÌèe•¹¤œ°‘…Ñ„é=‰©•Ğ¹™É½µ¹ÑÉ¥•Ì¡™½É´¥ô°¸¸¹¥Ñ•µÍt¤¤ìİ¥¹‘½Ü¹‘¥ÍÁ…Ñ¡Ù•¹Ğ¡¹•ÜÙ•¹Ğ É•…±Ñäµ•¹Ñ•Èµ‰…ÉÑ•ÈµÉ•ÅÕ•ÍÑÌµÕÁ‘…Ñ•œ¤¤ìÍ•ÑM•¹Ğ¡ÑÉÕ”¤ìôì(€½¹ÍĞ™¥•±‘Ì€ô€¡­¥¹èÍÑÉ¥¹œ¤€ôø­¥¹€ôôô€Øœ€ülŸÁ°œ°ŸÁ³”œ°5…¡…±±”œ°-½¹ÕĞƒÙé•±±¥­±•É¤œ°¥å…Ğt€è­¥¹€ôôô€ÉÍ„œ€ülŸÁ°œ°ŸÁ³”œ°5…¡…±±”œ°‘„œ°A…ÉÍ•°œ°¥å…Ğt€è­¥¹€ôôô€=Ñ½µ½‰¥°œ€ül5…É­„œ°5½‘•°œ°¥å…Ğt€èlŸÅ­±…µ„œ°¥å…Ğœ°Ÿy•¡¥È€¼ƒÁ³”tì(€¥˜€¡Í•¹Ğ¤É•ÑÕÉ¸€ñÍ•Ñ¥½¸¥ô‰‰…ÉÑ•Èµ‰…¹¬ˆ±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁä´ÄĞˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Õá°Áà´Øˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰œµÍ±…Ñ”´äÔÀÀ´ÄÀÑ•áĞµ•¹Ñ•ÈÑ•áĞµİ¡¥Ñ”ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞ´Éá°™½¹Ğµ‰±…¬ˆù	…ÉÑ•ÈÑ…±•‰¥¹¥è…³Å¹“Ä¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ÌÀÀˆùQ…±•‰¥¹¥èçÙ¹•Ñ¥¤Á…¹•±¥¹”¥±•Ñ¥±‘¤ìÕåÕ¸—}±—}µ”§¥¸Í¥é¥¹±”¥±•Ñ§}¥µ”—¥±••­Ñ¥È¸ğ½Àøğ½‘¥Øøğ½‘¥Øøğ½Í•Ñ¥½¸øì(€É•ÑÕÉ¸€ñÍ•Ñ¥½¸¥ô‰‰…ÉÑ•Èµ‰…¹¬ˆ±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁä´ÄĞˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´İá°Áà´Ø±œéÁà´ÄÈˆøñ‘¥Ø±…ÍÍ9…µ”ô‰½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½Üµá°±œéÉ¥±œéÉ¥µ½±Ìµl¸Üá™É|Ä¸ÈÉ™Étˆøñ…Í¥‘”±…ÍÍ9…µ”ô‰‰œµÍ±…Ñ”´äÔÀÀ´àÑ•áĞµİ¡¥Ñ”Í´éÀ´ÄÀˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµÉ•´ÌÀÀˆù	IQI	9/
-¸ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞ´Íá°™½¹Ğµ‰±…¬ˆù…é±…»ÄÙ•È°•­Í§}¥¹¤…°¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ÌÀÀˆù…åÉ¥µ•¹­Õ°°½Ñ½µ½‰¥°Ù•å„‘§}•È‘—}•É±•É¥¹¥é¤ì¯ÅÍµ¤å„‘„Ñ…´‰…ÉÑ•ÈÍ—•¹•­±•É¥å±”‘—}•É±•¹‘¥É¥¸¸ğ½Àøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´àÍÁ…”µä´ÌÑ•áĞµÍ´™½¹Ğµ‰½±ˆøñÀøÀÄƒ
-ÜQ…­…ÌÑ•­±¥™¥¹¤½±×}ÑÕÈğ½ÀøñÀøÀÈƒ
-ÜƒÁÍÑ•‘§}¥¸‘—}•É¤‰•±¥ÉĞğ½ÀøñÀøÀÌƒ
-ÜUåÕ¸—}±—}µ•å¤‰•­±”ğ½Àøğ½‘¥Øøğ½…Í¥‘”øñ™½É´½¹MÕ‰µ¥ĞõíÍÕ‰µ¥Ñô±…ÍÍ9…µ”ô‰À´ØÍ´éÀ´ÄÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌÍ´éÉ¥µ½±Ì´Èˆøñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤ôùÍ•Ñ5½‘” ŸY¹”Q…­…Í±„ƒY¹•Èœ¥ô±…ÍÍ9…µ”õíÉ½Õ¹‘•µá°À´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬€‘íµ½‘”ôôôŸY¹”Q…­…Í±„ƒY¹•Èœü‰œµÉ•´ÜÀÀÑ•áĞµİ¡¥Ñ”œè‰œµÍ±…Ñ”´ÄÀÀÑ•áĞµÍ±…Ñ”´ÜÀÀõôûY9Q-M1ƒY9Hğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤ôùÍ•Ñ5½‘” Q…­…Í„Q…±•‰¤œ¥ô±…ÍÍ9…µ”õíÉ½Õ¹‘•µá°À´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬€‘íµ½‘”ôôôQ…­…Í„Q…±•‰¤œü‰œµÉ•´ÜÀÀÑ•áĞµİ¡¥Ñ”œè‰œµÍ±…Ñ”´ÄÀÀÑ•áĞµÍ±…Ñ”´ÜÀÀõôùQ-MQ1Àğ½‰ÕÑÑ½¸øğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ¥…À´ĞÍ´éÉ¥µ½±Ì´Èˆøñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´İf«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³S#ådU$ÔT²K5DTLKIìKãÇ6VÆV7BfÇVS×¶öffW'Òöä6†ævS×¶SÓç6WDöffW"†RçF&vWBçfÇVR—Ò6Æ74æÖSÒ&×BÓ"rÖgVÆÂ&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#Ó2#ãÆ÷F–öãäv—&–ÖVæ·VÃÂö÷F–öããÆ÷F–öãä÷FöÖö&–ÃÂö÷F–öããÆ÷F–öãäFœIöW#Âö÷F–öããÂ÷6VÆV7CãÂöÆ&VÃãÆÆ&VÂ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓs#äÄÔ²K5DTLKIìKãÇ6VÆV7BfÇVS×·&WVW7GÒöä6†ævS×¶SÓç6WE&WVW7B†RçF&vWBçfÇVR—Ò6Æ74æÖSÒ&×BÓ"rÖgVÆÂ&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#Ó2#ãÆ÷F–öãäv—&–ÖVæ·VÃÂö÷F–öããÆ÷F–öãä÷FöÖö&–ÃÂö÷F–öããÆ÷F–öãäFœIöW#Âö÷F–öããÂ÷6VÆV7CãÂöÆ&VÃãÂöF—cãÆF—b6Æ74æÖSÒ&×BÓRw&–BvÓ26Ó¦w&–BÖ6öÇ2Ó"#çµ²ââæf–VÆG2†öffW"’æÖ‡ƒÓæfW&–ÆV6V²G·‡Ö’Âââæf–VÆG2‡&WVW7B’æÖ‡ƒÓæK7FVæVâG·‡Ö•ÒæÖ‡ƒÓãÆ–çWB¶W“×·‡Ò&WV—&VBæÖS×·‡ÒÆ6V†öÆFW#×·‡Ò6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#‚ÓB’Ó2FW‡B×6Ò"óâ—ÓÇ6VÆV7BæÖSÒ$&'FW"L;Ç,;Â"6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#‚ÓB’Ó2FW‡B×6Ò#ãÆ÷F–öãåFÒ&'FW#Âö÷F–öããÆ÷F–öãä¼K6Ö’&'FW#Âö÷F–öããÂ÷6VÆV7CãÂöF—cãÆÆ&VÂ6Æ74æÖSÒ&×BÓRfÆW‚—FV×2×7F'BvÓ"FW‡BÕ³…ÒÆVF–ærÓRFW‡B×6ÆFRÓS#ãÆ–çWB&WV—&VBG—SÒ&6†V6¶&÷‚"6Æ74æÖSÒ&×BÓ66VçB×&VBÓs"óä&–Æv–ÆW&–Ö–âF\IöW&ÆVæF—&–ÆÖW6–æ’¶'VÂVF—–÷'VÓ²ÄÆ–æ²FóÒ"ö·f¶²"6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×&VBÓs#äµd´³ÂôÆ–æ³âfRÄÆ–æ²FóÒ"ö·VÆÆæ–ÒÖ¶÷7VÆÆ&’"6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×&VBÓs#å6—FR·VÆÆìKÒöÆ—F–¶<KÂôÆ–æ³âÖWF–æÆW&–æ’ö·VGVÒãÂöÆ&VÃãÆ'WGFöâ6Æ74æÖSÒ&×BÓbrÖgVÆÂ&÷VæFVB×†Â&r×&VBÓs‚ÓR’ÓBFW‡B×6ÒföçBÖ&Æ6²FW‡B×v†—FR#ä&'FW"FÆV&–æ’|;fæFW#Âö'WGFöããÂöf÷&ÓãÂöF—cãÂöF—cãÂ÷6V7F–öãã°§Ğ ¦W‡÷'BgVæ7F–öâ&'FW$&æ´ÖöGVÆUc"‚’°¢6öç7B¶ÖöFRÂ6WDÖöFUÒÒW6U7FFSÂuF¶29fæW&—6’rÂuF¶2FÆV&’sâ‚uF¶29fæW&—6’r“°¢6öç7B¶76WBÂ6WD76WEÒÒW6U7FFSÂtWbrÂt'6rÂt÷FöÖö&–ÂrÂtFœIöW"sâ‚tWbr“°¢6öç7B·6VçBÂ6WE6VçEÒÒW6U7FFR†fÇ6R“°¢6öç7Bf–VÆG2Ò76WBÓÓÒtWbrò²|KÂrÂ|KÌ:vRrÂtÖ†ÆÆRrÂt¶öçWB;g¦VÆÆ–¶ÆW&’rÂtf—–BuÒ¢76WBÓÓÒt'6rò²|KÂrÂ|KÌ:vRrÂtÖ†ÆÆRrÂtFrÂu'6VÂrÂtf—–BuÒ¢76WBÓÓÒt÷FöÖö&–Ârò²tÖ&¶rÂtÖöFVÂrÂtf—–BuÒ¢²|YæV†—"òKÌ:vRrÂt:|K¶ÆÖrÂtf—–BuÓ°¢6öç7B7V&Ö—BÒ†WfVçC¢&V7Bäf÷&ÔWfVçCÄ…DÔÄf÷&ÔVÆVÖVçCâ’Óâ²WfVçBç&WfVçDFVfVÇB‚“²6öç7B6fVBÒ¥4ôâç'6R†Æö6Å7F÷&vRævWD—FVÒ‚w&VÇG’Ö6VçFW"Ö&'FW"×&WVW7G2r’ÇÂuµÒr“²Æö6Å7F÷&vRç6WD—FVÒ‚w&VÇG’Ö6VçFW"Ö&'FW"×&WVW7G2rÂ¥4ôâç7G&–æv–g’…·²–C¢$"ÒG´FFRææ÷r‚—ÖÂÖöFRÂ76WBÂ7FGW3¢u–Væ’rÂ7&VFVDC¢æWrFFR‚’çFô•4õ7G&–ær‚’ÂFF¢ö&¦V7Bæg&öÔVçG&–W2†æWrf÷&ÔFF†WfVçBæ7W'&VçEF&vWB’’ÒÂââç6fVEÒ’“²v–æF÷ræF—7F6„WfVçB†æWrWfVçB‚w&VÇG’Ö6VçFW"Ö&'FW"×&WVW7G2×WFFVBr’“²6WE6VçB‡G'VR“²Ó°¢–b‡6VçB’&WGW&âÇ6V7F–öâ–CÒ&&'FW"Ö&æ²"6Æ74æÖSÒ&&÷&FW"Ö"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS’ÓB#ãÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÓW†Â‚Ób#ãÆF—b6Æ74æÖSÒ'&2Öæg’Ög&ÖR&÷VæFVBÓ7†Â&rÕ²44CUÒÓFW‡BÖ6VçFW"FW‡B×v†—FR#ãÆƒ"6Æ74æÖSÒ'FW‡BÓ'†ÂföçBÖ&Æ6²#ä&'FW"¶–LKìK¢ÌKæLKãÂöƒ#ãÇ6Æ74æÖSÒ&×BÓ2FW‡B×6ÒFW‡B×v†—FRóƒR#åFÆV&–æ—¢œ;fæWF–6’æVÆ–æR–ÆWF–ÆF“²W–wVâ\YöÆ\YöÖRœ:v–â6—¦–æÆR–ÆWFœYö–ÖRv\:v–ÆV6V·F—"ãÂ÷ãÂöF—cãÂöF—cãÂ÷6V7F–öãã°¢&WGW&âÇ6V7F–öâ–CÒ&&'FW"Ö&æ²"6Æ74æÖSÒ&&÷&FW"Ö"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS’ÓB#ãÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÓw†Â‚ÓbÆs§‚Ó"#ãÆF—b6Æ74æÖSÒ'&2Öæg’Ög&ÖR÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ7†Â&r×v†—FR6†F÷r×†ÂÆs¦w&–BÆs¦w&–BÖ6öÇ2Õ²ãs†g%óã#&g%Ò#ãÆ6–FR6Æ74æÖSÒ&&rÕ²44CUÒÓ‚FW‡B×v†—FR6Ó§Ó#ãÇ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡B×v†—FRósR#ä$%DU$$ä¼*ãÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓBFW‡BÓ7†ÂföçBÖ&Æ6²#äf¦ÆìKfW"ÂV·6œIö–æ’ÂãÂöƒ#ãÇ6Æ74æÖSÒ&×BÓBFW‡B×6ÒÆVF–ærÓrFW‡B×v†—FRóƒR#äv—&–ÖVæ·VÂÂ÷FöÖö&–ÂfW–FœIöW"F\IöW&ÆW&–æ—¦’¼K6Ö’–FFÒ&'FW"6\:vVæV¶ÆW&—–ÆRF\IöW&ÆVæF—&–âãÂ÷ãÂö6–FSãÆf÷&Òöå7V&Ö—C×·7V&Ö—GÒ6Æ74æÖSÒ'Ób6Ó§Ó#ãÆF—b6Æ74æÖSÒ&w&–BvÓ26Ó¦w&–BÖ6öÇ2Ó"#ãÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚’Óâ6WDÖöFR‚uF¶29fæW&—6’r—Ò6Æ74æÖS×¶&÷VæFVB×†ÂÓ2FW‡B×‡2föçBÖ&Æ6²G¶ÖöFRÓÓÒuF¶29fæW&—6’ròv&r×&VBÓsFW‡B×v†—FRr¢v&r×6ÆFRÓFW‡B×6ÆFRÓswÖÓåD´29däU,K<KÂö'WGFöããÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚’Óâ6WDÖöFR‚uF¶2FÆV&’r—Ò6Æ74æÖS×¶&÷VæFVB×†ÂÓ2FW‡B×‡2föçBÖ&Æ6²G¶ÖöFRÓÓÒuF¶2FÆV&’ròv&r×&VBÓsFW‡B×v†—FRr¢v&r×6ÆFRÓFW‡B×6ÆFRÓswÖÓåD´2DÄT,KÂö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓb#ãÇ6Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç¶ÖöFRÓÓÒuF¶29fæW&—6’ròufW&ÖV²—7FVFœIö–æ—¢F\IöW"r¢tÆÖ²—7FVFœIö–æ—¢F\IöW"wÓÂ÷ãÆÆ&VÂ6Æ74æÖSÒ&×BÓ2&Æö6²FW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓs#äD\IäU"L9Å,9ÃÇ6VÆV7BfÇVS×¶76WGÒöä6†ævS×²†R’Óâ6WD76WB†RçF&vWBçfÇVR2G—Vöb76WB—Ò6Æ´Ó[h‘éì¶»§q«^t <div className="grid gap-5 lg:grid-cols-2">{column('TAKAS Ã–NERÄ°SÄ°', 'VERMEK Ä°STEDÄ°ÄÄ°NÄ°Z MÃœLK', offer, setOffer, 'Ã¶neri')}{column('TAKAS TALEBÄ°', 'ALMAK Ä°STEDÄ°ÄÄ°NÄ°Z MÃœLK', request, setRequest, 'talep')}</div>
+function FeaturedListingsShowcase() {
+  const [featuredIds, setFeaturedIds] = useState<string[]>(getFeaturedListingIds);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const publishedListings = usePublishedListings();
+  const dragStartX = useRef<number | null>(null);
+  const dragMoved = useRef(false);
+  const featuredListings = publishedListings.filter((listing) => listing.isFeatured);
+
+  useEffect(() => {
+    const refresh = () => setFeaturedIds(getFeaturedListingIds());
+    window.addEventListener('realty-center-featured-listings-updated', refresh);
+    return () => window.removeEventListener('realty-center-featured-listings-updated', refresh);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex >= featuredListings.length) setActiveIndex(0);
+  }, [activeIndex, featuredListings.length]);
+
+  const move = (direction: number) => {
+    if (!featuredListings.length) return;
+    setActiveIndex((current) => (current + direction + featuredListings.length) % featuredListings.length);
+  };
+
+  const getOffset = (index: number) => {
+    let offset = index - activeIndex;
+    const half = featuredListings.length / 2;
+    if (offset > half) offset -= featuredListings.length;
+    if (offset < -half) offset += featuredListings.length;
+    return offset;
+  };
+
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest('a, button')) return;
+    dragStartX.current = event.clientX;
+    dragMoved.current = false;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (dragStartX.current === null) return;
+    if (Math.abs(event.clientX - dragStartX.current) > 8) dragMoved.current = true;
+  };
+
+  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (dragStartX.current === null) return;
+    const distance = event.clientX - dragStartX.current;
+    if (distance > 55) move(-1);
+    if (distance < -55) move(1);
+    dragStartX.current = null;
+  };
+
+  if (!featuredListings.length) return null;
+  const activeListing = featuredListings[activeIndex] || featuredListings[0];
+  const sideListings = featuredListings.filter((item) => item.id !== activeListing.id).slice(0, 3);
+
+  return (
+    <section className="featured-opportunities relative isolate overflow-hidden border-b border-slate-200 py-6 sm:py-8">
+      <span className="featured-opportunities-arc featured-opportunities-arc-left" aria-hidden="true" />
+      <span className="featured-opportunities-building featured-opportunities-building-right" aria-hidden="true" />
+      <div className="relative z-10 mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+        <div className="relative mb-4 flex flex-col justify-between gap-3 lg:flex-row lg:items-end">
+          <div>
+            <h2 className="text-3xl font-black tracking-[-.055em] text-[#071d3b] sm:text-4xl">FÄ±rsat <span className="text-red-700">Gayrimenkuller</span></h2>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link to="/ilanlarimiz?all=1" className="inline-flex items-center gap-2 rounded-full border border-red-700 bg-white px-4 py-2.5 text-[11px] font-black text-red-700 transition hover:bg-red-700 hover:text-white">TÃ¼m FÄ±rsatlarÄ± GÃ¶r <ArrowRight className="h-3.5 w-3.5"/></Link>
+            <button type="button" onClick={() => move(-1)} className="grid h-9 w-9 place-items-center rounded-full border border-slate-200 bg-white text-[#071d3b] shadow-sm transition hover:border-red-700 hover:text-red-700" aria-label="Ã–nceki fÄ±rsat"><ChevronLeft className="h-4 w-4"/></button>
+            <button type="button" onClick={() => move(1)} className="grid h-9 w-9 place-items-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800" aria-label="Sonraki fÄ±rsat"><ChevronRight className="h-4 w-4"/></button>
+          </div>
+        </div>
+
+        <div className="grid gap-3 lg:grid-cols-[1.2fr_.92fr]">
+          <Link to={`/ilan/${activeListing.id}`} className="group relative min-h-[270px] overflow-hidden rounded-[1.2rem] bg-[#071d3b] shadow-[0_12px_24px_rgba(7,29,59,.12)] sm:min-h-[340px]">
+            <img src={activeListing.image} alt={activeListing.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/>
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/74 to-transparent"/>
+            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#071d3b]/72 to-transparent"/>
+            <div className="relative z-10 flex h-full max-w-[58%] flex-col justify-center p-5 sm:p-6">
+              <p className="flex items-center gap-2 text-[8px] font-black tracking-[.24em] text-[#071d3b]"><span className="h-5 w-0.5 bg-red-700"/>HAFTANIN FIRSATI</p>
+              <h3 className="featured-listing-title mt-3 line-clamp-3 text-2xl leading-[1.13] text-[#071d3b] sm:text-3xl">{activeListing.title}</h3>
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-[10px] font-semibold text-[#071d3b]"><span className="inline-flex items-center gap-1"><MapPin className="h-3.5 w-3.5"/>{activeListing.district}, {activeListing.city}</span><span className="inline-flex items-center gap-1"><Maximize2 className="h-3.5 w-3.5"/>{activeListing.area} mÂ²</span></div>
+              <span className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-red-700 px-3.5 py-2 text-[11px] font-black text-white shadow-lg shadow-red-700/25">DetaylarÄ± Ä°ncele <ArrowRight className="h-3.5 w-3.5"/></span>
+            </div>
+            <div className="absolute bottom-4 left-6 flex gap-2"><span className="h-1 w-7 rounded-full bg-red-700"/><span className="h-1 w-5 rounded-full bg-white/70"/><span className="h-1 w-5 rounded-full bg-white/70"/></div>
+            <div className="absolute bottom-4 right-6 text-right text-white"><p className="text-[8px] font-black tracking-widest">{activeListing.type.toUpperCase()} Â· {activeListing.propertyType.toUpperCase()}</p><p className="mt-1 text-xl font-black">{formatListingPrice(activeListing.price, activeListing.currency)}</p></div>
+          </Link>
+          <div className="grid gap-3 sm:grid-rows-3">
+            {sideListings.map((item) => <Link key={item.id} to={`/ilan/${item.id}`} className="group grid min-h-[86px] grid-cols-[48%_1fr] overflow-hidden rounded-xl border border-white bg-white shadow-[0_8px_18px_rgba(7,29,59,.07)] transition hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="relative overflow-hidden"><img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105"/><span className="absolute left-2 top-2 rounded-full bg-[#071d3b] px-2.5 py-1 text-[8px] font-black tracking-wider text-white">{item.type.toUpperCase()} Â· {item.propertyType.toUpperCase()}</span></div>
+              <div className="relative flex min-w-0 flex-col justify-center p-2.5"><p className="flex items-center gap-1 text-[9px] font-semibold text-slate-400"><MapPin className="h-3 w-3"/>{item.city}</p><h3 className="mt-1 line-clamp-2 text-[11px] font-black leading-tight text-[#071d3b] sm:text-xs">{item.title}</h3><div className="mt-1.5 flex items-center justify-between gap-2"><span className="inline-flex items-center gap-1 text-[9px] font-bold text-slate-500"><Maximize2 className="h-3 w-3"/>{item.area} mÂ²</span><span className="text-[11px] font-black text-red-700">{formatListingPrice(item.price, item.currency)}</span></div><span className="absolute bottom-2.5 right-2.5 grid h-6 w-6 place-items-center rounded-full border border-slate-200 text-[#071d3b] transition group-hover:border-red-700 group-hover:bg-red-700 group-hover:text-white"><ArrowRight className="h-3 w-3"/></span></div>
+            </Link>)}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LiveListingStream({ listings }: { listings: ListingItem[] }) {
+  const [direction, setDirection] = useState<'left' | 'right'>('left');
+  const trackRef = useRef<HTMLDivElement | null>(null);
+  const positionRef = useRef(0);
+  const directionRef = useRef<'left' | 'right'>('left');
+  const hoveredRef = useRef(false);
+  const draggingRef = useRef(false);
+  const dragStartRef = useRef({ x: 0, position: 0 });
+
+  const applyPosition = () => {
+    const track = trackRef.current;
+    if (track) track.style.transform = `translate3d(${positionRef.current}px, 0, 0)`;
+  };
+
+  const setStreamDirection = (next: 'left' | 'right') => {
+    directionRef.current = next;
+    setDirection(next);
+  };
+
+  useEffect(() => {
+    let frameId = 0;
+    let lastTime = performance.now();
+
+    const move = (time: number) => {
+      const elapsed = Math.min(64, time - lastTime);
+      lastTime = time;
+      const track = trackRef.current;
+      const loopWidth = track ? track.scrollWidth / 2 : 0;
+
+      if (loopWidth && !hoveredRef.current && !draggingRef.current) {
+        positionRef.current += (directionRef.current === 'left' ? -1 : 1) * elapsed * 0.028;
+        while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
+        while (positionRef.current >= 0) positionRef.current -= loopWidth;
+        applyPosition();
+      }
+
+      frameId = requestAnimationFrame(move);
+    };
+
+    frameId = requestAnimationFrame(move);
+    return () => cancelAnimationFrame(frameId);
+  }, [listings.length]);
+
+  if (!listings.length) return null;
+
+  const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest('a, button')) return;
+    draggingRef.current = true;
+    hoveredRef.current = true;
+    dragStartRef.current = { x: event.clientX, position: positionRef.current };
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!draggingRef.current) return;
+    const track = trackRef.current;
+    const loopWidth = track ? track.scrollWidth / 2 : 0;
+    const delta = event.clientX - dragStartRef.current.x;
+    positionRef.current = dragStartRef.current.position + delta;
+
+    if (loopWidth) {
+      while (positionRef.current <= -loopWidth) positionRef.current += loopWidth;
+      while (positionRef.current >= 0) positionRef.current -= loopWidth;
+    }
+
+    applyPosition();
+  };
+
+  const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
+    if (!draggingRef.current) return;
+    const delta = event.clientX - dragStartRef.current.x;
+    if (Math.abs(delta) > 8) setStreamDirection(delta > 0 ? 'right' : 'left');
+    draggingRef.current = false;
+    hoveredRef.current = event.pointerType === 'mouse';
+
+    try {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    } catch {}
+  };
+
+  return <div className="relative mx-auto max-w-[1780px] px-5 sm:px-8 lg:px-12">
+    <div className="mb-4 flex items-center justify-end gap-3">
+      <div className="flex items-center gap-2">
+        <button type="button" onClick={() => setStreamDirection('left')} className={`flex h-10 w-10 items-center justify-center rounded-full border shadow-sm ${direction === 'left' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="AkÄ±ÅŸÄ± sola yÃ¶nlendir"><ChevronLeft className="h-5 w-5" /></button>
+        <button type="button" onClick={() => setStreamDirection('right')} className={`flex h-10 w-10 items-center justify-center rounded-full border shadow-sm ${direction === 'right' ? 'border-red-700 bg-red-700 text-white' : 'border-slate-200 bg-white text-slate-700 hover:border-red-700 hover:text-red-700'}`} aria-label="AkÄ±ÅŸÄ± saÄŸa yÃ¶nlendir"><ChevronRight className="h-5 w-5" /></button>
+      </div>
+    </div>
+    <div
+      className="relative cursor-grab overflow-hidden py-2 active:cursor-grabbing"
+      onMouseEnter={() => { hoveredRef.current = true; }}
+      onMouseLeave={() => { if (!draggingRef.current) hoveredRef.current = false; }}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerUp}
+    >
+      <div ref={trackRef} className="live-listing-track card-focus-group">
+        {[...listings, ...listings].map((item, index) => <article key={`${item.id}-${index}`} className="card-focus-item w-[180px] shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-white shadow-sm">
+          <div className="relative h-[110px] overflow-hidden bg-slate-100">
+            <img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 hover:scale-105" />
+            <span className="absolute left-1.5 top-1.5 rounded bg-red-700 px-1.5 py-0.5 text-[7px] font-black text-white">{item.type.toUpperCase()}</span>
+          </div>
+          <div className="p-2.5">
+            <p className="flex items-center gap-1 text-[9px] font-semibold text-slate-500"><MapPin className="h-3 w-3 text-red-700" />{item.district}, {item.city}</p>
+            <h3 className="mt-1.5 line-clamp-2 min-h-[2.1rem] text-[11px] font-black leading-snug text-[#071d3b]">{item.title}</h3>
+            <p className="mt-2 text-sm font-black text-red-700">{formatListingPrice(item.price, item.currency)}</p>
+            <div className="mt-1.5 flex items-center gap-1 text-[8px] font-bold text-slate-600"><span className="rounded bg-slate-50 px-1 py-0.5">{item.rooms}</span><span className="inline-flex items-center gap-0.5 rounded bg-slate-50 px-1 py-0.5"><Maximize2 className="h-2.5 w-2.5" />{item.area}mÂ²</span></div>
+            <Link to={`/ilan/${item.id}`} className="mt-2 inline-flex w-full items-center justify-center gap-1 rounded-lg border border-red-700 px-1.5 py-1.5 text-[8px] font-black text-red-700 transition hover:bg-red-700 hover:text-white">DetayÄ± GÃ¶r <ArrowRight className="h-3 w-3" /></Link>
+          </div>
+        </article>)}
+      </div>
+    </div>
+  </div>;
+}
+function BuyerRequestModule() {
+  const [open, setOpen] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({
+    type: 'SatÄ±lÄ±k',
+    property: 'Daire',
+    city: 'Ankara',
+    district: 'Ã‡ankaya',
+    budget: '',
+    payment: 'Kredi + PeÅŸinat',
+    timing: '1 ay iÃ§inde',
+    name: '',
+    phone: '',
+    description: ''
+  });
+  const update = (key: keyof typeof form, value: string) => setForm({ ...form, [key]: value });
+  const submitRequest = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const normalize = (value: string) => value.trim().toLocaleLowerCase('tr-TR');
+    const city = normalize(form.city), district = normalize(form.district);
+    const cityOffices = SAMPLE_OFFICES.filter((office) => normalize(office.city) === city);
+    const matchedOffices = cityOffices.filter((office) => normalize(office.district) === district);
+    const offices = matchedOffices.length ? matchedOffices : cityOffices;
+    const agents = SAMPLE_AGENTS.filter((agent) => normalize(agent.city) === city && (!district || normalize(agent.district) === district || offices.some((office) => office.name === agent.office)));
+    saveBuyerRequests([{ id: `TR-${Date.now()}`, ...form, createdAt: new Date().toISOString(), status: 'Yeni', officeNames: offices.map((office) => office.name), agentNames: agents.map((agent) => agent.name) }, ...getBuyerRequests()]);
+    const notice = document.createElement('div');
+    notice.textContent = 'âœ“ Talebiniz iletildi.';
+    notice.setAttribute('role', 'status');
+    notice.setAttribute('style', 'position:fixed;right:24px;bottom:24px;z-index:100;opacity:0;transform:translateY(12px);transition:opacity .32s ease,transform .32s ease;border:1px solid #bbf7d0;border-radius:14px;background:#fff;color:#166534;padding:14px 18px;font:700 14px/1.3 system-ui,sans-serif;box-shadow:0 14px 34px rgba(7,29,59,.16);');
+    document.body.appendChild(notice);
+    requestAnimationFrame(() => { notice.style.opacity = '1'; notice.style.transform = 'translateY(0)'; });
+    setForm({ type: 'SatÄ±lÄ±k', property: 'Daire', city: 'Ankara', district: 'Ã‡ankaya', budget: '', payment: 'Kredi + PeÅŸinat', timing: '1 ay iÃ§inde', name: '', phone: '', description: '' });
+    window.setTimeout(() => { notice.style.opacity = '0'; notice.style.transform = 'translateY(12px)'; }, 1700);
+    window.setTimeout(() => { notice.remove(); setOpen(false); }, 2050);
+  };
+  if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">âœ“</div><h2 className="mt-5 text-3xl font-black">Talebiniz ilgili ekiplere iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">YÃ¶netici paneli, ilgili ofis ve bÃ¶lgedeki danÄ±ÅŸmanlar iÃ§in bildirim oluÅŸturuldu. Size uygun portfÃ¶ylerle kÄ±sa sÃ¼re iÃ§inde iletiÅŸime geÃ§iyoruz.</p></div></div></section>;
+  const fieldClass = 'buyer-request-field mt-2 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm font-semibold text-slate-800';
+  return (
+    <section id="buyer-request" className="border-b border-slate-200 bg-slate-50 py-8 sm:py-10">
+      <div className="buyer-request-container mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="buyer-request-shell rc-navy-frame overflow-hidden bg-white shadow-xl">
+          <header className="buyer-request-banner">
+            <div className="buyer-request-banner-photo" aria-hidden="true" />
+            <div className="buyer-request-banner-copy"><h2 className="buyer-request-slogan"><span>Siz AradÄ±ÄŸÄ±nÄ±zÄ± SÃ¶yleyin,</span><em>Biz BulalÄ±m</em></h2></div>
+            <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="buyer-request-toggle buyer-request-banner-button">
+              {open ? 'Formu Kapat' : 'Talep OluÅŸtur'}
+              <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} />
+            </button>
+          </header>
+          {open && (<div className="grid gap-6 bg-white p-5 lg:grid-cols-[.7fr_1.3fr] lg:p-7"><aside className="rounded-2xl bg-slate-50 p-6 text-[#071d3b]"><p className="text-lg font-black leading-snug">AradÄ±ÄŸÄ±nÄ±z gayrimenkulÃ¼n Ã¶zelliklerini doldurup talebinizi iletin.</p><p className="mt-3 text-sm leading-6 text-slate-600">Talebinizi inceleyelim, size en uygun seÃ§eneklerle kÄ±sa sÃ¼re iÃ§inde dÃ¶nelim.</p></aside>
+            <form onSubmit={submitRequest} className="buyer-request-reveal bg-white p-5 sm:p-7"><div className="mx-auto max-w-2xl space-y-3"><select required aria-label="Ä°lan tÃ¼rÃ¼" value={form.type} onChange={e=>update('type',e.target.value)} className={fieldClass}><option>SatÄ±lÄ±k</option><option>KiralÄ±k</option><option>Devren SatÄ±lÄ±k</option></select><select required aria-label="MÃ¼lk tÃ¼rÃ¼" value={form.property} onChange={e=>update('property',e.target.value)} className={fieldClass}><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option><option>Fabrika</option><option>DiÄŸer</option></select><select required aria-label="Ä°l" value={form.city} onChange={e=>setForm({...form,city:e.target.value,district:''})} className={fieldClass}><option value="">Ä°l SeÃ§iniz</option>{Object.keys(TURKEY_CITIES).map((city)=><option key={city} value={city}>{city}</option>)}</select><select required aria-label="Ä°lÃ§e" disabled={!form.city} value={form.district} onChange={e=>update('district',e.target.value)} className={`${fieldClass} disabled:cursor-not-allowed disabled:opacity-50`}><option value="">{form.city ? 'Ä°lÃ§e SeÃ§iniz' : 'Ã–nce Ä°l SeÃ§iniz'}</option>{form.city && TURKEY_CITIES[form.city]?.map((district)=><option key={district} value={district}>{district}</option>)}</select><input required value={form.budget} onChange={e=>update('budget',e.target.value)} placeholder="BÃ¼tÃ§e" className={fieldClass}/><textarea required rows={4} value={form.description} onChange={e=>update('description',e.target.value)} placeholder="MÃ¼lk Ã¶zelliklerini buraya yazÄ±nÄ±z" className={`${fieldClass} resize-y leading-6`}></textarea><input required value={form.name} onChange={e=>update('name',e.target.value)} placeholder="Ad Soyad" autoComplete="name" className={fieldClass}/><input required type="tel" value={form.phone} onChange={e=>update('phone',e.target.value)} placeholder="Telefon" autoComplete="tel" className={fieldClass}/>
+              <div className="mt-5 space-y-3 rounded-2xl border border-slate-200 bg-white p-4">
+                <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK AydÄ±nlatma Metni</Link>â€™ni okudum; bilgilerimin talebimin deÄŸerlendirilmesi amacÄ±yla iÅŸlenmesini kabul ediyorum.</span></label>
+                <label className="flex items-start gap-2 text-[11px] leading-5 text-slate-600"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site KullanÄ±m KoÅŸullarÄ±</Link>â€™nÄ± okudum ve kabul ediyorum.</span></label>
+              </div>
+              <button type="submit" className="buyer-request-submit mt-5 w-full rounded-xl bg-gradient-to-r from-[#b9001b] to-[#CD011E] px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-900/15">TALEBÄ°MÄ° Ä°LET</button></div>
+            </form></div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function BarterBankModule() {
+  const [mode, setMode] = useState<'Ã–nce Takasla Ã–ner' | 'Takasa Talebi'>('Ã–nce Takasla Ã–ner');
+  const [offer, setOffer] = useState('Gayrimenkul');
+  const [request, setRequest] = useState('Gayrimenkul');
+  const [sent, setSent] = useState(false);
+  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const form = new FormData(event.currentTarget); const items = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{id:`BB-${Date.now()}`, mode, offer, request, createdAt:new Date().toISOString(), status:'Yeni', data:Object.fromEntries(form)},...items])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  const fields = (kind: string) => kind === 'Ev' ? ['Ä°l','Ä°lÃ§e','Mahalle','Konut Ã¶zellikleri','Fiyat'] : kind === 'Arsa' ? ['Ä°l','Ä°lÃ§e','Mahalle','Ada','Parsel','Fiyat'] : kind === 'Otomobil' ? ['Marka','Model','Fiyat'] : ['AÃ§Ä±klama','Fiyat','Åehir / Ä°lÃ§e'];
+  if (sent) return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-5xl px-6"><div className="rounded-3xl bg-slate-950 p-10 text-center text-white"><h2 className="text-2xl font-black">Barter talebiniz alÄ±ndÄ±.</h2><p className="mt-3 text-sm text-slate-300">Talebiniz yÃ¶netici paneline iletildi; uygun eÅŸleÅŸme iÃ§in sizinle iletiÅŸime geÃ§ilecektir.</p></div></div></section>;
+  return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid lg:grid-cols-[.78fr_1.22fr]"><aside className="bg-slate-950 p-8 text-white sm:p-10"><p className="text-xs font-black tracking-[.2em] text-red-300">BARTERBANKÂ®</p><h2 className="mt-4 text-3xl font-black">FazlanÄ± ver, eksiÄŸini al.</h2><p className="mt-4 text-sm leading-7 text-slate-300">Gayrimenkul, otomobil veya diÄŸer deÄŸerlerinizi; kÄ±smi ya da tam barter seÃ§enekleriyle deÄŸerlendirin.</p><div className="mt-8 space-y-3 text-sm font-bold"><p>01 Â· Takas teklifini oluÅŸtur</p><p>02 Â· Ä°stediÄŸin deÄŸeri belirt</p><p>03 Â· Uygun eÅŸleÅŸmeyi bekle</p></div></aside><form onSubmit={submit} className="p-6 sm:p-10"><div className="grid gap-3 sm:grid-cols-2"><button type="button" onClick={()=>setMode('Ã–nce Takasla Ã–ner')} className={`rounded-xl p-3 text-xs font-black ${mode==='Ã–nce Takasla Ã–ner'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>Ã–NCE TAKASLA Ã–NER</button><button type="button" onClick={()=>setMode('Takasa Talebi')} className={`rounded-xl p-3 text-xs font-black ${mode==='Takasa Talebi'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>TAKASA TALEBÄ°</button></div><div className="mt-5 grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">VERMEK Ä°STEDÄ°ÄÄ°N<select value={offer} onChange={e=>setOffer(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>DiÄŸer</option></select></label><label className="text-xs font-black text-slate-700">ALMAK Ä°STEDÄ°ÄÄ°N<select value={request} onChange={e=>setRequest(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>DiÄŸer</option></select></label></div><div className="mt-5 grid gap-3 sm:grid-cols-2">{[...fields(offer).map(x=>`Verilecek ${x}`),...fields(request).map(x=>`Ä°stenen ${x}`)].map(x=><input key={x} required name={x} placeholder={x} className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/>)}<select name="Barter tÃ¼rÃ¼" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"><option>Tam Barter</option><option>KÄ±smi Barter</option></select></div><label className="mt-5 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>Bilgilerimin deÄŸerlendirilmesini kabul ediyorum; <Link to="/kvkk" className="font-black text-red-700">KVKK</Link> ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site KullanÄ±m PolitikasÄ±</Link> metinlerini okudum.</label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">Barter Talebini GÃ¶nder</button></form></div></div></section>;
+}
+
+export function BarterBankModuleV2() {
+  const [mode, setMode] = useState<'Takas Ã–nerisi' | 'Takas Talebi'>('Takas Ã–nerisi');
+  const [asset, setAsset] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'DiÄŸer'>('Ev');
+  const [sent, setSent] = useState(false);
+  const fields = asset === 'Ev' ? ['Ä°l', 'Ä°lÃ§e', 'Mahalle', 'Konut Ã¶zellikleri', 'Fiyat'] : asset === 'Arsa' ? ['Ä°l', 'Ä°lÃ§e', 'Mahalle', 'Ada', 'Parsel', 'Fiyat'] : asset === 'Otomobil' ? ['Marka', 'Model', 'Fiyat'] : ['Åehir / Ä°lÃ§e', 'AÃ§Ä±klama', 'Fiyat'];
+  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, mode, asset, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(new FormData(event.currentTarget)) }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  if (sent) return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white"><h2 className="text-2xl font-black">Barter kaydÄ±nÄ±z alÄ±ndÄ±.</h2><p className="mt-3 text-sm text-white/85">Talebiniz yÃ¶netici paneline iletildi; uygun eÅŸleÅŸme iÃ§in sizinle iletiÅŸime geÃ§ilecektir.</p></div></div></section>;
+  return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="rc-navy-frame overflow-hidden rounded-3xl bg-white shadow-xl lg:grid lg:grid-cols-[.78fr_1.22fr]"><aside className="bg-[#CD011E] p-8 text-white sm:p-10"><p className="text-xs font-black tracking-[.2em] text-white/75">BARTERBANKÂ®</p><h2 className="mt-4 text-3xl font-black">FazlanÄ± ver, eksiÄŸini al.</h2><p className="mt-4 text-sm leading-7 text-white/85">Gayrimenkul, otomobil veya diÄŸer deÄŸerlerinizi kÄ±smi ya da tam barter seÃ§enekleriyle deÄŸerlendirin.</p></aside><form onSubmit={submit} className="p-6 sm:p-10"><div className="grid gap-3 sm:grid-cols-2"><button type="button" onClick={() => setMode('Takas Ã–nerisi')} className={`rounded-xl p-3 text-xs font-black ${mode === 'Takas Ã–nerisi' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>TAKAS Ã–NERÄ°SÄ°</button><button type="button" onClick={() => setMode('Takas Talebi')} className={`rounded-xl p-3 text-xs font-black ${mode === 'Takas Talebi' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>TAKAS TALEBÄ°</button></div><div className="mt-6"><p className="text-sm font-black text-slate-900">{mode === 'Takas Ã–nerisi' ? 'Vermek istediÄŸiniz deÄŸer' : 'Almak istediÄŸiniz deÄŸer'}</p><label className="mt-3 block text-xs font-black text-slate-700">DEÄER TÃœRÃœ<select value={asset} onChange={(e) => setAsset(e.target.value as typeof asset)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm"><option>Ev</option><option>Arsa</option><option>Otomobil</option><option>DiÄŸer</option></select></label></div><div className="mt-5 grid gap-3 sm:grid-cols-2">{fields.map((field) => <input key={field} required name={field} placeholder={field} className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/>)}<select name="Barter tÃ¼rÃ¼" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"><option>Tam Barter</option><option>KÄ±smi Barter</option></select></div><label className="mt-5 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>Bilgilerimin deÄŸerlendirilmesini kabul ediyorum; <Link to="/kvkk" className="font-black text-red-700">KVKK</Link> ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site KullanÄ±m PolitikasÄ±</Link> metinlerini okudum.</label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">Barter Talebini GÃ¶nder</button></form></div></div></section>;
+}
+
+function BarterBankModuleV3() {
+  const [offer, setOffer] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'DiÄŸer'>('Ev');
+  const [request, setRequest] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'DiÄŸer'>('Ev');
+  const [open, setOpen] = useState(false);
+  const [sent, setSent] = useState(false);
+  const fields = (type: typeof offer) => type === 'Ev' ? ['Ä°l', 'Ä°lÃ§e', 'Mahalle'] : type === 'Arsa' ? ['Ä°l', 'Ä°lÃ§e', 'Mahalle', 'Ada', 'Parsel'] : type === 'Otomobil' ? ['Marka', 'Model'] : ['Åehir / Ä°lÃ§e'];
+  const column = (title: string, subtitle: string, type: typeof offer, setType: (type: typeof offer) => void, prefix: string) => (
+    <section className="barter-property-card rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm">
+      <div className="mb-4 flex items-start justify-between gap-3">
+        <div><h3 className="text-sm font-black tracking-[.08em] text-[#071d3b]">{title}</h3><p className="mt-1 text-xs font-bold text-[#CD011E]">{subtitle}</p></div>
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-50 text-sm font-black text-[#CD011E]">{prefix === 'Ã¶neri' ? '01' : '02'}</span>
+      </div>
+      <label className="block text-[10px] font-black tracking-[.14em] text-slate-500">MÃœLK TÃœRÃœ
+        <select value={type} onChange={(e) => setType(e.target.value as typeof offer)} className="barter-field mt-2 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-3 text-sm text-slate-800">
+          <option>Ev</option><option>Arsa</option><option>Otomobil</option><option>DiÄŸer</option>
+        </select>
+      </label>
+      <div className="mt-3 grid gap-2.5">
+        {fields(type).map((field) => <input key={field} required name={`${prefix}-${field}`} placeholder={field} className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/>)}
+        <input required name={`${prefix}-Fiyat`} placeholder="Fiyat" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/>
+        <textarea required name={`${prefix}-DiÄŸer aÃ§Ä±klama`} rows={4} placeholder="Takas talebi ile ilgili bilgiler" className="barter-field resize-y rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm leading-6"></textarea>
+      </div>
+    </section>
+  );
+  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, offer, request, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(new FormData(event.currentTarget)) }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  if (sent) return <section id="barter-bank" className="bg-slate-50 py-10"><div className="mx-auto max-w-5xl px-6"><div className="barter-success rc-navy-frame bg-[#CD011E] p-8 text-center text-white"><h2 className="text-2xl font-black">BARTERBANKÂ® kaydÄ±nÄ±z alÄ±ndÄ±.</h2><p className="mt-2 text-sm text-white/85">Teklifiniz ve talebiniz yÃ¶netici paneline iletildi.</p></div></div></section>;
+  return <section id="barter-bank" className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-12"><div className="barter-container mx-auto max-w-7xl px-6 lg:px-12"><div className="barter-shell rc-navy-frame overflow-hidden bg-white/95">
+    <header className="barter-hero-banner">
+      <div className="barter-hero-photo" aria-hidden="true"><span>â‡„</span></div>
+      <div className="barter-hero-brand"><div className="text-2xl font-black tracking-[.04em] text-[#071d3b] sm:text-3xl">BARTER<span className="text-[#CD011E]">BANK</span><sup className="ml-0.5 text-sm">Â®</sup></div><span>EMLAK TAKAS SÄ°STEMÄ°</span></div>
+      <div className="barter-hero-motto">FazlanÄ± ver,<br/><strong>eksiÄŸini al.</strong></div>
+      <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} className="barter-toggle barter-hero-button">{open ? 'Formu Kapat' : 'Takasa BaÅŸla'} <ArrowRight className={`h-4 w-4 transition-transform duration-500 ${open ? 'rotate-90' : ''}`} /></button>
+    </header>
+    {open && <form onSubmit={submit} className="barter-form-reveal border-t-2 border-[#12345b] bg-gradient-to-br from-white via-slate-50/60 to-red-50/20 p-5 sm:p-8">
+      <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-sm font-black text-[#071d3b]">Takas bilgilerinizi oluÅŸturun</p><p className="mt-1 text-xs text-slate-500">VereceÄŸiniz ve almak istediÄŸiniz mÃ¼lkÃ¼ aynÄ± formda anlatÄ±n.</p></div><button type="button" onClick={() => setOpen(false)} className="self-start rounded-full px-3 py-1.5 text-xs font-black text-[#CD011E] transition hover:bg-red-50">KAPAT</button></div>
+      <div className="grid gap-5 lg:grid-cols-2">{column('TAKAS Ã–NERÄ°SÄ°', 'VERMEK Ä°STEDÄ°ÄÄ°NÄ°Z MÃœLK', offer, setOffer, 'Ã¶neri')}{column('TAKAS TALEBÄ°', 'ALMAK Ä°STEDÄ°ÄÄ°NÄ°Z MÃœLK', request, setRequest, 'talep')}</div>
       <section className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p className="mb-4 text-xs font-black tracking-[.12em] text-[#071d3b]">Ä°LETÄ°ÅÄ°M BÄ°LGÄ°LERÄ°NÄ°Z</p><div className="grid gap-3 sm:grid-cols-3"><input required name="Ad Soyad" placeholder="Ad Soyad" autoComplete="name" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/><input required name="Telefon" type="tel" placeholder="Telefon" autoComplete="tel" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"/><select required name="Barter tÃ¼rÃ¼" className="barter-field rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm"><option value="">Barter tÃ¼rÃ¼nÃ¼ seÃ§in</option><option>Tam Barter</option><option>KÄ±smi Barter</option></select></div></section>
       <div className="mt-4 space-y-2"><label className="flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700">KVKK AydÄ±nlatma Metni</Link>â€™ni okudum ve onaylÄ±yorum.</span></label><label className="flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700">Site KullanÄ±m PolitikasÄ±</Link> metnini okudum ve onaylÄ±yorum.</span></label></div>
       <button className="barter-submit mt-5 w-full rounded-xl bg-gradient-to-r from-[#b9001b] to-[#CD011E] px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-900/15">TAKAS Ã–NERÄ°SÄ° VE TALEBÄ°NÄ° GÃ–NDER</button>
@@ -501,31 +1926,128 @@ function HomeLibraryPreview() {
 
   return (
     <section className="border-b border-slate-200 bg-[#fffafa] py-16">
-      <div className="mx-aYªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÕÕÑ¼µ…àµÜ´İá°Áà´Ø±œéÁà´ÄÈˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µˆ´à™±•à™±•àµ½°…À´ĞÍ´é™±•àµÉ½ÜÍ´é¥Ñ•µÌµ•¹Í´é©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€ñ‘¥ØøñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµÉ•´ÜÀÀˆù5YiUPƒ
-ÜI!	Hƒ
-ÜÁ1Àğ½ÍÁ…¸øñ È±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÔÀÍ´éÑ•áĞ´Ñá°ˆùI•…±Ñä€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÉ•´ÜÀÀˆù/ñÓñÁ¡…¹”ğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰¡½µ”µÑ¥Ñ±”µ•¸ˆùI1Qd%9M%!QLğ½ÍÁ…¸øğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´Èµ…àµÜ´Éá°Ñ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ØÀÀˆùQ…ÁÔÙ”ÏÙé±—}µ”ÏñÉ—±•É¤°•µ±…¬µ•ÙéÕ…ÓÄ°•­ÍÁ•ÉÑ¥è°å…ÓÅËÅ´Ù”…³Å·ŠMÍ…ÓÅ´É•¡‰•É±•É¥¹¤­—}™•‘¥¸¸ğ½Àøğ½‘¥Øø(€€€€€€€€€€ñ1¥¹¬Ñ¼ôˆ½­ÕÑÕÁ¡…¹”ˆ±…ÍÍ9…µ”ô‰¥¹±¥¹”µ™±•àÜµ™¥Ğ¥Ñ•µÌµ•¹Ñ•È…À´ÈÉ½Õ¹‘•µá°‰œµÉ•´ÜÀÀÁà´ÔÁä´ÌÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”Í¡…‘½Üµ±œÍ¡…‘½ÜµÉ•´ÜÀÀ¼ÈÀÑÉ…¹Í¥Ñ¥½¸¡½Ù•Èé‰œµÉ•´àÀÀˆùSñ´/ñÓñÁ¡…¹•å¤ÙÈ€ñÉÉ½İI¥¡Ğ±…ÍÍ9…µ”ô‰ ´ĞÜ´Ğˆ¼øğ½1¥¹¬ø(€€€€€€€€ğ½‘¥Øø(€€€€€€€í±…Ñ•ÍÑÉÑ¥±•Ì¹±•¹Ñ €ü€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´Ô±œéÉ¥µ½±ÌµlÄ¸ÈÕ™É|¸ÜÕ™Étˆø(€€€€€€€€€í±…Ñ•ÍÑÉÑ¥±•ÍlÁt€˜˜€  ¤€ôøì½¹ÍĞì…Ñ•½Éä°…ÉÑ¥±”ô€ô±…Ñ•ÍÑÉÑ¥±•ÍlÁtìÉ•ÑÕÉ¸€ñ1¥¹¬Ñ¼õí€½­ÕÑÕÁ¡…¹”¼‘í…Ñ•½Éä¹Í±Õô¼‘í…ÉÑ¥±”¹¥‘õô±…ÍÍ9…µ”ô‰É½ÕÀÉ•±…Ñ¥Ù”µ¥¸µ µlĞÈÁÁát½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Íá°‰œµÍ±…Ñ”´äÀÀÍ¡…‘½Üµá°ˆøñ¥µœÍÉŒõí…ÉÑ¥±”¹¥µ…”ñğ…Ñ•½Éå…±±‰…­Ím…Ñ•½Éä¹Í±Õtñğ€œ½‘•µ¼µÁ±…•¡½±‘•È¹ÍÙœô…±Ğõí…ÉÑ¥±”¹Ñ¥Ñ±•ô±½…‘¥¹œô‰±…éäˆ±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğ´À µ™Õ±°Üµ™Õ±°½‰©•Ğµ½Ù•ÈÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÜÀÀÉ½ÕÀµ¡½Ù•ÈéÍ…±”´ÄÀÔˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğ´À‰œµÉ…‘¥•¹ĞµÑ¼µĞ™É½´µÍ±…Ñ”´äÔÀÙ¥„µÍ±…Ñ”´äÔÀ¼ÔÀÑ¼µÑÉ…¹ÍÁ…É•¹Ğˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğµà´À‰½ÑÑ½´´ÀÀ´ÜÍ´éÀ´äˆøñÍÁ…¸±…ÍÍ9…µ”ô‰¥¹±¥¹”µ™±•àÉ½Õ¹‘•µ™Õ±°‰œµÉ•´ÜÀÀÁà´ÌÁä´ÄÑ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÑ•áĞµİ¡¥Ñ”ˆùí…Ñ•½Éä¹Ñ¥Ñ±•ôğ½ÍÁ…¸øñÀ±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµİ¡¥Ñ”¼ÜÀˆùí¹•Ü…Ñ”¡…ÉÑ¥±”¹ÁÕ‰±¥Í¡•‘Ğ¤¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ ÑÈµQHœ¥ôğ½Àøñ Ì±…ÍÍ9…µ”ô‰µĞ´Èµ…àµÜ´Éá°Ñ•áĞ´Éá°™½¹Ğµ‰±…¬±•…‘¥¹œµÑ¥¡ĞÑ•áĞµİ¡¥Ñ”Í´éÑ•áĞ´Íá°ˆùí…ÉÑ¥±”¹Ñ¥Ñ±•ôğ½ ÌøñÀ±…ÍÍ9…µ”ô‰µĞ´Ì±¥¹”µ±…µÀ´Èµ…àµÜ´Éá°Ñ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµİ¡¥Ñ”¼ÜÔˆùí…ÉÑ¥±”¹ÍÕµµ…ÉäñğÍÑÉ¥ÁI¥¡Q•áĞ¡…ÉÑ¥±”¹½¹Ñ•¹Ğ¥ôğ½ÀøñÍÁ…¸±…ÍÍ9…µ”ô‰µĞ´Ô¥¹±¥¹”µ™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÈÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”ˆûÃ•É§}¤=­Ô€ñÉÉ½İI¥¡Ğ±…ÍÍ9…µ”ô‰ ´ĞÜ´ĞÑÉ…¹Í¥Ñ¥½¸É½ÕÀµ¡½Ù•ÈéÑÉ…¹Í±…Ñ”µà´Äˆ¼øğ½ÍÁ…¸øğ½‘¥Øøğ½1¥¹¬øìô¤ ¥ô(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´Ôˆùí±…Ñ•ÍÑÉÑ¥±•Ì¹Í±¥” Ä¤¹µ…À ¡ì…Ñ•½Éä°…ÉÑ¥±”ô¤€ôø€ñ1¥¹¬­•äõí…ÉÑ¥±”¹¥‘ôÑ¼õí€½­ÕÑÕÁ¡…¹”¼‘í…Ñ•½Éä¹Í±Õô¼‘í…ÉÑ¥±”¹¥‘õô±…ÍÍ9…µ”ô‰É½ÕÀÉ¥µ¥¸µ µlÄäáÁátÉ¥µ½±ÌµlĞÈ•|Å™Ét½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ÑÉ…¹Í¥Ñ¥½¸¡½Ù•ÈèµÑÉ…¹Í±…Ñ”µä´Ä¡½Ù•Èé‰½É‘•ÈµÉ•´ÜÀÀ¡½Ù•ÈéÍ¡…‘½Üµá°ˆøñ¥µœÍÉŒõí…ÉÑ¥±”¹¥µ…”ñğ…Ñ•½Éå…±±‰…­Ím…Ñ•½Éä¹Í±Õtñğ€œ½‘•µ¼µÁ±…•¡½±‘•È¹ÍÙœô…±Ğõí…ÉÑ¥±”¹Ñ¥Ñ±•ô±½…‘¥¹œô‰±…éäˆ±…ÍÍ9…µ”ô‰ µ™Õ±°µ¥¸µ µlÄäáÁátÜµ™Õ±°½‰©•Ğµ½Ù•ÈÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÔÀÀÉ½ÕÀµ¡½Ù•ÈéÍ…±”´ÄÀÔˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµ½°©ÕÍÑ¥™äµ•¹Ñ•ÈÀ´Ôˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµİÉ…À¥Ñ•µÌµ•¹Ñ•È…À´ÈˆøñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÈÑ•áĞµÉ•´ÜÀÀˆùí…Ñ•½Éä¹Ñ¥Ñ±•ôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆùí¹•Ü…Ñ”¡…ÉÑ¥±”¹ÁÕ‰±¥Í¡•‘Ğ¤¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ ÑÈµQHœ¥ôğ½ÍÁ…¸øğ½‘¥Øøñ Ì±…ÍÍ9…µ”ô‰µĞ´Ì±¥¹”µ±…µÀ´ÈÑ•áĞµ±œ™½¹Ğµ‰±…¬±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´äÔÀˆùí…ÉÑ¥±”¹Ñ¥Ñ±•ôğ½ ÌøñÀ±…ÍÍ9…µ”ô‰µĞ´È±¥¹”µ±…µÀ´ÈÑ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ØÀÀˆùí…ÉÑ¥±”¹ÍÕµµ…ÉäñğÍÑÉ¥ÁI¥¡Q•áĞ¡…ÉÑ¥±”¹½¹Ñ•¹Ğ¥ôğ½ÀøñÍÁ…¸±…ÍÍ9…µ”ô‰µĞ´Ğ¥¹±¥¹”µ™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÄÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆûÃ•É§}¤=­Ô€ñÉÉ½İI¥¡Ğ±…ÍÍ9…µ”ô‰ ´Ì¸ÔÜ´Ì¸ÔÑÉ…¹Í¥Ñ¥½¸É½ÕÀµ¡½Ù•ÈéÑÉ…¹Í±…Ñ”µà´Äˆ¼øğ½ÍÁ…¸øğ½‘¥Øøğ½1¥¹¬ø¥ôğ½‘¥Øø(€€€€€€€€ğ½‘¥Øø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•Èµ‘…Í¡•‰½É‘•ÈµÍ±…Ñ”´ÌÀÀ‰œµİ¡¥Ñ”À´ÄÈÑ•áĞµ•¹Ñ•ÈˆøñÀ±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùI•…±Ñä/ñÓñÁ¡…¹”§•É¥­±•É¤¡…ëÅÉ±…»Åå½È¸ğ½Àøñ1¥¹¬Ñ¼ôˆ½­ÕÑÕÁ¡…¹”ˆ±…ÍÍ9…µ”ô‰µĞ´Ì¥¹±¥¹”µ™±•àÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆù/ñÓñÁ¡…¹•å”¥ĞƒŠHğ½1¥¹¬øğ½‘¥Øùô(€€€€€€ğ½‘¥Øø(€€€€ğ½Í•Ñ¥½¸ø(€€¤ì)ô()™Õ¹Ñ¥½¸!½µ•A…”¡ì½Õ¹ÑÌ°ÕÉÉ•¹ÑM±¥‘”°Í•±•Ñ•‘¥Ñä°Í•ÑM•±•Ñ•‘¥Ñä°½Á•¹É…İ•Èôè…¹ä¤ì(€½¹ÍĞ¹…Ù¥…Ñ”€ôÕÍ•9…Ù¥…Ñ” ¤ì(€½¹ÍĞm…Ñ¥Ù•Q…ˆ°Í•ÑÑ¥Ù•Q…‰t€ôÕÍ•MÑ…Ñ”ğÍ•…É œğ€™É…¹¡¥Í”œğ€…•¹Ğœø Í•…É œ¤ì(€½¹ÍĞmÍ•…É¡¥ÍÑÉ¥Ğ°Í•ÑM•…É¡¥ÍÑÉ¥Ñt€ôÕÍ•MÑ…Ñ” œœ¤ì(€½¹ÍĞmÍ•…É¡QÉ…¹Í…Ñ¥½¹QåÁ”°Í•ÑM•…É¡QÉ…¹Í…Ñ¥½¹QåÁ•t€ôÕÍ•MÑ…Ñ” œœ¤ì(€½¹ÍĞmÍ•…É¡AÉ½Á•ÉÑåQåÁ”°Í•ÑM•…É¡AÉ½Á•ÉÑåQåÁ•t€ôÕÍ•MÑ…Ñ” œœ¤ì(€½¹ÍĞm¥ÍQÉ…¹Í…Ñ¥½¹5•¹Õ=Á•¸°Í•Ñ%ÍQÉ…¹Í…Ñ¥½¹5•¹Õ=Á•¹t€ôÕÍ•MÑ…Ñ”¡™…±Í”¤ì(€½¹ÍĞm¥Í¥Ñå5•¹Õ=Á•¸°Í•Óm4ÖÚ$z{-®éÜj×Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HLKHÚYİË^ÚYİË\Û]KNLÌMHÛ\ÜÓ˜[YOHœL‹HKLH^VÎ\H›ÛX›XÚÈ˜XÚÚ[™ËVËŒM[WH^\Û]KM±,1g“SH0ç°çÜÓTÕS‘×ÕS”ĞPÕSÓ—ÕTTË›X\
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div><span className="text-xs font-black tracking-[.2em] text-red-700">MEVZUAT Â· REHBER Â· BÄ°LGÄ°</span><h2 className="mt-2 text-3xl font-black text-slate-950 sm:text-4xl">Realty <span className="text-red-700">KÃ¼tÃ¼phane</span><span className="home-title-en">REALTY INSIGHTS</span></h2><p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">Tapu ve sÃ¶zleÅŸme sÃ¼reÃ§leri, emlak mevzuatÄ±, ekspertiz, yatÄ±rÄ±m ve alÄ±mâ€“satÄ±m rehberlerini keÅŸfedin.</p></div>
+          <Link to="/kutuphane" className="inline-flex w-fit items-center gap-2 rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800">TÃ¼m KÃ¼tÃ¼phaneyi GÃ¶r <ArrowRight className="h-4 w-4"/></Link>
+        </div>
+        {latestArticles.length ? <div className="grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
+          {latestArticles[0] && (() => { const { category, article } = latestArticles[0]; return <Link to={`/kutuphane/${category.slug}/${article.id}`} className="group relative min-h-[420px] overflow-hidden rounded-3xl bg-slate-900 shadow-xl"><img src={article.image || categoryFallbacks[category.slug] || '/demo-placeholder.svg'} alt={article.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent"/><div className="absolute inset-x-0 bottom-0 p-7 sm:p-9"><span className="inline-flex rounded-full bg-red-700 px-3 py-1 text-[10px] font-black tracking-widest text-white">{category.title}</span><p className="mt-4 text-xs font-bold text-white/70">{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</p><h3 className="mt-2 max-w-2xl text-2xl font-black leading-tight text-white sm:text-3xl">{article.title}</h3><p className="mt-3 line-clamp-2 max-w-2xl text-sm leading-6 text-white/75">{article.summary || stripRichText(article.content)}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-white">Ä°Ã§eriÄŸi Oku <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1"/></span></div></Link>; })()}
+          <div className="grid gap-5">{latestArticles.slice(1).map(({ category, article }) => <Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group grid min-h-[198px] grid-cols-[42%_1fr] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:border-red-700 hover:shadow-xl"><img src={article.image || categoryFallbacks[category.slug] || '/demo-placeholder.svg'} alt={article.title} loading="lazy" className="h-full min-h-[198px] w-full object-cover transition duration-500 group-hover:scale-105"/><div className="flex flex-col justify-center p-5"><div className="flex flex-wrap items-center gap-2"><span className="text-[10px] font-black tracking-wider text-red-700">{category.title}</span><span className="text-[10px] font-bold text-slate-400">{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</span></div><h3 className="mt-3 line-clamp-2 text-lg font-black leading-6 text-slate-950">{article.title}</h3><p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-600">{article.summary || stripRichText(article.content)}</p><span className="mt-4 inline-flex items-center gap-1 text-xs font-black text-red-700">Ä°Ã§eriÄŸi Oku <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-1"/></span></div></Link>)}</div>
+        </div> : <div className="rounded-3xl border border-dashed border-slate-300 bg-white p-12 text-center"><p className="font-black text-slate-900">Realty KÃ¼tÃ¼phane iÃ§erikleri hazÄ±rlanÄ±yor.</p><Link to="/kutuphane" className="mt-3 inline-flex text-sm font-black text-red-700">KÃ¼tÃ¼phaneye Git â†’</Link></div>}
+      </div>
+    </section>
+  );
+}
 
-\JHOˆ]ÛˆÙ^O^İ\_H\OH˜]Ûˆˆ›ÛOH›Ü[Ûˆˆ\šXK\Ù[XİY^ÜÙX\˜Ú˜[œØXİ[Û•\HOOH\_HÛÛXÚÏ^Ê
-HOˆÈÙ]ÙX\˜Ú˜[œØXİ[Û•\J\JNÈÙ]\Õ˜[œØXİ[Û“Y[SÜ[Š˜[ÙJNÈ_HÛ\ÜÓ˜[YO^Ø›^ËY[][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›İ[™Y[ÈL‹HKLˆ^[Y^VÌL\H›ÛX›Û˜[œÚ][Ûˆ	ÜÙX\˜Ú˜[œØXİ[Û•\HOOH\HÈ	Ø™Ë\™YMÌ^]Ú]IÈˆ	İ^VÈÌÌYØ—Hİ™\˜™Ë\™YMLİ™\^\™YMÌ	ßXOÜ[İ\_OÜÜ[ÜÙX\˜Ú˜[œØXİ[Û•\HOOH\H	‰ˆÚXÚÈÛ\ÜÓ˜[YOHšLËHËLËH‹ÏŸOØ]ÛŠ_OÙ]ŸBˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H›^][\ËXÙ[\ˆØ\LˆLÈKLˆ‚ˆX\[ˆÛ\ÜÓ˜[YOHšMËMÚš[šËL^VÈÌÌYØ—H‹Ï‚ˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÙ]\ĞÚ]SY[SÜ[Š
-Ü[ŠHOˆÈÛÛœİ™^H[Ü[ÈYˆ
-™^
-HÈÙ]\Õ˜[œØXİ[Û“Y[SÜ[Š˜[ÙJNÈÙ]\Ñ\İšXİY[SÜ[Š˜[ÙJNÈÙ]\Ô›Ü\SY[SÜ[Š˜[ÙJNÈH™]\›ˆ™^ÈJ_HÛ\ÜÓ˜[YOH™›^Z[‹]ËL›^LH][\ËXÙ[\ˆ\İYKX™]ÙY[ˆØ\Lˆ^[Y^VÌL\H›Û\Ù[ZX›Û^\Û]KMÌİ][™K[›Û™Hˆ\šXKZ\ÜÜ\H›\İ›Şˆ\šXKY^[™Y^Ú\ĞÚ]SY[SÜ[ŸOÜ[ˆÛ\ÜÓ˜[YOH[˜Ø]HÜÙ[XİYÚ]H	ñ,ÙpéÚ[š^‰ßOÜÜ[Ú]œ›Û‘İÛˆÛ\ÜÓ˜[YO^ØLËHËLËHÚš[šËL^VÈÌLŒÍNWH˜[œÚ][Û‹]˜[œÙ›Ü›H\˜][Û‹LŒ	Ú\ĞÚ]SY[SÜ[ˆÈ	Ü›İ]KLN	Èˆ	ÉßXKÏØ]Û‚ˆÚ\ĞÚ]SY[SÜ[ˆ	‰ˆ]ˆ›ÛOH›\İ›ŞˆÛ\ÜÓ˜[YOH˜XœÛÛ]HšYÚLÜVØØ[ÊL	JËŒÜ™[JWH‹MLX^ZMŒËMİ™\™›İË^KX]]È›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HLKHÚYİË^ÚYİË\Û]KNLÌMHÛ\ÜÓ˜[YOHœİXÚŞHÜL™Ë]Ú]HL‹HKLH^VÎ\H›ÛX›XÚÈ˜XÚÚ[™ËVËŒM[WH^\Û]KM±,Ñpáñ,±,ÜÓØš™XİšÙ^\ÊT’ÑVWĞÒUQTÊK›X\
+function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDrawer }: any) {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
+  const [searchDistrict, setSearchDistrict] = useState('');
+  const [searchTransactionType, setSearchTransactionType] = useState('');
+  const [searchPropertyType, setSearchPropertyType] = useState('');
+  const [isTransactionMenuOpen, setIsTransactionMenuOpen] = useState(false);
+  const [isCityMenuOpen, setIsCityMenuOpen] = useState(false);
+  const [isDistrictMenuOpen, setIsDistrictMenuOpen] = useState(false);
+  const [isPropertyMenuOpen, setIsPropertyMenuOpen] = useState(false);
+  const [featuredAgents, setFeaturedAgents] = useState<any[]>([]);
+  const homeSearchRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const loadFeaturedAgents = async () => {
+      const { data: stars } = await supabase.from('homepage_stars').select('entity_id,position').eq('kind','advisor').order('position');
+      const ids = (stars || []).map((item: any) => item.entity_id);
+      if (!ids.length) { setFeaturedAgents([]); return; }
+      const { data: profiles } = await supabase.from('profiles').select('id,first_name,last_name,avatar_url,expertise_areas').in('id', ids).eq('role','advisor').eq('status','active').is('deleted_at',null);
+      const ordered = ids.map((id: string) => (profiles || []).find((profile: any) => profile.id === id)).filter(Boolean).map((profile: any) => ({ id: profile.id, name: [profile.first_name,profile.last_name].filter(Boolean).join(' '), title: profile.expertise_areas?.[0] || 'Gayrimenkul DanÄ±ÅŸmanÄ±', image: profile.avatar_url || '', activeListings: 0 }));
+      setFeaturedAgents(ordered);
+    };
+    void loadFeaturedAgents();
+  }, []);
+  useEffect(() => {
+    const closeMenus = (event: PointerEvent) => {
+      if (!homeSearchRef.current?.contains(event.target as Node)) {
+        setIsTransactionMenuOpen(false);
+        setIsCityMenuOpen(false);
+        setIsDistrictMenuOpen(false);
+        setIsPropertyMenuOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', closeMenus);
+    return () => document.removeEventListener('pointerdown', closeMenus);
+  }, []);
+  const publishedListings = usePublishedListings();
+  const sortedListings = [...publishedListings].sort(() => Math.random() - 0.5);
 
-Ú]JHOˆ]ÛˆÙ^O^ØÚ]_H\OH˜]Ûˆˆ›ÛOH›Ü[Ûˆˆ\šXK\Ù[XİY^ÜÙ[XİYÚ]HOOHÚ]_HÛÛXÚÏ^Ê
-HOˆÈÙ]Ù[XİYÚ]JÚ]JNÈÙ]ÙX\˜Ú\İšXİ
-	ÉÊNÈÙ]\ĞÚ]SY[SÜ[Š˜[ÙJNÈ_HÛ\ÜÓ˜[YO^Ø›^ËY[][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›İ[™Y[ÈL‹HKLˆ^[Y^VÌL\H›ÛX›Û˜[œÚ][Ûˆ	ÜÙ[XİYÚ]HOOHÚ]HÈ	Ø™Ë\™YMÌ^]Ú]IÈˆ	İ^VÈÌÌYØ—Hİ™\˜™Ë\™YMLİ™\^\™YMÌ	ßXOÜ[ØÚ]_OÜÜ[ÜÙ[XİYÚ]HOOHÚ]H	‰ˆÚXÚÈÛ\ÜÓ˜[YOHšLËHËLËH‹ÏŸOØ]ÛŠ_OÙ]ŸBˆÙ]‚ˆÙ]‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËVÌYœ—ÌKŒMYœ—Ø]]×HØ\LH›Ü™\‹]›Ü™\‹\Û]KLŒLH‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H›^][\ËXÙ[\ˆØ\Lˆ›Ü™\‹\ˆ›Ü™\‹\Û]KLŒLÈKLˆ‚ˆZ[[™ÌˆÛ\ÜÓ˜[YOHšMËMÚš[šËL^VÈÌÌYØ—H‹Ï‚ˆ]Ûˆ\OH˜]Ûˆˆ\ØX›Y^È\Ù[XİYÚ]_HÛÛXÚÏ^Ê
-HOˆÙ]\Ñ\İšXİY[SÜ[Š
-Ü[ŠHOˆÈÛÛœİ™^H[Ü[ÈYˆ
-™^
-HÈÙ]\Õ˜[œØXİ[Û“Y[SÜ[Š˜[ÙJNÈÙ]\ĞÚ]SY[SÜ[Š˜[ÙJNÈÙ]\Ô›Ü\SY[SÜ[Š˜[ÙJNÈH™]\›ˆ™^ÈJ_HÛ\ÜÓ˜[YO^Ø›^Z[‹]ËL›^LH][\ËXÙ[\ˆ\İYKX™]ÙY[ˆØ\Lˆ^[Y^VÌL\H›Û\Ù[ZX›Ûİ][™K[›Û™H	ÜÙ[XİYÚ]HÈ	İ^\Û]KMÌ	Èˆ	Øİ\œÛÜ‹[›İX[İÙY^\Û]KM	ßXH\šXKZ\ÜÜ\H›\İ›Şˆ\šXKY^[™Y^Ú\Ñ\İšXİY[SÜ[ŸOÜ[ˆÛ\ÜÓ˜[YOH[˜Ø]HÜÙX\˜Ú\İšXİ
-Ù[XİYÚ]HÈ	ñ,0éÙHÙpéÚ[š^‰Èˆ	ğå›˜ÙH1,ÙpéÚ[‰Ê_OÜÜ[Ú]œ›Û‘İÛˆÛ\ÜÓ˜[YO^ØLËHËLËHÚš[šËL^VÈÌLŒÍNWH˜[œÚ][Û‹]˜[œÙ›Ü›H\˜][Û‹LŒ	Ú\Ñ\İšXİY[SÜ[ˆÈ	Ü›İ]KLN	Èˆ	ÉßXKÏØ]Û‚ˆÚ\Ñ\İšXİY[SÜ[ˆ	‰ˆÙ[XİYÚ]H	‰ˆ]ˆ›ÛOH›\İ›ŞˆÛ\ÜÓ˜[YOH˜XœÛÛ]H›İÛKVØØ[ÊL	JËŒÜ™[JWHYL‹MLX^ZMLˆËMİ™\™›İË^KX]]È›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HLKHÚYİË^ÚYİË\Û]KNLÌMHÛ\ÜÓ˜[YOHœİXÚŞHÜL™Ë]Ú]HL‹HKLH^VÎ\H›ÛX›XÚÈ˜XÚÚ[™ËVËŒM[WH^\Û]KM±,0áÑHÑpáñ,±,ÜÕT’ÑVWĞÒUQTÖÜÙ[XİYÚ]WOË›X\
+  return (
+    <div className="home-page-static">
+      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden border-b-4 border-red-700 shadow-xl flex items-center bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          {SLIDER_IMAGES && SLIDER_IMAGES.map((imgUrl, index) => (
+            <img
+              key={index}
+              src={imgUrl}
+              alt="Realty CenterÂ® gayrimenkul fÄ±rsatlarÄ±"
+              className={`home-slider-image absolute inset-0 h-full w-full object-cover object-center ${
+                index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ))}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/58 via-white/16 to-transparent" />
+        </div>
 
-\İšXİ
-HOˆ]ÛˆÙ^O^Ù\İšXİH\OH˜]Ûˆˆ›ÛOH›Ü[Ûˆˆ\šXK\Ù[XİY^ÜÙX\˜Ú\İšXİOOH\İšXİHÛÛXÚÏ^Ê
-HOˆÈÙ]ÙX\˜Ú\İšXİ
-\İšXİ
-NÈÙ]\Ñ\İšXİY[SÜ[Š˜[ÙJNÈ_HÛ\ÜÓ˜[YO^Ø›^ËY[][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›İ[™Y[ÈL‹HKLˆ^[Y^VÌL\H›ÛX›Û˜[œÚ][Ûˆ	ÜÙX\˜Ú\İšXİOOH\İšXİÈ	Ø™Ë\™YMÌ^]Ú]IÈˆ	İ^VÈÌÌYØ—Hİ™\˜™Ë\™YMLİ™\^\™YMÌ	ßXOÜ[Ù\İšXİOÜÜ[ÜÙX\˜Ú\İšXİOOH\İšXİ	‰ˆÚXÚÈÛ\ÜÓ˜[YOHšLËHËLËH‹ÏŸOØ]ÛŠ_OÙ]ŸBˆÙ]‚ˆ]ˆÛ\ÜÖj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5Name="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
+          <div ref={homeSearchRef} className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setActiveTab('search')}
+                className={`relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full font-black flex items-center justify-center gap-2 transition duration-300 shadow-md ${
+                  activeTab === 'search' 
+                    ? 'bg-red-700 text-white shadow-xl border-b-2 border-red-900 transform -translate-y-1' 
+                    : 'bg-white text-slate-900 hover:bg-slate-100'
+                }`}
+              >
+                <Home className="w-4 h-4 relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">Ä°lanlar</span>
+              </button>
+
+              <Link
+                to="/franchise-basvuru"
+                className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
+              >
+                <Building2 className="w-4 h-4 text-[#071d3b] relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">Franchise Ol</span>
+              </Link>
+
+              <Link
+                to="/danisman-basvuru"
+                className="relative overflow-hidden group h-10 min-w-[8.25rem] rounded-full bg-white/95 text-[#071d3b] hover:bg-slate-100 font-extrabold flex items-center justify-center gap-2 transition duration-300 shadow-md border border-white/70 hover:border-red-200 hover:-translate-y-1"
+              >
+                <Briefcase className="w-4 h-4 text-[#071d3b] relative z-10" />
+                <span className="text-xs font-extrabold tracking-wide relative z-10">DanÄ±ÅŸman Ol</span>
+              </Link>
+            </div>
+
+            <div className="mt-5 rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
+              <div className="grid gap-1">
+                <div className="grid grid-cols-2 gap-1">
+                  <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <Key className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                  <button type="button" onClick={() => setIsTransactionMenuOpen((open) => { const next = !open; if (next) { setIsCityMenuOpen(false); setIsDistrictMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isTransactionMenuOpen}><span className="truncate">{searchTransactionType || 'Ä°ÅŸlem TÃ¼rÃ¼'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isTransactionMenuOpen ? 'rotate-180' : ''}`}/></button>
+                  {isTransactionMenuOpen && <div role="listbox" className="absolute left-1 top-[calc(100%+.3rem)] z-50 w-48 overflow-hidden rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">Ä°ÅLEM TÃœRÃœ</p>{LISTING_TRANSACTION_TYPES.map((type) => <button key={type} type="button" role="option" aria-selected={searchTransactionType === type} onClick={() => { setSearchTransactionType(type); setIsTransactionMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchTransactionType === type ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{type}</span>{searchTransactionType === type && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  </div>
+                  <div className="relative flex items-center gap-2 px-3 py-2">
+                  <MapPin className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                  <button type="button" onClick={() => setIsCityMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsDistrictMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isCityMenuOpen}><span className="truncate">{selectedCity || 'Ä°l SeÃ§iniz'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isCityMenuOpen ? 'rotate-180' : ''}`}/></button>
+                  {isCityMenuOpen && <div role="listbox" className="absolute right-0 top-[calc(100%+.3rem)] z-50 max-h-60 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">Ä°L SEÃ‡Ä°NÄ°Z</p>{Object.keys(TURKEY_CITIES).map((city) => <button key={city} type="button" role="option" aria-selected={selectedCity === city} onClick={() => { setSelectedCity(city); setSearchDistrict(''); setIsCityMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${selectedCity === city ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{city}</span>{selectedCity === city && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  </div>
+                </div>
+                <div className="grid grid-cols-[1fr_1.15fr_auto] gap-1 border-t border-slate-200 pt-1">
+                <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                  <Building2 className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                  <button type="button" disabled={!selectedCity} onClick={() => setIsDistrictMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className={`flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold outline-none ${selectedCity ? 'text-slate-700' : 'cursor-not-allowed text-slate-400'}`} aria-haspopup="listbox" aria-expanded={isDistrictMenuOpen}><span className="truncate">{searchDistrict || (selectedCity ? 'Ä°lÃ§e SeÃ§iniz' : 'Ã–nce Ä°l SeÃ§in')}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isDistrictMenuOpen ? 'rotate-180' : ''}`}/></button>
+                  {isDistrictMenuOpen && selectedCity && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] left-0 z-50 max-h-52 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">Ä°LÃ‡E SEÃ‡Ä°NÄ°Z</p>{TURKEY_CITIES[selectedCity]?.map((district) => <button key={district} type="button" role="option" aria-selected={searchDistrict === district} onClick={() => { setSearchDistrict(district); setIsDistrictMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchDistrict === district ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{district}</span>{searchDistrict === district && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                </div>
+                <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
                   <Home className="h-4 w-4 shrink-0 text-[#071d3b]"/>
                   <button type="button" onClick={() => setIsPropertyMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsDistrictMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isPropertyMenuOpen}><span className="truncate">{searchPropertyType || 'Gayrimenkul TÃ¼rÃ¼'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isPropertyMenuOpen ? 'rotate-180' : ''}`}/></button>
                   {isPropertyMenuOpen && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] right-0 z-50 max-h-60 w-52 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">GAYRÄ°MENKUL TÃœRÃœ</p>{ALL_LISTING_PROPERTY_TYPES.map((propertyType) => <button key={propertyType} type="button" role="option" aria-selected={searchPropertyType === propertyType} onClick={() => { setSearchPropertyType(propertyType); setIsPropertyMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchPropertyType === propertyType ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{propertyType}</span>{searchPropertyType === propertyType && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
@@ -549,20 +2071,211 @@ NÈÙ]\Ñ\İšXİY[SÜ[Š˜[ÙJNÈ_HÛ\ÜÓ˜[YO^Ø›^ËY[][\ËXÙ[\ˆ\İYK
           <div className="grid gap-5 xl:grid-cols-2">
             <div className="grid min-h-[270px] gap-3 sm:grid-cols-[1.28fr_.92fr]">
               <Link to="/franchise-firsatlari" className="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-sm"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=82&w=1200" alt="Franchise fÄ±rsatlarÄ±" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/><span className="absolute inset-0 bg-gradient-to-t from-slate-950/78 via-slate-900/18 to-transparent"/><span className="absolute inset-x-5 bottom-5 text-white"><span className="flex items-center gap-2 text-[10px] font-black tracking-[.16em] text-white/75"><Building2 className="h-3.5 w-3.5"/> FRANCHISE</span><span className="mt-2 block text-xl font-black leading-tight">Kendi ofisinizi kurun.</span><span className="mt-3 inline-flex items-center text-xs font-black">FÄ±rsatlarÄ± incele <ArrowRight className="ml-2 h-3.5 w-3.5 transition group-hover:translate-x-1"/></span></span></Link>
-              <div className="grid gap-3"><Link to="/franchise-basvuru" className="group flex min-h-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-red-200 hover:shadow-md"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=78&w=480" alt="Franchise ol" className="h-fÛM5¶‰ËkºwµçKYäÄTÒ|9e,9Å”õ"à¢ÂôÆ–æ³à¢ÂöF—cà¢ÂöF—cà¢Â÷6V7F–öãçĞ ¢  ¢ÄÆ—7F–æt6FVv÷&–W5vRVÖ&VFFVBóà ¢ÄfVGW&VDÆ—7F–æw56†÷v66Róà ¢Ä'W–W%&WVW7DÖöGVÆRóà¢Ä&'FW$&æ´ÖöGVÆUc2óà¢Ç6V7F–öâ6Æ74æÖSÒ&÷fW&fÆ÷rÖ†–FFVâ&÷&FW"Ö"&÷&FW"×6ÆFRÓ#&r×v†—FR’Ó"FW‡B×6ÆFRÓ“#à¢ÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ"Ó2fÆW‚Ö‚×rÕ³sƒ…Ò—FV×2ÖVæB§W7F–g’Ö&WGvVVâvÓR‚ÓR6Ó§‚Ó‚Æs§‚Ó"#à¢ÆF—cãÇ6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ2FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã#FVÕÒFW‡B×&VBÓs#ãÇ7â6Æ74æÖSÒ&‚ÓãRrÓ‚&r×&VBÓs"óå”TìKõ%Dl9e”ÄU#Â÷ãÆƒ"6Æ74æÖSÒ&×BÓ"FW‡BÓ7†ÂföçBÖ&Æ6²G&6¶–ærÕ²ÒãCVVÕÒFW‡BÕ²3sC6%Ò6Ó§FW‡BÓG†Â#ä6æÌKÇ7â6Æ74æÖSÒ'FW‡B×&VBÓs#ìKÆâ¼KYüKÂ÷7ããÇ7â6Æ74æÖSÒ&†öÖR×F—FÆRÖVâ#äÄ•dRÄ•5D”äu3Â÷7ããÂöƒ#ãÂöF—cà¢ÄÆ–æ²FóÒ"ö–ÆâÖ¶FVv÷&–ÆW&’"6Æ74æÖSÒ&†–FFVâ—FV×2Ö6VçFW"vÓ"&÷&FW"Ö"&÷&FW"Õ²3sC6%Ò"ÓFW‡B×‡2föçBÖ&Æ6²FW‡BÕ²3sC6%ÒG&ç6—F–öâ†÷fW#¦&÷&FW"×&VBÓs†÷fW#§FW‡B×&VBÓs6Ó¦–æÆ–æRÖfÆW‚#åL;ÆÒKÆæÆ,K|;g"Ä'&÷u&–v‡B6Æ74æÖSÒ&‚ÓBrÓB"óãÂôÆ–æ³à¢ÂöF—cà¢ÄÆ—fTÆ—7F–æu7G&VÒÆ—7F–æw3×·6÷'FVDÆ—7F–æw7Òóà¢Â÷6V7F–öãà ¢Ç6V7F–öâ6Æ74æÖSÒ&&÷&FW"Ö"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS’Ó’6Ó§’Ó#à¢ÆF—b6Æ74æÖSÒ&×‚ÖWFòw&–BÖ‚×rÓw†ÂvÓR‚ÓbÆs¦w&–BÖ6öÇ2Õ¶Ö–æÖ‚ƒÃã“&g"•öÖ–æÖ‚ƒ#“‚Âãƒ†g"•ÒÆs§‚Ó"#à¢Æ'F–6ÆR6Æ74æÖSÒ&w&÷W&VÆF—fRÖ–âÖ‚Õ³#c…Ò÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ7†Â&r×6ÆFRÓ“6†F÷r×†Â#à¢Æ–Ör7&3Ò"÷&ö¦V7BÖfVGW&R×c"æ§s÷cÓ##c“BÓ""ÇCÒ,Kæ6V²fF’WfÆW&’ÖöFW&â–YöÒ&ö¦W6’"6Æ74æÖSÒ&'6öÇWFR–ç6WBÓ‚ÖgVÆÂrÖgVÆÂö&¦V7BÖ6÷fW"G&ç6—F–öâGW&F–öâÓsw&÷WÖ†÷fW#§66ÆRÕ³ã#UÒ"óà¢ÆF—b6Æ74æÖSÒ&'6öÇWFR–ç6WBÓ&rÖw&F–VçB×Fò×"g&öÒ×v†—FRóƒ"f–×v†—FRóSFò×G&ç7&VçB"óà¢ÆF—b6Æ74æÖSÒ'&VÆF—fR¢ÓfÆW‚Ö–âÖ‚Õ³#c…ÒÖ‚×rÕ³ƒBUÒfÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâÓb6Ó¦Ö‚×rÕ³c"UÒ6Ó§Ó‚#à¢ÆF—cãÇ7â6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ2FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã3FVÕÒFW‡B×6ÆFRÓc#ãÇ7â6Æ74æÖSÒ&‚Õ³'…ÒrÓ‚&r×&VBÓs"óâ”TìK$ô¤TÄU#Â÷7ããÆƒ"6Æ74æÖSÒ&×BÓBv†—FW76RÖæ÷w&FW‡BÓ7†ÂföçBÖÆ–v‡BG&6¶–ær×F–v‡BFW‡BÕ²3sC6%Ò6Ó§FW‡BÓG†Â#ìKæ6V²Ç7G&öær6Æ74æÖSÒ&föçBÖ&Æ6²#åfF’WfÆW&“Â÷7G&öæsãÂöƒ#ãÇ6Æ74æÖSÒ&×BÓ2Ö‚×r×6ÒFW‡B×6ÒföçBÖÖVF—VÒÆVF–ærÓbFW‡B×6ÆFRÓc#äFüIö–Æœ:rœ:vRÂÖöFW&â–YöÒÆæÆ,K–Ææ¶&(	–ìKâ–Væ’–YöÒ&ö¦W6’ãÂ÷ãÄÆ–æ²FóÒ"÷&ö¦VÆW&–Ö—¢"6Æ74æÖSÒ&×BÓB–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓ2&÷VæFVBÖgVÆÂ&r×&VBÓs‚ÓR’Ó2FW‡B×6ÒföçBÖ&Æ6²FW‡B×v†—FR6†F÷rÖÆr6†F÷r×&VBÓ“ó#G&ç6—F–öâ†÷fW#¦&r×&VBÓƒ#å&ö¦VÆW&’Kæ6VÆRÄ'&÷u&–v‡B6Æ74æÖSÒ&‚ÓBrÓB"óãÂôÆ–æ³ãÂöF—cà¢ÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚×w&v×‚ÓRv×’Ó"&÷&FW"×B&÷&FW"×6ÆFRÓ“óBÓBFW‡BÕ³…ÒföçBÖ&Æ6²ÆVF–ærÓBFW‡BÕ²3sC6%Ò#ãÇ7â6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓãR#ãÄ†öÖR6Æ74æÖSÒ&‚ÓBrÓBFW‡B×&VBÓs"óâFüIö–ÆW—VÖÇR–YöÓÂ÷7ããÇ7â6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓãR#ãÄ'V–ÆF–æs"6Æ74æÖSÒ&‚ÓBrÓBFW‡B×&VBÓs"óâÖöFW&âÖ–Ö&“Â÷7ããÇ7â6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"vÓãR#ãÄÖ–â6Æ74æÖSÒ&‚ÓBrÓBFW‡B×&VBÓs"óâ&W7F–¦Æ’Æö¶7–öãÂ÷7ããÂöF—cà¢ÂöF—cà¢Âö'F–6ÆSà¢Æ6–FR6Æ74æÖSÒ'&VÆF—fR÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ7†Â&rÕ²66CUÒÓbFW‡B×v†—FR6†F÷r×†Â6Ó§Ó‚#ãÆ–Ör7&3Ò"÷&ö¦V7BÖfVGW&R×c"æ§r"ÇCÒ""&–Ö†–FFVãÒ'G'VR"6Æ74æÖSÒ'ö–çFW"ÖWfVçG2ÖæöæR'6öÇWFR–ç6WBÓ‚ÖgVÆÂrÖgVÆÂö&¦V7BÖ6÷fW"÷6—G’Õ²ã…Òw&—66ÆR"óãÆF—b6Æ74æÖSÒ'ö–çFW"ÖWfVçG2ÖæöæR'6öÇWFR–ç6WBÓ&rÖw&F–VçB×FòÖ'"g&öÒÕ²6Sc#eÒó“f–Õ²66CUÒó“"FòÕ²6ƒÒó“B"óãÆF—b6Æ74æÖSÒ'&VÆF—fR¢ÓfÆW‚‚ÖgVÆÂfÆW‚Ö6öÂ#ãÇ7â6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ2FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã#vVÕÒFW‡B×v†—FRóƒR#ãÇ7â6Æ74æÖSÒ&‚Õ³'…ÒrÓ‚&r×v†—FR"óâ”D•$”Òd•%4DÄ$“Â÷7ããÆƒ"6Æ74æÖSÒ&×BÓBFW‡BÓ7†ÂföçBÖ&Æ6²ÆVF–ærÕ³ãeÒG&6¶–ær×F–v‡B#å–LK,KÖÆ,KìK¦FüI÷'R&ö¦VÆW"–ÆR&YöÆœKãÂöƒ#ãÇ6Æ74æÖSÒ&×BÓBFW‡B×6ÒföçBÖÖVF—VÒÆVF–ærÓbFW‡B×v†—FRó“#ä¶öçWBfRF–6&’&ö¦VÆW&FRÆö¶7–öâÂF\IöW&ÆVÖRfR6LKYò<;Ç&\:vÆW&–æ’W¦ÖæÆ,KÜK¦ÆÆæÆœKâãÂ÷ãÄÆ–æ²FóÒ"÷&ö¦VÆW&–Ö—¢"6Æ74æÖSÒ&×BÖWFò–æÆ–æRÖfÆW‚rÖf—B—FV×2Ö6VçFW"vÓ2&÷VæFVBÖgVÆÂ&r×v†—FR‚ÓR’Ó2FW‡B×6ÒföçBÖ&Æ6²FW‡B×&VBÓs6†F÷rÖÆrG&ç6—F–öâ†÷fW#¦&r×&VBÓS#å&ö¦VÆW&’|;g"Ä'&÷u&–v‡B6Æ74æÖSÒ&‚ÓBrÓB"óãÂôÆ–æ³ãÂöF—cãÂö6–FSà¢ÂöF—cà¢Â÷6V7F–öãà ¢Ç6V7F–öâ6Æ74æÖSÒ&vöÆB×6†÷v66R&Uš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍ[]]™H\ÛÛ]Hİ™\™›İËZY[ˆ›Ü™\‹^H›Ü™\‹\ÚŞKLŒKMÈ]ˆÛ\ÜÓ˜[YOHœ™[]]™H‹LL^X]]ÈX^]ËMŞMHÎœNˆÛ\ÜÓ˜[YOH›X‹M^XÙ[\ˆ^^›ÛX›XÚÈ˜XÚÚ[™Ë]YÚ^\Û]KNMLÛN^L”‘PSHÑS•TˆÜ[ˆÛ\ÜÓ˜[YOH^\ÚŞKMŒ–RSV“T’OÜÜ[Ü[ˆÛ\ÜÓ˜[YOHšÛYK]]KY[ˆ‘‘PUT‘QÕT”ÏÜÜ[Ú]ˆÛ\ÜÓ˜[YOH™ÜšYØ\MH™ÜšYXÛÛËLˆ™Ø\MÈ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLÈØ\LÈÔĞSTWÓÑ‘’PÑTËœÛXÙJÊK›X\
+              <div className="grid gap-3"><Link to="/franchise-basvuru" className="group flex min-h-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-red-200 hover:shadow-md"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=78&w=480" alt="Franchise ol" className="h-full w-20 self-stretch rounded-xl object-cover"/><span className="min-w-0 flex-1"><span className="flex items-center gap-1.5 text-red-700"><Building2 className="h-3.5 w-3.5"/><span className="text-[9px] font-black tracking-[.14em]">Ä°Å ORTAKLIÄI</span></span><span className="mt-1 block text-sm font-black leading-tight text-slate-900">Franchise Ol</span></span><ArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></Link><Link to="/franchise-firsatlari" className="group flex min-h-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-red-200 hover:shadow-md"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=78&w=480" alt="Franchise destekleri" className="h-full w-20 self-stretch rounded-xl object-cover"/><span className="min-w-0 flex-1"><span className="flex items-center gap-1.5 text-red-700"><Layers className="h-3.5 w-3.5"/><span className="text-[9px] font-black tracking-[.14em]">SÄ°STEM</span></span><span className="mt-1 block text-sm font-black leading-tight text-slate-900">Franchise Desteklerini GÃ¶r</span></span><ArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></Link></div>
+            </div>
+            <div className="grid min-h-[270px] gap-3 sm:grid-cols-[1.28fr_.92fr]">
+              <Link to="/danisman-basvuru" className="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-sm"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=82&w=1200" alt="DanÄ±ÅŸmanlÄ±k fÄ±rsatlarÄ±" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"/><span className="absolute inset-0 bg-gradient-to-t from-slate-950/78 via-slate-900/18 to-transparent"/><span className="absolute inset-x-5 bottom-5 text-white"><span className="flex items-center gap-2 text-[10px] font-black tracking-[.16em] text-white/75"><UserCheck className="h-3.5 w-3.5"/> KARÄ°YER</span><span className="mt-2 block text-xl font-black leading-tight">Gayrimenkulde yeni bir yol.</span><span className="mt-3 inline-flex items-center text-xs font-black">DanÄ±ÅŸmanlÄ±ÄŸÄ± keÅŸfet <ArrowRight className="ml-2 h-3.5 w-3.5 transition group-hover:translate-x-1"/></span></span></Link>
+              <div className="grid gap-3"><Link to="/danisman-basvuru" className="group flex min-h-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-red-200 hover:shadow-md"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=78&w=480" alt="DanÄ±ÅŸman ol" className="h-full w-20 self-stretch rounded-xl object-cover"/><span className="min-w-0 flex-1"><span className="flex items-center gap-1.5 text-red-700"><UserCheck className="h-3.5 w-3.5"/><span className="text-[9px] font-black tracking-[.14em]">KARÄ°YER</span></span><span className="mt-1 block text-sm font-black leading-tight text-slate-900">DanÄ±ÅŸman Ol</span></span><ArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></Link><Link to="/icerik/sharing-advisors" className="group flex min-h-0 items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-red-200 hover:shadow-md"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=78&w=480" alt="DanÄ±ÅŸman kazanÃ§ paylaÅŸÄ±mÄ±" className="h-full w-20 self-stretch rounded-xl object-cover"/><span className="min-w-0 flex-1"><span className="flex items-center gap-1.5 text-red-700"><TrendingUp className="h-3.5 w-3.5"/><span className="text-[9px] font-black tracking-[.14em]">KAZANÃ‡ MODELÄ°</span></span><span className="mt-1 block text-sm font-black leading-tight text-slate-900">DanÄ±ÅŸman KazanÃ§ PaylaÅŸÄ±mÄ±</span></span><ArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-red-700"/></Link></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-Ù™šXÙK[™^
-HOˆ[šÈÙ^O^ÛÙ™šXÙKšYHÏH‹ÛÙš\Û\š[Z^ˆˆÛ\ÜÓ˜[YOH™ÛÛ\ÚİØØ\ÙKXØ\™Ü›İ\™[]]™Hİ™\™›İËZY[ˆ›İ[™Y^›Ü™\ˆ›Ü™\‹\ÚŞKLŒÎL™Ë]Ú]HLKHÚYİË\ÛH˜[œÚ][Ûˆİ™\‹]˜[œÛ]K^KLHİ™\˜›Ü™\‹\ÚŞKM[YÈÜ˜Ï^ÛÙ™šXÙKš[XYÙ_H[^ÛÙ™šXÙK›˜[Y_HÛ\ÜÓ˜[YOHšLËY[›İ[™Y[ÈØš™XİXÛİ™\ˆ‹ÏÜ[ˆÛ\ÜÓ˜[YOH˜XœÛÛ]HšYÚLÈÜLÈ[›[™KY›^][\ËXÙ[\ˆØ\LH›İ[™YY[™Ë]Ú]HLˆKLH^VÌLH›ÛX›XÚÈ^\Û]KNÚYİÈÚ[™^OOHHÈ	Í	Èˆ	ÍIßHİ\ˆÛ\ÜÓ˜[YOHšLÈËLÈš[\™YMŒ^\™YMŒ‹ÏÜÜ[ÈÛ\ÜÓ˜[YOH›]LˆLH[™KXÛ[\LH^^È›ÛX›XÚÈ^\Û]KNMLÛÙ™šXÙK›˜[Y_OÚÏÛ\ÜÓ˜[YOH›X‹LH›^][\ËXÙ[\ˆØ\LHLH^VÌLH^\Û]KMŒX\[ˆÛ\ÜÓ˜[YOHšLÈËLÈ^\Û]KML‹ÏÛÙ™šXÙK™\İšXİKÛÙ™šXÙK˜Ú]_OÜÓ[šÏŠ_OÙ]]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLÈØ\LÈÙ™X]\™YYÙ[Ë›X\
+      {false && <section className="bg-white py-10 text-slate-900 border-b border-slate-200 shadow-sm">
+        <div className="max-w-7xl mx-auto grid items-center gap-6 px-6 lg:grid-cols-[1.05fr_.95fr_.7fr] lg:px-12">
+          <div className="grid grid-cols-2 gap-3 text-center">
+            <div className="p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.offices}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Franchise Ofis</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.agents.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Uzman DanÄ±ÅŸman</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">{counts.portfolios.toLocaleString('tr-TR')}+</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Aktif PortfÃ¶y</div></div>
+            <div className="border-l border-slate-100 p-3"><div className="text-3xl font-black tracking-tight text-red-700 lg:text-4xl">%{counts.satisfaction}</div><div className="mt-1 text-[10px] font-extrabold tracking-widest text-slate-700">Memnuniyet</div></div>
+          </div>
+          <RealtyNetworkActivityPanel />
+          <div className="flex justify-center lg:justify-end">
+            <Link to="/ilanlarimiz" className="sales-message block max-w-56 text-center text-lg font-black leading-snug text-slate-950 sm:text-xl lg:text-left">
+              DÃœNYADA HER <span className="sales-pulse-highlight text-red-700">10 SANÄ°YEDE 1 GAYRÄ°MENKUL</span> REALTY CENTERÂ® Ä°LE Ä°ÅLEM GÃ–RÃœYOR.
+            </Link>
+          </div>
+        </div>
+      </section>}
 
-YÙ[[™^
-HOˆ[šÈÙ^O^ØYÙ[šYHÏH‹Ù[š\ÛX[›\š[Z^ˆˆÛ\ÜÓ˜[YOH™ÛÛ\ÚİØØ\ÙKXØ\™Ü›İ\™[]]™Hİ™\™›İËZY[ˆ›İ[™Y^›Ü™\ˆ›Ü™\‹\ÚŞKLŒÎL™Ë]Ú]HLˆ^XÙ[\ˆÚYİË\ÛH˜[œÚ][Ûˆİ™\‹]˜[œÛ]K^KLHİ™\˜›Ü™\‹\ÚŞKM]ˆÛ\ÜÓ˜[YOHœ™[]]™H^X]]ÈËYš][YÈÜ˜Ï^ØYÙ[š[XYÙH	ËÜ˜Ë[ÙÛËZİ\ÙKœİ™ÉßH[^ØYÙ[›˜[Y_HÛ\ÜÓ˜[YOHšLŒËLŒ›İ[™YY[™Ë\™YMLØš™XİXÛİ™\ˆš[™ËLˆš[™Ë]Ú]HÚYİÈ‹ÏÜ[ˆÛ\ÜÓ˜[YOH˜XœÛÛ]HšYÚLÜLLÈËLÈ›İ[™YY[›Ü™\‹Lˆ›Ü™\‹]Ú]H™ËY[Y\˜[ML‹ÏÙ]ÈÛ\ÜÓ˜[YOH›]Lˆ[™KXÛ[\LH^^È›ÛX›XÚÈ^\Û]KNMLØYÙ[›˜[Y_OÚÏÛ\ÜÓ˜[YOH›[™KXÛ[\LH^VÌLH^\Û]KMŒØYÙ[]_OÜÛ\ÜÓ˜[YOH›]Lˆ›^][\ËXÙ[\ˆ\İYKXÙ[\ˆØ\LH›Ü™\‹]›Ü™\‹\Û]KLLLˆ^VÌLH›ÛX›Û^\Û]KMŒİ\ˆÛ\ÜÓ˜[YOHšLÈËLÈš[\™YMŒ^\™YMŒ‹ÏˆÚ[™^OOHHÈ	Í	Èˆ	ÍIßHÜ[ˆÛ\ÜÓ˜[YOH›^LH^\Û]KLÌŸÜÜ[ˆÌLŒH[™^
-ˆ_JÈ1,1gÛ[OÜÓ[šÏŠ_OÙ]Ù]Ù]ÜÙXİ[Û‚ˆÙXİ[ÛˆÛ\ÜÓ˜[YOH˜›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HKLLˆ‚ˆ]ˆÛ\ÜÓ˜[YOH›^X]]ÈÜšYX^]ËMŞØ\MˆMˆÎ™ÜšYXÛÛËLˆÎœLLˆ‚ˆ[šÈÏH‹Ùœ˜[˜Ú\ÙKYš\œØ]\šHˆÛ\ÜÓ˜[YOH™Ü›İ\˜Ë[˜]KYœ˜[YH™[]]™Hİ™\™›İËZY[ˆ›İ[™YVÌœ™[WH™ËVÈØNLNWHN^]Ú]HÚYİË^ÚYİË\™YNMLÌL˜[œÚ][Ûˆ\˜][Û‹MLX\ÙK[İ]İ™\‹]˜[œÛ]K^KLHİ™\œÚYİËL‚ˆ[YÈÜ˜ÏH‹Ø\XØ][ÛœËÙœ˜[˜Ú\ÙKZ[™ÚZÙKœ™Èˆ[Hˆˆ\šXKZY[HYHˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]H[œÙ]LY[ËY[Øš™XİXÛİ™\ˆÜXÚ]KLHÜ˜^\ØØ[H˜[œÚ][Ûˆ\˜][Û‹MÌX\ÙK[İ]Ü›İ\Zİ™\œØØ[KVÌKŒÍWHÜ›İ\Zİ™\›ÜXÚ]KLÍHˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]H[œÙ]L™ËYÜ˜YY[]Ë\ˆœ›ÛKVÈØNLNWKÎMHšXKVÈØÌX×KÎˆËVÈÍÌLLWKÍÌˆˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]H\šYÚLLˆ]ÜLMˆMËM›İ[™YY[™Ë]Ú]KÌLˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H‹LL‚ˆÜ[ˆÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ˜XÚÚ[™ËVÌŒŒ™[WH^\™YLL‘”SÒTÑHÓÜÜ[‚ˆˆÛ\ÜÓ˜[YOH›]LÈ^LŞ›ÛX›XÚÈ˜XÚÚ[™Ë]YÚÛN^M‘œ˜[˜Ú\ÙH±,\œØ]\±,[±,Hğíœ°ï‹Ú‚ˆÛ\ÜÓ˜[YOH›]LÈX^]Ë^^\ÛHXY[™ËMˆ^\™YMLÎL”™X[HÙ[\°«ˆğïğï[HÙ[™HÙš\Ú[š^šHİ\›XZÈpéÚ[ˆY]˜İ]±,\œØ]\±,H[˜Ù[^Z[‹Ü‚ˆÜ[ˆÛ\ÜÓ˜[YOH›]MÈ[›[™KY›^][\ËXÙ[\ˆ›İ[™YY[™Ë]Ú]HMHKLÈ^\ÛH›ÛX›XÚÈ^\™YMÌ˜[œÚ][Ûˆ\˜][Û‹LÌX\ÙK[İ]Ü›İ\Zİ™\™Ø\LÈ‘œ˜[˜Ú\ÙH±,\œØ]\±,[±,HğíœˆÜ[ˆÛ\ÜÓ˜[YOH›[Lˆ¸¡¤ÜÜ[ÜÜ[‚ˆÙ]‚ˆÓ[šÏ‚‚ˆ[šÈÏH‹ÚXÙ\šZËØ˜[˜K]ZÚ[KZİ\ˆˆÛ\ÜÓ˜[YOH™Ü›İ\˜Ë[˜]KYœ˜[YH™[]]™Hİ™\™›İËZY[ˆ›İ[™YVÌœ™[WH™ËVÈÌÌYŒÙHN^]Ú]HÚYİË^ÚYİË\Û]KNMLÌL˜[œÚ][Ûˆ\˜][Û‹MLX\ÙK[İ]İ™\‹]˜[œÛ]K^KLHİ™\œÚYİËL‚ˆ[YÈÜ˜ÏH‹Ø\XØ][ÛœËØYš\ÛÜ‹\™XÜZ]Y[]Œ‹ÙXœˆ[Hˆˆ\šXKZY[HYHˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]H[œÙ]LY[ËY[Øš™XİXÛİ™\ˆØš™XİXÙ[\ˆÜXÚ]KLŒÜ˜^\ØØ[H˜[œÚ][Ûˆ\˜][Û‹MÌX\ÙK[İ]Ü›İ\Zİ™vÓMm¢G§²ÚîÆ­yĞµ™Õ±°Üµ™Õ±°½‰©•Ğµ½Ù•Èˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”¥¹Í•Ğ´À€µè´ÄÀ‰œµÉ…‘¥•¹ĞµÑ¼µÈ™É½´µÍ±…Ñ”´äÔÀ¼äÀÙ¥„µÍ±…Ñ”´äÔÀ¼ØÔÑ¼µÍ±…Ñ”´äÔÀ¼ÈÀˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Ùá°Áà´ØˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸ÈÉ•µtÑ•áĞµÉ•´ĞÀÀˆùI1Qd9QK
-¸ƒ
-ÜƒY9qY8ğ½Àøñ Ä±…ÍÍ9…µ”ô‰µĞ´Ğµ…àµÜ´Íá°Ñ•áĞ´Ñá°™½¹Ğµ‰±…¬±•…‘¥¹œµÑ¥¡ĞÍ´éÑ•áĞ´Õá°ˆù…åÉ¥µ•¹­Õ±‘”ŸñÙ•¹¤°Õéµ…¹³Å¬Ù”Ñ•­¹½±½©¥å±”‹ñçñÑ•¸‰¥Èµ…É­„ğ½ ÄøñÀ±…ÍÍ9…µ”ô‰µĞ´Ôµ…àµÜ´Éá°Ñ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ÌÀÀˆùSñÉ­¥å”•¹•±¥¹‘•­¤­ÕÉÕµÍ…°…åÉ¥µ•¹­Õ°¡¥éµ•Ñ±•É¥µ¥é±”‘¿}ÉÔ­…É…É±…ËÅ¸°ÏñÉ“ñËñ±•‰¥±¥È‰‡}…ËÅ»Å¸Ù”Ÿó³ğ§|‰¥É±¥­±•É¥¹¥¸µ•É­•é¥¹‘•å¥è¸ğ½Àøğ½‘¥Øøğ½Í•Ñ¥½¸øñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼É¥µ…àµÜ´Ùá°¥Ñ•µÌµ•¹Ñ•È…À´ÄÀÁà´ØÁä´ÄĞ±œéÉ¥µ½±ÌµlÄ¸ÌÕ™É|¸ØÕ™Étˆøñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ÜÍ¡…‘½ÜµÍ´Í´éÀ´ÄÀˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùI•…±Ñä•¹Ñ•Ë
-»ŠgÅ¸!¥¯‰å•Í¤ğ½ Èøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÍÁ…”µä´ÔˆùíÍÑ½Éä¹ÍÁ±¥Ğ q¹q¸œ¤¹µ…À ¡Á…É…É…Á ¤€ôø€ñÀ­•äõíÁ…É…É…Á ¹Í±¥” À°ĞÀ¥ô±…ÍÍ9…µ”ô‰Ñ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆùíÁ…É…É…Á¡ôğ½Àø¥ôğ½‘¥Øøğ½…ÉÑ¥±”øñ…Í¥‘”±…ÍÍ9…µ”ô‰™±•àµ¥¸µ ´àÀ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÉ•´ÄÀÀ‰œµİ¡¥Ñ”À´àÍ¡…‘½ÜµÍ´ˆøñ¥µœÍÉŒôˆ½É}±½½}½œ¹ÍÙœˆ…±Ğô‰I•…±Ñä•¹Ñ•Ë
-¸ƒY¹”ñÙ•¸ˆ±…ÍÍ9…µ”ô‰Üµ™Õ±°µ…àµÜµáÌ½‰©•Ğµ½¹Ñ…¥¸ˆ¼øğ½…Í¥‘”øğ½Í•Ñ¥½¸øğ½µ…¥¸øì)ô()™Õ¹Ñ¥½¸5¥ÍÍ¥½¹Y¥Í¥½¹A…” ¤ì(€½¹ÍĞÍ•Ñ¥½¹Ì€ôl(€€€ìÑ¥Ñ±”è€5¥Íå½¹ÕµÕèœ°Ñ•áĞè€…åÉ¥µ•¹­Õ°Í…ÓÅ¸…±µ„°Í…Ñµ„Ù”­¥É…±…µ„ÏñÉ—±•É¥¹¤ìƒ}•™™…˜‰¥±¤°•Ñ¥¬‘…»Ç}µ…¹³Å¬°å•É•°Õéµ…¹³Å¬Ù”Ÿó³ğÑ•­¹½±½©¥å±”¡•É­•Ì§¥¸‘…¡„ŸñÙ•¹±¤Ù”…¹±‡Å³ÅÈ£‰±”•Ñ¥Éµ•¬¸œô°(€€€ìÑ¥Ñ±”è€Y¥éå½¹ÕµÕèœ°Ñ•áĞè€SñÉ­¥å”•¹•±¥¹‘”ŸñÙ•¸‘•¹¥±‘§}¥¹‘”¥±¬…­±„•±•¸ì‘…»Ç}µ…¹±…ËÄ°™É…¹¡¥Í”½™¥Í±•É¤Ù”‘¥©¥Ñ…°ƒŸÙëñµ±•É¥å±”…åÉ¥µ•¹­Õ°Í•­ÓÙËñ»ñ¸•±•—}¥¹”çÙ¸Ù•É•¸ƒÙ¹ğµ…É­„½±µ…¬¸œô(€tì(€½¹ÍĞÍÑ…¹‘…É‘Ì€ôl¿}ÉÕ±…¹·Ç|Ù”Ÿñ¹•°Á½ÉÑ›Ùä‰¥±¥±•É¤œ°Ÿy•™™…˜™¥å…Ñ±…¹“ÅÉµ„Ù”‡ŸÅ¬¥±•Ñ§}¥´œ°5•ÙéÕ…Ñ„ÕåÕ¸ÏÙé±—}µ”Ù”§}±•´ÏñÉ—±•É¤œ°OñÉ•­±¤—}¥Ñ¥´…±…¸Õéµ…¸‘…»Ç}µ…¹±…Èœ°ŸY³Ÿñ±•‰¥±¥È·ó}Ñ•É¤µ•µ¹Õ¹¥å•Ñ¤Ñ…­¥‰¤œ°Q•­¹½±½©¤‘•ÍÑ•­±¤£Åé³ÄÙ”ŸñÙ•¹±¤¡¥éµ•Ğtì(€É•ÑÕÉ¸€ñµ…¥¸±…ÍÍ9…µ”ô‰µ¥¸µ µÍÉ••¸‰œµÉ…‘¥•¹ĞµÑ¼µˆ™É½´µİ¡¥Ñ”Ù¥„µÉ•´ÔÀ¼ÌÀÑ¼µÍ±…Ñ”´ÔÀÁä´ÄĞˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Ùá°Áà´ØˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµÉ•´ÜÀÀˆù-UIU5M0gY;q7qhğ½Àøñ Ä±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Ñá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù5¥Íå½¹ÕµÕèÙ”Y¥éå½¹ÕµÕèğ½ ÄøñÀ±…ÍÍ9…µ”ô‰µĞ´Ğµ…àµÜ´Éá°Ñ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆùI•…±Ñä•¹Ñ•Ë
-»ŠgÅ¸‰ÕŸñ¹¯ğ¡¥éµ•Ğ…¹±…çÇÅ»ÄÙ”•±•—}”“Ù»ñ¬¡•‘•™±•É¥¹¤‰•±¥É±•å•¸­ÕÉÕµÍ…°å…­±‡Å·Å·Åè¸ğ½Àøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´äÉ¥…À´ØµéÉ¥µ½±Ì´ÈˆùíÍ•Ñ¥½¹Ì¹µ…À ¡Í•Ñ¥½¸±¥¹‘•à¤€ôø€ñ…ÉÑ¥±”­•äõíÍ•Ñ¥½¸¹Ñ¥Ñ±•ô±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÉ•´ÄÀÀ‰œµİ¡¥Ñ”À´àÍ¡…‘½ÜµlÁ|ÄÑÁá|ÌÕÁá}É‰„ ÄÔ°ÈÌ°ĞÈ°¸ÀÜ¥tˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”€µÉ¥¡Ğ´Ì€µÑ½À´ØÑ•áĞ´áá°™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÔÀˆøÁí¥¹‘•à¬Åôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”™±•à ´ÄÄÜ´ÄÄ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµÉ•´ÄÀÀÑ•áĞµÍ´™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆøÁí¥¹‘•à¬Åôğ½ÍÁ…¸øñ È±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”µĞ´ÔÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùíÍ•Ñ¥½¸¹Ñ¥Ñ±•ôğ½ ÈøñÀ±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù”µĞ´ĞÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆùíÍ•Ñ¥½¸¹Ñ•áÑôğ½Àøğ½…ÉÑ¥±”ø¥ôğ½‘¥ØøñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µĞ´àÉ½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÉ•´ÄÀÀ‰œµİ¡¥Ñ”À´ÜÍ¡…‘½ÜµlÁ|ÄÑÁá|ÌÕÁá}É‰„ ÄÔ°ÈÌ°ĞÈ°¸ÀØ¥tÍ´éÀ´ÄÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´à±œéÉ¥µ½±Ìµl¸İ™É|Ä¸Í™Étˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸É•µtÑ•áĞµÉ•´ÜÀÀˆûY9qY8ğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù-…±¥Ñ”MÑ…¹‘…ÉÑ±…ËÅ·Åèğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ĞÑ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆù!•ÈI•…±Ñä•¹Ñ•Ë
-¸½™¥Í¥¹‘”…å»ÄŸñÙ•¹¥±¥È¡¥éµ•Ğ‘•¹•å¥µ¥¹¤½±×}ÑÕÉµ…¬§¥¸ÕåÕ±…“ÇÅ·ÅèÑ•µ•°ÍÑ…¹‘…ÉÑ±…È¸ğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌÍ´éÉ¥µ½±Ì´ÈˆùíÍÑ…¹‘…É‘Ì¹µ…À ¡ÍÑ…¹‘…É¤€ôø€ñ‘¥Ø­•äõíÍÑ…¹‘…É‘ô±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÌÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÉ•´ÄÀÀ‰œµÉ•´ÔÀ¼ĞÀÀ´ĞÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆøñ¡•­¥É±”È±…ÍÍ9…µ”ô‰ ´ÔÜ´ÔÍ¡É¥¹¬´ÀÑ•áĞµÉ•´ÜÀÀˆ¼ùíÍÑ…¹‘…É‘ôğ½‘¥Øø¥ôğ½‘¥Øøğ½‘¥Øøğ½Í•Ñ¥½¸øğ½‘¥Øøğ½µ…¥¸øì)ô()™Õ¹Ñ¥½¸QÉÕÍÑAÉ¥¹¥Á±•A…” ¤ì(€É•ÑÕÉ¸€ (€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ…àµÜ´İá°µàµ…ÕÑ¼Áà´ØÁä´ÄØˆø(€€€€€€ñ Ä±…ÍÍ9…µ”ô‰Ñ•áĞ´Ñá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀµˆ´Ğ‰½É‘•Èµˆ´Ğ‰½É‘•ÈµÉ•´ÜÀÀÁˆ´È¥¹±¥¹”µ‰±½¬ˆûY¹”ñÙ•¸ƒÁ±­•Í¤ğ½ Äø(€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ØÀÀ±•…‘¥¹œµÉ•±…á•Ñ•áĞµ±œµĞ´Ğˆûy•™™…f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³VbF–6&WBÂ|;ÇfVæ–Æ—"ÇG–KfR‡V·V¶’<;Ç&\:rœ;fæWF–Ö–Ö—¢'R6–fF:|K¶Ææ6·LK"ãÂ÷à¢ÂöF—cà¢“°§Ğ ¦gVæ7F–öâv‡•&VÇG”6VçFW%vR‚’°¢&WGW&â€¢ÆÖ–â6Æ74æÖSÒ&Ö–âÖ‚×67&VVâ&rÕ²6ffffÒ’Ó"6Ó§’Ób#à¢ÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÓg†Â‚ÓbÆs§‚Ó"#à¢ÄÆ–æ²FóÒ"ò"6Æ74æÖSÒ&–æÆ–æRÖfÆW‚—FV×2Ö6VçFW"FW‡B×6ÒföçBÖ&Æ6²FW‡B×&VBÓsG&ç6—F–öâ†÷fW#§FW‡B×&VBÓƒ#î(iæ6–f–L;fãÂôÆ–æ³à¢Ç6V7F–öâ6Æ74æÖSÒ'&VÆF—fR×BÓr÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ7†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓ‚6†F÷r×6Ò6Ó§Ó"#à¢ÆF—b6Æ74æÖSÒ'ö–çFW"ÖWfVçG2ÖæöæR'6öÇWFR×&–v‡BÓ#×F÷Ó#B‚Ós"rÓs"&÷VæFVBÖgVÆÂ&r×&VBÓsóR&ÇW"Ó7†Â"óà¢ÆF—b6Æ74æÖSÒ'&VÆF—fR#à¢Ç7â6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ær×v–FW7BFW‡B×&VBÓs#ä|9ÅdTâ+rU¤ÔäÄ”²+rYäTdddÄ”³Â÷7ãà¢Æƒ6Æ74æÖSÒ&×BÓ2FW‡BÓG†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“S6Ó§FW‡BÓW†Â#ääTDTâÇ7â6Æ74æÖSÒ'FW‡B×&VBÓs#å$TÅE’4TåDU,*ãóÂ÷7ããÂöƒà¢ÆF—b6Æ74æÖSÒ&×BÓB‚ÓrÓ#B&÷VæFVBÖgVÆÂ&r×&VBÓs"óà¢Ç6Æ74æÖSÒ&×BÓRÖ‚×rÓ'†ÂFW‡B×6ÒÆVF–ærÓrFW‡B×6ÆFRÓc#äv—&–ÖVæ·VÂ–öÆ7VÇ\I÷VçW¦FFüI÷'R¶&&Æ"ÆÖìK¢œ:v–âYöVffbÂW¦ÖâfR:|;g¬;ÆÒöF¶ÌK&—"†—¦ÖWBæÆœKYüK7VçW–÷'W¢ãÂ÷à¢ÂöF—cà¢Â÷6V7F–öãà¢Ç6V7F–öâ6Æ74æÖSÒ&×BÓ‚w&–BvÓBÖC¦w&–BÖ6öÇ2Ó"#à¢µt…•õ$TÅE•ô4TåDU%ô•DTÕ2æÖ‚†—FVÒÂ–æFW‚’ÓâÆ'F–6ÆR¶W“×¶—FV×Ò6Æ74æÖSÒ&w&÷WfÆW‚—FV×2Ö6VçFW"vÓR&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FR‚Ób’ÓRFW‡BÖ&6RföçBÖ&Æ6²FW‡B×6ÆFRÓ“6†F÷r×6ÒG&ç6—F–öâ†÷fW#¢×G&ç6ÆFR×’ÓãR†÷fW#¦&÷&FW"×&VBÓs†÷fW#§6†F÷rÖÆr#ãÇ7â6Æ74æÖSÒ&fÆW‚‚ÓrÓ6‡&–æ²Ó—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖgVÆÂ&r×&VBÓsFW‡B×6ÒFW‡B×v†—FR6†F÷r×6Ò#ç¶–æFW‚²ÓÂ÷7ããÇ7â6Æ74æÖSÒ&ÆVF–ærÓb#ç¶—FV×ÓÂ÷7ããÂö'F–6ÆSâ—Ğ¢Â÷6V7F–öãà¢ÂöF—cà¢ÂöÖ–ãà¢“°§Ğ ¦gVæ7F–öâFVÕvR‚’°¢6öç7B¶ÖVÖ&W'2Â6WDÖVÖ&W'5ÒÒW6U7FFR†vWDÖævVÖVçEFVÒ“°¢6öç7B·6VÆV7FVBÂ6WE6VÆV7FVEÒÒW6U7FFSÄÖævVÖVçDÖVÖ&W"ÂçVÆÃâ†çVÆÂ“°¢W6TVffV7B‚‚’Óâ²6öç7BWFFRÒ‚’Óâ6WDÖVÖ&W'2†vWDÖævVÖVçEFVÒ‚’“²v–æF÷ræFDWfVçDÆ—7FVæW"‚w&VÇG’Ö6VçFW"Ö6÷'÷&FR×WFFVBrÂWFFR“²&WGW&â‚’Óâv–æF÷rç&VÖ÷fTWfVçDÆ—7FVæW"‚w&VÇG’Ö6VçFW"Ö6÷'÷&FR×WFFVBrÂWFFR“²ÒÂµÒ“°¢&WGW&âÆÖ–â6Æ74æÖSÒ&Ö–âÖ‚×67&VVâ&r×6ÆFRÓS’ÓB#ãÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÓg†Â‚Ób#ãÇ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡B×&VBÓs#äµU%TÕ4Âœ9däULKÓÂ÷ãÆƒ6Æ74æÖSÒ&×BÓ2FW‡BÓG†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“S#åœ;fæWF–Ò¶G&ö×W£ÂöƒãÇ6Æ74æÖSÒ&×BÓBÖ‚×rÓ'†ÂFW‡B×6ÒÆVF–ærÓrFW‡B×6ÆFRÓc#å&VÇG’6VçFW,*î(	œKâ7G&FV¦—6–æRÂ†—¦ÖWB¶Æ—FW6–æRfR<;Ç&L;Ç,;ÆÆV&–Æ—",;Çœ;ÆÖW6–æRœ;fâfW&Vâœ;fæWF–ÒV¶–&–Ö—¦ÆRFìKYüKâãÂ÷ãÆF—b6Æ74æÖSÒ&×BÓ’w&–BvÓb6Ó¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2Ó2#ç¶ÖVÖ&W'2æÖ‚†ÖVÖ&W"’ÓâÆ'WGFöâ¶W“×¶ÖVÖ&W"æ–GÒöä6Æ–6³×²‚’Óâ6WE6VÆV7FVB†ÖVÖ&W"—Ò6Æ74æÖSÒ&w&÷W÷fW&fÆ÷rÖ†–FFVâ&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRFW‡BÖÆVgB6†F÷r×6ÒG&ç6—F–öâ†÷fW#¢×G&ç6ÆFR×’Ó†÷fW#§6†F÷r×†Â#ãÆ–Ör7&3×¶ÖVÖ&W"æ–ÖvWÒÇC×¶ÖVÖ&W"ææÖWÒ6Æ74æÖSÒ&‚Ós"rÖgVÆÂö&¦V7BÖ6÷fW"ö&¦V7B×F÷G&ç6—F–öâGW&F–öâÓSw&÷WÖ†÷fW#§66ÆRÓR"óãÆF—b6Æ74æÖSÒ'ÓR#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW7BFW‡B×&VBÓs#åœ9däULKÒ´E$õ5SÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓ"FW‡B×†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç¶ÖVÖ&W"ææÖWÓÂöƒ#ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓS#ç¶ÖVÖ&W"çF—FÆWÓÂ÷ãÇ7â6Æ74æÖSÒ&×BÓB–æÆ–æRÖfÆW‚FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓs#ì9g¦v\:vÖœYö’|;g,;ÆçL;ÆÆR(i#Â÷7ããÂöF—cãÂö'WGFöãâ—ÓÂöF—cãÂöF—cç·6VÆV7FVBbbÆF—b6Æ74æÖSÒ&f—†VB–ç6WBÓ¢Õ³ÒfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&r×6ÆFRÓ“SósRÓB&6¶G&÷Ö&ÇW"×6Ò"öä6Æ–6³×²‚’Óâ6WE6VÆV7FVB†çVÆÂ—ÓãÆ'F–6ÆR6Æ74æÖSÒ'&VÆF—fRw&–BÖ‚Ö‚Õ³“f…ÒrÖgVÆÂÖ‚×rÓ7†Â÷fW&fÆ÷r×’ÖWFò&÷VæFVBÓ7†Â&r×v†—FR6†F÷rÓ'†ÂÖC¦w&–BÖ6öÇ2Õ³#ƒ…óg%Ò"öä6Æ–6³×²†R’ÓâRç7F÷&÷vF–öâ‚—ÓãÆ'WGFöâöä6Æ–6³×²‚’Óâ6WE6VÆV7FVB†çVÆÂ—Ò6Æ74æÖSÒ&'6öÇWFR&–v‡BÓBF÷ÓB¢ÓfÆW‚‚Ó’rÓ’—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖgVÆÂ&r×v†—FRFW‡B×6ÆFRÓ“6†F÷r#ãÅ‚6Æ74æÖSÒ&‚ÓRrÓR"óãÂö'WGFöããÆ–Ör7&3×·6VÆV7FVBæ–ÖvWÒÇC×·6VÆV7FVBææÖWÒ6Æ74æÖSÒ&‚Ós"rÖgVÆÂö&¦V7BÖ6÷fW"ö&¦V7B×F÷ÖC¦‚ÖgVÆÂ"óãÆF—b6Æ74æÖSÒ'Ór6Ó§Ó’#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW7BFW‡B×&VBÓs#å$TÅE’4TåDU,*âœ9däULKÒ´E$õ5SÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓ2FW‡BÓ7†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç·6VÆV7FVBææÖWÓÂöƒ#ãÇ6Æ74æÖSÒ&×BÓ"FW‡B×6ÒföçBÖ&Æ6²FW‡B×&VBÓs#ç·6VÆV7FVBçF—FÆWÓÂ÷ãÆF—b6Æ74æÖSÒ&×’Ób‚×‚&rİ´Ó[h‘éì¶»§q«^tERÄ°' : 'GÃœVENÄ°MÄ°ZÄ°N REFERANSLARI'}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{isPartners ? 'Ä°ÅŸ OrtaklarÄ±mÄ±z' : 'ReferanslarÄ±mÄ±z'}</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">{isPartners ? 'AnlaÅŸmalÄ± bankalarÄ±mÄ±z ve Ã§Ã¶zÃ¼m ortaÄŸÄ± kurumlarÄ±mÄ±zla sunduÄŸumuz avantajlarÄ± incelemek iÃ§in logolara tÄ±klayÄ±n.' : 'Birlikte deÄŸer Ã¼rettiÄŸimiz kurumlarÄ± ve tamamladÄ±ÄŸÄ±mÄ±z Ã§alÄ±ÅŸmalarÄ± logolar Ã¼zerinden inceleyebilirsiniz.'}</p><div className="mt-9 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">{items.map((item) => <button key={item.id} onClick={() => setSelected(item)} className="group flex min-h-44 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><img src={item.logo} alt={item.name} className="h-20 w-full object-contain transition group-hover:scale-105"/><h2 className="mt-4 text-center text-sm font-black text-slate-800">{item.name}</h2><span className="mt-2 text-[10px] font-black text-red-700">AnlaÅŸma detaylarÄ± â†’</span></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article onClick={(e) => e.stopPropagation()} className="relative w-full max-w-xl rounded-3xl bg-white p-8 shadow-2xl"><button onClick={() => setSelected(null)} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100"><X className="h-5 w-5"/></button><img src={selected.logo} alt={selected.name} className="h-24 w-48 object-contain"/><h2 className="mt-6 text-2xl font-black text-slate-900">{selected.name}</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.content}</p></article></div>}</main>;
+      
+
+      <ListingCategoriesPage embedded />
+
+      <FeaturedListingsShowcase />
+
+      <BuyerRequestModule />
+      <BarterBankModuleV3 />
+      <section className="overflow-hidden border-b border-slate-200 bg-white py-12 text-slate-900">
+        <div className="mx-auto mb-3 flex max-w-[1780px] items-end justify-between gap-5 px-5 sm:px-8 lg:px-12">
+          <div><p className="flex items-center gap-3 text-[10px] font-black tracking-[.24em] text-red-700"><span className="h-0.5 w-8 bg-red-700"/>YENÄ° PORTFÃ–YLER</p><h2 className="mt-2 text-3xl font-black tracking-[-.045em] text-[#071d3b] sm:text-4xl">CanlÄ± <span className="text-red-700">Ä°lan AkÄ±ÅŸÄ±</span><span className="home-title-en">LIVE LISTINGS</span></h2></div>
+          <Link to="/ilan-kategorileri" className="hidden items-center gap-2 border-b border-[#071d3b] pb-1 text-xs font-black text-[#071d3b] transition hover:border-red-700 hover:text-red-700 sm:inline-flex">TÃ¼m Ä°lanlarÄ± GÃ¶r <ArrowRight className="h-4 w-4" /></Link>
+        </div>
+        <LiveListingStream listings={sortedListings} />
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50 py-9 sm:py-10">
+        <div className="mx-auto grid max-w-7xl gap-5 px-6 lg:grid-cols-[minmax(0,1.92fr)_minmax(290px,.88fr)] lg:px-12">
+          <article className="group relative min-h-[260px] overflow-hidden rounded-3xl bg-slate-900 shadow-xl">
+            <img src="/project-feature-v2.jpg?v=20260904-2" alt="Ä°ncek Vadi Evleri modern yaÅŸam projesi" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/82 via-white/50 to-transparent" />
+            <div className="relative z-10 flex min-h-[260px] max-w-[84%] flex-col justify-between p-6 sm:max-w-[62%] sm:p-8">
+              <div><span className="flex items-center gap-3 text-[10px] font-black tracking-[.34em] text-slate-600"><span className="h-[2px] w-8 bg-red-700" /> YENÄ° PROJELER</span><h2 className="mt-4 whitespace-nowrap text-3xl font-light tracking-tight text-[#071d3b] sm:text-4xl">Ä°ncek <strong className="font-black">Vadi Evleri</strong></h2><p className="mt-3 max-w-sm text-sm font-medium leading-6 text-slate-600">DoÄŸayla iÃ§ iÃ§e, modern yaÅŸam alanlarÄ±yla Ankaraâ€™nÄ±n yeni yaÅŸam projesi.</p><Link to="/projelerimiz" className="mt-4 inline-flex items-center gap-3 rounded-full bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-900/20 transition hover:bg-red-800">Projeleri Ä°ncele <ArrowRight className="h-4 w-4" /></Link></div>
+              <div className="flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-900/10 pt-4 text-[10px] font-black leading-4 text-[#071d3b]"><span className="inline-flex items-center gap-1.5"><Home className="h-4 w-4 text-red-700" /> DoÄŸayla uyumlu yaÅŸam</span><span className="inline-flex items-center gap-1.5"><Building2 className="h-4 w-4 text-red-700" /> Modern mimari</span><span className="inline-flex items-center gap-1.5"><MapPin className="h-4 w-4 text-red-700" /> Prestijli lokasyon</span></div>
+            </div>
+          </article>
+          <aside className="relative overflow-hidden rounded-3xl bg-[#cd011e] p-6 text-white shadow-xl sm:p-8"><img src="/project-feature-v2.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[.18] grayscale" /><div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#e10626]/90 via-[#cd011e]/92 to-[#a8001a]/94" /><div className="relative z-10 flex h-full flex-col"><span className="flex items-center gap-3 text-[10px] font-black tracking-[.27em] text-white/85"><span className="h-[2px] w-8 bg-white" /> YATIRIM FIRSATLARI</span><h2 className="mt-4 text-3xl font-black leading-[1.16] tracking-tight">YatÄ±rÄ±mlarÄ±nÄ±za doÄŸru projeler ile baÅŸlayÄ±n</h2><p className="mt-4 text-sm font-medium leading-6 text-white/90">Konut ve ticari projelerde lokasyon, deÄŸerleme ve satÄ±ÅŸ sÃ¼reÃ§lerini uzmanlarÄ±mÄ±zla planlayÄ±n.</p><Link to="/projelerimiz" className="mt-auto inline-flex w-fit items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-black text-red-700 shadow-lg transition hover:bg-red-50">Projeleri GÃ¶r <ArrowRight className="h-4 w-4" /></Link></div></aside>
+        </div>
+      </section>
+
+      <section className="gold-showcase relative isolate overflow-hidden border-y border-sky-200 py-7"><div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8"><h2 className="mb-4 text-center text-xl font-black tracking-tight text-slate-950 sm:text-2xl">REALTY CENTER <span className="text-sky-600">YILDIZLARI</span><span className="home-title-en">FEATURED STARS</span></h2><div className="grid gap-5 xl:grid-cols-2 xl:gap-7"><div className="grid grid-cols-3 gap-3">{SAMPLE_OFFICES.slice(0, 3).map((office, index) => <Link key={office.id} to="/ofislerimiz" className="gold-showcase-card group relative overflow-hidden rounded-xl border border-sky-200/90 bg-white p-1.5 shadow-sm transition hover:-translate-y-1 hover:border-sky-400"><img src={office.image} alt={office.name} className="h-24 w-full rounded-lg object-cover"/><span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-white px-2 py-1 text-[10px] font-black text-slate-800 shadow">{index === 1 ? '4.8' : '4.9'} <Star className="h-3 w-3 fill-red-600 text-red-600"/></span><h3 className="mt-2 px-1 line-clamp-1 text-xs font-black text-slate-950">{office.name}</h3><p className="mb-1 flex items-center gap-1 px-1 text-[10px] text-slate-600"><MapPin className="h-3 w-3 text-slate-500"/>{office.district}, {office.city}</p></Link>)}</div><div className="grid grid-cols-3 gap-3">{featuredAgents.map((agent, index) => <Link key={agent.id} to="/danismanlarimiz" className="gold-showcase-card group relative overflow-hidden rounded-xl border border-sky-200/90 bg-white p-2 text-center shadow-sm transition hover:-translate-y-1 hover:border-sky-400"><div className="relative mx-auto w-fit"><img src={agent.image || '/rc-logo-house.svg'} alt={agent.name} className="h-20 w-20 rounded-full bg-red-50 object-cover ring-2 ring-white shadow"/><span className="absolute right-0 top-0 h-3 w-3 rounded-full border-2 border-white bg-emerald-500"/></div><h3 className="mt-2 line-clamp-1 text-xs font-black text-slate-950">{agent.name}</h3><p className="line-clamp-1 text-[10px] text-slate-600">{agent.title}</p><p className="mt-2 flex items-center justify-center gap-1 border-t border-slate-100 pt-2 text-[10px] font-bold text-slate-600"><Star className="h-3 w-3 fill-red-600 text-red-600"/> {index === 1 ? '4.8' : '4.9'} <span className="mx-1 text-slate-300">|</span> {120 - index * 25}+ Ä°ÅŸlem</p></Link>)}</div></div></div></section>
+      <section className="border-b border-slate-200 bg-white py-12">
+        <div className="mx-auto grid max-w-7xl gap-6 px-6 lg:grid-cols-2 lg:px-12">
+          <Link to="/franchise-firsatlari" className="group rc-navy-frame relative overflow-hidden rounded-[2rem] bg-[#a90019] p-8 text-white shadow-xl shadow-red-950/10 transition duration-500 ease-out hover:-translate-y-1 hover:shadow-2xl">
+            <img src="/applications/franchise-handshake.png" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25 grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:opacity-35" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#a90019]/95 via-[#b7001c]/82 to-[#710011]/72" />
+            <div className="pointer-events-none absolute -right-12 -top-16 h-44 w-44 rounded-full bg-white/10" />
+            <div className="relative z-10">
+              <span className="text-xs font-black tracking-[0.22em] text-red-100">FRANCHISE OL</span>
+              <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Franchise fÄ±rsatlarÄ±nÄ± gÃ¶rÃ¼n.</h2>
+              <p className="mt-3 max-w-xl text-sm leading-6 text-red-50/90">Realty CenterÂ® gÃ¼cÃ¼yle kendi ofisinizi kurmak iÃ§in mevcut fÄ±rsatlarÄ± inceleyin.</p>
+              <span className="mt-7 inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-black text-red-700 transition duration-300 ease-out group-hover:gap-3">Franchise FÄ±rsatlarÄ±nÄ± GÃ¶r <span className="ml-2">â†’</span></span>
+            </div>
+          </Link>
+
+          <Link to="/icerik/bana-takim-kur" className="group rc-navy-frame relative overflow-hidden rounded-[2rem] bg-[#071f3d] p-8 text-white shadow-xl shadow-slate-950/10 transition duration-500 ease-out hover:-translate-y-1 hover:shadow-2xl">
+            <img src="/applications/advisor-recruitment-v2.webp" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center opacity-20 grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:opacity-30" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#071f3d]/96 via-[#071f3d]/84 to-[#071f3d]/68" />
+            <div className="pointer-events-none absolute -bottom-16 -right-12 h-48 w-48 rounded-full bg-red-600/20" />
+            <div className="relative z-10">
+              <span className="text-xs font-black tracking-[0.22em] text-red-300">GÃœÃ‡LÃœ BÄ°R EKÄ°P KUR</span>
+              <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Kendi takÄ±mÄ±nÄ± kur.</h2>
+              <p className="mt-3 max-w-xl text-sm leading-6 text-slate-200">Gayrimenkul sektÃ¶rÃ¼nde kendi ekibinizi oluÅŸturun, birlikte bÃ¼yÃ¼yÃ¼n.</p>
+              <span className="mt-7 inline-flex items-center rounded-full border border-white/25 bg-white/10 px-5 py-3 text-sm font-black text-white transition duration-300 ease-out group-hover:bg-white group-hover:text-[#071f3d]">AyrÄ±ntÄ±larÄ± GÃ¶r <span className="ml-2">â†’</span></span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      <section id="kurumsal" className="relative overflow-hidden border-y border-slate-200 bg-[#fffafa] py-20 text-slate-950">
+        <div className="pointer-events-none absolute -right-28 -top-32 h-80 w-80 rounded-full bg-red-700/5 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-24 h-80 w-80 rounded-full bg-red-700/5 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><span className="text-xs font-black tracking-widest text-red-700">GÃœVEN Â· UZMANLIK Â· ÅEFFAFLIK</span><h2 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">NEDEN <span className="text-red-700">REALTY CENTERÂ®?</span><span className="home-title-en">WHY REALTY CENTER</span></h2><div className="mt-4 h-1 w-24 rounded-full bg-red-700" /></div><Link to="/neden-realty-center" className="inline-flex w-fit items-center rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800">TÃ¼mÃ¼nÃ¼ GÃ¶ster <ArrowRight className="ml-2 h-4 w-4"/></Link></div>
+          <div className="grid gap-4 md:grid-cols-2">{WHY_REALTY_CENTER_ITEMS.slice(0, 4).map((item) => <div key={item} className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-5 font-black text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-red-700 hover:shadow-lg"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-700 text-white shadow-sm"><ShieldCheck className="h-5 w-5"/></span><span>{item}</span></div>)}</div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white py-14">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="rc-navy-frame relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-slate-50 to-white p-8 shadow-lg sm:p-10">
+            <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-red-700/5" />
+            <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+              <div>
+                <span className="text-xs font-black tracking-[0.22em] text-red-700">FÄ°NANSAL Ã‡Ã–ZÃœMLER</span>
+                <h2 className="mt-3 max-w-3xl text-3xl font-black tracking-tight text-[#071f3d] sm:text-4xl">YatÄ±rÄ±mÄ±nÄ±za uygun finansman seÃ§eneklerini karÅŸÄ±laÅŸtÄ±rÄ±n.<span className="home-title-en">FINANCIAL SOLUTIONS</span></h2>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Bankalar, katÄ±lÄ±m bankalarÄ± ve Eminevim Ã§Ã¶zÃ¼mlerini tek noktadan deÄŸerlendirin.</p>
+                <div className="mt-5 flex flex-wrap gap-2">{["Bankalar", "KatÄ±lÄ±m BankalarÄ±", "Eminevim"].map((item) => <span key={item} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-black text-slate-700 shadow-sm">{item}</span>)}</div>
+              </div>
+              <Link to="/finansal-cozumler" className="inline-flex w-fit items-center justify-center rounded-full bg-red-700 px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-red-700/20 transition hover:-translate-y-0.5 hover:bg-red-800">Finansal Ã‡Ã¶zÃ¼mleri GÃ¶r <span className="ml-2">â†’</span></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <HomeLibraryPreview />
+
+      <section className="bg-slate-50 py-10 border-b border-slate-200"><div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center justify-center gap-5 text-center"><div><span className="text-xs font-black tracking-widest text-red-700">SOSYAL MEDYA</span><h2 className="mt-1 text-2xl font-black text-slate-900">Realty CenterÂ®â€™Ä± takip edin.<span className="home-title-en">STAY CONNECTED</span></h2></div><div className="flex flex-wrap justify-center gap-3">{SOCIAL_MEDIA_LINKS.map((social) => <a key={social.name} href="#" aria-label={social.name} title={social.name} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm transition hover:-translate-y-1 hover:border-red-300"><img src={social.icon} alt={social.name} className="h-6 w-6" /></a>)}</div></div></section>
+
+      <WorldRealtyCenterModule />
+    </div>
+  );
+}
+
+function AboutPage() {
+  const [story, setStory] = useState(getAboutStory);
+  useEffect(() => { const update = () => setStory(getAboutStory()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  return <main className="min-h-screen bg-slate-50"><section className="relative isolate overflow-hidden bg-slate-950 py-20 text-white sm:py-28"><img src="/images/about-realty-hero.webp" alt="Ä°stanbul manzaralÄ± Ã§aÄŸdaÅŸ gayrimenkul ofisi ve kent mimarisi" fetchPriority="high" className="absolute inset-0 -z-20 h-full w-full object-cover"/><div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/20"/><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.22em] text-red-400">REALTY CENTERÂ® Â· Ã–NCE GÃœVEN</p><h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">Gayrimenkulde gÃ¼veni, uzmanlÄ±k ve teknolojiyle bÃ¼yÃ¼ten bir marka</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300">TÃ¼rkiye genelindeki kurumsal gayrimenkul hizmetlerimizle doÄŸru kararlarÄ±n, sÃ¼rdÃ¼rÃ¼lebilir baÅŸarÄ±nÄ±n ve gÃ¼Ã§lÃ¼ iÅŸ birliklerinin merkezindeyiz.</p></div></section><section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.35fr_.65fr]"><article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10"><h2 className="text-2xl font-black text-slate-900">Realty CenterÂ®â€™Ä±n HikÃ¢yesi</h2><div className="mt-6 space-y-5">{story.split('\n\n').map((paragraph) => <p key={paragraph.slice(0,40)} className="text-sm leading-7 text-slate-600">{paragraph}</p>)}</div></article><aside className="flex min-h-80 items-center justify-center rounded-3xl border border-red-100 bg-white p-8 shadow-sm"><img src="/rc_logo_og.svg" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="w-full max-w-xs object-contain"/></aside></section></main>;
+}
+
+function MissionVisionPage() {
+  const sections = [
+    { title: 'Misyonumuz', text: 'Gayrimenkul satÄ±n alma, satma ve kiralama sÃ¼reÃ§lerini; ÅŸeffaf bilgi, etik danÄ±ÅŸmanlÄ±k, yerel uzmanlÄ±k ve gÃ¼Ã§lÃ¼ teknolojiyle herkes iÃ§in daha gÃ¼venli ve anlaÅŸÄ±lÄ±r hÃ¢le getirmek.' },
+    { title: 'Vizyonumuz', text: 'TÃ¼rkiye genelinde gÃ¼ven denildiÄŸinde ilk akla gelen; danÄ±ÅŸmanlarÄ±, franchise ofisleri ve dijital Ã§Ã¶zÃ¼mleriyle gayrimenkul sektÃ¶rÃ¼nÃ¼n geleceÄŸine yÃ¶n veren Ã¶ncÃ¼ marka olmak.' }
+  ];
+  const standards = ['DoÄŸrulanmÄ±ÅŸ ve gÃ¼ncel portfÃ¶y bilgileri','Åeffaf fiyatlandÄ±rma ve aÃ§Ä±k iletiÅŸim','Mevzuata uygun sÃ¶zleÅŸme ve iÅŸlem sÃ¼reÃ§leri','SÃ¼rekli eÄŸitim alan uzman danÄ±ÅŸmanlar','Ã–lÃ§Ã¼lebilir mÃ¼ÅŸteri memnuniyeti takibi','Teknoloji destekli hÄ±zlÄ± ve gÃ¼venli hizmet'];
+  return <main className="min-h-screen bg-gradient-to-b from-white via-red-50/30 to-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL YÃ–NÃœMÃœZ</p><h1 className="mt-3 text-4xl font-black text-slate-900">Misyonumuz ve Vizyonumuz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Realty CenterÂ®â€™Ä±n bugÃ¼nkÃ¼ hizmet anlayÄ±ÅŸÄ±nÄ± ve geleceÄŸe dÃ¶nÃ¼k hedeflerini belirleyen kurumsal yaklaÅŸÄ±mÄ±mÄ±z.</p><div className="mt-9 grid gap-6 md:grid-cols-2">{sections.map((section,index) => <article key={section.title} className="relative overflow-hidden rounded-3xl border border-red-100 bg-white p-8 shadow-[0_14px_35px_rgba(15,23,42,.07)]"><span className="absolute -right-3 -top-6 text-8xl font-black text-red-50">0{index+1}</span><span className="relative flex h-11 w-11 items-center justify-center rounded-full bg-red-100 text-sm font-black text-red-700">0{index+1}</span><h2 className="relative mt-5 text-2xl font-black text-slate-900">{section.title}</h2><p className="relative mt-4 text-sm leading-7 text-slate-600">{section.text}</p></article>)}</div><section className="mt-8 rounded-3xl border border-red-100 bg-white p-7 shadow-[0_14px_35px_rgba(15,23,42,.06)] sm:p-10"><div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr]"><div><p className="text-[10px] font-black tracking-[.2em] text-red-700">Ã–NCE GÃœVEN</p><h2 className="mt-3 text-3xl font-black text-slate-900">Kalite StandartlarÄ±mÄ±z</h2><p className="mt-4 text-sm leading-7 text-slate-600">Her Realty CenterÂ® ofisinde aynÄ± gÃ¼venilir hizmet deneyimini oluÅŸturmak iÃ§in uyguladÄ±ÄŸÄ±mÄ±z temel standartlar.</p></div><div className="grid gap-3 sm:grid-cols-2">{standards.map((standard) => <div key={standard} className="flex items-center gap-3 rounded-xl border border-red-100 bg-red-50/40 p-4 text-xs font-black text-slate-700"><CheckCircle2 className="h-5 w-5 shrink-0 text-red-700"/>{standard}</div>)}</div></div></section></div></main>;
+}
+
+function TrustPrinciplePage() {
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-16">
+      <h1 className="text-4xl font-black text-slate-900 mb-4 border-b-4 border-red-700 pb-2 inline-block">Ã–nce GÃ¼ven Ä°lkesi</h1>
+      <p className="text-slate-600 leading-relaxed text-lg mt-4">Åeffaf ticaret, gÃ¼venilir altyapÄ± ve hukuki sÃ¼reÃ§ yÃ¶netimimiz bu sayfada aÃ§Ä±klanacaktÄ±r.</p>
+    </div>
+  );
+}
+
+function WhyRealtyCenterPage() {
+  return (
+    <main className="min-h-screen bg-[#fffafa] py-12 sm:py-16">
+      <div className="mx-auto max-w-6xl px-6 lg:px-12">
+        <Link to="/" className="inline-flex items-center text-sm font-black text-red-700 transition hover:text-red-800">â† Ana sayfaya dÃ¶n</Link>
+        <section className="relative mt-7 overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+          <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-red-700/5 blur-3xl" />
+          <div className="relative">
+            <span className="text-xs font-black tracking-widest text-red-700">GÃœVEN Â· UZMANLIK Â· ÅEFFAFLIK</span>
+            <h1 className="mt-3 text-4xl font-black text-slate-950 sm:text-5xl">NEDEN <span className="text-red-700">REALTY CENTERÂ®?</span></h1>
+            <div className="mt-4 h-1 w-24 rounded-full bg-red-700" />
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">Gayrimenkul yolculuÄŸunuzda doÄŸru kararlar almanÄ±z iÃ§in ÅŸeffaf, uzman ve Ã§Ã¶zÃ¼m odaklÄ± bir hizmet anlayÄ±ÅŸÄ± sunuyoruz.</p>
+          </div>
+        </section>
+        <section className="mt-8 grid gap-4 md:grid-cols-2">
+          {WHY_REALTY_CENTER_ITEMS.map((item, index) => <article key={item} className="group flex items-center gap-5 rounded-2xl border border-slate-200 bg-white px-6 py-5 text-base font-black text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-red-700 hover:shadow-lg"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-700 text-sm text-white shadow-sm">{index + 1}</span><span className="leading-6">{item}</span></article>)}
+        </section>
+      </div>
+    </main>
+  );
+}
+
+function TeamPage() {
+  const [members, setMembers] = useState(getManagementTeam);
+  const [selected, setSelected] = useState<ManagementMember | null>(null);
+  useEffect(() => { const update = () => setMembers(getManagementTeam()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL YÃ–NETÄ°M</p><h1 className="mt-3 text-4xl font-black text-slate-950">YÃ¶netim Kadromuz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Realty CenterÂ®â€™Ä±n stratejisine, hizmet kalitesine ve sÃ¼rdÃ¼rÃ¼lebilir bÃ¼yÃ¼mesine yÃ¶n veren yÃ¶netim ekibimizle tanÄ±ÅŸÄ±n.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{members.map((member) => <button key={member.id} onClick={() => setSelected(member)} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={member.image} alt={member.name} className="h-72 w-full object-cover object-top transition duration-500 group-hover:scale-105"/><div className="p-5"><p className="text-[10px] font-black tracking-widest text-red-700">YÃ–NETÄ°M KADROSU</p><h2 className="mt-2 text-xl font-black text-slate-900">{member.name}</h2><p className="mt-1 text-xs font-bold text-slate-500">{member.title}</p><span className="mt-4 inline-flex text-xs font-black text-red-700">Ã–zgeÃ§miÅŸi gÃ¶rÃ¼ntÃ¼le â†’</span></div></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/75 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article className="relative grid max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl md:grid-cols-[280px_1fr]" onClick={(e) => e.stopPropagation()}><button onClick={() => setSelected(null)} className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-900 shadow"><X className="h-5 w-5"/></button><img src={selected.image} alt={selected.name} className="h-72 w-full object-cover object-top md:h-full"/><div className="p-7 sm:p-9"><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTERÂ® YÃ–NETÄ°M KADROSU</p><h2 className="mt-3 text-3xl font-black text-slate-900">{selected.name}</h2><p className="mt-2 text-sm font-black text-red-700">{selected.title}</p><div className="my-6 h-px bg-slate-200"/><h3 className="text-sm font-black text-slate-900">Ã–zgeÃ§miÅŸ</h3><p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.biography}</p></div></article></div>}</main>;
+}
+
+function DocumentsPage() {
+  const [documents, setDocuments] = useState(() => getStoredCorporateItems<CorporateDocument[]>('realty-center-documents', DEFAULT_DOCUMENTS));
+  const [selectedDocument, setSelectedDocument] = useState<CorporateDocument | null>(null);
+  const [pdfUrls, setPdfUrls] = useState<Record<string, string>>({});
+  useEffect(() => { const update = () => setDocuments(getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  useEffect(() => {
+    let active = true;
+    const createdUrls: string[] = [];
+    Promise.all(documents.map(async (document) => {
+      if (!document.fileUrl) return [document.id, ''] as const;
+      if (!document.fileUrl.startsWith('data:')) return [document.id, document.fileUrl] as const;
+      try {
+        const blob = await (await fetch(document.fileUrl)).blob();
+        const url = URL.createObjectURL(blob);
+        createdUrls.push(url);
+        return [document.id, url] as const;
+      } catch { return [document.id, ''] as const; }
+    })).then((entries) => { if (active) setPdfUrls(Object.fromEntries(entries)); });
+    return () => { active = false; createdUrls.forEach((url) => URL.revokeObjectURL(url)); };
+  }, [documents]);
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL ÅEFFAFLIK</p><h1 className="mt-3 text-4xl font-black text-slate-950">Belgelerimiz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Kurumsal yetki, kalite ve hizmet belgelerimizi inceleyebilirsiniz. YÃ¼klenen PDF belgeleri Ã§erÃ§eveli belge gÃ¶rÃ¼nÃ¼mÃ¼nde sunulur.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{documents.map((document) => <article key={document.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div className="relative aspect-[4/5] overflow-hidden rounded-sm border-[10px] border-double border-[#7b4b2a] bg-[#eee8dc] p-2 shadow-[inset_0_0_0_2px_rgba(255,255,255,.8),0_14px_28px_rgba(15,23,42,.18)]">{document.fileUrl && pdfUrls[document.id] ? <iframe title={`${document.title} Ã¶nizleme`} src={`${pdfUrls[document.id]}#page=1&view=FitH&toolbar=0&navpanes=0`} className="pointer-events-none h-full w-full border-0 bg-white"/> : <div className="flex h-full items-center justify-center bg-gradient-to-br from-white to-slate-100 p-5 text-center"><div><FileText className="mx-auto h-14 w-14 text-red-700"/><p className="mt-4 text-xs font-black tracking-widest text-slate-400">REALTY CENTERÂ®</p><h2 className="mt-2 text-lg font-black text-slate-900">{document.fileUrl ? 'Belge hazÄ±rlanÄ±yorâ€¦' : document.title}</h2><p className="mt-3 text-xs leading-5 text-slate-500">{document.description}</p></div></div>}<span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/15"/></div><div className="mt-4"><h2 className="text-base font-black text-slate-900">{document.title}</h2><p className="mt-1 text-xs leading-5 text-slate-500">{document.description}</p></div>{document.fileUrl ? <button type="button" onClick={() => setSelectedDocument(document)} className="mt-4 flex w-full items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white">PDF Belgeyi GÃ¶rÃ¼ntÃ¼le</button> : <span className="mt-4 flex items-center justify-center rounded-xl bg-slate-100 px-4 py-3 text-xs font-black text-slate-400">Belge yakÄ±nda yÃ¼klenecek</span>}</article>)}</div></div>{selectedDocument && <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/80 p-3 backdrop-blur-sm" onClick={() => setSelectedDocument(null)}><section className="relative flex h-[92vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex shrink-0 items-center justify-between border-b border-slate-200 px-5 py-3"><div><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTERÂ® BELGELERÄ°</p><h2 className="mt-1 text-sm font-black text-slate-900">{selectedDocument.title}</h2></div><button type="button" onClick={() => setSelectedDocument(null)} className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition hover:bg-red-700 hover:text-white" aria-label="Belgeyi kapat"><X className="h-5 w-5"/></button></header>{pdfUrls[selectedDocument.id] ? <iframe title={selectedDocument.title} src={`${pdfUrls[selectedDocument.id]}#view=FitH&toolbar=0&navpanes=0`} className="min-h-0 flex-1 border-0 bg-slate-200"/> : <div className="flex flex-1 items-center justify-center text-sm font-black text-slate-500">Belge yÃ¼kleniyorâ€¦</div>}</section></div>}</main>;
+}
+
+function LogoShowcasePage({ mode }: { mode: 'references' | 'partners' }) {
+  const key = mode === 'references' ? 'realty-center-references' : 'realty-center-partners';
+  const fallback = mode === 'references' ? DEFAULT_REFERENCES : DEFAULT_PARTNERS;
+  const [items, setItems] = useState(() => getStoredCorporateItems<CorporateLogoItem[]>(key, fallback));
+  const [selected, setSelected] = useState<CorporateLogoItem | null>(null);
+  useEffect(() => { const update = () => setItems(getStoredCorporateItems(key, fallback)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, [key]);
+  const isPartners = mode === 'partners';
+  return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">{isPartners ? 'GÃœÃ‡LÃœ Ä°Å BÄ°RLÄ°KLERÄ°' : 'GÃœVENÄ°MÄ°ZÄ°N REFERANSLARI'}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{isPartners ? 'Ä°ÅŸ OrtaklarÄ±mÄ±z' : 'ReferanslarÄ±mÄ±z'}</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">{isPartners ? 'AnlaÅŸmalÄ± bankalarÄ±mÄ±z ve Ã§Ã¶zÃ¼m ortaÄŸÄ± kurumlarÄ±mÄ±zla sunduÄŸumuz avantajlarÄ± incelemek iÃ§in logolara tÄ±klayÄ±n.' : 'Birlikte deÄŸer Ã¼rettiÄŸimiz kurumlarÄ± ve tamamladÄ±ÄŸÄ±mÄ±z Ã§alÄ±ÅŸmalarÄ± logolar Ã¼zerinden inceleyebilirsiniz.'}</p><div className="mt-9 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">{items.map((item) => <button key={item.id} onClick={() => setSelected(item)} className="group flex min-h-44 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><img src={item.logo} alt={item.name} className="h-20 w-full object-contain transition group-hover:scale-105"/><h2 className="mt-4 text-center text-sm font-black text-slate-800">{item.name}</h2><span className="mt-2 text-[10px] font-black text-red-700">AnlaÅŸma detaylarÄ± â†’</span></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article onClick={(e) => e.stopPropagation()} className="relative w-full max-w-xl rounded-3xl bg-white p-8 shadow-2xl"><button onClick={() => setSelected(null)} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100"><X className="h-5 w-5"/></button><img src={selected.logo} alt={selected.name} className="h-24 w-48 object-contain"/><h2 className="mt-6 text-2xl font-black text-slate-900">{selected.name}</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.content}</p></article></div>}</main>;
 }
 
 function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent') => void }) {
@@ -606,39 +2319,287 @@ function AcademyPage({ openDrawer }: { openDrawer: (type: 'franchise' | 'agent')
                 alt="Realty CenterÂ® EÄŸitim SÄ±nÄ±fÄ±" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÔÙ¥„µÑÉ…¹ÍÁ…É•¹ĞÑ¼µÑÉ…¹ÍÁ…É•¹Ğˆ€¼ø(€€€€€€€€€€€€€€(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”‰½ÑÑ½´´Ğ±•™Ğ´ĞÉ¥¡Ğ´ĞÀ´Ğ‰œµİ¡¥Ñ”¼äÀ‰…­‘É½Àµ‰±ÕÈµµÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ĞÀÍ¡…‘½Üµ±œ™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀÑÉ…­¥¹œµİ¥‘•ÍĞ‰±½¬ˆù•±•—}¥¸AÉ½™•Íå½¹•±±•É¤ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùM…¡„Ù”=¹±¥¹”}¥Ñ¥´M—•¹•­±•É¥å±”ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€ñÉ…‘Õ…Ñ¥½¹…À±…ÍÍ9…µ”ô‰Ü´Ø ´ØÑ•áĞµÉ•´ÜÀÀˆ€¼ø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µ…àµÜ´İá°µàµ…ÕÑ¼Áà´Ø±œéÁà´ÄÈµˆ´ÄØˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ•áĞµ•¹Ñ•Èµ…àµÜ´Éá°µàµ…ÕÑ¼µˆ´ÄÈˆø(€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀÑÉ…­¥¹œµİ¥‘•ÍĞ‰œµÉ•´ÈÀÀÁà´Ì¸ÔÁä´Ä¸ÔÉ½Õ¹‘•µ™Õ±°‰½É‘•È‰½É‘•ÈµÉ•´ÌÀÀˆø(€€€€€€€€€€€­Ñ¥˜}¥Ñ¥´A…­•Ñ±•É¤(€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰Ñ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀµĞ´Ìˆø(€€€€€€€€€€€M•ÉÑ¥™¥­…³Ä€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÉ•´ÜÀÀˆù}¥Ñ¥´AÉ½É…µ±…ËÅ·Åèğ½ÍÁ…¸ø(€€€€€€€€€€ğ½ Èø(€€€€€€€€ğ½‘¥Øø((€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥É¥µ½±Ì´ÄµéÉ¥µ½±Ì´Ì…À´àˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”É½Õ¹‘•´Éá°‰½É‘•È´È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ½Ù•É™±½Üµ¡¥‘‘•¸Í¡…‘½Üµ±œ¡½Ù•Èé‰½É‘•ÈµÉ•´ÜÀÀÑÉ…¹Í¥Ñ¥½¸µ…±°‘ÕÉ…Ñ¥½¸´ÌÀÀ™±•à™±•àµ½°©ÕÍÑ¥™äµ‰•Ñİ••¸É½ÕÀˆø(€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù” ´Ğà½Ù•É™±½Üµ¡¥‘‘•¸ˆø(€€€€€€€€€€€€€€€€ñ¥µœ€(€€€€€€€€€€€€€€€€€ÍÉŒô‰¡ÑÑÁÌè¼½¥µ…•Ì¹Õ¹ÍÁ±…Í ¹½´½Á¡½Ñ¼´ÄÔÀÀÌàÈÀÄÜĞØà´äÀĞå™•ÜĞİ•˜ı…ÕÑ¼õ™½Éµ…Ğ™™¥ĞõÉ½À™ÄôàÀ™ÜôàÀÀˆ€(€€€€€€€€€€€€€€€€€…±Ğô‰É…é¤ÉÍ„Uéµ…¹³ÇÄˆ€(€€€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰Üµ™Õ±° µ™Õ±°½‰©•Ğµ½Ù•ÈÉ½ÕÀµ¡½Ù•ÈéÍ…±”´ÄÄÀÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÔÀÀˆ(€€€€€€€€€€€€€€€€¼ø(€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”Ñ½À´Ì±•™Ğ´ÌÑ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”‰œµÉ•´ÜÀÀÁà´È¸ÔÁä´ÄÉ½Õ¹‘•Í¡…‘½ÜÑÉ…­¥¹œµİ¥‘•Èˆø(€€€€€€€€€€€€€€€€€É…é¤€˜ÉÍ„Uéµ…¹³ÇÄ(€€€€€€€€€€€€€€€€ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰À´Øˆø(€€€€€€€€€€€€€€€€ñ Ì±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀµˆ´ÈˆûÁ±•É¤M•Ù¥å”É…é¤€˜ÉÍ„…åÉ¥µ•¹­Õ°—}•É±•µ”ğ½ Ìø(€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ÔÀÀÑ•áĞµáÌµˆ´ĞˆùM…¡„€¬=¹±¥¹”ƒÁ¹Ñ•É…­Ñ¥˜€¼€Ì!…™Ñ„OñÉ”ğ½Àø((€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´È¸ÔÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ÜÀÀ™½¹ĞµÍ•µ¥‰½±‰½É‘•ÈµĞ‰½É‘•ÈµÍ±…Ñ”´ÄÀÀÁĞ´Ğˆø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•ÈÍÁ…”µà´Èˆø(€€€€€€€€€€€€€€€€€€€€ñ¡•­¥É±”È±…ÍÍ9…µ”ô‰Ü´Ğ ´ĞÑ•áĞµÉ•´ÜÀÀ™±•àµÍ¡É¥¹¬´Àˆ€¼ø(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ûÁµ…È°-…‘…ÍÑÉ¼Ù”A…ÉÍ•±…Íå½¸¹…±¥é¤ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•ÈÍÁ…”µà´Èˆø(€€€€€€€€€€€€€€€€€€€€ñ¡•­¥É±”È±…ÍÍ9…µ”ô‰Ü´Ğ ´ĞÑ•áĞµÉ•´ÜÀÀ™±•àµÍ¡É¥¹¬´Àˆ€¼ø(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ù!½‰¤	…£•Í¤Ù”Q¥…É¤ƒÁµ…É³ÄÉÍ„åËÅ·Äğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•ÈÍÁ…”µà´Èˆø(€€€€€€€€€€€€€€€€€€€€ñ¡•­¥É±”È±…ÍÍ9…µ”ô‰Ü´Ğ ´ĞÑ•áĞµÉ•´ÜÀÀ™±•àµÍ¡É¥¹¬´Àˆ€¼ø(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ùM•ÉÑ¥™¥­„Ù”UåÕ±…µ„	•±•Í¤ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰À´Ø‰½É‘•ÈµĞ‰½É‘•ÈµÍ±…Ñ”´ÄÀÀ‰œµÍ±…Ñ”´ÔÀ™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀ‰±½¬ˆù}¥Ñ¥´ƒqÉ•Ñ¤ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆøÄÈ¸ÔÀÀ€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ´™½¹Ğµ‰½±ˆûŠ
-èğ½ÍÁ…¸øğ½ÍÁ…¸ø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸€(€€€€€€€€€€€€€€€½¹±¥¬õì ¤€ôø½Á•¹É…İ•È …•¹Ğœ¥ô€(€€€€€€€€€€€€€€€±…ÍÍ9…µ”ô‰‰œµÉ•´ÜÀÀ¡½Ù•Èé‰œµÉ•´àÀÀÑ•áĞµİ¡¥Ñ”™½¹Ğµ‰±…¬Áà´ĞÁä´È¸ÔÉ½Õ¹‘•µ±œÑ•áĞµáÌÑÉ…¹Í¥Ñ¥½¸ˆ(€€€€€€€€€€€€€€ø(€€€€€€€€€€€€€€€-…çÅĞ=°(€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”É½Õ¹‘•´Éá°‰½É‘•È´È‰½É‘•ÈµÉ•´ÜÀÀ½Ù•É™±½Üµ¡¥‘‘•¸Í¡…‘½Ü´Éá°ÑÉ…¹Í¥Ñ¥½¸µ…±°‘ÕÉ…Ñ¥½¸´ÌÀÀ™±•à™±•àµ½°©ÕÍÑ¥™äµ‰•Ñİ••¸É•±…Ñ¥Ù”ÑÉ…¹Í™½É´¡½Ù•ÈèµÑÉ…¹Í±…Ñ”µä´ÄÉ½ÕÀˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”Ñ½À´ÌÉ¥¡Ğ´Ìè´ÄÀ‰œµÉ•´ÜÀÀÑ•áĞµİ¡¥Ñ”Ñ•áĞµlåÁát™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÁà´È¸ÔÁä´ÄÉ½Õ¹‘•µ™Õ±°Í¡…‘½Üˆø(€€€€€€€€€€€€€¸ƒ½¬Q•É¥ ‘¥±•¸(€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù” ´Ğà½Ù•É™±½Üµ¡¥‘‘•¸ˆø(€€€€€€€€€€€€€€€€ñ¥µœ€(€€€€€€€€€€€€€€€€€ÍÉŒô‰¡ÑÑÁÌè¼½¥µ…•Ì¹Õ¹ÍÁ±…Í ¹½´½Á¡½Ñ¼´ÄÔÔØÜØÄÄÜÔ´ÔäÜÍ‘ŒÁ˜Ïm4ÖÚ$z{-®éÜj×[‹‰Èˆ	ÉÊNÂˆÙ]ØY[™Ê˜[ÙJNÂˆJNÂˆK×JNÂ‚ˆÛÛœİXİ]™PÚ]Y\ÈHË‹‹›™]ÈÙ]
-Ù™šXÙ\Ë›X\
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+              
+              <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/90 backdrop-blur-md rounded-xl border border-white/40 shadow-lg flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-black text-red-700 tracking-widest block">GeleceÄŸin Profesyonelleri</span>
+                  <span className="text-xs font-black text-slate-900">Saha ve Online EÄŸitim SeÃ§enekleriyle</span>
+                </div>
+                <GraduationCap className="w-6 h-6 text-red-700" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-Ù™šXÙJHOˆÙ™šXÙK˜Ú]JK™š[\Š›ÛÛX[ŠJWKœÛÜ
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300">
+            Aktif EÄŸitim Paketleri
+          </span>
+          <h2 className="text-3xl font-black text-slate-900 mt-3">
+            SertifikalÄ± <span className="text-red-700">EÄŸitim ProgramlarÄ±mÄ±z</span>
+          </h2>
+        </div>
 
-KŠHOˆK›ØØ[PÛÛ\\™J‹	İ‰ÊJNÂ‚ˆÛÛœİš[\™YÙ™šXÙ\ÈHÙ™šXÙ\Ë™š[\Š
-Ù™šXÙJHOˆÂˆYˆ
-Ù[XİYÚ]H	‰ˆÙ™šXÙK˜Ú]HOOHÙ[XİYÚ]JH™]\›ˆ˜[ÙNÂˆYˆ
-Ù[XİY\İšXİ	‰ˆÙ™šXÙK™\İšXİOOHÙ[XİY\İšXİ
-H™]\›ˆ˜[ÙNÂˆ™]\›ˆYNÂˆJNÂ‚ˆ™]\›ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH˜™Ë\Û]KMLZ[‹Z\ØÜ™Y[ˆKLLˆ‚ˆ]ˆÛ\ÜÓ˜[YOH›X^]ËMŞ^X]]ÈMˆÎœLLˆ‚ˆˆ]ˆÛ\ÜÓ˜[YOH›X‹N‚ˆÜ[ˆÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ^\™YMÌ˜XÚÚ[™Ë]ÚY\İ™Ë\™YLŒLËHKLKH›İ[™YY[›Ü™\ˆ›Ü™\‹\™YLÌ[›[™KX›ØÚÈX‹LÈ‚ˆœ˜[˜Ú\ÙHq'ñ,[q,^‚ˆÜÜ[‚ˆHÛ\ÜÓ˜[YOH^LŞÛN^M›ÛX›XÚÈ^\Û]KNL‚ˆ‘PSHÑS•T°«ˆÜ[ˆÛ\ÜÓ˜[YOH^\™YMÌ“Ñ±,ÓT±,q,ÜÜ[‚ˆÚO‚ˆÛ\ÜÓ˜[YOH^\Û]KMŒ^\ÛH›Û[YY][H]LH‚ˆ0ïšÚ^YHÙ[™[[™ZÚH°í›ÙH˜qgÚØ[›1,ZÛ\±,[q,^ˆ™HY]Ú[H[\Ú[Ú[ZÛ\š[Z^‚ˆÜ‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH˜™Ë]Ú]HMÛNœMH›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒÚYİË^X‹LL›^›^XÛÛÎ™›^\›İÈ][\ËXÙ[\ˆ\İYKX™]ÙY[ˆØ\M‚ˆˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆÜXÙK^Lˆİ™\™›İË^X]]ÈËY[ÎËX]]È‹LˆÎœ‹L‚ˆÜ[ˆÛ\ÜÓ˜[YOH^^È›ÛY^˜X›Û^\Û]KML˜XÚÚ[™Ë]ÚY\ˆ\‹LˆY[ˆÛNš[›[™H›^\Úš[šËL‚ˆ1,^›1,HÙpéÚ[N‚ˆÜÜ[‚ˆ]ÛˆˆÛÛXÚÏ^Ê
-HOˆÈÙ]Ù[XİYÚ]J	ÉÊNÈÙ]Ù[XİY\İšXİ
-	ÉÊNÈ_BˆÛ\ÜÓ˜[YO^ØMKLˆ›İ[™Y^^^È›ÛX›XÚÈ˜[œÚ][Ûˆ›^\Úš[šËL	ÂˆÙ[XİYÚ]HOOH	ÉÈˆÈ	Ø™Ë\™YMÌ^]Ú]HÚYİË[YÚYİË\™YMÌÌÌ	Èˆˆ	Ø™Ë\Û]KLL^\Û]KMÌİ™\˜™Ë\Û]KLŒ	ÂˆXBˆ‚ˆ0ïHÙš\Û\‚ˆØ]Û‚‚ˆÖÈ[šØ\˜H‹±,İ[˜[‹±,›Z\ˆ—K›X\
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800" 
+                  alt="Arazi Arsa UzmanlÄ±ÄŸÄ±" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-2.5 py-1 rounded shadow tracking-wider">
+                  Arazi & Arsa UzmanlÄ±ÄŸÄ±
+                </span>
+              </div>
 
-Ú]S˜[YJHOˆ
-ˆ]ÛˆˆÙ^O^ØÚ]S˜[Y_BˆÛÛXÚÏ^Ê
-HOˆÈÙ]Ù[XİYÚ]JÚ]S˜[YJNÈÙ]Ù[XİY\İšXİ
-	ÉÊNÈ_BˆÛ\ÜÓ˜[YO^ØMKLˆ›İ[™Y^^^È›ÛX›XÚÈ˜[œÚ][Ûˆ›^\Úš[šËL	ÂˆÙ[XİYÚ]HOOHÚ]S˜[YHˆÈ	Ø™Ë\™YMÌ^]Ú]HÚYİË[YÚYİË\™YMÌÌÌ	Èˆˆ	Ø™Ë\Û]KLL^\Û]KMÌİ™\˜™Ë\Û]KLŒ	ÂˆXBˆ‚ˆØÚ]S˜[Y_BˆØ]Û‚ˆ
-J_BˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLHÛN™ÜšYXÛÛËLˆØ\LÈËY[ÎËX]]È‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H‚ˆÙ[Xİˆ˜[YO^ÜÙ[XİYÚ]_BˆÛÚ[™ÙO^ÊJHOˆÂˆÙ]Ù[XİYÚ]JK\™Ù]˜[YJNÂˆÙ]Ù[XİY\İšXİ
-	ÉÊNÂˆ_BˆÛ\ÜÓ˜[YOHËY[ÎËM™Ë\Û]KML›Ü™\ˆ›Ü™\‹\Û]KLÌ›İ[™Y^LËHKLˆ^^È›ÛX›Û^\Û]KN›Øİ\Î›İ][™K[›Û™H›Øİ\Îœš[™ËLˆ›Øİ\Îœš[™Ë\™YMÌ˜[œÚ][Ûˆ‚ˆ‚ˆÜ[Ûˆ˜[YOHˆ‹KH0ïH1,\ˆ
-H1,
-HKOÛÜ[Û‚ˆØXİ]™PÚ]Y\Ë›X\
-ÈOˆÜ[ÛˆÙ^O^ØßH˜[YO^ØßOØßOÛÜ[ÛŠ_BˆÜÙ[Xİ‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H‚ˆÙ[Xİˆ\ØX›Y^È\Ù[XİYÚ]_Bˆ˜[YO^ÜÙ[XİY\İšXİBˆÛÚ[™ÙO^ÊJHOˆÙ]Ù[XİY\İšXİ
-K\™Ù]˜[YJ_BˆÛ\ÜÓ˜[YO^ØËY[ÎËM™Ë\Û]KML›Ü™\ˆ›Ü™\‹\Û]KLÌ›İ[™Y^LËHKLˆ^^È›ÛX›Û^\Û]KN›Øİ\Î›İ][™K[›Û™H›Øİ\Îœš[™ËLˆ›Øİ\Îœš[™Ë\™YMÌ˜[œÚ][Ûˆ	Âˆ\Ù[XİYÚ]HÈ	ÛÜXÚ]KMLİ\œÛÜ‹[›İX[İÙY	Èˆ	ÉÂˆXBˆ‚ˆÜ[Ûˆ˜[YOHˆÜÙ[XİYÚ]HÈ	ËKH0ïH1,0éÙ[\ˆKIÈˆ	ğå›˜ÙH1,ÙpéÚ[š^‰ßOÛÜ[Û‚ˆÜÙ[XİYÚ]H	‰ˆË‹‹›™]ÈÙ]
-Ù™šXÙ\Ë™š[\Š
-Ù™šXÙJHOˆÙ™šXÙK˜Ú]HOOHÙ[XİYÚ]JK›X\
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">Ä°leri Seviye Arazi & Arsa Gayrimenkul DeÄŸerleme</h3>
+                <p className="text-slate-500 text-xs mb-4">Saha + Online Ä°nteraktif / 3 Hafta SÃ¼re</p>
 
-Ù™šXÙJHOˆÙ™šXÙK™\İšXİ
-K™š[\Š›ÛÛX[ŠJWKœÛÜ
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Ä°mar, Kadastro ve Parselasyon Analizi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Hobi BahÃ§esi ve Ticari Ä°marlÄ± Arsa AyrÄ±mÄ±</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Sertifika ve Uygulama Belgesi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-KŠHOˆK›ØØ[PÛÛ\\™J‹	İ‰ÊJK›X\
-OˆÜ[ÛˆÙ^O^ÙH˜[YO^ÙOÙOÛÜ[ÛŠ_BˆÜÙ[Xİ‚ˆÙ]‚ˆÙ]‚‚ˆÙ]‚‚ˆÛØY[™ÈÈ]ˆÛ\ÜÓ˜[YOH˜™Ë]Ú]H›İ[™YLLLˆ^XÙ[\ˆ›Ü™\ˆ›Ü™\‹\Û]KLŒ^\ÛH›ÛX›Û^\Û]KM“Ùš\Û\ˆpïÛ[š^[Ü¸ )Ù]ˆˆÖj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5adError ? <div className="bg-white rounded-2xl p-12 text-center border border-red-100 text-sm font-bold text-red-700">{loadError}</div> : filteredOffices.length > 0 ? (
+            <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 block">EÄŸitim Ãœcreti</span>
+                <span className="text-2xl font-black text-slate-900">12.500 <span className="text-sm font-bold">â‚º</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+              >
+                KayÄ±t Ol
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border-2 border-red-700 overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between relative transform hover:-translate-y-1 group">
+            <div className="absolute top-3 right-3 z-10 bg-red-700 text-white text-[9px] font-black tracking-widest px-2.5 py-1 rounded-full shadow">
+              En Ã‡ok Tercih Edilen
+            </div>
+
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800" 
+                  alt="Saha SatÄ±ÅŸ EÄŸitimi" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-slate-900 px-2.5 py-1 rounded shadow tracking-wider">
+                  Saha SatÄ±ÅŸ Masterclass
+                </span>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">Saha SatÄ±ÅŸ & Ä°kna Teknikleri Masterclass</h3>
+                <p className="text-slate-500 text-xs mb-4">Birebir MentÃ¶rlÃ¼k + Ofis Ä°Ã§i / 4 Hafta SÃ¼re</p>
+
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Nitelikli MÃ¼ÅŸteri PortfÃ¶yÃ¼ OluÅŸturma</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Fiyat Ä°tirazÄ± KarÅŸÄ±lama ve SÃ¶zleÅŸme Ä°kna Psikolojisi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Realty CenterÂ® Kurumsal SertifikasÄ±</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-slate-100 bg-red-100/60 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 block">EÄŸitim Ãœcreti</span>
+                <span className="text-2xl font-black text-red-700">18.000 <span className="text-sm font-bold">â‚º</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-2.5 rounded-lg text-xs transition shadow-lg shadow-red-700/30"
+              >
+                KayÄ±t Ol
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800" 
+                  alt="Tapu ve SÃ¶zleÅŸme Hukuku" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-2.5 py-1 rounded shadow tracking-wider">
+                  Hukuk & Mevzuat
+                </span>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-black text-slate-900 mb-2">SÃ¶zleÅŸme Hukuku & Tapu MevzuatÄ± EÄŸitimi</h3>
+                <p className="text-slate-500 text-xs mb-4">Online CanlÄ± YayÄ±n / 2 Hafta SÃ¼re</p>
+
+                <div className="space-y-2.5 text-xs text-slate-700 font-semibold border-t border-slate-100 pt-4">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>GÃ¼venli SÃ¶zleÅŸme TaslaklarÄ± ve Hukuki Ä°nceleme</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Hisseli Tapu ve Ä°ntikal SÃ¼reÃ§ YÃ¶netimi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-red-700 flex-shrink-0" />
+                    <span>Sertifika ve Hukuki Belge ArÅŸivi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
+              <div>
+                <span className="text-[10px] font-black text-slate-500 block">EÄŸitim Ãœcreti</span>
+                <span className="text-2xl font-black text-slate-900">9.500 <span className="text-sm font-bold">â‚º</span></span>
+              </div>
+              <button 
+                onClick={() => openDrawer('agent')} 
+                className="bg-red-700 hover:bg-red-800 text-white font-black px-4 py-2.5 rounded-lg text-xs transition"
+              >
+                KayÄ±t Ol
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function OfficesPage() {
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [offices, setOffices] = useState<typeof SAMPLE_OFFICES>([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
+  useEffect(() => {
+    void supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').eq('status','active').is('deleted_at',null).order('created_at',{ascending:false}).then(({ data, error }) => {
+      setOffices((data || []).map((office: any) => ({ id: office.id, name: office.name, city: office.city, district: office.district, address: office.address, phone: office.phone || '', email: office.email || '', manager: office.manager_name || 'Belirtilmedi', image: office.image_url || '' })));
+      setLoadError(error ? 'Ofisler ÅŸu an yÃ¼klenemedi. LÃ¼tfen biraz sonra tekrar deneyin.' : '');
+      setLoading(false);
+    });
+  }, []);
+
+  const activeCities = [...new Set(offices.map((office) => office.city).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr'));
+
+  const filteredOffices = offices.filter((office) => {
+    if (selectedCity && office.city !== selectedCity) return false;
+    if (selectedDistrict && office.district !== selectedDistrict) return false;
+    return true;
+  });
+
+  return (
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div className="mb-8">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
+            Franchise AÄŸÄ±mÄ±z
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            REALTY CENTERÂ® <span className="text-red-700">OFÄ°SLERÄ°MÄ°Z</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            TÃ¼rkiye genelindeki bÃ¶lge baÅŸkanlÄ±klarÄ±mÄ±z ve yetkili temsilciliklerimiz
+          </p>
+        </div>
+
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
+          
+          <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
+            <span className="text-xs font-extrabold text-slate-500 tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+              HÄ±zlÄ± SeÃ§im:
+            </span>
+            <button 
+              onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
+              className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                selectedCity === '' 
+                  ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              TÃ¼m Ofisler
+            </button>
+
+            {["Ankara", "Ä°stanbul", "Ä°zmir"].map((cityName) => (
+              <button 
+                key={cityName}
+                onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                  selectedCity === cityName 
+                    ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                {cityName}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-auto">
+            <div className="relative">
+              <select 
+                value={selectedCity}
+                onChange={(e) => {
+                  setSelectedCity(e.target.value);
+                  setSelectedDistrict('');
+                }}
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+              >
+                <option value="">-- TÃ¼m Ä°ller (81 Ä°l) --</option>
+                {activeCities.map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+
+            <div className="relative">
+              <select 
+                disabled={!selectedCity}
+                value={selectedDistrict}
+                onChange={(e) => setSelectedDistrict(e.target.value)}
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
+                  !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                <option value="">{selectedCity ? '-- TÃ¼m Ä°lÃ§eler --' : 'Ã–nce Ä°l SeÃ§iniz'}</option>
+                {selectedCity && [...new Set(offices.filter((office) => office.city === selectedCity).map((office) => office.district).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr')).map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        {loading ? <div className="bg-white rounded-2xl p-12 text-center border border-slate-200 text-sm font-bold text-slate-400">Ofisler yÃ¼kleniyorâ€¦</div> : loadError ? <div className="bg-white rounded-2xl p-12 text-center border border-red-100 text-sm font-bold text-red-700">{loadError}</div> : filteredOffices.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredOffices.map((office) => (
               <div 
@@ -715,28 +2676,384 @@ K™š[\Š›ÛÛX[ŠJWKœÛÜ
                     className="bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-700/20"
                   >
                     <Navigation className="w-3.5 h-3.5" />
-                 ÛM5¶‰ËkºwµçrÓ"fö7W3§&–ær×&VBÓsG&ç6—F–öâG°¢6VÆV7FVD6—G’òv÷6—G’ÓS7W'6÷"Öæ÷BÖÆÆ÷vVBr¢rp¢ÖĞ¢à¢Æ÷F–öâfÇVSÒ"#ç·6VÆV7FVD6—G’òrÒÒL;ÆÒKÌ:vVÆW"ÒÒr¢|9fæ6RKÂ6\:v–æ—¢wÓÂö÷F–öãà¢·6VÆV7FVD6—G’bbEU$´U•ô4•D”U5·6VÆV7FVD6—G•ÓòæÖ†BÓâÆ÷F–öâ¶W“×¶GÒfÇVS×¶GÓç¶GÓÂö÷F–öãâ—Ğ¢Â÷6VÆV7Cà¢ÂöF—cà¢ÂöF—cà ¢ÂöF—cà ¢¶f–ÇFW&VDvVçG2æÆVæwF‚âò€¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2ÓÖC¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2Ó2vÓ‚#à¢¶f–ÇFW&VDvVçG2æÖ‚†vVçB’Óâ€¢ÆF—b ¢¶W“×¶vVçBæ–GĞ¢6Æ74æÖSÒ&&r×v†—FR&÷VæFVBÓ'†Â&÷&FW"Ó"&÷&FW"×6ÆFRÓ#÷fW&fÆ÷rÖ†–FFVâ6†F÷rÖÆr†÷fW#¦&÷&FW"×&VBÓsG&ç6—F–öâÖÆÂGW&F–öâÓ3fÆW‚fÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâw&÷W ¢à¢ÆF—cà¢ÆF—b6Æ74æÖSÒ'&VÆF—fR‚ÓcB&r×6ÆFRÓ“fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"÷fW&fÆ÷rÖ†–FFVâ&÷&FW"Ö"&÷&FW"×6ÆFRÓ##à¢¶vVçBæ–ÖvRò€¢Æ–Ör ¢7&3×¶vVçBæ–ÖvWÒ ¢ÇC×¶vVçBææÖWÒ ¢6Æ74æÖSÒ'rÖgVÆÂ‚ÖgVÆÂö&¦V7BÖ6÷fW"ö&¦V7B×F÷w&÷WÖ†÷fW#§66ÆRÓRG&ç6—F–öâGW&F–öâÓS ¢óà¢’¢€¢ÆF—b6Æ74æÖSÒ'ÓbFW‡BÖ6VçFW"fÆW‚fÆW‚Ö6öÂ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"‚ÖgVÆÂrÖgVÆÂ&rÖw&F–VçB×FòÖ'"g&öÒ×6ÆFRÓ“f–×6ÆFRÓƒFò×6ÆFRÓ“S#à¢Æ–Ör ¢7&3Ò"÷&5öÆövõöörç7fr ¢ÇCÒ%&VÇG’6VçFW,*â" ¢6Æ74æÖSÒ&‚ÓbrÖWFòö&¦V7BÖ6öçF–â'&–v‡FæW72Ó–çfW'B÷6—G’Ó“w&÷WÖ†÷fW#§66ÆRÓRG&ç6—F–öâGW&F–öâÓ3 ¢öäW'&÷#×²†R’Óâ²Ræ7W'&VçEF&vWBç7G–ÆRæF—7Æ’ÒvæöæRs²×Ğ¢óà¢Ç7â6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ³ã&VÕÒFW‡B×&VBÓc×BÓ"#å$TÅE’4TåDU,*âDäœYäÔä“Â÷7ãà¢ÂöF—cà¢—Ğ ¢Ç7â6Æ74æÖSÒ&'6öÇWFRF÷Ó2ÆVgBÓ2FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×v†—FR&r×&VBÓs‚Ó2’Ó&÷VæFVBÖÖB6†F÷rG&6¶–ær×v–FW"#à¢¶vVçBæ6—G—Òò¶vVçBæF—7G&–7GĞ¢Â÷7ãà ¢Ç7â6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓ2&–v‡BÓ2FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×6ÆFRÓ“&r×v†—FRó“&6¶G&÷Ö&ÇW"ÖÖB‚Ó"ãR’Ó&÷VæFVBÖÖB6†F÷r&÷&FW"&÷&FW"×6ÆFRÓ##à¢¶vVçBæ7F—fTÆ—7F–æw7Ò·F–bKÆà¢Â÷7ãà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'Ób#à¢Æƒ26Æ74æÖSÒ'FW‡B×†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“Ö"Ów&÷WÖ†÷fW#§FW‡B×&VBÓsG&ç6—F–öâ#à¢¶vVçBææÖWĞ¢Âöƒ3à ¢Ç7â6Æ74æÖSÒ'FW‡B×‡2föçBÖ&öÆBFW‡B×&VBÓs&Æö6²Ö"Ó2G&6¶–ær×v–FW"#à¢¶vVçBçF—FÆWĞ¢Â÷7ãà ¢ÆF—b6Æ74æÖSÒ'76R×’Ó"ãRFW‡B×‡2FW‡B×6ÆFRÓcföçBÖÖVF—VÒ&÷&FW"×B&÷&FW"×6ÆFRÓBÓ2#à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"76R×‚Ó"ãR#à¢Ä'V–ÆF–æs"6Æ74æÖSÒ'rÓB‚ÓBFW‡B×6ÆFRÓCfÆW‚×6‡&–æ²Ó"óà¢Ç7â6Æ74æÖSÒ'FW‡B×6ÆFRÓƒföçB×6VÖ–&öÆB#ç¶vVçBæöff–6WÓÂ÷7ãà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"76R×‚Ó"ãR#à¢Å†öæR6Æ74æÖSÒ'rÓB‚ÓBFW‡B×&VBÓsfÆW‚×6‡&–æ²Ó"óà¢Ç7â6Æ74æÖSÒ&föçBÖ&öÆBFW‡B×6ÆFRÓ“#ç¶vVçBç†öæWÓÂ÷7ãà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"76R×‚Ó"ãR#à¢ÄÖ–Â6Æ74æÖSÒ'rÓB‚ÓBFW‡B×&VBÓsfÆW‚×6‡&–æ²Ó"óà¢Ç7ãç¶vVçBæVÖ–ÇÓÂ÷7ãà¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'ÓB&÷&FW"×B&÷&FW"×6ÆFRÓ&r×6ÆFRÓSw&–Bw&–BÖ6öÇ2Ó"vÓ"#à¢Æ ¢‡&Vc×¶FVÃ¢G¶vVçBç†öæRç&WÆ6R‚õÇ2²örÂrr—ÖĞ¢6Æ74æÖSÒ&&r×&VBÓs†÷fW#¦&r×&VBÓƒFW‡B×v†—FRföçBÖ&öÆB’Ó"&÷VæFVBÖÆrFW‡B×‡2fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"76R×‚ÓãRG&ç6—F–öâ6†F÷rÖÖB6†F÷r×&VBÓsó# ¢à¢Å†öæR6Æ74æÖSÒ'rÓ2ãR‚Ó2ãR"óà¢Ç7ãä†VÖVâ&Â÷7ãà¢Âöà ¢ÄÆ–æ² ¢š®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍHÏH‹Ú[[›\š[Z^ˆˆˆÛ\ÜÓ˜[YOH˜™Ë]Ú]Hİ™\˜™Ë\Û]KLL^\Û]KN›ÛX›Û›Ü™\ˆ›Ü™\‹\Û]KLÌKLˆ›İ[™Y[È^^È›^][\ËXÙ[\ˆ\İYKXÙ[\ˆÜXÙK^LKH˜[œÚ][Ûˆ‚ˆ‚ˆYYØ\Û™HÛ\ÜÓ˜[YOHËLËHLËH^\™YMÌˆÏ‚ˆÜ[±,[›\±,OÜÜ[‚ˆÓ[šÏ‚ˆÙ]‚‚ˆÙ]‚ˆ
-J_BˆÙ]‚ˆ
-Hˆ
-ˆ]ˆÛ\ÜÓ˜[YOH˜™Ë]Ú]H›İ[™YLLLˆ^XÙ[\ˆ›Ü™\ˆ›Ü™\‹\Û]KLŒ‚ˆš[\ˆÛ\ÜÓ˜[YOHËLLˆLLˆ^\Û]KLÌ^X]]ÈX‹LÈˆÏ‚ˆÈÛ\ÜÓ˜[YOH^[È›ÛX›Û^\Û]KN\˜Y1,q'ñ,[±,^ˆÜš]\›\™H[±,qgÛX[ˆ[[˜[XY1,KÚÏ‚ˆÛ\ÜÓ˜[YOH^\Û]KML^^È]LH“0ï™[ˆ˜\šÛ1,Hš\ˆ[™^XH[0éÙHÙpéÚ[ZHX\1,[±,^‹Ü‚ˆÙ]‚ˆ
-_B‚ˆÙ]‚ˆÙ]‚ˆ
-NÂŸB‚™[˜İ[Ûˆ\İ[™ĞØ]YÛÜšY\ÔYÙJÈ[X™YYH˜[ÙHNˆÈ[X™YYÎˆ›ÛÛX[ˆJHÂˆÛÛœİ˜]šYØ]HH\ÙS˜]šYØ]J
-NÂˆÛÛœİÜ›İ\ÈHÂˆÈ]Nˆ	ÔØ]1,[1,ZÈØ^\š[Y[šİ[\‰ËX™[ˆ	ÔĞUSRÉË˜[œØXİ[Ûˆ	ÔØ]1,[1,ZÉËXÛÛˆÛYKXØÙ[ˆ	ÈĞÑLQIË][\ÎˆÖÉÒÛÛ]	Ë	Ñ]‰Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒŒÍÎLŒML˜LXÙŒMNYØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÕXØ\šIË	ÕXØ\šHØ^\š[Y[šİ[	Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMÌÍÍMÍKYŒŒMM™MÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉĞ\œØIË	Ğ\œØIË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMLLÍŒŒÌËLÌL˜XYMXÏØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×WHKˆÈ]Nˆ	ÒÚ\˜[1,ZÈØ^\š[Y[šİ[\‰ËX™[ˆ	Òñ,SRÉË˜[œØXİ[Ûˆ	ÒÚ\˜[1,ZÉËXÛÛˆÙ^KXØÙ[ˆ	ÈÌÍÎY‰Ë][\ÎˆÖÉÒÛÛ]	Ë	Ñ]‰Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒMÍLÌ‹LŒN˜˜ŒÙXOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉñ,1gŞY\šIË	Ñ0ïÚØ[‰Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMMÍŒLMÍKXLÙM˜YÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÕš[IË	Õš[IË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒNLMLLMKYŒ™XÎØLOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×WHKˆÈ]Nˆ	Ñ]œ™[ˆ1,1gŞY\›\šIËX™[ˆ	ÑU”‘S‰Ë˜[œØXİ[Ûˆ	Ñ]œ™[ˆØ]1,[1,ZÉËXÛÛˆœšYY˜Ø\ÙKXØÙ[ˆ	ÈÌÙLIË][\ÎˆÖÉñ,1gŞY\šIË	Ñ0ïÚØ[‰Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMLMŒ‹ML™YOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÑ0ïÚØ[‰Ë	Ñ0ïÚØ[‰Ë	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMLMLÌÍLLLËLYYXÌ˜ÌØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÓÙš\ÉË	ÓÙš\ÉË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMMÌÍLLÍLËMÌÍŒØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×WHKˆÈ]Nˆ	ÖY[šH›Ú™[\‰ËX™[ˆ	Ô“Ò‘ST‰Ë›İ]Nˆ	ËÜ›Ú™[\š[Z^‰ËXÛÛˆZ[[™Ì‹XØÙ[ˆ	ÈÌLŒÍNIË][\ÎˆÖÉÖY[šHÛÛ]	Ë	ÉË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒMÌÍÌMLNLYLÍYOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÕXØ\šH›Ú™IË	ÉË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒML‹XÍŒØNL˜YXXØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×KÉÕš[H›Ú™\ÚIË	ÉË	ÚÎ‹ËÚ[XYÙ\Ë[œÜ\Ú˜ÛÛKÜİËLMŒÍLNËX˜NNY˜ÙOØ]]ÏY›Ü›X]	™š]XÜ›Ü	œOMÎ	ÏNL	×WHKˆNÂˆÛÛœİÜ[Ø]YÛÜHH
-Ü›İ\ˆ\[ÙˆÜ›İ\ÖÛ[X™\—K›Ü\U\Nˆİš[™ÊHOˆÂˆYˆ
-	Ü›İ]IÈ[ˆÜ›İ\	‰ˆÜ›İ\œ›İ]JHÈ˜]šYØ]JÜ›İ\œ›İ]JNÈ™]\›ÈBˆÛÛœİ]Y\HH™]ÈT“ÙX\˜Ú\˜[\Ê
-NÂˆYˆ
-	İ˜[œØXİ[Û‰È[ˆÜ›İ\	‰ˆÜ›İ\˜[œØXİ[ÛŠH]Y\KœÙ]
-	İ\IËÜ›İ\˜[œØXİ[ÛŠNÂˆYˆ
-›Ü\U\JH]Y\KœÙ]
-	Ü›Ü\U\IË›Ü\U\JNÂˆ˜]šYØ]JÚ[[›\š[Z^ÉÜ]Y\KÔİš[™Ê
-_X
-NÂˆNÂˆ™]\›ˆ
-ˆ]ˆÛ\ÜÓ˜[YO^Ù[X™YYÈ	Ø›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ™ËVÈÙÙ˜WHKLLˆÛNœKLM‰Èˆ	ÛZ[‹Z\ØÜ™Y[ˆ™ËVÈÙÙ˜WHKLLˆÛNœKLM‰ßO‚ˆ]ˆÛ\ÜÓ˜[YOH›^X]]ÈX^]ËMŞMˆÎœLLˆ‚ˆ]ˆÛ\ÜÓ˜[YOH˜›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‹NH]ˆÛ\ÜÓ˜[YOH™›^›^XÛÛØ\MˆÛN™›^\›İÈÛNš][\ËY[™ÛNš\İYKX™]ÙY[ˆ]Û\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ˜XÚÚ[™ËVËŒŒ™[WH^\™YMÌ”‘PSHÑS•T°«ˆ0­ÈÔ•°å–HÑqg‘±,ÜHÛ\ÜÓ˜[YOH›]LÈ^LŞ›ÛX›XÚÈ˜XÚÚ[™Ë]YÚ^\Û]KNMLÛN^M‘Ø^\š[Y[šİ[Ø]YÛÜš[\šOÚOÛ\ÜÓ˜[YOH›]LÈX^]ËL^\ÛHXY[™ËMˆ^\Û]KMŒ±,^XXñ,[±,^˜H^Yİ[ˆØ]YÛÜš^[H˜qgÛ^q,[ÈÙpéÚ[Z[š^ˆ[Ú[H[[ˆ\İ\Ú[™H™HZİYˆš[™[\™Hñ'ÜY[ˆ^Yİ[[±,\‹ÜÙ][šÈÏH‹Ú[[›\š[Z^Ø[LHˆÛ\ÜÓ˜[YOHš[›[™KY›^Úš[šËL][\ËXÙ[\ˆ\İYKXÙ[\ˆ›İ[™Y[È™ËVÈĞÑLQWHMHKLÈ^\ÛH›ÛX›XÚÈ^]Ú]HÚYİË[ÈÚYİË\™YNLÌMH˜[œÚ][Ûˆİ™\˜™Ë\™YN•0ïH[[›\±,H[˜Ù[H\œ›İÔšYÚÛ\ÜÓ˜[YOH›[LˆMËMˆÏÓ[šÏÙ]Ù]‚ˆ]ˆÛ\ÜÓ˜[YOH›]NHÜšYØ\MHY™ÜšYXÛÛËLˆ™ÜšYXÛÛËMÙÜ›İ\Ë›X\
+                    <span>Harita</span>
+                  </a>
+                </div>
 
-Ü›İ\
-HOˆÈ6ÓMm¢G§²ÚîÆ­yÑ±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ÌÀÀˆù7ñ±¯ñ»ñëñ¸­½¹ÕµÕ¹Ô°Ñ•µ•°‰¥±¥±•É¥¹¤Ù”ƒÛ}É•¹µ•¬¥ÍÑ•‘§}¥¹¥è­½¹ÕåÔå…ëÅ¸ìå…Á…äé•­„Í¥é”‰¥±¤…µ‡³Ä‰¥ÈƒÙ¸‘—}•É±•¹‘¥Éµ”ÍÕ¹ÍÕ¸¸ğ½Àø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´Ø¥¹±¥¹”µ™±•àÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•Èµİ¡¥Ñ”¼ÄÔ‰œµ‰±…¬¼ÄÔÀ´Äˆø(€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•Q…ˆ Ù…±Õ…Ñ¥½¸œ¥ô±…ÍÍ9…µ”õíÉ½Õ¹‘•µ±œÁà´ÔÁä´ÌÑ•áĞµÍ´™½¹Ğµ‰±…¬ÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÌÀÀ€‘í…Ñ¥Ù•Q…ˆ€ôôô€Ù…±Õ…Ñ¥½¸œ€ü€‰œµå…¸´ÌÀÀÑ•áĞµÍ±…Ñ”´äÔÀÍ¡…‘½Üµ±œœ€è€Ñ•áĞµå…¸´ÄÀÀ¡½Ù•Èé‰œµİ¡¥Ñ”¼ÄÀõôù=Ñ½µ…Ñ¥¬—}•É±•µ”ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•Q…ˆ Í•…É œ¥ô±…ÍÍ9…µ”õíÉ½Õ¹‘•µ±œÁà´ÔÁä´ÌÑ•áĞµÍ´™½¹Ğµ‰±…¬ÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÌÀÀ€‘í…Ñ¥Ù•Q…ˆ€ôôô€Í•…É œ€ü€‰œµå…¸´ÌÀÀÑ•áĞµÍ±…Ñ”´äÔÀÍ¡…‘½Üµ±œœ€è€Ñ•áĞµå…¸´ÄÀÀ¡½Ù•Èé‰œµİ¡¥Ñ”¼ÄÀõôù¯Å±³ÄÉ…µ„ğ½‰ÕÑÑ½¸ø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½¡•…‘•Èø((€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€Ù…±Õ…Ñ¥½¸œ€ü€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÜÉ¥…À´Ø±œéÉ¥µ½±ÌµlÄ¸É™É|¸á™Étˆø(€€€€€€€€ñ™½É´½¹MÕ‰µ¥ĞõíÍÕ‰µ¥ÑÙ…±Õ…Ñ¥½¹ô±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´Í´éÀ´àˆø(€€€€€€€€€€ñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµl¸ÄÙ•µtÑ•áĞµÉ•´ÜÀÀˆù=Q=5SÁ,yI15=I5Tğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÔÀˆù7ñ±¯ñ»ñëğ…¹±…ÓÅ¸ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞµÍ´±•…‘¥¹œ´ØÑ•áĞµÍ±…Ñ”´ÔÀÀˆùgÅ±“Åé³Ä…±…¹±…ËÅ¸Ñ…µ…·Å»Ä‘½±‘ÕÉÕ¸¸…¡„…åËÅ¹ÓÅ³Ä‰¥±¤°‘…¡„‡ŸÅ­±…çÅÄ‰¥ÈƒÙ¸…¹…±¥èÍ‡}±…È¸ğ½Àøğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÉ¥…À´ĞÍ´éÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆûÁ0€¨ñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí™½É´¹¥Ñåô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ¥Ñäœ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÁ±…•¡½±‘•Èô‹YÉ¸¸¹­…É„ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”ÑÉ…¹Í¥Ñ¥½¸™½ÕÌé‰½É‘•Èµå…¸´ÔÀÀ™½ÕÌéÉ¥¹œ´È™½ÕÌéÉ¥¹œµå…¸´ÄÀÀˆ€¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆûÁ3€¨ñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí™½É´¹‘¥ÍÑÉ¥Ñô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ‘¥ÍÑÉ¥Ğœ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÁ±…•¡½±‘•Èô‹YÉ¸¸ƒ…¹­…å„ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”ÑÉ…¹Í¥Ñ¥½¸™½ÕÌé‰½É‘•Èµå…¸´ÔÀÀ™½ÕÌéÉ¥¹œ´È™½ÕÌéÉ¥¹œµå…¸´ÄÀÀˆ€¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´ÈˆùeKÁ59-U0SqKp€¨ñÍ•±•ĞÙ…±Õ”õí™½É´¹ÁÉ½Á•ÉÑåQåÁ•ô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ÁÉ½Á•ÉÑåQåÁ”œ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ô±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±½ÕÑ±¥¹”µ¹½¹”ˆøñ½ÁÑ¥½¸ù…¥É”ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ùY¥±±„ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ù7ñÍÑ…­¥°Øğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ùÉÍ„ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ù=™¥Ìğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ùñ­­…¸ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ùQ¥…É¤…åÉ¥µ•¹­Õ°ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ù§}•Èğ½½ÁÑ¥½¸øğ½Í•±•Ğøğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´ÈˆùeKÁ59-U3q8Q50Á1Á1KÀ€¨ñÑ•áÑ…É•„É•ÅÕ¥É•Ù…±Õ”õí™½É´¹ÁÉ½Á•ÉÑå•Ñ…¥±Íô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ÁÉ½Á•ÉÑå•Ñ…¥±Ìœ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÉ½İÌõìÑôÁ±…•¡½±‘•Èô‹YÉ¸¸€ÄĞÔ·
-È‰ËñĞ°€Ì¬Ä°€Øå‡Å¹‘„°€Ğ¸­…Ğ°µ•É­•é¤ƒÅÏÅÑµ„°½Ñ½Á…É­³Ä¸¸¸ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É•Í¥é”µäÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±±•…‘¥¹œ´Ø½ÕÑ±¥¹”µ¹½¹”ÑÉ…¹Í¥Ñ¥½¸™½ÕÌé‰½É‘•Èµå…¸´ÔÀÀ™½ÕÌéÉ¥¹œ´È™½ÕÌéÉ¥¹œµå…¸´ÄÀÀˆ€¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´Èˆù,ƒYi13Á-1HñÑ•áÑ…É•„Ù…±Õ”õí™½É´¹™•…ÑÕÉ•Íô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ™•…ÑÕÉ•Ìœ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÉ½İÌõìÍôÁ±…•¡½±‘•Èô‰•Á¡”°µ…¹é…É„°Õ±‡Å´°Í¥Ñ”ƒÙé•±±¥­±•É¤°Ñ…ÁÔ‘ÕÉÕµÔÙ•å„ƒÙ¹•µ±¤ŸÙÉ“óñ»ñè‘§}•È‰¥±¥±•È¸¸¸ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É•Í¥é”µäÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±±•…‘¥¹œ´Ø½ÕÑ±¥¹”µ¹½¹”ÑÉ…¹Í¥Ñ¥½¸™½ÕÌé‰½É‘•Èµå…¸´ÔÀÀ™½ÕÌéÉ¥¹œ´È™½ÕÌéÉ¥¹œµå…¸´ÄÀÀˆ€¼øğ½±…‰•°ø(€€€€€€€€€€€€ñ±…‰•°±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀÍ´é½°µÍÁ…¸´Èˆù9gÀƒ[yI95,ƒÁMSÁe=IMU9Uhü€¨ñÑ•áÑ…É•„É•ÅÕ¥É•Ù…±Õ”õí™½É´¹ÅÕ•ÍÑ¥½¹ô½¹¡…¹”õì¡”¤€ôøÕÁ‘…Ñ•¥•± ÅÕ•ÍÑ¥½¸œ°”¹Ñ…É•Ğ¹Ù…±Õ”¥ôÉ½İÌõìÑôÁ±…•¡½±‘•Èô‹YÉ¸¸Q…¡µ¥¹¤Í…ÓÇ|…É…³ÇÅ»Ä°­¥É„•Ñ¥É¥Í¥¹¤Ù”å…ÓÅËÅ´‡ŸÅÏÅ¹‘…¸Ÿó³ğ½é…çÅ˜çÙ¹±•É¥¹¤ƒÛ}É•¹µ•¬¥ÍÑ¥å½ÉÕ´¸ˆ±…ÍÍ9…µ”ô‰µĞ´ÈÜµ™Õ±°É•Í¥é”µäÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÁà´ĞÁä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±±•…‘¥¹œ´Ø½ÕÑ±¥¹”µ¹½¹”ÑÉ…¹Í¥Ñ¥½¸™½ÕÌé‰½É‘•Èµå…¸´ÔÀÀ™½ÕÌéÉ¥¹œ´È™½ÕÌéÉ¥¹œµå…¸´ÄÀÀˆ€¼øğ½±…‰•°ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÍÁ…”µf«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³W’Ó2&÷VæFVBÓ'†Â&r×6ÆFRÓSÓBFW‡B×‡2ÆVF–ærÓRFW‡B×6ÆFRÓc#à¢ÆÆ&VÂ6Æ74æÖSÒ&fÆW‚7W'6÷"×ö–çFW"—FV×2×7F'BvÓ2#ãÆ–çWBG—SÒ&6†V6¶&÷‚"6†V6¶VC×¶·f¶´&÷fVGÒöä6†ævS×²†R’Óâ6WD·f¶´&÷fVB†RçF&vWBæ6†V6¶VB—Ò6Æ74æÖSÒ&×BÓ‚ÓBrÓB66VçB×&VBÓs"óãÇ7ããÄÆ–æ²FóÒ"ö·f¶²"6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×&VBÓsVæFW&Æ–æR#äµd´²–LKæÆFÖÖWFæ“ÂôÆ–æ³î(	–æ’ö·VGVÒfR¶œYö—6VÂfW&–ÆW&–Ö–âæÆ—¢Ö<K–ÆœYöÆVæÖW6–æ’¶'VÂVF—–÷'VÒãÂ÷7ããÂöÆ&VÃà¢ÆÆ&VÂ6Æ74æÖSÒ&fÆW‚7W'6÷"×ö–çFW"—FV×2×7F'BvÓ2#ãÆ–çWBG—SÒ&6†V6¶&÷‚"6†V6¶VC×·FW&×4&÷fVGÒöä6†ævS×²†R’Óâ6WEFW&×4&÷fVB†RçF&vWBæ6†V6¶VB—Ò6Æ74æÖSÒ&×BÓ‚ÓBrÓB66VçB×&VBÓs"óãÇ7ããÄÆ–æ²FóÒ"ö·VÆÆæ–ÒÖ¶÷7VÆÆ&’"6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×&VBÓsVæFW&Æ–æR#å6—FR·VÆÆìKÒöÆ—F–¶<KÂôÆ–æ³î(	–ìKö·VGVÒfR¶'VÂVF—–÷'VÒãÂ÷7ããÂöÆ&VÃà¢ÂöF—cà¢Æ'WGFöâF—6&ÆVC×²6å7V&Ö—GÒ6Æ74æÖSÒ&×BÓRfÆW‚rÖgVÆÂ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVB×†Â&rÕ²44CUÒ‚Ób’ÓBFW‡B×6ÒföçBÖ&Æ6²FW‡B×v†—FR6†F÷rÖÆr6†F÷r×&VBÓ“ó#G&ç6—F–öâGW&F–öâÓ3†÷fW#¦&r×&VBÓƒF—6&ÆVC¦7W'6÷"Öæ÷BÖÆÆ÷vVBF—6&ÆVC¦&r×6ÆFRÓ3F—6&ÆVC§6†F÷rÖæöæR#ç¶ÆöF–æròÃãÇ7â6Æ74æÖSÒ&×"Ó2‚ÓRrÓRæ–ÖFR×7–â&÷VæFVBÖgVÆÂ&÷&FW"Ó"&÷&FW"×v†—FR&÷&FW"×B×G&ç7&VçB"óäæÆ—¢†¬K&ÆìK–÷.(
-cÂóâ¢u–’¦V¶–6÷&wVÆwÓÂö'WGFöãà¢¶W'&÷"bbÇ6Æ74æÖSÒ&×BÓB&÷VæFVB×†Â&÷&FW"&÷&FW"×&VBÓ#&r×&VBÓS‚ÓB’Ó2FW‡B×6ÒföçBÖ&öÆBFW‡B×&VBÓs#ç¶W'&÷'ÓÂ÷çĞ¢Âöf÷&Óà¢Æ6–FR6Æ74æÖSÒ'76R×’ÓR#à¢ÆF—b6Æ74æÖSÒ'&÷VæFVBÓ7†Â&rÕ²3s6%ÒÓbFW‡B×v†—FR6†F÷r×†Â#ãÇ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ãfVÕÒFW‡BÖ7–âÓ3#ää4”Â8tÄœYä•#óÂ÷ãÆöÂ6Æ74æÖSÒ&×BÓR76R×’ÓBFW‡B×6ÒÆVF–ærÓbFW‡B×6ÆFRÓ##ãÆÆ“ãÆ"6Æ74æÖSÒ&×"Ó"FW‡BÖ7–âÓ3#ãÂö#â¶öçVÒfRÜ;ÆÆ²&–Æv–ÆW&–æ’v—&–âãÂöÆ“ãÆÆ“ãÆ"6Æ74æÖSÒ&×"Ó"FW‡BÖ7–âÓ3#ã#Âö#â9g¦VÆÆ–¶ÆRæW–’;lI÷&VæÖV²—7FVFœIö–æ—¦’æÆLKâãÂöÆ“ãÆÆ“ãÆ"6Æ74æÖSÒ&×"Ó"FW‡BÖ7–âÓ3#ã3Âö#â–’¦V¶ÂfW&FœIö–æ—¢&–Æv–ÆW&R|;g&R;fâæÆ—¢öÇ\Y÷GW'7VâãÂöÆ“ãÂööÃãÂöF—cà¢ÆF—b6Æ74æÖSÒ'&÷VæFVBÓ7†Â&÷&FW"&÷&FW"ÖÖ&W"Ó#&rÖÖ&W"ÓSÓbFW‡B×6ÒÆVF–ærÓbFW‡BÖÖ&W"Ó“S#ãÆ#ì9fæVÖÆ’&–Æv–ÆVæF—&ÖSÂö#ãÇ6Æ74æÖSÒ&×BÓ"#äöÇ\Y÷GW'VÆâ6öç\:r&–Æv’Ö:vÌKLK#²&W6Ü:âV·7W'F—¢&÷'RÂ¶W6–â6LKYòF\IöW&’fW––LK,KÒFg6—–W6’F\Iö–ÆF—"ãÂ÷ãÂöF—cà¢Âö6–FSà¢ÂöF—câ¢Ç6V7F–öâ6Æ74æÖSÒ&×BÓr&÷VæFVBÓ7†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓ‚FW‡BÖ6VçFW"6†F÷r×6Ò#ãÇ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ãfVÕÒFW‡BÖ7–âÓs#ä´”ÄÄ’$ÔÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓ2FW‡BÓ'†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“S#ìK‡F—–<KìK¦W–wVâv—&–ÖVæ·VÆÆW&’¶\YöfVF–ãÂöƒ#ãÇ6Æ74æÖSÒ&×‚ÖWFò×BÓ2Ö‚×rÓ'†ÂFW‡B×6ÒÆVF–ærÓbFW‡B×6ÆFRÓS#ìKÆâ&ÖfRvVÆœYöÖœYòf–ÇG&VÆVÖR6\:vVæV¶ÆW&—–ÆR|;Ææ6VÂ÷'Fl;gœ;ÆÜ;Ç¬;Â–æ6VÆW–V&–Æ—'6–æ—¢ãÂ÷ãÄÆ–æ²FóÒ"ö–ÆæÆ&–Ö—¢"6Æ74æÖSÒ&×BÓb–æÆ–æRÖfÆW‚&÷VæFVB×†Â&rÕ²3s6%Ò‚Ób’Ó2FW‡B×6ÒföçBÖ&Æ6²FW‡B×v†—FRG&ç6—F–öâ†÷fW#¦&rÕ²3#6#c•Ò#ìKÆæÆ,KKæ6VÆRÄ'&÷u&–v‡B6Æ74æÖSÒ&ÖÂÓ"‚ÓBrÓB"óãÂôÆ–æ³ãÂ÷6V7F–öãçĞ ¢·&W7VÇBbbÇ6V7F–öâ6Æ74æÖSÒ&×BÓr&÷VæFVBÓ7†Â&÷&FW"&÷&FW"Ö7–âÓ#&r×v†—FRÓb6†F÷rÖÆr6Ó§Ó‚#ãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚Ö6öÂvÓB6Ó¦fÆW‚×&÷r6Ó¦—FV×2×7F'B6Ó¦§W7F–g’Ö&WGvVVâ#ãÆF—cãÇ6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²G&6¶–ærÕ²ãfVÕÒFW‡BÖ7–âÓs#å”’¤T´äÌK¢4ôåT5SÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓ"FW‡BÓ'†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“S#ç¶f÷&ÒæF—7G&–7GÒÂ¶f÷&Òæ6—G—Ò+r¶f÷&Òç&÷W'G•G—WÓÂöƒ#ãÂöF—cãÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×·&–çDWfÇVF–öçÒ6Æ74æÖSÒ&–æÆ–æRÖfÆW‚rÖf—B—FV×2Ö6VçFW"vÓ"&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FR‚ÓB’Ó"ãRFW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓs6†F÷r×6ÒG&ç6—F–öâ†÷fW#¦&÷&FW"Ö7–âÓC†÷fW#§FW‡BÖ7–âÓƒ#ãÅ&–çFW"6Æ74æÖSÒ&‚ÓBrÓB"óäæÆ—¦’–¦LK#Âö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓbv†—FW76R×&R×w&&÷VæFVBÓ'†Â&r×6ÆFRÓSÓRFW‡B×6ÒföçBÖÖVF—VÒÆVF–ærÓrFW‡B×6ÆFRÓs#ç·&W7VÇGÓÂöF—cãÇ6Æ74æÖSÒ&×BÓBFW‡B×‡2ÆVF–ærÓRFW‡B×6ÆFRÓC#ä'R:|K·LK&–Æv’Ö:vÌK&—"–’¦V¶;fâæÆ—¦–F—"fR&W6Ü:âV·7W'F—¢–W&–æRv\:vÖW¢ãÂ÷ãÂ÷6V7F–öãçĞ¢ÂöF—cà¢ÂöF—cã°§Ğ ¦W‡÷'BgVæ7F–öâÆVv7””FV6—6–öä76—7FçEvR‚’°¢6öç7BÆö6F–öâÒW6TÆö6F–öâ‚“°¢6öç7B·VW'’Â6WEVW'•ÒÒW6U7FFR‚‚’ÓâæWrU$Å6V&6…&×2†Æö6F–öâç6V&6‚’ævWB‚wr’ÇÂ,8væ¶–vF‚Ö–Ç–öâDÂw–R¶F"2³F—&R,K–÷'VÒâ"“°¢6öç7B·6V&6†VBÂ6WE6V&6†VEÒÒW6U7FFR‡G'VR“°¢6öç7B¶•F"Â6WD•F%ÒÒW6U7FFSÂv76—7FçBrÂwfÇVF–öâsâ‚v76—7FçBr“°¢6öç7B·fÇVF–öå&VG’Â6WEfÇVM´Ó[h‘éì¶»§q«^tYAÅI<select value={valuation.age} onChange={e=>setValuation({...valuation,age:e.target.value})} className="mt-1 w-full rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-slate-800"><option>0-4</option><option>5-10</option><option>11-20</option><option>20+</option></select></label>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">AradÄ±ÄŸÄ±nÄ±z kriterlerde ofis bulunamadÄ±.</h3>
+            <p className="text-slate-500 text-xs mt-1">LÃ¼tfen farklÄ± bir il veya ilÃ§e seÃ§imi yapÄ±nÄ±z.</p>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );
+}
+
+function AgentsPage() {
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [agentNameInput, setAgentNameInput] = useState('');
+  const [agentNameQuery, setAgentNameQuery] = useState('');
+  const [agents, setAgents] = useState<typeof SAMPLE_AGENTS>([]);
+  useEffect(() => {
+    void supabase.from('profiles').select('id,first_name,last_name,email,phone,avatar_url,expertise_areas,whatsapp,bio').eq('role','advisor').eq('status','active').is('deleted_at',null).order('created_at',{ascending:false}).then(({ data }) => {
+      setAgents((data || []).map((agent: any) => ({
+        id: agent.id, name: [agent.first_name, agent.last_name].filter(Boolean).join(' '), title: agent.expertise_areas?.[0] || 'Gayrimenkul DanÄ±ÅŸmanÄ±', office: 'Realty CenterÂ®', city: agent.expertise_areas?.[1] || '', district: agent.expertise_areas?.[2] || '', phone: agent.whatsapp || agent.phone || '', email: agent.email || '', image: agent.avatar_url || '', activeListings: 0
+      })));
+    });
+  }, []);
+
+  const filteredAgents = agents.filter((agent) => {
+    if (selectedCity && agent.city !== selectedCity) return false;
+    if (selectedDistrict && agent.district !== selectedDistrict) return false;
+    if (agentNameQuery && !agent.name.toLocaleLowerCase('tr-TR').includes(agentNameQuery.toLocaleLowerCase('tr-TR').trim())) return false;
+    return true;
+  });
+
+  return (
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div className="mb-8">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
+            Uzman Kadromuz
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            GAYRÄ°MENKUL <span className="text-red-700">DANIÅMANLARIMIZ</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            Saha tecrÃ¼besi ve uzmanlÄ±ÄŸÄ±yla hayalinizdeki gayrimenkule yÃ¶n veren profesyonellerimiz
+          </p>
+        </div>
+
+        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-4">
+          
+          <div className="flex items-center space-x-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0">
+            <span className="text-xs font-extrabold text-slate-500 tracking-wider mr-2 hidden sm:inline flex-shrink-0">
+              HÄ±zlÄ± SeÃ§im:
+            </span>
+            <button 
+              onClick={() => { setSelectedCity(''); setSelectedDistrict(''); }}
+              className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                selectedCity === '' 
+                  ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              TÃ¼m DanÄ±ÅŸmanlar
+            </button>
+
+            {["Ankara", "Ä°stanbul", "Ä°zmir"].map((cityName) => (
+              <button 
+                key={cityName}
+                onClick={() => { setSelectedCity(cityName); setSelectedDistrict(''); }}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition flex-shrink-0 ${
+                  selectedCity === cityName 
+                    ? 'bg-red-700 text-white shadow-md shadow-red-700/30' 
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                {cityName}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 gap-3 w-full sm:grid-cols-3 lg:w-auto">
+            <form onSubmit={(event) => { event.preventDefault(); setAgentNameQuery(agentNameInput.trim()); }} className="flex overflow-hidden rounded-xl border border-slate-300 bg-slate-50 focus-within:ring-2 focus-within:ring-red-700">
+              <input value={agentNameInput} onChange={(event) => setAgentNameInput(event.target.value)} placeholder="DanÄ±ÅŸman adÄ±" className="min-w-0 flex-1 bg-transparent px-3 py-2 text-xs font-bold text-slate-800 outline-none lg:w-32" />
+              <button type="submit" className="bg-red-700 px-3 text-[10px] font-black text-white">Ara</button>
+            </form>
+            <div className="relative">
+              <select 
+                value={selectedCity}
+                onChange={(e) => {
+                  setSelectedCity(e.target.value);
+                  setSelectedDistrict('');
+                }}
+                className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+              >
+                <option value="">-- TÃ¼m Ä°ller (81 Ä°l) --</option>
+                {Object.keys(TURKEY_CITIES).map(c => <option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+
+            <div className="relative">
+              <select 
+                disabled={!selectedCity}
+                value={selectedDistrict}
+                onChange={(e) => setSelectedDistrict(e.target.value)}
+                className={`w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition ${
+                  !selectedCity ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                <option value="">{selectedCity ? '-- TÃ¼m Ä°lÃ§eler --' : 'Ã–nce Ä°l SeÃ§iniz'}</option>
+                {selectedCity && TURKEY_CITIES[selectedCity]?.map(d => <option key={d} value={d}>{d}</option>)}
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        {filteredAgents.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredAgents.map((agent) => (
+              <div 
+                key={agent.id}
+                className="bg-white rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg hover:border-red-700 transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="relative h-64 bg-slate-900 flex items-center justify-center overflow-hidden border-b border-slate-200">
+                    {agent.image ? (
+                      <img 
+                        src={agent.image} 
+                        alt={agent.name} 
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
+                      />
+                    ) : (
+                      <div className="p-6 text-center flex flex-col items-center justify-center h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950">
+                        <img 
+                          src="/rc_logo_og.svg"
+                          alt="Realty CenterÂ®" 
+                          className="h-16 w-auto object-contain brightness-0 invert opacity-90 group-hover:scale-105 transition duration-300"
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                        <span className="text-[10px] font-black tracking-[0.2em] text-red-600 mt-2">REALTY CENTERÂ® DANIÅMANI</span>
+                      </div>
+                    )}
+
+                    <span className="absolute top-3 left-3 text-[10px] font-black text-white bg-red-700 px-3 py-1 rounded-md shadow tracking-wider">
+                      {agent.city} / {agent.district}
+                    </span>
+
+                    <span className="absolute bottom-3 right-3 text-[10px] font-black text-slate-900 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-md shadow border border-slate-200">
+                      {agent.activeListings} Aktif Ä°lan
+                    </span>
+                  </div>
+
+                  <div className="p-6">
+                    <h3 className="text-xl font-black text-slate-900 mb-1 group-hover:text-red-700 transition">
+                      {agent.name}
+                    </h3>
+
+                    <span className="text-xs font-bold text-red-700 block mb-3 tracking-wider">
+                      {agent.title}
+                    </span>
+
+                    <div className="space-y-2.5 text-xs text-slate-600 font-medium border-t border-slate-100 pt-3">
+                      <div className="flex items-center space-x-2.5">
+                        <Building2 className="w-4 h-4 text-slate-400 flex-shrink-0" />
+                        <span className="text-slate-800 font-semibold">{agent.office}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Phone className="w-4 h-4 text-red-700 flex-shrink-0" />
+                        <span className="font-bold text-slate-900">{agent.phone}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-2.5">
+                        <Mail className="w-4 h-4 text-red-700 flex-shrink-0" />
+                        <span>{agent.email}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 border-t border-slate-100 bg-slate-50 grid grid-cols-2 gap-2">
+                  <a 
+                    href={`tel:${agent.phone.replace(/\s+/g, '')}`}
+                    className="bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition shadow-md shadow-red-700/20"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Hemen Ara</span>
+                  </a>
+
+                  <Link 
+                    to="/ilanlarimiz" 
+                    className="bg-white hover:bg-slate-100 text-slate-800 font-bold border border-slate-300 py-2 rounded-lg text-xs flex items-center justify-center space-x-1.5 transition"
+                  >
+                    <Megaphone className="w-3.5 h-3.5 text-red-700" />
+                    <span>Ä°lanlarÄ±</span>
+                  </Link>
+                </div>
+
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">AradÄ±ÄŸÄ±nÄ±z kriterlerde danÄ±ÅŸman bulunamadÄ±.</h3>
+            <p className="text-slate-500 text-xs mt-1">LÃ¼tfen farklÄ± bir il veya ilÃ§e seÃ§imi yapÄ±nÄ±z.</p>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );
+}
+
+function ListingCategoriesPage({ embedded = false }: { embedded?: boolean }) {
+  const navigate = useNavigate();
+  const groups = [
+    { title: 'SatÄ±lÄ±k Gayrimenkuller', label: 'SATILIK', transaction: 'SatÄ±lÄ±k', icon: Home, accent: '#CD011E', items: [['Konut','Ev','https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=78&w=900'],['Ticari','Ticari Gayrimenkul','https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=78&w=900'],['Arsa','Arsa','https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=78&w=900']] },
+    { title: 'KiralÄ±k Gayrimenkuller', label: 'KÄ°RALIK', transaction: 'KiralÄ±k', icon: Key, accent: '#2779d6', items: [['Konut','Ev','https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=78&w=900'],['Ä°ÅŸyeri','DÃ¼kkan','https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=78&w=900'],['Villa','Villa','https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&q=78&w=900']] },
+    { title: 'Devren Ä°ÅŸyerleri', label: 'DEVREN', transaction: 'Devren SatÄ±lÄ±k', icon: Briefcase, accent: '#3d5269', items: [['Ä°ÅŸyeri','DÃ¼kkan','https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=78&w=900'],['DÃ¼kkan','DÃ¼kkan','https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=78&w=900'],['Ofis','Ofis','https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=78&w=900']] },
+    { title: 'Yeni Projeler', label: 'PROJELER', route: '/projelerimiz', icon: Building2, accent: '#123499', items: [['Yeni Konut','','https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&q=78&w=900'],['Ticari Proje','','https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=78&w=900'],['Villa Projesi','','https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=78&w=900']] },
+  ];
+  const openCategory = (group: typeof groups[number], propertyType: string) => {
+    if ('route' in group && group.route) { navigate(group.route); return; }
+    const query = new URLSearchParams();
+    if ('transaction' in group && group.transaction) query.set('type', group.transaction);
+    if (propertyType) query.set('propertyType', propertyType);
+    navigate(`/ilanlarimiz?${query.toString()}`);
+  };
+  return (
+    <div className={embedded ? 'border-b border-slate-200 bg-[#f7f8fa] py-12 sm:py-16' : 'min-h-screen bg-[#f7f8fa] py-12 sm:py-16'}>
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="border-b border-slate-200 pb-9"><div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"><div><p className="text-[10px] font-black tracking-[.22em] text-red-700">REALTY CENTERÂ® Â· PORTFÃ–Y KEÅFÄ°</p><h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Gayrimenkul kategorileri</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Ä°htiyacÄ±nÄ±za uygun kategoriyle baÅŸlayÄ±n; seÃ§iminiz ilgili ilan listesine ve aktif filtrelere doÄŸrudan uygulanÄ±r.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex shrink-0 items-center justify-center rounded-lg bg-[#CD011E] px-5 py-3 text-sm font-black text-white shadow-lg shadow-red-900/15 transition hover:bg-red-800">TÃ¼m ilanlarÄ± incele <ArrowRight className="ml-2 h-4 w-4" /></Link></div></div>
+        <div className="mt-9 grid gap-5 md:grid-cols-2 xl:grid-cols-4">{groups.map((group) => { const Icon = group.icon; const allLabel = group.route ? 'TÃ¼m projeleri gÃ¶r' : `TÃ¼m ${group.label.toLocaleLowerCase('tr-TR')} ilanlarÄ± gÃ¶r`; return <section key={group.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_rgba(15,23,42,.07)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(15,23,42,.12)]"><div className="mb-4 flex items-center gap-3"><Icon className="h-7 w-7 shrink-0" style={{ color: group.accent }} strokeWidth={2.1}/><span className="h-7 w-px shrink-0 bg-slate-300"/><h2 className="min-w-0 text-[16px] font-black tracking-tight text-slate-900">{group.title}</h2></div><div className="grid grid-cols-2 gap-3">{group.items.map(([label,propertyType,image]) => <button key={`${group.title}-${label}`} onClick={() => openCategory(group, propertyType)} className="group/item relative aspect-[.92] overflow-hidden rounded-xl bg-slate-100 text-left"><img src={image} alt={label} className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover/item:scale-105"/><span className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-slate-950/55 to-transparent"/><span className="absolute inset-x-3 bottom-3 flex items-end justify-between gap-2"><span className="text-sm font-black leading-tight text-white">{label}</span><ArrowRight className="h-4 w-4 shrink-0 text-white transition group-hover/item:translate-x-1"/></span></button>)}<button onClick={() => openCategory(group, '')} className="group/all flex aspect-[.92] flex-col items-start justify-between rounded-xl p-3 text-left transition hover:brightness-110" style={{ backgroundColor: group.accent }}><span className="text-[10px] font-black tracking-[.12em] text-white/65">TÃœMÃœNÃœ GÃ–R</span><span className="flex w-full items-end justify-between gap-2 text-sm font-black leading-tight text-white"><span>{allLabel}</span><ArrowRight className="h-4 w-4 shrink-0 transition group-hover/all:translate-x-1"/></span></button></div></section>})}</div>
+      </div>
+    </div>
+  );
+}
+
+
+function AIDecisionAssistantPage() {
+  const [activeTab, setActiveTab] = useState<'valuation' | 'search'>('valuation');
+  const [form, setForm] = useState({ city: '', district: '', propertyType: 'Daire', propertyDetails: '', features: '', question: '' });
+  const [kvkkApproved, setKvkkApproved] = useState(false);
+  const [termsApproved, setTermsApproved] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState('');
+  const [error, setError] = useState('');
+
+  const updateField = (field: keyof typeof form, value: string) => setForm((current) => ({ ...current, [field]: value }));
+  const canSubmit = Boolean(form.city.trim() && form.district.trim() && form.propertyDetails.trim() && form.question.trim() && kvkkApproved && termsApproved && !loading);
+
+  const submitEvaluation = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!canSubmit) return;
+    setLoading(true);
+    setError('');
+    setResult('');
+    try {
+      const response = await fetch('/api/ai-property-evaluation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, kvkkAccepted: kvkkApproved, termsAccepted: termsApproved }),
+      });
+      const data = await response.json() as { result?: string; error?: string };
+      if (!response.ok || !data.result) throw new Error(data.error || 'Analiz tamamlanamadÄ±.');
+      setResult(data.result);
+    } catch (requestError) {
+      setError(requestError instanceof Error ? requestError.message : 'Beklenmeyen bir hata oluÅŸtu.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const printEvaluation = () => {
+    if (!result) return;
+    const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' }[character] || character));
+    const printWindow = window.open('', '_blank', 'noopener,noreferrer,width=900,height=760');
+    if (!printWindow) return;
+    const location = `${form.district}, ${form.city} Â· ${form.propertyType}`;
+    printWindow.document.write(`<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>REALTY CENTERÂ® Yapay Zeka Analizi</title><style>body{margin:0;background:#f4f6f8;color:#10213d;font-family:Arial,sans-serif}.page{max-width:800px;margin:36px auto;background:#fff;padding:48px;box-shadow:0 8px 32px rgba(15,23,42,.1)}.brand{color:#cd011e;font-size:11px;font-weight:800;letter-spacing:2px}.title{margin:12px 0 4px;font-size:28px}.meta{color:#64748b;font-size:14px}.result{margin-top:28px;padding:24px;background:#f8fafc;border-radius:12px;white-space:pre-wrap;font-size:14px;line-height:1.8}.note{margin-top:24px;color:#64748b;font-size:11px;line-height:1.6}@media print{body{background:#fff}.page{margin:0;box-shadow:none;padding:0}}</style></head><body><main class="page"><div class="brand">REALTY CENTERÂ® Â· YAPAY ZEKA ANALÄ°ZÄ°</div><h1 class="title">Gayrimenkul Ã–n Analizi</h1><p class="meta">${escapeHtml(location)} Â· ${new Date().toLocaleDateString('tr-TR')}</p><div class="result">${escapeHtml(result)}</div><p class="note">Bu Ã§Ä±ktÄ± bilgi amaÃ§lÄ± bir yapay zeka Ã¶n analizidir ve resmÃ® ekspertiz yerine geÃ§mez.</p></main><script>window.onload=()=>window.print()<\/script></body></html>`);
+    printWindow.document.close();
+  };
+
+  return <div className="min-h-screen bg-slate-50 py-10">
+    <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <header className="overflow-hidden rounded-3xl bg-gradient-to-br from-[#061a39] via-[#0b315e] to-[#071a3b] px-6 py-9 text-white shadow-2xl sm:px-10">
+        <p className="text-[11px] font-black tracking-[.2em] text-cyan-200">REALTY CENTERÂ® YAPAY ZEKA</p>
+        <h1 className="mt-3 text-3xl font-black sm:text-5xl">Gayrimenkul kararlarÄ±nÄ±z iÃ§in <span className="text-cyan-300">akÄ±llÄ± analiz.</span></h1>
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-300">MÃ¼lkÃ¼nÃ¼zÃ¼n konumunu, temel bilgilerini ve Ã¶ÄŸrenmek istediÄŸiniz konuyu yazÄ±n; yapay zeka size bilgi amaÃ§lÄ± bir Ã¶n deÄŸerlendirme sunsun.</p>
+        <div className="mt-6 inline-flex rounded-xl border border-white/15 bg-black/15 p-1">
+          <button type="button" onClick={() => setActiveTab('valuation')} className={`rounded-lg px-5 py-3 text-sm font-black transition duration-300 ${activeTab === 'valuation' ? 'bg-cyan-300 text-slate-950 shadow-lg' : 'text-cyan-100 hover:bg-white/10'}`}>Otomatik DeÄŸerleme</button>
+          <button type="button" onClick={() => setActiveTab('search')} className={`rounded-lg px-5 py-3 text-sm font-black transition duration-300 ${activeTab === 'search' ? 'bg-cyan-300 text-slate-950 shadow-lg' : 'text-cyan-100 hover:bg-white/10'}`}>AkÄ±llÄ± Arama</button>
+        </div>
+      </header>
+
+      {activeTab === 'valuation' ? <div className="mt-7 grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
+        <form onSubmit={submitEvaluation} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div><p className="text-xs font-black tracking-[.16em] text-red-700">OTOMATÄ°K DEÄERLEME FORMU</p><h2 className="mt-2 text-2xl font-black text-slate-950">MÃ¼lkÃ¼nÃ¼zÃ¼ anlatÄ±n</h2><p className="mt-2 text-sm leading-6 text-slate-500">YÄ±ldÄ±zlÄ± alanlarÄ±n tamamÄ±nÄ± doldurun. Daha ayrÄ±ntÄ±lÄ± bilgi, daha aÃ§Ä±klayÄ±cÄ± bir Ã¶n analiz saÄŸlar.</p></div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <label className="text-xs font-black text-slate-700">Ä°L *<input required value={form.city} onChange={(e) => updateField('city', e.target.value)} placeholder="Ã–rn. Ankara" className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700">Ä°LÃ‡E *<input required value={form.district} onChange={(e) => updateField('district', e.target.value)} placeholder="Ã–rn. Ã‡ankaya" className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">GAYRÄ°MENKUL TÃœRÃœ *<select value={form.propertyType} onChange={(e) => updateField('propertyType', e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none"><option>Daire</option><option>Villa</option><option>MÃ¼stakil Ev</option><option>Arsa</option><option>Ofis</option><option>DÃ¼kkan</option><option>Ticari Gayrimenkul</option><option>DiÄŸer</option></select></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">GAYRÄ°MENKULÃœN TEMEL BÄ°LGÄ°LERÄ° *<textarea required value={form.propertyDetails} onChange={(e) => updateField('propertyDetails', e.target.value)} rows={4} placeholder="Ã–rn. 145 mÂ² brÃ¼t, 3+1, 6 yaÅŸÄ±nda, 4. kat, merkezi Ä±sÄ±tma, otoparklÄ±..." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">EK Ã–ZELLÄ°KLER<textarea value={form.features} onChange={(e) => updateField('features', e.target.value)} rows={3} placeholder="Cephe, manzara, ulaÅŸÄ±m, site Ã¶zellikleri, tapu durumu veya Ã¶nemli gÃ¶rdÃ¼ÄŸÃ¼nÃ¼z diÄŸer bilgiler..." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+            <label className="text-xs font-black text-slate-700 sm:col-span-2">NEYÄ° Ã–ÄRENMEK Ä°STÄ°YORSUNUZ? *<textarea required value={form.question} onChange={(e) => updateField('question', e.target.value)} rows={4} placeholder="Ã–rn. Tahmini satÄ±ÅŸ aralÄ±ÄŸÄ±nÄ±, kira getirisini ve yatÄ±rÄ±m aÃ§Ä±sÄ±ndan gÃ¼Ã§lÃ¼/zayÄ±f yÃ¶nlerini Ã¶ÄŸrenmek istiyorum." className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold leading-6 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100" /></label>
+          </div>
+          <div className="mt-5 space-y-3 rounded-2xl bg-slate-50 p-4 text-xs leading-5 text-slate-600">
+            <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" checked={kvkkApproved} onChange={(e) => setKvkkApproved(e.target.checked)} className="mt-1 h-4 w-4 accent-red-700"/><span><Link to="/kvkk" className="font-black text-red-700 underline">KVKK AydÄ±nlatma Metni</Link>â€™ni okudum ve kiÅŸisel verilerimin analiz amacÄ±yla iÅŸlenmesini kabul ediyorum.</span></label>
+            <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" checked={termsApproved} onChange={(e) => setTermsApproved(e.target.checked)} className="mt-1 h-4 w-4 accent-red-700"/><span><Link to="/kullanim-kosullari" className="font-black text-red-700 underline">Site KullanÄ±m PolitikasÄ±</Link>â€™nÄ± okudum ve kabul ediyorum.</span></label>
+          </div>
+          <button disabled={!canSubmit} className="mt-5 flex w-full items-center justify-center rounded-xl bg-[#CD011E] px-6 py-4 text-sm font-black text-white shadow-lg shadow-red-900/20 transition duration-300 hover:bg-red-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">{loading ? <><span className="mr-3 h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"/>Analiz hazÄ±rlanÄ±yorâ€¦</> : 'Yapay Zekaya Sorgula'}</button>
+          {error && <p className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700">{error}</p>}
+        </form>
+        <aside className="space-y-5">
+          <div className="rounded-3xl bg-[#071a3b] p-6 text-white shadow-xl"><p className="text-xs font-black tracking-[.16em] text-cyan-300">NASIL Ã‡ALIÅIR?</p><ol className="mt-5 space-y-4 text-sm leading-6 text-slate-200"><li><b className="mr-2 text-cyan-300">01</b> Konum ve mÃ¼lk bilgilerini girin.</li><li><b className="mr-2 text-cyan-300">02</b> Ã–zellikle neyi Ã¶ÄŸrenmek istediÄŸinizi anlatÄ±n.</li><li><b className="mr-2 text-cyan-300">03</b> Yapay zeka, verdiÄŸiniz bilgilere gÃ¶re Ã¶n analiz oluÅŸtursun.</li></ol></div>
+          <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6 text-sm leading-6 text-amber-950"><b>Ã–nemli bilgilendirme</b><p className="mt-2">OluÅŸturulan sonuÃ§ bilgi amaÃ§lÄ±dÄ±r; resmÃ® ekspertiz raporu, kesin satÄ±ÅŸ deÄŸeri veya yatÄ±rÄ±m tavsiyesi deÄŸildir.</p></div>
+        </aside>
+      </div> : <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm"><p className="text-xs font-black tracking-[.16em] text-cyan-700">AKILLI ARAMA</p><h2 className="mt-3 text-2xl font-black text-slate-950">Ä°htiyacÄ±nÄ±za uygun gayrimenkulleri keÅŸfedin</h2><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-500">Ä°lan arama ve geliÅŸmiÅŸ filtreleme seÃ§enekleriyle gÃ¼ncel portfÃ¶yÃ¼mÃ¼zÃ¼ inceleyebilirsiniz.</p><Link to="/ilanlarimiz" className="mt-6 inline-flex rounded-xl bg-[#071a3b] px-6 py-3 text-sm font-black text-white transition hover:bg-[#123b69]">Ä°lanlarÄ± Ä°ncele <ArrowRight className="ml-2 h-4 w-4"/></Link></section>}
+
+      {result && <section className="mt-7 rounded-3xl border border-cyan-200 bg-white p-6 shadow-lg sm:p-8"><div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"><div><p className="text-xs font-black tracking-[.16em] text-cyan-700">YAPAY ZEKA ANALÄ°Z SONUCU</p><h2 className="mt-2 text-2xl font-black text-slate-950">{form.district}, {form.city} Â· {form.propertyType}</h2></div><button type="button" onClick={printEvaluation} className="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-black text-slate-700 shadow-sm transition hover:border-cyan-400 hover:text-cyan-800"><Printer className="h-4 w-4"/>Analizi YazdÄ±r</button></div><div className="mt-6 whitespace-pre-wrap rounded-2xl bg-slate-50 p-5 text-sm font-medium leading-7 text-slate-700">{result}</div><p className="mt-4 text-xs leading-5 text-slate-400">Bu Ã§Ä±ktÄ± bilgi amaÃ§lÄ± bir yapay zeka Ã¶n analizidir ve resmÃ® ekspertiz yerine geÃ§mez.</p></section>}
+    </div>
+  </div>;
+}
+
+export function LegacyAIDecisionAssistantPage() {
+  const location = useLocation();
+  const [query, setQuery] = useState(() => new URLSearchParams(location.search).get('q') || "Ã‡ankaya'da 8 milyon TL'ye kadar 3+1 daire arÄ±yorum.");
+  const [searched, setSearched] = useState(true);
+  const [aiTab, setAiTab] = useState<'assistant' | 'valuation'>('assistant');
+  const [valuationReady, setValuationReady] = useState(false);
+  const [valuationCalculating, setValuationCalculating] = useState(false);
+  const [valuation, setValuation] = useState({ city: 'Ankara', district: 'Ã‡ankaya', propertyType: 'Daire', area: '120', rooms: '3+1', age: '5-10' });
+  const analysis = () => {
+    const normalized = query.toLocaleLowerCase('tr-TR');
+    const match = normalized.match(/(\d+(?:[.,]\d+)?)\s*(milyon|m|bin|tl)/);
+    const raw = match ? Number(match[1].replace(',', '.')) : 8;
+    const budget = match ? (match[2] === 'milyon' || match[2] === 'm' ? raw * 1000000 : match[2] === 'bin' ? raw * 1000 : raw) : 8000000;
+    const rooms = normalized.match(/\d\+\d/)?.[0] || '';
+    const district = normalized.includes('Ã§ankaya') ? 'Ã‡ankaya' : '';
+    const type = normalized.includes('daire') ? 'Daire' : '';
+    const matches = SAMPLE_LISTINGS.filter((item) => (!district || item.district === district) && (!type || item.propertyType === type) && (!rooms || item.rooms === rooms) && item.price <= budget);
+    return { budget, rooms, district, matches };
+  };
+  const result = analysis();
+  const money = (value: number) => value.toLocaleString('tr-TR') + ' â‚º';
+  return <div className="min-h-screen bg-slate-50 py-10">
+    <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="ai-assistant-hero relative overflow-hidden rounded-3xl px-6 py-10 text-white shadow-2xl sm:px-10">
+        <div className="ai-world-first-badge absolute right-4 top-4 z-10 flex h-24 w-24 rotate-3 flex-col items-center justify-center rounded-full border border-cyan-100/60 bg-[#071a3b]/80 text-center shadow-[0_0_30px_rgba(34,211,238,.38)] backdrop-blur-md sm:right-7 sm:top-7 sm:h-28 sm:w-28">
+          <span className="text-[8px] font-black tracking-[.08em] text-cyan-200">DÃœNYADA</span><span className="text-[10px] font-black leading-none text-white">Ä°LK</span><span className="my-1.5 h-px w-11 bg-cyan-200/60"/><span className="text-[7px] font-bold tracking-[.09em] text-white/90">WORLD'S</span><span className="text-[8px] font-black leading-none text-white">FIRST</span>
+        </div>
+        <span className="inline-flex rounded-full border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-[10px] font-black tracking-[.18em] text-cyan-200">YAPAY ZEKA GAYRÄ°MENKUL ASÄ°STANI</span>
+        <h1 className="mt-4 text-3xl font-black sm:text-5xl">Yapay Zeka <span className="text-cyan-300">Gayrimenkul AsistanÄ±.</span></h1>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">Ä°htiyacÄ±nÄ±zÄ± gÃ¼nlÃ¼k dille yazÄ±n veya mÃ¼lkÃ¼nÃ¼zÃ¼n bilgilerini girerek tahmini deÄŸer aralÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼n.</p>
+        <div className="mt-6 inline-flex rounded-xl border border-white/15 bg-[#03142e]/60 p-1">
+          <button onClick={() => setAiTab('assistant')} className={`rounded-lg px-5 py-3 text-sm font-black transition ${aiTab === 'assistant' ? 'bg-cyan-400 text-slate-950 shadow-lg shadow-cyan-500/30' : 'border border-white/15 bg-white/5 text-cyan-100 hover:bg-white/15'}`}>ğŸ¤– AkÄ±llÄ± Arama</button>
+          <button onClick={() => setAiTab('valuation')} className={`rounded-lg px-5 py-3 text-sm font-black transition ${aiTab === 'valuation' ? 'bg-cyan-400 text-slate-950 shadow-lg shadow-cyan-500/30' : 'border border-white/15 bg-white/5 text-cyan-100 hover:bg-white/15'}`}>âŒ Otomatik DeÄŸerleme</button>
+        </div>
+        {aiTab === 'assistant' ? <><div className="mt-5 flex flex-col gap-3 rounded-2xl bg-white p-3 shadow-xl sm:flex-row">
+          <input value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => event.key === 'Enter' && setSearched(true)} className="min-w-0 flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 outline-none ring-cyan-500 focus:ring-2" placeholder="Ã–rn. Ã‡ankaya'da 8 milyon TL'ye kadar 3+1 daire arÄ±yorum." />
+          <button onClick={() => setSearched(true)} className="rounded-xl bg-cyan-600 px-6 py-3 text-sm font-black text-white transition hover:bg-cyan-700"><Search className="mr-2 inline h-4 w-4" />Analiz Et</button>
+        </div><p className="mt-3 text-xs text-slate-400">Bu ilk sÃ¼rÃ¼m, Ã¼cretsiz demo amaÃ§lÄ± olarak site verisi ve Ã¶rnek bÃ¶lge metrikleriyle Ã§alÄ±ÅŸÄ±r.</p></> : <div className="mt-5 rounded-2xl bg-white/10 p-4 backdrop-blur-sm"><div className="grid gap-3 sm:grid-cols-3">
+          <label className="text-[11px] font-black text-cyan-100">Ä°L<input value={valuation.city} onChange={e=>setValuation({...valuation,city:e.target.value})} className="mt-1 w-full rounded-xl border border-white/20 bg-white/95 px-3 py-2.5 text-sm font-bold text-slate-800" /></label>
+          <label className="text-[11px] font-black text-cyan-100">Ä°LÃ‡E<input value={valuation.district} onChange={e=>setValuation({...valuation,district:e.target.value})} className="mt-1 w-full rounded-xl border border-white/20 bg-white/95 px-3 py-2.5 text-sm font-bold text-slate-800" /></label>
+          <label className="text-[11px] font-black text-cyan-100">GAYRÄ°MENKUL TÃœRÃœ<select value={valuation.propertyType} onChange={e=>setValuation({...valuation,propertyType:e.target.value})} className="mt-1 w-full rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-slate-800"><option>Daire</option><option>Villa</option><option>Ofis</option><option>Arsa</option></select></label>
+          <label className="text-[11px] font-black text-cyan-100">BRÃœT mÂ²<input value={valuation.area} onChange={e=>setValuation({...valuation,area:e.target.value})} className="mt-1 w-full rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-slate-800" /></label>
+          <label className="text-[11px] font-black text-cyan-100">ODA SAYISI<select value={valuation.rooms} onChange={e=>setValuation({...valuation,rooms:e.target.value})} className="mt-1 w-full rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-slate-800"><option>3+1</option><option>2+1</option><option>4+1</option></select></label>
+          <label className="text-[11px] font-black text-cyan-100">BÄ°NA YAÅI<select value={valuation.age} onChange={e=>setValuation({...valuation,age:e.target.value})} className="mt-1 w-full rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-slate-800"><option>0-4</option><option>5-10</option><option>11-20</option><option>20+</option></select></label>
         </div><button disabled={valuationCalculating} onClick={()=>{setValuationReady(false);setValuationCalculating(true);window.setTimeout(()=>{setValuationCalculating(false);setValuationReady(true)},1000)}} className="mt-4 rounded-xl bg-cyan-400 px-5 py-3 text-sm font-black text-slate-950 shadow transition hover:bg-cyan-300 disabled:cursor-wait disabled:opacity-80">{valuationCalculating ? 'DeÄŸerleme hesaplanÄ±yorâ€¦' : 'Otomatik DeÄŸerle'}</button>{valuationCalculating && <div className="mt-4 flex items-center gap-3 rounded-xl border border-cyan-300/30 bg-cyan-300/10 px-4 py-3 text-sm font-bold text-cyan-100"><span className="h-5 w-5 animate-spin rounded-full border-2 border-cyan-100 border-t-transparent"/><span>Konum, piyasa ve benzer ilan verileri analiz ediliyorâ€¦</span></div>}</div>}
       </div>
       {aiTab === 'assistant' && searched && <div className="mt-7 grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
@@ -745,41 +3062,134 @@ cÂóâ¢u–’¦V¶–6÷&wVÆwÓÂö'WGFöãà¢¶W'&÷"bbÇ6Æ74æÖSÒ&×BÓB&
           <div className="mt-6 grid gap-3 sm:grid-cols-3"><div className="rounded-2xl bg-blue-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">BÃœTÃ‡E</p><p className="mt-1 text-lg font-black text-slate-900">{money(result.budget)}</p></div><div className="rounded-2xl bg-blue-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">ORT. mÂ² FÄ°YATI</p><p className="mt-1 text-lg font-black text-slate-900">45.500 â‚º</p></div><div className="rounded-2xl bg-blue-50 p-4"><p className="text-[10px] font-black tracking-widest text-slate-500">TAHMÄ°NÄ° KÄ°RA</p><p className="mt-1 text-lg font-black text-slate-900">31.000 - 38.000 â‚º</p></div></div>
           <div className="mt-6 space-y-3">{result.matches.length ? result.matches.map((item) => <Link key={item.id} to={'/ilan/' + item.id} className="flex gap-4 rounded-2xl border border-slate-100 p-3 transition hover:border-cyan-300 hover:bg-blue-50/70"><img src={item.image} alt="" className="h-20 w-28 rounded-xl object-cover"/><div className="min-w-0 flex-1"><p className="truncate font-black text-slate-900">{item.title}</p><p className="mt-1 text-xs text-slate-500">{item.area} mÂ² Â· {item.rooms} Â· {item.neighborhood}, {item.district}</p><p className="mt-2 font-black text-blue-700">{money(item.price)}</p></div><ArrowRight className="mt-7 h-5 w-5 text-slate-400"/></Link>) : <div className="rounded-2xl bg-slate-50 p-6 text-center text-sm font-bold text-slate-500">Bu kriterlerde demo ilanda sonuÃ§ bulunamadÄ±. FarklÄ± bir bÃ¼tÃ§e veya ilan tÃ¼rÃ¼ deneyin.</div>}</div>
         </section>
-        <aside className="space-y-5"><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-cyan-700">YATIRIM GÃ–RÃœNÃœMÃœ</p><div className="mt-4 space-y-4 text-sm"><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Tahmini brÃ¼t getiri</span><b className="text-slate-900">%5,6</b></div><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Geri dÃ¶nÃ¼ÅŸ sÃ¼resi</span><b className="text-slate-900">17,8 yÄ±l</b></div><div className="flex items-center justify-between"><span className="text-slate-500">5 yÄ±llÄ±k fiyat deÄŸiÅŸimi</span><b className="text-emerald-600">+%164</b></div></div><p className="mt-4 text-[11px] leading-relaxed text-slate-400">GÃ¶sterimler Ã¶rnek veriyle Ã¼retilmiÅŸtir; yatÄ±rÄ±m tavsiyesi deÄŸildir.</p></div><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-cyan-700">BÃ–LGEDE NELER VAR?</p><div className="mt-4 grid grid-cols-2 gap-3 text-xs font-bold text-slate-700"><YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Õ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÍ±…Ñ”´ÔÀÀ´ÌˆûÂ~>¬€ÄÈ½­Õ°ñ‰È¼øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ĞÀÀˆøÄ­´§¥¹‘”ğ½ÍÁ…¸øğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÍ±…Ñ”´ÔÀÀ´ÌˆûÂ~>”€Ğ¡…ÍÑ…¹”ñ‰È¼øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ĞÀÀˆøÌ­´§¥¹‘”ğ½ÍÁ…¸øğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÍ±…Ñ”´ÔÀÀ´ÌˆûÂ~j5•ÑÉ¼ñ‰È¼øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ĞÀÀˆøàÔÀ´µ•Í…™”ğ½ÍÁ…¸øğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÍ±…Ñ”´ÔÀÀ´ÌˆûÂ~>˜-É•‘¤ñ‰È¼øñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù!•Í…Á±…¹…‰¥±¥Èğ½ÍÁ…¸øğ½‘¥Øøğ½‘¥Øøñ1¥¹¬Ñ¼ôˆ½‘…¹¥Íµ…¹±…É¥µ¥èˆ±…ÍÍ9…µ”ô‰µĞ´Ô¥¹±¥¹”µ™±•àÜµ™Õ±°¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µá°‰œµå…¸´ØÀÀÁà´ĞÁä´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”¡½Ù•Èé‰œµå…¸´ÜÀÀˆùÙ±”‘…»Ç}µ…¹±…ËÅå±„ŸÙËó|€ñÉÉ½İI¥¡Ğ±…ÍÍ9…µ”ô‰µ°´È ´ĞÜ´Ğˆ¼øğ½1¥¹¬øğ½‘¥Øøğ½…Í¥‘”ø(€€€€€€ğ½‘¥Øùô(€€€€€í…¥Q…ˆ€ôôô€Ù…±Õ…Ñ¥½¸œ€˜˜Ù…±Õ…Ñ¥½¹I•…‘ä€˜˜€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µĞ´ÜÉ¥…À´Ô±œéÉ¥µ½±ÌµlÄ¸ÄÕ™É|¸àÕ™Étˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•Èµå…¸´ÄÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´ˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÑ•áĞµå…¸´ÜÀÀˆù=Q=5SÁ,yI15M=9UTğ½Àøñ È±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùíÙ…±Õ…Ñ¥½¸¹‘¥ÍÑÉ¥Ñô°íÙ…±Õ…Ñ¥½¸¹¥Ñåôƒ
-ÜíÙ…±Õ…Ñ¥½¸¹ÁÉ½Á•ÉÑåQåÁ•ôğ½ Èøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÉ¥…À´ÌÍ´éÉ¥µ½±Ì´Ìˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰œµå…¸´ÔÀÀ´ĞˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùQ!7Á;ÀyHğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùì¡9Õµ‰•È¡Ù…±Õ…Ñ¥½¸¹…É•…ñğÄÈÀ¤¨ĞÔÔÀÀ¨¸äÈ¤¹Ñ½1½…±•MÑÉ¥¹œ ÑÈµQHœ¥ôƒŠLì¡9Õµ‰•È¡Ù…±Õ…Ñ¥½¸¹…É•…ñğÄÈÀ¤¨ĞÔÔÀÀ¨Ä¸Àà¤¹Ñ½1½…±•MÑÉ¥¹œ ÑÈµQHœ¥ôƒŠ
-èğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰œµå…¸´ÔÀÀ´ĞˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùY1·
-È=IP¸ğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆøĞÔ¸ÔÀÀƒŠ
-èğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰œµå…¸´ÔÀÀ´ĞˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùqY8M-=ITğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµ•µ•É…±´ØÀÀˆùgñ­Í•¬ğ½Àøğ½‘¥Øøğ½‘¥ØøñÀ±…ÍÍ9…µ”ô‰µĞ´ØÉ½Õ¹‘•´Éá°‰œµÍ±…Ñ”´ÔÀÀ´ĞÑ•áĞµÍ´±•…‘¥¹œµÉ•±…á•Ñ•áĞµÍ±…Ñ”´ØÀÀˆù—}•È…É…³ÇÄì­½¹Õ´°íÙ…±Õ…Ñ¥½¸¹…É•…ô·
-È°íÙ…±Õ…Ñ¥½¸¹É½½µÍôÙ”‰¥¹„å‡Ä‰¥±¥±•É¥¹”ŸÙÉ”ƒÙÉ¹•¬Á¥å…Í„µ•ÑÉ¥­±•É¥å±”¡•Í…Á±…¹“Ä¸I•Í·¸•­ÍÁ•ÉÑ¥èå•É¥¹”—µ•è¸ğ½Àøğ½‘¥Øøñ…Í¥‘”±…ÍÍ9…µ”ô‰É½Õ¹‘•´Íá°‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´É¥¹œ´ÄÉ¥¹œµÍ±…Ñ”´ÈÀÀˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÑ•áĞµå…¸´ÜÀÀˆùCÁeMƒYiSÀğ½ÀøñÕ°±…ÍÍ9…µ”ô‰µĞ´ĞÍÁ…”µä´ÌÑ•áĞµÍ´™½¹ĞµÍ•µ¥‰½±Ñ•áĞµÍ±…Ñ”´ÜÀÀˆøñ±¤ûŠ\M½¸€ÄÈ…å‘„‹Ù±•‘”™¥å…Ğ—}¥±¥µ¤Ÿó³ğ¸ğ½±¤øñ±¤ûŠ2	•¹é•È¥±…¹±…ËÅ¸Í…ÓÇ|ÏñÉ•Í¤è€ĞÈŸñ¸¸ğ½±¤øñ±¤ûŠZŒQ…¡µ¥¹¤…å³Å¬­¥É„è€ÌÄ¸ÀÀÀƒŠL€Ìà¸ÀÀÀƒŠ
-èğ½±¤øğ½Õ°øğ½…Í¥‘”øğ½Í•Ñ¥½¸ùô(€€€€ğ½‘¥Øø(€€ğ½‘¥Øøì)ô()ÑåÁ”5…Á1¥ÍÑ¥¹œ€ô1¥ÍÑ¥¹%Ñ•´€˜ì±…Ğè¹Õµ‰•Èì±¹œè¹Õµ‰•Èôì)½¹ÍĞ5A}1%MQ%9}1=Q%=9L€ôl(€ì¥Ñäè€¹­…É„œ°‘¥ÍÑÉ¥Ğè€Ÿ…¹­…å„œ°¹•¥¡‰½É¡½½è€e‡}…µ­•¹Ğœ°±…Ğè€Ìä¸àÈÈ°±¹œè€ÌÈ¸ÜÀàô°(€ì¥Ñäè€¹­…É„œ°‘¥ÍÑÉ¥Ğè€Ÿ…¹­…å„œ°¹•¥¡‰½É¡½½è€ŸÁ¹•¬œ°±…Ğè€Ìä¸ÜÔĞ°±¹œè€ÌÈ¸ÜÌÈô°(€ì¥Ñäè€¹­…É„œ°‘¥ÍÑÉ¥Ğè€Ÿ…¹­…å„œ°¹•¥¡‰½É¡½½è€OÛñÓÙëğœ°±…Ğè€Ìä¸äÄÄ°±¹œè€ÌÈ¸àÀäô°(€ì¥Ñäè€ŸÁÍÑ…¹‰Õ°œ°‘¥ÍÑÉ¥Ğè€-…“Å¯Ùäœ°¹•¥¡‰½É¡½½è€•¹•É‰…£”œ°±…Ğè€ĞÀ¸äÜÌ°±¹œè€Èä¸ÀØÄô°(€ì¥Ñäè€ŸÁÍÑ…¹‰Õ°œ°‘¥ÍÑÉ¥Ğè€	—}¥­Ñ‡|œ°¹•¥¡‰½É¡½½è€1•Ù•¹Ğœ°±…Ğè€ĞÄ¸ÀàÄ°±¹œè€Èä¸ÀÄÌô°(€ì¥Ñäè€ŸÁÍÑ…¹‰Õ°œ°‘¥ÍÑÉ¥Ğè€Ñ‡}•¡¥Èœ°¹•¥¡‰½É¡½½è€/óŸñ­‰…­­…±¯Ùäœ°±…Ğè€ĞÀ¸ääĞ°±¹œè€Èä¸ÄÈàô°(€ì¥Ñäè€¹Ñ…±å„œ°‘¥ÍÑÉ¥Ğè€-½¹å……±ÓÄœ°¹•¥¡‰½É¡½½è€1¥µ…¸œ°±…Ğè€ÌØ¸àÜÀ°±¹œè€ÌÀ¸ØÌØô°(€ì¥Ñäè€¹Ñ…±å„œ°‘¥ÍÑÉ¥Ğè€5ÕÉ…ÑÁ‡}„œ°¹•¥¡‰½É¡½½è€•¹•Èœ°±…Ğè€ÌØ¸àÔÈ°±¹œè€ÌÀ¸ÜØĞô°(€ì¥Ñäè€ŸÁéµ¥Èœ°‘¥ÍÑÉ¥Ğè€-…ËÅå…­„œ°¹•¥¡‰½É¡½½è€	½ÍÑ…¹³Äœ°±…Ğè€Ìà¸ĞÔà°±¹œè€ÈÜ¸ÀäØô°(€ì¥Ñäè€	ÕÉÍ„œ°‘¥ÍÑÉ¥Ğè€9¥³ñ™•Èœ°¹•¥¡‰½É¡½½è€ŸYé³ñ”œ°±…Ğè€ĞÀ¸ÈÄÌ°±¹œè€Èà¸äÔäô°(€ì¥Ñäè€5×}±„œ°‘¥ÍÑÉ¥Ğè€	½‘ÉÕ´œ°¹•¥¡‰½É¡½½è€e…³Å­…Ù…¬œ°±…Ğè€ÌÜ¸ÄÀÔ°±¹œè€ÈÜ¸ÈäÀô)tì)½¹ÍĞ5A}1%MQ%9Lè5…Á1¥ÍÑ¥¹mt€ôM5A1}1%MQ%9L¹µ…À ¡±¥ÍÑ¥¹œ°¥¹‘•à¤€ôø€¡ì€¸¸¹±¥ÍÑ¥¹œ°€¸¸¹5A}1%MQ%9}1=Q%=9Mm¥¹‘•à€”5A}1%MQ%9}1=Q%=9L¹±•¹Ñ¡tô¤¤ì()™Õ¹Ñ¥½¸5…ÁY¥•İÁ½ÉÑ1¥ÍÑ•¹•È¡ì½¹	½Õ¹‘Í¡…¹”°½¹5…ÁI•…‘ä°‘É…İ¥¹œ°½¹É…İA½¥¹Ğôèì½¹	½Õ¹‘Í¡…¹”è€¡‰½Õ¹‘Ìè0¹1…Ñ1¹	½Õ¹‘Ì°é½½´è¹Õµ‰•È¤€ôøÙ½¥ì½¹5…ÁI•…‘äè€¡µ…Àè0¹5…À¤€ôøÙ½¥ì‘É…İ¥¹œè‰½½±•…¸ì½¹É…İA½¥¹Ğè€¡Á½¥¹Ğè0¹1…Ñ1¹œ¤€ôøÙ½¥ô¤ì(€½¹ÍĞµ…À€ôÕÍ•5…ÁÙ•¹ÑÌ¡ì(€€€µ½Ù••¹è€ ¤€ôø½¹	½Õ¹‘Í¡…¹”¡µ…À¹•Ñ	½Õ¹‘Ì ¤°µ…À¹•Ñi½½´ ¤¤°(€€€é½½µ•¹è€ ¤€ôø½¹	½Õ¹‘Í¡…¹”¡µ…À¹•Ñ	½Õ¹‘Ì ¤°µ…À¹•Ñi½½´ ¤¤°(€€€±¥¬è€¡•Ù•¹Ğ¤€ôøì¥˜€¡‘É…İ¥¹œ¤½¹É…İA½¥¹Ğ¡•Ù•¹Ğ¹±…Ñ±¹œ¤ìô(€ô¤ì(€ÕÍ•™™•Ğ  ¤€ôøì½¹	½Õ¹‘Í¡…¹”¡µ‡m4ÖÚ$z{-®éÜj×OH›\‹LH[›[™HLËHËLËHˆÏ”ñ,Y±,\›OØ]ÛÙ]]ˆÛ\ÜÓ˜[YOH›]MHÜXÙK^KLÈÙ[Xİ˜[YO^İ˜[œØXİ[Û•\_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]˜[œØXİ[Û•\J]™[\™Ù]˜[YJ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLLÈKLÈ^^È›ÛX›Û^\Û]KNÜ[Ûˆ˜[YOHˆ•0ïHqgÛ[H\\šOÛÜ[ÛÓTÕS‘×ÕS”ĞPÕSÓ—ÕTTË›X\
+        <aside className="space-y-5"><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-cyan-700">YATIRIM GÃ–RÃœNÃœMÃœ</p><div className="mt-4 space-y-4 text-sm"><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Tahmini brÃ¼t getiri</span><b className="text-slate-900">%5,6</b></div><div className="flex items-center justify-between border-b border-slate-100 pb-3"><span className="text-slate-500">Geri dÃ¶nÃ¼ÅŸ sÃ¼resi</span><b className="text-slate-900">17,8 yÄ±l</b></div><div className="flex items-center justify-between"><span className="text-slate-500">5 yÄ±llÄ±k fiyat deÄŸiÅŸimi</span><b className="text-emerald-600">+%164</b></div></div><p className="mt-4 text-[11px] leading-relaxed text-slate-400">GÃ¶sterimler Ã¶rnek veriyle Ã¼retilmiÅŸtir; yatÄ±rÄ±m tavsiyesi deÄŸildir.</p></div><div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-cyan-700">BÃ–LGEDE NELER VAR?</p><div className="mt-4 grid grid-cols-2 gap-3 text-xs font-bold text-slate-700"><div className="rounded-xl bg-slate-50 p-3">ğŸ« 12 okul<br/><span className="text-slate-400">1 km iÃ§inde</span></div><div className="rounded-xl bg-slate-50 p-3">ğŸ¥ 4 hastane<br/><span className="text-slate-400">3 km iÃ§inde</span></div><div className="rounded-xl bg-slate-50 p-3">ğŸš‡ Metro<br/><span className="text-slate-400">850 m mesafe</span></div><div className="rounded-xl bg-slate-50 p-3">ğŸ¦ Kredi<br/><span className="text-slate-400">Hesaplanabilir</span></div></div><Link to="/danismanlarimiz" className="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-cyan-600 px-4 py-3 text-xs font-black text-white hover:bg-cyan-700">BÃ¶lge danÄ±ÅŸmanlarÄ±yla gÃ¶rÃ¼ÅŸ <ArrowRight className="ml-2 h-4 w-4"/></Link></div></aside>
+      </div>}
+      {aiTab === 'valuation' && valuationReady && <section className="mt-7 grid gap-5 lg:grid-cols-[1.15fr_.85fr]"><div className="rounded-3xl border border-cyan-100 bg-white p-6 shadow-sm"><p className="text-xs font-black tracking-widest text-cyan-700">OTOMATÄ°K DEÄERLEME SONUCU</p><h2 className="mt-2 text-2xl font-black text-slate-900">{valuation.district}, {valuation.city} Â· {valuation.propertyType}</h2><div className="mt-6 grid gap-3 sm:grid-cols-3"><div className="rounded-2xl bg-cyan-50 p-4"><p className="text-[10px] font-black text-slate-500">TAHMÄ°NÄ° DEÄER</p><p className="mt-1 text-xl font-black text-slate-900">{(Number(valuation.area||120)*45500*.92).toLocaleString('tr-TR')} â€“ {(Number(valuation.area||120)*45500*1.08).toLocaleString('tr-TR')} â‚º</p></div><div className="rounded-2xl bg-cyan-50 p-4"><p className="text-[10px] font-black text-slate-500">BÃ–LGE mÂ² ORT.</p><p className="mt-1 text-xl font-black text-slate-900">45.500 â‚º</p></div><div className="rounded-2xl bg-cyan-50 p-4"><p className="text-[10px] font-black text-slate-500">GÃœVEN SKORU</p><p className="mt-1 text-xl font-black text-emerald-600">YÃ¼ksek</p></div></div><p className="mt-6 rounded-2xl bg-slate-50 p-4 text-sm leading-relaxed text-slate-600">DeÄŸer aralÄ±ÄŸÄ±; konum, {valuation.area} mÂ², {valuation.rooms} ve bina yaÅŸÄ± bilgilerine gÃ¶re Ã¶rnek piyasa metrikleriyle hesaplandÄ±. ResmÃ® ekspertiz yerine geÃ§mez.</p></div><aside className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p className="text-xs font-black tracking-widest text-cyan-700">PÄ°YASA Ã–ZETÄ°</p><ul className="mt-4 space-y-3 text-sm font-semibold text-slate-700"><li>â†— Son 12 ayda bÃ¶lgede fiyat eÄŸilimi gÃ¼Ã§lÃ¼.</li><li>âŒ‚ Benzer ilanlarÄ±n satÄ±ÅŸ sÃ¼resi: 42 gÃ¼n.</li><li>â–£ Tahmini aylÄ±k kira: 31.000 â€“ 38.000 â‚º</li></ul></aside></section>}
+    </div>
+  </div>;
+}
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÙ[Xİ˜[YO^Ü›Ü\U\_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü\U\J]™[\™Ù]˜[YJ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLLÈKLÈ^^È›ÛX›Û^\Û]KNÜ[Ûˆ˜[YOHˆ•0ïH[[ˆ0ï›\šOÛÜ[ÛĞSÓTÕS‘×Ô“ÔT•WÕTTË›X\
+type MapListing = ListingItem & { lat: number; lng: number };
+const MAP_LISTING_LOCATIONS = [
+  { city: 'Ankara', district: 'Ã‡ankaya', neighborhood: 'YaÅŸamkent', lat: 39.822, lng: 32.708 },
+  { city: 'Ankara', district: 'Ã‡ankaya', neighborhood: 'Ä°ncek', lat: 39.754, lng: 32.732 },
+  { city: 'Ankara', district: 'Ã‡ankaya', neighborhood: 'SÃ¶ÄŸÃ¼tÃ¶zÃ¼', lat: 39.911, lng: 32.809 },
+  { city: 'Ä°stanbul', district: 'KadÄ±kÃ¶y', neighborhood: 'FenerbahÃ§e', lat: 40.973, lng: 29.061 },
+  { city: 'Ä°stanbul', district: 'BeÅŸiktaÅŸ', neighborhood: 'Levent', lat: 41.081, lng: 29.013 },
+  { city: 'Ä°stanbul', district: 'AtaÅŸehir', neighborhood: 'KÃ¼Ã§Ã¼kbakkalkÃ¶y', lat: 40.994, lng: 29.128 },
+  { city: 'Antalya', district: 'KonyaaltÄ±', neighborhood: 'Liman', lat: 36.870, lng: 30.636 },
+  { city: 'Antalya', district: 'MuratpaÅŸa', neighborhood: 'Fener', lat: 36.852, lng: 30.764 },
+  { city: 'Ä°zmir', district: 'KarÅŸÄ±yaka', neighborhood: 'BostanlÄ±', lat: 38.458, lng: 27.096 },
+  { city: 'Bursa', district: 'NilÃ¼fer', neighborhood: 'Ã–zlÃ¼ce', lat: 40.213, lng: 28.959 },
+  { city: 'MuÄŸla', district: 'Bodrum', neighborhood: 'YalÄ±kavak', lat: 37.105, lng: 27.290 }
+];
+const MAP_LISTINGS: MapListing[] = SAMPLE_LISTINGS.map((listing, index) => ({ ...listing, ...MAP_LISTING_LOCATIONS[index % MAP_LISTING_LOCATIONS.length] }));
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÙ[Xİ˜[YO^ØÚ]_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]Ú]J]™[\™Ù]˜[YJ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLLÈKLÈ^^È›ÛX›Û^\Û]KNÜ[Ûˆ˜[YOHˆ•0ïH1gÙZ\›\ÛÜ[ÛÖË‹‹›™]ÈÙ]
-PTÓTÕS‘ÔË›X\
+function MapViewportListener({ onBoundsChange, onMapReady, drawing, onDrawPoint }: { onBoundsChange: (bounds: L.LatLngBounds, zoom: number) => void; onMapReady: (map: L.Map) => void; drawing: boolean; onDrawPoint: (point: L.LatLng) => void }) {
+  const map = useMapEvents({
+    moveend: () => onBoundsChange(map.getBounds(), map.getZoom()),
+    zoomend: () => onBoundsChange(map.getBounds(), map.getZoom()),
+    click: (event) => { if (drawing) onDrawPoint(event.latlng); }
+  });
+  useEffect(() => { onBoundsChange(map.getBounds(), map.getZoom()); onMapReady(map); }, [map, onBoundsChange, onMapReady]);
+  useEffect(() => {
+    const container = map.getContainer();
+    if (drawing) {
+      map.dragging.disable();
+      map.doubleClickZoom.disable();
+      container.classList.add('map-drawing-mode');
+    } else {
+      map.dragging.enable();
+      map.doubleClickZoom.enable();
+      container.classList.remove('map-drawing-mode');
+    }
+    return () => {
+      map.dragging.enable();
+      map.doubleClickZoom.enable();
+      container.classList.remove('map-drawing-mode');
+    };
+  }, [drawing, map]);
+  return null;
+}
 
-][JHOˆ][K˜Ú]JJWK›X\
+function MapSearchPage() {
+  const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
+  const [viewport, setViewport] = useState<{ bounds: L.LatLngBounds | null; zoom: number }>({ bounds: null, zoom: 6 });
+  const [transactionType, setTransactionType] = useState('');
+  const [propertyType, setPropertyType] = useState('');
+  const [city, setCity] = useState('');
+  const [drawing, setDrawing] = useState(false);
+  const [drawStart, setDrawStart] = useState<L.LatLng | null>(null);
+  const [drawBounds, setDrawBounds] = useState<L.LatLngBounds | null>(null);
+  const [userPosition, setUserPosition] = useState<L.LatLng | null>(null);
+  const [nearbyOnly, setNearbyOnly] = useState(false);
+  const [locationMessage, setLocationMessage] = useState('');
+  const handleViewportChange = useCallback((bounds: L.LatLngBounds, zoom: number) => setViewport({ bounds, zoom }), []);
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÙ]]ˆÛ\ÜÓ˜[YOH›]MHÜšYØ\Lˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ü™\]Y\İØØ][ÛŸHÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆ\İYKXÙ[\ˆ›İ[™Y^™Ë\™YMÌMKLÈ^^È›ÛX›XÚÈ^]Ú]HÚYİË[ÈÚYİË\™YMÌÌHİ™\˜™Ë\™YNØØ]Qš^YÛ\ÜÓ˜[YOH›\‹LˆMËMˆÏ–XZñ,[™ZÚH1,[›\±,Hğíœİ\Ø]Û]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ø™YÚ[‘˜]Ú[™ßHÛ\ÜÓ˜[YO^Ø›^][\ËXÙ[\ˆ\İYKXÙ[\ˆ›İ[™Y^›Ü™\ˆMKLÈ^^È›ÛX›XÚÈ˜[œÚ][Ûˆ	Ù˜]Ú[™ÈÈ	Ø›Ü™\‹\™YMÌ™Ë\™YML^\™YMÌ	Èˆ	Ø›Ü™\‹\Û]KLŒ™Ë]Ú]H^\Û]KMÌİ™\˜›Ü™\‹\™YLŒİ™\^\™YMÌ	ßXO[˜Ú[[\ˆÛ\ÜÓ˜[YOH›\‹LˆMËMˆÏÙ˜]Ú[™ÈÈ	Ò\š]YH[[ˆÙpéÚ[‰Èˆ	Ğ[[ˆ0áÚ^™\™ZÈ\˜IßOØ]ÛÙ]ÛØØ][Û“Y\ÜØYÙH	‰ˆÛ\ÜÓ˜[YOH›]LÈ›İ[™Y^™Ë\™YMLLÈKL‹H^VÌL\H›Û\Ù[ZX›ÛXY[™Ë\™[^Y^\™YMÌÛØØ][Û“Y\ÜØYÙ_OÜŸO]ˆÛ\ÜÓ˜[YOH›]Mˆ›Ü™\‹]›Ü™\‹\Û]KLLMH]ˆÛ\ÜÓ˜[YOH™›^][\ËY[™\İYKX™]ÙY[ˆ]Û\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ˜XÚÚ[™Ë]ÚY\İ^\Û]KM‘ğå”°ç°çˆSSÜÈÛ\ÜÓ˜[YOH›]LH^L›ÛX›XÚÈ^\Û]KNLİš\ÚX›S\İ[™ÜË›[™İHÜ[ˆÛ\ÜÓ˜[YOH^\ÛH^\Û]KMLš[[ÜÜ[ÚÏÙ]Ü[ˆÛ\ÜÓ˜[YOHœ›İ[™YY[™Ë\™YLLL‹HKLH^VÌLH›ÛX›XÚÈ^\™YMÌ–›ÛÛHİšY]ÜÜ›ÛÛ_OÜÜ[Ù]]ˆÛ\ÜÓ˜[YOH›]MÜXÙK^KLÈİš\ÚX›S\İ[™ÜË›[™İÈš\ÚX›S\İ[™ÜË›X\
+  const isInsideDrawnArea = (item: MapListing) => !drawBounds || drawBounds.contains([item.lat, item.lng]);
+  const isNearby = (item: MapListing) => {
+    if (!nearbyOnly || !userPosition) return true;
+    const earthRadius = 6371;
+    const dLat = ((item.lat - userPosition.lat) * Math.PI) / 180;
+    const dLng = ((item.lng - userPosition.lng) * Math.PI) / 180;
+    const value = Math.sin(dLat / 2) ** 2 + Math.cos((userPosition.lat * Math.PI) / 180) * Math.cos((item.lat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+    return earthRadius * 2 * Math.atan2(Math.sqrt(value), Math.sqrt(1 - value)) <= 5;
+  };
+  const visibleListings = MAP_LISTINGS.filter((item) => {
+    if (transactionType && item.type !== transactionType) return false;
+    if (propertyType && item.propertyType !== propertyType) return false;
+    if (city && item.city !== city) return false;
+    if (viewport.bounds && !viewport.bounds.contains([item.lat, item.lng])) return false;
+    return isInsideDrawnArea(item) && isNearby(item);
+  });
+  const mapListings = MAP_LISTINGS.filter((item) => {
+    if (transactionType && item.type !== transactionType) return false;
+    if (propertyType && item.propertyType !== propertyType) return false;
+    if (city && item.city !== city) return false;
+    return isInsideDrawnArea(item) && isNearby(item);
+  });
+  const clusterMap = new globalThis.Map<string, MapListing[]>();
+  if (viewport.zoom < 10) mapListings.forEach((item) => { const key = item.city; clusterMap.set(key, [...(clusterMap.get(key) || []), item]); });
 
-][JHOˆ[šÈÙ^O^Ú][KšYHÏ^ØÚ[[‹ÉÚ][KšYXHÛ\ÜÓ˜[YOH™›^Ø\LÈ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLLLˆ˜[œÚ][Ûˆİ™\˜›Ü™\‹\™YLŒİ™\˜™Ë\™YMLÌÌ[YÈÜ˜Ï^Ú][Kš[XYÙ_H[HˆˆÛ\ÜÓ˜[YOHšLMˆËLŒ›İ[™Y[ÈØš™XİXÛİ™\ˆˆÏ]ˆÛ\ÜÓ˜[YOH›Z[‹]ËLÛ\ÜÓ˜[YOH[˜Ø]H^^È›ÛX›XÚÈ^\Û]KNLÚ][K]_OÜÛ\ÜÓ˜[YOH›]LH^VÌLH›ÛX›Û^\Û]KMLÚ][K™\İšXİKÚ][K˜Ú]_OÜÛ\ÜÓ˜[YOH›]LH^\ÛH›ÛX›XÚÈ^\™YMÌÚ][KœšXÙKÓØØ[Tİš[™Ê	İ‹U‰Ê_H8 ®ÜÙ]Ó[šÏŠHˆÛ\ÜÓ˜[YOHœ›İ[™Y^™Ë\Û]KMLM^XÙ[\ˆ^^È›ÛX›Û^\Û]KMLH[[™H^Yİ[ˆ[[ˆ[[˜[XY1,KÜŸOÙ]Ù]Ø\ÚYO‚ÙXİ[ÛˆÛ\ÜÓ˜[YOH›Ü™\‹LH™[]]™H\ÛÛ]H‹LVÍNHİ™\™›İËZY[ˆ›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KLŒÚYİË^Î›Ü™\‹LˆÎšVÍÍŒH]ˆÛ\ÜÓ˜[YOHœÚ[\‹Y]™[Ë[›Û™HXœÛÛ]HYLMˆÜM‹VÍLH›İ[™Y^™Ë]Ú]KÎMHLÈKLˆ^^È›ÛX›XÚÈ^\Û]KMÌÚYİË[È˜XÚÙ›ÜX›\ˆİšY]ÜÜ›ÛÛHLÈ	ÒğïY[[›ZqgÈ[[›\ˆğíœİ\š[^[Ü‰Èˆ	ÕZÚ[[[›\ˆğíœİ\š[^[Ü‰ßOÙ]X\ÛÛZ[™\ˆÙ[\^ÖÌÎKŒÍKŒ_H›ÛÛO^ÍŸHØÜ›ÛÚY[›ÛÛHÛ\ÜÓ˜[YOHšY[ËY[[S^Y\ˆ]šX][ÛIÉ˜ÛÜNÈĞT•ÉÈ\›HšÎ‹ËŞÜßK˜˜\Ù[X\Ë˜Ø\ØÙ‹˜ÛÛKÛYÚÛ›ÛX™[ËŞŞŸKŞŞKŞŞ_^ÜŸKœ™ÈˆÏX\šY]ÜÜ\İ[™\ˆÛ›İ[™ĞÚ[™ÙO^Ú[™UšY]ÜÜÚ[™Ù_HÛ“X\™XYO^ÜÙ]X\[œİ[˜Ù_H˜]Ú[™Ï^Ù˜]Ú[™ßHÛ‘˜]ÔÚ[^Ú[™Q˜]ÔÚ[HÏİšY]ÜÜ›ÛÛHLÈË‹‹˜Û\İ\“X\™[šY\Ê
-WK›X\
+  const beginDrawing = () => {
+    setDrawing(true);
+    setDrawStart(null);
+    setDrawBounds(null);
+    setLocationMessage('Haritada alanÄ±n ilk ve karÅŸÄ± kÃ¶ÅŸesine tÄ±klayÄ±n.');
+  };
+  const handleDrawPoint = (point: L.LatLng) => {
+    if (!drawStart) {
+      setDrawStart(point);
+      setLocationMessage('Ä°lk kÃ¶ÅŸe seÃ§ildi. Åimdi karÅŸÄ± kÃ¶ÅŸeye tÄ±klayÄ±n.');
+      return;
+    }
+    setDrawBounds(L.latLngBounds(drawStart, point));
+    setDrawStart(null);
+    setDrawing(false);
+    setLocationMessage('Ã‡izdiÄŸiniz alan iÃ§indeki ilanlar gÃ¶steriliyor.');
+  };
+  const requestLocation = () => {
+    if (!navigator.geolocation) { setLocationMessage('TarayÄ±cÄ±nÄ±z konum Ã¶zelliÄŸini desteklemiyor.'); return; }
+    setLocationMessage('YakÄ±ndaki ilanlar iÃ§in konum izni isteniyorâ€¦');
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const point = L.latLng(position.coords.latitude, position.coords.longitude);
+        setUserPosition(point); setNearbyOnly(true); setLocationMessage('5 km Ã§evrenizdeki ilanlar gÃ¶steriliyor.'); mapInstance?.flyTo(point, 13);
+      },
+      () => setLocationMessage('Konum izni verilmedi. YakÄ±ndaki ilanlarÄ± gÃ¶rmek iÃ§in tarayÄ±cÄ± iznini aÃ§abilirsiniz.'),
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  };
+  const resetMap = () => {
+    setTransactionType(''); setPropertyType(''); setCity(''); setDrawBounds(null); setDrawStart(null); setDrawing(false); setNearbyOnly(false); setUserPosition(null); setLocationMessage(''); mapInstance?.setView([39.0, 35.0], 6);
+  };
 
-ÚÙ^K][\×JHOˆÈÛÛœİ]H][\Ëœ™YXÙJ
-İ[K][JHOˆİ[H
-È][K›]
-HÈ][\Ë›[™İÈÛÛœİ™ÈH][\Ëœ™YXÙJ
-İ[K][JHOˆİ[H
-È][K›™Ë
-HÈ][\Ë›[™İÈ™]\›ˆÚ\˜ÛSX\šÙ\ˆÙ^O^ÚÙ^_HÙ[\^ÖÛ]™×_H˜Y]\Ï^ÓX]›Z[Š‹MH
-È][\Ë›[™İ
-ˆŠ_H]Ü[ÛœÏ^ŞÈÛÛÜˆ	ÈĞÑLQIËš[ÛÛÜˆ	ÈĞÑLQIËš[ÜXÚ]NˆKÙZYÚˆÈ_H]™[[™\œÏ^ŞÈÛXÚÎˆ
-
-HOˆÈYˆ
-Y˜]Ú[™ÊHX\[œİ[˜ÙOË™›UÊÛ]™×KLJNÈH_OÛÛ\\›X[™[\™Xİ[ÛH˜Ù[\ˆˆÜXÚ]O^Ì_HÛ\ÜÓ˜[YOH›X\XÛ\İ\‹[X™[ÚVj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5tems.length}</Tooltip><Popup><strong>{key}</strong><br />{items.length} ilan</Popup></CircleMarker>; }) : mapListings.map((item) => <CircleMarker key={item.id} center={[item.lat, item.lng]} radius={10} pathOptions={{ color: '#fff', fillColor: '#CD011E', fillOpacity: 1, weight: 3 }}><Popup><div className="w-52"><img src={item.image} alt="" className="h-24 w-full rounded-lg object-cover" /><p className="mt-2 text-xs font-black">{item.title}</p><p className="mt-1 text-sm font-black text-red-700">{item.price.toLocaleString('tr-TR')} â‚º</p><a className="mt-2 inline-block text-xs font-black text-red-700" href={`/ilan/${item.id}`}>Ä°lanÄ± incele â†’</a></div></Popup></CircleMarker>)}{drawStart && <CircleMarker center={drawStart} radius={7} pathOptions={{ color: '#fff', fillColor: '#CD011E', fillOpacity: 1, weight: 3 }} interactive={false}><Tooltip permanent direction="top" opacity={1}>Ä°lk kÃ¶ÅŸe</Tooltip></CircleMarker>}{drawBounds && <Rectangle bounds={drawBounds} pathOptions={{ color: '#CD011E', weight: 2, fillOpacity: 0.08 }} />}{userPosition && <><CircleMarker center={userPosition} radius={9} pathOptions={{ color: '#fff', fillColor: '#2563eb', fillOpacity: 1, weight: 3 }}><Popup>Konumunuz</Popup></CircleMarker><Circle center={userPosition} radius={5000} pathOptions={{ color: '#2563eb', fillOpacity: 0.06 }} /></>}</MapContainer></section>
+  return <div className="min-h-screen bg-slate-100 py-6 lg:py-8">
+    <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
+      <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"><div><span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-3 py-1 text-[10px] font-black tracking-widest text-red-700"><MapPinned className="h-3.5 w-3.5" /> HARÄ°TA Ä°LE ARA</span><h1 className="mt-3 text-3xl font-black text-slate-900">Harita Ã¼zerinden <span className="text-red-700">ilan keÅŸfedin</span></h1><p className="mt-1 text-sm text-slate-500">HaritayÄ± hareket ettirin, yakÄ±nlaÅŸtÄ±rÄ±n veya alan Ã§izerek sonuÃ§larÄ± anÄ±nda gÃ¼ncelleyin.</p></div><Link to="/ilanlarimiz?all=1" className="inline-flex w-fit items-center rounded-xl bg-white px-4 py-2.5 text-xs font-black text-slate-700 shadow-sm ring-1 ring-slate-200 hover:text-red-700">Liste gÃ¶rÃ¼nÃ¼mÃ¼ne dÃ¶n <ArrowRight className="ml-2 h-4 w-4" /></Link></div>
+      <div className="grid gap-5 lg:grid-cols-[340px_minmax(0,1fr)]">
+        <aside className="order-2 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl lg:order-1 lg:max-h-[760px] lg:overflow-y-auto"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">Harita Filtreleri</h2><button type="button" onClick={resetMap} className="text-xs font-black text-red-700"><RotateCcw className="mr-1 inline h-3.5 w-3.5" />SÄ±fÄ±rla</button></div><div className="mt-5 space-y-3"><select value={transactionType} onChange={(event) => setTransactionType(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">TÃ¼m iÅŸlem tipleri</option>{LISTING_TRANSACTION_TYPES.map((item) => <option key={item}>{item}</option>)}</select><select value={propertyType} onChange={(event) => setPropertyType(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">TÃ¼m ilan tÃ¼rleri</option>{ALL_LISTING_PROPERTY_TYPES.map((item) => <option key={item}>{item}</option>)}</select><select value={city} onChange={(event) => setCity(event.target.value)} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-xs font-bold text-slate-800"><option value="">TÃ¼m ÅŸehirler</option>{[...new Set(MAP_LISTINGS.map((item) => item.city))].map((item) => <option key={item}>{item}</option>)}</select></div><div className="mt-5 grid gap-2"><button type="button" onClick={requestLocation} className="flex items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/25 hover:bg-red-800"><LocateFixed className="mr-2 h-4 w-4" />YakÄ±ndaki Ä°lanlarÄ± GÃ¶ster</button><button type="button" onClick={beginDrawing} className={`flex items-center justify-center rounded-xl border px-4 py-3 text-xs font-black transition ${drawing ? 'border-red-700 bg-red-50 text-red-700' : 'border-slate-200 bg-white text-slate-700 hover:border-red-200 hover:text-red-700'}`}><PencilRuler className="mr-2 h-4 w-4" />{drawing ? 'Haritada alan seÃ§in' : 'Alan Ã‡izerek Ara'}</button></div>{locationMessage && <p className="mt-3 rounded-xl bg-red-50 px-3 py-2.5 text-[11px] font-semibold leading-relaxed text-red-700">{locationMessage}</p>}<div className="mt-6 border-t border-slate-100 pt-5"><div className="flex items-end justify-between"><div><p className="text-[10px] font-black tracking-widest text-slate-400">GÃ–RÃœNÃœR ALAN</p><h3 className="mt-1 text-2xl font-black text-slate-900">{visibleListings.length} <span className="text-sm text-slate-500">ilan</span></h3></div><span className="rounded-full bg-red-100 px-2.5 py-1 text-[10px] font-black text-red-700">Zoom {viewport.zoom}</span></div><div className="mt-4 space-y-3">{visibleListings.length ? visibleListings.map((item) => <Link key={item.id} to={`/ilan/${item.id}`} className="flex gap-3 rounded-xl border border-slate-100 p-2 transition hover:border-red-200 hover:bg-red-50/30"><img src={item.image} alt="" className="h-16 w-20 rounded-lg object-cover" /><div className="min-w-0"><p className="truncate text-xs font-black text-slate-900">{item.title}</p><p className="mt-1 text-[10px] font-bold text-slate-500">{item.district}, {item.city}</p><p className="mt-1 text-sm font-black text-red-700">{item.price.toLocaleString('tr-TR')} â‚º</p></div></Link>) : <p className="rounded-xl bg-slate-50 p-4 text-center text-xs font-bold text-slate-500">Bu alanda uygun ilan bulunamadÄ±.</p>}</div></div></aside>
+<section className="order-1 relative isolate z-0 h-[580px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 shadow-xl lg:order-2 lg:h-[760px]"><div className="pointer-events-none absolute left-16 top-4 z-[500] rounded-xl bg-white/95 px-3 py-2 text-xs font-black text-slate-700 shadow-lg backdrop-blur">{viewport.zoom < 10 ? 'KÃ¼melenmiÅŸ ilanlar gÃ¶steriliyor' : 'Tekil ilanlar gÃ¶steriliyor'}</div><MapContainer center={[39.0, 35.0]} zoom={6} scrollWheelZoom className="h-full w-full"><TileLayer attribution='&copy; CARTO' url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" /><MapViewportListener onBoundsChange={handleViewportChange} onMapReady={setMapInstance} drawing={drawing} onDrawPoint={handleDrawPoint} />{viewport.zoom < 10 ? [...clusterMap.entries()].map(([key, items]) => { const lat = items.reduce((sum, item) => sum + item.lat, 0) / items.length; const lng = items.reduce((sum, item) => sum + item.lng, 0) / items.length; return <CircleMarker key={key} center={[lat, lng]} radius={Math.min(26, 15 + items.length * 2)} pathOptions={{ color: '#CD011E', fillColor: '#CD011E', fillOpacity: 0.9, weight: 3 }} eventHandlers={{ click: () => { if (!drawing) mapInstance?.flyTo([lat, lng], 11); } }}><Tooltip permanent direction="center" opacity={1} className="map-cluster-label">{items.length}</Tooltip><Popup><strong>{key}</strong><br />{items.length} ilan</Popup></CircleMarker>; }) : mapListings.map((item) => <CircleMarker key={item.id} center={[item.lat, item.lng]} radius={10} pathOptions={{ color: '#fff', fillColor: '#CD011E', fillOpacity: 1, weight: 3 }}><Popup><div className="w-52"><img src={item.image} alt="" className="h-24 w-full rounded-lg object-cover" /><p className="mt-2 text-xs font-black">{item.title}</p><p className="mt-1 text-sm font-black text-red-700">{item.price.toLocaleString('tr-TR')} â‚º</p><a className="mt-2 inline-block text-xs font-black text-red-700" href={`/ilan/${item.id}`}>Ä°lanÄ± incele â†’</a></div></Popup></CircleMarker>)}{drawStart && <CircleMarker center={drawStart} radius={7} pathOptions={{ color: '#fff', fillColor: '#CD011E', fillOpacity: 1, weight: 3 }} interactive={false}><Tooltip permanent direction="top" opacity={1}>Ä°lk kÃ¶ÅŸe</Tooltip></CircleMarker>}{drawBounds && <Rectangle bounds={drawBounds} pathOptions={{ color: '#CD011E', weight: 2, fillOpacity: 0.08 }} />}{userPosition && <><CircleMarker center={userPosition} radius={9} pathOptions={{ color: '#fff', fillColor: '#2563eb', fillOpacity: 1, weight: 3 }}><Popup>Konumunuz</Popup></CircleMarker><Circle center={userPosition} radius={5000} pathOptions={{ color: '#2563eb', fillOpacity: 0.06 }} /></>}</MapContainer></section>
       </div>
     </div>
   </div>;
@@ -842,40 +3252,284 @@ export function ListingsPage() {
               onChange={(e) => { setSelectedType(e.target.value); setHasSearched(false); }}
               className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
             >
-              <option value="">TÃ¼m Ä°ÅŸÛM5¶‰ËkºwµçFÂr’ÓÓÒsrÇÂ&ööÆVâ†–æ—F–ÅG—RÇÂ–æ—F–Å&÷W'G•G—RÇÂ–æ—F–Ä6FVv÷'’ÇÂ–æ—F–Ä6—G’“°¢6öç7B·G&ç67F–öåG—RÂ6WEG&ç67F–öåG—UÒÒW6U7FFR†–æ—F–ÅG—R“°¢6öç7B·&÷W'G•G—RÂ6WE&÷W'G•G—UÒÒW6U7FFR†–æ—F–Å&÷W'G•G—R“°¢6öç7B¶6FVv÷'”f–ÇFW"Â6WD6FVv÷'”f–ÇFW%ÒÒW6U7FFR†–æ—F–ÄÖ–ä6FVv÷'’“°¢6öç7B¶6—G’Â6WD6—G•ÒÒW6U7FFR†–æ—F–Ä6—G’“°¢6öç7B¶F—7G&–7BÂ6WDF—7G&–7EÒÒW6U7FFR†–æ—F–ÄF—7G&–7B“°¢6öç7B¶æV–v†&÷&†ööBÂ6WDæV–v†&÷&†ööEÒÒW6U7FFR‚rr“°¢6öç7B¶Gfæ6VBÂ6WDGfæ6VEÒÒW6U7FFSÅ&V6÷&CÇ7G&–ærÂ7G&–æsãâ‡·Ò“°¢6öç7B¶Æ–VDGfæ6VBÂ6WDÆ–VDGfæ6VEÒÒW6U7FFSÅ&V6÷&CÇ7G&–ærÂ7G&–æsãâ‡·Ò“°¢6öç7B¶†56V&6†VBÂ6WD†56V&6†VEÒÒW6U7FFR‡6†÷tÆÄ–æ—F–ÆÇ’“°¢6öç7B¶Æ–VE6V&6‚Â6WDÆ–VE6V&6…ÒÒW6U7FFR‡²G—S¢–æ—F–ÅG—RÂ&÷W'G•G—S¢–æ—F–Å&÷W'G•G—RÂ6FVv÷'“¢–æ—F–Ä6FVv÷'’ÂÖ–ä6FVv÷'“¢–æ—F–ÄÖ–ä6FVv÷'’Â6—G“¢–æ—F–Ä6—G’ÂF—7G&–7C¢–æ—F–ÄF—7G&–7BÂæV–v†&÷&†ööC¢rrÒ“°¢6öç7BV&Æ—6†VDÆ—7F–æw2ÒW6UV&Æ—6†VDÆ—7F–æw2‚“° ¢6öç7BF—7G&–7G2ÒvWEGW&¶W”F—7G&–7G2†6—G’“°¢6öç7BæV–v†&÷&†ööG2Ò6—G’bbF—7G&–7BòD•5E$”5EôäT”t„$õ$„ôôE5¶G¶6—G—×ÂG¶F—7G&–7GÖÒÇÂµÒ¢µÓ°¢6öç7Bf–Æ&ÆU&÷W'G•G—W2Ò6FVv÷'”f–ÇFW"òÄ•5D”äuõ$õU%E•õE•U5ô%•ôÔ”åô4DTtõ%•¶6FVv÷'”f–ÇFW"2¶W–öbG—VöbÄ•5D”äuõ$õU%E•õE•U5ô%•ôÔ”åô4DTtõ%•ÒÇÂµÒ¢µÓ°¢6öç7Bf–ÇFW$w&÷WÒvWDGfæ6VDf–ÇFW$w&÷W‡&÷W'G•G—RÇÂÆ–VE6V&6‚ç&÷W'G•G—R“°¢6öç7B6–FTf–VÆG2Ò&÷W'G•G—RÇÂÆ–VE6V&6‚ç&÷W'G•G—RòEdä4TEôd”ÅDU%5ô%•õE•U¶f–ÇFW$w&÷WÒ¢4ôÔÔôåõ$”4Uô$Tôd”TÄE3° ¢6öç7B'Vå6V&6‚Ò‚’Óâ°¢6WDÆ–VE6V&6‚‡²G—S¢G&ç67F–öåG—RÂ&÷W'G•G—RÂ6FVv÷'“¢ÄTt5•ôÄ•5D”äuô4DTtõ%•ô%•ôÔ”å¶6FVv÷'”f–ÇFW%ÒÇÂrrÂÖ–ä6FVv÷'“¢6FVv÷'”f–ÇFW"Â6—G’ÂF—7G&–7BÂæV–v†&÷&†ööBÒ“°¢6WDÆ–VDGfæ6VB‡²ââæGfæ6VBÒ“°¢6WD†56V&6†VB‡G'VR“°¢Ó° ¢6öç7Bf–ÇFW&VDÆ—7F–æw2ÒV&Æ—6†VDÆ—7F–æw2æf–ÇFW"‚†—FVÒ’Óâ°¢–b‚†56V&6†VB’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚çG—Rbb†Æ–VE6V&6‚çG—RÓÓÒtFWg&Vârò—FVÒçG—Rç7F'G5v—F‚‚tFWg&Vâr’¢—FVÒçG—RÓÒÆ–VE6V&6‚çG—R’’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚ç&÷W'G•G—Rbb—FVÒç&÷W'G•G—RÓÒÆ–VE6V&6‚ç&÷W'G•G—R’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚æ6FVv÷'’bb—FVÒæ6FVv÷'’ÓÒÆ–VE6V&6‚æ6FVv÷'’’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚æ6—G’bb—FVÒæ6—G’ÓÒÆ–VE6V&6‚æ6—G’’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚æF—7G&–7Bbb—FVÒæF—7G&–7BÓÒÆ–VE6V&6‚æF—7G&–7B’&WGW&âfÇ6S°¢–b†Æ–VE6V&6‚ææV–v†&÷&†ööBbb—FVÒææV–v†&÷&†ööBÓÒÆ–VE6V&6‚ææV–v†&÷&†ööB’&WGW&âfÇ6S°¢–b†Æ–VDGfæ6VBæÖ–å&–6Rbb—FVÒç&–6RÂçVÖ&W"†Æ–VDGfæ6VBæÖ–å&–6R’’&WGW&âfÇ6S°¢–b†Æ–VDGfæ6VBæÖ…&–6Rbb—FVÒç&–6RâçVÖ&W"†Æ–VDGfæ6VBæÖ…&–6R’’&WGW&âfÇ6S°¢–b†Æ–VDGfæ6VBæÖ–ä&Vbb—FVÒæ&VÂçVÖ&W"†Æ–VDGfæ6VBæÖ–ä&V’’&WGW&âfÇ6S°¢–b†Æ–VDGfæ6VBæÖ„&Vbb—FVÒæ&VâçVÖ&W"†Æ–VDGfæ6VBæÖ„&V’’&WGW&âfÇ6S°¢–b†Æ–VDGfæ6VBç&öö×2bb—FVÒç&öö×2ÓÒÆ–VDGfæ6VBç&öö×2’&WGW&âfÇ6S°¢f÷"†6öç7B¶¶W’ÂfÇVUÒöbö&¦V7BæVçG&–W2†Æ–VDGfæ6VB’’°¢–b‚fÇVRÇÂ²vÖ–å&–6RrÂvÖ…&–6RrÂvÖ–ä&VrÂvÖ„&VrÂw&öö×2uÒæ–æ6ÇVFW2†¶W’’’6öçF–çVS°¢6öç7BÆ—7F–æufÇVRÒ—FVÒæFWF–Ç5¶¶W•ÒÇÂrs°¢–b†Æ—7F–æufÇVRçFôÆö6ÆTÆ÷vW$66R‚wG"ÕE"r’ÓÒfÇVRçFôÆö6ÆTÆ÷vW$66R‚wG"ÕE"r’’&WGW&âfÇ6S°¢Ğ¢&WGW&âG'VS°¢Ò“° ¢6öç7B&W6WDf–ÇFW'2Ò‚’Óâ°¢6WEG&ç67F–öåG—R‚rr“²6WE&÷W'G•G—R‚rr“²6WD6FVv÷'”f–ÇFW"‚rr“²6WD6—G’‚rr“²6WDF—7G&–7B‚rr“²6WDæV–v†&÷&†ööB‚rr“°¢6WDGfæ6VB‡·Ò“²6WDÆ–VDGfæ6VB‡·Ò“²6WD†56V&6†VB†fÇ6R“°¢Ó° ¢&WGW&â€¢ÆF—b6Æ74æÖSÒ&Ö–âÖ‚×67&VVâ&r×6ÆFRÓS’Ó#à¢ÆF—b6Æ74æÖSÒ&×‚ÖWFòÖ‚×rÕ³S…Ò‚Ó26Ó§‚ÓRÆs§‚Ób#à¢ÆF—b6Æ74æÖSÒ&Ö"Ór#ãÇ7â6Æ74æÖSÒ'&÷VæFVBÖgVÆÂ&÷&FW"&÷&FW"×&VBÓ3&r×&VBÓ‚Ó2’ÓãRFW‡B×‡2föçBÖ&Æ6²G&6¶–ær×v–FW7BFW‡B×&VBÓs#ìKÄâ$ÔÂ÷7ããÆƒ6Æ74æÖSÒ&×BÓBFW‡BÓ7†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“6Ó§FW‡BÓG†Â#äv—&–ÖVæ·VÂÇ7â6Æ74æÖSÒ'FW‡B×&VBÓs#ìKÆæÆ,KÂ÷7ããÂöƒãÂöF—cà ¢Ç6V7F–öâ6Æ74æÖSÒ&Ö"Ó‚&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓB6†F÷r×†Â#à¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2Ó—FV×2ÖVæBvÓ26Ó¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2Ó2†Ã¦w&–BÖ6öÇ2Õ²ã“Vg%óg%óã#Vg%óg%óg%öWFõÒ#à¢ÆF—cãÆÆ&VÂ6Æ74æÖSÒ&Ö"Ó"&Æö6²FW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓc#ãâKYöÆVÒF—“ÂöÆ&VÃãÇ6VÆV7BfÇVS×·G&ç67F–öåG—WÒöä6†ævS×²†R’Óâ²6WEG&ç67F–öåG—R†RçF&vWBçfÇVR“²6WD†56V&6†VB†fÇ6R“²×Ò6Æ74æÖSÒ'rÖgVÆÂ&÷VæFUš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍY^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë\Û]KMLMKLÈ^\ÛH›ÛX›ÛÜ[Ûˆ˜[YOHˆ’Ú\˜[1,ZÈÈØ]1,[1,ZÈÈ]œ™[ÛÜ[ÛÓTÕS‘×ÔÑPTÒÕS”ĞPÕSÓ—ÕTTË›X\
+              <option value="">TÃ¼m Ä°ÅŸlem Tipleri</option>
+              <option value="SatÄ±lÄ±k">SatÄ±lÄ±k</option>
+              <option value="KiralÄ±k">KiralÄ±k</option>
+              <option value="Devren SatÄ±lÄ±k">Devren SatÄ±lÄ±k</option>
+              <option value="Devren KiralÄ±k">Devren KiralÄ±k</option>
+            </select>
+          </div>
 
-\JHOˆÜ[ÛˆÙ^O^İ\_Oİ\_OÛÜ[ÛŠ_OÜÙ[XİÙ]‚ˆ]X™[Û\ÜÓ˜[YOH›X‹Lˆ›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒŒ‹ˆ[˜HØ]YÛÜšOÛX™[Ù[Xİ˜[YO^ØØ]YÛÜQš[\ŸHÛÚ[™ÙO^ÊJHOˆÈÙ]Ø]YÛÜQš[\ŠK\™Ù]˜[YJNÈÙ]›Ü\U\J	ÉÊNÈÙ]Y˜[˜ÙY
-ßJNÈÙ]\ÔÙX\˜ÚY
-˜[ÙJNÈ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë\Û]KMLMKLÈ^\ÛH›ÛX›ÛÜ[Ûˆ˜[YOHˆ’ÛÛ]È\œØHÈ1,1gŞY\šOÛÜ[ÛÓTÕS‘×ÓPRS—ĞĞUQÓÔ’QTË›X\
+          <div>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">Kategori</label>
+            <select 
+              value={selectedCategory}
+              onChange={(e) => { setSelectedCategory(e.target.value); setHasSearched(false); }}
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+            >
+              <option value="">TÃ¼m Kategoriler</option>
+              {LISTING_CATEGORIES.map((category) => <option key={category} value={category}>{category}</option>)}
+            </select>
+          </div>
 
-Ø]YÛÜJHOˆÜ[ÛˆÙ^O^ØØ]YÛÜ_OØØ]YÛÜ_OÛÜ[ÛŠ_OÜÙ[XİÙ]‚ˆ]X™[Û\ÜÓ˜[YOH›X‹Lˆ›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒŒËˆ[0ïˆÜ[ˆÛ\ÜÓ˜[YOH™›Û[YY][H^\Û]KMŠ\İq'ÙH˜q'Û1,JOÜÜ[ÛX™[Ù[Xİ\ØX›Y^ÈXØ]YÛÜQš[\ŸH˜[YO^Ü›Ü\U\_HÛÚ[™ÙO^ÊJHOˆÈÙ]›Ü\U\JK\™Ù]˜[YJNÈÙ]Y˜[˜ÙY
-ßJNÈÙ]\ÔÙX\˜ÚY
-˜[ÙJNÈ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë\Û]KMLMKLÈ^\ÛH›ÛX›Û\ØX›Y˜İ\œÛÜ‹[›İX[İÙY\ØX›Y›ÜXÚ]KMLÜ[Ûˆ˜[YOHˆØØ]YÛÜQš[\ˆÈ	Õ0ïH[0ï›\‰Èˆ	ğå›˜ÙH[˜HØ]YÛÜšHÙpéÚ[š^‰ßOÛÜ[ÛØ]˜Z[X›T›Ü\U\\Ë›X\
+          <div>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">Ä°lan TÃ¼rÃ¼</label>
+            <select value={selectedPropertyType} onChange={(e) => { setSelectedPropertyType(e.target.value); setHasSearched(false); }} className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition">
+              <option value="">TÃ¼m Ä°lan TÃ¼rleri</option>
+              {Object.entries(LISTING_PROPERTY_TYPES).flatMap(([, types]) => types).map((propertyType) => <option key={propertyType} value={propertyType}>{propertyType}</option>)}
+            </select>
+          </div>
 
-\JHOˆÜ[ÛˆÙ^O^İ\_Oİ\_OÛÜ[ÛŠ_OÜÙ[XİÙ]‚ˆ]X™[Û\ÜÓ˜[YOH›X‹Lˆ›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒ±,ÛX™[Ù[Xİ˜[YO^ØÚ]_HÛÚ[™ÙO^ÊJHOˆÈÙ]Ú]JK\™Ù]˜[YJNÈÙ]\İšXİ
-	ÉÊNÈÙ]™ZYÚ›ÜšÛÙ
-	ÉÊNÈÙ]\ÔÙX\˜ÚY
-˜[ÙJNÈ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë\Û]KMLMKLÈ^\ÛH›ÛX›ÛÜ[Ûˆ˜[YOHˆ±,ÙpéÚ[š^ÛÜ[ÛÕT’ÑVWÔ“Õ’SÑTË›X\
+          <div>
+            <label className="text-[10px] font-black text-slate-500 block mb-1">Åehir</label>
+            <select 
+              value={selectedCity}
+              onChange={(e) => { setSelectedCity(e.target.value); setHasSearched(false); }}
+              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+            >
+              <option value="">TÃ¼m Åehirler</option>
+              {Object.keys(TURKEY_CITIES).map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </div>
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÙ]‚ˆ]X™[Û\ÜÓ˜[YOH›X‹Lˆ›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒ±,0éÙOÛX™[Ù[Xİ\ØX›Y^ÈXÚ]_H˜[YO^Ù\İšXİHÛÚ[™ÙO^ÊJHOˆÈÙ]\İšXİ
-K\™Ù]˜[YJNÈÙ]™ZYÚ›ÜšÛÙ
-	ÉÊNÈÙ]\ÔÙX\˜ÚY
-˜[ÙJNÈ_HÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë\Û]KMLMKLÈ^\ÛH›ÛX›Û\ØX›Y›ÜXÚ]KMLÜ[Ûˆ˜[YOHˆØÚ]HÈ	ñ,0éÙHÙpéÚ[š^‰Èˆ	ğå›˜ÙH1,ÙpéÚ[š^‰ßOÛÜ[ÛÙ\İšXİË›X\
+          <div className="flex items-end gap-2">
+            <button onClick={() => setAdvancedOpen(!advancedOpen)} className="flex-1 rounded-xl bg-slate-100 py-2 text-xs font-black text-slate-800 transition hover:bg-slate-200">GeliÅŸmiÅŸ</button>
+            <button onClick={() => setHasSearched(true)} className="flex-1 rounded-xl bg-red-700 py-2 text-xs font-black text-white transition hover:bg-red-800">Ä°lan Ara</button>
+          </div>
+        </div>
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÙ]‚ˆ]ÛˆÛÛXÚÏ^Ü[”ÙX\˜ÚHÛ\ÜÓ˜[YOHšVÍœHÚ]\ÜXÙK[›İÜ˜\›İ[™Y^™Ë\™YMÌMÈ›ÛX›XÚÈ^]Ú]HÚYİË[ÈÚYİË\™YMÌÌŒİ™\˜™Ë\™YNÙX\˜ÚÛ\ÜÓ˜[YOH›\‹Lˆ[›[™HMËMˆÏ±,[ˆ\˜OØ]Û‚ˆÙ]‚ˆÜÙXİ[Û‚‚ˆÈZ\ÔÙX\˜ÚYÈ]ˆÛ\ÜÓ˜[YOHœ›İ[™YL›Ü™\ˆ›Ü™\‹Y\ÚY›Ü™\‹\™YLŒ™Ë]Ú]HLM^XÙ[\ˆÙX\˜ÚÛ\ÜÓ˜[YOH›^X]]ÈX‹LÈLLˆËLLˆ^\™YLÌˆÏˆÛ\ÜÓ˜[YOH^[È›ÛX›XÚÈ^\Û]KN±,1gÛ[H\H™H[˜HØ]YÛÜš^ZHÙpéÙ\™ZÈ\˜[XHX\1,[‹ÚÙ]ˆˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLHØ\MHÎ™ÜšYXÛÛËVÌLÛZ[›X^
-YœŠWH‚ˆ\ÚYHÛ\ÜÓ˜[YOHšYš]›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HÚYİË[ÈÎœİXÚŞHÎÜL‚ˆ]ˆÛ\ÜÓ˜[YOH˜›Ü™\‹Xˆ›Ü™\‹\Û]KLŒMH]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆˆÛ\ÜÓ˜[YOH™›ÛX›XÚÈ^\Û]KNL‘]^[1,Hš[™[OÚ]ÛˆÛÛXÚÏ^Ü™\Ù]š[\œßHÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ^\™YMÌ•[Z^›OØ]ÛÙ]Û\ÜÓ˜[YOH›]LH^^È^\Û]KMLØ\YYÙX\˜Úœ›Ü\U\H\YYÙX\˜Ú›XZ[Ø]YÛÜH	Õ0ïH[[›\‰ßHpéÚ[ˆš[™[\ÜÙ]‚ˆ]ˆÛ\ÜÓ˜[YOHœÜXÙK^KMMH‚ˆÙ\İšXİ	‰ˆ]X™[Û\ÜÓ˜[YOH›X‹LH›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒ“XZ[OÛX™[Ù[Xİ˜[YO^Û™ZYÚ›ÜšÛÙHÛÚ[™ÙO^ÊJHOˆÙ]™ZYÚ›ÜšÛÙ
-K\™Ù]˜[YJ_HÛ\ÜÓ˜[YOHËY[›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌLÈKLˆ^^ÈÜ[Ûˆ˜[YOHˆ•0ïHXZ[[\ÛÜ[ÛÛ™ZYÚ›ÜšÛÙË›X\
+        {advancedOpen && <div className="mb-10 -mt-6 grid grid-cols-1 gap-3 rounded-2xl border border-red-200 bg-red-50 p-4 sm:grid-cols-2 lg:grid-cols-4"><div><label className="mb-1 block text-[10px] font-black text-slate-600">Minimum mÂ²</label><input value={minArea} onChange={(e) => setMinArea(e.target.value)} type="number" placeholder="Ã–rn. 150" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>{['Villa','Daire','Residence','MÃ¼stakil Ev','Ofis'].includes(selectedPropertyType) && <div><label className="mb-1 block text-[10px] font-black text-slate-600">Oda SayÄ±sÄ±</label><input value={rooms} onChange={(e) => setRooms(e.target.value)} placeholder="Ã–rn. 3+1" className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-xs" /></div>}{selectedPropertyType === 'Otel' && <div className="text-xs font-bold text-red-800">Otel iÃ§in oda sayÄ±sÄ±, yatak kapasitesi ve yÄ±ldÄ±z bilgisi ilan detayÄ±nda yer alÄ±r.</div>}{['Fabrika','Depo'].includes(selectedPropertyType) && <div className="text-xs font-bold text-red-800">{selectedPropertyType} iÃ§in kapalÄ± alan, tavan yÃ¼ksekliÄŸi ve yÃ¼kleme bilgisi ilan detayÄ±nda yer alÄ±r.</div>}<button onClick={() => { setSelectedType(''); setSelectedCategory(''); setSelectedPropertyType(''); setSelectedCity(''); setMinArea(''); setRooms(''); }} className="self-end rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700">Temizle</button></div>}
 
-][JHOˆÜ[ÛˆÙ^O^Ú][_OÚ][_OÛÜ[ÛŠ_OÜÙ[XİÈ[™ZYÚ›ÜšÛÙË›[™İ	‰ˆÛ\ÜÓ˜[YOH›]LH^VÌLH^\Û]KMH[0éÙHpéÚ[ˆXZ[H™\š\ÚH[°ïˆZÛ[›YYKÜŸOÙ]ŸBˆÜÚYQšY[Ë›X\
+        {hasSearched && filteredListings.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredListings.map((item) => (
+              <ListingCard key={item.id} item={item} />
+            ))}
+          </div>
+        ) : hasSearched ? (
+          <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <Filter className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-slate-800">AradÄ±ÄŸÄ±nÄ±z kriterlerde ilan bulunamadÄ±.</h3>
+            <p className="text-slate-500 text-xs mt-1">LÃ¼tfen farklÄ± filtre seÃ§enekleri deneyiniz.</p>
+          </div>
+        ) : <div className="bg-white rounded-2xl p-12 text-center border border-dashed border-red-200"><Search className="w-12 h-12 text-red-300 mx-auto mb-3" /><h3 className="text-lg font-bold text-slate-800">Kriterlerinizi seÃ§in ve Ä°lan Ara butonuna basÄ±n.</h3><p className="text-slate-500 text-xs mt-1">SonuÃ§lar arama isteÄŸinizden sonra listelenecektir.</p></div>}
 
-šY[
-HOˆ]ˆÙ^O^ÙšY[šÙ^_OX™[Û\ÜÓ˜[YOH›X‹LH›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒÙšY[›X™[OÛX™[ÙšY[›Ü[ÛœÈÈÙ[Xİ˜[YO^ØY˜[˜ÙYÙšY[šÙ^WH	ÉßHÛÚ[™ÙO^ÊJHOˆÙ]Y˜[˜ÙY
-È‹‹˜Y˜[˜ÙYÙšY[šÙ^WNˆK\™Ù]˜[YHJ_HÛ\ÜÓ˜[YOHËY[›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌLÈKLˆ^^ÈÜ[Ûˆ˜[YOHˆ•0ïpïÛÜ[ÛÙšY[›Ü[ÛœË›X\
+      </div>
+    </div>
+  );
+}
 
-Ü[ÛŠHOˆÜ[ÛˆÙ^O^ÛÜ[ÛŸOÛÜ[ÛŸOÛÜ[ÛŠ_OÜÙ[Xİˆˆ[œvÓMm¢G§²ÚîÆ­yİÁ…¸øğ½‘¥Øùí…±±•Éä¹±•¹Ñ €ø€Ä€˜˜€ğøñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•%µ…” ¡…Ñ¥Ù•%µ…”€´€Ä€¬…±±•Éä¹±•¹Ñ ¤€”…±±•Éä¹±•¹Ñ ¥ô±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”±•™Ğ´ĞÑ½À´Ä¼È™±•à ´ÄÄÜ´ÄÄ€µÑÉ…¹Í±…Ñ”µä´Ä¼È¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµ‰±…¬¼ÔÔÑ•áĞµİ¡¥Ñ”ˆøñ¡•ÙÉ½¹1•™Ğ€¼øğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•%µ…” ¡…Ñ¥Ù•%µ…”€¬€Ä¤€”…±±•Éä¹±•¹Ñ ¥ô±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”É¥¡Ğ´ĞÑ½À´Ä¼È™±•à ´ÄÄÜ´ÄÄ€µÑÉ…¹Í±…Ñ”µä´Ä¼È¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÉ½Õ¹‘•µ™Õ±°‰œµ‰±…¬¼ÔÔÑ•áĞµİ¡¥Ñ”ˆøñ¡•ÙÉ½¹I¥¡Ğ€¼øğ½‰ÕÑÑ½¸øğ¼ùôğ½‘¥Øùí…±±•Éä¹±•¹Ñ €ø€Ä€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à…À´Ì½Ù•É™±½Üµàµ…ÕÑ¼À´Ìˆùí…±±•Éä¹µ…À ¡¥µ…”°¥¹‘•à¤€ôø€ñ‰ÕÑÑ½¸­•äõí¥µ…•ô½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•%µ…”¡¥¹‘•à¥ô±…ÍÍ9…µ”õí ´ÈÀÜ´ÈàÍ¡É¥¹¬´À½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•µá°‰½É‘•È´È€‘í…Ñ¥Ù•%µ…”€ôôô¥¹‘•à€ü€‰½É‘•ÈµÉ•´ØÀÀœ€è€‰½É‘•ÈµÑÉ…¹ÍÁ…É•¹Ğõôøñ¥µœÍÉŒõí¥µ…•ô…±Ğôˆˆ±…ÍÍ9…µ”ô‰ µ™Õ±°Üµ™Õ±°½‰©•Ğµ½Ù•Èˆ€¼øğ½‰ÕÑÑ½¸ø¥ôğ½‘¥Øùôğ½Í•Ñ¥½¸ø((€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÜÉ¥É¥µ½±Ì´Ä…À´Ü±œéÉ¥µ½±Ìµmµ¥¹µ…à À°Å™È¥|ÌĞÁÁátˆø(€€€€€€€€€€ñµ…¥¸±…ÍÍ9…µ”ô‰ÍÁ…”µä´Üˆø(€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùŸÅ­±…µ„ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´Ğİ¡¥Ñ•ÍÁ…”µÁÉ”µ±¥¹”Ñ•áĞµÍ´±•…‘¥¹œ´ÜÑ•áĞµÍ±…Ñ”´ØÀÀˆùí¥Ñ•´¹‘•ÍÉ¥ÁÑ¥½¸ñğ€	Ô¥±…¸§¥¸‡ŸÅ­±…µ„•­±•¹µ•µ§}Ñ¥È¸ôğ½Àøğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆûÁ±…¸Ù”Q•­¹¥¬ƒYé•±±¥­±•Èğ½ Èøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ¥É¥µ½±Ì´È…Àµà´Ø…Àµä´ÀÍ´éÉ¥µ½±Ì´ÌˆùímlŸÁ±…¸9¼œ°¥Ñ•´¹¥‘t°lñ¹•±±•µ”Q…É¥¡¤œ°¥Ñ•´¹ÕÁ‘…Ñ•‘Ğñğ¥Ñ•´¹‘…Ñ•t°lŸÁ±…¸SñËğœ°¥Ñ•´¹ÁÉ½Á•ÉÑåQåÁ•t°l=‘„	¥±¥Í¤œ°¥Ñ•´¹É½½µÍt°lQ½Á±…´±…¸œ°€‘í¥Ñ•´¹…É•…ô·
-Ét°l¥‘…Ğœ°¥Ñ•´¹µ½¹Ñ¡±å•”ñğ€	•±¥ÉÑ¥±µ•‘¤t°lQ…ÁÔ	¥±¥Í¤œ°¥Ñ•´¹‘••‘%¹™¼ñğ€	•±¥ÉÑ¥±µ•‘¤t°€¸¸¹=‰©•Ğ¹•¹ÑÉ¥•Ì¡¥Ñ•´¹‘•Ñ…¥±Ì¤¹µ…À ¡m­•ä°Ù…±Õ•t¤€ôøm‘•Ñ…¥±1…‰•±Ím­•åtñğ­•ä°Ù…±Õ•t¥t¹µ…À ¡m±…‰•°°Ù…±Õ•t¤€ôø€ñ‘¥Ø­•äõí€‘í±…‰•±ô´‘íÙ…±Õ•õô±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÄÀÀÁä´ÌˆøñÍÁ…¸±…ÍÍ9…µ”ô‰‰±½¬Ñ•áĞµlÄÁÁát™½¹Ğµ‰±…¬ÕÁÁ•É…Í”ÑÉ…­¥¹œµİ¥‘•ÈÑ•áĞµÍ±…Ñ”´ĞÀÀˆùí±…‰•±ôğ½ÍÁ…¸øñÍÑÉ½¹œ±…ÍÍ9…µ”ô‰µĞ´Ä‰±½¬Ñ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´àÀÀˆùíÙ…±Õ•ôğ½ÍÑÉ½¹œøğ½‘¥Øø¥ôğ½‘¥Øøğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½ÜµÍ´ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùQ•­¹¥¬ƒYé•±±¥­±•Èğ½ Èøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´Ğ™±•à™±•àµİÉ…À…À´Èˆùì¡¥Ñ•´¹Ñ•¡¹¥…±•…ÑÕÉ•Ìñğ€Q•­¹¥¬ƒÙé•±±¥¬•­±•¹µ•µ§}Ñ¥Èœ¤¹ÍÁ±¥Ğ œ°œ¤¹µ…À ¡™•…ÑÕÉ”¤€ôø€ñÍÁ…¸­•äõí™•…ÑÕÉ•ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ™Õ±°‰½É‘•È‰½É‘•ÈµÉ•´ÈÀÀ‰œµÉ•´ÔÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÉ•´àÀÀˆøñ¡•­¥É±”È±…ÍÍ9…µ”ô‰µÈ´Ä¥¹±¥¹” ´Ì¸ÔÜ´Ì¸Ôˆ€¼ùí™•…ÑÕÉ”¹ÑÉ¥´ ¥ôğ½ÍÁ…¸ø¥ôğ½‘¥Øøğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É¥É¥µ½±Ì´Ä…À´ÔµéÉ¥µ½±Ì´Èˆøñ‘¥Ø±…ÍÍ9…µ”ô‰½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰À´Ôˆøñ È±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÈÑ•áĞµ±œ™½¹Ğµ‰±…¬ˆøñA±…å¥É±”±…ÍÍ9…µ”ô‰ ´ÔÜ´ÔÑ•áĞµÉ•´ÜÀÀˆ€¼ùY¥‘•¼ğ½ Èøğ½‘¥Øùí¥Ñ•´¹Ù¥‘•½UÉ°€ü€ñ¥™É…µ”Ñ¥Ñ±”ô‹Á±…¸Ù¥‘•½ÍÔˆÍÉŒõí¥Ñ•´¹Ù¥‘•½UÉ±ô±…ÍÍ9…µ”ô‰ ´ÜÈÜµ™Õ±°ˆ…±±½İÕ±±MÉ••¸€¼ø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à ´ÔÈ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´ÄÀÀÁà´ØÑ•áĞµ•¹Ñ•ÈÑ•áĞµÍ´™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù	Ô¥±…¸§¥¸Ù¥‘•¼•­±•¹µ•µ§|¸ğ½‘¥Øùôğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰À´Ôˆøñ È±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÈÑ•áĞµ±œ™½¹Ğµ‰±…¬ˆøñ±½‰”±…ÍÍ9…µ”ô‰ ´ÔÜ´ÔÑ•áĞµÉ•´ÜÀÀˆ€¼ùM…¹…°QÕÈ€ ÌØÃ
-À¤ğ½ Èøğ½‘¥Øùí¥Ñ•´¹Ù¥ÉÑÕ…±Q½ÕÉUÉ°€ü€ñ¥™É…µ”Ñ¥Ñ±”ô‰M…¹…°ÑÕÈˆÍÉŒõí¥Ñ•´¹Ù¥ÉÑÕ…±Q½ÕÉUÉ±ô±…ÍÍ9…µ”ô‰ ´ÜÈÜµ™Õ±°ˆ…±±½İÕ±±MÉ••¸€¼ø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à ´ÔÈ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´ÄÀÀÁà´ØÑ•áĞµ•¹Ñ•ÈÑ•áĞµÍ´™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù	Ô¥±…¸§¥¸€ÌØÃ
-ÀÍ…¹…°ÑÕÈ•­±•¹µ•µ§|¸ğ½‘¥Øùôğ½‘¥Øøğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰À´Ôˆøñ È±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È…À´ÈÑ•áĞµá°™½¹Ğµ‰±…¬ˆøñ5…À±…ÍÍ9…µ”ô‰ ´ÔÜ´ÔÑ•áĞµÉ•´ÜÀÀˆ€¼ù!…É¥Ñ„Ù”-½¹Õ´ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùí¥Ñ•´¹¥Ñåô€¼í¥Ñ•´¹‘¥ÍÑÉ¥Ñô€¼í¥Ñ•´¹¹•¥¡‰½É¡½½‘ôğ½Àøğ½‘¥Øùí¥Ñ•´¹µ…ÁUÉ°€ü€ñ¥™É…µ”Ñ¥Ñ±”ô‹Á±…¸­½¹ÕµÔˆÍÉŒõí¥Ñ•´¹µ…ÁUÉ±ô±…ÍÍ9…µ”ô‰ ´àÀÜµ™Õ±°‰½É‘•È´Àˆ±½…‘¥¹œô‰±…éäˆ€¼ø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à ´ÔÈ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•È‰œµÍ±…Ñ”´ÄÀÀÑ•áĞµÍ´™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù-½¹Õ´‰¥±¥Í¤•­±•¹µ•µ§|¸ğ½‘¥Øùôğ½Í•Ñ¥½¸ø(€f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³RÂöÖ–ãà¢Æ6–FR6Æ74æÖSÒ'76R×’ÓR#ãÇ6V7F–öâ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓb6†F÷rÖÆrÆs§7F–6·’Æs§F÷Ó#B#ãÆF—b6Æ74æÖSÒ&fÆW‚‚ÓbrÓb—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖgVÆÂ&r×&VBÓsFW‡B×†ÂföçBÖ&Æ6²FW‡B×v†—FR#å$3ÂöF—cãÇ6Æ74æÖSÒ&×BÓBFW‡B×‡2föçBÖ&Æ6²G&6¶–ær×v–FW7BFW‡B×&VBÓs#å”UD¼KÌKDäœYäÔãÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓFW‡B×†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç¶—FVÒævVçDæÖWÓÂöƒ#ãÇ6Æ74æÖSÒ&×BÓ"FW‡B×6ÒFW‡B×6ÆFRÓS#ä'R–Æâ†¶¼KæF&–Æv’fR&æFWgRœ:v–âFìKYöÖìKÜK¦Æ–ÆWFœYö–ÖRv\:v–âãÂ÷ãÆ‡&Vc×¶FVÃ¢G¶—FVÒævVçE†öæRç&WÆ6R‚õÇ2²örÂrr—ÖÒ6Æ74æÖSÒ&×BÓRfÆW‚rÖgVÆÂ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"vÓ"&÷VæFVB×†Â&r×&VBÓs’Ó2föçBÖ&Æ6²FW‡B×v†—FR#ãÅ†öæR6Æ74æÖSÒ&‚ÓBrÓB"óç¶—FVÒævVçE†öæWÓÂöãÆ'WGFöâ6Æ74æÖSÒ&×BÓ2fÆW‚rÖgVÆÂ—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"vÓ"&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3’Ó2FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓs#ãÄÖW76vU7V&R6Æ74æÖSÒ&‚ÓBrÓB"óäÖW6¢|;fæFW#Âö'WGFöããÂ÷6V7F–öããÂö6–FSà¢ÂöF—cà ¢Ç6V7F–öâ6Æ74æÖSÒ&×BÓ#ãÆF—b6Æ74æÖSÒ&Ö"ÓRfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ#ãÆƒ"6Æ74æÖSÒ'FW‡BÓ'†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ä&Vç¦W"KÆæÆ#Âöƒ#ãÄÆ–æ²Fó×¶ö–ÆæÆ&–Ö—£÷&÷W'G•G—SÒG¶Væ6öFUU$”6ö×öæVçB†—FVÒç&÷W'G•G—R—ÖÒ6Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²FW‡B×&VBÓs#åL;ÆÜ;Æì;Â|;g"(i#ÂôÆ–æ³ãÂöF—cç·6–Ö–Æ"æÆVæwF‚òÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2ÓvÓbÖC¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2Ó2#ç·6–Ö–Æ"æÖ‚†Æ—7F–ær’ÓâÄÆ—7F–æt6&B¶W“×¶Æ—7F–æræ–GÒ—FVÓ×¶Æ—7F–æwÒóâ—ÓÂöF—câ¢ÆF—b6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓ‚FW‡B×6ÒföçBÖ&öÆBFW‡B×6ÆFRÓS#ä&Vç¦W"–Æâ'VÇVæÖLKãÂöF—cçÓÂ÷6V7F–öãà¢ÂöF—cà¢ÂöF—cà¢“°§Ğ ¦gVæ7F–öâÆ—7F–ætFWF–ÅvR‚’°¢6öç7B²–BÒÒW6U&×2‚“°¢6öç7B—FVÒÒ4ÕÄUôÄ•5D”äu2æf–æB‚†Æ—7F–ær’ÓâÆ—7F–æræ–BÓÓÒ–B“°¢6öç7B¶7F—fT–ÖvRÂ6WD7F—fT–ÖvUÒÒW6U7FFRƒ“°¢6öç7B¶7F—fUF"Â6WD7F—fUF%ÒÒW6U7FFSÂvFWF–Ç2rÂvÆö6F–öârÂv–æFW‚sâ‚vFWF–Ç2r“°¢6öç7B¶ff÷&—FRÂ6WDff÷&—FUÒÒW6U7FFR‚‚’Óâ°¢G'’²&WGW&â¥4ôâç'6R†Æö6Å7F÷&vRævWD—FVÒ‚w&VÇG’Ö6VçFW"Öff÷&—FW2r’ÇÂuµÒr’æ–æ6ÇVFW2†–BÇÂrr“²Ğ¢6F6‚²&WGW&âfÇ6S²Ğ¢Ò“° ¢–b‚—FVÒ’&WGW&âÆF—b6Æ74æÖSÒ&Ö–âÖ‚Õ³cf…Ò&r×6ÆFRÓS‚Ób’Ó#BFW‡BÖ6VçFW"#ãÆƒ6Æ74æÖSÒ'FW‡BÓ7†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ìKÆâ'VÇVæÖLKÂöƒãÄÆ–æ²FóÒ"ö–ÆæÆ&–Ö—£öÆÃÓ"6Æ74æÖSÒ&×BÓb–æÆ–æRÖfÆW‚&÷VæFVB×†Â&r×&VBÓs‚ÓR’Ó2föçBÖ&Æ6²FW‡B×v†—FR#åL;ÆÒKÆæÆ&L;fãÂôÆ–æ³ãÂöF—cã° ¢6öç7BvÆÆW'’Ò—FVÒæ–ÖvW3òæÆVæwF‚ò—FVÒæ–ÖvW2¢¶—FVÒæ–ÖvUÓ°¢6öç7BF‡VÖ&æ–Å6Æ÷G2Ò'&’æg&öÒ‡²ÆVæwFƒ¢BÒÂ…òÂ–æFW‚’ÓâvÆÆW'•¶–æFW…ÒÇÂçVÆÂ“°¢6öç7BvVçBÒ4ÕÄUôtTåE2æf–æB‚†VçG'’’ÓâVçG'’ææÖRÓÓÒ—FVÒævVçDæÖR’ÇÂ4ÕÄUôtTåE5³Ó°¢6öç7B6–Ö–Æ"Ò4ÕÄUôÄ•5D”äu2æf–ÇFW"‚†Æ—7F–ær’ÓâÆ—7F–æræ–BÓÒ—FVÒæ–BbbÆ—7F–ærç&÷W'G•G—RÓÓÒ—FVÒç&÷W'G•G—R’ç6Æ–6RƒÂ2“°¢6öç7BFWF–ÄÆ&VÇ3¢&V6÷&CÇ7G&–ærÂ7G&–æsâÒ²&öö×3¢töF6œK<KrÂ&ööÔ6÷VçC¢töF6œK<KrÂ'V–ÆF–ætvS¢t&–æ–YüKrÂfÆö÷#¢t'VÇVæG\I÷R¶BrÂ†VF–æs¢t—<KFÖrÂgW&æ—6†VC¢t\Y÷–ÌKrÂÖ÷'FvvS¢t·&VF—–RW–wVârÂ&F‡&ööÓ¢t&ç–ò6œK<KrÂ¦öæ–æs¢|KÖ"GW'V×RrÂFVVC¢uFRGW'V×RrÂÆæEVÆ—G“¢tæ—FVÆ–²rÂg&öçFvS¢t6W†RrÂ&öC¢u–öÂrÂ–æg&7G'V7GW&S¢tÇG–KrÂ6Æ÷6VD&V¢t¶ÌKÆârÂ6V–Æ–æt†V–v‡C¢uFfâœ;Æ·6V¶ÆœIö’rÂ÷vW#¢tVÆV·G&–²|;Æ<;ÂrÂÆöF–æs¢uœ;Æ¶ÆVÖR&×<KrÂ7&æS¢uf–ì:rrÂ6V7F–öç3¢t,;fÌ;ÆÒ6œK<KrÂ&¶–æs¢t÷F÷&²rÂW6vS¢t·VÆÆìKÒGW'V×RrÂ†÷FVÅ&öö×3¢t÷FVÂöF6œK<KrÂ&VG3¢u–F²¶6—FW6’rÂ7F'3¢uœKÆLK¢rÂ&W7FW&çC¢u&W7F÷&ârÂööÃ¢t†gW¢rÓ°¢6öç7BFWF–ÅfÇVRÒ†¶W“¢7G&–ærÂfÆÆ&6²Òt&VÆ—'F–ÆÖVÖœYòr’Óâ—FVÒæFWF–Ç5¶¶W•ÒÇÂfÆÆ&6³°¢6öç7BFWF–Å&÷w3¢'&“Å·7G&–ærÂ7G&–æuÓâÒ°¢²|KÆâæòrÂ—FVÒæ–EÒÂ²|KÆâF&–†’rÂ—FVÒçWFFVDBÇÂ—FVÒæFFUÒÂ²tVÖÆ²F—’rÂG¶—FVÒçG—WÒG¶—FVÒç&÷W'G•G—WÖÒÀ¢²vÜ+"„',;ÇB’rÂG¶—FVÒæ&VÒÜ+&ÒÂ²vÜ+"„æWB’rÂG´ÖF‚ç&÷VæB†—FVÒæ&V¢ã’—ÒÜ+&ÒÂ²töF6œK<KrÂ—FVÒç&öö×5ÒÀ¢²t&–æ–YüKrÂFWF–ÅfÇVR‚v'V–ÆF–ætvRr•ÒÂ²t¶B6œK<KrÂFWF–ÅfÇVR‚vfÆö÷$6÷VçBrÂt&VÆ—'F–ÆÖVÖœYòr•ÒÂ²t'VÇVæG\I÷R¶BrÂFWF–ÅfÇVR‚vfÆö÷"r•ÒÀ¢²t—<KFÖrÂFWF–ÅfÇVR‚v†VF–ærr•ÒÂ²t&ç–ò6œK<KrÂFWF–ÅfÇVR‚v&F‡&ööÒr•ÒÂ²t×WFf²rÂFWF–ÅfÇVR‚v¶—F6†VârÂt:|K²„ÖW&–¶â’r•ÒÀ¢²t&Æ¶öârÂFWF–ÅfÇVR‚v&Æ6öç’rÂuf"r•ÒÂ²t6ç<;g"rÂFWF–ÅfÇVR‚vVÆWfF÷"rÂuf"r•ÒÂ²t÷F÷&²rÂFWF–ÅfÇVR‚w&¶–ærrÂt:|K²÷F÷&²r•ÒÀ¢²t\Y÷–ÌKrÂFWF–ÅfÇVR‚vgW&æ—6†VBr•ÒÂ²t·VÆÆìKÒGW'V×RrÂFWF–ÅfÇVR‚wW6vRrÂt&üYò}´Ó[h‘éì¶»§q«^vame={label === 'Ä°lan No' || label === 'Kimden' ? 'font-bold text-red-700' : 'font-medium text-slate-700'}>{value}</dd></div>)}</dl>
+function ListingsPageV2() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const initialType = params.get('type') || '';
+  const initialPropertyType = params.get('propertyType') || '';
+  const initialCategory = params.get('category') || '';
+  const initialMainCategory = initialCategory === 'Arazi' ? 'Arsa' : initialCategory === 'Ticari Gayrimenkul' ? 'Ä°ÅŸyeri' : initialCategory;
+  const initialCity = params.get('city') || '';
+  const initialDistrict = params.get('district') || '';
+  const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCategory || initialCity);
+  const [transactionType, setTransactionType] = useState(initialType);
+  const [propertyType, setPropertyType] = useState(initialPropertyType);
+  const [categoryFilter, setCategoryFilter] = useState(initialMainCategory);
+  const [city, setCity] = useState(initialCity);
+  const [district, setDistrict] = useState(initialDistrict);
+  const [neighborhood, setNeighborhood] = useState('');
+  const [advanced, setAdvanced] = useState<Record<string, string>>({});
+  const [appliedAdvanced, setAppliedAdvanced] = useState<Record<string, string>>({});
+  const [hasSearched, setHasSearched] = useState(showAllInitially);
+  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, category: initialCategory, mainCategory: initialMainCategory, city: initialCity, district: initialDistrict, neighborhood: '' });
+  const publishedListings = usePublishedListings();
+
+  const districts = getTurkeyDistricts(city);
+  const neighborhoods = city && district ? DISTRICT_NEIGHBORHOODS[`${city}|${district}`] || [] : [];
+  const availablePropertyTypes = categoryFilter ? LISTING_PROPERTY_TYPES_BY_MAIN_CATEGORY[categoryFilter as keyof typeof LISTING_PROPERTY_TYPES_BY_MAIN_CATEGORY] || [] : [];
+  const filterGroup = getAdvancedFilterGroup(propertyType || appliedSearch.propertyType);
+  const sideFields = propertyType || appliedSearch.propertyType ? ADVANCED_FILTERS_BY_TYPE[filterGroup] : COMMON_PRICE_AREA_FIELDS;
+
+  const runSearch = () => {
+    setAppliedSearch({ type: transactionType, propertyType, category: LEGACY_LISTING_CATEGORY_BY_MAIN[categoryFilter] || '', mainCategory: categoryFilter, city, district, neighborhood });
+    setAppliedAdvanced({ ...advanced });
+    setHasSearched(true);
+  };
+
+  const filteredListings = publishedListings.filter((item) => {
+    if (!hasSearched) return false;
+    if (appliedSearch.type && (appliedSearch.type === 'Devren' ? !item.type.startsWith('Devren') : item.type !== appliedSearch.type)) return false;
+    if (appliedSearch.propertyType && item.propertyType !== appliedSearch.propertyType) return false;
+    if (appliedSearch.category && item.category !== appliedSearch.category) return false;
+    if (appliedSearch.city && item.city !== appliedSearch.city) return false;
+    if (appliedSearch.district && item.district !== appliedSearch.district) return false;
+    if (appliedSearch.neighborhood && item.neighborhood !== appliedSearch.neighborhood) return false;
+    if (appliedAdvanced.minPrice && item.price < Number(appliedAdvanced.minPrice)) return false;
+    if (appliedAdvanced.maxPrice && item.price > Number(appliedAdvanced.maxPrice)) return false;
+    if (appliedAdvanced.minArea && item.area < Number(appliedAdvanced.minArea)) return false;
+    if (appliedAdvanced.maxArea && item.area > Number(appliedAdvanced.maxArea)) return false;
+    if (appliedAdvanced.rooms && item.rooms !== appliedAdvanced.rooms) return false;
+    for (const [key, value] of Object.entries(appliedAdvanced)) {
+      if (!value || ['minPrice','maxPrice','minArea','maxArea','rooms'].includes(key)) continue;
+      const listingValue = item.details[key] || '';
+      if (listingValue.toLocaleLowerCase('tr-TR') !== value.toLocaleLowerCase('tr-TR')) return false;
+    }
+    return true;
+  });
+
+  const resetFilters = () => {
+    setTransactionType(''); setPropertyType(''); setCategoryFilter(''); setCity(''); setDistrict(''); setNeighborhood('');
+    setAdvanced({}); setAppliedAdvanced({}); setHasSearched(false);
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 py-10">
+      <div className="mx-auto max-w-[1500px] px-3 sm:px-5 lg:px-6">
+        <div className="mb-7"><span className="rounded-full border border-red-300 bg-red-100 px-3 py-1.5 text-xs font-black tracking-widest text-red-700">Ä°LAN ARAMA</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Gayrimenkul <span className="text-red-700">Ä°lanlarÄ±</span></h1></div>
+
+        <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
+          <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[.95fr_1fr_1.25fr_1fr_1fr_auto]">
+            <div><label className="mb-2 block text-xs font-black text-slate-600">1. Ä°ÅŸlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">KiralÄ±k / SatÄ±lÄ±k / Devren</option>{LISTING_SEARCH_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">2. Ana Kategori</label><select value={categoryFilter} onChange={(e) => { setCategoryFilter(e.target.value); setPropertyType(''); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Konut / Arsa / Ä°ÅŸyeri</option>{LISTING_MAIN_CATEGORIES.map((category) => <option key={category}>{category}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">3. Alt TÃ¼r <span className="font-medium text-slate-400">(isteÄŸe baÄŸlÄ±)</span></label><select disabled={!categoryFilter} value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-50"><option value="">{categoryFilter ? 'TÃ¼m alt tÃ¼rler' : 'Ã–nce ana kategori seÃ§iniz'}</option>{availablePropertyTypes.map((type) => <option key={type}>{type}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">Ä°l</label><select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(''); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Ä°l SeÃ§iniz</option>{TURKEY_PROVINCES.map((item) => <option key={item}>{item}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">Ä°lÃ§e</label><select disabled={!city} value={district} onChange={(e) => { setDistrict(e.target.value); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:opacity-50"><option value="">{city ? 'Ä°lÃ§e SeÃ§iniz' : 'Ã–nce Ä°l SeÃ§iniz'}</option>{districts.map((item) => <option key={item}>{item}</option>)}</select></div>
+            <button onClick={runSearch} className="h-[46px] whitespace-nowrap rounded-xl bg-red-700 px-7 font-black text-white shadow-lg shadow-red-700/20 hover:bg-red-800"><Search className="mr-2 inline h-4 w-4" />Ä°lan Ara</button>
+          </div>
+        </section>
+
+        {!hasSearched ? <div className="rounded-2xl border border-dashed border-red-200 bg-white p-14 text-center"><Search className="mx-auto mb-3 h-12 w-12 text-red-300" /><h2 className="text-lg font-black text-slate-800">Ä°ÅŸlem tipi ve ana kategoriyi seÃ§erek arama yapÄ±n.</h2></div> : <div className="grid grid-cols-1 gap-5 lg:grid-cols-[250px_minmax(0,1fr)]">
+          <aside className="h-fit rounded-2xl border border-slate-200 bg-white shadow-lg lg:sticky lg:top-24">
+            <div className="border-b border-slate-200 p-5"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">DetaylÄ± Filtrele</h2><button onClick={resetFilters} className="text-xs font-black text-red-700">Temizle</button></div><p className="mt-1 text-xs text-slate-500">{appliedSearch.propertyType || appliedSearch.mainCategory || 'TÃ¼m ilanlar'} iÃ§in filtreler</p></div>
+            <div className="space-y-4 p-5">
+              {district && <div><label className="mb-1 block text-xs font-black text-slate-600">Mahalle</label><select value={neighborhood} onChange={(e) => setNeighborhood(e.target.value)} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">TÃ¼m Mahalleler</option>{neighborhoods.map((item) => <option key={item}>{item}</option>)}</select>{!neighborhoods.length && <p className="mt-1 text-[10px] text-slate-400">Bu ilÃ§e iÃ§in mahalle verisi henÃ¼z eklenmedi.</p>}</div>}
+              {sideFields.map((field) => <div key={field.key}><label className="mb-1 block text-xs font-black text-slate-600">{field.label}</label>{field.options ? <select value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">TÃ¼mÃ¼</option>{field.options.map((option) => <option key={option}>{option}</option>)}</select> : <input type={field.type || 'text'} value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs" />}</div>)}
+              <button onClick={runSearch} className="w-full rounded-xl bg-red-700 py-3 text-sm font-black text-white hover:bg-red-800">Filtreleri Uygula</button>
+            </div>
+          </aside>
+          <main><div className="mb-5 flex items-center justify-between"><div><h2 className="text-xl font-black text-slate-900">{filteredListings.length} ilan bulundu</h2><p className="text-xs text-slate-500">{[appliedSearch.type, appliedSearch.mainCategory, appliedSearch.propertyType, appliedSearch.city, appliedSearch.district].filter(Boolean).join(' Â· ') || 'TÃ¼m ilanlar'}</p></div></div>{filteredListings.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">{filteredListings.map((item) => <ListingCard key={item.id} item={item} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-14 text-center"><Filter className="mx-auto mb-3 h-10 w-10 text-slate-300" /><h3 className="font-black text-slate-800">SeÃ§tiÄŸiniz kriterlere uygun ilan bulunamadÄ±.</h3></div>}</main>
+        </div>}
+      </div>
+    </div>
+  );
+}
+
+export function ListingDetailPageLegacy() {
+  const { id } = useParams();
+  const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
+  const [activeImage, setActiveImage] = useState(0);
+  const [favorite, setFavorite] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('realty-center-favorites') || '[]').includes(id || ''); }
+    catch { return false; }
+  });
+
+  if (!item) return <div className="min-h-[60vh] bg-slate-50 px-6 py-24 text-center"><h1 className="text-3xl font-black text-slate-900">Ä°lan bulunamadÄ±</h1><Link to="/ilanlarimiz?all=1" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 font-black text-white">TÃ¼m Ä°lanlara DÃ¶n</Link></div>;
+
+  const gallery = item.images?.length ? item.images : [item.image];
+  const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
+  const detailLabels: Record<string, string> = { rooms: 'Oda SayÄ±sÄ±', roomCount: 'Oda SayÄ±sÄ±', buildingAge: 'Bina YaÅŸÄ±', floor: 'Kat', heating: 'IsÄ±nma', furnished: 'EÅŸyalÄ±', mortgage: 'Krediye Uygun', bathroom: 'Banyo', zoning: 'Ä°mar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'AltyapÄ±', closedArea: 'KapalÄ± Alan', ceilingHeight: 'Tavan YÃ¼ksekliÄŸi', power: 'Elektrik GÃ¼cÃ¼', loading: 'YÃ¼kleme RampasÄ±', crane: 'VinÃ§', sections: 'BÃ¶lÃ¼m SayÄ±sÄ±', parking: 'Otopark', usage: 'KullanÄ±m Durumu', hotelRooms: 'Otel Oda SayÄ±sÄ±', beds: 'Yatak Kapasitesi', stars: 'YÄ±ldÄ±z', restaurant: 'Restoran', pool: 'Havuz' };
+
+  const toggleFavorite = () => {
+    const stored: string[] = JSON.parse(localStorage.getItem('realty-center-favorites') || '[]');
+    const next = favorite ? stored.filter((favoriteId) => favoriteId !== item.id) : [...new Set([...stored, item.id])];
+    localStorage.setItem('realty-center-favorites', JSON.stringify(next));
+    setFavorite(!favorite);
+  };
+
+  const shareListing = async () => {
+    const shareData = { title: item.title, text: `${item.title} - ${item.price.toLocaleString('tr-TR')} ${item.currency}`, url: window.location.href };
+    if (navigator.share) await navigator.share(shareData);
+    else { await navigator.clipboard.writeText(window.location.href); alert('Ä°lan baÄŸlantÄ±sÄ± kopyalandÄ±.'); }
+  };
+
+  return (
+    <div className="listing-detail-enter min-h-screen bg-slate-50 py-8 print:bg-white">
+      <div className="mx-auto max-w-[1500px] px-3 sm:px-5 lg:px-6">
+        <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between"><div><Link to="/ilanlarimiz?all=1" className="text-xs font-black text-red-700">â† Ä°lanlara DÃ¶n</Link><div className="mt-3 flex flex-wrap gap-2"><span className="rounded-lg bg-red-700 px-3 py-1 text-xs font-black text-white">{item.type}</span><span className="rounded-lg bg-slate-900 px-3 py-1 text-xs font-black text-white">{item.propertyType}</span></div><h1 className="mt-3 max-w-4xl text-2xl font-black text-slate-900 sm:text-3xl">{item.title}</h1><p className="mt-2 flex items-center gap-1 text-sm font-bold text-slate-500"><MapPin className="h-4 w-4 text-red-700" />{item.city} / {item.district} / {item.neighborhood}</p></div><div className="lg:text-right"><p className="text-3xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><div className="mt-3 flex flex-wrap gap-2 lg:justify-end print:hidden"><button onClick={toggleFavorite} className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-xs font-black ${favorite ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-white text-slate-700'}`}><Heart className={`h-4 w-4 ${favorite ? 'fill-current' : ''}`} />Favorilere Ekle</button><button onClick={() => window.print()} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Printer className="h-4 w-4" />YazdÄ±r</button><button onClick={shareListing} className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-black text-slate-700"><Share2 className="h-4 w-4" />PaylaÅŸ</button></div></div></div>
+
+        <section className="overflow-hidden rounded-3xl bg-slate-900 shadow-2xl"><div className="relative h-[360px] sm:h-[520px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full object-cover" /><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 text-white"><span className="inline-flex items-center gap-2 rounded-full bg-black/55 px-3 py-1.5 text-xs font-black"><Camera className="h-4 w-4" />{activeImage + 1} / {gallery.length}</span></div>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-white"><ChevronLeft /></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-white"><ChevronRight /></button></>}</div>{gallery.length > 1 && <div className="flex gap-3 overflow-x-auto p-3">{gallery.map((image, index) => <button key={image} onClick={() => setActiveImage(index)} className={`h-20 w-28 shrink-0 overflow-hidden rounded-xl border-2 ${activeImage === index ? 'border-red-600' : 'border-transparent'}`}><img src={image} alt="" className="h-full w-full object-cover" /></button>)}</div>}</section>
+
+        <div className="mt-7 grid grid-cols-1 gap-7 lg:grid-cols-[minmax(0,1fr)_340px]">
+          <main className="space-y-7">
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">AÃ§Ä±klama</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{item.description || 'Bu ilan iÃ§in aÃ§Ä±klama eklenmemiÅŸtir.'}</p></section>
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">Ä°lan ve Teknik Ã–zellikler</h2><div className="mt-5 grid grid-cols-2 gap-x-6 gap-y-0 sm:grid-cols-3">{[['Ä°lan No', item.id], ['GÃ¼ncelleme Tarihi', item.updatedAt || item.date], ['Ä°lan TÃ¼rÃ¼', item.propertyType], ['Oda Bilgisi', item.rooms], ['Toplam Alan', `${item.area} mÂ²`], ['Aidat', item.monthlyFee || 'Belirtilmedi'], ['Tapu Bilgisi', item.deedInfo || 'Belirtilmedi'], ...Object.entries(item.details).map(([key, value]) => [detailLabels[key] || key, value])].map(([label, value]) => <div key={`${label}-${value}`} className="border-b border-slate-100 py-3"><span className="block text-[10px] font-black uppercase tracking-wider text-slate-400">{label}</span><strong className="mt-1 block text-sm text-slate-800">{value}</strong></div>)}</div></section>
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-slate-900">Teknik Ã–zellikler</h2><div className="mt-4 flex flex-wrap gap-2">{(item.technicalFeatures || 'Teknik Ã¶zellik eklenmemiÅŸtir').split(',').map((feature) => <span key={feature} className="rounded-full border border-red-200 bg-red-50 px-3 py-2 text-xs font-bold text-red-800"><CheckCircle2 className="mr-1 inline h-3.5 w-3.5" />{feature.trim()}</span>)}</div></section>
+            <section className="grid grid-cols-1 gap-5 md:grid-cols-2"><div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-lg font-black"><PlayCircle className="h-5 w-5 text-red-700" />Video</h2></div>{item.videoUrl ? <iframe title="Ä°lan videosu" src={item.videoUrl} className="h-72 w-full" allowFullScreen /> : <div className="flex h-52 items-center justify-center bg-slate-100 px-6 text-center text-sm font-bold text-slate-400">Bu ilan iÃ§in video eklenmemiÅŸ.</div>}</div><div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-lg font-black"><Globe className="h-5 w-5 text-red-700" />Sanal Tur (360Â°)</h2></div>{item.virtualTourUrl ? <iframe title="Sanal tur" src={item.virtualTourUrl} className="h-72 w-full" allowFullScreen /> : <div className="flex h-52 items-center justify-center bg-slate-100 px-6 text-center text-sm font-bold text-slate-400">Bu ilan iÃ§in 360Â° sanal tur eklenmemiÅŸ.</div>}</div></section>
+            <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="p-5"><h2 className="flex items-center gap-2 text-xl font-black"><Map className="h-5 w-5 text-red-700" />Harita ve Konum</h2><p className="mt-1 text-sm text-slate-500">{item.city} / {item.district} / {item.neighborhood}</p></div>{item.mapUrl ? <iframe title="Ä°lan konumu" src={item.mapUrl} className="h-80 w-full border-0" loading="lazy" /> : <div className="flex h-52 items-center justify-center bg-slate-100 text-sm font-bold text-slate-400">Konum bilgisi eklenmemiÅŸ.</div>}</section>
+          </main>
+          <aside className="space-y-5"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg lg:sticky lg:top-24"><div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-700 text-xl font-black text-white">RC</div><p className="mt-4 text-xs font-black tracking-widest text-red-700">YETKÄ°LÄ° DANIÅMAN</p><h2 className="mt-1 text-xl font-black text-slate-900">{item.agentName}</h2><p className="mt-2 text-sm text-slate-500">Bu ilan hakkÄ±nda bilgi ve randevu iÃ§in danÄ±ÅŸmanÄ±mÄ±zla iletiÅŸime geÃ§in.</p><a href={`tel:${item.agentPhone.replace(/\s+/g, '')}`} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-red-700 py-3 font-black text-white"><Phone className="h-4 w-4" />{item.agentPhone}</a><button className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 py-3 text-sm font-black text-slate-700"><MessageSquare className="h-4 w-4" />Mesaj GÃ¶nder</button></section></aside>
+        </div>
+
+        <section className="mt-10"><div className="mb-5 flex items-center justify-between"><h2 className="text-2xl font-black text-slate-900">Benzer Ä°lanlar</h2><Link to={`/ilanlarimiz?propertyType=${encodeURIComponent(item.propertyType)}`} className="text-sm font-black text-red-700">TÃ¼mÃ¼nÃ¼ GÃ¶r â†’</Link></div>{similar.length ? <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">{similar.map((listing) => <ListingCard key={listing.id} item={listing} />)}</div> : <div className="rounded-2xl border border-slate-200 bg-white p-8 text-sm font-bold text-slate-500">Benzer ilan bulunamadÄ±.</div>}</section>
+      </div>
+    </div>
+  );
+}
+
+function ListingDetailPage() {
+  const { id } = useParams();
+  const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
+  const [activeImage, setActiveImage] = useState(0);
+  const [activeTab, setActiveTab] = useState<'details' | 'location' | 'index'>('details');
+  const [favorite, setFavorite] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('realty-center-favorites') || '[]').includes(id || ''); }
+    catch { return false; }
+  });
+
+  if (!item) return <div className="min-h-[60vh] bg-slate-50 px-6 py-24 text-center"><h1 className="text-3xl font-black text-slate-900">Ä°lan bulunamadÄ±</h1><Link to="/ilanlarimiz?all=1" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 font-black text-white">TÃ¼m Ä°lanlara DÃ¶n</Link></div>;
+
+  const gallery = item.images?.length ? item.images : [item.image];
+  const thumbnailSlots = Array.from({ length: 14 }, (_, index) => gallery[index] || null);
+  const agent = SAMPLE_AGENTS.find((entry) => entry.name === item.agentName) || SAMPLE_AGENTS[0];
+  const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
+  const detailLabels: Record<string, string> = { rooms: 'Oda SayÄ±sÄ±', roomCount: 'Oda SayÄ±sÄ±', buildingAge: 'Bina YaÅŸÄ±', floor: 'BulunduÄŸu Kat', heating: 'IsÄ±tma', furnished: 'EÅŸyalÄ±', mortgage: 'Krediye Uygun', bathroom: 'Banyo SayÄ±sÄ±', zoning: 'Ä°mar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'AltyapÄ±', closedArea: 'KapalÄ± Alan', ceilingHeight: 'Tavan YÃ¼ksekliÄŸi', power: 'Elektrik GÃ¼cÃ¼', loading: 'YÃ¼kleme RampasÄ±', crane: 'VinÃ§', sections: 'BÃ¶lÃ¼m SayÄ±sÄ±', parking: 'Otopark', usage: 'KullanÄ±m Durumu', hotelRooms: 'Otel Oda SayÄ±sÄ±', beds: 'Yatak Kapasitesi', stars: 'YÄ±ldÄ±z', restaurant: 'Restoran', pool: 'Havuz' };
+  const detailValue = (key: string, fallback = 'BelirtilmemiÅŸ') => item.details[key] || fallback;
+  const detailRows: Array<[string, string]> = [
+    ['Ä°lan No', item.id], ['Ä°lan Tarihi', item.updatedAt || item.date], ['Emlak Tipi', `${item.type} ${item.propertyType}`],
+    ['mÂ² (BrÃ¼t)', `${item.area} mÂ²`], ['mÂ² (Net)', `${Math.round(item.area * .9)} mÂ²`], ['Oda SayÄ±sÄ±', item.rooms],
+    ['Bina YaÅŸÄ±', detailValue('buildingAge')], ['Kat SayÄ±sÄ±', detailValue('floorCount', 'BelirtilmemiÅŸ')], ['BulunduÄŸu Kat', detailValue('floor')],
+    ['IsÄ±tma', detailValue('heating')], ['Banyo SayÄ±sÄ±', detailValue('bathroom')], ['Mutfak', detailValue('kitchen', 'AÃ§Ä±k (Amerikan)')],
+    ['Balkon', detailValue('balcony', 'Var')], ['AsansÃ¶r', detailValue('elevator', 'Var')], ['Otopark', detailValue('parking', 'AÃ§Ä±k Otopark')],
+    ['EÅŸyalÄ±', detailValue('furnished')], ['KullanÄ±m Durumu', detailValue('usage', 'BoÅŸ')], ['Site Ä°Ã§erisinde', detailValue('inSite', 'Evet')],
+    ['Site AdÄ±', detailValue('siteName')], ['Aidat (TL)', item.monthlyFee || 'BelirtilmemiÅŸ'], ['Krediye Uygun', detailValue('mortgage')],
+    ['Enerji Kimlik Belgesi', detailValue('energyCertificate')], ['Tapu Durumu', item.deedInfo || detailValue('deed')],
+    ['Kimden', 'Realty CenterÂ®'], ['Takas', detailValue('swap', 'HayÄ±r')]
+  ];
+  const features = (item.technicalFeatures || 'Otopark, gÃ¼venlik, ulaÅŸÄ±m akslarÄ±na yakÄ±nlÄ±k').split(',').map((feature) => feature.trim());
+
+  const toggleFavorite = () => {
+    const stored: string[] = JSON.parse(localStorage.getItem('realty-center-favorites') || '[]');
+    const next = favorite ? stored.filter((favoriteId) => favoriteId !== item.id) : [...new Set([...stored, item.id])];
+    localStorage.setItem('realty-center-favorites', JSON.stringify(next));
+    setFavorite(!favorite);
+  };
+  const shareListing = async () => {
+    const shareData = { title: item.title, text: `${item.title} - ${item.price.toLocaleString('tr-TR')} ${item.currency}`, url: window.location.href };
+    if (navigator.share) await navigator.share(shareData);
+    else { await navigator.clipboard.writeText(window.location.href); alert('Ä°lan baÄŸlantÄ±sÄ± kopyalandÄ±.'); }
+  };
+
+  return (
+    <div className="listing-detail-enter min-h-screen bg-white px-0 pb-6 pt-4 print:bg-white">
+      <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
+        <nav className="mb-3 flex flex-wrap items-center gap-1.5 border-b border-slate-200 pb-2.5 text-[11px] font-bold text-red-700">
+          <Link to="/ilanlarimiz?all=1">Emlak</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?category=${encodeURIComponent(item.category)}`}>{item.category}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><Link to={`/ilanlarimiz?type=${encodeURIComponent(item.type)}`}>{item.type}</Link><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.propertyType}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span>{item.city}</span><ChevronRight className="h-3 w-3 text-slate-400"/><span className="text-slate-500">{item.district}</span>
+        </nav>
+
+        <div className="mb-4 flex flex-col gap-2.5 border-b border-slate-200 pb-3 lg:flex-row lg:items-center lg:justify-between">
+          <h1 className="text-xl font-black uppercase text-slate-900 sm:text-2xl">{item.title}</h1>
+          <div className="flex flex-wrap gap-1.5 print:hidden"><button onClick={toggleFavorite} className={`inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-[11px] font-black ${favorite ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-white text-slate-700'}`}><Heart className={`h-3.5 w-3.5 ${favorite ? 'fill-current' : ''}`}/>Favorilere Ekle</button><button onClick={() => window.print()} className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-[11px] font-black text-slate-700"><Printer className="h-3.5 w-3.5"/>YazdÄ±r</button><button onClick={shareListing} className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-[11px] font-black text-slate-700"><Share2 className="h-3.5 w-3.5"/>PaylaÅŸ</button></div>
+        </div>
+
+        <section className="grid items-start gap-4 xl:grid-cols-[minmax(0,1.15fr)_320px_275px]">
+          <div className="min-w-0 xl:flex xl:h-[620px] xl:flex-col">
+            <div className="relative h-[310px] shrink-0 overflow-hidden border border-slate-200 bg-white sm:h-[390px]"><img src={gallery[activeImage]} alt={`${item.title} ${activeImage + 1}`} className="h-full w-full bg-white object-contain"/>{gallery.length > 1 && <><button onClick={() => setActiveImage((activeImage - 1 + gallery.length) % gallery.length)} className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronLeft className="h-5 w-5"/></button><button onClick={() => setActiveImage((activeImage + 1) % gallery.length)} className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-slate-800 shadow-lg"><ChevronRight className="h-5 w-5"/></button></>}</div>
+            <div className="mt-1.5 flex items-center justify-between border-y border-slate-200 bg-slate-50 px-3 py-1.5 text-[11px] font-black text-slate-600"><span className="inline-flex items-center gap-1.5"><Camera className="h-3.5 w-3.5 text-red-700"/>BÃ¼yÃ¼k FotoÄŸraf</span><span>{activeImage + 1} / {gallery.length}</span></div>
+            <div className="mt-1.5 grid min-h-[138px] flex-1 grid-cols-5 grid-rows-3 gap-1.5 border border-dashed border-slate-300 bg-slate-50/60 p-1.5 sm:grid-cols-7 sm:grid-rows-2">{thumbnailSlots.map((image, index) => image ? <button key={`${image}-${index}`} onClick={() => setActiveImage(index)} className={`min-h-0 overflow-hidden border-2 bg-white ${activeImage === index ? 'border-red-700' : 'border-slate-200 hover:border-red-300'}`}><img src={image} alt="" className="h-full w-full bg-white object-contain"/></button> : <span key={`empty-${index}`} aria-hidden="true" className="min-h-0 border border-dashed border-slate-200 bg-white/70" />)}</div>
+          </div>
+
+          <div className="min-w-0 xl:h-[620px] xl:overflow-hidden">
+            <div className="border-b border-slate-200 pb-3"><p className="text-2xl font-black text-red-700">{item.price.toLocaleString('tr-TR')} {item.currency}</p><p className="mt-3 flex items-center gap-1.5 text-xs font-black text-slate-800"><MapPin className="h-3.5 w-3.5 text-red-700"/>{item.city} / {item.district} / {item.neighborhood}</p></div>
+            <dl className="mt-1 text-[10px] leading-[1.15]">{detailRows.map(([label, value]) => <div key={`${label}-${value}`} className="grid grid-cols-[118px_1fr] gap-2 border-b border-dotted border-slate-300 py-[4px]"><dt className="font-black leading-tight text-slate-800">{label}</dt><dd className={label === 'Ä°lan No' || label === 'Kimden' ? 'font-bold text-red-700' : 'font-medium text-slate-700'}>{value}</dd></div>)}</dl>
             <Link to="/iletisim" className="mt-3 flex items-center justify-center gap-1.5 text-[11px] font-bold text-red-700"><Flag className="h-3.5 w-3.5"/>Ä°lan ile ilgili ÅŸikayetim var</Link>
           </div>
 
@@ -888,20 +3542,160 @@ HOˆ]ˆÙ^O^ÙšY[šÙ^_OX™[Û\ÜÓ˜[YOH›X‹LH›ØÚÈ^^È›ÛX›XÚÈ^\Û
 
         <section className="mt-6">
           <div className="flex flex-wrap gap-1 border-b-2 border-red-700">{[['details','Ä°lan DetaylarÄ±'],['location','Konumu ve BÃ¶lge Bilgisi'],['index','Emlak Endeksi']].map(([key,label]) => <button key={key} onClick={() => setActiveTab(key as 'details' | 'location' | 'index')} className={`border border-b-0 px-4 py-2.5 text-xs font-black sm:px-6 ${activeTab === key ? 'border-red-700 bg-red-700 text-white' : 'border-slate-300 bg-slate-50 text-slate-700 hover:text-red-700'}`}>{label}</button>)}</div>
-          {activeTab === 'details' && <div className="space-y-3 pt-1"><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-base font-black">AÃ§Ä±klama</h2><p className="min-h-20 whitespace-pre-line px-4 py-4 text-xs leading-6 text-slate-700">{item.description || 'Bu ilan iÃ§in aÃ§Ä±klama eklenmemiÅŸtir.'}</p></div><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-base font-black">Ã–zellikler</h2><div className="grid gap-2.5 bg-amber-50/45 p-4 sm:grid-cols-2 lg:grid-cols-4">{features.map((feature) => <span key={feature} className="flex items-center gap-2 text-xs font-bold text-slate-800"><CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600"/>{feature}</span>)}{Object.entries(item.details).map(([key,value]) => <span key={key} className="flex items-center gap-2 text-xs font-bold text-slate-800"><CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600"/>{detailLabels[key] || key}: {value}</span>)}</div></div><div className="grid gap-4 md:grid-cols-2"><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-2 text-sm font-black"><PlayCircle className="h-4 w-4 text-red-700"/>Video</h2>{item.videoUrl ? <iframe title="Ä°lan videosu" src={item.videoUrl} className="h-64 w-full" allowFullScreen/> : <div className="flex h-36 items-center justify-center text-xs font-bold text-slate-400">Bu ilan iÃ§in video eklenmemiÅŸ.</div>}</div><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-2 text-sm fYªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Õ½¹Ğµ‰±…¬ˆøñ±½‰”±…ÍÍ9…µ”ô‰ ´ĞÜ´ĞÑ•áĞµÉ•´ÜÀÀˆ¼ùM…¹…°QÕÈ€ ÌØÃ
-À¤ğ½ Èùí¥Ñ•´¹Ù¥ÉÑÕ…±Q½ÕÉUÉ°€ü€ñ¥™É…µ”Ñ¥Ñ±”ô‰M…¹…°ÑÕÈˆÍÉŒõí¥Ñ•´¹Ù¥ÉÑÕ…±Q½ÕÉUÉ±ô±…ÍÍ9…µ”ô‰ ´ØĞÜµ™Õ±°ˆ…±±½İÕ±±MÉ••¸¼ø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à ´ÌØ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÑ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù	Ô¥±…¸§¥¸€ÌØÃ
-ÀÑÕÈ•­±•¹µ•µ§|¸ğ½‘¥Øùôğ½‘¥Øøğ½‘¥Øøğ½‘¥Øùô(€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€±½…Ñ¥½¸œ€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀˆøñ‘¥Ø±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÄÀÀÀ´Ğˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ±œ™½¹Ğµ‰±…¬ˆù-½¹Õ´Ù”Ù±”	¥±¥Í¤ğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ØÀÀˆùí¥Ñ•´¹¥Ñåô€¼í¥Ñ•´¹‘¥ÍÑÉ¥Ñô€¼í¥Ñ•´¹¹•¥¡‰½É¡½½‘ôğ½Àøğ½‘¥Øùí¥Ñ•´¹µ…ÁUÉ°€ü€ñ¥™É…µ”Ñ¥Ñ±”ô‹Á±…¸­½¹ÕµÔˆÍÉŒõí¥Ñ•´¹µ…ÁUÉ±ô±…ÍÍ9…µ”ô‰ µlĞØÁÁátÜµ™Õ±°‰½É‘•È´Àˆ±½…‘¥¹œô‰±…éäˆ¼ø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à ´ØĞ¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÑ•áĞµÍ´™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ĞÀÀˆù-½¹Õ´‰¥±¥Í¤•­±•¹µ•µ§|¸ğ½‘¥Øùôğ½‘¥Øùô(€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€¥¹‘•àœ€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´Ô‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÀ´ØµéÉ¥µ½±Ì´Ìˆøñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµÍ±…Ñ”´ÔÀÀ´ÔˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùY1=IQ15·
-Èğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆùí5…Ñ ¹É½Õ¹¡¥Ñ•´¹ÁÉ¥”€¼5…Ñ ¹µ…à¡¥Ñ•´¹…É•„°€Ä¤¤¹Ñ½1½…±•MÑÉ¥¹œ ÑÈµQHœ¥ôƒŠ
-èğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµÍ±…Ñ”´ÔÀÀ´ÔˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùQ!7Á;ÀKÀY;sxğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆøÄãŠLÈÈgÅ°ğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµÍ±…Ñ”´ÔÀÀ´ÔˆøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÔÀÀˆùY1{Á3Á7Àğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÈÑ•áĞ´Éá°™½¹Ğµ‰±…¬Ñ•áĞµ•µ•É…±´ØÀÀˆùgñ­Í•±§}Ñ”ğ½Àøğ½‘¥ØøñÀ±…ÍÍ9…µ”ô‰µé½°µÍÁ…¸´ÌÑ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ÔÀÀˆù	ÔŸÙÍÑ•É•±•ÈƒÙÉ¹•¬¥±…¸Ù•É¥±•É¤ƒñé•É¥¹‘•¸‰¥±¥±•¹‘¥Éµ”…µ…Åå±„¡•Í…Á±…»ÅÈì•­ÍÁ•ÉÑ¥èÙ•å„å…ÓÅËÅ´…É…¹Ñ¥Í¤‘—}¥±‘¥È¸ğ½Àøğ½‘¥Øùô(€€€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰µĞ´àÉ¥¥Ñ•µÌµÍÑ…ÉĞ…À´Ô±œéÉ¥µ½±Ìµmµ¥¹µ…à À°Å™È¥|ÔÌÁÁátˆøñ‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µˆ´Ğ™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù	•¹é•ÈƒÁ±…¹±…Èğ½ Èøñ1¥¹¬Ñ¼õí€½¥±…¹±…É¥µ¥èıÁÉ½Á•ÉÑåQåÁ”ô‘í•¹½‘•UI%½µÁ½¹•¹Ğ¡¥Ñ•´¹ÁÉ½Á•ÉÑåQåÁ”¥õô±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆùSñ·ñ»ğÙÈƒŠHğ½1¥¹¬øğ½‘¥ØùíÍ¥µ¥±…È¹±•¹Ñ €ü€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ…àµÜµÍ´ˆùíÍ¥µ¥±…È¹Í±¥” À°€Ä¤¹µ…À ¡±¥ÍÑ¥¹œ¤€ôø€ñ1¥ÍÑ¥¹…É­•äõí±¥ÍÑ¥¹œ¹¥‘ô¥Ñ•´õí±¥ÍÑ¥¹ô¼ø¥ôğ½‘¥Øø€è€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÑ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ÔÀÀˆù	•¹é•È¥±…¸‰Õ±Õ¹…µ…“Ä¸ğ½‘¥Øùôğ½‘¥Øøñ1¥ÍÑ¥¹Ñ¥½¹M¡½ÉÑÕÑÌ€¼øğ½Í•Ñ¥½¸ø(€€€€€€ğ½‘¥Øø(€€€€ğ½‘¥Øø(€€¤ì)ô()™Õ¹Ñ¥½¸AÉ½©•ÑÍA…” ¤ì(€½¹ÍĞÁÉ½©•ÑÌ€ôl(€€€ì…Ñ•½Éäè€e;ÀƒÁ;yPAI=)OÀœ°Ñ¥Ñ±”è€ŸÁ¹•¬Y…‘¤Ù±•É¤œ°±½…Ñ¥½¸è€Ÿ…¹­…å„ƒ
-ÜƒÁ¹•¬œ°‘•ÍÉ¥ÁÑ¥½¸è€œÈ¬Ä°€Ì¬ÄÙ”€Ğ¬ÄÍ—•¹•­±•É¤ìÁ•åé…¨…±…¹±…ËÄ°­…Á…³Ä½Ñ½Á…É¬Ù”Í½Íå…°Ñ•Í¥Í±•É¥å±”…¥±”å‡}…·Å¹„½‘…­±…¹…¸å•¹¤­½¹ÕĞÁÉ½©•Í¤¸œ°ÍÑ…ÑÕÌè€Q•Í±¥´èÉ…³Å¬€ÈÀÈÜœ°¥µ…”è€œ½Í±¥‘•È½É•…±Ñäµ¥Ñä¹©Áœœ°Ñ…ÌèlœÈ¬ÄƒŠL€Ğ¬Äœ°€M½Íå…°Ñ•Í¥Ìœ°€-…Á…³Ä½Ñ½Á…É¬tô°(€€€ì…Ñ•½Éäè€SÁKÀAI=)œ°Ñ¥Ñ±”è€OÛñÓÙëğ	ÕÍ¥¹•ÍÌ!Õˆœ°±½…Ñ¥½¸è€Ÿ…¹­…å„ƒ
-ÜOÛñÓÙëğœ°‘•ÍÉ¥ÁÑ¥½¸è€gñ­Í•¬ŸÙËñ»ñÉ³ñ¬°•Í¹•¬½™¥Ìµ•ÑÉ•­…É•±•É¤Ù”Ñ½Á±…¹ÓÄ…±…¹±…ËÅå±„ƒ}¥É­•Ñ±•ÈÙ”å…ÓÅËÅµÅ±…È§¥¸Ñ…Í…É±…¹…¸ƒ‡}‘‡|Ñ¥…É¤ÁÉ½©”¸œ°ÍÑ…ÑÕÌè€ŸY¸Ñ…±•À“Ù¹•µ¤œ°¥µ…”è€œ½•Ø¹©Áœœ°Ñ…Ìèl=™¥Ì­…Ñ±…ËÄœ°€…‘‘”µ‡}…é…±…ËÄœ°€5•ÑÉ½å„å…¯Å¸tô(€tì(€É•ÑÕÉ¸€ (€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰µ¥¸µ µÍÉ••¸‰œµÍ±…Ñ”´ÔÀÁä´ÄÈÍ´éÁä´ÄØˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´İá°Áà´Ø±œéÁà´ÄÈˆøñ‘¥Ø±…ÍÍ9…µ”ô‰µ…àµÜ´Íá°ˆøñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬ÑÉ…­¥¹œµİ¥‘•ÍĞÑ•áĞµÉ•´ÜÀÀˆùI1Qd9QK
-¸AI=)1Hğ½ÍÁ…¸øñ Ä±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞ´Ñá°™½¹Ğµ‰±…¬ÑÉ…­¥¹œµÑ¥¡ĞÑ•áĞµÍ±…Ñ”´äÀÀÍ´éÑ•áĞ´Õá°ˆùe•¹¤å‡}…´Ù”å…ÓÅËÅ´€ñÍÁ…¸±…ÍÍ9…µ”ô‰Ñ•áĞµÉ•´ÜÀÀˆùÁÉ½©•±•É¤ğ½ÍÁ…¸øğ½ ÄøñÀ±…ÍÍ9…µ”ô‰µĞ´ÔÑ•áĞµ±œ±•…‘¥¹œµÉ•±…á•Ñ•áĞµÍ±…Ñ”´ØÀÀˆùe•¹¤¥»}……ĞÙ”Ñ¥…É¤ÁÉ½©•±•É¤ì±½­…Íå½¸°Ñ•Í±¥´Ñ…­Ù¥µ¤Ù”ƒÙ¹”ƒŸÅ­…¸ƒÙé•±±¥­±•É¥å±”¥¹•±•å¥¸¸AÉ½©”‘…»Ç}µ…¹±…ËÅ·ÅèÍ¥é”•¸ÕåÕ¸Í—•¹•¬§¥¸å…»Å»Åé‘„¸ğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÄÀÉ¥…À´Ü±œéÉ¥µ½±Ì´ÈˆùíÁÉ½©•ÑÌ¹µ…À ¡ÁÉ½©•Ğ¤€ôø€ñ…ÉÑ¥±”­•äõíÁÉ½©•Ğ¹Ñ¥Ñ±•ô±…ÍÍ9…µ”ô‰É½ÕÀ½Ù•É™±½Üµ¡¥‘‘•¸É½Õ¹‘•´Íá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”Í¡…‘½ÜµÍ´ÑÉ…¹Í¥Ñ¥½¸¡½Ù•ÈèµÑÉ…¹Í±…Ñ”µä´Ä¡½Ù•ÈéÍ¡…‘½Üµá°ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰É•±…Ñ¥Ù” ´ØĞ½Ù•É™±½Üµ¡¥‘‘•¸‰œµİ¡¥Ñ”ˆøñ¥µœÍÉŒõíÁÉ½©•Ğ¹¥µ…•ô…±ĞõíÁÉ½©•Ğ¹Ñ¥Ñ±•ô±…ÍÍ9…µ”ô‰ µ™Õ±°Üµ™Õ±°½‰©•Ğµ½¹Ñ…¥¸ÑÉ…¹Í¥Ñ¥½¸‘ÕÉ…Ñ¥½¸´ÔÀÀˆ¼øñÍÁ…¸±…ÍÍ9…µ”ô‰…‰Í½±ÕÑ”±•™Ğ´ÔÑ½À´ÔÉ½Õ¹‘•µ™Õ±°‰œµÉ•´ÜÀÀÁà´ÌÁä´Ä¸ÔÑ—m4ÖÚ$z{-®éÜj×^X]]È‚ˆÜ[ˆÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ^\™YMÌ˜XÚÚ[™Ë]ÚY\İ™Ë\™YLŒLËHKLKH›İ[™YY[›Ü™\ˆ›Ü™\‹\™YLÌ[›[™KX›ØÚÈX‹LÈ‚ˆš^™H[qgñ,[‚ˆÜÜ[‚ˆHÛ\ÜÓ˜[YOH^LŞÛN^M›ÛX›XÚÈ^\Û]KNL‚ˆ±,±,SHÜ[ˆÛ\ÜÓ˜[YOH^\™YMÌ±,U1,1g±,QHÑpáÏÜÜ[‚ˆÚO‚ˆÛ\ÜÓ˜[YOH^\Û]KMŒ^\ÛH›Û[YY][H]Lˆ‚ˆÛÜ[\±,[±,^‹Ø^\š[Y[šİ[[\\š[š^ˆ™^XHqgÈš\›q'ÚH±,\œØ]\±,HpéÚ[ˆZÚXš[Z^›H[]qgÚ[YHÙpéÙXš[\œÚ[š^‹‚ˆÜ‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLHÎ™ÜšYXÛÛËLLˆØ\N][\Ë\İ\‚ˆˆ]ˆÛ\ÜÓ˜[YOH›Î˜ÛÛ\Ü[‹MÈ™Ë]Ú]HNÛNœLL›İ[™YL›Ü™\‹Lˆ›Ü™\‹\Û]KLŒÚYİË^™[]]™Hİ™\™›İËZY[ˆ‚ˆ[YÈÜ˜ÏH‹Ü˜×ÛÙÛ×ÛÙËœİ™Èˆ[H”™X[HÙ[\°«ˆ0å›˜ÙHğï™[ˆˆÛ\ÜÓ˜[YOH˜XœÛÛ]HšYÚMHÜMHLMËLÌˆØš™XİXÛÛZ[ˆÛNœšYÚNÛNÜMÈÛNšLMˆÛNËMˆÏ‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆÜXÙK^LÈX‹Mˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLL‹M‹LÛNœ‹LÍˆ‚ˆ]ˆÛ\ÜÓ˜[YOHœLÈ™Ë\™YLL^\™YMÌ›İ[™Y^‚ˆY\ÜØYÙTÜ]X\™HÛ\ÜÓ˜[YOHËMˆMˆˆÏ‚ˆÙ]‚ˆ]‚ˆˆÛ\ÜÓ˜[YOH^^›ÛX›XÚÈ^\Û]KNL±,]qgÚ[YHÙpéÏÚ‚ˆÛ\ÜÓ˜[YOH^^È^\Û]KML›Û[YY][H‘›Ü›]HÛ\[‹^›X[ˆZÚXš[Z^ˆ[ˆñ,\ØHğï™YH0í›°ï1gÈX\ñ,[‹Ü‚ˆÙ]‚ˆÙ]‚‚ˆÜİX›Z]Y	‰ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH›X‹Mˆ™ËY[Y\˜[ML›Ü™\ˆ›Ü™\‹Y[Y\˜[LŒ^Y[Y\˜[NM›İ[™Y^›^][\ËXÙ[\ˆÜXÙK^LÈ^^È›ÛX›Û[š[X]KY˜YKZ[ˆ‚ˆÚXÚĞÚ\˜ÛLˆÛ\ÜÓ˜[YOHËMHMH^Y[Y\˜[MŒ›^\Úš[šËLˆÏ‚ˆÜ[“Y\ØZ±,[±,^ˆpí›™][HY\šÙ^š[Z^™H˜qgØ\±,^[H[][Zqgİ\‹ˆ1,Ú[š^ˆpéÚ[ˆqgÙZÚğïˆY\š^ˆOÜÜ[‚ˆÙ]‚ˆ
-_B‚ˆ›Ü›HÛ”İX›Z]^Ú[™TİX›Z]HÛ\ÜÓ˜[YOHœÜXÙK^KM‚ˆ]‚ˆX™[Û\ÜÓ˜[YOH˜›ØÚÈ^^È›ÛX›Û^\Û]KMÌX‹LKH˜XÚÚ[™Ë]ÚY\ˆ‚ˆYÛŞXY
-‚ˆÛX™[‚ˆ[œ]ˆ\OH^ˆˆ™\]Z\™YˆXÙZÛ\HY1,[±,^ˆ™HÛŞXY1,[±,^ˆ‚ˆ˜[YO^Ù›Ü›K™[˜[Y_BˆÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JÈ‹‹™›Ü›K[˜[YNˆK\™Ù]˜[YHJ_BˆÛ\ÜÓ˜[YOHËY[™Ë\Û]KML›Ü™\ˆ›Ü™\‹\Û]KLÌ›İ[™Y^MKLÈ^^È›Û\Ù[ZX›Û^\Û]KNL›Øİ\Î›İ][™K[›Û™H›Øİ\Îœš[™ËLˆ›Øİ\Îœš[™Ë\™YMÌ˜[œÚ][Ûˆ‚ˆÏ‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH™ÜšYÜšYXÛÛËLHÛN™ÜšYXÛÛËLˆØ\M‚ˆ]‚ˆX™[Û\ÜÓ˜[YOH˜›ØÚÈ^^È›ÛX›Û^\Û]KMÌX‹LKH˜XÚÚ[™Ë]ÚY\ˆ‚ˆ[Y›Ûˆ[X\˜\ñ,H
-‚ˆÛX™[‚ˆ[œ]ˆ\OH[ˆˆ™\]Z\™YˆXÙZÛ\HŒV‚ˆ˜[YO^Ù›Ü›KœÛ™_BˆÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JÈ‹‹™›Ü›KÛ™NˆK\™Ù]˜[YHJ_BˆÛ\ÜÓ˜[YOHËY[™Ë\Û]KML›Ü™\ˆ›Ü™\‹\Û]KLÌ›İ[™Y^MKLÈ^^È›Û\Ù[ZX›Û^\Û]KNL›Øİ\Î›İ][™K[›Û™H›Øİ\Îœš[™ËLˆ›Øİ\Îœš[™Ë\™YMÌ˜[œÚ][Ûˆ‚ˆÏ‚ˆÙ]‚‚ˆ]‚ˆX™[Û\ÜÓ˜[YOH˜›ØÚÈ^^È›ÛX›Û^\Û]KMÌX‹LKH˜XÚÚ[™Ë]ÚY\ˆ‚ˆKTÜİHY™\ÚH
-‚ˆÛX™[‚ˆ[œ]ˆ\OH™[XZ[ˆˆ™\]Z\™YˆXÙZÛ\H›Ü›™ZĞÛXZ[‹˜ÛÛH‚ˆ˜[YO^Ù›Ü›K™[XZ[BˆÛÚ[™ÙO^ÊJHOˆÙ]›Ü›JÈ‹‹™›Ü›K[XZ[ˆK\™Ù]˜[YHJ_BˆÛ\ÜÓ˜[YOHËY[™Ë\Û]KML›Ü™\ˆ›Ü™\‹\Û]KLÌ›İ[™Y^MKLÈ^^È›Û\Ù[ZX›Û^\Û]KNL›Øİ\Î›İ][™K[›Û™H›Øİ\Îœš[™ËLˆ›Øİ\Îœš[™Ë\™YMÌ˜[œÚ][Ûˆ‚ˆÏ‚ˆÙ]‚ˆÙ]‚‚ˆ]‚ˆX™[Û\ÜÓ˜[YOH˜›ØÚÈ^^È›ÛX›Û^\Û]KMÌX‹LKH˜XÚÚ[™Ë]ÚY\ˆ‚ˆY\ØZ±,[±,^ˆ
-‚ˆÛX™[‚ˆ^\™XHˆ™\]Z\™Yˆ›İÜÏ^Í_BˆXÙZÛ\H•[\ğíœ°ï1gÈ™^XHÛÜ[^H\˜Vj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5ya detaylÄ±ca yazabilirsiniz..."
+          {activeTab === 'details' && <div className="space-y-3 pt-1"><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-base font-black">AÃ§Ä±klama</h2><p className="min-h-20 whitespace-pre-line px-4 py-4 text-xs leading-6 text-slate-700">{item.description || 'Bu ilan iÃ§in aÃ§Ä±klama eklenmemiÅŸtir.'}</p></div><div className="border border-slate-200"><h2 className="border-b border-slate-200 bg-slate-100 px-4 py-2 text-base font-black">Ã–zellikler</h2><div className="grid gap-2.5 bg-amber-50/45 p-4 sm:grid-cols-2 lg:grid-cols-4">{features.map((feature) => <span key={feature} className="flex items-center gap-2 text-xs font-bold text-slate-800"><CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600"/>{feature}</span>)}{Object.entries(item.details).map(([key,value]) => <span key={key} className="flex items-center gap-2 text-xs font-bold text-slate-800"><CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-emerald-600"/>{detailLabels[key] || key}: {value}</span>)}</div></div><div className="grid gap-4 md:grid-cols-2"><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-2 text-sm font-black"><PlayCircle className="h-4 w-4 text-red-700"/>Video</h2>{item.videoUrl ? <iframe title="Ä°lan videosu" src={item.videoUrl} className="h-64 w-full" allowFullScreen/> : <div className="flex h-36 items-center justify-center text-xs font-bold text-slate-400">Bu ilan iÃ§in video eklenmemiÅŸ.</div>}</div><div className="border border-slate-200"><h2 className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-4 py-2 text-sm font-black"><Globe className="h-4 w-4 text-red-700"/>Sanal Tur (360Â°)</h2>{item.virtualTourUrl ? <iframe title="Sanal tur" src={item.virtualTourUrl} className="h-64 w-full" allowFullScreen/> : <div className="flex h-36 items-center justify-center text-xs font-bold text-slate-400">Bu ilan iÃ§in 360Â° tur eklenmemiÅŸ.</div>}</div></div></div>}
+          {activeTab === 'location' && <div className="border border-slate-200"><div className="border-b border-slate-200 bg-slate-100 p-4"><h2 className="text-lg font-black">Konum ve BÃ¶lge Bilgisi</h2><p className="mt-1 text-sm text-slate-600">{item.city} / {item.district} / {item.neighborhood}</p></div>{item.mapUrl ? <iframe title="Ä°lan konumu" src={item.mapUrl} className="h-[460px] w-full border-0" loading="lazy"/> : <div className="flex h-64 items-center justify-center text-sm font-bold text-slate-400">Konum bilgisi eklenmemiÅŸ.</div>}</div>}
+          {activeTab === 'index' && <div className="grid gap-5 border border-slate-200 p-6 md:grid-cols-3"><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">BÃ–LGE ORTALAMA mÂ²</p><p className="mt-2 text-2xl font-black text-red-700">{Math.round(item.price / Math.max(item.area, 1)).toLocaleString('tr-TR')} â‚º</p></div><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">TAHMÄ°NÄ° GERÄ° DÃ–NÃœÅ</p><p className="mt-2 text-2xl font-black text-slate-900">18â€“22 YÄ±l</p></div><div className="bg-slate-50 p-5"><p className="text-xs font-black text-slate-500">BÃ–LGE EÄÄ°LÄ°MÄ°</p><p className="mt-2 text-2xl font-black text-emerald-600">YÃ¼kseliÅŸte</p></div><p className="md:col-span-3 text-xs leading-5 text-slate-500">Bu gÃ¶stergeler Ã¶rnek ilan verileri Ã¼zerinden bilgilendirme amacÄ±yla hesaplanÄ±r; ekspertiz veya yatÄ±rÄ±m garantisi deÄŸildir.</p></div>}
+        </section>
+
+        <section className="mt-8 grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_530px]"><div><div className="mb-4 flex items-center justify-between"><h2 className="text-xl font-black text-slate-900">Benzer Ä°lanlar</h2><Link to={`/ilanlarimiz?propertyType=${encodeURIComponent(item.propertyType)}`} className="text-xs font-black text-red-700">TÃ¼mÃ¼nÃ¼ GÃ¶r â†’</Link></div>{similar.length ? <div className="max-w-sm">{similar.slice(0, 1).map((listing) => <ListingCard key={listing.id} item={listing}/>)}</div> : <div className="border border-slate-200 bg-white p-6 text-xs font-bold text-slate-500">Benzer ilan bulunamadÄ±.</div>}</div><ListingActionShortcuts /></section>
+      </div>
+    </div>
+  );
+}
+
+function ProjectsPage() {
+  const projects = [
+    { category: 'YENÄ° Ä°NÅAAT PROJESÄ°', title: 'Ä°ncek Vadi Evleri', location: 'Ã‡ankaya Â· Ä°ncek', description: '2+1, 3+1 ve 4+1 seÃ§enekleri; peyzaj alanlarÄ±, kapalÄ± otopark ve sosyal tesisleriyle aile yaÅŸamÄ±na odaklanan yeni konut projesi.', status: 'Teslim: AralÄ±k 2027', image: '/slider/realty-city.jpg', tags: ['2+1 â€“ 4+1', 'Sosyal tesis', 'KapalÄ± otopark'] },
+    { category: 'TÄ°CARÄ° PROJE', title: 'SÃ¶ÄŸÃ¼tÃ¶zÃ¼ Business Hub', location: 'Ã‡ankaya Â· SÃ¶ÄŸÃ¼tÃ¶zÃ¼', description: 'YÃ¼ksek gÃ¶rÃ¼nÃ¼rlÃ¼k, esnek ofis metrekareleri ve toplantÄ± alanlarÄ±yla ÅŸirketler ve yatÄ±rÄ±mcÄ±lar iÃ§in tasarlanan Ã§aÄŸdaÅŸ ticari proje.', status: 'Ã–n talep dÃ¶nemi', image: '/ev.jpg', tags: ['Ofis katlarÄ±', 'Cadde maÄŸazalarÄ±', 'Metroya yakÄ±n'] }
+  ];
+  return (
+    <div className="min-h-screen bg-slate-50 py-12 sm:py-16"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="max-w-3xl"><span className="text-xs font-black tracking-widest text-red-700">REALTY CENTERÂ® PROJELER</span><h1 className="mt-3 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl">Yeni yaÅŸam ve yatÄ±rÄ±m <span className="text-red-700">projeleri</span></h1><p className="mt-5 text-lg leading-relaxed text-slate-600">Yeni inÅŸaat ve ticari projeleri; lokasyon, teslim takvimi ve Ã¶ne Ã§Ä±kan Ã¶zellikleriyle inceleyin. Proje danÄ±ÅŸmanlarÄ±mÄ±z size en uygun seÃ§enek iÃ§in yanÄ±nÄ±zda.</p></div><div className="mt-10 grid gap-7 lg:grid-cols-2">{projects.map((project) => <article key={project.title} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="relative h-64 overflow-hidden bg-white"><img src={project.image} alt={project.title} className="h-full w-full object-contain transition duration-500"/><span className="absolute left-5 top-5 rounded-full bg-red-700 px-3 py-1.5 text-[11px] font-black tracking-wider text-white">{project.category}</span><div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 text-sm font-bold text-slate-800 shadow"><MapPin className="h-4 w-4 text-red-700"/>{project.location}</div></div><div className="p-6"><h2 className="text-2xl font-black text-slate-900">{project.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">{tag}</span>)}</div><div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5"><span className="text-sm font-black text-red-700">{project.status}</span><Link to="/iletisim" className="inline-flex items-center gap-1 text-sm font-black text-slate-900 transition hover:text-red-700">Bilgi Al <ArrowRight className="h-4 w-4"/></Link></div></div></article>)}</div></div></div>
+  );
+}
+
+function VideosPage() {
+  const location = useLocation();
+  const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
+  const [channelVideos, setChannelVideos] = useState<RealtyVideo[]>([]);
+  const [activeMedia, setActiveMedia] = useState<'tv' | 'news'>(() => new URLSearchParams(location.search).get('bolum') === 'haberler' ? 'news' : 'tv');
+  useEffect(() => { const refresh = () => setVideos(getRealtyVideos()); window.addEventListener('realty-center-videos-updated', refresh); return () => window.removeEventListener('realty-center-videos-updated', refresh); }, []);
+  useEffect(() => { setActiveMedia(new URLSearchParams(location.search).get('bolum') === 'haberler' ? 'news' : 'tv'); }, [location.search]);
+  useEffect(() => { const channelUrl = getYoutubeChannelUrl(); if (!channelUrl) return; fetch(`/api/youtube-channel-videos?channelUrl=${encodeURIComponent(channelUrl)}`).then((response) => response.ok ? response.json() : Promise.reject()).then((data) => setChannelVideos(Array.isArray(data.videos) ? data.videos : [])).catch(() => setChannelVideos([])); }, []);
+  const allVideos = [...videos, ...channelVideos.filter((channelVideo) => !videos.some((video) => getYoutubeId(video.url) === getYoutubeId(channelVideo.url)))];
+  const visibleVideos = allVideos.filter((video) => video.category === activeMedia);
+  return <div className="min-h-screen bg-slate-50 py-12"><div className="mx-auto max-w-7xl px-6 lg:px-12">
+    <p className="text-xs font-black tracking-widest text-red-700">REALTY CENTERÂ®</p><h1 className="mt-2 text-4xl font-black text-slate-900">REALTY MEDYA</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Realty TV yayÄ±nlarÄ±nÄ±, proje tanÄ±tÄ±mlarÄ±nÄ± ve gayrimenkul gÃ¼ndemine iliÅŸkin video iÃ§eriklerini tek merkezden izleyin.</p>
+    <div className="mt-7 inline-flex rounded-xl border border-slate-200 bg-white p-1 shadow-sm"><button onClick={() => setActiveMedia('tv')} className={`inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-black transition ${activeMedia === 'tv' ? 'bg-[#071d3b] text-white' : 'text-slate-600 hover:bg-slate-50'}`}><PlayCircle className="h-4 w-4"/>Realty TV</button><button onClick={() => setActiveMedia('news')} className={`inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-black transition ${activeMedia === 'news' ? 'bg-[#CD011E] text-white' : 'text-slate-600 hover:bg-slate-50'}`}><Bell className="h-4 w-4"/>Realty Haberler</button></div>
+    {visibleVideos.length ? <div className="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{visibleVideos.map((video) => <article key={video.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div className="aspect-video bg-slate-950">{video.source === 'youtube' || video.source === 'youtube-channel' ? <iframe title={video.title} src={`https://www.youtube.com/embed/${getYoutubeId(video.url)}`} className="h-full w-full" allowFullScreen/> : <video src={video.url} controls poster={video.thumbnail || undefined} className="h-full w-full object-contain"/>}</div><div className="p-5"><span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-widest text-red-700">{video.source === 'youtube-channel' ? <><PlayCircle className="h-3.5 w-3.5"/>YOUTUBE KANALI</> : video.category === 'news' ? <><Bell className="h-3.5 w-3.5"/>REALTY HABERLER</> : <><PlayCircle className="h-3.5 w-3.5"/>REALTY TV</>}</span><h2 className="mt-2 text-lg font-black text-slate-900">{video.title}</h2>{video.description && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-slate-600">{video.description}</p>}</div></article>)}</div> : <div className="mt-9 rounded-2xl border-2 border-dashed border-slate-200 bg-white p-12 text-center"><PlayCircle className="mx-auto h-10 w-10 text-slate-300"/><h2 className="mt-3 font-black text-slate-800">Bu bÃ¶lÃ¼mde henÃ¼z video yok</h2><p className="mt-1 text-xs text-slate-500">Ä°Ã§erikler Realty Medya panelinden yayÄ±nlandÄ±ÄŸÄ±nda burada gÃ¶rÃ¼ntÃ¼lenecek.</p></div>}
+  </div></div>;
+}
+
+function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => void }) {
+  const [form, setForm] = useState({
+    fullName: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.fullName || !form.phone || !form.email || !form.message) {
+      alert("LÃ¼tfen tÃ¼m alanlarÄ± doldurunuz.");
+      return;
+    }
+
+    onSendMessage(form);
+    
+    setSubmitted(true);
+    setForm({ fullName: '', phone: '', email: '', message: '' });
+
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 5000);
+  };
+
+  return (
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div className="mb-10 text-center max-w-2xl mx-auto">
+          <span className="text-xs font-black text-red-700 tracking-widest bg-red-200 px-3.5 py-1.5 rounded-full border border-red-300 inline-block mb-3">
+            Bize UlaÅŸÄ±n
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black text-slate-900">
+            BÄ°ZÄ°MLE <span className="text-red-700">Ä°LETÄ°ÅÄ°ME GEÃ‡</span>
+          </h1>
+          <p className="text-slate-600 text-sm font-medium mt-2">
+            SorularÄ±nÄ±z, gayrimenkul talepleriniz veya iÅŸ birliÄŸi fÄ±rsatlarÄ± iÃ§in ekibimizle iletiÅŸime geÃ§ebilirsiniz.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border-2 border-slate-200 shadow-xl relative overflow-hidden">
+            <img src="/rc_logo_og.svg" alt="Realty CenterÂ® Ã–nce GÃ¼ven" className="absolute right-5 top-5 h-14 w-32 object-contain sm:right-8 sm:top-7 sm:h-16 sm:w-40" />
+            <div className="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4 pr-24 sm:pr-36">
+              <div className="p-3 bg-red-100 text-red-700 rounded-xl">
+                <MessageSquare className="w-6 h-6" />
+              </div>
+              <div>
+                <h2 className="text-xl font-black text-slate-900">Ä°letiÅŸime GeÃ§</h2>
+                <p className="text-xs text-slate-500 font-medium">Formu doldurun, uzman ekibimiz en kÄ±sa sÃ¼rede dÃ¶nÃ¼ÅŸ yapsÄ±n.</p>
+              </div>
+            </div>
+
+            {submitted && (
+              <div className="mb-6 bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl flex items-center space-x-3 text-xs font-bold animate-fade-in">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <span>MesajÄ±nÄ±z yÃ¶netim merkezimize baÅŸarÄ±yla iletilmiÅŸtir. Ä°lginiz iÃ§in teÅŸekkÃ¼r ederiz!</span>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
+                  Ad Soyad *
+                </label>
+                <input 
+                  type="text" 
+                  required
+                  placeholder="AdÄ±nÄ±z ve SoyadÄ±nÄ±z"
+                  value={form.fullName}
+                  onChange={(e) => setForm({ ...form, fullName: e.target.value })}
+                  className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
+                    Telefon NumarasÄ± *
+                  </label>
+                  <input 
+                    type="tel" 
+                    required
+                    placeholder="05XX XXX XX XX"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
+                    E-Posta Adresi *
+                  </label>
+                  <input 
+                    type="email" 
+                    required
+                    placeholder="ornek@domain.com"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1.5 tracking-wider">
+                  MesajÄ±nÄ±z *
+                </label>
+                <textarea 
+                  required
+                  rows={5}
+                  placeholder="Talep, gÃ¶rÃ¼ÅŸ veya sorunuzu buraya detaylÄ±ca yazabilirsiniz..."
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 transition resize-none"
@@ -984,22 +3778,499 @@ _B‚ˆ›Ü›HÛ”İX›Z]^Ú[™TİX›Z]HÛ\ÜÓ˜[YOHœÜXÙK^KM‚ˆ
               <iframe 
                 title="Realty CenterÂ® Merkez Harita"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.2723654101886!2d32.68412!3d39.88954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3394541707d8d%3A0x8bb9d1b73489e2!2sWest%20Gate%20Residence!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
-                className="w-full h-full roundedÛM5¶‰ËkºwµçC&r×6ÆFRÓSFW‡B×6ÒföçBÖÖVF—VÒFW‡B×6ÆFRÓ“fö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓsfö7W3¦&÷&FW"×&VBÓsG&ç6—F–öâ ¢&WV—&V@¢óà¢ÂöF—cà¢ÂöF—cà ¢²f÷&v÷DÖöFRbbÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×6ÒföçBÖ&öÆBFW‡B×6ÆFRÓsÖ"ÓãR#à¢Yæ–g&P¢ÂöÆ&VÃà¢ÆF—b6Æ74æÖSÒ'&VÆF—fR#à¢Ä¶W’6Æ74æÖSÒ&'6öÇWFRÆVgBÓBF÷Óó"×G&ç6ÆFR×’Óó"rÓR‚ÓRFW‡B×6ÆFRÓC"óà¢Æ–çW@¢G—S×·6†÷u77v÷&BòwFW‡Br¢w77v÷&BwĞ¢fÇVS×·77v÷&GĞ¢öä6†ævS×²†R’Óâ6WE77v÷&B†RçF&vWBçfÇVR—Ğ¢Æ6V†öÆFW#Ò,Yæ–g&Væ—¦’v—&–â ¢WFô6ö×ÆWFSÒ&7W'&VçB×77v÷&B ¢6Æ74æÖSÒ'rÖgVÆÂÂÓ""Ó"’Ó2&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×6ÆFRÓSFW‡B×6ÒföçBÖÖVF—VÒFW‡B×6ÆFRÓ“fö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓsfö7W3¦&÷&FW"×&VBÓsG&ç6—F–öâ ¢&WV—&V@¢óà¢Æ'WGFöà¢G—SÒ&'WGFöâ ¢öä6Æ–6³×²‚’Óâ6WE6†÷u77v÷&B‚‡&Wb’Óâ&Wb—Ğ¢6Æ74æÖSÒ&'6öÇWFR&–v‡BÓBF÷Óó"×G&ç6ÆFR×’Óó"FW‡B×6ÆFRÓC†÷fW#§FW‡B×&VBÓsG&ç6—F–öâ ¢&–ÖÆ&VÃ×·6†÷u77v÷&Bò|Yæ–g&W–’v—¦ÆRr¢|Yæ–g&W–’|;g7FW"wĞ¢à¢·6†÷u77v÷&BòÅ‚6Æ74æÖSÒ'rÓR‚ÓR"óâ¢ÄW–T–6öâóçĞ¢Âö'WGFöãà¢ÂöF—cà¢ÂöF—cçĞ ¢²f÷&v÷DÖöFRbbÃãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâFW‡B×6Ò#à¢ÆÆ&VÂ6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"76R×‚Ó"7W'6÷"×ö–çFW"#à¢Æ–çWBG—SÒ&6†V6¶&÷‚"6Æ74æÖSÒ'rÓB‚ÓB66VçB×&VBÓs"óà¢Ç7â6Æ74æÖSÒ'FW‡B×6ÆFRÓcföçBÖÖVF—VÒ#ä&Væ’†LK&ÆÂ÷7ãà¢ÂöÆ&VÃà ¢Æ'WGFöà¢G—SÒ&'WGFöâ ¢6Æ74æÖSÒ'FW‡B×&VBÓs†÷fW#§FW‡B×&VBÓƒföçBÖ&öÆBFW‡B×‡2 ¢öä6Æ–6³×²‚’Óâ²6WDf÷&v÷DÖöFR‡G'VR“²6WDW'&÷$×6r‚rr“²6WDÖW76vR‚rr“²×Ğ¢à¢Yæ–g&VÖ’VçWGGVĞ¢Âö'WGFöãà¢ÂöF—cà ¢Æ'WGFöà¢G—SÒ'7V&Ö—B ¢6Æ74æÖSÒ'rÖgVÆÂ&r×&VBÓs†÷fW#¦&r×&VBÓƒFW‡B×v†—FRföçBÖ&Æ6²’Ó2&÷VæFVB×†ÂfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"76R×‚Ó"6†F÷rÖÆr6†F÷r×&VBÓsó3G&ç6—F–öâG&ç6f÷&Ò†÷fW#§66ÆRÕ³ã%Ò ¢à¢Ç7ãç¶ÆöF–ærò|KYöÆVÒ–KÌK–÷.(
-br¢tv—&œYò–wÓÂ÷7ãà¢Ä'&÷u&–v‡B6Æ74æÖSÒ'rÓR‚ÓR"óà¢Âö'WGFöãà¢ÂóçĞ¢¶f÷&v÷DÖöFRbbÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚’Óâ²6WDf÷&v÷DÖöFR†fÇ6R“²6WDW'&÷$×6r‚rr“²6WDÖW76vR‚rr“²×Ò6Æ74æÖSÒ'rÖgVÆÂFW‡BÖ6VçFW"FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓS†÷fW#§FW‡B×&VBÓs#äv—&œYòV·&ìKæL;fãÂö'WGFöãçĞ¢Âöf÷&Óà ¢ÆF—b6Æ74æÖSÒ&&÷&FW"×B&÷&FW"×6ÆFRÓ#‚Ób’Ó2FW‡BÖ6VçFW"&r×6ÆFRÓS#à¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒFW‡B×6ÆFRÓSföçBÖÖVF—VÒ#à¢–WF¶—6—¢¶œYö–ÆW&–âæVÆRW&œYöÖW6’–6·LK"à¢Â÷à¢ÂöF—cà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'FW‡BÖ6VçFW"×BÓ2#à¢ÄÆ–æ²FóÒ"ò"6Æ74æÖSÒ'FW‡B×6ÒFW‡B×6ÆFRÓS†÷fW#§FW‡B×&VBÓsföçBÖ&öÆBG&ç6—F–öâ#à¢(iæ6–f–L;fà¢ÂôÆ–æ³à¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà¢“°§Ğ ¢òò<9ÅU"DÜKâœ9däULKÒäTÌKD4„$ô$B„´4ÔÄ’´ôB¦gVæ7F–öâ†VFW$ÖVçTVF—F÷$æöFR‡²—FVÒÂFWF‚ÂöåWFFRÂöå&VÖ÷fRÂöäFD6†–ÆBÓ¢²—FVÓ¢†VFW$ÖVçT—FVÓ²FWFƒ¢çVÖ&W#²öåWFFS¢†–C¢7G&–ærÂF6ƒ¢'F–ÃÄ†VFW$ÖVçT—FVÓâ’Óâfö–C²öå&VÖ÷fS¢†–C¢7G&–ær’Óâfö–C²öäFD6†–ÆC¢†–C¢7G&–ærÂ6–FS¢vÆVgBrÂw&–v‡Br’Óâfö–BÒ’°¢&WGW&âÆF—b6Æ74æÖS×¶&÷VæFVBÓ'†Â&÷&FW"ÓBG¶FWF‚ÓÓÒòv&÷&FW"×6ÆFRÓ3&r×v†—FR6†F÷r×6Òr¢FWF‚ÓÓÒòv&÷&FW"×&VBÓ&r×&VBÓSóCr¢v&÷&FW"×6ÆFRÓ#&r×6ÆFRÓSwÖÓãÆF—b6Æ74æÖSÒ&Ö"Ó2fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâvÓ2#ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ"#ãÇ7â6Æ74æÖSÒ&fÆW‚‚ÓrrÓr—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&÷VæFVBÖÆr&r×&VBÓsFW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×v†—FR#ç¶FWF‚²ÓÂ÷7ããÇ7G&öær6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓƒ#ç¶FWF‚ÓÓÒòtæ&YöÌK²r¢FWF‚ÓÓÒòtÇB&YöÌK²r¢tÇB&YöÌKIüKâÇLKwÓÂ÷7G&öæsãÂöF—cãÆ'WGFöâG—SÒ&'WGFöâ"öä6Æ–6³×²‚’Óâöå&VÖ÷fR†—FVÒæ–B—Ò6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×&VBÓs#ä¶ÆLK#Âö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&w&–BvÓ2ÖC¦w&–BÖ6öÇ2Ó"#ãÆ–çWBeš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍX[YO^Ú][K›X™[HÛÚ[™ÙO^ÊJHOˆÛ•\]J][KšYÈX™[™K\™Ù]˜[YHJ_HXÙZÛ\H“Y[°ï˜qgÛ1,q'ñ,HˆÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^È‹Ï[œ]˜[YO^Ú][Kœ]HÛÚ[™ÙO^ÊJHOˆÛ•\]J][KšYÈ]™K\™Ù]˜[YHJ_HXÙZÛ\H‹ÚXÙ\šZËÜØ^Y˜KXYHˆÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^È‹ÏÙ\OOH	‰ˆÙ[Xİ˜[YO^Ú][KœÚY_HÛÚ[™ÙO^ÊJHOˆÛ•\]J][KšYÈÚYN™K\™Ù]˜[YH\È	ÛY	È	ÜšYÚ	ÈJ_HÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^ÈÜ[Ûˆ˜[YOH›Y“ÙÛÛ[ˆÛÛOÛÜ[ÛÜ[Ûˆ˜[YOHœšYÚ“ÙÛÛ[ˆØq'ñ,OÛÜ[ÛÜÙ[XİŸO[œ]˜[YO^Ú][Kš[XYÙH	ÉßHÛÚ[™ÙO^ÊJHOˆÛ•\]J][KšYÈ[XYÙN™K\™Ù]˜[YHJ_HXÙZÛ\H”ÛÛ°í›0ïHğíœœÙ[T“	ÜÚHˆÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^È‹Ï^\™XH›İÜÏ^ÍH˜[YO^Ú][K˜ÛÛ[	ÉßHÛÚ[™ÙO^ÊJHOˆÛ•\]J][KšYÈÛÛ[™K\™Ù]˜[YHJ_HXÙZÛ\H”Ø^Y˜[±,[ˆØq'ñ,[™Hğíœİ\š[XÙZÈY][ˆˆÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^ÈXY[™ËMHY˜ÛÛ\Ü[‹Lˆ‹ÏÙ]Ù\ˆ	‰ˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÛYÚ[
-][KšY][KœÚYJ_HÛ\ÜÓ˜[YOH›]LÈ›İ[™Y[È›Ü™\ˆ›Ü™\‹\™YLŒ™Ë]Ú]HLÈKLˆ^VÌLH›ÛX›XÚÈ^\™YMÌŠÈ[˜qgÛ1,ZÈZÛOØ]ÛŸ^Ú][K˜Ú[™[‹›[™İˆ	‰ˆ]ˆÛ\ÜÓ˜[YOH›]MÜXÙK^KLÈ›Ü™\‹[Lˆ›Ü™\‹\™YLŒLÈÚ][K˜Ú[™[‹›X\
+                className="w-full h-full rounded-xl border-0"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
-Ú[
-HOˆXY\“Y[QY]Ü“›ÙHÙ^O^ØÚ[šYH][O^ØÚ[H\^Ù\
-È_HÛ•\]O^ÛÛ•\]_HÛ”™[[İ™O^ÛÛ”™[[İ™_HÛYÚ[^ÛÛYÚ[KÏŠ_OÙ]ŸOÙ]ÂŸB‚\HX[˜YÙY\Ù\ˆHÂˆYˆİš[™ÎÈš\œİÛ˜[YNˆİš[™ÎÈ\İÛ˜[YNˆİš[™ÎÈ\Ù\›˜[YNˆİš[™ÎÈ[XZ[ˆİš[™ÎÈÛ™Nˆİš[™È[Âˆ›ÛNˆ[™[›ÛNÈİ]\Îˆ	ØXİ]™IÈ	Ú[˜Xİ]™IÈ	Üİ\Ü[™Y	È	ÛY	ÎÈ\İÛÙÚ[—Ø]ˆİš[™È[ÈÜ™X]YØ]ˆİš[™ÎÂŸNÂ˜ÛÛœİSTWÓ‘U×ÕTÑTˆHÈš\œİ˜[YNˆ	ÉË\İ˜[YNˆ	ÉË\Ù\›˜[YNˆ	ÉË[XZ[ˆ	ÉËÛ™Nˆ	ÉË›ÛNˆ	ØYš\ÛÜ‰È\È^ÛYO[™[›ÛK	ØYZ[‰Ï‹\ÜİÛÜ™ˆ	ÉË\ÜİÛÜ™™\X]ˆ	ÉËİ]\Îˆ	ØXİ]™IÈ\È	ØXİ]™IÈ	Ú[˜Xİ]™IË›Ü˜ÙT\ÜİÛÜ™Ú[™ÙNˆYHNÂ‚™[˜İ[Ûˆİ\\YZ[‘\Ú›Ø\™
+        </div>
 
-HÂˆÛÛœİ˜]šYØ]HH\ÙS˜]šYØ]J
-NÂˆÛÛœİØXİ]™UX‹Ù]Xİ]™UX—HH\ÙTİ]O	Ûİ™\šY]ÉÈ	İ\Ù\œÉÈ	Ùœ˜[˜Ú\ÙIÈ	ÛÙ™šXÙ\ÉÈ	ØYÙ[ÉÈ	Û\İ[™ÜÉÈ	ØØ]YÛÜšY\ÉÈ	İšY[ÜÉÈ	ÛXœ˜\IÈ	ÙYXØ][Û‰È	ØÜ›IÈ	ÛY\ÜØYÙ\ÉÈ	Ø^Y\”™\]Y\İÉÈ	Ù™YY˜XÚÉÈ	ØÛÜœÜ˜]IÈ	ÚXY\‰È	ÜÙ][™ÜÉÏŠ	Ûİ™\šY]ÉÊNÂˆÛÛœİÛX[˜YÙY\Ù\œËÙ]X[˜YÙY\Ù\œ×HH\ÙTİ]OX[˜YÙY\Ù\–×OŠ×JNÂˆÛÛœİİ\Ù\œÓØY[™ËÙ]\Ù\œÓØY[™×HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÚİÓ™]Õ\Ù\‹Ù]ÚİÓ™]Õ\Ù\—HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÛ™]Õ\Ù\‹Ù]™]Õ\Ù\—HH\ÙTİ]JSTWÓ‘U×ÕTÑTŠNÂˆÛÛœİİ\Ù\‘›Ü›Q\œ›Ü‹Ù]\Ù\‘›Ü›Q\œ›Ü—HH\ÙTİ]J	ÉÊNÂˆÛÛœİİ\Ù\‘›Ü›TİXØÙ\ÜËÙ]\Ù\‘›Ü›TİXØÙ\Ü×HH\ÙTİ]J	ÉÊNÂˆÛÛœİØÜ™X][™Õ\Ù\‹Ù]Ü™X][™Õ\Ù\—HH\ÙTİ]J˜[ÙJNÂˆÛÛœİØÛÛXİÙ][™ÜËÙ]ÛÛXİÙ][™Ü×HH\ÙTİ]JÙ]ÛÛXİÙ][™ÜÊNÂˆÛÛœİÜÙ][™ÜÔØ]™YÙ]Ù][™ÜÔØ]™YHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÙ™X]\™Y\İ[™ÒYËÙ]™X]\™Y\İ[™ÒY×HH\ÙTİ]Oİš[™Ö×OŠÙ]™X]\™Y\İ[™ÒYÊNÂˆÛÛœİØØ]YÛÜšY\ËÙ]Ø]YÛÜšY\×HH\ÙTİ]O\İ[™ĞØ]YÛÜV×OŠÙ]\İ[™ĞØ]YÛÜšY\ÊNÂˆÛÛœİØØ]YÛÜTØ]™YÙ]Ø]YÛÜTØ]™YHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÛ™]ĞØ]YÛÜKÙ]™]ĞØ]YÛÜWHH\ÙTİ]O\İ[™ĞØ]YÛÜOŠÈYˆ	ÉË]Nˆ	ÉË\Nˆ	ÔØ]1,[1,ZÉËØ]YÛÜNˆ	ÒÛÛ]	Ë[XYÙNˆ	ÉÈJNÂˆÛÛœİİšY[ÜËÙ]šY[Ü×HH\ÙTİ]O™X[UšY[Ö×OŠÙ]™X[UšY[ÜÊNÂˆÛÛœİÙY][™ÕšY[ÒYÙ]Y][™ÕšY[ÒYHH\ÙTİ]Oİš[™È[Š[
-NÂˆÛÛœİİšY[Ñ˜YÙ]šY[Ñ˜YHH\ÙTİ]JÈÛİ\˜ÙNˆ	Ş[İ]X™IÈ\È	Ş[İ]X™IÈ	İ\ØY	ËØ]YÛÜNˆ	İ‰È\È	İ‰È	Û™]ÜÉË\›ˆ	ÉË]Nˆ	ÉË[X›˜Z[ˆ	ÉË\ØÜš\[Ûˆ	ÉÈJNÂˆÛÛœİİšY[ÔØ]š[™ËÙ]šY[ÔØ]š[™×HH\ÙTİ]J˜[ÙJNÂˆÛÛœİŞ[İ]X™PÚ[›™[\›Ù][İ]X™PÚ[›™[\›HH\ÙTİ]JÙ][İ]X™PÚ[›™[\›
-NÂˆÛÛœİŞ[İ]X™PÚ[›™[Ø]™YÙ][İ]X™PÚ[›™[Ø]™YHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÙ™YY˜XÚÒ][\ËÙ]™YY˜XÚÒ][\×HH\ÙTİ]Oİ\İÛY\‘™YY˜XÚÖ×OŠÙ]İ\İÛY\‘™YY˜XÚÊNÂˆÛÛœİØ^Y\”™\]Y\İËÙ]^Y\”™\]Y\İ×HH\ÙTİ]O^Y\”™\]Y\İ×OŠÙ]^Y\”™\]Y\İÊNÂˆÛÛœİØX›İ]İÜKÙ]X›İ]İÜWHH\ÙTİ]JÙ]X›İ]İÜJNÂˆÛÛœİÛX[˜YÙ[Y[Ù]X[˜YÙ[Y[HH\ÙTİ]OX[˜YÙ[Y[Y[X™\–×OŠÙ]X[˜YÙ[Y[X[JNÂˆÛÛœİØÛÜœÜ˜]QØİ[Y[ËÙ]ÛÜœÜ˜]QØİ[Y[×HH\ÙTİ]OÛÜœÜ˜]QØİ[Y[×OŠ
+      </div>
+    </div>
+  );
+}
 
-HOˆÙ]İÜ™YÛÜœÜ˜]R][\Ê	Ü™X[KXÙ[\‹YØİ[Y[ÉËQUSÑĞÕSQS•ÊJNÂˆÛÛœİØÛÜœÜ˜]T™Y™\™[˜Ù\ËÙ]ÛöÓMm¢G§²ÚîÆ­yİ…Ñ•½É¥•Ì ¡ÕÉÉ•¹Ğ¤ôùl¸¸¹ÕÉÉ•¹Ğ±í¥±Í±Õœéå•¹¤µ­…Ñ•½É¤´‘í…Ñ”¹¹½Ü ¥õ€±Ñ¥Ñ±”èe•¹¤-…Ñ•½É¤œ±‘•ÍÉ¥ÁÑ¥½¸è-…Ñ•½É¤‡ŸÅ­±…µ…ÏÄœ±½±½ÈèœÀÄÅœ±…ÉÑ¥±•Ìémuõt¤íôì(€½¹ÍĞ…‘‘1¥‰É…ÉåÉÑ¥±”ô¡…Ñ•½Éå%éÍÑÉ¥¹œ¤ôùí½¹ÍĞ…ÉÑ¥±•%õ…ÉÑ¥±”´‘í…Ñ”¹¹½Ü ¥õ€íÍ•Ñ1¥‰É…Éå…Ñ•½É¥•Ì ¡ÕÉÉ•¹Ğ¤ôùÕÉÉ•¹Ğ¹µ…À ¡…Ñ•½Éä¤ôù…Ñ•½Éä¹¥ôôõ…Ñ•½Éå%ıì¸¸¹…Ñ•½Éä±…ÉÑ¥±•Ìél¸¸¹…Ñ•½Éä¹…ÉÑ¥±•Ì±í¥é…ÉÑ¥±•%±Ñ¥Ñ±”èe•¹¤ƒÃ•É¥¬œ±ÍÕµµ…ÉäèŸÃ•É¥¬ƒÙé•Ñ¤œ±¥µ…”èœœ±½¹Ñ•¹ĞèœñÀùe…ëÄ§•É§}¥¹¤‰ÕÉ…å„¥É¥¸¸ğ½Àøœ±ÁÕ‰±¥Í¡•‘Ğé¹•Ü…Ñ” ¤¹Ñ½%M=MÑÉ¥¹œ ¥õuôé…Ñ•½Éä¤¤íÍ•Ñ‘¥Ñ¥¹1¥‰É…ÉåÉÑ¥±”¡í…Ñ•½Éå%±…ÉÑ¥±•%‘ô¤íôì(€½¹ÍĞÕÁ±½…‘1¥‰É…Éå%µ…”ô¡…Ñ•½Éå%éÍÑÉ¥¹œ±…ÉÑ¥±•%éÍÑÉ¥¹œ±™¥±”üé¥±”¤ôùí¥˜ …™¥±”¥É•ÑÕÉ¸í½¹ÍĞÉ•…‘•Èõ¹•Ü¥±•I•…‘•È ¤íÉ•…‘•È¹½¹±½…ô ¤ôùÕÁ‘…Ñ•1¥‰É…ÉåÉÑ¥±”¡…Ñ•½Éå%±…ÉÑ¥±•%±í¥µ…”éMÑÉ¥¹œ¡É•…‘•È¹É•ÍÕ±Ğ¥ô¤íÉ•…‘•È¹É•…‘Í…Ñ…UI0¡™¥±”¤íôì(€½¹ÍĞÍ…Ù•1¥‰É…Éäô ¤ôùíÍ…Ù•1¥‰É…Éå…Ñ•½É¥•Ì¡±¥‰É…Éå…Ñ•½É¥•Ì¤íÍ•Ñ1¥‰É…ÉåM…Ù•¡ÑÉÕ”¤íÍ•ÑQ¥µ•½ÕĞ  ¤ôùÍ•Ñ1¥‰É…ÉåM…Ù•¡™…±Í”¤°ÈÈÀÀ¤íôì((€½¹ÍĞ…‘‘Y¥‘•¼€ô…Íå¹Œ€ ¤€ôøì(€€€¥˜€ …Ù¥‘•½É…™Ğ¹ÕÉ°¤É•ÑÕÉ¸…±•ÉĞ e½ÕQÕ‰”‰‡}±…¹ÓÅÏÄÙ•å„Ù¥‘•¼‘½Íå…ÏÄ•­±•å¥¸¸œ¤ì(€€€Í•ÑY¥‘•½M…Ù¥¹œ¡ÑÉÕ”¤ì(€€€±•ĞÑ¥Ñ±”€ôÙ¥‘•½É…™Ğ¹Ñ¥Ñ±”¹ÑÉ¥´ ¤ì(€€€±•ĞÑ¡Õµ‰¹…¥°€ôÙ¥‘•½É…™Ğ¹Ñ¡Õµ‰¹…¥°¹ÑÉ¥´ ¤ì(€€€¥˜€¡Ù¥‘•½É…™Ğ¹Í½ÕÉ”€ôôô€å½ÕÑÕ‰”œ¤ì(€€€€€½¹ÍĞÁÉ•Ù¥½ÕÌ€ôÙ¥‘•½Ì¹™¥¹ ¡Ù¥‘•¼¤€ôøÙ¥‘•¼¹¥€ôôô•‘¥Ñ¥¹Y¥‘•½%¤ì(€€€€€¥˜€¡ÁÉ•Ù¥½ÕÌ€˜˜ÁÉ•Ù¥½ÕÌ¹ÕÉ°€„ôôÙ¥‘•½É…™Ğ¹ÕÉ°€˜˜Ñ¡Õµ‰¹…¥°¹¥¹±Õ‘•Ì ¥µœ¹å½ÕÑÕ‰”¹½´½Ù¤¼œ¤¤Ñ¡Õµ‰¹…¥°€ô€œœì(€€€€€½¹ÍĞå½ÕÑÕ‰•%€ô•Ñe½ÕÑÕ‰•%¡Ù¥‘•½É…™Ğ¹ÕÉ°¤ì(€€€€€¥˜€ …å½ÕÑÕ‰•%¤ìÍ•ÑY¥‘•½M…Ù¥¹œ¡™…±Í”¤ìÉ•ÑÕÉ¸…±•ÉĞ —•É±¤‰¥Èe½ÕQÕ‰”‰‡}±…¹ÓÅÏÄ¥É¥¸¸œ¤ìô(€€€€€¥˜€ …Ñ¡Õµ‰¹…¥°¤Ñ¡Õµ‰¹…¥°€ô¡ÑÑÁÌè¼½¥µœ¹å½ÕÑÕ‰”¹½´½Ù¤¼‘íå½ÕÑÕ‰•%‘ô½¡Å‘•™…Õ±Ğ¹©Á€ì(€€€€€¥˜€ …Ñ¥Ñ±”¤ÑÉäì½¹ÍĞÉ•ÍÁ½¹Í”€ô…İ…¥Ğ™•Ñ ¡¡ÑÑÁÌè¼½İİÜ¹å½ÕÑÕ‰”¹½´½½•µ‰•ıÕÉ°ô‘í•¹½‘•UI%½µÁ½¹•¹Ğ¡Ù¥‘•½É…™Ğ¹ÕÉ°¥ô™™½Éµ…Ğõ©Í½¹€¤ì¥˜€¡É•ÍÁ½¹Í”¹½¬¤ì½¹ÍĞ‘…Ñ„€ô…İ…¥ĞÉ•ÍÁ½¹Í”¹©Í½¸ ¤ìÑ¥Ñ±”€ô‘…Ñ„¹Ñ¥Ñ±”ñğ€œœìÑ¡Õµ‰¹…¥°€ô‘…Ñ„¹Ñ¡Õµ‰¹…¥±}ÕÉ°ñğÑ¡Õµ‰¹…¥°ìôô…Ñ ì€¼¨e½ÕQÕ‰”­…Á…¬Ù”Ù…ÉÍ…çÅ±…¸‰‡}³Å­±„‘•Ù…´•‘•È¸€¨¼ô(€€€ô(€€€½¹ÍĞ•¹ÑÉäèI•…±ÑåY¥‘•¼€ôì¥è•‘¥Ñ¥¹Y¥‘•½%ñğÙ¥‘•¼´‘í…Ñ”¹¹½Ü ¥õ€°Í½ÕÉ”èÙ¥‘•½É…™Ğ¹Í½ÕÉ”°…Ñ•½ÉäèÙ¥‘•½É…™Ğ¹…Ñ•½Éä°ÕÉ°èÙ¥‘•½É…™Ğ¹ÕÉ°°Ñ¥Ñ±”èÑ¥Ñ±”ñğ€¡Ù¥‘•½É…™Ğ¹Í½ÕÉ”€ôôô€ÕÁ±½…œ€ü€I•…±Ñä•¹Ñ•Ë
-¸Y¥‘•½ÍÔœ€è€e½ÕQÕ‰”Y¥‘•½ÍÔœ¤°Ñ¡Õµ‰¹…¥°°‘•ÍÉ¥ÁÑ¥½¸èÙ¥‘•½É…™Ğ¹‘•ÍÉ¥ÁÑ¥½¸¹ÑÉ¥´ ¤°É•…Ñ•‘ĞèÙ¥‘•½Ì¹™¥¹ ¡Ù¥‘•¼¤€ôøÙ¥‘•¼¹¥€ôôô•‘¥Ñ¥¹Y¥‘•½%¤ü¹É•…Ñ•‘Ğñğ¹•Ü…Ñ” ¤¹Ñ½%M=MÑÉ¥¹œ ¤ôì(€€€½¹ÍĞ¹•áĞ€ô•‘¥Ñ¥¹Y¥‘•½%€üÙ¥‘•½Ì¹µ…À ¡Ù¥‘•¼¤€ôøÙ¥‘•¼¹¥€ôôô•‘¥Ñ¥¹Y¥‘•½%€ü•¹ÑÉä€èÙ¥‘•¼¤€èm•¹ÑÉä°€¸¸¹Ù¥‘•½Ítì(€€€ÑÉäìÍ…Ù•I•…±ÑåY¥‘•½Ì¡¹•áĞ¤ìÍ•Ñ‘¥Ñ¥¹Y¥‘•½%¡¹Õ±°¤ìÍ•ÑY¥‘•½Ì¡¹•áĞ¤ìÍ•ÑY¥‘•½É…™Ğ¡ìÍ½ÕÉ”è€å½ÕÑÕ‰”œ°…Ñ•½Éäè€ÑØœ°ÕÉ°è€œœ°Ñ¥Ñ±”è€œœ°Ñ¡Õµ‰¹…¥°è€œœ°‘•ÍÉ¥ÁÑ¥½¸è€œœô¤ìô…Ñ ì…±•ÉĞ Y¥‘•¼‘½Íå…ÏÄÑ…É…çÅÄ‘•Á½±…µ„ÏÅ»ÅËÅ»Ä‡Åå½È¸…¹³ÄÍ¥ÍÑ•µ‘”‘½Íå„ÍÕ¹ÕÕå„çñ­±•¹••­Ñ¥È¸œ¤ìô(€€€Í•ÑY¥‘•½M…Ù¥¹œ¡™…±Í”¤ì(€ôì(€½¹ÍĞ¡…¹‘±•¥É•ÑY¥‘•¼€ô€¡™¥±”üè¥±”¤€ôøì¥˜€ …™¥±”¤É•ÑÕÉ¸ì½¹ÍĞÉ•…‘•È€ô¹•Ü¥±•I•…‘•È ¤ìÉ•…‘•È¹½¹±½…€ô€ ¤€ôøÍ•ÑY¥‘•½É…™Ğ ¡ÕÉÉ•¹Ğ¤€ôø€¡ì€¸¸¹ÕÉÉ•¹Ğ°Í½ÕÉ”è€ÕÁ±½…œ°ÕÉ°èMÑÉ¥¹œ¡É•…‘•È¹É•ÍÕ±Ğ¤°Ñ¥Ñ±”èÕÉÉ•¹Ğ¹Ñ¥Ñ±”ñğ™¥±”¹¹…µ”¹É•Á±…” ½p¹mx¹t¬¼°€œœ¤ô¤¤ìÉ•…‘•È¹É•…‘Í…Ñ…UI0¡™¥±”¤ìôì(€½¹ÍĞ¡…¹‘±•Y¥‘•½½Ù•È€ô€¡™¥±”üè¥±”¤€ôøì¥˜€ …™¥±”¤É•ÑÕÉ¸ì½¹ÍĞÉ•…‘•È€ô¹•Ü¥±•I•…‘•È ¤ìÉ•…‘•È¹½¹±½…€ô€ ¤€ôøÍ•ÑY¥‘•½É…™Ğ ¡ÕÉÉ•¹Ğ¤€ôø€¡ì€¸¸¹ÕÉÉ•¹Ğ°Ñ¡Õµ‰¹…¥°èMÑÉ¥¹œ¡É•…‘•È¹É•ÍÕ±Ğ¤ô¤¤ìÉ•…‘•È¹É•…‘Í…Ñ…UI0¡™¥±”¤ìôì(€½¹ÍĞ•‘¥ÑY¥‘•¼€ô€¡Ù¥‘•¼èI•…±ÑåY¥‘•¼¤€ôøì(€€€Í•Ñ‘¥Ñ¥¹Y¥‘•½%¡Ù¥‘•¼¹¥¤ì(€€€Í•ÑY¥‘•½É…™Ğ¡ìÍ½ÕÉ”èÙ¥‘•¼¹Í½ÕÉ”€ôôô€ÕÁ±½…œ€ü€ÕÁ±½…œ€è€å½ÕÑÕ‰”œ°…Ñ•½ÉäèÙ¥‘•¼¹…Ñ•½Éä°ÕÉ°èÙ¥‘•¼¹ÕÉ°°Ñ¥Ñ±”èÙ¥‘•¼¹Ñ¥Ñ±”°Ñ¡Õµ‰¹…¥°èÙ¥‘•¼¹Ñ¡Õµ‰¹…¥°°‘•ÍÉ¥ÁÑ¥½¸èÙ¥‘•¼¹‘•ÍÉ¥ÁÑ¥½¸ô¤ì(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% É•…±Ñäµµ•‘¥„µ•‘¥Ñ½Èœ¤ü¹ÍÉ½±±%¹Ñ½Y¥•Ü¡ì‰•¡…Ù¥½Èè€Íµ½½Ñ œ°‰±½¬è€ÍÑ…ÉĞœô¤ì(€ôì(€½¹ÍĞÉ•µ½Ù•Y¥‘•¼€ô€¡¥èÍÑÉ¥¹œ¤€ôøì½¹ÍĞ¹•áĞ€ôÙ¥‘•½Ì¹™¥±Ñ•È ¡Ù¥‘•¼¤€ôøÙ¥‘•¼¹¥€„ôô¥¤ìÍ•ÑY¥‘•½Ì¡¹•áĞ¤ìÍ…Ù•I•…±ÑåY¥‘•½Ì¡¹•áĞ¤ìôì(€½¹ÍĞÕÁ‘…Ñ•••‘‰…­MÑ…ÑÕÌ€ô€¡¥èÍÑÉ¥¹œ°ÍÑ…ÑÕÌèÕÍÑ½µ•É••‘‰…­lÍÑ…ÑÕÌt¤€ôøì(€€€½¹ÍĞ¹•áĞ€ô™••‘‰…­%Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô¥€üì€¸¸¹¥Ñ•´°ÍÑ…ÑÕÌô€è¥Ñ•´¤ì(€€€Í•Ñ••‘‰…­%Ñ•µÌ¡¹•áĞ¤ì(€€€Í…Ù•ÕÍÑ½µ•É••‘‰…¬¡¹•áĞ¤ì(€ôì(€½¹ÍĞÍ…Ù•½ÉÁ½É…Ñ•½¹Ñ•¹Ğ€ô€ ¤€ôøì(€€€±½…±MÑ½É…”¹Í•Ñ%Ñ•´ É•…±Ñäµ•¹Ñ•Èµ…‰½ÕĞµÍÑ½Éäœ°…‰½ÕÑMÑ½Éä¤ì(€€€Í…Ù•5…¹…•µ•¹ÑQ•…´¡µ…¹…•µ•¹Ğ¤ì(€€€±½…±MÑ½É…”¹Í•Ñ%Ñ•´ É•…±Ñäµ•¹Ñ•Èµ‘½Õµ•¹ÑÌœ°)M=8¹ÍÑÉ¥¹¥™ä¡½ÉÁ½É…Ñ•½Õµ•¹ÑÌ¤¤ì(€€€±½…±MÑ½É…”¹Í•Ñ%Ñf«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³VVÒ‚w&VÇG’Ö6VçFW"×&VfW&Væ6W2rÂ¥4ôâç7G&–æv–g’†6÷'÷&FU&VfW&Væ6W2’“°¢Æö6Å7F÷&vRç6WD—FVÒ‚w&VÇG’Ö6VçFW"×'FæW'2rÂ¥4ôâç7G&–æv–g’†6÷'÷&FU'FæW'2’“°¢v–æF÷ræF—7F6„WfVçB†æWrWfVçB‚w&VÇG’Ö6VçFW"Ö6÷'÷&FR×WFFVBr’“°¢6WD6÷'÷&FU6fVB‡G'VR“°¢6WEF–ÖV÷WB‚‚’Óâ6WD6÷'÷&FU6fVB†fÇ6R’Â##“°¢Ó°¢6öç7BWÆöD6÷'÷&FUFbÒ†–æFWƒ¢çVÖ&W"Âf–ÆSó¢f–ÆR’Óâ°¢–b‚f–ÆR’&WGW&ã°¢6öç7B&VFW"ÒæWrf–ÆU&VFW"‚“°¢&VFW"æöæÆöBÒ‚’Óâ6WD6÷'÷&FTFö7VÖVçG2†6÷'÷&FTFö7VÖVçG2æÖ‚†—FVÒÆ’’Óâ’ÓÓÒ–æFW‚ò²ââæ—FVÒÂf–ÆUW&Ã¢7G&–ær‡&VFW"ç&W7VÇB’Ò¢—FVÒ’“°¢&VFW"ç&VD4FFU$Â†f–ÆR“°¢Ó° ¢6öç7B6fT6FVv÷&–W2Ò†æW‡D6FVv÷&–W2Ò6FVv÷&–W2’Óâ°¢Æö6Å7F÷&vRç6WD—FVÒ‚w&VÇG’Ö6VçFW"ÖÆ—7F–ærÖ6FVv÷&–W2rÂ¥4ôâç7G&–æv–g’†æW‡D6FVv÷&–W2’“°¢v–æF÷ræF—7F6„WfVçB†æWrWfVçB‚w&VÇG’Ö6VçFW"Ö6FVv÷&–W2×WFFVBr’“°¢6WD6FVv÷'•6fVB‡G'VR“°¢6WEF–ÖV÷WB‚‚’Óâ6WD6FVv÷'•6fVB†fÇ6R’Â#S“°¢Ó°¢6öç7BWFFT6FVv÷'’Ò†–C¢7G&–ærÂF6ƒ¢'F–ÃÄÆ—7F–æt6FVv÷'“â’Óâ6WD6FVv÷&–W2‚†7W'&VçB’Óâ7W'&VçBæÖ‚†—FVÒ’Óâ—FVÒæ–BÓÓÒ–Bò²ââæ—FVÒÂââçF6‚Ò¢—FVÒ’“°¢6öç7BFD6FVv÷'’Ò‚’Óâ°¢–b‚æWt6FVv÷'’çF—FÆRçG&–Ò‚’’&WGW&ã°¢6öç7B—FVÒÒ²ââææWt6FVv÷'’Â–C¢æWt6FVv÷'’æ–BÇÂv6FVv÷'’Òr²FFRææ÷r‚’Â–ÖvS¢æWt6FVv÷'’æ–ÖvRÇÂv‡GG3¢òö–ÖvW2çVç7Æ6‚æ6öÒ÷†÷FòÓScSƒƒƒ2Ö6S“S–VVfföWFóÖf÷&ÖBff—CÖ7&÷gÓ“gsÓ#rÓ°¢6öç7BæW‡BÒ²ââæ6FVv÷&–W2Â—FVÕÓ°¢6WD6FVv÷&–W2†æW‡B“°¢6fT6FVv÷&–W2†æW‡B“°¢6WDæWt6FVv÷'’‡²–C¢rrÂF—FÆS¢rrÂG—S¢u6LKÌK²rÂ6FVv÷'“¢t¶öçWBrÂ–ÖvS¢rrÒ“°¢Ó°¢6öç7B†æFÆT6FVv÷'”–ÖvRÒ†–C¢7G&–ærÂf–ÆSó¢f–ÆR’Óâ°¢–b‚f–ÆR’&WGW&ã°¢6öç7B&VFW"ÒæWrf–ÆU&VFW"‚“°¢&VFW"æöæÆöBÒ‚’ÓâWFFT6FVv÷'’†–BÂ²–ÖvS¢7G&–ær‡&VFW"ç&W7VÇB’Ò“°¢&VFW"ç&VD4FFU$Â†f–ÆR“°¢Ó°¢6öç7B6fT6öçF7E6WGF–æw2Ò‚’Óâ°¢Æö6Å7F÷&vRç6WD—FVÒ‚w&VÇG’Ö6VçFW"Ö6öçF7B×6WGF–æw2rÂ¥4ôâç7G&–æv–g’†6öçF7E6WGF–æw2’“°¢v–æF÷ræF—7F6„WfVçB†æWrWfVçB‚w&VÇG’Ö6VçFW"Ö6öçF7B×WFFVBr’“°¢6WE6WGF–æw56fVB‡G'VR“°¢6WEF–ÖV÷WB‚‚’Óâ6WE6WGF–æw56fVB†fÇ6R’Â#S“°¢Ó° ¢òòg&æ6†—6R&Y÷gW'RfW&–ÆW&¢6öç7B¶g&æ6†—6T2Â6WDg&æ6†—6T5ÒÒW6U7FFR…°¢²–C¢te"ÓƒrÂæÖS¢t†ÖWB¶&¶YòrÂ†öæS¢sS3"““’ƒ‚srrÂ6—G“¢t'W'6rÂF—7G&–7C¢tæ–Ì;ÆfW"rÂFFS¢s##bÓ‚ÓrÂ7FGW3¢t&V¶ÆVÖVFRrÂ'VFvWC¢s"ãSã(+¢rÒÀ¢²–C¢te"Óƒ"rÂæÖS¢t×W7FfYæ†–ârÂ†öæS¢sS3RCCB32#"rÂ6—G“¢tçFÇ–rÂF—7G&–7C¢tÆç–rÂFFS¢s##bÓ‚ÓrÂ7FGW3¢töæ–ÆæLKrÂ'VFvWC¢s2ãã(+¢rÒÀ¢²–C¢te"Óƒ2rÂæÖS¢u6VÆ–âœKÆLK¢rÂ†öæS¢sSC"#"32rÂ6—G“¢t×\IöÆrÂF—7G&–7C¢t&öG'VÒrÂFFS¢s##bÓ‚Ó’rÂ7FGW3¢t–æ6VÆVÖVFRrÂ'VFvWC¢sBãSã(+¢rÒÀ¢²–C¢te"ÓƒBrÂæÖS¢tüI÷W¦†â¶–rÂ†öæS¢sSSRssrcbSRrÂ6—G“¢tW6¶œYöV†—"rÂF—7G&–7C¢uFWV&YüKrÂFFS¢s##bÓ‚ÓrrÂ7FGW3¢u&VFFVF–ÆF’rÂ'VFvWC¢sãƒã(+¢rĞ¢Ò“° ¢òòöf—2Æ—7FW6’fW&–ÆW&¢6öç7B¶öff–6W2Â6WDöff–6W5ÒÒW6U7FFSÇG—Vöb4ÕÄUôôdd”4U3â…µÒ“° ¢òòFìKYöÖâfW&–ÆW&¢6öç7B¶vVçG2Â6WDvVçG5ÒÒW6U7FFSÇG—Vöb4ÕÄUôtTåE3â…µÒ“° ¢6öç7BÆöDöff–6W2Ò7–æ2‚’Óâ°¢6öç7B²FFÒÒv—B7W&6Ræg&öÒ‚vöff–6W2r’ç6VÆV7B‚v–BÆæÖRÆ6—G’ÆF—7G&–7BÆFG&W72Ç†öæRÆVÖ–ÂÆÖævW%öæÖRÆ–ÖvU÷W&Âr’æ÷&FW"‚v7&VFVEöBrÇ²66VæF–æs¦fÇ6RÒ“°¢6WDöff–6W2‚†FFÇÂµÒ’æÖ‚†öff–6S¢ç’’Óâ‡²–C¦öff–6Ræ–BÂæÖS¦öff–6RææÖRÂ6—G“¦öff–6Ræ6—G’ÂF—7G&–7C¦öff–6RæF—7G&–7BÂFG&W73¦öff–6RæFG&W72Â†öæS¦öff–6Rç†öæRÇÂrrÂVÖ–Ã¦öff–6RæVÖ–ÂÇÂrrÂÖævW#¦öff–6RæÖævW%öæÖRÇÂrrÂ–ÖvS¦öff–6Ræ–ÖvU÷W&ÂÇÂrrÒ’’“°¢Ó°¢6öç7BÆöDvVçG2Ò7–æ2‚’Óâ°¢6öç7B²FFÒÒv—B7W&6Ræg&öÒ‚w&öf–ÆW2r’ç6VÆV7B‚v–BÆf—'7EöæÖRÆÆ7EöæÖRÆVÖ–ÂÇ†öæRÆfF%÷W&ÂÆW‡W'F—6Uö&V2Çv†G6r’æW‚w&öÆRrÂvGf—6÷"r’æ—2‚vFVÆWFVEöBrÆçVÆÂ’æ÷&FW"‚v7&VFVEöBrÇ¶66VæF–æs¦fÇ6WÒ“°¢6WDvVçG2‚†FFÇÂµÒ’æÖ‚†vVçC¢ç’’Óâ‡²–C¦vVçBæ–BÂæÖS¥¶vVçBæf—'7EöæÖRÆvVçBæÆ7EöæÖUÒæf–ÇFW"„&ööÆVâ’æ¦ö–â‚rr’ÂF—FÆS¦vVçBæW‡W'F—6Uö&V3òå³ÒÇÂtv—&–ÖVæ·VÂFìKYöÖìKrÂöff–6S¢u&VÇG’6VçFW,*ârÂ6—G“¦vVçBæW‡W'F—6Uö&V3òå³ÒÇÂrrÂF—7G&–7C¦vVçBæW‡W'F—6Uö&V3òå³%ÒÇÂrrÂ†öæS¦vVçBçv†G6ÇÂvVçBç†öæRÇÂrrÂVÖ–Ã¦vVçBæVÖ–ÂÇÂrrÂ–ÖvS¦vVçBæfF%÷W&ÂÇÂrrÂ7F—fTÆ—7F–æw3£Ò’’“°¢Ó°¢W6TVffV7B‚‚’Óâ²–b†7F—fUF"ÓÓÒvöff–6W2r’fö–BÆöDöff–6W2‚“²–b†7F—fUF"ÓÓÒvvVçG2r’fö–BÆöDvVçG2‚“²ÒÂ¶7F—fUF%Ò“°¢6öç7BFDöff–6RÒ7–æ2‚’Óâ°¢6öç7BæÖRÒv–æF÷rç&ö×B‚töf—2LKr“²–b‚æÖSòçG&–Ò‚’’&WGW&ã°¢´Ó[h‘éì¶»§q«^v) => {
+type PanelRole = 'advisor' | 'manager' | 'admin';
+type PanelProfile = { id: string; first_name: string; last_name: string; role: PanelRole; status: 'active' | 'inactive' | 'suspended' | 'left'; force_password_change: boolean };
+
+function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children: React.ReactNode }) {
+  const [state, setState] = useState<'loading' | 'allowed' | 'denied'>('loading');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    let active = true;
+    const verify = async () => {
+      if (!isSupabaseConfigured) { if (active) setState('denied'); return; }
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) { if (active) setState('denied'); return; }
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('id, first_name, last_name, role, status, force_password_change')
+        .eq('id', user.id)
+        .maybeSingle<PanelProfile>();
+      if (!profile || profile.status !== 'active' || !roles.includes(profile.role)) {
+        await supabase.auth.signOut();
+        if (active) setState('denied');
+        return;
+      }
+      if (active) setState('allowed');
+    };
+    void verify();
+    return () => { active = false; };
+  }, [roles.join(',')]);
+
+  if (state === 'loading') return <div className="min-h-[60vh] grid place-items-center text-sm font-bold text-slate-500">Oturum doÄŸrulanÄ±yorâ€¦</div>;
+  if (state === 'denied') return <div className="min-h-[60vh] grid place-items-center px-4 text-center"><div><ShieldAlert className="mx-auto mb-3 h-10 w-10 text-red-700"/><p className="font-black text-slate-900">Bu alan iÃ§in yetkiniz yok.</p><button onClick={() => navigate('/panel')} className="mt-4 rounded-xl bg-red-700 px-4 py-2 text-sm font-black text-white">GiriÅŸ ekranÄ±na dÃ¶n</button></div></div>;
+  return <>{children}</>;
+}
+
+function LoginPage() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [forgotMode, setForgotMode] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrorMsg(''); setMessage('');
+    if (!isSupabaseConfigured) { setErrorMsg('GiriÅŸ altyapÄ±sÄ± henÃ¼z yayÄ±n ortamÄ±na baÄŸlanmadÄ±.'); return; }
+    if (!email.trim() || !password.trim()) { setErrorMsg('E-posta ve ÅŸifrenizi girin.'); return; }
+    setLoading(true);
+    const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim().toLowerCase(), password });
+    if (error || !data.user) { setErrorMsg('E-posta veya ÅŸifre hatalÄ±.'); setLoading(false); return; }
+    const { data: profile } = await supabase.from('profiles').select('role, status').eq('id', data.user.id).maybeSingle();
+    if (!profile || profile.status !== 'active') {
+      await supabase.auth.signOut();
+      setErrorMsg('Bu hesap panel eriÅŸimine uygun deÄŸil veya aktif deÄŸil.'); setLoading(false);
+      return;
+    }
+    navigate(profile.role === 'admin' ? '/super-admin-panel' : profile.role === 'manager' ? '/yonetici-panel' : '/danisman-panel');
+  };
+
+  const handlePasswordReset = async (e: React.FormEvent) => {
+    e.preventDefault(); setErrorMsg(''); setMessage('');
+    if (!isSupabaseConfigured) { setErrorMsg('GiriÅŸ altyapÄ±sÄ± henÃ¼z yayÄ±n ortamÄ±na baÄŸlanmadÄ±.'); return; }
+    setLoading(true);
+    const { error } = await supabase.auth.resetPasswordForEmail(email.trim().toLowerCase(), { redirectTo: `${window.location.origin}/panel` });
+    setLoading(false);
+    if (error) { setErrorMsg('Ä°ÅŸlem ÅŸu anda tamamlanamadÄ±. LÃ¼tfen daha sonra tekrar deneyin.'); return; }
+    setMessage('Bu e-posta adresiyle kayÄ±tlÄ± bir hesap varsa ÅŸifre yenileme baÄŸlantÄ±sÄ± gÃ¶nderilecektir.');
+  };
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8 xl:pb-12 xl:pt-28">
+      <div className="w-full max-w-md">
+        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+          <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
+            <img
+              src="/rc_logo_og.svg"
+              alt="Realty CenterÂ®"
+              className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
+            />
+
+            <h1 className="text-2xl font-black text-white">Panel GiriÅŸi</h1>
+            <p className="text-slate-400 text-sm mt-2">
+              DanÄ±ÅŸman ve yÃ¶netim paneline giriÅŸ yapÄ±n.
+            </p>
+          </div>
+
+          <form onSubmit={forgotMode ? handlePasswordReset : handleLogin} className="p-6 space-y-4">
+            {(errorMsg || message) && <div className={`rounded-xl border p-3 text-xs font-bold ${errorMsg ? 'border-red-200 bg-red-50 text-red-700' : 'border-emerald-200 bg-emerald-50 text-emerald-700'}`}>{errorMsg || message}</div>}
+            {forgotMode && <p className="text-sm font-medium leading-6 text-slate-600">Realty Center hesabÄ±nÄ±za baÄŸlÄ± e-posta adresini girin.</p>}
+            <div>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">
+                E-posta Adresi
+              </label>
+              <div className="relative">
+                <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="E-posta adresinizi girin"
+                  autoComplete="email"
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
+                  required
+                />
+              </div>
+            </div>
+
+            {!forgotMode && <div>
+              <label className="block text-sm font-bold text-slate-700 mb-1.5">
+                Åifre
+              </label>
+              <div className="relative">
+                <Key className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Åifrenizi girin"
+                  autoComplete="current-password"
+                  className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-700 transition"
+                  aria-label={showPassword ? 'Åifreyi gizle' : 'Åifreyi gÃ¶ster'}
+                >
+                  {showPassword ? <X className="w-5 h-5" /> : <EyeIcon />}
+                </button>
+              </div>
+            </div>}
+
+            {!forgotMode && <><div className="flex items-center justify-between text-sm">
+              <label className="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" className="w-4 h-4 accent-red-700" />
+                <span className="text-slate-600 font-medium">Beni hatÄ±rla</span>
+              </label>
+
+              <button
+                type="button"
+                className="text-red-700 hover:text-red-800 font-bold text-xs"
+                onClick={() => { setForgotMode(true); setErrorMsg(''); setMessage(''); }}
+              >
+                Åifremi unuttum
+              </button>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
+            >
+              <span>{loading ? 'Ä°ÅŸlem yapÄ±lÄ±yorâ€¦' : 'GiriÅŸ Yap'}</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+            </>}
+            {forgotMode && <button type="button" onClick={() => { setForgotMode(false); setErrorMsg(''); setMessage(''); }} className="w-full text-center text-xs font-bold text-slate-500 hover:text-red-700">GiriÅŸ ekranÄ±na dÃ¶n</button>}
+          </form>
+
+          <div className="border-t border-slate-200 px-6 py-3 text-center bg-slate-50">
+            <p className="text-[11px] text-slate-500 font-medium">
+              Yetkisiz kiÅŸilerin panele eriÅŸmesi yasaktÄ±r.
+            </p>
+          </div>
+        </div>
+
+        <div className="text-center mt-3">
+          <Link to="/" className="text-sm text-slate-500 hover:text-red-700 font-bold transition">
+            â† Ana sayfaya dÃ¶n
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// SÃœPER ADMÄ°N YÃ–NETÄ°M PANELÄ° DASHBOARD (KAPSAMLI KOD)
+function HeaderMenuEditorNode({ item, depth, onUpdate, onRemove, onAddChild }: { item: HeaderMenuItem; depth: number; onUpdate: (id: string, patch: Partial<HeaderMenuItem>) => void; onRemove: (id: string) => void; onAddChild: (id: string, side: 'left' | 'right') => void }) {
+  return <div className={`rounded-2xl border p-4 ${depth === 0 ? 'border-slate-300 bg-white shadow-sm' : depth === 1 ? 'border-red-100 bg-red-50/40' : 'border-slate-200 bg-slate-50'}`}><div className="mb-3 flex items-center justify-between gap-3"><div className="flex items-center gap-2"><span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-700 text-[10px] font-black text-white">{depth + 1}</span><strong className="text-xs text-slate-800">{depth === 0 ? 'Ana baÅŸlÄ±k' : depth === 1 ? 'Alt baÅŸlÄ±k' : 'Alt baÅŸlÄ±ÄŸÄ±n altÄ±'}</strong></div><button type="button" onClick={() => onRemove(item.id)} className="text-[10px] font-black text-red-700">KaldÄ±r</button></div><div className="grid gap-3 md:grid-cols-2"><input value={item.label} onChange={(e) => onUpdate(item.id,{ label:e.target.value })} placeholder="MenÃ¼ baÅŸlÄ±ÄŸÄ±" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><input value={item.path} onChange={(e) => onUpdate(item.id,{ path:e.target.value })} placeholder="/icerik/sayfa-adi" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/>{depth === 0 && <select value={item.side} onChange={(e) => onUpdate(item.id,{ side:e.target.value as 'left' | 'right' })} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"><option value="left">Logonun solu</option><option value="right">Logonun saÄŸÄ±</option></select>}<input value={item.image || ''} onChange={(e) => onUpdate(item.id,{ image:e.target.value })} placeholder="Sol bÃ¶lÃ¼m gÃ¶rsel URL'si" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><textarea rows={4} value={item.content || ''} onChange={(e) => onUpdate(item.id,{ content:e.target.value })} placeholder="SayfanÄ±n saÄŸÄ±nda gÃ¶sterilecek metin" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs leading-5 md:col-span-2"/></div>{depth < 2 && <button type="button" onClick={() => onAddChild(item.id,item.side)} className="mt-3 rounded-lg border border-red-200 bg-white px-3 py-2 text-[10px] font-black text-red-700">+ Alt baÅŸlÄ±k ekle</button>}{item.children.length > 0 && <div className="mt-4 space-y-3 border-l-2 border-red-200 pl-3">{item.children.map((child) => <HeaderMenuEditorNode key={child.id} item={child} depth={depth + 1} onUpdate={onUpdate} onRemove={onRemove} onAddChild={onAddChild}/>)}</div>}</div>;
+}
+
+type ManagedUser = {
+  id: string; first_name: string; last_name: string; username: string; email: string; phone: string | null;
+  role: PanelRole; status: 'active' | 'inactive' | 'suspended' | 'left'; last_login_at: string | null; created_at: string;
+};
+const EMPTY_NEW_USER = { firstName: '', lastName: '', username: '', email: '', phone: '', role: 'advisor' as Exclude<PanelRole, 'admin'>, password: '', passwordRepeat: '', status: 'active' as 'active' | 'inactive', forcePasswordChange: true };
+
+function SuperAdminDashboard() {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<'overview' | 'users' | 'franchise' | 'offices' | 'agents' | 'listings' | 'categories' | 'videos' | 'library' | 'education' | 'crm' | 'messages' | 'buyerRequests' | 'feedback' | 'corporate' | 'header' | 'settings'>('overview');
+  const [managedUsers, setManagedUsers] = useState<ManagedUser[]>([]);
+  const [usersLoading, setUsersLoading] = useState(false);
+  const [showNewUser, setShowNewUser] = useState(false);
+  const [newUser, setNewUser] = useState(EMPTY_NEW_USER);
+  const [userFormError, setUserFormError] = useState('');
+  const [userFormSuccess, setUserFormSuccess] = useState('');
+  const [creatingUser, setCreatingUser] = useState(false);
+  const [contactSettings, setContactSettings] = useState(getContactSettings);
+  const [settingsSaved, setSettingsSaved] = useState(false);
+  const [featuredListingIds, setFeaturedListingIds] = useState<string[]>(getFeaturedListingIds);
+  const [categories, setCategories] = useState<ListingCategory[]>(getListingCategories);
+  const [categorySaved, setCategorySaved] = useState(false);
+  const [newCategory, setNewCategory] = useState<ListingCategory>({ id: '', title: '', type: 'SatÄ±lÄ±k', category: 'Konut', image: '' });
+  const [videos, setVideos] = useState<RealtyVideo[]>(getRealtyVideos);
+  const [editingVideoId, setEditingVideoId] = useState<string | null>(null);
+  const [videoDraft, setVideoDraft] = useState({ source: 'youtube' as 'youtube' | 'upload', category: 'tv' as 'tv' | 'news', url: '', title: '', thumbnail: '', description: '' });
+  const [videoSaving, setVideoSaving] = useState(false);
+  const [youtubeChannelUrl, setYoutubeChannelUrl] = useState(getYoutubeChannelUrl);
+  const [youtubeChannelSaved, setYoutubeChannelSaved] = useState(false);
+  const [feedbackItems, setFeedbackItems] = useState<CustomerFeedback[]>(getCustomerFeedback);
+  const [buyerRequests, setBuyerRequests] = useState<BuyerRequest[]>(getBuyerRequests);
+  const [aboutStory, setAboutStory] = useState(getAboutStory);
+  const [management, setManagement] = useState<ManagementMember[]>(getManagementTeam);
+  const [corporateDocuments, setCorporateDocuments] = useState<CorporateDocument[]>(() => getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS));
+  const [corporateReferences, setCorporateReferences] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-references', DEFAULT_REFERENCES));
+  const [corporatePartners, setCorporatePartners] = useState<CorporateLogoItem[]>(() => getStoredCorporateItems('realty-center-partners', DEFAULT_PARTNERS));
+  const [corporateSaved, setCorporateSaved] = useState(false);
+  const [headerMenuItems, setHeaderMenuItems] = useState<HeaderMenuItem[]>(getHeaderMenu);
+  const [headerSaved, setHeaderSaved] = useState(false);
+  const [trainingContent, setTrainingContent] = useState<TrainingContent>(getTrainingContent);
+  const [trainingSection, setTrainingSection] = useState<'calendar' | 'centers' | 'types'>('calendar');
+  const [trainingSaved, setTrainingSaved] = useState(false);
+  const [libraryCategories,setLibraryCategories]=useState<LibraryCategory[]>(getLibraryCategories);
+  const [librarySaved,setLibrarySaved]=useState(false);
+  const [editingLibraryArticle,setEditingLibraryArticle]=useState<{categoryId:string;articleId:string}|null>(null);
+  useEffect(() => { const refresh = () => setBuyerRequests(getBuyerRequests()); window.addEventListener('realty-center-buyer-requests-updated', refresh); return () => window.removeEventListener('realty-center-buyer-requests-updated', refresh); }, []);
+
+  const loadManagedUsers = async () => {
+    setUsersLoading(true);
+    const { data, error } = await supabase.from('profiles').select('id, first_name, last_name, username, email, phone, role, status, last_login_at, created_at').is('deleted_at', null).order('created_at', { ascending: false });
+    if (!error) setManagedUsers((data || []) as ManagedUser[]);
+    setUsersLoading(false);
+  };
+  useEffect(() => { if (activeTab === 'users') void loadManagedUsers(); }, [activeTab]);
+  const submitNewUser = async (event: React.FormEvent) => {
+    event.preventDefault(); setUserFormError(''); setUserFormSuccess('');
+    const username = newUser.username.trim().toLocaleLowerCase('tr-TR');
+    const email = newUser.email.trim().toLowerCase();
+    if (!newUser.firstName.trim() || !newUser.lastName.trim() || !username || !email) return setUserFormError('Ad, soyad, kullanÄ±cÄ± adÄ± ve e-posta zorunludur.');
+    if (!/^[a-z0-9._-]{3,40}$/i.test(username)) return setUserFormError('KullanÄ±cÄ± adÄ± 3â€“40 karakter olmalÄ±; boÅŸluk iÃ§eremez.');
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setUserFormError('GeÃ§erli bir e-posta adresi girin.');
+    if (newUser.password.length < 10) return setUserFormError('Åifre en az 10 karakter olmalÄ±dÄ±r.');
+    if (newUser.password !== newUser.passwordRepeat) return setUserFormError('Åifreler eÅŸleÅŸmiyor.');
+    setCreatingUser(true);
+    const { data, error } = await supabase.functions.invoke('admin-users', { body: { action: 'create_user', payload: { firstName: newUser.firstName.trim(), lastName: newUser.lastName.trim(), username, email, phone: newUser.phone.trim() || null, role: newUser.role, password: newUser.password, status: newUser.status, forcePasswordChange: newUser.forcePasswordChange } } });
+    setCreatingUser(false);
+    if (error || data?.error) {
+      let detail = data?.error || error?.message || 'Bilinmeyen baÄŸlantÄ± hatasÄ±.';
+      if (error && 'context' in error && error.context instanceof Response) {
+        const responseBody = await error.context.clone().json().catch(() => null) as { error?: string } | null;
+        detail = responseBody?.error || detail;
+      }
+      setUserFormError(`KullanÄ±cÄ± oluÅŸturulamadÄ±: ${detail}`); return;
+    }
+    setUserFormSuccess('KullanÄ±cÄ± gerÃ§ek giriÅŸ hesabÄ±yla oluÅŸturuldu.'); setNewUser(EMPTY_NEW_USER); setShowNewUser(false); void loadManagedUsers();
+  };
+
+  const updateManagedHeaderItem = (id: string, patch: Partial<HeaderMenuItem>) => setHeaderMenuItems((current) => updateHeaderMenuItem(current,id,patch));
+  const removeManagedHeaderItem = (id: string) => setHeaderMenuItems((current) => removeHeaderMenuItem(current,id));
+  const addManagedHeaderChild = (parentId: string, side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => appendHeaderMenuChild(current,parentId,headerItem(id,'Yeni Alt BaÅŸlÄ±k',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazÄ±n.'))); };
+  const addManagedHeaderRoot = (side: 'left' | 'right') => { const id = `menu-${Date.now()}`; setHeaderMenuItems((current) => [...current,headerItem(id,'Yeni Ana BaÅŸlÄ±k',`/icerik/${id}`,side,[],'','Sayfa metnini buraya yazÄ±n.')]); };
+  const saveManagedHeader = () => { saveHeaderMenu(headerMenuItems); setHeaderSaved(true); setTimeout(() => setHeaderSaved(false),2200); };
+  const saveTraining = () => { saveTrainingContent(trainingContent); setTrainingSaved(true); setTimeout(() => setTrainingSaved(false), 2200); };
+  const addTrainingEvent = () => setTrainingContent((current) => ({ ...current, events: [...current.events, { id: 'training-event-' + Date.now(), title: 'Yeni EÄŸitim', date: new Date().toISOString().slice(0,10), time: '10:00', location: '', format: 'SÄ±nÄ±f EÄŸitimi' }] }));
+  const addTrainingCenter = () => setTrainingContent((current) => ({ ...current, centers: [...current.centers, { id: 'training-center-' + Date.now(), name: 'Yeni EÄŸitim Merkezi', city: '', address: '', description: '' }] }));
+  const addTrainingType = () => setTrainingContent((current) => ({ ...current, types: [...current.types, { id: 'training-type-' + Date.now(), title: 'Yeni EÄŸitim', duration: '', description: '' }] }));
+  const updateLibraryCategory=(id:string,patch:Partial<LibraryCategory>)=>setLibraryCategories((current)=>current.map((item)=>item.id===id?{...item,...patch}:item));
+  const updateLibraryArticle=(categoryId:string,articleId:string,patch:Partial<LibraryArticle>)=>setLibraryCategories((current)=>current.map((category)=>category.id===categoryId?{...category,articles:category.articles.map((article)=>article.id===articleId?{...article,...patch}:article)}:category));
+  const addLibraryCategory=()=>{const id=`library-${Date.now()}`;setLibraryCategories((current)=>[...current,{id,slug:`yeni-kategori-${Date.now()}`,title:'Yeni Kategori',description:'Kategori aÃ§Ä±klamasÄ±',color:'#CD011E',articles:[]}]);};
+  const addLibraryArticle=(categoryId:string)=>{const articleId=`article-${Date.now()}`;setLibraryCategories((current)=>current.map((category)=>category.id===categoryId?{...category,articles:[...category.articles,{id:articleId,title:'Yeni Ä°Ã§erik',summary:'Ä°Ã§erik Ã¶zeti',image:'',content:'<p>YazÄ± iÃ§eriÄŸini buraya girin.</p>',publishedAt:new Date().toISOString()}]}:category));setEditingLibraryArticle({categoryId,articleId});};
+  const uploadLibraryImage=(categoryId:string,articleId:string,file?:File)=>{if(!file)return;const reader=new FileReader();reader.onload=()=>updateLibraryArticle(categoryId,articleId,{image:String(reader.result)});reader.readAsDataURL(file);};
+  const saveLibrary=()=>{saveLibraryCategories(libraryCategories);setLibrarySaved(true);setTimeout(()=>setLibrarySaved(false),2200);};
+
+  const addVideo = async () => {
+    if (!videoDraft.url) return alert('YouTube baÄŸlantÄ±sÄ± veya video dosyasÄ± ekleyin.');
+    setVideoSaving(true);
+    let title = videoDraft.title.trim();
+    let thumbnail = videoDraft.thumbnail.trim();
+    if (videoDraft.source === 'youtube') {
+      const previous = videos.find((video) => video.id === editingVideoId);
+      if (previous && previous.url !== videoDraft.url && thumbnail.includes('img.youtube.com/vi/')) thumbnail = '';
+      const youtubeId = getYoutubeId(videoDraft.url);
+      if (!youtubeId) { setVideoSaving(false); return alert('GeÃ§erli bir YouTube baÄŸlantÄ±sÄ± girin.'); }
+      if (!thumbnail) thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+      if (!title) try { const response = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(videoDraft.url)}&format=json`); if (response.ok) { const data = await response.json(); title = data.title || ''; thumbnail = data.thumbnail_url || thumbnail; } } catch { /* YouTube kapak ve varsayÄ±lan baÅŸlÄ±kla devam eder. */ }
+    }
+    const entry: RealtyVideo = { id: editingVideoId || `video-${Date.now()}`, source: videoDraft.source, category: videoDraft.category, url: videoDraft.url, title: title || (videoDraft.source === 'upload' ? 'Realty CenterÂ® Videosu' : 'YouTube Videosu'), thumbnail, description: videoDraft.description.trim(), createdAt: videos.find((video) => video.id === editingVideoId)?.createdAt || new Date().toISOString() };
+    const next = editingVideoId ? videos.map((video) => video.id === editingVideoId ? entry : video) : [entry, ...videos];
+    try { saveRealtyVideos(next); setEditingVideoId(null); setVideos(next); setVideoDraft({ source: 'youtube', category: 'tv', url: '', title: '', thumbnail: '', description: '' }); } catch { alert('Video dosyasÄ± tarayÄ±cÄ± depolama sÄ±nÄ±rÄ±nÄ± aÅŸÄ±yor. CanlÄ± sistemde dosya sunucuya yÃ¼klenecektir.'); }
+    setVideoSaving(false);
+  };
+  const handleDirectVideo = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, source: 'upload', url: String(reader.result), title: current.title || file.name.replace(/\.[^.]+$/, '') })); reader.readAsDataURL(file); };
+  const handleVideoCover = (file?: File) => { if (!file) return; const reader = new FileReader(); reader.onload = () => setVideoDraft((current) => ({ ...current, thumbnail: String(reader.result) })); reader.readAsDataURL(file); };
+  const editVideo = (video: RealtyVideo) => {
+    setEditingVideoId(video.id);
+    setVideoDraft({ source: video.source === 'upload' ? 'upload' : 'youtube', category: video.category, url: video.url, title: video.title, thumbnail: video.thumbnail, description: video.description });
+    document.getElementById('realty-media-editor')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  const removeVideo = (id: string) => { const next = videos.filter((video) => video.id !== id); setVideos(next); saveRealtyVideos(next); };
+  const updateFeedbackStatus = (id: string, status: CustomerFeedback['status']) => {
+    const next = feedbackItems.map((item) => item.id === id ? { ...item, status } : item);
+    setFeedbackItems(next);
+    saveCustomerFeedback(next);
+  };
+  const saveCorporateContent = () => {
+    localStorage.setItem('realty-center-about-story', aboutStory);
+    saveManagementTeam(management);
+    localStorage.setItem('realty-center-documents', JSON.stringify(corporateDocuments));
+    localStorage.setItem('realty-center-references', JSON.stringify(corporateReferences));
+    localStorage.setItem('realty-center-partners', JSON.stringify(corporatePartners));
+    window.dispatchEvent(new Event('realty-center-corporate-updated'));
+    setCorporateSaved(true);
+    setTimeout(() => setCorporateSaved(false), 2200);
+  };
+  const uploadCorporatePdf = (index: number, file?: File) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => setCorporateDocuments(corporateDocuments.map((item,i) => i === index ? { ...item, fileUrl: String(reader.result) } : item));
+    reader.readAsDataURL(file);
+  };
+
+  const saveCategories = (nextCategories = categories) => {
+    localStorage.setItem('realty-center-listing-categories', JSON.stringify(nextCategories));
+    window.dispatchEvent(new Event('realty-center-categories-updated'));
+    setCategorySaved(true);
+    setTimeout(() => setCategorySaved(false), 2500);
+  };
+  const updateCategory = (id: string, patch: Partial<ListingCategory>) => setCategories((current) => current.map((item) => item.id === id ? { ...item, ...patch } : item));
+  const addCategory = () => {
+    if (!newCategory.title.trim()) return;
+    const item = { ...newCategory, id: newCategory.id || 'category-' + Date.now(), image: newCategory.image || 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=90&w=1200' };
+    const next = [...categories, item];
+    setCategories(next);
+    saveCategories(next);
+    setNewCategory({ id: '', title: '', type: 'SatÄ±lÄ±k', category: 'Konut', image: '' });
+  };
+  const handleCategoryImage = (id: string, file?: File) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => updateCategory(id, { image: String(reader.result) });
+    reader.readAsDataURL(file);
+  };
+  const saveContactSettings = () => {
+    localStorage.setItem('realty-center-contact-settings', JSON.stringify(contactSettings));
+    window.dispatchEvent(new Event('realty-center-contact-updated'));
+    setSettingsSaved(true);
+    setTimeout(() => setSettingsSaved(false), 2500);
+  };
+
+  // Franchise BaÅŸvuru Verileri
+  const [franchiseApps, setFranchiseApps] = useState([
+    { id: 'FR-801', name: 'Ahmet KarakaÅŸ', phone: '0532 999 88 77', city: 'Bursa', district: 'NilÃ¼fer', date: '2026-08-11', status: 'Beklemede', budget: '2.500.000 â‚º' },
+    { id: 'FR-802', name: 'Mustafa Åahin', phone: '0535 444 33 22', city: 'Antalya', district: 'Alanya', date: '2026-08-10', status: 'OnaylandÄ±', budget: '3.000.000 â‚º' },
+    { id: 'FR-803', name: 'Selin YÄ±ldÄ±z', phone: '0542 111 22 33', city: 'MuÄŸla', district: 'Bodrum', date: '2026-08-09', status: 'Incelemede', budget: '4.500.000 â‚º' },
+    { id: 'FR-804', name: 'OÄŸuzhan Kaya', phone: '0555 777 66 55', city: 'EskiÅŸehir', district: 'TepebaÅŸÄ±', date: '2026-08-07', status: 'Reddedildi', budget: '1.800.000 â‚º' }
+  ]);
+
+  // Ofis Listesi Verileri
+  const [offices, setOffices] = useState<typeof SAMPLE_OFFICES>([]);
+
+  // DanÄ±ÅŸman Verileri
+  const [agents, setAgents] = useState<typeof SAMPLE_AGENTS>([]);
+
+  const loadOffices = async () => {
+    const { data } = await supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').order('created_at',{ ascending:false });
+    setOffices((data || []).map((office: any) => ({ id:office.id, name:office.name, city:office.city, district:office.district, address:office.address, phone:office.phone || '', email:office.email || '', manager:office.manager_name || '', image:office.image_url || '' })));
+  };
+  const loadAgents = async () => {
+    const { data } = await supabase.from('profiles').select('id,first_name,last_name,email,phone,avatar_url,expertise_areas,whatsapp').eq('role','advisor').is('deleted_at',null).order('created_at',{ascending:false});
+    setAgents((data || []).map((agent: any) => ({ id:agent.id, name:[agent.first_name,agent.last_name].filter(Boolean).join(' '), title:agent.expertise_areas?.[0] || 'Gayrimenkul DanÄ±ÅŸmanÄ±', office:'Realty CenterÂ®', city:agent.expertise_areas?.[1] || '', district:agent.expertise_areas?.[2] || '', phone:agent.whatsapp || agent.phone || '', email:agent.email || '', image:agent.avatar_url || '', activeListings:0 })));
+  };
+  useEffect(() => { if (activeTab === 'offices') void loadOffices(); if (activeTab === 'agents') void loadAgents(); }, [activeTab]);
+  const addOffice = async () => {
+    const name = window.prompt('Ofis adÄ±'); if (!name?.trim()) return;
+    const city = window.prompt('Ä°l'); if (!city?.trim()) return;
+    const district = window.prompt('Ä°lÃ§e'); if (!district?.trim()) return;
+    const address = window.prompt('AÃ§Ä±k adres') || '';
+    const phone = window.prompt('Telefon') || '';
+    const email = window.prompt('E-posta') || '';
+    const manager_name = window.prompt('Ofis yÃ¶neticisi') || '';
+    const { error } = await supabase.from('offices').insert({ name:name.trim(), city:city.trim(), district:district.trim(), address, phone, email, manager_name, status:'active' });
+    if (error) return alert(`Ofis eklenemedi: ${error.message}`);
+    await loadOffices(); alert('Ofis eklendi ve sitede yayÄ±na alÄ±ndÄ±.');
+  };
+
+  // Ä°lan Verileri (Onay Bekleyenler)
+  const [listings, setListings] = useState<any[]>([]);
+
+  // Genel Mesajlar
+  const [contactMessages] = useState([
+    { id: 'MSG-01', sender: 'Kemal Sunal', email: 'kemal@test.com', phone: '0532 000 00 00', subject: 'Toplu Konut Projesi Ä°ÅŸbirliÄŸi', status: 'OkunmadÄ±', date: '2026-08-12' },
+    { id: 'MSG-02', sender: 'Berna Tan', email: 'berna@test.com', phone: '0533 111 00 11', subject: 'Sistem GiriÅŸ HatasÄ±', status: 'YanÄ±tlandÄ±', date: '2026-08-11' }
+  ]);
+
+  const updateFranchiseStatus = (id: string, newStatus: string) => {
+    setFranchiseApps(prev => prev.map(app => app.id === id ? { ...app, status: newStatus } : app));
+  };
+
+  const updateListingApproval = (id: string, newStatus: string) => {
+    setListings(prev => prev.map(item => item.id === id ? { ...item, approvalStatus: newStatus } : item));
+    if (newStatus !== 'YayÄ±nda' && featuredListingIds.includes(id)) {
+      const next = featuredListingIds.filter((listingId) => listingId !== id);
+      setFeaturedListingIds(next);
+      saveFeaturedListingIds(next);
+    }
+  };
+  const toggleFeaturedListing = (id: string) => {
+    const next = featuredListingIds.includes(id) ? featuredListingIds.filter((listingId) => listingId !== id) : [...featuredListingIds, id];
+    setFeaturedListingIds(next);
+    saveFeaturedListingIds(next);
+  };
+
+  const navButtons = [
+    { key: 'overview' as const, label: 'Genel BakÄ±ÅŸ & Ä°statistik', icon: PieChart },
+    { key: 'users' as const, label: 'KullanÄ±cÄ±lar', icon: Users },
+    { key: 'franchise' as const, label: 'Franchise BaÅŸvurularÄ±', icon: FileText, badge: franchiseApps.filter(a => a.status === 'Beklemede').length },
+    { key: 'offices' as const, label: 'Franchise Ofis YÃ¶netimi', icon: Building2 },
+    { key: 'agents' as const, label: 'DanÄ±ÅŸman KontrolÃ¼', icon: Users },
+    { key: 'listings' as const, label: 'Ä°lan Onay MekanizmasÄ±', icon: Layers, badge: listings.filter(l => l.approvalStatus === 'Onay Bekliyor').length },
+    { key: 'categories' as const, label: 'Kategori YÃ¶netimi', icon: Tag },
+    { key: 'videos' as const, label: 'Realty Medya YÃ¶netimi', icon: PlayCircle },
+    { key: 'library' as const, label: 'Realty KÃ¼tÃ¼phane YÃ¶netimi', icon: GraduationCap },
+    { key: 'education' as const, label: 'EÄŸitim YÃ¶netimi', icon: Calendar },
+    { key: 'crm' as const, label: 'CRM & MÃ¼ÅŸteriler', icon: Users },
+    { key: 'messages' as const, label: 'Sistem MesajlarÄ±', icon: MessageSquare },
+    { key: 'buyerRequests' as const, label: 'AlÄ±cÄ± Talepleri', icon: Bell, badge: buyerRequests.filter((item) => item.status === 'Yeni').length },
+    { key: 'feedback' as const, label: 'MÃ¼ÅŸteri Geri Bildirimleri', icon: Flag, badge: feedbackItems.filter((item) => item.status === 'Yeni').length },
+    { key: 'corporate' as const, label: 'Kurumsal Ä°Ã§erik YÃ¶netimi', icon: Briefcase },
+    { key: 'header' as const, label: 'Header & Sayfa YÃ¶netimi', icon: Menu },
+    { key: 'settings' as const, label: 'Sistem AyarlarÄ±', icon: Settings }
+  ];
+
+  return (
+    <div className="min-h-[calc(100vh-100px)] bg-slate-50 text-slate-900">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        {/* ÃœST ADMÄ°N HEADER */}
+        <div className="bg-white border border-slate-200 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
+          <div className="flex items-center space-x-4">
+            <div className="p-3 bg-red-700/20 text-red-600 rounded-2xl border border-red-700/30">
+              <ShieldAlert className="w-8 h-8" />
+            </div>
+            <div>
+              <div className="flex items-center space-x-2">
+                <h1 className="text-2xl font-black text-slate-900 tracking-wide">SÃœPER ADMÄ°N KONTROL PANELÄ°</h1>
+                <span className="bg-red-700 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-widest">
+                  ROOT
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 font-medium mt-1">
+                Realty CenterÂ® TÃ¼rkiye Genel Merkez Ana Kontrol ve Yetkilendirme EkranÄ±
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-3">
+            <span className="text-xs text-slate-500 font-bold bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
+              Sistem Durumu: <span className="text-emerald-500 font-black">Online / Aktif</span>
+            </span>
+
+            <button 
+              onClick={() => navigate('/super-admin')} 
+              className="bg-red-700/20 hover:bg-red-700 text-red-500 hover:text-slate-900 border border-red-700/30 font-bold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition"
+            >
+              <LogOut className="w-4 h-4" />
+              <span>GÃ¼venli Ã‡Ä±kÄ±ÅŸ</span>
+            </button>
+          </div>
+        </div>
+
+        {/* MASAÃœSTÃœ SÄ°DEBAR VE Ä°Ã‡ERÄ°K DÃœZENÄ° */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          {/* SOL MENÃœ */}
+          <div className="lg:col-span-3 space-y-2">
+            <div className="bg-white border border-slate-200 rounded-2xl p-3 shadow-xl space-y-1">
+              {navButtons.map((btn) => {
                 const Icon = btn.icon;
                 const isActive = activeTab === btn.key;
 
@@ -1083,23 +4354,153 @@ HOˆÙ]İÜ™YÛÜœÜ˜]R][\Ê	Ü™X[KXÙ[\‹YØİ[Y[ÉËQUSÑĞÕSQS•ÊJNÂˆÛ
                   {/* BEKLEYEN BAÅVURULAR */}
                   <div className="bg-white border border-slate-200 rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
-     YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬Ô€€€€€€€€€€€€€€€€€ñ Ì±…ÍÍ9…µ”ô‰Ñ•áĞµ‰…Í”™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀ™±•à¥Ñ•µÌµ•¹Ñ•ÈÍÁ…”µà´Èˆø(€€€€€€€€€€€€€€€€€€€€€€€€ñ¥±•Q•áĞ±…ÍÍ9…µ”ô‰Ü´Ğ ´ĞÑ•áĞµÉ•´ØÀÀˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ù	•­±•å•¸É…¹¡¥Í”	‡}ÙÕÉÕ±…ËÄğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€€€€€ğ½ Ìø(€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•Q…ˆ ™É…¹¡¥Í”œ¥ô±…ÍÍ9…µ”ô‰Ñ•áĞµáÌÑ•áĞµÉ•´ØÀÀ™½¹Ğµ‰½±¡½Ù•ÈéÕ¹‘•É±¥¹”ˆùSñ·ñ»ğÙÈğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´Ìˆø(€€€€€€€€€€€€€€€€€€€€€í™É…¹¡¥Í•ÁÁÌ¹™¥±Ñ•È¡„€ôø„¹ÍÑ…ÑÕÌ€ôôô€	•­±•µ•‘”œ¤¹µ…À ¡…ÁÀ¤€ôø€ (€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø­•äõí…ÁÀ¹¥‘ô±…ÍÍ9…µ”ô‰À´Ì¸Ô‰œµÍ±…Ñ”´ÔÀÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™½¹Ğµ‰½±Ñ•áĞµáÌÑ•áĞµÍ±…Ñ”´äÀÀˆùí…ÁÀ¹¹…µ•ô€¡í…ÁÀ¹¥Ñåô€¼í…ÁÀ¹‘¥ÍÑÉ¥Ñô¤ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÅÁátÑ•áĞµÍ±…Ñ”´ÔÀÀ™½¹Ğµµ•‘¥Õ´ˆùñÓ”èí…ÁÀ¹‰Õ‘•Ñôƒ
-Üí…ÁÀ¹‘…Ñ•ôğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•àÍÁ…”µà´Ä¸Ôˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÕÁ‘…Ñ•É…¹¡¥Í•MÑ…ÑÕÌ¡…ÁÀ¹¥°€=¹…å±…¹“Äœ¥ô±…ÍÍ9…µ”ô‰À´Ä¸Ô‰œµ•µ•É…±´ØÀÀ¼ÈÀÑ•áĞµ•µ•É…±´ĞÀÀ¡½Ù•Èé‰œµ•µ•É…±´ØÀÀ¡½Ù•ÈéÑ•áĞµÍ±…Ñ”´äÀÀÉ½Õ¹‘•µ±œÑÉ…¹Í¥Ñ¥½¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ¡•¬±…ÍÍ9…µ”ô‰Ü´Ì¸Ô ´Ì¸Ôˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÕÁ‘…Ñ•É…¹¡¥Í•MÑ…ÑÕÌ¡…ÁÀ¹¥°€I•‘‘•‘¥±‘¤œ¥ô±…ÍÍ9…µ”ô‰À´Ä¸Ô‰œµÉ•´ÜÀÀ¼ÈÀÑ•áĞµÉ•´ÔÀÀ¡½Ù•Èé‰œµÉ•´ÜÀÀ¡½Ù•ÈéÑ•áĞµİ¡¥Ñ”É½Õ¹‘•µ±œÑÉ…¹Í¥Ñ¥½¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ`±…ÍÍ9…µ”ô‰Ü´Ì¸Ô ´Ì¸Ôˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€€€€ì¼¨=9d	-1e8ƒÁ191H€¨½ô(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÉ½Õ¹‘•´Éá°À´Øˆø(€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸µˆ´Ğˆø(€€€€€€€€€€€€€€€€€€€€€€ñ Ì±…ÍÍ9…µ”ô‰Ñ•áĞµ‰…Í”™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀ™±•à¥Ñ•µÌµ•¹Ñ•ÈÍÁ…”µà´Èˆø(€€€€€€€€€€€€€€€€€€€€€€€€ñ±•ÉÑ¥É±”±…ÍÍ9…µ”ô‰Ü´Ğ ´ĞÑ•áĞµÉ•´ØÀÀˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ù=¹…ä	•­±•å•¸ƒÁ±…¹±…Èğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€€€€€ğ½ Ìø(€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑÑ¥Ù•Q…ˆ ±¥ÍÑ¥¹Ìœ¥ô±…ÍÍ9…µ”ô‰Ñ•áĞµáÌÑ•áĞµÉ•´ØÀÀ™½¹Ğµ‰½±¡½Ù•ÈéÕ¹‘•É±¥¹”ˆùSñ·ñ»ğÙÈğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´Ìˆø(€€€€€€€€€€€€€€€€€€€€€í±¥ÍÑ¥¹Ì¹™¥±Ñ•È¡°€ôø°¹…ÁÁÉ½Ù…±MÑ…ÑÕÌ€ôôô€=¹…ä	•­±¥å½Èœ¤¹µ…À ¡±¥ÍÑ¥¹œ¤€ôø€ (€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø­•äõí±¥ÍÑ¥¹œ¹¥‘ô±…ÍÍ9…µ”ô‰À´Ì¸Ô‰œµÍ±…Ñ”´ÔÀÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™½¹Ğµ‰½±Ñ•áĞµáÌÑ•áĞµÍ±…Ñ”´äÀÀÑÉÕ¹…Ñ”µ…àµÜµlÈÀÁÁátˆùí±¥ÍÑ¥¹œ¹Ñ¥Ñ±•ôğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ•áĞµlÄÅÁátÑ•áĞµÍ±…Ñ”´ÔÀÀ™½¹Ğµµ•‘¥Õ´ˆùí±¥ÍÑ¥¹œ¹…•¹Ñ9…µ•ôƒ
-Üí±¥ÍÑ¥¹œ¹ÁÉ¥”¹Ñ½1½…±•MÑÉ¥¹œ ÑÈµQHœ¥ôƒŠ
-èğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•àÍÁ…”µà´Ä¸Ôˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÕÁ‘…Ñ•1¥ÍÑ¥¹ÁÁÉ½Ù…°¡±¥ÍÑ¥¹œ¹¥°€e…çÅ¹‘„œ¥ô±…ÍÍ9…µ”ô‰À´Ä¸Ô‰œµ•µ•É…±´ØÀÀ¼ÈÀÑ•áĞµ•µ•É…±´ĞÀÀ¡½Ù•Èé‰œµ•µ•É…±´ØÀÀ¡½Ù•ÈéÑ•áĞµÍ±…Ñ”´äÀÀÉ½Õ¹‘•µ±œÑÉ…¹Í¥Ñ¥½¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ¡•¬±…ÍÍ9…µ”ô‰Ü´Ì¸Ô ´Ì¸Ôˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÕÁ‘…Ñ•1¥ÍÑ¥¹ÁÁÉ½Ù…°¡±¥ÍÑ¥¹œ¹¥°€I•‘‘•‘¥±‘¤œ¥ô±…ÍÍ9…µ”ô‰À´Ä¸Ô‰œµÉ•´ÜÀÀ¼ÈÀÑ•áĞµÉ•´ÔÀÀ¡½Ù•Èé‰œµÉ•´ÜÀÀ¡½Ù•ÈéÑ•áĞµİ¡¥Ñ”É½Õ¹‘•µ±œÑÉ…¹Í¥Ñ¥½¸ˆø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ñ`±…ÍÍ9…µ”ô‰Ü´Ì¸Ô ´Ì¸Ôˆ€¼ø(€€€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€¥ô((€€€€€€€€€€€ì¼¨€È¸I9#ÁM	yYUIU1I$Q	$€¨½ô(€€€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€ÕÍ•ÉÌœ€˜˜€ (€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´Øˆø(€€€€€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½Üµá°ˆø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµ½°©ÕÍÑ¥™äµ‰•Ñİ••¸…À´Ğ‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁˆ´ÔÍ´é™±•àµÉ½ÜÍ´é¥Ñ•µÌµ•¹Ñ•Èˆø(€€€€€€€€€€€€€€€€€€€€ñ‘¥Øøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù-Õ±±…»ÅÅ±…Èğ½ ÈøñÀm4ÖÚ$z{-®éÜj×\Û]KMÌÛ\ÜÓ˜[YOHœMHKM›ÛX›XÚÈ^\Û]KNLİ\Ù\‹™š\œİÛ˜[Y_Hİ\Ù\‹›\İÛ˜[Y_OİÛ\ÜÓ˜[YOHœMHKM›Û[[Û›Èİ\Ù\‹\Ù\›˜[Y_OİÛ\ÜÓ˜[YOHœMHKMİ\Ù\‹™[XZ[OİÛ\ÜÓ˜[YOHœMHKMİ\Ù\‹œ›ÛHOOH	ØYš\ÛÜ‰ÈÈ	Ñ[±,qgÛX[‰Èˆ\Ù\‹œ›ÛHOOH	ÛX[˜YÙ\‰ÈÈ	Öpí›™]XÚIÈˆ	ĞYZ[‰ßOİÛ\ÜÓ˜[YOHœMHKMÜ[ˆÛ\ÜÓ˜[YO^Ø›İ[™YY[L‹HKLH^VÌLH›ÛX›XÚÈ	İ\Ù\‹œİ]\ÈOOH	ØXİ]™IÈÈ	Ø™ËY[Y\˜[LL^Y[Y\˜[MÌ	Èˆ	Ø™Ë\Û]KLL^\Û]KMŒ	ßXOİ\Ù\‹œİ]\ÈOOH	ØXİ]™IÈÈ	ĞZİY‰Èˆ\Ù\‹œİ]\ÈOOH	Ú[˜Xİ]™IÈÈ	Ô\ÚY‰Èˆ\Ù\‹œİ]\ÈOOH	Üİ\Ü[™Y	ÈÈ	Ğ\Úñ,^XH[1,[™1,IÈˆ	Ğ^\±,[1,IßOÜÜ[İÛ\ÜÓ˜[YOHœMHKMİ\Ù\‹›\İÛÙÚ[—Ø]È™]È]J\Ù\‹›\İÛÙÚ[—Ø]
-KÓØØ[Tİš[™Ê	İ‹U‰ÊHˆ	ø %	ßOİÛ\ÜÓ˜[YOHœMHKMÛ™]È]J\Ù\‹˜Ü™X]YØ]
-KÓØØ[Q]Tİš[™Ê	İ‹U‰Ê_OİİŠ_Oİ›ÙOİX›OÙ]ÜÙXİ[Û‚ˆÙ]‚ˆ
-_B‚ˆØXİ]™UXˆOOH	Ùœ˜[˜Ú\ÙIÈ	‰ˆ
-ˆ]ˆÛ\ÜÓ˜[YOH˜™Ë]Ú]H›Ü™\ˆ›Ü™\‹\Û]KLŒ›İ[™YLMˆÚYİËLÜXÙK^KM‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‹M‚ˆ]‚ˆˆÛ\ÜÓ˜[YOH^[È›ÛX›XÚÈ^\Û]KNL‘œ˜[˜Ú\ÙH˜qgİ\[\±,OÚ‚ˆÛ\ÜÓ˜[YOH^^È^\Û]KML›Û[YY][H]LH”Ú\İ[H0ï™\š[™[ˆğí›™\š[[ˆY[šH[\Ú[Ú[ZÈpï˜XØX]\±,OÜ‚ˆÙ]‚ˆÙ]‚‚ˆ]ˆÛ\ÜÓ˜[YOH›İ™\™›İË^X]]È‚ˆX›HÛ\ÜÓ˜[YOHËY[^[Y^^È›Û[YY][H‚ˆXYÛ\ÜÓ˜[YOH˜™Ë\Û]KML^\Û]KML›ÛY^˜X›Û\\˜Ø\ÙH›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‚ˆ‚ˆÛ\ÜÓ˜[YOHœLÈ˜qgİ\H›Ïİ‚ˆÛ\ÜÓ˜[YOHœLÈYÛŞXYİ‚ˆÛ\ÜÓ˜[YOHœLÈ±,È1,0éÙOİ‚ˆÛ\ÜÓ˜[YOHœLÈ±,]qgÚ[Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ–X]1,\±,[H°ï0éÙ\ÚOİ‚ˆÛ\ÜÓ˜[YOHœLÈ•\šZİ‚ˆÛ\ÜÓ˜[YOHœLÈ‘\[Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ^\šYÚ±,1gÛ[Oİ‚ˆİ‚ˆİXY‚ˆ›ÙHÛ\ÜÓ˜[YOH™]šYK^H]šYK\Û]KNÍŒ‚ˆÙœ˜[˜Ú\ÙP\Ë›X\
+                      <h3 className="text-base font-black text-slate-900 flex items-center space-x-2">
+                        <FileText className="w-4 h-4 text-red-600" />
+                        <span>Bekleyen Franchise BaÅŸvurularÄ±</span>
+                      </h3>
+                      <button onClick={() => setActiveTab('franchise')} className="text-xs text-red-600 font-bold hover:underline">TÃ¼mÃ¼nÃ¼ GÃ¶r</button>
+                    </div>
 
-\
-HOˆ
-ˆˆÙ^O^Ø\šYHÛ\ÜÓ˜[YOHšİ™\˜™Ë\Û]KLLÍ˜[œÚ][Ûˆ‚ˆÛ\ÜÓ˜[YOHœLÈ›ÛX›XÚÈ^\™YMŒØ\šYOİ‚ˆÛ\ÜÓ˜[YOHœLÈ›ÛX›Û^\Û]KNLØ\›˜[Y_Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ^\Û]KMÌØ\˜Ú]_HÈØ\™\İšXİOİ‚ˆÛ\ÜÓ˜[YOHœLÈ^\Û]KMLØ\œÛ™_Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ›ÛX›Û^Y[Y\˜[MØ\˜YÙ]Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ^\Û]KMLØ\™]_Oİ‚ˆÛ\ÜÓ˜[YOHœLÈ‚ˆÜ[ˆÛ\ÜÓ˜[YO^ØL‹HKLH›İ[™YY[^VÌLH›ÛX›XÚÈ	Âˆ\œİ]\ÈOOH	ÓÛ˜^[[™1,IÈÈ	Ø™ËY[Y\˜[MLÌŒ^Y[Y\˜[M›Ü™\ˆ›Ü™\‹Y[Y\˜[MLÌÌ	È‚ˆ\œİ]\ÈOOH	Ğ™ZÛ[YYIÈÈ	Ø™ËX[X™\‹MLÌŒ^X[X™\‹M›Ü™\ˆ›Ü™\‹X[X™\‹MLÌÌ	È‚ˆ	Ø™Ë\™YMŒÌŒ^\™YML›Ü™\ˆ›Ü™\‹\™YMŒÌÌ	ÂˆXO‚ˆØ\œİ]\ßBˆÜÜ[‚ˆİ‚ˆÛ\ÜÓ˜[YOHœLÈ^\šYÚÜXÙK^LH‚ˆ]ÛˆÛÛXÚÏ^Ê
-HOˆ\]Qœ˜[˜Ú\ÙTİ]\Ê\šY	ÓÛ˜^[[™1,IÊ_HÛ\ÜÓ˜[YOHœL‹HKLH™ËY[Y\˜[MŒ^\Û]KNL›ÛX›Û›İ[™Y[È^VÌLHİ™\˜™ËY[Y\˜[MÌ˜[œÚ][Ûˆ“Û˜^[OØ]Û‚ˆ]ÛˆÛÛXÚÏ^Ê
-HOˆ\]Qœ˜[˜Ú\ÙTİ]\Ê\šY	Ô™YY[IÊ_HÛ\ÜÓ˜[YOHœL‹HKLH™Ë\™YMÌÌÌ^\™YML›Ü™\ˆ›Ü™\‹\™YMÌÌÌ›ÛX›Û›İ[™Y[È^VÌLHİ™\˜™Ë\™YMÌİ™\^]Ú]H˜[œÚ][Ûˆ”™Y]Ø]Û‚ˆİ‚ˆİ‚ˆ
-J_Bˆİ›ÙO‚ˆİX›O‚ˆÙ]‚ˆÙ]‚ˆ
-_B‚ˆËÊˆËˆ”SÒ1,ÑHÑ±,Èpå“‘U1,q,P’H
-‹ßBˆØXİj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5iveTab === 'offices' && (
+                    <div className="space-y-3">
+                      {franchiseApps.filter(a => a.status === 'Beklemede').map((app) => (
+                        <div key={app.id} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
+                          <div>
+                            <div className="font-bold text-xs text-slate-900">{app.name} ({app.city} / {app.district})</div>
+                            <div className="text-[11px] text-slate-500 font-medium">BÃ¼tÃ§e: {app.budget} Â· {app.date}</div>
+                          </div>
+                          <div className="flex space-x-1.5">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'OnaylandÄ±')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-slate-900 rounded-lg transition">
+                              <Check className="w-3.5 h-3.5" />
+                            </button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
+                              <X className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ONAY BEKLEYEN Ä°LANLAR */}
+                  <div className="bg-white border border-slate-200 rounded-2xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-base font-black text-slate-900 flex items-center space-x-2">
+                        <AlertCircle className="w-4 h-4 text-red-600" />
+                        <span>Onay Bekleyen Ä°lanlar</span>
+                      </h3>
+                      <button onClick={() => setActiveTab('listings')} className="text-xs text-red-600 font-bold hover:underline">TÃ¼mÃ¼nÃ¼ GÃ¶r</button>
+                    </div>
+
+                    <div className="space-y-3">
+                      {listings.filter(l => l.approvalStatus === 'Onay Bekliyor').map((listing) => (
+                        <div key={listing.id} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between">
+                          <div>
+                            <div className="font-bold text-xs text-slate-900 truncate max-w-[200px]">{listing.title}</div>
+                            <div className="text-[11px] text-slate-500 font-medium">{listing.agentName} Â· {listing.price.toLocaleString('tr-TR')} â‚º</div>
+                          </div>
+                          <div className="flex space-x-1.5">
+                            <button onClick={() => updateListingApproval(listing.id, 'YayÄ±nda')} className="p-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-slate-900 rounded-lg transition">
+                              <Check className="w-3.5 h-3.5" />
+                            </button>
+                            <button onClick={() => updateListingApproval(listing.id, 'Reddedildi')} className="p-1.5 bg-red-700/20 text-red-500 hover:bg-red-700 hover:text-white rounded-lg transition">
+                              <X className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            )}
+
+            {/* 2. FRANCHÄ°SE BAÅVURULARI TABI */}
+            {activeTab === 'users' && (
+              <div className="space-y-6">
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                  <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 sm:flex-row sm:items-center">
+                    <div><h2 className="text-xl font-black text-slate-900">KullanÄ±cÄ±lar</h2><p className="mt-1 text-xs font-medium text-slate-500">DanÄ±ÅŸman ve YÃ¶netici hesaplarÄ±nÄ± buradan gerÃ§ek giriÅŸ hesabÄ±yla oluÅŸturun.</p></div>
+                    <button onClick={() => { setShowNewUser((value) => !value); setUserFormError(''); setUserFormSuccess(''); }} className="rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/20">{showNewUser ? 'Formu Kapat' : '+ Yeni KullanÄ±cÄ±'}</button>
+                  </div>
+                  {showNewUser && <form onSubmit={submitNewUser} className="mt-5 rounded-2xl border border-red-100 bg-red-50/40 p-5">
+                    <div className="mb-4"><h3 className="font-black text-slate-900">Yeni KullanÄ±cÄ±</h3><p className="mt-1 text-xs text-slate-500">YÄ±ldÄ±zlÄ± alanlar zorunludur. E-posta ve kullanÄ±cÄ± adÄ± sistem genelinde benzersizdir.</p></div>
+                    {userFormError && <div className="mb-4 rounded-xl border border-red-200 bg-white p-3 text-xs font-bold text-red-700">{userFormError}</div>}
+                    {userFormSuccess && <div className="mb-4 rounded-xl border border-emerald-200 bg-white p-3 text-xs font-bold text-emerald-700">{userFormSuccess}</div>}
+                    <div className="grid gap-3 md:grid-cols-2">
+                      <label className="text-xs font-black text-slate-700">AD *<input value={newUser.firstName} onChange={(e) => setNewUser({ ...newUser, firstName: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">SOYAD *<input value={newUser.lastName} onChange={(e) => setNewUser({ ...newUser, lastName: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">KULLANICI ADI *<input value={newUser.username} onChange={(e) => setNewUser({ ...newUser, username: e.target.value.toLowerCase().replace(/\s/g, '') })} placeholder="ahmet.yilmaz" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">E-POSTA *<input type="email" value={newUser.email} onChange={(e) => setNewUser({ ...newUser, email: e.target.value })} placeholder="ahmet@ornek.com" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">TELEFON<input value={newUser.phone} onChange={(e) => setNewUser({ ...newUser, phone: e.target.value })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" /></label>
+                      <label className="text-xs font-black text-slate-700">ROL *<select value={newUser.role} onChange={(e) => setNewUser({ ...newUser, role: e.target.value as Exclude<PanelRole, 'admin'> })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium"><option value="advisor">DanÄ±ÅŸman</option><option value="manager">YÃ¶netici</option></select></label>
+                      <label className="text-xs font-black text-slate-700">ÅÄ°FRE *<input type="password" value={newUser.password} onChange={(e) => setNewUser({ ...newUser, password: e.target.value })} autoComplete="new-password" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">ÅÄ°FRE TEKRAR *<input type="password" value={newUser.passwordRepeat} onChange={(e) => setNewUser({ ...newUser, passwordRepeat: e.target.value })} autoComplete="new-password" className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium" required /></label>
+                      <label className="text-xs font-black text-slate-700">HESAP DURUMU<select value={newUser.status} onChange={(e) => setNewUser({ ...newUser, status: e.target.value as 'active' | 'inactive' })} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 font-medium"><option value="active">Aktif</option><option value="inactive">Pasif</option></select></label>
+                      <label className="flex items-center gap-2 self-end pb-3 text-xs font-bold text-slate-700"><input type="checkbox" checked={newUser.forcePasswordChange} onChange={(e) => setNewUser({ ...newUser, forcePasswordChange: e.target.checked })} className="h-4 w-4 accent-red-700"/> Ä°lk giriÅŸte ÅŸifre deÄŸiÅŸikliÄŸi zorunlu</label>
+                    </div>
+                    <button disabled={creatingUser} className="mt-5 rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{creatingUser ? 'KullanÄ±cÄ± oluÅŸturuluyorâ€¦' : 'KULLANICI OLUÅTUR'}</button>
+                  </form>}
+                </section>
+                <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl"><div className="overflow-x-auto"><table className="w-full min-w-[900px] text-left"><thead className="bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500"><tr><th className="px-5 py-4">KullanÄ±cÄ±</th><th className="px-5 py-4">KullanÄ±cÄ± AdÄ±</th><th className="px-5 py-4">E-posta</th><th className="px-5 py-4">Rol</th><th className="px-5 py-4">Durum</th><th className="px-5 py-4">Son GiriÅŸ</th><th className="px-5 py-4">OluÅŸturulma</th></tr></thead><tbody className="divide-y divide-slate-100">{usersLoading ? <tr><td colSpan={7} className="px-5 py-10 text-center text-sm font-bold text-slate-400">KullanÄ±cÄ±lar yÃ¼kleniyorâ€¦</td></tr> : managedUsers.length === 0 ? <tr><td colSpan={7} className="px-5 py-10 text-center text-sm font-bold text-slate-400">HenÃ¼z kullanÄ±cÄ± bulunmuyor.</td></tr> : managedUsers.map((user) => <tr key={user.id} className="text-xs text-slate-700"><td className="px-5 py-4 font-black text-slate-900">{user.first_name} {user.last_name}</td><td className="px-5 py-4 font-mono">{user.username}</td><td className="px-5 py-4">{user.email}</td><td className="px-5 py-4">{user.role === 'advisor' ? 'DanÄ±ÅŸman' : user.role === 'manager' ? 'YÃ¶netici' : 'Admin'}</td><td className="px-5 py-4"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${user.status === 'active' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-600'}`}>{user.status === 'active' ? 'Aktif' : user.status === 'inactive' ? 'Pasif' : user.status === 'suspended' ? 'AskÄ±ya alÄ±ndÄ±' : 'AyrÄ±ldÄ±'}</span></td><td className="px-5 py-4">{user.last_login_at ? new Date(user.last_login_at).toLocaleString('tr-TR') : 'â€”'}</td><td className="px-5 py-4">{new Date(user.created_at).toLocaleDateString('tr-TR')}</td></tr>)}</tbody></table></div></section>
+              </div>
+            )}
+
+            {activeTab === 'franchise' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-slate-900">Franchise BaÅŸvurularÄ±</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">Sistem Ã¼zerinden gÃ¶nderilen yeni temsilcilik mÃ¼racaatlarÄ±</p>
+                  </div>
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs font-medium">
+                    <thead className="bg-slate-50 text-slate-500 font-extrabold uppercase border-b border-slate-200">
+                      <tr>
+                        <th className="p-3">BaÅŸvuru No</th>
+                        <th className="p-3">Ad Soyad</th>
+                        <th className="p-3">Ä°l / Ä°lÃ§e</th>
+                        <th className="p-3">Ä°letiÅŸim</th>
+                        <th className="p-3">YatÄ±rÄ±m BÃ¼tÃ§esi</th>
+                        <th className="p-3">Tarih</th>
+                        <th className="p-3">Durum</th>
+                        <th className="p-3 text-right">Ä°ÅŸlem</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-800/60">
+                      {franchiseApps.map((app) => (
+                        <tr key={app.id} className="hover:bg-slate-100/40 transition">
+                          <td className="p-3 font-black text-red-600">{app.id}</td>
+                          <td className="p-3 font-bold text-slate-900">{app.name}</td>
+                          <td className="p-3 text-slate-700">{app.city} / {app.district}</td>
+                          <td className="p-3 text-slate-500">{app.phone}</td>
+                          <td className="p-3 font-bold text-emerald-400">{app.budget}</td>
+                          <td className="p-3 text-slate-500">{app.date}</td>
+                          <td className="p-3">
+                            <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
+                              app.status === 'OnaylandÄ±' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
+                              app.status === 'Beklemede' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
+                              'bg-red-600/20 text-red-500 border border-red-600/30'
+                            }`}>
+                              {app.status}
+                            </span>
+                          </td>
+                          <td className="p-3 text-right space-x-1">
+                            <button onClick={() => updateFranchiseStatus(app.id, 'OnaylandÄ±')} className="px-2.5 py-1 bg-emerald-600 text-slate-900 font-bold rounded-lg text-[10px] hover:bg-emerald-700 transition">Onayla</button>
+                            <button onClick={() => updateFranchiseStatus(app.id, 'Reddedildi')} className="px-2.5 py-1 bg-red-700/30 text-red-500 border border-red-700/30 font-bold rounded-lg text-[10px] hover:bg-red-700 hover:text-white transition">Reddet</button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* 3. FRANCHÄ°SE OFÄ°S YÃ–NETÄ°MÄ° TABI */}
+            {activeTab === 'offices' && (
               <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-6">
                 <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div>
@@ -1167,40 +4568,157 @@ _B‚ˆËÊˆËˆ”SÒ1,ÑHÑ±,Èpå“‘U1,q,P’H
                       </div>
 
                       <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between">
-                        <button className="text-xs text-slate-700 hover:text-slate-900 font-bÛM5¶‰Ëkºwµçf’#ìKY÷–W&“Âö÷F–öããÆ÷F–öâfÇVSÒ$'6#ä'6Âö÷F–öããÆ÷F–öâfÇVSÒ"#ävVæVÃÂö÷F–öããÂ÷6VÆV7CãÂöF—cà¢ÂöF—cãÂöF—cà¢ÆF—b6Æ74æÖSÒ&×BÓ2w&–Bw&–BÖ6öÇ2Ó6Ó¦w&–BÖ6öÇ2Õ³g%öWFõÒvÓ"#ãÆ–çWBfÇVS×¶—FVÒæ–ÖvWÒöä6†ævS×²†R’ÓâWFFT6FVv÷'’†—FVÒæ–BÂ²–ÖvS¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"FW‡B×‡2FW‡B×6ÆFRÓsfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs"Æ6V†öÆFW#Ò$|;g'6VÂU$Âw6’"óãÆÆ&VÂ6Æ74æÖSÒ&7W'6÷"×ö–çFW"&÷VæFVBÖÆr&÷&FW"&÷&FW"×&VBÓ#&r×&VBÓS‚Ó2’Ó"FW‡BÖ6VçFW"FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓs†÷fW#¦&r×&VBÓ#ãÆ–çWBG—SÒ&f–ÆR"66WCÒ&–ÖvRò¢"6Æ74æÖSÒ&†–FFVâ"öä6†ævS×²†R’Óâ†æFÆT6FVv÷'”–ÖvR†—FVÒæ–BÂRçF&vWBæf–ÆW3òå³Ò—Òóä|;g'6VÂ6\:sÂöÆ&VÃãÂöF—cà¢ÂöF—cà¢’—Ğ¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"Ó"&÷&FW"ÖF6†VB&÷&FW"×&VBÓ#&r×&VBÓSóCÓR#ãÆƒ26Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓ“#å–Væ’¶FVv÷&’V¶ÆSÂöƒ3ãÆF—b6Æ74æÖSÒ&×BÓBw&–Bw&–BÖ6öÇ2Ó6Ó¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2ÓBvÓ2#ãÆ–çWBfÇVS×¶æWt6FVv÷'’çF—FÆWÒöä6†ævS×²†R’Óâ6WDæWt6FVv÷'’‡²ââææWt6FVv÷'’ÂF—FÆS¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"ãRFW‡B×‡2föçBÖ&öÆB"Æ6V†öÆFW#Ò$¶FVv÷&’LK"óãÇ6VÆV7BfÇVS×¶æWt6FVv÷'’çG—WÒöä6†ævS×²†R’Óâ6WDæWt6FVv÷'’‡²ââææWt6FVv÷'’ÂG—S¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"ãRFW‡B×‡2föçBÖ&öÆB#ãÆ÷F–öãå6LKÌK³Âö÷F–öããÆ÷F–öãä¶—&ÌK³Âö÷F–öããÆ÷F–öãäFWg&VãÂö÷F–öããÂ÷6VÆV7CãÇ6VÆV7BfÇVS×¶æWt6FVv÷'’æ6FVv÷'—Òöä6†ævS×²†R’Óâ6WDæWt6FVv÷'’‡²ââææWt6FVv÷'’Â6FVv÷'“¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"ãRFW‡B×‡2föçBÖ&öÆB#ãÆ÷F–öãä¶öçWCÂö÷F–öããÆ÷F–öãìKY÷–W&“Âö÷F–öããÆ÷F–öãä'6Âö÷F–öããÆ÷F–öâfÇVSÒ"#ävVæVÃÂö÷F–öããÂ÷6VÆV7CãÆ'WGFöâöä6Æ–6³×¶FD6FVv÷'—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&r×&VBÓs‚ÓB’Ó"ãRFW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓ“†÷fW#¦&r×&VBÓƒ#ä¶FVv÷&’V¶ÆSÂö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓ2w&–Bw&–BÖ6öÇ2Ó6Ó¦w&–BÖ6öÇ2Õ³g%öWFõÒvÓ"#ãÆ–çWBfÇVS×¶æWt6FVv÷'’æ–ÖvWÒöä6†ævS×²†R’Óâ6WDæWt6FVv÷'’‡²ââææWt6FVv÷'’Â–ÖvS¢RçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'rÖgVÆÂ&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"ãRFW‡B×‡2"Æ6V†öÆFW#Ò$¶²|;g'6VÆ’U$Âw6’†—7F\IöR&IöÌK’"óãÆÆ&VÂ6Æ74æÖSÒ&7W'6÷"×ö–çFW"&÷VæFVB×†Â&÷&FW"&÷&FW"×&VBÓ#&r×v†—FR‚ÓB’Ó"ãRFW‡BÖ6VçFW"FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓs†÷fW#¦&r×&VBÓS#ãÆ–çWBG—SÒ&f–ÆR"66WCÒ&–ÖvRò¢"6Æ74æÖSÒ&†–FFVâ"öä6†ævS×²†R’Óâ²6öç7Bf–ÆRÒRçF&vWBæf–ÆW3òå³Ó²–b‚f–ÆR’&WGW&ã²6öç7B&VFW"ÒæWrf–ÆU&VFW"‚“²&VFW"æöæÆöBÒ‚’Óâ6WDæWt6FVv÷'’‡²ââææWt6FVv÷'’Â–ÖvS¢7G&–ær‡&VFW"ç&W7VÇB’Ò“²&VFW"ç&VD4FFU$Â†f–ÆR“²×Òóä|;g'6VÂ6\:sÂöÆ&VÃãÂöF—cãÂöF—cà¢ÂöF—cà¢—Ğ ¢¶7F—fUF"ÓÓÒvÆ–'&'’rbbÆF—b6Æ74æÖSÒ'76R×’Ób#ãÇ6V7F–öâ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓb6†F÷r×†Â#ãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâvÓB&÷&FW"Ö"&÷&FW"×6ÆFRÓ#"ÓR6Ó¦fÆW‚×&÷r6Ó¦—FV×2Ö6VçFW"#ãÆF—cãÆƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×6ÆFRÓ“#å&VÇG’¼;ÇL;Ç†æRœ;fæWF–Ö“Âöƒ#ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#ä¶FVv÷&–ÆW&’fR'R¶FVv÷&–ÆW&FR–œKÖÆæ6²¦Væv–âœ:vW&–¶ÆW&’œ;fæWF–âãÂ÷ãÂöF—cãÆ'WGFöâöä6Æ–6³×¶FDÆ–'&'”6FVv÷'—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&r×&VBÓs‚ÓB’Ó2FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FR#â²–Væ’¶FVv÷&“Âö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓR76R×’ÓB#ç¶Æ–'&'”6FVv÷&–W2æÖ‚†6FVv÷'’“ÓãÆF—b¶W“×¶6FVv÷'’æ–GÒ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓSÓB#ãÆF—b6Æ74æÖSÒ&w&–BvÓ2ÖC¦w&–BÖ6öÇ2Õ³g%óg%ó#…öWFõÒ#ãÆ–çWBfÇVS×¶6FVv÷'’çF—FÆWÒöä6†ævS×²†R“ÓçWFFTÆ–'&'”6FVv÷'’†6FVv÷'’æ–BÇ·F—FÆS¦RçF&vWBçfÇVWÒ—ÒÆ6V†öÆFW#Ò$¶FVv÷&’LK"6Æ74æÖSÒ'&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"FW‡B×‡2föçBÖ&Æ6²"óãÆ–çWBfÇVS×¶6FVv÷'’ç6ÇVwÒöä6†ævS×²†R“ÓçWFFTÆ–'&'”6FVv÷'’†6FVv÷'’æ–BÇ·6ÇVs¦RçF&vWBçfÇVRçFôÆö6ÆTÆ÷vW$66R‚wG"ÕE"r’ç&WÆ6R‚õÇ2²örÂrÒr—Ò—ÒÆ6V†öÆFW#Ò&¶FVv÷&’Ö&vÆçF—6’"6Æ74æÖSÒ'&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"FW‡B×‡2"óãÆÆ&VÂ6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2FW‡BÕ³…ÒföçBÖ&Æ6²#å&Væ³Æ–çWBG—SÒ&6öÆ÷""fÇVS×¶6FVv÷'’æ6öÆ÷'Òöä6†ævS×²†R“ÓçWFFTÆ–'&'”6FVv÷'’†6FVv÷'’æ–BÇ¶6öÆ÷#¦RçF&vWBçfÇVWÒ—Ò6Æ74æÖSÒ&‚ÓrrÓ‚"óãÂöÆ&VÃãÆ'WGFöâöä6Æ–6³×²‚“Õš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍOœÙ]Xœ˜\PØ]YÛÜšY\Ê
-İ\œ™[
-OO˜İ\œ™[™š[\Š
-][JOOš][KšYOOXØ]YÛÜKšY
-J_HÛ\ÜÓ˜[YOHœLˆ^VÌLH›ÛX›XÚÈ^\™YMÌ’Ø]YÛÜš^ZHØ[1,\Ø]Û^\™XH›İÜÏ^ÌŸH˜[YO^ØØ]YÛÜK™\ØÜš\[ÛŸHÛÚ[™ÙO^ÊJOO\]SXœ˜\PØ]YÛÜJØ]YÛÜKšYÙ\ØÜš\[Û™K\™Ù]˜[Y_J_HXÙZÛ\H’Ø]YÛÜšHpéñ,ZÛ[X\ñ,HˆÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\Û]KLÌ™Ë]Ú]HLÈKLˆ^^ÈXY[™ËMHY˜ÛÛ\Ü[‹M‹ÏÙ]]ˆÛ\ÜÓ˜[YOH›]M›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›Ü™\‹]›Ü™\‹\Û]KLŒMİ›Û™ÈÛ\ÜÓ˜[YOH^^È^\Û]KN±,0éÙ\šZÛ\ˆ
-ØØ]YÛÜK˜\XÛ\Ë›[™İJOÜİ›Û™Ï]ÛˆÛÛXÚÏ^Ê
-OO˜YXœ˜\P\XÛJØ]YÛÜKšY
-_HÛ\ÜÓ˜[YOHœ›İ[™Y[È›Ü™\ˆ›Ü™\‹\™YLŒ™Ë]Ú]HLÈKLˆ^VÌLH›ÛX›XÚÈ^\™YMÌŠÈ1,0éÙ\šZÈZÛOØ]ÛÙ]ØØ]YÛÜK˜\XÛ\Ë›[™İŒ	‰]ˆÛ\ÜÓ˜[YOH›]LÈÜšYØ\LˆÛN™ÜšYXÛÛËLˆØØ]YÛÜK˜\XÛ\Ë›X\
+                        <button className="text-xs text-slate-700 hover:text-slate-900 font-bold">Detay</button>
+                        <button className="text-xs text-amber-500 hover:text-amber-400 font-bold">Åifre SÄ±fÄ±rla</button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
-\XÛJOO]ˆÙ^O^Ø\XÛKšYHÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\LÈ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HLÈ[YÈÜ˜Ï^Ø\XÛKš[XYÙ_	ËÙ[[Ë\XÙZÛ\‹œİ™ÉßH[HˆˆÛ\ÜÓ˜[YOHšLMËLŒ›İ[™Y[È™Ë\Û]KLLØš™XİXÛİ™\ˆ‹Ï]ˆÛ\ÜÓ˜[YOH›Z[‹]ËL›^LHÛ\ÜÓ˜[YOH[˜Ø]H^^È›ÛX›XÚÈ^\Û]KNLØ\XÛK]_OÜ]ÛˆÛÛXÚÏ^Ê
-OOœÙ]Y][™ÓXœ˜\P\XÛJØØ]YÛÜRY˜Ø]YÛÜKšY\XÛRY˜\XÛKšYJ_HÛ\ÜÓ˜[YOH›]LH^VÌLH›ÛX›XÚÈ^\™YMÌ±,0éÙ\šq'ÚH0ï™[›OØ]ÛÙ]]ÛˆÛÛXÚÏ^Ê
-OO\]SXœ˜\PØ]YÛÜJØ]YÛÜKšYØ\XÛ\Î˜Ø]YÛÜK˜\XÛ\Ë™š[\Š
-][JOOš][KšYOOX\XÛKšY
-_J_HÛ\ÜÓ˜[YOH^^È›ÛX›XÚÈ^\Û]KM°åÏØ]ÛÙ]Š_OÙ]ŸOÙ]Š_OÙ]]ÛˆÛÛXÚÏ^ÜØ]™SXœ˜\_HÛ\ÜÓ˜[YOH›]MˆËY[›İ[™Y^™Ë\™YMÌMHKM^\ÛH›ÛX›XÚÈ^]Ú]HÛXœ˜\TØ]™YÉÒğï0ï[™HØ^YY[H8§$ÉÎ‰Õ0ïHğï0ï[™^ZHØ^Y]	ßOØ]ÛÜÙXİ[ÛÙY][™ÓXœ˜\P\XÛI‰Š
+            {/* 5. Ä°LAN ONAY MEKANÄ°ZMASI TABI */}
+            {activeTab === 'listings' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+                  <div>
+                    <h2 className="text-lg font-black text-slate-900">Ä°lan Onay MekanizmasÄ±</h2>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">YayÄ±ndaki ilanlarÄ± denetleyin; vitrin gÃ¶rÃ¼nÃ¼rlÃ¼ÄŸÃ¼nÃ¼ buradan ekleyip kaldÄ±rÄ±n.</p>
+                  </div>
+                </div>
 
-OOØÛÛœİØ]YÛÜO[Xœ˜\PØ]YÛÜšY\Ë™š[™
+                <div className="space-y-3">
+                  {listings.map((item) => (
+                    <div key={item.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div className="flex items-center space-x-4">
+                        <img src={'image' in item ? item.image : '/demo-placeholder.svg'} alt={item.title} className="w-16 h-12 object-cover rounded-lg" />
+                        <div>
+                          <div className="flex items-center space-x-2">
+                            <span className="text-xs font-black text-slate-900">{item.title}</span>
+                            <span className="text-[10px] font-bold text-red-600">({item.id})</span>
+                          </div>
+                          <p className="text-[11px] text-slate-500 mt-0.5">{item.city} / {item.district} Â· {item.price.toLocaleString('tr-TR')} â‚º Â· DanÄ±ÅŸman: {item.agentName}</p>
+                        </div>
+                      </div>
 
-][JOOš][KšYOOYY][™ÓXœ˜\P\XÛK˜Ø]YÛÜRY
-NØÛÛœİ\XÛOXØ]YÛÜOË˜\XÛ\Ë™š[™
+                      <div className="flex items-center space-x-2">
+                        <span className={`px-2.5 py-1 rounded-full text-[10px] font-black ${
+                          item.approvalStatus === 'YayÄ±nda' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
+                          item.approvalStatus === 'Onay Bekliyor' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' :
+                          'bg-red-600/20 text-red-500 border border-red-600/30'
+                        }`}>
+                          {item.approvalStatus}
+                        </span>
 
-][JOOš][KšYOOYY][™ÓXœ˜\P\XÛK˜\XÛRY
-NÚYŠXØ]YÛÜ_X\XÛJ\™]\›ˆ[Ü™]\›ˆÙXİ[ÛˆÛ\ÜÓ˜[YOHœ›İ[™YL›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë]Ú]HMˆÚYİË^]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆ\İYKX™]ÙY[ˆ›Ü™\‹Xˆ›Ü™\‹\Û]KLŒ‹M]Û\ÜÓ˜[YOH^VÌLH›ÛX›XÚÈ^\™YMÌØØ]YÛÜK]_OÜÈÛ\ÜÓ˜[YOH›]LH›ÛX›XÚÈ^\Û]KNL±,0éÙ\šZÈY]0íœ°ïÚÏÙ]]ÛˆÛÛXÚÏ^Ê
-OOœÙ]Y][™ÓXœ˜\P\XÛJ[
-_HÛ\ÜÓ˜[YOHœ›İ[™Y[È™Ë\Û]KLLLÈKLˆ^^È›ÛX›XÚÈ^\Û]KMŒ’Ø\]Ø]ÛÙ]]ˆÛ\ÜÓ˜[YOH›]MHÜšYØ\MY™ÜšYXÛÛËLˆ[œ]˜[YO^Ø\XÛK]_HÛÚ[™ÙO^ÊJOO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYİ]N™K\™Ù]˜[Y_J_HXÙZÛ\H±,0éÙ\šZÈ˜qgÛ1,q'ñ,HˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌMKLÈ^\ÛH›ÛX›XÚÈY˜ÛÛ\Ü[‹Lˆ‹Ï^\™XH›İÜÏ^ÌßH˜[YO^Ø\XÛKœİ[[X\_HÛÚ[™ÙO^ÊJOO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYÜİ[[X\N™K\™Ù]˜[Y_J_HXÙZÛ\H’Ø\H™HX^±,HÚ\šqgÚ[™Hğíœ°ï™XÙZÈ0í™]ˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌMKLÈ^^ÈXY[™ËMHY˜ÛÛ\Ü[‹Lˆ‹Ï[œ]\OH™]Hˆ˜[YO^Ø\XÛKœX›\ÚY]œÛXÙJL
-_HÛÚ[™ÙO^ÊJOO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYÜX›\ÚY]›™]È]J	ÙK\™Ù]˜[Y_ULŒŒ
-KÒTÓÔİš[™Ê
-_J_HÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌMKLÈ^^È‹Ï[œ]˜[YO^Ø\XÛKš[XYÙKœİ\ÕÚ]
-	Ù]N‰ÊOÉÉÎ˜\XÛKš[XYÙ_HÛÚ[™ÙO^ÊJOO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYÚ[XYÙN™K\™Ù]˜[Y_J_HXÙZÛ\H’Ø\ZÈğíœœÙ[HT“	ÜÚHˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLÌMKLÈ^^È‹ÏX™[Û\ÜÓ˜[YOH˜İ\œÛÜ‹\Ú[\ˆ›İ[™Y^›Ü™\‹Lˆ›Ü™\‹Y\ÚY›Ü™\‹\™YLŒ™Ë\™YMLM^XÙ[\ˆ^^È›ÛX›XÚÈ^\™YMÌY˜ÛÛ\Ü[‹Lˆ[œ]\OH™š[HˆXØÙ\Hš[XYÙKÊˆˆÛ\ÜÓ˜[YOHšY[ˆˆÛÚ[™ÙO^ÊJOO\ØYXœ˜\R[XYÙJØ]YÛÜKšY\XÛKšYK\™Ù]™š[\ÏË–ÌJ_KÏØ\XÛKš[XYÙOÉÒØ\ZÈğíœœÙ[[šHq'Úqgİ\‰Î‰Ğš[Ú\Ø^X\™[ˆØ\ZÈğíœœÙ[HÙpéÉßOÛX™[Ø\XÛKš[XYÙI‰[YÈÜ˜Ï^Ø\XÛKš[XYÙ_H[H’Ø\ZÈ0í›š^›[YHˆÛ\ÜÓ˜[YOH›X^ZMMˆËY[›İ[™Y^™Ë\Û]KLLØš™XİXÛİ™\ˆY˜ÛÛ\Ü[‹Lˆ‹ÏŸO]ˆÛ\ÜÓ˜[YOH›Y˜ÛÛ\Ü[‹LˆšXÚ^Y]Üˆ˜[YO^Ø\XÛK˜ÛÛ[HÛÚ[™ÙO^ÊÛÛ[
-OO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYØÛÛ[J_KÏÙ]Ù]]ÛˆÛÛXÚÏ^ÜØ]™SXœ˜\_HÛ\ÜÓ˜[YOH›]MHËY[›İ[™Y^™Ë\™YMÌMHKLÈ^\ÛH›ÛX›XÚÈ^]Ú]HÛXœ˜\TØ]™YÉñ,0éÙ\šZÈØ^YY[H8§$ÉÎ‰ñ,0éÙ\šq'ÚHØ^Y]™HX^q,[›IßOØ]Û¶ÓMm¢G§²ÚîÆ­yĞÁä´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬ˆù½ÉµÔQ•µ¥é±”€¼Y…é—œğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸½¹±¥¬õí…‘‘Y¥‘•½ô‘¥Í…‰±•õíÙ¥‘•½M…Ù¥¹ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÜÀÀÁà´ÔÁä´ÌÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”‘¥Í…‰±•é½Á…¥Ñä´ØÀˆùíÙ¥‘•½M…Ù¥¹œ€ü€e½ÕQÕ‰”‰¥±¥±•É¤…³Å»Åå½ËŠ˜œ€è•‘¥Ñ¥¹Y¥‘•½%€ü€—}§}¥­±¥­±•É¤-…å‘•Ğœ€è€Y¥‘•½åÔe…çÅ¹±„ôğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½Üµá°ˆøñ Ì±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùe…çÅ¹‘…­¤5•‘å„ƒÃ•É¥­±•É¤€¡íÙ¥‘•½Ì¹±•¹Ñ¡ô¤ğ½ Ìøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ĞÉ¥…À´ĞµéÉ¥µ½±Ì´ÈˆùíÙ¥‘•½Ì¹µ…À ¡Ù¥‘•¼¤€ôø€ñ‘¥Ø­•äõíÙ¥‘•¼¹¥‘ô±…ÍÍ9…µ”ô‰™±•à…À´ÌÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÀ´Ìˆøñ¥µœÍÉŒõíÙ¥‘•¼¹Ñ¡Õµ‰¹…¥°ñğ€œ½‘•µ¼µÁ±…•¡½±‘•È¹ÍÙœô…±Ğôˆˆ±…ÍÍ9…µ”ô‰ ´ÈÀÜ´ÈàÉ½Õ¹‘•µ±œ‰œµÍ±…Ñ”´ÄÀÀ½‰©•Ğµ½Ù•Èˆ¼øñ‘¥Ø±…ÍÍ9…µ”ô‰µ¥¸µÜ´À™±•à´ÄˆøñÀ±…ÍÍ9…µ”ô‰±¥¹”µ±…µÀ´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùíÙ¥‘•¼¹Ñ¥Ñ±•ôğ½ÀøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµlÄÁÁát™½¹Ğµ‰½±Ñ•áĞµÉ•´ÜÀÀˆùíÙ¥‘•¼¹…Ñ•½Éä€ôôô€¹•İÌœ€ü€I•…±Ñä!…‰•É±•Èœ€è€I•…±ÑäQXôƒ
-ÜíÙ¥‘•¼¹Í½ÕÉ”€ôôô€å½ÕÑÕ‰”œ€ü€e½ÕQÕ‰”œ€è€gñ­±•¹•¸Y¥‘•¼ôğ½Àøñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôø•‘¥ÑY¥‘•¼¡Ù¥‘•¼¥ô±…ÍÍ9…µ”ô‰µÈ´ĞµĞ´ÌÑ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆùñé•¹±”ğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÉ•µ½Ù•Y¥‘•¼¡Ù¥‘•¼¹¥¥ô±…ÍÍ9…µ”ô‰µĞ´ÌÑ•áĞµlÄÁÁát™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆùY¥‘•½åÔ­…±“ÅÈğ½‰ÕÑÑ½¸øğ½‘¥Øøğ½‘¥Øø¥ôğ½‘¥Øøğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€¥ô((€€€€€€€€€€€ì¼¨€Ø¸OÁMQ45M)1I$Q	$€¨½ô(€€€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€‰Õå•ÉI•ÅÕ•ÍÑÌœ€˜˜€ (€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´ĞÉ½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½Ü´Éá°ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁˆ´Ğˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ±œ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù³ÅÄQ…±•Á±•É¤Ù”	¥±‘¥É¥µ±•Èğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ÔÀÀˆù!•ÈÑ…±•À•¹•°µ•É­•é”°¥±¥±¤½™¥Í”Ù”‹Ù±•‘•­¤‘…»Ç}µ…¹±…É„çÙ¹±•¹‘¥É¥±¥È¸ğ½Àøğ½‘¥Øùí‰Õå•ÉI•ÅÕ•ÍÑÌ¹±•¹Ñ €ü‰Õå•ÉI•ÅÕ•ÍÑÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ‘¥Ø­•äõí¥Ñ•´¹¥‘ô±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÀ´Ğˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµ½°©ÕÍÑ¥™äµ‰•Ñİ••¸…À´ÌÍ´é™±•àµÉ½Üˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆùí¥Ñ•´¹¥‘ôƒ
-Üí¹•Ü…Ñ”¡¥Ñ•´¹É•…Ñ•‘Ğ¤¹Ñ½1½…±•MÑÉ¥¹œ ÑÈµQHœ¥ôğ½Àøñ Ì±…ÍÍ9…µ”ô‰µĞ´Ä™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùí¥Ñ•´¹¹…µ•ôƒ
-Üí¥Ñ•´¹ÑåÁ•ôí¥Ñ•´¹ÁÉ½Á•ÉÑåôğ½ ÌøñÀ±…ÍÍ9…µ”ô‰µĞ´ÄÑ•áĞµáÌÑ•áĞµÍ±…Ñ”´ØÀÀˆùí¥Ñ•´¹¥Ñåô€¼í¥Ñ•´¹‘¥ÍÑÉ¥Ñôƒ
-Üí¥Ñ•´¹‰Õ‘•Ğñğ€ñÓ”‰•±¥ÉÑ¥±µ•‘¤ôƒ
-Üí¥Ñ•´¹Á¡½¹•ôğ½Àøğ½‘¥ØøñÍ•±•ĞÙ…±Õ”õí¥Ñ•´¹ÍÑ…ÑÕÍô½¹¡…¹”õì¡”¤€ôøì½¹ÍĞ¹•áĞ€ô‰Õå•ÉI•ÅÕ•ÍÑÌ¹µ…À ¡•¹ÑÉä¤€ôø•¹ÑÉä¹¥€ôôô¥Ñ•´¹¥€üì€¸¸¹•¹ÑÉä°ÍÑ…ÑÕÌè”¹Ñ…É•Ğ¹Ù…±Õ”…Ì	Õå•ÉI•ÅÕ•ÍÑlÍÑ…ÑÕÌtô€è•¹ÑÉä¤ìÍ•Ñ	Õå•ÉI•ÅÕ•ÍÑÌ¡¹•áĞ¤ìÍ…Ù•	Õå•ÉI•ÅÕ•ÍÑÌ¡¹•áĞ¤ìõô±…ÍÍ9…µ”ô‰ µ™¥ĞÉ½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀ‰œµİ¡¥Ñ”Áà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ÜÀÀˆøñ½ÁÑ¥½¸ùe•¹¤ğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ûÁ¹•±•¹¥å½Èğ½½ÁÑ¥½¸øñ½ÁÑ¥½¸ù}±—}Ñ¥É¥±‘¤ğ½½ÁÑ¥½¸øğ½Í•±•Ğøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÌÉ¥…À´ÈÑ•áĞµáÌÍ´éÉ¥µ½±Ì´ÈˆøñÀ±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰œµİ¡¥Ñ”À´ÌÑ•áĞµÍ±…Ñ”´ØÀÀˆøñÍÑÉ½¹œ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´äÀÀˆù=™¥Ì‰¥±‘¥É¥µ¤èğ½ÍÑÉ½¹œøí¥Ñ•´¹½™™¥•9…µ•Ì¹±•¹Ñ €ü¥Ñ•´¹½™™¥•9…µ•Ì¹©½¥¸ œ°€œ¤€è€•¹•°µ•É­•è—}±—}Ñ¥Éµ•Í¤‰•­±¥å½Èôğ½ÀøñÀ±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰œµİ¡¥Ñ”À´ÌÑ•áĞµÍ±…Ñ”´ØÀÀˆøñÍÑÉ½¹œ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ±…Ñ”´äÀÀˆù…»Ç}µ…¸‰¥±‘¥É¥µ¤èğ½ÍÑÉ½¹œøí¥Ñ•´¹…•¹Ñ9…µ•Ì¹±•¹Ñ €ü¥Ñ•´¹…•¹Ñ9…µ•Ì¹©½¥¸ œ°€œ¤€è€Ù±”‘…»Ç}µ…»Ä—}±—}Ñ¥Éµ•Í¤‰•­±¥å½Èôğ½Àøğ½‘¥Øøğ½‘¥Øø¤€è€ñÀ±…ÍÍ9…µ”ô‰Áä´ÄÀÑ•áĞµ•¹Ñ•ÈÑ•áĞµÍ´™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ÔÀÀˆù!•»ñè…³ÅÄÑ…±•‰¤å½¬¸ğ½Àùôğ½‘¥Øø(€€€€€€€€€€€€¥ô((€€€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€É´œ€˜˜€ñI5]½É­ÍÁ…”¥Í5…¹…•ÈõíÑÉÕ•ô…‘Ù¥Í½É9…µ”ô‰5•É­•ègÙ¹•Ñ¥´ˆ€¼ùô((€€€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€µ•ÍÍ…•Ìœ€˜˜€ (€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÉ½Õ¹‘•´Éá°À´ØÍ¡…‘½Ü´Éá°ÍÁ…”µä´Ğˆø(€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁˆ´Ğˆø(€€€€€€€€€€€€€€€€€€ñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ±œ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùM¥ÍÑ•´5•Í…©±…ËÄğ½ Èø(€€€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌÑ•áĞµÍ±…Ñ”´ÔÀÀ™½¹Ğµµ•‘¥Õ´µĞ´À¸ÔˆûÁ±•Ñ§}¥´™½ÉµÕ¹‘…¸•¹•°µ•É­•é”“ó}•¸µ•Í…©±…Èğ½Àø(€€€€€€€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´Ìˆø(€€€€€€€€€€€€€€€€€í½¹Ñ…Ñ5•ÍÍ…•Ì¹µ…À ¡µÍœ¤€ôø€ (€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø­•äõíµÍœ¹¥‘ô±…ÍÍ9…µ”ô‰‰œµÍ±…Ñ”´ÔÀÀ´ĞÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÍÁ…”µä´Èˆø(€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸Ñ•áĞµáÌˆø(€€€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùíµÍœ¹Í•¹‘•Éô€¡íµÍœ¹•µ…¥±ô¤ğ½ÍÁ…¸ø(€€€€€€€€€€€€€€f«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³RÇ7â6Æ74æÖSÒ'FW‡B×6ÆFRÓS#ç¶×6ræFFWÓÂ÷7ãà¢ÂöF—cà¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓsföçBÖ&öÆB#ç¶×6rç7V&¦V7GÓÂ÷à¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS#åFVÃ¢¶×6rç†öæWÓÂ÷à¢ÂöF—cà¢’—Ğ¢ÂöF—cà¢ÂöF—cà¢—Ğ ¢¶7F—fUF"ÓÓÒvfVVF&6²rbb€¢ÆF—b6Æ74æÖSÒ'76R×’ÓR#ãÆF—b6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓb6†F÷rÓ'†Â#ãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚×w&—FV×2ÖVæB§W7F–g’Ö&WGvVVâvÓ2&÷&FW"Ö"&÷&FW"×6ÆFRÓ#"ÓB#ãÆF—cãÆƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×6ÆFRÓ“#äÜ;ÌY÷FW&’vW&’&–ÆF—&–ÖÆW&“Âöƒ#ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#äÖVÖçVæ—–WBÂFìKYöÖâööf—2F\IöW&ÆVæF—&ÖVÆW&’ÂYö–¼:'–WBfRF–ÆV²¶œKFÆ,KãÂ÷ãÂöF—cãÇ7â6Æ74æÖSÒ'&÷VæFVBÖgVÆÂ&r×&VBÓ‚Ó2’ÓFW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×&VBÓs#ç¶fVVF&6´—FV×2æÆVæwF‡Ò¶œKCÂ÷7ããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓR76R×’Ó2#ç¶fVVF&6´—FV×2æÆVæwF‚òfVVF&6´—FV×2æÖ‚†—FVÒ’ÓâÆ'F–6ÆR¶W“×¶—FVÒæ–GÒ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓSÓB#ãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚×w&—FV×2×7F'B§W7F–g’Ö&WGvVVâvÓ2#ãÆF—cãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚×w&—FV×2Ö6VçFW"vÓ"#ãÇ7â6Æ74æÖSÒ'&÷VæFVBÖgVÆÂ&r×&VBÓ‚Ó"ãR’ÓFW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×&VBÓs#ç¶—FVÒçG—WÓÂ÷7ãç¶—FVÒç&F–ærâbbÇ7â6Æ74æÖSÒ'FW‡B×6ÒG&6¶–ær×v–FRFW‡BÖÖ&W"ÓC#ç²~)ˆRrç&WVB†—FVÒç&F–ær—ÓÇ7â6Æ74æÖSÒ'FW‡B×6ÆFRÓ3#ç²~)ˆRrç&WVBƒRÖ—FVÒç&F–ær—ÓÂ÷7ããÂ÷7ãçÓÂöF—cãÆƒ26Æ74æÖSÒ&×BÓ"FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç¶—FVÒç7V&¦V7BÇÂ—FVÒævVçBÇÂ—FVÒæöff–6RÇÂtvW&’&–ÆF—&–ÒwÓÂöƒ3ãÇ6Æ74æÖSÒ&×BÓFW‡BÕ³…ÒföçBÖ&öÆBFW‡B×6ÆFRÓS#ç¶—FVÒææÖWÒ+r¶—FVÒç†öæWÒ¶—FVÒæVÖ–Âbb+rG¶—FVÒæVÖ–ÇÖÓÂ÷ãÂöF—cãÇ6VÆV7BfÇVS×¶—FVÒç7FGW7Òöä6†ævS×²†R’ÓâWFFTfVVF&6µ7FGW2†—FVÒæ–BÂRçF&vWBçfÇVR27W7FöÖW$fVVF&6µ²w7FGW2uÒ—Ò6Æ74æÖSÒ'&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3&r×v†—FR‚Ó2’Ó"FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×6ÆFRÓs#ãÆ÷F–öãå–Væ“Âö÷F–öããÆ÷F–öãìKæ6VÆVæ—–÷#Âö÷F–öããÆ÷F–öãå–ìKFÆæLKÂö÷F–öããÂ÷6VÆV7CãÂöF—cç²†—FVÒævVçBÇÂ—FVÒæöff–6R’bbÇ6Æ74æÖSÒ&×BÓ2FW‡BÕ³…ÒföçBÖ&Æ6²FW‡B×&VBÓs#ç¶—FVÒævVçBòFìKYöÖã¢G¶—FVÒævVçGÖ¢öf—3¢G¶—FVÒæöff–6WÖÓÂ÷çÓÇ6Æ74æÖSÒ&×BÓ2v†—FW76R×&RÖÆ–æRFW‡B×‡2ÆVF–ærÓRFW‡B×6ÆFRÓs#ç¶—FVÒæÖW76vWÓÂ÷ãÇ6Æ74æÖSÒ&×BÓ2FW‡BÕ³…ÒföçBÖ&öÆBFW‡B×6ÆFRÓC#ç¶æWrFFR†—FVÒæ7&VFVDB’çFôÆö6ÆU7G&–ær‚wG"ÕE"r—Ò+r¶—FVÒæ–GÓÂ÷ãÂö'F–6ÆSâ’¢ÆF—b6Æ74æÖSÒ'&÷VæFVB×†Â&r×6ÆFRÓSÓ‚FW‡BÖ6VçFW"FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓS#ä†Vì;Ç¢Ü;ÌY÷FW&’vW&’&–ÆF—&–Ö’'VÇVæ×W–÷"ãÂöF—cçÓÂöF—cãÂöF—cãÂöF—cà¢—Ğ ¢¶7F—fUF"ÓÓÒv6÷'÷&FRrbb€¢ÆF—b6Æ74æÖSÒ'76R×’Ób#ãÇ6V7F–öâ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓb6†F÷r×†Â#ãÆF—b6Æ74æÖSÒ&&÷&FW"Ö"&÷&FW"×6ÆFRÓ#"ÓB#ãÆƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ä†¶¼KÜK¦FfRœ;fæWF–Ò¶G&÷7SÂöƒ#ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#ä·W'V×6Â†–¼:'–W–’Âœ;fæWF–6’f÷FüI÷&fÆ,KìKÂVçfæÆ,KìKfR;g¦v\:vÖœYöÆW&–æ’L;Ç¦VæÆW––âãÂ÷ãÂöF—cãÆÆ&VÂ6Æ74æÖSÒ&×BÓR&Æö6²FW‡B×‡2föçBÖ&Æ6²FW‡B×6ÆFRÓs#å4TòW—VÖÇR†¶¼KÜK¦F†–¼:'–W6“ÂöÆ&VÃãÇFW‡F&V&÷w3×³'ÒfÇVS×¶&÷WE7F÷'—Òöä6†ævS×²†R’Óâ6WD&÷WE7F÷'’†RçF&vWBçfÇVR—Ò6Æ74æÖSÒ&×BÓ"rÖgVÆÂ&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3‚ÓB’Ó2FW‡B×6ÒÆVF–ærÓb÷WFÆ–æRÖæöæRfö7W3¦&÷&FW"×&VBÓc"óãÂ÷6V7F–öããÇ6V7F–öâ6Æ74æÖSÒ'&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×v†—FRÓb6†F÷r×†Â#ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ#ãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×6ÆFRÓ“#åœ;fæWF–Ò¶G&÷7SÂöƒ3ãÆ'WGFöâöä6Æ–6³×²‚’Óâ6WDÖævVÖVçB…²ââæÖævVÖVçBÇ²–C¦–öæWF–ÒÒG´FFRææ÷r‚—ÖÂæÖS¢u–Væ’œ;fæWF–6’rÂF—FÆS¢t|;g&Wf’rÂ–ÖvS¢röFVÖò×Æ6V†öÆFW"ç7frrÂ&–öw&‡“¢|9g¦v\:vÖœYò&–Æv—6’v—&–æ—¢ârÕÒ—Ò6Æ74æÖSÒ'&÷VæFVBÖÆr&r×&VBÓs‚ÓB’Ó"FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FR#â²œ;fæWF–6’V¶ÆSÂö'WGFöããÂöF—cãÆF—b6Æ74æÖSÒ&×BÓR76R×’ÓB#ç¶ÖævVÖVçBæÖ‚†ÖVÖ&W"Æ–æFW‚’ÓâÆF—b¶W“×¶ÖVÖ&W"æ–GÒ6Æ74æÖSÒ&w&–BvÓB&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓSÓBÖC¦w&–BÖ6öÇ2Õ³…óg%Ò#ãÆ–Ör7&3×¶ÖVÖ&W"æ–ÖvWÒÇCÒ""6Æ74æÖSÒ&‚Ó#‚rÓ#‚&÷VæFVB×†Â&r×v†—FRö&¦V7BÖ6÷fW"ö&¦V7B×F÷"óãÆF—b6Æ74æÖSÒ&w&–BvÓ26Ó¦w&–BÖ6öÇ2Ó"#ãÆ–çWBfÇVS×¶ÖVÖ&W"ææÖWÒöä6†ævS×²†R’Óâ6WDÖævVÖVçB†ÖævVÖVçBæÖ‚†—FVÒÆ’’Óâ’ÓÓÒ–æFW‚ò²ââæ—FVÒÆæÖS¦RçF&vWBçfÇVWÒ¢—FVÒ’—ÒÆ6V†öÆFW#Ò$B6÷–B"6Æ74æÖSÒ'&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ3´Ó[h‘éì¶»§q«^up gap-2">
+                        {item.approvalStatus !== 'YayÄ±nda' && (
+                          <button onClick={() => updateListingApproval(item.id, 'YayÄ±nda')} className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-lg transition">YayÄ±na Al</button>
+                        )}
+                        {item.approvalStatus === 'YayÄ±nda' && (
+                          <button onClick={() => toggleFeaturedListing(item.id)} className={`px-3 py-1 font-black text-xs rounded-lg transition ${featuredListingIds.includes(item.id) ? 'bg-red-700 text-white hover:bg-red-800' : 'border border-red-200 bg-white text-red-700 hover:bg-red-50'}`}>{featuredListingIds.includes(item.id) ? 'Vitrinden Ã‡Ä±kar' : 'Vitrine Ekle'}</button>
+                        )}
+                        {item.approvalStatus !== 'Reddedildi' && (
+                          <button onClick={() => updateListingApproval(item.id, 'Reddedildi')} className="px-3 py-1 bg-red-700/30 text-red-500 hover:bg-red-700 hover:text-white font-black text-xs rounded-lg transition">KaldÄ±r</button>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 6. KATEGORÄ° YÃ–NETÄ°MÄ° TABI */}
+            {activeTab === 'categories' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-xl space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-200 pb-4">
+                  <div><h2 className="text-lg font-black text-slate-900">Ä°lan Kategorileri</h2><p className="text-xs text-slate-500 font-medium mt-0.5">Kategori adlarÄ±nÄ±, filtrelerini ve kapak gÃ¶rsellerini buradan yÃ¶netin.</p></div>
+                  <button onClick={() => saveCategories()} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-2.5 rounded-xl text-xs transition">{categorySaved ? 'Kategoriler Kaydedildi' : 'DeÄŸiÅŸiklikleri Kaydet'}</button>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {categories.map((item) => (
+                    <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                      <div className="flex gap-4"><img src={item.image} alt={item.title} className="h-24 w-32 rounded-xl object-cover border border-slate-200" /><div className="flex-1 space-y-2">
+                        <input value={item.title} onChange={(e) => updateCategory(item.id, { title: e.target.value })} className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Kategori adÄ±" />
+                        <div className="grid grid-cols-2 gap-2"><select value={item.type} onChange={(e) => updateCategory(item.id, { type: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-2 py-2 text-xs font-bold text-slate-700"><option>SatÄ±lÄ±k</option><option>KiralÄ±k</option><option>Devren</option></select><select value={item.category} onChange={(e) => updateCategory(item.id, { category: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-2 py-2 text-xs font-bold text-slate-700"><option value="Konut">Konut</option><option value="Ä°ÅŸyeri">Ä°ÅŸyeri</option><option value="Arsa">Arsa</option><option value="">Genel</option></select></div>
+                      </div></div>
+                      <div className="mt-3 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2"><input value={item.image} onChange={(e) => updateCategory(item.id, { image: e.target.value })} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs text-slate-700 focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="GÃ¶rsel URL'si" /><label className="cursor-pointer rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-center text-xs font-black text-red-700 hover:bg-red-100"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleCategoryImage(item.id, e.target.files?.[0])} />GÃ¶rsel SeÃ§</label></div>
+                    </div>
+                  ))}
+                </div>
+                <div className="rounded-2xl border-2 border-dashed border-red-200 bg-red-50/40 p-5"><h3 className="text-sm font-black text-slate-900">Yeni Kategori Ekle</h3><div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"><input value={newCategory.title} onChange={(e) => setNewCategory({ ...newCategory, title: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold" placeholder="Kategori adÄ±" /><select value={newCategory.type} onChange={(e) => setNewCategory({ ...newCategory, type: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>SatÄ±lÄ±k</option><option>KiralÄ±k</option><option>Devren</option></select><select value={newCategory.category} onChange={(e) => setNewCategory({ ...newCategory, category: e.target.value })} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold"><option>Konut</option><option>Ä°ÅŸyeri</option><option>Arsa</option><option value="">Genel</option></select><button onClick={addCategory} className="rounded-xl bg-red-700 px-4 py-2.5 text-xs font-black text-slate-900 hover:bg-red-800">Kategori Ekle</button></div><div className="mt-3 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-2"><input value={newCategory.image} onChange={(e) => setNewCategory({ ...newCategory, image: e.target.value })} className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs" placeholder="Kapak gÃ¶rseli URL'si (isteÄŸe baÄŸlÄ±)" /><label className="cursor-pointer rounded-xl border border-red-200 bg-white px-4 py-2.5 text-center text-xs font-black text-red-700 hover:bg-red-50"><input type="file" accept="image/*" className="hidden" onChange={(e) => { const file = e.target.files?.[0]; if (!file) return; const reader = new FileReader(); reader.onload = () => setNewCategory({ ...newCategory, image: String(reader.result) }); reader.readAsDataURL(file); }} />GÃ¶rsel SeÃ§</label></div></div>
+              </div>
+            )}
+
+            {activeTab === 'library' && <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 sm:flex-row sm:items-center"><div><h2 className="text-lg font-black text-slate-900">Realty KÃ¼tÃ¼phane YÃ¶netimi</h2><p className="mt-1 text-xs text-slate-500">Kategorileri ve bu kategorilerde yayÄ±mlanacak zengin iÃ§erikleri yÃ¶netin.</p></div><button onClick={addLibraryCategory} className="rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white">+ Yeni Kategori</button></div><div className="mt-5 space-y-4">{libraryCategories.map((category)=><div key={category.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="grid gap-3 md:grid-cols-[1fr_1fr_120px_auto]"><input value={category.title} onChange={(e)=>updateLibraryCategory(category.id,{title:e.target.value})} placeholder="Kategori adÄ±" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black"/><input value={category.slug} onChange={(e)=>updateLibraryCategory(category.id,{slug:e.target.value.toLocaleLowerCase('tr-TR').replace(/\s+/g,'-')})} placeholder="kategori-baglantisi" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs"/><label className="flex items-center justify-between rounded-lg border border-slate-300 bg-white px-3 text-[10px] font-black">Renk<input type="color" value={category.color} onChange={(e)=>updateLibraryCategory(category.id,{color:e.target.value})} className="h-7 w-8"/></label><button onClick={()=>setLibraryCategories((current)=>current.filter((item)=>item.id!==category.id))} className="px-2 text-[10px] font-black text-red-700">Kategoriyi kaldÄ±r</button><textarea rows={2} value={category.description} onChange={(e)=>updateLibraryCategory(category.id,{description:e.target.value})} placeholder="Kategori aÃ§Ä±klamasÄ±" className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs leading-5 md:col-span-4"/></div><div className="mt-4 flex items-center justify-between border-t border-slate-200 pt-4"><strong className="text-xs text-slate-800">Ä°Ã§erikler ({category.articles.length})</strong><button onClick={()=>addLibraryArticle(category.id)} className="rounded-lg border border-red-200 bg-white px-3 py-2 text-[10px] font-black text-red-700">+ Ä°Ã§erik Ekle</button></div>{category.articles.length>0&&<div className="mt-3 grid gap-2 sm:grid-cols-2">{category.articles.map((article)=><div key={article.id} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3"><img src={article.image||'/demo-placeholder.svg'} alt="" className="h-14 w-20 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><p className="truncate text-xs font-black text-slate-900">{article.title}</p><button onClick={()=>setEditingLibraryArticle({categoryId:category.id,articleId:article.id})} className="mt-1 text-[10px] font-black text-red-700">Ä°Ã§eriÄŸi dÃ¼zenle</button></div><button onClick={()=>updateLibraryCategory(category.id,{articles:category.articles.filter((item)=>item.id!==article.id)})} className="text-xs font-black text-slate-400">Ã—</button></div>)}</div>}</div>)}</div><button onClick={saveLibrary} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{librarySaved?'KÃ¼tÃ¼phane kaydedildi âœ“':'TÃ¼m KÃ¼tÃ¼phaneyi Kaydet'}</button></section>{editingLibraryArticle&&(()=>{const category=libraryCategories.find((item)=>item.id===editingLibraryArticle.categoryId);const article=category?.articles.find((item)=>item.id===editingLibraryArticle.articleId);if(!category||!article)return null;return <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between border-b border-slate-200 pb-4"><div><p className="text-[10px] font-black text-red-700">{category.title}</p><h3 className="mt-1 font-black text-slate-900">Ä°Ã§erik EditÃ¶rÃ¼</h3></div><button onClick={()=>setEditingLibraryArticle(null)} className="rounded-lg bg-slate-100 px-3 py-2 text-xs font-black text-slate-600">Kapat</button></div><div className="mt-5 grid gap-4 md:grid-cols-2"><input value={article.title} onChange={(e)=>updateLibraryArticle(category.id,article.id,{title:e.target.value})} placeholder="Ä°Ã§erik baÅŸlÄ±ÄŸÄ±" className="rounded-xl border border-slate-300 px-4 py-3 text-sm font-black md:col-span-2"/><textarea rows={3} value={article.summary} onChange={(e)=>updateLibraryArticle(category.id,article.id,{summary:e.target.value})} placeholder="Kartta ve yazÄ± giriÅŸinde gÃ¶rÃ¼necek Ã¶zet" className="rounded-xl border border-slate-300 px-4 py-3 text-xs leading-5 md:col-span-2"/><input type="date" value={article.publishedAt.slice(0,10)} onChange={(e)=>updateLibraryArticle(category.id,article.id,{publishedAt:new Date(`${e.target.value}T12:00:00`).toISOString()})} className="rounded-xl border border-slate-300 px-4 py-3 text-xs"/><input value={article.image.startsWith('data:')?'':article.image} onChange={(e)=>updateLibraryArticle(category.id,article.id,{image:e.target.value})} placeholder="Kapak gÃ¶rseli URL'si" className="rounded-xl border border-slate-300 px-4 py-3 text-xs"/><label className="cursor-pointer rounded-xl border-2 border-dashed border-red-200 bg-red-50 p-4 text-center text-xs font-black text-red-700 md:col-span-2"><input type="file" accept="image/*" className="hidden" onChange={(e)=>uploadLibraryImage(category.id,article.id,e.target.files?.[0])}/>{article.image?'Kapak gÃ¶rselini deÄŸiÅŸtir':'Bilgisayardan kapak gÃ¶rseli seÃ§'}</label>{article.image&&<img src={article.image} alt="Kapak Ã¶nizleme" className="max-h-56 w-full rounded-xl bg-slate-100 object-cover md:col-span-2"/>}<div className="md:col-span-2"><RichTextEditor value={article.content} onChange={(content)=>updateLibraryArticle(category.id,article.id,{content})}/></div></div><button onClick={saveLibrary} className="mt-5 w-full rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white">{librarySaved?'Ä°Ã§erik kaydedildi âœ“':'Ä°Ã§eriÄŸi Kaydet ve YayÄ±nla'}</button></section>;})()}</div>}
+
+            {activeTab === 'videos' && (
+              <div className="space-y-6">
+                <section className="rounded-2xl border border-slate-200 bg-gradient-to-br from-[#071d3b] to-[#0d3c70] p-6 text-white shadow-xl"><div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-end"><div className="max-w-2xl"><p className="text-[10px] font-black tracking-[.2em] text-red-300">OTOMATÄ°K YOUTUBE SENKRONÄ°ZASYONU</p><h2 className="mt-2 text-xl font-black">YouTube kanalÄ±nÄ± daha sonra baÄŸlayÄ±n</h2><p className="mt-2 text-xs leading-6 text-slate-300">Kanal aÃ§Ä±ldÄ±ÄŸÄ±nda baÄŸlantÄ±sÄ±nÄ± buraya yapÄ±ÅŸtÄ±rÄ±n. Kanaldaki videolar manuel eklenen iÃ§eriklerle birlikte otomatik olarak Realty TV bÃ¶lÃ¼mÃ¼nde gÃ¶sterilir. Alan boÅŸken sistem yalnÄ±zca panelden eklenen videolarÄ± kullanÄ±r.</p></div><div className="w-full lg:max-w-md"><label className="mb-1 block text-xs font-black text-slate-200">YouTube kanal baÄŸlantÄ±sÄ±</label><div className="flex gap-2"><input value={youtubeChannelUrl} onChange={(e) => setYoutubeChannelUrl(e.target.value)} placeholder="https://www.youtube.com/@kanaliniz" className="min-w-0 flex-1 rounded-xl border border-white/20 bg-white px-4 py-3 text-sm font-semibold text-slate-900 outline-none"/><button onClick={() => { saveYoutubeChannelUrl(youtubeChannelUrl); setYoutubeChannelSaved(true); setTimeout(() => setYoutubeChannelSaved(false),2200); }} className="shrink-0 rounded-xl bg-[#CD011E] px-4 py-3 text-xs font-black text-white">{youtubeChannelSaved ? 'Kaydedildi âœ“' : 'Kaydet'}</button></div></div></div></section>
+                <section id="realty-media-editor" className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                  <div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">Realty Medya YÃ¶netimi</h2><p className="mt-1 text-xs text-slate-500">Ä°Ã§eriÄŸin Realty TV veya Realty Haberler bÃ¶lÃ¼mÃ¼nde yayÄ±nlanacaÄŸÄ±nÄ± seÃ§in; YouTube baÄŸlantÄ±sÄ± ekleyin ya da kendi video dosyanÄ±zÄ± yÃ¼kleyin.</p></div>
+                  <div className="mt-5 grid gap-4 md:grid-cols-2">
+                    <div className="md:col-span-2"><label className="mb-2 block text-xs font-black text-slate-600">YAYINLANACAÄI BÃ–LÃœM</label><div className="flex gap-2"><button onClick={() => setVideoDraft({ ...videoDraft, category: 'tv' })} className={`rounded-lg px-5 py-2.5 text-xs font-black ${videoDraft.category === 'tv' ? 'bg-[#071d3b] text-white' : 'bg-slate-100 text-slate-700'}`}>Realty TV</button><button onClick={() => setVideoDraft({ ...videoDraft, category: 'news' })} className={`rounded-lg px-5 py-2.5 text-xs font-black ${videoDraft.category === 'news' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>Realty Haberler</button></div></div>
+                    <div className="md:col-span-2"><label className="mb-2 block text-xs font-black text-slate-600">VÄ°DEO KAYNAÄI</label><div className="flex gap-2"><button onClick={() => setVideoDraft({ ...videoDraft, source: 'youtube', url: '' })} className={`rounded-lg px-4 py-2 text-xs font-black ${videoDraft.source === 'youtube' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>YouTube Videosu</button><button onClick={() => setVideoDraft({ ...videoDraft, source: 'upload', url: '' })} className={`rounded-lg px-4 py-2 text-xs font-black ${videoDraft.source === 'upload' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>Dosya YÃ¼kle</button></div></div>
+                    {videoDraft.source === 'youtube' ? <div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">YouTube baÄŸlantÄ±sÄ±</label><input value={videoDraft.url} onChange={(e) => setVideoDraft({ ...videoDraft, url: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div> : <label className="md:col-span-2 cursor-pointer rounded-xl border-2 border-dashed border-red-200 bg-red-50 p-6 text-center text-xs font-black text-red-700"><input type="file" accept="video/*" className="hidden" onChange={(e) => handleDirectVideo(e.target.files?.[0])}/>{videoDraft.url ? 'Video dosyasÄ± seÃ§ildi âœ“' : 'Bilgisayardan video dosyasÄ± seÃ§'}</label>}
+                    <div><label className="mb-1 block text-xs font-black text-slate-600">BaÅŸlÄ±k</label><input value={videoDraft.title} onChange={(e) => setVideoDraft({ ...videoDraft, title: e.target.value })} placeholder="BoÅŸsa YouTube baÅŸlÄ±ÄŸÄ± kullanÄ±lÄ±r" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div>
+                    <div><label className="mb-1 block text-xs font-black text-slate-600">Kapak gÃ¶rseli URLâ€™si</label><input value={videoDraft.thumbnail.startsWith('data:') ? '' : videoDraft.thumbnail} onChange={(e) => setVideoDraft({ ...videoDraft, thumbnail: e.target.value })} placeholder="BoÅŸsa YouTube kapaÄŸÄ± kullanÄ±lÄ±r" className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm"/></div>
+                    {<div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">AÃ§Ä±klama / Haber metni</label><textarea rows={5} value={videoDraft.description} onChange={(e) => setVideoDraft({ ...videoDraft, description: e.target.value })} placeholder="Videoyla birlikte yayÄ±nlanacak haber metnini yazÄ±n..." className="w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6"/></div>}
+                    <label className="cursor-pointer rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-xs font-black text-slate-700"><input type="file" accept="image/*" className="hidden" onChange={(e) => handleVideoCover(e.target.files?.[0])}/>Ã–zel kapak gÃ¶rseli seÃ§</label><button onClick={() => { setEditingVideoId(null); setVideoDraft({ source: 'youtube', category: 'tv', url: '', title: '', thumbnail: '', description: '' }); }} className="rounded-xl border border-slate-300 px-4 py-3 text-xs font-black">Formu Temizle / VazgeÃ§</button><button onClick={addVideo} disabled={videoSaving} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white disabled:opacity-60">{videoSaving ? 'YouTube bilgileri alÄ±nÄ±yorâ€¦' : editingVideoId ? 'DeÄŸiÅŸiklikleri Kaydet' : 'Videoyu YayÄ±nla'}</button>
+                  </div>
+                </section>
+                <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><h3 className="font-black text-slate-900">YayÄ±ndaki Medya Ä°Ã§erikleri ({videos.length})</h3><div className="mt-4 grid gap-4 md:grid-cols-2">{videos.map((video) => <div key={video.id} className="flex gap-3 rounded-xl border border-slate-200 p-3"><img src={video.thumbnail || '/demo-placeholder.svg'} alt="" className="h-20 w-28 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><p className="line-clamp-2 text-xs font-black text-slate-900">{video.title}</p><p className="mt-1 text-[10px] font-bold text-red-700">{video.category === 'news' ? 'Realty Haberler' : 'Realty TV'} Â· {video.source === 'youtube' ? 'YouTube' : 'YÃ¼klenen Video'}</p><button onClick={() => editVideo(video)} className="mr-4 mt-3 text-[10px] font-black text-slate-700">DÃ¼zenle</button><button onClick={() => removeVideo(video.id)} className="mt-3 text-[10px] font-black text-red-700">Videoyu kaldÄ±r</button></div></div>)}</div></section>
+              </div>
+            )}
+
+            {/* 6. SÄ°STEM MESAJLARI TABI */}
+            {activeTab === 'buyerRequests' && (
+              <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">AlÄ±cÄ± Talepleri ve Bildirimler</h2><p className="mt-1 text-xs text-slate-500">Her talep genel merkeze, ilgili ofise ve bÃ¶lgedeki danÄ±ÅŸmanlara yÃ¶nlendirilir.</p></div>{buyerRequests.length ? buyerRequests.map((item) => <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-col justify-between gap-3 sm:flex-row"><div><p className="text-xs font-black text-red-700">{item.id} Â· {new Date(item.createdAt).toLocaleString('tr-TR')}</p><h3 className="mt-1 font-black text-slate-900">{item.name} Â· {item.type} {item.property}</h3><p className="mt-1 text-xs text-slate-600">{item.city} / {item.district} Â· {item.budget || 'BÃ¼tÃ§e belirtilmedi'} Â· {item.phone}</p></div><select value={item.status} onChange={(e) => { const next = buyerRequests.map((entry) => entry.id === item.id ? { ...entry, status: e.target.value as BuyerRequest['status'] } : entry); setBuyerRequests(next); saveBuyerRequests(next); }} className="h-fit rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700"><option>Yeni</option><option>Ä°nceleniyor</option><option>EÅŸleÅŸtirildi</option></select></div><div className="mt-3 grid gap-2 text-xs sm:grid-cols-2"><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">Ofis bildirimi:</strong> {item.officeNames.length ? item.officeNames.join(', ') : 'Genel merkez eÅŸleÅŸtirmesi bekliyor'}</p><p className="rounded-lg bg-white p-3 text-slate-600"><strong className="text-slate-900">DanÄ±ÅŸman bildirimi:</strong> {item.agentNames.length ? item.agentNames.join(', ') : 'BÃ¶lge danÄ±ÅŸmanÄ± eÅŸleÅŸtirmesi bekliyor'}</p></div></div>) : <p className="py-10 text-center text-sm font-bold text-slate-500">HenÃ¼z alÄ±cÄ± talebi yok.</p>}</div>
+            )}
+
+            {activeTab === 'crm' && <CRMWorkspace isManager={true} advisorName="Merkez YÃ¶netim" />}
+
+            {activeTab === 'messages' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-4">
+                <div className="border-b border-slate-200 pb-4">
+                  <h2 className="text-lg font-black text-slate-900">Sistem MesajlarÄ±</h2>
+                  <p className="text-xs text-slate-500 font-medium mt-0.5">Ä°letiÅŸim formundan genel merkeze dÃ¼ÅŸen mesajlar</p>
+                </div>
+
+                <div className="space-y-3">
+                  {contactMessages.map((msg) => (
+                    <div key={msg.id} className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-black text-slate-900">{msg.sender} ({msg.email})</span>
+                        <span className="text-slate-500">{msg.date}</span>
+                      </div>
+                      <p className="text-xs text-slate-700 font-bold">{msg.subject}</p>
+                      <p className="text-xs text-slate-500">Tel: {msg.phone}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'feedback' && (
+              <div className="space-y-5"><div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl"><div className="flex flex-wrap items-end justify-between gap-3 border-b border-slate-200 pb-4"><div><h2 className="text-lg font-black text-slate-900">MÃ¼ÅŸteri Geri Bildirimleri</h2><p className="mt-1 text-xs text-slate-500">Memnuniyet, danÄ±ÅŸman/ofis deÄŸerlendirmeleri, ÅŸikÃ¢yet ve dilek kayÄ±tlarÄ±.</p></div><span className="rounded-full bg-red-100 px-3 py-1 text-[10px] font-black text-red-700">{feedbackItems.length} kayÄ±t</span></div><div className="mt-5 space-y-3">{feedbackItems.length ? feedbackItems.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div><div className="flex flex-wrap items-center gap-2"><span className="rounded-full bg-red-100 px-2.5 py-1 text-[10px] font-black text-red-700">{item.type}</span>{item.rating > 0 && <span className="text-sm tracking-wide text-amber-400">{'â˜…'.repeat(item.rating)}<span className="text-slate-300">{'â˜…'.repeat(5-item.rating)}</span></span>}</div><h3 className="mt-2 text-sm font-black text-slate-900">{item.subject || item.agent || item.office || 'Geri bildirim'}</h3><p className="mt-1 text-[11px] font-bold text-slate-500">{item.name} Â· {item.phone} {item.email && `Â· ${item.email}`}</p></div><select value={item.status} onChange={(e) => updateFeedbackStatus(item.id, e.target.value as CustomerFeedback['status'])} className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-[11px] font-black text-slate-700"><option>Yeni</option><option>Ä°nceleniyor</option><option>YanÄ±tlandÄ±</option></select></div>{(item.agent || item.office) && <p className="mt-3 text-[11px] font-black text-red-700">{item.agent ? `DanÄ±ÅŸman: ${item.agent}` : `Ofis: ${item.office}`}</p>}<p className="mt-3 whitespace-pre-line text-xs leading-5 text-slate-700">{item.message}</p><p className="mt-3 text-[10px] font-bold text-slate-400">{new Date(item.createdAt).toLocaleString('tr-TR')} Â· {item.id}</p></article>) : <div className="rounded-xl bg-slate-50 p-8 text-center text-xs font-bold text-slate-500">HenÃ¼z mÃ¼ÅŸteri geri bildirimi bulunmuyor.</div>}</div></div></div>
+            )}
+
+            {activeTab === 'corporate' && (
+              <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="border-b border-slate-200 pb-4"><h2 className="text-lg font-black text-slate-900">HakkÄ±mÄ±zda ve YÃ¶netim Kadrosu</h2><p className="mt-1 text-xs text-slate-500">Kurumsal hikÃ¢yeyi, yÃ¶netici fotoÄŸraflarÄ±nÄ±, unvanlarÄ±nÄ± ve Ã¶zgeÃ§miÅŸlerini dÃ¼zenleyin.</p></div><label className="mt-5 block text-xs font-black text-slate-700">SEO uyumlu HakkÄ±mÄ±zda hikÃ¢yesi</label><textarea rows={12} value={aboutStory} onChange={(e) => setAboutStory(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm leading-6 outline-none focus:border-red-600"/></section><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between"><h3 className="font-black text-slate-900">YÃ¶netim Kadrosu</h3><button onClick={() => setManagement([...management,{ id:`yonetim-${Date.now()}`, name:'Yeni YÃ¶netici', title:'GÃ¶revi', image:'/demo-placeholder.svg', biography:'Ã–zgeÃ§miÅŸ bilgisi giriniz.' }])} className="rounded-lg bg-red-700 px-4 py-2 text-xs font-black text-white">+ YÃ¶netici Ekle</button></div><div className="mt-5 space-y-4">{management.map((member,index) => <div key={member.id} className="grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-[110px_1fr]"><img src={member.image} alt="" className="h-28 w-28 rounded-xl bg-white object-cover object-top"/><div className="grid gap-3 sm:grid-cols-2"><input value={member.name} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,name:e.target.value} : item))} placeholder="Ad Soyad" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.title} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,title:e.target.value} : item))} placeholder="Unvan" className="rounded-lg border border-slate-300 px-3 py-2 text-xs"/><input value={member.image} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,image:e.target.value} : item))} placeholder="FotoÄŸraf URL'si" className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2"/><textarea rows={4} value={member.biography} onChange={(e) => setManagement(management.map((item,i) => i === index ? {...item,biography:e.target.value} : item))} placeholder="Ã–zgeÃ§miÅŸ" className="rounded-lg border border-slate-300 px-3 py-2 text-xs leading-5 sm:col-span-2"/><button onClick={() => setManagement(management.filter((_,i) => i !== index))} className="w-fit text-[10px] font-black text-red-700">YÃ¶neticiyi kaldÄ±r</button></div></div>)}</div><button onClick={saveCorporateContent} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-3 text-sm font-black text-white">{corporateSaved ? 'Kaydedildi âœ“' : 'Kurumsal Ä°Ã§eriÄŸi Kaydet'}</button></section></div>
+            )}
+
+            {activeTab === 'corporate' && <div className="mt-6 space-y-6">
+              <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">Belgelerimiz</h3><p className="mt-1 text-xs text-slate-500">PDF dosyalarÄ± sitede Ã§erÃ§eveli belge kartÄ± olarak gÃ¶rÃ¼nÃ¼r.</p></div><button onClick={() => setCorporateDocuments([...corporateDocuments,{id:`belge-${Date.now()}`,title:'Yeni Belge',description:'Belge aÃ§Ä±klamasÄ±',fileUrl:''}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Belge Ekle</button></div><div className="mt-5 space-y-3">{corporateDocuments.map((document,index) => <div key={document.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={document.title} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,title:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge adÄ±"/><input value={document.description} onChange={(e) => setCorporateDocuments(corporateDocuments.map((item,i) => i===index?{...item,description:e.target.value}:item))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Belge aÃ§Ä±klamasÄ±"/><label className="cursor-pointer rounded-lg border border-dashed border-red-300 bg-red-50 px-3 py-3 text-center text-xs font-black text-red-700"><input type="file" accept="application/pdf" className="hidden" onChange={(e) => uploadCorporatePdf(index,e.target.files?.[0])}/>{document.fileUrl ? 'PDF yÃ¼klendi âœ“ DeÄŸiÅŸtir' : 'PDF Belgesi YÃ¼kle'}</label><button onClick={() => setCorporateDocuments(corporateDocuments.filter((_,i)=>i!==index))} className="text-xs font-black text-red-700">Belgeyi kaldÄ±r</button></div>)}</div></section>
+              {([['ReferanslarÄ±mÄ±z',corporateReferences,setCorporateReferences],['Ä°ÅŸ OrtaklarÄ±mÄ±z',corporatePartners,setCorporatePartners]] as const).map(([title,items,setItems]) => <section key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex items-center justify-between gap-3"><div><h3 className="font-black text-slate-900">{title}</h3><p className="mt-1 text-xs text-slate-500">Logo ve tÄ±klandÄ±ÄŸÄ±nda aÃ§Ä±lacak Ã§alÄ±ÅŸma iÃ§eriÄŸini yÃ¶netin.</p></div><button onClick={() => setItems([...items,{id:`logo-${Date.now()}`,name:'Yeni Kurum',logo:'/demo-placeholder.svg',content:'Ä°ÅŸ birliÄŸi veya referans aÃ§Ä±klamasÄ±.'}])} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Logo Ekle</button></div><div className="mt-5 space-y-3">{items.map((item,index) => <div key={item.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2"><input value={item.name} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,name:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adÄ±"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="AnlaÅŸma / Ã§alÄ±ÅŸma iÃ§eriÄŸi"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">KaydÄ± kaldÄ±r</button></div>)}</div></section>)}
+              <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'TÃ¼m iÃ§erikler kaydedildi âœ“' : 'Belgeler, Referanslar ve Ä°ÅŸ OrtaklarÄ±nÄ± Kaydet'}</button>
+            </div>}
+
+            {activeTab === 'education' && <div className="space-y-6">
+              <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
+                <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center">
+                  <div><h2 className="text-lg font-black text-slate-900">EÄŸitim YÃ¶netimi</h2><p className="mt-1 text-xs leading-5 text-slate-500">Takvim, eÄŸitim merkezleri ve eÄŸitim Ã§eÅŸitlerinin tamamÄ±nÄ± tek ekrandan yÃ¶netin.</p></div>
+                  <button onClick={saveTraining} className="rounded-xl bg-red-700 px-5 py-3 text-xs font-black text-white">{trainingSaved ? 'EÄŸitim iÃ§erikleri kaydedildi âœ“' : 'TÃ¼mÃ¼nÃ¼ Kaydet'}</button>
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
                   {([['calendar','EÄŸitim Takvimi'],['centers','EÄŸitim Merkezleri'],['types','EÄŸitim Ã‡eÅŸitleri']] as const).map(([key,label]) => <button key={key} onClick={() => setTrainingSection(key)} className={'rounded-full px-4 py-2 text-xs font-black transition ' + (trainingSection === key ? 'bg-[#071f3d] text-white' : 'border border-slate-200 bg-slate-50 text-slate-600 hover:border-red-300')}>{label}</button>)}
                 </div>
 
@@ -1222,54 +4740,116 @@ OO\]SXœ˜\P\XÛJØ]YÛÜKšY\XÛKšYØÛÛ[J_KÏÙ]Ù]]Ûˆ
                   <div className="flex items-center justify-between"><h3 className="font-black text-slate-900">EÄŸitim Merkezi Adresleri</h3><button onClick={addTrainingCenter} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ Merkez Ekle</button></div>
                   <div className="space-y-4">{trainingContent.centers.map((center) => <div key={center.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-2">
                     <input value={center.name} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, name: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Merkez adÄ±"/>
-                    <input value={center.city} onChange={(e) => YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÕÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°•¹Ñ•ÉÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹•¹Ñ•ÉÌ¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô•¹Ñ•È¹¥€üì€¸¸¹¥Ñ•´°¥Ñäè”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌˆÁ±…•¡½±‘•Èô‹y•¡¥Èˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñÑ•áÑ…É•„É½İÌõìÉôÙ…±Õ”õí•¹Ñ•È¹…‘‘É•ÍÍô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°•¹Ñ•ÉÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹•¹Ñ•ÉÌ¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô•¹Ñ•È¹¥€üì€¸¸¹¥Ñ•´°…‘‘É•ÍÌè”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌµé½°µÍÁ…¸´ÈˆÁ±…•¡½±‘•Èô‰ŸÅ¬…‘É•Ìˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñÑ•áÑ…É•„É½İÌõìÍôÙ…±Õ”õí•¹Ñ•È¹‘•ÍÉ¥ÁÑ¥½¹ô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°•¹Ñ•ÉÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹•¹Ñ•ÉÌ¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô•¹Ñ•È¹¥€üì€¸¸¹¥Ñ•´°‘•ÍÉ¥ÁÑ¥½¸è”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌµé½°µÍÁ…¸´ÈˆÁ±…•¡½±‘•Èô‰5•É­•è‡ŸÅ­±…µ…ÏÄˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°•¹Ñ•ÉÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹•¹Ñ•ÉÌ¹™¥±Ñ•È ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€„ôô•¹Ñ•È¹¥¤ô¥ô±…ÍÍ9…µ”ô‰Üµ™¥ĞÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆù5•É­•é¤­…±“ÅÈğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø¥ôğ½‘¥Øø(€€€€€€€€€€€€€€€€ğ½‘¥Øùô((€€€€€€€€€€€€€€€íÑÉ…¥¹¥¹M•Ñ¥½¸€ôôô€ÑåÁ•Ìœ€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ØÍÁ…”µä´Ôˆø(€€€€€€€€€€€€€€€€€€ñ‘¥Øøñ±…‰•°±…ÍÍ9…µ”ô‰µˆ´Ä‰±½¬Ñ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´ØÀÀˆù}¥Ñ¥´ƒ—}¥Ñ±•É¤‡ŸÅ­±…µ…ÏÄğ½±…‰•°øñÑ•áÑ…É•„É½İÌõìÑôÙ…±Õ”õíÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Í%¹ÑÉ½ô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°ÑåÁ•Í%¹ÑÉ¼è”¹Ñ…É•Ğ¹Ù…±Õ”ô¥ô±…ÍÍ9…µ”ô‰Üµ™Õ±°É½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÀ´ÌÑ•áĞµÍ´ˆ¼øğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆøñ Ì±…ÍÍ9…µ”ô‰™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù}¥Ñ¥´ƒ—}¥Ñ±•É¤ğ½ Ìøñ‰ÕÑÑ½¸½¹±¥¬õí…‘‘QÉ…¥¹¥¹QåÁ•ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰œµÉ•´ÜÀÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”ˆø¬}¥Ñ¥´ƒ—}¥‘¤­±”ğ½‰ÕÑÑ½¸øğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´ĞˆùíÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Ì¹µ…À ¡ÑåÁ”¤€ôø€ñ‘¥Ø­•äõíÑåÁ”¹¥‘ô±…ÍÍ9…µ”ô‰É¥…À´ÌÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµÍ±…Ñ”´ÔÀÀ´ĞµéÉ¥µ½±Ì´Èˆø(€€€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕĞÙ…±Õ”õíÑåÁ”¹Ñ¥Ñ±•ô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°ÑåÁ•ÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Ì¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôôÑåÁ”¹¥€üì€¸¸¹¥Ñ•´°Ñ¥Ñ±”è”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌˆÁ±…•¡½±‘•Èô‰}¥Ñ¥´…“Äˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñ¥¹ÁÕĞÙ…±Õ”õíÑåÁ”¹‘ÕÉ…Ñ¥½¹ô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°ÑåÁ•ÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Ì¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôôÑåÁ”¹¥€üì€¸¸¹¥Ñ•´°‘ÕÉ…Ñ¥½¸è”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌˆÁ±…•¡½±‘•Èô‰OñÉ”ˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñÑ•áÑ…É•„É½İÌõìÍôÙ…±Õ”õíÑåÁ”¹‘•ÍÉ¥ÁÑ¥½¹ô½¹¡…¹”õì¡”¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°ÑåÁ•ÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Ì¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôôÑåÁ”¹¥€üì€¸¸¹¥Ñ•´°‘•ÍÉ¥ÁÑ¥½¸è”¹Ñ…É•Ğ¹Ù…±Õ”ô€è¥Ñ•´¤ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÌÀÀÁà´ÌÁä´ÈÑ•áĞµáÌµé½°µÍÁ…¸´ÈˆÁ±…•¡½±‘•Èô‰}¥Ñ¥´‡ŸÅ­±…µ…ÏÄˆ¼ø(€€€€€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôøÍ•ÑQÉ…¥¹¥¹½¹Ñ•¹Ğ¡ì€¸¸¹ÑÉ…¥¹¥¹½¹Ñ•¹Ğ°ÑåÁ•ÌèÑÉ…¥¹¥¹½¹Ñ•¹Ğ¹ÑåÁ•Ì¹™¥±Ñ•È ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€„ôôÑåÁ”¹¥¤ô¥ô±…ÍÍ9…µ”ô‰Üµ™¥ĞÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆù}¥Ñ¥´ƒ—}¥‘¥¹¤­…±“ÅÈğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø¥ôğ½‘¥Øø(€€€€€€€€€€€€€€€€ğ½‘¥Øùô(€€€€€€€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€€€€€€€ğ½‘¥Øùô((€€€€€€€€€€€í…Ñ¥Ù•Q…ˆ€ôôô€¡•…‘•Èœ€˜˜€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÍÁ…”µä´ØˆøñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀ‰œµİ¡¥Ñ”À´ØÍ¡…‘½Üµá°ˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµ½°©ÕÍÑ¥™äµ‰•Ñİ••¸…À´Ğ‰½É‘•Èµˆ‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÁˆ´Ôµé™±•àµÉ½Üµé¥Ñ•µÌµ•¹Ñ•Èˆøñ‘¥Øøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµ±œ™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆù!•…‘•ÈÙ”ƒÃ•É¥¬M…å™…±…ËÄğ½ ÈøñÀ±…ÍÍ9…µ”ô‰µĞ´Äµ…àµÜ´Íá°Ñ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµÍ±…Ñ”´ÔÀÀˆù¹„‰‡}³Å­±…ËÄ°…±Ğ‰‡}³Å­±…ËÄÙ”ƒóŸñ¹ğÍ•Ù¥å”‰‡}³Å­±…ËÄçÙ¹•Ñ¥¸¸¥¹…µ¥¬Í…å™…±…É‘„ŸÙÉÍ•°Í½±‘„°µ•Ñ¥¸Í‡}‘„ŸÙÍÑ•É¥±¥È¸ğ½Àøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à…À´Èˆøñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôø…‘‘5…¹…•‘!•…‘•ÉI½½Ğ ±•™Ğœ¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰½É‘•È‰½É‘•ÈµÉ•´ÈÀÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµÉ•´ÜÀÀˆø¬M½±„	‡}³Å¬ğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸½¹±¥¬õì ¤€ôø…‘‘5…¹…•‘!•…‘•ÉI½½Ğ É¥¡Ğœ¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µ±œ‰œµÉ•´ÜÀÀÁà´ÌÁä´ÈÑ•áĞµáÌ™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”ˆø¬M‡}„	‡}³Å¬ğ½‰ÕÑÑ½¸øğ½‘¥Øøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰µĞ´ÔÉ½Õ¹‘•µá°‰½É‘•È‰½É‘•Èµ…µ‰•È´ÈÀÀ‰œµ…µ‰•È´ÔÀÀ´ĞÑ•áĞµáÌ±•…‘¥¹œ´ÔÑ•áĞµ…µ‰•È´äÀÀˆøñÍÑÉ¿m4ÖÚ$z{-®éÜj×^\Û]KMŒZY]ÛX™[[œ]˜[YO^Û\İ[™Ë›[ÛQ™Y_HÛÚ[™ÙO^ÊJHOˆÛÚ[™ÙJÈ[ÛQ™YNˆK\™Ù]˜[YHJ_HXÙZÛ\H°åœ›‹ˆ‹ÍL8 ®ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏÙ]]X™[Û\ÜÓ˜[YOH›X‹LH›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒ•\Hš[Ú\ÚOÛX™[[œ]˜[YO^Û\İ[™Ë™YY[™›ßHÛÚ[™ÙO^ÊJHOˆÛÚ[™ÙJÈYY[™›ÎˆK\™Ù]˜[YHJ_HXÙZÛ\H’Ø]pïÚ^Y]KpïİZÚ[\K‹‹ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏÙ]]X™[Û\ÜÓ˜[YOH›X‹LH›ØÚÈ^^È›ÛX›XÚÈ^\Û]KMŒ•ZÛšZÈ0å™[ZÛ\ÛX™[[œ]˜[YO^Û\İ[™ËXÚšXØ[™X]\™\ßHÛÚ[™ÙO^ÊJHOˆÛÚ[™ÙJÈXÚšXØ[™X]\™\ÎˆK\™Ù]˜[YHJ_HXÙZÛ\H•š\™ğïH^q,\±,[ˆİÜ\šËğï™[›ZË[\›™]‹‹ˆˆÛ\ÜÓ˜[YO^ÙšY[Û\ÜßHÏÙ]Ù]ÜÙXİ[ÛÂŸB‚\HÔ“TİYÙHH	ÖY[šIÈ	Ñğíœ°ï1gğï0ï[Ü‰È	Ô˜[™]IÈ	ÕZÛY‰È	ÔÛÛpéÛ[™1,IÈ	ÒØ^X™Y[IÎÂ\HÔ“Pİ\İÛY\ˆHÂˆYˆİš[™ÎÈ˜[YNˆİš[™ÎÈÛ™Nˆİš[™ÎÈ[XZ[ˆİš[™ÎÈ\Nˆİš[™ÎÈİYÙNˆÔ“TİYÙNÂˆÛİ\˜ÙNˆİš[™ÎÈÚ]Nˆİš[™ÎÈ\İšXİˆİš[™ÎÈYÙ]ˆİš[™ÎÈ™Y™\™[˜ÙNˆİš[™ÎÂˆİÛ™\ˆİš[™ÎÈ\İÛÛXİˆİš[™ÎÈ™^Xİ[Ûˆİš[™ÎÈ›İ\Îˆ\œ˜^OÈYˆİš[™ÎÈ^ˆİš[™ÎÈ]Nˆİš[™ÈOÂŸNÂ‚˜ÛÛœİÔ“WÔÕQÑTÎˆÔ“TİYÙV×HHÉÖY[šIË	Ñğíœ°ï1gğï0ï[Ü‰Ë	Ô˜[™]IË	ÕZÛY‰Ë	ÔÛÛpéÛ[™1,IË	ÒØ^X™Y[I×NÂ˜ÛÛœİÙ]Ô“Pİ\İÛY\œÈH
+                    <input value={center.city} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, city: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Åehir"/>
+                    <textarea rows={2} value={center.address} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, address: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="AÃ§Ä±k adres"/>
+                    <textarea rows={3} value={center.description} onChange={(e) => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.map((item) => item.id === center.id ? { ...item, description: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="Merkez aÃ§Ä±klamasÄ±"/>
+                    <button onClick={() => setTrainingContent({ ...trainingContent, centers: trainingContent.centers.filter((item) => item.id !== center.id) })} className="w-fit text-xs font-black text-red-700">Merkezi kaldÄ±r</button>
+                  </div>)}</div>
+                </div>}
 
-NˆÔ“Pİ\İÛY\–×HOˆÂˆHÈÛÛœİ™XÛÜ™ÈH”ÓÓ‹œ\œÙJØØ[İÜ˜YÙK™Ù]][J	Ü™X[KXÙ[\‹XÜ›KXİ\İÛY\œÉÊH	Ö×IÊNÈ™]\›ˆ\œ˜^Kš\Ğ\œ˜^J™XÛÜ™ÊHÈ™XÛÜ™Èˆ×NÈBˆØ]ÚÈ™]\›ˆ×NÈBŸNÂ‚™[˜İ[ÛˆÔ“UÛÜšÜÜXÙJÈ\ÓX[˜YÙ\‹Yš\ÛÜ“˜[YHNˆÈ\ÓX[˜YÙ\ˆ›ÛÛX[ÈYš\ÛÜ“˜[YNˆİš[™ÈJHÂˆÛÛœİÜ™XÛÜ™ËÙ]™XÛÜ™×HH\ÙTİ]OÔ“Pİ\İÛY\–×OŠ×JNÂˆÛÛœİØÜ›PÛÛ›™Xİ[Û‹Ù]Ü›PÛÛ›™Xİ[Û—HH\ÙTİ]O	ÛØY[™ÉÈ	ØÛÛ›™XİY	È	ÛÙ™›[™IÏŠ	ÛØY[™ÉÊNÂˆÛÛœİİX‹Ù]X—HH\ÙTİ]O	Øİ\İÛY\œÉÈ	ÛXYÉÈ	Ù›Ûİİ\ÉÈ	Ø\Ú[Y[ÉÏŠ	Øİ\İÛY\œÉÊNÂˆÛÛœİÜ]Y\KÙ]]Y\WHH\ÙTİ]J	ÉÊNÂˆÛÛœİÜİYÙQš[\‹Ù]İYÙQš[\—HH\ÙTİ]O	Õ0ïpï	ÈÔ“TİYÙOŠ	Õ0ïpï	ÊNÂˆÛÛœİÜÙ[XİYYÙ]Ù[XİYYHH\ÙTİ]Oİš[™È[Š[
-NÂˆÛÛœİÜÚİÑ›Ü›KÙ]ÚİÑ›Ü›WHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÛ›İU^Ù]›İU^HH\ÙTİ]J	ÉÊNÂˆÛÛœİ[\Q›Ü›HHÈ˜[YNˆ	ÉËÛ™Nˆ	ÉË[XZ[ˆ	ÉË\Nˆ	Ğ[1,Xñ,IËİYÙNˆ	ÖY[šIÈ\ÈÔ“TİYÙKÛİ\˜ÙNˆ	ÓX[Y[Ø^q,]	ËÚ]Nˆ	ÉË\İšXİˆ	ÉËYÙ]ˆ	ÉË™Y™\™[˜ÙNˆ	ÉË™^Xİ[Ûˆ	ÉÈNÂˆÛÛœİÙ›Ü›KÙ]›Ü›WHH\ÙTİ]J[\Q›Ü›JNÂ‚ˆÛÛœİX\™[[İT™XÛÜ™H
-™XÛÜ™ˆ[KXİ]š]Y\Îˆ[V×HH×JNˆÔ“Pİ\İÛY\ˆOˆ
-ÂˆYˆ™XÛÜ™šY˜[YNˆ™XÛÜ™›˜[YKÛ™Nˆ™XÛÜ™œÛ™K[XZ[ˆ™XÛÜ™™[XZ[	ÉË\Nˆ™XÛÜ™˜İ\İÛY\—İ\KˆİYÙNˆ™XÛÜ™œİYÙH\ÈÔ“TİYÙKÛİ\˜ÙNˆ™XÛÜ™œÛİ\˜ÙKÚ]Nˆ™XÛÜ™˜Ú]H	ÉË\İšXİˆ™XÛÜ™™\İšXİ	ÉËˆYÙ]ˆ™XÛÜ™˜YÙ]	ÉË™Y™\™[˜ÙNˆ™XÛÜ™œ™Y™\™[˜ÙH	ÉËİÛ™\ˆ™XÛÜ™˜\ÜÚYÛ™YİÈÈ	Ğ][›q,qgÈ[±,qgÛX[‰Èˆ	ÓY\šÙ^‰Ëˆ\İÛÛXİˆ™XÛÜ™›\İØÛÛXİØ]È™]È]J™XÛÜ™›\İØÛÛXİØ]
-KÓØØ[Q]Tİš[™Ê	İ‹U‰ÊHˆ™]È]J™XÛÜ™˜Ü™X]YØ]
-KÓØØ[Q]Tİš[™Ê	İ‹U‰ÊKˆ™^Xİ[Ûˆ™XÛÜ™›™^ØXİ[Ûˆ	ÉË›İ\ÎˆXİ]š]Y\Ë™š[\Š
-Xİ]š]JHOˆXİ]š]K˜İ\İÛY\—ÚYOOH™XÛÜ™šY
-K›X\
+                {trainingSection === 'types' && <div className="mt-6 space-y-5">
+                  <div><label className="mb-1 block text-xs font-black text-slate-600">EÄŸitim Ã§eÅŸitleri aÃ§Ä±klamasÄ±</label><textarea rows={4} value={trainingContent.typesIntro} onChange={(e) => setTrainingContent({ ...trainingContent, typesIntro: e.target.value })} className="w-full rounded-xl border border-slate-300 p-3 text-sm"/></div>
+                  <div className="flex items-center justify-between"><h3 className="font-black text-slate-900">EÄŸitim Ã‡eÅŸitleri</h3><button onClick={addTrainingType} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ EÄŸitim Ã‡eÅŸidi Ekle</button></div>
+                  <div className="space-y-4">{trainingContent.types.map((type) => <div key={type.id} className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-2">
+                    <input value={type.title} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, title: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="EÄŸitim adÄ±"/>
+                    <input value={type.duration} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, duration: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="SÃ¼re"/>
+                    <textarea rows={3} value={type.description} onChange={(e) => setTrainingContent({ ...trainingContent, types: trainingContent.types.map((item) => item.id === type.id ? { ...item, description: e.target.value } : item) })} className="rounded-lg border border-slate-300 px-3 py-2 text-xs md:col-span-2" placeholder="EÄŸitim aÃ§Ä±klamasÄ±"/>
+                    <button onClick={() => setTrainingContent({ ...trainingContent, types: trainingContent.types.filter((item) => item.id !== type.id) })} className="w-fit text-xs font-black text-red-700">EÄŸitim Ã§eÅŸidini kaldÄ±r</button>
+                  </div>)}</div>
+                </div>}
+              </section>
+            </div>}
 
-Xİ]š]JHOˆ
-ÈYˆXİ]š]KšY^ˆXİ]š]K˜›ÙK]Nˆ™]È]JXİ]š]K˜Ü™X]YØ]
-KÓØØ[Tİš[™Ê	İ‹U‰ÊHJJBˆJNÂ‚ˆ\ÙQY™™Xİ
+            {activeTab === 'header' && <div className="space-y-6"><section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl"><div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center"><div><h2 className="text-lg font-black text-slate-900">Header ve Ä°Ã§erik SayfalarÄ±</h2><p className="mt-1 max-w-3xl text-xs leading-5 text-slate-500">Ana baÅŸlÄ±klarÄ±, alt baÅŸlÄ±klarÄ± ve Ã¼Ã§Ã¼ncÃ¼ seviye baÅŸlÄ±klarÄ± yÃ¶netin. Dinamik sayfalarda gÃ¶rsel solda, metin saÄŸda gÃ¶sterilir.</p></div><div className="flex gap-2"><button onClick={() => addManagedHeaderRoot('left')} className="rounded-lg border border-red-200 px-3 py-2 text-xs font-black text-red-700">+ Sola BaÅŸlÄ±k</button><button onClick={() => addManagedHeaderRoot('right')} className="rounded-lg bg-red-700 px-3 py-2 text-xs font-black text-white">+ SaÄŸa BaÅŸlÄ±k</button></div></div><div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-900"><strong>BaÄŸlantÄ± kullanÄ±mÄ±:</strong> Panelde oluÅŸturulan iÃ§erik sayfalarÄ± iÃ§in <code>/icerik/sayfa-kimligi</code> biÃ§imini kullanÄ±n. Mevcut bir sayfaya yÃ¶nlendirmek isterseniz onun baÄŸlantÄ±sÄ±nÄ± doÄŸrudan yazabilirsiniz.</div><div className="mt-5 grid gap-5 xl:grid-cols-2">{(['left','right'] as const).map((side) => <div key={side}><div className="mb-3 flex items-center justify-between"><h3 className="text-sm font-black text-slate-900">{side === 'left' ? 'Logonun Solundaki MenÃ¼ler' : 'Logonun SaÄŸÄ±ndaki MenÃ¼ler'}</h3><span className="rounded-full bg-slate-100 px-2 py-1 text-[10px] font-black text-slate-500">{headerMenuItems.filter((item) => item.side === side).length} baÅŸlÄ±k</span></div><div className="space-y-4">{headerMenuItems.filter((item) => item.side === side).map((item) => <HeaderMenuEditorNode key={item.id} item={item} depth={0} onUpdate={updateManagedHeaderItem} onRemove={removeManagedHeaderItem} onAddChild={addManagedHeaderChild}/>)}</div></div>)}</div><button onClick={saveManagedHeader} className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-lg shadow-red-700/20">{headerSaved ? 'Header ve sayfalar kaydedildi âœ“' : 'Header ve Sayfa YapÄ±sÄ±nÄ± Kaydet'}</button></section></div>}
 
+            {/* 7. SÄ°STEM AYARLARI TABI */}
+            {activeTab === 'settings' && (
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl space-y-6">
+                <div className="border-b border-slate-200 pb-4">
+                  <h2 className="text-lg font-black text-slate-900">Sistem & Genel Ayarlar</h2>
+                  <p className="text-xs text-slate-500 font-medium mt-0.5">Platform geneli parametreler ve sistem yapÄ±landÄ±rmasÄ±</p>
+                </div>
 
-HOˆÂˆ][İ[YHYNÂˆÛÛœİØYÔ“HH\Ş[˜È
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                  <h3 className="text-sm font-black text-slate-900 mb-1">Ä°letiÅŸim & WhatsApp Destek HattÄ±</h3>
+                  <p className="text-xs text-slate-500 mb-4">KaydettiÄŸiniz WhatsApp numarasÄ± sitedeki destek dÃ¼ÄŸmesinde kullanÄ±lÄ±r.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div><label className="block text-slate-700 font-bold mb-1">Telefon / DanÄ±ÅŸma HattÄ±</label><input value={contactSettings.phone} onChange={(e) => setContactSettings({ ...contactSettings, phone: e.target.value })} type="tel" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">WhatsApp Destek NumarasÄ±</label><input value={contactSettings.whatsapp} onChange={(e) => setContactSettings({ ...contactSettings, whatsapp: e.target.value })} type="tel" placeholder="905XXXXXXXXX" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">Destek E-posta Adresi</label><input value={contactSettings.email} onChange={(e) => setContactSettings({ ...contactSettings, email: e.target.value })} type="email" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                    <div><label className="block text-slate-700 font-bold mb-1">AÃ§Ä±k Adres</label><input value={contactSettings.address} onChange={(e) => setContactSettings({ ...contactSettings, address: e.target.value })} type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700" /></div>
+                  </div>
+                </div>
+                <button onClick={saveContactSettings} className="bg-red-700 hover:bg-red-800 text-white font-black px-6 py-3 rounded-xl text-xs transition">{settingsSaved ? 'Ayarlar Kaydedildi' : 'AyarlarÄ± Kaydet'}</button>
+              </div>
+            )}
 
-HOˆÂˆÛÛœİØXÚYHÙ]Ô“Pİ\İÛY\œÊ
-NÂˆYˆ
-Z\Ôİ\X˜\ÙPÛÛ™šYİ\™Y
-HÈYˆ
-[İ[Y
-HÈÙ]™XÛÜ™ÊØXÚY
-NÈÙ]Ü›PÛÛ›™Xİ[ÛŠ	ÛÙ™›[™IÊNÈH™]\›ÈBˆÛÛœİÈ]Nˆİ\İÛY\œË\œ›ÜˆHH]ØZ]İ\X˜\ÙK™œ›ÛJ	ØÜ›WØİ\İÛY\œÉÊKœÙ[Xİ
-	Ê‰ÊKš\Ê	Ø\˜Ú]™YØ]	Ë[
-K›Ü™\Š	ØÜ™X]YØ]	ËÈ\ØÙ[™[™Îˆ˜[ÙHJNÂˆYˆ
-\œ›ÜˆXİ\İÛY\œÊHÈYˆ
-[İ[Y
-HÈÙ]™XÛÜ™ÊØXÚY
-NÈÙ]Ü›PÛÛ›™Xİ[ÛŠ	ÛÙ™›[™IÊNÈH™]\›ÈBˆÛÛœİYÈHİ\İÛY\œË›X\
+          </div>
 
-İ\İÛY\ŠHOˆİ\İÛY\‹šY
-NÂˆÛÛœİÈ]NˆXİ]š]Y\ÈHHYË›[™İÈ]ØZ]İ\X˜\ÙK™œ›ÛJ	ØÜ›WØXİ]š]Y\ÉÊKœÙ[Xİ
-	ÚYİ\İÛY\—ÚY›ÙKÜ™X]YØ]	ÊKš[Š	Øİ\İÛY\—ÚY	ËYÊK›Ü™\Š	ØÜ™X]YØ]	ËÈ\ØÙ[™[™Îˆ˜[ÙHJHˆÈ]Nˆ×HNÂˆYˆ
-[İ[Y
-HÈÙ]™XÛÜ™Êİ\İÛY\œË›X\
+        </div>
 
-İ\İÛY\ŠHOˆX\™[[İT™XÛÜ™
-İ\İÛY\‹Xİ]š]Y\È×JJJNÈÙ]Ü›PÛÛ›™Xİ[ÛŠ	ØÛÛ›™XİY	ÊNÈBˆNÂˆ›ÚYØYÔ“J
-NÂˆ™]\›ˆ
+      </div>
+    </div>
+  );
+}
 
-HOˆÈ[İ[YH˜[ÙNÈNÂˆK×JNÂ‚ˆ\ÙQY™™Xİ
+function ListingOptionalDetailFields({ listing, onChange }: { listing: any; onChange: (updates: Record<string, string>) => void }) {
+  const fieldClass = 'w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-700';
+  return <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5"><div className="mb-4"><h3 className="font-black text-slate-900">Ä°lan Detay SayfasÄ± Bilgileri</h3><p className="mt-1 text-xs text-slate-500">Bu alanlarÄ±n tamamÄ± isteÄŸe baÄŸlÄ±dÄ±r. Girilen bilgiler ilan detayÄ±nda gÃ¶sterilir.</p></div><div className="grid grid-cols-1 gap-4 md:grid-cols-2"><div className="md:col-span-2"><label className="mb-1 block text-xs font-black text-slate-600">Ä°lan AÃ§Ä±klamasÄ±</label><textarea value={listing.description} onChange={(e) => onChange({ description: e.target.value })} rows={5} placeholder="GayrimenkulÃ¼n konumu, avantajlarÄ± ve kullanÄ±m Ã¶zellikleri..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Video BaÄŸlantÄ±sÄ±</label><input value={listing.videoUrl} onChange={(e) => onChange({ videoUrl: e.target.value })} placeholder="YouTube/Vimeo embed baÄŸlantÄ±sÄ±" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">360Â° Sanal Tur BaÄŸlantÄ±sÄ±</label><input value={listing.virtualTourUrl} onChange={(e) => onChange({ virtualTourUrl: e.target.value })} placeholder="Sanal tur baÄŸlantÄ±sÄ±" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Harita BaÄŸlantÄ±sÄ±</label><input value={listing.mapUrl} onChange={(e) => onChange({ mapUrl: e.target.value })} placeholder="Google Maps embed baÄŸlantÄ±sÄ±" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Aidat</label><input value={listing.monthlyFee} onChange={(e) => onChange({ monthlyFee: e.target.value })} placeholder="Ã–rn. 2.750 â‚º" className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Tapu Bilgisi</label><input value={listing.deedInfo} onChange={(e) => onChange({ deedInfo: e.target.value })} placeholder="Kat mÃ¼lkiyetli, mÃ¼stakil tapu..." className={fieldClass} /></div><div><label className="mb-1 block text-xs font-black text-slate-600">Teknik Ã–zellikler</label><input value={listing.technicalFeatures} onChange={(e) => onChange({ technicalFeatures: e.target.value })} placeholder="VirgÃ¼lle ayÄ±rÄ±n: otopark, gÃ¼venlik, internet..." className={fieldClass} /></div></div></section>;
+}
 
+type CRMStage = 'Yeni' | 'GÃ¶rÃ¼ÅŸÃ¼lÃ¼yor' | 'Randevu' | 'Teklif' | 'SonuÃ§landÄ±' | 'Kaybedildi';
+type CRMCustomer = {
+  id: string; name: string; phone: string; email: string; type: string; stage: CRMStage;
+  source: string; city: string; district: string; budget: string; preference: string;
+  owner: string; lastContact: string; nextAction: string; notes: Array<{ id: string; text: string; date: string }>;
+};
 
-HOˆÈØØ[İÜ˜YÙKœÙ]][J	Ü™X[KXÙ[\‹XÜ›KXİ\İÛY\œÉË”ÓÓ‹œİš[™ÚYJ™XÛÜ™ÊJNÈKÜ™XÛÜ™×JNÂ‚ˆÛÛœİš\ÚX›T™XÛÜ™ÈH™XÛÜ™Ë™š[\Š
-™XÛÜ™
-HOˆÂˆÛÛœİX]Ú\Ô]Y\HH	Ü™XÛÜ™›˜[Y_H	Ü™XÛÜ™œÛ™_H	Ü™XÛÜ™™[XZ[H	Ü™XÛÜ™˜Ú]_H	Ü–j¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5ecord.district}`.toLocaleLowerCase('tr-TR').includes(query.toLocaleLowerCase('tr-TR'));
+const CRM_STAGES: CRMStage[] = ['Yeni', 'GÃ¶rÃ¼ÅŸÃ¼lÃ¼yor', 'Randevu', 'Teklif', 'SonuÃ§landÄ±', 'Kaybedildi'];
+const getCRMCustomers = (): CRMCustomer[] => {
+  try { const records = JSON.parse(localStorage.getItem('realty-center-crm-customers') || '[]'); return Array.isArray(records) ? records : []; }
+  catch { return []; }
+};
+
+function CRMWorkspace({ isManager, advisorName }: { isManager: boolean; advisorName: string }) {
+  const [records, setRecords] = useState<CRMCustomer[]>([]);
+  const [crmConnection, setCrmConnection] = useState<'loading' | 'connected' | 'offline'>('loading');
+  const [tab, setTab] = useState<'customers' | 'leads' | 'followups' | 'appointments'>('customers');
+  const [query, setQuery] = useState('');
+  const [stageFilter, setStageFilter] = useState<'TÃ¼mÃ¼' | CRMStage>('TÃ¼mÃ¼');
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [showForm, setShowForm] = useState(false);
+  const [noteText, setNoteText] = useState('');
+  const emptyForm = { name: '', phone: '', email: '', type: 'AlÄ±cÄ±', stage: 'Yeni' as CRMStage, source: 'Manuel kayÄ±t', city: '', district: '', budget: '', preference: '', nextAction: '' };
+  const [form, setForm] = useState(emptyForm);
+
+  const mapRemoteRecord = (record: any, activities: any[] = []): CRMCustomer => ({
+    id: record.id, name: record.name, phone: record.phone, email: record.email || '', type: record.customer_type,
+    stage: record.stage as CRMStage, source: record.source, city: record.city || '', district: record.district || '',
+    budget: record.budget || '', preference: record.preference || '', owner: record.assigned_to ? 'AtanmÄ±ÅŸ danÄ±ÅŸman' : 'Merkez',
+    lastContact: record.last_contact_at ? new Date(record.last_contact_at).toLocaleDateString('tr-TR') : new Date(record.created_at).toLocaleDateString('tr-TR'),
+    nextAction: record.next_action || '', notes: activities.filter((activity) => activity.customer_id === record.id).map((activity) => ({ id: activity.id, text: activity.body, date: new Date(activity.created_at).toLocaleString('tr-TR') }))
+  });
+
+  useEffect(() => {
+    let mounted = true;
+    const loadCRM = async () => {
+      const cached = getCRMCustomers();
+      if (!isSupabaseConfigured) { if (mounted) { setRecords(cached); setCrmConnection('offline'); } return; }
+      const { data: customers, error } = await supabase.from('crm_customers').select('*').is('archived_at', null).order('created_at', { ascending: false });
+      if (error || !customers) { if (mounted) { setRecords(cached); setCrmConnection('offline'); } return; }
+      const ids = customers.map((customer) => customer.id);
+      const { data: activities } = ids.length ? await supabase.from('crm_activities').select('id, customer_id, body, created_at').in('customer_id', ids).order('created_at', { ascending: false }) : { data: [] };
+      if (mounted) { setRecords(customers.map((customer) => mapRemoteRecord(customer, activities || []))); setCrmConnection('connected'); }
+    };
+    void loadCRM();
+    return () => { mounted = false; };
+  }, []);
+
+  useEffect(() => { localStorage.setItem('realty-center-crm-customers', JSON.stringify(records)); }, [records]);
+
+  const visibleRecords = records.filter((record) => {
+    const matchesQuery = `${record.name} ${record.phone} ${record.email} ${record.city} ${record.district}`.toLocaleLowerCase('tr-TR').includes(query.toLocaleLowerCase('tr-TR'));
     const matchesStage = stageFilter === 'TÃ¼mÃ¼' || record.stage === stageFilter;
     const matchesTab = tab === 'leads' ? ['Yeni','GÃ¶rÃ¼ÅŸÃ¼lÃ¼yor'].includes(record.stage) : tab === 'followups' ? ['GÃ¶rÃ¼ÅŸÃ¼lÃ¼yor','Teklif'].includes(record.stage) : tab === 'appointments' ? Boolean(record.nextAction) : true;
     return matchesQuery && matchesStage && matchesTab;
@@ -1331,35 +4911,386 @@ HOˆÂˆÛÛœİX]Ú\Ô]Y\HH	Ü™XÛÜ™›˜[Y_H	Ü™XÛÜ™œÛ™_H	Ü™XÛÜ™™[XZ[H	
     setSelectedId(null);
   };
   const stageClass: Record<CRMStage, string> = {
-    'YÛM5¶‰ËkºwµçvÆ74æÖSÒ'&÷VæFVB×†Â&r×6ÆFRÓSÓ2föçBÖ&öÆBFW‡B×6ÆFRÓs#ãÅ†öæR6Æ74æÖSÒ&Ö"Ó‚ÓBrÓBFW‡B×&VBÓs"óç·6VÆV7FVBç†öæWÓÂöãÆ‡&Vc×¶Ö–ÇFó¢G·6VÆV7FVBæVÖ–ÇÖÒ6Æ74æÖSÒ&Ö–â×rÓ&÷VæFVB×†Â&r×6ÆFRÓSÓ2föçBÖ&öÆBFW‡B×6ÆFRÓs#ãÄÖ–Â6Æ74æÖSÒ&Ö"Ó‚ÓBrÓBFW‡B×&VBÓs"óãÇ7â6Æ74æÖSÒ&&Æö6²G'Væ6FR#ç·6VÆV7FVBæVÖ–ÂÇÂtR×÷7F–ö²wÓÂ÷7ããÂöãÂöF—cà¢ÆF—b6Æ74æÖSÒ&×BÓR&÷&FW"×’&÷&FW"×6ÆFRÓ’ÓB#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW"FW‡B×6ÆFRÓC#ìK…LK”8r9e¤ULKÂ÷ãÇ6Æ74æÖSÒ&×BÓ"FW‡B×6ÒföçBÖ&öÆBFW‡B×6ÆFRÓƒ#ç·6VÆV7FVBç&VfW&Væ6RÇÂuFW&6–‚&–Æv—6’v—&–ÆÖVF’wÓÂ÷ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#ç·6VÆV7FVBæ6—G’ÇÂ|YæV†—"–ö²w×·6VÆV7FVBæF—7G&–7BòòG·6VÆV7FVBæF—7G&–7GÖ¢rw×·6VÆV7FVBæ'VFvWBò+rG·6VÆV7FVBæ'VFvWGÖ¢rwÓÂ÷ãÂöF—cà¢ÆF—b6Æ74æÖSÒ&×BÓR#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW"FW‡B×6ÆFRÓC#å<9Å$\8rEU%TÕSÂ÷ãÆF—b6Æ74æÖSÒ&×BÓ"w&–Bw&–BÖ6öÇ2Ó2vÓãR#ç´5$Õõ5DtU2æÖ‚‡7FvR’ÓâÆ'WGFöâ¶W“×·7FvWÒöä6Æ–6³×²‚’Óâ6†ævU7FvR‡7FvR—Ò6Æ74æÖS×¶&÷VæFVBÖÆr‚ÓãR’Ó"FW‡BÕ³—…ÒföçBÖ&Æ6²G&ç6—F–öâG·6VÆV7FVBç7FvRÓÓÒ7FvRòv&rÕ²44CUÒFW‡B×v†—FRr¢v&r×6ÆFRÓFW‡B×6ÆFRÓS†÷fW#¦&r×6ÆFRÓ#wÖÓç·7FvWÓÂö'WGFöãâ—ÓÂöF—cãÂöF—cà¢ÆF—b6Æ74æÖSÒ&×BÓR#ãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ær×v–FW"FW‡B×6ÆFRÓC#ä|9e,9ÌYäÔRäõDÄ$“Â÷ãÆF—b6Æ74æÖSÒ&×BÓ"Ö‚Ö‚Ó3b76R×’Ó"÷fW&fÆ÷r×’ÖWFò#ç·6VÆV7FVBææ÷FW2æÆVæwF‚ò6VÆV7FVBææ÷FW2æÖ‚†æ÷FR’ÓâÆF—b¶W“×¶æ÷FRæ–GÒ6Æ74æÖSÒ'&÷VæFVBÖÆr&r×6ÆFRÓSÓ"ãR#ãÇ6Æ74æÖSÒ'FW‡B×‡2ÆVF–ærÓRFW‡B×6ÆFRÓs#ç¶æ÷FRçFW‡GÓÂ÷ãÇ6ÖÆÂ6Æ74æÖSÒ&×BÓ&Æö6²FW‡BÕ³—…ÒföçBÖ&öÆBFW‡B×6ÆFRÓC#ç¶æ÷FRæFFWÓÂ÷6ÖÆÃãÂöF—câ’¢Ç6Æ74æÖSÒ'&÷VæFVBÖÆr&r×6ÆFRÓSÓ2FW‡B×‡2FW‡B×6ÆFRÓS#ä†Vì;Ç¢|;g,;ÌYöÖRæ÷GR–ö²ãÂ÷çÓÂöF—cãÆF—b6Æ74æÖSÒ&×BÓ"fÆW‚vÓ"#ãÆ–çWBfÇVS×¶æ÷FUFW‡GÒöä6†ævS×²†WfVçB’Óâ6WDæ÷FUFW‡B†WfVçBçF&vWBçfÇVR—Òöä¶W”F÷vã×²†WfVçB’Óâ²–b†WfVçBæ¶W’ÓÓÒtVçFW"r’FDæ÷FR‚“²×ÒÆ6V†öÆFW#Ò$æ÷BV¶ÆW––ââââ"6Æ74æÖSÒ&Ö–â×rÓfÆW‚Ó&÷VæFVBÖÆr&÷&FW"&÷&FW"×6ÆFRÓ#‚Ó2’Ó"FW‡B×‡2÷WFÆ–æRÖæöæRfö7W3¦&÷&FW"×&VBÓS"óãÆ'WGFöâöä6Æ–6³×¶FDæ÷FWÒ6Æ74æÖSÒ'&÷VæFVBÖÆr&rÕ²3sC6%Ò‚Ó2FW‡B×‡2föçBÖ&Æ6²FW‡B×v†—FR#äV¶ÆSÂö'WGFöããÂöF—cãÂöF—cà¢ÂöF—câ¢ÆF—b6Æ74æÖSÒ'ÓFW‡BÖ6VçFW"#ãÄÖW76vU7V&R6Æ74æÖSÒ&×‚ÖWFò‚Ó’rÓ’FW‡B×6ÆFRÓ3"óãÇ6Æ74æÖSÒ&×BÓ2FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓs#ä&—"Ü;ÌY÷FW&’6\:v–ãÂ÷ãÇ6Æ74æÖSÒ&×BÓFW‡B×‡2FW‡B×6ÆFRÓS#äFWF’Âæ÷BfR<;Ç&\:rœ;fæWF–Ö’'W&F:|KÌK"ãÂ÷ãÂöF—cçÓÂö6–FSà¢ÂöF—cà ¢·6†÷tf÷&ÒbbÆF—b6Æ74æÖSÒ&f—†VB–ç6WBÓ¢Õ³ÒfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"&r×6ÆFRÓ“SósÓB&6¶G&÷Ö&ÇW"×6Ò#ãÆF—b6Æ74æÖSÒ&Ö‚Ö‚Õ³“'f…ÒrÖgVÆÂÖ‚×rÓ'†Â÷fW&fÆ÷r×’ÖWFò&÷VæFVBÓ'†Â&r×v†—FR6†F÷rÓ'†Â#ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2×7F'B§W7F–g’Ö&WGvVVâ&÷&FW"Ö"&÷&FW"×6ÆFRÓ#ÓR#ãÆF—cãÇ6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&Æ6²G&6¶–ærÕ²ã&VÕÒFW‡B×&VBÓs#ä5$Ò+r”TìK´”•CÂ÷ãÆƒ"6Æ74æÖSÒ&×BÓFW‡B×†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“#å–Væ’Ü;ÌY÷FW&’fW–ÆVBV¶ÆSÂöƒ#ãÂöF—cãÆ'WGFöâöä6Æ–6³×²‚’Óâ6WE6†÷tf÷&Ò†fÇ6R—Ò6Æ74æÖSÒ'&÷VæFVBÖÆr&r×6ÆFRÓÓ"FW‡B×6ÆFRÓc#ãÅ‚6Æ74æÖSÒ&‚ÓRrÓR"óãÂö'WGFöããÂöF—cãÆf÷&Òöå7V&Ö—C×·6fU&V6÷&GÒ6Æ74æÖSÒ'76R×’ÓBÓR#ãÆF—b6Æ74æÖSÒ&w&–BvÓ26Ó¦w&–BÖ6öÇ2Ó"#ãÆ–çWB&WV—&VBfÇVS×¶f÷&ÒææÖWÒöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂæÖS¢WfVçBçF&vWBçfÇVRÒ—ÒÆ6V†öÆFW#Ò$B6÷–B¢"6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS‚ÓB’Ó2FW‡B×6Ò"óãÆ–çWB&WV—&VBfÇVS×¶f÷&Òç†öæWÒöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ†öæS¢WfVçBçF&vWBçfÇVRÒ—ÒÆ6V†öÆFW#Ò%FVÆVföâ¢"6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS‚ÓB’Ó2FW‡B×6Ò"óãÆ–çWBG—SÒ&VÖ–Â"fÇVS×¶f÷&ÒæVÖ–ÇÒöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂVÖ–Ã¢WfVçBçF&vWBçfÇVRÒ—ÒÆ6V†öÆFW#Ò$R×÷7F"6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS‚ÓB’Ó2FW‡B×6Ò"óãÇ6VÆV7BfÇVS×¶f÷&ÒçG—WÒöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂG—S¢WfVçBçF&vWBçfÇVRÒ—Ò6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS‚ÓB’Ó2FW‡B×6Ò#ãÆ÷F–öãäÌK<KÂö÷F–öããÆ÷F–öãå6LK<KÂö÷F–öããÆ÷F–öãä¶—&<KÂö÷F–öããÆ÷F–öãäÖÂ6†–&“Âö÷F–öããÆ÷F–öãå–LK,KÖ<KÂö÷F–öããÂ÷6VÆV7CãÆ–çWBfÇVS×¶f÷&Òæ6—G—Òöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂ6—G“¢WfVçBçF&vWBçfÇVRÒ—ÒÆ6V†öÆFW#Ò,KÂ"6Æ74æÖSÒ'&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ#&r×6ÆFRÓS‚ÓB’Ó2FW‡B×6Ò"óãÆ–çWBfÇVS×¶f÷&ÒæF—7G&–7GÒöä6†ævS×²†WfVçB’Óâ6WDf÷&Ò‡²ââæf÷&ÒÂF—7G&–7C¢WfVåš®x§‚ÚîÆ­yÚ.¶›­¢¸ Šv¥¶‰Ê.ŞtÓTèµ©hºÚn¶X§zÍ]\™Ù]˜[YHJ_HXÙZÛ\H±,0éÙHˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛH‹Ï[œ]˜[YO^Ù›Ü›K˜YÙ]HÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü›JÈ‹‹™›Ü›KYÙ]ˆ]™[\™Ù]˜[YHJ_HXÙZÛ\H°ï0éÙH
-0íœ›‹ˆx $ÍÈZ[[Ûˆ
-HˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛH‹ÏÙ[Xİ˜[YO^Ù›Ü›KœÛİ\˜Ù_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü›JÈ‹‹™›Ü›KÛİ\˜ÙNˆ]™[\™Ù]˜[YHJ_HÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛHÜ[Û“X[Y[Ø^q,]ÛÜ[ÛÜ[Û•ÙXˆ›Ü›]OÛÜ[ÛÜ[Û•[Y›ÛÛÜ[ÛÜ[Û•Ú]Ğ\ÛÜ[ÛÜ[Û”™Y™\˜[œÏÛÜ[ÛÜ[Û”ÛÜŞX[YYXOÛÜ[ÛÜÙ[XİÙ]^\™XH˜[YO^Ù›Ü›Kœ™Y™\™[˜Ù_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü›JÈ‹‹™›Ü›K™Y™\™[˜ÙNˆ]™[\™Ù]˜[YHJ_HXÙZÛ\H±,^XpéË\˜ÚZ[Ú[[™q'ÚH[[ˆ™^XH0í™[›İˆ›İÜÏ^ÌßHÛ\ÜÓ˜[YOHËY[›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛH‹Ï]ˆÛ\ÜÓ˜[YOH™ÜšYØ\LÈÛN™ÜšYXÛÛËLˆÙ[Xİ˜[YO^Ù›Ü›KœİYÙ_HÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü›JÈ‹‹™›Ü›KİYÙNˆ]™[\™Ù]˜[YH\ÈÔ“TİYÙHJ_HÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛHĞÔ“WÔÕQÑTË›X\
+    'Yeni': 'bg-red-50 text-red-700', 'GÃ¶rÃ¼ÅŸÃ¼lÃ¼yor': 'bg-amber-50 text-amber-700', 'Randevu': 'bg-blue-50 text-blue-700',
+    'Teklif': 'bg-violet-50 text-violet-700', 'SonuÃ§landÄ±': 'bg-emerald-50 text-emerald-700', 'Kaybedildi': 'bg-slate-100 text-slate-600'
+  };
 
-İYÙJHOˆÜ[ÛˆÙ^O^ÜİYÙ_OÜİYÙ_OÛÜ[ÛŠ_OÜÙ[Xİ[œ]˜[YO^Ù›Ü›K›™^Xİ[ÛŸHÛÚ[™ÙO^Ê]™[
-HOˆÙ]›Ü›JÈ‹‹™›Ü›K™^Xİ[Ûˆ]™[\™Ù]˜[YHJ_HXÙZÛ\H”ÛÛœ˜ZÚHZÚ\È˜[™]H\šZHˆÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒ™Ë\Û]KMLMKLÈ^\ÛH‹ÏÙ]]ˆÛ\ÜÓ˜[YOH™›^\İYKY[™Ø\LÈ›Ü™\‹]›Ü™\‹\Û]KLLM]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÙ]ÚİÑ›Ü›J˜[ÙJ_HÛ\ÜÓ˜[YOHœ›İ[™Y^›Ü™\ˆ›Ü™\‹\Û]KLŒMKLÈ^\ÛH›ÛX›XÚÈ^\Û]KMÌ•˜^™ÙpéÏØ]Û]Ûˆ\OHœİX›Z]ˆÛ\ÜÓ˜[YOHœ›İ[™Y^™ËVÈĞÑLQWHMHKLÈ^\ÛH›ÛX›XÚÈ^]Ú]HÔ“HØ^Y1,[±,HÛqgİ\Ø]ÛÙ]Ù›Ü›OÙ]Ù]ŸBˆÙ]ÂŸB‚™[˜İ[ÛˆYÙ[\Ú›Ø\™
-È[™[›ÛHH	ØYš\ÛÜ‰ÈNˆÈ[™[›ÛOÎˆ	ØYš\ÛÜ‰È	ÛX[˜YÙ\‰ÈJHÂˆÛÛœİ˜]šYØ]HH\ÙS˜]šYØ]J
-NÂˆÛÛœİ\ÓX[˜YÙ\ˆH[™[›ÛHOOH	ÛX[˜YÙ\‰ÎÂˆÛÛœİØXİ]™TÙXİ[Û‹Ù]Xİ]™TÙXİ[Û—HH\ÙTİ]O	Ûİ™\šY]ÉÈ	Û\İ[™ÜÉÈ	ÜÜ›Û[ÉÈ	Øİ\İÛY\œÉÈ	ÛY\ÜØYÙ\ÉÈ	Üİ]\İXÜÉÈ	Ü›Ùš[IÏŠ	Ûİ™\šY]ÉÊNÂˆÛÛœİÜÚİÓ\İ[™Ñ›Ü›KÙ]ÚİÓ\İ[™Ñ›Ü›WHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÙY][™Ó\İ[™ÒYÙ]Y][™Ó\İ[™ÒYHH\ÙTİ]Oİš[™È[Š[
-NÂˆÛÛœİÛ\İ[™ÔÙX\˜ÚÙ]\İ[™ÔÙX\˜ÚHH\ÙTİ]J	ÉÊNÂˆÛÛœİØİ\İÛY\”ÙX\˜ÚÙ]İ\İÛY\”ÙX\˜ÚHH\ÙTİ]J	ÉÊNÂˆÛÛœİÜ›Ùš[TØ]™YÙ]›Ùš[TØ]™YHH\ÙTİ]J˜[ÙJNÂˆÛÛœİØİ\İÛY\”Ø]™YÙ]İ\İÛY\”Ø]™YHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÚİĞİ\İÛY\‘›Ü›KÙ]ÚİĞİ\İÛY\‘›Ü›WHH\ÙTİ]J˜[ÙJNÂ‚ˆÛÛœİ[\S\İ[™ÈHÂˆ]Nˆ	ÉËˆØ]YÛÜNˆ	ÒÛÛ]	Ëˆ›Ü\U\Nˆ	ÑZ\™IËˆ\Nˆ	ÔØ]1,[1,ZÉËˆšXÙNˆ	ÉËˆÚ]Nˆ	ÉËˆ\İšXİˆ	ÉËˆ™ZYÚ›ÜšÛÙˆ	ÉËˆ›ÛÛ\Îˆ	ÉËˆ\™XNˆ	ÉËˆ\ØÜš\[Ûˆ	ÉËˆšY[Õ\›ˆ	ÉËˆš\X[İ\•\›ˆ	ÉËˆX\\›ˆ	ÉËˆ[ÛQ™YNˆ	ÉËˆYY[™›Îˆ	ÉËˆXÚšXØ[™X]\™\Îˆ	ÉËˆ]Z[ÎˆßH\È™XÛÜ™İš[™Ëİš[™Ï‹ˆ[XYÙ\Îˆ×H\Èİš[™Ö×BˆNÂ‚ˆËÈÙ\°éÙZÈ[[ˆØ^q,]\±,H˜q'Û[˜[˜HØY\ˆ[™[›ñgÈ˜qgÛ\È0íœ›™ZËÙ[[ÈØ^q,]ğíœİ\š[Y^‹‚ˆÛÛœİÛ^S\İ[™ÜËÙ]^S\İ[™Ü×HH\ÙTİ]O[V×OŠ×JNÂ‚ˆÛÛœİÛ™]Ó\İ[™ËÙ]™]Ó\İ[™×HH\ÙTİ]J[\S\İ[™ÊNÂ‚ˆÛÛœİØİ\İÛY\œËÙ]İ\İÛY\œ×HH\ÙTİ]O\œ˜^OÈYˆ[X™\È˜[YNˆİš[™ÎÈÛ™Nˆİš[™ÎÈ[XZ[ˆİš[™ÎÈ\Nˆİš[™ÎÈİ]\Îˆİš[™ÎÈ\İÛÛXİˆİš[™ÈOŠ×JNÂ‚ˆÛÛœİØİ\İÛY\‘›Ü›KÙ]İ\İÛY\‘›Ü›WHH\ÙTİ]JÂˆ˜[YNˆ	ÉËÛ™Nˆ	ÉË[XZ[ˆ	ÉË\Nˆ	Ğ[1,Xñ,IËİ]\Îˆ	ÖY[šIÂˆJNÂ‚ˆÛÛœİÛY\ÜØYÙ\ËÙ]Y\ÜØYÙ\×HH\ÙTİ]O\œ˜^OÈYˆ[X™\ÈÙ[™\ˆİš[™ÎÈİXš™Xİˆİš[™ÎÈ^ˆİš[™ÎÈ[YNˆİš[™ÎÈ[œ™XYˆ›ÛÛX[ˆOŠ×JNÂ‚ˆÛÛœİÜ›Ùš[KÙ]›Ùš[WHH\ÙTİ]JÂˆ˜[YNˆ	ÉËˆ[XZ[ˆ	ÉËˆÛ™Nˆ	ÉËˆ]Nˆ\ÓX[˜YÙ\ˆÈ	Öpí›™]XÚIÈˆ	ÑØ^\š[Y[šİ[[±,qgÛX[±,IËˆÙ™šXÙNˆ	ÉËˆ™YÚ[Ûˆ	ÉÂˆJNÂ‚ˆÛÛœİ\Ú[Y[Îˆ\œ˜^OÈ[YNˆİš[™ÎÈ]Nˆİš[™ÎÈİ\İÛY\ˆİš[™ÎÈ\Nˆİš[™ÈOˆH×NÂ‚ˆ\ÙQY™™Xİ
+  return <div className="space-y-5">
+    <section className="overflow-hidden rounded-2xl bg-[#071d3b] p-5 text-white shadow-xl sm:p-7">
+      <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div><p className="text-[10px] font-black tracking-[.22em] text-red-200">REALTY CENTERÂ® CRM</p><h2 className="mt-2 text-2xl font-black">MÃ¼ÅŸteri iliÅŸkilerini tek yerden yÃ¶netin.</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-white/70">MÃ¼ÅŸteri, talep, not, takip ve randevu sÃ¼reÃ§lerini kategorilere ayÄ±rarak kolayca yÃ¶netin.</p><span className={`mt-3 inline-flex rounded-full px-2.5 py-1 text-[10px] font-black ${crmConnection === 'connected' ? 'bg-emerald-400/20 text-emerald-100' : crmConnection === 'offline' ? 'bg-amber-300/20 text-amber-100' : 'bg-white/10 text-white/70'}`}>{crmConnection === 'connected' ? 'Supabase senkronize' : crmConnection === 'offline' ? 'BaÄŸlantÄ± bekleniyor' : 'CRM yÃ¼kleniyor'}</span></div>
+        <button onClick={() => setShowForm(true)} className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#CD011E] px-5 py-3 text-sm font-black text-white transition hover:bg-red-700"><PlusCircle className="h-4 w-4"/> Yeni mÃ¼ÅŸteri</button>
+      </div>
+      <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">{statCards.map((item) => <div key={item.label} className="rounded-xl bg-white/10 p-4"><p className="text-[10px] font-black tracking-wider text-white/65">{item.label.toUpperCase()}</p><div className="mt-2 flex items-center justify-between"><strong className="text-2xl">{item.value}</strong><span className={`rounded-lg px-2 py-1 text-[10px] font-black ${item.accent}`}>CRM</span></div></div>)}</div>
+    </section>
 
+    <div className="grid gap-5 xl:grid-cols-[minmax(0,1.25fr)_minmax(320px,.75fr)]">
+      <section className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div className="border-b border-slate-200 p-4 sm:p-5">
+          <div className="flex flex-wrap gap-2">{[
+            ['customers','MÃ¼ÅŸteriler',Users], ['leads','Lead Havuzu',Filter], ['followups','Takipler',Clock], ['appointments','Randevular',Calendar]
+          ].map(([key,label,Icon]) => { const ActiveIcon = Icon as typeof Users; return <button key={key as string} onClick={() => setTab(key as typeof tab)} className={`inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-black transition ${tab === key ? 'bg-[#CD011E] text-white shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}><ActiveIcon className="h-3.5 w-3.5"/>{label as string}</button>; })}</div>
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row"><div className="relative flex-1"><Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"/><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ad, telefon, e-posta veya bÃ¶lge ara..." className="w-full rounded-xl border border-slate-200 bg-slate-50 py-3 pl-10 pr-3 text-sm outline-none focus:border-red-500 focus:ring-4 focus:ring-red-50"/></div><select value={stageFilter} onChange={(event) => setStageFilter(event.target.value as typeof stageFilter)} className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-xs font-bold text-slate-700"><option>TÃ¼mÃ¼</option>{CRM_STAGES.map((stage) => <option key={stage}>{stage}</option>)}</select></div>
+        </div>
+        <div className="divide-y divide-slate-100">{visibleRecords.length ? visibleRecords.map((record) => <button key={record.id} onClick={() => setSelectedId(record.id)} className={`w-full p-4 text-left transition hover:bg-slate-50 sm:p-5 ${selected?.id === record.id ? 'bg-red-50/45' : ''}`}><div className="flex items-start gap-3"><div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#071d3b] text-xs font-black text-white">{record.name.split(' ').map((part) => part[0]).slice(0,2).join('')}</div><div className="min-w-0 flex-1"><div className="flex flex-wrap items-center justify-between gap-2"><h3 className="font-black text-slate-900">{record.name}</h3><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${stageClass[record.stage]}`}>{record.stage}</span></div><p className="mt-1 text-xs text-slate-500">{record.type} Â· {record.city || 'BÃ¶lge belirtilmedi'}{record.district ? ` / ${record.district}` : ''}</p><div className="mt-3 flex flex-wrap gap-3 text-[11px] font-semibold text-slate-600"><span className="flex items-center gap-1"><Phone className="h-3.5 w-3.5 text-red-700"/>{record.phone}</span><span>Son iletiÅŸim: {record.lastContact}</span>{record.nextAction && <span className="text-[#CD011E]">â€¢ {record.nextAction}</span>}</div></div></div></button>) : <div className="p-12 text-center"><Users className="mx-auto h-9 w-9 text-slate-300"/><h3 className="mt-3 font-black text-slate-800">Bu kategoride kayÄ±t yok</h3><p className="mt-1 text-xs text-slate-500">Yeni mÃ¼ÅŸteri ekleyerek CRM sÃ¼recini baÅŸlatabilirsiniz.</p></div>}</div>
+      </section>
 
-HOˆÂˆÛÛœİØY›Ùš[HH\Ş[˜È
+      <aside className="rounded-2xl border border-slate-200 bg-white shadow-sm">{selected ? <div className="p-5"><div className="flex items-start justify-between gap-3"><div><p className="text-[10px] font-black tracking-[.18em] text-red-700">MÃœÅTERÄ° KARTI</p><h2 className="mt-1 text-xl font-black text-slate-900">{selected.name}</h2><p className="mt-1 text-xs text-slate-500">{selected.type} Â· Sorumlu: {selected.owner}</p></div><button onClick={deleteRecord} className="rounded-lg bg-slate-100 px-2.5 py-2 text-[10px] font-black text-slate-600 hover:bg-red-50 hover:text-red-700">ArÅŸivle</button></div>
+        <div className="mt-5 grid grid-cols-2 gap-2 text-xs"><a href={`tel:${selected.phone.replace(/\\s+/g,'')}`} className="rounded-xl bg-slate-50 p-3 font-bold text-slate-700"><Phone className="mb-1 h-4 w-4 text-red-700"/>{selected.phone}</a><a href={`mailto:${selected.email}`} className="min-w-0 rounded-xl bg-slate-50 p-3 font-bold text-slate-700"><Mail className="mb-1 h-4 w-4 text-red-700"/><span className="block truncate">{selected.email || 'E-posta yok'}</span></a></div>
+        <div className="mt-5 border-y border-slate-100 py-4"><p className="text-[10px] font-black tracking-wider text-slate-400">Ä°HTÄ°YAÃ‡ Ã–ZETÄ°</p><p className="mt-2 text-sm font-bold text-slate-800">{selected.preference || 'Tercih bilgisi girilmedi'}</p><p className="mt-1 text-xs text-slate-500">{selected.city || 'Åehir yok'}{selected.district ? ` / ${selected.district}` : ''}{selected.budget ? ` Â· ${selected.budget}` : ''}</p></div>
+        <div className="mt-5"><p className="text-[10px] font-black tracking-wider text-slate-400">SÃœREÃ‡ DURUMU</p><div className="mt-2 grid grid-cols-3 gap-1.5">{CRM_STAGES.map((stage) => <button key={stage} onClick={() => changeStage(stage)} className={`rounded-lg px-1.5 py-2 text-[9px] font-black transition ${selected.stage === stage ? 'bg-[#CD011E] text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>{stage}</button>)}</div></div>
+        <div className="mt-5"><p className="text-[10px] font-black tracking-wider text-slate-400">GÃ–RÃœÅME NOTLARI</p><div className="mt-2 max-h-36 space-y-2 overflow-y-auto">{selected.notes.length ? selected.notes.map((note) => <div key={note.id} className="rounded-lg bg-slate-50 p-2.5"><p className="text-xs leading-5 text-slate-700">{note.text}</p><small className="mt-1 block text-[9px] font-bold text-slate-400">{note.date}</small></div>) : <p className="rounded-lg bg-slate-50 p-3 text-xs text-slate-500">HenÃ¼z gÃ¶rÃ¼ÅŸme notu yok.</p>}</div><div className="mt-2 flex gap-2"><input value={noteText} onChange={(event) => setNoteText(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') addNote(); }} placeholder="Not ekleyin..." className="min-w-0 flex-1 rounded-lg border border-slate-200 px-3 py-2 text-xs outline-none focus:border-red-500"/><button onClick={addNote} className="rounded-lg bg-[#071d3b] px-3 text-xs font-black text-white">Ekle</button></div></div>
+      </div> : <div className="p-10 text-center"><MessageSquare className="mx-auto h-9 w-9 text-slate-300"/><p className="mt-3 text-sm font-black text-slate-700">Bir mÃ¼ÅŸteri seÃ§in</p><p className="mt-1 text-xs text-slate-500">Detay, not ve sÃ¼reÃ§ yÃ¶netimi burada aÃ§Ä±lÄ±r.</p></div>}</aside>
+    </div>
 
-HOˆÂˆÛÛœİÈ]NˆÈ\Ù\ˆHHH]ØZ]İ\X˜\ÙK˜]]™Ù]\Ù\Š
-NÂˆYˆ
-]\Ù\ŠH™]\›ÂˆÛÛœİÈ]HHH]ØZ]İ\X˜\ÙK™œ›ÛJ	Ü›Ùš[\ÉÊKœÙ[Xİ
-	Ùš\œİÛ˜[YK\İÛ˜[YK[XZ[Û™IÊK™\J	ÚY	Ë\Ù\‹šY
-K›X^X™TÚ[™ÛJ
-NÂˆÙ]›Ùš[J
-İ\œ™[
-HOˆ
-Âˆ‹‹˜İ\œ™[ˆ˜[YNˆÙ]OË™š\œİÛ˜[YK]OË›\İÛ˜[YWK™š[\Š›ÛÛX[ŠKš›Ú[Š	È	ÊHİ\œ™[›˜[YK6ÓMm¢G§²ÚîÆ­yĞô9Õµ‰•È¡MÑÉ¥¹œ¡¹•İ1¥ÍÑ¥¹œ¹…É•„¤¹É•Á±…” ½mxÀ´åt½œ°€œœ¤¤ñğ€Àì(€€€½¹ÍĞÁÉ¥µ…Éå%µ…”€ô¹•İ1¥ÍÑ¥¹œ¹¥µ…•ÍlÁtñğ€¡ÑÑÁÌè¼½¥µ…•Ì¹Õ¹ÍÁ±…Í ¹½´½Á¡½Ñ¼´ÄÔØÀÄàÔÀÀàµˆÀÌÌÄÀÙ…˜ÕŒÌı…ÕÑ¼õ™½Éµ…Ğ™™¥ĞõÉ½À™ÄôàÀ™ÜôÄÀÀÀœì((€€€¥˜€¡•‘¥Ñ¥¹1¥ÍÑ¥¹%¤ì(€€€€€Í•Ñ5å1¥ÍÑ¥¹Ì ¡ÁÉ•Ø¤€ôøÁÉ•Ø¹µ…À ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€ôôô•‘¥Ñ¥¹1¥ÍÑ¥¹%€üì(€€€€€€€€¸¸¹¥Ñ•´°(€€€€€€€Ñ¥Ñ±”è¹•İ1¥ÍÑ¥¹œ¹Ñ¥Ñ±”ñğ¥Ñ•´¹Ñ¥Ñ±”°(€€€€€€€…Ñ•½Éäè¹•İ1¥ÍÑ¥¹œ¹…Ñ•½Éä°(€€€€€€€ÁÉ½Á•ÉÑåQåÁ”è¹•İ1¥ÍÑ¥¹œ¹ÁÉ½Á•ÉÑåQåÁ”°(€€€€€€€ÑåÁ”è¹•İ1¥ÍÑ¥¹œ¹ÑåÁ”°(€€€€€€€ÁÉ¥”è¹Õµ•É¥AÉ¥”°(€€€€€€€¥Ñäè¹•İ1¥ÍÑ¥¹œ¹¥Ñä°(€€€€€€€‘¥ÍÑÉ¥Ğè¹•İ1¥ÍÑ¥¹œ¹‘¥ÍÑÉ¥Ğ°(€€€€€€€¹•¥¡‰½É¡½½è¹•İ1¥ÍÑ¥¹œ¹¹•¥¡‰½É¡½½ñğ€5•É­•èœ°(€€€€€€€É½½µÌè¹•İ1¥ÍÑ¥¹œ¹É½½µÌ°(€€€€€€€…É•„è¹Õµ•É¥É•„°(€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è¹•İ1¥ÍÑ¥¹œ¹‘•ÍÉ¥ÁÑ¥½¸°(€€€€€€€Ù¥‘•½UÉ°è¹•İ1¥ÍÑ¥¹œ¹Ù¥‘•½UÉ°°(€€€€€€€Ù¥ÉÑÕ…±Q½ÕÉUÉ°è¹•İ1¥ÍÑ¥¹œ¹Ù¥ÉÑÕ…±Q½ÕÉUÉ°°(€€€€€€€µ…ÁUÉ°è¹•İ1¥ÍÑ¥¹œ¹µ…ÁUÉ°°(€€€€€€€µ½¹Ñ¡±å•”è¹•İ1¥ÍÑ¥¹œ¹µ½¹Ñ¡±å•”°(€€€€€€€‘••‘%¹™¼è¹•İ1¥ÍÑ¥¹œ¹‘••‘%¹™¼°(€€€€€€€Ñ•¡¹¥…±•…ÑÕÉ•Ìè¹•İ1¥ÍÑ¥¹œ¹Ñ•¡¹¥…±•…ÑÕÉ•Ì°(€€€€€€€ÕÁ‘…Ñ•‘Ğè¹•Ü…Ñ” ¤¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ ÑÈµQHœ¤°(€€€€€€€‘•Ñ…¥±Ìè¹•İ1¥ÍÑ¥¹œ¹‘•Ñ…¥±Ì°(€€€€€€€¥µ…”èÁÉ¥µ…Éå%µ…”°(€€€€€€€¥µ…•Ìè¹•İ1¥ÍÑ¥¹œ¹¥µ…•Ì¹±•¹Ñ €ü¹•İ1¥ÍÑ¥¹œ¹¥µ…•Ì€èmÁÉ¥µ…Éå%µ…•t(€€€€€ô€è¥Ñ•´¤¤ì(€€€ô•±Í”ì(€€€€€½¹ÍĞÉ•…Ñ•‘1¥ÍÑ¥¹œ€ôì(€€€€€€€¥èI´‘í5…Ñ ¹™±½½È ÄÀÀ€¬5…Ñ ¹É…¹‘½´ ¤€¨€àää¥õ€°(€€€€€€€Ñ¥Ñ±”è¹•İ1¥ÍÑ¥¹œ¹Ñ¥Ñ±”ñğ€e•¹¤I•…±Ñä•¹Ñ•Ë
-¸ƒÁ±…»Äœ°(€€€€€€€…Ñ•½Éäè¹•İ1¥ÍÑ¥¹œ¹…Ñ•½Éä°(€€€€€€€ÁÉ½Á•ÉÑåQåÁ”è¹•İ1¥ÍÑ¥¹œ¹ÁÉ½Á•ÉÑåQåÁ”°(€€€€€€€ÑåÁ”è¹•İ1¥ÍÑ¥¹œ¹ÑåÁ”°(€€€€€€€ÁÉ¥”è¹Õµ•É¥AÉ¥”°(€€€€€€€ÕÉÉ•¹äè€ŸŠ
-èœ°(€€€€€€€¥Ñäè¹•İ1¥ÍÑ¥¹œ¹¥Ñä°(€€€€€€€‘¥ÍÑÉ¥Ğè¹•İ1¥ÍÑ¥¹œ¹‘¥ÍÑÉ¥Ğ°(€€€€€€€¹•¥¡‰½É¡½½è¹•İ1¥ÍÑ¥¹œ¹¹•¥¡‰½É¡½½ñğ€5•É­•èœ°(€€€€€€€É½½µÌè¹•İ1¥ÍÑ¥¹œ¹É½½µÌ°(€€€€€€€…É•„è¹Õµ•É¥É•„°(€€€€€€€‘•ÍÉ¥ÁÑ¥½¸è¹•İ1¥ÍÑ¥¹œ¹‘•ÍÉ¥ÁÑ¥½¸°(€€€€€€€Ù¥‘•½UÉ°è¹•İ1¥ÍÑ¥¹œ¹Ù¥‘•½UÉ°°(€€€€€€€Ù¥ÉÑÕ…±Q½ÕÉUÉ°è¹•İ1¥ÍÑ¥¹œ¹Ù¥ÉÑÕ…±Q½ÕÉUÉ°°(€€€€€€€µ…ÁUÉ°è¹•İ1¥ÍÑ¥¹œ¹µ…ÁUÉ°°(€€€€€€€µ½¹Ñ¡±å•”è¹•İ1¥ÍÑ¥¹œ¹µ½¹Ñ¡±å•”°(€€€€€€€‘••‘%¹™¼è¹•İ1¥ÍÑ¥¹œ¹‘••‘%¹™¼°(€€€€€€€Ñ•¡¹¥…±•…ÑÕÉ•Ìè¹•İ1¥ÍÑ¥¹œ¹Ñ•¡¹¥…±•…ÑÕÉ•Ì°(€€€€€€€ÕÁ‘…Ñ•‘Ğè¹•Ü…Ñ” ¤¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ ÑÈµQHœ¤°(€€€€€€€‘•Ñ…¥±Ìè¹•İ1¥ÍÑ¥¹œ¹‘•Ñ…¥±Ì°(€€€€€€€¥µ…”èÁÉ¥µ…Éå%µ…”°(€€€€€€€¥µ…•Ìè¹•İ1¥ÍÑ¥¹œ¹¥µ…•Ì¹±•¹Ñ €ü¹•İ1¥ÍÑ¥¹œ¹¥µ…•Ì€èmÁÉ¥µ…Éå%µ…•t°(€€€€€€€…•¹Ñ9…µ”èÁÉ½™¥±”¹¹…µ”ñğ€¡¥Í5…¹…•È€ü€gÙ¹•Ñ¥¤œ€è€…»Ç}µ…¸œ¤°(€€€€€€€…•¹ÑA¡½¹”èÁÉ½™¥±”¹Á¡½¹”ñğ€œœ°(€€€€€€€‘…Ñ”è¹•Ü…Ñ” ¤¹Ñ½%M=MÑÉ¥¹œ ¤¹Í±¥” À°€ÄÀ¤°(€€€€€€€¥Í•…ÑÕÉ•è™…±Í”°(€€€€€€€ÍÑ…ÑÕÌè€­Ñ¥˜œ(€€€€€ôì(€€€€€Í•Ñ5å1¥ÍÑ¥¹Ì ¡ÁÉ•Ø¤€ôømÉ•…Ñ•‘1¥ÍÑ¥¹œ°€¸¸¹ÁÉ•Ùt¤ì(€€€ô((€€€É•Í•Ñ1¥ÍÑ¥¹½É´ ¤ì(€€€Í•ÑÑ¥Ù•M•Ñ¥½¸ ±¥ÍÑ¥¹Ìœ¤ì(€ôì((€½¹ÍĞ‘•±•Ñ•1¥ÍÑ¥¹œ€ô€¡¥èÍÑÉ¥¹œ¤€ôøì(€€€¥˜€ …İ¥¹‘½Ü¹½¹™¥É´ 	Ô¥±…»ÄÍ¥±µ•¬¥ÍÑ•‘§}¥¹¥é‘•¸•µ¥¸µ¥Í¥¹¥èüœ¤¤É•ÑÕÉ¸ì(€€€Í•Ñ5å1¥ÍÑ¥¹Ì ¡ÁÉ•Ø¤€ôøÁÉ•Ø¹™¥±Ñ•È ¡¥Ñ•´¤€ôø¥Ñ•´¹¥€„ôô¥¤¤ì(€ôì((€½¹ÍĞ…‘‘ÕÍÑ½µ•È€ô€¡”èI•…Ğ¹½ÉµÙ•¹Ğ¤€ôøì(€€€”¹ÁÉ•Ù•¹Ñ•™…Õ±Ğ ¤ì(€€€¥˜€ …ÕÍÑ½µ•É½É´¹¹…µ”ñğ€…ÕÍÑ½µ•É½É´¹Á¡½¹”ñğ€…ÕÍÑ½µ•É½É´¹•µ…¥°¤ì(€€€€€…±•ÉĞ 3ñÑ™•¸…°Ñ•±•™½¸Ù””µÁ½ÍÑ„…±…¹±…ËÅ»Ä‘½±‘ÕÉÕ¹Õè¸œ¤ì(€€€€€É•ÑÕÉ¸ì(€€€ô(€€€Í•ÑÕÍÑ½µ•ÉÌ ¡ÁÉ•Ø¤€ôømì(€€€€€¥è…Ñ”¹¹½Ü ¤°(€€€€€€¸¸¹ÕÍÑ½µ•É½É´°(€€€€€±…ÍÑ½¹Ñ…Ğè€	ÕŸñ¸œ(€€€ô°€¸¸¹ÁÉ•Ùt¤ì(€€€Í•ÑÕÍÑ½µ•É½É´¡ì¹…µ”è€œœ°Á¡½¹”è€œœ°•µ…¥°è€œœ°ÑåÁ”è€³ÅÄœ°ÍÑ…ÑÕÌè€e•¹¤œô¤ì(€€€Í•ÑM¡½İÕÍÑ½µ•É½É´¡™…±Í”¤ì(€€€Í•ÑÕÍÑ½µ•ÉM…Ù•¡ÑÉÕ”¤ì(€€€Í•ÑQ¥µ•½ÕĞ  ¤€ôøÍ•ÑÕÍÑ½µ•ÉM…Ù•¡™…±Í”¤°€ÈÈÀÀ¤ì(€ôì((€½¹ÍĞµ…É­5•ÍÍ…•I•…€ô€¡¥è¹Õµ‰•È¤€ôøì(€€€Í•Ñ5•ÍÍ…•Ì ¡ÁÉ•Ø¤€ôøÁÉ•Ø¹µ…À ¡µ•ÍÍ…”¤€ôøµ•ÍÍ…”¹¥€ôôô¥€üì€¸¸¹µ•ÍÍ…”°Õ¹É•…è™…±Í”ô€èµ•ÍÍ…”¤¤ì(€ôì((€½¹ÍĞÍ…Ù•AÉ½™¥±”€ô€ ¤€ôøì(€€€Í•ÑAÉ½™¥±•M…Ù•¡ÑÉÕ”¤ì(€€€Í•ÑQ¥µ•½ÕĞ  ¤€ôøÍ•ÑAÉ½™¥±•M…Ù•¡™…±Í”¤°€ÈÔÀÀ¤ì(€ôì((€½¹ÍĞÉ•¹‘•É=Ù•ÉÙ¥•Ü€ô€ ¤€ôø€ (€€€€ğø(€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥É¥µ½±Ì´ÄÍ´éÉ¥µ½±Ì´Èá°éÉ¥µ½±Ì´Ğ…À´Ğµˆ´Øˆø(€€€€€€€íl(€€€€€€€€€ì±…‰•°è€­Ñ¥˜ƒÁ±…¹±…ËÅ´œ°Ù…±Õ”èµå1¥ÍÑ¥¹Ì¹™¥±Ñ•È ¡¥Ñ•´¤€ôø¥Ñ•´¹ÍÑ…ÑÕÌ€ôôô€­Ñ¥˜œ¤¹±•¹Ñ °¥½¸è	Õ¥±‘¥¹œÈô°(€€€€€€€€€ì±…‰•°è€Q½Á±…´A½ÉÑ›Ùäœ°Ù…±Õ”èµå1¥ÍÑ¥¹Ì¹±•¹Ñ °¥½¸è	É¥•™…Í”ô°(€€€€€€€€€ì±…‰•°è€	•­±•å•¸ÙËó}µ•±•Èœ°Ù…±Õ”è€à°¥½¸è…±•¹‘…Èô°(€€€€€€€€€ì±…‰•°è€e•¹¤5•Í…©±…Èœ°Ù…±Õ”èµ•ÍÍ…•Ì¹™¥±Ñ•È ¡µ•ÍÍ…”¤€ôøµ•ÍÍ…”¹Õ¹É•…¤¹±•¹Ñ °¥½¸è5•ÍÍ…•MÅÕ…É”ô(€€€€€€€t¹µ…À ¡ÍÑ…Ğ¤€ôøì(€€€€€€€€€½¹ÍĞ%½¸€ôÍÑ…Ğ¹¥½¸ì(€€€€€€€€€É•ÑÕÉ¸€ñ‘¥Ø­•äõíÍÑ…Ğ¹±…‰•±ô±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÍ¡…‘½ÜµÍ´À´Ôˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ‰•Ñİ••¸ˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµáÌ™½¹Ğµ‰½±Ñ•áĞµÍ±…Ñ”´ÔÁf«)à¶»§q«^v‹­¦ëh®("©m¢G§r‹§·4Õ:-jZ.¶›­–)Ş³S#ç·7FBæÆ&VÇÓÂ÷ãÇ6Æ74æÖSÒ'FW‡BÓ7†ÂföçBÖ&Æ6²FW‡B×6ÆFRÓ“×BÓ#ç·7FBçfÇVWÓÂ÷ãÂöF—cãÆF—b6Æ74æÖSÒ'rÓ‚Ó&÷VæFVB×†Â&r×&VBÓFW‡B×&VBÓsfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"#ãÄ–6öâ6Æ74æÖSÒ'rÓR‚ÓR"óãÂöF—cãÂöF—cãÂöF—cã°¢Ò—Ğ¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2Ó†Ã¦w&–BÖ6öÇ2Ó2vÓb#à¢Ç6V7F–öâ6Æ74æÖSÒ'†Ã¦6öÂ×7âÓ"&r×v†—FR&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#6†F÷r×6Ò÷fW&fÆ÷rÖ†–FFVâ#à¢ÆF—b6Æ74æÖSÒ'‚Ób’ÓR&÷&FW"Ö"&÷&FW"×6ÆFRÓ#fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ#ãÆF—cãÆƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×6ÆFRÓ“#å6öâKÆæÆ,KÓÂöƒ#ãÇ6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS×BÓ#å÷'Fl;gœ;Æì;Ç¦FV¶’6öâ–ÆæÆ#Â÷ãÂöF—cãÆ'WGFöâöä6Æ–6³×²‚’Óâ6WD7F—fU6V7F–öâ‚vÆ—7F–æw2r—Ò6Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²FW‡B×&VBÓs†÷fW#§FW‡B×&VBÓƒ#åL;ÆÜ;Æì;Â|;g#Âö'WGFöããÂöF—cà¢ÆF—b6Æ74æÖSÒ&F—f–FR×’F—f–FR×6ÆFRÓ#ç¶×”Æ—7F–æw2ç6Æ–6RƒÂB’æÖ‚†—FVÒ’ÓâÆF—b¶W“×¶—FVÒæ–GÒ6Æ74æÖSÒ'ÓRfÆW‚fÆW‚Ö6öÂ6Ó¦fÆW‚×&÷rvÓB6Ó¦—FV×2Ö6VçFW"#ãÆ–Ör7&3×¶—FVÒæ–ÖvWÒÇC×¶—FVÒçF—FÆWÒ6Æ74æÖSÒ'rÖgVÆÂ6Ó§rÓ#‚‚Ó#ö&¦V7BÖ6÷fW"&÷VæFVB×†Â"óãÆF—b6Æ74æÖSÒ&fÆW‚ÓÖ–â×rÓ#ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"vÓ"Ö"Ó#ãÇ7â6Æ74æÖS×¶FW‡BÕ³…ÒföçBÖ&Æ6²‚Ó"’Ó&÷VæFVBG¶—FVÒç7FGW2ÓÓÒt·F–bròv&r×&VBÓFW‡B×&VBÓsr¢v&rÖÖ&W"ÓSFW‡BÖÖ&W"ÓcwÖÓç¶—FVÒç7FGW7ÓÂ÷7ããÇ7â6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&öÆBFW‡B×6ÆFRÓC#ç¶—FVÒæ–GÓÂ÷7ããÂöF—cãÆƒ26Æ74æÖSÒ'FW‡B×6ÒföçBÖ&Æ6²FW‡B×6ÆFRÓ“G'Væ6FR#ç¶—FVÒçF—FÆWÓÂöƒ3ãÇ6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS×BÓ#ç¶—FVÒæ6—G—Òò¶—FVÒæF—7G&–7GÒ+r¶—FVÒæ&VÒÜ+#Â÷ãÂöF—cãÆF—b6Æ74æÖSÒ'FW‡BÖÆVgB6Ó§FW‡B×&–v‡B#ãÆF—b6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×6ÆFRÓ“#ç¶—FVÒç&–6RçFôÆö6ÆU7G&–ær‚wG"ÕE"r—Ò(+£ÂöF—cãÆF—b6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓSföçBÖ&öÆB×BÓ#ç¶—FVÒçG—WÓÂöF—cãÂöF—cãÂöF—câ—ÓÂöF—cà¢Â÷6V7F–öãà¢Ç6V7F–öâ6Æ74æÖSÒ&&r×v†—FR&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#6†F÷r×6Ò÷fW&fÆ÷rÖ†–FFVâ#ãÆF—b6Æ74æÖSÒ'‚Ób’ÓR&÷&FW"Ö"&÷&FW"×6ÆFRÓ##ãÆƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×6ÆFRÓ“#ä'V|;Æì;ÆâF·f–Ö“Âöƒ#ãÇ6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS×BÓ#ãI÷W7F÷2##cÂ÷ãÂöF—cãÆF—b6Æ74æÖSÒ'ÓR76R×’Ó2#ç¶ö–çFÖVçG2æÖ‚†ö–çFÖVçB’ÓâÆF—b¶W“×¶G¶ö–çFÖVçBçF–ÖWÒÒG¶ö–çFÖVçBçF—FÆWÖÒ6Æ74æÖSÒ'ÓB&÷VæFVB×†Â&r×6ÆFRÓS&÷&FW"&÷&FW"×6ÆFRÓ##ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ#ãÇ7â6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓs#ç¶ö–çFÖVçBçF–ÖWÓÂ÷7ããÇ7â6Æ74æÖSÒ'FW‡BÕ³…ÒföçBÖ&öÆBFW‡B×6ÆFRÓS#ç¶ö–çFÖVçBçG—WÓÂ÷7ããÂöF—cãÇ6Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×6ÆFRÓ“FW‡B×6Ò×BÓ"#ç¶ö–çFÖVçBçF—FÆWÓÂ÷ãÇ6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS×BÓ#ç¶ö–çFÖVçBæ7W7FöÖW'ÓÂ÷ãÂöF—câ—ÓÂöF—cãÂ÷6V7F–öãà¢ÂöF—cà¢Âóà¢“° ¢6öç7B&VæFW$Æ—7F–æw2Ò‚’Óâ€¢ÆF—b6Æ74æÖSÒ'76R×’Ób#à¢ÆF—b6Æ74æÖSÒ&&r×v†—FR&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#6†F÷r×6ÒÓRfÆW‚fÆW‚Ö6öÂÆs¦fÆW‚×&÷rÆs¦—FV×2Ö6VçFW"Æs¦§W7F–g’Ö&WGvVVâvÓB#ãÆF—b6Æ74æÖSÒ'&VÆF—fRfÆW‚ÓÖ‚×r×†Â#ãÅ6V&6‚6Æ74æÖSÒ&'6öÇWFRÆVgBÓ2F÷Óó"×G&ç6ÆFR×’Óó"rÓB‚ÓBFW‡B×6ÆFRÓC"óãÆ–çWBfÇVS×¶Æ—7F–æu6V&6‡Òöä6†ævS×²†R’Óâ6WDÆ—7F–æu6V&6‚†RçF&vWBçfÇVR—ÒÆ6V†öÆFW#Ò,KÆâæòÂ&YöÌK²Â–ÂfW––Ì:vR&âââ"6Æ74æÖSÒ'rÖgVÆÂÂÓ"ÓB’Ó2&÷VæFVB×†Â&÷&FW"&÷&FW"×6ÆFRÓ3&r×6ÆFRÓSFW‡B×6Òfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs"óãÂöF—cãÆ'WGFöâöä6Æ–6³×²‚’Óâ²6WDVF—F–ætÆ—7F–æt–B†çVÆÂ“²6WDæWtÆ—7F–ær†V×G”Æ—7F–ær“²6WE6†÷tÆ—7F–ætf÷&Ò‡G'VR“²×Ò6Æ74æÖSÒ&&r×&VBÓs†÷fW#¦&r×&VBÓƒFW‡B×v†—FRföçBÖ&Æ6²‚ÓR’Ó2&÷VæFVB×†ÂfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"vÓ"6†F÷rÖÆr6†F÷r×&VBÓsó##ãÅÇW46—&6ÆR6Æ74æÖSÒ'rÓR‚ÓR"óâ–Væ’KÆâV¶ÆSÂö'WGFöããÂöF—cà¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2ÓÆs¦w&–BÖ6öÇ2Ó"vÓR#à¢¶f–ÇFW&VDÆ—7F–æw2æÖ‚†—FVÒ’ÓâÆF—b¶W“×¶—FVÒæ–GÒ6Æ74æÖSÒ&&r×v†—FR&÷VæFVBÓ'†Â&÷&FW"&÷&FW"×6ÆFRÓ#6†F÷r×6Ò÷fW&fÆ÷rÖ†–FFVâ#ãÆF—b6Æ74æÖSÒ&fÆW‚fÆW‚Ö6öÂ6Ó¦fÆW‚×&÷r#ãÆ–Ör7&3×¶—FVÒæ–ÖvWÒÇC×¶—FVÒçF—FÆWÒ6Æ74æÖSÒ'rÖgVÆÂ6Ó§rÓC‚‚ÓCBö&¦V7BÖ6÷fW""óãÆF—b6Æ74æÖSÒ'ÓRfÆW‚Ó#ãÆF—b6Æ74æÖSÒ&fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâvÓ"#ãÇ7â6Æ74æÖS×¶FW‡BÕ³…ÒföçBÖ&Æ6²‚Ó"ãR’Ó&÷VæFVBG¶—FVÒç7FGW2ÓÓÒt·F–bròv&r×&VBÓFW‡B×&VBÓsr¢v&rÖÖ&W"ÓSFW‡BÖÖ&W"ÓcwÖÓç¶—FVÒç7FGW7ÓÂ÷7ããÇ7â6Æ74æÖSÒ'FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓC#ç¶—FVÒæ–GÓÂ÷7ããÂöF—cãÆƒ26Æ74æÖSÒ&föçBÖ&Æ6²FW‡B×6ÆFRÓ“×BÓ2Æ–æRÖ6Æ×Ó"#ç¶—FVÒçF—FÆWÓÂöƒ3ãÇ6Æ74æÖSÒ'FW‡B×‡2FW‡B×6ÆFRÓS×BÓ"#ç¶—FVÒæ6—G—Òò¶—FVÒæF—7G&–=´Ó[h‘éì¶»§q«^v-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">En Ã‡ok Ä°lgi GÃ¶ren Ä°lanlar</h2><div className="mt-4 space-y-4">{myListings.slice(0,5).map((item,index)=><div key={item.id} className="flex items-center gap-3"><span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-black text-xs text-slate-600">{index+1}</span><div className="flex-1 min-w-0"><p className="text-sm font-black text-slate-800 truncate">{item.title}</p><div className="h-2 bg-slate-100 rounded-full overflow-hidden mt-2"><div className="h-full bg-red-700 rounded-full" style={{width:`${90-index*12}%`}} /></div></div><span className="text-xs font-black text-slate-500">{(3240-index*420).toLocaleString('tr-TR')}</span></div>)}</div></section></div></div>);
+    {showForm && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm"><div className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-2xl"><div className="flex items-start justify-between border-b border-slate-200 p-5"><div><p className="text-[10px] font-black tracking-[.2em] text-red-700">CRM Â· YENÄ° KAYIT</p><h2 className="mt-1 text-xl font-black text-slate-900">Yeni mÃ¼ÅŸteri veya lead ekle</h2></div><button onClick={() => setShowForm(false)} className="rounded-lg bg-slate-100 p-2 text-slate-600"><X className="h-5 w-5"/></button></div><form onSubmit={saveRecord} className="space-y-4 p-5"><div className="grid gap-3 sm:grid-cols-2"><input required value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} placeholder="Ad Soyad *" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><input required value={form.phone} onChange={(event) => setForm({ ...form, phone: event.target.value })} placeholder="Telefon *" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><input type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} placeholder="E-posta" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><select value={form.type} onChange={(event) => setForm({ ...form, type: event.target.value })} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"><option>AlÄ±cÄ±</option><option>SatÄ±cÄ±</option><option>KiracÄ±</option><option>Mal Sahibi</option><option>YatÄ±rÄ±mcÄ±</option></select><input value={form.city} onChange={(event) => setForm({ ...form, city: event.target.value })} placeholder="Ä°l" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><input value={form.district} onChange={(event) => setForm({ ...form, district: event.target.value })} placeholder="Ä°lÃ§e" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><input value={form.budget} onChange={(event) => setForm({ ...form, budget: event.target.value })} placeholder="BÃ¼tÃ§e (Ã¶rn. 5â€“7 milyon TL)" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><select value={form.source} onChange={(event) => setForm({ ...form, source: event.target.value })} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"><option>Manuel kayÄ±t</option><option>Web formu</option><option>Telefon</option><option>WhatsApp</option><option>Referans</option><option>Sosyal medya</option></select></div><textarea value={form.preference} onChange={(event) => setForm({ ...form, preference: event.target.value })} placeholder="Ä°htiyaÃ§, tercih, ilgilendiÄŸi ilan veya Ã¶zel not" rows={3} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/><div className="grid gap-3 sm:grid-cols-2"><select value={form.stage} onChange={(event) => setForm({ ...form, stage: event.target.value as CRMStage })} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm">{CRM_STAGES.map((stage) => <option key={stage}>{stage}</option>)}</select><input value={form.nextAction} onChange={(event) => setForm({ ...form, nextAction: event.target.value })} placeholder="Sonraki takip / randevu tarihi" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm"/></div><div className="flex justify-end gap-3 border-t border-slate-100 pt-4"><button type="button" onClick={() => setShowForm(false)} className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-black text-slate-700">VazgeÃ§</button><button type="submit" className="rounded-xl bg-[#CD011E] px-5 py-3 text-sm font-black text-white">CRM kaydÄ±nÄ± oluÅŸtur</button></div></form></div></div>}
+  </div>;
+}
+
+function AgentDashboard({ panelRole = 'advisor' }: { panelRole?: 'advisor' | 'manager' }) {
+  const navigate = useNavigate();
+  const isManager = panelRole === 'manager';
+  const [activeSection, setActiveSection] = useState<'overview' | 'listings' | 'portfolio' | 'customers' | 'messages' | 'statistics' | 'profile'>('overview');
+  const [showListingForm, setShowListingForm] = useState(false);
+  const [editingListingId, setEditingListingId] = useState<string | null>(null);
+  const [listingSearch, setListingSearch] = useState('');
+  const [customerSearch, setCustomerSearch] = useState('');
+  const [profileSaved, setProfileSaved] = useState(false);
+  const [customerSaved, setCustomerSaved] = useState(false);
+  const [showCustomerForm, setShowCustomerForm] = useState(false);
+
+  const emptyListing = {
+    title: '',
+    category: 'Konut',
+    propertyType: 'Daire',
+    type: 'SatÄ±lÄ±k',
+    price: '',
+    city: '',
+    district: '',
+    neighborhood: '',
+    rooms: '',
+    area: '',
+    description: '',
+    videoUrl: '',
+    virtualTourUrl: '',
+    mapUrl: '',
+    monthlyFee: '',
+    deedInfo: '',
+    technicalFeatures: '',
+    details: {} as Record<string, string>,
+    images: [] as string[]
+  };
+
+  // GerÃ§ek ilan kayÄ±tlarÄ± baÄŸlanana kadar panel boÅŸ baÅŸlar; Ã¶rnek/demo kayÄ±t gÃ¶sterilmez.
+  const [myListings, setMyListings] = useState<any[]>([]);
+
+  const [newListing, setNewListing] = useState(emptyListing);
+
+  const [customers, setCustomers] = useState<Array<{ id: number; name: string; phone: string; email: string; type: string; status: string; lastContact: string }>>([]);
+
+  const [customerForm, setCustomerForm] = useState({
+    name: '', phone: '', email: '', type: 'AlÄ±cÄ±', status: 'Yeni'
+  });
+
+  const [messages, setMessages] = useState<Array<{ id: number; sender: string; subject: string; text: string; time: string; unread: boolean }>>([]);
+
+  const [profile, setProfile] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    title: isManager ? 'YÃ¶netici' : 'Gayrimenkul DanÄ±ÅŸmanÄ±',
+    office: '',
+    region: ''
+  });
+
+  const appointments: Array<{ time: string; title: string; customer: string; type: string }> = [];
+
+  useEffect(() => {
+    const loadProfile = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+      const { data } = await supabase.from('profiles').select('first_name, last_name, email, phone').eq('id', user.id).maybeSingle();
+      setProfile((current) => ({
+        ...current,
+        name: [data?.first_name, data?.last_name].filter(Boolean).join(' ') || current.name,
+        email: data?.email || user.email || current.email,
+        phone: data?.phone || current.phone,
+        title: isManager ? 'YÃ¶netici' : 'Gayrimenkul DanÄ±ÅŸmanÄ±',
+      }));
+    };
+    void loadProfile();
+  }, [isManager]);
+
+  const filteredListings = myListings.filter((item) =>
+    `${item.title} ${item.id} ${item.city} ${item.district}`.toLocaleLowerCase('tr-TR').includes(listingSearch.toLocaleLowerCase('tr-TR'))
+  );
+
+  const filteredCustomers = customers.filter((customer) =>
+    `${customer.name} ${customer.phone} ${customer.email}`.toLocaleLowerCase('tr-TR').includes(customerSearch.toLocaleLowerCase('tr-TR'))
+  );
+
+  const navItems = [
+    { key: 'overview' as const, label: isManager ? 'YÃ¶netici Ana Sayfa' : 'Panel Anasayfa', icon: Home },
+    { key: 'listings' as const, label: isManager ? 'Ä°lan YÃ¶netimi' : 'Ä°lanlarÄ±m', icon: Building2 },
+    { key: 'portfolio' as const, label: isManager ? 'PortfÃ¶y YÃ¶netimi' : 'PortfÃ¶ylerim', icon: Briefcase },
+    { key: 'customers' as const, label: 'CRM & MÃ¼ÅŸteriler', icon: Users },
+    { key: 'messages' as const, label: 'Mesajlar', icon: MessageSquare },
+    { key: 'statistics' as const, label: 'Ä°statistikler', icon: BarChart3 },
+    { key: 'profile' as const, label: 'Profil & Ayarlar', icon: Settings }
+  ];
+
+  const sectionTitles: Record<typeof activeSection, { title: string; description: string }> = {
+    overview: { title: isManager ? 'YÃ¶netici Paneli' : 'DanÄ±ÅŸman Paneli', description: isManager ? 'OperasyonlarÄ±nÄ±z iÃ§in genel gÃ¶rÃ¼nÃ¼m.' : 'BugÃ¼nkÃ¼ Ã§alÄ±ÅŸmalarÄ±nÄ±za genel bakÄ±ÅŸ.' },
+    listings: { title: isManager ? 'Ä°lan YÃ¶netimi' : 'Ä°lanlarÄ±m', description: 'YÃ¶nettiÄŸiniz tÃ¼m ilanlarÄ± buradan takip edin.' },
+    portfolio: { title: isManager ? 'PortfÃ¶y YÃ¶netimi' : 'PortfÃ¶ylerim', description: 'PortfÃ¶ylerin durumunu ve daÄŸÄ±lÄ±mÄ±nÄ± yÃ¶netin.' },
+    customers: { title: 'CRM & MÃ¼ÅŸteriler', description: 'MÃ¼ÅŸteri, lead, takip ve randevu sÃ¼reÃ§lerinizi tek ekrandan yÃ¶netin.' },
+    messages: { title: 'Mesajlar', description: 'MÃ¼ÅŸterilerinizden gelen mesajlarÄ± takip edin.' },
+    statistics: { title: 'Ä°statistikler', description: 'PerformansÄ±nÄ±zÄ± ve ilanlarÄ±nÄ±zÄ±n eriÅŸimini inceleyin.' },
+    profile: { title: 'Profil & Ayarlar', description: 'Hesap ve iletiÅŸim bilgilerinizi gÃ¼ncelleyin.' }
+  };
+
+  const activeTitle = sectionTitles[activeSection];
+
+  const compressImage = (file: File): Promise<string> => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const image = new Image();
+      image.onload = () => {
+        const maxDimension = 1920;
+        let width = image.width;
+        let height = image.height;
+        if (width > maxDimension || height > maxDimension) {
+          const ratio = Math.min(maxDimension / width, maxDimension / height);
+          width = Math.round(width * ratio);
+          height = Math.round(height * ratio);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return reject(new Error('Canvas unavailable'));
+        ctx.drawImage(image, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', 0.78));
+      };
+      image.onerror = () => reject(new Error('Image load failed'));
+      image.src = String(reader.result || '');
+    };
+    reader.onerror = () => reject(new Error('File read failed'));
+    reader.readAsDataURL(file);
+  });
+
+  const handleImageChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+
+    const remainingSlots = 10 - newListing.images.length;
+    if (files.length > remainingSlots) {
+      alert(`En fazla 10 gÃ¶rsel ekleyebilirsiniz. ${remainingSlots} adet daha seÃ§ebilirsiniz.`);
+    }
+
+    const selected = files.slice(0, remainingSlots);
+    const valid = selected.filter((file) => {
+      if (!file.type.startsWith('image/')) {
+        alert(`${file.name} bir gÃ¶rsel dosyasÄ± deÄŸil.`);
+        return false;
+      }
+      if (file.size > 15 * 1024 * 1024) {
+        alert(`${file.name} 15 MB'dan bÃ¼yÃ¼k olduÄŸu iÃ§in eklenmedi.`);
+        return false;
+      }
+      return true;
+    });
+
+    const compressed: string[] = [];
+    for (const file of valid) {
+      try {
+        compressed.push(await compressImage(file));
+      } catch {
+        alert(`${file.name} iÅŸlenirken bir hata oluÅŸtu.`);
+      }
+    }
+
+    setNewListing((prev) => ({ ...prev, images: [...prev.images, ...compressed].slice(0, 10) }));
+    e.target.value = '';
+  };
+
+  const removeImage = (index: number) => {
+    setNewListing((prev) => ({ ...prev, images: prev.images.filter((_, i) => i !== index) }));
+  };
+  void removeImage;
+
+  const resetListingForm = () => {
+    setNewListing(emptyListing);
+    setEditingListingId(null);
+    setShowListingForm(false);
+  };
+
+  const startEditListing = (item: any) => {
+    setEditingListingId(item.id);
+    setNewListing({
+      title: item.title,
+      category: item.category,
+      propertyType: item.propertyType || 'Daire',
+      type: item.type,
+      price: String(item.price),
+      city: item.city,
+      district: item.district,
+      neighborhood: item.neighborhood,
+      rooms: item.rooms,
+      area: String(item.area),
+      description: item.description || '',
+      videoUrl: item.videoUrl || '',
+      virtualTourUrl: item.virtualTourUrl || '',
+      mapUrl: item.mapUrl || '',
+      monthlyFee: item.monthlyFee || '',
+      deedInfo: item.deedInfo || '',
+      technicalFeatures: item.technicalFeatures || '',
+      details: item.details || {},
+      images: item.images?.length ? item.images : [item.image]
+    });
+    setShowListingForm(true);
+  };
+
+  const handleCreateListing = (e: React.FormEvent) => {
+    e.preventDefault();
+    const numericPrice = Number(String(newListing.price).replace(/[^0-9]/g, '')) || 0;
+    const numericArea = Number(String(newListing.area).replace(/[^0-9]/g, '')) || 0;
+    const primaryImage = newListing.images[0] || 'https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&q=80&w=1000';
+
+    if (editingListingId) {
+      setMyListings((prev) => prev.map((item) => item.id === editingListingId ? {
+        ...item,
+        title: newListing.title || item.title,
+        category: newListing.category,
+        propertyType: newListing.propertyType,
+        type: newListing.type,
+        price: numericPrice,
+        city: newListing.city,
+        district: newListing.district,
+        neighborhood: newListing.neighborhood || 'Merkez',
+        rooms: newListing.rooms,
+        area: numericArea,
+        description: newListing.description,
+        videoUrl: newListing.videoUrl,
+        virtualTourUrl: newListing.virtualTourUrl,
+        mapUrl: newListing.mapUrl,
+        monthlyFee: newListing.monthlyFee,
+        deedInfo: newListing.deedInfo,
+        technicalFeatures: newListing.technicalFeatures,
+        updatedAt: new Date().toLocaleDateString('tr-TR'),
+        details: newListing.details,
+        image: primaryImage,
+        images: newListing.images.length ? newListing.images : [primaryImage]
+      } : item));
+    } else {
+      const createdListing = {
+        id: `RC-${Math.floor(100 + Math.random() * 899)}`,
+        title: newListing.title || 'Yeni Realty CenterÂ® Ä°lanÄ±',
+        category: newListing.category,
+        propertyType: newListing.propertyType,
+        type: newListing.type,
+        price: numericPrice,
+        currency: 'â‚º',
+        city: newListing.city,
+        district: newListing.district,
+        neighborhood: newListing.neighborhood || 'Merkez',
+        rooms: newListing.rooms,
+        area: numericArea,
+        description: newListing.description,
+        videoUrl: newListing.videoUrl,
+        virtualTourUrl: newListing.virtualTourUrl,
+        mapUrl: newListing.mapUrl,
+        monthlyFee: newListing.monthlyFee,
+        deedInfo: newListing.deedInfo,
+        technicalFeatures: newListing.technicalFeatures,
+        updatedAt: new Date().toLocaleDateString('tr-TR'),
+        details: newListing.details,
+        image: primaryImage,
+        images: newListing.images.length ? newListing.images : [primaryImage],
+        agentName: profile.name || (isManager ? 'YÃ¶netici' : 'DanÄ±ÅŸman'),
+        agentPhone: profile.phone || '',
+        date: new Date().toISOString().slice(0, 10),
+        isFeatured: false,
+        status: 'Aktif'
+      };
+      setMyListings((prev) => [createdListing, ...prev]);
+    }
+
+    resetListingForm();
+    setActiveSection('listings');
+  };
+
+  const deleteListing = (id: string) => {
+    if (!window.confirm('Bu ilanÄ± silmek istediÄŸinizden emin misiniz?')) return;
+    setMyListings((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const addCustomer = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!customerForm.name || !customerForm.phone || !customerForm.email) {
+      alert('LÃ¼tfen ad, telefon ve e-posta alanlarÄ±nÄ± doldurunuz.');
+      return;
+    }
+    setCustomers((prev) => [{
+      id: Date.now(),
+      ...customerForm,
+      lastContact: 'BugÃ¼n'
+    }, ...prev]);
+    setCustomerForm({ name: '', phone: '', email: '', type: 'AlÄ±cÄ±', status: 'Yeni' });
+    setShowCustomerForm(false);
+    setCustomerSaved(true);
+    setTimeout(() => setCustomerSaved(false), 2200);
+  };
+
+  const markMessageRead = (id: number) => {
+    setMessages((prev) => prev.map((message) => message.id === id ? { ...message, unread: false } : message));
+  };
+
+  const saveProfile = () => {
+    setProfileSaved(true);
+    setTimeout(() => setProfileSaved(false), 2500);
+  };
+
+  const renderOverview = () => (
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+        {[
+          { label: 'Aktif Ä°lanlarÄ±m', value: myListings.filter((item) => item.status === 'Aktif').length, icon: Building2 },
+          { label: 'Toplam PortfÃ¶y', value: myListings.length, icon: Briefcase },
+          { label: 'Bekleyen GÃ¶rÃ¼ÅŸmeler', value: 8, icon: Calendar },
+          { label: 'Yeni Mesajlar', value: messages.filter((message) => message.unread).length, icon: MessageSquare }
+        ].map((stat) => {
+          const Icon = stat.icon;
+          return <div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><div className="flex items-center justify-between"><div><p className="text-xs font-bold text-slate-500">{stat.label}</p><p className="text-3xl font-black text-slate-900 mt-1">{stat.value}</p></div><div className="w-11 h-11 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Icon className="w-5 h-5" /></div></div></div>;
+        })}
+      </div>
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+        <section className="xl:col-span-2 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Son Ä°lanlarÄ±m</h2><p className="text-xs text-slate-500 mt-1">PortfÃ¶yÃ¼nÃ¼zdeki son ilanlar</p></div><button onClick={() => setActiveSection('listings')} className="text-sm font-black text-red-700 hover:text-red-800">TÃ¼mÃ¼nÃ¼ GÃ¶r</button></div>
+          <div className="divide-y divide-slate-100">{myListings.slice(0, 4).map((item) => <div key={item.id} className="p-5 flex flex-col sm:flex-row gap-4 sm:items-center"><img src={item.image} alt={item.title} className="w-full sm:w-28 h-20 object-cover rounded-xl" /><div className="flex-1 min-w-0"><div className="flex items-center gap-2 mb-1"><span className={`text-[10px] font-black px-2 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-100 text-red-700' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-[10px] font-bold text-slate-400">{item.id}</span></div><h3 className="text-sm font-black text-slate-900 truncate">{item.title}</h3><p className="text-xs text-slate-500 mt-1">{item.city} / {item.district} Â· {item.area} mÂ²</p></div><div className="text-left sm:text-right"><div className="font-black text-slate-900">{item.price.toLocaleString('tr-TR')} â‚º</div><div className="text-xs text-slate-500 font-bold mt-1">{item.type}</div></div></div>)}</div>
+        </section>
+        <section className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">BugÃ¼nÃ¼n Takvimi</h2><p className="text-xs text-slate-500 mt-1">11 AÄŸustos 2026</p></div><div className="p-5 space-y-3">{appointments.map((appointment) => <div key={`${appointment.time}-${appointment.title}`} className="p-4 rounded-xl bg-slate-50 border border-slate-200"><div className="flex items-center justify-between"><span className="text-xs font-black text-red-700">{appointment.time}</span><span className="text-[10px] font-bold text-slate-500">{appointment.type}</span></div><p className="font-black text-slate-900 text-sm mt-2">{appointment.title}</p><p className="text-xs text-slate-500 mt-1">{appointment.customer}</p></div>)}</div></section>
+      </div>
+    </>
+  );
+
+  const renderListings = () => (
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div className="relative flex-1 max-w-xl"><Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" /><input value={listingSearch} onChange={(e) => setListingSearch(e.target.value)} placeholder="Ä°lan no, baÅŸlÄ±k, il veya ilÃ§e ara..." className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-red-700" /></div><button onClick={() => { setEditingListingId(null); setNewListing(emptyListing); setShowListingForm(true); }} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-red-700/20"><PlusCircle className="w-5 h-5" /> Yeni Ä°lan Ekle</button></div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {filteredListings.map((item) => <div key={item.id} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="flex flex-col sm:flex-row"><img src={item.image} alt={item.title} className="w-full sm:w-48 h-44 object-cover" /><div className="p-5 flex-1"><div className="flex items-center justify-between gap-2"><span className={`text-[10px] font-black px-2.5 py-1 rounded ${item.status === 'Aktif' ? 'bg-red-100 text-red-700' : 'bg-amber-50 text-amber-600'}`}>{item.status}</span><span className="text-xs font-bold text-slate-400">{item.id}</span></div><h3 className="font-black text-slate-900 mt-3 line-clamp-2">{item.title}</h3><p className="text-xs text-slate-500 mt-2">{item.city} / {item.district} / {item.neighborhood}</p><div className="flex items-center justify-between mt-4"><span className="text-lg font-black text-slate-900">{item.price.toLocaleString('tr-TR')} â‚º</span><span className="text-xs font-bold text-slate-500">{item.area} mÂ² Â· {item.rooms}</span></div><div className="flex gap-2 mt-4"><button onClick={() => startEditListing(item)} className="flex-1 border border-slate-300 hover:border-red-700 hover:text-red-700 text-slate-700 font-bold text-xs py-2.5 rounded-lg">DÃ¼zenle</button><button onClick={() => deleteListing(item.id)} className="px-3 border border-red-300 text-red-700 hover:bg-red-100 font-bold text-xs py-2.5 rounded-lg">Sil</button></div></div></div></div>)}
+      </div>
+      {filteredListings.length === 0 && <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-12 text-center text-slate-500 font-semibold">AradÄ±ÄŸÄ±nÄ±z kriterlere uygun ilan bulunamadÄ±.</div>}
+    </div>
+  );
+
+  const renderPortfolio = () => (<div className="space-y-6"><div className="grid grid-cols-1 md:grid-cols-3 gap-4">{[{ label: 'SatÄ±lÄ±k Konut', value: myListings.filter((x) => x.category === 'Konut' && x.type === 'SatÄ±lÄ±k').length, icon: Home }, { label: 'Ticari Ä°lan', value: myListings.filter((x) => x.category === 'Ä°ÅŸyeri').length, icon: Building2 }, { label: 'Arsa', value: myListings.filter((x) => x.category === 'Arsa').length, icon: MapPin }].map((item) => { const Icon = item.icon; return <div key={item.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 flex items-center gap-4"><div className="w-11 h-11 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Icon className="w-5 h-5" /></div><div><p className="text-xs font-bold text-slate-500">{item.label}</p><p className="text-2xl font-black text-slate-900">{item.value}</p></div></div>; })}</div><div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200"><h2 className="text-lg font-black text-slate-900">PortfÃ¶y DaÄŸÄ±lÄ±mÄ±</h2><p className="text-xs text-slate-500 mt-1">Mevcut portfÃ¶ylerinizin kategorilere gÃ¶re gÃ¶rÃ¼nÃ¼mÃ¼</p></div><div className="p-6 space-y-5">{['Konut','Ä°ÅŸyeri','Arsa'].map((label) => { const count=myListings.filter(x=>x.category===label).length; const percentage=myListings.length?Math.round(count/myListings.length*100):0; return <div key={label}><div className="flex items-center justify-between mb-2"><span className="text-sm font-black text-slate-800">{label}</span><span className="text-xs font-bold text-slate-500">{count} portfÃ¶y Â· %{percentage}</span></div><div className="h-3 rounded-full bg-slate-100 overflow-hidden"><div className="h-full bg-red-700 rounded-full" style={{width:`${percentage}%`}} /></div></div>; })}</div></div></div>);
+
+  const renderCustomers = () => <CRMWorkspace isManager={isManager} advisorName={profile.name} />;
+
+  const renderMessages = () => (<div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"><div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between"><div><h2 className="text-lg font-black text-slate-900">Gelen Mesajlar</h2><p className="text-xs text-slate-500 mt-1">MÃ¼ÅŸterilerinizle iletiÅŸiminizi buradan yÃ¶netin.</p></div><span className="text-xs font-black text-red-700 bg-red-100 px-3 py-1.5 rounded-full">{messages.filter((m)=>m.unread).length} okunmamÄ±ÅŸ</span></div><div className="divide-y divide-slate-100">{messages.map((message)=><button key={message.id} onClick={()=>markMessageRead(message.id)} className={`w-full text-left p-5 hover:bg-slate-50 transition ${message.unread?'bg-red-100/40':'bg-white'}`}><div className="flex items-start gap-4"><div className={`w-11 h-11 rounded-full flex items-center justify-center font-black ${message.unread?'bg-red-700 text-white':'bg-slate-200 text-slate-700'}`}>{message.sender.split(' ').map((x)=>x[0]).slice(0,2).join('')}</div><div className="flex-1 min-w-0"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"><h3 className="font-black text-slate-900">{message.sender}</h3><span className="text-[10px] text-slate-400 font-bold">{message.time}</span></div><p className="text-sm font-bold text-slate-700 mt-1">{message.subject}</p><p className="text-xs text-slate-500 mt-1 truncate">{message.text}</p></div>{message.unread&&<span className="w-2.5 h-2.5 rounded-full bg-red-700 mt-2" />}</div></button>)}</div></div>);
+
+  const renderStatistics = () => (<div className="space-y-6"><div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">{[{label:'Toplam GÃ¶rÃ¼ntÃ¼lenme',value:'12.840',change:'+18,4%'},{label:'Ä°lan DÃ¶nÃ¼ÅŸÃ¼mÃ¼',value:'%7,8',change:'+2,1%'},{label:'Telefon TÄ±klamasÄ±',value:'326',change:'+12,6%'},{label:'Favoriye Eklenme',value:'184',change:'+9,3%'}].map(stat=><div key={stat.label} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"><p className="text-xs font-bold text-slate-500">{stat.label}</p><div className="flex items-end justify-between mt-2"><p className="text-2xl font-black text-slate-900">{stat.value}</p><span className="text-xs font-black text-emerald-600">{stat.change}</span></div></div>)}</div><div className="grid grid-cols-1 lg:grid-cols-2 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">HaftalÄ±k GÃ¶rÃ¼ntÃ¼lenme</h2><div className="mt-6 grid grid-cols-7 gap-3 items-end h-56">{[48,62,55,76,68,91,84].map((value,index)=><div key={index} className="flex flex-col items-center justify-end gap-2 h-full"><div className="w-full bg-slate-100 rounded-lg overflow-hidden flex items-end h-44"><div className="w-full bg-red-700 rounded-lg" style={{height:`${value}%`}} /></div><span className="text-[10px] font-bold text-slate-400">{['Pzt','Sal','Ã‡ar','Per','Cum','Cmt','Paz'][index]}</span></div>)}</div></section><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6"><h2 className="text-lg font-black text-slate-900">En Ã‡ok Ä°lgi GÃ¶ren Ä°lanlar</h2><div className="mt-4 space-y-4">{myListings.slice(0,5).map((item,index)=><div key={item.id} className="flex items-center gap-3"><span className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-black text-xs text-slate-600">{index+1}</span><div className="flex-1 min-w-0"><p className="text-sm font-black text-slate-800 truncate">{item.title}</p><div className="h-2 bg-slate-100 rounded-full overflow-hidden mt-2"><div className="h-full bg-red-700 rounded-full" style={{width:`${90-index*12}%`}} /></div></div><span className="text-xs font-black text-slate-500">{(3240-index*420).toLocaleString('tr-TR')}</span></div>)}</div></section></div></div>);
 
   const renderProfile = () => (
     <div className="grid grid-cols-1 xl:grid-cols-3 gap-6"><section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 xl:col-span-2"><div className="flex items-center justify-between mb-6"><div><h2 className="text-lg font-black text-slate-900">Profil Bilgileri</h2><p className="text-xs text-slate-500 mt-1">DanÄ±ÅŸman profilinizde gÃ¶rÃ¼nen bilgileri yÃ¶netin.</p></div>{profileSaved&&<span className="text-xs font-black text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full">Kaydedildi</span>}</div><div className="grid grid-cols-1 md:grid-cols-2 gap-5">{([['name','Ad Soyad'],['email','E-posta'],['phone','Telefon'],['title','Unvan'],['office','Ofis'],['region','BÃ¶lge']] as const).map(([key,label])=><div key={key}><label className="text-xs font-black text-slate-700 mb-2 block">{label}</label><input value={profile[key]} onChange={e=>setProfile({...profile,[key]:e.target.value})} className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-700" /></div>)}</div><button onClick={saveProfile} className="mt-6 bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl">DeÄŸiÅŸiklikleri Kaydet</button></section><section className="bg-slate-900 rounded-2xl shadow-xl p-6 text-white h-fit"><div className="w-20 h-20 rounded-full bg-red-700 flex items-center justify-center text-2xl font-black mx-auto">MY</div><h3 className="text-center text-xl font-black mt-4">{profile.name}</h3><p className="text-center text-sm text-slate-400 mt-1">{profile.title}</p><div className="mt-6 pt-5 border-t border-slate-700 space-y-4 text-sm"><div className="flex justify-between"><span className="text-slate-400">Aktif Ä°lan</span><strong>{myListings.filter((x)=>x.status==='Aktif').length}</strong></div><div className="flex justify-between"><span className="text-slate-400">MÃ¼ÅŸteri</span><strong>{customers.length}</strong></div><div className="flex justify-between"><span className="text-slate-400">Ofis</span><strong>{profile.office.replace('Realty CenterÂ® ','')}</strong></div></div></section></div>
@@ -1368,88 +5299,254 @@ HOˆ
   const profileInitials = profile.name ? profile.name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase() : 'RC';
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">{profileInitials}</div><div><div className="text-white font-black text-sm">{profile.name || 'Realty Center'}</div><div className="text-slate-400 text-xs">{isManager ? 'YÃ¶netici' : 'Gayrimenkul DanÄ±ÅŸmanÄ±'}</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" />YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíçM5N‹Z–‹­¦ëeŠw¬ÔñÍÁ…¸ûÅ¯Ç|e…Àğ½ÍÁ…¸øğ½‰ÕÑÑ½¸øğ½‘¥Øøğ½…Í¥‘”øñµ…¥¸±…ÍÍ9…µ”ô‰™±•à´Äµ¥¸µÜ´Àˆøñ‘¥Ø±…ÍÍ9…µ”ô‰‰œµİ¡¥Ñ”É½Õ¹‘•´Éá°‰½É‘•È‰½É‘•ÈµÍ±…Ñ”´ÈÀÀÍ¡…‘½ÜµÍ´À´Øµˆ´Øˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à™±•àµ½°Í´é™±•àµÉ½ÜÍ´é¥Ñ•µÌµ•¹Ñ•ÈÍ´é©ÕÍÑ¥™äµ‰•Ñİ••¸…À´Ğˆøñ‘¥ØøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ÔÀÀ™½¹ĞµÍ•µ¥‰½±ˆù!¿|•±‘¥¹¥è°ğ½Àøñ Ä±…ÍÍ9…µ”ô‰Ñ•áĞ´Éá°Í´éÑ•áĞ´Íá°™½¹Ğµ‰±…¬Ñ•áĞµÍ±…Ñ”´äÀÀˆùí…Ñ¥Ù•Q¥Ñ±”¹Ñ¥Ñ±•ôğ½ ÄøñÀ±…ÍÍ9…µ”ô‰Ñ•áĞµÍ´Ñ•áĞµÍ±…Ñ”´ÔÀÀµĞ´Äˆùí…Ñ¥Ù•Q¥Ñ±”¹‘•ÍÉ¥ÁÑ¥½¹ôğ½Àøğ½‘¥Øøñ‰ÕÑÑ½¸½¹±¥¬õì ¤ôùíÍ•Ñ‘¥Ñ¥¹1¥ÍÑ¥¹%¡¹Õ±°¤íÍ•Ñ9•İ1¥ÍÑ¥¹œ¡•µÁÑå1¥ÍÑ¥¹œ¤íÍ•ÑM¡½İ1¥ÍÑ¥¹½É´¡ÑÉÕ”¤íõô±…ÍÍ9…µ”ô‰‰œµÉ•´ÜÀÀ¡½Ù•Èé‰œµÉ•´àÀÀÑ•áĞµİ¡¥Ñ”™½¹Ğµ‰±…¬Áà´ÔÁä´ÌÉ½Õ¹‘•µá°™±•à¥Ñ•µÌµ•¹Ñ•È©ÕÍÑ¥™äµ•¹Ñ•ÈÍÁ…”µà´ÈÍ¡…‘½Üµ±œÍ¡…‘½ÜµÉ•´ÜÀÀ¼ÈÀÑÉ…¹Í¥Ñ¥½¸ˆøñA±ÕÍ¥É±”±…ÍÍ9…µ”ô‰Ü´Ô ´Ôˆ€¼øñÍÁ…¸ùe•¹¤ƒÁ±…¸­±”ğ½ÍÁ…¸øğ½‰ÕÑÑ½¸øğ½‘¥Øøğ½‘¥Øùí…Ñ¥Ù•M•Ñ¥½¸ôôô½Ù•ÉÙ¥•Üœ˜™É•¹‘•É=Ù•ÉÙ¥•Ü ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôô±¥ÍÑ¥¹Ìœ˜™É•¹‘•É1¥ÍÑ¥¹Ì ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôôÁ½ÉÑ™½±¥¼œ˜™É•¹‘•ÉA½ÉÑ™½±¥¼ ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôôÕÍÑ½µ•ÉÌœ˜™É•¹‘•ÉÕÍÑ½µ•ÉÌ ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôôµ•ÍÍ…•Ìœ˜™É•¹‘•É5•ÍÍ…•Ì ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôôÍÑ…Ñ¥ÍÑ¥Ìœ˜™É•¹‘•ÉMÑ…Ñ¥ÍÑ¥Ì ¥õí…Ñ¥Ù•M•Ñ¥½¸ôôôÁÉ½™¥±”œ˜™É•¹‘•ÉAÉ½™¥±” ¥ôğ½µ…¥¸øğ½‘¥Øøğ½‘¥Øø((€€€€€íÍ¡½İ1¥ÍÑ¥¹½É´€˜˜€ ñ‘¥Ø±…ÍÍ9…µ”ô‰™¥á•¥¹Í•Ğ´ÀèµlØÁt½Ù•É™±½Üµäµ…ÕÑ¼‰œµÍ±…Ñ”´äÔÀ¼ÜÀÀ´Ğˆøñ™½É´½¹MÕ‰µ¥Ğõí¡…¹‘±•É•…Ñ•1¥ÍÑ¥¹ô±…ÍÍ9…µ”ô‰µàµ…ÕÑ¼µ…àµÜ´Ñá°ÍÁ…”µä´ÔÉ½Õ¹‘•´Éá°‰œµİ¡¥Ñ”À´Øˆøñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à©ÕÍÑ¥™äµ‰•Ñİ••¸ˆøñ È±…ÍÍ9…µ”ô‰Ñ•áĞµá°™½¹Ğµ‰±…¬ˆùí•‘¥Ñ¥¹1¥ÍÑ¥¹%€ü€ŸÁ±…»Äñé•¹±”œ€è€e•¹¤ƒÁ±…¸­±”ôğ½ Èøñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õíÉ•Í•Ñ1¥ÍÑ¥¹½Éµôøñ`€¼øğ½‰ÕÑÑ½¸øğ½‘¥Øøñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹Ñ¥Ñ±•ô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±Ñ¥Ñ±”é”¹Ñ…É•Ğ¹Ù…±Õ•ô¥ôÁ±…•¡½±‘•Èô‹Á±…¸	‡}³ÇÄˆ±…ÍÍ9…µ”ô‰Üµ™Õ±°É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆ€¼øñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌµéÉ¥µ½±Ì´ÌˆøñÍ•±•ĞÙ…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹…Ñ•½Éåô½¹¡…¹”õí”ôùí½¹ÍĞ…Ñ•½Éäõ”¹Ñ…É•Ğ¹Ù…±Õ”íÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±…Ñ•½Éä±ÁÉ½Á•ÉÑåQåÁ”é1%MQ%9}AI=AIQe}QeAMm…Ñ•½Éä…Ì­•å½˜ÑåÁ•½˜1%MQ%9}AI=AIQe}QeAMulÁt±‘•Ñ…¥±Ìéíõô¥õô±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆùí1%MQ%9}Q=I%L¹µ…À¡àôøñ½ÁÑ¥½¸­•äõíáôùíáôğ½½ÁÑ¥½¸ø¥ôğ½Í•±•ĞøñÍ•±•ĞÙ…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹ÁÉ½Á•ÉÑåQåÁ•ô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±ÁÉ½Á•ÉÑåQåÁ”é”¹Ñ…É•Ğ¹Ù…±Õ”±‘•Ñ…¥±Ìéíõô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆùì¡1%MQ%9}AI=AIQe}QeAMm¹•İ1¥ÍÑ¥¹œ¹…Ñ•½Éä…Ì­•å½˜ÑåÁ•½˜1%MQ%9}AI=AIQe}QeAMuññmt¤¹µ…À¡àôøñ½ÁÑ¥½¸­•äõíáôùíáôğ½½ÁÑ¥½¸ø¥ôğ½Í•±•ĞøñÍ•±•ĞÙ…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹ÑåÁ•ô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±ÑåÁ”é”¹Ñ…É•Ğ¹Ù…±Õ•ô¥ô±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆùí1%MQ%9}QI9MQ%=9}QeAL¹µ…À¡àôøñ½ÁÑ¥½¸­•äõíáôùíáôğ½½ÁÑ¥½¸ø¥ôğ½Í•±•Ğøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÔÀÀ´Ğˆøñ Ì±…ÍÍ9…µ”ô‰µˆ´Ì™½¹Ğµ‰±…¬Ñ•áĞµÉ•´àÀÀˆùí¹•İ1¥ÍÑ¥¹œ¹ÁÉ½Á•ÉÑåQåÁ•ôƒYé•±±¥­±•É¤ğ½ Ìøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌÍ´éÉ¥µ½±Ì´Èˆùì¡AI=AIQe}Q%1}%1Mm¹•İ1¥ÍÑ¥¹œ¹ÁÉ½Á•ÉÑåQåÁ•uññmt¤¹µ…À¡™¥•±ôøñ‘¥Ø­•äõí™¥•±¹­•åôøñ±…‰•°±…ÍÍ9…µ”ô‰µˆ´Ä‰±½¬Ñ•áĞµáÌ™½¹Ğµ‰±…¬ˆùí™¥•±¹±…‰•±ôğ½±…‰•°øñ¥¹ÁÕĞÑåÁ”õí™¥•±¹ÑåÁ”ñğ€Ñ•áĞôÙ…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹‘•Ñ…¥±Ím™¥•±¹­•åtñğ€œô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±‘•Ñ…¥±Ìéì¸¸¹¹•İ1¥ÍÑ¥¹œ¹‘•Ñ…¥±Ì±m™¥•±¹­•åté”¹Ñ…É•Ğ¹Ù…±Õ•ô°¸¸¸¡™¥•±¹­•ä€ôôô€É½½µ½Õ¹ĞœıíÉ½½µÌé”¹Ñ…É•Ğ¹Ù…±Õ•ôéíô¥ô¥ôÁ±…•¡½±‘•Èõí™¥•±¹Á±…•¡½±‘•Éññ™¥•±¹±…‰•±ô±…ÍÍ9…µ”ô‰Üµ™Õ±°É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆ€¼øğ½‘¥Øø¥ôğ½‘¥Øøğ½‘¥Øøñ‘¥Ø±…ÍÍ9…µ”ô‰É¥…À´ÌµéÉ¥µ½±Ì´Èˆøñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹ÁÉ¥•ô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±ÁÉ¥”é”¹Ñ…É•Ğ¹Ù…±Õ•ô¥ôÁ±…•¡½±‘•Èô‰¥å…Ğˆ±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆ€¼øñ¥¹ÁÕĞÉ•ÅÕ¥É•Ù…±Õ”õí¹•İ1¥ÍÑ¥¹œ¹…É•…ô½¹¡…¹”õí”ôùÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì¸¸¹¹•İ1¥ÍÑ¥¹œ±…É•„é”¹Ñ…É•Ğ¹Ù…±Õ•ô¥ôÁ±…•¡½±‘•Èô‰Q½Á±…´…±…¸·
-Èˆ±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰½É‘•ÈÀ´Ìˆ€¼øğ½‘¥Øøñ1¥ÍÑ¥¹=ÁÑ¥½¹…±•Ñ…¥±¥•±‘Ì±¥ÍÑ¥¹œõí¹•İ1¥ÍÑ¥¹ô½¹¡…¹”õì¡ÕÁ‘…Ñ•Ì¤€ôøÍ•Ñ9•İ1¥ÍÑ¥¹œ¡ì€¸¸¹¹•İ1¥ÍÑ¥¹œ°€¸¸¹ÕÁ‘…Ñ•Ìô¥ô€¼øñ±…‰•°øñ¥¹ÁÕĞÑåÁ”ô‰™¥±”ˆ…•ÁĞô‰¥µ…”¼¨ˆµÕ±Ñ¥Á±”½¹¡…¹”õí¡…¹‘±•%µ…•¡…¹•ô€¼øÙÉÍ•°Í—œ€¡í¹•İ1¥ÍÑ¥¹œ¹¥µ…•Ì¹±•¹Ñ¡ô¼ÄÀ¤ğ½±…‰•°øñ‘¥Ø±…ÍÍ9…µ”ô‰™±•à©ÕÍÑ¥™äµ•¹…À´Ìˆøñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õíÉ•Í•Ñ1¥ÍÑ¥¹½ÉµôùY…é—œğ½‰ÕÑÑ½¸øñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ğˆ±…ÍÍ9…µ”ô‰É½Õ¹‘•µá°‰œµÉ•´ÜÀÀÁà´ÔÁä´Ì™½¹Ğµ‰±…¬Ñ•áĞµİ¡¥Ñ”ˆûÁ±…»Ä-…å‘•Ğğ½‰ÕÑÑ½¸øğ½‘¥Øøğ½™½É´øğ½‘¥Øø¥ô(€€€€ğ½‘¥Øø(€€¤ì)ô()™Õ¹Ñ¥½¸MÉ½±±Q½Q½Á=¹I½ÕÑ•¡…¹” ¤ì(€½¹ÍĞ±½…Ñ¥½¸€ôÕÍ•1½…Ñ¥½¸ ¤ì((€ÕÍ•™™•Ğ  ¤€ôøì(€€€½¹ÍĞÍ¡½Õ±‘I•ÍÑ½É•!½µ•A½Í¥Ñ¥½¸€ô±½…Ñ¥½¸¹Á…Ñ¡¹…µ”€ôôô€œ¼œ€˜˜Í•ÍÍ¥½¹MÑ½É…”¹•Ñ%Ñ•´ É•…±Ñäµ•¹Ñ•ÈµÉ•ÍÑ½É”µ¡½µ”µÁ½Í¥Ñ¥½¸œ¤€ôôô€ÑÉÕ”œì(€€€¥˜€¡Í¡½Õ±‘I•ÍÑ½É•!½µ•A½Í¥Ñ¥½¸¤ì(€€€€€Ïm4ÖÚ$z{-®éÜj×ÂˆÍNKŒKKÍŒŒ‹ŒKŒÍKÍNKŒKKÍŒŒ‹ŒKKŒ—KÍNKŒKKŒÍ—KˆÍLËKÎKÍNËŒÌË‹Œ—KÍLŒËŒK‹Œ—KÍËŒKˆÌŒKŒËËKÌÌKŒËŒ—KÍKÍLËWKˆÌÌKŒËKWKÍMKŒËKL—KÍLË‹ŒÍKÍLŒËŒK‹Í—KˆÌÌKŒËËŒÍ—KÍNKŒKËÎKÍŒŒ‹ŒKŒL—KÍNKŒK—KÍŒŒ‹ŒKKˆÍNKŒKKŒMKÍLËKM—KÍNËŒÌËKNKÍLŒËŒKLKÍL—BˆH\È\œ˜^OÛ[X™\‹[X™\—OÂˆY[ÙK™›Ü‘XXÚ
+    <div className="min-h-[calc(100vh-100px)] bg-slate-100"><div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-6"><div className="flex flex-col lg:flex-row gap-6"><aside className="w-full lg:w-64 bg-slate-900 rounded-2xl shadow-xl overflow-hidden h-fit lg:sticky lg:top-24"><div className="p-5 border-b border-slate-700"><div className="flex items-center space-x-3"><div className="w-11 h-11 rounded-full bg-red-700 flex items-center justify-center text-white font-black">{profileInitials}</div><div><div className="text-white font-black text-sm">{profile.name || 'Realty Center'}</div><div className="text-slate-400 text-xs">{isManager ? 'YÃ¶netici' : 'Gayrimenkul DanÄ±ÅŸmanÄ±'}</div></div></div></div><nav className="p-3 space-y-1">{navItems.map((item)=>{const Icon=item.icon;return <button key={item.key} onClick={()=>setActiveSection(item.key)} className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg font-bold text-sm text-left transition ${activeSection===item.key?'bg-red-700 text-white':'text-slate-300 hover:bg-slate-800 hover:text-white'}`}><Icon className="w-4 h-4" /><span>{item.label}</span></button>})}</nav><div className="p-3 border-t border-slate-700"><button onClick={()=>navigate('/panel')} className="w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-red-700 hover:text-white font-bold text-sm text-left transition"><LogOut className="w-4 h-4" /><span>Ã‡Ä±kÄ±ÅŸ Yap</span></button></div></aside><main className="flex-1 min-w-0"><div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6"><div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><div><p className="text-sm text-slate-500 font-semibold">HoÅŸ geldiniz,</p><h1 className="text-2xl sm:text-3xl font-black text-slate-900">{activeTitle.title}</h1><p className="text-sm text-slate-500 mt-1">{activeTitle.description}</p></div><button onClick={()=>{setEditingListingId(null);setNewListing(emptyListing);setShowListingForm(true);}} className="bg-red-700 hover:bg-red-800 text-white font-black px-5 py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/20 transition"><PlusCircle className="w-5 h-5" /><span>Yeni Ä°lan Ekle</span></button></div></div>{activeSection==='overview'&&renderOverview()}{activeSection==='listings'&&renderListings()}{activeSection==='portfolio'&&renderPortfolio()}{activeSection==='customers'&&renderCustomers()}{activeSection==='messages'&&renderMessages()}{activeSection==='statistics'&&renderStatistics()}{activeSection==='profile'&&renderProfile()}</main></div></div>
 
-Ùœ™\]Y[˜ŞKÙ™œÙ]K[™^
-HOˆ^TX[›Ó›İJœ™\]Y[˜ŞK›İÈ
-ÈÙ™œÙ][™^HÈKHˆ‹ŒK[™^	HHOOHÈŒLHˆŒJJNÂˆÂˆÌLÌKËŒKÌMKËKÌŒŒKˆÌLŒËËWKÌMKKWKÌŒËK‹ŒÍKˆÌLÌK‹Í—KÌMKËŒÍ—KÌŒŒËÎKˆÌLÌKLKÌMKL—BˆK™›Ü‘XXÚ
+      {showListingForm && (<div className="fixed inset-0 z-[60] overflow-y-auto bg-slate-950/70 p-4"><form onSubmit={handleCreateListing} className="mx-auto max-w-4xl space-y-5 rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-black">{editingListingId ? 'Ä°lanÄ± DÃ¼zenle' : 'Yeni Ä°lan Ekle'}</h2><button type="button" onClick={resetListingForm}><X /></button></div><input required value={newListing.title} onChange={e=>setNewListing({...newListing,title:e.target.value})} placeholder="Ä°lan BaÅŸlÄ±ÄŸÄ±" className="w-full rounded-xl border p-3" /><div className="grid gap-3 md:grid-cols-3"><select value={newListing.category} onChange={e=>{const category=e.target.value;setNewListing({...newListing,category,propertyType:LISTING_PROPERTY_TYPES[category as keyof typeof LISTING_PROPERTY_TYPES][0],details:{}})}} className="rounded-xl border p-3">{LISTING_CATEGORIES.map(x=><option key={x}>{x}</option>)}</select><select value={newListing.propertyType} onChange={e=>setNewListing({...newListing,propertyType:e.target.value,details:{}})} className="rounded-xl border p-3">{(LISTING_PROPERTY_TYPES[newListing.category as keyof typeof LISTING_PROPERTY_TYPES]||[]).map(x=><option key={x}>{x}</option>)}</select><select value={newListing.type} onChange={e=>setNewListing({...newListing,type:e.target.value})} className="rounded-xl border p-3">{LISTING_TRANSACTION_TYPES.map(x=><option key={x}>{x}</option>)}</select></div><div className="rounded-xl bg-red-50 p-4"><h3 className="mb-3 font-black text-red-800">{newListing.propertyType} Ã–zellikleri</h3><div className="grid gap-3 sm:grid-cols-2">{(PROPERTY_DETAIL_FIELDS[newListing.propertyType]||[]).map(field=><div key={field.key}><label className="mb-1 block text-xs font-black">{field.label}</label><input type={field.type || 'text'} value={newListing.details[field.key] || ''} onChange={e=>setNewListing({...newListing,details:{...newListing.details,[field.key]:e.target.value},...(field.key === 'roomCount'?{rooms:e.target.value}:{})})} placeholder={field.placeholder||field.label} className="w-full rounded-xl border p-3" /></div>)}</div></div><div className="grid gap-3 md:grid-cols-2"><input required value={newListing.price} onChange={e=>setNewListing({...newListing,price:e.target.value})} placeholder="Fiyat" className="rounded-xl border p-3" /><input required value={newListing.area} onChange={e=>setNewListing({...newListing,area:e.target.value})} placeholder="Toplam alan mÂ²" className="rounded-xl border p-3" /></div><ListingOptionalDetailFields listing={newListing} onChange={(updates) => setNewListing({ ...newListing, ...updates })} /><label><input type="file" accept="image/*" multiple onChange={handleImageChange} /> GÃ¶rsel seÃ§ ({newListing.images.length}/10)</label><div className="flex justify-end gap-3"><button type="button" onClick={resetListingForm}>VazgeÃ§</button><button type="submit" className="rounded-xl bg-red-700 px-5 py-3 font-black text-white">Ä°lanÄ± Kaydet</button></div></form></div>)}
+    </div>
+  );
+}
 
-Ùœ™\]Y[˜ŞKÙ™œÙ]JHOˆ^TX[›Ó›İJœ™\]Y[˜ŞK›İÈ
-ÈÙ™œÙ]‹ËŒLŠJNÂˆNÂ‚ˆ]ØZ]ÛÛ^œ™\İ[YJ
-NÂˆ^T˜\ÙJ
-NÂˆÛÜ™Y‹˜İ\œ™[HÚ[™İËœÙ][\˜[
-^T˜\ÙKLN
-NÂˆÙ]^Z[™ÊYJNÂˆK×JNÂ‚ˆ\ÙQY™™Xİ
+function ScrollToTopOnRouteChange() {
+  const location = useLocation();
 
+  useEffect(() => {
+    const shouldRestoreHomePosition = location.pathname === '/' && sessionStorage.getItem('realty-center-restore-home-position') === 'true';
+    if (shouldRestoreHomePosition) {
+      sessionStorage.removeItem('realty-center-restore-home-position');
+      const savedPosition = Number(sessionStorage.getItem('realty-center-home-scroll') || '0');
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+        window.scrollTo({ top: Number.isFinite(savedPosition) ? savedPosition : 0, left: 0, behavior: 'auto' });
+      }));
+      return;
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location.pathname, location.search]);
 
-HOˆ
+  return null;
+}
 
-HOˆÂˆYˆ
-ÛÜ™Y‹˜İ\œ™[OOH[
-HÚ[™İË˜ÛX\’[\˜[
-ÛÜ™Y‹˜İ\œ™[
-NÂˆYˆ
-]Y[ĞÛÛ^™Y‹˜İ\œ™[Ëœİ]HOOH	ØÛÜÙY	ÊH›ÚY]Y[ĞÛÛ^™Y‹˜İ\œ™[Ë˜ÛÜÙJ
-NÂˆK×JNÂ‚ˆYˆ
-ÉËÜİ\\‹XYZ[‹\[™[	Ë	ËŞ[Û™]XÚK\[™[	Ë	ËÙ[š\ÛX[‹\[™[	Ë	ËÜ[™[	Ë	ËÜİ\\‹XYZ[‰×Kš[˜ÛY\ÊØØ][Û‹œ]˜[YJJH™]\›ˆ[Âˆ™]\›ˆ]Ûˆ\OH˜]ÛˆˆÛÛXÚÏ^Ê
-HOˆÈYˆ
-^Z[™ÊH›ÚYİÜ]\ÚXÊ
-NÈ[ÙH›ÚYİ\]\ÚXÊ
-NÈ_H\šXK\™\ÜÙY^Ü^Z[™ßH\šXK[X™[^Ü^Z[™ÈÈ	Ô^X[›Èpïšq'Ú[šHÙ\ÜÚ^™H[	Èˆ	Õ[YˆpéÙ\›Y^Y[ˆ^X[›Èpïšq'ÚH0éØ[	ßH]OH™Y]İ™[ˆ8 $È°ïˆ[\ÙH0­È[YœÚ^ˆ^X[›È0ï™[›[Y\ÚHˆÛ\ÜÓ˜[YOH™š^Y›İÛKMHYMH‹VÎLH[›[™KY›^][\ËXÙ[\ˆØ\Lˆ›İ[™YY[›Ü™\‹Lˆ›Ü™\‹VÈÌÌYØ—H™Ë]Ú]KÎMHMKL‹H^^È›ÛX›XÚÈ^VÈÌÌYØ—HÚYİËVÌÎÌÜ™Ø˜JËKNKŒŒŠWH˜XÚÙ›ÜX›\‹[Y˜[œÚ][Ûˆİ™\‹]˜[œÛ]K^KLHİ™\˜›Ü™\‹VÈĞÑLQWHİ™\^VÈĞÑLQWH‚ˆÜ^Z[™ÈÈ›Û[YVÛ\ÜÓ˜[YOHšMËM‹Ïˆˆ]\ÚXÌˆÛ\ÜÓ˜[YOHšMËM‹ÏŸBˆÜ[Ü^Z[™ÈÈ	ÔÙ\ÜÚ^™H[	Èˆ	ÓpïšZÈ0áØ[	ßOÜÜ[‚ˆÜ^Z[™È	‰ˆÜ[ˆÛ\ÜÓ˜[YOHšLˆËLˆ›İ[™YY[™ËVÈĞÑLQWH‹ÏŸBˆØ]ÛÂŸB‚™^ÜY˜][[˜İ[Ûˆ™X[PÙ[\\
+function HomeReturnButton() {
+  const location = useLocation();
+  const navigate = useNavigate();
 
-HÂˆÛÛœİÛØY[™ËÙ]ØY[™×HH\ÙTİ]JYJNÂˆÛÛœİÛ[™İXYÙKÙ][™İXYÙWHH\ÙTİ]Oİ]XÓ[™İXYÙOŠ
+  useEffect(() => {
+    if (location.pathname !== '/') return;
+    const saveHomePosition = () => sessionStorage.setItem('realty-center-home-scroll', String(window.scrollY));
+    saveHomePosition();
+    const saveBeforeNavigation = () => saveHomePosition();
+    window.addEventListener('scroll', saveHomePosition, { passive: true });
+    document.addEventListener('pointerdown', saveBeforeNavigation, true);
+    document.addEventListener('keydown', saveBeforeNavigation, true);
+    return () => {
+      saveHomePosition();
+      window.removeEventListener('scroll', saveHomePosition);
+      document.removeEventListener('pointerdown', saveBeforeNavigation, true);
+      document.removeEventListener('keydown', saveBeforeNavigation, true);
+    };
+  }, [location.pathname]);
 
-HOˆ
-ØØ[İÜ˜YÙK™Ù]][J	Ü™X[K[[™İXYÙIÊH\Èİ]XÓ[™İXYÙJH	İ‰ÊNÂˆÛÛœİØ[š[X][Û”İYÙKÙ][š[X][Û”İYÙWHH\ÙTİ]O	Ø\›ØXÚ[™ÉÈ	İ[›ØÚÚ[™ÉÈ	İ[›ØÚÙY	ÏŠ	Ø\›ØXÚ[™ÉÊNÂˆÛÛœİİÛÜ™[™^Ù]ÛÜ™[™^HH\ÙTİ]J
-NÂˆÛÛœİÙ˜YKÙ]˜YWHH\ÙTİ]JYJNÂˆÛÛœİØİ\œ™[ÛYKÙ]İ\œ™[ÛYWHH\ÙTİ]J
-NÂˆÛÛœİÙ˜]Ù\“Ü[‹Ù]˜]Ù\“Ü[—HH\ÙTİ]J˜[ÙJNÂˆÛÛœİÙ›Ü›U\KÙ]›Ü›U\WHH\ÙTİ]O	Ùœ˜[˜Ú\ÙIÈ	ØYÙ[	ÏŠ	Ùœ˜[˜Ú\ÙIÊNÂˆÛÛœİËÙ]ØÜ›ÛYHH\ÙTİ]J˜[ÙJNÂˆÛÛœİÜÚİÔØÜ›ÛÜÙ]ÚİÔØÜ›ÛÜHH\ÙTİ]J˜[ÙJNÂ‚ˆÛÛœİËÙ]Y\ÜØYÙ\×HH\ÙTİ]OÛÛXİY\ÜØYÙV×OŠS’UPSÓQTÔĞQÑTÊNÂ‚ˆÛÛœİÜÙ[XİYÚ]KÙ]Ù[XİYÚ]WHH\ÙTİ]J	ÉÊNÂˆÛÛœİÜÙ[XİY\İšXİÙ]Ù[XİY\İšXİHH\ÙTİ]J	ÉÊNÂˆÛÛœİÙ›Ü›Q]KÙ]›Ü›Q]WHH\ÙTİ]JÂˆ[˜[YNˆ	ÉËˆÛ™Nˆ	ÉËˆ[XZ[ˆ	ÉËˆØØİ\][Ûˆ	ÉËˆİšÚĞÛÛœÙ[ˆ˜[ÙBˆJNÂ‚ˆ\ÙQY™™Xİ
+  if (location.pathname === '/' || ['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
 
+  const returnHome = () => {
+    sessionStorage.setItem('realty-center-restore-home-position', 'true');
+    navigate('/');
+  };
 
-HOˆÂˆØØ[İÜ˜YÙKœÙ]][J	Ü™X[K[[™İXYÙIË[™İXYÙJNÂˆØİ[Y[™Øİ[Y[[[Y[›[™ÈH[™İXYÙNÂˆØİ[Y[™Øİ[Y[[[Y[™\ˆH[™İXYÙHOOH	Ø\‰ÈÈ	Ü	Èˆ	Û‰ÎÂˆKÛ[™İXYÙWJNÂ‚ˆÛÛœİØÛİ[ËÙ]Ûİ[×HH\ÙTİ]JÂˆÙ™šXÙ\ÎˆˆYÙ[ÎˆˆÜ›Û[ÜÎˆˆØ]\Ù˜Xİ[ÛˆˆJNÂ‚ˆÛÛœİ[™TÙ[™Y\ÜØYÙHH
-™]ÓY\ÜØYÙNˆÛZ]ÛÛXİY\ÜØYÙK	ÚY	È	ØÜ™X]Y]	È	Üİ]\ÉÏŠHOˆÂˆÛÛœİY\ÜØYÙQ[NˆÛÛXİY\ÜØYÙHHÂˆ‹‹›™]ÓY\ÜØYÙKˆYˆTÑËIÑ]K››İÊ
-_XˆÜ™X]Y]ˆ™]È]J
-KÒTÓÔİš[™Ê
-Kˆİ]\Îˆ	İ[œ™XY	ÂˆNÂ‚ˆÙ]Y\ÜØYÙ\Ê
-™]ŠHOˆÛY\ÜØYÙQ[K‹‹œ™]—JNÂˆNÂ‚ˆ\ÙQY™™Xİ
+  return <button
+    type="button"
+    onClick={returnHome}
+    className="fixed right-4 top-32 z-[70] inline-flex items-center gap-2 rounded-full bg-[#CD011E] px-4 py-2.5 text-xs font-black text-white shadow-lg shadow-red-900/25 transition hover:-translate-y-0.5 hover:bg-[#A90018] sm:right-6"
+    aria-label="Ana sayfaya, kaldÄ±ÄŸÄ±nÄ±z yere dÃ¶nÃ¼n"
+  >
+    <Home className="h-4 w-4" />
+    Ana Sayfaya DÃ¶n
+  </button>;
+}
 
+function AmbientMusicButton() {
+  const location = useLocation();
+  const [playing, setPlaying] = useState(false);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const masterGainRef = useRef<GainNode | null>(null);
+  const loopRef = useRef<number | null>(null);
 
-HOˆÂˆYˆ
-ØY[™ÊHÂˆÛÛœİ[\˜[HÙ][\˜[
+  const stopMusic = useCallback(async () => {
+    if (loopRef.current !== null) window.clearInterval(loopRef.current);
+    loopRef.current = null;
+    const context = audioContextRef.current;
+    const master = masterGainRef.current;
+    if (context && master) {
+      master.gain.cancelScheduledValues(context.currentTime);
+      master.gain.setValueAtTime(Math.max(master.gain.value, 0.0001), context.currentTime);
+      master.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.45);
+      window.setTimeout(() => { if (context.state !== 'closed') void context.close(); }, 520);
+    }
+    audioContextRef.current = null;
+    masterGainRef.current = null;
+    setPlaying(false);
+  }, []);
 
+  const startMusic = useCallback(async () => {
+    const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!AudioContextClass) return;
+    const context = new AudioContextClass();
+    const master = context.createGain();
+    const warmth = context.createBiquadFilter();
+    const compressor = context.createDynamicsCompressor();
+    warmth.type = 'lowpass';
+    warmth.frequency.setValueAtTime(4200, context.currentTime);
+    warmth.Q.setValueAtTime(0.65, context.currentTime);
+    compressor.threshold.setValueAtTime(-24, context.currentTime);
+    compressor.knee.setValueAtTime(18, context.currentTime);
+    compressor.ratio.setValueAtTime(3, context.currentTime);
+    master.gain.setValueAtTime(0.0001, context.currentTime);
+    master.gain.exponentialRampToValueAtTime(0.055, context.currentTime + 1.8);
+    master.connect(warmth);
+    warmth.connect(compressor);
+    compressor.connect(context.destination);
+    audioContextRef.current = context;
+    masterGainRef.current = master;
 
-HOˆÂˆÙ]˜YJ˜[ÙJNÂˆÙ][Y[İ]
+    const playPianoNote = (frequency: number, start: number, duration = 2.8, velocity = 0.12) => {
+      const noteGain = context.createGain();
+      const tone = context.createBiquadFilter();
+      tone.type = 'lowpass';
+      tone.frequency.setValueAtTime(Math.min(5200, frequency * 10), start);
+      tone.frequency.exponentialRampToValueAtTime(Math.max(900, frequency * 3.4), start + duration);
+      noteGain.gain.setValueAtTime(0.0001, start);
+      noteGain.gain.exponentialRampToValueAtTime(velocity, start + 0.012);
+      noteGain.gain.exponentialRampToValueAtTime(Math.max(velocity * 0.34, 0.0002), start + 0.32);
+      noteGain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+      noteGain.connect(tone);
+      tone.connect(master);
 
+      [
+        { ratio: 1, level: 1, type: 'triangle' as OscillatorType },
+        { ratio: 2, level: 0.24, type: 'sine' as OscillatorType },
+        { ratio: 3, level: 0.1, type: 'sine' as OscillatorType }
+      ].forEach((harmonic) => {
+        const oscillator = context.createOscillator();
+        const harmonicGain = context.createGain();
+        oscillator.type = harmonic.type;
+        oscillator.frequency.setValueAtTime(frequency * harmonic.ratio, start);
+        oscillator.detune.setValueAtTime((harmonic.ratio - 1) * 1.5, start);
+        harmonicGain.gain.setValueAtTime(harmonic.level, start);
+        oscillator.connect(harmonicGain);
+        harmonicGain.connect(noteGain);
+        oscillator.start(start);
+        oscillator.stop(start + duration + 0.08);
+      });
+    };
 
-HOˆÂˆÙ]ÛÜ™[™^
+    const playPhrase = () => {
+      const now = context.currentTime + 0.12;
+      // Beethoven â€“ FÃ¼r Elise giriÅŸ motifi. Beste kamu malÄ±dÄ±r; ses kaydÄ± kullanÄ±lmaz,
+      // bÃ¼tÃ¼n notalar ziyaretÃ§inin tarayÄ±cÄ±sÄ±nda Web Audio ile anlÄ±k Ã¼retilir.
+      const melody = [
+        [659.25,0],[622.25,0.34],[659.25,0.68],[622.25,1.02],[659.25,1.36],
+        [493.88,1.78],[587.33,2.2],[523.25,2.62],[440,3.04],
+        [261.63,3.64],[329.63,4.06],[440,4.48],[493.88,4.9],
+        [329.63,5.5],[415.3,5.92],[493.88,6.34],[523.25,6.76],
+        [329.63,7.36],[659.25,7.78],[622.25,8.12],[659.25,8.46],[622.25,8.8],
+        [659.25,9.14],[493.88,9.56],[587.33,9.98],[523.25,10.4],[440,10.82]
+      ] as Array<[number, number]>;
+      melody.forEach(([frequency, offset], index) => playPianoNote(frequency, now + offset, index < 5 ? 1.45 : 2.1, index % 9 === 0 ? 0.125 : 0.1));
+      [
+        [130.81,3.04],[164.81,3.64],[220,4.48],
+        [123.47,4.9],[164.81,5.5],[207.65,6.34],
+        [130.81,6.76],[164.81,7.36],[220,7.78],
+        [130.81,10.4],[164.81,10.82]
+      ].forEach(([frequency, offset]) => playPianoNote(frequency, now + offset, 2.7, 0.052));
+    };
 
-™]ŠHOˆ
-™]ˆ
-ÈJH	H“ÔT•WÕTTË›[™İ
-NÂˆÙ]˜YJYJNÂˆKL
-NÂˆKÌ
-NÂ‚ˆ™]\›ˆ
+    await context.resume();
+    playPhrase();
+    loopRef.current = window.setInterval(playPhrase, 11880);
+    setPlaying(true);
+  }, []);
 
-HOˆÛX\’[\˜[
-[\˜[
-NÂˆBˆKÛØY[™×JNÂ‚ˆ\ÙQY™™Xİ
+  useEffect(() => () => {
+    if (loopRef.current !== null) window.clearInterval(loopRef.current);
+    if (audioContextRef.current?.state !== 'closed') void audioContextRef.current?.close();
+  }, []);
 
+  if (['/super-admin-panel', '/yonetici-panel', '/danisman-panel', '/panel', '/super-admin'].includes(location.pathname)) return null;
+  return <button type="button" onClick={() => { if (playing) void stopMusic(); else void startMusic(); }} aria-pressed={playing} aria-label={playing ? 'Piyano mÃ¼ziÄŸini sessize al' : 'Telif iÃ§ermeyen piyano mÃ¼ziÄŸi Ã§al'} title="Beethoven â€“ FÃ¼r Elise Â· Telifsiz piyano dÃ¼zenlemesi" className="fixed bottom-5 left-5 z-[90] inline-flex items-center gap-2 rounded-full border-2 border-[#071d3b] bg-white/95 px-4 py-2.5 text-xs font-black text-[#071d3b] shadow-[0_8px_24px_rgba(7,29,59,.22)] backdrop-blur-md transition hover:-translate-y-0.5 hover:border-[#CD011E] hover:text-[#CD011E]">
+    {playing ? <VolumeX className="h-4 w-4"/> : <Music2 className="h-4 w-4"/>}
+    <span>{playing ? 'Sessize Al' : 'MÃ¼zik Ã‡al'}</span>
+    {playing && <span className="h-2 w-2 rounded-full bg-[#CD011E]"/>}
+  </button>;
+}
 
-HOˆÂˆÛÛœİ[Y\ŒHHÙ][Y[İ]
+export default function RealtyCenterApp() {
+  const [loading, setLoading] = useState(true);
+  const [language, setLanguage] = useState<StaticLanguage>(() => (localStorage.getItem('realty-language') as StaticLanguage) || 'tr');
+  const [animationStage, setAnimationStage] = useState<'approaching' | 'unlocking' | 'unlocked'>('approaching');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [formType, setFormType] = useState<'franchise' | 'agent'>('franchise');
+  const [, setScrolled] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
+  const [, setMessages] = useState<ContactMessage[]>(INITIAL_MESSAGES);
 
-HOˆÙ][š[X][Û”İYÙJ	İ[›ØÚÚ[™ÉÊKŒ
-NÂˆÛÛœİ[Y\ŒˆHÙ][Y[İ]
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState('');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    phone: '',
+    email: '',
+    occupation: '',
+    kvkkConsent: false
+  });
 
+  useEffect(() => {
+    localStorage.setItem('realty-language', language);
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }, [language]);
 
-HOˆÙ][š[X][Û”İYÙJ	İ[›ØÚÙY	ÊKLŒ
-NÂˆÛÛœİ[Y\ŒÈHÙ][Y[İ]
+  const [counts, setCounts] = useState({
+    offices: 0,
+    agents: 0,
+    portfolios: 0,
+    satisfaction: 0
+  });
 
+  const handleSendMessage = (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
+    const messageEntry: ContactMessage = {
+      ...newMessage,
+      id: `MSG-${Date.now()}`,
+      createdAt: new Date().toISOString(),
+      status: 'unread'
+    };
 
-HOˆÙ]ØY[™Ê˜[ÙJKMÌ
-NÂ‚ˆ™]\›ˆ
+    setMessages((prev) => [messageEntry, ...prev]);
+  };
 
-HOˆÂˆÛX\•[Y[Öj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5ut(timer1);
+  useEffect(() => {
+    if (loading) {
+      const interval = setInterval(() => {
+        setFade(false);
+        setTimeout(() => {
+          setWordIndex((prev) => (prev + 1) % PROPERTY_TYPES.length);
+          setFade(true);
+        }, 250);
+      }, 700);
+
+      return () => clearInterval(interval);
+    }
+  }, [loading]);
+
+  useEffect(() => {
+    const timer1 = setTimeout(() => setAnimationStage('unlocking'), 600);
+    const timer2 = setTimeout(() => setAnimationStage('unlocked'), 1200);
+    const timer3 = setTimeout(() => setLoading(false), 1700);
+
+    return () => {
+      clearTimeout(timer1);
       clearTimeout(timer2);
       clearTimeout(timer3);
     };
@@ -1584,4 +5681,246 @@ HOˆÂˆÛX\•[Y[Öj¹âkºwµçhºÚn¶Šâ‚)Ú–Ú$zw(º{yÓMS¢Ö¥¢ëiºÙbë5ut(timer1);
   return (
     <Router>
       <ScrollToTopOnRouteChange />
-      <div classNaÛM5¶‰Ëkºwµçp¢ÖÒ ¢öä6Æ–6³×¶6Æ÷6TG&vW'Ò ¢óà ¢ÆF—b6Æ74æÖSÒ&f—†VB–ç6WB×’Ó&–v‡BÓfÆW‚Ö‚×rÖgVÆÂÂÓ#à¢ÆF—b ¢6Æ74æÖS×¶r×67&VVâÖ‚×rÖÖB&r×v†—FRFW‡B×6ÆFRÓ“6†F÷rÓ'†ÂfÆW‚fÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâ‚ÖgVÆÂ&÷&FW"ÖÂÓB&÷&FW"×&VBÓsG&ç6f÷&ÒG&ç6—F–öâÖÆÂGW&F–öâÓSV6RÖ÷WBG°¢G&vW$÷VâòwG&ç6ÆFR×‚Ó÷6—G’Ór¢wG&ç6ÆFR×‚ÖgVÆÂ÷6—G’Óp¢ÖĞ¢à¢ÆF—b6Æ74æÖSÒ'‚ÓR’ÓB&r×6ÆFRÓ“FW‡B×v†—FRfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö&WGvVVâ&÷&FW"Ö"&÷&FW"×6ÆFRÓƒ#à¢ÆF—cà¢Æƒ"6Æ74æÖSÒ'FW‡BÖÆrföçBÖ&Æ6²FW‡B×v†—FR#à¢¶f÷&ÕG—RÓÓÒvg&æ6†—6Rròtg&æ6†—6R&Y÷gW'Rf÷&×Rr¢tFìKYöÖâ&Y÷gW'Rf÷&×RwĞ¢Âöƒ#à¢Ç6Æ74æÖSÒ'FW‡B×‡2FW‡B×&VBÓcföçBÖ&Æ6²G&6¶–ær×v–FW"#å$TÅE’4TåDU,*â–ÆW6–æR¶LKÌKãÂ÷à¢ÂöF—cà¢Æ'WGFöâöä6Æ–6³×¶6Æ÷6TG&vW'Ò6Æ74æÖSÒ'ÓãRFW‡B×6ÆFRÓC†÷fW#§FW‡B×v†—FRG&ç6—F–öâ#à¢Å‚6Æ74æÖSÒ'rÓR‚ÓR"óà¢Âö'WGFöãà¢ÂöF—cà ¢Æf÷&Òöå7V&Ö—C×¶†æFÆU7V&Ö—GÒ6Æ74æÖSÒ'‚ÓR’ÓB76R×’Ó2÷fW&fÆ÷r×’ÖWFòfÆW‚ÓFW‡B×6Ò&r×6ÆFRÓS#à¢ÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#äB6÷–B£ÂöÆ&VÃà¢Æ–çWB ¢G—SÒ'FW‡B" ¢&WV—&V@¢Æ6V†öÆFW#Ò$LKìK¢fR6÷–LKìK¢ ¢fÇVS×¶f÷&ÔFFægVÆÄæÖWĞ¢öä6†ævS×²†R’Óâ6WDf÷&ÔFF‡²ââæf÷&ÔFFÂgVÆÄæÖS¢RçF&vWBçfÇVRÒ—Ğ¢6Æ74æÖSÒ'rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs ¢óà¢ÂöF—cà ¢¶f÷&ÕG—RÓÓÒvvVçBrbb€¢Ãà¢ÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#äR×÷7FG&W6’£ÂöÆ&VÃà¢Æ–çWB ¢G—SÒ&VÖ–Â" ¢&WV—&V@¢Æ6V†öÆFW#Ò&÷&æV´FöÖ–âæ6öÒ ¢fÇVS×¶f÷&ÔFFæVÖ–ÇĞ¢öä6†ævS×²†R’Óâ6WDf÷&ÔFF‡²ââæf÷&ÔFFÂVÖ–Ã¢RçF&vWBçfÇVRÒ—Ğ¢6Æ74æÖSÒ'rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs ¢óà¢ÂöF—cà ¢ÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#äÖWf7WBÖW6Æ\Iö–æ—¢£ÂöÆ&VÃà¢Æ–çWB ¢G—SÒ'FW‡B" ¢&WV—&V@¢Æ6V†öÆFW#Ò,9g&ã¢VÖÆ²FìKYöÖìKÂ6LKYòFV×6–Æ6—6’âââ ¢fÇVS×¶f÷&ÔFFæö67WF–öçĞ¢öä6†ævS×²†R’Óâ6WDf÷&ÔFF‡²ââæf÷&ÔFFÂö67WF–öã¢RçF&vWBçfÇVRÒ—Ğ¢6Æ74æÖSÒ'rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs ¢óà¢ÂöF—cà¢Âóà¢—Ğ ¢ÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#åFVÆVföâçVÖ&<K£ÂöÆ&VÃà¢Æ–çWB ¢G—SÒ'FVÂ" ¢&WV—&V@¢Æ6V†öÆFW#Ò#U…‚……‚…‚…‚ ¢fÇVS×¶f÷&ÔFFç†öæWĞ¢öä6†ævS×²†R’Óâ6WDf÷&ÔFF‡²ââæf÷&ÔFFÂ†öæS¢RçF&vWBçfÇVRÒ—Ğ¢6Æ74æÖSÒ'rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs ¢óà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'BÓ"&÷&FW"×B&÷&FW"×6ÆFRÓ##à¢ÆƒB6Æ74æÖSÒ'FW‡B×‡2föçBÖ&Æ6²FW‡B×&VBÓsG&6¶–ær×v–FW"Ö"Ó"#à¢†æv’,;fÆvVFR&—¦–ÖÆR8vÌKYöÖ²K7FW'6–æ—£ğ¢ÂöƒCà ¢ÆF—b6Æ74æÖSÒ&Ö"Ó"#à¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#ìKÂ6\:v–Ö’£ÂöÆ&VÃà¢Ç6VÆV7B ¢&WV—&V@¢fÇVS×·6VÆV7FVD6—G—Ğ¢öä6†ævS×²†R’Óâ°¢6WE6VÆV7FVD6—G’†RçF&vWBçfÇVR“°¢6WE6VÆV7FVDF—7G&–7B‚rr“°¢×Ğ¢6Æ74æÖSÒ'rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓs ¢à¢Æ÷F–öâfÇVSÒ"#âÒÒKÂ6\:v–æ—¢ƒƒKÂ’ÒÓÂö÷F–öãà¢´ö&¦V7Bæ¶W—2…EU$´U•ô4•D”U2’æÖ‚†6—G’’Óâ€¢Æ÷F–öâ¶W“×¶6—G—ÒfÇVS×¶6—G—Óç¶6—G—ÓÂö÷F–öãà¢’—Ğ¢Â÷6VÆV7Cà¢ÂöF—cà ¢ÆF—cà¢ÆÆ&VÂ6Æ74æÖSÒ&&Æö6²FW‡B×‡2föçBÖ&öÆBFW‡B×6ÆFRÓsÖ"Ó#ìKÌ:vR6\:v–Ö’£ÂöÆ&VÃà¢Ç6VÆV7B ¢&WV—&V@¢F—6&ÆVC×²6VÆV7FVD6—G—Ğ¢fÇVS×·6VÆV7FVDF—7G&–7GĞ¢öä6†ævS×²†R’Óâ6WE6VÆV7FVDF—7G&–7B†RçF&vWBçfÇVR—Ğ¢6Æ74æÖS×¶rÖgVÆÂ&r×v†—FR&÷&FW"&÷&FW"×6ÆFRÓ3&÷VæFVBÖÖB‚Ó2’Ó"föçBÖÖVF—VÒfö7W3¦÷WFÆ–æRÖæöæRfö7W3§&–ærÓ"fö7W3§&–ær×&VBÓsG°¢6VÆV7FVD6—G’òv÷6—G’ÓS7W'6÷"Öæ÷BÖÆÆ÷vVB&r×6ÆFRÓr¢rp¢ÖĞ¢à¢Æ÷F–öâfÇVSÒ"#ç·6VÆV7FVD6—G’òrÒÒKÌ:vR6\:v–æ—¢ÒÒr¢|9fæ6RKÂ6\:v–æ—¢wÓÂö÷F–öãà¢·6VÆV7FVD6—G’bbEU$´U•ô4•D”U5·6VÆV7FVD6—G•ÓòæÖ‚†F—7B’Óâ€¢Æ÷F–öâ¶W“×¶F—7GÒfÇVS×¶F—7GÓç¶F—7GÓÂö÷F–öãà¢’—Ğ¢Â÷6VÆV7Cà¢ÂöF—cà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'BÓ"fÆW‚—FV×2×7F'B76R×‚Ó"#à¢Æ–çWB ¢G—SÒ&6†V6¶&÷‚" ¢–CÒ&·f¶² ¢6†V6¶VC×¶f÷&ÔFFæ·f¶´6öç6VçGĞ¢öä6†ævS×²†R’Óâ6WDf÷&ÔFF‡²ââæf÷&ÔFFÂ·f¶´6öç6VçC¢RçF&vWBæ6†V6¶VBÒ—Ğ¢6Æ74æÖSÒ&×BÓãR&÷VæFVB&÷&FW"×6ÆFRÓ3FW‡B×&VBÓsfö7W3§&–ær×&VBÓs ¢óà¢ÆÆ&VÂ‡FÖÄf÷#Ò&·f¶²"6Æ74æÖSÒ'FW‡BÕ³…ÒFW‡B×6ÆFRÓcföçBÖÖVF—VÒÆVF–ær×F–v‡B#à¢µd´²¶6ÜKæFF&lKÖ&–Æv–ÆVæF—&ÖRÂ&ÖfR4Õ2|;fæFW&–ÆÖW6–æ’¶'VÂVF—–÷'VÒà¢ÂöÆ&VÃà¢ÂöF—cà ¢ÆF—b6Æ74æÖSÒ'BÓ2#à¢Æ'WGFöâ ¢G—SÒ'7V&Ö—B ¢6Æ74æÖSÒ'&VÆF—fR÷fW&fÆ÷rÖ†–FFVâw&÷WrÖgVÆÂ’Ó2ãR&r×&VBÓs†÷fW#¦&r×&VBÓƒFW‡B×v†—FRföçBÖ&Æ6²&÷VæFVBÖÆr6†F÷rÖÆr6†F÷r×&VBÓsó3G&ç6—F–öâfÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW"76R×‚Ó" ¢à¢Ç7â6Æ74æÖSÒ'&VÆF—fR¢Ó#ä&Y÷gW'W—RFÖÖÆÂ÷7ãà¢Ä6†V6´6—&6ÆS"6Æ74æÖSÒ'rÓB‚ÓB&VÆF—fR¢Ó"óà¢Âö'WGFöãà¢ÂöF—cà¢Âöf÷&Óà ¢ÆF—b6Æ74æÖSÒ'‚ÓR’Ó2&r×6ÆFRÓ&÷&FW"×B&÷&FW"×6ÆFRÓ#FW‡BÖ6VçFW"FW‡BÕ³…ÒFW‡B×6ÆFRÓSföçB×6VÖ–&öÆB#à¢&VÇG’6VçFW,*âv—&–ÖVæ·VÂg&æ6†—6RbFìKYöÖâIüK¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà¢ÂöF—cà ¢·6†÷u67&öÆÅF÷bb€¢Æ'WGFöà¢öä6Æ–6³×·67&öÆÅFõF÷Ğ¢&–ÖÆ&VÃÒ$Vâ—V¶,K–L;fâ ¢6Æ74æÖSÒ&f—†VB&÷GFöÒÓ#B&–v‡BÓb¢ÓC&r×&VBÓs†÷fW#¦&r×&VBÓƒFW‡B×v†—FRÓ2ãR&÷VæFVBÖgVÆÂ6†F÷rÓ'†Â6†F÷r×&VBÓsóSG&ç6—F–öâÖÆÂGW&F–öâÓ3G&ç6f÷&Ò†÷fW#§66ÆRÓ†÷fW#¢×G&ç6ÆFR×’Ó&÷&FW"Ó"&÷&FW"×v†—FRó#fÆW‚—FV×2Ö6VçFW"§W7F–g’Ö6VçFW" ¢à¢Ä'&÷uW6Æ74æÖSÒ'rÓR‚ÓR"óà¢Âö'WGFöãà¢—Ğ ¢ÂöF—cà¢Âõ&÷WFW#à¢“°§Ğ
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
+        
+        <Header language={language} setLanguage={setLanguage} />
+        <HomeReturnButton />
+        <AmbientMusicButton />
+
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={
+              <HomePage 
+                counts={counts} 
+                currentSlide={currentSlide} 
+                selectedCity={selectedCity} 
+                setSelectedCity={setSelectedCity} 
+                openDrawer={openDrawer} 
+              />
+            } />
+
+            <Route path="/panel" element={<LoginPage />} />
+            <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor']}><AgentDashboard panelRole="advisor" /></ProtectedPanelRoute>} />
+            <Route path="/yonetici-panel" element={<ProtectedPanelRoute roles={['manager']}><AgentDashboard panelRole="manager" /></ProtectedPanelRoute>} />
+            <Route path="/super-admin" element={<LoginPage />} />
+            <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><AdminControlCenter /></ProtectedPanelRoute>} />
+            
+            <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
+            <Route path="/kurumsal/once-guven" element={<TrustPrinciplePage />} />
+            <Route path="/neden-realty-center" element={<WhyRealtyCenterPage />} />
+            <Route path="/finansal-cozumler" element={<FinancialSolutionsPage />} />
+            <Route path="/kurumsal/ekibimiz" element={<TeamPage />} />
+            <Route path="/kurumsal/yonetim-kurulu" element={<TeamPage />} />
+            <Route path="/kurumsal/misyon-vizyon" element={<MissionVisionPage />} />
+            <Route path="/kurumsal/belgelerimiz" element={<DocumentsPage />} />
+            <Route path="/kurumsal/referanslar" element={<LogoShowcasePage mode="references" />} />
+            <Route path="/kurumsal/is-ortaklarimiz" element={<LogoShowcasePage mode="partners" />} />
+            <Route path="/kesfet/:slug" element={<DiscoverEarningPage section="discover" />} />
+            <Route path="/kazanc-modeli/:slug" element={<DiscoverEarningPage section="earning" />} />
+            <Route path="/icerik/:id" element={<ManagedHeaderContentPage />} />
+            <Route path="/kutuphane" element={<LibraryHomePage />} />
+            <Route path="/kutuphane/:slug" element={<LibraryCategoryPage />} />
+            <Route path="/kutuphane/:slug/:articleId" element={<LibraryArticlePage />} />
+            <Route path="/blog/rehber" element={<LibraryHomePage />} />
+            <Route path="/blog/hukuk" element={<LibraryHomePage />} />
+            <Route path="/blog/haberler" element={<LibraryHomePage />} />
+            <Route path="/blog/analizler" element={<LibraryHomePage />} />
+            <Route path="/kvkk" element={<LegalInfoPage title="KVKK AydÄ±nlatma Metni" description="KiÅŸisel verilerinizin hangi amaÃ§larla iÅŸlendiÄŸi, saklandÄ±ÄŸÄ± ve haklarÄ±nÄ±z kapsamÄ±nda nasÄ±l baÅŸvuru yapabileceÄŸiniz hakkÄ±nda bilgilendirme metnidir." />} />
+            <Route path="/gizlilik-politikasi" element={<LegalInfoPage title="Gizlilik PolitikasÄ±" description="Realty CenterÂ® web sitesi ve dijital hizmetlerinde kullanÄ±cÄ± bilgilerinin gizliliÄŸine iliÅŸkin temel ilkeleri aÃ§Ä±klar." />} />
+            <Route path="/cerez-politikasi" element={<LegalInfoPage title="Ã‡erez PolitikasÄ±" description="Zorunlu, iÅŸlevsel ve analitik Ã§erezlerin kullanÄ±m amaÃ§larÄ± ile kullanÄ±cÄ± tercihlerini nasÄ±l yÃ¶netebileceÄŸini aÃ§Ä±klar." />} />
+            <Route path="/kullanim-kosullari" element={<LegalInfoPage title="KullanÄ±m KoÅŸullarÄ±" description="Web sitesine eriÅŸim, iÃ§eriklerin kullanÄ±mÄ±, kullanÄ±cÄ± sorumluluklarÄ± ve hizmet kapsamÄ±na iliÅŸkin koÅŸullarÄ± aÃ§Ä±klar." />} />
+            <Route path="/ilan-yayinlama-kurallari" element={<LegalInfoPage title="Ä°lan YayÄ±nlama KurallarÄ±" description="Ä°lan bilgilerinin doÄŸruluÄŸu, gÃ¶rsel kullanÄ±mÄ±, yetkilendirme, gÃ¼ncellik ve hukuka uygunluk konularÄ±ndaki yayÄ±n ilkelerini aÃ§Ä±klar." />} />
+            <Route path="/arama" element={<SiteSearchPage />} />
+
+            <Route path="/akademi" element={<AcademyPage openDrawer={openDrawer} />} />
+            <Route path="/ofislerimiz" element={<OfficesPage />} />
+            <Route path="/danismanlarimiz" element={<AgentsPage />} />
+            <Route path="/ilan-kategorileri" element={<ListingCategoriesPage />} />
+            <Route path="/ilanlarimiz" element={<ListingsPageV2 />} />
+            <Route path="/harita-ile-ara" element={<MapSearchPage />} />
+            <Route path="/ai-karar-asistani" element={<AIDecisionAssistantPage />} />
+            <Route path="/ilan/:id" element={<ListingDetailPage />} />
+            <Route path="/projelerimiz" element={<ProjectsPage />} />
+            <Route path="/videolar" element={<VideosPage />} />
+            <Route path="/iletisim" element={<ContactPage onSendMessage={handleSendMessage} />} />
+            <Route path="/geri-bildirim" element={<CustomerFeedbackPage />} />
+            <Route path="/franchise-firsatlari" element={<FranchiseOpportunitiesPage />} />
+            <Route path="/franchise-basvuru" element={<ApplicationPage type="franchise" />} />
+            <Route path="/danisman-basvuru" element={<ApplicationPage type="agent" />} />
+          </Routes>
+        </main>
+
+        <Footer openDrawer={openDrawer} />
+        <WhatsAppSupportButton />
+        <CookieConsent />
+
+        <div 
+          className={`fixed inset-0 z-50 overflow-hidden transition-all duration-500 ${
+            drawerOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
+          }`}
+        >
+          <div 
+            className={`absolute inset-0 bg-slate-900/70 backdrop-blur-xs transition-opacity duration-500 ease-in-out ${
+              drawerOpen ? 'opacity-100' : 'opacity-0'
+            }`} 
+            onClick={closeDrawer} 
+          />
+
+          <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
+            <div 
+              className={`w-screen max-w-md bg-white text-slate-900 shadow-2xl flex flex-col justify-between h-full border-l-4 border-red-700 transform transition-all duration-500 ease-out ${
+                drawerOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}
+            >
+              <div className="px-5 py-4 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+                <div>
+                  <h2 className="text-lg font-black text-white">
+                    {formType === 'franchise' ? 'Franchise BaÅŸvuru Formu' : 'DanÄ±ÅŸman BaÅŸvuru Formu'}
+                  </h2>
+                  <p className="text-xs text-red-600 font-black tracking-wider">REALTY CENTERÂ® Ailesine KatÄ±lÄ±n</p>
+                </div>
+                <button onClick={closeDrawer} className="p-1.5 text-slate-400 hover:text-white transition">
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <form onSubmit={handleSubmit} className="px-5 py-4 space-y-3 overflow-y-auto flex-1 text-sm bg-slate-50">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Ad Soyad *</label>
+                  <input 
+                    type="text" 
+                    required
+                    placeholder="AdÄ±nÄ±z ve SoyadÄ±nÄ±z"
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
+                  />
+                </div>
+
+                {formType === 'agent' && (
+                  <>
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">E-posta Adresi *</label>
+                      <input 
+                        type="email" 
+                        required
+                        placeholder="ornek@domain.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">Mevcut MesleÄŸiniz *</label>
+                      <input 
+                        type="text" 
+                        required
+                        placeholder="Ã–rn: Emlak DanÄ±ÅŸmanÄ±, SatÄ±ÅŸ Temsilcisi..."
+                        value={formData.occupation}
+                        onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
+                        className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
+                      />
+                    </div>
+                  </>
+                )}
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Telefon NumarasÄ± *</label>
+                  <input 
+                    type="tel" 
+                    required
+                    placeholder="05XX XXX XX XX"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
+                  />
+                </div>
+
+                <div className="pt-2 border-t border-slate-200">
+                  <h4 className="text-xs font-black text-red-700 tracking-wider mb-2">
+                    Hangi BÃ¶lgede Bizimle Ã‡alÄ±ÅŸmak Ä°stersiniz?
+                  </h4>
+
+                  <div className="mb-2">
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Ä°l SeÃ§imi *</label>
+                    <select 
+                      required
+                      value={selectedCity}
+                      onChange={(e) => {
+                        setSelectedCity(e.target.value);
+                        setSelectedDistrict('');
+                      }}
+                      className="w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700"
+                    >
+                      <option value="">-- Ä°l SeÃ§iniz (81 Ä°l) --</option>
+                      {Object.keys(TURKEY_CITIES).map((city) => (
+                        <option key={city} value={city}>{city}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Ä°lÃ§e SeÃ§imi *</label>
+                    <select 
+                      required
+                      disabled={!selectedCity}
+                      value={selectedDistrict}
+                      onChange={(e) => setSelectedDistrict(e.target.value)}
+                      className={`w-full bg-white border border-slate-300 rounded-md px-3 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-red-700 ${
+                        !selectedCity ? 'opacity-50 cursor-not-allowed bg-slate-100' : ''
+                      }`}
+                    >
+                      <option value="">{selectedCity ? '-- Ä°lÃ§e SeÃ§iniz --' : 'Ã–nce Ä°l SeÃ§iniz'}</option>
+                      {selectedCity && TURKEY_CITIES[selectedCity]?.map((dist) => (
+                        <option key={dist} value={dist}>{dist}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="pt-2 flex items-start space-x-2">
+                  <input 
+                    type="checkbox" 
+                    id="kvkk"
+                    checked={formData.kvkkConsent}
+                    onChange={(e) => setFormData({ ...formData, kvkkConsent: e.target.checked })}
+                    className="mt-0.5 rounded border-slate-300 text-red-700 focus:ring-red-700"
+                  />
+                  <label htmlFor="kvkk" className="text-[11px] text-slate-600 font-medium leading-tight">
+                    KVKK kapsamÄ±nda tarafÄ±ma bilgilendirme, arama ve SMS gÃ¶nderilmesini kabul ediyorum.
+                  </label>
+                </div>
+
+                <div className="pt-3">
+                  <button 
+                    type="submit"
+                    className="relative overflow-hidden group w-full py-3.5 bg-red-700 hover:bg-red-800 text-white font-black rounded-lg shadow-lg shadow-red-700/30 transition flex items-center justify-center space-x-2"
+                  >
+                    <span className="relative z-10">BaÅŸvuruyu Tamamla</span>
+                    <CheckCircle2 className="w-4 h-4 relative z-10" />
+                  </button>
+                </div>
+              </form>
+
+              <div className="px-5 py-3 bg-slate-100 border-t border-slate-200 text-center text-[10px] text-slate-500 font-semibold">
+                Realty CenterÂ® Gayrimenkul Franchise & DanÄ±ÅŸman AÄŸÄ±
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {showScrollTop && (
+          <button
+            onClick={scrollToTop}
+            aria-label="En yukarÄ±ya dÃ¶n"
+            className="fixed bottom-24 right-6 z-40 bg-red-700 hover:bg-red-800 text-white p-3.5 rounded-full shadow-2xl shadow-red-700/50 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/20 flex items-center justify-center"
+          >
+            <ArrowUp className="w-5 h-5" />
+          </button>
+        )}
+
+      </div>
+    </Router>
+  );
+}
