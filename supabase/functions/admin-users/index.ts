@@ -31,6 +31,17 @@ Deno.serve(async (request) => {
   if (!actor || actor.role !== 'admin' || actor.status !== 'active') return json({ error: 'Bu işlem için Admin yetkisi gerekir.' }, 403);
 
   const body = await request.json().catch(() => null);
+  if (body?.action === 'update_user') {
+    const payload = body.payload || {};
+    const id = String(payload.id || '');
+    const password = String(payload.password || '');
+    if (!id || password.length < 10) return json({ error: 'Geçerli bir kullanıcı ve en az 10 karakterlik şifre gerekir.' }, 400);
+    const { error } = await admin.auth.admin.updateUserById(id, { password, user_metadata: { force_password_change: Boolean(payload.forcePasswordChange) } });
+    if (error) return json({ error: 'Şifre güncellenemedi.' }, 400);
+    await admin.from('profiles').update({ force_password_change: Boolean(payload.forcePasswordChange) }).eq('id', id);
+    await admin.from('audit_logs').insert({ actor_id: actor.id, actor_role: 'admin', action: 'user.password_reset_by_admin', entity_type: 'profile', entity_id: id });
+    return json({ id }, 200);
+  }
   if (body?.action !== 'create_user') return json({ error: 'Geçersiz istek.' }, 400);
   const payload = body.payload as CreateUserPayload;
   const username = String(payload?.username || '').trim().toLowerCase();
