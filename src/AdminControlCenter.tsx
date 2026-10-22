@@ -25,6 +25,7 @@ import {
   X,
 } from "lucide-react";
 import { supabase } from "./lib/supabase";
+import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 
 type Page =
   | "overview"
@@ -3360,8 +3361,8 @@ type ListingRow = {
   approval_status?: string | null; is_featured?: boolean | null; created_at: string;
 };
 
-const listingCities = ["Adana", "Ankara", "Antalya", "Bursa", "Eskişehir", "İstanbul", "İzmir", "Konya", "Mersin", "Muğla", "Samsun", "Trabzon"];
-const listingDistricts: Record<string, string[]> = { Ankara: ["Çankaya", "Keçiören", "Mamak", "Yenimahalle"], İstanbul: ["Beşiktaş", "Kadıköy", "Üsküdar", "Beylikdüzü"], İzmir: ["Bornova", "Karşıyaka", "Konak", "Urla"], Antalya: ["Alanya", "Konyaaltı", "Muratpaşa", "Manavgat"], Bursa: ["Nilüfer", "Osmangazi", "Yıldırım"], Muğla: ["Bodrum", "Fethiye", "Marmaris"] };
+const listingCities = TURKEY_PROVINCES;
+const listingDistricts: Record<string, string[]> = Object.fromEntries(listingCities.map((city) => [city, getTurkeyDistricts(city)]));
 const listingInput = "mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm outline-none transition focus:border-[#cd011e] focus:ring-2 focus:ring-[#cd011e]/10";
 
 function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) => void; profiles: Profile[]; mode: "all" | "approval" | "add"; setMode: (v: "all" | "approval" | "add") => void }) {
