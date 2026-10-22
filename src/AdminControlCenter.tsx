@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
+import ListingEntryPageV2 from "./ListingEntryPage";
 
 type Page =
   | "overview"
@@ -2731,7 +2732,7 @@ export default function AdminControlCenter() {
           )}
         </div>
         {listingMode === "add" ? (
-          <ListingEntryPage profiles={profiles} alert={alert} close={() => setListingMode("all")} />
+          <ListingEntryPageV2 profiles={profiles} alert={alert} close={() => setListingMode("all")} />
         ) : (
           <ListingForm
             alert={alert}
