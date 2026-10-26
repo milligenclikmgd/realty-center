@@ -1983,7 +1983,7 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center">
-          <div ref={homeSearchRef} className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
+          <div className="w-full max-w-[33rem] -ml-1 sm:-ml-4 lg:-ml-10">
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActiveTab('search')}
