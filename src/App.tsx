@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import { isSupabaseConfigured, supabase } from './lib/supabase';
 import AdminControlCenter from './AdminControlCenter';
+import { categoriesFor, fieldsFor, legacyMainCategory, listingBelongsTo, normalizePropertyType, TRANSACTION_KINDS, type MainCategory, type TransactionKind } from './listingCatalog';
 
 import { 
   Bot, Search, MapPin, Phone, Mail, Globe, 
@@ -3323,43 +3324,70 @@ export function ListingsPage() {
 
 function ListingsPageV2() {
   const location = useLocation();
+  const navigate = useNavigate();
   const params = new URLSearchParams(location.search);
   const initialType = params.get('type') || '';
   const initialPropertyType = params.get('propertyType') || '';
   const initialCategory = params.get('category') || '';
-  const initialMainCategory = initialCategory === 'Arazi' ? 'Arsa' : initialCategory === 'Ticari Gayrimenkul' ? 'İşyeri' : initialCategory;
+  const initialMainCategory = legacyMainCategory(initialCategory);
   const initialCity = params.get('city') || '';
   const initialDistrict = params.get('district') || '';
   const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCategory || initialCity);
   const [transactionType, setTransactionType] = useState(initialType);
   const [propertyType, setPropertyType] = useState(initialPropertyType);
-  const [categoryFilter, setCategoryFilter] = useState(initialMainCategory);
+  const [categoryFilter, setCategoryFilter] = useState<MainCategory | ''>(initialMainCategory);
   const [city, setCity] = useState(initialCity);
   const [district, setDistrict] = useState(initialDistrict);
   const [neighborhood, setNeighborhood] = useState('');
+  const [locationRows, setLocationRows] = useState<{ city: string; district: string; neighborhoods: string[] }[]>([]);
   const [advanced, setAdvanced] = useState<Record<string, string>>({});
   const [appliedAdvanced, setAppliedAdvanced] = useState<Record<string, string>>({});
   const [hasSearched, setHasSearched] = useState(showAllInitially);
-  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, category: initialCategory, mainCategory: initialMainCategory, city: initialCity, district: initialDistrict, neighborhood: '' });
+  const [appliedSearch, setAppliedSearch] = useState({ type: initialType, propertyType: initialPropertyType, mainCategory: initialMainCategory, city: initialCity, district: initialDistrict, neighborhood: '' });
   const publishedListings = usePublishedListings();
 
+  useEffect(() => {
+    void fetch('/data/turkey-neighborhoods.json')
+      .then((response) => response.ok ? response.json() : [])
+      .then((rows) => setLocationRows(Array.isArray(rows) ? rows : []))
+      .catch(() => setLocationRows([]));
+  }, []);
+
+  useEffect(() => {
+    const next = new URLSearchParams(location.search);
+    const nextCategory = legacyMainCategory(next.get('category') || '');
+    const nextAdvanced = Object.fromEntries([...next.entries()].filter(([key]) => key.startsWith('f_')).map(([key, value]) => [key.slice(2), value]));
+    const nextSearch = { type: next.get('type') || '', propertyType: next.get('propertyType') || '', mainCategory: nextCategory, city: next.get('city') || '', district: next.get('district') || '', neighborhood: next.get('neighborhood') || '' };
+    setTransactionType(nextSearch.type); setCategoryFilter(nextCategory); setPropertyType(nextSearch.propertyType); setCity(nextSearch.city); setDistrict(nextSearch.district); setNeighborhood(nextSearch.neighborhood); setAdvanced(nextAdvanced); setAppliedAdvanced(nextAdvanced); setAppliedSearch(nextSearch); setHasSearched(Boolean(next.get('all') === '1' || nextSearch.type || nextSearch.propertyType || nextSearch.mainCategory || nextSearch.city || Object.keys(nextAdvanced).length));
+  }, [location.search]);
+
   const districts = getTurkeyDistricts(city);
-  const neighborhoods = city && district ? DISTRICT_NEIGHBORHOODS[`${city}|${district}`] || [] : [];
-  const availablePropertyTypes = categoryFilter ? LISTING_PROPERTY_TYPES_BY_MAIN_CATEGORY[categoryFilter as keyof typeof LISTING_PROPERTY_TYPES_BY_MAIN_CATEGORY] || [] : [];
-  const filterGroup = getAdvancedFilterGroup(propertyType || appliedSearch.propertyType);
-  const sideFields = propertyType || appliedSearch.propertyType ? ADVANCED_FILTERS_BY_TYPE[filterGroup] : COMMON_PRICE_AREA_FIELDS;
+  const neighborhoods = city && district ? locationRows.find((row) => row.city === city && row.district === district)?.neighborhoods || [] : [];
+  const selectedTransaction = (transactionType || appliedSearch.type) as TransactionKind | '';
+  const availablePropertyTypes = categoriesFor(categoryFilter, selectedTransaction);
+  const sideFields = fieldsFor(categoryFilter || appliedSearch.mainCategory, propertyType || appliedSearch.propertyType, selectedTransaction);
 
   const runSearch = () => {
-    setAppliedSearch({ type: transactionType, propertyType, category: LEGACY_LISTING_CATEGORY_BY_MAIN[categoryFilter] || '', mainCategory: categoryFilter, city, district, neighborhood });
+    const nextSearch = { type: transactionType, propertyType, mainCategory: categoryFilter, city, district, neighborhood };
+    const nextParams = new URLSearchParams();
+    if (transactionType) nextParams.set('type', transactionType);
+    if (categoryFilter) nextParams.set('category', categoryFilter);
+    if (propertyType) nextParams.set('propertyType', propertyType);
+    if (city) nextParams.set('city', city);
+    if (district) nextParams.set('district', district);
+    if (neighborhood) nextParams.set('neighborhood', neighborhood);
+    Object.entries(advanced).filter(([, value]) => value).forEach(([key, value]) => nextParams.set(`f_${key}`, value));
+    setAppliedSearch(nextSearch);
     setAppliedAdvanced({ ...advanced });
     setHasSearched(true);
+    navigate({ pathname: '/ilanlarimiz', search: nextParams.toString() ? `?${nextParams.toString()}` : '?all=1' });
   };
 
   const filteredListings = publishedListings.filter((item) => {
     if (!hasSearched) return false;
     if (appliedSearch.type && (appliedSearch.type === 'Devren' ? !item.type.startsWith('Devren') : item.type !== appliedSearch.type)) return false;
-    if (appliedSearch.propertyType && item.propertyType !== appliedSearch.propertyType) return false;
-    if (appliedSearch.category && item.category !== appliedSearch.category) return false;
+    if (appliedSearch.propertyType && normalizePropertyType(item.propertyType) !== appliedSearch.propertyType) return false;
+    if (!listingBelongsTo(item.category, item.propertyType, appliedSearch.mainCategory)) return false;
     if (appliedSearch.city && item.city !== appliedSearch.city) return false;
     if (appliedSearch.district && item.district !== appliedSearch.district) return false;
     if (appliedSearch.neighborhood && item.neighborhood !== appliedSearch.neighborhood) return false;
@@ -3370,7 +3398,8 @@ function ListingsPageV2() {
     if (appliedAdvanced.rooms && item.rooms !== appliedAdvanced.rooms) return false;
     for (const [key, value] of Object.entries(appliedAdvanced)) {
       if (!value || ['minPrice','maxPrice','minArea','maxArea','rooms'].includes(key)) continue;
-      const listingValue = item.details[key] || '';
+      const detailAliases: Record<string, string[]> = { building_age: ['building_age','buildingAge'], closed_area: ['closed_area','closedArea'], ceiling_height: ['ceiling_height','ceilingHeight'], power_capacity: ['power_capacity','powerCapacity'], loading_ramp: ['loading_ramp','loading','loadingDocks'], title_deed_type: ['title_deed_type','titleDeed'], tir_access: ['tir_access'], monthly_rent: ['monthly_rent'], transfer_fee: ['transfer_fee'] };
+      const listingValue = (detailAliases[key] || [key]).map((alias) => item.details[alias]).find(Boolean) || item.details[key] || '';
       if (listingValue.toLocaleLowerCase('tr-TR') !== value.toLocaleLowerCase('tr-TR')) return false;
     }
     return true;
@@ -3379,6 +3408,7 @@ function ListingsPageV2() {
   const resetFilters = () => {
     setTransactionType(''); setPropertyType(''); setCategoryFilter(''); setCity(''); setDistrict(''); setNeighborhood('');
     setAdvanced({}); setAppliedAdvanced({}); setHasSearched(false);
+    navigate('/ilanlarimiz');
   };
 
   return (
@@ -3388,8 +3418,8 @@ function ListingsPageV2() {
 
         <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
           <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[.95fr_1fr_1.25fr_1fr_1fr_auto]">
-            <div><label className="mb-2 block text-xs font-black text-slate-600">1. İşlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Kiralık / Satılık / Devren</option>{LISTING_SEARCH_TRANSACTION_TYPES.map((type) => <option key={type}>{type}</option>)}</select></div>
-            <div><label className="mb-2 block text-xs font-black text-slate-600">2. Ana Kategori</label><select value={categoryFilter} onChange={(e) => { setCategoryFilter(e.target.value); setPropertyType(''); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Konut / Arsa / İşyeri</option>{LISTING_MAIN_CATEGORIES.map((category) => <option key={category}>{category}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">1. İşlem Tipi</label><select value={transactionType} onChange={(e) => { setTransactionType(e.target.value); setPropertyType(''); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Kiralık / Satılık / Devren</option>{TRANSACTION_KINDS.map((type) => <option key={type}>{type}</option>)}</select></div>
+            <div><label className="mb-2 block text-xs font-black text-slate-600">2. Ana Kategori</label><select value={categoryFilter} onChange={(e) => { setCategoryFilter(e.target.value as MainCategory | ''); setPropertyType(''); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">Konut / Arsa / İşyeri</option>{(['Konut','Arsa','İşyeri'] as MainCategory[]).map((category) => <option key={category}>{category}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">3. Alt Tür <span className="font-medium text-slate-400">(isteğe bağlı)</span></label><select disabled={!categoryFilter} value={propertyType} onChange={(e) => { setPropertyType(e.target.value); setAdvanced({}); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-50"><option value="">{categoryFilter ? 'Tüm alt türler' : 'Önce ana kategori seçiniz'}</option>{availablePropertyTypes.map((type) => <option key={type}>{type}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İl</label><select value={city} onChange={(e) => { setCity(e.target.value); setDistrict(''); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold"><option value="">İl Seçiniz</option>{TURKEY_PROVINCES.map((item) => <option key={item}>{item}</option>)}</select></div>
             <div><label className="mb-2 block text-xs font-black text-slate-600">İlçe</label><select disabled={!city} value={district} onChange={(e) => { setDistrict(e.target.value); setNeighborhood(''); setHasSearched(false); }} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-bold disabled:opacity-50"><option value="">{city ? 'İlçe Seçiniz' : 'Önce İl Seçiniz'}</option>{districts.map((item) => <option key={item}>{item}</option>)}</select></div>
@@ -3402,7 +3432,7 @@ function ListingsPageV2() {
             <div className="border-b border-slate-200 p-5"><div className="flex items-center justify-between"><h2 className="font-black text-slate-900">Detaylı Filtrele</h2><button onClick={resetFilters} className="text-xs font-black text-red-700">Temizle</button></div><p className="mt-1 text-xs text-slate-500">{appliedSearch.propertyType || appliedSearch.mainCategory || 'Tüm ilanlar'} için filtreler</p></div>
             <div className="space-y-4 p-5">
               {district && <div><label className="mb-1 block text-xs font-black text-slate-600">Mahalle</label><select value={neighborhood} onChange={(e) => setNeighborhood(e.target.value)} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">Tüm Mahalleler</option>{neighborhoods.map((item) => <option key={item}>{item}</option>)}</select>{!neighborhoods.length && <p className="mt-1 text-[10px] text-slate-400">Bu ilçe için mahalle verisi henüz eklenmedi.</p>}</div>}
-              {sideFields.map((field) => <div key={field.key}><label className="mb-1 block text-xs font-black text-slate-600">{field.label}</label>{field.options ? <select value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">Tümü</option>{field.options.map((option) => <option key={option}>{option}</option>)}</select> : <input type={field.type || 'text'} value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs" />}</div>)}
+              {sideFields.map((field) => <div key={field.key}><label className="mb-1 block text-xs font-black text-slate-600">{field.label}</label>{field.kind === 'select' ? <select value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs"><option value="">Tümü</option>{field.options?.map((option) => <option key={option}>{option}</option>)}</select> : <input type={field.kind === 'number' ? 'number' : 'text'} value={advanced[field.key] || ''} onChange={(e) => setAdvanced({ ...advanced, [field.key]: e.target.value })} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs" />}</div>)}
               <button onClick={runSearch} className="w-full rounded-xl bg-red-700 py-3 text-sm font-black text-white hover:bg-red-800">Filtreleri Uygula</button>
             </div>
           </aside>
