@@ -1946,13 +1946,11 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
   const [activeTab, setActiveTab] = useState<'search' | 'franchise' | 'agent'>('search');
   const [searchDistrict, setSearchDistrict] = useState('');
   const [searchTransactionType, setSearchTransactionType] = useState('');
+  const [searchMainCategory, setSearchMainCategory] = useState<MainCategory | ''>('');
   const [searchPropertyType, setSearchPropertyType] = useState('');
-  const [isTransactionMenuOpen, setIsTransactionMenuOpen] = useState(false);
-  const [isCityMenuOpen, setIsCityMenuOpen] = useState(false);
-  const [isDistrictMenuOpen, setIsDistrictMenuOpen] = useState(false);
-  const [isPropertyMenuOpen, setIsPropertyMenuOpen] = useState(false);
   const [featuredAgents, setFeaturedAgents] = useState<any[]>([]);
-  const homeSearchRef = useRef<HTMLDivElement | null>(null);
+  const homePropertyTypes = categoriesFor(searchMainCategory, searchTransactionType as TransactionKind | '');
+  const homeMainCategories = (searchTransactionType === 'Devren' ? ['İşyeri'] : ['Konut', 'Arsa', 'İşyeri']) as MainCategory[];
   useEffect(() => {
     const loadFeaturedAgents = async () => {
       const { data: stars } = await supabase.from('homepage_stars').select('entity_id,position').eq('kind','advisor').order('position');
@@ -1963,18 +1961,6 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
       setFeaturedAgents(ordered);
     };
     void loadFeaturedAgents();
-  }, []);
-  useEffect(() => {
-    const closeMenus = (event: PointerEvent) => {
-      if (!homeSearchRef.current?.contains(event.target as Node)) {
-        setIsTransactionMenuOpen(false);
-        setIsCityMenuOpen(false);
-        setIsDistrictMenuOpen(false);
-        setIsPropertyMenuOpen(false);
-      }
-    };
-    document.addEventListener('pointerdown', closeMenus);
-    return () => document.removeEventListener('pointerdown', closeMenus);
   }, []);
   const publishedListings = usePublishedListings();
   const sortedListings = [...publishedListings].sort(() => Math.random() - 0.5);
@@ -2031,29 +2017,33 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
             <div className="mt-5 rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
               <div className="grid gap-1">
                 <div className="grid grid-cols-2 gap-1">
-                  <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
-                  <Key className="h-4 w-4 shrink-0 text-[#071d3b]"/>
-                  <button type="button" onClick={() => setIsTransactionMenuOpen((open) => { const next = !open; if (next) { setIsCityMenuOpen(false); setIsDistrictMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isTransactionMenuOpen}><span className="truncate">{searchTransactionType || 'İşlem Türü'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isTransactionMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isTransactionMenuOpen && <div role="listbox" className="absolute left-1 top-[calc(100%+.3rem)] z-50 w-48 overflow-hidden rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İŞLEM TÜRÜ</p>{LISTING_TRANSACTION_TYPES.map((type) => <button key={type} type="button" role="option" aria-selected={searchTransactionType === type} onClick={() => { setSearchTransactionType(type); setIsTransactionMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchTransactionType === type ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{type}</span>{searchTransactionType === type && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                    <Key className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                    <select aria-label="İşlem tipi" value={searchTransactionType} onChange={(event) => { const next = event.target.value; setSearchTransactionType(next); setSearchPropertyType(''); if (next === 'Devren') setSearchMainCategory('İşyeri'); }} className="min-w-0 flex-1 bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
+                      <option value="">İşlem Tipi</option>{TRANSACTION_KINDS.map((type) => <option key={type}>{type}</option>)}
+                    </select>
                   </div>
-                  <div className="relative flex items-center gap-2 px-3 py-2">
-                  <MapPin className="h-4 w-4 shrink-0 text-[#071d3b]"/>
-                  <button type="button" onClick={() => setIsCityMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsDistrictMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isCityMenuOpen}><span className="truncate">{selectedCity || 'İl Seçiniz'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isCityMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isCityMenuOpen && <div role="listbox" className="absolute right-0 top-[calc(100%+.3rem)] z-50 max-h-60 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İL SEÇİNİZ</p>{Object.keys(TURKEY_CITIES).map((city) => <button key={city} type="button" role="option" aria-selected={selectedCity === city} onClick={() => { setSelectedCity(city); setSearchDistrict(''); setIsCityMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${selectedCity === city ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{city}</span>{selectedCity === city && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Layers className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                    <select aria-label="Ana kategori" value={searchMainCategory} onChange={(event) => { setSearchMainCategory(event.target.value as MainCategory | ''); setSearchPropertyType(''); }} className="min-w-0 flex-1 bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
+                      <option value="">Ana Kategori</option>{homeMainCategories.map((category) => <option key={category}>{category}</option>)}
+                    </select>
                   </div>
                 </div>
-                <div className="grid grid-cols-[1fr_1.15fr_auto] gap-1 border-t border-slate-200 pt-1">
-                <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
-                  <Building2 className="h-4 w-4 shrink-0 text-[#071d3b]"/>
-                  <button type="button" disabled={!selectedCity} onClick={() => setIsDistrictMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsPropertyMenuOpen(false); } return next; })} className={`flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold outline-none ${selectedCity ? 'text-slate-700' : 'cursor-not-allowed text-slate-400'}`} aria-haspopup="listbox" aria-expanded={isDistrictMenuOpen}><span className="truncate">{searchDistrict || (selectedCity ? 'İlçe Seçiniz' : 'Önce İl Seçin')}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isDistrictMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isDistrictMenuOpen && selectedCity && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] left-0 z-50 max-h-52 w-48 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">İLÇE SEÇİNİZ</p>{TURKEY_CITIES[selectedCity]?.map((district) => <button key={district} type="button" role="option" aria-selected={searchDistrict === district} onClick={() => { setSearchDistrict(district); setIsDistrictMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchDistrict === district ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{district}</span>{searchDistrict === district && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
-                </div>
-                <div className="relative flex items-center gap-2 border-r border-slate-200 px-3 py-2">
-                  <Home className="h-4 w-4 shrink-0 text-[#071d3b]"/>
-                  <button type="button" onClick={() => setIsPropertyMenuOpen((open) => { const next = !open; if (next) { setIsTransactionMenuOpen(false); setIsCityMenuOpen(false); setIsDistrictMenuOpen(false); } return next; })} className="flex min-w-0 flex-1 items-center justify-between gap-2 text-left text-[11px] font-semibold text-slate-700 outline-none" aria-haspopup="listbox" aria-expanded={isPropertyMenuOpen}><span className="truncate">{searchPropertyType || 'Gayrimenkul Türü'}</span><ChevronDown className={`h-3.5 w-3.5 shrink-0 text-[#123499] transition-transform duration-200 ${isPropertyMenuOpen ? 'rotate-180' : ''}`}/></button>
-                  {isPropertyMenuOpen && <div role="listbox" className="absolute bottom-[calc(100%+.3rem)] right-0 z-50 max-h-60 w-52 overflow-y-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl shadow-slate-900/15"><p className="sticky top-0 bg-white px-2.5 py-1 text-[9px] font-black tracking-[.14em] text-slate-400">GAYRİMENKUL TÜRÜ</p>{ALL_LISTING_PROPERTY_TYPES.map((propertyType) => <button key={propertyType} type="button" role="option" aria-selected={searchPropertyType === propertyType} onClick={() => { setSearchPropertyType(propertyType); setIsPropertyMenuOpen(false); }} className={`flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-left text-[11px] font-bold transition ${searchPropertyType === propertyType ? 'bg-red-700 text-white' : 'text-[#071d3b] hover:bg-red-50 hover:text-red-700'}`}><span>{propertyType}</span>{searchPropertyType === propertyType && <Check className="h-3.5 w-3.5"/>}</button>)}</div>}
-                </div>
-                <button onClick={() => navigate('/ilanlarimiz?type=' + encodeURIComponent(searchTransactionType) + '&propertyType=' + encodeURIComponent(searchPropertyType) + '&city=' + encodeURIComponent(selectedCity) + '&district=' + encodeURIComponent(searchDistrict))} className="grid h-9 w-9 place-items-center self-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800" aria-label="İlanları ara"><Search className="h-4 w-4"/></button>
+                <div className="grid grid-cols-[1fr_1fr_auto] gap-1 border-t border-slate-200 pt-1">
+                  <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                    <Home className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                    <select aria-label="Alt tür" disabled={!searchMainCategory} value={searchPropertyType} onChange={(event) => setSearchPropertyType(event.target.value)} className="min-w-0 flex-1 bg-transparent text-[11px] font-semibold text-slate-700 outline-none disabled:cursor-not-allowed disabled:text-slate-400">
+                      <option value="">{searchMainCategory ? 'Alt Tür (Tümü)' : 'Önce kategori seçin'}</option>{homePropertyTypes.map((propertyType) => <option key={propertyType}>{propertyType}</option>)}
+                    </select>
+                  </div>
+                  <div className="flex items-center gap-2 border-r border-slate-200 px-3 py-2">
+                    <Building2 className="h-4 w-4 shrink-0 text-[#071d3b]"/>
+                    <select aria-label="İl ve ilçe" value={searchDistrict ? `${selectedCity}|${searchDistrict}` : selectedCity} onChange={(event) => { const [city, district = ''] = event.target.value.split('|'); setSelectedCity(city); setSearchDistrict(district); }} className="min-w-0 flex-1 bg-transparent text-[11px] font-semibold text-slate-700 outline-none">
+                      <option value="">Konum (İl / İlçe)</option>{Object.keys(TURKEY_CITIES).map((city) => <optgroup key={city} label={city}><option value={city}>{city} · Tüm ilçeler</option>{TURKEY_CITIES[city].map((district) => <option key={district} value={`${city}|${district}`}>{district}</option>)}</optgroup>)}
+                    </select>
+                  </div>
+                  <button onClick={() => { const search = new URLSearchParams(); if (searchTransactionType) search.set('type', searchTransactionType); if (searchMainCategory) search.set('category', searchMainCategory); if (searchPropertyType) search.set('propertyType', searchPropertyType); if (selectedCity) search.set('city', selectedCity); if (searchDistrict) search.set('district', searchDistrict); navigate(`/ilanlarimiz?${search.toString() || 'all=1'}`); }} className="grid h-9 w-9 place-items-center self-center rounded-full bg-red-700 text-white shadow-lg shadow-red-700/30 transition hover:bg-red-800" aria-label="İlanları ara"><Search className="h-4 w-4"/></button>
                 </div>
               </div>
             </div>
