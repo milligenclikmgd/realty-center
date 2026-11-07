@@ -3845,7 +3845,8 @@ function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children
   return <>{children}</>;
 }
 
-function LoginPage() {
+function LoginPage({ superAdmin = false }: { superAdmin?: boolean }) {
+  const superAdminEmail = (import.meta.env.VITE_SUPER_ADMIN_AUTH_EMAIL as string | undefined)?.trim().toLowerCase();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -3853,6 +3854,22 @@ function LoginPage() {
   const [errorMsg, setErrorMsg] = useState('');
   const [loading, setLoading] = useState(false);
   const [forgotMode, setForgotMode] = useState(false);
+  const [recoveryMode, setRecoveryMode] = useState(false);
+  const [confirmation, setConfirmation] = useState('');
+
+  useEffect(() => {
+    if (!isSupabaseConfigured) return;
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
+      if (event === 'PASSWORD_RECOVERY') {
+        setRecoveryMode(true);
+        setPassword('');
+        setConfirmation('');
+        setErrorMsg('');
+        setMessage('');
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, []);
 
   const navigate = useNavigate();
 
@@ -3860,12 +3877,15 @@ function LoginPage() {
     e.preventDefault();
     setErrorMsg(''); setMessage('');
     if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
-    if (!email.trim() || !password.trim()) { setErrorMsg('E-posta ve şifrenizi girin.'); return; }
+    if (!email.trim() || !password.trim()) { setErrorMsg(superAdmin ? 'Kullanıcı adınızı ve şifrenizi girin.' : 'E-posta ve şifrenizi girin.'); return; }
+    const identifier = email.trim().toLowerCase();
+    if (superAdmin && !superAdminEmail) { setErrorMsg('Süper admin girişi henüz yapılandırılmadı.'); return; }
+    if (superAdmin && identifier !== 'admin') { setErrorMsg('Kullanıcı adı veya şifre hatalı.'); return; }
     setLoading(true);
-    const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim().toLowerCase(), password });
-    if (error || !data.user) { setErrorMsg('E-posta veya şifre hatalı.'); setLoading(false); return; }
+    const { data, error } = await supabase.auth.signInWithPassword({ email: superAdminEmail && superAdmin ? superAdminEmail : identifier, password });
+    if (error || !data.user) { setErrorMsg(superAdmin ? 'Kullanıcı adı veya şifre hatalı.' : 'E-posta veya şifre hatalı.'); setLoading(false); return; }
     const { data: profile } = await supabase.from('profiles').select('role, status').eq('id', data.user.id).maybeSingle();
-    if (!profile || profile.status !== 'active') {
+    if (!profile || profile.status !== 'active' || (superAdmin && profile.role !== 'admin')) {
       await supabase.auth.signOut();
       setErrorMsg('Bu hesap panel erişimine uygun değil veya aktif değil.'); setLoading(false);
       return;
@@ -3883,6 +3903,31 @@ function LoginPage() {
     setMessage('Bu e-posta adresiyle kayıtlı bir hesap varsa şifre yenileme bağlantısı gönderilecektir.');
   };
 
+  const handleNewPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrorMsg('');
+    if (password.length < 8 || password !== confirmation) {
+      setErrorMsg('En az 8 karakterli bir şifre girin ve iki alanın aynı olduğundan emin olun.');
+      return;
+    }
+    setLoading(true);
+    try {
+      const { error } = await supabase.auth.updateUser({ password });
+      if (error) {
+        setErrorMsg('Şifre güncellenemedi. Farklı bir şifre deneyin veya yeni bir sıfırlama bağlantısı isteyin.');
+        return;
+      }
+      await supabase.auth.signOut({ scope: 'local' });
+      setPassword('');
+      setConfirmation('');
+      setRecoveryMode(false);
+      setForgotMode(false);
+      setMessage('Şifreniz güncellendi. Yeni şifrenizle giriş yapabilirsiniz.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8 xl:pb-12 xl:pt-28">
       <div className="w-full max-w-md">
@@ -3894,27 +3939,40 @@ function LoginPage() {
               className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
             />
 
-            <h1 className="text-2xl font-black text-white">Panel Girişi</h1>
+            <h1 className="text-2xl font-black text-white">{recoveryMode ? 'Yeni Şifre Belirle' : superAdmin ? 'Süper Admin Girişi' : 'Panel Girişi'}</h1>
             <p className="text-slate-400 text-sm mt-2">
-              Danışman ve yönetim paneline giriş yapın.
+              {recoveryMode ? 'Yeni şifrenizi girip doğrulayın.' : superAdmin ? 'Yönetim paneline kullanıcı adınızla giriş yapın.' : 'Danışman ve yönetim paneline giriş yapın.'}
             </p>
           </div>
 
-          <form onSubmit={forgotMode ? handlePasswordReset : handleLogin} className="p-6 space-y-4">
-            {(errorMsg || message) && <div className={`rounded-xl border p-3 text-xs font-bold ${errorMsg ? 'border-red-200 bg-red-50 text-red-700' : 'border-emerald-200 bg-emerald-50 text-emerald-700'}`}>{errorMsg || message}</div>}
+          <form onSubmit={recoveryMode ? handleNewPassword : forgotMode ? handlePasswordReset : handleLogin} className="p-6 space-y-4">
+            {(errorMsg || message) && <div role={errorMsg ? "alert" : "status"} className={`rounded-xl border p-3 text-xs font-bold ${errorMsg ? 'border-red-200 bg-red-50 text-red-700' : 'border-emerald-200 bg-emerald-50 text-emerald-700'}`}>{errorMsg || message}</div>}
+            {recoveryMode ? <>
+              <label className="block text-sm font-bold text-slate-700">
+                Yeni şifre
+                <input type="password" autoComplete="new-password" minLength={8} required value={password} onChange={(e) => setPassword(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3" />
+              </label>
+              <label className="block text-sm font-bold text-slate-700">
+                Yeni şifreyi tekrar girin
+                <input type="password" autoComplete="new-password" minLength={8} required value={confirmation} onChange={(e) => setConfirmation(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3" />
+              </label>
+              <button type="submit" disabled={loading} className="w-full rounded-xl bg-red-700 py-3 font-black text-white disabled:opacity-60">
+                {loading ? 'İşlem yapılıyor…' : 'Şifreyi Güncelle'}
+              </button>
+            </> : <>
             {forgotMode && <p className="text-sm font-medium leading-6 text-slate-600">Realty Center hesabınıza bağlı e-posta adresini girin.</p>}
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-1.5">
-                E-posta Adresi
+                {superAdmin && !forgotMode ? 'Kullanıcı Adı' : 'E-posta Adresi'}
               </label>
               <div className="relative">
                 <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
-                  type="text"
+                  type={superAdmin && !forgotMode ? 'text' : 'email'}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="E-posta adresinizi girin"
-                  autoComplete="email"
+                  placeholder={superAdmin && !forgotMode ? 'Kullanıcı adınızı girin' : 'E-posta adresinizi girin'}
+                  autoComplete={superAdmin && !forgotMode ? 'username' : 'email'}
                   className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
@@ -3956,7 +4014,7 @@ function LoginPage() {
               <button
                 type="button"
                 className="text-red-700 hover:text-red-800 font-bold text-xs"
-                onClick={() => { setForgotMode(true); setErrorMsg(''); setMessage(''); }}
+                onClick={() => { if (superAdmin) setEmail(''); setForgotMode(true); setErrorMsg(''); setMessage(''); }}
               >
                 Şifremi unuttum
               </button>
@@ -3964,13 +4022,18 @@ function LoginPage() {
 
             <button
               type="submit"
+              disabled={loading}
               className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
             >
               <span>{loading ? 'İşlem yapılıyor…' : 'Giriş Yap'}</span>
               <ArrowRight className="w-5 h-5" />
             </button>
             </>}
-            {forgotMode && <button type="button" onClick={() => { setForgotMode(false); setErrorMsg(''); setMessage(''); }} className="w-full text-center text-xs font-bold text-slate-500 hover:text-red-700">Giriş ekranına dön</button>}
+            {forgotMode && <button type="submit" disabled={loading} className="w-full rounded-xl bg-red-700 py-3 font-black text-white disabled:opacity-60">
+              {loading ? 'İşlem yapılıyor…' : 'Sıfırlama Bağlantısı Gönder'}
+            </button>}
+            {forgotMode && <button type="button" disabled={loading} onClick={() => { setForgotMode(false); setErrorMsg(''); setMessage(''); }} className="w-full text-center text-xs font-bold text-slate-500 hover:text-red-700">Giriş ekranına dön</button>}
+            </>}
           </form>
 
           <div className="border-t border-slate-200 px-6 py-3 text-center bg-slate-50">
@@ -5722,7 +5785,7 @@ export default function RealtyCenterApp() {
             <Route path="/panel" element={<LoginPage />} />
             <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor']}><AgentDashboard panelRole="advisor" /></ProtectedPanelRoute>} />
             <Route path="/yonetici-panel" element={<ProtectedPanelRoute roles={['manager']}><AgentDashboard panelRole="manager" /></ProtectedPanelRoute>} />
-            <Route path="/super-admin" element={<LoginPage />} />
+            <Route path="/super-admin" element={<LoginPage key="super-admin" superAdmin />} />
             <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><AdminControlCenter /></ProtectedPanelRoute>} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
