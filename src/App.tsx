@@ -3845,7 +3845,8 @@ function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children
   return <>{children}</>;
 }
 
-function LoginPage() {
+function LoginPage({ superAdmin = false }: { superAdmin?: boolean }) {
+  const superAdminEmail = (import.meta.env.VITE_SUPER_ADMIN_AUTH_EMAIL as string | undefined)?.trim().toLowerCase();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -3876,12 +3877,15 @@ function LoginPage() {
     e.preventDefault();
     setErrorMsg(''); setMessage('');
     if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
-    if (!email.trim() || !password.trim()) { setErrorMsg('E-posta ve şifrenizi girin.'); return; }
+    if (!email.trim() || !password.trim()) { setErrorMsg(superAdmin ? 'Kullanıcı adınızı ve şifrenizi girin.' : 'E-posta ve şifrenizi girin.'); return; }
+    const identifier = email.trim().toLowerCase();
+    if (superAdmin && !superAdminEmail) { setErrorMsg('Süper admin girişi henüz yapılandırılmadı.'); return; }
+    if (superAdmin && identifier !== 'admin') { setErrorMsg('Kullanıcı adı veya şifre hatalı.'); return; }
     setLoading(true);
-    const { data, error } = await supabase.auth.signInWithPassword({ email: email.trim().toLowerCase(), password });
-    if (error || !data.user) { setErrorMsg('E-posta veya şifre hatalı.'); setLoading(false); return; }
+    const { data, error } = await supabase.auth.signInWithPassword({ email: superAdminEmail && superAdmin ? superAdminEmail : identifier, password });
+    if (error || !data.user) { setErrorMsg(superAdmin ? 'Kullanıcı adı veya şifre hatalı.' : 'E-posta veya şifre hatalı.'); setLoading(false); return; }
     const { data: profile } = await supabase.from('profiles').select('role, status').eq('id', data.user.id).maybeSingle();
-    if (!profile || profile.status !== 'active') {
+    if (!profile || profile.status !== 'active' || (superAdmin && profile.role !== 'admin')) {
       await supabase.auth.signOut();
       setErrorMsg('Bu hesap panel erişimine uygun değil veya aktif değil.'); setLoading(false);
       return;
@@ -3935,9 +3939,9 @@ function LoginPage() {
               className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
             />
 
-            <h1 className="text-2xl font-black text-white">{recoveryMode ? 'Yeni Şifre Belirle' : 'Panel Girişi'}</h1>
+            <h1 className="text-2xl font-black text-white">{recoveryMode ? 'Yeni Şifre Belirle' : superAdmin ? 'Süper Admin Girişi' : 'Panel Girişi'}</h1>
             <p className="text-slate-400 text-sm mt-2">
-              {recoveryMode ? 'Yeni şifrenizi girip doğrulayın.' : 'Danışman ve yönetim paneline giriş yapın.'}
+              {recoveryMode ? 'Yeni şifrenizi girip doğrulayın.' : superAdmin ? 'Yönetim paneline kullanıcı adınızla giriş yapın.' : 'Danışman ve yönetim paneline giriş yapın.'}
             </p>
           </div>
 
@@ -3959,16 +3963,16 @@ function LoginPage() {
             {forgotMode && <p className="text-sm font-medium leading-6 text-slate-600">Realty Center hesabınıza bağlı e-posta adresini girin.</p>}
             <div>
               <label className="block text-sm font-bold text-slate-700 mb-1.5">
-                E-posta Adresi
+                {superAdmin && !forgotMode ? 'Kullanıcı Adı' : 'E-posta Adresi'}
               </label>
               <div className="relative">
                 <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
-                  type="email"
+                  type={superAdmin && !forgotMode ? 'text' : 'email'}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="E-posta adresinizi girin"
-                  autoComplete="email"
+                  placeholder={superAdmin && !forgotMode ? 'Kullanıcı adınızı girin' : 'E-posta adresinizi girin'}
+                  autoComplete={superAdmin && !forgotMode ? 'username' : 'email'}
                   className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
                 />
@@ -4010,7 +4014,7 @@ function LoginPage() {
               <button
                 type="button"
                 className="text-red-700 hover:text-red-800 font-bold text-xs"
-                onClick={() => { setForgotMode(true); setErrorMsg(''); setMessage(''); }}
+                onClick={() => { if (superAdmin) setEmail(''); setForgotMode(true); setErrorMsg(''); setMessage(''); }}
               >
                 Şifremi unuttum
               </button>
@@ -5781,7 +5785,7 @@ export default function RealtyCenterApp() {
             <Route path="/panel" element={<LoginPage />} />
             <Route path="/danisman-panel" element={<ProtectedPanelRoute roles={['advisor']}><AgentDashboard panelRole="advisor" /></ProtectedPanelRoute>} />
             <Route path="/yonetici-panel" element={<ProtectedPanelRoute roles={['manager']}><AgentDashboard panelRole="manager" /></ProtectedPanelRoute>} />
-            <Route path="/super-admin" element={<LoginPage />} />
+            <Route path="/super-admin" element={<LoginPage key="super-admin" superAdmin />} />
             <Route path="/super-admin-panel" element={<ProtectedPanelRoute roles={['admin']}><AdminControlCenter /></ProtectedPanelRoute>} />
             
             <Route path="/kurumsal/hakkimizda" element={<AboutPage />} />
