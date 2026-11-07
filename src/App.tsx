@@ -3845,6 +3845,13 @@ function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children
   return <>{children}</>;
 }
 
+// Supabase can consume the URL fragment before the login component mounts.
+const initialPanelRecovery = new URLSearchParams(window.location.hash.slice(1));
+let initialPanelRecoveryToken = initialPanelRecovery.get('type') === 'recovery'
+  ? initialPanelRecovery.get('access_token')
+  : null;
+const initialPanelRecoveryError = initialPanelRecovery.has('error_code');
+
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
@@ -3858,16 +3865,41 @@ function LoginPage() {
 
   useEffect(() => {
     if (!isSupabaseConfigured) return;
+    let active = true;
+    const showRecovery = () => {
+      setRecoveryMode(true);
+      setPassword('');
+      setConfirmation('');
+      setErrorMsg('');
+      setMessage('');
+    };
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
-      if (event === 'PASSWORD_RECOVERY') {
-        setRecoveryMode(true);
-        setPassword('');
-        setConfirmation('');
-        setErrorMsg('');
-        setMessage('');
-      }
+      if (event === 'PASSWORD_RECOVERY') showRecovery();
     });
-    return () => subscription.unsubscribe();
+
+    const recoveryToken = initialPanelRecoveryToken;
+    if (recoveryToken) {
+      void supabase.auth.getSession().then(({ data }) => {
+        if (!active) return;
+        if (data.session?.access_token === recoveryToken) {
+          initialPanelRecoveryToken = null;
+          initialPanelRecovery.delete('access_token');
+          initialPanelRecovery.delete('refresh_token');
+          showRecovery();
+        } else {
+          setForgotMode(true);
+          setErrorMsg('Sıfırlama bağlantısı geçersiz veya süresi dolmuş. Yeni bir bağlantı isteyin.');
+        }
+      });
+    } else if (initialPanelRecoveryError) {
+      setForgotMode(true);
+      setErrorMsg('Sıfırlama bağlantısı geçersiz veya süresi dolmuş. Yeni bir bağlantı isteyin.');
+    }
+
+    return () => {
+      active = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   const navigate = useNavigate();
