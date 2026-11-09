@@ -419,6 +419,13 @@ export default function ListingEntryPage({
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [preview, setPreview] = useState(false);
+  const [publishMode, setPublishMode] = useState("publish");
+  const [featured, setFeatured] = useState(false);
+  const [newLabel, setNewLabel] = useState(false);
+  const [dealLabel, setDealLabel] = useState(false);
+  const [publishStart, setPublishStart] = useState("");
+  const [publishEnd, setPublishEnd] = useState("");
   const editorRef = useRef<HTMLDivElement | null>(null);
   const [form, setForm] = useState({
     title: "",
@@ -475,6 +482,9 @@ export default function ListingEntryPage({
           : { ...current, advisor: viewerId },
       );
   }, [viewerRole, viewerId]);
+  useEffect(() => { const saved = localStorage.getItem("rc-listing-draft"); if (saved) try { const d = JSON.parse(saved); setForm((x) => ({ ...x, ...d.form })); setFeatured(!!d.featured); setNewLabel(!!d.newLabel); setDealLabel(!!d.dealLabel); } catch { /* ignore invalid draft */ } }, []);
+  useEffect(() => { const timer = window.setTimeout(() => localStorage.setItem("rc-listing-draft", JSON.stringify({ form, featured, newLabel, dealLabel })), 700); return () => window.clearTimeout(timer); }, [form, featured, newLabel, dealLabel]);
+  const saveDraft = () => { localStorage.setItem("rc-listing-draft", JSON.stringify({ form, featured, newLabel, dealLabel })); alert("Taslak kaydedildi."); };
   useEffect(() => {
     void fetch("/data/turkey-neighborhoods.json")
       .then((response) => (response.ok ? response.json() : []))
@@ -562,9 +572,9 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, dues: form.dues },
-          approval_status: directPublish ? "Yayında" : "Onay Bekliyor",
-          is_featured: false,
+          details: { ...form.details, dues: form.dues, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
+          is_featured: featured,
         });
       if (error) throw error;
       alert(
@@ -624,10 +634,9 @@ export default function ListingEntryPage({
               : "Danışman ilanları onay merkezine gönderilir."}
           </p>
         </div>
-        <button type="button" onClick={close} className="rc-secondary">
-          Listeye dön
-        </button>
+        <div className="flex flex-wrap gap-2"><button type="button" onClick={saveDraft} className="rc-secondary">Taslak Kaydet</button><button type="button" onClick={() => setPreview(true)} className="rc-secondary">Önizleme</button><button type="button" onClick={close} className="rc-secondary">Listeye dön</button></div>
       </header>
+      <div className="grid grid-cols-4 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500"><span className="text-[#cd011e]">01 Temel</span><span>02 Konum</span><span>03 Özellikler</span><span>04 Yayınla</span></div>
       <div className="space-y-8 p-6">
         <section>
           <h3>Temel bilgiler</h3>
@@ -942,7 +951,7 @@ export default function ListingEntryPage({
             </div>
           )}
         </section>
-        <footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
+        <section className="border-t border-slate-100 pt-7"><h3>Yayınlama ve vitrin ayarları</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4"><label className="text-xs"><span>İlan durumu</span><select className={inputClass} value={publishMode} onChange={e=>setPublishMode(e.target.value)}><option value="publish">Yayınla</option><option value="draft">Taslak olarak kaydet</option><option value="passive">Pasife al</option></select></label><label className="text-xs"><span>Yayın başlangıcı</span><input type="datetime-local" className={inputClass} value={publishStart} onChange={e=>setPublishStart(e.target.value)}/></label><label className="text-xs"><span>Yayın bitişi</span><input type="datetime-local" className={inputClass} value={publishEnd} onChange={e=>setPublishEnd(e.target.value)}/></label><div className="flex flex-col justify-end gap-2 text-xs"><label><input type="checkbox" checked={featured} onChange={e=>setFeatured(e.target.checked)}/> Ana sayfa vitrininde göster</label><label><input type="checkbox" checked={newLabel} onChange={e=>setNewLabel(e.target.checked)}/> Yeni ilan etiketi</label><label><input type="checkbox" checked={dealLabel} onChange={e=>setDealLabel(e.target.checked)}/> Fırsat ilanı etiketi</label></div></div></section><footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
           <p className="text-xs font-normal text-slate-500">
             {directPublish
               ? "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür."
@@ -958,7 +967,7 @@ export default function ListingEntryPage({
                 ? "İLANI YAYINLA"
                 : "İLANI ONAYA GÖNDER"}
           </button>
-        </footer>
+        </footer>{preview && <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/50 p-4"><div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-semibold">İlan önizlemesi</h2><button type="button" onClick={()=>setPreview(false)} className="rc-secondary">Kapat</button></div>{uploaded.find(x=>x.type.startsWith("image/")) && <img src={uploaded.find(x=>x.type.startsWith("image/"))?.url} className="mt-5 h-64 w-full rounded-xl object-cover"/>}<h1 className="mt-5 text-2xl font-semibold">{form.title || "İlan başlığı"}</h1><p className="mt-2 text-lg font-semibold text-[#cd011e]">{form.price || "0"} {form.currency}</p><p className="mt-2 text-sm text-slate-500">{form.city || "İl"} / {form.district || "İlçe"} / {form.neighborhood || "Mahalle"}</p><div className="mt-5 whitespace-pre-wrap text-sm text-slate-700" dangerouslySetInnerHTML={{__html: form.description || "Açıklama henüz eklenmedi."}} /></div></div>}
       </div>
     </form>
   );
