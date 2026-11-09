@@ -1208,7 +1208,6 @@ function UsersPage({
   const [r, setR] = useState("all");
   const [s, setS] = useState("all");
   const [busy, setBusy] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [selected, setSelected] = useState<Profile | null>(null);
   const [saving, setSaving] = useState(false);
   const [busyText, setBusyText] = useState("");
@@ -2860,6 +2859,7 @@ function UserEditPage({
     avatar_url: profile.avatar_url || "",
   });
   const [busy, setBusy] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const set = (k: string, v: string | boolean) => setF((x) => ({ ...x, [k]: v }));
   const pick = (file?: File) => {
     if (!file) return;
