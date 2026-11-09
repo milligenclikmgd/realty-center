@@ -590,7 +590,7 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, listing_number: listingNumber, portfolio_code: portfolioCode || null, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          details: { ...form.details, listing_number: listingNumber, second_advisor: form.secondAdvisor || null, office_id: form.officeId || null, portfolio_code: portfolioCode || null, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
           approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
           is_featured: featured,
         });
@@ -765,6 +765,7 @@ export default function ListingEntryPage({
             </label>
           </div>
         </section>
+        <section className="border-t border-slate-100 pt-7"><h3>Danışman ve ofis atama</h3><p className="mt-1 text-xs text-slate-500">İlanın iletişim ve ekip bilgilerini tanımlayın.</p><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3"><label className="text-xs"><span>İkinci danışman</span><select className={inputClass} value={form.secondAdvisor} onChange={e=>setForm({...form,secondAdvisor:e.target.value})}><option value="">Seçiniz</option>{advisors.filter(a=>a.id!==form.advisor).map(a=><option key={a.id} value={a.id}>{a.first_name} {a.last_name}</option>)}</select></label><label className="text-xs"><span>Ofis</span><input className={inputClass} value={form.officeId} onChange={e=>setForm({...form,officeId:e.target.value})} placeholder="Ofis adı veya ID"/></label></div></section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fiyat ve seçilebilir konum</h3>
           <p className="mt-1 text-xs font-normal text-slate-500">
