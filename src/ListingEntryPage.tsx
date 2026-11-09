@@ -22,7 +22,7 @@ type DetailField = {
 };
 
 const PROPERTY_TYPES: Record<string, string[]> = {
-  Konut: ["Daire", "Residence", "Villa", "Müstakil Ev", "Ev", "Yazlık"],
+  Konut: ["Daire", "Rezidans", "Residence", "Villa", "Müstakil Ev", "Ev", "Yazlık", "Dubleks", "Tripleks", "Çiftlik Evi", "Prefabrik Ev", "Diğer"],
   Arsa: ["Arsa", "Tarla", "Bağ", "Bahçe", "Zeytinlik", "Çiftlik", "Arazi"],
   İşyeri: [
     "Ofis",
@@ -701,7 +701,7 @@ export default function ListingEntryPage({
                   setForm({ ...form, transaction_type: e.target.value })
                 }
               >
-                {["Satılık", "Kiralık", "Devren Satılık", "Devren Kiralık"].map(
+                {["Satılık", "Kiralık", "Günlük Kiralık", "Devren Satılık", "Devren Kiralık"].map(
                   (option) => (
                     <option key={option}>{option}</option>
                   ),
