@@ -640,14 +640,10 @@ export default function ListingEntryPage({
           new_label: newLabel,
           deal_label: dealLabel,
         },
-        approval_status:
-          publishMode === "draft"
-            ? "Taslak"
-            : publishMode === "passive"
-              ? "Pasif"
-              : directPublish
-                ? "Yayında"
-                : "Onay Bekliyor",
+        // "İlanı Yayınla" submits the listing directly to the public feed for
+        // every authenticated listing role. Drafts can still be saved with
+        // the separate Taslak Kaydet action above.
+        approval_status: "Yayında",
         is_featured: featured,
       });
       if (error) throw error;
@@ -703,9 +699,7 @@ export default function ListingEntryPage({
           </p>
           <h2 className="mt-1 text-xl">Detaylı ilan girişi</h2>
           <p className="mt-1 text-sm text-slate-500">
-            {directPublish
-              ? "Bu rol ile eklenen ilanlar doğrudan yayınlanır."
-              : "Danışman ilanları onay merkezine gönderilir."}
+            "Bu form ile eklenen ilanlar doğrudan yayınlanır."
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -1265,9 +1259,7 @@ export default function ListingEntryPage({
         </section>
         <footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
           <p className="text-xs font-normal text-slate-500">
-            {directPublish
-              ? "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür."
-              : "İlan, gönderildiğinde yönetici onayını bekler."}
+            "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür."
           </p>
           <button
             disabled={saving}
@@ -1275,9 +1267,7 @@ export default function ListingEntryPage({
           >
             {saving
               ? "İŞLEM YAPILIYOR…"
-              : directPublish
-                ? "İLANI YAYINLA"
-                : "İLANI ONAYA GÖNDER"}
+              : "İLANI YAYINLA"}
           </button>
         </footer>
         {preview && (
