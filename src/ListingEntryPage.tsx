@@ -46,6 +46,7 @@ export default function ListingEntryPage({ profiles, alert, close }: { profiles:
   const advisors = profiles.filter((profile) => profile.role === "advisor" || profile.role === "manager");
   const [viewerRole, setViewerRole] = useState("admin");
   const [viewerId, setViewerId] = useState("");
+  const [viewerName, setViewerName] = useState("");
   const [locationRows, setLocationRows] = useState<NeighborhoodRow[]>([]);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
@@ -58,7 +59,8 @@ export default function ListingEntryPage({ profiles, alert, close }: { profiles:
   const neighborhoods = locationRows.find((row) => row.city === form.city && row.district === form.district)?.neighborhoods || [];
   const directPublish = viewerRole === "admin" || viewerRole === "manager";
 
-  useEffect(() => { void supabase.auth.getUser().then(async ({ data: auth }) => { if (!auth.user) return; setViewerId(auth.user.id); const { data } = await supabase.from("profiles").select("role").eq("id", auth.user.id).maybeSingle(); if (data?.role) { setViewerRole(data.role); if (data.role === "advisor" || data.role === "admin") setForm((current) => ({ ...current, advisor: current.advisor || auth.user.id })); } }); }, []);
+  useEffect(() => { void supabase.auth.getUser().then(async ({ data: auth }) => { if (!auth.user) return; setViewerId(auth.user.id); const { data } = await supabase.from("profiles").select("role,first_name,last_name").eq("id", auth.user.id).maybeSingle(); if (data?.role) { setViewerRole(data.role); setViewerName(`${data.first_name || ""} ${data.last_name || ""}`.trim() || auth.user.email || "Oturum sahibi"); if (data.role === "advisor" || data.role === "manager") setForm((current) => ({ ...current, advisor: auth.user.id })); } }); }, []);
+  useEffect(() => { if ((viewerRole === "advisor" || viewerRole === "manager") && viewerId) setForm((current) => current.advisor === viewerId ? current : { ...current, advisor: viewerId }); }, [viewerRole, viewerId]);
   useEffect(() => { void fetch("/data/turkey-neighborhoods.json").then((response) => response.ok ? response.json() : []).then((rows) => setLocationRows(Array.isArray(rows) ? rows : [])).catch(() => setLocationRows([])); }, []);
 
   const updateDetail = (key: string, value: string) => setForm((current) => ({ ...current, details: { ...current.details, [key]: value } }));
