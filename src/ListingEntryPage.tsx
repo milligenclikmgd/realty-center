@@ -888,6 +888,12 @@ export default function ListingEntryPage({
             >
               • Liste
             </button>
+            <button type="button" onClick={() => document.execCommand("insertOrderedList")} className="rc-secondary">1. Liste</button>
+            <button type="button" onClick={() => document.execCommand("formatBlock", false, "h3")} className="rc-secondary">Başlık</button>
+            <button type="button" onClick={() => document.execCommand("createLink", false, prompt("Bağlantı adresi") || "")} className="rc-secondary">Bağlantı</button>
+            <button type="button" onClick={() => document.execCommand("justifyLeft")} className="rc-secondary">Sola hizala</button>
+            <button type="button" onClick={() => document.execCommand("undo")} className="rc-secondary">Geri al</button>
+            <button type="button" onClick={() => document.execCommand("redo")} className="rc-secondary">İleri al</button>
           </div>
           <div
             ref={editorRef}
