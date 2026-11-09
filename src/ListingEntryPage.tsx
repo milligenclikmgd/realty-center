@@ -22,7 +22,20 @@ type DetailField = {
 };
 
 const PROPERTY_TYPES: Record<string, string[]> = {
-  Konut: ["Daire", "Rezidans", "Residence", "Villa", "Müstakil Ev", "Ev", "Yazlık", "Dubleks", "Tripleks", "Çiftlik Evi", "Prefabrik Ev", "Diğer"],
+  Konut: [
+    "Daire",
+    "Rezidans",
+    "Residence",
+    "Villa",
+    "Müstakil Ev",
+    "Ev",
+    "Yazlık",
+    "Dubleks",
+    "Tripleks",
+    "Çiftlik Evi",
+    "Prefabrik Ev",
+    "Diğer",
+  ],
   Arsa: ["Arsa", "Tarla", "Bağ", "Bahçe", "Zeytinlik", "Çiftlik", "Arazi"],
   İşyeri: [
     "Ofis",
@@ -418,8 +431,10 @@ export default function ListingEntryPage({
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
   const [coverUrl, setCoverUrl] = useState("");
-  const [listingNumber] = useState(() => `RC-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`);
-  const [portfolioCode, setPortfolioCode] = useState("");
+  const [listingNumber] = useState(
+    () =>
+      `RC-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`,
+  );
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [validationMessage, setValidationMessage] = useState("");
@@ -428,8 +443,6 @@ export default function ListingEntryPage({
   const [featured, setFeatured] = useState(false);
   const [newLabel, setNewLabel] = useState(false);
   const [dealLabel, setDealLabel] = useState(false);
-  const [publishStart, setPublishStart] = useState("");
-  const [publishEnd, setPublishEnd] = useState("");
   const editorRef = useRef<HTMLDivElement | null>(null);
   const [form, setForm] = useState({
     title: "",
@@ -446,16 +459,12 @@ export default function ListingEntryPage({
     description: "",
     advisorNotes: "",
     address: "",
-    street: "",
-    buildingNo: "",
     postalCode: "",
     latitude: "",
     longitude: "",
     officeId: "",
     secondAdvisor: "",
-    contactPhone: "",
     whatsapp: "",
-    contactEmail: "",
     details: {} as Record<string, string>,
   });
   const propertyTypes = PROPERTY_TYPES[form.category] || [];
@@ -498,9 +507,37 @@ export default function ListingEntryPage({
           : { ...current, advisor: viewerId },
       );
   }, [viewerRole, viewerId]);
-  useEffect(() => { const saved = localStorage.getItem("rc-listing-draft"); if (saved) try { const d = JSON.parse(saved); setForm((x) => ({ ...x, ...d.form })); setFeatured(!!d.featured); setNewLabel(!!d.newLabel); setDealLabel(!!d.dealLabel); } catch { /* ignore invalid draft */ } }, []);
-  useEffect(() => { const timer = window.setTimeout(() => localStorage.setItem("rc-listing-draft", JSON.stringify({ form, featured, newLabel, dealLabel })), 700); return () => window.clearTimeout(timer); }, [form, featured, newLabel, dealLabel]);
-  const saveDraft = () => { localStorage.setItem("rc-listing-draft", JSON.stringify({ form, featured, newLabel, dealLabel })); alert("Taslak kaydedildi."); };
+  useEffect(() => {
+    const saved = localStorage.getItem("rc-listing-draft");
+    if (saved)
+      try {
+        const d = JSON.parse(saved);
+        setForm((x) => ({ ...x, ...d.form }));
+        setFeatured(!!d.featured);
+        setNewLabel(!!d.newLabel);
+        setDealLabel(!!d.dealLabel);
+      } catch {
+        /* ignore invalid draft */
+      }
+  }, []);
+  useEffect(() => {
+    const timer = window.setTimeout(
+      () =>
+        localStorage.setItem(
+          "rc-listing-draft",
+          JSON.stringify({ form, featured, newLabel, dealLabel }),
+        ),
+      700,
+    );
+    return () => window.clearTimeout(timer);
+  }, [form, featured, newLabel, dealLabel]);
+  const saveDraft = () => {
+    localStorage.setItem(
+      "rc-listing-draft",
+      JSON.stringify({ form, featured, newLabel, dealLabel }),
+    );
+    alert("Taslak kaydedildi.");
+  };
   useEffect(() => {
     void fetch("/data/turkey-neighborhoods.json")
       .then((response) => (response.ok ? response.json() : []))
@@ -568,32 +605,51 @@ export default function ListingEntryPage({
     }
     setSaving(true);
     try {
-      const { error } = await supabase
-        .from("listings")
-        .insert({
-          owner_id: form.advisor,
-          title: form.title.trim(),
-          category: form.category,
-          property_type: form.property_type,
-          transaction_type: form.transaction_type,
-          price: Number(form.price.replaceAll(".", "")),
-          currency: form.currency,
-          city: form.city,
-          district: form.district,
-          neighborhood: form.neighborhood,
-          rooms: form.details.roomCount || null,
-          area: Number(form.details.gross_sqm || form.details.net_sqm || 0),
-          description: form.description || null,
-          images: uploaded
-            .filter((item) => item.type.startsWith("image/"))
-            .map((item) => item.url),
-          video_url:
-            uploaded.find((item) => item.type.startsWith("video/"))?.url ||
-            null,
-          details: { ...form.details, listing_number: listingNumber, second_advisor: form.secondAdvisor || null, office_id: form.officeId || null, portfolio_code: portfolioCode || null, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
-          approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
-          is_featured: featured,
-        });
+      const { error } = await supabase.from("listings").insert({
+        owner_id: form.advisor,
+        title: form.title.trim(),
+        category: form.category,
+        property_type: form.property_type,
+        transaction_type: form.transaction_type,
+        price: Number(form.price.replaceAll(".", "")),
+        currency: form.currency,
+        city: form.city,
+        district: form.district,
+        neighborhood: form.neighborhood,
+        rooms: form.details.roomCount || null,
+        area: Number(form.details.gross_sqm || form.details.net_sqm || 0),
+        description: form.description || null,
+        images: uploaded
+          .filter((item) => item.type.startsWith("image/"))
+          .map((item) => item.url),
+        video_url:
+          uploaded.find((item) => item.type.startsWith("video/"))?.url || null,
+        details: {
+          ...form.details,
+          listing_number: listingNumber,
+          second_advisor: form.secondAdvisor || null,
+          office_id: form.officeId || null,
+          dues: form.dues,
+          cover_url: coverUrl || null,
+          whatsapp: form.whatsapp || null,
+          advisor_notes: form.advisorNotes,
+          address: form.address,
+          postal_code: form.postalCode,
+          latitude: form.latitude,
+          longitude: form.longitude,
+          new_label: newLabel,
+          deal_label: dealLabel,
+        },
+        approval_status:
+          publishMode === "draft"
+            ? "Taslak"
+            : publishMode === "passive"
+              ? "Pasif"
+              : directPublish
+                ? "Yayında"
+                : "Onay Bekliyor",
+        is_featured: featured,
+      });
       if (error) throw error;
       alert(
         directPublish
@@ -652,10 +708,33 @@ export default function ListingEntryPage({
               : "Danışman ilanları onay merkezine gönderilir."}
           </p>
         </div>
-        <div className="flex flex-wrap gap-2"><button type="button" onClick={saveDraft} className="rc-secondary">Taslak Kaydet</button><button type="button" onClick={() => setPreview(true)} className="rc-secondary">Önizleme</button><button type="button" onClick={close} className="rc-secondary">Listeye dön</button></div>
+        <div className="flex flex-wrap gap-2">
+          <button type="button" onClick={saveDraft} className="rc-secondary">
+            Taslak Kaydet
+          </button>
+          <button
+            type="button"
+            onClick={() => setPreview(true)}
+            className="rc-secondary"
+          >
+            Önizleme
+          </button>
+          <button type="button" onClick={close} className="rc-secondary">
+            Listeye dön
+          </button>
+        </div>
       </header>
-      <div className="grid grid-cols-4 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500"><span className="text-[#cd011e]">01 Temel</span><span>02 Konum</span><span>03 Özellikler</span><span>04 Yayınla</span></div>
-      {validationMessage && <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{validationMessage}</div>}
+      <div className="grid grid-cols-4 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500">
+        <span className="text-[#cd011e]">01 Temel</span>
+        <span>02 Konum</span>
+        <span>03 Özellikler</span>
+        <span>04 Yayınla</span>
+      </div>
+      {validationMessage && (
+        <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+          {validationMessage}
+        </div>
+      )}
       <div className="space-y-8 p-6">
         <section>
           <h3>Temel bilgiler</h3>
@@ -669,8 +748,14 @@ export default function ListingEntryPage({
                 onChange={(e) => setForm({ ...form, title: e.target.value })}
               />
             </label>
-            <label className="text-xs"><span>İlan numarası</span><input readOnly className={inputClass + " bg-slate-50"} value={listingNumber}/></label>
-            <label className="text-xs"><span>Portföy kodu</span><input className={inputClass} value={portfolioCode} onChange={e=>setPortfolioCode(e.target.value.toUpperCase())} placeholder="İsteğe bağlı"/></label>
+            <label className="text-xs">
+              <span>İlan numarası</span>
+              <input
+                readOnly
+                className={inputClass + " bg-slate-50"}
+                value={listingNumber}
+              />
+            </label>
             {viewerRole === "advisor" || viewerRole === "manager" ? (
               <label className="text-xs">
                 <span>İlan sahibi</span>
@@ -705,9 +790,14 @@ export default function ListingEntryPage({
                 </select>
               </label>
             )}
-            <label className="text-xs"><span>İletişim telefonu</span><input className={inputClass} value={form.contactPhone} onChange={e=>setForm({...form,contactPhone:e.target.value})} placeholder="05XX XXX XX XX"/></label>
-            <label className="text-xs"><span>WhatsApp numarası</span><input className={inputClass} value={form.whatsapp} onChange={e=>setForm({...form,whatsapp:e.target.value})}/></label>
-            <label className="text-xs"><span>İletişim e-postası</span><input type="email" className={inputClass} value={form.contactEmail} onChange={e=>setForm({...form,contactEmail:e.target.value})}/></label>
+            <label className="text-xs">
+              <span>WhatsApp numarası</span>
+              <input
+                className={inputClass}
+                value={form.whatsapp}
+                onChange={(e) => setForm({ ...form, whatsapp: e.target.value })}
+              />
+            </label>
             <label className="text-xs">
               <span>İşlem tipi *</span>
               <select
@@ -717,11 +807,15 @@ export default function ListingEntryPage({
                   setForm({ ...form, transaction_type: e.target.value })
                 }
               >
-                {["Satılık", "Kiralık", "Günlük Kiralık", "Devren Satılık", "Devren Kiralık"].map(
-                  (option) => (
-                    <option key={option}>{option}</option>
-                  ),
-                )}
+                {[
+                  "Satılık",
+                  "Kiralık",
+                  "Günlük Kiralık",
+                  "Devren Satılık",
+                  "Devren Kiralık",
+                ].map((option) => (
+                  <option key={option}>{option}</option>
+                ))}
               </select>
             </label>
             <label className="text-xs">
@@ -765,7 +859,42 @@ export default function ListingEntryPage({
             </label>
           </div>
         </section>
-        <section className="border-t border-slate-100 pt-7"><h3>Danışman ve ofis atama</h3><p className="mt-1 text-xs text-slate-500">İlanın iletişim ve ekip bilgilerini tanımlayın.</p><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3"><label className="text-xs"><span>İkinci danışman</span><select className={inputClass} value={form.secondAdvisor} onChange={e=>setForm({...form,secondAdvisor:e.target.value})}><option value="">Seçiniz</option>{advisors.filter(a=>a.id!==form.advisor).map(a=><option key={a.id} value={a.id}>{a.first_name} {a.last_name}</option>)}</select></label><label className="text-xs"><span>Ofis</span><input className={inputClass} value={form.officeId} onChange={e=>setForm({...form,officeId:e.target.value})} placeholder="Ofis adı veya ID"/></label></div></section>
+        <section className="border-t border-slate-100 pt-7">
+          <h3>Danışman ve ofis atama</h3>
+          <p className="mt-1 text-xs text-slate-500">
+            İlanın iletişim ve ekip bilgilerini tanımlayın.
+          </p>
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            <label className="text-xs">
+              <span>İkinci danışman</span>
+              <select
+                className={inputClass}
+                value={form.secondAdvisor}
+                onChange={(e) =>
+                  setForm({ ...form, secondAdvisor: e.target.value })
+                }
+              >
+                <option value="">Seçiniz</option>
+                {advisors
+                  .filter((a) => a.id !== form.advisor)
+                  .map((a) => (
+                    <option key={a.id} value={a.id}>
+                      {a.first_name} {a.last_name}
+                    </option>
+                  ))}
+              </select>
+            </label>
+            <label className="text-xs">
+              <span>Ofis</span>
+              <input
+                className={inputClass}
+                value={form.officeId}
+                onChange={(e) => setForm({ ...form, officeId: e.target.value })}
+                placeholder="Ofis adı veya ID"
+              />
+            </label>
+          </div>
+        </section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fiyat ve seçilebilir konum</h3>
           <p className="mt-1 text-xs font-normal text-slate-500">
@@ -878,13 +1007,66 @@ export default function ListingEntryPage({
                 onChange={(e) => setForm({ ...form, dues: e.target.value })}
               />
             </label>
-            <label className="text-xs md:col-span-2"><span>Açık adres</span><input className={inputClass} value={form.address} onChange={e=>setForm({...form,address:e.target.value})} placeholder="Mahalle, cadde, sokak ve bina bilgisi" /></label>
-            <label className="text-xs"><span>Cadde / Sokak</span><input className={inputClass} value={form.street} onChange={e=>setForm({...form,street:e.target.value})}/></label>
-            <label className="text-xs"><span>Bina numarası</span><input className={inputClass} value={form.buildingNo} onChange={e=>setForm({...form,buildingNo:e.target.value})}/></label>
-            <label className="text-xs"><span>Posta kodu</span><input className={inputClass} value={form.postalCode} onChange={e=>setForm({...form,postalCode:e.target.value})}/></label>
-            <label className="text-xs"><span>Enlem</span><input className={inputClass} value={form.latitude} onChange={e=>setForm({...form,latitude:e.target.value})} placeholder="39.9208"/></label>
-            <label className="text-xs"><span>Boylam</span><input className={inputClass} value={form.longitude} onChange={e=>setForm({...form,longitude:e.target.value})} placeholder="32.8541"/></label>
-            <div className="md:col-span-2 xl:col-span-3 rounded-2xl border border-slate-200 bg-slate-50 p-3"><div className="mb-2 flex items-center justify-between"><span className="text-xs font-semibold text-slate-700">Konum önizlemesi</span><span className="text-[10px] text-slate-400">Enlem ve boylam girildiğinde harita güncellenir</span></div>{form.latitude && form.longitude ? <iframe title="İlan konum haritası" className="h-56 w-full rounded-xl border-0" src={`https://www.openstreetmap.org/export/embed.html?bbox=${Number(form.longitude)-0.02}%2C${Number(form.latitude)-0.015}%2C${Number(form.longitude)+0.02}%2C${Number(form.latitude)+0.015}&layer=mapnik&marker=${form.latitude}%2C${form.longitude}`} /> : <div className="grid h-40 place-items-center rounded-xl bg-white text-sm text-slate-400">Harita için enlem ve boylam girin.</div>}</div>
+            <label className="text-xs md:col-span-2">
+              <span>Açık adres</span>
+              <input
+                className={inputClass}
+                value={form.address}
+                onChange={(e) => setForm({ ...form, address: e.target.value })}
+                placeholder="Mahalle, cadde, sokak ve bina bilgisi"
+              />
+            </label>
+            <label className="text-xs">
+              <span>Posta kodu</span>
+              <input
+                className={inputClass}
+                value={form.postalCode}
+                onChange={(e) =>
+                  setForm({ ...form, postalCode: e.target.value })
+                }
+              />
+            </label>
+            <label className="text-xs">
+              <span>Enlem</span>
+              <input
+                className={inputClass}
+                value={form.latitude}
+                onChange={(e) => setForm({ ...form, latitude: e.target.value })}
+                placeholder="39.9208"
+              />
+            </label>
+            <label className="text-xs">
+              <span>Boylam</span>
+              <input
+                className={inputClass}
+                value={form.longitude}
+                onChange={(e) =>
+                  setForm({ ...form, longitude: e.target.value })
+                }
+                placeholder="32.8541"
+              />
+            </label>
+            <div className="md:col-span-2 xl:col-span-3 rounded-2xl border border-slate-200 bg-slate-50 p-3">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="text-xs font-semibold text-slate-700">
+                  Konum önizlemesi
+                </span>
+                <span className="text-[10px] text-slate-400">
+                  Enlem ve boylam girildiğinde harita güncellenir
+                </span>
+              </div>
+              {form.latitude && form.longitude ? (
+                <iframe
+                  title="İlan konum haritası"
+                  className="h-56 w-full rounded-xl border-0"
+                  src={`https://www.openstreetmap.org/export/embed.html?bbox=${Number(form.longitude) - 0.02}%2C${Number(form.latitude) - 0.015}%2C${Number(form.longitude) + 0.02}%2C${Number(form.latitude) + 0.015}&layer=mapnik&marker=${form.latitude}%2C${form.longitude}`}
+                />
+              ) : (
+                <div className="grid h-40 place-items-center rounded-xl bg-white text-sm text-slate-400">
+                  Harita için enlem ve boylam girin.
+                </div>
+              )}
+            </div>
           </div>
         </section>
         <section className="border-t border-slate-100 pt-7">
@@ -920,12 +1102,54 @@ export default function ListingEntryPage({
             >
               • Liste
             </button>
-            <button type="button" onClick={() => document.execCommand("insertOrderedList")} className="rc-secondary">1. Liste</button>
-            <button type="button" onClick={() => document.execCommand("formatBlock", false, "h3")} className="rc-secondary">Başlık</button>
-            <button type="button" onClick={() => document.execCommand("createLink", false, prompt("Bağlantı adresi") || "")} className="rc-secondary">Bağlantı</button>
-            <button type="button" onClick={() => document.execCommand("justifyLeft")} className="rc-secondary">Sola hizala</button>
-            <button type="button" onClick={() => document.execCommand("undo")} className="rc-secondary">Geri al</button>
-            <button type="button" onClick={() => document.execCommand("redo")} className="rc-secondary">İleri al</button>
+            <button
+              type="button"
+              onClick={() => document.execCommand("insertOrderedList")}
+              className="rc-secondary"
+            >
+              1. Liste
+            </button>
+            <button
+              type="button"
+              onClick={() => document.execCommand("formatBlock", false, "h3")}
+              className="rc-secondary"
+            >
+              Başlık
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                document.execCommand(
+                  "createLink",
+                  false,
+                  prompt("Bağlantı adresi") || "",
+                )
+              }
+              className="rc-secondary"
+            >
+              Bağlantı
+            </button>
+            <button
+              type="button"
+              onClick={() => document.execCommand("justifyLeft")}
+              className="rc-secondary"
+            >
+              Sola hizala
+            </button>
+            <button
+              type="button"
+              onClick={() => document.execCommand("undo")}
+              className="rc-secondary"
+            >
+              Geri al
+            </button>
+            <button
+              type="button"
+              onClick={() => document.execCommand("redo")}
+              className="rc-secondary"
+            >
+              İleri al
+            </button>
           </div>
           <div
             ref={editorRef}
@@ -937,7 +1161,17 @@ export default function ListingEntryPage({
             className={inputClass + " min-h-48 leading-7"}
             data-placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın."
           />
-          <label className="mt-4 block text-xs"><span>Danışman notları (sadece panel kullanıcıları görür)</span><textarea className={inputClass + " min-h-28"} value={form.advisorNotes} onChange={e=>setForm({...form,advisorNotes:e.target.value})} placeholder="Müşteri görüşmeleri, özel takip notları…"/></label>
+          <label className="mt-4 block text-xs">
+            <span>Danışman notları (sadece panel kullanıcıları görür)</span>
+            <textarea
+              className={inputClass + " min-h-28"}
+              value={form.advisorNotes}
+              onChange={(e) =>
+                setForm({ ...form, advisorNotes: e.target.value })
+              }
+              placeholder="Müşteri görüşmeleri, özel takip notları…"
+            />
+          </label>
         </section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fotoğraf ve video</h3>
@@ -970,28 +1204,66 @@ export default function ListingEntryPage({
             </button>
           </div>
           {uploaded.length > 0 && (
-            <><p className="mt-3 text-xs text-slate-500">Kapak yapmak için bir görsele tıklayın. Kırmızı çerçeveli görsel kapaktır.</p><div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {uploaded.map((item) =>
-                item.type.startsWith("image/") ? (
-                  <img
-                    key={item.url}
-                    src={item.url}
-                    onClick={() => setCoverUrl(item.url)}
-                    className={`h-24 w-full cursor-pointer rounded-xl object-cover ${coverUrl === item.url ? "ring-4 ring-[#cd011e]" : ""}`}
-                  />
-                ) : (
-                  <div
-                    key={item.url}
-                    className="grid h-24 place-items-center rounded-xl bg-slate-100 text-xs font-semibold text-slate-900"
-                  >
-                    Video eklendi
-                  </div>
-                ),
-              )}
-            </div></>
+            <>
+              <p className="mt-3 text-xs text-slate-500">
+                Kapak yapmak için bir görsele tıklayın. Kırmızı çerçeveli görsel
+                kapaktır.
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {uploaded.map((item) =>
+                  item.type.startsWith("image/") ? (
+                    <img
+                      key={item.url}
+                      src={item.url}
+                      onClick={() => setCoverUrl(item.url)}
+                      className={`h-24 w-full cursor-pointer rounded-xl object-cover ${coverUrl === item.url ? "ring-4 ring-[#cd011e]" : ""}`}
+                    />
+                  ) : (
+                    <div
+                      key={item.url}
+                      className="grid h-24 place-items-center rounded-xl bg-slate-100 text-xs font-semibold text-slate-900"
+                    >
+                      Video eklendi
+                    </div>
+                  ),
+                )}
+              </div>
+            </>
           )}
         </section>
-        <section className="border-t border-slate-100 pt-7"><h3>Yayınlama ve vitrin ayarları</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4"><label className="text-xs"><span>İlan durumu</span><select className={inputClass} value={publishMode} onChange={e=>setPublishMode(e.target.value)}><option value="publish">Yayınla</option><option value="draft">Taslak olarak kaydet</option><option value="passive">Pasife al</option></select></label><label className="text-xs"><span>Yayın başlangıcı</span><input type="datetime-local" className={inputClass} value={publishStart} onChange={e=>setPublishStart(e.target.value)}/></label><label className="text-xs"><span>Yayın bitişi</span><input type="datetime-local" className={inputClass} value={publishEnd} onChange={e=>setPublishEnd(e.target.value)}/></label><div className="flex flex-col justify-end gap-2 text-xs"><label><input type="checkbox" checked={featured} onChange={e=>setFeatured(e.target.checked)}/> Ana sayfa vitrininde göster</label><label><input type="checkbox" checked={newLabel} onChange={e=>setNewLabel(e.target.checked)}/> Yeni ilan etiketi</label><label><input type="checkbox" checked={dealLabel} onChange={e=>setDealLabel(e.target.checked)}/> Fırsat ilanı etiketi</label></div></div></section><footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
+        <section className="border-t border-slate-100 pt-7">
+          <h3>Yayınlama ve vitrin ayarları</h3>
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            <div className="rounded-xl bg-emerald-50 p-3 text-xs font-semibold text-emerald-700">İlan yayınla butonuna basıldığında doğrudan yayına alınır.</div>
+            <div className="flex flex-col justify-end gap-2 text-xs">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={featured}
+                  onChange={(e) => setFeatured(e.target.checked)}
+                />{" "}
+                Ana sayfa vitrininde göster
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={newLabel}
+                  onChange={(e) => setNewLabel(e.target.checked)}
+                />{" "}
+                Yeni ilan etiketi
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={dealLabel}
+                  onChange={(e) => setDealLabel(e.target.checked)}
+                />{" "}
+                Fırsat ilanı etiketi
+              </label>
+            </div>
+          </div>
+        </section>
+        <footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
           <p className="text-xs font-normal text-slate-500">
             {directPublish
               ? "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür."
@@ -1007,7 +1279,45 @@ export default function ListingEntryPage({
                 ? "İLANI YAYINLA"
                 : "İLANI ONAYA GÖNDER"}
           </button>
-        </footer>{preview && <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/50 p-4"><div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-semibold">İlan önizlemesi</h2><button type="button" onClick={()=>setPreview(false)} className="rc-secondary">Kapat</button></div>{uploaded.find(x=>x.type.startsWith("image/")) && <img src={uploaded.find(x=>x.type.startsWith("image/"))?.url} className="mt-5 h-64 w-full rounded-xl object-cover"/>}<h1 className="mt-5 text-2xl font-semibold">{form.title || "İlan başlığı"}</h1><p className="mt-2 text-lg font-semibold text-[#cd011e]">{form.price || "0"} {form.currency}</p><p className="mt-2 text-sm text-slate-500">{form.city || "İl"} / {form.district || "İlçe"} / {form.neighborhood || "Mahalle"}</p><div className="mt-5 whitespace-pre-wrap text-sm text-slate-700" dangerouslySetInnerHTML={{__html: form.description || "Açıklama henüz eklenmedi."}} /></div></div>}
+        </footer>
+        {preview && (
+          <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/50 p-4">
+            <div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6">
+              <div className="flex justify-between">
+                <h2 className="text-xl font-semibold">İlan önizlemesi</h2>
+                <button
+                  type="button"
+                  onClick={() => setPreview(false)}
+                  className="rc-secondary"
+                >
+                  Kapat
+                </button>
+              </div>
+              {uploaded.find((x) => x.type.startsWith("image/")) && (
+                <img
+                  src={uploaded.find((x) => x.type.startsWith("image/"))?.url}
+                  className="mt-5 h-64 w-full rounded-xl object-cover"
+                />
+              )}
+              <h1 className="mt-5 text-2xl font-semibold">
+                {form.title || "İlan başlığı"}
+              </h1>
+              <p className="mt-2 text-lg font-semibold text-[#cd011e]">
+                {form.price || "0"} {form.currency}
+              </p>
+              <p className="mt-2 text-sm text-slate-500">
+                {form.city || "İl"} / {form.district || "İlçe"} /{" "}
+                {form.neighborhood || "Mahalle"}
+              </p>
+              <div
+                className="mt-5 whitespace-pre-wrap text-sm text-slate-700"
+                dangerouslySetInnerHTML={{
+                  __html: form.description || "Açıklama henüz eklenmedi.",
+                }}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </form>
   );
