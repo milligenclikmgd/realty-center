@@ -440,6 +440,13 @@ export default function ListingEntryPage({
     neighborhood: "",
     dues: "",
     description: "",
+    advisorNotes: "",
+    address: "",
+    street: "",
+    buildingNo: "",
+    postalCode: "",
+    latitude: "",
+    longitude: "",
     details: {} as Record<string, string>,
   });
   const propertyTypes = PROPERTY_TYPES[form.category] || [];
@@ -572,7 +579,7 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, dues: form.dues, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          details: { ...form.details, dues: form.dues, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
           approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
           is_featured: featured,
         });
@@ -853,6 +860,12 @@ export default function ListingEntryPage({
                 onChange={(e) => setForm({ ...form, dues: e.target.value })}
               />
             </label>
+            <label className="text-xs md:col-span-2"><span>Açık adres</span><input className={inputClass} value={form.address} onChange={e=>setForm({...form,address:e.target.value})} placeholder="Mahalle, cadde, sokak ve bina bilgisi" /></label>
+            <label className="text-xs"><span>Cadde / Sokak</span><input className={inputClass} value={form.street} onChange={e=>setForm({...form,street:e.target.value})}/></label>
+            <label className="text-xs"><span>Bina numarası</span><input className={inputClass} value={form.buildingNo} onChange={e=>setForm({...form,buildingNo:e.target.value})}/></label>
+            <label className="text-xs"><span>Posta kodu</span><input className={inputClass} value={form.postalCode} onChange={e=>setForm({...form,postalCode:e.target.value})}/></label>
+            <label className="text-xs"><span>Enlem</span><input className={inputClass} value={form.latitude} onChange={e=>setForm({...form,latitude:e.target.value})} placeholder="39.9208"/></label>
+            <label className="text-xs"><span>Boylam</span><input className={inputClass} value={form.longitude} onChange={e=>setForm({...form,longitude:e.target.value})} placeholder="32.8541"/></label>
           </div>
         </section>
         <section className="border-t border-slate-100 pt-7">
@@ -905,6 +918,7 @@ export default function ListingEntryPage({
             className={inputClass + " min-h-48 leading-7"}
             data-placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın."
           />
+          <label className="mt-4 block text-xs"><span>Danışman notları (sadece panel kullanıcıları görür)</span><textarea className={inputClass + " min-h-28"} value={form.advisorNotes} onChange={e=>setForm({...form,advisorNotes:e.target.value})} placeholder="Müşteri görüşmeleri, özel takip notları…"/></label>
         </section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fotoğraf ve video</h3>
