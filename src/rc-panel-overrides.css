@@ -74,3 +74,15 @@ section > div > div[class*="overflow-hidden"][class*="bg-white"][class*="shadow-
     box-shadow: 0 2px 0 var(--rc-panel-navy-light);
   }
 }
+
+/* User editor refinement: calm field hierarchy and thin separators */
+.rc-user-edit-page{font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.rc-user-edit-page form{border:1px solid #e5e9f0!important;box-shadow:0 12px 32px rgba(15,23,42,.04)!important}
+.rc-user-edit-page section{border-color:#e8edf3!important}
+.rc-user-edit-page label{font-size:12px!important;font-weight:500!important;color:#526176!important;letter-spacing:0!important}
+.rc-user-edit-page input,.rc-user-edit-page select,.rc-user-edit-page textarea{border:1px solid #dce3ec!important;border-radius:9px!important;background:#fff!important;box-shadow:none!important;outline:none!important;transition:border-color .18s,box-shadow .18s!important}
+.rc-user-edit-page input:focus,.rc-user-edit-page select:focus,.rc-user-edit-page textarea:focus{border-color:#cd011e!important;box-shadow:0 0 0 3px rgba(205,1,30,.08)!important}
+.rc-user-edit-page h1{letter-spacing:-.03em;font-weight:700!important}.rc-user-edit-page h2{font-weight:650!important;letter-spacing:-.01em}
+.rc-user-edit-page .rc-password-section{background:#fbfcfe;border:1px solid #edf0f4;border-radius:12px;padding:18px}
+.rc-user-edit-page .rc-password-section input[type=checkbox]{box-shadow:none!important}
+.rc-user-edit-page .tap{font-weight:600!important;border-width:1px!important}

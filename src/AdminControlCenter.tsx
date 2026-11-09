@@ -2847,6 +2847,8 @@ function UserEditPage({
   done: () => void | Promise<void>;
 }) {
   const [f, setF] = useState({
+    new_password: "",
+    force_password_change: true,
     first_name: profile.first_name,
     last_name: profile.last_name,
     username: profile.username,
@@ -2857,7 +2859,7 @@ function UserEditPage({
     avatar_url: profile.avatar_url || "",
   });
   const [busy, setBusy] = useState(false);
-  const set = (k: string, v: string) => setF((x) => ({ ...x, [k]: v }));
+  const set = (k: string, v: string | boolean) => setF((x) => ({ ...x, [k]: v }));
   const pick = (file?: File) => {
     if (!file) return;
     const r = new FileReader();
@@ -2867,10 +2869,18 @@ function UserEditPage({
   const save = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
+    if (f.new_password.trim()) {
+      if (f.new_password.length < 10) { setBusy(false); return window.alert("Yeni şifre en az 10 karakter olmalı."); }
+      const { data: passwordData, error: passwordError } = await supabase.functions.invoke("admin-users", {
+        body: { action: "update_user", payload: { id: profile.id, password: f.new_password, forcePasswordChange: f.force_password_change } },
+      });
+      if (passwordError || passwordData?.error) { setBusy(false); return window.alert(passwordData?.error || passwordError?.message || "Şifre güncellenemedi."); }
+    }
     const { error } = await supabase
       .from("profiles")
       .update({
-        ...f,
+        first_name: f.first_name,
+        last_name: f.last_name,
         username: f.username.trim().toLowerCase().replace(/\\s/g, ""),
         email: f.email.trim().toLowerCase(),
         phone: f.phone || null,
@@ -2881,7 +2891,7 @@ function UserEditPage({
     await done();
   };
   return (
-    <div className="min-h-screen bg-[#f7f9fc] p-5 text-slate-900 lg:p-9">
+    <div className="rc-user-edit-page min-h-screen bg-[#f7f9fc] p-5 text-slate-900 lg:p-9">
       <div className="mx-auto max-w-6xl">
         <p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">
           REALTY CENTER / KULLANICI YÖNETİMİ
@@ -2977,6 +2987,22 @@ function UserEditPage({
               </div>
             </section>
           </div>
+
+              <div className="mt-7 border-t border-slate-100 pt-6 rc-password-section">
+                <div>
+                  <h2 className="text-base font-black">Süper Admin Şifre İşlemi</h2>
+                  <p className="mt-1 text-xs text-slate-500">Yeni şifre girerseniz bu kullanıcının giriş şifresi değiştirilir.</p>
+                </div>
+                <div className="mt-4 grid gap-4 md:grid-cols-2">
+                  <label className="text-xs font-bold text-slate-700">Yeni şifre
+                    <input type="password" minLength={10} value={(f as any).new_password} onChange={(e) => set("new_password", e.target.value)} placeholder="En az 10 karakter" className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-[#cd011e]" autoComplete="new-password"/>
+                  </label>
+                  <label className="flex-row items-center gap-2 self-end pb-3 text-xs font-bold text-slate-700">
+                    <input type="checkbox" checked={(f as any).force_password_change} onChange={(e) => set("force_password_change", e.target.checked)} className="h-4 w-4 rounded border-slate-300"/>
+                    İlk girişte şifre değişikliği istensin
+                  </label>
+                </div>
+              </div>
           <div className="mt-7 flex justify-end gap-3 border-t border-slate-100 pt-5">
             <button
               type="button"
