@@ -1,5 +1,5 @@
-Warning: truncated output (original token count: 159404)
-Total output lines: 6048
+Warning: truncated output (original token count: 159459)
+Total output lines: 6051
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
@@ -348,7 +348,10 @@ function usePublishedListings() {
       const rows: any[] = data || [];
       const ids = [...new Set(rows.map((row) => row.owner_id).filter(Boolean))];
       const { data: profiles } = ids.length ? await supabase.from('profiles').select('id,first_name,last_name,phone').in('id', ids) : { data: [] as any[] };
-      const names = new Map((profiles || []).map((profile: any) => [profile.id, { name: [profile.first_name, profile.last_name].filter(Boolean).join(' ') || 'Realty Center Danışmanı', phone: profile.phone || '0 554 322 22 22' }]));
+      // `Map` is also used as a lucide icon in this module; explicitly use the
+      // native constructor here so the public listing feed cannot crash while
+      // enriching listings with advisor details.
+      const names = new globalThis.Map((profiles || []).map((profile: any) => [profile.id, { name: [profile.first_name, profile.last_name].filter(Boolean).join(' ') || 'Realty Center Danışmanı', phone: profile.phone || '0 554 322 22 22' }]));
       setItems(rows.map((row) => ({ id: row.id, title: row.title, category: row.category, propertyType: row.property_type, type: row.transaction_type, price: Number(row.price || 0), currency: row.currency || '₺', city: row.city, district: row.district, neighborhood: row.neighborhood || '', rooms: row.rooms || 'Belirtilmemiş', area: Number(row.area || 0), image: row.images?.[0] || '/slider/slider-01-tall-building.webp', images: row.images || [], agentName: names.get(row.owner_id)?.name || 'Realty Center Danışmanı', agentPhone: names.get(row.owner_id)?.phone || '0 554 322 22 22', date: row.created_at, updatedAt: row.updated_at || row.created_at, isFeatured: Boolean(row.is_featured), description: row.description || '', videoUrl: row.video_url || '', virtualTourUrl: row.virtual_tour_url || '', mapUrl: row.map_url || '', monthlyFee: row.monthly_fee || '', deedInfo: row.deed_info || '', technicalFeatures: row.technical_features || '', details: row.details || {} })));
     };
     void load();
@@ -898,8 +901,7 @@ function FinancialSolutionsPage() {
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {activeSolution.institutions.map(([name, domain, logoSlug]) => {
               const isSelected = selectedInstitution === name;
-              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSelected ? 'border-red-700 bg-red-700 shadow-md' : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm'}`}>
-                <span className="flex h-14 w-full max-w-[150px] items-center ju…109404 tokens truncated…rget.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
+              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSe…109459 tokens truncated…rget.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
               <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'Tüm içerikler kaydedildi ✓' : 'Belgeler, Referanslar ve İş Ortaklarını Kaydet'}</button>
             </div>}
 
