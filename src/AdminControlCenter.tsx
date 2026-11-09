@@ -55,6 +55,7 @@ type Profile = {
   last_login_at: string | null;
   created_at: string;
   avatar_url?: string | null;
+  expertise_areas?: string[] | null;
 };
 type Office = {
   id: string;
@@ -1628,6 +1629,7 @@ export default function AdminControlCenter() {
   const [drawer, setDrawer] = useState<Profile | null>(null);
   const [officeDrawer, setOfficeDrawer] = useState<Office | null>(null);
   const [showOfficeCreate, setShowOfficeCreate] = useState(false);
+  const [assignOffice, setAssignOffice] = useState<Office | null>(null);
   const [exporting, setExporting] = useState(false);
   const [fields, setFields] = useState([
     "Ad Soyad",
@@ -1984,27 +1986,11 @@ export default function AdminControlCenter() {
         : "Danışman yıldızlardan çıkarıldı.",
     );
   };
-  const addAdvisorToOffice = async (o: Office) => {
-    const choices = advisers.filter(
-      (a) =>
-        !officeMembers.some(
-          (m) => m.office_id === o.id && m.advisor_id === a.id,
-        ),
-    );
-    const selected = window.prompt(
-      "Eklenecek danışmanı seçin:\n" +
-        choices
-          .map(
-            (a, i) =>
-              `${i + 1}. ${a.first_name} ${a.last_name} ${a.phone || ""}`,
-          )
-          .join("\n"),
-    );
-    const i = Number(selected) - 1;
-    if (!Number.isInteger(i) || !choices[i]) return;
+  const addAdvisorToOffice = async (o: Office, advisorId?: string) => {
+    if (!advisorId) return setAssignOffice(o);
     const { error } = await supabase.from("office_advisors").insert({
       office_id: o.id,
-      advisor_id: choices[i].id,
+      advisor_id: advisorId,
       is_manager: false,
     });
     if (error) return alert(error.message);
@@ -2306,13 +2292,6 @@ export default function AdminControlCenter() {
             setRole(advisor ? "advisor" : "all");
           })}
         </div>
-        {advisor && (
-          <div className="mb-5 rounded-2xl border border-red-100 bg-red-50 p-4 text-sm">
-            <b>REALTY CENTER Yıldızlarımız:</b> Ana sayfada gösterilecek en
-            fazla 3 danışmanı seçin.{" "}
-            {stars.filter((s) => s.kind === "advisor").length}/3 seçildi.
-          </div>
-        )}
         <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
           <table className="w-full min-w-[850px] text-left">
             <thead className="bg-slate-50 text-[10px] font-black uppercase tracking-wider text-slate-500">
@@ -2495,7 +2474,7 @@ export default function AdminControlCenter() {
             ))}
           </select>
         </div>
-        <section className="mb-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
+        {false && <section className="mb-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <p className="text-[10px] font-black tracking-[.2em] text-white/75">
@@ -2554,7 +2533,7 @@ export default function AdminControlCenter() {
               </p>
             )}
           </div>
-        </section>
+        </section>}
         <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
           <table className="w-full min-w-[1050px] text-left">
             <thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500">
@@ -2642,16 +2621,6 @@ export default function AdminControlCenter() {
                           className="rounded-lg bg-slate-700 px-3 py-2 text-xs font-black text-white"
                         >
                           Danışman Ata
-                        </button>
-                        <button
-                          onClick={() => void setStar("office", o.id)}
-                          className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-black text-white"
-                        >
-                          {stars.some(
-                            (s) => s.kind === "office" && s.entity_id === o.id,
-                          )
-                            ? "★ Çıkar"
-                            : "☆ Yıldızlara Ekle"}
                         </button>
                         <button
                           onClick={() => setOfficeDrawer(o)}
@@ -2799,6 +2768,7 @@ export default function AdminControlCenter() {
           done={load}
         />
       )}
+      {assignOffice && <AdvisorPicker office={assignOffice} profiles={profiles} members={officeMembers} close={() => setAssignOffice(null)} select={(id) => { setAssignOffice(null); void addAdvisorToOffice(assignOffice, id); }} />}
       {exporting && (
         <Export
           fields={fields}
@@ -3463,6 +3433,11 @@ function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) =>
   const submit = async (e: React.FormEvent) => { e.preventDefault(); if (!form.title || !form.price || !form.city || !form.district || !form.advisor) return alert("Başlık, fiyat, il, ilçe ve ekleyen danışman zorunludur."); setBusy("create"); try { const urls: string[] = []; for (const file of media.filter((x) => x.type.startsWith("image/"))) { const path = `${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false }); if (error) throw error; urls.push(supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl); } let uploadedVideo = form.video_url; const video = media.find((x) => x.type.startsWith("video/")); if (video) { const path = `${Date.now()}-${crypto.randomUUID()}-${video.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, video, { upsert: false }); if (error) throw error; uploadedVideo = supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl; } const details = { gross_sqm: form.gross, net_sqm: form.net, floor: form.floor, total_floors: form.total_floors, building_age: form.building_age, heating: form.heating, parking: form.parking, deed: form.deed, credit: form.credit, dues: form.dues }; const { error } = await supabase.from("listings").insert({ owner_id: form.advisor, title: form.title, transaction_type: form.transaction_type, category: form.category, property_type: form.property_type, price: Number(form.price.replaceAll(".", "").replace(",", ".")), currency: form.currency, city: form.city, district: form.district, neighborhood: form.neighborhood || null, rooms: form.rooms || null, area: Number(form.gross || form.net || 0), description: form.description || null, video_url: uploadedVideo || null, virtual_tour_url: form.virtual_tour_url || null, images: urls, details, approval_status: "pending", is_featured: false }); if (error) throw error; setForm(empty); setMedia([]); await load(); setMode("approval"); alert("İlan kaydedildi ve onay merkezine gönderildi."); } catch (err: any) { alert(`İlan kaydedilemedi: ${err.message || "Tekrar deneyin."}`); } finally { setBusy(""); } };
   if (mode === "add") return <form onSubmit={submit} className="rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">İLAN YÖNETİMİ / YENİ İLAN</p><h2 className="mt-1 text-xl font-black">Detaylı ilan girişi</h2><p className="mt-1 text-sm text-slate-500">Zorunlu alanları doldurun; ilan önce onay merkezine düşer.</p></div><button type="button" onClick={() => setMode("all")} className="rc-secondary">Listeye Dön</button></div><div className="grid gap-6 p-6 xl:grid-cols-[1fr_320px]"><div className="space-y-6"><section><h3 className="font-black">Temel İlan Bilgileri</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">İlan başlığı *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={listingInput} placeholder="Örn. Çankaya'da modern 3+1 daire" /></label><label className="text-xs font-black">Ekleyen danışman *<select required value={form.advisor} onChange={(e) => setForm({ ...form, advisor: e.target.value })} className={listingInput}><option value="">Danışman seçiniz</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name} · {p.phone || p.email}</option>)}</select></label><label className="text-xs font-black">İşlem tipi *<select value={form.transaction_type} onChange={(e) => setForm({ ...form, transaction_type: e.target.value })} className={listingInput}>{["Satılık", "Kiralık", "Devren Satılık", "Devren Kiralık"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Ana kategori *<select value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })} className={listingInput}>{["Konut", "Arsa", "İşyeri", "Turistik Tesis"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">İlan türü *<select value={form.property_type} onChange={(e) => setForm({ ...form, property_type: e.target.value })} className={listingInput}>{["Daire", "Villa", "Müstakil Ev", "Arsa", "Tarla", "Ofis", "Dükkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Oda sayısı<select value={form.rooms} onChange={(e) => setForm({ ...form, rooms: e.target.value })} className={listingInput}><option value="">Belirtilmemiş</option>{["1+0", "1+1", "2+1", "3+1", "4+1", "5+1 ve üzeri"].map((x) => <option key={x}>{x}</option>)}</select></label></div></section><section className="border-t pt-6"><h3 className="font-black">Fiyat ve Konum</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">Fiyat *<input required inputMode="numeric" value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} className={listingInput} placeholder="0" /></label><label className="text-xs font-black">Para birimi<select value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })} className={listingInput}><option>₺</option><option>USD</option><option>EUR</option></select></label><label className="text-xs font-black">İl *<select required value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value, district: "" })} className={listingInput}><option value="">İl seçiniz</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">İlçe *<select required value={form.district} onChange={(e) => setForm({ ...form, district: e.target.value })} className={listingInput}><option value="">İlçe seçiniz</option>{(listingDistricts[form.city] || []).map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Mahalle<input value={form.neighborhood} onChange={(e) => setForm({ ...form, neighborhood: e.target.value })} className={listingInput} placeholder="Mahalle adı" /></label><label className="text-xs font-black">Aidat<input inputMode="numeric" value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value })} className={listingInput} placeholder="Aylık aidat" /></label></div></section><section className="border-t pt-6"><h3 className="font-black">Teknik Özellikler</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">{[["gross", "Brüt m²", "Örn. 145"], ["net", "Net m²", "Örn. 125"], ["floor", "Bulunduğu kat", "Örn. 3"], ["total_floors", "Toplam kat", "Örn. 8"], ["building_age", "Bina yaşı", "Örn. 0-5"], ["heating", "Isıtma", "Örn. Kombi"], ["parking", "Otopark", "Örn. Açık / Kapalı"], ["deed", "Tapu durumu", "Örn. Kat mülkiyeti"], ["credit", "Kredi uygunluğu", "Uygun / Değil"]].map(([key, label, placeholder]) => <label key={key} className="text-xs font-black">{label}<input value={(form as any)[key]} onChange={(e) => setForm({ ...form, [key]: e.target.value })} className={listingInput} placeholder={placeholder} /></label>)}</div></section><section className="border-t pt-6"><h3 className="font-black">Açıklama ve bağlantılar</h3><div className="mt-4 grid gap-3"><textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} className={listingInput + " min-h-32"} placeholder="İlan detay açıklaması" /><input value={form.video_url} onChange={(e) => setForm({ ...form, video_url: e.target.value })} className={listingInput} placeholder="Video URL (isteğe bağlı)" /><input value={form.virtual_tour_url} onChange={(e) => setForm({ ...form, virtual_tour_url: e.target.value })} className={listingInput} placeholder="Sanal tur URL (isteğe bağlı)" /></div></section></div><aside><div className="sticky top-5 rounded-2xl bg-slate-50 p-5"><h3 className="font-black">Görsel ve Video</h3><label className="mt-4 flex min-h-48 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-white p-4 text-center transition hover:border-[#cd011e]"><Upload size={24} className="text-[#cd011e]" /><b className="mt-3 text-xs">Fotoğraf veya video ekle</b><small className="mt-1 text-[10px] text-slate-400">Tıkla ya da sürükle bırak · en fazla 12 dosya</small><input type="file" accept="image/*,video/mp4,video/webm" multiple className="hidden" onChange={(e) => onFiles(e.target.files)} /></label>{media.length > 0 && <div className="mt-3 space-y-1 text-xs text-slate-600">{media.map((file) => <p key={file.name} className="truncate">• {file.name}</p>)}</div>}<button disabled={busy === "create"} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800 disabled:opacity-60">{busy === "create" ? "İLAN KAYDEDİLİYOR…" : "İLANI ONAYA GÖNDER"}</button><p className="mt-3 text-center text-[10px] text-slate-500">Onaydan sonra İlanlarımız, öne çıkanlar ve canlı akışta kullanılabilir.</p></div></aside></div></form>;
   return <div className="space-y-5"><div className="flex flex-col gap-4 rounded-2xl bg-[#cd011e] p-5 text-white sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-white/70">REALTY CENTER / İLAN MERKEZİ</p><h2 className="mt-1 text-xl font-black">{mode === "approval" ? "İlan Onay Merkezi" : "Tüm İlanlar"}</h2><p className="mt-1 text-sm text-white/75">{listings.length} kayıt · {listings.filter((x) => x.approval_status === "pending").length} onay bekliyor</p></div><button onClick={() => setMode("add")} className="rounded-xl bg-white px-5 py-3 text-xs font-black text-[#cd011e] shadow-sm transition hover:scale-[1.02]">+ İLAN EKLE</button></div><div className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 md:grid-cols-5"><input value={filters.q} onChange={(e) => setFilters({ ...filters, q: e.target.value })} className={listingInput + " mt-0"} placeholder="İlan ara" /><select value={filters.city} onChange={(e) => setFilters({ ...filters, city: e.target.value, district: "" })} className={listingInput + " mt-0"}><option value="">Tüm iller</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select><select value={filters.district} onChange={(e) => setFilters({ ...filters, district: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm ilçeler</option>{(listingDistricts[filters.city] || []).map((x) => <option key={x}>{x}</option>)}</select><select value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm türler</option>{["Daire", "Villa", "Müstakil Ev", "Arsa", "Tarla", "Ofis", "Dükkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select><select value={filters.advisor} onChange={(e) => setFilters({ ...filters, advisor: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm danışmanlar</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name}</option>)}</select></div><div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white"><table className="w-full min-w-[920px] text-left"><thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500"><tr><th className="p-4">İlan</th><th className="p-4">Konum</th><th className="p-4">Fiyat / m²</th><th className="p-4">Ekleyen danışman</th><th className="p-4">Durum</th><th className="p-4 text-right">İşlemler</th></tr></thead><tbody>{loading ? <tr><td colSpan={6} className="p-8 text-center text-sm text-slate-400">İlanlar yükleniyor…</td></tr> : filtered.length ? filtered.map((x) => <tr key={x.id} className="border-t text-sm hover:bg-slate-50"><td className="p-4"><div className="flex items-center gap-3">{x.images?.[0] ? <img src={x.images[0]} className="h-11 w-14 rounded-lg object-cover" /> : <span className="grid h-11 w-14 place-items-center rounded-lg bg-red-50 text-xs font-black text-[#cd011e]">İLAN</span>}<span><b className="block max-w-52 truncate">{x.title}</b><small className="text-slate-400">{x.transaction_type} · {x.property_type}</small></span></div></td><td className="p-4 text-xs font-bold">{x.city} / {x.district}<br/><span className="font-medium text-slate-400">{x.neighborhood || "-"}</span></td><td className="p-4"><b>{Number(x.price).toLocaleString("tr-TR")} {x.currency}</b><small className="block text-slate-400">{x.area || "-"} m²</small></td><td className="p-4 text-xs font-bold">{advisorName(x.owner_id)}</td><td className="p-4"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${x.approval_status === "approved" ? "bg-emerald-100 text-emerald-700" : x.approval_status === "rejected" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{x.approval_status === "approved" ? "Yayında" : x.approval_status === "rejected" ? "Reddedildi" : "Onay bekliyor"}</span></td><td className="p-4 text-right"><div className="flex justify-end gap-2">{x.approval_status !== "approved" && <button disabled={busy === x.id + "Onaylandı"} onClick={() => void update(x.id, { approval_status: "approved" }, "Onaylandı")} className="rounded-lg bg-emerald-600 px-3 py-2 text-[10px] font-black text-white">{busy === x.id + "Onaylandı" ? "…" : "Onayla"}</button>}<button onClick={() => void update(x.id, { is_featured: !x.is_featured }, x.is_featured ? "Öne çıkarma kaldırıldı" : "Öne çıkarıldı")} className={`rounded-lg px-3 py-2 text-[10px] font-black ${x.is_featured ? "bg-amber-400 text-slate-900" : "bg-slate-800 text-white"}`}>★ {x.is_featured ? "Öne çıktı" : "Öne çıkar"}</button></div></td></tr>) : <tr><td colSpan={6} className="p-10 text-center text-sm text-slate-400">Bu kriterlerde ilan bulunmuyor.</td></tr>}</tbody></table></div></div>;
+}
+function AdvisorPicker({ office, profiles, members, close, select }: { office: Office; profiles: Profile[]; members: { office_id: string; advisor_id: string }[]; close: () => void; select: (id: string) => void }) {
+  const [q, setQ] = useState(""); const [city, setCity] = useState(""); const [district, setDistrict] = useState("");
+  const rows = profiles.filter(p => p.role === "advisor" && !members.some(m => m.office_id === office.id && m.advisor_id === p.id) && `${p.first_name} ${p.last_name}`.toLocaleLowerCase("tr-TR").includes(q.toLocaleLowerCase("tr-TR")) && (!city || p.expertise_areas?.[0] === city) && (!district || p.expertise_areas?.[1] === district));
+  return <div className="fixed inset-0 z-[140] flex items-center justify-center bg-slate-950/45 p-4"><div className="max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"><div className="flex items-start justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">OFİS / DANIŞMAN ATA</p><h2 className="mt-1 text-xl font-black">{office.name} için danışman seçin</h2></div><button onClick={close} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold">Kapat</button></div><div className="mt-5 grid gap-3 md:grid-cols-3"><input value={q} onChange={e=>setQ(e.target.value)} placeholder="İsim soyisim ara" className="rounded-xl border border-slate-200 p-3 text-sm"/><select value={city} onChange={e=>{setCity(e.target.value);setDistrict("")}} className="rounded-xl border border-slate-200 p-3 text-sm"><option value="">Tüm iller</option>{TURKEY_PROVINCES.map(x=><option key={x}>{x}</option>)}</select><select value={district} onChange={e=>setDistrict(e.target.value)} className="rounded-xl border border-slate-200 p-3 text-sm"><option value="">Tüm ilçeler</option>{getTurkeyDistricts(city).map(x=><option key={x}>{x}</option>)}</select></div><div className="mt-4 space-y-2">{rows.map(p=><button key={p.id} onClick={()=>select(p.id)} className="flex w-full items-center gap-3 rounded-xl border border-slate-200 p-3 text-left transition hover:border-[#cd011e] hover:bg-red-50">{p.avatar_url?<img src={p.avatar_url} className="h-11 w-11 rounded-full object-cover"/>:<span className="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-xs font-black text-[#cd011e]">{p.first_name[0]}{p.last_name[0]}</span>}<span><b className="block text-sm">{p.first_name} {p.last_name}</b><small className="text-xs text-slate-500">{p.expertise_areas?.[0] || "İl belirtilmemiş"} / {p.expertise_areas?.[1] || "İlçe belirtilmemiş"}</small></span></button>)}{!rows.length&&<p className="p-8 text-center text-sm text-slate-400">Filtreye uygun atanabilir danışman bulunamadı.</p>}</div></div></div>;
 }
 function ContentManager({ kind }: { kind: "media" | "library" }) {
   const key = `rc-${kind}-content`;
