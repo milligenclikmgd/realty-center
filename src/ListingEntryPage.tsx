@@ -420,6 +420,7 @@ export default function ListingEntryPage({
   const [coverUrl, setCoverUrl] = useState("");
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [validationMessage, setValidationMessage] = useState("");
   const [preview, setPreview] = useState(false);
   const [publishMode, setPublishMode] = useState("publish");
   const [featured, setFeatured] = useState(false);
@@ -547,6 +548,7 @@ export default function ListingEntryPage({
   };
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
+    setValidationMessage("");
     const missing = [
       [form.title.trim(), "İlan başlığı"],
       [form.advisor, "İlan sahibi"],
@@ -557,10 +559,11 @@ export default function ListingEntryPage({
     ]
       .filter(([value]) => !value)
       .map(([, label]) => label);
-    if (missing.length)
-      return alert(
-        `Lütfen şu zorunlu alanları tamamlayın: ${missing.join(", ")}.`,
-      );
+    if (missing.length) {
+      const message = `Eksik zorunlu alanlar: ${missing.join(", ")}.`;
+      setValidationMessage(message);
+      return alert(message);
+    }
     setSaving(true);
     try {
       const { error } = await supabase
@@ -650,6 +653,7 @@ export default function ListingEntryPage({
         <div className="flex flex-wrap gap-2"><button type="button" onClick={saveDraft} className="rc-secondary">Taslak Kaydet</button><button type="button" onClick={() => setPreview(true)} className="rc-secondary">Önizleme</button><button type="button" onClick={close} className="rc-secondary">Listeye dön</button></div>
       </header>
       <div className="grid grid-cols-4 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500"><span className="text-[#cd011e]">01 Temel</span><span>02 Konum</span><span>03 Özellikler</span><span>04 Yayınla</span></div>
+      {validationMessage && <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{validationMessage}</div>}
       <div className="space-y-8 p-6">
         <section>
           <h3>Temel bilgiler</h3>
