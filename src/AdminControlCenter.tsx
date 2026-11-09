@@ -1208,6 +1208,7 @@ function UsersPage({
   const [r, setR] = useState("all");
   const [s, setS] = useState("all");
   const [busy, setBusy] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [selected, setSelected] = useState<Profile | null>(null);
   const [saving, setSaving] = useState(false);
   const [busyText, setBusyText] = useState("");
@@ -2995,7 +2996,11 @@ function UserEditPage({
                 </div>
                 <div className="mt-4 grid gap-4 md:grid-cols-2">
                   <label className="text-xs font-bold text-slate-700">Yeni şifre
-                    <input type="password" minLength={10} value={(f as any).new_password} onChange={(e) => set("new_password", e.target.value)} placeholder="En az 10 karakter" className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm outline-none focus:border-[#cd011e]" autoComplete="new-password"/>
+                    <span className="relative mt-1.5 block">
+                      <input type={showPassword ? "text" : "password"} minLength={10} value={(f as any).new_password} onChange={(e) => set("new_password", e.target.value)} placeholder="En az 10 karakter" className="w-full rounded-xl border border-slate-200 px-3 py-3 pr-12 text-sm outline-none focus:border-[#cd011e]" autoComplete="new-password"/>
+                      <button type="button" onClick={() => setShowPassword((value) => !value)} className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md px-2 py-1 text-xs font-bold text-slate-500 hover:bg-slate-100" aria-label={showPassword ? "Şifreyi gizle" : "Şifreyi göster"}>{showPassword ? "Gizle" : "Göster"}</button>
+                    </span>
+                    <small className="mt-1 text-xs font-normal text-slate-400">Mevcut şifre güvenlik nedeniyle görüntülenemez; yalnızca yeni şifre belirlenebilir.</small>
                   </label>
                   <label className="flex-row items-center gap-2 self-end pb-3 text-xs font-bold text-slate-700">
                     <input type="checkbox" checked={(f as any).force_password_change} onChange={(e) => set("force_password_change", e.target.checked)} className="h-4 w-4 rounded border-slate-300"/>
