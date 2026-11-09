@@ -11,7 +11,6 @@ import {
   Library,
   ListChecks,
   Menu,
-  MapPin,
   MessageSquare,
   Plus,
   RefreshCw,
@@ -36,7 +35,6 @@ type Page =
   | "advisors"
   | "offices"
   | "listings"
-  | "header"
   | "corporate"
   | "media"
   | "library"
@@ -99,7 +97,6 @@ const groups: {
     title: "İÇERİK VE İLAN",
     items: [
       { id: "listings", label: "İlan Yönetimi", icon: LayoutPanelTop },
-      { id: "header", label: "Header Yönetimi", icon: LayoutPanelTop },
       { id: "corporate", label: "Kurumsal Yönetim", icon: Building2 },
       { id: "media", label: "Realty Medya", icon: Tv },
       { id: "library", label: "Realty Kütüphane", icon: Library },
@@ -155,9 +152,7 @@ function AdvisorsPageV2({
   offices,
   members,
   metrics,
-  stars,
   refresh,
-  star,
   trash,
   create,
 }: {
@@ -165,9 +160,7 @@ function AdvisorsPageV2({
   offices: Office[];
   members: { office_id: string; advisor_id: string }[];
   metrics: AdvisorMetric[];
-  stars: { kind: string; entity_id: string }[];
   refresh: () => Promise<void>;
-  star: (id: string) => Promise<void>;
   trash: (p: Profile) => Promise<void>;
   create: () => void;
 }) {
@@ -179,6 +172,7 @@ function AdvisorsPageV2({
     [modal, setModal] = useState<Profile | null>(null),
     [logs, setLogs] = useState<any[] | null>(null);
   const list = profiles.filter((p) => p.role === "advisor");
+  const featured: Profile[] = [];
   useEffect(() => {
     document.querySelectorAll(".advisor-tap").forEach((button) => {
       if (button.textContent?.trim() === "Görüntüle")
@@ -209,10 +203,6 @@ function AdvisorsPageV2({
           .filter(Boolean),
       ),
     ];
-  const featured = stars
-    .filter((s) => s.kind === "advisor")
-    .map((s) => list.find((p) => p.id === s.entity_id))
-    .filter(Boolean) as Profile[];
   const run = async (label: string, action: () => Promise<void>) => {
     setBusy(label);
     try {
@@ -432,7 +422,7 @@ function AdvisorsPageV2({
             </div>
           ))}
         </div>
-        <section className="mt-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
+        {/* Ana sayfa yıldız danışman paneli kaldırıldı. */}{false && <section className="mt-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <p className="text-[10px] font-black tracking-[.2em] text-white/75">
@@ -480,7 +470,7 @@ function AdvisorsPageV2({
               </span>
             )}
           </div>
-        </section>
+        </section>}
         <div className="mt-5 grid gap-3 lg:grid-cols-[1fr_180px_180px_180px_auto]">
           <label className="flex items-center rounded-xl border border-slate-200 bg-white px-4 py-3">
             <Search size={16} className="mr-3 text-slate-400" />
@@ -546,11 +536,8 @@ function AdvisorsPageV2({
             </thead>
             <tbody>
               {rows.map((p) => {
-                const o = office(p),
-                  m = metrics.find((x) => x.advisor_id === p.id),
-                  isStar = stars.some(
-                    (x) => x.kind === "advisor" && x.entity_id === p.id,
-                  );
+              const o = office(p),
+                  m = metrics.find((x) => x.advisor_id === p.id);
                 return (
                   <tr
                     key={p.id}
@@ -612,19 +599,6 @@ function AdvisorsPageV2({
                     </td>
                     <td className="p-4">
                       <div className="flex justify-end gap-2">
-                        <button
-                          onClick={() =>
-                            run(
-                              isStar
-                                ? "Yıldızlardan çıkarılıyor"
-                                : "Yıldızlara ekleniyor",
-                              () => star(p.id),
-                            )
-                          }
-                          className={`advisor-tap rounded-lg px-3 py-2 text-xs font-black text-white ${isStar ? "bg-amber-500 hover:bg-amber-600" : "bg-[#cd011e] hover:bg-[#a90019]"}`}
-                        >
-                          {isStar ? "★ Çıkar" : "☆ Yıldızlara Ekle"}
-                        </button>
                         <button
                           onClick={() => void showLogs(p)}
                           className="advisor-tap rounded-lg bg-slate-700 px-3 py-2 text-xs font-black text-white hover:bg-slate-900"
@@ -2180,9 +2154,7 @@ export default function AdminControlCenter() {
           offices={offices}
           members={officeMembers}
           metrics={metrics}
-          stars={stars}
           refresh={load}
-          star={(id) => setStar("advisor", id)}
           trash={trash}
           create={() => setPage("user-create")}
         />
@@ -2722,6 +2694,8 @@ export default function AdminControlCenter() {
         )}
       </>
     );
+  else if (page === "media") view = <MediaManagementPage />;
+  else if (page === "library") view = <LibraryManagementPage />;
   else view = <FeaturePage title={titleOf(page)} page={page} />;
   return (
     <div className="min-h-screen bg-[#f6f7f9] text-slate-900">
@@ -3188,7 +3162,7 @@ function NewUserPage({
                     className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
                   >
                     <option value="">İl seçin</option>
-                    {[...new Set(offices.map((o) => o.city))].map((x) => (
+                    {TURKEY_PROVINCES.map((x) => (
                       <option key={x}>{x}</option>
                     ))}
                   </select>
@@ -3201,13 +3175,7 @@ function NewUserPage({
                     className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
                   >
                     <option value="">İlçe seçin</option>
-                    {[
-                      ...new Set(
-                        offices
-                          .filter((o) => !form.city || o.city === form.city)
-                          .map((o) => o.district),
-                      ),
-                    ].map((x) => (
+                    {getTurkeyDistricts(form.city).map((x) => (
                       <option key={x}>{x}</option>
                     ))}
                   </select>
@@ -3496,6 +3464,17 @@ function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) =>
   if (mode === "add") return <form onSubmit={submit} className="rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">İLAN YÖNETİMİ / YENİ İLAN</p><h2 className="mt-1 text-xl font-black">Detaylı ilan girişi</h2><p className="mt-1 text-sm text-slate-500">Zorunlu alanları doldurun; ilan önce onay merkezine düşer.</p></div><button type="button" onClick={() => setMode("all")} className="rc-secondary">Listeye Dön</button></div><div className="grid gap-6 p-6 xl:grid-cols-[1fr_320px]"><div className="space-y-6"><section><h3 className="font-black">Temel İlan Bilgileri</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">İlan başlığı *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={listingInput} placeholder="Örn. Çankaya'da modern 3+1 daire" /></label><label className="text-xs font-black">Ekleyen danışman *<select required value={form.advisor} onChange={(e) => setForm({ ...form, advisor: e.target.value })} className={listingInput}><option value="">Danışman seçiniz</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name} · {p.phone || p.email}</option>)}</select></label><label className="text-xs font-black">İşlem tipi *<select value={form.transaction_type} onChange={(e) => setForm({ ...form, transaction_type: e.target.value })} className={listingInput}>{["Satılık", "Kiralık", "Devren Satılık", "Devren Kiralık"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Ana kategori *<select value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })} className={listingInput}>{["Konut", "Arsa", "İşyeri", "Turistik Tesis"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">İlan türü *<select value={form.property_type} onChange={(e) => setForm({ ...form, property_type: e.target.value })} className={listingInput}>{["Daire", "Villa", "Müstakil Ev", "Arsa", "Tarla", "Ofis", "Dükkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Oda sayısı<select value={form.rooms} onChange={(e) => setForm({ ...form, rooms: e.target.value })} className={listingInput}><option value="">Belirtilmemiş</option>{["1+0", "1+1", "2+1", "3+1", "4+1", "5+1 ve üzeri"].map((x) => <option key={x}>{x}</option>)}</select></label></div></section><section className="border-t pt-6"><h3 className="font-black">Fiyat ve Konum</h3><div className="mt-4 grid gap-3 md:grid-cols-2"><label className="text-xs font-black">Fiyat *<input required inputMode="numeric" value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} className={listingInput} placeholder="0" /></label><label className="text-xs font-black">Para birimi<select value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })} className={listingInput}><option>₺</option><option>USD</option><option>EUR</option></select></label><label className="text-xs font-black">İl *<select required value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value, district: "" })} className={listingInput}><option value="">İl seçiniz</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">İlçe *<select required value={form.district} onChange={(e) => setForm({ ...form, district: e.target.value })} className={listingInput}><option value="">İlçe seçiniz</option>{(listingDistricts[form.city] || []).map((x) => <option key={x}>{x}</option>)}</select></label><label className="text-xs font-black">Mahalle<input value={form.neighborhood} onChange={(e) => setForm({ ...form, neighborhood: e.target.value })} className={listingInput} placeholder="Mahalle adı" /></label><label className="text-xs font-black">Aidat<input inputMode="numeric" value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value })} className={listingInput} placeholder="Aylık aidat" /></label></div></section><section className="border-t pt-6"><h3 className="font-black">Teknik Özellikler</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">{[["gross", "Brüt m²", "Örn. 145"], ["net", "Net m²", "Örn. 125"], ["floor", "Bulunduğu kat", "Örn. 3"], ["total_floors", "Toplam kat", "Örn. 8"], ["building_age", "Bina yaşı", "Örn. 0-5"], ["heating", "Isıtma", "Örn. Kombi"], ["parking", "Otopark", "Örn. Açık / Kapalı"], ["deed", "Tapu durumu", "Örn. Kat mülkiyeti"], ["credit", "Kredi uygunluğu", "Uygun / Değil"]].map(([key, label, placeholder]) => <label key={key} className="text-xs font-black">{label}<input value={(form as any)[key]} onChange={(e) => setForm({ ...form, [key]: e.target.value })} className={listingInput} placeholder={placeholder} /></label>)}</div></section><section className="border-t pt-6"><h3 className="font-black">Açıklama ve bağlantılar</h3><div className="mt-4 grid gap-3"><textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} className={listingInput + " min-h-32"} placeholder="İlan detay açıklaması" /><input value={form.video_url} onChange={(e) => setForm({ ...form, video_url: e.target.value })} className={listingInput} placeholder="Video URL (isteğe bağlı)" /><input value={form.virtual_tour_url} onChange={(e) => setForm({ ...form, virtual_tour_url: e.target.value })} className={listingInput} placeholder="Sanal tur URL (isteğe bağlı)" /></div></section></div><aside><div className="sticky top-5 rounded-2xl bg-slate-50 p-5"><h3 className="font-black">Görsel ve Video</h3><label className="mt-4 flex min-h-48 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-white p-4 text-center transition hover:border-[#cd011e]"><Upload size={24} className="text-[#cd011e]" /><b className="mt-3 text-xs">Fotoğraf veya video ekle</b><small className="mt-1 text-[10px] text-slate-400">Tıkla ya da sürükle bırak · en fazla 12 dosya</small><input type="file" accept="image/*,video/mp4,video/webm" multiple className="hidden" onChange={(e) => onFiles(e.target.files)} /></label>{media.length > 0 && <div className="mt-3 space-y-1 text-xs text-slate-600">{media.map((file) => <p key={file.name} className="truncate">• {file.name}</p>)}</div>}<button disabled={busy === "create"} className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-black text-white shadow-lg shadow-red-700/20 transition hover:bg-red-800 disabled:opacity-60">{busy === "create" ? "İLAN KAYDEDİLİYOR…" : "İLANI ONAYA GÖNDER"}</button><p className="mt-3 text-center text-[10px] text-slate-500">Onaydan sonra İlanlarımız, öne çıkanlar ve canlı akışta kullanılabilir.</p></div></aside></div></form>;
   return <div className="space-y-5"><div className="flex flex-col gap-4 rounded-2xl bg-[#cd011e] p-5 text-white sm:flex-row sm:items-center sm:justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-white/70">REALTY CENTER / İLAN MERKEZİ</p><h2 className="mt-1 text-xl font-black">{mode === "approval" ? "İlan Onay Merkezi" : "Tüm İlanlar"}</h2><p className="mt-1 text-sm text-white/75">{listings.length} kayıt · {listings.filter((x) => x.approval_status === "pending").length} onay bekliyor</p></div><button onClick={() => setMode("add")} className="rounded-xl bg-white px-5 py-3 text-xs font-black text-[#cd011e] shadow-sm transition hover:scale-[1.02]">+ İLAN EKLE</button></div><div className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-4 md:grid-cols-5"><input value={filters.q} onChange={(e) => setFilters({ ...filters, q: e.target.value })} className={listingInput + " mt-0"} placeholder="İlan ara" /><select value={filters.city} onChange={(e) => setFilters({ ...filters, city: e.target.value, district: "" })} className={listingInput + " mt-0"}><option value="">Tüm iller</option>{listingCities.map((x) => <option key={x}>{x}</option>)}</select><select value={filters.district} onChange={(e) => setFilters({ ...filters, district: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm ilçeler</option>{(listingDistricts[filters.city] || []).map((x) => <option key={x}>{x}</option>)}</select><select value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm türler</option>{["Daire", "Villa", "Müstakil Ev", "Arsa", "Tarla", "Ofis", "Dükkan", "Depo", "Otel"].map((x) => <option key={x}>{x}</option>)}</select><select value={filters.advisor} onChange={(e) => setFilters({ ...filters, advisor: e.target.value })} className={listingInput + " mt-0"}><option value="">Tüm danışmanlar</option>{advisors.map((p) => <option key={p.id} value={p.id}>{p.first_name} {p.last_name}</option>)}</select></div><div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white"><table className="w-full min-w-[920px] text-left"><thead className="bg-slate-50 text-[10px] font-black uppercase text-slate-500"><tr><th className="p-4">İlan</th><th className="p-4">Konum</th><th className="p-4">Fiyat / m²</th><th className="p-4">Ekleyen danışman</th><th className="p-4">Durum</th><th className="p-4 text-right">İşlemler</th></tr></thead><tbody>{loading ? <tr><td colSpan={6} className="p-8 text-center text-sm text-slate-400">İlanlar yükleniyor…</td></tr> : filtered.length ? filtered.map((x) => <tr key={x.id} className="border-t text-sm hover:bg-slate-50"><td className="p-4"><div className="flex items-center gap-3">{x.images?.[0] ? <img src={x.images[0]} className="h-11 w-14 rounded-lg object-cover" /> : <span className="grid h-11 w-14 place-items-center rounded-lg bg-red-50 text-xs font-black text-[#cd011e]">İLAN</span>}<span><b className="block max-w-52 truncate">{x.title}</b><small className="text-slate-400">{x.transaction_type} · {x.property_type}</small></span></div></td><td className="p-4 text-xs font-bold">{x.city} / {x.district}<br/><span className="font-medium text-slate-400">{x.neighborhood || "-"}</span></td><td className="p-4"><b>{Number(x.price).toLocaleString("tr-TR")} {x.currency}</b><small className="block text-slate-400">{x.area || "-"} m²</small></td><td className="p-4 text-xs font-bold">{advisorName(x.owner_id)}</td><td className="p-4"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black ${x.approval_status === "approved" ? "bg-emerald-100 text-emerald-700" : x.approval_status === "rejected" ? "bg-rose-100 text-rose-700" : "bg-amber-100 text-amber-700"}`}>{x.approval_status === "approved" ? "Yayında" : x.approval_status === "rejected" ? "Reddedildi" : "Onay bekliyor"}</span></td><td className="p-4 text-right"><div className="flex justify-end gap-2">{x.approval_status !== "approved" && <button disabled={busy === x.id + "Onaylandı"} onClick={() => void update(x.id, { approval_status: "approved" }, "Onaylandı")} className="rounded-lg bg-emerald-600 px-3 py-2 text-[10px] font-black text-white">{busy === x.id + "Onaylandı" ? "…" : "Onayla"}</button>}<button onClick={() => void update(x.id, { is_featured: !x.is_featured }, x.is_featured ? "Öne çıkarma kaldırıldı" : "Öne çıkarıldı")} className={`rounded-lg px-3 py-2 text-[10px] font-black ${x.is_featured ? "bg-amber-400 text-slate-900" : "bg-slate-800 text-white"}`}>★ {x.is_featured ? "Öne çıktı" : "Öne çıkar"}</button></div></td></tr>) : <tr><td colSpan={6} className="p-10 text-center text-sm text-slate-400">Bu kriterlerde ilan bulunmuyor.</td></tr>}</tbody></table></div></div>;
 }
+function ContentManager({ kind }: { kind: "media" | "library" }) {
+  const key = `rc-${kind}-content`;
+  const [items, setItems] = useState<any[]>(() => JSON.parse(localStorage.getItem(key) || "[]"));
+  const [form, setForm] = useState({ title: "", url: "", excerpt: "", body: "" });
+  const save = (e: React.FormEvent) => { e.preventDefault(); if (!form.title.trim()) return; const next = [{ id: crypto.randomUUID(), ...form, created_at: new Date().toISOString() }, ...items]; setItems(next); localStorage.setItem(key, JSON.stringify(next)); setForm({ title: "", url: "", excerpt: "", body: "" }); };
+  const remove = (id: string) => { const next = items.filter((x) => x.id !== id); setItems(next); localStorage.setItem(key, JSON.stringify(next)); };
+  const media = kind === "media";
+  return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">{media ? "Realty Medya" : "Realty Kütüphane"}</h1><p className="mt-1 text-sm text-slate-500">{media ? "Video ve medya kayıtlarını ekleyin, yönetin veya kaldırın." : "Haber, yazı ve duyurularınızı ayrıntılı metinlerle yönetin."}</p></div><form onSubmit={save} className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 md:grid-cols-2"><input required className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video başlığı" : "Haber / yazı başlığı"} value={form.title} onChange={e=>setForm({...form,title:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video URL veya embed bağlantısı" : "Kapak görseli URL'si"} value={form.url} onChange={e=>setForm({...form,url:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder="Kısa açıklama" value={form.excerpt} onChange={e=>setForm({...form,excerpt:e.target.value})}/><textarea className="min-h-32 rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder={media ? "Video açıklaması" : "Detaylı haber / yazı metni"} value={form.body} onChange={e=>setForm({...form,body:e.target.value})}/><button className="w-fit rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white">{media ? "VİDEO EKLE" : "YAZIYI YAYINLA"}</button></form><div className="space-y-3">{items.length ? items.map(x=><article key={x.id} className="rounded-2xl border border-slate-200 bg-white p-5"><div className="flex items-start justify-between gap-4"><div><h2 className="font-black">{x.title}</h2><p className="mt-1 text-sm text-slate-500">{x.excerpt}</p></div><button onClick={()=>remove(x.id)} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-bold text-rose-600">Sil</button></div>{x.url && <a className="mt-3 block truncate text-xs text-[#cd011e]" href={x.url} target="_blank">{x.url}</a>}<p className="mt-3 whitespace-pre-wrap text-sm text-slate-600">{x.body}</p></article>) : <div className="rounded-2xl border border-dashed border-slate-300 p-10 text-center text-sm text-slate-400">Henüz kayıt yok.</div>}</div></div>;
+}
+const MediaManagementPage = () => <ContentManager kind="media" />;
+const LibraryManagementPage = () => <ContentManager kind="library" />;
 function FeaturePage({ title, page }: { title: string; page: Page }) {
   const info: Record<string, string[]> = {
     header: [
