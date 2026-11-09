@@ -417,6 +417,7 @@ export default function ListingEntryPage({
   const [locationRows, setLocationRows] = useState<NeighborhoodRow[]>([]);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
+  const [coverUrl, setCoverUrl] = useState("");
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [preview, setPreview] = useState(false);
@@ -579,7 +580,7 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, dues: form.dues, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          details: { ...form.details, dues: form.dues, cover_url: coverUrl || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
           approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
           is_featured: featured,
         });
@@ -866,6 +867,7 @@ export default function ListingEntryPage({
             <label className="text-xs"><span>Posta kodu</span><input className={inputClass} value={form.postalCode} onChange={e=>setForm({...form,postalCode:e.target.value})}/></label>
             <label className="text-xs"><span>Enlem</span><input className={inputClass} value={form.latitude} onChange={e=>setForm({...form,latitude:e.target.value})} placeholder="39.9208"/></label>
             <label className="text-xs"><span>Boylam</span><input className={inputClass} value={form.longitude} onChange={e=>setForm({...form,longitude:e.target.value})} placeholder="32.8541"/></label>
+            <div className="md:col-span-2 xl:col-span-3 rounded-2xl border border-slate-200 bg-slate-50 p-3"><div className="mb-2 flex items-center justify-between"><span className="text-xs font-semibold text-slate-700">Konum önizlemesi</span><span className="text-[10px] text-slate-400">Enlem ve boylam girildiğinde harita güncellenir</span></div>{form.latitude && form.longitude ? <iframe title="İlan konum haritası" className="h-56 w-full rounded-xl border-0" src={`https://www.openstreetmap.org/export/embed.html?bbox=${Number(form.longitude)-0.02}%2C${Number(form.latitude)-0.015}%2C${Number(form.longitude)+0.02}%2C${Number(form.latitude)+0.015}&layer=mapnik&marker=${form.latitude}%2C${form.longitude}`} /> : <div className="grid h-40 place-items-center rounded-xl bg-white text-sm text-slate-400">Harita için enlem ve boylam girin.</div>}</div>
           </div>
         </section>
         <section className="border-t border-slate-100 pt-7">
@@ -951,13 +953,14 @@ export default function ListingEntryPage({
             </button>
           </div>
           {uploaded.length > 0 && (
-            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <><p className="mt-3 text-xs text-slate-500">Kapak yapmak için bir görsele tıklayın. Kırmızı çerçeveli görsel kapaktır.</p><div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {uploaded.map((item) =>
                 item.type.startsWith("image/") ? (
                   <img
                     key={item.url}
                     src={item.url}
-                    className="h-24 w-full rounded-xl object-cover"
+                    onClick={() => setCoverUrl(item.url)}
+                    className={`h-24 w-full cursor-pointer rounded-xl object-cover ${coverUrl === item.url ? "ring-4 ring-[#cd011e]" : ""}`}
                   />
                 ) : (
                   <div
@@ -968,7 +971,7 @@ export default function ListingEntryPage({
                   </div>
                 ),
               )}
-            </div>
+            </div></>
           )}
         </section>
         <section className="border-t border-slate-100 pt-7"><h3>Yayınlama ve vitrin ayarları</h3><div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4"><label className="text-xs"><span>İlan durumu</span><select className={inputClass} value={publishMode} onChange={e=>setPublishMode(e.target.value)}><option value="publish">Yayınla</option><option value="draft">Taslak olarak kaydet</option><option value="passive">Pasife al</option></select></label><label className="text-xs"><span>Yayın başlangıcı</span><input type="datetime-local" className={inputClass} value={publishStart} onChange={e=>setPublishStart(e.target.value)}/></label><label className="text-xs"><span>Yayın bitişi</span><input type="datetime-local" className={inputClass} value={publishEnd} onChange={e=>setPublishEnd(e.target.value)}/></label><div className="flex flex-col justify-end gap-2 text-xs"><label><input type="checkbox" checked={featured} onChange={e=>setFeatured(e.target.checked)}/> Ana sayfa vitrininde göster</label><label><input type="checkbox" checked={newLabel} onChange={e=>setNewLabel(e.target.checked)}/> Yeni ilan etiketi</label><label><input type="checkbox" checked={dealLabel} onChange={e=>setDealLabel(e.target.checked)}/> Fırsat ilanı etiketi</label></div></div></section><footer className="flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-7 sm:flex-row">
