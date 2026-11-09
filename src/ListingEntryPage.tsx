@@ -448,6 +448,11 @@ export default function ListingEntryPage({
     postalCode: "",
     latitude: "",
     longitude: "",
+    officeId: "",
+    secondAdvisor: "",
+    contactPhone: "",
+    whatsapp: "",
+    contactEmail: "",
     details: {} as Record<string, string>,
   });
   const propertyTypes = PROPERTY_TYPES[form.category] || [];
@@ -580,7 +585,7 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, dues: form.dues, cover_url: coverUrl || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          details: { ...form.details, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
           approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
           is_featured: featured,
         });
@@ -692,6 +697,9 @@ export default function ListingEntryPage({
                 </select>
               </label>
             )}
+            <label className="text-xs"><span>İletişim telefonu</span><input className={inputClass} value={form.contactPhone} onChange={e=>setForm({...form,contactPhone:e.target.value})} placeholder="05XX XXX XX XX"/></label>
+            <label className="text-xs"><span>WhatsApp numarası</span><input className={inputClass} value={form.whatsapp} onChange={e=>setForm({...form,whatsapp:e.target.value})}/></label>
+            <label className="text-xs"><span>İletişim e-postası</span><input type="email" className={inputClass} value={form.contactEmail} onChange={e=>setForm({...form,contactEmail:e.target.value})}/></label>
             <label className="text-xs">
               <span>İşlem tipi *</span>
               <select
