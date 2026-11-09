@@ -1,5 +1,5 @@
-Warning: truncated output (original token count: 159127)
-Total output lines: 6039
+Warning: truncated output (original token count: 159285)
+Total output lines: 6041
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
@@ -1562,7 +1562,7 @@ function CookieConsent() {
   const [visible, setVisible] = useState(() => !localStorage.getItem('realty-center-cookie-choice'));
   if (!visible) return null;
   const choose = (choice: 'all' | 'essential') => { localStorage.setItem('realty-center-cookie-choice', choice); setVisible(false); };
-  return <div className="fixed inset-x-3 bottom-3 z-[90] mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:p-5"><div className="flex flex-col gap-4 sm:flex-row sm:items-center"><div className="flex-1"><h3 className="text-sm font-black text-slate-900">Çerez kullanımı</h3><p className="mt-1 text-xs leading-5 text-slate-600">Site deneyimini geliştirmek, tercihlerinizi hatırlamak ve güvenli kullanım sağlamak için çerezlerden yararlanıyoruz. Ayrıntıları <Link t…59127 tokens truncated…pan>
+  return <div className="fixed inset-x-3 bottom-3 z-[90] mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl sm:p-5"><div className="flex flex-col gap-4 sm:flex-row sm:items-center"><div className="flex-1"><h3 className="text-sm font-black text-slate-900">Çerez kullanımı</h3><p className="mt-1 text-xs leading-5 text-slate-600">Site deneyimini geliştirmek, tercihlerinizi hatırlamak ve güvenli kullanım sağlamak için çerezlerden yararlanıyoruz. Ayrıntıları <Link t…59285 tokens truncated…pan>
                   </div>
                 </div>
 
