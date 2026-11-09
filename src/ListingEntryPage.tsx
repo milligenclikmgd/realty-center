@@ -418,6 +418,8 @@ export default function ListingEntryPage({
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
   const [coverUrl, setCoverUrl] = useState("");
+  const [listingNumber] = useState(() => `RC-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`);
+  const [portfolioCode, setPortfolioCode] = useState("");
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [validationMessage, setValidationMessage] = useState("");
@@ -588,7 +590,7 @@ export default function ListingEntryPage({
           video_url:
             uploaded.find((item) => item.type.startsWith("video/"))?.url ||
             null,
-          details: { ...form.details, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
+          details: { ...form.details, listing_number: listingNumber, portfolio_code: portfolioCode || null, dues: form.dues, cover_url: coverUrl || null, contact_phone: form.contactPhone || null, whatsapp: form.whatsapp || null, contact_email: form.contactEmail || null, advisor_notes: form.advisorNotes, address: form.address, street: form.street, building_no: form.buildingNo, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, publish_start: publishStart || null, publish_end: publishEnd || null, new_label: newLabel, deal_label: dealLabel },
           approval_status: publishMode === "draft" ? "Taslak" : publishMode === "passive" ? "Pasif" : directPublish ? "Yayında" : "Onay Bekliyor",
           is_featured: featured,
         });
@@ -667,6 +669,8 @@ export default function ListingEntryPage({
                 onChange={(e) => setForm({ ...form, title: e.target.value })}
               />
             </label>
+            <label className="text-xs"><span>İlan numarası</span><input readOnly className={inputClass + " bg-slate-50"} value={listingNumber}/></label>
+            <label className="text-xs"><span>Portföy kodu</span><input className={inputClass} value={portfolioCode} onChange={e=>setPortfolioCode(e.target.value.toUpperCase())} placeholder="İsteğe bağlı"/></label>
             {viewerRole === "advisor" || viewerRole === "manager" ? (
               <label className="text-xs">
                 <span>İlan sahibi</span>
