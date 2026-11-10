@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
-    requireUser($pdo);
     try { $pdo->exec('ALTER TABLE offices MODIFY image_url MEDIUMTEXT NULL'); } catch (Throwable $ignored) {}
     try { $pdo->exec('ALTER TABLE offices ADD COLUMN latitude DECIMAL(10,7) NULL, ADD COLUMN longitude DECIMAL(10,7) NULL'); } catch (Throwable $ignored) {}
     $q = $pdo->query("SELECT o.id,o.name,o.city,o.district,o.address,o.phone,o.email,o.manager_user_id AS owner_profile_id,o.image_url,o.description,o.work_hours,o.latitude,o.longitude,o.status,o.deleted_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS manager_name FROM offices o LEFT JOIN users u ON u.id=o.manager_user_id WHERE o.deleted_at IS NULL ORDER BY o.created_at DESC");
