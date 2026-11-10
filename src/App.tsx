@@ -3883,23 +3883,23 @@ function LoginPage() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-100px)] bg-slate-100 flex items-center justify-center px-4 py-8 xl:pb-12 xl:pt-28">
-      <div className="w-full max-w-md">
-        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
-          <div className="bg-slate-900 px-6 py-6 text-center border-b-4 border-red-700">
+    <div className="min-h-[calc(100vh-100px)] bg-[#f5f7fb] flex items-center justify-center px-4 py-10 xl:py-16">
+      <div className="w-full max-w-5xl">
+        <div className="grid overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,.12)] md:grid-cols-[.9fr_1.1fr]">
+          <div className="relative flex min-h-[260px] flex-col justify-between overflow-hidden bg-[#071d3b] px-8 py-9 text-white md:min-h-[560px] md:px-10 md:py-11">
+            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-white/10" />
+            <div className="absolute -bottom-32 -left-20 h-80 w-80 rounded-full border border-[#d70724]/30" />
             <img
               src="/rc_logo_og.svg"
               alt="Realty Center®"
-              className="h-14 w-auto mx-auto object-contain brightness-0 invert mb-3"
+              className="h-12 w-auto object-contain brightness-0 invert md:h-14"
             />
 
-            <h1 className="text-2xl font-black text-white">Panel Girişi</h1>
-            <p className="text-slate-400 text-sm mt-2">
-              Danışman ve yönetim paneline giriş yapın.
-            </p>
+            <div className="relative mt-10 md:mt-auto"><p className="text-[11px] font-bold tracking-[.28em] text-[#f47b8c]">REALTY CENTER / YÖNETİM</p><h1 className="mt-3 max-w-sm text-3xl font-black leading-tight text-white md:text-4xl">Gayrimenkul operasyonunuzu tek merkezden yönetin.</h1><p className="mt-4 max-w-sm text-sm leading-6 text-slate-300">İlanlar, ofisler, danışmanlar ve içerikler için güvenli yönetim alanı.</p></div>
           </div>
 
-          <form onSubmit={forgotMode ? handlePasswordReset : handleLogin} className="p-6 space-y-4">
+          <form onSubmit={forgotMode ? handlePasswordReset : handleLogin} className="flex flex-col justify-center p-7 sm:p-10 md:p-14">
+            <div className="mb-8"><p className="text-xs font-bold tracking-[.18em] text-[#d70724]">PANEL GİRİŞİ</p><h2 className="mt-2 text-2xl font-black text-[#071d3b]">Hoş geldiniz</h2><p className="mt-2 text-sm text-slate-500">Hesabınızla güvenli şekilde devam edin.</p></div>
             {(errorMsg || message) && <div className={`rounded-xl border p-3 text-xs font-bold ${errorMsg ? 'border-red-200 bg-red-50 text-red-700' : 'border-emerald-200 bg-emerald-50 text-emerald-700'}`}>{errorMsg || message}</div>}
             {forgotMode && <p className="text-sm font-medium leading-6 text-slate-600">Realty Center hesabınıza bağlı e-posta adresini girin.</p>}
             <div>
