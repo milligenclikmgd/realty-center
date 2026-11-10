@@ -44,6 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'create-user') {
     respond(['ok'=>true,'user'=>['id'=>$id,'username'=>$username,'email'=>$email,'first_name'=>$first,'last_name'=>$last,'role'=>$role,'status'=>$status]]);
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
+    $actor = requireUser($pdo);
+    if ($actor['role'] !== 'admin') respond(['error'=>'Bu listeyi yalnızca süper admin görebilir.'],403);
+    $q = $pdo->query('SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url FROM users WHERE deleted_at IS NULL ORDER BY created_at DESC');
+    respond(['users'=>$q->fetchAll()]);
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'logout') { $_SESSION=[]; session_destroy(); respond(['ok'=>true]); }
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'me') respond(['user'=>currentUser($pdo)]);
 respond(['error'=>'Geçersiz istek.'],404);
