@@ -70,7 +70,7 @@ export default function ListingManagementPage({ profiles, alert, openAdd, initia
   const pageRows = rows.slice((page - 1) * perPage, page * perPage);
   useEffect(() => { setPage(1); setSelected([]); }, [applied, tab, perPage]);
 
-  const update = async (id: string, patch: Record<string, unknown>, success: string) => { setBusy(id); const { error } = await supabase.from("listings").update(patch).eq("id", id); if (error) alert(`İşlem tamamlanamadı: ${error.message}`); else { await load(); alert(success); } setBusy(""); setMenu(null); };
+  const update = async (id: string, patch: Record<string, unknown>, success: string) => { setBusy(id); const { error } = await supabase.from("listings").update(patch).eq("id", id); if (error) alert(`İşlem tamamlanamadı: ${error.message}`); else { await load(); window.dispatchEvent(new Event("realty-center-listings-updated")); alert(success); } setBusy(""); setMenu(null); };
   const approve = (id: string) => void update(id, { approval_status: "Yayında", deleted_at: null }, "İlan yayına alındı.");
   const archive = (id: string) => void update(id, { deleted_at: new Date().toISOString() }, "İlan arşive taşındı.");
   const restore = (id: string) => void update(id, { deleted_at: null, approval_status: "Yayında" }, "İlan yeniden yayına alındı.");
