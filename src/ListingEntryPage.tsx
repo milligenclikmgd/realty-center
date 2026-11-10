@@ -570,15 +570,28 @@ export default function ListingEntryPage({
         setUploadProgress((current) => ({ ...current, [file.name]: 15 }));
         const timer = window.setInterval(() => setUploadProgress((current) => ({ ...current, [file.name]: Math.min(85, (current[file.name] || 15) + 10) })), 220);
         const path = `listings/${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`;
-        const { error } = await supabase.storage
-          .from("listing-media")
-          .upload(path, file, { upsert: false });
-        window.clearInterval(timer);
-        if (error) throw error;
+        let mediaUrl = "";
+        // Prefer the cPanel media endpoint; retain Storage as a configured fallback.
+        try {
+          const body = new FormData();
+          body.append("file", file);
+          body.append("directory", "listings");
+          const response = await fetch("/api/media.php", { method: "POST", body, credentials: "same-origin" });
+          const payload = await response.json();
+          if (!response.ok || !payload?.url) throw new Error(payload?.error || `HTTP ${response.status}`);
+          mediaUrl = payload.url;
+        } catch (cpanelError) {
+          const { data: authData } = await supabase.auth.getSession();
+          if (!authData.session) throw new Error("Medya API bağlantısı kurulamadı. cPanel medya servisini kontrol edin.");
+          const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false });
+          if (error) throw new Error(`cPanel: ${cpanelError instanceof Error ? cpanelError.message : "yanıt alınamadı"}; Depolama: ${error.message}`);
+          mediaUrl = supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl;
+        } finally {
+          window.clearInterval(timer);
+        }
         setUploadProgress((current) => ({ ...current, [file.name]: 100 }));
         additions.push({
-          url: supabase.storage.from("listing-media").getPublicUrl(path).data
-            .publicUrl,
+          url: mediaUrl,
           type: file.type,
         });
       }
@@ -1056,24 +1069,18 @@ export default function ListingEntryPage({
         </section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fotoğraf ve video</h3>
-          <p className="mt-1 text-xs font-normal text-slate-500">
-            Fotoğraf ve videoları seçtiğiniz anda otomatik yüklenir; ilerlemeyi aşağıdan takip edebilirsiniz.
-          </p>
+          <p className="mt-1 text-xs font-normal text-slate-500">Fotoğraf veya video seçin; yükleme otomatik başlar.</p>
           <div className="mt-4 rounded-2xl border-2 border-dashed border-slate-200 p-5">
             <div className="flex flex-wrap items-center gap-2">
             <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
-              Fotoğraf ekle
+              MEDYA EKLE
               <input
                 type="file"
-                accept="image/*"
+                accept="image/*,video/mp4,video/webm,video/quicktime"
                 multiple
                 className="hidden"
                 onChange={(e) => void uploadFiles(e.target.files)}
               />
-            </label>
-            <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
-              Video ekle
-              <input type="file" accept="video/mp4,video/webm" className="hidden" onChange={(e) => void uploadFiles(e.target.files)} />
             </label>
             <span className="text-xs font-normal text-slate-500">Seçtiğiniz dosyalar otomatik yüklenir.</span>
             </div>
