@@ -431,10 +431,13 @@ export default function ListingEntryPage({
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [uploaded, setUploaded] = useState<{ url: string; type: string }[]>([]);
   const [coverUrl, setCoverUrl] = useState("");
-  const [listingNumber] = useState(
-    () =>
-      `RC-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`,
-  );
+  const [listingNumber] = useState(() => {
+    const stamp = Date.now().toString(36).toUpperCase().slice(-6);
+    const entropy = typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID().replaceAll("-", "").slice(0, 4).toUpperCase()
+      : Math.floor(1000 + Math.random() * 9000).toString();
+    return `RC-${new Date().getFullYear()}-${stamp}${entropy}`;
+  });
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [validationMessage, setValidationMessage] = useState("");
@@ -747,6 +750,7 @@ export default function ListingEntryPage({
               <span>İlan numarası</span>
               <input
                 readOnly
+                disabled
                 className={inputClass + " bg-slate-50"}
                 value={listingNumber}
               />
