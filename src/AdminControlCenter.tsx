@@ -1483,7 +1483,7 @@ function UsersPage({
                         onClick={() => setSelected(p)}
                         className="tap rounded-lg border border-slate-200 px-3 py-2 text-xs font-black"
                       >
-                        Görüntüle
+                        Görüntüle / Düzenle
                       </button>
                     </td>
                   </tr>
@@ -2780,25 +2780,10 @@ function UserEditPage({
   const save = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
-    if (f.new_password.trim()) {
-      if (f.new_password.length < 10) { setBusy(false); return window.alert("Yeni şifre en az 10 karakter olmalı."); }
-      const { data: passwordData, error: passwordError } = await supabase.functions.invoke("admin-users", {
-        body: { action: "update_user", payload: { id: profile.id, password: f.new_password, forcePasswordChange: f.force_password_change } },
-      });
-      if (passwordError || passwordData?.error) { setBusy(false); return window.alert(passwordData?.error || passwordError?.message || "Şifre güncellenemedi."); }
-    }
-    const { error } = await supabase
-      .from("profiles")
-      .update({
-        first_name: f.first_name,
-        last_name: f.last_name,
-        username: f.username.trim().toLowerCase().replace(/\\s/g, ""),
-        email: f.email.trim().toLowerCase(),
-        phone: f.phone || null,
-      })
-      .eq("id", profile.id);
+    const response = await fetch("/api/auth.php?action=update-user", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: profile.id, firstName: f.first_name, lastName: f.last_name, username: f.username.trim().toLowerCase().replace(/\\s/g, ""), email: f.email.trim().toLowerCase(), phone: f.phone, role: f.role, status: f.status, avatarUrl: f.avatar_url || null, password: f.new_password, forcePasswordChange: f.force_password_change }) });
+    const result = await response.json().catch(() => ({}));
     setBusy(false);
-    if (error) return window.alert(error.message);
+    if (!response.ok || result.error) return window.alert(result.error || "Kullanıcı güncellenemedi.");
     await done();
   };
   return (
@@ -2807,7 +2792,8 @@ function UserEditPage({
         <p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">
           REALTY CENTER / KULLANICI YÖNETİMİ
         </p>
-        <h1 className="mt-2 text-3xl font-black">
+        <button type="button" onClick={cancel} className="mb-4 text-xs text-slate-500 hover:text-[#cd011e]">← Kullanıcılara dön</button>
+        <h1 className="mt-2 text-2xl font-medium">
           Kullanıcı Bilgilerini Düzenle
         </h1>
         <p className="mt-1 text-sm text-slate-500">
@@ -2819,7 +2805,7 @@ function UserEditPage({
         >
           <div className="grid gap-8 lg:grid-cols-[330px_1fr]">
             <section className="border-b border-slate-100 pb-7 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
-              <h2 className="text-base font-black">Profil Fotoğrafı</h2>
+              <h2 className="text-[16px] font-medium">Profil Fotoğrafı</h2>
               <label className="mt-5 flex h-60 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 text-center hover:border-[#cd011e]">
                 <input
                   className="hidden"
