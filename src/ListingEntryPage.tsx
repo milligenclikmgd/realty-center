@@ -440,6 +440,7 @@ export default function ListingEntryPage({
     return `RC-${new Date().getFullYear()}-${stamp}${entropy}`;
   });
   const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState<Record<string, number>>({});
   const [saving, setSaving] = useState(false);
   const [activeStep, setActiveStep] = useState(1);
   const [ownerPickerOpen, setOwnerPickerOpen] = useState(false);
@@ -559,26 +560,22 @@ export default function ListingEntryPage({
       ...current,
       details: { ...current.details, [key]: value },
     }));
-  const chooseFiles = (files: FileList | null) =>
-    setSelectedFiles(
-      Array.from(files || [])
-        .filter(
-          (file) =>
-            file.type.startsWith("image/") || file.type.startsWith("video/"),
-        )
-        .slice(0, 16),
-    );
-  const uploadFiles = async () => {
-    if (!selectedFiles.length) return alert("Önce fotoğraf veya video seçin.");
+  const uploadFiles = async (fileList: FileList | null) => {
+    const files = Array.from(fileList || []).filter((file) => file.type.startsWith("image/") || file.type.startsWith("video/"));
+    if (!files.length) return;
     setUploading(true);
     try {
       const additions: { url: string; type: string }[] = [];
-      for (const file of selectedFiles) {
+      for (const file of files.slice(0, 16)) {
+        setUploadProgress((current) => ({ ...current, [file.name]: 15 }));
+        const timer = window.setInterval(() => setUploadProgress((current) => ({ ...current, [file.name]: Math.min(85, (current[file.name] || 15) + 10) })), 220);
         const path = `listings/${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`;
         const { error } = await supabase.storage
           .from("listing-media")
           .upload(path, file, { upsert: false });
+        window.clearInterval(timer);
         if (error) throw error;
+        setUploadProgress((current) => ({ ...current, [file.name]: 100 }));
         additions.push({
           url: supabase.storage.from("listing-media").getPublicUrl(path).data
             .publicUrl,
@@ -587,7 +584,6 @@ export default function ListingEntryPage({
       }
       setUploaded((current) => [...current, ...additions]);
       setSelectedFiles([]);
-      alert(`${additions.length} dosya ilan medyasına eklendi.`);
     } catch (error: any) {
       alert(`Dosyalar eklenemedi: ${error.message || "Tekrar deneyin."}`);
     } finally {
@@ -702,7 +698,7 @@ export default function ListingEntryPage({
       data-step={activeStep}
       className="listing-entry-form mx-auto max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
     >
-      <style>{`.listing-entry-form label{font-weight:600}.listing-entry-form label>span{color:#cd011e}.listing-entry-form h2,.listing-entry-form h3{color:#101828;font-weight:600}.listing-entry-form input,.listing-entry-form select,.listing-entry-form textarea,.listing-entry-form [contenteditable="true"]{font-weight:400;color:#101828}.listing-entry-form button{font-weight:600}.wizard-content>section{display:none}.listing-entry-form[data-step="1"] .wizard-content>section:nth-of-type(-n+3),.listing-entry-form[data-step="2"] .wizard-content>section:nth-of-type(3),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(4),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(5),.listing-entry-form[data-step="4"] .wizard-content>section:nth-of-type(6),.listing-entry-form[data-step="5"] .wizard-content>section:nth-of-type(7){display:block}`}</style>
+      <style>{`.listing-entry-form label{font-weight:600}.listing-entry-form label>span{color:#cd011e}.listing-entry-form h2,.listing-entry-form h3{color:#101828;font-weight:600}.listing-entry-form input,.listing-entry-form select,.listing-entry-form textarea,.listing-entry-form [contenteditable="true"]{font-weight:400;color:#101828}.listing-entry-form button{font-weight:600}.wizard-content>section{display:none}.listing-entry-form[data-step="1"] .wizard-content>section:nth-of-type(1),.listing-entry-form[data-step="2"] .wizard-content>section:nth-of-type(2),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(3),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(4),.listing-entry-form[data-step="4"] .wizard-content>section:nth-of-type(5),.listing-entry-form[data-step="5"] .wizard-content>section:nth-of-type(6){display:block}`}</style>
       <header className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
@@ -730,7 +726,7 @@ export default function ListingEntryPage({
         </div>
       </header>
       <div className="grid grid-cols-5 border-b border-slate-100 bg-white px-6 py-5 text-center text-[11px] text-slate-500">
-        {["Temel Bilgiler", "Konum", "Özellikler", "Medya", "Yayınla"].map((label, index) => { const step = index + 1; return <button key={label} type="button" onClick={() => setActiveStep(step)} className={`relative flex flex-col items-center gap-2 ${activeStep === step ? "text-[#cd011e]" : step < activeStep ? "text-slate-700" : "text-slate-400"}`}><span className={`grid h-9 w-9 place-items-center rounded-full border text-sm font-semibold ${activeStep === step ? "border-[#cd011e] bg-[#cd011e] text-white" : step < activeStep ? "border-[#cd011e] text-[#cd011e]" : "border-slate-300 bg-white"}`}>{step}</span><span>{label}</span>{step < 5 && <i className={`absolute left-[62%] top-[18px] h-px w-[76%] ${step < activeStep ? "bg-[#cd011e]" : "bg-slate-200"}`} />}</button>; })}
+        {["Temel Bilgiler", "Konum", "Özellikler", "Medya", "Önizleme"].map((label, index) => { const step = index + 1; return <button key={label} type="button" onClick={() => setActiveStep(step)} className={`relative flex flex-col items-center gap-2 ${activeStep === step ? "text-[#cd011e]" : step < activeStep ? "text-slate-700" : "text-slate-400"}`}><span className={`grid h-9 w-9 place-items-center rounded-full border text-sm font-semibold ${activeStep === step ? "border-[#cd011e] bg-[#cd011e] text-white" : step < activeStep ? "border-[#cd011e] text-[#cd011e]" : "border-slate-300 bg-white"}`}>{step}</span><span>{label}</span>{step < 5 && <i className={`absolute left-[62%] top-[18px] h-px w-[76%] ${step < activeStep ? "bg-[#cd011e]" : "bg-slate-200"}`} />}</button>; })}
       </div>
       {validationMessage && (
         <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
@@ -825,14 +821,12 @@ export default function ListingEntryPage({
               </select>
             </label>
             <label className="text-xs"><span>{form.transaction_type.includes("Kiral") ? "Kira fiyatı *" : "Satış fiyatı *"}</span><div className="flex"><select className="mt-1.5 w-20 rounded-l-xl border-0 bg-[#cd011e] px-2 text-center text-sm font-semibold text-white outline-none" value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })}>{["₺", "USD", "EUR"].map((option) => <option key={option}>{option}</option>)}</select><input required inputMode="numeric" className={`${inputClass} mt-1.5 rounded-l-none`} value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder={form.transaction_type.includes("Kiral") ? "Örn. 35.000" : "Örn. 5.750.000"} /></div></label>
-            <label className="text-xs"><span>Aidat</span><input inputMode="numeric" className={inputClass} value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder="Aylık aidat" /></label>
           </div>
         </section>
-        <section className="border-t border-slate-100 pt-7"><h3>İlanı ekleyen</h3><div className="mt-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">{selectedOwner?.avatar_url ? <img src={selectedOwner.avatar_url} className="h-12 w-12 rounded-full object-cover" /> : <span className="grid h-12 w-12 place-items-center rounded-full bg-white text-slate-400"><UserRound /></span>}<div><p className="text-sm font-semibold text-slate-800">{selectedOwner ? `${selectedOwner.first_name} ${selectedOwner.last_name}` : viewerName || "İlan sahibi seçilmedi"}</p><p className="text-xs text-slate-500">İlanı kim eklediyse bu kişi gösterilir.</p></div></div></section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Konum Bilgileri</h3>
           <p className="mt-1 text-xs font-normal text-slate-500">
-            İl, ilçe ve mahalle sırasıyla seçilir.
+            İlanın adresini ve harita konumunu bu aşamada tanımlayın.
           </p>
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             <label className="text-xs">
@@ -902,15 +896,6 @@ export default function ListingEntryPage({
                 ))}
               </select>
             </label>
-            <label className="text-xs">
-              <span>Aylık aidat</span>
-              <input
-                inputMode="numeric"
-                className={inputClass}
-                value={form.dues}
-                onChange={(e) => setForm({ ...form, dues: e.target.value })}
-              />
-            </label>
             <label className="text-xs md:col-span-2">
               <span>Açık adres</span>
               <input
@@ -979,6 +964,7 @@ export default function ListingEntryPage({
             Seçtiğiniz ilan türüne ait bilgiler gösterilir.
           </p>
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            <label className="text-xs"><span>Aidat</span><input inputMode="numeric" className={inputClass} value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder="Aylık aidat" /></label>
             {detailFields.map(renderField)}
           </div>
         </section>
@@ -988,35 +974,35 @@ export default function ListingEntryPage({
             <button
               type="button"
               onClick={() => document.execCommand("bold")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               <b>B</b>
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("italic")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               <i>I</i>
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("insertUnorderedList")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               • Liste
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("insertOrderedList")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               1. Liste
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("formatBlock", false, "h3")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               Başlık
             </button>
@@ -1029,33 +1015,33 @@ export default function ListingEntryPage({
                   prompt("Bağlantı adresi") || "",
                 )
               }
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               Bağlantı
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("justifyLeft")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               Sola hizala
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("undo")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               Geri al
             </button>
             <button
               type="button"
               onClick={() => document.execCommand("redo")}
-              className="rc-secondary"
+              className="rounded-lg bg-[#cd011e] px-3 py-2 text-xs font-semibold text-white hover:bg-red-800"
             >
               İleri al
             </button>
           </div>
-          <textarea value={form.description.replace(/<[^>]+>/g, "")} onChange={(e) => setForm({ ...form, description: e.target.value })} className={inputClass + " min-h-48 resize-y leading-7"} placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın." />
+          <div ref={editorRef} contentEditable suppressContentEditableWarning onInput={(e) => setForm({ ...form, description: e.currentTarget.innerHTML })} className={inputClass + " min-h-48 resize-y leading-7"} data-placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın." />
           <label className="mt-4 block text-xs">
             <span>Danışman notları (sadece panel kullanıcıları görür)</span>
             <textarea
@@ -1071,7 +1057,7 @@ export default function ListingEntryPage({
         <section className="border-t border-slate-100 pt-7">
           <h3>Fotoğraf ve video</h3>
           <p className="mt-1 text-xs font-normal text-slate-500">
-            Önce dosyaları seçin, ardından ayrı yükleme işlemiyle ekleyin.
+            Fotoğraf ve videoları seçtiğiniz anda otomatik yüklenir; ilerlemeyi aşağıdan takip edebilirsiniz.
           </p>
           <div className="mt-4 rounded-2xl border-2 border-dashed border-slate-200 p-5">
             <div className="flex flex-wrap items-center gap-2">
@@ -1082,27 +1068,16 @@ export default function ListingEntryPage({
                 accept="image/*"
                 multiple
                 className="hidden"
-                onChange={(e) => chooseFiles(e.target.files)}
+                onChange={(e) => void uploadFiles(e.target.files)}
               />
             </label>
             <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
               Video ekle
-              <input type="file" accept="video/mp4,video/webm" className="hidden" onChange={(e) => chooseFiles(e.target.files)} />
+              <input type="file" accept="video/mp4,video/webm" className="hidden" onChange={(e) => void uploadFiles(e.target.files)} />
             </label>
-            <span className="text-xs font-normal text-slate-500">
-              {selectedFiles.length
-                ? `${selectedFiles.length} dosya seçildi`
-                : "Henüz dosya seçilmedi"}
-            </span>
-            <button
-              type="button"
-              onClick={() => void uploadFiles()}
-              disabled={uploading || !selectedFiles.length}
-              className="rc-primary disabled:opacity-50"
-            >
-              {uploading ? "YÜKLENİYOR…" : "FOTOĞRAFLARI EKLE"}
-            </button>
+            <span className="text-xs font-normal text-slate-500">Seçtiğiniz dosyalar otomatik yüklenir.</span>
             </div>
+            {Object.entries(uploadProgress).filter(([, progress]) => progress < 100).map(([name, progress]) => <div key={name} className="mt-3"><div className="mb-1 flex justify-between text-[11px] text-slate-500"><span className="max-w-[75%] truncate">{name}</span><span>%{progress}</span></div><div className="h-2 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-[#cd011e] transition-all" style={{ width: `${progress}%` }} /></div></div>)}
           </div>
           {uploaded.length > 0 && (
             <>
@@ -1131,11 +1106,19 @@ export default function ListingEntryPage({
               </div>
             </>
           )}
+          <div className="mt-6 flex justify-end border-t border-slate-100 pt-5">
+            <button type="button" onClick={() => { setActiveStep(5); setPreview(true); }} className="rc-primary">
+              İlanı gözden geçir
+            </button>
+          </div>
         </section>
         <section className="border-t border-slate-100 pt-7">
-          <h3>Yayınlama ve vitrin ayarları</h3>
+          <h3>İlanı gözden geçir ve yayınla</h3>
+          <p className="mt-1 text-xs font-normal text-slate-500">
+            İlanı yayınlamadan önce önizlemeyi kontrol edin. Değişiklik için ilgili aşamaya geri dönebilirsiniz.
+          </p>
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-xl bg-emerald-50 p-3 text-xs font-semibold text-emerald-700">İlan yayınla butonuna basıldığında doğrudan yayına alınır.</div>
+            <div className="rounded-xl bg-slate-50 p-3 text-xs font-normal text-slate-600">Önizleme penceresini kapattığınızda bu sayfanın altındaki kırmızı butonla ilanı yayınlayabilirsiniz.</div>
             <div className="flex flex-col justify-end gap-2 text-xs">
               <label>
                 <input
@@ -1190,6 +1173,17 @@ export default function ListingEntryPage({
                   __html: form.description || "Açıklama henüz eklenmedi.",
                 }}
               />
+              <div className="mt-6 grid gap-3 border-t border-slate-100 pt-5 sm:grid-cols-2">
+                <div className="rounded-xl bg-slate-50 p-3 text-sm"><span className="block text-xs text-slate-400">İşlem / kategori</span>{form.transaction_type} · {form.category} · {form.property_type}</div>
+                <div className="rounded-xl bg-slate-50 p-3 text-sm"><span className="block text-xs text-slate-400">İlan sahibi</span>{selectedOwner ? `${selectedOwner.first_name} ${selectedOwner.last_name}` : viewerName || "Belirtilmedi"}</div>
+                <div className="rounded-xl bg-slate-50 p-3 text-sm"><span className="block text-xs text-slate-400">Konum</span>{form.city || "İl"} / {form.district || "İlçe"} / {form.neighborhood || "Mahalle"}</div>
+                {form.dues && <div className="rounded-xl bg-slate-50 p-3 text-sm"><span className="block text-xs text-slate-400">Aidat</span>{form.dues} ₺ / ay</div>}
+                {Object.entries(form.details).filter(([, value]) => value).map(([key, value]) => <div key={key} className="rounded-xl bg-slate-50 p-3 text-sm"><span className="block text-xs text-slate-400">{key}</span>{value}</div>)}
+              </div>
+              <div className="mt-6 flex justify-end gap-2 border-t border-slate-100 pt-5">
+                <button type="button" onClick={() => setPreview(false)} className="rc-secondary">Düzenlemeye dön</button>
+                <button type="button" onClick={() => setPreview(false)} className="rc-primary">Yayınlamaya geç</button>
+              </div>
             </div>
           </div>
         )}
