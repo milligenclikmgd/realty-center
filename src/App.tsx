@@ -2506,11 +2506,20 @@ function OfficesPage() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
   useEffect(() => {
-    void supabase.from('offices').select('id,name,city,district,address,phone,email,manager_name,image_url').eq('status','active').is('deleted_at',null).order('created_at',{ascending:false}).then(({ data, error }) => {
-      setOffices((data || []).map((office: any) => ({ id: office.id, name: office.name, city: office.city, district: office.district, address: office.address, phone: office.phone || '', email: office.email || '', manager: office.manager_name || 'Belirtilmedi', image: office.image_url || '' })));
-      setLoadError(error ? 'Ofisler şu an yüklenemedi. Lütfen biraz sonra tekrar deneyin.' : '');
-      setLoading(false);
-    });
+    const load = async () => {
+      try {
+        const response = await fetch(`/api/auth.php?action=offices&_=${Date.now()}`, { credentials: 'include', cache: 'no-store' });
+        const raw = await response.text();
+        let payload: any = {};
+        try { payload = raw ? JSON.parse(raw) : {}; } catch { payload = { error: 'Sunucu geçerli bir yanıt vermedi.' }; }
+        if (!response.ok || !Array.isArray(payload.offices)) throw new Error(payload.error || 'Ofisler şu an yüklenemedi.');
+        setOffices(payload.offices.filter((office: any) => office.status === 'active').map((office: any) => ({ id: office.id, name: office.name, city: office.city, district: office.district, address: office.address || '', phone: office.phone || '', email: office.email || '', manager: office.manager_name || 'Belirtilmedi', image: office.image_url || '' })));
+        setLoadError('');
+      } catch (error) {
+        setLoadError(error instanceof Error ? error.message : 'Ofisler şu an yüklenemedi. Lütfen biraz sonra tekrar deneyin.');
+      } finally { setLoading(false); }
+    };
+    void load();
   }, []);
 
   const activeCities = [...new Set(offices.map((office) => office.city).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr'));
@@ -2601,7 +2610,7 @@ function OfficesPage() {
 
         </div>
 
-        {loading ? <div className="bg-white rounded-2xl p-12 text-center border border-slate-200 text-sm font-bold text-slate-400">Ofisler yükleniyor…</div> : loadError ? <div className="bg-white rounded-2xl p-12 text-center border border-red-100 text-sm font-bold text-red-700">{loadError}</div> : filteredOffices.length > 0 ? (
+        {loading ? <div className="bg-white rounded-2xl p-12 text-center border border-slate-200"><span className="mx-auto block h-9 w-9 animate-spin rounded-full border-4 border-red-100 border-t-red-700"/><p className="mt-4 text-sm font-bold text-slate-500">Ofisler hazırlanıyor…</p><div className="mx-auto mt-3 h-1.5 w-40 overflow-hidden rounded-full bg-red-100"><div className="h-full w-1/2 animate-pulse rounded-full bg-red-700"/></div></div> : loadError ? <div className="bg-white rounded-2xl p-12 text-center border border-red-100 text-sm font-bold text-red-700">{loadError}</div> : filteredOffices.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredOffices.map((office) => (
               <div 
