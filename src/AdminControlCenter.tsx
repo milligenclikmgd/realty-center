@@ -1700,13 +1700,7 @@ export default function AdminControlCenter() {
   const load = async () => {
     const [usersResponse, o, m, om, s] = await Promise.all([
       fetch(`/api/auth.php?action=users&_=${Date.now()}`, { credentials: "include", cache: "no-store" }),
-      supabase
-        .from("offices")
-        .select(
-          "id,name,city,district,address,phone,email,manager_name,owner_profile_id,image_url,deleted_at",
-        )
-        .is("deleted_at", null)
-        .order("created_at", { ascending: false }),
+      fetch(`/api/auth.php?action=offices&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(async (r) => { const payload = await r.json(); if (!r.ok) throw new Error(payload.error || "Ofisler alınamadı."); return { data: payload.offices || [] }; }),
       supabase
         .from("advisor_metrics")
         .select("advisor_id,messages_answered,star_rating"),
@@ -3678,20 +3672,10 @@ function NewOfficeModal({
         image_url: imageUrl || null,
         status: "active",
       };
-    const request = office
-      ? supabase.from("offices").update(payload).eq("id", office.id).select("id").single()
-      : supabase.from("offices").insert(payload).select("id").single();
-    const { data, error } = await request;
-    if (!error && data && form.ownerId) {
-      await supabase.from("office_advisors").update({ is_manager: false }).eq("office_id", data.id);
-      await supabase.from("office_advisors").upsert({
-        office_id: data.id,
-        advisor_id: form.ownerId,
-        is_manager: true,
-      });
-    }
+    const response = await fetch("/api/auth.php?action=save-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...payload, id: office?.id || null }) });
+    const result = await response.json().catch(() => ({}));
     setBusy(false);
-    if (error) return setNotice(error.message);
+    if (!response.ok || result.error) return setNotice(result.error || "Ofis kaydedilemedi.");
     await done();
     setNotice(
       office ? "Ofis güncellendi ve Ofislerimiz alanına yansıtıldı." : "Ofis başarıyla oluşturuldu ve web sitesindeki Ofislerimiz alanına yansıtıldı.",
