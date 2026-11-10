@@ -345,6 +345,15 @@ function usePublishedListings() {
       setItems(rows.map((row) => ({ id: row.id, title: row.title, category: row.category, propertyType: row.property_type, type: row.transaction_type, price: Number(row.price || 0), currency: row.currency || '₺', city: row.city, district: row.district, neighborhood: row.neighborhood || '', rooms: row.rooms || 'Belirtilmemiş', area: Number(row.area || 0), image: row.images?.[0] || '/slider/slider-01-tall-building.webp', images: row.images || [], agentName: names.get(row.owner_id)?.name || 'Realty Center Danışmanı', agentPhone: names.get(row.owner_id)?.phone || '0 554 322 22 22', date: row.created_at, updatedAt: row.updated_at || row.created_at, isFeatured: Boolean(row.is_featured), description: row.description || '', videoUrl: row.video_url || '', virtualTourUrl: row.virtual_tour_url || '', mapUrl: row.map_url || '', monthlyFee: row.monthly_fee || '', deedInfo: row.deed_info || '', technicalFeatures: row.technical_features || '', details: row.details || {} })));
     };
     void load();
+    const refresh = () => { void load(); };
+    window.addEventListener('focus', refresh);
+    window.addEventListener('realty-center-listings-updated', refresh);
+    const timer = window.setInterval(refresh, 30000);
+    return () => {
+      window.removeEventListener('focus', refresh);
+      window.removeEventListener('realty-center-listings-updated', refresh);
+      window.clearInterval(timer);
+    };
   }, []);
   return items;
 }
@@ -1963,7 +1972,9 @@ function HomePage({ counts, currentSlide, selectedCity, setSelectedCity, openDra
     void loadFeaturedAgents();
   }, []);
   const publishedListings = usePublishedListings();
-  const sortedListings = [...publishedListings].sort(() => Math.random() - 0.5);
+  // The database query is already ordered newest-first. Keep that order so the
+  // live stream always starts with the latest published listings.
+  const sortedListings = publishedListings;
 
   return (
     <div className="home-page-static">
