@@ -2599,8 +2599,15 @@ export default function AdminControlCenter() {
                         </button>
                         <button
                           onClick={() => {
-                            if (confirm("Ofis çöp kutusuna taşınsın mı?"))
-                              void fetch("/api/auth.php?action=delete-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: o.id }) }).then(() => load());
+                            void (async () => {
+                              const response = await fetch("/api/auth.php?action=delete-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: o.id }) });
+                              const raw = await response.text();
+                              let payload: any = {};
+                              try { payload = raw ? JSON.parse(raw) : {}; } catch { payload = { error: "Sunucu geçerli bir yanıt vermedi." }; }
+                              if (!response.ok || payload.error) return alert(payload.error || "Ofis çöp kutusuna taşınamadı.");
+                              await load();
+                              alert("Ofis çöp kutusuna taşındı.");
+                            })();
                           }}
                           className="rounded-lg bg-rose-600 px-3 py-2 text-xs font-black text-white"
                         >
