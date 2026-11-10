@@ -45,8 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'create-user') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
-    $actor = requireUser($pdo);
-    if ($actor['role'] !== 'admin') respond(['error'=>'Bu listeyi yalnızca süper admin görebilir.'],403);
+    requireUser($pdo);
     $q = $pdo->query('SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url FROM users WHERE deleted_at IS NULL ORDER BY created_at DESC');
     respond(['users'=>$q->fetchAll()]);
 }
