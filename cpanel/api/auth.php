@@ -69,8 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'update-user') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
     requireUser($pdo);
-    $q = $pdo->query('SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url,city,district FROM users WHERE deleted_at IS NULL ORDER BY created_at DESC');
-    respond(['users'=>$q->fetchAll()]);
+    try {
+        try { $pdo->exec('ALTER TABLE users MODIFY avatar_url MEDIUMTEXT NULL'); } catch (Throwable $ignored) {}
+        try { $pdo->exec('ALTER TABLE users ADD COLUMN city VARCHAR(100) NULL, ADD COLUMN district VARCHAR(100) NULL'); } catch (Throwable $ignored) {}
+        $q = $pdo->query('SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url,city,district FROM users WHERE deleted_at IS NULL ORDER BY created_at DESC');
+        respond(['users'=>$q->fetchAll()]);
+    } catch (Throwable $e) {
+        respond(['error'=>'Kullanıcı tablosu okunamadı: '.$e->getMessage()],500);
+    }
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
