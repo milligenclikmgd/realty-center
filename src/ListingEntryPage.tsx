@@ -647,6 +647,7 @@ export default function ListingEntryPage({
         is_featured: featured,
       });
       if (error) throw error;
+      window.dispatchEvent(new Event("realty-center-listings-updated"));
       alert(
         directPublish
           ? "İlan doğrudan yayına alındı."
