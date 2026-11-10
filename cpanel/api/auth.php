@@ -78,6 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
     $q = $pdo->query("SELECT o.id,o.name,o.city,o.district,o.address,o.phone,o.email,o.manager_user_id AS owner_profile_id,o.image_url,o.description,o.work_hours,o.status,o.deleted_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS manager_name FROM offices o LEFT JOIN users u ON u.id=o.manager_user_id WHERE o.deleted_at IS NULL ORDER BY o.created_at DESC");
     respond(['offices'=>$q->fetchAll()]);
 }
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'office-members') { requireUser($pdo); $q=$pdo->query('SELECT office_id,user_id AS advisor_id,is_manager FROM office_advisors'); respond(['members'=>$q->fetchAll()]); }
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'delete-office') { requireUser($pdo); $id=(string)(body()['id']??''); if($id==='') respond(['error'=>'Ofis seçilmedi.'],422); $q=$pdo->prepare('UPDATE offices SET deleted_at=NOW() WHERE id=?'); $q->execute([$id]); respond(['ok'=>true]); }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-office') {
     requireUser($pdo);
