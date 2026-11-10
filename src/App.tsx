@@ -3892,7 +3892,7 @@ function LoginPage() {
             <img
               src="/rc_logo_og.svg"
               alt="Realty Center®"
-              className="h-12 w-auto object-contain brightness-0 invert md:h-14"
+              className="mx-auto h-16 w-auto object-contain brightness-0 invert drop-shadow-md md:h-20"
             />
 
             <div className="relative mt-10 md:mt-auto"><p className="text-[11px] font-bold tracking-[.28em] text-[#f47b8c]">REALTY CENTER / YÖNETİM</p><h1 className="mt-3 max-w-sm text-3xl font-black leading-tight text-white md:text-4xl">Gayrimenkul operasyonunuzu tek merkezden yönetin.</h1><p className="mt-4 max-w-sm text-sm leading-6 text-slate-300">İlanlar, ofisler, danışmanlar ve içerikler için güvenli yönetim alanı.</p></div>
@@ -3912,7 +3912,7 @@ function LoginPage() {
                   type="text"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
-                  placeholder={forgotMode ? 'E-posta adresinizi girin' : 'admin veya e-posta adresi'}
+                  placeholder={forgotMode ? 'E-posta adresinizi girin' : 'Kullanıcı adı veya e-posta'}
                   autoComplete={forgotMode ? 'email' : 'username'}
                   className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-red-700 transition"
                   required
@@ -3963,7 +3963,7 @@ function LoginPage() {
 
             <button
               type="submit"
-              className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
+              className="mt-4 w-full bg-red-700 hover:bg-red-800 text-white font-black py-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.02]"
             >
               <span>{loading ? 'İşlem yapılıyor…' : 'Giriş Yap'}</span>
               <ArrowRight className="w-5 h-5" />
