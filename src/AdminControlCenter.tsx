@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 51256)
+Total output lines: 4068
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArchiveRestore,
@@ -2403,136 +2406,7 @@ export default function AdminControlCenter() {
             .toLowerCase()
             .includes(search.toLowerCase())) &&
         (!officeCity || o.city === officeCity) &&
-        (!officeDistrict || o.district === officeDistrict),
-    );
-    const cities = [...new Set(offices.map((o) => o.city))];
-    const districts = [
-      ...new Set(
-        offices
-          .filter((o) => !officeCity || o.city === officeCity)
-          .map((o) => o.district),
-      ),
-    ];
-    view = (
-      <>
-        {heading(
-          "Ofis Yönetimi",
-          "Ofisleri il, ilçe, sahip ve sınırsız danışman atamasıyla yönetin.",
-          <div className="flex gap-2">
-            {button(
-              <>
-                <Download size={15} /> Excel’e Aktar
-              </>,
-              () =>
-                csv("realty-center-ofisler", filtered as any, [
-                  "name",
-                  "city",
-                  "district",
-                  "address",
-                  "phone",
-                  "email",
-                  "manager_name",
-                ]),
-            )}
-            {button(
-              <>
-                <Plus size={15} /> Ofis Ekle
-              </>,
-              () => setShowOfficeCreate(true),
-              true,
-            )}
-          </div>,
-        )}
-        <div className="mb-5 grid gap-3 md:grid-cols-3">
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
-            placeholder="Ofis adı ara"
-          />
-          <select
-            value={officeCity}
-            onChange={(e) => {
-              setOfficeCity(e.target.value);
-              setOfficeDistrict("");
-            }}
-            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
-          >
-            <option value="">Tüm iller</option>
-            {cities.map((x) => (
-              <option key={x}>{x}</option>
-            ))}
-          </select>
-          <select
-            value={officeDistrict}
-            onChange={(e) => setOfficeDistrict(e.target.value)}
-            className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm"
-          >
-            <option value="">Tüm ilçeler</option>
-            {districts.map((x) => (
-              <option key={x}>{x}</option>
-            ))}
-          </select>
-        </div>
-        {false && <section className="mb-5 overflow-hidden rounded-2xl bg-[#cd011e] p-5 text-white shadow-lg shadow-red-700/15">
-          <div className="flex flex-wrap items-start justify-between gap-3">
-            <div>
-              <p className="text-[10px] font-black tracking-[.2em] text-white/75">
-                REALTY CENTER YILDIZ OFİSLERİ
-              </p>
-              <h2 className="mt-1 text-base font-black">
-                Ana sayfada gösterilen seçili ofisler
-              </h2>
-            </div>
-            <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-black">
-              {stars.filter((s) => s.kind === "office").length}/3 seçildi
-            </span>
-          </div>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-            {stars
-              .filter((s) => s.kind === "office")
-              .map((s) => offices.find((o) => o.id === s.entity_id))
-              .filter(Boolean)
-              .map((o: any) => {
-                const staff = officeMembers
-                  .filter((m) => m.office_id === o.id)
-                  .map((m) => advisers.find((a) => a.id === m.advisor_id))
-                  .filter(Boolean) as Profile[];
-                return (
-                  <button
-                    key={o.id}
-                    onClick={() => setOfficeDrawer(o)}
-                    className="group flex items-center gap-3 rounded-xl border border-white/25 bg-white/10 p-3 text-left transition hover:bg-white hover:text-[#cd011e]"
-                  >
-                    {o.image_url ? (
-                      <img
-                        src={o.image_url}
-                        className="h-14 w-14 rounded-xl object-cover"
-                      />
-                    ) : (
-                      <span className="grid h-14 w-14 place-items-center rounded-xl bg-white/15">
-                        <Building2 size={22} />
-                      </span>
-                    )}
-                    <span className="min-w-0 flex-1">
-                      <b className="block truncate text-sm">★ {o.name}</b>
-                      <small className="mt-1 block text-[11px] opacity-75">
-                        {o.city} / {o.district}
-                      </small>
-                      <small className="block text-[10px] opacity-70">
-                        {o.manager_name || "Lider atanmadı"} · {staff.length}{" "}
-                        danışman
-                      </small>
-                    </span>
-                  </button>
-                );
-              })}
-            {!stars.some((s) => s.kind === "office") && (
-              <p className="py-3 text-sm text-red-100">
-                Henüz yıldız ofis seçilmedi.
-              </p>
-            )}
-          </div>
+        (!officeDistrict || o.district === officeDi…1256 tokens truncated…iv>
         </section>}
         <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
           <table className="w-full min-w-[1050px] text-left">
@@ -3427,7 +3301,11 @@ function ListingForm({ alert, profiles, mode, setMode }: { alert: (x: string) =>
   useEffect(() => { void load(); }, []);
   const advisors = profiles.filter((p) => p.role === "advisor" || p.role === "manager");
   const advisorName = (id: string) => { const p = profiles.find((x) => x.id === id); return p ? `${p.first_name} ${p.last_name}` : "Sistem kullanıcısı"; };
-  const filtered = listings.filter((x) => (mode !== "approval" || x.approval_status === "Onay Bekliyor") && (!filters.q || `${x.title} ${x.city} ${x.district}`.toLocaleLowerCase("tr-TR").includes(filters.q.toLocaleLowerCase("tr-TR"))) && (!filters.city || x.city === filters.city) && (!filters.district || x.district === filters.district) && (!filters.type || x.property_type === filters.type) && (!filters.advisor || x.owner_id === filters.advisor));
+  const filtered = listings.filter((x) => {
+    const status = String(x.approval_status || "").trim().toLocaleLowerCase("tr-TR");
+    const pending = status === "onay bekliyor" || status === "pending";
+    return (mode !== "approval" || pending) && (!filters.q || `${x.title} ${x.city} ${x.district}`.toLocaleLowerCase("tr-TR").includes(filters.q.toLocaleLowerCase("tr-TR"))) && (!filters.city || x.city === filters.city) && (!filters.district || x.district === filters.district) && (!filters.type || x.property_type === filters.type) && (!filters.advisor || x.owner_id === filters.advisor);
+  });
   const update = async (id: string, patch: Record<string, unknown>, label: string) => { setBusy(id + label); const normalizedPatch = patch.approval_status === "approved" ? { ...patch, approval_status: "Yayında" } : patch.approval_status === "rejected" ? { ...patch, approval_status: "Reddedildi" } : patch; const { error } = await supabase.from("listings").update(normalizedPatch).eq("id", id); if (error) alert(error.message); else { await load(); alert(label); } setBusy(""); };
   const onFiles = (files: FileList | null) => setMedia(Array.from(files || []).filter((file) => file.type.startsWith("image/") || file.type.startsWith("video/")).slice(0, 12));
   const submit = async (e: React.FormEvent) => { e.preventDefault(); if (!form.title || !form.price || !form.city || !form.district || !form.advisor) return alert("Başlık, fiyat, il, ilçe ve ekleyen danışman zorunludur."); setBusy("create"); try { const urls: string[] = []; for (const file of media.filter((x) => x.type.startsWith("image/"))) { const path = `${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false }); if (error) throw error; urls.push(supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl); } let uploadedVideo = form.video_url; const video = media.find((x) => x.type.startsWith("video/")); if (video) { const path = `${Date.now()}-${crypto.randomUUID()}-${video.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`; const { error } = await supabase.storage.from("listing-media").upload(path, video, { upsert: false }); if (error) throw error; uploadedVideo = supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl; } const details = { gross_sqm: form.gross, net_sqm: form.net, floor: form.floor, total_floors: form.total_floors, building_age: form.building_age, heating: form.heating, parking: form.parking, deed: form.deed, credit: form.credit, dues: form.dues }; const { error } = await supabase.from("listings").insert({ owner_id: form.advisor, title: form.title, transaction_type: form.transaction_type, category: form.category, property_type: form.property_type, price: Number(form.price.replaceAll(".", "").replace(",", ".")), currency: form.currency, city: form.city, district: form.district, neighborhood: form.neighborhood || null, rooms: form.rooms || null, area: Number(form.gross || form.net || 0), description: form.description || null, video_url: uploadedVideo || null, virtual_tour_url: form.virtual_tour_url || null, images: urls, details, approval_status: "pending", is_featured: false }); if (error) throw error; setForm(empty); setMedia([]); await load(); setMode("approval"); alert("İlan kaydedildi ve onay merkezine gönderildi."); } catch (err: any) { alert(`İlan kaydedilemedi: ${err.message || "Tekrar deneyin."}`); } finally { setBusy(""); } };
