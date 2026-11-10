@@ -2985,27 +2985,31 @@ function NewUserPage({
     if (form.password !== form.repeat)
       return setError("Şifre tekrarı eşleşmiyor.");
     setBusy(true);
-    const { data, error: requestError } = await supabase.functions.invoke(
-      "admin-users",
-      {
-        body: {
-          action: "create_user",
-          payload: {
-            firstName: form.firstName.trim(),
-            lastName: form.lastName.trim(),
-            username: form.username.trim().toLowerCase().replace(/\s/g, ""),
-            email: form.email.trim().toLowerCase(),
-            phone: form.phone.trim() || null,
-            role: form.role,
-            password: form.password,
-            status: form.status,
-            forcePasswordChange: form.force,
-            avatarUrl: avatar || null,
-            expertiseAreas: [form.city, form.district].filter(Boolean),
-          },
-        },
-      },
-    );
+    let data: any = null;
+    let requestError: Error | null = null;
+    try {
+      const response = await fetch("/api/auth.php?action=create-user", {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: form.firstName.trim(),
+          lastName: form.lastName.trim(),
+          username: form.username.trim().toLowerCase().replace(/\s/g, ""),
+          email: form.email.trim().toLowerCase(),
+          phone: form.phone.trim() || null,
+          role: form.role,
+          password: form.password,
+          status: form.status,
+          forcePasswordChange: form.force,
+          avatarUrl: avatar || null,
+        }),
+      });
+      data = await response.json();
+      if (!response.ok) requestError = new Error(data?.error || "Kullanıcı oluşturulamadı.");
+    } catch (error) {
+      requestError = error instanceof Error ? error : new Error("Sunucuya bağlanılamadı.");
+    }
     setBusy(false);
     if (requestError || data?.error)
       return setError(
