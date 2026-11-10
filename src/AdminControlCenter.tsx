@@ -3554,54 +3554,7 @@ function NewOfficeModal({
   done: () => Promise<void>;
   office?: Office;
 }) {
-  const cities = [
-    "Adana",
-    "Ankara",
-    "Antalya",
-    "Balıkesir",
-    "Bursa",
-    "Eskişehir",
-    "Gaziantep",
-    "İstanbul",
-    "İzmir",
-    "Kayseri",
-    "Kocaeli",
-    "Konya",
-    "Mersin",
-    "Muğla",
-    "Sakarya",
-    "Samsun",
-    "Tekirdağ",
-    "Trabzon",
-  ];
-  const districts: Record<string, string[]> = {
-    Ankara: [
-      "Altındağ",
-      "Çankaya",
-      "Etimesgut",
-      "Keçiören",
-      "Mamak",
-      "Sincan",
-      "Yenimahalle",
-    ],
-    İstanbul: [
-      "Ataşehir",
-      "Bakırköy",
-      "Beşiktaş",
-      "Kadıköy",
-      "Kartal",
-      "Maltepe",
-      "Pendik",
-      "Sarıyer",
-      "Şişli",
-      "Üsküdar",
-    ],
-    İzmir: ["Bornova", "Buca", "Çeşme", "Karşıyaka", "Konak", "Urla"],
-    Bursa: ["Nilüfer", "Osmangazi", "Yıldırım"],
-    Antalya: ["Alanya", "Konyaaltı", "Muratpaşa"],
-    Kocaeli: ["Başiskele", "Gebze", "İzmit"],
-    Konya: ["Karatay", "Meram", "Selçuklu"],
-  };
+  const cities = TURKEY_PROVINCES;
   const savedHours = (office?.work_hours || "09:00 - 18:00").match(/(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/);
   const [form, setForm] = useState({
     name: office?.name || "",
@@ -3615,6 +3568,8 @@ function NewOfficeModal({
     description: office?.description || "",
     hoursStart: savedHours?.[1] || "09:00",
     hoursEnd: savedHours?.[2] || "18:00",
+    latitude: office?.latitude?.toString() || "",
+    longitude: office?.longitude?.toString() || "",
   });
   const [imageUrl, setImageUrl] = useState(office?.image_url || "");
   const [busy, setBusy] = useState(false);
@@ -3633,6 +3588,7 @@ function NewOfficeModal({
     reader.onload = () => setImageUrl(String(reader.result));
     reader.readAsDataURL(file);
   };
+  const useCurrentLocation = () => navigator.geolocation?.getCurrentPosition((position) => setForm((old) => ({ ...old, latitude: position.coords.latitude.toFixed(7), longitude: position.coords.longitude.toFixed(7) })));
   const save = async (event: React.FormEvent) => {
     event.preventDefault();
     const mobile = form.mobile.replace(/\s|\(|\)|-/g, "");
@@ -3663,6 +3619,8 @@ function NewOfficeModal({
         manager_name: owner ? `${owner.first_name} ${owner.last_name}` : null,
         image_url: imageUrl || null,
         status: "active",
+        latitude: form.latitude ? Number(form.latitude) : null,
+        longitude: form.longitude ? Number(form.longitude) : null,
       };
     const response = await fetch("/api/auth.php?action=save-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...payload, id: office?.id || null }) });
     const result = await response.json().catch(() => ({}));
@@ -3763,7 +3721,7 @@ function NewOfficeModal({
                     className="rc-office-input disabled:opacity-50"
                   >
                     <option value="">İlçe seçin</option>
-                    {(districts[form.city] || ["Merkez"]).map((district) => (
+                    {getTurkeyDistricts(form.city).map((district) => (
                       <option key={district}>{district}</option>
                     ))}
                   </select>
@@ -3816,6 +3774,10 @@ function NewOfficeModal({
                     placeholder="Mahalle, cadde, sokak, bina no, daire…"
                     className="rc-office-input min-h-24 resize-y"
                   />
+                </Field>
+                <Field label="Konum bilgisi" wide>
+                  <div className="grid gap-3 sm:grid-cols-2"><input value={form.latitude} onChange={(e) => set("latitude", e.target.value)} placeholder="Enlem" className="rc-office-input"/><input value={form.longitude} onChange={(e) => set("longitude", e.target.value)} placeholder="Boylam" className="rc-office-input"/></div>
+                  <button type="button" onClick={useCurrentLocation} className="mt-2 rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold text-[#cd011e]">Mevcut konumumu kullan</button>
                 </Field>
               </div>
             </section>
