@@ -4,7 +4,7 @@ import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 
 type Profile = { id: string; first_name: string; last_name: string; role: string; avatar_url?: string | null };
-type Listing = { id: string; owner_id: string; title: string; category: string; property_type: string; transaction_type: string; price: number; currency: string; city: string; district: string; neighborhood?: string | null; rooms?: string | null; area?: number | null; description?: string | null; images?: string[] | null; approval_status?: string | null; is_featured?: boolean | null; created_at: string; updated_at?: string | null; deleted_at?: string | null; details?: Record<string, unknown> | null };
+type Listing = { id: string; listing_number?: string | null; owner_id: string; title: string; category: string; property_type: string; transaction_type: string; price: number; currency: string; city: string; district: string; neighborhood?: string | null; rooms?: string | null; area?: number | null; description?: string | null; images?: string[] | null; approval_status?: string | null; is_featured?: boolean | null; created_at: string; updated_at?: string | null; deleted_at?: string | null; details?: Record<string, unknown> | null };
 type Tab = "all" | "pending" | "rejected" | "archived" | "published";
 type Props = { profiles: Profile[]; alert: (text: string) => void; openAdd: () => void; initialTab?: Tab };
 
@@ -41,12 +41,18 @@ export default function ListingManagementPage({ profiles, alert, openAdd, initia
 
   const load = async () => {
     setLoading(true);
-    const { data, error } = await supabase.from("listings").select("id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,images,approval_status,is_featured,created_at,updated_at,deleted_at,details").order("created_at", { ascending: false });
-    if (error) alert(`İlanlar yüklenemedi: ${error.message}`); else setItems((data || []) as Listing[]);
+    try {
+      const response = await fetch("/api/auth.php?action=listings", { credentials: "include" });
+      const raw = await response.text();
+      let payload: any = {};
+      try { payload = raw ? JSON.parse(raw) : {}; } catch { throw new Error("Sunucu geçerli bir JSON yanıtı vermedi."); }
+      if (!response.ok || payload.error) throw new Error(payload.error || "İlanlar alınamadı.");
+      setItems((payload.listings || []).map((item: Listing) => ({ ...item, images: Array.isArray(item.images) ? item.images : [] })));
+    } catch (error: any) { alert(`İlanlar yüklenemedi: ${error.message || "Bağlantı kurulamadı."}`); }
     setLoading(false);
   };
   useEffect(() => { setTab(initialTab); }, [initialTab]);
-  useEffect(() => { void load(); void supabase.auth.getUser().then(async ({ data }) => { if (!data.user) return; const role = await supabase.from("profiles").select("role").eq("id", data.user.id).maybeSingle(); setViewer({ id: data.user.id, role: role.data?.role || "advisor" }); }); }, []);
+  useEffect(() => { void load(); void fetch("/api/auth.php?action=me", { credentials: "include" }).then((response) => response.json()).then((payload) => { if (payload.user) setViewer({ id: payload.user.id, role: payload.user.role || "advisor" }); }).catch(() => undefined); }, []);
 
   const canModerate = viewer.role === "admin" || viewer.role === "manager";
   const canDelete = viewer.role === "admin";
