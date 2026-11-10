@@ -3015,24 +3015,29 @@ function NewUserPage({
     setTimeout(done, 1600);
   };
   return (
-    <div className="min-h-screen bg-[#f7f9fc] p-5 text-slate-900 lg:p-9">
+    <div className="min-h-screen bg-[#f7f9fc] text-slate-900">
+      <header className="flex h-16 items-center justify-between border-b border-slate-100 bg-white px-5 lg:px-8">
+        <span className="text-xs text-slate-400">Kullanıcılar / Yeni Kullanıcı Ekle</span>
+        <div className="flex items-center gap-3"><Bell size={18} className="text-slate-600"/><span className="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-xs text-slate-500">A</span><span className="hidden text-xs sm:block">Admin<br/><i className="font-normal text-slate-400">Süper Yönetici</i></span><ChevronRight size={15} className="rotate-90 text-slate-500"/></div>
+      </header>
+      <div className="p-5 lg:p-8">
       <div className="mx-auto max-w-6xl">
-        <button onClick={cancel} className="hidden">
-          ← Kullanıcılara dön
+        <button onClick={cancel} className="mb-5 inline-flex items-center gap-2 text-[12px] text-slate-500 hover:text-[#cd011e]">
+          <ChevronRight size={14} className="rotate-180"/> Kullanıcılara dön
         </button>
-        <h1 className="text-3xl font-black tracking-tight">
+        <h1 className="text-2xl font-medium tracking-tight">
           Yeni Kullanıcı Ekle
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-1 text-[12px] text-slate-500">
           Kullanıcı hesabı ve yetki bilgilerini tanımlayın.
         </p>
         <form
           onSubmit={submit}
-          className="mt-7 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:p-7"
+          className="mt-6 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm lg:p-7"
         >
           <div className="grid gap-8 lg:grid-cols-[330px_1fr]">
             <section className="border-b border-slate-100 pb-7 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
-              <h2 className="text-base font-black">Profil Fotoğrafı</h2>
+              <h2 className="text-[16px] font-medium">Profil Fotoğrafı</h2>
               <p className="mt-1 text-xs text-slate-400">
                 JPG veya PNG, en fazla 5 MB.
               </p>
@@ -3060,14 +3065,14 @@ function NewUserPage({
                     ◉
                   </span>
                 )}
-                <b className="mt-4 text-sm">Profil resmi yükle</b>
+                <span className="mt-4 text-sm font-medium">Profil resmi yükle</span>
                 <span className="mt-1 text-xs text-slate-400">
                   Sürükle bırak veya dosya seç
                 </span>
               </label>
             </section>
             <section>
-              <h2 className="text-base font-black">Temel Bilgiler</h2>
+              <h2 className="text-[16px] font-medium">Temel Bilgiler</h2>
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 {[
                   ["firstName", "Ad *", "Adınızı girin"],
@@ -3076,7 +3081,7 @@ function NewUserPage({
                   ["email", "E-Posta *", "ornek@realtycenter.com"],
                   ["phone", "Telefon", "(554) 322 22 22"],
                 ].map(([key, label, placeholder]) => (
-                  <label key={key} className="text-xs font-bold text-slate-700">
+                  <label key={key} className="text-xs font-normal text-slate-700">
                     {label}
                     <input
                       required={key !== "phone"}
@@ -3116,9 +3121,9 @@ function NewUserPage({
                 </label>
               </div>
               <div className="mt-7 border-t border-slate-100 pt-6">
-                <h2 className="text-base font-black">Yetki ve Hesap</h2>
+                <h2 className="text-[16px] font-medium">Yetki ve Hesap</h2>
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <label className="text-xs font-bold">
+                  <label className="text-xs font-normal">
                     Rol *
                     <select
                       value={form.role}
@@ -3130,7 +3135,7 @@ function NewUserPage({
                       <option value="admin">Admin</option>
                     </select>
                   </label>
-                  <label className="text-xs font-bold">
+                  <label className="text-xs font-normal">
                     Hesap Durumu
                     <select
                       value={form.status}
@@ -3141,7 +3146,7 @@ function NewUserPage({
                       <option value="inactive">Pasif</option>
                     </select>
                   </label>
-                  <label className="text-xs font-bold">
+                  <label className="text-xs font-normal">
                     Şifre *
                     <input
                       required
@@ -3153,7 +3158,7 @@ function NewUserPage({
                       className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
                     />
                   </label>
-                  <label className="text-xs font-bold">
+                  <label className="text-xs font-normal">
                     Şifre Tekrar *
                     <input
                       required
@@ -3166,7 +3171,7 @@ function NewUserPage({
                     />
                   </label>
                 </div>
-                <label className="mt-5 flex items-center gap-2 text-xs font-bold">
+                <label className="mt-5 flex items-center gap-2 text-xs font-normal">
                   <input
                     checked={form.force}
                     onChange={(e) => update("force", e.target.checked)}
@@ -3186,13 +3191,13 @@ function NewUserPage({
             <button
               type="button"
               onClick={cancel}
-              className="rounded-xl border border-slate-200 px-5 py-3 text-xs font-black"
+              className="rounded-xl border border-slate-200 px-5 py-3 text-xs font-normal"
             >
               İptal
             </button>
             <button
               disabled={busy}
-              className="rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-black text-white disabled:opacity-60"
+              className="rounded-xl bg-[#cd011e] px-6 py-3 text-xs font-medium text-white disabled:opacity-60"
             >
               {busy ? "Kullanıcı oluşturuluyor…" : "Kullanıcı Oluştur"}
             </button>
@@ -3226,6 +3231,7 @@ function NewUserPage({
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }
