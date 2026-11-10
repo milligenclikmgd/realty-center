@@ -1694,7 +1694,7 @@ export default function AdminControlCenter() {
   };
   const load = async () => {
     const [usersResponse, o, m, om, s] = await Promise.all([
-      fetch("/api/auth.php?action=users", { credentials: "include" }),
+      fetch(`/api/auth.php?action=users&_=${Date.now()}`, { credentials: "include", cache: "no-store" }),
       supabase
         .from("offices")
         .select(
@@ -1714,6 +1714,9 @@ export default function AdminControlCenter() {
         .order("position"),
     ]);
     const usersPayload = await usersResponse.json();
+    if (!usersResponse.ok || !Array.isArray(usersPayload.users)) {
+      throw new Error(usersPayload.error || "cPanel kullanıcı listesi alınamadı.");
+    }
     const next = {
       profiles: (usersPayload.users || []) as Profile[],
       offices: (o.data || []) as Office[],
@@ -1739,7 +1742,9 @@ export default function AdminControlCenter() {
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) applyBootstrap(JSON.parse(cached));
     } catch {}
-    void load();
+    void load().catch((error) => {
+      setNotice(error instanceof Error ? error.message : "Kullanıcı verileri alınamadı.");
+    });
   }, []);
   useEffect(() => {
     if (!newUserOpen) return;
