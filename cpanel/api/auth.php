@@ -79,6 +79,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
     }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'listings') {
+    requireUser($pdo);
+    try {
+        $q = $pdo->query("SELECT l.id, l.listing_number, l.owner_user_id AS owner_id, l.title, l.category, l.property_type, l.transaction_type, l.price, l.currency, l.city, l.district, l.neighborhood, l.rooms, l.area, l.description, l.details, l.approval_status, l.is_featured, l.created_at, l.updated_at, l.deleted_at, GROUP_CONCAT(CASE WHEN m.media_type='image' THEN m.file_url END ORDER BY m.sort_order SEPARATOR '||') AS image_urls FROM listings l LEFT JOIN listing_media m ON m.listing_id=l.id WHERE l.deleted_at IS NULL GROUP BY l.id ORDER BY l.created_at DESC");
+        $rows = $q->fetchAll();
+        foreach ($rows as &$row) {
+            $row['images'] = $row['image_urls'] ? explode('||', $row['image_urls']) : [];
+            unset($row['image_urls']);
+            if (is_string($row['details']) && $row['details'] !== '') $row['details'] = json_decode($row['details'], true) ?: [];
+        }
+        respond(['listings'=>$rows]);
+    } catch (Throwable $e) { respond(['error'=>'İlan tablosu okunamadı: '.$e->getMessage()],500); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
     try { $pdo->exec('ALTER TABLE offices MODIFY image_url MEDIUMTEXT NULL'); } catch (Throwable $ignored) {}
     try { $pdo->exec('ALTER TABLE offices ADD COLUMN latitude DECIMAL(10,7) NULL, ADD COLUMN longitude DECIMAL(10,7) NULL'); } catch (Throwable $ignored) {}
