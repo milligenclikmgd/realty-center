@@ -83,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'office-members') { requ
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'delete-office') { requireUser($pdo); $id=(string)(body()['id']??''); if($id==='') respond(['error'=>'Ofis seçilmedi.'],422); $q=$pdo->prepare('UPDATE offices SET deleted_at=NOW() WHERE id=?'); $q->execute([$id]); respond(['ok'=>true]); }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-office') {
+    try {
     requireUser($pdo);
     $input = body();
     $id = trim((string)($input['id'] ?? ''));
@@ -93,6 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-office') {
     if ($id !== '') { $q=$pdo->prepare('UPDATE offices SET name=?,city=?,district=?,address=?,phone=?,email=?,manager_user_id=?,image_url=?,description=?,work_hours=?,latitude=?,longitude=? WHERE id=? AND deleted_at IS NULL'); $q->execute([...$values,$id]); }
     else { $id=bin2hex(random_bytes(16)); $q=$pdo->prepare('INSERT INTO offices (id,name,city,district,address,phone,email,manager_user_id,image_url,description,work_hours,latitude,longitude) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)'); $q->execute([$id,...$values]); }
     respond(['ok'=>true,'id'=>$id]);
+    } catch (Throwable $e) { respond(['error'=>'Ofis kaydedilemedi: '.$e->getMessage()],500); }
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'logs') {
