@@ -561,43 +561,67 @@ export default function ListingEntryPage({
       details: { ...current.details, [key]: value },
     }));
   const uploadFiles = async (fileList: FileList | null) => {
-    const files = Array.from(fileList || []).filter((file) => file.type.startsWith("image/") || file.type.startsWith("video/"));
+    const files = Array.from(fileList || []);
     if (!files.length) return;
+    if (uploading) return;
+    if (files.length > 16) {
+      alert("Bir seferde en fazla 16 fotoğraf veya video seçebilirsiniz.");
+      return;
+    }
+    const allowedTypes = new Set([
+      "image/jpeg", "image/png", "image/webp", "image/gif", "image/avif",
+      "video/mp4", "video/webm", "video/quicktime",
+    ]);
+    const invalid = files.find((file) => !allowedTypes.has(file.type));
+    if (invalid) {
+      alert("${invalid.name}: JPG, PNG, WEBP, GIF, AVIF, MP4, WEBM veya MOV dosyası seçin.");
+      return;
+    }
+    const oversized = files.find((file) => file.size > (file.type.startsWith("video/") ? 50 : 15) * 1024 * 1024);
+    if (oversized) {
+      alert("${oversized.name}: Fotoğraflar en fazla 15 MB, videolar en fazla 50 MB olabilir.");
+      return;
+    }
     setUploading(true);
     try {
       const additions: { url: string; type: string }[] = [];
-      for (const file of files.slice(0, 16)) {
-        setUploadProgress((current) => ({ ...current, [file.name]: 15 }));
-        const timer = window.setInterval(() => setUploadProgress((current) => ({ ...current, [file.name]: Math.min(85, (current[file.name] || 15) + 10) })), 220);
-        const path = `listings/${Date.now()}-${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g, "-")}`;
-        let mediaUrl = "";
-        // Prefer the cPanel media endpoint; retain Storage as a configured fallback.
-        try {
+      for (const file of files) {
+        setUploadProgress((current) => ({ ...current, [file.name]: 0 }));
+        const uploadedMedia = await new Promise<{ url: string; type: string }>((resolve, reject) => {
+          const request = new XMLHttpRequest();
           const body = new FormData();
           body.append("file", file);
-          body.append("directory", "listings");
-          const response = await fetch("/api/media.php", { method: "POST", body, credentials: "same-origin" });
-          const payload = await response.json();
-          if (!response.ok || !payload?.url) throw new Error(payload?.error || `HTTP ${response.status}`);
-          mediaUrl = payload.url;
-        } catch (cpanelError) {
-          const { data: authData } = await supabase.auth.getSession();
-          if (!authData.session) throw new Error("Medya API bağlantısı kurulamadı. cPanel medya servisini kontrol edin.");
-          const { error } = await supabase.storage.from("listing-media").upload(path, file, { upsert: false });
-          if (error) throw new Error(`cPanel: ${cpanelError instanceof Error ? cpanelError.message : "yanıt alınamadı"}; Depolama: ${error.message}`);
-          mediaUrl = supabase.storage.from("listing-media").getPublicUrl(path).data.publicUrl;
-        } finally {
-          window.clearInterval(timer);
-        }
-        setUploadProgress((current) => ({ ...current, [file.name]: 100 }));
-        additions.push({
-          url: mediaUrl,
-          type: file.type,
+          request.open("POST", "/api/media.php");
+          request.withCredentials = true;
+          request.timeout = 300000;
+          request.upload.onprogress = (event) => {
+            if (!event.lengthComputable) return;
+            const progress = Math.min(99, Math.round((event.loaded / event.total) * 100));
+            setUploadProgress((current) => ({ ...current, [file.name]: progress }));
+          };
+          request.onload = () => {
+            let payload: any = {};
+            try { payload = JSON.parse(request.responseText || "{}"); } catch { /* server may return an HTML/PHP error */ }
+            if (request.status < 200 || request.status >= 300 || !payload.url) {
+              const message = payload.error || (request.status === 413
+                ? "Dosya cPanel yükleme sınırını aşıyor. MultiPHP INI Editor değerlerini kontrol edin."
+                : `Sunucu yanıtı alınamadı (HTTP ${request.status || 0}). cPanel PHP API ve oturum bağlantısını kontrol edin.`);
+              reject(new Error(message));
+              return;
+            }
+            resolve({ url: payload.url, type: payload.type || file.type });
+          };
+          request.onerror = () => reject(new Error("cPanel medya servisine bağlanılamadı. İnternet ve /api/media.php adresini kontrol edin."));
+          request.ontimeout = () => reject(new Error("Yükleme zaman aşımına uğradı. Dosya boyutunu ve cPanel bağlantısını kontrol edin."));
+          request.send(body);
         });
+        setUploadProgress((current) => ({ ...current, [file.name]: 100 }));
+        additions.push(uploadedMedia);
       }
       setUploaded((current) => [...current, ...additions]);
       setSelectedFiles([]);
     } catch (error: any) {
+      setUploadProgress({});
       alert(`Dosyalar eklenemedi: ${error.message || "Tekrar deneyin."}`);
     } finally {
       setUploading(false);
@@ -1069,17 +1093,17 @@ export default function ListingEntryPage({
         </section>
         <section className="border-t border-slate-100 pt-7">
           <h3>Fotoğraf ve video</h3>
-          <p className="mt-1 text-xs font-normal text-slate-500">Fotoğraf veya video seçin; yükleme otomatik başlar.</p>
+          <p className="mt-1 text-xs font-normal text-slate-500">Tek tuşla fotoğraf ve video yükleyin. Fotoğraf en fazla 15 MB, video en fazla 50 MB olabilir.</p>
           <div className="mt-4 rounded-2xl border-2 border-dashed border-slate-200 p-5">
             <div className="flex flex-wrap items-center gap-2">
             <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
               MEDYA EKLE
               <input
                 type="file"
-                accept="image/*,video/mp4,video/webm,video/quicktime"
+                accept="image/jpeg,image/png,image/webp,image/gif,image/avif,video/mp4,video/webm,video/quicktime"
                 multiple
                 className="hidden"
-                onChange={(e) => void uploadFiles(e.target.files)}
+                disabled={uploading}\n                onChange={(e) => { void uploadFiles(e.target.files); e.currentTarget.value = ""; }}
               />
             </label>
             <span className="text-xs font-normal text-slate-500">Seçtiğiniz dosyalar otomatik yüklenir.</span>

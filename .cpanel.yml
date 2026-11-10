@@ -7,4 +7,4 @@ deployment:
     - /usr/local/bin/npm run build
     - /bin/cp -R dist/. "$DEPLOYPATH"
     - /bin/mkdir -p "$DEPLOYPATH/api"
-    - /bin/cp -R cpanel/api/. "$DEPLOYPATH/api"
+    - /bin/cp -R cpanel/api/. "$DEPLOYPATH/api"\n    - /bin/mkdir -p "$DEPLOYPATH/uploads/listings"\n    - /bin/cp -R cpanel/uploads/. "$DEPLOYPATH/uploads/"
