@@ -8,7 +8,14 @@ type Listing = { id: string; owner_id: string; title: string; category: string; 
 type Tab = "all" | "pending" | "rejected" | "archived" | "published";
 type Props = { profiles: Profile[]; alert: (text: string) => void; openAdd: () => void; initialTab?: Tab };
 
-const statusOf = (item: Listing) => item.deleted_at ? "archived" : item.approval_status === "Onay Bekliyor" ? "pending" : item.approval_status === "Reddedildi" ? "rejected" : "published";
+// Accept both the current Turkish values and legacy English values.
+const statusOf = (item: Listing) => {
+  if (item.deleted_at) return "archived";
+  const status = String(item.approval_status || "").trim().toLocaleLowerCase("tr-TR");
+  if (status === "onay bekliyor" || status === "pending") return "pending";
+  if (status === "reddedildi" || status === "rejected") return "rejected";
+  return "published";
+};
 const statusLabel: Record<Exclude<Tab, "all">, string> = { pending: "Onay Bekliyor", published: "Yayında", rejected: "Reddedildi", archived: "Arşivde" };
 const statusStyle: Record<Exclude<Tab, "all">, string> = { pending: "bg-amber-50 text-amber-700", published: "bg-emerald-50 text-emerald-700", rejected: "bg-rose-50 text-rose-700", archived: "bg-slate-100 text-slate-500" };
 const input = "h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-xs text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-[#cd011e] focus:ring-2 focus:ring-[#cd011e]/10";
