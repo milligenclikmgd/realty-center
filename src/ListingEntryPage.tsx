@@ -1103,7 +1103,8 @@ export default function ListingEntryPage({
                 accept="image/jpeg,image/png,image/webp,image/gif,image/avif,video/mp4,video/webm,video/quicktime"
                 multiple
                 className="hidden"
-                disabled={uploading}\n                onChange={(e) => { void uploadFiles(e.target.files); e.currentTarget.value = ""; }}
+                disabled={uploading}
+                onChange={(e) => { void uploadFiles(e.target.files); e.currentTarget.value = ""; }}
               />
             </label>
             <span className="text-xs font-normal text-slate-500">Seçtiğiniz dosyalar otomatik yüklenir.</span>
