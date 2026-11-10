@@ -11,27 +11,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
       - name: Install dependencies
         run: npm ci
-
       - name: Build site
         run: npm run build
-
       - name: Deploy dist to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: \$\{\{ secrets.FTP_SERVER \}\}
+          username: \$\{\{ secrets.FTP_USERNAME \}\}
+          password: \$\{\{ secrets.FTP_PASSWORD \}\}
           protocol: ftp
           port: 21
           local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          server-dir: \$\{\{ secrets.FTP_SERVER_DIR \}\}
+          dangerous-clean-slate: false
+      - name: Deploy cPanel PHP API
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: \$\{\{ secrets.FTP_SERVER \}\}
+          username: \$\{\{ secrets.FTP_USERNAME \}\}
+          password: \$\{\{ secrets.FTP_PASSWORD \}\}
+          protocol: ftp
+          port: 21
+          local-dir: ./cpanel/api/
+          server-dir: /api/
           dangerous-clean-slate: false
