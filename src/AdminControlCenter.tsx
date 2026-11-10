@@ -2640,14 +2640,14 @@ export default function AdminControlCenter() {
     <div className="min-h-screen bg-[#f6f7f9] text-slate-900">
       <style>{`.rc-primary,.rc-secondary{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:.75rem;padding:.7rem .9rem;font-size:.75rem;font-weight:800}.rc-primary{background:#cd011e;color:white}.rc-secondary{border:1px solid #e2e8f0;background:white;color:#475569}.status-good,.status-warn{display:inline-block;margin-top:.3rem;border-radius:999px;padding:.15rem .45rem;font-size:10px;font-weight:800}.status-good{background:#d1fae5;color:#047857}.status-warn{background:#fef3c7;color:#a16207}`}</style>
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-72 border-r border-slate-200 bg-white transition-transform lg:translate-x-0 ${mobile ? "translate-x-0" : "-translate-x-full"}`}
+        className={`fixed inset-y-0 left-0 z-40 w-72 border-r border-slate-800 bg-[#0b1d3a] text-white transition-transform lg:translate-x-0 ${mobile ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="flex h-[76px] items-center justify-between border-b border-slate-100 px-6">
+        <div className="flex h-[76px] items-center justify-between border-b border-white/10 px-6">
           <div>
-            <p className="text-xs font-black tracking-[.2em] text-[#cd011e]">
+            <p className="text-xs font-black tracking-[.2em] text-red-400">
               REALTY CENTER
             </p>
-            <p className="mt-1 text-lg font-black">Admin Paneli</p>
+            <p className="mt-1 text-lg font-black text-white">Admin Paneli</p>
           </div>
           <button onClick={() => setMobile(false)} className="lg:hidden">
             <X />
@@ -2669,7 +2669,7 @@ export default function AdminControlCenter() {
                         if (i.id === "listings") setListingMode("all");
                         setMobile(false);
                       }}
-                      className={`mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white" : "text-slate-600 hover:bg-slate-50"}`}
+                      className={`mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-bold ${page === i.id ? "bg-[#cd011e] text-white shadow-lg shadow-red-950/30" : "text-slate-300 hover:bg-white/10 hover:text-white"}`}
                     >
                       <Icon size={18} />
                       {i.label}
@@ -2677,7 +2677,7 @@ export default function AdminControlCenter() {
                     {i.id === "listings" && page === "listings" && (
                       <div className="mb-2 ml-5 border-l border-slate-200 pl-3">
                         {([ ["all", "Tüm İlanlar"], ["approval", "Onay Bekleyenler"], ["rejected", "Reddedilenler"], ["archived", "Arşivlenenler"] ] as const).map(([mode, label]) => (
-                          <button key={mode} onClick={() => setListingMode(mode)} className={`relative flex w-full items-center rounded-lg px-3 py-2 text-left text-xs font-semibold ${listingMode === mode ? "bg-rose-50 text-[#cd011e]" : "text-slate-500 hover:bg-slate-50"}`}>
+                        <button key={mode} onClick={() => setListingMode(mode)} className={`relative flex w-full items-center rounded-lg px-3 py-2 text-left text-xs font-semibold ${listingMode === mode ? "bg-rose-100 text-[#cd011e]" : "text-slate-400 hover:bg-white/10 hover:text-white"}`}>
                             {label}{mode === "approval" && <span className="ml-auto rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] text-amber-700">•</span>}
                           </button>
                         ))}
