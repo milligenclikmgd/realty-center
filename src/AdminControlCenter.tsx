@@ -1698,20 +1698,26 @@ export default function AdminControlCenter() {
     if (data.stars) setStars(data.stars);
   };
   const load = async () => {
+    const readJson = async (response: Response) => {
+      const raw = await response.text();
+      let payload: any = {};
+      try { payload = raw ? JSON.parse(raw) : {}; } catch { payload = { error: "Sunucu geçerli bir JSON yanıtı vermedi." }; }
+      return { response, payload };
+    };
     const [usersResponse, o, m, om, s] = await Promise.all([
       fetch(`/api/auth.php?action=users&_=${Date.now()}`, { credentials: "include", cache: "no-store" }),
-      fetch(`/api/auth.php?action=offices&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(async (r) => { const payload = await r.json(); if (!r.ok) throw new Error(payload.error || "Ofisler alınamadı."); return { data: payload.offices || [] }; }),
+      fetch(`/api/auth.php?action=offices&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(readJson).then(({ response, payload }) => { if (!response.ok) throw new Error(payload.error || "Ofisler alınamadı."); return { data: payload.offices || [] }; }),
       supabase
         .from("advisor_metrics")
         .select("advisor_id,messages_answered,star_rating"),
-      fetch(`/api/auth.php?action=office-members&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(async (r) => { const payload = await r.json(); if (!r.ok) throw new Error(payload.error || "Ofis ilişkileri alınamadı."); return { data: payload.members || [] }; }),
+      fetch(`/api/auth.php?action=office-members&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(readJson).then(({ response, payload }) => { if (!response.ok) throw new Error(payload.error || "Ofis ilişkileri alınamadı."); return { data: payload.members || [] }; }),
       supabase
         .from("homepage_stars")
         .select("kind,entity_id,position")
         .order("position"),
     ]);
-    const usersPayload = await usersResponse.json();
-    if (!usersResponse.ok || !Array.isArray(usersPayload.users)) {
+    const { response: parsedUsersResponse, payload: usersPayload } = await readJson(usersResponse);
+    if (!parsedUsersResponse.ok || !Array.isArray(usersPayload.users)) {
       throw new Error(usersPayload.error || "cPanel kullanıcı listesi alınamadı.");
     }
     const next = {
