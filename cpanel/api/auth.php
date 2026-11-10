@@ -73,6 +73,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
     respond(['users'=>$q->fetchAll()]);
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'logs') {
+    requireUser($pdo);
+    $entity = trim((string)($_GET['entity_id'] ?? ''));
+    $q = $pdo->prepare('SELECT id,action,entity_type,entity_id,details,created_at FROM audit_logs WHERE (? = "" OR entity_id=?) ORDER BY created_at DESC LIMIT 200');
+    $q->execute([$entity,$entity]);
+    respond(['logs'=>$q->fetchAll()]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'assign-office') {
+    requireUser($pdo);
+    $input = body();
+    $office = (string)($input['office_id'] ?? '');
+    $user = (string)($input['user_id'] ?? '');
+    if ($office === '' || $user === '') respond(['error'=>'Ofis ve danışman seçimi zorunludur.'],422);
+    $q = $pdo->prepare('INSERT INTO office_advisors (office_id,user_id,is_manager) VALUES (?,?,?) ON DUPLICATE KEY UPDATE is_manager=VALUES(is_manager)');
+    $q->execute([$office,$user,!empty($input['is_manager']) ? 1 : 0]);
+    respond(['ok'=>true]);
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'logout') { $_SESSION=[]; session_destroy(); respond(['ok'=>true]); }
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'me') respond(['user'=>currentUser($pdo)]);
 respond(['error'=>'Geçersiz istek.'],404);
