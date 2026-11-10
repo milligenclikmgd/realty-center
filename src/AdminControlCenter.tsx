@@ -2774,7 +2774,9 @@ function UserEditPage({
     e.preventDefault();
     setBusy(true);
     const response = await fetch("/api/auth.php?action=update-user", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: profile.id, firstName: f.first_name, lastName: f.last_name, username: f.username.trim().toLowerCase().replace(/\\s/g, ""), email: f.email.trim().toLowerCase(), phone: f.phone, city: f.city, district: f.district, role: f.role, status: f.status, avatarUrl: f.avatar_url || null, password: f.new_password, forcePasswordChange: f.force_password_change }) });
-    const result = await response.json().catch(() => ({}));
+    const raw = await response.text();
+    let result: any = {};
+    try { result = raw ? JSON.parse(raw) : {}; } catch { result = { error: "Sunucu geçerli bir yanıt vermedi." }; }
     setBusy(false);
     if (!response.ok || result.error) return window.alert(result.error || "Kullanıcı güncellenemedi.");
     await done();
@@ -3622,8 +3624,16 @@ function NewOfficeModal({
         latitude: form.latitude ? Number(form.latitude) : null,
         longitude: form.longitude ? Number(form.longitude) : null,
       };
-    const response = await fetch("/api/auth.php?action=save-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...payload, id: office?.id || null }) });
-    const result = await response.json().catch(() => ({}));
+    let response: Response;
+    try {
+      response = await fetch("/api/auth.php?action=save-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...payload, id: office?.id || null }) });
+    } catch {
+      setBusy(false);
+      return setNotice("Sunucuya ulaşılamadı. Lütfen bağlantınızı kontrol edip tekrar deneyin.");
+    }
+    const raw = await response.text();
+    let result: { error?: string; ok?: boolean } = {};
+    try { result = raw ? JSON.parse(raw) : {}; } catch { result = { error: "Sunucu geçerli bir yanıt vermedi." }; }
     setBusy(false);
     if (!response.ok || result.error) return setNotice(result.error || "Ofis kaydedilemedi.");
     await done();
@@ -3877,6 +3887,7 @@ function NewOfficeModal({
           </button>
         </div>
       </form>
+      {busy && <div className="fixed inset-0 z-[160] flex items-center justify-center bg-slate-950/45 p-4"><div className="w-full max-w-sm rounded-2xl bg-white p-8 text-center shadow-2xl"><div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-red-100 border-t-[#cd011e]"/><p className="mt-5 text-base font-medium text-slate-800">{office ? "Ofis güncelleniyor" : "Ofis oluşturuluyor"}<span className="inline-block w-7 text-left"><span className="animate-pulse">…</span></span></p><p className="mt-2 text-xs text-slate-400">Bilgiler güvenli şekilde kaydediliyor.</p><div className="mx-auto mt-5 h-1.5 w-44 overflow-hidden rounded-full bg-red-100"><div className="h-full w-1/2 animate-[pulse_1.2s_ease-in-out_infinite] rounded-full bg-[#cd011e]"/></div></div></div>}
     </div>
   );
 }
