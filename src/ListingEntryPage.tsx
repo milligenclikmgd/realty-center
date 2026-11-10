@@ -701,7 +701,7 @@ export default function ListingEntryPage({
           <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
             İLAN YÖNETİMİ / YENİ İLAN
           </p>
-          <h2 className="mt-1 text-xl">Detaylı ilan girişi</h2>
+          <h2 className="mt-1 text-2xl">Yeni İlan Ekle</h2>
           <p className="mt-1 text-sm text-slate-500">
             "Bu form ile eklenen ilanlar doğrudan yayınlanır."
           </p>
@@ -722,11 +722,12 @@ export default function ListingEntryPage({
           </button>
         </div>
       </header>
-      <div className="grid grid-cols-4 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500">
-        <span className="text-[#cd011e]">01 Temel</span>
-        <span>02 Konum</span>
-        <span>03 Özellikler</span>
-        <span>04 Yayınla</span>
+      <div className="grid grid-cols-5 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500">
+        <span className="text-[#cd011e]">1<br/><small>Temel Bilgiler</small></span>
+        <span>2<br/><small>Konum</small></span>
+        <span>3<br/><small>Özellikler</small></span>
+        <span>4<br/><small>Medya</small></span>
+        <span>5<br/><small>Yayınla</small></span>
       </div>
       {validationMessage && (
         <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
