@@ -62,6 +62,8 @@ type Profile = {
   created_at: string;
   avatar_url?: string | null;
   expertise_areas?: string[] | null;
+  city?: string | null;
+  district?: string | null;
 };
 type Office = {
   id: string;
@@ -2767,6 +2769,8 @@ function UserEditPage({
     username: profile.username,
     email: profile.email,
     phone: profile.phone || "",
+    city: profile.city || "",
+    district: profile.district || "",
     role: profile.role,
     status: profile.status,
     avatar_url: profile.avatar_url || "",
@@ -2783,7 +2787,7 @@ function UserEditPage({
   const save = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
-    const response = await fetch("/api/auth.php?action=update-user", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: profile.id, firstName: f.first_name, lastName: f.last_name, username: f.username.trim().toLowerCase().replace(/\\s/g, ""), email: f.email.trim().toLowerCase(), phone: f.phone, role: f.role, status: f.status, avatarUrl: f.avatar_url || null, password: f.new_password, forcePasswordChange: f.force_password_change }) });
+    const response = await fetch("/api/auth.php?action=update-user", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: profile.id, firstName: f.first_name, lastName: f.last_name, username: f.username.trim().toLowerCase().replace(/\\s/g, ""), email: f.email.trim().toLowerCase(), phone: f.phone, city: f.city, district: f.district, role: f.role, status: f.status, avatarUrl: f.avatar_url || null, password: f.new_password, forcePasswordChange: f.force_password_change }) });
     const result = await response.json().catch(() => ({}));
     setBusy(false);
     if (!response.ok || result.error) return window.alert(result.error || "Kullanıcı güncellenemedi.");
@@ -2854,6 +2858,8 @@ function UserEditPage({
                     />
                   </label>
                 ))}
+                <label className="text-xs font-normal text-slate-700">İl<select value={f.city} onChange={(e) => { set("city", e.target.value); set("district", ""); }} className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"><option value="">İl seçin</option>{TURKEY_PROVINCES.map((x) => <option key={x}>{x}</option>)}</select></label>
+                <label className="text-xs font-normal text-slate-700">İlçe<select value={f.district} onChange={(e) => set("district", e.target.value)} disabled={!f.city} className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm disabled:opacity-50"><option value="">İlçe seçin</option>{getTurkeyDistricts(f.city).map((x) => <option key={x}>{x}</option>)}</select></label>
               </div>
               <div className="mt-7 border-t border-slate-100 pt-6">
                 <h2 className="text-base font-black">Yetki ve Hesap</h2>
@@ -2995,7 +3001,9 @@ function NewUserPage({
           password: form.password,
           status: form.status,
           forcePasswordChange: form.force,
-          avatarUrl: avatar || null,
+            avatarUrl: avatar || null,
+            city: form.city,
+            district: form.district,
         }),
       });
       data = await response.json();
