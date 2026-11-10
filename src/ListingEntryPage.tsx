@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Building2, Home, LandPlot, Search, Store, UserRound, X } from "lucide-react";
 import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 
@@ -441,6 +442,8 @@ export default function ListingEntryPage({
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [activeStep, setActiveStep] = useState(1);
+  const [ownerPickerOpen, setOwnerPickerOpen] = useState(false);
+  const [ownerSearch, setOwnerSearch] = useState("");
   const [validationMessage, setValidationMessage] = useState("");
   const [preview, setPreview] = useState(false);
   const [publishMode, setPublishMode] = useState("publish");
@@ -481,6 +484,8 @@ export default function ListingEntryPage({
       (row) => row.city === form.city && row.district === form.district,
     )?.neighborhoods || [];
   const directPublish = viewerRole === "admin" || viewerRole === "manager";
+  const selectedOwner = advisors.find((advisor) => advisor.id === form.advisor);
+  const ownerResults = advisors.filter((advisor) => `${advisor.first_name} ${advisor.last_name}`.toLocaleLowerCase("tr-TR").includes(ownerSearch.toLocaleLowerCase("tr-TR")));
 
   useEffect(() => {
     void supabase.auth.getUser().then(async ({ data: auth }) => {
@@ -766,26 +771,7 @@ export default function ListingEntryPage({
             ) : (
               <label className="text-xs">
                 <span>İlan sahibi *</span>
-                <select
-                  required
-                  className={inputClass}
-                  value={form.advisor}
-                  onChange={(e) =>
-                    setForm({ ...form, advisor: e.target.value })
-                  }
-                >
-                  <option value="">Seçiniz</option>
-                  {viewerRole === "admin" && (
-                    <option value={viewerId}>
-                      ⌂ REALTY CENTER GENEL MERKEZ
-                    </option>
-                  )}
-                  {advisors.map((advisor) => (
-                    <option key={advisor.id} value={advisor.id}>
-                      {advisor.first_name} {advisor.last_name}
-                    </option>
-                  ))}
-                </select>
+                <button type="button" onClick={() => setOwnerPickerOpen(true)} className={`${inputClass} flex items-center justify-between text-left`}><span className="flex items-center gap-2 text-slate-700">{selectedOwner?.avatar_url ? <img src={selectedOwner.avatar_url} className="h-7 w-7 rounded-full object-cover" /> : <UserRound size={18} className="text-slate-400" />}{selectedOwner ? `${selectedOwner.first_name} ${selectedOwner.last_name}` : "İlan sahibi seçiniz"}</span><Search size={16} className="text-slate-400" /></button>
               </label>
             )}
             <label className="text-xs">
@@ -818,24 +804,7 @@ export default function ListingEntryPage({
             </label>
             <label className="text-xs">
               <span>Ana kategori *</span>
-              <select
-                className={inputClass}
-                value={form.category}
-                onChange={(e) => {
-                  const category = e.target.value;
-                  setForm({
-                    ...form,
-                    category,
-                    property_type: PROPERTY_TYPES[category][0],
-                    details: {},
-                  });
-                }}
-              >
-                <option>Konut</option>
-                <option>Arsa</option>
-                <option>İşyeri</option>
-                <option>Turistik Tesis</option>
-              </select>
+              <div className="mt-1.5 grid grid-cols-4 gap-2">{([["Konut", Home], ["Arsa", LandPlot], ["İşyeri", Store], ["Turistik Tesis", Building2]] as const).map(([category, Icon]) => <button key={category} type="button" onClick={() => setForm({ ...form, category, property_type: PROPERTY_TYPES[category][0], details: {} })} className={`flex flex-col items-center gap-1 rounded-xl border px-2 py-2 text-[10px] ${form.category === category ? "border-[#cd011e] bg-[#cd011e] text-white" : "border-slate-200 bg-white text-slate-600"}`}><Icon size={17} />{category}</button>)}</div>
             </label>
             <label className="text-xs">
               <span>İlan türü *</span>
@@ -855,80 +824,17 @@ export default function ListingEntryPage({
                 ))}
               </select>
             </label>
+            <label className="text-xs"><span>{form.transaction_type.includes("Kiral") ? "Kira fiyatı *" : "Satış fiyatı *"}</span><div className="flex"><select className="mt-1.5 w-20 rounded-l-xl border-0 bg-[#cd011e] px-2 text-center text-sm font-semibold text-white outline-none" value={form.currency} onChange={(e) => setForm({ ...form, currency: e.target.value })}>{["₺", "USD", "EUR"].map((option) => <option key={option}>{option}</option>)}</select><input required inputMode="numeric" className={`${inputClass} mt-1.5 rounded-l-none`} value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder={form.transaction_type.includes("Kiral") ? "Örn. 35.000" : "Örn. 5.750.000"} /></div></label>
+            <label className="text-xs"><span>Aidat</span><input inputMode="numeric" className={inputClass} value={form.dues} onChange={(e) => setForm({ ...form, dues: e.target.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".") })} placeholder="Aylık aidat" /></label>
           </div>
         </section>
+        <section className="border-t border-slate-100 pt-7"><h3>İlanı ekleyen</h3><div className="mt-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">{selectedOwner?.avatar_url ? <img src={selectedOwner.avatar_url} className="h-12 w-12 rounded-full object-cover" /> : <span className="grid h-12 w-12 place-items-center rounded-full bg-white text-slate-400"><UserRound /></span>}<div><p className="text-sm font-semibold text-slate-800">{selectedOwner ? `${selectedOwner.first_name} ${selectedOwner.last_name}` : viewerName || "İlan sahibi seçilmedi"}</p><p className="text-xs text-slate-500">İlanı kim eklediyse bu kişi gösterilir.</p></div></div></section>
         <section className="border-t border-slate-100 pt-7">
-          <h3>Danışman ve ofis atama</h3>
-          <p className="mt-1 text-xs text-slate-500">
-            İlanın iletişim ve ekip bilgilerini tanımlayın.
-          </p>
-          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            <label className="text-xs">
-              <span>İkinci danışman</span>
-              <select
-                className={inputClass}
-                value={form.secondAdvisor}
-                onChange={(e) =>
-                  setForm({ ...form, secondAdvisor: e.target.value })
-                }
-              >
-                <option value="">Seçiniz</option>
-                {advisors
-                  .filter((a) => a.id !== form.advisor)
-                  .map((a) => (
-                    <option key={a.id} value={a.id}>
-                      {a.first_name} {a.last_name}
-                    </option>
-                  ))}
-              </select>
-            </label>
-            <label className="text-xs">
-              <span>Ofis</span>
-              <input
-                className={inputClass}
-                value={form.officeId}
-                onChange={(e) => setForm({ ...form, officeId: e.target.value })}
-                placeholder="Ofis adı veya ID"
-              />
-            </label>
-          </div>
-        </section>
-        <section className="border-t border-slate-100 pt-7">
-          <h3>Fiyat ve seçilebilir konum</h3>
+          <h3>Konum Bilgileri</h3>
           <p className="mt-1 text-xs font-normal text-slate-500">
             İl, ilçe ve mahalle sırasıyla seçilir.
           </p>
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            <label className="text-xs">
-              <span>Fiyat *</span>
-              <input
-                required
-                inputMode="numeric"
-                className={inputClass}
-                value={form.price}
-                onChange={(e) =>
-                  setForm({
-                    ...form,
-                    price: e.target.value
-                      .replace(/\D/g, "")
-                      .replace(/\B(?=(\d{3})+(?!\d))/g, "."),
-                  })
-                }
-                placeholder="0"
-              />
-            </label>
-            <label className="text-xs">
-              <span>Para birimi</span>
-              <select
-                className={inputClass}
-                value={form.currency}
-                onChange={(e) => setForm({ ...form, currency: e.target.value })}
-              >
-                {["₺", "USD", "EUR", "GBP"].map((option) => (
-                  <option key={option}>{option}</option>
-                ))}
-              </select>
-            </label>
             <label className="text-xs">
               <span>İl *</span>
               <select
@@ -1149,16 +1055,7 @@ export default function ListingEntryPage({
               İleri al
             </button>
           </div>
-          <div
-            ref={editorRef}
-            contentEditable
-            suppressContentEditableWarning
-            onInput={(e) =>
-              setForm({ ...form, description: e.currentTarget.innerHTML })
-            }
-            className={inputClass + " min-h-48 leading-7"}
-            data-placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın."
-          />
+          <textarea value={form.description.replace(/<[^>]+>/g, "")} onChange={(e) => setForm({ ...form, description: e.target.value })} className={inputClass + " min-h-48 resize-y leading-7"} placeholder="İlanın öne çıkan yönlerini, ulaşımını ve detaylarını yazın." />
           <label className="mt-4 block text-xs">
             <span>Danışman notları (sadece panel kullanıcıları görür)</span>
             <textarea
@@ -1176,16 +1073,21 @@ export default function ListingEntryPage({
           <p className="mt-1 text-xs font-normal text-slate-500">
             Önce dosyaları seçin, ardından ayrı yükleme işlemiyle ekleyin.
           </p>
-          <div className="mt-4 flex flex-col gap-3 rounded-2xl border-2 border-dashed border-slate-200 p-5 sm:flex-row sm:items-center sm:justify-between">
-            <label className="cursor-pointer text-sm">
-              <span>Dosyaları seç</span>
+          <div className="mt-4 rounded-2xl border-2 border-dashed border-slate-200 p-5">
+            <div className="flex flex-wrap items-center gap-2">
+            <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
+              Fotoğraf ekle
               <input
                 type="file"
-                accept="image/*,video/mp4,video/webm"
+                accept="image/*"
                 multiple
                 className="hidden"
                 onChange={(e) => chooseFiles(e.target.files)}
               />
+            </label>
+            <label className="cursor-pointer rounded-xl bg-[#cd011e] px-4 py-3 text-xs font-semibold text-white">
+              Video ekle
+              <input type="file" accept="video/mp4,video/webm" className="hidden" onChange={(e) => chooseFiles(e.target.files)} />
             </label>
             <span className="text-xs font-normal text-slate-500">
               {selectedFiles.length
@@ -1200,6 +1102,7 @@ export default function ListingEntryPage({
             >
               {uploading ? "YÜKLENİYOR…" : "FOTOĞRAFLARI EKLE"}
             </button>
+            </div>
           </div>
           {uploaded.length > 0 && (
             <>
@@ -1237,22 +1140,6 @@ export default function ListingEntryPage({
               <label>
                 <input
                   type="checkbox"
-                  checked={featured}
-                  onChange={(e) => setFeatured(e.target.checked)}
-                />{" "}
-                Ana sayfa vitrininde göster
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={newLabel}
-                  onChange={(e) => setNewLabel(e.target.checked)}
-                />{" "}
-                Yeni ilan etiketi
-              </label>
-              <label>
-                <input
-                  type="checkbox"
                   checked={dealLabel}
                   onChange={(e) => setDealLabel(e.target.checked)}
                 />{" "}
@@ -1267,6 +1154,7 @@ export default function ListingEntryPage({
           </p>
           <div className="flex gap-2"><button type="button" disabled={activeStep === 1} onClick={() => setActiveStep((step) => Math.max(1, step - 1))} className="rc-secondary disabled:opacity-40">Geri</button>{activeStep < 5 ? <button type="button" onClick={() => setActiveStep((step) => Math.min(5, step + 1))} className="rc-primary min-w-32">Devam Et</button> : <button disabled={saving} className="rc-primary min-w-56 disabled:opacity-60">{saving ? "İŞLEM YAPILIYOR…" : "İLANI YAYINLA"}</button>}</div>
         </footer>
+        {ownerPickerOpen && <div className="fixed inset-0 z-[130] grid place-items-center bg-slate-950/45 p-4"><div className="w-full max-w-2xl rounded-2xl bg-white p-5 shadow-2xl"><div className="flex items-center justify-between"><div><h2 className="text-lg font-semibold text-slate-900">İlan sahibi seçin</h2><p className="mt-1 text-xs text-slate-500">Profil fotoğrafı veya isimle arayın.</p></div><button type="button" onClick={() => setOwnerPickerOpen(false)} className="rounded-lg p-2 hover:bg-slate-100"><X size={18} /></button></div><div className="relative mt-4"><Search size={16} className="absolute left-3 top-3 text-slate-400" /><input autoFocus value={ownerSearch} onChange={(e) => setOwnerSearch(e.target.value)} className={inputClass + " pl-9"} placeholder="İsim ara" /></div><div className="mt-4 grid max-h-80 gap-2 overflow-y-auto sm:grid-cols-2">{ownerResults.map((advisor) => <button type="button" key={advisor.id} onClick={() => { setForm({ ...form, advisor: advisor.id }); setOwnerPickerOpen(false); }} className="flex items-center gap-3 rounded-xl border border-slate-200 p-3 text-left hover:border-[#cd011e] hover:bg-red-50">{advisor.avatar_url ? <img src={advisor.avatar_url} className="h-11 w-11 rounded-full object-cover" /> : <span className="grid h-11 w-11 place-items-center rounded-full bg-slate-100 text-slate-400"><UserRound size={18} /></span>}<span><b className="block text-sm text-slate-800">{advisor.first_name} {advisor.last_name}</b><small className="text-xs text-slate-500">Danışman</small></span></button>)}{!ownerResults.length && <p className="col-span-2 p-6 text-center text-sm text-slate-400">Eşleşen profil bulunamadı.</p>}</div></div></div>}
         {preview && (
           <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/50 p-4">
             <div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6">
