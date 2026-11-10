@@ -574,12 +574,12 @@ export default function ListingEntryPage({
     ]);
     const invalid = files.find((file) => !allowedTypes.has(file.type));
     if (invalid) {
-      alert("${invalid.name}: JPG, PNG, WEBP, GIF, AVIF, MP4, WEBM veya MOV dosyası seçin.");
+      alert(`${invalid.name}: JPG, PNG, WEBP, GIF, AVIF, MP4, WEBM veya MOV dosyası seçin.`);
       return;
     }
     const oversized = files.find((file) => file.size > (file.type.startsWith("video/") ? 50 : 15) * 1024 * 1024);
     if (oversized) {
-      alert("${oversized.name}: Fotoğraflar en fazla 15 MB, videolar en fazla 50 MB olabilir.");
+      alert(`${oversized.name}: Fotoğraflar en fazla 15 MB, videolar en fazla 50 MB olabilir.`);
       return;
     }
     setUploading(true);
