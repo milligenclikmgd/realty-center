@@ -1704,9 +1704,7 @@ export default function AdminControlCenter() {
       supabase
         .from("advisor_metrics")
         .select("advisor_id,messages_answered,star_rating"),
-      supabase
-        .from("office_advisors")
-        .select("office_id,advisor_id,is_manager"),
+      fetch(`/api/auth.php?action=office-members&_=${Date.now()}`, { credentials: "include", cache: "no-store" }).then(async (r) => { const payload = await r.json(); if (!r.ok) throw new Error(payload.error || "Ofis ilişkileri alınamadı."); return { data: payload.members || [] }; }),
       supabase
         .from("homepage_stars")
         .select("kind,entity_id,position")
@@ -2596,13 +2594,7 @@ export default function AdminControlCenter() {
                         <button
                           onClick={() => {
                             if (confirm("Ofis çöp kutusuna taşınsın mı?"))
-                              void supabase
-                                .from("offices")
-                                .update({
-                                  deleted_at: new Date().toISOString(),
-                                })
-                                .eq("id", o.id)
-                                .then(() => load());
+                              void fetch("/api/auth.php?action=delete-office", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: o.id }) }).then(() => load());
                           }}
                           className="rounded-lg bg-rose-600 px-3 py-2 text-xs font-black text-white"
                         >
