@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 50032)
+Total output lines: 2119
+
 Warning: truncated output (original token count: 159459)
 Total output lines: 6051
 
@@ -343,7 +346,7 @@ function usePublishedListings() {
       // Keep the public request aligned with the database check constraint and
       // RLS policy. Using a simple equality avoids PostgREST OR parsing issues
       // with the Turkish status value.
-      const { data, error } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').eq('approval_status', 'Yayında').is('deleted_at', null).order('created_at', { ascending: false }).limit(15);
+      const { data, error } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').in('approval_status', ['Yayında', 'approved']).is('deleted_at', null).order('created_at', { ascending: false }).limit(15);
       if (error) console.error('Yayınlanan ilanlar alınamadı:', error.message);
       const rows: any[] = data || [];
       const ids = [...new Set(rows.map((row) => row.owner_id).filter(Boolean))];
@@ -901,7 +904,7 @@ function FinancialSolutionsPage() {
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {activeSolution.institutions.map(([name, domain, logoSlug]) => {
               const isSelected = selectedInstitution === name;
-              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`group flex min-h-28 flex-col items-center justify-center rounded-2xl border p-4 transition ${isSe…109459 tokens truncated…rget.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
+              return <button type="button" key={name} onClick={() => { setSelectedInstitution(name); setSent(false); }} className={`…32 tokens truncated…rget.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Kurum adı"/><input value={item.logo} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,logo:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs" placeholder="Logo URL'si"/><textarea rows={3} value={item.content} onChange={(e) => setItems(items.map((entry,i)=>i===index?{...entry,content:e.target.value}:entry))} className="rounded-lg border border-slate-300 px-3 py-2 text-xs sm:col-span-2" placeholder="Anlaşma / çalışma içeriği"/><button onClick={() => setItems(items.filter((_,i)=>i!==index))} className="w-fit text-xs font-black text-red-700">Kaydı kaldır</button></div>)}</div></section>)}
               <button onClick={saveCorporateContent} className="w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">{corporateSaved ? 'Tüm içerikler kaydedildi ✓' : 'Belgeler, Referanslar ve İş Ortaklarını Kaydet'}</button>
             </div>}
 
