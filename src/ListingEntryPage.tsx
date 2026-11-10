@@ -440,6 +440,7 @@ export default function ListingEntryPage({
   });
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [activeStep, setActiveStep] = useState(1);
   const [validationMessage, setValidationMessage] = useState("");
   const [preview, setPreview] = useState(false);
   const [publishMode, setPublishMode] = useState("publish");
@@ -693,9 +694,10 @@ export default function ListingEntryPage({
   return (
     <form
       onSubmit={submit}
+      data-step={activeStep}
       className="listing-entry-form mx-auto max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
     >
-      <style>{`.listing-entry-form label{font-weight:600}.listing-entry-form label>span{color:#cd011e}.listing-entry-form h2,.listing-entry-form h3{color:#101828;font-weight:600}.listing-entry-form input,.listing-entry-form select,.listing-entry-form textarea,.listing-entry-form [contenteditable="true"]{font-weight:400;color:#101828}.listing-entry-form button{font-weight:600}`}</style>
+      <style>{`.listing-entry-form label{font-weight:600}.listing-entry-form label>span{color:#cd011e}.listing-entry-form h2,.listing-entry-form h3{color:#101828;font-weight:600}.listing-entry-form input,.listing-entry-form select,.listing-entry-form textarea,.listing-entry-form [contenteditable="true"]{font-weight:400;color:#101828}.listing-entry-form button{font-weight:600}.wizard-content>section{display:none}.listing-entry-form[data-step="1"] .wizard-content>section:nth-of-type(-n+3),.listing-entry-form[data-step="2"] .wizard-content>section:nth-of-type(3),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(4),.listing-entry-form[data-step="3"] .wizard-content>section:nth-of-type(5),.listing-entry-form[data-step="4"] .wizard-content>section:nth-of-type(6),.listing-entry-form[data-step="5"] .wizard-content>section:nth-of-type(7){display:block}`}</style>
       <header className="flex flex-col gap-4 border-b border-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">
@@ -722,19 +724,15 @@ export default function ListingEntryPage({
           </button>
         </div>
       </header>
-      <div className="grid grid-cols-5 gap-2 border-b border-slate-100 bg-slate-50 p-4 text-center text-[11px] font-semibold text-slate-500">
-        <span className="text-[#cd011e]">1<br/><small>Temel Bilgiler</small></span>
-        <span>2<br/><small>Konum</small></span>
-        <span>3<br/><small>Özellikler</small></span>
-        <span>4<br/><small>Medya</small></span>
-        <span>5<br/><small>Yayınla</small></span>
+      <div className="grid grid-cols-5 border-b border-slate-100 bg-white px-6 py-5 text-center text-[11px] text-slate-500">
+        {["Temel Bilgiler", "Konum", "Özellikler", "Medya", "Yayınla"].map((label, index) => { const step = index + 1; return <button key={label} type="button" onClick={() => setActiveStep(step)} className={`relative flex flex-col items-center gap-2 ${activeStep === step ? "text-[#cd011e]" : step < activeStep ? "text-slate-700" : "text-slate-400"}`}><span className={`grid h-9 w-9 place-items-center rounded-full border text-sm font-semibold ${activeStep === step ? "border-[#cd011e] bg-[#cd011e] text-white" : step < activeStep ? "border-[#cd011e] text-[#cd011e]" : "border-slate-300 bg-white"}`}>{step}</span><span>{label}</span>{step < 5 && <i className={`absolute left-[62%] top-[18px] h-px w-[76%] ${step < activeStep ? "bg-[#cd011e]" : "bg-slate-200"}`} />}</button>; })}
       </div>
       {validationMessage && (
         <div className="mx-6 mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
           {validationMessage}
         </div>
       )}
-      <div className="space-y-8 p-6">
+      <div className="wizard-content space-y-8 p-6">
         <section>
           <h3>Temel bilgiler</h3>
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -1267,14 +1265,7 @@ export default function ListingEntryPage({
           <p className="text-xs font-normal text-slate-500">
             "İlan, gönderildiğinde doğrudan İlanlarımız sayfasında görünür."
           </p>
-          <button
-            disabled={saving}
-            className="rc-primary min-w-56 px-6 py-4 disabled:opacity-60"
-          >
-            {saving
-              ? "İŞLEM YAPILIYOR…"
-              : "İLANI YAYINLA"}
-          </button>
+          <div className="flex gap-2"><button type="button" disabled={activeStep === 1} onClick={() => setActiveStep((step) => Math.max(1, step - 1))} className="rc-secondary disabled:opacity-40">Geri</button>{activeStep < 5 ? <button type="button" onClick={() => setActiveStep((step) => Math.min(5, step + 1))} className="rc-primary min-w-32">Devam Et</button> : <button disabled={saving} className="rc-primary min-w-56 disabled:opacity-60">{saving ? "İŞLEM YAPILIYOR…" : "İLANI YAYINLA"}</button>}</div>
         </footer>
         {preview && (
           <div className="fixed inset-0 z-[120] flex items-center justify-center bg-slate-950/50 p-4">
