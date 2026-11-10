@@ -2522,7 +2522,8 @@ function OfficesPage() {
     void load();
   }, []);
 
-  const activeCities = [...new Set(offices.map((office) => office.city).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr'));
+  const allCities = TURKEY_PROVINCES;
+  const selectedDistricts = selectedCity ? getTurkeyDistricts(selectedCity) : [];
 
   const filteredOffices = offices.filter((office) => {
     if (selectedCity && office.city !== selectedCity) return false;
@@ -2589,7 +2590,7 @@ function OfficesPage() {
                 className="w-full lg:w-48 bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-red-700 transition"
               >
                 <option value="">-- Tüm İller (81 İl) --</option>
-                {activeCities.map(c => <option key={c} value={c}>{c}</option>)}
+                {allCities.map(c => <option key={c} value={c}>{c}</option>)}
               </select>
             </div>
 
@@ -2603,7 +2604,7 @@ function OfficesPage() {
                 }`}
               >
                 <option value="">{selectedCity ? '-- Tüm İlçeler --' : 'Önce İl Seçiniz'}</option>
-                {selectedCity && [...new Set(offices.filter((office) => office.city === selectedCity).map((office) => office.district).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'tr')).map(d => <option key={d} value={d}>{d}</option>)}
+                {selectedDistricts.map(d => <option key={d} value={d}>{d}</option>)}
               </select>
             </div>
           </div>
