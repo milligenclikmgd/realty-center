@@ -3832,16 +3832,10 @@ function ProtectedPanelRoute({ roles, children }: { roles: PanelRole[]; children
   useEffect(() => {
     let active = true;
     const verify = async () => {
-      if (!isSupabaseConfigured) { if (active) setState('denied'); return; }
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) { if (active) setState('denied'); return; }
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('id, first_name, last_name, role, status, force_password_change')
-        .eq('id', user.id)
-        .maybeSingle<PanelProfile>();
-      if (!profile || profile.status !== 'active' || !roles.includes(profile.role)) {
-        await supabase.auth.signOut();
+      const response = await fetch('/api/auth.php?action=me', { credentials: 'include' });
+      const payload = await response.json().catch(() => ({}));
+      const profile = payload.user as PanelProfile | null;
+      if (!response.ok || !profile || profile.status !== 'active' || !roles.includes(profile.role)) {
         if (active) setState('denied');
         return;
       }
@@ -3870,33 +3864,21 @@ function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg(''); setMessage('');
-    if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
     if (!identifier.trim() || !password.trim()) { setErrorMsg('Kullanıcı adı/e-posta ve şifrenizi girin.'); return; }
     setLoading(true);
-    let loginEmail = identifier.trim().toLowerCase();
-    if (!loginEmail.includes('@')) {
-      const { data: account } = await supabase.from('profiles').select('email').eq('username', loginEmail).maybeSingle();
-      loginEmail = account?.email?.toLowerCase() || '';
-    }
-    if (!loginEmail) { setErrorMsg('Kullanıcı adı veya e-posta bulunamadı.'); setLoading(false); return; }
-    const { data, error } = await supabase.auth.signInWithPassword({ email: loginEmail, password });
-    if (error || !data.user) { setErrorMsg('E-posta veya şifre hatalı.'); setLoading(false); return; }
-    const { data: profile } = await supabase.from('profiles').select('role, status').eq('id', data.user.id).maybeSingle();
-    if (!profile || profile.status !== 'active') {
-      await supabase.auth.signOut();
-      setErrorMsg('Bu hesap panel erişimine uygun değil veya aktif değil.'); setLoading(false);
-      return;
-    }
+    const response = await fetch('/api/auth.php?action=login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify({ identifier: identifier.trim(), password }) });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || !payload.user) { setErrorMsg(payload.error || 'Kullanıcı adı veya şifre hatalı.'); setLoading(false); return; }
+    const profile = payload.user as PanelProfile;
     navigate(profile.role === 'admin' ? '/super-admin-panel' : profile.role === 'manager' ? '/yonetici-panel' : '/danisman-panel');
   };
 
   const handlePasswordReset = async (e: React.FormEvent) => {
     e.preventDefault(); setErrorMsg(''); setMessage('');
-    if (!isSupabaseConfigured) { setErrorMsg('Giriş altyapısı henüz yayın ortamına bağlanmadı.'); return; }
     setLoading(true);
-    const { error } = await supabase.auth.resetPasswordForEmail(identifier.trim().toLowerCase(), { redirectTo: `${window.location.origin}/panel` });
+    const response = await fetch('/api/auth.php?action=forgot', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify({ email: identifier.trim().toLowerCase() }) });
     setLoading(false);
-    if (error) { setErrorMsg('İşlem şu anda tamamlanamadı. Lütfen daha sonra tekrar deneyin.'); return; }
+    if (!response.ok) { setErrorMsg('İşlem şu anda tamamlanamadı. Lütfen daha sonra tekrar deneyin.'); return; }
     setMessage('Bu e-posta adresiyle kayıtlı bir hesap varsa şifre yenileme bağlantısı gönderilecektir.');
   };
 
