@@ -75,7 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
     requireUser($pdo);
-    $q = $pdo->query("SELECT o.id,o.name,o.city,o.district,o.address,o.phone,o.email,o.manager_user_id AS owner_profile_id,o.image_url,o.description,o.work_hours,o.status,o.deleted_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS manager_name FROM offices o LEFT JOIN users u ON u.id=o.manager_user_id WHERE o.deleted_at IS NULL ORDER BY o.created_at DESC");
+    try { $pdo->exec('ALTER TABLE offices ADD COLUMN latitude DECIMAL(10,7) NULL, ADD COLUMN longitude DECIMAL(10,7) NULL'); } catch (Throwable $ignored) {}
+    $q = $pdo->query("SELECT o.id,o.name,o.city,o.district,o.address,o.phone,o.email,o.manager_user_id AS owner_profile_id,o.image_url,o.description,o.work_hours,o.latitude,o.longitude,o.status,o.deleted_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS manager_name FROM offices o LEFT JOIN users u ON u.id=o.manager_user_id WHERE o.deleted_at IS NULL ORDER BY o.created_at DESC");
     respond(['offices'=>$q->fetchAll()]);
 }
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'office-members') { requireUser($pdo); $q=$pdo->query('SELECT office_id,user_id AS advisor_id,is_manager FROM office_advisors'); respond(['members'=>$q->fetchAll()]); }
@@ -87,9 +88,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-office') {
     $id = trim((string)($input['id'] ?? ''));
     $name = trim((string)($input['name'] ?? ''));
     if ($name === '' || trim((string)($input['city'] ?? '')) === '' || trim((string)($input['district'] ?? '')) === '') respond(['error'=>'Ofis adı, il ve ilçe zorunludur.'],422);
-    $values = [$name,trim((string)$input['city']),trim((string)$input['district']),trim((string)($input['address'] ?? '')),trim((string)($input['phone'] ?? '')) ?: null,trim((string)($input['email'] ?? '')) ?: null,($input['owner_profile_id'] ?? null) ?: null,$input['image_url'] ?? null,$input['description'] ?? null,$input['work_hours'] ?? null];
-    if ($id !== '') { $q=$pdo->prepare('UPDATE offices SET name=?,city=?,district=?,address=?,phone=?,email=?,manager_user_id=?,image_url=?,description=?,work_hours=? WHERE id=? AND deleted_at IS NULL'); $q->execute([...$values,$id]); }
-    else { $id=bin2hex(random_bytes(16)); $q=$pdo->prepare('INSERT INTO offices (id,name,city,district,address,phone,email,manager_user_id,image_url,description,work_hours) VALUES (?,?,?,?,?,?,?,?,?,?,?)'); $q->execute([$id,...$values]); }
+    try { $pdo->exec('ALTER TABLE offices ADD COLUMN latitude DECIMAL(10,7) NULL, ADD COLUMN longitude DECIMAL(10,7) NULL'); } catch (Throwable $ignored) {}
+    $values = [$name,trim((string)$input['city']),trim((string)$input['district']),trim((string)($input['address'] ?? '')),trim((string)($input['phone'] ?? '')) ?: null,trim((string)($input['email'] ?? '')) ?: null,($input['owner_profile_id'] ?? null) ?: null,$input['image_url'] ?? null,$input['description'] ?? null,$input['work_hours'] ?? null,$input['latitude'] ?? null,$input['longitude'] ?? null];
+    if ($id !== '') { $q=$pdo->prepare('UPDATE offices SET name=?,city=?,district=?,address=?,phone=?,email=?,manager_user_id=?,image_url=?,description=?,work_hours=?,latitude=?,longitude=? WHERE id=? AND deleted_at IS NULL'); $q->execute([...$values,$id]); }
+    else { $id=bin2hex(random_bytes(16)); $q=$pdo->prepare('INSERT INTO offices (id,name,city,district,address,phone,email,manager_user_id,image_url,description,work_hours,latitude,longitude) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)'); $q->execute([$id,...$values]); }
     respond(['ok'=>true,'id'=>$id]);
 }
 
