@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/realtycentercom/public_html/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /usr/local/bin/npm install
+    - /usr/local/bin/npm run build
+    - /bin/cp -R dist/. $DEPLOYPATH
