@@ -8,6 +8,8 @@ import {
   Clock3,
   ChevronRight,
   Download,
+  Eye,
+  EyeOff,
   FolderKanban,
   LayoutPanelTop,
   Library,
@@ -1691,14 +1693,8 @@ export default function AdminControlCenter() {
     if (data.stars) setStars(data.stars);
   };
   const load = async () => {
-    const [p, o, m, om, s] = await Promise.all([
-      supabase
-        .from("profiles")
-        .select(
-          "id,first_name,last_name,username,email,phone,role,status,last_login_at,created_at,avatar_url",
-        )
-        .is("deleted_at", null)
-        .order("created_at", { ascending: false }),
+    const [usersResponse, o, m, om, s] = await Promise.all([
+      fetch("/api/auth.php?action=users", { credentials: "include" }),
       supabase
         .from("offices")
         .select(
@@ -1717,8 +1713,9 @@ export default function AdminControlCenter() {
         .select("kind,entity_id,position")
         .order("position"),
     ]);
+    const usersPayload = await usersResponse.json();
     const next = {
-      profiles: (p.data || []) as Profile[],
+      profiles: (usersPayload.users || []) as Profile[],
       offices: (o.data || []) as Office[],
       metrics: (m.data || []) as AdvisorMetric[],
       officeMembers: (om.data || []) as {
@@ -2968,6 +2965,8 @@ function NewUserPage({
     force: true,
   });
   const [avatar, setAvatar] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showRepeat, setShowRepeat] = useState(false);
   const [busy, setBusy] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -3152,27 +3151,11 @@ function NewUserPage({
                   </label>
                   <label className="text-xs font-normal">
                     Şifre *
-                    <input
-                      required
-                      type="password"
-                      minLength={10}
-                      value={form.password}
-                      onChange={(e) => update("password", e.target.value)}
-                      placeholder="En az 10 karakter"
-                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
-                    />
+                    <span className="relative mt-1.5 block"><input required type={showPassword ? "text" : "password"} minLength={10} value={form.password} onChange={(e) => update("password", e.target.value)} placeholder="En az 10 karakter" className="w-full rounded-xl border border-slate-200 px-3 py-3 pr-11 text-sm"/><button type="button" onClick={() => setShowPassword((x) => !x)} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" aria-label={showPassword ? "Şifreyi gizle" : "Şifreyi göster"}>{showPassword ? <EyeOff size={17}/> : <Eye size={17}/>}</button></span>
                   </label>
                   <label className="text-xs font-normal">
                     Şifre Tekrar *
-                    <input
-                      required
-                      type="password"
-                      minLength={10}
-                      value={form.repeat}
-                      onChange={(e) => update("repeat", e.target.value)}
-                      placeholder="Şifrenizi tekrar girin"
-                      className="mt-1.5 w-full rounded-xl border border-slate-200 px-3 py-3 text-sm"
-                    />
+                    <span className="relative mt-1.5 block"><input required type={showRepeat ? "text" : "password"} minLength={10} value={form.repeat} onChange={(e) => update("repeat", e.target.value)} placeholder="Şifrenizi tekrar girin" className="w-full rounded-xl border border-slate-200 px-3 py-3 pr-11 text-sm"/><button type="button" onClick={() => setShowRepeat((x) => !x)} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" aria-label={showRepeat ? "Şifreyi gizle" : "Şifreyi göster"}>{showRepeat ? <EyeOff size={17}/> : <Eye size={17}/>}</button></span>
                   </label>
                 </div>
                 <label className="mt-5 flex items-center gap-2 text-xs font-normal">
