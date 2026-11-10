@@ -2,7 +2,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArchiveRestore,
   BarChart3,
+  Bell,
   Building2,
+  CalendarDays,
   Clock3,
   ChevronRight,
   Download,
@@ -12,6 +14,7 @@ import {
   ListChecks,
   Menu,
   MessageSquare,
+  Home,
   Plus,
   RefreshCw,
   Search,
@@ -19,6 +22,7 @@ import {
   Trash2,
   Tv,
   UserCog,
+  UserRound,
   Users,
   Upload,
   X,
@@ -131,6 +135,22 @@ const statusName = (status: string) =>
     suspended: "Askıya alındı",
     departed: "Ayrıldı",
   })[status] || status;
+
+function SuperAdminOverview({ profiles, offices, advisors, onNavigate }: { profiles: Profile[]; offices: Office[]; advisors: Profile[]; onNavigate: (page: Page) => void }) {
+  const cards = [
+    ["Toplam İlan", "0", Home],
+    ["Toplam Kullanıcı", profiles.length.toLocaleString("tr-TR"), Users],
+    ["Aktif Ofis", offices.length.toLocaleString("tr-TR"), Building2],
+    ["Danışman", advisors.length.toLocaleString("tr-TR"), UserRound],
+  ] as const;
+  const actions = [["Yeni İlan Ekle", "listings", Plus], ["Ofis Ekle", "offices", Building2], ["Danışman Ekle", "user-create", UserRound], ["İletişim Talepleri", "inbox", MessageSquare]] as const;
+  return <div className="-m-6 min-h-full bg-[#f7f8fa] p-6 text-[#182235] md:-m-8 md:p-8">
+    <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><p className="text-[10px] font-semibold tracking-[.22em] text-[#db0808]">REALTY CENTER / YÖNETİM</p><h1 className="mt-2 text-[27px] font-medium tracking-[-.04em]">Genel Bakış</h1><p className="mt-1 text-[12px] text-slate-500">Platformunuzun güncel durumunu ve önemli verilerini görüntüleyin.</p></div><button className="flex h-11 items-center gap-2 rounded-full border border-slate-200 bg-white px-4 text-[12px] font-medium shadow-sm"><CalendarDays size={15} className="text-slate-500"/> Son 30 Gün <ChevronRight size={15} className="rotate-90"/></button></div>
+    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{cards.map(([label,value,Icon])=><div key={label} className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_2px_10px_rgba(15,23,42,.035)]"><div className="flex items-center gap-4"><span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#fff0f0] text-[#db0808]"><Icon size={22} strokeWidth={1.7}/></span><div><p className="text-[11px] text-slate-500">{label}</p><p className="mt-1 text-[25px] font-medium tracking-[-.04em]">{value}</p></div></div></div>)}</div>
+    <div className="mt-5 grid gap-5 xl:grid-cols-[1.7fr_1fr]"><div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_2px_10px_rgba(15,23,42,.035)]"><div className="flex items-start justify-between"><div><h2 className="text-[16px] font-medium">İlan Görüntülenmeleri</h2><p className="mt-1 text-[11px] text-slate-400">Son 30 gündeki toplam görüntülenme</p></div><strong className="text-[20px] font-medium">0</strong></div><div className="mt-6 flex h-44 items-end gap-2 border-b border-slate-100 px-2">{[18,28,24,38,34,48,43,57,51,65,60,73,67,82,75,92].map((h,i)=><span key={i} className="flex-1 rounded-t-md bg-gradient-to-t from-[#ffdede] to-[#db0808] opacity-75" style={{height:`${h}%`}}/>)}</div><div className="mt-3 flex justify-between text-[10px] text-slate-400"><span>12 Eki</span><span>19 Eki</span><span>26 Eki</span><span>02 Kas</span><span>10 Kas</span></div></div><div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_2px_10px_rgba(15,23,42,.035)]"><h2 className="text-[16px] font-medium">İlan Dağılımı</h2><div className="mt-5 flex items-center gap-5"><div className="relative h-36 w-36 rounded-full" style={{background:"conic-gradient(#db0808 0 58%, #f5aaaa 58% 76%, #d9e0e8 76% 88%, #aeb9c8 88% 100%)"}}><div className="absolute inset-7 flex items-center justify-center rounded-full bg-white text-center text-[11px] text-slate-500"><span><b className="block text-xl font-medium text-slate-900">0</b>İlan</span></div></div><div className="space-y-3 text-[11px] text-slate-600"><p>🔴 Konut <b className="ml-5">%58</b></p><p>🌸 İş Yeri <b className="ml-3">%18</b></p><p>⚪ Arsa <b className="ml-7">%12</b></p><p>🔘 Diğer <b className="ml-5">%12</b></p></div></div></div></div>
+    <div className="mt-5 grid gap-5 xl:grid-cols-[1.7fr_1fr]"><div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_2px_10px_rgba(15,23,42,.035)]"><div className="flex items-center justify-between"><h2 className="text-[16px] font-medium">Son Eklenen İlanlar</h2><button onClick={()=>onNavigate("listings")} className="text-[11px] font-medium text-[#db0808]">Tüm ilanlar <ChevronRight size={13} className="inline"/></button></div><div className="mt-5 border-t border-slate-100 pt-3 text-center text-[12px] text-slate-400">Henüz ilan kaydı bulunmuyor.</div></div><div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-[0_2px_10px_rgba(15,23,42,.035)]"><h2 className="text-[16px] font-medium">Hızlı İşlemler</h2><div className="mt-4 space-y-2">{actions.map(([label,page,Icon])=><button key={label} onClick={()=>onNavigate(page as Page)} className="flex w-full items-center gap-3 rounded-xl border border-slate-100 px-3 py-3 text-left text-[12px] font-medium hover:border-red-100 hover:bg-red-50/40"><span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff0f0] text-[#db0808]"><Icon size={17} strokeWidth={1.7}/></span>{label}<ChevronRight size={15} className="ml-auto text-slate-400"/></button>)}</div></div></div>
+  </div>;
+}
 
 function csv(name: string, rows: Record<string, unknown>[], keys: string[]) {
   const text = [
@@ -2147,63 +2167,7 @@ export default function AdminControlCenter() {
       </PanelFrame>
     );
   if (page === "overview")
-    view = (
-      <>
-        <>
-          {heading(
-            "Genel Bakış",
-            "Kullanıcı, ilan, başvuru ve içerik süreçlerinin tek merkezden özeti.",
-          )}
-        </>
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <Metric
-            label="Toplam Kullanıcı"
-            value={profiles.length}
-            detail={`${advisers.length} danışman`}
-            icon={Users}
-          />
-          <Metric
-            label="Aktif Ofis"
-            value={offices.length}
-            detail="Yayındaki kayıtlar"
-            icon={Building2}
-          />
-          <Metric
-            label="Onay Bekleyen İlan"
-            value="0"
-            detail="İlan onay merkezi"
-            icon={LayoutPanelTop}
-          />
-          <Metric
-            label="Yeni Talep"
-            value="0"
-            detail="İletişim merkezi"
-            icon={MessageSquare}
-          />
-        </div>
-        <div className="mt-6 grid gap-5 lg:grid-cols-2">
-          <Panel
-            title="Hızlı İşlemler"
-            actions={[
-              ["Yeni kullanıcı oluştur", "users"],
-              ["Ofis ekle", "offices"],
-              ["İlan onay merkezi", "listings"],
-              ["İletişim talepleri", "inbox"],
-            ]}
-            run={(x) => setPage(x as Page)}
-          />
-          <div className="rounded-2xl bg-slate-900 p-6 text-white">
-            <ShieldCheck className="text-red-300" />
-            <h2 className="mt-4 font-black">Sistem güvenliği</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-300">
-              Kullanıcı, ilan, silme ve oturum hareketleri işlem kayıtları
-              altında izlenir.
-            </p>
-            {button("İşlem kayıtlarını aç", () => setPage("logs"), true)}
-          </div>
-        </div>
-      </>
-    );
+    view = <SuperAdminOverview profiles={profiles} offices={offices} advisors={advisers} onNavigate={setPage} />;
   else if (page === "users" || page === "advisors") {
     const advisor = page === "advisors";
     const rows = advisor
