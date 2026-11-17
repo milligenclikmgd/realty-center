@@ -225,6 +225,67 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-realty-media') {
     } catch (Throwable $e) { respond(['error'=>'Realty Medya içerikleri kaydedilemedi.'],500); }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'library-content') {
+    try {
+        $q = $pdo->prepare('SELECT setting_value FROM homepage_settings WHERE setting_key=? LIMIT 1');
+        $q->execute(['realty_library_content']);
+        $row = $q->fetch();
+        $content = $row ? json_decode((string)$row['setting_value'], true) : null;
+        $categories = is_array($content) && is_array($content['categories'] ?? null) ? $content['categories'] : null;
+        respond(['categories'=>$categories]);
+    } catch (Throwable $e) { respond(['error'=>'Realty Kütüphane içerikleri yüklenemedi.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-library-content') {
+    $actor = requireUser($pdo);
+    if (($actor['role'] ?? '') !== 'admin') respond(['error'=>'Realty Kütüphane içeriklerini yalnızca admin düzenleyebilir.'],403);
+    $input = body();
+    $source = is_array($input['categories'] ?? null) ? $input['categories'] : [];
+    if (count($source) > 40) respond(['error'=>'En fazla 40 kütüphane kategorisi kaydedilebilir.'],422);
+    $categories = [];
+    $cleanHtml = static function($html) {
+        $html = strip_tags((string)$html, '<p><h2><h3><h4><ul><ol><li><strong><em><b><i><br><blockquote>');
+        return preg_replace_callback('/<([a-z0-9]+)\\b[^>]*>/i', static fn($match) => '<'.strtolower($match[1]).'>', $html);
+    };
+    foreach ($source as $category) {
+        if (!is_array($category)) continue;
+        $id = trim((string)($category['id'] ?? ''));
+        $slug = strtolower(trim((string)($category['slug'] ?? '')));
+        $title = trim((string)($category['title'] ?? ''));
+        if ($id === '' || strlen($id) > 100) $id = bin2hex(random_bytes(16));
+        if ($title === '' || !preg_match('/^[a-z0-9-]{1,100}$/', $slug)) respond(['error'=>'Kategori adı ve bağlantı adresi geçerli olmalıdır.'],422);
+        $color = trim((string)($category['color'] ?? '#CD011E'));
+        if (!preg_match('/^#[0-9A-Fa-f]{6}$/', $color)) $color = '#CD011E';
+        $articlesSource = is_array($category['articles'] ?? null) ? $category['articles'] : [];
+        if (count($articlesSource) > 200) respond(['error'=>'Bir kategoride en fazla 200 içerik olabilir.'],422);
+        $articles = [];
+        foreach ($articlesSource as $article) {
+            if (!is_array($article)) continue;
+            $articleId = trim((string)($article['id'] ?? ''));
+            $articleTitle = trim((string)($article['title'] ?? ''));
+            $image = trim((string)($article['image'] ?? ''));
+            $summary = trim((string)($article['summary'] ?? ''));
+            if ($articleTitle === '') respond(['error'=>'Her içerik için başlık zorunludur.'],422);
+            if ($image !== '' && !(str_starts_with($image, '/') && !str_starts_with($image, '//') && !str_contains($image, '..')) && !(filter_var($image, FILTER_VALIDATE_URL) && strtolower((string)parse_url($image, PHP_URL_SCHEME)) === 'https')) respond(['error'=>'Kapak görseli URL’si geçersiz.'],422);
+            $body = (string)($article['content'] ?? '');
+            if (strlen($body) > 100000) respond(['error'=>'İçerik metni çok uzun.'],422);
+            $publishedAt = trim((string)($article['publishedAt'] ?? ''));
+            if ($articleId === '' || strlen($articleId) > 100) $articleId = bin2hex(random_bytes(16));
+            if ($publishedAt === '') $publishedAt = date(DATE_ATOM);
+            $articles[] = ['id'=>$articleId,'title'=>mb_substr($articleTitle,0,255),'summary'=>mb_substr($summary,0,5000),'image'=>$image,'content'=>$cleanHtml($body),'publishedAt'=>mb_substr($publishedAt,0,40)];
+        }
+        $categories[] = ['id'=>$id,'slug'=>$slug,'title'=>mb_substr($title,0,180),'description'=>mb_substr(trim((string)($category['description'] ?? '')),0,5000),'color'=>$color,'articles'=>$articles];
+    }
+    try {
+        $json = json_encode(['categories'=>$categories], JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR);
+        $q = $pdo->prepare('INSERT INTO homepage_settings (setting_key,setting_value) VALUES (?,?) ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value)');
+        $q->execute(['realty_library_content',$json]);
+        $log = $pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,metadata) VALUES (?,?,?,?)');
+        $log->execute([$actor['id'],'library_content_updated','realty_library',json_encode(['category_count'=>count($categories),'article_count'=>array_sum(array_map(static fn($item)=>count($item['articles']),$categories))],JSON_UNESCAPED_UNICODE)]);
+        respond(['ok'=>true,'categories'=>$categories]);
+    } catch (Throwable $e) { respond(['error'=>'Realty Kütüphane içerikleri kaydedilemedi.'],500); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'corporate-content') {
     try {
         $q = $pdo->prepare('SELECT setting_value FROM homepage_settings WHERE setting_key=? LIMIT 1');
