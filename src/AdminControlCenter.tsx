@@ -3347,22 +3347,6 @@ function ListingEntryPage({ profiles, alert, close }: { profiles: Profile[]; ale
     setForm((current) => ({ ...current, description: editorRef.current?.innerHTML || "" }));
   };
   const neighborhoods = locationRows.find((row) => row.city === form.city && row.district === form.district)?.neighborhoods || [];
-  const requestYoutubeMetadata = async (url: string) => {
-    const response = await fetch("/api/auth.php?action=youtube-metadata", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ url }) });
-    const payload = await response.json().catch(() => ({}));
-    if (!response.ok || payload.error) throw new Error(payload.error || "YouTube bilgileri alınamadı.");
-    return payload as { title?: string; description?: string };
-  };
-  const fillYoutubeMetadata = async () => {
-    if (!mediaYoutubeId(form.url) || (form.title.trim() && form.description.trim())) return;
-    setMetadataBusy(true); setError("");
-    try {
-      const metadata = await requestYoutubeMetadata(form.url);
-      setForm((current) => ({ ...current, title: current.title.trim() || metadata.title || "", description: current.description.trim() || metadata.description || "" }));
-      setNotice(metadata.description ? "YouTube başlık ve açıklaması otomatik alındı." : "YouTube başlığı alındı; bu videoda açıklama bilgisi bulunamadı.");
-    } catch (e: any) { setError(e.message || "YouTube bilgileri alınamadı."); }
-    finally { setMetadataBusy(false); }
-  };
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!form.title || !form.price || !form.city || !form.district || !form.neighborhood || !form.advisor) return alert("Başlık, danışman, fiyat, il, ilçe ve mahalle zorunludur.");
@@ -3717,6 +3701,22 @@ function RealtyMediaManager() {
     }).catch((e) => { if (active) setError(e.message || "Sunucudan içerikler alınamadı; mevcut başlangıç listesi gösteriliyor."); }).finally(() => { if (active) setLoading(false); });
     return () => { active = false; };
   }, []);
+  const requestYoutubeMetadata = async (url: string) => {
+    const response = await fetch("/api/auth.php?action=youtube-metadata", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ url }) });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || payload.error) throw new Error(payload.error || "YouTube bilgileri alınamadı.");
+    return payload as { title?: string; description?: string };
+  };
+  const fillYoutubeMetadata = async () => {
+    if (!mediaYoutubeId(form.url) || (form.title.trim() && form.description.trim())) return;
+    setMetadataBusy(true); setError("");
+    try {
+      const metadata = await requestYoutubeMetadata(form.url);
+      setForm((current) => ({ ...current, title: current.title.trim() || metadata.title || "", description: current.description.trim() || metadata.description || "" }));
+      setNotice(metadata.description ? "YouTube başlık ve açıklaması otomatik alındı." : "YouTube başlığı alındı; bu videoda açıklama bilgisi bulunamadı.");
+    } catch (e: any) { setError(e.message || "YouTube bilgileri alınamadı."); }
+    finally { setMetadataBusy(false); }
+  };
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     const id = mediaYoutubeId(form.url);
