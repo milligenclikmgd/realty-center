@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { Archive, ArchiveRestore, Check, ChevronDown, ChevronLeft, ChevronRight, CircleX, Clock3, Eye, Filter, MoreHorizontal, Pencil, Plus, RefreshCw, Search, SlidersHorizontal, Star, Trash2, X } from "lucide-react";
-import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 
 type Profile = { id: string; first_name: string; last_name: string; role: string; avatar_url?: string | null };
@@ -101,12 +100,21 @@ export default function ListingManagementPage({ profiles, alert, openAdd, initia
   const pageRows = rows.slice((page - 1) * perPage, page * perPage);
   useEffect(() => { setPage(1); setSelected([]); }, [applied, tab, perPage]);
 
-  const update = async (id: string, patch: Record<string, unknown>, success: string) => { setBusy(id); const { error } = await supabase.from("listings").update(patch).eq("id", id); if (error) alert(`İşlem tamamlanamadı: ${error.message}`); else { await load(); window.dispatchEvent(new Event("realty-center-listings-updated")); alert(success); } setBusy(""); setMenu(null); };
+  const update = async (id: string, patch: Record<string, unknown>, success: string) => {
+    setBusy(id);
+    try {
+      const response = await fetch("/api/auth.php?action=update-listing", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, patch }) });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "İşlem tamamlanamadı.");
+      await load(); window.dispatchEvent(new Event("realty-center-listings-updated")); alert(success);
+    } catch (error: any) { alert(`İşlem tamamlanamadı: ${error.message || "Sunucuya bağlanılamadı."}`); }
+    finally { setBusy(""); setMenu(null); }
+  };
   const approve = (id: string) => void update(id, { approval_status: "Yayında", deleted_at: null }, "İlan yayına alındı.");
   const archive = (id: string) => void update(id, { deleted_at: new Date().toISOString() }, "İlan arşive taşındı.");
   const restore = (id: string) => void update(id, { deleted_at: null, approval_status: "Yayında" }, "İlan yeniden yayına alındı.");
   const reject = async () => { if (!reasonFor) return; const detail = { ...(reasonFor.details || {}), rejection_reason: reason.trim(), rejection_at: new Date().toISOString() }; await update(reasonFor.id, { approval_status: "Reddedildi", details: detail }, "İlan ret gerekçesi ile kaydedildi."); setReasonFor(null); setReason(""); };
-  const batch = async (action: "approve" | "archive" | "unpublish" | "restore") => { if (!selected.length) return; const text = action === "approve" ? "Seçili ilanlar yayınlansın mı?" : action === "archive" ? "Seçili ilanlar arşive taşınsın mı?" : action === "restore" ? "Seçili ilanlar yeniden yayınlansın mı?" : "Seçili ilanlar yayından kaldırılsın mı?"; if (!confirm(text)) return; setBusy("batch"); const patch = action === "approve" || action === "restore" ? { approval_status: "Yayında", deleted_at: null } : action === "archive" ? { deleted_at: new Date().toISOString() } : { approval_status: "Reddedildi" }; const { error } = await supabase.from("listings").update(patch).in("id", selected); if (error) alert(`Toplu işlem tamamlanamadı: ${error.message}`); else { await load(); setSelected([]); alert("Toplu işlem tamamlandı."); } setBusy(""); };
+  const batch = async (action: "approve" | "archive" | "unpublish" | "restore") => { if (!selected.length) return; const text = action === "approve" ? "Seçili ilanlar yayınlansın mı?" : action === "archive" ? "Seçili ilanlar arşive taşınsın mı?" : action === "restore" ? "Seçili ilanlar yeniden yayınlansın mı?" : "Seçili ilanlar yayından kaldırılsın mı?"; if (!confirm(text)) return; setBusy("batch"); const patch = action === "approve" || action === "restore" ? { approval_status: "Yayında", deleted_at: null } : action === "archive" ? { deleted_at: new Date().toISOString() } : { approval_status: "Reddedildi" }; try { const response = await fetch("/api/auth.php?action=bulk-listings", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids: selected, patch }) }); const payload = await response.json().catch(() => ({})); if (!response.ok || payload.error) throw new Error(payload.error || "Toplu işlem tamamlanamadı."); await load(); setSelected([]); window.dispatchEvent(new Event("realty-center-listings-updated")); alert("Toplu işlem tamamlandı."); } catch (error: any) { alert(`Toplu işlem tamamlanamadı: ${error.message || "Sunucuya bağlanılamadı."}`); } finally { setBusy(""); } };
   const saveEdit = async (event: React.FormEvent) => { event.preventDefault(); if (!edit) return; await update(edit.id, { title: edit.title.trim(), price: Number(edit.price), transaction_type: edit.transaction_type, category: edit.category, property_type: edit.property_type, city: edit.city, district: edit.district, neighborhood: edit.neighborhood || null, rooms: edit.rooms || null, area: Number(edit.area || 0), description: edit.description || null }, "İlan bilgileri güncellendi."); setEdit(null); };
   const stat = (key: Tab, label: string, count: number, icon: React.ReactNode, tone: string) => <button onClick={() => setTab(key)} className={`rounded-xl border p-4 text-left transition hover:-translate-y-0.5 hover:shadow-sm ${tab === key ? "border-[#cd011e] ring-2 ring-[#cd011e]/10" : "border-transparent"} ${tone}`}><div className="flex items-start justify-between"><div><p className="text-[11px] font-semibold text-slate-500">{label}</p><p className="mt-2 text-2xl font-semibold text-slate-800">{count}</p></div><span className="grid h-9 w-9 place-items-center rounded-lg bg-white/70">{icon}</span></div></button>;
   const iconButton = "grid h-8 w-8 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:border-[#cd011e] hover:text-[#cd011e] disabled:opacity-50";
