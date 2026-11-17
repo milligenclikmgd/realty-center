@@ -3459,12 +3459,16 @@ function CorporateManagementPage() {
       const response = await fetch("/api/auth.php?action=corporate-content&_=" + Date.now(), { cache: "no-store" });
       const payload = await response.json();
       if (!response.ok || payload.error) throw new Error(payload.error || "Kurumsal içerikler alınamadı.");
-      const data = payload.content && typeof payload.content === "object" ? payload.content : EMPTY_CORPORATE;
+      const localItems = (key: string) => { try { const value = JSON.parse(localStorage.getItem(key) || "[]"); return Array.isArray(value) ? value : []; } catch { return []; } };
+      const data = payload.content && typeof payload.content === "object" ? payload.content : {
+        management: localItems("realty-center-management"), documents: localItems("realty-center-documents"),
+        partners: localItems("realty-center-partners"), references: localItems("realty-center-references"),
+      };
       cacheAndSet({
-        management: Array.isArray(data.management) ? data.management : [],
-        documents: Array.isArray(data.documents) ? data.documents : [],
-        partners: Array.isArray(data.partners) ? data.partners : [],
-        references: Array.isArray(data.references) ? data.references : [],
+        management: Array.isArray(data.management) ? data.management.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
+        documents: Array.isArray(data.documents) ? data.documents.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
+        partners: Array.isArray(data.partners) ? data.partners.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
+        references: Array.isArray(data.references) ? data.references.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
       });
     } catch (e: any) {
       setError(e.message || "Kurumsal içerikler yüklenemedi.");
