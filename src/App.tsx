@@ -24,6 +24,23 @@ import {
   Heart, Printer, Share2, PlayCircle, Camera, Map, ChevronLeft, ChevronRight, ChevronDown, LocateFixed, PencilRuler, RotateCcw, MapPinned, Flag, Bell, Music2, VolumeX, BookOpen, ShieldCheck, Star
 } from 'lucide-react';
 
+async function createPublicInboxSubmission(category:string,data:Record<string,unknown>){
+  const pairs=Object.entries(data||{});
+  const value=(patterns:RegExp[])=>pairs.find(([key,v])=>patterns.some(pattern=>pattern.test(key.toLocaleLowerCase("tr-TR")))&&String(v??"").trim())?.[1];
+  const first=String(value([/first.?name/,/^ad$/])||"").trim();
+  const last=String(value([/last.?name/,/^soyad$/])||"").trim();
+  const fullName=String(value([/full.?name/,/ad.?soyad/,/^name$/])||[first,last].filter(Boolean).join(" ")||"").trim();
+  const phone=String(value([/phone/,/telefon/,/gsm/,/cep/])||"").trim();
+  const email=String(value([/email/,/e.?posta/])||"").trim();
+  const city=String(value([/^city$/,/^il$/,/(^|\\s)şehir/])||"").trim();
+  const district=String(value([/^district$/,/^ilçe$/])||"").trim();
+  const subject=String(value([/subject/,/konu/,/type/,/kategori/,/mode/,/institution/,/solution/])||"").trim();
+  const response=await fetch("/api/auth.php?action=inbox-create-public",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({category,full_name:fullName,phone,email,city,district,subject,data})});
+  const payload=await response.json().catch(()=>({}));
+  if(!response.ok||payload.error)throw new Error(payload.error||"Talebiniz kaydedilemedi. Lütfen tekrar deneyin.");
+  return payload;
+}
+
 const STATIC_LANGUAGES = {
   tr: { corporate:'Kurumsal', offices:'Ofislerimiz', agents:'Danışmanlar', listings:'İlanlarımız', ai:'🤖 Yapay Zeka Asistanı', projects:'Projelerimiz', contact:'İletişim', advisor:'Danışman Ol', franchise:'Franchise Ol!', panel:'Panel' },
   en: { corporate:'Corporate', offices:'Our Offices', agents:'Our Advisors', listings:'Listings', ai:'🤖 AI Real Estate Assistant', projects:'Projects', contact:'Contact', advisor:'Become an Advisor', franchise:'Become a Franchise!', panel:'Panel' },
@@ -855,17 +872,19 @@ function FinancialSolutionsPage() {
     setSent(false);
   };
 
-  const submit = (event: React.FormEvent<HTMLFormElement>) => {
+  const submit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const requests = JSON.parse(localStorage.getItem('realty-center-financial-requests') || '[]');
-    localStorage.setItem('realty-center-financial-requests', JSON.stringify([
-      { id: `FC-${Date.now()}`, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(form) },
-      ...requests
-    ]));
-    window.dispatchEvent(new Event('realty-center-financial-requests-updated'));
-    event.currentTarget.reset();
-    setSent(true);
+    const formElement=event.currentTarget;
+    const form = new FormData(formElement);
+    const data=Object.fromEntries(form);
+    try {
+      await createPublicInboxSubmission('financial',data);
+      const requests = JSON.parse(localStorage.getItem('realty-center-financial-requests') || '[]');
+      localStorage.setItem('realty-center-financial-requests', JSON.stringify([{ id: `FC-${Date.now()}`, status: 'Yeni', createdAt: new Date().toISOString(), data }, ...requests]));
+      window.dispatchEvent(new Event('realty-center-financial-requests-updated'));
+      formElement.reset();
+      setSent(true);
+    } catch(error) { alert(error instanceof Error ? error.message : 'Finansal talep kaydedilemedi.'); }
   };
 
   return <div className="min-h-screen bg-slate-50">
@@ -1068,15 +1087,19 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   const [hasVehicle, setHasVehicle] = useState('');
   const backgroundImage = franchise ? '/applications/franchise-handshake.png' : '/applications/advisor-recruitment-v2.webp';
   const fieldClass = 'rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-[#CD011E] focus:ring-2 focus:ring-[#CD011E]/15';
-  const submitApplication = (event: React.FormEvent<HTMLFormElement>) => {
+  const submitApplication = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const saved = JSON.parse(localStorage.getItem('realty-center-applications') || '[]');
-    const data = Object.fromEntries(new FormData(event.currentTarget));
-    localStorage.setItem('realty-center-applications', JSON.stringify([{ id: `${franchise ? 'FR' : 'DN'}-${Date.now()}`, type, data, status: 'Yeni', createdAt: new Date().toISOString() }, ...saved]));
-    window.dispatchEvent(new Event('realty-center-applications-updated'));
-    alert(franchise ? 'Franchise başvurunuz alındı.' : 'Danışmanlık başvurunuz alındı.');
-    event.currentTarget.reset();
-    setHasVehicle('');
+    const formElement=event.currentTarget;
+    const data = Object.fromEntries(new FormData(formElement));
+    try {
+      await createPublicInboxSubmission(franchise ? 'franchise_application' : 'advisor_application', { ...data, type });
+      const saved = JSON.parse(localStorage.getItem('realty-center-applications') || '[]');
+      localStorage.setItem('realty-center-applications', JSON.stringify([{ id: `${franchise ? 'FR' : 'DN'}-${Date.now()}`, type, data, status: 'Yeni', createdAt: new Date().toISOString() }, ...saved]));
+      window.dispatchEvent(new Event('realty-center-applications-updated'));
+      alert(franchise ? 'Franchise başvurunuz alındı.' : 'Danışmanlık başvurunuz alındı.');
+      formElement.reset();
+      setHasVehicle('');
+    } catch(error) { alert(error instanceof Error ? error.message : 'Başvurunuz kaydedilemedi.'); }
   };
   return (
     <div className="relative min-h-screen overflow-hidden bg-slate-950">
@@ -1540,13 +1563,16 @@ function CustomerFeedbackPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
   const types: CustomerFeedback['type'][] = ['Memnuniyet', 'Danışman Değerlendirmesi', 'Ofis Değerlendirmesi', 'Şikâyet', 'Dilek / Öneri'];
-  const submit = (event: React.FormEvent) => {
+  const submit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const item: CustomerFeedback = { id: `GB-${Date.now()}`, type, ...form, rating: type === 'Şikâyet' || type === 'Dilek / Öneri' ? 0 : rating, status: 'Yeni', createdAt: new Date().toISOString() };
-    saveCustomerFeedback([item, ...getCustomerFeedback()]);
-    setSubmitted(true);
-    setForm({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    try {
+      await createPublicInboxSubmission('feedback', { ...form, type, rating: type === 'Şikâyet' || type === 'Dilek / Öneri' ? 0 : rating });
+      const item: CustomerFeedback = { id: `GB-${Date.now()}`, type, ...form, rating: type === 'Şikâyet' || type === 'Dilek / Öneri' ? 0 : rating, status: 'Yeni', createdAt: new Date().toISOString() };
+      saveCustomerFeedback([item, ...getCustomerFeedback()]);
+      setSubmitted(true);
+      setForm({ name: '', phone: '', email: '', subject: '', message: '', agent: '', office: '' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch(error) { alert(error instanceof Error ? error.message : 'Görüşünüz kaydedilemedi.'); }
   };
   const fieldClass = 'w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-4 focus:ring-red-100';
   return <div className="min-h-screen bg-slate-50 py-10 lg:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><div className="mb-8 text-center"><span className="inline-flex rounded-full bg-red-100 px-4 py-1.5 text-[10px] font-black tracking-[.18em] text-red-700">MÜŞTERİ DENEYİMİ</span><h1 className="mt-4 text-3xl font-black text-slate-900 sm:text-4xl">Görüşünüz bizim için değerli</h1><p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-slate-600">Memnuniyetinizi paylaşabilir, danışmanlarımızı ve ofislerimizi değerlendirebilir; şikâyet, dilek ve önerilerinizi doğrudan genel merkezimize iletebilirsiniz.</p></div>{submitted && <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-center"><CheckCircle2 className="mx-auto h-8 w-8 text-emerald-600"/><h2 className="mt-2 font-black text-emerald-900">Geri bildiriminiz alındı</h2><p className="mt-1 text-xs text-emerald-700">Kaydınız ilgili birime iletildi. Gerekli görülürse verdiğiniz iletişim bilgileri üzerinden sizinle irtibat kurulacaktır.</p></div>}<div className="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.8fr_1.2fr]"><aside className="bg-gradient-to-br from-[#b9001c] to-[#700012] p-7 text-white lg:p-10"><img src="/rc_logo_og.svg" alt="Realty Center® Önce Güven" className="h-20 w-auto object-contain brightness-0 invert drop-shadow-sm"/><h2 className="mt-8 text-2xl font-black">Size kulak veriyoruz</h2><p className="mt-3 text-sm leading-6 text-red-50/85">Her bildirim kayıt altına alınır, ilgili ofis veya birime yönlendirilir ve hizmet kalitemizin geliştirilmesinde değerlendirilir.</p><div className="mt-8 space-y-3 text-xs font-bold">{['Gizlilikle değerlendirme','Genel merkez takibi','Danışman ve ofis bazlı ölçüm','Çözüm odaklı geri dönüş'].map((item) => <div key={item} className="flex items-center gap-2 rounded-xl bg-white/10 p-3"><CheckCircle2 className="h-4 w-4"/>{item}</div>)}</div></aside><form onSubmit={submit} className="p-6 sm:p-8 lg:p-10"><h2 className="text-lg font-black text-slate-900">Geri bildirim türünü seçin</h2><div className="mt-4 grid gap-2 sm:grid-cols-2">{types.map((item) => <button type="button" key={item} onClick={() => setType(item)} className={`rounded-xl border px-3 py-3 text-xs font-black transition ${type === item ? 'border-red-700 bg-red-700 text-white shadow-lg shadow-red-700/20' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-red-300'}`}>{item}</button>)}</div>{!['Şikâyet','Dilek / Öneri'].includes(type) && <div className="mt-6"><label className="text-xs font-black text-slate-700">Genel değerlendirmeniz</label><div className="mt-2 flex gap-1">{[1,2,3,4,5].map((star) => <button type="button" key={star} onClick={() => setRating(star)} aria-label={`${star} yıldız`} className={`text-3xl transition hover:scale-110 ${star <= rating ? 'text-amber-400' : 'text-slate-200'}`}>★</button>)}</div></div>}<div className="mt-6 grid gap-4 sm:grid-cols-2"><input required value={form.name} onChange={(e) => setForm({...form,name:e.target.value})} placeholder="Adınız Soyadınız *" className={fieldClass}/><input required value={form.phone} onChange={(e) => setForm({...form,phone:e.target.value})} placeholder="Telefonunuz *" className={fieldClass}/><input type="email" value={form.email} onChange={(e) => setForm({...form,email:e.target.value})} placeholder="E-posta adresiniz" className={fieldClass}/>{type === 'Danışman Değerlendirmesi' ? <select required value={form.agent} onChange={(e) => setForm({...form,agent:e.target.value})} className={fieldClass}><option value="">Danışman seçin *</option>{SAMPLE_AGENTS.map((agent) => <option key={agent.id} value={agent.name}>{agent.name}</option>)}</select> : type === 'Ofis Değerlendirmesi' ? <select required value={form.office} onChange={(e) => setForm({...form,office:e.target.value})} className={fieldClass}><option value="">Ofis seçin *</option>{SAMPLE_OFFICES.map((office) => <option key={office.id} value={office.name}>{office.name}</option>)}</select> : <input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Konu" className={fieldClass}/>}<input value={form.subject} onChange={(e) => setForm({...form,subject:e.target.value})} placeholder="Geri bildirim başlığı" className={`${fieldClass} sm:col-span-2`}/><textarea required rows={6} value={form.message} onChange={(e) => setForm({...form,message:e.target.value})} placeholder="Görüş, şikâyet, dilek veya önerinizi ayrıntılı biçimde yazın *" className={`${fieldClass} resize-none sm:col-span-2`}/></div><label className="mt-4 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/><span>Geri bildirimin değerlendirilmesi ve gerektiğinde tarafımla iletişim kurulması amacıyla bilgilerimin işlenmesini kabul ediyorum. <Link to="/kvkk" className="font-black text-red-700">KVKK metni</Link></span></label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white shadow-xl shadow-red-700/20 transition hover:bg-red-800">Geri Bildirimi Gönder</button></form></div></div></div>;
@@ -1817,15 +1843,12 @@ function BuyerRequestModule() {
     description: ''
   });
   const update = (key: keyof typeof form, value: string) => setForm({ ...form, [key]: value });
-  const submitRequest = (event: React.FormEvent<HTMLFormElement>) => {
+  const submitRequest = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const normalize = (value: string) => value.trim().toLocaleLowerCase('tr-TR');
-    const city = normalize(form.city), district = normalize(form.district);
-    const cityOffices = SAMPLE_OFFICES.filter((office) => normalize(office.city) === city);
-    const matchedOffices = cityOffices.filter((office) => normalize(office.district) === district);
-    const offices = matchedOffices.length ? matchedOffices : cityOffices;
-    const agents = SAMPLE_AGENTS.filter((agent) => normalize(agent.city) === city && (!district || normalize(agent.district) === district || offices.some((office) => office.name === agent.office)));
-    saveBuyerRequests([{ id: `TR-${Date.now()}`, ...form, createdAt: new Date().toISOString(), status: 'Yeni', officeNames: offices.map((office) => office.name), agentNames: agents.map((agent) => agent.name) }, ...getBuyerRequests()]);
+    try {
+      const saved=await createPublicInboxSubmission('area_request',form as unknown as Record<string,unknown>);
+      const agents=(saved.notified_advisors||[]).map((person:{name:string})=>person.name);
+      saveBuyerRequests([{ id: saved.id, ...form, createdAt: new Date().toISOString(), status: 'Yeni', officeNames: [], agentNames: agents }, ...getBuyerRequests()]);
     const notice = document.createElement('div');
     notice.textContent = '✓ Talebiniz iletildi.';
     notice.setAttribute('role', 'status');
@@ -1835,6 +1858,7 @@ function BuyerRequestModule() {
     setForm({ type: 'Satılık', property: 'Daire', city: 'Ankara', district: 'Çankaya', budget: '', payment: 'Kredi + Peşinat', timing: '1 ay içinde', name: '', phone: '', description: '' });
     window.setTimeout(() => { notice.style.opacity = '0'; notice.style.transform = 'translateY(12px)'; }, 1700);
     window.setTimeout(() => { notice.remove(); setOpen(false); }, 2050);
+    } catch(error) { alert(error instanceof Error ? error.message : 'Talebiniz kaydedilemedi.'); }
   };
   if (sent) return <section className="border-b border-slate-200 bg-slate-50 py-16"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white shadow-2xl"><div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-3xl">✓</div><h2 className="mt-5 text-3xl font-black">Talebiniz ilgili ekiplere iletildi.</h2><p className="mx-auto mt-3 max-w-xl text-sm text-white/85">Yönetici paneli, ilgili ofis ve bölgedeki danışmanlar için bildirim oluşturuldu. Size uygun portföylerle kısa süre içinde iletişime geçiyoruz.</p></div></div></section>;
   const fieldClass = 'buyer-request-field mt-2 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm font-semibold text-slate-800';
@@ -1870,7 +1894,7 @@ export function BarterBankModule() {
   const [offer, setOffer] = useState('Gayrimenkul');
   const [request, setRequest] = useState('Gayrimenkul');
   const [sent, setSent] = useState(false);
-  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const form = new FormData(event.currentTarget); const items = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{id:`BB-${Date.now()}`, mode, offer, request, createdAt:new Date().toISOString(), status:'Yeni', data:Object.fromEntries(form)},...items])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  const submit = async (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const form = new FormData(event.currentTarget); const data={...Object.fromEntries(form),mode,offer,request}; try { await createPublicInboxSubmission('barter',data); const items = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{id:`BB-${Date.now()}`, mode, offer, request, createdAt:new Date().toISOString(), status:'Yeni', data},...items])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); } catch(error) { alert(error instanceof Error ? error.message : 'Barter talebi kaydedilemedi.'); } };
   const fields = (kind: string) => kind === 'Ev' ? ['İl','İlçe','Mahalle','Konut özellikleri','Fiyat'] : kind === 'Arsa' ? ['İl','İlçe','Mahalle','Ada','Parsel','Fiyat'] : kind === 'Otomobil' ? ['Marka','Model','Fiyat'] : ['Açıklama','Fiyat','Şehir / İlçe'];
   if (sent) return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-5xl px-6"><div className="rounded-3xl bg-slate-950 p-10 text-center text-white"><h2 className="text-2xl font-black">Barter talebiniz alındı.</h2><p className="mt-3 text-sm text-slate-300">Talebiniz yönetici paneline iletildi; uygun eşleşme için sizinle iletişime geçilecektir.</p></div></div></section>;
   return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl lg:grid lg:grid-cols-[.78fr_1.22fr]"><aside className="bg-slate-950 p-8 text-white sm:p-10"><p className="text-xs font-black tracking-[.2em] text-red-300">BARTERBANK®</p><h2 className="mt-4 text-3xl font-black">Fazlanı ver, eksiğini al.</h2><p className="mt-4 text-sm leading-7 text-slate-300">Gayrimenkul, otomobil veya diğer değerlerinizi; kısmi ya da tam barter seçenekleriyle değerlendirin.</p><div className="mt-8 space-y-3 text-sm font-bold"><p>01 · Takas teklifini oluştur</p><p>02 · İstediğin değeri belirt</p><p>03 · Uygun eşleşmeyi bekle</p></div></aside><form onSubmit={submit} className="p-6 sm:p-10"><div className="grid gap-3 sm:grid-cols-2"><button type="button" onClick={()=>setMode('Önce Takasla Öner')} className={`rounded-xl p-3 text-xs font-black ${mode==='Önce Takasla Öner'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>ÖNCE TAKASLA ÖNER</button><button type="button" onClick={()=>setMode('Takasa Talebi')} className={`rounded-xl p-3 text-xs font-black ${mode==='Takasa Talebi'?'bg-red-700 text-white':'bg-slate-100 text-slate-700'}`}>TAKASA TALEBİ</button></div><div className="mt-5 grid gap-4 sm:grid-cols-2"><label className="text-xs font-black text-slate-700">VERMEK İSTEDİĞİN<select value={offer} onChange={e=>setOffer(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>Diğer</option></select></label><label className="text-xs font-black text-slate-700">ALMAK İSTEDİĞİN<select value={request} onChange={e=>setRequest(e.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 p-3"><option>Gayrimenkul</option><option>Otomobil</option><option>Diğer</option></select></label></div><div className="mt-5 grid gap-3 sm:grid-cols-2">{[...fields(offer).map(x=>`Verilecek ${x}`),...fields(request).map(x=>`İstenen ${x}`)].map(x=><input key={x} required name={x} placeholder={x} className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/>)}<select name="Barter türü" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"><option>Tam Barter</option><option>Kısmi Barter</option></select></div><label className="mt-5 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>Bilgilerimin değerlendirilmesini kabul ediyorum; <Link to="/kvkk" className="font-black text-red-700">KVKK</Link> ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metinlerini okudum.</label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">Barter Talebini Gönder</button></form></div></div></section>;
@@ -1881,7 +1905,7 @@ export function BarterBankModuleV2() {
   const [asset, setAsset] = useState<'Ev' | 'Arsa' | 'Otomobil' | 'Diğer'>('Ev');
   const [sent, setSent] = useState(false);
   const fields = asset === 'Ev' ? ['İl', 'İlçe', 'Mahalle', 'Konut özellikleri', 'Fiyat'] : asset === 'Arsa' ? ['İl', 'İlçe', 'Mahalle', 'Ada', 'Parsel', 'Fiyat'] : asset === 'Otomobil' ? ['Marka', 'Model', 'Fiyat'] : ['Şehir / İlçe', 'Açıklama', 'Fiyat'];
-  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, mode, asset, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(new FormData(event.currentTarget)) }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  const submit = async (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const data={...Object.fromEntries(new FormData(event.currentTarget)),mode,asset}; try { await createPublicInboxSubmission('barter',data); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, mode, asset, status: 'Yeni', createdAt: new Date().toISOString(), data }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); } catch(error) { alert(error instanceof Error ? error.message : 'Barter talebi kaydedilemedi.'); } };
   if (sent) return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-5xl px-6"><div className="rc-navy-frame rounded-3xl bg-[#CD011E] p-10 text-center text-white"><h2 className="text-2xl font-black">Barter kaydınız alındı.</h2><p className="mt-3 text-sm text-white/85">Talebiniz yönetici paneline iletildi; uygun eşleşme için sizinle iletişime geçilecektir.</p></div></div></section>;
   return <section id="barter-bank" className="border-b border-slate-200 bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6 lg:px-12"><div className="rc-navy-frame overflow-hidden rounded-3xl bg-white shadow-xl lg:grid lg:grid-cols-[.78fr_1.22fr]"><aside className="bg-[#CD011E] p-8 text-white sm:p-10"><p className="text-xs font-black tracking-[.2em] text-white/75">BARTERBANK®</p><h2 className="mt-4 text-3xl font-black">Fazlanı ver, eksiğini al.</h2><p className="mt-4 text-sm leading-7 text-white/85">Gayrimenkul, otomobil veya diğer değerlerinizi kısmi ya da tam barter seçenekleriyle değerlendirin.</p></aside><form onSubmit={submit} className="p-6 sm:p-10"><div className="grid gap-3 sm:grid-cols-2"><button type="button" onClick={() => setMode('Takas Önerisi')} className={`rounded-xl p-3 text-xs font-black ${mode === 'Takas Önerisi' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>TAKAS ÖNERİSİ</button><button type="button" onClick={() => setMode('Takas Talebi')} className={`rounded-xl p-3 text-xs font-black ${mode === 'Takas Talebi' ? 'bg-red-700 text-white' : 'bg-slate-100 text-slate-700'}`}>TAKAS TALEBİ</button></div><div className="mt-6"><p className="text-sm font-black text-slate-900">{mode === 'Takas Önerisi' ? 'Vermek istediğiniz değer' : 'Almak istediğiniz değer'}</p><label className="mt-3 block text-xs font-black text-slate-700">DEĞER TÜRÜ<select value={asset} onChange={(e) => setAsset(e.target.value as typeof asset)} className="mt-2 w-full rounded-xl border border-slate-200 p-3 text-sm"><option>Ev</option><option>Arsa</option><option>Otomobil</option><option>Diğer</option></select></label></div><div className="mt-5 grid gap-3 sm:grid-cols-2">{fields.map((field) => <input key={field} required name={field} placeholder={field} className="rounded-xl border border-slate-200 px-4 py-3 text-sm"/>)}<select name="Barter türü" className="rounded-xl border border-slate-200 px-4 py-3 text-sm"><option>Tam Barter</option><option>Kısmi Barter</option></select></div><label className="mt-5 flex items-start gap-2 text-[11px] leading-5 text-slate-500"><input required type="checkbox" className="mt-1 accent-red-700"/>Bilgilerimin değerlendirilmesini kabul ediyorum; <Link to="/kvkk" className="font-black text-red-700">KVKK</Link> ve <Link to="/kullanim-kosullari" className="font-black text-red-700">Site Kullanım Politikası</Link> metinlerini okudum.</label><button className="mt-6 w-full rounded-xl bg-red-700 px-5 py-4 text-sm font-black text-white">Barter Talebini Gönder</button></form></div></div></section>;
 }
@@ -1910,7 +1934,7 @@ function BarterBankModuleV3() {
       </div>
     </section>
   );
-  const submit = (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, offer, request, status: 'Yeni', createdAt: new Date().toISOString(), data: Object.fromEntries(new FormData(event.currentTarget)) }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); };
+  const submit = async (event: React.FormEvent<HTMLFormElement>) => { event.preventDefault(); const data={...Object.fromEntries(new FormData(event.currentTarget)),offer,request}; try { await createPublicInboxSubmission('barter',data); const saved = JSON.parse(localStorage.getItem('realty-center-barter-requests') || '[]'); localStorage.setItem('realty-center-barter-requests', JSON.stringify([{ id: `BB-${Date.now()}`, offer, request, status: 'Yeni', createdAt: new Date().toISOString(), data }, ...saved])); window.dispatchEvent(new Event('realty-center-barter-requests-updated')); setSent(true); } catch(error) { alert(error instanceof Error ? error.message : 'Barter talebi kaydedilemedi.'); } };
   if (sent) return <section id="barter-bank" className="bg-slate-50 py-10"><div className="mx-auto max-w-5xl px-6"><div className="barter-success rc-navy-frame bg-[#CD011E] p-8 text-center text-white"><h2 className="text-2xl font-black">BARTERBANK® kaydınız alındı.</h2><p className="mt-2 text-sm text-white/85">Teklifiniz ve talebiniz yönetici paneline iletildi.</p></div></div></section>;
   return <section id="barter-bank" className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-12"><div className="barter-container mx-auto max-w-7xl px-6 lg:px-12"><div className="barter-shell rc-navy-frame overflow-hidden bg-white/95">
     <header className="barter-hero-banner">
@@ -5720,11 +5744,7 @@ export default function RealtyCenterApp() {
   });
 
   const handleSendMessage = async (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
-    const response = await fetch('/api/auth.php?action=crm-public-lead', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ full_name: newMessage.fullName, phone: newMessage.phone, email: newMessage.email, message: newMessage.message })
-    });
+    await createPublicInboxSubmission('contact', { fullName: newMessage.fullName, phone: newMessage.phone, email: newMessage.email, message: newMessage.message });
     const payload = await response.json().catch(() => ({}));
     if (!response.ok || payload.error) throw new Error(payload.error || 'Mesajınız kaydedilemedi. Lütfen tekrar deneyin.');
     const messageEntry: ContactMessage = {
