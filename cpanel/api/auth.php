@@ -111,6 +111,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'public-listings') {
     } catch (Throwable $e) { respond(['error'=>'Yayındaki ilanlar okunamadı.'],500); }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'realty-media') {
+    try {
+        $q = $pdo->prepare('SELECT setting_value FROM homepage_settings WHERE setting_key=? LIMIT 1');
+        $q->execute(['realty_media_content']);
+        $row = $q->fetch();
+        $content = $row ? json_decode((string)$row['setting_value'], true) : null;
+        $videos = is_array($content) && is_array($content['videos'] ?? null) ? $content['videos'] : null;
+        respond(['videos'=>$videos]);
+    } catch (Throwable $e) { respond(['error'=>'Realty Medya içerikleri yüklenemedi.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-realty-media') {
+    $actor = requireUser($pdo);
+    if (($actor['role'] ?? '') !== 'admin') respond(['error'=>'Realty Medya içeriklerini yalnızca admin düzenleyebilir.'],403);
+    $input = body();
+    $source = is_array($input['videos'] ?? null) ? $input['videos'] : [];
+    if (count($source) > 300) respond(['error'=>'En fazla 300 video eklenebilir.'],422);
+    $videos = [];
+    foreach ($source as $index => $video) {
+        if (!is_array($video)) continue;
+        $url = trim((string)($video['url'] ?? ''));
+        $parts = parse_url($url);
+        $host = strtolower((string)($parts['host'] ?? ''));
+        $youtubeId = '';
+        if (in_array($host, ['youtube.com','www.youtube.com','m.youtube.com'], true)) {
+            $query = []; parse_str((string)($parts['query'] ?? ''), $query);
+            $youtubeId = (string)($query['v'] ?? '');
+            if ($youtubeId === '' && preg_match('#^/(?:embed|shorts)/([A-Za-z0-9_-]{11})#', (string)($parts['path'] ?? ''), $match)) $youtubeId = $match[1];
+        } elseif (in_array($host, ['youtu.be','www.youtu.be'], true)) {
+            $youtubeId = trim((string)($parts['path'] ?? ''), '/');
+        }
+        if (!preg_match('/^[A-Za-z0-9_-]{11}$/', $youtubeId)) respond(['error'=>'Geçerli bir YouTube bağlantısı kullanın.'],422);
+        $category = ($video['category'] ?? '') === 'news' ? 'news' : (($video['category'] ?? '') === 'tv' ? 'tv' : '');
+        $title = trim((string)($video['title'] ?? ''));
+        if ($category === '' || $title === '') respond(['error'=>'İçerik türü ve video başlığı zorunludur.'],422);
+        $id = trim((string)($video['id'] ?? ''));
+        if ($id === '' || strlen($id) > 80) $id = bin2hex(random_bytes(16));
+        $videos[] = [
+            'id'=>$id,
+            'source'=>'youtube',
+            'category'=>$category,
+            'url'=>$url,
+            'title'=>mb_substr($title,0,255),
+            'thumbnail'=>'https://img.youtube.com/vi/'.$youtubeId.'/hqdefault.jpg',
+            'description'=>mb_substr(trim((string)($video['description'] ?? '')),0,5000),
+            'createdAt'=>trim((string)($video['createdAt'] ?? date(DATE_ATOM))),
+            'sort_order'=>$index+1
+        ];
+    }
+    try {
+        $json = json_encode(['videos'=>$videos], JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR);
+        $q = $pdo->prepare('INSERT INTO homepage_settings (setting_key,setting_value) VALUES (?,?) ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value)');
+        $q->execute(['realty_media_content',$json]);
+        $log = $pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,metadata) VALUES (?,?,?,?)');
+        $log->execute([$actor['id'],'realty_media_updated','realty_media',json_encode(['video_count'=>count($videos)],JSON_UNESCAPED_UNICODE)]);
+        respond(['ok'=>true,'videos'=>$videos]);
+    } catch (Throwable $e) { respond(['error'=>'Realty Medya içerikleri kaydedilemedi.'],500); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'corporate-content') {
     try {
         $q = $pdo->prepare('SELECT setting_value FROM homepage_settings WHERE setting_key=? LIMIT 1');
