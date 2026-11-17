@@ -2283,7 +2283,6 @@ function TeamPage() {
 
 function DocumentsPage() {
   const [documents, setDocuments] = useState(() => getStoredCorporateItems<CorporateDocument[]>('realty-center-documents', DEFAULT_DOCUMENTS));
-  const [selectedDocument, setSelectedDocument] = useState<CorporateDocument | null>(null);
   const [pdfUrls, setPdfUrls] = useState<Record<string, string>>({});
   useEffect(() => {
     let active = true;
