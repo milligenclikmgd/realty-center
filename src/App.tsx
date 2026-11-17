@@ -206,11 +206,19 @@ const DEFAULT_PARTNERS: CorporateLogoItem[] = [
 const getStoredCorporateItems = <T,>(key: string, fallback: T): T => {
   try {
     const stored = JSON.parse(localStorage.getItem(key) || 'null');
-    if (!Array.isArray(stored)) return stored || fallback;
-    const defaults = fallback as unknown as CorporateLogoItem[];
-    const savedExtras = (stored as CorporateLogoItem[]).filter((item) => item.id !== 'ref-1' && !defaults.some((defaultItem) => defaultItem.id === item.id));
-    return [...defaults, ...savedExtras] as T;
+    return stored === null ? fallback : stored as T;
   } catch { return fallback; }
+};
+const fetchCorporateContent = async () => {
+  try {
+    const response = await fetch('/api/auth.php?action=corporate-content&_=' + Date.now(), { cache: 'no-store' });
+    const payload = await response.json();
+    if (!response.ok || payload.error) throw new Error(payload.error || 'Kurumsal içerik alınamadı.');
+    return payload.content && typeof payload.content === 'object' ? payload.content : null;
+  } catch (error) {
+    console.warn('Kurumsal içerik API yüklenemedi:', error);
+    return null;
+  }
 };
 
 type HeaderMenuItem = { id: string; label: string; path: string; side: 'left' | 'right'; image?: string; content?: string; children: HeaderMenuItem[] };
@@ -2256,7 +2264,20 @@ function WhyRealtyCenterPage() {
 function TeamPage() {
   const [members, setMembers] = useState(getManagementTeam);
   const [selected, setSelected] = useState<ManagementMember | null>(null);
-  useEffect(() => { const update = () => setMembers(getManagementTeam()); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  useEffect(() => {
+    let active = true;
+    const update = () => setMembers(getManagementTeam());
+    const load = async () => {
+      const data = await fetchCorporateContent();
+      if (!active || !Array.isArray(data?.management)) return;
+      const items = [...data.management].sort((a: any, b: any) => Number(a.sort_order || 0) - Number(b.sort_order || 0));
+      localStorage.setItem('realty-center-management', JSON.stringify(items));
+      setMembers(items);
+    };
+    void load();
+    window.addEventListener('realty-center-corporate-updated', update);
+    return () => { active = false; window.removeEventListener('realty-center-corporate-updated', update); };
+  }, []);
   return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL YÖNETİM</p><h1 className="mt-3 text-4xl font-black text-slate-950">Yönetim Kadromuz</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Realty Center®’ın stratejisine, hizmet kalitesine ve sürdürülebilir büyümesine yön veren yönetim ekibimizle tanışın.</p><div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{members.map((member) => <button key={member.id} onClick={() => setSelected(member)} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={member.image} alt={member.name} className="h-72 w-full object-cover object-top transition duration-500 group-hover:scale-105"/><div className="p-5"><p className="text-[10px] font-black tracking-widest text-red-700">YÖNETİM KADROSU</p><h2 className="mt-2 text-xl font-black text-slate-900">{member.name}</h2><p className="mt-1 text-xs font-bold text-slate-500">{member.title}</p><span className="mt-4 inline-flex text-xs font-black text-red-700">Özgeçmişi görüntüle →</span></div></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/75 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article className="relative grid max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl md:grid-cols-[280px_1fr]" onClick={(e) => e.stopPropagation()}><button onClick={() => setSelected(null)} className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-900 shadow"><X className="h-5 w-5"/></button><img src={selected.image} alt={selected.name} className="h-72 w-full object-cover object-top md:h-full"/><div className="p-7 sm:p-9"><p className="text-[10px] font-black tracking-widest text-red-700">REALTY CENTER® YÖNETİM KADROSU</p><h2 className="mt-3 text-3xl font-black text-slate-900">{selected.name}</h2><p className="mt-2 text-sm font-black text-red-700">{selected.title}</p><div className="my-6 h-px bg-slate-200"/><h3 className="text-sm font-black text-slate-900">Özgeçmiş</h3><p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.biography}</p></div></article></div>}</main>;
 }
 
@@ -2264,7 +2285,20 @@ function DocumentsPage() {
   const [documents, setDocuments] = useState(() => getStoredCorporateItems<CorporateDocument[]>('realty-center-documents', DEFAULT_DOCUMENTS));
   const [selectedDocument, setSelectedDocument] = useState<CorporateDocument | null>(null);
   const [pdfUrls, setPdfUrls] = useState<Record<string, string>>({});
-  useEffect(() => { const update = () => setDocuments(getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, []);
+  useEffect(() => {
+    let active = true;
+    const update = () => setDocuments(getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS));
+    const load = async () => {
+      const data = await fetchCorporateContent();
+      if (!active || !Array.isArray(data?.documents)) return;
+      const items = [...data.documents].sort((a: any, b: any) => Number(a.sort_order || 0) - Number(b.sort_order || 0));
+      localStorage.setItem('realty-center-documents', JSON.stringify(items));
+      setDocuments(items);
+    };
+    void load();
+    window.addEventListener('realty-center-corporate-updated', update);
+    return () => { active = false; window.removeEventListener('realty-center-corporate-updated', update); };
+  }, []);
   useEffect(() => {
     let active = true;
     const createdUrls: string[] = [];
@@ -2288,7 +2322,21 @@ function LogoShowcasePage({ mode }: { mode: 'references' | 'partners' }) {
   const fallback = mode === 'references' ? DEFAULT_REFERENCES : DEFAULT_PARTNERS;
   const [items, setItems] = useState(() => getStoredCorporateItems<CorporateLogoItem[]>(key, fallback));
   const [selected, setSelected] = useState<CorporateLogoItem | null>(null);
-  useEffect(() => { const update = () => setItems(getStoredCorporateItems(key, fallback)); window.addEventListener('realty-center-corporate-updated', update); return () => window.removeEventListener('realty-center-corporate-updated', update); }, [key]);
+  useEffect(() => {
+    let active = true;
+    const update = () => setItems(getStoredCorporateItems(key, fallback));
+    const load = async () => {
+      const data = await fetchCorporateContent();
+      const field = mode === 'references' ? 'references' : 'partners';
+      if (!active || !Array.isArray(data?.[field])) return;
+      const next = [...data[field]].sort((a: any, b: any) => Number(a.sort_order || 0) - Number(b.sort_order || 0));
+      localStorage.setItem(key, JSON.stringify(next));
+      setItems(next);
+    };
+    void load();
+    window.addEventListener('realty-center-corporate-updated', update);
+    return () => { active = false; window.removeEventListener('realty-center-corporate-updated', update); };
+  }, [key, mode]);
   const isPartners = mode === 'partners';
   return <main className="min-h-screen bg-slate-50 py-14"><div className="mx-auto max-w-6xl px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">{isPartners ? 'GÜÇLÜ İŞ BİRLİKLERİ' : 'GÜVENİMİZİN REFERANSLARI'}</p><h1 className="mt-3 text-4xl font-black text-slate-950">{isPartners ? 'İş Ortaklarımız' : 'Referanslarımız'}</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">{isPartners ? 'Anlaşmalı bankalarımız ve çözüm ortağı kurumlarımızla sunduğumuz avantajları incelemek için logolara tıklayın.' : 'Birlikte değer ürettiğimiz kurumları ve tamamladığımız çalışmaları logolar üzerinden inceleyebilirsiniz.'}</p><div className="mt-9 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">{items.map((item) => <button key={item.id} onClick={() => setSelected(item)} className="group flex min-h-44 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-xl"><img src={item.logo} alt={item.name} className="h-20 w-full object-contain transition group-hover:scale-105"/><h2 className="mt-4 text-center text-sm font-black text-slate-800">{item.name}</h2><span className="mt-2 text-[10px] font-black text-red-700">Anlaşma detayları →</span></button>)}</div></div>{selected && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm" onClick={() => setSelected(null)}><article onClick={(e) => e.stopPropagation()} className="relative w-full max-w-xl rounded-3xl bg-white p-8 shadow-2xl"><button onClick={() => setSelected(null)} className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100"><X className="h-5 w-5"/></button><img src={selected.logo} alt={selected.name} className="h-24 w-48 object-contain"/><h2 className="mt-6 text-2xl font-black text-slate-900">{selected.name}</h2><p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{selected.content}</p></article></div>}</main>;
 }
