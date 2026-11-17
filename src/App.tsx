@@ -3351,7 +3351,7 @@ function ListingsPageV2() {
   const initialMainCategory = legacyMainCategory(initialCategory);
   const initialCity = params.get('city') || '';
   const initialDistrict = params.get('district') || '';
-  const showAllInitially = params.get('all') === '1' || Boolean(initialType || initialPropertyType || initialCategory || initialCity);
+  const showAllInitially = true;
   const [transactionType, setTransactionType] = useState(initialType);
   const [propertyType, setPropertyType] = useState(initialPropertyType);
   const [categoryFilter, setCategoryFilter] = useState<MainCategory | ''>(initialMainCategory);
