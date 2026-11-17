@@ -3423,6 +3423,40 @@ type CorporateSection = "management" | "documents" | "partners" | "references";
 type CorporateRecord = { id: string; name?: string; title?: string; image?: string; biography?: string; description?: string; fileUrl?: string; logo?: string; sort_order: number; content?: string };
 type CorporateState = Record<CorporateSection, CorporateRecord[]>;
 const EMPTY_CORPORATE: CorporateState = { management: [], documents: [], partners: [], references: [] };
+const DEFAULT_PANEL_CORPORATE: CorporateState = {
+  management: [
+    { id: "yonetim-1", name: "Mehmet Kaya", title: "Yönetim Kurulu Başkanı", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=88&w=900", biography: "Gayrimenkul, marka yönetimi ve franchise yapılanması alanlarında deneyimlidir. Realty Center®’ın büyüme stratejisi ve ulusal ofis ağının gelişimine liderlik eder.", sort_order: 1 },
+    { id: "yonetim-2", name: "Selin Arslan", title: "Yönetim Kurulu Başkan Yardımcısı", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=88&w=900", biography: "Kurumsal iletişim, müşteri deneyimi ve gayrimenkul pazarlaması alanlarında uzmanlaşmıştır.", sort_order: 2 },
+    { id: "yonetim-3", name: "Burak Demir", title: "Franchise Geliştirme Direktörü", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=88&w=900", biography: "Ofis yapılanması, saha operasyonları ve ticari gayrimenkul konularında deneyimlidir.", sort_order: 3 },
+  ],
+  documents: [
+    { id: "belge-1", title: "Yetki Belgesi", description: "Realty Center® kurumsal yetkilendirme belgesi.", fileUrl: "", sort_order: 1 },
+    { id: "belge-2", title: "Kalite ve Hizmet Belgesi", description: "Hizmet süreçlerimize ilişkin kurumsal belge.", fileUrl: "", sort_order: 2 },
+  ],
+  references: [
+    { id: "ref-ato", name: "Ankara Ticaret Odası (ATO)", logo: "/partner-ato.png", sort_order: 1 },
+    { id: "ref-tedb", name: "Tüm Emlak Danışmanları Birliği", logo: "/partner-tedb.png", sort_order: 2 },
+    { id: "ref-business", name: "Business Akademi", logo: "/partner-business-akademi.png", sort_order: 3 },
+    { id: "ref-tobb", name: "Türkiye Odalar ve Borsalar Birliği (TOBB)", logo: "/partner-tobb.png", sort_order: 4 },
+  ],
+  partners: [
+    { id: "partner-tedb", name: "Tüm Emlak Danışmanları Birliği", logo: "/partner-tedb.png", sort_order: 1 },
+    { id: "partner-ato", name: "Ankara Ticaret Odası (ATO)", logo: "/partner-ato.png", sort_order: 2 },
+    { id: "partner-trade", name: "T.C. Ticaret Bakanlığı", logo: "https://www.google.com/s2/favicons?domain=ticaret.gov.tr&sz=256", sort_order: 3 },
+    { id: "partner-business", name: "Business Akademi", logo: "/partner-business-akademi.png", sort_order: 4 },
+    { id: "partner-tobb", name: "Türkiye Odalar ve Borsalar Birliği (TOBB)", logo: "/partner-tobb.png", sort_order: 5 },
+    { id: "partner-kriter", name: "Kriter Medya", logo: "/klogo.png", sort_order: 6 },
+    { id: "partner-eminevim", name: "Eminevim", logo: "https://www.google.com/s2/favicons?domain=eminevim.com&sz=256", sort_order: 7 },
+    { id: "partner-katilimevim", name: "Katılımevim", logo: "https://www.google.com/s2/favicons?domain=katilimevim.com.tr&sz=256", sort_order: 8 },
+    { id: "partner-fuzulev", name: "Fuzulev", logo: "https://www.google.com/s2/favicons?domain=fuzulev.com.tr&sz=256", sort_order: 9 },
+    { id: "partner-ziraat", name: "Ziraat Bankası", logo: "https://www.google.com/s2/favicons?domain=ziraatbank.com.tr&sz=256", sort_order: 10 },
+    { id: "partner-garanti", name: "Garanti BBVA", logo: "https://www.google.com/s2/favicons?domain=garantibbva.com.tr&sz=256", sort_order: 11 },
+    { id: "partner-halkbank", name: "Halkbank", logo: "https://www.google.com/s2/favicons?domain=halkbank.com.tr&sz=256", sort_order: 12 },
+    { id: "partner-kuveyt", name: "Kuveyt Türk", logo: "https://www.google.com/s2/favicons?domain=kuveytturk.com.tr&sz=256", sort_order: 13 },
+    { id: "partner-albaraka", name: "Albaraka Türk", logo: "https://www.google.com/s2/favicons?domain=albaraka.com.tr&sz=256", sort_order: 14 },
+    { id: "partner-denizbank", name: "DenizBank", logo: "https://www.google.com/s2/favicons?domain=denizbank.com&sz=256", sort_order: 15 },
+  ],
+};
 const CORPORATE_TABS: { id: CorporateSection; label: string; helper: string }[] = [
   { id: "management", label: "Yönetim Kurulu", helper: "Fotoğraf, ad-soyad, unvan ve CV bilgilerini yönetin." },
   { id: "documents", label: "Belgelerimiz", helper: "Kurumsal PDF belgelerini yükleyin ve sıralayın." },
@@ -3460,10 +3494,12 @@ function CorporateManagementPage() {
       const payload = await response.json();
       if (!response.ok || payload.error) throw new Error(payload.error || "Kurumsal içerikler alınamadı.");
       const localItems = (key: string) => { try { const value = JSON.parse(localStorage.getItem(key) || "[]"); return Array.isArray(value) ? value : []; } catch { return []; } };
-      const data = payload.content && typeof payload.content === "object" ? payload.content : {
+      const local = {
         management: localItems("realty-center-management"), documents: localItems("realty-center-documents"),
         partners: localItems("realty-center-partners"), references: localItems("realty-center-references"),
       };
+      const hasLocal = Object.values(local).some((items) => items.length > 0);
+      const data = payload.content && typeof payload.content === "object" ? payload.content : hasLocal ? local : DEFAULT_PANEL_CORPORATE;
       cacheAndSet({
         management: Array.isArray(data.management) ? data.management.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
         documents: Array.isArray(data.documents) ? data.documents.map((item: any, index: number) => ({ ...item, sort_order: Number(item.sort_order || index + 1) })) : [],
@@ -3567,7 +3603,7 @@ function CorporateManagementPage() {
   const existingFile = section === "management" ? form.image : section === "documents" ? form.fileUrl : form.logo;
   return <div className="space-y-5">
     <div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / KURUMSAL</p><h1 className="mt-1 text-2xl font-black">Kurumsal Yönetim</h1><p className="mt-1 text-sm text-slate-500">Yönetim kurulu, belgeler, iş ortakları ve referansları tek yerden yönetin.</p></div>
-    <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">{CORPORATE_TABS.map((item) => <button key={item.id} onClick={() => { setSection(item.id); resetForm(); setError(""); }} className={"rounded-xl border px-4 py-3 text-left text-sm font-bold transition " + (section === item.id ? "border-red-200 bg-red-50 text-[#cd011e]" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50")}>{item.label}<span className="mt-1 block text-[11px] font-medium text-slate-400">{content[item.id].length} kayıt</span></button>)}</div>
+    <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">{CORPORATE_TABS.map((item) => <button key={item.id} onClick={() => { setSection(item.id); resetForm(); setError(""); }} className={"rounded-xl border px-4 py-3 text-left text-sm font-bold transition " + (section === item.id ? "border-[#cd011e] bg-[#cd011e] text-white" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50")}>{item.label}<span className={"mt-1 block text-[11px] font-medium " + (section === item.id ? "text-white/80" : "text-slate-400")}>{content[item.id].length} kayıt</span></button>)}</div>
     <section className="rounded-2xl border border-slate-200 bg-white p-5">
       <div className="mb-4"><h2 className="text-base font-bold">{editingId ? "Kaydı Düzenle" : "Yeni Kayıt Ekle"} · {tab.label}</h2><p className="mt-1 text-xs text-slate-500">{tab.helper}</p></div>
       <form onSubmit={submit} className="grid gap-3 md:grid-cols-2">
@@ -3588,7 +3624,7 @@ function CorporateManagementPage() {
       </form>
       {notice && <p className="mt-3 text-xs font-semibold text-emerald-700">{notice}</p>}{error && <p className="mt-3 rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}
     </section>
-    <section className="rounded-2xl border border-slate-200 bg-white p-5"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-base font-bold">{tab.label}</h2><p className="mt-1 text-xs text-slate-500">Sıralama numarasını değiştirip sıralamayı kaydedin.</p></div><button disabled={busy || loading || rows.length < 2} onClick={() => void saveOrder()} className="rounded-lg border border-slate-200 px-4 py-2.5 text-xs font-bold text-slate-700 disabled:opacity-50">Sıralamayı Kaydet</button></div>
+    <section className="max-w-4xl rounded-2xl border border-slate-200 bg-white p-5"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-base font-bold">{tab.label}</h2><p className="mt-1 text-xs text-slate-500">Sıralama numarasını değiştirip sıralamayı kaydedin.</p></div><button disabled={busy || loading || rows.length < 2} onClick={() => void saveOrder()} className="rounded-lg border border-slate-200 px-4 py-2.5 text-xs font-bold text-slate-700 disabled:opacity-50">Sıralamayı Kaydet</button></div>
       {loading ? <div className="mt-4 h-20 animate-pulse rounded-lg bg-slate-100" /> : orderedRows.length ? <div className="mt-4 space-y-2">{orderedRows.map((item) => <article key={item.id} className="flex flex-col gap-3 rounded-xl border border-slate-200 p-3 sm:flex-row sm:items-center">
         {section === "management" && item.image && <img src={item.image} alt="" className="h-14 w-14 rounded-full object-cover" />}
         {section === "documents" && <span className="grid h-12 w-12 place-items-center rounded-lg bg-red-50 text-[10px] font-black text-[#cd011e]">PDF</span>}
