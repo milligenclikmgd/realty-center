@@ -3347,6 +3347,22 @@ function ListingEntryPage({ profiles, alert, close }: { profiles: Profile[]; ale
     setForm((current) => ({ ...current, description: editorRef.current?.innerHTML || "" }));
   };
   const neighborhoods = locationRows.find((row) => row.city === form.city && row.district === form.district)?.neighborhoods || [];
+  const requestYoutubeMetadata = async (url: string) => {
+    const response = await fetch("/api/auth.php?action=youtube-metadata", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ url }) });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || payload.error) throw new Error(payload.error || "YouTube bilgileri alınamadı.");
+    return payload as { title?: string; description?: string };
+  };
+  const fillYoutubeMetadata = async () => {
+    if (!mediaYoutubeId(form.url) || (form.title.trim() && form.description.trim())) return;
+    setMetadataBusy(true); setError("");
+    try {
+      const metadata = await requestYoutubeMetadata(form.url);
+      setForm((current) => ({ ...current, title: current.title.trim() || metadata.title || "", description: current.description.trim() || metadata.description || "" }));
+      setNotice(metadata.description ? "YouTube başlık ve açıklaması otomatik alındı." : "YouTube başlığı alındı; bu videoda açıklama bilgisi bulunamadı.");
+    } catch (e: any) { setError(e.message || "YouTube bilgileri alınamadı."); }
+    finally { setMetadataBusy(false); }
+  };
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!form.title || !form.price || !form.city || !form.district || !form.neighborhood || !form.advisor) return alert("Başlık, danışman, fiyat, il, ilçe ve mahalle zorunludur.");
@@ -3676,6 +3692,7 @@ function RealtyMediaManager() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
+  const [metadataBusy, setMetadataBusy] = useState(false);
   const ordered = [...items].sort((left, right) => left.sort_order - right.sort_order);
   const persist = async (next: RealtyMediaItem[]) => {
     setBusy(true); setError(""); setNotice("");
@@ -3704,8 +3721,19 @@ function RealtyMediaManager() {
     event.preventDefault();
     const id = mediaYoutubeId(form.url);
     if (!id) { setError("Geçerli bir YouTube video bağlantısı girin."); return; }
-    if (!form.title.trim()) { setError("Video başlığı zorunludur."); return; }
-    const item: RealtyMediaItem = { id: editingId || crypto.randomUUID(), source: "youtube", category, url: form.url.trim(), title: form.title.trim(), thumbnail: `https://img.youtube.com/vi/${id}/hqdefault.jpg`, description: form.description.trim(), createdAt: new Date().toISOString(), sort_order: editingId ? (items.find((row) => row.id === editingId)?.sort_order || items.length + 1) : items.length + 1 };
+    let title = form.title.trim(), description = form.description.trim();
+    if (!title || !description) {
+      setMetadataBusy(true); setError("");
+      try {
+        const metadata = await requestYoutubeMetadata(form.url);
+        title = title || String(metadata.title || "").trim();
+        description = description || String(metadata.description || "").trim();
+      } catch (e: any) {
+        if (!title) { setError(e.message || "YouTube başlığı alınamadı; başlığı kendiniz yazabilirsiniz."); setMetadataBusy(false); return; }
+      } finally { setMetadataBusy(false); }
+    }
+    if (!title) { setError("YouTube başlığı alınamadı; lütfen başlığı yazın."); return; }
+    const item: RealtyMediaItem = { id: editingId || crypto.randomUUID(), source: "youtube", category, url: form.url.trim(), title, thumbnail: `https://img.youtube.com/vi/${id}/hqdefault.jpg`, description, createdAt: new Date().toISOString(), sort_order: editingId ? (items.find((row) => row.id === editingId)?.sort_order || items.length + 1) : items.length + 1 };
     const next = editingId ? ordered.map((row) => row.id === editingId ? item : row) : [...ordered, item];
     const saved = await persist(next);
     if (!saved) return;
@@ -3725,12 +3753,12 @@ function RealtyMediaManager() {
       <div className="flex items-center justify-between gap-3"><div><h2 className="text-base font-bold">{editingId ? "İçeriği Düzenle" : "İçerik Ekle"}</h2><p className="mt-1 text-xs text-slate-500">YouTube küçük resmi kapak görseli olarak otomatik kullanılır.</p></div><Tv className="text-[#cd011e]" size={20}/></div>
       <div className="grid gap-3 md:grid-cols-2">
         <label className="text-xs font-semibold text-slate-600">İçerik türü<select value={category} onChange={(e) => setCategory(e.target.value as "tv" | "news")} className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-3 text-sm"><option value="tv">Realty TV</option><option value="news">Realty Haberler</option></select></label>
-        <label className="text-xs font-semibold text-slate-600">YouTube video URL<input required type="url" placeholder="https://www.youtube.com/watch?v=..." value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
-        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Video başlığı<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
-        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Açıklama (isteğe bağlı)<textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} className="mt-1 min-h-20 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+        <label className="text-xs font-semibold text-slate-600">YouTube video URL<input required type="url" placeholder="https://www.youtube.com/watch?v=..." value={form.url} onBlur={() => void fillYoutubeMetadata()} onChange={(e) => setForm({ ...form, url: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Video başlığı (boş bırakılırsa YouTube’dan alınır)<input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Açıklama (boş bırakılırsa YouTube’dan alınır)<textarea value={form.description} onBlur={() => void fillYoutubeMetadata()} onChange={(e) => setForm({ ...form, description: e.target.value })} className="mt-1 min-h-20 w-full rounded-lg border border-slate-200 p-3 text-sm" placeholder="YouTube bağlantısından otomatik alınır"/></label>
       </div>
       {form.url && mediaYoutubeId(form.url) && <div className="flex items-center gap-3 rounded-xl bg-slate-50 p-3"><img src={`https://img.youtube.com/vi/${mediaYoutubeId(form.url)}/hqdefault.jpg`} alt="YouTube kapak görseli" className="h-20 w-36 rounded-lg object-cover"/><span className="text-xs text-slate-600">YouTube kapak görseli</span></div>}
-      <button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{busy ? "Kaydediliyor…" : editingId ? "Değişiklikleri Kaydet" : "İÇERİK EKLE"}</button>{editingId && <button type="button" onClick={() => { setEditingId(""); setForm({ url: "", title: "", description: "" }); }} className="ml-2 rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold">Vazgeç</button>}
+      <button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{metadataBusy ? "YouTube bilgileri alınıyor…" : busy ? "Kaydediliyor…" : editingId ? "Değişiklikleri Kaydet" : "İÇERİK EKLE"}</button>{editingId && <button type="button" onClick={() => { setEditingId(""); setForm({ url: "", title: "", description: "" }); }} className="ml-2 rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold">Vazgeç</button>}
     </form>
     <section className="max-w-5xl rounded-2xl border border-slate-200 bg-white p-5"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-base font-bold">Yayınlanan İçerikler</h2><p className="mt-1 text-xs text-slate-500">Yukarı ve aşağı oklarla sitedeki gösterim sırasını değiştirin.</p></div><div className="flex rounded-lg border border-slate-200 p-1"><button onClick={() => setCategory("tv")} className={"rounded-md px-4 py-2 text-xs font-bold " + (category === "tv" ? "bg-[#071d3b] text-white" : "text-slate-600")}>Realty TV</button><button onClick={() => setCategory("news")} className={"rounded-md px-4 py-2 text-xs font-bold " + (category === "news" ? "bg-[#cd011e] text-white" : "text-slate-600")}>Realty Haberler</button></div></div>
       {error && <p className="mt-3 rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}{notice && <p className="mt-3 text-xs font-semibold text-emerald-700">{notice}</p>}
