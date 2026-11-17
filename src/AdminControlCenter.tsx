@@ -2640,6 +2640,7 @@ export default function AdminControlCenter() {
     );
   else if (page === "corporate") view = <CorporateManagementPage />;
   else if (page === "crm") view = <CRMManagementPage />;
+  else if (page === "inbox") view = <CommunicationCenterPage />;
   else if (page === "media") view = <MediaManagementPage />;
   else if (page === "library") view = <LibraryManagementPage />;
   else view = <FeaturePage title={titleOf(page)} page={page} />;
@@ -3944,6 +3945,88 @@ function CRMManagementPage() {
     <section className="min-h-96 rounded-2xl border border-slate-200 bg-white p-5">{selected?<><div className="flex items-start justify-between gap-3 border-b border-slate-100 pb-4"><div><p className="text-[10px] font-bold uppercase tracking-wider text-[#cd011e]">{crmTypeLabel(selected.customer_type)} · {crmStatusLabel(selected.status)}</p><h2 className="mt-1 text-xl font-bold">{selected.full_name}</h2><div className="mt-2 flex flex-wrap gap-3 text-xs text-slate-500"><a className="inline-flex items-center gap-1 hover:text-[#cd011e]" href={"tel:"+selected.phone}><Phone size={13}/>{selected.phone}</a>{selected.email&&<a className="inline-flex items-center gap-1 hover:text-[#cd011e]" href={"mailto:"+selected.email}><Mail size={13}/>{selected.email}</a>}</div></div><button type="button" onClick={()=>beginEdit(selected)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold">Düzenle</button></div><div className="grid grid-cols-2 gap-3 border-b border-slate-100 py-4 text-xs"><div><span className="text-slate-400">Konum</span><b className="mt-1 block text-slate-800">{[selected.city,selected.district].filter(Boolean).join(" / ")||"Belirtilmedi"}</b></div><div><span className="text-slate-400">İlgilendiği mülk</span><b className="mt-1 block text-slate-800">{selected.property_type||"Belirtilmedi"}</b></div><div><span className="text-slate-400">Bütçe</span><b className="mt-1 block text-slate-800">{selected.budget_min||selected.budget_max?Number(selected.budget_min||0).toLocaleString("tr-TR")+" – "+Number(selected.budget_max||0).toLocaleString("tr-TR")+" TL":"Belirtilmedi"}</b></div><div><span className="text-slate-400">Kaynak / sorumlu</span><b className="mt-1 block text-slate-800">{(selected.source||"Belirtilmedi")+" · "+(selected.assigned_name||"Atanmamış")}</b></div></div><form onSubmit={addActivity} className="border-b border-slate-100 py-4"><div className="mb-2 flex gap-2"><select value={activityType} onChange={(e)=>setActivityType(e.target.value)} className="rounded-lg border border-slate-200 px-2 py-2 text-xs"><option value="note">Not</option><option value="call">Telefon görüşmesi</option><option value="meeting">Randevu</option><option value="message">Mesaj</option></select><span className="self-center text-xs font-semibold text-slate-600">Hareket ekle</span></div><textarea value={note} onChange={(e)=>setNote(e.target.value)} placeholder="Görüşme notu veya müşteriyle ilgili bilgi…" className="min-h-16 w-full rounded-lg border border-slate-200 p-2.5 text-sm"/><button disabled={busy||!note.trim()} className="mt-2 rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white disabled:opacity-50">Notu kaydet</button></form><form onSubmit={addTask} className="border-b border-slate-100 py-4"><h3 className="mb-2 text-xs font-bold">Takip görevi</h3><div className="grid gap-2 sm:grid-cols-2"><input required value={taskTitle} onChange={(e)=>setTaskTitle(e.target.value)} placeholder="Örn. Yarın arayın" className="rounded-lg border border-slate-200 px-3 py-2 text-xs"/><input type="datetime-local" value={taskDue} onChange={(e)=>setTaskDue(e.target.value)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs"/></div>{canAssign&&<select value={taskAssignee||selected.assigned_user_id||""} onChange={(e)=>setTaskAssignee(e.target.value)} className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2 text-xs"><option value="">Atanan danışman</option>{assignees.map((person)=><option key={person.id} value={person.id}>{person.first_name} {person.last_name}</option>)}</select>}<button disabled={busy||!taskTitle.trim()} className="mt-2 rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold disabled:opacity-50">Takip oluştur</button></form><div className="pt-4"><h3 className="text-xs font-bold text-slate-800">Takip ve hareket geçmişi</h3>{tasks.filter((task)=>task.customer_id===selected.id).map((task)=><div key={task.id} className="mt-2 flex items-center gap-2 rounded-lg bg-slate-50 p-2.5"><button type="button" onClick={()=>void completeTask(task.id)} className="grid h-6 w-6 shrink-0 place-items-center rounded-full border border-slate-300 text-emerald-600"><CheckCircle2 size={15}/></button><span className="min-w-0 flex-1"><b className="block truncate text-xs">{task.title}</b><small className="text-[10px] text-slate-500">{task.due_at?new Date(task.due_at.replace(" ","T")).toLocaleString("tr-TR"):"Tarih yok"} · {task.assigned_name||""}</small></span></div>)}
     {activities.map((activity)=><div key={activity.id} className="mt-2 border-l-2 border-slate-200 pl-3"><p className="text-xs text-slate-700">{activity.body}</p><small className="text-[10px] text-slate-400">{activity.user_name||"Kullanıcı"} · {new Date(activity.created_at.replace(" ","T")).toLocaleString("tr-TR")}</small></div>)}
     {!tasks.some((task)=>task.customer_id===selected.id)&&!activities.length&&<p className="mt-2 text-xs text-slate-400">Henüz takip veya hareket kaydı yok.</p>}</div></>:<div className="grid min-h-80 place-items-center text-center text-sm text-slate-400">{loading?"Yükleniyor…":"Detaylarını görmek için müşteri seçin."}</div>}</section></div>
+  </div>;
+}
+type InboxRecord = {
+  id:string; category:string; subject?:string|null; full_name:string; phone:string; email?:string|null;
+  city?:string|null; district?:string|null; status:string; assigned_user_id?:string|null;
+  notified_advisors?:{id:string;name:string;city?:string;district?:string}[]; data:Record<string,unknown>; created_at:string;
+};
+const inboxCategoryLabel=(category:string)=>({
+  contact:"İletişim Mesajları",barter:"BarterBank",buyer_request:"Siz Aradığınızı Söyleyin",
+  area_request:"İl / İlçe Danışman Talepleri",financial:"Finansal Çözümler",feedback:"Görüş ve Şikâyetler",
+  advisor_application:"Danışman Başvuruları",franchise_application:"Franchise Başvuruları"
+}[category]||"Diğer Talepler");
+const inboxStatusLabel=(status:string)=>({new:"Yeni",reviewing:"İnceleniyor",completed:"Tamamlandı",closed:"Kapatıldı"}[status]||status);
+function CommunicationCenterPage(){
+  const [items,setItems]=useState<InboxRecord[]>([]);
+  const [assignees,setAssignees]=useState<{id:string;first_name:string;last_name:string;role:string}[]>([]);
+  const [selectedId,setSelectedId]=useState("");
+  const [category,setCategory]=useState("all");
+  const [status,setStatus]=useState("all");
+  const [query,setQuery]=useState("");
+  const [loading,setLoading]=useState(true);
+  const [busy,setBusy]=useState(false);
+  const [error,setError]=useState("");
+  const selected=items.find(item=>item.id===selectedId)||null;
+  const load=async()=>{
+    setLoading(true);setError("");
+    try{
+      const response=await fetch("/api/auth.php?action=inbox",{credentials:"include",cache:"no-store"});
+      const payload=await response.json().catch(()=>({}));
+      if(!response.ok||payload.error)throw new Error(payload.error||"İletişim kayıtları yüklenemedi.");
+      setItems(Array.isArray(payload.items)?payload.items:[]);
+      setAssignees(Array.isArray(payload.assignees)?payload.assignees:[]);
+      setSelectedId((current:string)=>payload.items?.some((item:InboxRecord)=>item.id===current)?current:(payload.items?.[0]?.id||""));
+    }catch(e:any){setError(e.message||"İletişim kayıtları yüklenemedi.");}
+    finally{setLoading(false);}
+  };
+  useEffect(()=>{void load();},[]);
+  const visible=useMemo(()=>items.filter(item=>{
+    const text=[item.full_name,item.phone,item.email,item.city,item.district,item.subject,JSON.stringify(item.data||{})].join(" ").toLocaleLowerCase("tr-TR");
+    return (category==="all"||item.category===category)&&(status==="all"||item.status===status)&&(!query||text.includes(query.toLocaleLowerCase("tr-TR")));
+  }),[items,category,status,query]);
+  const categories=["contact","barter","buyer_request","area_request","financial","feedback","advisor_application","franchise_application"];
+  const totalNew=items.filter(item=>item.status==="new").length;
+  const update=async(nextStatus:string,nextAssignee=selected?.assigned_user_id||"")=>{
+    if(!selected)return;
+    setBusy(true);setError("");
+    try{
+      const response=await fetch("/api/auth.php?action=inbox-update",{method:"POST",credentials:"include",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:selected.id,status:nextStatus,assigned_user_id:nextAssignee})});
+      const payload=await response.json().catch(()=>({}));
+      if(!response.ok||payload.error)throw new Error(payload.error||"Talep güncellenemedi.");
+      setItems(current=>current.map(item=>item.id===selected.id?{...item,status:nextStatus,assigned_user_id:nextAssignee||null}:item));
+    }catch(e:any){setError(e.message||"Talep güncellenemedi.");}
+    finally{setBusy(false);}
+  };
+  const summary=[
+    ["Toplam Talep",items.length],
+    ["Yeni",totalNew],
+    ["İnceleniyor",items.filter(item=>item.status==="reviewing").length],
+    ["Tamamlandı",items.filter(item=>item.status==="completed").length]
+  ] as const;
+  const dataRows=selected?Object.entries(selected.data||{}).filter(([,value])=>value!==""&&value!==null&&value!==undefined&&typeof value!=="object"):[];
+  return <div className="space-y-5">
+    <div className="flex flex-col justify-between gap-3 border-b border-slate-200 pb-5 sm:flex-row sm:items-end">
+      <div><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / TALEP YÖNETİMİ</p><h1 className="mt-1 text-2xl font-black">İletişim Merkezi</h1><p className="mt-1 text-sm text-slate-500">Web sitesi mesajlarını ve başvuruları kategorilere göre inceleyin, ilgili ekibe atayın.</p></div>
+      <button type="button" onClick={()=>void load()} className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-xs font-bold hover:bg-slate-50"><RefreshCw size={15}/> Yenile</button>
+    </div>
+    <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">{summary.map(([label,value])=><div key={label} className="rounded-xl border border-slate-200 bg-white p-4"><p className="text-xs text-slate-500">{label}</p><p className="mt-1 text-2xl font-bold">{value}</p></div>)}</div>
+    {error&&<div className="rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</div>}
+    <div className="flex flex-wrap gap-2">{[["all","Tüm Talepler"],...categories.map(key=>[key,inboxCategoryLabel(key)] as [string,string])].map(([key,label])=><button type="button" key={key} onClick={()=>setCategory(key)} className={"rounded-full border px-3 py-2 text-xs font-semibold transition "+(category===key?"border-[#cd011e] bg-[#cd011e] text-white":"border-slate-200 bg-white text-slate-600 hover:border-red-200 hover:text-[#cd011e]")}>{label}{key==="all"?" · "+items.length:" · "+items.filter(item=>item.category===key).length}</button>)}</div>
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(350px,.82fr)]">
+      <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+        <div className="flex flex-col gap-2 border-b border-slate-100 p-4 sm:flex-row"><label className="relative flex-1"><Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="İsim, telefon, e-posta, şehir veya içerik ara" className="w-full rounded-lg border border-slate-200 py-2.5 pl-9 pr-3 text-sm"/></label><select value={status} onChange={e=>setStatus(e.target.value)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs"><option value="all">Tüm durumlar</option><option value="new">Yeni</option><option value="reviewing">İnceleniyor</option><option value="completed">Tamamlandı</option><option value="closed">Kapatıldı</option></select><button type="button" onClick={()=>csv("realty-center-iletisim-merkezi",visible as unknown as Record<string,unknown>[],["category","subject","full_name","phone","email","city","district","status","created_at"])} className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold hover:bg-slate-50"><Download size={14}/> Excel’e aktar</button></div>
+        {loading?<div className="space-y-2 p-4">{[1,2,3].map(n=><div key={n} className="h-16 animate-pulse rounded-lg bg-slate-100"/>)}</div>:visible.length?<div className="max-h-[680px] divide-y divide-slate-100 overflow-y-auto">{visible.map(item=><button key={item.id} type="button" onClick={()=>setSelectedId(item.id)} className={"flex w-full items-start gap-3 p-4 text-left transition hover:bg-slate-50 "+(selected?.id===item.id?"bg-rose-50/70":"")}><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-red-50 text-[#cd011e]"><MessageSquare size={17}/></span><span className="min-w-0 flex-1"><span className="flex flex-wrap items-center gap-2"><b className="truncate text-sm">{item.full_name}</b><small className="rounded-full bg-slate-100 px-2 py-1 text-[10px] text-slate-600">{inboxCategoryLabel(item.category)}</small></span><span className="mt-1 block truncate text-xs text-slate-500">{item.subject||item.data?.message||item.data?.description||"Talep ayrıntılarını görüntüle"}</span><small className="mt-1 block text-[10px] text-slate-400">{item.city?(item.city+(item.district?" / "+item.district:"")+" · "):""}{new Date(item.created_at.replace(" ","T")).toLocaleString("tr-TR")}</small></span><span className={"shrink-0 rounded-full px-2 py-1 text-[10px] font-bold "+(item.status==="new"?"bg-amber-50 text-amber-700":item.status==="completed"?"bg-emerald-50 text-emerald-700":item.status==="closed"?"bg-slate-100 text-slate-500":"bg-blue-50 text-blue-700")}>{inboxStatusLabel(item.status)}</span></button>)}</div>:<div className="p-12 text-center"><MessageSquare className="mx-auto text-slate-300" size={28}/><p className="mt-3 text-sm font-semibold text-slate-700">Bu kategoride kayıt yok</p><p className="mt-1 text-xs text-slate-500">Siteden yeni bir form gönderildiğinde burada listelenecek.</p></div>}
+      </section>
+      <section className="min-h-96 rounded-2xl border border-slate-200 bg-white p-5">
+        {selected?<><div className="flex items-start justify-between gap-3 border-b border-slate-100 pb-4"><div><p className="text-[10px] font-bold uppercase tracking-wider text-[#cd011e]">{inboxCategoryLabel(selected.category)}</p><h2 className="mt-1 text-lg font-bold">{selected.subject||selected.full_name}</h2><p className="mt-1 text-xs text-slate-500">{selected.full_name}</p></div><span className="text-xs text-slate-400">{new Date(selected.created_at.replace(" ","T")).toLocaleString("tr-TR")}</span></div><div className="flex flex-wrap gap-3 border-b border-slate-100 py-4 text-xs">{selected.phone&&<a className="inline-flex items-center gap-1 hover:text-[#cd011e]" href={"tel:"+selected.phone}><Phone size={13}/>{selected.phone}</a>}{selected.email&&<a className="inline-flex items-center gap-1 hover:text-[#cd011e]" href={"mailto:"+selected.email}><Mail size={13}/>{selected.email}</a>}<span className="text-slate-600">{[selected.city,selected.district].filter(Boolean).join(" / ")}</span></div>
+        <div className="space-y-2 border-b border-slate-100 py-4">{dataRows.length?dataRows.map(([key,value])=><div key={key} className="grid grid-cols-[minmax(100px,.5fr)_1fr] gap-3 text-xs"><span className="font-semibold text-slate-500">{key.replaceAll("_"," ")}</span><span className="break-words text-slate-800">{String(value)}</span></div>):<p className="text-xs text-slate-400">Form ayrıntısı bulunmuyor.</p>}{selected.data?.message&&<p className="whitespace-pre-wrap rounded-lg bg-slate-50 p-3 text-sm text-slate-700">{String(selected.data.message)}</p>}</div>
+        {!!selected.notified_advisors?.length&&<div className="border-b border-slate-100 py-4"><h3 className="text-xs font-bold">Bölge danışmanlarına bildirim</h3><div className="mt-2 flex flex-wrap gap-2">{selected.notified_advisors.map(person=><span key={person.id} className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-semibold text-blue-700">{person.name} · {person.city}{person.district?" / "+person.district:""}</span>)}</div></div>}
+        <div className="grid gap-3 pt-4 sm:grid-cols-2"><label className="text-xs font-semibold">Durum<select disabled={busy} value={selected.status} onChange={e=>void update(e.target.value)} className="mt-1 w-full rounded-lg border border-slate-200 p-2.5"><option value="new">Yeni</option><option value="reviewing">İnceleniyor</option><option value="completed">Tamamlandı</option><option value="closed">Kapatıldı</option></select></label><label className="text-xs font-semibold">Sorumlu kullanıcı<select disabled={busy} value={selected.assigned_user_id||""} onChange={e=>void update(selected.status,e.target.value)} className="mt-1 w-full rounded-lg border border-slate-200 p-2.5"><option value="">Atanmamış</option>{assignees.map(person=><option key={person.id} value={person.id}>{person.first_name} {person.last_name} · {person.role==="manager"?"Yönetici":"Danışman"}</option>)}</select></label></div>
+        </>:<div className="grid min-h-80 place-items-center text-center text-sm text-slate-400">Talep ayrıntısını görmek için soldan bir kayıt seçin.</div>}
+      </section>
+    </div>
   </div>;
 }
 function FeaturePage({ title, page }: { title: string; page: Page }) {
