@@ -1759,10 +1759,8 @@ export default function AdminControlCenter() {
       .then((response) => response.json())
       .then((payload) => setViewerRole(payload?.user?.role || null))
       .catch(() => setViewerRole(null));
-    try {
-      const cached = sessionStorage.getItem(cacheKey);
-      if (cached) applyBootstrap(JSON.parse(cached));
-    } catch {}
+    // Kullanıcı rolü değişirken başka bir oturumdan kalan yönetim verilerini göstermemek için
+    // başlangıçta tarayıcı önbelleği kullanılmaz; panel verileri oturum API'sinden alınır.
     void load().catch((error) => {
       setNotice(error instanceof Error ? error.message : "Kullanıcı verileri alınamadı.");
     });
