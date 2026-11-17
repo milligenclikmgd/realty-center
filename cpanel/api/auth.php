@@ -128,7 +128,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-corporate-content
     $source = is_array($input['content'] ?? null) ? $input['content'] : [];
     $content = ['management'=>[], 'documents'=>[], 'partners'=>[], 'references'=>[]];
     $validFile = static function($url) {
-        return $url === '' || preg_match('#^/uploads/corporate/[A-Za-z0-9._-]+$#', $url) === 1;
+        if ($url === '') return true;
+        if (preg_match('#^/uploads/corporate/[A-Za-z0-9._-]+$#', $url) === 1) return true;
+        if (str_starts_with($url, '/') && !str_starts_with($url, '//') && !str_contains($url, '..')) return true;
+        return filter_var($url, FILTER_VALIDATE_URL) !== false && strtolower((string)parse_url($url, PHP_URL_SCHEME)) === 'https';
     };
     foreach (['management','documents','partners','references'] as $section) {
         $rows = is_array($source[$section] ?? null) ? $source[$section] : [];
@@ -149,7 +152,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-corporate-content
                 $title = trim((string)($row['title'] ?? ''));
                 $description = trim((string)($row['description'] ?? ''));
                 $fileUrl = trim((string)($row['fileUrl'] ?? ''));
-                if ($title === '' || !$validFile($fileUrl) || $fileUrl === '' || !str_ends_with(strtolower($fileUrl), '.pdf')) respond(['error'=>'Belge başlığı ve yüklenmiş PDF dosyası zorunludur.'],422);
+                $pdfPath = strtolower((string)parse_url($fileUrl, PHP_URL_PATH));
+                if ($title === '' || !$validFile($fileUrl) || ($fileUrl !== '' && !str_ends_with($pdfPath, '.pdf'))) respond(['error'=>'Belge başlığı ve geçerli PDF dosyası gereklidir.'],422);
                 $content[$section][] = ['id'=>$id,'title'=>mb_substr($title,0,180),'description'=>mb_substr($description,0,1000),'fileUrl'=>$fileUrl,'sort_order'=>$order];
             } else {
                 $name = trim((string)($row['name'] ?? ''));
