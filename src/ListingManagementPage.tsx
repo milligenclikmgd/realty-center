@@ -42,17 +42,37 @@ export default function ListingManagementPage({ profiles, alert, openAdd, initia
   const load = async () => {
     setLoading(true);
     try {
-      const response = await fetch("/api/auth.php?action=listings", { credentials: "include" });
-      const raw = await response.text();
-      let payload: any = {};
-      try { payload = raw ? JSON.parse(raw) : {}; } catch { throw new Error("Sunucu geçerli bir JSON yanıtı vermedi."); }
-      if (!response.ok || payload.error) throw new Error(payload.error || "İlanlar alınamadı.");
-      setItems((payload.listings || []).map((item: Listing) => ({ ...item, images: Array.isArray(item.images) ? item.images : [] })));
-    } catch (error: any) { alert(`İlanlar yüklenemedi: ${error.message || "Bağlantı kurulamadı."}`); }
-    setLoading(false);
+      const { data: authData, error: authError } = await supabase.auth.getUser();
+      if (authError) throw authError;
+      const user = authData.user;
+      if (!user) throw new Error("Panel oturumu bulunamadı. Lütfen yeniden giriş yapın.");
+
+      const { data: profile, error: profileError } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("id", user.id)
+        .maybeSingle();
+      if (profileError) throw profileError;
+      const role = profile?.role || "advisor";
+      setViewer({ id: user.id, role });
+
+      const { data, error } = await supabase
+        .from("listings")
+        .select("id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,images,approval_status,is_featured,created_at,updated_at,deleted_at,details")
+        .order("created_at", { ascending: false });
+      if (error) throw error;
+      setItems((data || []).map((item: Listing) => ({
+        ...item,
+        images: Array.isArray(item.images) ? item.images : [],
+      })));
+    } catch (error: any) {
+      alert(`İlanlar yüklenemedi: ${error.message || "Bağlantı kurulamadı."}`);
+    } finally {
+      setLoading(false);
+    }
   };
   useEffect(() => { setTab(initialTab); }, [initialTab]);
-  useEffect(() => { void load(); void fetch("/api/auth.php?action=me", { credentials: "include" }).then((response) => response.json()).then((payload) => { if (payload.user) setViewer({ id: payload.user.id, role: payload.user.role || "advisor" }); }).catch(() => undefined); }, []);
+  useEffect(() => { void load(); }, []);
 
   const canModerate = viewer.role === "admin" || viewer.role === "manager";
   const canDelete = viewer.role === "admin";
