@@ -3603,10 +3603,10 @@ function CorporateManagementPage() {
   };
   const fileLabel = section === "documents" ? "PDF Dosyası" : section === "management" ? "Profil Fotoğrafı" : "Logo";
   const existingFile = section === "management" ? form.image : section === "documents" ? form.fileUrl : form.logo;
-  return <div className="space-y-5">
+  return <div className="max-w-5xl space-y-5">
     <div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / KURUMSAL</p><h1 className="mt-1 text-2xl font-black">Kurumsal Yönetim</h1><p className="mt-1 text-sm text-slate-500">Yönetim kurulu, belgeler, iş ortakları ve referansları tek yerden yönetin.</p></div>
     <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">{CORPORATE_TABS.map((item) => <button key={item.id} onClick={() => { setSection(item.id); resetForm(); setError(""); }} className={"rounded-xl border px-4 py-3 text-left text-sm font-bold transition " + (section === item.id ? "border-[#cd011e] bg-[#cd011e] text-white" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50")}>{item.label}<span className={"mt-1 block text-[11px] font-medium " + (section === item.id ? "text-white/80" : "text-slate-400")}>{content[item.id].length} kayıt</span></button>)}</div>
-    <section className="rounded-2xl border border-slate-200 bg-white p-5">
+    <section className="max-w-3xl rounded-2xl border border-slate-200 bg-white p-5">
       <div className="mb-4"><h2 className="text-base font-bold">{editingId ? "Kaydı Düzenle" : "Yeni Kayıt Ekle"} · {tab.label}</h2><p className="mt-1 text-xs text-slate-500">{tab.helper}</p></div>
       <form onSubmit={submit} className="grid gap-3 md:grid-cols-2">
         {section === "management" && <>
