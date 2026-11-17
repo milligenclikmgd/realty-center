@@ -3787,7 +3787,7 @@ function VideosPage() {
   </div></div>;
 }
 
-function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => void }) {
+function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => Promise<void> }) {
   const [form, setForm] = useState({
     fullName: '',
     phone: '',
@@ -3795,22 +3795,28 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.fullName || !form.phone || !form.email || !form.message) {
       alert("Lütfen tüm alanları doldurunuz.");
       return;
     }
 
-    onSendMessage(form);
-    
-    setSubmitted(true);
-    setForm({ fullName: '', phone: '', email: '', message: '' });
-
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
+    setSending(true);
+    setSubmitError('');
+    try {
+      await onSendMessage(form);
+      setSubmitted(true);
+      setForm({ fullName: '', phone: '', email: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Mesajınız kaydedilemedi. Lütfen tekrar deneyin.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -3842,6 +3848,8 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
                 <p className="text-xs text-slate-500 font-medium">Formu doldurun, uzman ekibimiz en kısa sürede dönüş yapsın.</p>
               </div>
             </div>
+
+            {submitError && <div className="mb-5 rounded-xl border border-red-200 bg-red-50 p-3 text-xs font-semibold text-red-700">{submitError}</div>}
 
             {submitted && (
               <div className="mb-6 bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl flex items-center space-x-3 text-xs font-bold animate-fade-in">
@@ -3911,9 +3919,10 @@ function ContactPage({ onSendMessage }: { onSendMessage: (msg: Omit<ContactMessa
 
               <button 
                 type="submit"
-                className="w-full bg-red-700 hover:bg-red-800 text-white font-black py-4 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.01]"
+                disabled={sending}
+                className="w-full bg-red-700 hover:bg-red-800 disabled:opacity-60 text-white font-black py-4 rounded-xl text-xs tracking-widest flex items-center justify-center space-x-2 shadow-lg shadow-red-700/30 transition transform hover:scale-[1.01]"
               >
-                <span>Mesajı Gönder</span>
+                <span>{sending ? "Gönderiliyor…" : "Mesajı Gönder"}</span>
                 <Send className="w-4 h-4" />
               </button>
             </form>
@@ -5710,14 +5719,20 @@ export default function RealtyCenterApp() {
     satisfaction: 0
   });
 
-  const handleSendMessage = (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
+  const handleSendMessage = async (newMessage: Omit<ContactMessage, 'id' | 'createdAt' | 'status'>) => {
+    const response = await fetch('/api/auth.php?action=crm-public-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ full_name: newMessage.fullName, phone: newMessage.phone, email: newMessage.email, message: newMessage.message })
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || payload.error) throw new Error(payload.error || 'Mesajınız kaydedilemedi. Lütfen tekrar deneyin.');
     const messageEntry: ContactMessage = {
       ...newMessage,
       id: `MSG-${Date.now()}`,
       createdAt: new Date().toISOString(),
       status: 'unread'
     };
-
     setMessages((prev) => [messageEntry, ...prev]);
   };
 
