@@ -336,24 +336,32 @@ const formatListingPrice = (price: number, currency: string) => `${price.toLocal
 function usePublishedListings() {
   const [items, setItems] = useState<ListingItem[]>([]);
   useEffect(() => {
+    let active = true;
     const load = async () => {
-      const { data } = await supabase.from('listings').select('id,owner_id,title,category,property_type,transaction_type,price,currency,city,district,neighborhood,rooms,area,description,video_url,virtual_tour_url,map_url,monthly_fee,deed_info,technical_features,details,images,is_featured,created_at,updated_at').in('approval_status', ['Yayında', 'approved']).is('deleted_at', null).order('created_at', { ascending: false });
-      const rows: any[] = data || [];
-      const ids = [...new Set(rows.map((row) => row.owner_id).filter(Boolean))];
-      const { data: profiles } = ids.length ? await supabase.from('profiles').select('id,first_name,last_name,phone').in('id', ids) : { data: [] as any[] };
-      const names = new globalThis.Map((profiles || []).map((profile: any) => [profile.id, { name: [profile.first_name, profile.last_name].filter(Boolean).join(' ') || 'Realty Center Danışmanı', phone: profile.phone || '0 554 322 22 22' }]));
-      setItems(rows.map((row) => ({ id: row.id, title: row.title, category: row.category, propertyType: row.property_type, type: row.transaction_type, price: Number(row.price || 0), currency: row.currency || '₺', city: row.city, district: row.district, neighborhood: row.neighborhood || '', rooms: row.rooms || 'Belirtilmemiş', area: Number(row.area || 0), image: row.images?.[0] || '/slider/slider-01-tall-building.webp', images: row.images || [], agentName: names.get(row.owner_id)?.name || 'Realty Center Danışmanı', agentPhone: names.get(row.owner_id)?.phone || '0 554 322 22 22', date: row.created_at, updatedAt: row.updated_at || row.created_at, isFeatured: Boolean(row.is_featured), description: row.description || '', videoUrl: row.video_url || '', virtualTourUrl: row.virtual_tour_url || '', mapUrl: row.map_url || '', monthlyFee: row.monthly_fee || '', deedInfo: row.deed_info || '', technicalFeatures: row.technical_features || '', details: row.details || {} })));
+      try {
+        const response = await fetch(`/api/auth.php?action=public-listings&_=${Date.now()}`, { cache: "no-store" });
+        const payload = await response.json();
+        if (!response.ok || payload.error) throw new Error(payload.error || "İlanlar alınamadı.");
+        if (!active) return;
+        setItems((payload.listings || []).map((row: any) => {
+          const details = row.details || {}; const images = Array.isArray(row.images) ? row.images : [];
+          return { id: row.id, title: row.title, category: row.category, propertyType: row.property_type,
+            type: row.transaction_type, price: Number(row.price || 0), currency: row.currency === "TRY" ? "₺" : (row.currency || "₺"),
+            city: row.city, district: row.district, neighborhood: row.neighborhood || "", rooms: row.rooms || "Belirtilmemiş",
+            area: Number(row.area || 0), image: details.cover_url || images[0] || "/slider/slider-01-tall-building.webp", images,
+            agentName: row.owner_name || "Realty Center Danışmanı", agentPhone: row.owner_phone || "0 554 322 22 22",
+            date: row.created_at, updatedAt: row.updated_at || row.created_at, isFeatured: Boolean(row.is_featured),
+            description: row.description || "", videoUrl: row.video_url || details.video_url || "",
+            virtualTourUrl: details.virtual_tour_url || details.virtualTourUrl || "", mapUrl: details.map_url || details.mapUrl || "",
+            monthlyFee: details.dues || details.monthlyFee || "", deedInfo: details.deedInfo || details.titleDeed || "",
+            technicalFeatures: details.technicalFeatures || "", details };
+        }));
+      } catch (error) { console.error("cPanel ilan akışı yüklenemedi:", error); }
     };
-    void load();
-    const refresh = () => { void load(); };
-    window.addEventListener('focus', refresh);
-    window.addEventListener('realty-center-listings-updated', refresh);
+    void load(); const refresh = () => { void load(); };
+    window.addEventListener("focus", refresh); window.addEventListener("realty-center-listings-updated", refresh);
     const timer = window.setInterval(refresh, 30000);
-    return () => {
-      window.removeEventListener('focus', refresh);
-      window.removeEventListener('realty-center-listings-updated', refresh);
-      window.clearInterval(timer);
-    };
+    return () => { active = false; window.removeEventListener("focus", refresh); window.removeEventListener("realty-center-listings-updated", refresh); window.clearInterval(timer); };
   }, []);
   return items;
 }
