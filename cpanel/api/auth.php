@@ -160,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'youtube-metadata') {
         $oembed = json_decode($oembedJson, true);
         $title = trim((string)($oembed['title'] ?? ''));
         if ($title === '') respond(['error'=>'YouTube video başlığı alınamadı.'],502);
-        $html = $getRemote($canonical);
+        try { $html = $getRemote($canonical); } catch (Throwable $ignored) { $html = ''; }
         $description = '';
         preg_match_all('/<meta\b[^>]*>/i', $html, $tags);
         foreach ($tags[0] as $tag) {
