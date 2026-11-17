@@ -445,7 +445,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-task') {
     $actor=requireUser($pdo);$input=body();$customerId=trim((string)($input['customer_id']??''));$title=trim((string)($input['title']??''));$dueRaw=trim((string)($input['due_at']??''));
     if($customerId===''||$title==='')respond(['error'=>'Müşteri ve takip görevi zorunludur.'],422);
     $access=$pdo->prepare("SELECT id,assigned_user_id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);$customer=$access->fetch();if(!$customer)respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
-    $due=$dueRaw!==''?date('Y-m-d H:i:s',strtotime($dueRaw)):null;
+    $due=null;
+    if($dueRaw!==''){$timestamp=strtotime($dueRaw);if($timestamp===false)respond(['error'=>'Takip tarihi geçersiz.'],422);$due=date('Y-m-d H:i:s',$timestamp);}
     $assigned=$actor['role']==='advisor'?$actor['id']:(trim((string)($input['assigned_user_id']??''))?:($customer['assigned_user_id']?:$actor['id']));
     if($assigned!==null&&$assigned!==''){$uq=$pdo->prepare("SELECT id FROM users WHERE id=? AND deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') LIMIT 1");$uq->execute([$assigned]);if(!$uq->fetch())respond(['error'=>'Görev için atanan kullanıcı bulunamadı.'],422);}
     $id=bin2hex(random_bytes(16));$pdo->prepare('INSERT INTO crm_tasks (id,customer_id,title,due_at,assigned_user_id,created_by) VALUES (?,?,?,?,?,?)')->execute([$id,$customerId,mb_substr($title,0,255),$due,$assigned,$actor['id']]);
