@@ -134,6 +134,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-realty-media') {
         $url = trim((string)($video['url'] ?? ''));
         $parts = parse_url($url);
         $host = strtolower((string)($parts['host'] ?? ''));
+        $scheme = strtolower((string)($parts['scheme'] ?? ''));
+        if (!in_array($scheme, ['https','http'], true)) respond(['error'=>'YouTube bağlantısı http veya https olmalıdır.'],422);
         $youtubeId = '';
         if (in_array($host, ['youtube.com','www.youtube.com','m.youtube.com'], true)) {
             $query = []; parse_str((string)($parts['query'] ?? ''), $query);
