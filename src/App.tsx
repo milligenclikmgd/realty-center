@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './index.css';
 import { PAGE_COPY, MEDIA_SELECTION } from './content-refresh';
+import { getLibraryCategories, saveLibraryCategories, stripRichText, type LibraryArticle, type LibraryCategory } from './libraryContent';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
@@ -103,29 +104,6 @@ const saveRealtyVideos = (videos: RealtyVideo[]) => { localStorage.setItem('real
 const getYoutubeChannelUrl = () => localStorage.getItem('realty-center-youtube-channel-url') || '';
 const saveYoutubeChannelUrl = (url: string) => { localStorage.setItem('realty-center-youtube-channel-url', url.trim()); window.dispatchEvent(new Event('realty-center-youtube-channel-updated')); };
 
-type LibraryArticle = { id: string; title: string; summary: string; image: string; content: string; publishedAt: string };
-type LibraryCategory = { id: string; slug: string; title: string; description: string; color: string; articles: LibraryArticle[] };
-const DEFAULT_LIBRARY_CATEGORIES: LibraryCategory[] = [
-  { id:'library-guide', slug:'gayrimenkul-rehberi', title:'Gayrimenkul Rehberi', description:'Alım, satım ve kiralama sürecini kolaylaştıran pratik bilgi yazıları ve kontrol listeleri.', color:'#CD011E', articles:[
-    { id:'sektor-2026', title:'Gayrimenkul alırken doğru fiyat nasıl değerlendirilir?', summary:'Bölge, metrekare, bina niteliği ve güncel emsalleri birlikte inceleyerek daha sağlıklı karar verin.', image:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-10T10:00:00.000Z', content:'<p>Doğru fiyat değerlendirmesi; yalnızca ilan bedeline değil, bölgesel emsallere, taşınmazın fiziksel durumuna ve kullanım amacına bakmayı gerektirir.</p><h2>Kontrol edilmesi gerekenler</h2><ul><li>Aynı bölgedeki güncel emsal ilanlar</li><li>Metrekare, bina yaşı ve ulaşım avantajları</li><li>Tapu, iskan ve kullanım durumu</li></ul>' },
-    { id:'sektor-danismanlik', title:'Satış ve kiralama sürecinde güvenli ilerleme rehberi', summary:'Şeffaf bilgi, doğru fiyatlama ve yazılı süreç takibi; tarafların güvenle ilerlemesini sağlar.', image:'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-18T12:00:00.000Z', content:'<p>Gayrimenkul sürecinde ilk görüşmeden sözleşmeye kadar her adımı yazılı ve doğrulanabilir şekilde yürütmek güveni güçlendirir.</p>' }
-  ] },
-  { id:'library-law', slug:'hukuk-mevzuat', title:'Hukuk & Mevzuat', description:'Tapu, sözleşme, yetkilendirme ve gayrimenkul mevzuatına dair açıklayıcı içerikler.', color:'#183B66', articles:[
-    { id:'hukuk-tapu', title:'Tapu işlemi öncesinde kontrol edilmesi gereken 6 başlık', summary:'Tapu kaydı, yetki belgeleri ve ödeme planı gibi kritik noktaları işlem öncesinde gözden geçirin.', image:'https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-09T10:00:00.000Z', content:'<p>Tapu işlemlerinde taşınmaza ve taraflara ilişkin bilgilerin doğrulanması, sağlıklı bir sürecin temelidir.</p><h2>Ön kontrol listesi</h2><ul><li>Tapu kaydı ve taşınmaz bilgileri</li><li>Tarafların kimlik ve temsil yetkileri</li><li>Ödeme yöntemi ve resmi belgeler</li></ul>' }
-  ] },
-  { id:'library-process', slug:'islem-rehberleri', title:'İşlem Rehberleri', description:'Tapu, ekspertiz, sözleşme ve teslim süreçleri için sade ve açıklayıcı içerikler.', color:'#7C2D12', articles:[
-    { id:'islem-ekspertiz', title:'Ekspertiz, tapu ve teslim sürecinde temel adımlar', summary:'Bir işlemde hangi aşamada hangi belgenin ve kontrolün gerekli olduğunu adım adım öğrenin.', image:'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-09-08T10:00:00.000Z', content:'<p>Ekspertiz, ödeme planı, tapu ve teslim adımlarının doğru sırayla yürütülmesi sağlıklı bir gayrimenkul işleminin temelidir.</p>' }
-  ] },
-  { id:'library-ai', slug:'yapay-zekali-rehber', title:'Yapay Zekâlı Rehber', description:'Gayrimenkul kararlarında yapay zekâdan yararlanmayı kolaylaştıran uygulamalı rehberler.', color:'#6D28D9', articles:[
-    { id:'ai-degerleme', title:'Yapay zekâ ile bölgesel fiyat araştırması nasıl yapılır?', summary:'Bir yatırım bölgesini analiz ederken yapay zekâdan doğru sorularla nasıl yararlanabileceğinizi öğrenin.', image:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-23T12:00:00.000Z', content:'<p>Yapay zekâ, kararın yerine geçmez; dağınık verileri karşılaştırmak ve araştırma sürecini hızlandırmak için güçlü bir yardımcıdır.</p>' }
-  ] },
-  { id:'library-investment', slug:'yatirim-firsatlari-analizler', title:'Yatırım Fırsatları ve Analizler', description:'Bölgesel fiyat hareketleri, kira getirileri ve yatırım fırsatlarına dair uzman analizleri.', color:'#047857', articles:[
-    { id:'yatirim-kira-getirisi', title:'Kira getirisi analizinde yalnızca fiyata bakmayın', summary:'Brüt kira çarpanı, bakım gideri ve bölgesel talep gibi değişkenler yatırımın gerçek resmini verir.', image:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=88&w=1200', publishedAt:'2026-08-20T12:00:00.000Z', content:'<p>Sağlıklı yatırım analizi, satın alma bedelinin yanında düzenli giderleri ve uzun dönemli bölge potansiyelini dikkate alır.</p>' }
-  ] }
-];
-const getLibraryCategories = (): LibraryCategory[] => { try { const items=JSON.parse(localStorage.getItem('realty-center-library') || 'null') || DEFAULT_LIBRARY_CATEGORIES; const defaults=Object.fromEntries(DEFAULT_LIBRARY_CATEGORIES.flatMap((category)=>category.articles.map((article)=>[article.id,article]))); const legacyTitles=new Set(['Gayrimenkulde 2026’nın ikinci yarısına bakış','Gayrimenkul danışmanlığında güven neden belirleyici?','Realty Center® “Önce Güven” yaklaşımını anlattı']); return items.map((item:LibraryCategory)=>{const normalized=item.id==='library-news'||item.slug==='sektor-haberleri'?{...item,id:'library-guide',slug:'gayrimenkul-rehberi',title:'Gayrimenkul Rehberi',description:'Alım, satım ve kiralama sürecini kolaylaştıran pratik bilgi yazıları ve kontrol listeleri.'}:item.id==='library-press'||item.slug==='basinda-biz'?{...item,id:'library-process',slug:'islem-rehberleri',title:'İşlem Rehberleri',description:'Tapu, ekspertiz, sözleşme ve teslim süreçleri için sade ve açıklayıcı içerikler.'}:item; return {...normalized,articles:normalized.articles.map((article)=>legacyTitles.has(article.title)?(defaults[article.id]||article):article)};}); } catch { return DEFAULT_LIBRARY_CATEGORIES; } };
-const saveLibraryCategories = (items: LibraryCategory[]) => { localStorage.setItem('realty-center-library',JSON.stringify(items)); window.dispatchEvent(new Event('realty-center-library-updated')); };
-const stripRichText = (html: string) => html.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
 
 type CustomerFeedback = {
   id: string;
@@ -1158,24 +1136,44 @@ function ApplicationPage({ type }: { type: 'franchise' | 'agent' }) {
   );
 }
 
+function useLibraryCategories() {
+  const [categories, setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
+  useEffect(() => {
+    const refresh = () => setCategories(getLibraryCategories());
+    window.addEventListener('realty-center-library-updated', refresh);
+    return () => window.removeEventListener('realty-center-library-updated', refresh);
+  }, []);
+  useEffect(() => {
+    let active = true;
+    fetch('/api/auth.php?action=library-content').then(async (response) => {
+      const payload = await response.json();
+      if (!response.ok || payload.error) throw new Error(payload.error || 'Realty Kütüphane içerikleri yüklenemedi.');
+      if (active && Array.isArray(payload.categories)) {
+        saveLibraryCategories(payload.categories);
+        setCategories(payload.categories);
+      }
+    }).catch(() => { /* Show the built-in library content while the server is unavailable. */ });
+    return () => { active = false; };
+  }, []);
+  return categories;
+}
+
 function LibraryHomePage() {
-  const [categories,setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
-  useEffect(() => { const refresh=()=>setCategories(getLibraryCategories()); window.addEventListener('realty-center-library-updated',refresh); return()=>window.removeEventListener('realty-center-library-updated',refresh); },[]);
+  const categories = useLibraryCategories();
   const latestArticles = categories.flatMap((category) => category.articles.map((article) => ({ category, article }))).sort((a,b) => new Date(b.article.publishedAt).getTime() - new Date(a.article.publishedAt).getTime());
   return <main className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6"><p className="text-xs font-black tracking-[.24em] text-red-700">REALTY CENTER®</p><h1 className="mt-3 text-4xl font-black text-slate-950">Realty Kütüphane</h1><p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">Hukuk ve mevzuat, işlem rehberleri, yatırım analizi ve çeşitli bilgilendirici gayrimenkul yazılarını tek merkezden takip edin.</p><div className="mt-10 grid gap-8 lg:grid-cols-[270px_minmax(0,1fr)]"><aside className="h-fit rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:sticky lg:top-28"><div className="flex items-center justify-between border-b border-slate-100 pb-4"><h2 className="text-sm font-black text-slate-900">Bilgi Başlıkları</h2><span className="text-[10px] font-black text-slate-400">{categories.length} bölüm</span></div><nav className="mt-2">{categories.map((category) => <Link key={category.id} to={`/kutuphane/${category.slug}`} className="group flex items-center gap-3 border-b border-slate-100 py-4 last:border-0"><span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{backgroundColor:category.color}}/><span className="flex-1 text-sm font-black text-slate-700 transition group-hover:text-slate-950">{category.title}</span><span className="text-[10px] font-black text-slate-400">{category.articles.length}</span><ArrowRight className="h-3.5 w-3.5 text-slate-300 transition group-hover:translate-x-1"/></Link>)}</nav></aside><section><div className="flex items-end justify-between gap-4 border-b border-slate-200 pb-4"><div><p className="text-[10px] font-black tracking-[.18em] text-red-700">BİLGİLENDİRİCİ İÇERİKLER</p><h2 className="mt-1 text-2xl font-black text-slate-950">Son Eklenen Yazılar</h2></div><span className="hidden text-xs font-bold text-slate-400 sm:block">{latestArticles.length} içerik</span></div>{latestArticles.length ? <div className="mt-5 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">{latestArticles.map(({category,article}) => <Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="h-48 w-full bg-slate-100 object-cover transition duration-500 group-hover:scale-105"/><div className="p-5"><div className="flex items-center justify-between gap-3 text-[10px] font-black"><span style={{color:category.color}}>{category.title.toUpperCase()}</span><span className="shrink-0 text-slate-400">{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</span></div><h3 className="mt-3 text-lg font-black leading-6 text-slate-900">{article.title}</h3><p className="mt-3 line-clamp-3 text-xs leading-5 text-slate-600">{article.summary||stripRichText(article.content)}</p><span className="mt-5 inline-flex items-center gap-1 text-xs font-black text-red-700">İçeriği oku <ArrowRight className="h-3.5 w-3.5"/></span></div></Link>)}</div> : <div className="mt-5 rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-sm font-bold text-slate-500">Henüz yayınlanmış bir içerik bulunmuyor.</div>}</section></div></div></main>;
 }
 
 function LibraryCategoryPage() {
   const { slug='' }=useParams();
-  const [categories,setCategories]=useState<LibraryCategory[]>(getLibraryCategories);
-  useEffect(()=>{const refresh=()=>setCategories(getLibraryCategories());window.addEventListener('realty-center-library-updated',refresh);return()=>window.removeEventListener('realty-center-library-updated',refresh);},[]);
+  const categories=useLibraryCategories();
   const category=categories.find((item)=>item.slug===slug);
   if(!category)return <LibraryHomePage/>;
   return <main className="min-h-[70vh] bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-6"><Link to="/kutuphane" className="text-xs font-black text-red-700">← Realty Kütüphane</Link><div className="mt-6 rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200"><div className="h-1.5 w-20 rounded-full" style={{backgroundColor:category.color}}/><h1 className="mt-5 text-4xl font-black text-slate-950">{category.title}</h1><p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">{category.description}</p></div>{category.articles.length?<div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{category.articles.map((article)=><Link key={article.id} to={`/kutuphane/${category.slug}/${article.id}`} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="h-48 w-full bg-slate-100 object-cover"/><div className="p-5"><p className="text-[10px] font-black" style={{color:category.color}}>{new Date(article.publishedAt).toLocaleDateString('tr-TR')}</p><h2 className="mt-2 text-lg font-black text-slate-900">{article.title}</h2><p className="mt-3 line-clamp-3 text-xs leading-5 text-slate-600">{article.summary||stripRichText(article.content)}</p><span className="mt-5 inline-flex text-xs font-black" style={{color:category.color}}>İçeriği oku →</span></div></Link>)}</div>:<div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-sm font-bold text-slate-500">Bu bölüme henüz içerik eklenmedi.</div>}</div></main>;
 }
 
 function LibraryArticlePage(){
-  const {slug='',articleId=''}=useParams(); const categories=getLibraryCategories(); const category=categories.find((item)=>item.slug===slug); const article=category?.articles.find((item)=>item.id===articleId);
+  const {slug='',articleId=''}=useParams(); const categories=useLibraryCategories(); const category=categories.find((item)=>item.slug===slug); const article=category?.articles.find((item)=>item.id===articleId);
   if(!category||!article)return <LibraryHomePage/>;
   return <main className="min-h-[70vh] bg-slate-50 py-12"><article className="mx-auto max-w-4xl px-6"><Link to={`/kutuphane/${category.slug}`} className="text-xs font-black text-red-700">← {category.title}</Link><div className="mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl"><img src={article.image||'/demo-placeholder.svg'} alt={article.title} className="max-h-[480px] w-full bg-slate-100 object-cover"/><div className="p-7 sm:p-10"><p className="text-[10px] font-black tracking-widest" style={{color:category.color}}>{category.title.toUpperCase()} · {new Date(article.publishedAt).toLocaleDateString('tr-TR')}</p><h1 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl">{article.title}</h1>{article.summary&&<p className="mt-5 border-l-4 pl-4 text-sm font-semibold leading-7 text-slate-600" style={{borderColor:category.color}}>{article.summary}</p>}<div className="library-rich-content mt-8 text-sm leading-8 text-slate-700" dangerouslySetInnerHTML={{__html:article.content}}/></div></div></article></main>;
 }
