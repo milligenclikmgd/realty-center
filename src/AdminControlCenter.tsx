@@ -2633,6 +2633,7 @@ export default function AdminControlCenter() {
         )}
       </>
     );
+  else if (page === "corporate") view = <CorporateManagementPage />;
   else if (page === "media") view = <MediaManagementPage />;
   else if (page === "library") view = <LibraryManagementPage />;
   else view = <FeaturePage title={titleOf(page)} page={page} />;
@@ -3418,6 +3419,183 @@ function AdvisorPicker({ office, profiles, members, close, select }: { office: O
   const rows = profiles.filter(p => p.role === "advisor" && !members.some(m => m.office_id === office.id && m.advisor_id === p.id) && `${p.first_name} ${p.last_name}`.toLocaleLowerCase("tr-TR").includes(q.toLocaleLowerCase("tr-TR")) && (!city || p.expertise_areas?.[0] === city) && (!district || p.expertise_areas?.[1] === district));
   return <div className="fixed inset-0 z-[140] flex items-center justify-center bg-slate-950/45 p-4"><div className="max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"><div className="flex items-start justify-between"><div><p className="text-[10px] font-black tracking-[.18em] text-[#cd011e]">OFİS / DANIŞMAN ATA</p><h2 className="mt-1 text-xl font-black">{office.name} için danışman seçin</h2></div><button onClick={close} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold">Kapat</button></div><div className="mt-5 grid gap-3 md:grid-cols-3"><input value={q} onChange={e=>setQ(e.target.value)} placeholder="İsim soyisim ara" className="rounded-xl border border-slate-200 p-3 text-sm"/><select value={city} onChange={e=>{setCity(e.target.value);setDistrict("")}} className="rounded-xl border border-slate-200 p-3 text-sm"><option value="">Tüm iller</option>{TURKEY_PROVINCES.map(x=><option key={x}>{x}</option>)}</select><select value={district} onChange={e=>setDistrict(e.target.value)} className="rounded-xl border border-slate-200 p-3 text-sm"><option value="">Tüm ilçeler</option>{getTurkeyDistricts(city).map(x=><option key={x}>{x}</option>)}</select></div><div className="mt-4 space-y-2">{rows.map(p=><button key={p.id} onClick={()=>select(p.id)} className="flex w-full items-center gap-3 rounded-xl border border-slate-200 p-3 text-left transition hover:border-[#cd011e] hover:bg-red-50">{p.avatar_url?<img src={p.avatar_url} className="h-11 w-11 rounded-full object-cover"/>:<span className="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-xs font-black text-[#cd011e]">{p.first_name[0]}{p.last_name[0]}</span>}<span><b className="block text-sm">{p.first_name} {p.last_name}</b><small className="text-xs text-slate-500">{p.expertise_areas?.[0] || "İl belirtilmemiş"} / {p.expertise_areas?.[1] || "İlçe belirtilmemiş"}</small></span></button>)}{!rows.length&&<p className="p-8 text-center text-sm text-slate-400">Filtreye uygun atanabilir danışman bulunamadı.</p>}</div></div></div>;
 }
+type CorporateSection = "management" | "documents" | "partners" | "references";
+type CorporateRecord = { id: string; name?: string; title?: string; image?: string; biography?: string; description?: string; fileUrl?: string; logo?: string; sort_order: number; content?: string };
+type CorporateState = Record<CorporateSection, CorporateRecord[]>;
+const EMPTY_CORPORATE: CorporateState = { management: [], documents: [], partners: [], references: [] };
+const CORPORATE_TABS: { id: CorporateSection; label: string; helper: string }[] = [
+  { id: "management", label: "Yönetim Kurulu", helper: "Fotoğraf, ad-soyad, unvan ve CV bilgilerini yönetin." },
+  { id: "documents", label: "Belgelerimiz", helper: "Kurumsal PDF belgelerini yükleyin ve sıralayın." },
+  { id: "partners", label: "İş Ortaklarımız", helper: "İş ortağı adlarını ve logolarını yönetin." },
+  { id: "references", label: "Referanslarımız", helper: "Referans adlarını ve logolarını yönetin." },
+];
+function CorporateManagementPage() {
+  const [section, setSection] = useState<CorporateSection>("management");
+  const [content, setContent] = useState<CorporateState>(EMPTY_CORPORATE);
+  const [form, setForm] = useState<any>({ firstName: "", lastName: "", name: "", title: "", biography: "", description: "", image: "", fileUrl: "", logo: "", sort_order: 1 });
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [editingId, setEditingId] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [busy, setBusy] = useState(false);
+  const [notice, setNotice] = useState("");
+  const [error, setError] = useState("");
+  const picker = useRef<HTMLInputElement>(null);
+  const tab = CORPORATE_TABS.find((item) => item.id === section)!;
+  const rows = content[section] as CorporateRecord[];
+  const orderedRows = [...rows].sort((a, b) => a.sort_order - b.sort_order);
+
+  const cacheAndSet = (next: CorporateState) => {
+    setContent(next);
+    localStorage.setItem("realty-center-management", JSON.stringify(next.management));
+    localStorage.setItem("realty-center-documents", JSON.stringify(next.documents));
+    localStorage.setItem("realty-center-partners", JSON.stringify(next.partners));
+    localStorage.setItem("realty-center-references", JSON.stringify(next.references));
+    window.dispatchEvent(new Event("realty-center-corporate-updated"));
+  };
+  const load = async () => {
+    setLoading(true);
+    setError("");
+    try {
+      const response = await fetch("/api/auth.php?action=corporate-content&_=" + Date.now(), { cache: "no-store" });
+      const payload = await response.json();
+      if (!response.ok || payload.error) throw new Error(payload.error || "Kurumsal içerikler alınamadı.");
+      const data = payload.content && typeof payload.content === "object" ? payload.content : EMPTY_CORPORATE;
+      cacheAndSet({
+        management: Array.isArray(data.management) ? data.management : [],
+        documents: Array.isArray(data.documents) ? data.documents : [],
+        partners: Array.isArray(data.partners) ? data.partners : [],
+        references: Array.isArray(data.references) ? data.references : [],
+      });
+    } catch (e: any) {
+      setError(e.message || "Kurumsal içerikler yüklenemedi.");
+    } finally { setLoading(false); }
+  };
+  useEffect(() => { void load(); }, []);
+
+  const resetForm = () => {
+    setEditingId("");
+    setSelectedFile(null);
+    setForm({ firstName: "", lastName: "", name: "", title: "", biography: "", description: "", image: "", fileUrl: "", logo: "", sort_order: rows.length + 1 });
+    if (picker.current) picker.current.value = "";
+  };
+  const persist = async (next: CorporateState) => {
+    setBusy(true);
+    setError("");
+    try {
+      const response = await fetch("/api/auth.php?action=save-corporate-content", {
+        method: "POST", credentials: "include", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: next }),
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "Kaydetme başarısız oldu. Admin oturumunuzu kontrol edin.");
+      cacheAndSet(payload.content || next);
+      setNotice("Kurumsal içerikler kaydedildi.");
+      window.setTimeout(() => setNotice(""), 3500);
+      return true;
+    } catch (e: any) {
+      setError(e.message || "Kurumsal içerikler kaydedilemedi.");
+      return false;
+    } finally { setBusy(false); }
+  };
+  const upload = async (file: File) => {
+    const isPdf = file.type === "application/pdf";
+    if (section === "documents" && !isPdf) throw new Error("Belgeler için PDF dosyası seçin.");
+    if (section !== "documents" && !file.type.startsWith("image/")) throw new Error("Fotoğraf veya logo için görsel dosyası seçin.");
+    const limit = isPdf ? 25 : 15;
+    if (file.size > limit * 1024 * 1024) throw new Error("Dosya en fazla " + limit + " MB olabilir.");
+    const data = new FormData();
+    data.append("file", file);
+    data.append("kind", "corporate");
+    const response = await fetch("/api/media.php", { method: "POST", credentials: "include", body: data });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || payload.error || !payload.url) throw new Error(payload.error || "Dosya yüklenemedi.");
+    return payload.url as string;
+  };
+  const submit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    setBusy(true);
+    setError("");
+    setNotice(selectedFile ? "Dosya yükleniyor…" : "Kaydediliyor…");
+    try {
+      const fileUrl = selectedFile ? await upload(selectedFile) : "";
+      const id = editingId || crypto.randomUUID();
+      let record: CorporateRecord;
+      if (section === "management") {
+        const name = (String(form.firstName || "").trim() + " " + String(form.lastName || "").trim()).trim();
+        record = { id, name, title: String(form.title || "").trim(), image: fileUrl || form.image, biography: String(form.biography || "").trim(), sort_order: Number(form.sort_order) || 1 };
+      } else if (section === "documents") {
+        record = { id, title: String(form.title || "").trim(), description: String(form.description || "").trim(), fileUrl: fileUrl || form.fileUrl, sort_order: Number(form.sort_order) || 1 };
+      } else {
+        record = { id, name: String(form.name || "").trim(), logo: fileUrl || form.logo, sort_order: Number(form.sort_order) || 1 };
+      }
+      if ((section === "management" && !record.image) || (section === "documents" && !record.fileUrl) || ((section === "partners" || section === "references") && !record.logo)) {
+        throw new Error("Lütfen gerekli fotoğraf, logo veya PDF dosyasını ekleyin.");
+      }
+      const next: CorporateState = { ...content, [section]: [...rows.filter((item) => item.id !== id), record].sort((a, b) => a.sort_order - b.sort_order) };
+      if (await persist(next)) resetForm();
+    } catch (e: any) {
+      setError(e.message || "Kayıt tamamlanamadı.");
+    } finally { setBusy(false); setNotice(""); }
+  };
+  const edit = (item: CorporateRecord) => {
+    setEditingId(item.id);
+    setSelectedFile(null);
+    if (section === "management") {
+      const parts = String(item.name || "").trim().split(/\s+/);
+      setForm({ ...item, firstName: parts.slice(0, -1).join(" "), lastName: parts.slice(-1).join(" ") });
+    } else setForm({ ...item });
+    if (picker.current) picker.current.value = "";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const remove = async (id: string) => {
+    if (!window.confirm("Bu kurumsal kayıt silinsin mi?")) return;
+    await persist({ ...content, [section]: rows.filter((item) => item.id !== id) });
+  };
+  const updateOrder = (id: string, value: number) => {
+    setContent((current) => ({ ...current, [section]: current[section].map((item) => item.id === id ? { ...item, sort_order: value } : item) }));
+  };
+  const saveOrder = async () => {
+    const next = { ...content, [section]: [...rows].sort((a, b) => a.sort_order - b.sort_order) };
+    await persist(next);
+  };
+  const fileLabel = section === "documents" ? "PDF Dosyası" : section === "management" ? "Profil Fotoğrafı" : "Logo";
+  const existingFile = section === "management" ? form.image : section === "documents" ? form.fileUrl : form.logo;
+  return <div className="space-y-5">
+    <div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / KURUMSAL</p><h1 className="mt-1 text-2xl font-black">Kurumsal Yönetim</h1><p className="mt-1 text-sm text-slate-500">Yönetim kurulu, belgeler, iş ortakları ve referansları tek yerden yönetin.</p></div>
+    <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">{CORPORATE_TABS.map((item) => <button key={item.id} onClick={() => { setSection(item.id); resetForm(); setError(""); }} className={"rounded-xl border px-4 py-3 text-left text-sm font-bold transition " + (section === item.id ? "border-red-200 bg-red-50 text-[#cd011e]" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50")}>{item.label}<span className="mt-1 block text-[11px] font-medium text-slate-400">{content[item.id].length} kayıt</span></button>)}</div>
+    <section className="rounded-2xl border border-slate-200 bg-white p-5">
+      <div className="mb-4"><h2 className="text-base font-bold">{editingId ? "Kaydı Düzenle" : "Yeni Kayıt Ekle"} · {tab.label}</h2><p className="mt-1 text-xs text-slate-500">{tab.helper}</p></div>
+      <form onSubmit={submit} className="grid gap-3 md:grid-cols-2">
+        {section === "management" && <>
+          <label className="text-xs font-semibold text-slate-600">Ad<input required value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+          <label className="text-xs font-semibold text-slate-600">Soyad<input required value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+          <label className="text-xs font-semibold text-slate-600 md:col-span-2">Ünvan<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+          <label className="text-xs font-semibold text-slate-600 md:col-span-2">CV / Özgeçmiş<textarea value={form.biography} onChange={(e) => setForm({ ...form, biography: e.target.value })} className="mt-1 min-h-28 w-full rounded-lg border border-slate-200 p-3 text-sm" placeholder="Kişinin görev ve deneyim bilgileri" /></label>
+        </>}
+        {section === "documents" && <>
+          <label className="text-xs font-semibold text-slate-600">Belge adı<input required value={form.title || ""} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+          <label className="text-xs font-semibold text-slate-600">Açıklama<input value={form.description || ""} onChange={(e) => setForm({ ...form, description: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+        </>}
+        {(section === "partners" || section === "references") && <label className="text-xs font-semibold text-slate-600 md:col-span-2">Kurum / marka adı<input required value={form.name || ""} onChange={(e) => setForm({ ...form, name: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>}
+        <label className="text-xs font-semibold text-slate-600">Gösterim sırası<input required type="number" min="1" value={form.sort_order || 1} onChange={(e) => setForm({ ...form, sort_order: Number(e.target.value) })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm" /></label>
+        <div className="text-xs font-semibold text-slate-600">{fileLabel}<div className="mt-1 flex flex-wrap items-center gap-2"><input ref={picker} type="file" accept={section === "documents" ? "application/pdf,.pdf" : "image/*"} onChange={(e) => setSelectedFile(e.target.files?.[0] || null)} className="max-w-full text-xs file:mr-2 file:rounded-lg file:border-0 file:bg-slate-100 file:px-3 file:py-2 file:text-xs file:font-bold" />{selectedFile && <span className="text-[11px] text-emerald-700">{selectedFile.name}</span>}</div>{existingFile && !selectedFile && <p className="mt-1 break-all text-[10px] font-normal text-slate-400">Mevcut: {existingFile}</p>}</div>
+        <div className="flex items-end gap-2 md:col-span-2"><button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{busy ? (selectedFile ? "Dosya yükleniyor…" : "Kaydediliyor…") : editingId ? "Değişiklikleri Kaydet" : "Kaydı Ekle"}</button>{editingId && <button type="button" onClick={resetForm} className="rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold text-slate-600">Vazgeç</button>}</div>
+      </form>
+      {notice && <p className="mt-3 text-xs font-semibold text-emerald-700">{notice}</p>}{error && <p className="mt-3 rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}
+    </section>
+    <section className="rounded-2xl border border-slate-200 bg-white p-5"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-base font-bold">{tab.label}</h2><p className="mt-1 text-xs text-slate-500">Sıralama numarasını değiştirip sıralamayı kaydedin.</p></div><button disabled={busy || loading || rows.length < 2} onClick={() => void saveOrder()} className="rounded-lg border border-slate-200 px-4 py-2.5 text-xs font-bold text-slate-700 disabled:opacity-50">Sıralamayı Kaydet</button></div>
+      {loading ? <div className="mt-4 h-20 animate-pulse rounded-lg bg-slate-100" /> : orderedRows.length ? <div className="mt-4 space-y-2">{orderedRows.map((item) => <article key={item.id} className="flex flex-col gap-3 rounded-xl border border-slate-200 p-3 sm:flex-row sm:items-center">
+        {section === "management" && item.image && <img src={item.image} alt="" className="h-14 w-14 rounded-full object-cover" />}
+        {section === "documents" && <span className="grid h-12 w-12 place-items-center rounded-lg bg-red-50 text-[10px] font-black text-[#cd011e]">PDF</span>}
+        {(section === "partners" || section === "references") && item.logo && <img src={item.logo} alt="" className="h-12 w-20 rounded-lg border border-slate-100 bg-white object-contain p-1" />}
+        <div className="min-w-0 flex-1"><b className="block truncate text-sm text-slate-800">{section === "documents" ? item.title : item.name}</b><span className="mt-1 block truncate text-xs text-slate-500">{section === "management" ? item.title : section === "documents" ? item.description : item.logo}</span></div>
+        <label className="flex items-center gap-2 text-[11px] text-slate-500">Sıra<input type="number" min="1" value={item.sort_order} onChange={(e) => updateOrder(item.id, Number(e.target.value))} className="w-16 rounded-lg border border-slate-200 px-2 py-2 text-sm" /></label>
+        <button onClick={() => edit(item)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold hover:bg-slate-50">Düzenle</button><button onClick={() => void remove(item.id)} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-50">Sil</button>
+      </article>)}</div> : <div className="mt-4 rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-400">Bu bölümde henüz kayıt yok.</div>}
+    </section>
+  </div>;
+}
+
 function ContentManager({ kind }: { kind: "media" | "library" }) {
   const key = `rc-${kind}-content`;
   const [items, setItems] = useState<any[]>(() => JSON.parse(localStorage.getItem(key) || "[]"));
