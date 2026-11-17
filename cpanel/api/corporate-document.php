@@ -7,7 +7,7 @@ if (!preg_match('/\A[a-f0-9]{40}\.pdf\z/i', $file)) {
     exit;
 }
 
-$baseDir = realpath(dirname(__DIR__, 2) . '/uploads/corporate');
+$baseDir = realpath(dirname(__DIR__) . '/uploads/corporate');
 $path = $baseDir ? realpath($baseDir . DIRECTORY_SEPARATOR . $file) : false;
 if (!$baseDir || !$path || dirname($path) !== $baseDir || !is_file($path) || !is_readable($path)) {
     http_response_code(404);
