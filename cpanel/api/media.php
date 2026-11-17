@@ -21,6 +21,8 @@ if (($_SERVER['HTTP_SEC_FETCH_SITE'] ?? '') === 'cross-site') {
 }
 
 requireUser($pdo);
+$uploadKind = (string)($_POST['kind'] ?? 'listing');
+if (!in_array($uploadKind, ['listing','corporate'], true)) respond(['error'=>'Yükleme türü geçersiz.'],422);
 
 if (!isset($_FILES['file'])) {
     $contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
@@ -63,15 +65,21 @@ $types = [
     'video/webm' => ['extension' => 'webm', 'max' => 50 * 1024 * 1024, 'kind' => 'video'],
     'video/quicktime' => ['extension' => 'mov', 'max' => 50 * 1024 * 1024, 'kind' => 'video'],
 ];
+if ($uploadKind === 'corporate') {
+    $types['application/pdf'] = ['extension' => 'pdf', 'max' => 25 * 1024 * 1024, 'kind' => 'document'];
+}
+if (($uploadKind === 'listing' && $mime === 'application/pdf') || ($uploadKind === 'corporate' && str_starts_with((string)$mime, 'video/'))) {
+    respond(['error'=>'Bu yükleme alanında bu dosya türü desteklenmiyor.'],415);
+}
 if (!is_string($mime) || !isset($types[$mime])) {
     respond(['error' => 'Bu dosya türü desteklenmiyor. JPG, PNG, WEBP, GIF, AVIF, MP4, WEBM veya MOV kullanın.'], 415);
 }
 if ($size > $types[$mime]['max']) {
-    $limit = $types[$mime]['kind'] === 'video' ? '50 MB' : '15 MB';
+    $limit = $types[$mime]['kind'] === 'video' ? '50 MB' : ($types[$mime]['kind'] === 'document' ? '25 MB' : '15 MB');
     respond(['error' => "Dosya boyutu {$limit} sınırını aşıyor."], 413);
 }
 
-$uploadDir = dirname(__DIR__) . '/uploads/listings';
+$uploadDir = dirname(__DIR__) . '/uploads/' . ($uploadKind === 'corporate' ? 'corporate' : 'listings');
 if (!is_dir($uploadDir) && !mkdir($uploadDir, 0755, true) && !is_dir($uploadDir)) {
     respond(['error' => 'Yükleme klasörü oluşturulamadı. cPanel dosya izinlerini kontrol edin.'], 500);
 }
@@ -86,7 +94,7 @@ if (!move_uploaded_file((string)$file['tmp_name'], $target)) {
 
 respond([
     'ok' => true,
-    'url' => '/uploads/listings/' . $fileName,
+    'url' => '/uploads/' . ($uploadKind === 'corporate' ? 'corporate' : 'listings') . '/' . $fileName,
     'type' => $types[$mime]['kind'] === 'video' ? $mime : $mime,
     'name' => (string)$file['name'],
 ]);
