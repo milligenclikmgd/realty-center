@@ -2,7 +2,26 @@
 require __DIR__ . '/bootstrap.php';
 $action = $_GET['action'] ?? '';
 
-if (in_array($action, ['crm','crm-activities','crm-save-customer','crm-add-activity','crm-save-task','crm-complete-task','crm-public-lead'], true)) {
+if (in_array($action, ['crm','crm-activities','crm-save-customer','crm-add-activity','crm-save-task','crm-complete-task','crm-public-lead','inbox','inbox-create-public','inbox-update'], true)) {
+    $pdo->exec("CREATE TABLE IF NOT EXISTS inbox_messages (
+        id CHAR(36) NOT NULL PRIMARY KEY,
+        category VARCHAR(40) NOT NULL,
+        subject VARCHAR(255) NULL,
+        full_name VARCHAR(180) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        email VARCHAR(190) NULL,
+        city VARCHAR(100) NULL,
+        district VARCHAR(100) NULL,
+        status VARCHAR(20) NOT NULL DEFAULT 'new',
+        assigned_user_id CHAR(36) NULL,
+        notified_advisors LONGTEXT NULL,
+        data_json LONGTEXT NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        INDEX idx_inbox_category_status (category,status),
+        INDEX idx_inbox_created (created_at),
+        INDEX idx_inbox_assigned (assigned_user_id)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
     $pdo->exec("CREATE TABLE IF NOT EXISTS crm_customers (
         id CHAR(36) NOT NULL PRIMARY KEY,
         full_name VARCHAR(180) NOT NULL,
@@ -331,6 +350,79 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-library-content')
         $log->execute([$actor['id'],'library_content_updated','realty_library',json_encode(['category_count'=>count($categories),'article_count'=>array_sum(array_map(static fn($item)=>count($item['articles']),$categories))],JSON_UNESCAPED_UNICODE)]);
         respond(['ok'=>true,'categories'=>$categories]);
     } catch (Throwable $e) { respond(['error'=>'Realty Kütüphane içerikleri kaydedilemedi.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'inbox') {
+    $actor = requireUser($pdo);
+    if (!in_array($actor['role'] ?? '', ['admin','manager','advisor'], true)) respond(['error'=>'İletişim Merkezi erişim yetkiniz yok.'],403);
+    $rows = $pdo->query("SELECT id,category,subject,full_name,phone,email,city,district,status,assigned_user_id,notified_advisors,data_json,created_at,updated_at FROM inbox_messages ORDER BY created_at DESC LIMIT 1500")->fetchAll();
+    $items = [];
+    foreach ($rows as $row) {
+        $notify = json_decode((string)($row['notified_advisors'] ?? '[]'), true);
+        $data = json_decode((string)($row['data_json'] ?? '{}'), true);
+        $notify = is_array($notify) ? $notify : [];
+        if (($actor['role'] ?? '') === 'advisor' && $row['assigned_user_id'] !== $actor['id'] && !in_array($actor['id'], array_column($notify,'id'), true)) continue;
+        $row['notified_advisors'] = $notify; $row['data'] = is_array($data) ? $data : [];
+        unset($row['data_json']); $items[] = $row;
+    }
+    $assignees = [];
+    if (in_array($actor['role'] ?? '', ['admin','manager'], true)) {
+        $assignees = $pdo->query("SELECT id,first_name,last_name,role FROM users WHERE deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') ORDER BY first_name,last_name")->fetchAll();
+    }
+    respond(['items'=>$items,'assignees'=>$assignees,'viewer'=>['id'=>$actor['id'],'role'=>$actor['role']]]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'inbox-create-public') {
+    $input = body();
+    $allowed = ['contact','barter','buyer_request','financial','feedback','advisor_application','franchise_application','area_request'];
+    $category = trim((string)($input['category'] ?? ''));
+    if (!in_array($category,$allowed,true)) respond(['error'=>'Talep türü geçersiz.'],422);
+    $data = is_array($input['data'] ?? null) ? $input['data'] : [];
+    $fullName = trim((string)($input['full_name'] ?? $data['fullName'] ?? $data['name'] ?? ''));
+    $phone = trim((string)($input['phone'] ?? $data['phone'] ?? ''));
+    $email = strtolower(trim((string)($input['email'] ?? $data['email'] ?? '')));
+    $city = trim((string)($input['city'] ?? $data['city'] ?? ''));
+    $district = trim((string)($input['district'] ?? $data['district'] ?? ''));
+    $subject = trim((string)($input['subject'] ?? $data['subject'] ?? $data['type'] ?? $data['mode'] ?? ''));
+    if ($fullName === '' || $phone === '') respond(['error'=>'Ad soyad ve telefon zorunludur.'],422);
+    if ($email !== '' && !filter_var($email,FILTER_VALIDATE_EMAIL)) respond(['error'=>'E-posta adresini kontrol edin.'],422);
+    if (strlen(json_encode($data,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES) ?: '') > 60000) respond(['error'=>'Form içeriği izin verilen boyutu aşıyor.'],413);
+    $notified = [];
+    if ($category === 'area_request' && $city !== '') {
+        $q=$pdo->prepare("SELECT id,first_name,last_name,city,district FROM users WHERE deleted_at IS NULL AND status='active' AND role='advisor' AND city=? ORDER BY first_name,last_name");
+        $q->execute([$city]);
+        foreach ($q->fetchAll() as $person) {
+            if ($district === '' || mb_strtolower(trim((string)$person['district']),'UTF-8') === mb_strtolower($district,'UTF-8')) $notified[]=['id'=>$person['id'],'name'=>trim($person['first_name'].' '.$person['last_name']),'city'=>$person['city'],'district'=>$person['district']];
+        }
+    }
+    $id=bin2hex(random_bytes(16));
+    try {
+        $pdo->beginTransaction();
+        $q=$pdo->prepare("INSERT INTO inbox_messages (id,category,subject,full_name,phone,email,city,district,status,notified_advisors,data_json) VALUES (?,?,?,?,?,?,?,?, 'new',?,?)");
+        $q->execute([$id,$category,mb_substr($subject,0,255),mb_substr($fullName,0,180),mb_substr($phone,0,50),$email?:null,mb_substr($city,0,100)?:null,mb_substr($district,0,100)?:null,json_encode($notified,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES),json_encode($data,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES)]);
+        if ($category === 'contact') {
+            $systemUser='00000000000000000000000000000000'; $customerId=bin2hex(random_bytes(16));
+            $message=trim((string)($data['message'] ?? $input['message'] ?? ''));
+            $q=$pdo->prepare("INSERT INTO crm_customers (id,full_name,phone,email,customer_type,source,status,notes,assigned_user_id,created_by) VALUES (?,?,?,?,?,'Web sitesi iletişim formu','new',?,NULL,?)");
+            $q->execute([$customerId,mb_substr($fullName,0,180),mb_substr($phone,0,50),$email?:null,'other',mb_substr($message,0,5000),$systemUser]);
+            if ($message !== '') $pdo->prepare('INSERT INTO crm_activities (id,customer_id,user_id,activity_type,body) VALUES (?,?,?,?,?)')->execute([bin2hex(random_bytes(16)),$customerId,$systemUser,'message',mb_substr($message,0,5000)]);
+        }
+        $pdo->commit();
+        respond(['ok'=>true,'id'=>$id,'notified_advisors'=>$notified]);
+    } catch (Throwable $e) { if($pdo->inTransaction())$pdo->rollBack(); respond(['error'=>'Talep kaydedilemedi. Lütfen tekrar deneyin.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'inbox-update') {
+    $actor=requireUser($pdo);
+    if (!in_array($actor['role'] ?? '',['admin','manager'],true)) respond(['error'=>'Mesaj durumunu yalnızca yönetici değiştirebilir.'],403);
+    $input=body();$id=trim((string)($input['id']??''));$status=trim((string)($input['status']??'new'));$assigned=trim((string)($input['assigned_user_id']??''))?:null;
+    if($id==='')respond(['error'=>'Talep kaydı seçilmedi.'],422);
+    if(!in_array($status,['new','reviewing','completed','closed'],true))respond(['error'=>'Talep durumu geçersiz.'],422);
+    if($assigned!==null){$q=$pdo->prepare("SELECT id FROM users WHERE id=? AND deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') LIMIT 1");$q->execute([$assigned]);if(!$q->fetch())respond(['error'=>'Atanan kullanıcı bulunamadı.'],422);}
+    $q=$pdo->prepare('UPDATE inbox_messages SET status=?,assigned_user_id=? WHERE id=?');$q->execute([$status,$assigned,$id]);
+    if(!$q->rowCount()) { $check=$pdo->prepare('SELECT id FROM inbox_messages WHERE id=?');$check->execute([$id]);if(!$check->fetch())respond(['error'=>'Talep bulunamadı.'],404); }
+    $log=$pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,entity_id,metadata) VALUES (?,?,?,?,?)');$log->execute([$actor['id'],'inbox_updated','inbox_message',$id,json_encode(['status'=>$status,'assigned_user_id'=>$assigned],JSON_UNESCAPED_UNICODE)]);
+    respond(['ok'=>true]);
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-public-lead') {
