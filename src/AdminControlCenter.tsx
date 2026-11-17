@@ -3687,7 +3687,8 @@ function RealtyMediaManager() {
       const saved = Array.isArray(payload.videos) ? payload.videos : normalized;
       setItems(saved); localStorage.setItem("realty-center-videos", JSON.stringify(saved)); window.dispatchEvent(new Event("realty-center-videos-updated"));
       setNotice("Realty Medya listesi kaydedildi.");
-    } catch (e: any) { setError(e.message || "Sunucuya ulaşılamadı."); }
+      return true;
+    } catch (e: any) { setError(e.message || "Sunucuya ulaşılamadı."); return false; }
     finally { setBusy(false); }
   };
   useEffect(() => {
@@ -3706,7 +3707,8 @@ function RealtyMediaManager() {
     if (!form.title.trim()) { setError("Video başlığı zorunludur."); return; }
     const item: RealtyMediaItem = { id: editingId || crypto.randomUUID(), source: "youtube", category, url: form.url.trim(), title: form.title.trim(), thumbnail: `https://img.youtube.com/vi/${id}/hqdefault.jpg`, description: form.description.trim(), createdAt: new Date().toISOString(), sort_order: editingId ? (items.find((row) => row.id === editingId)?.sort_order || items.length + 1) : items.length + 1 };
     const next = editingId ? ordered.map((row) => row.id === editingId ? item : row) : [...ordered, item];
-    await persist(next);
+    const saved = await persist(next);
+    if (!saved) return;
     setForm({ url: "", title: "", description: "" }); setEditingId("");
   };
   const move = (id: string, direction: -1 | 1) => {
