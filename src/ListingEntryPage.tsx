@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Building2, Home, LandPlot, Search, Store, UserRound, X } from "lucide-react";
-import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 
 type ProfileLike = {
@@ -489,25 +488,18 @@ export default function ListingEntryPage({
   const ownerResults = advisors.filter((advisor) => `${advisor.first_name} ${advisor.last_name}`.toLocaleLowerCase("tr-TR").includes(ownerSearch.toLocaleLowerCase("tr-TR")));
 
   useEffect(() => {
-    void supabase.auth.getUser().then(async ({ data: auth }) => {
-      if (!auth.user) return;
-      setViewerId(auth.user.id);
-      const { data } = await supabase
-        .from("profiles")
-        .select("role,first_name,last_name")
-        .eq("id", auth.user.id)
-        .maybeSingle();
-      if (data?.role) {
-        setViewerRole(data.role);
-        setViewerName(
-          `${data.first_name || ""} ${data.last_name || ""}`.trim() ||
-            auth.user.email ||
-            "Oturum sahibi",
-        );
-        if (data.role === "advisor" || data.role === "manager")
-          setForm((current) => ({ ...current, advisor: auth.user.id }));
-      }
-    });
+    fetch("/api/auth.php?action=me", { credentials: "include", cache: "no-store" })
+      .then(async (response) => {
+        const payload = await response.json();
+        const user = payload?.user;
+        if (!response.ok || !user) return;
+        setViewerId(user.id);
+        setViewerRole(user.role || "advisor");
+        setViewerName(`${user.first_name || ""} ${user.last_name || ""}`.trim() || user.username || "Oturum sahibi");
+        if (user.role === "advisor" || user.role === "manager")
+          setForm((current) => ({ ...current, advisor: user.id }));
+      })
+      .catch(() => alert("Oturum bilgisi alınamadı. Lütfen yeniden giriş yapın."));
   }, []);
   useEffect(() => {
     if ((viewerRole === "advisor" || viewerRole === "manager") && viewerId)
@@ -630,77 +622,30 @@ export default function ListingEntryPage({
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     setValidationMessage("");
-    const missing = [
-      [form.title.trim(), "İlan başlığı"],
-      [form.advisor, "İlan sahibi"],
-      [form.price, "Fiyat"],
-      [form.city, "İl"],
-      [form.district, "İlçe"],
-      [form.neighborhood, "Mahalle"],
-    ]
-      .filter(([value]) => !value)
-      .map(([, label]) => label);
-    if (missing.length) {
-      const message = `Eksik zorunlu alanlar: ${missing.join(", ")}.`;
-      setValidationMessage(message);
-      return alert(message);
-    }
+    const missing = [[form.title.trim(),"İlan başlığı"],[form.advisor,"İlan sahibi"],[form.price,"Fiyat"],[form.city,"İl"],[form.district,"İlçe"],[form.neighborhood,"Mahalle"]]
+      .filter(([value]) => !value).map(([,label]) => label);
+    if (missing.length) { const message = `Eksik zorunlu alanlar: ${missing.join(", ")}.`; setValidationMessage(message); return alert(message); }
+    if (!uploaded.length) { const message = "İlanı göndermeden önce en az bir fotoğraf ekleyin."; setValidationMessage(message); return alert(message); }
     setSaving(true);
     try {
-      const { error } = await supabase.from("listings").insert({
-        owner_id: form.advisor,
-        title: form.title.trim(),
-        category: form.category,
-        property_type: form.property_type,
-        transaction_type: form.transaction_type,
-        price: Number(form.price.replaceAll(".", "")),
-        currency: form.currency,
-        city: form.city,
-        district: form.district,
-        neighborhood: form.neighborhood,
-        rooms: form.details.roomCount || null,
-        area: Number(form.details.gross_sqm || form.details.net_sqm || 0),
-        description: form.description || null,
-        images: uploaded
-          .filter((item) => item.type.startsWith("image/"))
-          .map((item) => item.url),
-        video_url:
-          uploaded.find((item) => item.type.startsWith("video/"))?.url || null,
-        details: {
-          ...form.details,
-          listing_number: listingNumber,
-          second_advisor: form.secondAdvisor || null,
-          office_id: form.officeId || null,
-          dues: form.dues,
-          cover_url: coverUrl || null,
-          whatsapp: form.whatsapp || null,
-          advisor_notes: form.advisorNotes,
-          address: form.address,
-          postal_code: form.postalCode,
-          latitude: form.latitude,
-          longitude: form.longitude,
-          new_label: newLabel,
-          deal_label: dealLabel,
-        },
-        // "İlanı Yayınla" submits the listing directly to the public feed for
-        // every authenticated listing role. Drafts can still be saved with
-        // the separate Taslak Kaydet action above.
-        approval_status: "Yayında",
-        is_featured: featured,
-      });
-      if (error) throw error;
+      const details = { ...form.details, listing_number: listingNumber, second_advisor: form.secondAdvisor || null, office_id: form.officeId || null, dues: form.dues, cover_url: coverUrl || uploaded.find((item) => item.type.startsWith("image/"))?.url || null, whatsapp: form.whatsapp || null, advisor_notes: form.advisorNotes, address: form.address, postal_code: form.postalCode, latitude: form.latitude, longitude: form.longitude, new_label: newLabel, deal_label: dealLabel };
+      const response = await fetch("/api/auth.php?action=create-listing", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({
+        listing_number: listingNumber, owner_id: form.advisor, office_id: form.officeId || null,
+        title: form.title.trim(), category: form.category, property_type: form.property_type, transaction_type: form.transaction_type,
+        price: Number(form.price.replaceAll(".", "")), currency: form.currency === "₺" ? "TRY" : form.currency,
+        city: form.city, district: form.district, neighborhood: form.neighborhood,
+        rooms: form.details.roomCount || null, area: Number(form.details.gross_sqm || form.details.net_sqm || 0),
+        description: form.description || null, details, is_featured: featured,
+        media: uploaded.map((item) => ({ url: item.url, type: item.type, media_type: item.type.startsWith("video/") ? "video" : "image" })),
+      }) });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || `Sunucu hata verdi (HTTP ${response.status}).`);
       window.dispatchEvent(new Event("realty-center-listings-updated"));
-      alert(
-        directPublish
-          ? "İlan doğrudan yayına alındı."
-          : "İlan onay merkezine gönderildi.",
-      );
+      alert(payload.approval_status === "pending" ? "İlan onaya gönderildi." : "İlan cPanel veritabanına kaydedildi ve yayına alındı.");
+      localStorage.removeItem("rc-listing-draft");
       close();
-    } catch (error: any) {
-      alert(`İlan kaydedilemedi: ${error.message || "Tekrar deneyin."}`);
-    } finally {
-      setSaving(false);
-    }
+    } catch (error: any) { alert(`İlan kaydedilemedi: ${error.message || "Tekrar deneyin."}`); }
+    finally { setSaving(false); }
   };
   const renderField = (field: DetailField) => (
     <label key={field.key} className="text-xs">
