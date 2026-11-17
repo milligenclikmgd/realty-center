@@ -2,7 +2,7 @@
 require __DIR__ . '/bootstrap.php';
 $action = $_GET['action'] ?? '';
 
-if (in_array($action, ['crm','crm-activities','crm-save-customer','crm-add-activity','crm-save-task','crm-complete-task'], true)) {
+if (in_array($action, ['crm','crm-activities','crm-save-customer','crm-add-activity','crm-save-task','crm-complete-task','crm-public-lead'], true)) {
     $pdo->exec("CREATE TABLE IF NOT EXISTS crm_customers (
         id CHAR(36) NOT NULL PRIMARY KEY,
         full_name VARCHAR(180) NOT NULL,
@@ -333,6 +333,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-library-content')
     } catch (Throwable $e) { respond(['error'=>'Realty Kütüphane içerikleri kaydedilemedi.'],500); }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-public-lead') {
+    $now = time();
+    if (!empty($_SESSION['crm_lead_last_sent']) && ($now - (int)$_SESSION['crm_lead_last_sent']) < 20) respond(['error'=>'Lütfen yeni talep göndermeden önce kısa süre bekleyin.'],429);
+    $input = body();
+    $name = trim((string)($input['full_name'] ?? ''));
+    $phone = trim((string)($input['phone'] ?? ''));
+    $email = strtolower(trim((string)($input['email'] ?? '')));
+    $message = trim((string)($input['message'] ?? ''));
+    if (mb_strlen($name) < 2 || $phone === '' || $message === '') respond(['error'=>'Ad, telefon ve mesaj zorunludur.'],422);
+    if ($email !== '' && !filter_var($email,FILTER_VALIDATE_EMAIL)) respond(['error'=>'E-posta adresini kontrol edin.'],422);
+    if (strlen($message) > 5000) respond(['error'=>'Mesaj çok uzun.'],422);
+    $systemUser = '00000000000000000000000000000000';
+    $id = bin2hex(random_bytes(16));
+    try {
+        $pdo->beginTransaction();
+        $q=$pdo->prepare("INSERT INTO crm_customers (id,full_name,phone,email,customer_type,source,status,notes,assigned_user_id,created_by) VALUES (?,?,?,?,?,'Web sitesi iletişim formu','new',?,NULL,?)");
+        $q->execute([$id,mb_substr($name,0,180),mb_substr($phone,0,50),$email?:null,'other',mb_substr($message,0,5000),$systemUser]);
+        $a=$pdo->prepare('INSERT INTO crm_activities (id,customer_id,user_id,activity_type,body) VALUES (?,?,?,?,?)');
+        $a->execute([bin2hex(random_bytes(16)),$id,$systemUser,'message',mb_substr($message,0,5000)]);
+        $pdo->commit();
+        $_SESSION['crm_lead_last_sent']=$now;
+        respond(['ok'=>true]);
+    } catch (Throwable $e) { if($pdo->inTransaction())$pdo->rollBack(); respond(['error'=>'Talep şu anda kaydedilemedi. Lütfen tekrar deneyin.'],500); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm') {
     $actor = requireUser($pdo);
     if (!in_array($actor['role'], ['admin','manager','advisor'], true)) respond(['error'=>'CRM erişim yetkiniz yok.'],403);
@@ -359,7 +384,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm-activities') {
     $access = $pdo->prepare("SELECT id FROM crm_customers WHERE id=? ".(($actor['role'] ?? '') === 'advisor' ? 'AND assigned_user_id=?' : '')." LIMIT 1");
     $access->execute(($actor['role'] ?? '') === 'advisor' ? [$customerId,$actor['id']] : [$customerId]);
     if (!$access->fetch()) respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
-    $q = $pdo->prepare("SELECT a.id,a.activity_type,a.body,a.created_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS user_name FROM crm_activities a LEFT JOIN users u ON u.id=a.user_id WHERE a.customer_id=? ORDER BY a.created_at DESC LIMIT 200");
+    $q = $pdo->prepare("SELECT a.id,a.activity_type,a.body,a.created_at,CASE WHEN a.user_id='00000000000000000000000000000000' THEN 'Web sitesi' ELSE CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) END AS user_name FROM crm_activities a LEFT JOIN users u ON u.id=a.user_id WHERE a.customer_id=? ORDER BY a.created_at DESC LIMIT 200");
     $q->execute([$customerId]);
     respond(['activities'=>$q->fetchAll()]);
 }
@@ -422,6 +447,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-task') {
     $access=$pdo->prepare("SELECT id,assigned_user_id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);$customer=$access->fetch();if(!$customer)respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
     $due=$dueRaw!==''?date('Y-m-d H:i:s',strtotime($dueRaw)):null;
     $assigned=$actor['role']==='advisor'?$actor['id']:(trim((string)($input['assigned_user_id']??''))?:($customer['assigned_user_id']?:$actor['id']));
+    if($assigned!==null&&$assigned!==''){$uq=$pdo->prepare("SELECT id FROM users WHERE id=? AND deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') LIMIT 1");$uq->execute([$assigned]);if(!$uq->fetch())respond(['error'=>'Görev için atanan kullanıcı bulunamadı.'],422);}
     $id=bin2hex(random_bytes(16));$pdo->prepare('INSERT INTO crm_tasks (id,customer_id,title,due_at,assigned_user_id,created_by) VALUES (?,?,?,?,?,?)')->execute([$id,$customerId,mb_substr($title,0,255),$due,$assigned,$actor['id']]);
     $log=$pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,entity_id,metadata) VALUES (?,?,?,?,?)');$log->execute([$actor['id'],'crm_task_created','crm_customer',$customerId,json_encode(['task'=>$title],JSON_UNESCAPED_UNICODE)]);
     respond(['ok'=>true,'id'=>$id]);
