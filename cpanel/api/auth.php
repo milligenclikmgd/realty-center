@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'listings') {
     requireUser($pdo);
     try {
-        $q = $pdo->query("SELECT l.id, l.listing_number, l.owner_user_id AS owner_id, l.title, l.category, l.property_type, l.transaction_type, l.price, l.currency, l.city, l.district, l.neighborhood, l.rooms, l.area, l.description, l.details, l.approval_status, l.is_featured, l.created_at, l.updated_at, l.deleted_at, GROUP_CONCAT(CASE WHEN m.media_type='image' THEN m.file_url END ORDER BY m.sort_order SEPARATOR '||') AS image_urls FROM listings l LEFT JOIN listing_media m ON m.listing_id=l.id WHERE l.deleted_at IS NULL GROUP BY l.id ORDER BY l.created_at DESC");
+        $q = $pdo->query("SELECT l.id, l.listing_number, l.owner_user_id AS owner_id, l.title, l.category, l.property_type, l.transaction_type, l.price, l.currency, l.city, l.district, l.neighborhood, l.rooms, l.area, l.description, l.details, l.approval_status, l.is_featured, l.created_at, l.updated_at, l.deleted_at, GROUP_CONCAT(CASE WHEN m.media_type='image' THEN m.file_url END ORDER BY m.sort_order SEPARATOR '||') AS image_urls FROM listings l LEFT JOIN listing_media m ON m.listing_id=l.id GROUP BY l.id ORDER BY l.created_at DESC");
         $rows = $q->fetchAll();
         foreach ($rows as &$row) {
             $row['images'] = $row['image_urls'] ? explode('||', $row['image_urls']) : [];
@@ -91,6 +91,97 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'listings') {
         }
         respond(['listings'=>$rows]);
     } catch (Throwable $e) { respond(['error'=>'İlan tablosu okunamadı: '.$e->getMessage()],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'public-listings') {
+    try {
+        $q = $pdo->query("SELECT l.id,l.listing_number,l.owner_user_id AS owner_id,l.title,l.category,l.property_type,l.transaction_type,l.price,l.currency,l.city,l.district,l.neighborhood,l.rooms,l.area,l.description,l.details,l.approval_status,l.is_featured,l.created_at,l.updated_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS owner_name,u.phone AS owner_phone,GROUP_CONCAT(CONCAT(m.media_type,'|::|',m.file_url) ORDER BY m.sort_order SEPARATOR '|||') AS media_items FROM listings l LEFT JOIN users u ON u.id=l.owner_user_id LEFT JOIN listing_media m ON m.listing_id=l.id WHERE l.approval_status='Yayında' AND l.deleted_at IS NULL GROUP BY l.id ORDER BY l.created_at DESC");
+        $rows = $q->fetchAll();
+        foreach ($rows as &$row) {
+            $row['images'] = []; $row['video_url'] = '';
+            foreach (explode('|||', (string)($row['media_items'] ?? '')) as $item) {
+                $parts = explode('|::|', $item, 2); if (count($parts) !== 2) continue;
+                if ($parts[0] === 'image') $row['images'][] = $parts[1];
+                if ($parts[0] === 'video' && $row['video_url'] === '') $row['video_url'] = $parts[1];
+            }
+            unset($row['media_items']);
+            if (is_string($row['details']) && $row['details'] !== '') $row['details'] = json_decode($row['details'], true) ?: [];
+        }
+        respond(['listings'=>$rows]);
+    } catch (Throwable $e) { respond(['error'=>'Yayındaki ilanlar okunamadı.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'create-listing') {
+    $actor = requireUser($pdo); $input = body();
+    $title=trim((string)($input['title']??'')); $number=trim((string)($input['listing_number']??''));
+    $category=trim((string)($input['category']??'')); $property=trim((string)($input['property_type']??''));
+    $transaction=trim((string)($input['transaction_type']??'')); $city=trim((string)($input['city']??''));
+    $district=trim((string)($input['district']??'')); $price=(float)($input['price']??0);
+    if ($title==='' || $number==='' || $category==='' || $property==='' || $city==='' || $district==='' || $price<=0) respond(['error'=>'İlan başlığı, numarası, kategori, konum ve geçerli fiyat zorunludur.'],422);
+    if (!in_array($transaction,['Satılık','Kiralık','Devren'],true)) respond(['error'=>'İlan türü geçersiz.'],422);
+    $ownerId=$actor['role']==='advisor' ? $actor['id'] : trim((string)($input['owner_id']??$actor['id']));
+    if ($ownerId==='') $ownerId=$actor['id'];
+    $ownerCheck=$pdo->prepare("SELECT id FROM users WHERE id=? AND deleted_at IS NULL AND status='active' LIMIT 1");
+    $ownerCheck->execute([$ownerId]); if (!$ownerCheck->fetch()) respond(['error'=>'İlan sahibi kullanıcı bulunamadı veya aktif değil.'],422);
+    $dup=$pdo->prepare('SELECT id FROM listings WHERE listing_number=? LIMIT 1'); $dup->execute([$number]);
+    if ($dup->fetch()) respond(['error'=>'Bu ilan numarası zaten kullanılıyor. Sayfayı yenileyip tekrar deneyin.'],409);
+    $status=in_array($actor['role'],['admin','manager'],true)?'Yayında':'pending';
+    $details=is_array($input['details']??null)?$input['details']:[];
+    $officeId=trim((string)($input['office_id']??$details['office_id']??'')) ?: null;
+    $rooms=trim((string)($input['rooms']??'')) ?: null; $area=(float)($input['area']??0);
+    $currency=strtoupper(trim((string)($input['currency']??'TRY'))); if ($currency==='₺'||$currency==='') $currency='TRY';
+    $media=is_array($input['media']??null)?$input['media']:[];
+    if (count($media)>16) respond(['error'=>'Bir ilana en fazla 16 medya dosyası eklenebilir.'],422);
+    $id=vsprintf('%s%s-%s-%s-%s-%s%s%s',str_split(bin2hex(random_bytes(16)),4));
+    try {
+        $pdo->beginTransaction();
+        $q=$pdo->prepare('INSERT INTO listings (id,listing_number,owner_user_id,office_id,title,transaction_type,category,property_type,price,currency,city,district,neighborhood,rooms,area,description,details,approval_status,is_featured,published_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+        $details['listing_number']=$number;
+        $q->execute([$id,$number,$ownerId,$officeId,$title,$transaction,$category,$property,$price,$currency,$city,$district,trim((string)($input['neighborhood']??''))?:null,$rooms,$area>0?$area:null,trim((string)($input['description']??''))?:null,json_encode($details,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES),$status,!empty($input['is_featured'])?1:0,$status==='Yayında'?date('Y-m-d H:i:s'):null]);
+        $mq=$pdo->prepare('INSERT INTO listing_media (id,listing_id,file_url,media_type,sort_order) VALUES (?,?,?,?,?)'); $sort=0;
+        foreach($media as $item) {
+            if(!is_array($item)) continue; $url=trim((string)($item['url']??'')); if($url==='') continue;
+            $rawType=(string)($item['type']??$item['media_type']??''); $type=($rawType==='video'||str_starts_with($rawType,'video/'))?'video':'image';
+            $mid=vsprintf('%s%s-%s-%s-%s-%s%s%s',str_split(bin2hex(random_bytes(16)),4));
+            $mq->execute([$mid,$id,$url,$type,$sort++]);
+        }
+        $pdo->commit(); respond(['ok'=>true,'id'=>$id,'listing_number'=>$number,'approval_status'=>$status]);
+    } catch(Throwable $e) { if($pdo->inTransaction()) $pdo->rollBack(); respond(['error'=>'İlan cPanel veritabanına kaydedilemedi. Sunucu kayıtlarını kontrol edin.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'update-listing') {
+    $actor=requireUser($pdo); $input=body(); $id=trim((string)($input['id']??''));
+    if($id==='') respond(['error'=>'İlan seçilmedi.'],422);
+    $q=$pdo->prepare('SELECT owner_user_id FROM listings WHERE id=? LIMIT 1'); $q->execute([$id]); $listing=$q->fetch();
+    if(!$listing) respond(['error'=>'İlan bulunamadı.'],404);
+    if($actor['role']==='advisor' && $listing['owner_user_id']!==$actor['id']) respond(['error'=>'Bu ilanı düzenleme yetkiniz yok.'],403);
+    if(!in_array($actor['role'],['admin','manager','advisor'],true)) respond(['error'=>'Bu işlem için yetkiniz yok.'],403);
+    $patch=is_array($input['patch']??null)?$input['patch']:[]; $allowed=['title','transaction_type','category','property_type','price','currency','city','district','neighborhood','rooms','area','description'];
+    $sets=[];$values=[];
+    foreach($allowed as $key) if(array_key_exists($key,$patch)) {$sets[]=$key.'=?';$values[]=$patch[$key];}
+    $moderator=in_array($actor['role'],['admin','manager'],true);
+    if($moderator && array_key_exists('approval_status',$patch)) {
+        if(!in_array($patch['approval_status'],['draft','pending','Yayında','Reddedildi','archived'],true)) respond(['error'=>'İlan durumu geçersiz.'],422);
+        $sets[]='approval_status=?';$values[]=$patch['approval_status'];
+        if($patch['approval_status']==='Yayında') $sets[]='published_at=COALESCE(published_at,NOW())';
+    }
+    if($moderator && array_key_exists('is_featured',$patch)) {$sets[]='is_featured=?';$values[]=!empty($patch['is_featured'])?1:0;}
+    if($moderator && array_key_exists('deleted_at',$patch)) {$sets[]='deleted_at=?';$values[]=$patch['deleted_at'];}
+    if(array_key_exists('details',$patch)) {$sets[]='details=?';$values[]=json_encode($patch['details'],JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);}
+    if(!$sets) respond(['error'=>'Güncellenecek alan bulunamadı veya yetki yetersiz.'],422);
+    $values[]=$id;$pdo->prepare('UPDATE listings SET '.implode(',',$sets).' WHERE id=?')->execute($values);respond(['ok'=>true]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'bulk-listings') {
+    $actor=requireUser($pdo); if(!in_array($actor['role'],['admin','manager'],true)) respond(['error'=>'Toplu ilan işlemi için yetkiniz yok.'],403);
+    $input=body();$ids=array_values(array_filter(array_map('strval',is_array($input['ids']??null)?$input['ids']:[])));$patch=is_array($input['patch']??null)?$input['patch']:[];
+    if(!$ids||count($ids)>100) respond(['error'=>'En fazla 100 ilan seçebilirsiniz.'],422);
+    $sets=[];$values=[];
+    if(array_key_exists('approval_status',$patch)&&in_array($patch['approval_status'],['draft','pending','Yayında','Reddedildi','archived'],true)){$sets[]='approval_status=?';$values[]=$patch['approval_status'];}
+    if(array_key_exists('deleted_at',$patch)){$sets[]='deleted_at=?';$values[]=$patch['deleted_at'];}
+    if(array_key_exists('is_featured',$patch)){$sets[]='is_featured=?';$values[]=!empty($patch['is_featured'])?1:0;}
+    if(!$sets)respond(['error'=>'Geçerli toplu işlem bulunamadı.'],422);
+    $ph=implode(',',array_fill(0,count($ids),'?'));$pdo->prepare('UPDATE listings SET '.implode(',',$sets).' WHERE id IN ('.$ph.')')->execute([...$values,...$ids]);respond(['ok'=>true,'updated'=>count($ids)]);
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'offices') {
