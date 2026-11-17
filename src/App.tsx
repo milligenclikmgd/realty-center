@@ -3523,9 +3523,8 @@ export function ListingDetailPageLegacy() {
 function ListingDetailPage() {
   const { id } = useParams();
   const publishedListings = usePublishedListings();
-  const [loadingListing, setLoadingListing] = useState(!publicListingsRequestComplete);
+  const [loadingListing, setLoadingListing] = useState(true);
   useEffect(() => {
-    if (publicListingsRequestComplete) { setLoadingListing(false); return; }
     const finishLoading = () => setLoadingListing(false);
     window.addEventListener("realty-center-public-listings-loaded", finishLoading);
     return () => window.removeEventListener("realty-center-public-listings-loaded", finishLoading);
