@@ -2,6 +2,53 @@
 require __DIR__ . '/bootstrap.php';
 $action = $_GET['action'] ?? '';
 
+if (in_array($action, ['crm','crm-activities','crm-save-customer','crm-add-activity','crm-save-task','crm-complete-task'], true)) {
+    $pdo->exec("CREATE TABLE IF NOT EXISTS crm_customers (
+        id CHAR(36) NOT NULL PRIMARY KEY,
+        full_name VARCHAR(180) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        email VARCHAR(190) NULL,
+        customer_type VARCHAR(30) NOT NULL DEFAULT 'buyer',
+        city VARCHAR(100) NULL,
+        district VARCHAR(100) NULL,
+        property_type VARCHAR(100) NULL,
+        budget_min DECIMAL(15,2) NULL,
+        budget_max DECIMAL(15,2) NULL,
+        source VARCHAR(100) NULL,
+        status VARCHAR(30) NOT NULL DEFAULT 'new',
+        notes TEXT NULL,
+        assigned_user_id CHAR(36) NULL,
+        created_by CHAR(36) NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        INDEX idx_crm_assigned (assigned_user_id),
+        INDEX idx_crm_status (status),
+        INDEX idx_crm_phone (phone)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+    $pdo->exec("CREATE TABLE IF NOT EXISTS crm_activities (
+        id CHAR(36) NOT NULL PRIMARY KEY,
+        customer_id CHAR(36) NOT NULL,
+        user_id CHAR(36) NOT NULL,
+        activity_type VARCHAR(30) NOT NULL DEFAULT 'note',
+        body TEXT NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        INDEX idx_crm_activity_customer (customer_id, created_at)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+    $pdo->exec("CREATE TABLE IF NOT EXISTS crm_tasks (
+        id CHAR(36) NOT NULL PRIMARY KEY,
+        customer_id CHAR(36) NOT NULL,
+        title VARCHAR(255) NOT NULL,
+        due_at DATETIME NULL,
+        status VARCHAR(20) NOT NULL DEFAULT 'pending',
+        assigned_user_id CHAR(36) NOT NULL,
+        created_by CHAR(36) NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        completed_at DATETIME NULL,
+        INDEX idx_crm_task_assignee (assigned_user_id, status, due_at),
+        INDEX idx_crm_task_customer (customer_id)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'login') {
     $input = body();
     $identifier = strtolower(trim((string)($input['identifier'] ?? '')));
@@ -284,6 +331,106 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-library-content')
         $log->execute([$actor['id'],'library_content_updated','realty_library',json_encode(['category_count'=>count($categories),'article_count'=>array_sum(array_map(static fn($item)=>count($item['articles']),$categories))],JSON_UNESCAPED_UNICODE)]);
         respond(['ok'=>true,'categories'=>$categories]);
     } catch (Throwable $e) { respond(['error'=>'Realty Kütüphane içerikleri kaydedilemedi.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm') {
+    $actor = requireUser($pdo);
+    if (!in_array($actor['role'], ['admin','manager','advisor'], true)) respond(['error'=>'CRM erişim yetkiniz yok.'],403);
+    $isAdvisor = $actor['role'] === 'advisor';
+    $where = $isAdvisor ? 'WHERE c.assigned_user_id=?' : '';
+    $q = $pdo->prepare("SELECT c.id,c.full_name,c.phone,c.email,c.customer_type,c.city,c.district,c.property_type,c.budget_min,c.budget_max,c.source,c.status,c.notes,c.assigned_user_id,c.created_at,c.updated_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS assigned_name,(SELECT COUNT(*) FROM crm_activities a WHERE a.customer_id=c.id) AS activity_count FROM crm_customers c LEFT JOIN users u ON u.id=c.assigned_user_id ".$where." ORDER BY c.updated_at DESC LIMIT 1000");
+    $q->execute($isAdvisor ? [$actor['id']] : []);
+    $customers = $q->fetchAll();
+    $taskWhere = $isAdvisor ? 'WHERE t.assigned_user_id=? AND t.status="pending"' : 'WHERE t.status="pending"';
+    $tq = $pdo->prepare("SELECT t.id,t.customer_id,t.title,t.due_at,t.status,t.assigned_user_id,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS assigned_name,c.full_name AS customer_name FROM crm_tasks t LEFT JOIN users u ON u.id=t.assigned_user_id LEFT JOIN crm_customers c ON c.id=t.customer_id ".$taskWhere." ORDER BY t.due_at ASC LIMIT 500");
+    $tq->execute($isAdvisor ? [$actor['id']] : []);
+    $assignees = [];
+    if (!$isAdvisor) {
+        $uq = $pdo->query("SELECT id,first_name,last_name,role FROM users WHERE deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') ORDER BY first_name,last_name");
+        $assignees = $uq->fetchAll();
+    }
+    respond(['customers'=>$customers,'tasks'=>$tq->fetchAll(),'assignees'=>$assignees,'viewer'=>['id'=>$actor['id'],'role'=>$actor['role']]]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm-activities') {
+    $actor = requireUser($pdo);
+    $customerId = trim((string)($_GET['customer_id'] ?? ''));
+    if ($customerId === '') respond(['error'=>'Müşteri seçilmedi.'],422);
+    $access = $pdo->prepare("SELECT id FROM crm_customers WHERE id=? ".(($actor['role'] ?? '') === 'advisor' ? 'AND assigned_user_id=?' : '')." LIMIT 1");
+    $access->execute(($actor['role'] ?? '') === 'advisor' ? [$customerId,$actor['id']] : [$customerId]);
+    if (!$access->fetch()) respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
+    $q = $pdo->prepare("SELECT a.id,a.activity_type,a.body,a.created_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS user_name FROM crm_activities a LEFT JOIN users u ON u.id=a.user_id WHERE a.customer_id=? ORDER BY a.created_at DESC LIMIT 200");
+    $q->execute([$customerId]);
+    respond(['activities'=>$q->fetchAll()]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-customer') {
+    $actor = requireUser($pdo);
+    if (!in_array($actor['role'], ['admin','manager','advisor'], true)) respond(['error'=>'CRM erişim yetkiniz yok.'],403);
+    $input = body();
+    $id = trim((string)($input['id'] ?? ''));
+    $name = trim((string)($input['full_name'] ?? ''));
+    $phone = trim((string)($input['phone'] ?? ''));
+    $email = strtolower(trim((string)($input['email'] ?? '')));
+    $type = (string)($input['customer_type'] ?? 'buyer');
+    $status = (string)($input['status'] ?? 'new');
+    $validTypes = ['buyer','renter','seller','landlord','investor','other'];
+    $validStatuses = ['new','contacted','meeting','offered','won','lost'];
+    if ($name === '' || $phone === '') respond(['error'=>'Ad soyad ve telefon zorunludur.'],422);
+    if ($email !== '' && !filter_var($email,FILTER_VALIDATE_EMAIL)) respond(['error'=>'E-posta adresi geçersiz.'],422);
+    if (!in_array($type,$validTypes,true) || !in_array($status,$validStatuses,true)) respond(['error'=>'Müşteri türü veya durum geçersiz.'],422);
+    $assigned = $actor['role'] === 'advisor' ? $actor['id'] : (trim((string)($input['assigned_user_id'] ?? '')) ?: null);
+    if ($assigned !== null) {
+        $uq=$pdo->prepare("SELECT id FROM users WHERE id=? AND deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') LIMIT 1");
+        $uq->execute([$assigned]); if(!$uq->fetch()) respond(['error'=>'Seçilen danışman/yönetici bulunamadı.'],422);
+    }
+    $values = [$name,$phone,$email ?: null,$type,trim((string)($input['city']??''))?:null,trim((string)($input['district']??''))?:null,trim((string)($input['property_type']??''))?:null,($input['budget_min']??'')!==''?(float)$input['budget_min']:null,($input['budget_max']??'')!==''?(float)$input['budget_max']:null,trim((string)($input['source']??''))?:null,$status,trim((string)($input['notes']??''))?:null,$assigned];
+    if ($id !== '') {
+        $check=$pdo->prepare("SELECT id,assigned_user_id FROM crm_customers WHERE id=? LIMIT 1");$check->execute([$id]);$existing=$check->fetch();
+        if(!$existing)respond(['error'=>'Müşteri kaydı bulunamadı.'],404);
+        if($actor['role']==='advisor' && $existing['assigned_user_id']!==$actor['id'])respond(['error'=>'Bu müşteri kaydını düzenleme yetkiniz yok.'],403);
+        $q=$pdo->prepare('UPDATE crm_customers SET full_name=?,phone=?,email=?,customer_type=?,city=?,district=?,property_type=?,budget_min=?,budget_max=?,source=?,status=?,notes=?,assigned_user_id=? WHERE id=?');
+        $q->execute([...$values,$id]);
+        $event='crm_customer_updated';
+    } else {
+        $id=bin2hex(random_bytes(16));
+        if($actor['role']==='advisor')$assigned=$actor['id'];
+        $values[12]=$assigned;
+        $q=$pdo->prepare('INSERT INTO crm_customers (id,full_name,phone,email,customer_type,city,district,property_type,budget_min,budget_max,source,status,notes,assigned_user_id,created_by) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+        $q->execute([$id,...$values,$actor['id']]);
+        $event='crm_customer_created';
+    }
+    $log=$pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,entity_id,metadata) VALUES (?,?,?,?,?)');
+    $log->execute([$actor['id'],$event,'crm_customer',$id,json_encode(['customer'=>$name],JSON_UNESCAPED_UNICODE)]);
+    respond(['ok'=>true,'id'=>$id]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-add-activity') {
+    $actor=requireUser($pdo);$input=body();$customerId=trim((string)($input['customer_id']??''));$bodyText=trim((string)($input['body']??''));$type=trim((string)($input['activity_type']??'note'));
+    if($customerId===''||$bodyText==='')respond(['error'=>'Müşteri ve not zorunludur.'],422);
+    $access=$pdo->prepare("SELECT id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);if(!$access->fetch())respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
+    if(!in_array($type,['note','call','meeting','message'],true))$type='note';
+    $id=bin2hex(random_bytes(16));$pdo->prepare('INSERT INTO crm_activities (id,customer_id,user_id,activity_type,body) VALUES (?,?,?,?,?)')->execute([$id,$customerId,$actor['id'],$type,mb_substr($bodyText,0,5000)]);
+    $pdo->prepare('UPDATE crm_customers SET updated_at=NOW() WHERE id=?')->execute([$customerId]);
+    $log=$pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,entity_id,metadata) VALUES (?,?,?,?,?)');$log->execute([$actor['id'],'crm_activity_added','crm_customer',$customerId,json_encode(['type'=>$type],JSON_UNESCAPED_UNICODE)]);
+    respond(['ok'=>true]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-task') {
+    $actor=requireUser($pdo);$input=body();$customerId=trim((string)($input['customer_id']??''));$title=trim((string)($input['title']??''));$dueRaw=trim((string)($input['due_at']??''));
+    if($customerId===''||$title==='')respond(['error'=>'Müşteri ve takip görevi zorunludur.'],422);
+    $access=$pdo->prepare("SELECT id,assigned_user_id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);$customer=$access->fetch();if(!$customer)respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
+    $due=$dueRaw!==''?date('Y-m-d H:i:s',strtotime($dueRaw)):null;
+    $assigned=$actor['role']==='advisor'?$actor['id']:(trim((string)($input['assigned_user_id']??''))?:($customer['assigned_user_id']?:$actor['id']));
+    $id=bin2hex(random_bytes(16));$pdo->prepare('INSERT INTO crm_tasks (id,customer_id,title,due_at,assigned_user_id,created_by) VALUES (?,?,?,?,?,?)')->execute([$id,$customerId,mb_substr($title,0,255),$due,$assigned,$actor['id']]);
+    $log=$pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,entity_id,metadata) VALUES (?,?,?,?,?)');$log->execute([$actor['id'],'crm_task_created','crm_customer',$customerId,json_encode(['task'=>$title],JSON_UNESCAPED_UNICODE)]);
+    respond(['ok'=>true,'id'=>$id]);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-complete-task') {
+    $actor=requireUser($pdo);$id=trim((string)(body()['id']??''));if($id==='')respond(['error'=>'Görev seçilmedi.'],422);
+    $q=$pdo->prepare("UPDATE crm_tasks t JOIN crm_customers c ON c.id=t.customer_id SET t.status='done',t.completed_at=NOW() WHERE t.id=? ".($actor['role']==='advisor'?'AND t.assigned_user_id=? AND c.assigned_user_id=?':''));
+    $q->execute($actor['role']==='advisor'?[$id,$actor['id'],$actor['id']]:[$id]);respond(['ok'=>true]);
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'corporate-content') {
