@@ -2357,7 +2357,7 @@ function DocumentsPage() {
     void renderPages().catch(() => { if (!cancelled) setPreviewError('PDF sayfaları görüntülenemedi.'); });
     return () => { cancelled = true; };
   }, [pdfPageCount, selectedDocument]);
-  const loadPdfJs = () => new Promise<any>((resolve, reject) => {
+  const loadPdfJs = () => new Promise((resolve: any, reject: any) => {
     const globalWindow = window as any;
     if (globalWindow.pdfjsLib) { resolve(globalWindow.pdfjsLib); return; }
     const existing = window.document.querySelector<HTMLScriptElement>('script[data-realty-pdfjs]');
