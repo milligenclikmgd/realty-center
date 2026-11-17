@@ -111,6 +111,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'public-listings') {
     } catch (Throwable $e) { respond(['error'=>'Yayındaki ilanlar okunamadı.'],500); }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'corporate-content') {
+    try {
+        $q = $pdo->prepare('SELECT setting_value FROM homepage_settings WHERE setting_key=? LIMIT 1');
+        $q->execute(['corporate_content']);
+        $row = $q->fetch();
+        $content = $row ? json_decode((string)$row['setting_value'], true) : null;
+        respond(['content' => is_array($content) ? $content : null]);
+    } catch (Throwable $e) { respond(['error'=>'Kurumsal içerikler yüklenemedi.'],500); }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-corporate-content') {
+    $actor = requireUser($pdo);
+    if (($actor['role'] ?? '') !== 'admin') respond(['error'=>'Kurumsal içerikleri yalnızca admin düzenleyebilir.'],403);
+    $input = body();
+    $source = is_array($input['content'] ?? null) ? $input['content'] : [];
+    $content = ['management'=>[], 'documents'=>[], 'partners'=>[], 'references'=>[]];
+    $validFile = static function($url) {
+        return $url === '' || preg_match('#^/uploads/corporate/[A-Za-z0-9._-]+$#', $url) === 1;
+    };
+    foreach (['management','documents','partners','references'] as $section) {
+        $rows = is_array($source[$section] ?? null) ? $source[$section] : [];
+        if (count($rows) > 100) respond(['error'=>'Her bölümde en fazla 100 kayıt olabilir.'],422);
+        foreach ($rows as $row) {
+            if (!is_array($row)) continue;
+            $id = trim((string)($row['id'] ?? ''));
+            if ($id === '' || strlen($id) > 80) $id = bin2hex(random_bytes(16));
+            $order = (int)($row['sort_order'] ?? 0);
+            if ($section === 'management') {
+                $name = trim((string)($row['name'] ?? ''));
+                $title = trim((string)($row['title'] ?? ''));
+                $image = trim((string)($row['image'] ?? ''));
+                $biography = trim((string)($row['biography'] ?? ''));
+                if ($name === '' || $title === '' || !$validFile($image)) respond(['error'=>'Yönetim kurulu kaydında ad, unvan ve geçerli fotoğraf gereklidir.'],422);
+                $content[$section][] = ['id'=>$id,'name'=>mb_substr($name,0,180),'title'=>mb_substr($title,0,180),'image'=>$image,'biography'=>mb_substr($biography,0,10000),'sort_order'=>$order];
+            } elseif ($section === 'documents') {
+                $title = trim((string)($row['title'] ?? ''));
+                $description = trim((string)($row['description'] ?? ''));
+                $fileUrl = trim((string)($row['fileUrl'] ?? ''));
+                if ($title === '' || !$validFile($fileUrl) || $fileUrl === '' || !str_ends_with(strtolower($fileUrl), '.pdf')) respond(['error'=>'Belge başlığı ve yüklenmiş PDF dosyası zorunludur.'],422);
+                $content[$section][] = ['id'=>$id,'title'=>mb_substr($title,0,180),'description'=>mb_substr($description,0,1000),'fileUrl'=>$fileUrl,'sort_order'=>$order];
+            } else {
+                $name = trim((string)($row['name'] ?? ''));
+                $logo = trim((string)($row['logo'] ?? ''));
+                if ($name === '' || !$validFile($logo) || $logo === '') respond(['error'=>'İsim ve geçerli logo dosyası zorunludur.'],422);
+                $content[$section][] = ['id'=>$id,'name'=>mb_substr($name,0,180),'logo'=>$logo,'content'=>mb_substr(trim((string)($row['content'] ?? '')),0,1000),'sort_order'=>$order];
+            }
+        }
+        usort($content[$section], static fn($a,$b) => ($a['sort_order'] <=> $b['sort_order']) ?: strcmp($a['id'],$b['id']));
+    }
+    try {
+        $json = json_encode($content, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_THROW_ON_ERROR);
+        $q = $pdo->prepare('INSERT INTO homepage_settings (setting_key,setting_value) VALUES (?,?) ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value)');
+        $q->execute(['corporate_content',$json]);
+        $log = $pdo->prepare('INSERT INTO audit_logs (user_id,action,entity_type,metadata) VALUES (?,?,?,?)');
+        $log->execute([$actor['id'],'corporate_content_updated','corporate',json_encode(['counts'=>array_map('count',$content)],JSON_UNESCAPED_UNICODE)]);
+        respond(['ok'=>true,'content'=>$content]);
+    } catch (Throwable $e) { respond(['error'=>'Kurumsal içerikler kaydedilemedi.'],500); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'create-listing') {
     $actor = requireUser($pdo); $input = body();
     $title=trim((string)($input['title']??'')); $number=trim((string)($input['listing_number']??''));
