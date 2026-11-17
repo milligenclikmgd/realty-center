@@ -3556,7 +3556,7 @@ function ListingDetailPage() {
     ['Enerji Kimlik Belgesi', detailValue('energyCertificate')], ['Tapu Durumu', item.deedInfo || detailValue('deed')],
     ['Kimden', 'Realty Center®'], ['Takas', detailValue('swap', 'Hayır')]
   ];
-  const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Bulunduğu Kat', heating: 'Isıtma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', credit: 'Krediye Uygun', bathroom: 'Banyo', bathroomCount: 'Banyo Sayısı', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz', gross_sqm: 'Brüt Alan', net_sqm: 'Net Alan', roomCount: 'Oda Sayısı', bathroomCount: 'Banyo Sayısı', floorCount: 'Kat Sayısı', dues: 'Aidat', new_label: 'Yeni İlan', deal_label: 'Fırsat İlanı' };
+  Object.assign(detailLabels, { credit: 'Krediye Uygun', bathroomCount: 'Banyo Sayısı', gross_sqm: 'Brüt Alan', net_sqm: 'Net Alan', dues: 'Aidat', new_label: 'Yeni İlan', deal_label: 'Fırsat İlanı' });
   const internalDetailKeys = new Set(['listing_number', 'cover_url', 'second_advisor', 'office_id', 'whatsapp', 'advisor_notes', 'address', 'postal_code', 'latitude', 'longitude']);
   const detailFeatures = Object.entries(item.details || {})
     .filter(([key, value]) => Boolean(detailLabels[key]) && !internalDetailKeys.has(key) && value !== null && value !== '' && value !== false)
