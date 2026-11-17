@@ -33,6 +33,7 @@ import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 import ListingEntryPageV2 from "./ListingEntryPage";
 import ListingManagementPage from "./ListingManagementPage";
+import { MEDIA_SELECTION } from "./content-refresh";
 
 type Page =
   | "overview"
@@ -3639,13 +3640,108 @@ function CorporateManagementPage() {
   </div>;
 }
 
+type RealtyMediaItem = { id: string; source: string; category: "tv" | "news"; url: string; title: string; thumbnail: string; description: string; createdAt: string; sort_order: number };
+const mediaYoutubeId = (value: string) => {
+  try {
+    const url = new URL(value.trim());
+    const host = url.hostname.replace(/^www\./, "").toLowerCase();
+    let id = "";
+    if (host === "youtu.be") id = url.pathname.split("/").filter(Boolean)[0] || "";
+    else if (host === "youtube.com" || host === "m.youtube.com") {
+      id = url.searchParams.get("v") || url.pathname.match(/^\/(?:embed|shorts)\/([^/?]+)/)?.[1] || "";
+    }
+    return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : "";
+  } catch { return ""; }
+};
+const seedMediaVideos = (): RealtyMediaItem[] => {
+  const seeds = MEDIA_SELECTION.map((video: any, index: number) => ({ id: String(video.id), source: "youtube", category: video.category === "news" ? "news" : "tv", url: `https://www.youtube.com/watch?v=${video.youtubeId}`, title: String(video.title || "YouTube videosu"), thumbnail: `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`, description: String(video.description || ""), createdAt: "2026-10-18T18:00:00.000Z", sort_order: index + 1 })) as RealtyMediaItem[];
+  try {
+    const saved = JSON.parse(localStorage.getItem("realty-center-videos") || "[]");
+    if (!Array.isArray(saved)) return seeds;
+    const mapped = saved.filter((item: any) => item && mediaYoutubeId(String(item.url || ""))).map((item: any, index: number) => {
+      const youtubeId = mediaYoutubeId(String(item.url));
+      return { id: String(item.id || crypto.randomUUID()), source: "youtube", category: item.category === "news" ? "news" : "tv", url: String(item.url), title: String(item.title || "YouTube videosu"), thumbnail: `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`, description: String(item.description || ""), createdAt: String(item.createdAt || new Date().toISOString()), sort_order: Number(item.sort_order || index + 1) };
+    }) as RealtyMediaItem[];
+    const merged = [...mapped];
+    for (const seed of seeds) if (!merged.some((item) => mediaYoutubeId(item.url) === mediaYoutubeId(seed.url))) merged.push(seed);
+    return merged.map((item, index) => ({ ...item, sort_order: index + 1 }));
+  } catch { return seeds; }
+};
+function RealtyMediaManager() {
+  const [items, setItems] = useState<RealtyMediaItem[]>(seedMediaVideos);
+  const [category, setCategory] = useState<"tv" | "news">("tv");
+  const [form, setForm] = useState({ url: "", title: "", description: "" });
+  const [editingId, setEditingId] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
+  const ordered = [...items].sort((left, right) => left.sort_order - right.sort_order);
+  const persist = async (next: RealtyMediaItem[]) => {
+    setBusy(true); setError(""); setNotice("");
+    try {
+      const normalized = next.map((item, index) => ({ ...item, sort_order: index + 1 }));
+      const response = await fetch("/api/auth.php?action=save-realty-media", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ videos: normalized }) });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "Realty Medya içerikleri kaydedilemedi.");
+      const saved = Array.isArray(payload.videos) ? payload.videos : normalized;
+      setItems(saved); localStorage.setItem("realty-center-videos", JSON.stringify(saved)); window.dispatchEvent(new Event("realty-center-videos-updated"));
+      setNotice("Realty Medya listesi kaydedildi.");
+    } catch (e: any) { setError(e.message || "Sunucuya ulaşılamadı."); }
+    finally { setBusy(false); }
+  };
+  useEffect(() => {
+    let active = true;
+    fetch("/api/auth.php?action=realty-media", { credentials: "include" }).then(async (response) => {
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "İçerikler alınamadı.");
+      if (active && Array.isArray(payload.videos)) setItems(payload.videos);
+    }).catch((e) => { if (active) setError(e.message || "Sunucudan içerikler alınamadı; mevcut başlangıç listesi gösteriliyor."); }).finally(() => { if (active) setLoading(false); });
+    return () => { active = false; };
+  }, []);
+  const submit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const id = mediaYoutubeId(form.url);
+    if (!id) { setError("Geçerli bir YouTube video bağlantısı girin."); return; }
+    if (!form.title.trim()) { setError("Video başlığı zorunludur."); return; }
+    const item: RealtyMediaItem = { id: editingId || crypto.randomUUID(), source: "youtube", category, url: form.url.trim(), title: form.title.trim(), thumbnail: `https://img.youtube.com/vi/${id}/hqdefault.jpg`, description: form.description.trim(), createdAt: new Date().toISOString(), sort_order: editingId ? (items.find((row) => row.id === editingId)?.sort_order || items.length + 1) : items.length + 1 };
+    const next = editingId ? ordered.map((row) => row.id === editingId ? item : row) : [...ordered, item];
+    await persist(next);
+    setForm({ url: "", title: "", description: "" }); setEditingId("");
+  };
+  const move = (id: string, direction: -1 | 1) => {
+    const current = ordered.findIndex((item) => item.id === id), target = current + direction;
+    if (target < 0 || target >= ordered.length) return;
+    const next = [...ordered]; [next[current], next[target]] = [next[target], next[current]]; void persist(next);
+  };
+  const edit = (item: RealtyMediaItem) => { setEditingId(item.id); setCategory(item.category); setForm({ url: item.url, title: item.title, description: item.description || "" }); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const visible = ordered.filter((item) => item.category === category);
+  return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">Realty Medya</h1><p className="mt-1 text-sm text-slate-500">Realty TV ve Realty Haberler içeriklerini sitedeki listeyle birlikte yönetin.</p></div>
+    <form onSubmit={submit} className="max-w-4xl space-y-3 rounded-2xl border border-slate-200 bg-white p-5">
+      <div className="flex items-center justify-between gap-3"><div><h2 className="text-base font-bold">{editingId ? "İçeriği Düzenle" : "İçerik Ekle"}</h2><p className="mt-1 text-xs text-slate-500">YouTube küçük resmi kapak görseli olarak otomatik kullanılır.</p></div><Tv className="text-[#cd011e]" size={20}/></div>
+      <div className="grid gap-3 md:grid-cols-2">
+        <label className="text-xs font-semibold text-slate-600">İçerik türü<select value={category} onChange={(e) => setCategory(e.target.value as "tv" | "news")} className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-3 text-sm"><option value="tv">Realty TV</option><option value="news">Realty Haberler</option></select></label>
+        <label className="text-xs font-semibold text-slate-600">YouTube video URL<input required type="url" placeholder="https://www.youtube.com/watch?v=..." value={form.url} onChange={(e) => setForm({ ...form, url: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Video başlığı<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+        <label className="text-xs font-semibold text-slate-600 md:col-span-2">Açıklama (isteğe bağlı)<textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} className="mt-1 min-h-20 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label>
+      </div>
+      {form.url && mediaYoutubeId(form.url) && <div className="flex items-center gap-3 rounded-xl bg-slate-50 p-3"><img src={`https://img.youtube.com/vi/${mediaYoutubeId(form.url)}/hqdefault.jpg`} alt="YouTube kapak görseli" className="h-20 w-36 rounded-lg object-cover"/><span className="text-xs text-slate-600">YouTube kapak görseli</span></div>}
+      <button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{busy ? "Kaydediliyor…" : editingId ? "Değişiklikleri Kaydet" : "İÇERİK EKLE"}</button>{editingId && <button type="button" onClick={() => { setEditingId(""); setForm({ url: "", title: "", description: "" }); }} className="ml-2 rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold">Vazgeç</button>}
+    </form>
+    <section className="max-w-5xl rounded-2xl border border-slate-200 bg-white p-5"><div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-base font-bold">Yayınlanan İçerikler</h2><p className="mt-1 text-xs text-slate-500">Yukarı ve aşağı oklarla sitedeki gösterim sırasını değiştirin.</p></div><div className="flex rounded-lg border border-slate-200 p-1"><button onClick={() => setCategory("tv")} className={"rounded-md px-4 py-2 text-xs font-bold " + (category === "tv" ? "bg-[#071d3b] text-white" : "text-slate-600")}>Realty TV</button><button onClick={() => setCategory("news")} className={"rounded-md px-4 py-2 text-xs font-bold " + (category === "news" ? "bg-[#cd011e] text-white" : "text-slate-600")}>Realty Haberler</button></div></div>
+      {error && <p className="mt-3 rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}{notice && <p className="mt-3 text-xs font-semibold text-emerald-700">{notice}</p>}
+      {loading ? <div className="mt-4 h-24 animate-pulse rounded-lg bg-slate-100"/> : visible.length ? <div className="mt-4 space-y-2">{visible.map((item) => <article key={item.id} className="flex flex-col gap-3 rounded-xl border border-slate-200 p-3 sm:flex-row sm:items-center"><img src={item.thumbnail || `https://img.youtube.com/vi/${mediaYoutubeId(item.url)}/hqdefault.jpg`} alt="" className="h-20 w-36 rounded-lg bg-slate-100 object-cover"/><div className="min-w-0 flex-1"><b className="block truncate text-sm">{item.title}</b><span className="mt-1 block text-[11px] text-slate-500">{item.category === "news" ? "Realty Haberler" : "Realty TV"} · YouTube</span><a href={item.url} target="_blank" rel="noreferrer" className="mt-1 block truncate text-[11px] text-[#cd011e]">{item.url}</a></div><div className="flex items-center gap-1"><button type="button" title="Yukarı taşı" disabled={busy || ordered.findIndex((x) => x.id === item.id) === 0} onClick={() => move(item.id, -1)} className="grid h-9 w-9 place-items-center rounded-lg border text-lg disabled:opacity-30">↑</button><button type="button" title="Aşağı taşı" disabled={busy || ordered.findIndex((x) => x.id === item.id) === ordered.length - 1} onClick={() => move(item.id, 1)} className="grid h-9 w-9 place-items-center rounded-lg border text-lg disabled:opacity-30">↓</button><button type="button" onClick={() => edit(item)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold">Düzenle</button><button type="button" disabled={busy} onClick={() => void persist(ordered.filter((row) => row.id !== item.id))} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-semibold text-rose-600 disabled:opacity-50">Sil</button></div></article>)}</div> : <div className="mt-4 rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-400">Bu bölümde içerik yok.</div>}
+    </section>
+  </div>;
+}
 function ContentManager({ kind }: { kind: "media" | "library" }) {
+  if (kind === "media") return <RealtyMediaManager />;
   const key = `rc-${kind}-content`;
   const [items, setItems] = useState<any[]>(() => JSON.parse(localStorage.getItem(key) || "[]"));
   const [form, setForm] = useState({ title: "", url: "", excerpt: "", body: "" });
   const save = (e: React.FormEvent) => { e.preventDefault(); if (!form.title.trim()) return; const next = [{ id: crypto.randomUUID(), ...form, created_at: new Date().toISOString() }, ...items]; setItems(next); localStorage.setItem(key, JSON.stringify(next)); setForm({ title: "", url: "", excerpt: "", body: "" }); };
   const remove = (id: string) => { const next = items.filter((x) => x.id !== id); setItems(next); localStorage.setItem(key, JSON.stringify(next)); };
-  const media = kind === "media";
+  const media = false;
   return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">{media ? "Realty Medya" : "Realty Kütüphane"}</h1><p className="mt-1 text-sm text-slate-500">{media ? "Video ve medya kayıtlarını ekleyin, yönetin veya kaldırın." : "Haber, yazı ve duyurularınızı ayrıntılı metinlerle yönetin."}</p></div><form onSubmit={save} className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 md:grid-cols-2"><input required className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video başlığı" : "Haber / yazı başlığı"} value={form.title} onChange={e=>setForm({...form,title:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video URL veya embed bağlantısı" : "Kapak görseli URL'si"} value={form.url} onChange={e=>setForm({...form,url:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder="Kısa açıklama" value={form.excerpt} onChange={e=>setForm({...form,excerpt:e.target.value})}/><textarea className="min-h-32 rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder={media ? "Video açıklaması" : "Detaylı haber / yazı metni"} value={form.body} onChange={e=>setForm({...form,body:e.target.value})}/><button className="w-fit rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white">{media ? "VİDEO EKLE" : "YAZIYI YAYINLA"}</button></form><div className="space-y-3">{items.length ? items.map(x=><article key={x.id} className="rounded-2xl border border-slate-200 bg-white p-5"><div className="flex items-start justify-between gap-4"><div><h2 className="font-black">{x.title}</h2><p className="mt-1 text-sm text-slate-500">{x.excerpt}</p></div><button onClick={()=>remove(x.id)} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-bold text-rose-600">Sil</button></div>{x.url && <a className="mt-3 block truncate text-xs text-[#cd011e]" href={x.url} target="_blank">{x.url}</a>}<p className="mt-3 whitespace-pre-wrap text-sm text-slate-600">{x.body}</p></article>) : <div className="rounded-2xl border border-dashed border-slate-300 p-10 text-center text-sm text-slate-400">Henüz kayıt yok.</div>}</div></div>;
 }
 const MediaManagementPage = () => <ContentManager kind="media" />;
