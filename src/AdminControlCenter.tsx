@@ -3536,10 +3536,11 @@ function CorporateManagementPage() {
         throw new Error("Lütfen gerekli fotoğraf, logo veya PDF dosyasını ekleyin.");
       }
       const next: CorporateState = { ...content, [section]: [...rows.filter((item) => item.id !== id), record].sort((a, b) => a.sort_order - b.sort_order) };
-      if (await persist(next)) resetForm();
+      if (await persist(next)) resetForm(); else setNotice("");
     } catch (e: any) {
       setError(e.message || "Kayıt tamamlanamadı.");
-    } finally { setBusy(false); setNotice(""); }
+      setNotice("");
+    } finally { setBusy(false); }
   };
   const edit = (item: CorporateRecord) => {
     setEditingId(item.id);
