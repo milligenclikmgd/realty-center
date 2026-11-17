@@ -2308,7 +2308,7 @@ function DocumentsPage() {
         const filePath = document.fileUrl.split(/[?#]/)[0];
         const fileName = filePath.split('/').pop() || '';
         if (filePath.includes('/uploads/corporate/') && /^[a-f0-9]{40}\.pdf$/i.test(fileName)) {
-          return [document.id, '/cpanel/api/corporate-document.php?file=' + encodeURIComponent(fileName)] as const;
+          return [document.id, '/api/corporate-document.php?file=' + encodeURIComponent(fileName)] as const;
         }
         return [document.id, document.fileUrl] as const;
       }
