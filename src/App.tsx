@@ -2285,9 +2285,11 @@ function DocumentsPage() {
   const [documents, setDocuments] = useState(() => getStoredCorporateItems<CorporateDocument[]>('realty-center-documents', DEFAULT_DOCUMENTS));
   const [pdfUrls, setPdfUrls] = useState<Record<string, string>>({});
   const [selectedDocument, setSelectedDocument] = useState<CorporateDocument | null>(null);
-  const [previewUrl, setPreviewUrl] = useState('');
+  const [pdfPageCount, setPdfPageCount] = useState(0);
   const [previewLoading, setPreviewLoading] = useState(false);
   const [previewError, setPreviewError] = useState('');
+  const pdfDocumentRef = useRef<any>(null);
+  const pdfContainerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     let active = true;
     const update = () => setDocuments(getStoredCorporateItems('realty-center-documents', DEFAULT_DOCUMENTS));
@@ -2324,9 +2326,58 @@ function DocumentsPage() {
     })).then((entries) => { if (active) setPdfUrls(Object.fromEntries(entries)); });
     return () => { active = false; createdUrls.forEach((url) => URL.revokeObjectURL(url)); };
   }, [documents]);
+  useEffect(() => {
+    const container = pdfContainerRef.current;
+    const pdf = pdfDocumentRef.current;
+    if (!container || !pdf || !pdfPageCount) return;
+    let cancelled = false;
+    container.innerHTML = '';
+    const renderPages = async () => {
+      for (let pageNumber = 1; pageNumber <= pdfPageCount; pageNumber += 1) {
+        if (cancelled) return;
+        const page = await pdf.getPage(pageNumber);
+        const baseViewport = page.getViewport({ scale: 1 });
+        const scale = Math.min((container.clientWidth - 32) / baseViewport.width, 1.5);
+        const viewport = page.getViewport({ scale: Math.max(scale, 0.5) });
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        const canvas = window.document.createElement('canvas');
+        canvas.className = 'mx-auto mb-5 block h-auto max-w-full rounded bg-white shadow';
+        canvas.width = Math.floor(viewport.width * ratio);
+        canvas.height = Math.floor(viewport.height * ratio);
+        canvas.style.width = Math.floor(viewport.width) + 'px';
+        canvas.style.maxWidth = '100%';
+        container.appendChild(canvas);
+        const context = canvas.getContext('2d');
+        if (context) {
+          context.setTransform(ratio, 0, 0, ratio, 0, 0);
+          await page.render({ canvasContext: context, viewport }).promise;
+        }
+      }
+    };
+    void renderPages().catch(() => { if (!cancelled) setPreviewError('PDF sayfaları görüntülenemedi.'); });
+    return () => { cancelled = true; };
+  }, [pdfPageCount, selectedDocument]);
+  const loadPdfJs = () => new Promise<any>((resolve, reject) => {
+    const globalWindow = window as any;
+    if (globalWindow.pdfjsLib) { resolve(globalWindow.pdfjsLib); return; }
+    const existing = window.document.querySelector<HTMLScriptElement>('script[data-realty-pdfjs]');
+    if (existing) {
+      existing.addEventListener('load', () => resolve(globalWindow.pdfjsLib), { once: true });
+      existing.addEventListener('error', () => reject(new Error('PDF görüntüleyicisi yüklenemedi.')), { once: true });
+      return;
+    }
+    const script = window.document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js';
+    script.async = true;
+    script.dataset.realtyPdfjs = 'true';
+    script.onload = () => globalWindow.pdfjsLib ? resolve(globalWindow.pdfjsLib) : reject(new Error('PDF görüntüleyicisi başlatılamadı.'));
+    script.onerror = () => reject(new Error('PDF görüntüleyicisi yüklenemedi.'));
+    window.document.head.appendChild(script);
+  });
   const closePreview = () => {
-    if (previewUrl) URL.revokeObjectURL(previewUrl);
-    setPreviewUrl('');
+    pdfDocumentRef.current = null;
+    if (pdfContainerRef.current) pdfContainerRef.current.innerHTML = '';
+    setPdfPageCount(0);
     setPreviewError('');
     setSelectedDocument(null);
     setPreviewLoading(false);
@@ -2334,25 +2385,28 @@ function DocumentsPage() {
   const openDocument = async (document: CorporateDocument) => {
     const source = pdfUrls[document.id];
     if (!source) return;
-    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    pdfDocumentRef.current = null;
+    setPdfPageCount(0);
     setSelectedDocument(document);
-    setPreviewUrl('');
     setPreviewError('');
     setPreviewLoading(true);
     try {
-      const response = await fetch(source);
+      const response = await fetch(source, { credentials: 'same-origin' });
       if (!response.ok) throw new Error('Belge sunucudan alınamadı.');
       const blob = await response.blob();
-      const signature = new Uint8Array(await blob.slice(0, 5).arrayBuffer());
-      if (String.fromCharCode(...signature) !== '%PDF-') throw new Error('Sunucu geçerli bir PDF döndürmedi.');
-      setPreviewUrl(URL.createObjectURL(new Blob([blob], { type: 'application/pdf' })));
+      const bytes = new Uint8Array(await blob.arrayBuffer());
+      if (String.fromCharCode(...bytes.slice(0, 5)) !== '%PDF-') throw new Error('Geçerli PDF dosyası alınamadı.');
+      const pdfjs = await loadPdfJs();
+      const pdf = await pdfjs.getDocument({ data: bytes, disableWorker: true }).promise;
+      pdfDocumentRef.current = pdf;
+      setPdfPageCount(pdf.numPages);
     } catch {
-      setPreviewError('PDF görüntülenemedi. Dosyanın sunucuda bulunduğunu kontrol edin.');
+      setPreviewError('PDF şu anda görüntülenemiyor. Dosyanın sunucuya tam yüklendiğini kontrol edin.');
     } finally {
       setPreviewLoading(false);
     }
   };
-  return <main className="min-h-screen bg-slate-50 py-12 sm:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL ŞEFFAFLIK</p><h1 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Belgelerimiz</h1><p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">Kurumsal yetki, kalite ve hizmet belgelerimizi inceleyebilirsiniz.</p><div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{documents.map((document) => { const pdfUrl = pdfUrls[document.id]; return <article key={document.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-xl border border-red-800 bg-gradient-to-br from-red-700 via-red-800 to-red-950 p-6 text-center shadow-inner"><div className="absolute inset-2 rounded-lg border border-white/30"/><div className="relative z-10"><FileText className="mx-auto h-12 w-12 text-white/85"/><p className="mt-5 text-[10px] font-bold tracking-[.24em] text-white/75">REALTY CENTER®</p><h2 className="mt-3 break-words text-xl font-black uppercase leading-snug text-white">{document.title || 'Kurumsal Belge'}</h2><span className="mt-5 inline-flex rounded-full border border-white/50 px-3 py-1 text-[10px] font-bold tracking-widest text-white">PDF BELGE</span></div></div><p className="mt-3 min-h-10 text-xs leading-5 text-slate-500">{document.description}</p>{pdfUrl ? <button type="button" onClick={() => void openDocument(document)} className="mt-3 flex w-full items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white transition hover:bg-red-800">BELGEYİ GÖRÜNTÜLE</button> : <span className="mt-3 flex items-center justify-center rounded-xl bg-slate-100 px-4 py-3 text-xs font-bold text-slate-400">Belge henüz yüklenmedi</span>}</article>; })}</div>{documents.length === 0 && <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-14 text-center text-sm text-slate-500">Henüz yayınlanmış belge bulunmuyor.</div>}</div>{selectedDocument && <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/80 p-3 backdrop-blur-sm" onClick={closePreview}><section className="relative flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex shrink-0 items-center justify-between border-b border-slate-200 px-4 py-3"><h2 className="text-sm font-black text-slate-900">{selectedDocument.title}</h2><button type="button" onClick={closePreview} className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition hover:bg-red-700 hover:text-white" aria-label="Belgeyi kapat"><X className="h-5 w-5"/></button></header>{previewLoading ? <div className="flex flex-1 items-center justify-center text-sm font-semibold text-slate-500">PDF yükleniyor…</div> : previewError ? <div className="flex flex-1 items-center justify-center p-6 text-center text-sm font-semibold text-red-700">{previewError}</div> : previewUrl ? <iframe title={selectedDocument.title} src={previewUrl + '#toolbar=1&navpanes=0&view=FitH'} className="min-h-0 flex-1 border-0 bg-slate-100"/> : null}</section></div>}</main>;
+  return <main className="min-h-screen bg-slate-50 py-12 sm:py-14"><div className="mx-auto max-w-6xl px-4 sm:px-6"><p className="text-xs font-black tracking-[.2em] text-red-700">KURUMSAL ŞEFFAFLIK</p><h1 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">Belgelerimiz</h1><p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">Kurumsal yetki, kalite ve hizmet belgelerimizi inceleyebilirsiniz.</p><div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{documents.map((document) => { const pdfUrl = pdfUrls[document.id]; return <article key={document.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"><div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-xl border border-red-800 bg-gradient-to-br from-red-700 via-red-800 to-red-950 p-6 text-center shadow-inner"><div className="absolute inset-2 rounded-lg border border-white/30"/><div className="relative z-10"><FileText className="mx-auto h-12 w-12 text-white/85"/><p className="mt-5 text-[10px] font-bold tracking-[.24em] text-white/75">REALTY CENTER®</p><h2 className="mt-3 break-words text-xl font-black uppercase leading-snug text-white">{document.title || 'Kurumsal Belge'}</h2><span className="mt-5 inline-flex rounded-full border border-white/50 px-3 py-1 text-[10px] font-bold tracking-widest text-white">PDF BELGE</span></div></div><p className="mt-3 min-h-10 text-xs leading-5 text-slate-500">{document.description}</p>{pdfUrl ? <button type="button" onClick={() => void openDocument(document)} className="mt-3 flex w-full items-center justify-center rounded-xl bg-red-700 px-4 py-3 text-xs font-black text-white transition hover:bg-red-800">BELGEYİ GÖRÜNTÜLE</button> : <span className="mt-3 flex items-center justify-center rounded-xl bg-slate-100 px-4 py-3 text-xs font-bold text-slate-400">Belge henüz yüklenmedi</span>}</article>; })}</div>{documents.length === 0 && <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-14 text-center text-sm text-slate-500">Henüz yayınlanmış belge bulunmuyor.</div>}</div>{selectedDocument && <div className="fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/80 p-3 backdrop-blur-sm" onClick={closePreview}><section className="relative flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl" onClick={(event) => event.stopPropagation()}><header className="flex shrink-0 items-center justify-between border-b border-slate-200 px-4 py-3"><h2 className="text-sm font-black text-slate-900">{selectedDocument.title}</h2><button type="button" onClick={closePreview} className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition hover:bg-red-700 hover:text-white" aria-label="Belgeyi kapat"><X className="h-5 w-5"/></button></header>{previewLoading ? <div className="flex flex-1 items-center justify-center text-sm font-semibold text-slate-500">PDF yükleniyor…</div> : previewError ? <div className="flex flex-1 items-center justify-center p-6 text-center text-sm font-semibold text-red-700">{previewError}</div> : <div ref={pdfContainerRef} className="min-h-0 flex-1 overflow-auto bg-slate-200 p-4"/></section></div>}</main>;
 }
 
 function LogoShowcasePage({ mode }: { mode: 'references' | 'partners' }) {
