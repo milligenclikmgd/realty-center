@@ -122,6 +122,59 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'realty-media') {
     } catch (Throwable $e) { respond(['error'=>'Realty Medya içerikleri yüklenemedi.'],500); }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'youtube-metadata') {
+    $actor = requireUser($pdo);
+    if (($actor['role'] ?? '') !== 'admin') respond(['error'=>'YouTube içerik bilgilerini yalnızca admin alabilir.'],403);
+    $input = body();
+    $url = trim((string)($input['url'] ?? ''));
+    $parts = parse_url($url);
+    $host = strtolower((string)($parts['host'] ?? ''));
+    $scheme = strtolower((string)($parts['scheme'] ?? ''));
+    $youtubeId = '';
+    if (in_array($host, ['youtube.com','www.youtube.com','m.youtube.com'], true)) {
+        $query = []; parse_str((string)($parts['query'] ?? ''), $query);
+        $youtubeId = (string)($query['v'] ?? '');
+        if ($youtubeId === '' && preg_match('#^/(?:embed|shorts)/([A-Za-z0-9_-]{11})#', (string)($parts['path'] ?? ''), $match)) $youtubeId = $match[1];
+    } elseif (in_array($host, ['youtu.be','www.youtu.be'], true)) {
+        $youtubeId = trim((string)($parts['path'] ?? ''), '/');
+    }
+    if (!in_array($scheme, ['https','http'], true) || !preg_match('/^[A-Za-z0-9_-]{11}$/', $youtubeId)) respond(['error'=>'Geçerli bir YouTube video bağlantısı girin.'],422);
+    $getRemote = static function($target) {
+        if (function_exists('curl_init')) {
+            $curl = curl_init($target);
+            curl_setopt_array($curl, [CURLOPT_RETURNTRANSFER=>true,CURLOPT_FOLLOWLOCATION=>false,CURLOPT_CONNECTTIMEOUT=>5,CURLOPT_TIMEOUT=>10,CURLOPT_USERAGENT=>'RealtyCenterMedia/1.0 (+https://realtycenter.com.tr)',CURLOPT_SSL_VERIFYPEER=>true,CURLOPT_SSL_VERIFYHOST=>2]);
+            $body = curl_exec($curl);
+            $status = (int)curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            curl_close($curl);
+            if (!is_string($body) || $status < 200 || $status >= 300) throw new RuntimeException('YouTube metadata request failed.');
+            return $body;
+        }
+        $context = stream_context_create(['http'=>['timeout'=>10,'ignore_errors'=>false,'header'=>"User-Agent: RealtyCenterMedia/1.0\r\n"]]);
+        $body = @file_get_contents($target, false, $context);
+        if (!is_string($body)) throw new RuntimeException('YouTube metadata request failed.');
+        return $body;
+    };
+    try {
+        $canonical = 'https://www.youtube.com/watch?v='.$youtubeId;
+        $oembedJson = $getRemote('https://www.youtube.com/oembed?'.http_build_query(['url'=>$canonical,'format'=>'json']));
+        $oembed = json_decode($oembedJson, true);
+        $title = trim((string)($oembed['title'] ?? ''));
+        if ($title === '') respond(['error'=>'YouTube video başlığı alınamadı.'],502);
+        $html = $getRemote($canonical);
+        $description = '';
+        preg_match_all('/<meta\b[^>]*>/i', $html, $tags);
+        foreach ($tags[0] as $tag) {
+            if (!preg_match("/\b(?:property|name)\s*=\s*([\"'])(.*?)\\1/i", $tag, $nameMatch)) continue;
+            $name = strtolower(trim($nameMatch[2]));
+            if (!in_array($name, ['og:description','description'], true)) continue;
+            if (!preg_match("/\bcontent\s*=\s*([\"'])(.*?)\\1/i", $tag, $contentMatch)) continue;
+            $description = trim(html_entity_decode($contentMatch[2], ENT_QUOTES|ENT_HTML5, 'UTF-8'));
+            if ($name === 'og:description' || $description !== '') break;
+        }
+        respond(['title'=>mb_substr($title,0,255),'description'=>mb_substr($description,0,5000),'thumbnail'=>'https://img.youtube.com/vi/'.$youtubeId.'/hqdefault.jpg']);
+    } catch (Throwable $e) { respond(['error'=>'YouTube bilgileri otomatik alınamadı. Başlığı ve açıklamayı elle girebilir ya da yeniden deneyebilirsiniz.'],502); }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'save-realty-media') {
     $actor = requireUser($pdo);
     if (($actor['role'] ?? '') !== 'admin') respond(['error'=>'Realty Medya içeriklerini yalnızca admin düzenleyebilir.'],403);
