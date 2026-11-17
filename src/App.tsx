@@ -333,6 +333,8 @@ type ListingItem = {
 const SAMPLE_LISTINGS: ListingItem[] = [];
 const formatListingPrice = (price: number, currency: string) => `${price.toLocaleString('tr-TR')} ${currency}`;
 
+let publicListingsRequestComplete = false;
+
 function usePublishedListings() {
   const [items, setItems] = useState<ListingItem[]>([]);
   useEffect(() => {
@@ -356,7 +358,10 @@ function usePublishedListings() {
             monthlyFee: details.dues || details.monthlyFee || "", deedInfo: details.deedInfo || details.titleDeed || "",
             technicalFeatures: details.technicalFeatures || "", details };
         }));
-      } catch (error) { console.error("cPanel ilan akışı yüklenemedi:", error); }
+      } catch (error) { console.error("cPanel ilan akışı yüklenemedi:", error); } finally {
+        publicListingsRequestComplete = true;
+        window.dispatchEvent(new Event("realty-center-public-listings-loaded"));
+      }
     };
     void load(); const refresh = () => { void load(); };
     window.addEventListener("focus", refresh); window.addEventListener("realty-center-listings-updated", refresh);
@@ -3471,10 +3476,11 @@ export function ListingDetailPageLegacy() {
     catch { return false; }
   });
 
+  if (loadingListing) return <div className="grid min-h-[60vh] place-items-center bg-slate-50 text-sm font-semibold text-slate-500">İlan bilgileri yükleniyor…</div>;
   if (!item) return <div className="min-h-[60vh] bg-slate-50 px-6 py-24 text-center"><h1 className="text-3xl font-black text-slate-900">İlan bulunamadı</h1><Link to="/ilanlarimiz?all=1" className="mt-6 inline-flex rounded-xl bg-red-700 px-5 py-3 font-black text-white">Tüm İlanlara Dön</Link></div>;
 
   const gallery = item.images?.length ? item.images : [item.image];
-  const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
+  const similar = publishedListings.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
   const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Kat', heating: 'Isınma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', bathroom: 'Banyo', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz' };
 
   const toggleFavorite = () => {
@@ -3516,7 +3522,15 @@ export function ListingDetailPageLegacy() {
 
 function ListingDetailPage() {
   const { id } = useParams();
-  const item = SAMPLE_LISTINGS.find((listing) => listing.id === id);
+  const publishedListings = usePublishedListings();
+  const [loadingListing, setLoadingListing] = useState(!publicListingsRequestComplete);
+  useEffect(() => {
+    if (publicListingsRequestComplete) { setLoadingListing(false); return; }
+    const finishLoading = () => setLoadingListing(false);
+    window.addEventListener("realty-center-public-listings-loaded", finishLoading);
+    return () => window.removeEventListener("realty-center-public-listings-loaded", finishLoading);
+  }, []);
+  const item = publishedListings.find((listing) => listing.id === id);
   const [activeImage, setActiveImage] = useState(0);
   const [activeTab, setActiveTab] = useState<'details' | 'location' | 'index'>('details');
   const [favorite, setFavorite] = useState(() => {
@@ -3528,7 +3542,7 @@ function ListingDetailPage() {
 
   const gallery = item.images?.length ? item.images : [item.image];
   const thumbnailSlots = Array.from({ length: 14 }, (_, index) => gallery[index] || null);
-  const agent = SAMPLE_AGENTS.find((entry) => entry.name === item.agentName) || SAMPLE_AGENTS[0];
+  const agent = SAMPLE_AGENTS.find((entry) => entry.name === item.agentName) || { name: item.agentName, title: "Gayrimenkul Danışmanı", image: item.image };
   const similar = SAMPLE_LISTINGS.filter((listing) => listing.id !== item.id && listing.propertyType === item.propertyType).slice(0, 3);
   const detailLabels: Record<string, string> = { rooms: 'Oda Sayısı', roomCount: 'Oda Sayısı', buildingAge: 'Bina Yaşı', floor: 'Bulunduğu Kat', heating: 'Isıtma', furnished: 'Eşyalı', mortgage: 'Krediye Uygun', bathroom: 'Banyo Sayısı', zoning: 'İmar Durumu', deed: 'Tapu Durumu', landQuality: 'Nitelik', frontage: 'Cephe', road: 'Yol', infrastructure: 'Altyapı', closedArea: 'Kapalı Alan', ceilingHeight: 'Tavan Yüksekliği', power: 'Elektrik Gücü', loading: 'Yükleme Rampası', crane: 'Vinç', sections: 'Bölüm Sayısı', parking: 'Otopark', usage: 'Kullanım Durumu', hotelRooms: 'Otel Oda Sayısı', beds: 'Yatak Kapasitesi', stars: 'Yıldız', restaurant: 'Restoran', pool: 'Havuz' };
   const detailValue = (key: string, fallback = 'Belirtilmemiş') => item.details[key] || fallback;
