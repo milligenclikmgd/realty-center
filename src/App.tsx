@@ -2304,7 +2304,14 @@ function DocumentsPage() {
     const createdUrls: string[] = [];
     Promise.all(documents.map(async (document) => {
       if (!document.fileUrl) return [document.id, ''] as const;
-      if (!document.fileUrl.startsWith('data:')) return [document.id, document.fileUrl] as const;
+      if (!document.fileUrl.startsWith('data:')) {
+        const filePath = document.fileUrl.split(/[?#]/)[0];
+        const fileName = filePath.split('/').pop() || '';
+        if (filePath.includes('/uploads/corporate/') && /^[a-f0-9]{40}\.pdf$/i.test(fileName)) {
+          return [document.id, '/cpanel/api/corporate-document.php?file=' + encodeURIComponent(fileName)] as const;
+        }
+        return [document.id, document.fileUrl] as const;
+      }
       try {
         const blob = await (await fetch(document.fileUrl)).blob();
         const url = URL.createObjectURL(blob);
