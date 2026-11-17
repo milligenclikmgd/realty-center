@@ -33,6 +33,7 @@ import { supabase } from "./lib/supabase";
 import { TURKEY_PROVINCES, getTurkeyDistricts } from "./turkeyLocations";
 import ListingEntryPageV2 from "./ListingEntryPage";
 import ListingManagementPage from "./ListingManagementPage";
+import { getLibraryCategories, saveLibraryCategories, type LibraryArticle, type LibraryCategory } from "./libraryContent";
 import { MEDIA_SELECTION } from "./content-refresh";
 
 type Page =
@@ -3766,6 +3767,71 @@ function RealtyMediaManager() {
     </section>
   </div>;
 }
+function LibraryContentManager() {
+  const [categories, setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
+  const [categoryId, setCategoryId] = useState(() => getLibraryCategories()[0]?.id || "");
+  const [form, setForm] = useState({ title: "", summary: "", image: "", content: "" });
+  const [editingId, setEditingId] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
+  const category = categories.find((item) => item.id === categoryId) || categories[0];
+  const articles = category?.articles || [];
+  useEffect(() => {
+    let active = true;
+    fetch("/api/auth.php?action=library-content", { credentials: "include" }).then(async (response) => {
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "Kütüphane içerikleri yüklenemedi.");
+      if (active && Array.isArray(payload.categories)) {
+        setCategories(payload.categories);
+        saveLibraryCategories(payload.categories);
+        setCategoryId((current) => payload.categories.some((item: LibraryCategory) => item.id === current) ? current : payload.categories[0]?.id || "");
+      }
+    }).catch((e) => { if (active) setError(e.message || "Sunucudaki içerikler alınamadı; mevcut başlangıç içerikleri gösteriliyor."); }).finally(() => { if (active) setLoading(false); });
+    return () => { active = false; };
+  }, []);
+  const persist = async (next: LibraryCategory[]) => {
+    setBusy(true); setError(""); setNotice("");
+    try {
+      const response = await fetch("/api/auth.php?action=save-library-content", { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ categories: next }) });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || payload.error) throw new Error(payload.error || "Kütüphane içerikleri kaydedilemedi.");
+      const saved = Array.isArray(payload.categories) ? payload.categories : next;
+      setCategories(saved); saveLibraryCategories(saved);
+      setNotice("Realty Kütüphane içerikleri kaydedildi.");
+      return true;
+    } catch (e: any) { setError(e.message || "Sunucuya ulaşılamadı."); return false; }
+    finally { setBusy(false); }
+  };
+  const reset = () => { setEditingId(""); setForm({ title: "", summary: "", image: "", content: "" }); };
+  const submit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!category) { setError("Önce bir kategori seçin."); return; }
+    if (!form.title.trim()) { setError("İçerik başlığı zorunludur."); return; }
+    const article: LibraryArticle = { id: editingId || crypto.randomUUID(), title: form.title.trim(), summary: form.summary.trim(), image: form.image.trim(), content: form.content, publishedAt: editingId ? (articles.find((item) => item.id === editingId)?.publishedAt || new Date().toISOString()) : new Date().toISOString() };
+    const next = categories.map((item) => item.id !== category.id ? item : { ...item, articles: editingId ? item.articles.map((row) => row.id === editingId ? article : row) : [article, ...item.articles] });
+    if (await persist(next)) reset();
+  };
+  const edit = (article: LibraryArticle) => { setEditingId(article.id); setForm({ title: article.title, summary: article.summary || "", image: article.image || "", content: article.content || "" }); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const remove = async (id: string) => {
+    if (!category || !window.confirm("Bu içeriği Realty Kütüphane’den kaldırmak istiyor musunuz?")) return;
+    const next = categories.map((item) => item.id === category.id ? { ...item, articles: item.articles.filter((article) => article.id !== id) } : item);
+    if (editingId === id) reset();
+    await persist(next);
+  };
+  return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">Realty Kütüphane</h1><p className="mt-1 text-sm text-slate-500">Kategorileri ve her kategoride yayınlanan içerikleri yönetin.</p></div>
+    <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">{categories.map((item) => <button key={item.id} type="button" onClick={() => { setCategoryId(item.id); reset(); setError(""); }} className={"rounded-xl border p-4 text-left transition " + (category?.id === item.id ? "border-[#cd011e] bg-[#fff4f5] ring-1 ring-[#cd011e]/20" : "border-slate-200 bg-white hover:border-slate-300")}><span className="flex items-center justify-between gap-3"><b className="text-sm text-slate-800">{item.title}</b><span className="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold text-slate-500">{item.articles.length} içerik</span></span><span className="mt-2 block line-clamp-2 text-xs text-slate-500">{item.description}</span></button>)}</div>
+    <form onSubmit={submit} className="max-w-5xl space-y-4 rounded-2xl border border-slate-200 bg-white p-5"><div><h2 className="text-base font-bold">{editingId ? "İçeriği Düzenle" : "Yeni İçerik Ekle"}</h2><p className="mt-1 text-xs text-slate-500">İçeriğin yayınlanacağı kategoriyi seçin.</p></div>
+      <div className="grid gap-3 md:grid-cols-2"><label className="text-xs font-semibold text-slate-600">Kategori<select value={category?.id || ""} onChange={(e) => { setCategoryId(e.target.value); reset(); }} className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-3 text-sm">{categories.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label><label className="text-xs font-semibold text-slate-600">İçerik başlığı *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kısa özet<textarea value={form.summary} onChange={(e) => setForm({ ...form, summary: e.target.value })} className="mt-1 min-h-16 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kapak görseli URL’si (isteğe bağlı)<input type="url" value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><div className="text-xs font-semibold text-slate-600 md:col-span-2">İçerik metni<RichTextEditor value={form.content} onChange={(content) => setForm((current) => ({ ...current, content }))}/></div></div>
+      {error && <p className="rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}{notice && <p className="text-xs font-semibold text-emerald-700">{notice}</p>}
+      <div className="flex gap-2"><button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{busy ? "Kaydediliyor…" : editingId ? "Değişiklikleri Kaydet" : "İÇERİK EKLE"}</button>{editingId && <button type="button" onClick={reset} className="rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold text-slate-600">Vazgeç</button>}</div>
+    </form>
+    <section className="max-w-5xl rounded-2xl border border-slate-200 bg-white p-5"><div className="flex items-center justify-between gap-3"><div><h2 className="text-base font-bold">{category?.title || "Kategori İçerikleri"}</h2><p className="mt-1 text-xs text-slate-500">{articles.length} içerik listeleniyor.</p></div><select value={category?.id || ""} onChange={(e) => { setCategoryId(e.target.value); reset(); }} className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs">{categories.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></div>
+      {loading ? <div className="mt-4 h-24 animate-pulse rounded-lg bg-slate-100"/> : articles.length ? <div className="mt-4 space-y-2">{articles.map((article) => <article key={article.id} className="flex flex-col gap-3 rounded-xl border border-slate-200 p-3 sm:flex-row sm:items-center">{article.image && <img src={article.image} alt="" className="h-16 w-24 rounded-lg bg-slate-100 object-cover"/>}<div className="min-w-0 flex-1"><b className="block truncate text-sm text-slate-800">{article.title}</b><p className="mt-1 line-clamp-2 text-xs text-slate-500">{article.summary || article.content.replace(/<[^>]*>/g, " ").trim()}</p><span className="mt-1 block text-[10px] text-slate-400">{new Date(article.publishedAt).toLocaleDateString("tr-TR")}</span></div><div className="flex gap-2"><button type="button" onClick={() => edit(article)} className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold hover:bg-slate-50">Düzenle</button><button type="button" disabled={busy} onClick={() => void remove(article.id)} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-semibold text-rose-600 disabled:opacity-50">Sil</button></div></article>)}</div> : <div className="mt-4 rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-400">Bu kategoride içerik yok.</div>}
+    </section>
+  </div>;
+}
 function ContentManager({ kind }: { kind: "media" | "library" }) {
   const key = `rc-${kind}-content`;
   const [items, setItems] = useState<any[]>(() => JSON.parse(localStorage.getItem(key) || "[]"));
@@ -3777,7 +3843,7 @@ function ContentManager({ kind }: { kind: "media" | "library" }) {
   return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">{media ? "Realty Medya" : "Realty Kütüphane"}</h1><p className="mt-1 text-sm text-slate-500">{media ? "Video ve medya kayıtlarını ekleyin, yönetin veya kaldırın." : "Haber, yazı ve duyurularınızı ayrıntılı metinlerle yönetin."}</p></div><form onSubmit={save} className="grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 md:grid-cols-2"><input required className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video başlığı" : "Haber / yazı başlığı"} value={form.title} onChange={e=>setForm({...form,title:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm" placeholder={media ? "Video URL veya embed bağlantısı" : "Kapak görseli URL'si"} value={form.url} onChange={e=>setForm({...form,url:e.target.value})}/><input className="rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder="Kısa açıklama" value={form.excerpt} onChange={e=>setForm({...form,excerpt:e.target.value})}/><textarea className="min-h-32 rounded-xl border border-slate-200 p-3 text-sm md:col-span-2" placeholder={media ? "Video açıklaması" : "Detaylı haber / yazı metni"} value={form.body} onChange={e=>setForm({...form,body:e.target.value})}/><button className="w-fit rounded-xl bg-[#cd011e] px-5 py-3 text-xs font-black text-white">{media ? "VİDEO EKLE" : "YAZIYI YAYINLA"}</button></form><div className="space-y-3">{items.length ? items.map(x=><article key={x.id} className="rounded-2xl border border-slate-200 bg-white p-5"><div className="flex items-start justify-between gap-4"><div><h2 className="font-black">{x.title}</h2><p className="mt-1 text-sm text-slate-500">{x.excerpt}</p></div><button onClick={()=>remove(x.id)} className="rounded-lg border border-rose-200 px-3 py-2 text-xs font-bold text-rose-600">Sil</button></div>{x.url && <a className="mt-3 block truncate text-xs text-[#cd011e]" href={x.url} target="_blank">{x.url}</a>}<p className="mt-3 whitespace-pre-wrap text-sm text-slate-600">{x.body}</p></article>) : <div className="rounded-2xl border border-dashed border-slate-300 p-10 text-center text-sm text-slate-400">Henüz kayıt yok.</div>}</div></div>;
 }
 const MediaManagementPage = () => <ContentManager kind="media" />;
-const LibraryManagementPage = () => <ContentManager kind="library" />;
+const LibraryManagementPage = () => <LibraryContentManager />;
 function FeaturePage({ title, page }: { title: string; page: Page }) {
   const info: Record<string, string[]> = {
     header: [
