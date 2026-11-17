@@ -1644,6 +1644,15 @@ function UsersPage({
 
 export default function AdminControlCenter() {
   const [page, setPage] = useState<Page>("overview");
+  const [viewerRole, setViewerRole] = useState<string | null>(null);
+  const visibleGroups = useMemo(() => {
+    if (!viewerRole) return groups.map((group) => ({ ...group, items: group.items.filter((item) => item.id === "overview") })).filter((group) => group.items.length > 0);
+    if (viewerRole === "advisor") {
+      const allowed = new Set<Page>(["overview", "listings", "crm", "inbox"]);
+      return groups.map((group) => ({ ...group, items: group.items.filter((item) => allowed.has(item.id)) })).filter((group) => group.items.length > 0);
+    }
+    return groups;
+  }, [viewerRole]);
   const [mobile, setMobile] = useState(false);
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [offices, setOffices] = useState<Office[]>([]);
@@ -1746,6 +1755,10 @@ export default function AdminControlCenter() {
     } catch {}
   };
   useEffect(() => {
+    void fetch(`/api/auth.php?action=me&_=${Date.now()}`, { credentials: "include", cache: "no-store" })
+      .then((response) => response.json())
+      .then((payload) => setViewerRole(payload?.user?.role || null))
+      .catch(() => setViewerRole(null));
     try {
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) applyBootstrap(JSON.parse(cached));
@@ -1754,6 +1767,9 @@ export default function AdminControlCenter() {
       setNotice(error instanceof Error ? error.message : "Kullanıcı verileri alınamadı.");
     });
   }, []);
+  useEffect(() => {
+    if (viewerRole === "advisor" && !["overview", "listings", "crm", "inbox"].includes(page)) setPage("overview");
+  }, [viewerRole, page]);
   useEffect(() => {
     if (!newUserOpen) return;
     setPage("user-create");
@@ -2662,7 +2678,7 @@ export default function AdminControlCenter() {
           </button>
         </div>
         <nav className="h-[calc(100vh-76px)] overflow-y-auto p-4">
-          {groups.map((g) => (
+          {visibleGroups.map((g) => (
             <div key={g.title} className="mb-5">
               <p className="mb-2 px-3 text-[10px] font-black tracking-wider text-slate-400">
                 {g.title}
