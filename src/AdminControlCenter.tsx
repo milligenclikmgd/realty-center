@@ -3767,6 +3767,25 @@ function RealtyMediaManager() {
     </section>
   </div>;
 }
+function LibraryRichTextEditor({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  const editorRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (editorRef.current && editorRef.current.innerHTML !== value) editorRef.current.innerHTML = value || "";
+  }, [value]);
+  const command = (name: string) => {
+    editorRef.current?.focus();
+    document.execCommand(name, false);
+    onChange(editorRef.current?.innerHTML || "");
+  };
+  return <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+    <div className="flex gap-1 border-b border-slate-200 bg-slate-50 p-2">
+      <button type="button" onMouseDown={(event) => event.preventDefault()} onClick={() => command("bold")} className="rounded border bg-white px-3 py-1 text-xs font-bold">Kalın</button>
+      <button type="button" onMouseDown={(event) => event.preventDefault()} onClick={() => command("italic")} className="rounded border bg-white px-3 py-1 text-xs italic">İtalik</button>
+      <button type="button" onMouseDown={(event) => event.preventDefault()} onClick={() => command("insertUnorderedList")} className="rounded border bg-white px-3 py-1 text-xs">• Liste</button>
+    </div>
+    <div ref={editorRef} contentEditable suppressContentEditableWarning onInput={(event) => onChange(event.currentTarget.innerHTML)} className="min-h-48 p-3 text-sm leading-6 outline-none" />
+  </div>;
+}
 function LibraryContentManager() {
   const [categories, setCategories] = useState<LibraryCategory[]>(getLibraryCategories);
   const [categoryId, setCategoryId] = useState(() => getLibraryCategories()[0]?.id || "");
@@ -3823,7 +3842,7 @@ function LibraryContentManager() {
   return <div className="space-y-5"><div className="border-b border-slate-200 pb-5"><p className="text-[10px] font-black tracking-[.2em] text-[#cd011e]">REALTY CENTER / İÇERİK</p><h1 className="mt-1 text-2xl font-black">Realty Kütüphane</h1><p className="mt-1 text-sm text-slate-500">Kategorileri ve her kategoride yayınlanan içerikleri yönetin.</p></div>
     <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">{categories.map((item) => <button key={item.id} type="button" onClick={() => { setCategoryId(item.id); reset(); setError(""); }} className={"rounded-xl border p-4 text-left transition " + (category?.id === item.id ? "border-[#cd011e] bg-[#fff4f5] ring-1 ring-[#cd011e]/20" : "border-slate-200 bg-white hover:border-slate-300")}><span className="flex items-center justify-between gap-3"><b className="text-sm text-slate-800">{item.title}</b><span className="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold text-slate-500">{item.articles.length} içerik</span></span><span className="mt-2 block line-clamp-2 text-xs text-slate-500">{item.description}</span></button>)}</div>
     <form onSubmit={submit} className="max-w-5xl space-y-4 rounded-2xl border border-slate-200 bg-white p-5"><div><h2 className="text-base font-bold">{editingId ? "İçeriği Düzenle" : "Yeni İçerik Ekle"}</h2><p className="mt-1 text-xs text-slate-500">İçeriğin yayınlanacağı kategoriyi seçin.</p></div>
-      <div className="grid gap-3 md:grid-cols-2"><label className="text-xs font-semibold text-slate-600">Kategori<select value={category?.id || ""} onChange={(e) => { setCategoryId(e.target.value); reset(); }} className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-3 text-sm">{categories.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label><label className="text-xs font-semibold text-slate-600">İçerik başlığı *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kısa özet<textarea value={form.summary} onChange={(e) => setForm({ ...form, summary: e.target.value })} className="mt-1 min-h-16 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kapak görseli URL’si (isteğe bağlı)<input type="url" value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><div className="text-xs font-semibold text-slate-600 md:col-span-2">İçerik metni<RichTextEditor value={form.content} onChange={(content) => setForm((current) => ({ ...current, content }))}/></div></div>
+      <div className="grid gap-3 md:grid-cols-2"><label className="text-xs font-semibold text-slate-600">Kategori<select value={category?.id || ""} onChange={(e) => { setCategoryId(e.target.value); reset(); }} className="mt-1 w-full rounded-lg border border-slate-200 bg-white p-3 text-sm">{categories.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label><label className="text-xs font-semibold text-slate-600">İçerik başlığı *<input required value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kısa özet<textarea value={form.summary} onChange={(e) => setForm({ ...form, summary: e.target.value })} className="mt-1 min-h-16 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><label className="text-xs font-semibold text-slate-600 md:col-span-2">Kapak görseli URL’si (isteğe bağlı)<input type="url" value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} className="mt-1 w-full rounded-lg border border-slate-200 p-3 text-sm"/></label><div className="text-xs font-semibold text-slate-600 md:col-span-2">İçerik metni<LibraryRichTextEditor value={form.content} onChange={(content) => setForm((current) => ({ ...current, content }))}/></div></div>
       {error && <p className="rounded-lg bg-rose-50 p-3 text-xs font-semibold text-rose-700">{error}</p>}{notice && <p className="text-xs font-semibold text-emerald-700">{notice}</p>}
       <div className="flex gap-2"><button disabled={busy} className="rounded-lg bg-[#cd011e] px-5 py-3 text-xs font-bold text-white disabled:opacity-50">{busy ? "Kaydediliyor…" : editingId ? "Değişiklikleri Kaydet" : "İÇERİK EKLE"}</button>{editingId && <button type="button" onClick={reset} className="rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold text-slate-600">Vazgeç</button>}</div>
     </form>
