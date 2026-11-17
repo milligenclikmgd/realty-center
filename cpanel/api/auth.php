@@ -134,11 +134,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'update-user') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
-    requireUser($pdo);
+    $actor = requireUser($pdo);
     try {
         try { $pdo->exec('ALTER TABLE users MODIFY avatar_url MEDIUMTEXT NULL'); } catch (Throwable $ignored) {}
         try { $pdo->exec('ALTER TABLE users ADD COLUMN city VARCHAR(100) NULL, ADD COLUMN district VARCHAR(100) NULL'); } catch (Throwable $ignored) {}
-        $q = $pdo->query('SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url,city,district FROM users WHERE deleted_at IS NULL ORDER BY created_at DESC');
+        $sql = 'SELECT id,username,email,first_name,last_name,phone,role,status,last_login_at,created_at,avatar_url,city,district FROM users WHERE deleted_at IS NULL'.($actor['role']==='advisor' ? ' AND id=?' : '').' ORDER BY created_at DESC';
+        $q = $pdo->prepare($sql);
+        $q->execute($actor['role']==='advisor' ? [$actor['id']] : []);
         respond(['users'=>$q->fetchAll()]);
     } catch (Throwable $e) {
         respond(['error'=>'Kullanıcı tablosu okunamadı: '.$e->getMessage()],500);
@@ -146,9 +148,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'users') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'listings') {
-    requireUser($pdo);
+    $actor = requireUser($pdo);
     try {
-        $q = $pdo->query("SELECT l.id, l.listing_number, l.owner_user_id AS owner_id, l.title, l.category, l.property_type, l.transaction_type, l.price, l.currency, l.city, l.district, l.neighborhood, l.rooms, l.area, l.description, l.details, l.approval_status, l.is_featured, l.created_at, l.updated_at, l.deleted_at, GROUP_CONCAT(CASE WHEN m.media_type='image' THEN m.file_url END ORDER BY m.sort_order SEPARATOR '||') AS image_urls FROM listings l LEFT JOIN listing_media m ON m.listing_id=l.id GROUP BY l.id ORDER BY l.created_at DESC");
+        $sql = "SELECT l.id, l.listing_number, l.owner_user_id AS owner_id, l.title, l.category, l.property_type, l.transaction_type, l.price, l.currency, l.city, l.district, l.neighborhood, l.rooms, l.area, l.description, l.details, l.approval_status, l.is_featured, l.created_at, l.updated_at, l.deleted_at, GROUP_CONCAT(CASE WHEN m.media_type='image' THEN m.file_url END ORDER BY m.sort_order SEPARATOR '||') AS image_urls FROM listings l LEFT JOIN listing_media m ON m.listing_id=l.id".($actor['role']==='advisor' ? " WHERE l.owner_user_id=?" : "")." GROUP BY l.id ORDER BY l.created_at DESC";
+        $q = $pdo->prepare($sql);
+        $q->execute($actor['role']==='advisor' ? [$actor['id']] : []);
         $rows = $q->fetchAll();
         foreach ($rows as &$row) {
             $row['images'] = $row['image_urls'] ? explode('||', $row['image_urls']) : [];
@@ -458,9 +462,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm') {
     $q = $pdo->prepare("SELECT c.id,c.full_name,c.phone,c.email,c.customer_type,c.city,c.district,c.property_type,c.budget_min,c.budget_max,c.source,c.status,c.notes,c.assigned_user_id,c.created_at,c.updated_at,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS assigned_name,(SELECT COUNT(*) FROM crm_activities a WHERE a.customer_id=c.id) AS activity_count FROM crm_customers c LEFT JOIN users u ON u.id=c.assigned_user_id ".$where." ORDER BY c.updated_at DESC LIMIT 1000");
     $q->execute($isAdvisor ? [$actor['id']] : []);
     $customers = $q->fetchAll();
-    $taskWhere = $isAdvisor ? 'WHERE t.assigned_user_id=? AND t.status="pending"' : 'WHERE t.status="pending"';
+    $taskWhere = $isAdvisor ? 'WHERE t.assigned_user_id=? AND c.assigned_user_id=? AND t.status="pending"' : 'WHERE t.status="pending"';
     $tq = $pdo->prepare("SELECT t.id,t.customer_id,t.title,t.due_at,t.status,t.assigned_user_id,CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,'')) AS assigned_name,c.full_name AS customer_name FROM crm_tasks t LEFT JOIN users u ON u.id=t.assigned_user_id LEFT JOIN crm_customers c ON c.id=t.customer_id ".$taskWhere." ORDER BY t.due_at ASC LIMIT 500");
-    $tq->execute($isAdvisor ? [$actor['id']] : []);
+    $tq->execute($isAdvisor ? [$actor['id'],$actor['id']] : []);
     $assignees = [];
     if (!$isAdvisor) {
         $uq = $pdo->query("SELECT id,first_name,last_name,role FROM users WHERE deleted_at IS NULL AND status='active' AND role IN ('advisor','manager') ORDER BY first_name,last_name");
@@ -471,6 +475,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'crm-activities') {
     $actor = requireUser($pdo);
+    if (!in_array($actor['role'], ['admin','manager','advisor'], true)) respond(['error'=>'CRM erişim yetkiniz yok.'],403);
     $customerId = trim((string)($_GET['customer_id'] ?? ''));
     if ($customerId === '') respond(['error'=>'Müşteri seçilmedi.'],422);
     $access = $pdo->prepare("SELECT id FROM crm_customers WHERE id=? ".(($actor['role'] ?? '') === 'advisor' ? 'AND assigned_user_id=?' : '')." LIMIT 1");
@@ -523,7 +528,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-customer') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-add-activity') {
-    $actor=requireUser($pdo);$input=body();$customerId=trim((string)($input['customer_id']??''));$bodyText=trim((string)($input['body']??''));$type=trim((string)($input['activity_type']??'note'));
+    $actor=requireUser($pdo);if(!in_array($actor['role'],['admin','manager','advisor'],true))respond(['error'=>'CRM erişim yetkiniz yok.'],403);$input=body();$customerId=trim((string)($input['customer_id']??''));$bodyText=trim((string)($input['body']??''));$type=trim((string)($input['activity_type']??'note'));
     if($customerId===''||$bodyText==='')respond(['error'=>'Müşteri ve not zorunludur.'],422);
     $access=$pdo->prepare("SELECT id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);if(!$access->fetch())respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
     if(!in_array($type,['note','call','meeting','message'],true))$type='note';
@@ -534,7 +539,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-add-activity') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-task') {
-    $actor=requireUser($pdo);$input=body();$customerId=trim((string)($input['customer_id']??''));$title=trim((string)($input['title']??''));$dueRaw=trim((string)($input['due_at']??''));
+    $actor=requireUser($pdo);if(!in_array($actor['role'],['admin','manager','advisor'],true))respond(['error'=>'CRM erişim yetkiniz yok.'],403);$input=body();$customerId=trim((string)($input['customer_id']??''));$title=trim((string)($input['title']??''));$dueRaw=trim((string)($input['due_at']??''));
     if($customerId===''||$title==='')respond(['error'=>'Müşteri ve takip görevi zorunludur.'],422);
     $access=$pdo->prepare("SELECT id,assigned_user_id FROM crm_customers WHERE id=? ".($actor['role']==='advisor'?'AND assigned_user_id=?':'')." LIMIT 1");$access->execute($actor['role']==='advisor'?[$customerId,$actor['id']]:[$customerId]);$customer=$access->fetch();if(!$customer)respond(['error'=>'Müşteri bulunamadı veya erişim yetkiniz yok.'],404);
     $due=null;
@@ -547,7 +552,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-save-task') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $action === 'crm-complete-task') {
-    $actor=requireUser($pdo);$id=trim((string)(body()['id']??''));if($id==='')respond(['error'=>'Görev seçilmedi.'],422);
+    $actor=requireUser($pdo);if(!in_array($actor['role'],['admin','manager','advisor'],true))respond(['error'=>'CRM erişim yetkiniz yok.'],403);$id=trim((string)(body()['id']??''));if($id==='')respond(['error'=>'Görev seçilmedi.'],422);
     $q=$pdo->prepare("UPDATE crm_tasks t JOIN crm_customers c ON c.id=t.customer_id SET t.status='done',t.completed_at=NOW() WHERE t.id=? ".($actor['role']==='advisor'?'AND t.assigned_user_id=? AND c.assigned_user_id=?':''));
     $q->execute($actor['role']==='advisor'?[$id,$actor['id'],$actor['id']]:[$id]);respond(['ok'=>true]);
 }
