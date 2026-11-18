@@ -5752,6 +5752,26 @@ function AmbientMusicButton() {
   </button>;
 }
 
+const PUBLIC_SITE_MAINTENANCE_MODE = true;
+const PANEL_PATHS = ["/panel", "/danisman-panel", "/yonetici-panel", "/super-admin", "/super-admin-panel"];
+
+function PublicMaintenanceGate({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+  const isPanelPath = PANEL_PATHS.some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`));
+  if (PUBLIC_SITE_MAINTENANCE_MODE && !isPanelPath) {
+    return (
+      <main className="fixed inset-0 z-[9999] flex h-[100dvh] w-screen items-center justify-center overflow-hidden bg-white">
+        <img
+          src="/realty-center-maintenance.svg"
+          alt="Realty Center — Yakında Burada"
+          className="h-full w-full object-contain"
+        />
+      </main>
+    );
+  }
+  return <>{children}</>;
+}
+
 export default function RealtyCenterApp() {
   const [loading, setLoading] = useState(true);
   const [language, setLanguage] = useState<StaticLanguage>(() => (localStorage.getItem('realty-language') as StaticLanguage) || 'tr');
@@ -5957,6 +5977,7 @@ export default function RealtyCenterApp() {
   return (
     <Router>
       <ScrollToTopOnRouteChange />
+      <PublicMaintenanceGate>
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-red-700 selection:text-white relative flex flex-col justify-between">
         
         <Header language={language} setLanguage={setLanguage} />
@@ -6197,6 +6218,7 @@ export default function RealtyCenterApp() {
         )}
 
       </div>
+      </PublicMaintenanceGate>
     </Router>
   );
 }
