@@ -5250,6 +5250,47 @@ function AgentDashboard({ panelRole = 'advisor' }: { panelRole?: 'advisor' | 'ma
     void loadProfile();
   }, [isManager]);
 
+  useEffect(() => {
+    const loadMyListings = async () => {
+      try {
+        const response = await fetch(`/api/auth.php?action=listings&_=${Date.now()}`, { credentials: "include", cache: "no-store" });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok || !Array.isArray(payload.listings)) return;
+        setMyListings(payload.listings.map((row: any) => {
+          const details = row.details || {};
+          const images = Array.isArray(row.images) ? row.images : [];
+          return {
+            id: row.listing_number || row.id,
+            databaseId: row.id,
+            title: row.title,
+            category: row.category,
+            propertyType: row.property_type,
+            type: row.transaction_type,
+            price: Number(row.price) || 0,
+            currency: row.currency === "TRY" ? "₺" : row.currency,
+            city: row.city,
+            district: row.district,
+            neighborhood: row.neighborhood || "",
+            rooms: row.rooms || details.roomCount || "",
+            area: Number(row.area || details.gross_sqm || details.net_sqm) || 0,
+            description: row.description || "",
+            details,
+            images,
+            image: images[0] || "",
+            status: row.approval_status === "Yayında" ? "Aktif" : row.approval_status === "Reddedildi" ? "Reddedildi" : row.approval_status === "archived" ? "Arşivde" : "Onay Bekliyor",
+            isFeatured: Boolean(row.is_featured),
+            date: row.created_at,
+          };
+        }));
+      } catch {
+        /* Ağ kesintisinde mevcut listeyi koru. */
+      }
+    };
+    void loadMyListings();
+    window.addEventListener("realty-center-listings-updated", loadMyListings);
+    return () => window.removeEventListener("realty-center-listings-updated", loadMyListings);
+  }, []);
+
   const filteredListings = myListings.filter((item) =>
     `${item.title} ${item.id} ${item.city} ${item.district}`.toLocaleLowerCase('tr-TR').includes(listingSearch.toLocaleLowerCase('tr-TR'))
   );
