@@ -5752,7 +5752,7 @@ function AmbientMusicButton() {
   </button>;
 }
 
-const PUBLIC_SITE_MAINTENANCE_MODE = true;
+const PUBLIC_SITE_MAINTENANCE_MODE = false;
 const PANEL_PATHS = ["/panel", "/danisman-panel", "/yonetici-panel", "/super-admin", "/super-admin-panel"];
 
 function PublicMaintenanceGate({ children }: { children: React.ReactNode }) {
